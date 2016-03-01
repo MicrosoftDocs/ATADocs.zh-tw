@@ -123,7 +123,8 @@
     "ATADocs\\PlanDesign\\validate-port-mirroring.md"
   ],
   "3b63dc0cff85980cb632069d4c34cc8894ecfc7c": [
-    "ATADocs\\Image\\ATA-architecture-topology.jpg"
+    "ATADocs\\Image\\ATA-architecture-topology.jpg",
+    "ATADocs\\Understand\\media\\ATA-architecture-topology.jpg"
   ],
   "09b9a121c83402d9e8dcc901fd1bcd48f86e92c2": [
     "ATADocs\\TOC.md"
@@ -160,6 +161,9 @@
   ],
   "302bd4d77858994e2d6b153391346ab5cffd59df": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
+  ],
+  "5acb10d04d5d33c84faede28489a310f14cc6b39": [
+    "ATADocs\\Understand\\ata-architecture.md"
   ],
   "f17d0464f687159ae74c80474610d861a097097d": [
     "ATADocs\\Understand\\ata-architecture.md"
@@ -199,5 +203,8 @@
   ],
   "e0cfdf038851948d6371c6090a656e227ce69dd4": [
     "ATADocs\\Understand\\ata-faq.md"
+  ],
+  "71172af8b9ffaf66bdf7bc8ef1db6aee70f2a2ca": [
+    "ATADocs\\Understand\\media\\ATA-traffic-flow.jpg"
   ]
 }

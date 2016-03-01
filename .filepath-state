@@ -122,6 +122,9 @@
   "2967d4c4ebef6cf495bbac20f0b2c744b6f54a77": [
     "ATADocs\\PlanDesign\\validate-port-mirroring.md"
   ],
+  "3b63dc0cff85980cb632069d4c34cc8894ecfc7c": [
+    "ATADocs\\Image\\ATA-architecture-topology.jpg"
+  ],
   "09b9a121c83402d9e8dcc901fd1bcd48f86e92c2": [
     "ATADocs\\TOC.md"
   ],
@@ -172,6 +175,9 @@
   ],
   "4f363731e75b6cf7be2069e1c9aa16fcf48fb0cb": [
     "ATADocs\\Understand\\TOC.md"
+  ],
+  "0a9dda7c538491ffbae41b79ca2b768e709b2ebc": [
+    "ATADocs\\Understand\\what-is-ata.md"
   ],
   "491d5a34d88b5ca0827b4df040cfc5b84e36369c": [
     "ATADocs\\Understand\\what-is-ata.md"

@@ -222,7 +222,7 @@
  [ATADocs\Image\AzureWebsiteIcons-install.png](https://github.com/Microsoft/ATADocs-pr/blob/55520fffea1d8b2e7c9c70082029ac081e6a34c3/ATADocs/Image/AzureWebsiteIcons-install.png) | Ignored | [Details](#5a5fef111ba0c2b61d5c6e3b35def26563c95b6c112)
  [ATADocs\Image\AzureWebsiteIcons-manage.png](https://github.com/Microsoft/ATADocs-pr/blob/55520fffea1d8b2e7c9c70082029ac081e6a34c3/ATADocs/Image/AzureWebsiteIcons-manage.png) | Ignored | [Details](#24fa3a74955fb520a2cafe7f2ff80415def4107d113)
  [ATADocs\Image\AzureWebsiteIcons-what-is-ata.png](https://github.com/Microsoft/ATADocs-pr/blob/55520fffea1d8b2e7c9c70082029ac081e6a34c3/ATADocs/Image/AzureWebsiteIcons-what-is-ata.png) | Ignored | [Details](#e3c9dfb90cc3f2eebd8aa3395e3ab03666bc32bd114)
- [ATADocs\index.html](https://github.com/Microsoft/ATADocs-pr/blob/55520fffea1d8b2e7c9c70082029ac081e6a34c3/ATADocs/index.html) | Ignored | [Details](#d4aadb9dbaa1bc5c3d80ddf8b5630cca52de931c124)
+ [ATADocs\index.html](https://github.com/Microsoft/ATADocs-pr/blob/55520fffea1d8b2e7c9c70082029ac081e6a34c3/ATADocs/index.html) | Ignored | [Details](#218afda1e527c49e815a1928051c47a32ade8b21124)
  [ATADocs\PlanDesign\docfx.json](https://github.com/Microsoft/ATADocs-pr/blob/55520fffea1d8b2e7c9c70082029ac081e6a34c3/ATADocs/PlanDesign/docfx.json) | Ignored | [Details](#a2bfe2c3e9cedfeb2bfdaf4a3a52d6c399606481130)
  [ATADocs\Troubleshoot\docfx.json](https://github.com/Microsoft/ATADocs-pr/blob/55520fffea1d8b2e7c9c70082029ac081e6a34c3/ATADocs/Troubleshoot/docfx.json) | Ignored | [Details](#99a81843613d4381a146aa51c430951cf2c45c97157)
  [ATADocs\Understand\docfx.json](https://github.com/Microsoft/ATADocs-pr/blob/55520fffea1d8b2e7c9c70082029ac081e6a34c3/ATADocs/Understand/docfx.json) | Ignored | [Details](#fb0fcc10d9bff1999eede974ecc51010a1e8771a171)
@@ -1805,7 +1805,7 @@
 * Dependency From: ATADocs\PlanDesign\configure-event-collection.md
 * [Back to Top](#report-top)
 
-##### <a name='d4aadb9dbaa1bc5c3d80ddf8b5630cca52de931c124'></a> Source: [ATADocs\index.html](https://github.com/Microsoft/ATADocs-pr/blob/55520fffea1d8b2e7c9c70082029ac081e6a34c3/ATADocs/index.html)
+##### <a name='218afda1e527c49e815a1928051c47a32ade8b21124'></a> Source: [ATADocs\index.html](https://github.com/Microsoft/ATADocs-pr/blob/55520fffea1d8b2e7c9c70082029ac081e6a34c3/ATADocs/index.html)
 * Status: Ignored
 * Target File: 
 * Handoff File: 

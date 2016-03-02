@@ -80,6 +80,9 @@
   "5c56c21c1bce0e31c96df4b0adbde25b80cc2934": [
     "ATADocs\\DeployUse\\setting-ata-alerts.md"
   ],
+  "20f82503ee208664102115e3f64587cb4c1cb1c5": [
+    "ATADocs\\DeployUse\\TOC.md"
+  ],
   "638004be6a01141e0b1528e73ca95485f603fd12": [
     "ATADocs\\DeployUse\\TOC.md"
   ],
@@ -155,6 +158,9 @@
   "0f6d86cf70b9cedcb5a52806ca392db170ae7784": [
     "ATADocs\\PlanDesign\\configure-port-mirroring.md"
   ],
+  "72531fcb2634497e68e93ae087d0da8ad4ab9397": [
+    "ATADocs\\PlanDesign\\TOC.md"
+  ],
   "1a73554d67667164438fe3e4c583e802f261cf01": [
     "ATADocs\\PlanDesign\\TOC.md"
   ],
@@ -194,6 +200,9 @@
   "29edf81c50c30e7023f414af5fe9816f35a642e1": [
     "ATADocs\\Troubleshoot\\ata-troubleshooting.md"
   ],
+  "94f512c90938431254a78079ce33bcd4d0413137": [
+    "ATADocs\\Troubleshoot\\TOC.md"
+  ],
   "87e63c10f91b14745de015c1df333653b2e72eb6": [
     "ATADocs\\Troubleshoot\\TOC.md"
   ],
@@ -229,6 +238,9 @@
   ],
   "9113f77c28d2df568d8f4b1ce483e845a457bbb1": [
     "ATADocs\\Understand\\ata-understand-and-explore.md"
+  ],
+  "83fc8187fdde4014534470f6bf49a942a01aa3b0": [
+    "ATADocs\\Understand\\TOC.md"
   ],
   "d94bfd8deab37f68a3b7f1b0cb9859e59f1d5cae": [
     "ATADocs\\Understand\\TOC.md"

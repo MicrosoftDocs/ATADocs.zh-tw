@@ -230,6 +230,9 @@
   "9113f77c28d2df568d8f4b1ce483e845a457bbb1": [
     "ATADocs\\Understand\\ata-understand-and-explore.md"
   ],
+  "d94bfd8deab37f68a3b7f1b0cb9859e59f1d5cae": [
+    "ATADocs\\Understand\\TOC.md"
+  ],
   "b5d407454da56a38bf063a258cf95adcfd6ff7c7": [
     "ATADocs\\Understand\\TOC.md"
   ],
@@ -247,6 +250,9 @@
   ],
   "2fcb4e9e708146f15516178d5ddd691ba0196ee1": [
     "ATADocs\\Understand\\what-is-ata.md"
+  ],
+  "a637f05ca25289c9e702523cf42eabbf2387689b": [
+    "ATADocs\\Understand\\working-with-ata-console.md"
   ],
   "af46153d2441afcaba9bd69e026ef9562a9c5a13": [
     "ATADocs\\Understand\\working-with-ata-console.md"
@@ -295,8 +301,7 @@
     "ATADocs\\DeployUse\\media\\ATA-center-outdated.png"
   ],
   "28bff0237cf9625b464859bd7f3dc309779c7fcb": [
-    "ATADocs\\DeployUse\\media\\ATA-config-icon.JPG",
-    "ATADocs\\Understand\\media\\ATA-config-icon.JPG"
+    "ATADocs\\DeployUse\\media\\ATA-config-icon.JPG"
   ],
   "897dfb81c69563bcdb1239566b4a47f1e8a060cd": [
     "ATADocs\\DeployUse\\media\\ATA-gw-updated.png"
@@ -406,13 +411,34 @@
   "3a5b4e5c2de5a6e109cd66dd94a37f40b02fa5df": [
     "ATADocs\\Troubleshoot\\media\\ATA-Gateway-perf-counters.png"
   ],
-  "d5119fef7939d5de9c08d40d1fd1a6f29128b810": [
-    "ATADocs\\Understand\\media\\ATA-log-in-screen.jpg"
-  ],
   "18204afb92c709be98646c610653d47b6625e11b": [
     "ATADocs\\Understand\\media\\ATA-console-search.png"
   ],
   "5a014a150f29b097053eae951f7ed49ce65518d0": [
     "ATADocs\\Understand\\media\\ATA-mini-profile.jpg"
+  ],
+  "f41c1a30ac5ae655bb8fc19e5a8c5da2961593bc": [
+    "ATADocs\\Understand\\ata-console-elements.md"
+  ],
+  "7ed12b436fccf9d40ecd76f13697812c159f69a3": [
+    "ATADocs\\Understand\\media\\attack-timeline.png"
+  ],
+  "5a5c773c62ea63438b12536bfdb91f0b2a6866bf": [
+    "ATADocs\\Understand\\media\\notification-bar.png"
+  ],
+  "2b57f03ff7f6b23f604e7ef93efa4bc72c1a544a": [
+    "ATADocs\\Understand\\media\\health-center.png"
+  ],
+  "746cfa4a7266e89f4083291f6903b6aea0509917": [
+    "ATADocs\\Understand\\media\\user-profile.png"
+  ],
+  "92803f3318fdfdbf17528b747b13f715ee40b7fe": [
+    "ATADocs\\Understand\\media\\computer-profile.png"
+  ],
+  "4fc9df3058f295d41f80db89e3805003cd18a9b7": [
+    "ATADocs\\Understand\\media\\ATA-Unresolved-Profile.jpg"
+  ],
+  "bd35194345e7704542aa52afcce464901ec13325": [
+    "ATADocs\\Understand\\media\\ata-server-icon.png"
   ]
 }

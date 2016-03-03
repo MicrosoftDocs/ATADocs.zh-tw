@@ -311,6 +311,9 @@
   "2fcb4e9e708146f15516178d5ddd691ba0196ee1": [
     "ATADocs\\Understand\\what-is-ata.md"
   ],
+  "da9c65775be8ea0558b6e6102b0459d9d20c0df8": [
+    "ATADocs\\Understand\\working-with-ata-console.md"
+  ],
   "15120e077d806cc39522dc33af009232094f54e3": [
     "ATADocs\\Understand\\working-with-ata-console.md"
   ],
@@ -491,6 +494,9 @@
   ],
   "5a014a150f29b097053eae951f7ed49ce65518d0": [
     "ATADocs\\Understand\\media\\ATA-mini-profile.jpg"
+  ],
+  "012a810e095e93f482f395ebc897ba56d180378f": [
+    "ATADocs\\Understand\\ata-console-elements.md"
   ],
   "f25bad7546aad54aed8156972c7d97dc6b37c634": [
     "ATADocs\\Understand\\ata-console-elements.md"

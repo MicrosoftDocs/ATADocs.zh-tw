@@ -2,6 +2,9 @@
   "cbde5c3d1a3b2ee4dad661739ded7c1e909eca48": [
     "ATADocs\\Understand\\media\\ATA-Kerberos-background.jpg"
   ],
+  "aedcaabdaa9b0b58e7a2730050946dbd0c0e1617": [
+    "ATADocs\\DeployUse\\ata-database-management.md"
+  ],
   "2bba6796de79a7d16bd85091daebb21d90fd7926": [
     "ATADocs\\DeployUse\\ata-database-management.md"
   ],
@@ -10,6 +13,9 @@
   ],
   "602a6f8522b3c1fe7ef39e7561f443b14e0cfe61": [
     "ATADocs\\DeployUse\\ata-database-management.md"
+  ],
+  "5262915a5373d3cecda42b4e27a9c9448c4b7e20": [
+    "ATADocs\\DeployUse\\ata-deploy-and-use.md"
   ],
   "8549506a41a4fe8f6bd42505207b1e88590839d4": [
     "ATADocs\\DeployUse\\ata-deploy-and-use.md"
@@ -38,6 +44,9 @@
   "a785a273d93ded27d1e62d4222bc15722dee2ec7": [
     "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md"
   ],
+  "0d0ba181a60423151343f7d1bab51d23d623b0e6": [
+    "ATADocs\\DeployUse\\install-ata.md"
+  ],
   "cf65d5cf4e2a96f7957c1ec6240b70bde2c9600f": [
     "ATADocs\\DeployUse\\install-ata.md"
   ],
@@ -49,6 +58,9 @@
   ],
   "937b1fb274e33ffcfe3e1e3ebe0b47b029436135": [
     "ATADocs\\DeployUse\\manage-telemetry-settings.md"
+  ],
+  "846fea593f5a9f0b72f3c3c760f6c9692295767f": [
+    "ATADocs\\DeployUse\\modifying-ata-configuration.md"
   ],
   "4dd204e5a08a03679ea4b3792138118b1d88408f": [
     "ATADocs\\DeployUse\\modifying-ata-configuration.md"
@@ -119,6 +131,9 @@
   "66f6fdf0e0fedad3ca450efcb9a1bd76f46f52bd": [
     "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
   ],
+  "9c4a867db472770ec3107eb8510861a8bb24cb6d": [
+    "ATADocs\\PlanDesign\\ata-capacity-planning.md"
+  ],
   "26c234d00167ba86cf6db268f0d1e95ae0761112": [
     "ATADocs\\PlanDesign\\ata-capacity-planning.md"
   ],
@@ -127,6 +142,9 @@
   ],
   "da1fd596e3e49fc33a24cc7bcc0fae614c3092b9": [
     "ATADocs\\PlanDesign\\ata-capacity-planning.md"
+  ],
+  "0050e8a8d58ca54bc84f0a6f3e0a5bf5ba25c4b8": [
+    "ATADocs\\PlanDesign\\ata-plan-and-design.md"
   ],
   "23927ca264d8bddf4fb84dede3516534663793a2": [
     "ATADocs\\PlanDesign\\ata-plan-and-design.md"
@@ -137,6 +155,9 @@
   "08a8e179293ef92c2dda52ff4c4a0431140b935c": [
     "ATADocs\\PlanDesign\\ata-plan-and-design.md"
   ],
+  "1714402fd13c27622ca2fe566ee68c46ffcf97e1": [
+    "ATADocs\\PlanDesign\\ata-prerequisites.md"
+  ],
   "03e72fea80398ac422da7450ca6301d4047189f0": [
     "ATADocs\\PlanDesign\\ata-prerequisites.md"
   ],
@@ -146,6 +167,9 @@
   "7aa4be5da967894f2e90f1aa10f270f752b5d771": [
     "ATADocs\\PlanDesign\\ata-prerequisites.md"
   ],
+  "8d17bccf44f5d76bd07c14a020ae406c1fda4a55": [
+    "ATADocs\\PlanDesign\\configure-event-collection.md"
+  ],
   "9444afaf3dff87620512c65cd8327bcc80df38d7": [
     "ATADocs\\PlanDesign\\configure-event-collection.md"
   ],
@@ -154,6 +178,9 @@
   ],
   "cbf1fa75bf4488d5fe023cc556406c073cf5c5e0": [
     "ATADocs\\PlanDesign\\configure-event-collection.md"
+  ],
+  "fcaefb0229374db93156787f2f210fd0b90d7e80": [
+    "ATADocs\\PlanDesign\\configure-port-mirroring.md"
   ],
   "3dc057b0250a1d8b8f6930c9ef6ebd570c2c3600": [
     "ATADocs\\PlanDesign\\configure-port-mirroring.md"
@@ -197,6 +224,9 @@
   "4f72d56afb9f53157569789b68455dcf49016a69": [
     "ATADocs\\Token\\ATA.md"
   ],
+  "50c3814a91a2b7b40467328337780bad9190b1a8": [
+    "ATADocs\\Troubleshoot\\ata-technical-faq.md"
+  ],
   "c4c3cc08eb19f6940a657249f6bd92c28c3bab07": [
     "ATADocs\\Troubleshoot\\ata-technical-faq.md"
   ],
@@ -227,6 +257,9 @@
   "568f440a14e7e286257af5626e1f9575843fe8a6": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md"
   ],
+  "900334326acabe3d56308904f639f7b5e0282aba": [
+    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
+  ],
   "a5e56a691701588d1a1870e6442553b50740fef7": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
   ],
@@ -235,6 +268,9 @@
   ],
   "302bd4d77858994e2d6b153391346ab5cffd59df": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
+  ],
+  "63017070169919136ff97d1cfe2313f105166b00": [
+    "ATADocs\\Understand\\ata-architecture.md"
   ],
   "5acb10d04d5d33c84faede28489a310f14cc6b39": [
     "ATADocs\\Understand\\ata-architecture.md"
@@ -260,6 +296,9 @@
   "4f363731e75b6cf7be2069e1c9aa16fcf48fb0cb": [
     "ATADocs\\Understand\\TOC.md"
   ],
+  "9d05d323dc10b96b302e710b4a8a089b5e42a8b5": [
+    "ATADocs\\Understand\\what-is-ata.md"
+  ],
   "d77e727e56bb8e45f53f29fad09edef495c0910b": [
     "ATADocs\\Understand\\what-is-ata.md"
   ],
@@ -271,6 +310,9 @@
   ],
   "2fcb4e9e708146f15516178d5ddd691ba0196ee1": [
     "ATADocs\\Understand\\what-is-ata.md"
+  ],
+  "15120e077d806cc39522dc33af009232094f54e3": [
+    "ATADocs\\Understand\\working-with-ata-console.md"
   ],
   "a637f05ca25289c9e702523cf42eabbf2387689b": [
     "ATADocs\\Understand\\working-with-ata-console.md"
@@ -287,11 +329,17 @@
   "48da69f3fb8edd5bb2d55052f63560940f943679": [
     "ATADocs\\DeployUse\\working-with-detection-settings.md"
   ],
+  "7abb89f22e079ab4390a53c67c1a5215c8803146": [
+    "ATADocs\\DeployUse\\pre-installation-steps.md"
+  ],
   "5c92b527b7b77a5f60f03f000e87a2437c3b5877": [
     "ATADocs\\DeployUse\\pre-installation-steps.md"
   ],
   "e55a4ca639dbe9e77cde76052fad9f5d605d5631": [
     "ATADocs\\DeployUse\\pre-installation-steps.md"
+  ],
+  "114927b07ab78ab6b85b38a9877dac505570a41f": [
+    "ATADocs\\Understand\\ata-faq.md"
   ],
   "717d474f94de653e8294a017d0d8ffc4a40dd596": [
     "ATADocs\\Understand\\ata-faq.md"
@@ -432,11 +480,20 @@
   "3a5b4e5c2de5a6e109cd66dd94a37f40b02fa5df": [
     "ATADocs\\Troubleshoot\\media\\ATA-Gateway-perf-counters.png"
   ],
+  "ede40a9e48ad2fdc2dc9a635adc503cd8d599fa1": [
+    "ATADocs\\Understand\\media\\ATA-log-in-screen.jpg"
+  ],
+  "d5119fef7939d5de9c08d40d1fd1a6f29128b810": [
+    "ATADocs\\Understand\\media\\ATA-log-in-screen.jpg"
+  ],
   "18204afb92c709be98646c610653d47b6625e11b": [
     "ATADocs\\Understand\\media\\ATA-console-search.png"
   ],
   "5a014a150f29b097053eae951f7ed49ce65518d0": [
     "ATADocs\\Understand\\media\\ATA-mini-profile.jpg"
+  ],
+  "f25bad7546aad54aed8156972c7d97dc6b37c634": [
+    "ATADocs\\Understand\\ata-console-elements.md"
   ],
   "f41c1a30ac5ae655bb8fc19e5a8c5da2961593bc": [
     "ATADocs\\Understand\\ata-console-elements.md"

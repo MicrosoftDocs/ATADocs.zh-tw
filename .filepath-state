@@ -44,6 +44,9 @@
   "a785a273d93ded27d1e62d4222bc15722dee2ec7": [
     "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md"
   ],
+  "f2362388a418a4ed969145676b7f65b1474f727d": [
+    "ATADocs\\DeployUse\\install-ata.md"
+  ],
   "0d0ba181a60423151343f7d1bab51d23d623b0e6": [
     "ATADocs\\DeployUse\\install-ata.md"
   ],
@@ -524,6 +527,9 @@
   ],
   "bd35194345e7704542aa52afcce464901ec13325": [
     "ATADocs\\Understand\\media\\ata-server-icon.png"
+  ],
+  "407dd4556cfc884b4c17a01991dfc8ded3f569bb": [
+    "ATADocs\\index.html"
   ],
   "218afda1e527c49e815a1928051c47a32ade8b21": [
     "ATADocs\\index.html"

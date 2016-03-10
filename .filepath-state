@@ -158,6 +158,9 @@
   "08a8e179293ef92c2dda52ff4c4a0431140b935c": [
     "ATADocs\\PlanDesign\\ata-plan-and-design.md"
   ],
+  "e47eb40c65d10f3d12420c2bc0af58ed8c2e1b25": [
+    "ATADocs\\PlanDesign\\ata-prerequisites.md"
+  ],
   "1714402fd13c27622ca2fe566ee68c46ffcf97e1": [
     "ATADocs\\PlanDesign\\ata-prerequisites.md"
   ],
@@ -170,6 +173,9 @@
   "7aa4be5da967894f2e90f1aa10f270f752b5d771": [
     "ATADocs\\PlanDesign\\ata-prerequisites.md"
   ],
+  "5816305fb0b01bf472d9edce6f2a945040dc6e58": [
+    "ATADocs\\PlanDesign\\configure-event-collection.md"
+  ],
   "8d17bccf44f5d76bd07c14a020ae406c1fda4a55": [
     "ATADocs\\PlanDesign\\configure-event-collection.md"
   ],
@@ -181,6 +187,9 @@
   ],
   "cbf1fa75bf4488d5fe023cc556406c073cf5c5e0": [
     "ATADocs\\PlanDesign\\configure-event-collection.md"
+  ],
+  "c8c06c10d829b510f21385d3073a7bb756780271": [
+    "ATADocs\\PlanDesign\\configure-port-mirroring.md"
   ],
   "fcaefb0229374db93156787f2f210fd0b90d7e80": [
     "ATADocs\\PlanDesign\\configure-port-mirroring.md"
@@ -202,6 +211,9 @@
   ],
   "349188b264359a5221b8b6bcef8db47ea6410b45": [
     "ATADocs\\PlanDesign\\TOC.md"
+  ],
+  "c79ba60d347cc4d192926e093fb60382c487c5de": [
+    "ATADocs\\PlanDesign\\validate-port-mirroring.md"
   ],
   "668e7d2b1becebee4a4cfbc5cb17961b911f8f3c": [
     "ATADocs\\PlanDesign\\validate-port-mirroring.md"
@@ -334,6 +346,9 @@
   ],
   "48da69f3fb8edd5bb2d55052f63560940f943679": [
     "ATADocs\\DeployUse\\working-with-detection-settings.md"
+  ],
+  "c064b7394ad0d6cf3f78f21f834500f165c6baf8": [
+    "ATADocs\\DeployUse\\pre-installation-steps.md"
   ],
   "7abb89f22e079ab4390a53c67c1a5215c8803146": [
     "ATADocs\\DeployUse\\pre-installation-steps.md"

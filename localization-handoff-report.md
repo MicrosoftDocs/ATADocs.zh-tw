@@ -1,17 +1,16 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 3
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [ATADocs\DeployUse\working-with-detection-settings.md](https://github.com/Microsoft/ATADocs-pr/blob/55d08d8c6ebffd2120478dafd67c7e6f282df7bb/ATADocs/DeployUse/working-with-detection-settings.md) | HandedOffFailed | [Details](#48da69f3fb8edd5bb2d55052f63560940f94367947)
- [ATADocs\PlanDesign\ata-capacity-planning.md](https://github.com/Microsoft/ATADocs-pr/blob/55d08d8c6ebffd2120478dafd67c7e6f282df7bb/ATADocs/PlanDesign/ata-capacity-planning.md) | HandedOffSuccess | [Details](#8dae653c43b144c6d1ee8b2efdf4b326c14bb3c2125)
- [ATADocs\PlanDesign\ata-plan-and-design.md](https://github.com/Microsoft/ATADocs-pr/blob/55d08d8c6ebffd2120478dafd67c7e6f282df7bb/ATADocs/PlanDesign/ata-plan-and-design.md) | HandedOffSuccess | [Details](#248ad7b1d055abf75df8bf932d7583b6f8b6dee7126)
+ [ATADocs\DeployUse\working-with-detection-settings.md](https://github.com/Microsoft/ATADocs-pr/blob/3e82f207fdda7569258944c86cbb41e9616cf57c/ATADocs/DeployUse/working-with-detection-settings.md) | HandedOffFailed | [Details](#48da69f3fb8edd5bb2d55052f63560940f94367947)
+ [ATADocs\index.html](https://github.com/Microsoft/ATADocs-pr/blob/3e82f207fdda7569258944c86cbb41e9616cf57c/ATADocs/index.html) | HandedOffSuccess | [Details](#78175e5e559433f50389d54a92da5c5ad179583b124)
 
 ## Item Details
-##### <a name='48da69f3fb8edd5bb2d55052f63560940f94367947'></a> Source: [ATADocs\DeployUse\working-with-detection-settings.md](https://github.com/Microsoft/ATADocs-pr/blob/55d08d8c6ebffd2120478dafd67c7e6f282df7bb/ATADocs/DeployUse/working-with-detection-settings.md)
+##### <a name='48da69f3fb8edd5bb2d55052f63560940f94367947'></a> Source: [ATADocs\DeployUse\working-with-detection-settings.md](https://github.com/Microsoft/ATADocs-pr/blob/3e82f207fdda7569258944c86cbb41e9616cf57c/ATADocs/DeployUse/working-with-detection-settings.md)
 * Status: HandedOffFailed
 * Target File: 
 * Handoff File: 
@@ -24,23 +23,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='8dae653c43b144c6d1ee8b2efdf4b326c14bb3c2125'></a> Source: [ATADocs\PlanDesign\ata-capacity-planning.md](https://github.com/Microsoft/ATADocs-pr/blob/55d08d8c6ebffd2120478dafd67c7e6f282df7bb/ATADocs/PlanDesign/ata-capacity-planning.md)
+##### <a name='78175e5e559433f50389d54a92da5c5ad179583b124'></a> Source: [ATADocs\index.html](https://github.com/Microsoft/ATADocs-pr/blob/3e82f207fdda7569258944c86cbb41e9616cf57c/ATADocs/index.html)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [ata-capacity-planning.7dded00c6a8ca713a36c240993fc56aa469bbb4b.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/88c40dc1aa6093d09bdb6685115650bc875ae077/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/ata-capacity-planning.7dded00c6a8ca713a36c240993fc56aa469bbb4b.zh-tw.xlf)
-* Handoff Datetime: 2016-03-14 17:55:01
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='248ad7b1d055abf75df8bf932d7583b6f8b6dee7126'></a> Source: [ATADocs\PlanDesign\ata-plan-and-design.md](https://github.com/Microsoft/ATADocs-pr/blob/55d08d8c6ebffd2120478dafd67c7e6f282df7bb/ATADocs/PlanDesign/ata-plan-and-design.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [ata-plan-and-design.59b44a3cff18ef6cd1ecb64f5b3c2aa92aa6de6b.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/88c40dc1aa6093d09bdb6685115650bc875ae077/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/ata-plan-and-design.59b44a3cff18ef6cd1ecb64f5b3c2aa92aa6de6b.zh-tw.xlf)
-* Handoff Datetime: 2016-03-14 17:55:01
+* Handoff File: [78175e5e559433f50389d54a92da5c5ad179583b.html](https://github.com/Microsoft/EM.handoff/blob/8ecccd6a429a2b9ff2b905aa8291f0a069457ea2/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/78175e5e559433f50389d54a92da5c5ad179583b.html)
+* Handoff Datetime: 2016-03-14 18:25:27
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00

@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "3e82f207fdda7569258944c86cbb41e9616cf57c",
+  "LastProcessedCommit": "0af57a1da6c16b5aae5896debda20710ffb3bb71",
   "LastTranslatedCommit": null,
   "Items": {
     "19ffcb31b9fc0f69362ca0b4fd2e2fdb06dc11d6": {
@@ -1961,7 +1961,7 @@
       ],
       "HandoffFilePath": null,
       "HandoffFileCommit": null,
-      "HandoffDateTime": "2016-03-14T18:25:27.0288892Z",
+      "HandoffDateTime": "2016-03-14T19:25:55.6781843Z",
       "HandoffPriority": "",
       "HandoffException": {
         "internal_error_code": "handoff_transform_failed",
@@ -1972,7 +1972,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass10_1.<GetHandoffFiles>b__1(Tuple`3 handoff) in D:\\DevEnlistments\\Source\\OpenLocalization\\src\\OpenLocalization\\Localization\\HandoffCore.cs:line 362",
         "extended_information": null
       },
-      "HandoffFailureTimes": 11,
+      "HandoffFailureTimes": 12,
       "TargetFileCommit": null,
       "TargetFilePath": null,
       "HandbackFilePath": null,
@@ -6150,6 +6150,34 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\78175e5e559433f50389d54a92da5c5ad179583b.html",
       "HandoffFileCommit": "8ecccd6a429a2b9ff2b905aa8291f0a069457ea2",
       "HandoffDateTime": "2016-03-14T18:25:27.0288892Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "21dcba1fb595d26ab1a330546f079527a9b74fa9": {
+      "FileHash": "21dcba1fb595d26ab1a330546f079527a9b74fa9",
+      "SourceFileCommit": "0af57a1da6c16b5aae5896debda20710ffb3bb71",
+      "SourceFilePath": "ATADocs\\Understand\\what-is-ata.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "ATADocs\\Understand\\what-is-ata.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\what-is-ata.26e22f3b3bdc705961558ab294bf44dabd1ee498.zh-tw.xlf",
+      "HandoffFileCommit": "423efdca7c0e9cdfa78f6cb545f972d08c552359",
+      "HandoffDateTime": "2016-03-14T19:25:55.6781843Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,

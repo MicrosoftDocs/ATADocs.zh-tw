@@ -5,13 +5,13 @@
  -------- | ----- 
  Total Files | 193
 [ Handoff Failed Files ](#handoff-failed-list)| 1
-[ Handoff Success Files ](#handoff-success-list)| 167
+[ Handoff Success Files ](#handoff-success-list)| 166
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
 [ In Sync Handback Files ](#insync-handback-success-list)| 0
-[ Ignored Files ](#ignored-list)| 25
+[ Ignored Files ](#ignored-list)| 26
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
  Source File | Status | Details 
@@ -122,7 +122,6 @@
  [ATADocs\Image\wef_ad-event-log-reader-popup.png](https://github.com/Microsoft/ATADocs-pr/blob/55d08d8c6ebffd2120478dafd67c7e6f282df7bb/ATADocs/Image/wef_ad-event-log-reader-popup.png) | HandedOffSuccess | [Details](#ae46394f83c94ae0f48d6a7d9a7cd6d18b58adf0120)
  [ATADocs\Image\wef_http.png](https://github.com/Microsoft/ATADocs-pr/blob/55d08d8c6ebffd2120478dafd67c7e6f282df7bb/ATADocs/Image/wef_http.png) | HandedOffSuccess | [Details](#d4d9ac890b80451972fbe194c30577b0655be0cd122)
  [ATADocs\Image\wef_subscription-prop.png](https://github.com/Microsoft/ATADocs-pr/blob/55d08d8c6ebffd2120478dafd67c7e6f282df7bb/ATADocs/Image/wef_subscription-prop.png) | HandedOffSuccess | [Details](#9b8562feafa85324c9a6e3e9020450535df920c6123)
- [ATADocs\index.html](https://github.com/Microsoft/ATADocs-pr/blob/b98547e340bce87faba3e3aa209d738ddbc4612c/ATADocs/index.html) | HandedOffSuccess | [Details](#407dd4556cfc884b4c17a01991dfc8ded3f569bb124)
  [ATADocs\PlanDesign\ata-capacity-planning.md](https://github.com/Microsoft/ATADocs-pr/blob/55d08d8c6ebffd2120478dafd67c7e6f282df7bb/ATADocs/PlanDesign/ata-capacity-planning.md) | HandedOffSuccess | [Details](#8dae653c43b144c6d1ee8b2efdf4b326c14bb3c2125)
  [ATADocs\PlanDesign\ata-plan-and-design.md](https://github.com/Microsoft/ATADocs-pr/blob/55d08d8c6ebffd2120478dafd67c7e6f282df7bb/ATADocs/PlanDesign/ata-plan-and-design.md) | HandedOffSuccess | [Details](#248ad7b1d055abf75df8bf932d7583b6f8b6dee7126)
  [ATADocs\PlanDesign\ata-prerequisites.md](https://github.com/Microsoft/ATADocs-pr/blob/b98547e340bce87faba3e3aa209d738ddbc4612c/ATADocs/PlanDesign/ata-prerequisites.md) | HandedOffSuccess | [Details](#e47eb40c65d10f3d12420c2bc0af58ed8c2e1b25127)
@@ -224,6 +223,7 @@
  [ATADocs\Image\AzureWebsiteIcons-install.png](https://github.com/Microsoft/ATADocs-pr/blob/55d08d8c6ebffd2120478dafd67c7e6f282df7bb/ATADocs/Image/AzureWebsiteIcons-install.png) | Ignored | [Details](#5a5fef111ba0c2b61d5c6e3b35def26563c95b6c112)
  [ATADocs\Image\AzureWebsiteIcons-manage.png](https://github.com/Microsoft/ATADocs-pr/blob/55d08d8c6ebffd2120478dafd67c7e6f282df7bb/ATADocs/Image/AzureWebsiteIcons-manage.png) | Ignored | [Details](#24fa3a74955fb520a2cafe7f2ff80415def4107d113)
  [ATADocs\Image\AzureWebsiteIcons-what-is-ata.png](https://github.com/Microsoft/ATADocs-pr/blob/55d08d8c6ebffd2120478dafd67c7e6f282df7bb/ATADocs/Image/AzureWebsiteIcons-what-is-ata.png) | Ignored | [Details](#e3c9dfb90cc3f2eebd8aa3395e3ab03666bc32bd114)
+ [ATADocs\index.html](https://github.com/Microsoft/ATADocs-pr/blob/55d08d8c6ebffd2120478dafd67c7e6f282df7bb/ATADocs/index.html) | Ignored | [Details](#78175e5e559433f50389d54a92da5c5ad179583b124)
  [ATADocs\PlanDesign\docfx.json](https://github.com/Microsoft/ATADocs-pr/blob/55d08d8c6ebffd2120478dafd67c7e6f282df7bb/ATADocs/PlanDesign/docfx.json) | Ignored | [Details](#a2bfe2c3e9cedfeb2bfdaf4a3a52d6c399606481130)
  [ATADocs\Troubleshoot\docfx.json](https://github.com/Microsoft/ATADocs-pr/blob/55d08d8c6ebffd2120478dafd67c7e6f282df7bb/ATADocs/Troubleshoot/docfx.json) | Ignored | [Details](#99a81843613d4381a146aa51c430951cf2c45c97157)
  [ATADocs\Understand\docfx.json](https://github.com/Microsoft/ATADocs-pr/blob/55d08d8c6ebffd2120478dafd67c7e6f282df7bb/ATADocs/Understand/docfx.json) | Ignored | [Details](#fb0fcc10d9bff1999eede974ecc51010a1e8771a171)
@@ -1805,12 +1805,12 @@
 * Dependency From: ATADocs\PlanDesign\configure-event-collection.md
 * [Back to Top](#report-top)
 
-##### <a name='407dd4556cfc884b4c17a01991dfc8ded3f569bb124'></a> Source: [ATADocs\index.html](https://github.com/Microsoft/ATADocs-pr/blob/b98547e340bce87faba3e3aa209d738ddbc4612c/ATADocs/index.html)
-* Status: HandedOffSuccess
+##### <a name='78175e5e559433f50389d54a92da5c5ad179583b124'></a> Source: [ATADocs\index.html](https://github.com/Microsoft/ATADocs-pr/blob/55d08d8c6ebffd2120478dafd67c7e6f282df7bb/ATADocs/index.html)
+* Status: Ignored
 * Target File: 
-* Handoff File: [407dd4556cfc884b4c17a01991dfc8ded3f569bb.html](https://github.com/Microsoft/EM.handoff/blob/718602ed31947828ba7fd1687b81f4c1c8c94484/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/407dd4556cfc884b4c17a01991dfc8ded3f569bb.html)
-* Handoff Datetime: 2016-03-10 22:14:02
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 

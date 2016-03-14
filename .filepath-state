@@ -155,6 +155,9 @@
   "66f6fdf0e0fedad3ca450efcb9a1bd76f46f52bd": [
     "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
   ],
+  "7c257e7f8b6165aecd7be3e6d9ac8be6b4efd2ad": [
+    "ATADocs\\PlanDesign\\ata-capacity-planning.md"
+  ],
   "a7f5aa47c7f0a0e18996dd5d301b0bb17541b54d": [
     "ATADocs\\PlanDesign\\ata-capacity-planning.md"
   ],
@@ -172,6 +175,9 @@
   ],
   "da1fd596e3e49fc33a24cc7bcc0fae614c3092b9": [
     "ATADocs\\PlanDesign\\ata-capacity-planning.md"
+  ],
+  "9ceee3b6cf289d841f2aad7dfd3237e5cc1a14ae": [
+    "ATADocs\\PlanDesign\\ata-plan-and-design.md"
   ],
   "a2ddf99e04b9bb83df82b388b067e168e132d2d7": [
     "ATADocs\\PlanDesign\\ata-plan-and-design.md"
@@ -191,6 +197,9 @@
   "08a8e179293ef92c2dda52ff4c4a0431140b935c": [
     "ATADocs\\PlanDesign\\ata-plan-and-design.md"
   ],
+  "a2401adba452c5fe9d516190f06ccb852f527aff": [
+    "ATADocs\\PlanDesign\\ata-prerequisites.md"
+  ],
   "10ec02e7409e0616a0df6793b0a2204a1a36b4b2": [
     "ATADocs\\PlanDesign\\ata-prerequisites.md"
   ],
@@ -209,6 +218,9 @@
   "7aa4be5da967894f2e90f1aa10f270f752b5d771": [
     "ATADocs\\PlanDesign\\ata-prerequisites.md"
   ],
+  "db77d275c3076c036093fa46e8d7899ba0bbd53f": [
+    "ATADocs\\PlanDesign\\configure-event-collection.md"
+  ],
   "99cfacefec8cb699c060bf57132b9cd979996b92": [
     "ATADocs\\PlanDesign\\configure-event-collection.md"
   ],
@@ -226,6 +238,9 @@
   ],
   "cbf1fa75bf4488d5fe023cc556406c073cf5c5e0": [
     "ATADocs\\PlanDesign\\configure-event-collection.md"
+  ],
+  "71acc92815b6f4f6b09ee1c0b7b5e674db62b0d1": [
+    "ATADocs\\PlanDesign\\configure-port-mirroring.md"
   ],
   "4aa54efd4328dad14dacbbacb69d1f16c5a7b906": [
     "ATADocs\\PlanDesign\\configure-port-mirroring.md"
@@ -253,6 +268,9 @@
   ],
   "349188b264359a5221b8b6bcef8db47ea6410b45": [
     "ATADocs\\PlanDesign\\TOC.md"
+  ],
+  "d205f5c1cb938f284dbfb5da7e92750a2c254c47": [
+    "ATADocs\\PlanDesign\\validate-port-mirroring.md"
   ],
   "228b7c467c5e39d028617c29f4368b04e34eb146": [
     "ATADocs\\PlanDesign\\validate-port-mirroring.md"
@@ -346,6 +364,9 @@
   ],
   "302bd4d77858994e2d6b153391346ab5cffd59df": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
+  ],
+  "1dfb99b6650813bba780b9b4ed3cf8feca0292b0": [
+    "ATADocs\\Understand\\ata-architecture.md"
   ],
   "9af98c35df6fa1f1e9046b80dc01dc772dd93712": [
     "ATADocs\\Understand\\ata-architecture.md"

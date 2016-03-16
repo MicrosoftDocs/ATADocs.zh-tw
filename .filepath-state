@@ -2,6 +2,9 @@
   "cbde5c3d1a3b2ee4dad661739ded7c1e909eca48": [
     "ATADocs\\Understand\\media\\ATA-Kerberos-background.jpg"
   ],
+  "5b1e27a8d206ebcc556b95cbde8aac9a34fae45c": [
+    "ATADocs\\DeployUse\\ata-database-management.md"
+  ],
   "b70a89cee27b900cdcd69aaee8b571f0eacabab4": [
     "ATADocs\\DeployUse\\ata-database-management.md"
   ],
@@ -17,6 +20,9 @@
   "602a6f8522b3c1fe7ef39e7561f443b14e0cfe61": [
     "ATADocs\\DeployUse\\ata-database-management.md"
   ],
+  "28c95912df5fb37e332dbb78d20db86be19e9237": [
+    "ATADocs\\DeployUse\\ata-health-center.md"
+  ],
   "0dcc03d1ad285e3347cb05045729df1a6063e917": [
     "ATADocs\\DeployUse\\ata-health-center.md"
   ],
@@ -29,6 +35,9 @@
   "2b2f3115160dacb146fa2331c99e3af021a54ec4": [
     "ATADocs\\DeployUse\\ata-health-center.md"
   ],
+  "011c7466826129e032d6c25e89ee5c3a6067e076": [
+    "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md"
+  ],
   "93daa1fd6c1e466c5e8f5378d3569df5cd9eb838": [
     "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md"
   ],
@@ -40,6 +49,9 @@
   ],
   "a785a273d93ded27d1e62d4222bc15722dee2ec7": [
     "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md"
+  ],
+  "5d0cfa04c90568ebf17ac8c53131305252297847": [
+    "ATADocs\\DeployUse\\install-ata.md"
   ],
   "46b8d82a355391cd852500217dd3b02d0372f5dd": [
     "ATADocs\\DeployUse\\install-ata.md"
@@ -65,6 +77,9 @@
   "937b1fb274e33ffcfe3e1e3ebe0b47b029436135": [
     "ATADocs\\DeployUse\\manage-telemetry-settings.md"
   ],
+  "59da20a14310ab6b6de90495c91bee25dfdefd74": [
+    "ATADocs\\DeployUse\\modifying-ata-configuration.md"
+  ],
   "b6a3bfa245e61d308b7737964af8c5d34df6df41": [
     "ATADocs\\DeployUse\\modifying-ata-configuration.md"
   ],
@@ -79,6 +94,9 @@
   ],
   "c4090fa2ac4227196018af7b064e91d6774ec9ca": [
     "ATADocs\\DeployUse\\modifying-ata-configuration.md"
+  ],
+  "725e7d31ba5b6891868ba18f492b3542c73814c5": [
+    "ATADocs\\DeployUse\\setting-ata-alerts.md"
   ],
   "f73bc08009eff4efea18d25d763d6fef65a333fe": [
     "ATADocs\\DeployUse\\setting-ata-alerts.md"
@@ -107,6 +125,9 @@
   "033f950c6134eda79ebdc83dc7f7e33c05b92701": [
     "ATADocs\\DeployUse\\TOC.md"
   ],
+  "556aea24ab931189674ed1f91956342633f59519": [
+    "ATADocs\\DeployUse\\whats-new-version-1.4.md"
+  ],
   "e2ed9626e3493f53f9a7954ab243ca2830ea3986": [
     "ATADocs\\DeployUse\\whats-new-version-1.4.md"
   ],
@@ -131,6 +152,9 @@
   "4ca984bd05e0eab812d0075c6b4daec3eecb5532": [
     "ATADocs\\DeployUse\\whats-new-version-1.5.md"
   ],
+  "83a8414d8ab39141632dbd550d7c692353544b96": [
+    "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
+  ],
   "e56d41341a332c5985570d506dba190946b3e235": [
     "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
   ],
@@ -142,6 +166,9 @@
   ],
   "66f6fdf0e0fedad3ca450efcb9a1bd76f46f52bd": [
     "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
+  ],
+  "9d76483ebb4f5f91088a9369d491339c70c029c2": [
+    "ATADocs\\PlanDesign\\ata-capacity-planning.md"
   ],
   "7c257e7f8b6165aecd7be3e6d9ac8be6b4efd2ad": [
     "ATADocs\\PlanDesign\\ata-capacity-planning.md"
@@ -164,6 +191,9 @@
   "da1fd596e3e49fc33a24cc7bcc0fae614c3092b9": [
     "ATADocs\\PlanDesign\\ata-capacity-planning.md"
   ],
+  "9c5c34e7e16520c78c9e83465a40ca9a379bd702": [
+    "ATADocs\\PlanDesign\\ata-prerequisites.md"
+  ],
   "a2401adba452c5fe9d516190f06ccb852f527aff": [
     "ATADocs\\PlanDesign\\ata-prerequisites.md"
   ],
@@ -184,6 +214,9 @@
   ],
   "7aa4be5da967894f2e90f1aa10f270f752b5d771": [
     "ATADocs\\PlanDesign\\ata-prerequisites.md"
+  ],
+  "aff0a9f090cebd69df80abdcdc46168039d7e8f8": [
+    "ATADocs\\PlanDesign\\configure-event-collection.md"
   ],
   "db77d275c3076c036093fa46e8d7899ba0bbd53f": [
     "ATADocs\\PlanDesign\\configure-event-collection.md"
@@ -238,6 +271,9 @@
   ],
   "349188b264359a5221b8b6bcef8db47ea6410b45": [
     "ATADocs\\PlanDesign\\TOC.md"
+  ],
+  "ad1a245bcf6bc2870fcd7663938ff624218d52cf": [
+    "ATADocs\\PlanDesign\\validate-port-mirroring.md"
   ],
   "d205f5c1cb938f284dbfb5da7e92750a2c254c47": [
     "ATADocs\\PlanDesign\\validate-port-mirroring.md"
@@ -320,6 +356,9 @@
   "568f440a14e7e286257af5626e1f9575843fe8a6": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md"
   ],
+  "b419ed618dfe8c1490bb26d523034f4b974d101a": [
+    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
+  ],
   "dbc46857af94015fe303542da174b04b1cfdaa3b": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
   ],
@@ -334,6 +373,9 @@
   ],
   "302bd4d77858994e2d6b153391346ab5cffd59df": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
+  ],
+  "a23b8107ffeb157e6d26f4228e847c70548de98e": [
+    "ATADocs\\Understand\\ata-architecture.md"
   ],
   "1dfb99b6650813bba780b9b4ed3cf8feca0292b0": [
     "ATADocs\\Understand\\ata-architecture.md"
@@ -391,6 +433,9 @@
   ],
   "2fcb4e9e708146f15516178d5ddd691ba0196ee1": [
     "ATADocs\\Understand\\what-is-ata.md"
+  ],
+  "e6ebf926b41950a4b4a3c98683908bf99009adb0": [
+    "ATADocs\\Understand\\working-with-ata-console.md"
   ],
   "f0b2170e6c6309e682073819f741d1789c10d492": [
     "ATADocs\\Understand\\working-with-ata-console.md"
@@ -602,6 +647,9 @@
   ],
   "5a014a150f29b097053eae951f7ed49ce65518d0": [
     "ATADocs\\Understand\\media\\ATA-mini-profile.jpg"
+  ],
+  "dfe874b6569d551190a019abf86df11fd022fd58": [
+    "ATADocs\\Understand\\ata-console-elements.md"
   ],
   "f35bdd1d6aa6212c36b6a4c63d9b0cd42aaa24db": [
     "ATADocs\\Understand\\ata-console-elements.md"

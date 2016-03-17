@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "749bd9475578937cfd929aa9cae4558fcd41e0c4",
+  "LastProcessedCommit": "68f2d58f81852c02b7ade83b621cfad43e0a2d47",
   "LastTranslatedCommit": null,
   "Items": {
     "19ffcb31b9fc0f69362ca0b4fd2e2fdb06dc11d6": {
@@ -8034,6 +8034,34 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\working-with-ata-console.1727ee5b9929dac975a02036ec1253cb008ce881.zh-tw.xlf",
       "HandoffFileCommit": "fcd0c0568d1232a7f5c769412fd8494076d4cf16",
       "HandoffDateTime": "2016-03-16T16:59:48.7272467Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "3c913705d26aa8f882b9aa3860a08c692d86751f": {
+      "FileHash": "3c913705d26aa8f882b9aa3860a08c692d86751f",
+      "SourceFileCommit": "68f2d58f81852c02b7ade83b621cfad43e0a2d47",
+      "SourceFilePath": "ATADocs\\Understand\\what-is-ata.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "FilePathList": [
+        "ATADocs\\Understand\\what-is-ata.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\what-is-ata.26e22f3b3bdc705961558ab294bf44dabd1ee498.zh-tw.xlf",
+      "HandoffFileCommit": "bd8bee22be8a363c50e084973418459f2de5cd81",
+      "HandoffDateTime": "2016-03-17T21:26:11.6715347Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,

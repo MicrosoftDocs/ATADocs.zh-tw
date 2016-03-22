@@ -437,6 +437,9 @@
   "2fcb4e9e708146f15516178d5ddd691ba0196ee1": [
     "ATADocs\\Understand\\what-is-ata.md"
   ],
+  "8441f09623a2dfda80f055d720c84c7b1519483a": [
+    "ATADocs\\Understand\\working-with-ata-console.md"
+  ],
   "e6ebf926b41950a4b4a3c98683908bf99009adb0": [
     "ATADocs\\Understand\\working-with-ata-console.md"
   ],
@@ -501,8 +504,7 @@
     "ATADocs\\DeployUse\\media\\ATA-mongoDB-moveDB.png"
   ],
   "d2b6088dd989cb01d54c714b18b23fdac454c71c": [
-    "ATADocs\\DeployUse\\media\\ATA-Health-Center-Alert-red-dot.png",
-    "ATADocs\\Understand\\media\\ATA-Health-Center-Alert-red-dot.png"
+    "ATADocs\\DeployUse\\media\\ATA-Health-Center-Alert-red-dot.png"
   ],
   "efd559ab69debefb5f3e2fb6fd1a0f293070fbf1": [
     "ATADocs\\DeployUse\\media\\ATA-red-dot.png"
@@ -645,11 +647,8 @@
   "d5119fef7939d5de9c08d40d1fd1a6f29128b810": [
     "ATADocs\\Understand\\media\\ATA-log-in-screen.jpg"
   ],
-  "18204afb92c709be98646c610653d47b6625e11b": [
-    "ATADocs\\Understand\\media\\ATA-console-search.png"
-  ],
-  "5a014a150f29b097053eae951f7ed49ce65518d0": [
-    "ATADocs\\Understand\\media\\ATA-mini-profile.jpg"
+  "5426ef4c7789a2036e234feb4be64f0995002c3e": [
+    "ATADocs\\Understand\\ata-console-elements.md"
   ],
   "dfe874b6569d551190a019abf86df11fd022fd58": [
     "ATADocs\\Understand\\ata-console-elements.md"
@@ -665,21 +664,6 @@
   ],
   "f41c1a30ac5ae655bb8fc19e5a8c5da2961593bc": [
     "ATADocs\\Understand\\ata-console-elements.md"
-  ],
-  "7ed12b436fccf9d40ecd76f13697812c159f69a3": [
-    "ATADocs\\Understand\\media\\attack-timeline.png"
-  ],
-  "5a5c773c62ea63438b12536bfdb91f0b2a6866bf": [
-    "ATADocs\\Understand\\media\\notification-bar.png"
-  ],
-  "2b57f03ff7f6b23f604e7ef93efa4bc72c1a544a": [
-    "ATADocs\\Understand\\media\\health-center.png"
-  ],
-  "746cfa4a7266e89f4083291f6903b6aea0509917": [
-    "ATADocs\\Understand\\media\\user-profile.png"
-  ],
-  "92803f3318fdfdbf17528b747b13f715ee40b7fe": [
-    "ATADocs\\Understand\\media\\computer-profile.png"
   ],
   "4fc9df3058f295d41f80db89e3805003cd18a9b7": [
     "ATADocs\\Understand\\media\\ATA-Unresolved-Profile.jpg"

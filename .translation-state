@@ -8,6 +8,7 @@
       "SourceFilePath": "ATADocs\\ata-faq.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\ata-faq.md"
       ],
@@ -39,6 +40,7 @@
         "ATADocs\\ata-faq.md",
         "ATADocs\\Understand\\ata-faq.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Image\\ATA-Kerberos-background.jpg",
         "ATADocs\\Understand\\media\\ATA-Kerberos-background.jpg"
@@ -68,6 +70,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-database-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-database-management.md"
       ],
@@ -96,6 +99,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-deploy-and-use.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-deploy-and-use.md"
       ],
@@ -124,6 +128,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-health-center.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-health-center.md"
       ],
@@ -152,6 +157,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md"
       ],
@@ -180,6 +186,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\install-ata.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\install-ata.md"
       ],
@@ -208,6 +215,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\manage-telemetry-settings.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\manage-telemetry-settings.md"
       ],
@@ -236,6 +244,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\modifying-ata-configuration.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\modifying-ata-configuration.md"
       ],
@@ -264,6 +273,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\Sample.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\Sample.md",
         "ATADocs\\PlanDesign\\Sample.md",
@@ -300,6 +310,7 @@
         "ATADocs\\Troubleshoot\\Sample.md",
         "ATADocs\\Understand\\Sample.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\150x150.png",
         "ATADocs\\PlanDesign\\media\\150x150.png",
@@ -331,6 +342,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\setting-ata-alerts.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\setting-ata-alerts.md"
       ],
@@ -359,6 +371,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\TOC.md"
       ],
@@ -387,6 +400,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\whats-new-version-1.4.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\whats-new-version-1.4.md"
       ],
@@ -415,6 +429,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\whats-new-version-1.5.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\whats-new-version-1.5.md"
       ],
@@ -443,6 +458,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\working-with-suspicious-activities.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
       ],
@@ -471,6 +487,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-capacity-planning.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-capacity-planning.md"
       ],
@@ -499,6 +516,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-plan-and-design.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-plan-and-design.md"
       ],
@@ -527,6 +545,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-prerequisites.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-prerequisites.md"
       ],
@@ -555,6 +574,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\configure-event-collection.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\configure-event-collection.md"
       ],
@@ -583,6 +603,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\configure-port-mirroring.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\configure-port-mirroring.md"
       ],
@@ -611,6 +632,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\TOC.md"
       ],
@@ -639,6 +661,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\validate-port-mirroring.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\validate-port-mirroring.md"
       ],
@@ -667,6 +690,7 @@
       "SourceFilePath": "ATADocs\\pre-installation-steps.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\pre-installation-steps.md"
       ],
@@ -703,6 +727,7 @@
         "ATADocs\\DeployUse\\pre-installation-steps.md",
         "ATADocs\\PlanDesign\\ata-prerequisites.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Image\\ATA-architecture-topology.jpg",
         "ATADocs\\Understand\\media\\ATA-architecture-topology.jpg",
@@ -739,6 +764,7 @@
         "ATADocs\\PlanDesign\\ata-plan-and-design.md",
         "ATADocs\\PlanDesign\\ata-prerequisites.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Image\\ATA-DNS-Suffix.png",
         "ATADocs\\DeployUse\\media\\ATA-DNS-Suffix.png",
@@ -769,6 +795,7 @@
       "SourceFilePath": "ATADocs\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\TOC.md"
       ],
@@ -797,6 +824,7 @@
       "SourceFilePath": "ATADocs\\Token\\ATA.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Token\\ATA.md"
       ],
@@ -825,6 +853,7 @@
       "SourceFilePath": "ATADocs\\Topic\\Appendix-C--Sample-Advanced-Threat-Analytics-deployment-diagrams.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\Appendix-C--Sample-Advanced-Threat-Analytics-deployment-diagrams.md"
       ],
@@ -855,6 +884,7 @@
       "DependencyFrom": [
         "ATADocs\\Topic\\Appendix-C--Sample-Advanced-Threat-Analytics-deployment-diagrams.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Image\\ATA-Sample-Deployment.JPG"
       ],
@@ -883,6 +913,7 @@
       "SourceFilePath": "ATADocs\\Topic\\ATA-database-maintenance.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\ATA-database-maintenance.md"
       ],
@@ -911,6 +942,7 @@
       "SourceFilePath": "ATADocs\\Topic\\ATA-Deployment-Guide.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\ATA-Deployment-Guide.md"
       ],
@@ -939,6 +971,7 @@
       "SourceFilePath": "ATADocs\\Topic\\ATA-Frequently-Asked-Questions.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\ATA-Frequently-Asked-Questions.md"
       ],
@@ -967,6 +1000,7 @@
       "SourceFilePath": "ATADocs\\Topic\\ATA-Liza.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\ATA-Liza.md"
       ],
@@ -995,6 +1029,7 @@
       "SourceFilePath": "ATADocs\\Topic\\ATA-Operations-Guide.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\ATA-Operations-Guide.md"
       ],
@@ -1023,6 +1058,7 @@
       "SourceFilePath": "ATADocs\\Topic\\ATA-Pre-Installation-Steps.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\ATA-Pre-Installation-Steps.md"
       ],
@@ -1051,6 +1087,7 @@
       "SourceFilePath": "ATADocs\\Topic\\ATA-Release-Notes.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\ATA-Release-Notes.md"
       ],
@@ -1079,6 +1116,7 @@
       "SourceFilePath": "ATADocs\\Topic\\Configuring-Windows-Event-Forwarding.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\Configuring-Windows-Event-Forwarding.md"
       ],
@@ -1107,6 +1145,7 @@
       "SourceFilePath": "ATADocs\\Topic\\logs.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\logs.md"
       ],
@@ -1135,6 +1174,7 @@
       "SourceFilePath": "ATADocs\\Topic\\Markdown-trial_deleted.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\Markdown-trial_deleted.md"
       ],
@@ -1163,6 +1203,7 @@
       "SourceFilePath": "ATADocs\\Topic\\MD-conversion-placeholder_deleted.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\MD-conversion-placeholder_deleted.md"
       ],
@@ -1191,6 +1232,7 @@
       "SourceFilePath": "ATADocs\\Topic\\Microsoft-Advanced-Threat-Analytics.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\Microsoft-Advanced-Threat-Analytics.md"
       ],
@@ -1219,6 +1261,7 @@
       "SourceFilePath": "ATADocs\\Topic\\Planning.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\Planning.md"
       ],
@@ -1247,6 +1290,7 @@
       "SourceFilePath": "ATADocs\\Topic\\test.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\test.md"
       ],
@@ -1275,6 +1319,7 @@
       "SourceFilePath": "ATADocs\\Topic\\toc1.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\toc1.md"
       ],
@@ -1303,6 +1348,7 @@
       "SourceFilePath": "ATADocs\\Topic\\toc2.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\toc2.md"
       ],
@@ -1331,6 +1377,7 @@
       "SourceFilePath": "ATADocs\\Topic\\toc3.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\toc3.md"
       ],
@@ -1359,6 +1406,7 @@
       "SourceFilePath": "ATADocs\\Topic\\toc4.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\toc4.md"
       ],
@@ -1387,6 +1435,7 @@
       "SourceFilePath": "ATADocs\\Topic\\toc5.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\toc5.md"
       ],
@@ -1415,6 +1464,7 @@
       "SourceFilePath": "ATADocs\\Topic\\Tracking-threats-with-ATA.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\Tracking-threats-with-ATA.md"
       ],
@@ -1443,6 +1493,7 @@
       "SourceFilePath": "ATADocs\\Topic\\Trial.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\Trial.md"
       ],
@@ -1473,6 +1524,7 @@
       "DependencyFrom": [
         "ATADocs\\Topic\\Trial.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Image\\Install-Adallom.png"
       ],
@@ -1503,6 +1555,7 @@
       "DependencyFrom": [
         "ATADocs\\Topic\\Trial.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Image\\Manage-Adallom.png"
       ],
@@ -1533,6 +1586,7 @@
       "DependencyFrom": [
         "ATADocs\\Topic\\Trial.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Image\\Trial-3.png"
       ],
@@ -1563,6 +1617,7 @@
       "DependencyFrom": [
         "ATADocs\\Topic\\Trial.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Image\\Trial-4.png"
       ],
@@ -1591,6 +1646,7 @@
       "SourceFilePath": "ATADocs\\Topic\\Uninstalling-previous-versions.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Topic\\Uninstalling-previous-versions.md"
       ],
@@ -1619,6 +1675,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\ata-technical-faq.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\ata-technical-faq.md"
       ],
@@ -1647,6 +1704,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\ata-troubleshooting.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\ata-troubleshooting.md"
       ],
@@ -1675,6 +1733,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\TOC.md"
       ],
@@ -1703,6 +1762,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\troubleshooting-ata-monitoring-alerts.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\troubleshooting-ata-monitoring-alerts.md"
       ],
@@ -1731,6 +1791,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\troubleshooting-ata-using-ata-database.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\troubleshooting-ata-using-ata-database.md"
       ],
@@ -1759,6 +1820,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md"
       ],
@@ -1787,6 +1849,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
       ],
@@ -1815,6 +1878,7 @@
       "SourceFilePath": "ATADocs\\Understand\\ata-architecture.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\ata-architecture.md"
       ],
@@ -1843,6 +1907,7 @@
       "SourceFilePath": "ATADocs\\Understand\\ata-understand-and-explore.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\ata-understand-and-explore.md"
       ],
@@ -1871,6 +1936,7 @@
       "SourceFilePath": "ATADocs\\Understand\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\TOC.md"
       ],
@@ -1899,6 +1965,7 @@
       "SourceFilePath": "ATADocs\\Understand\\what-is-ata.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\what-is-ata.md"
       ],
@@ -1927,6 +1994,7 @@
       "SourceFilePath": "ATADocs\\Understand\\working-with-ata-console.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\working-with-ata-console.md"
       ],
@@ -1955,6 +2023,7 @@
       "SourceFilePath": "ATADocs\\working-with-detection-settings.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\working-with-detection-settings.md",
         "ATADocs\\DeployUse\\working-with-detection-settings.md"
@@ -1992,6 +2061,7 @@
       "SourceFilePath": "README.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "README.md"
       ],
@@ -2020,6 +2090,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-database-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-database-management.md"
       ],
@@ -2048,6 +2119,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-deploy-and-use.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-deploy-and-use.md"
       ],
@@ -2076,6 +2148,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-health-center.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-health-center.md"
       ],
@@ -2104,6 +2177,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md"
       ],
@@ -2132,6 +2206,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\install-ata.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\install-ata.md"
       ],
@@ -2160,6 +2235,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\modifying-ata-configuration.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\modifying-ata-configuration.md"
       ],
@@ -2188,6 +2264,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\pre-installation-steps.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\pre-installation-steps.md"
       ],
@@ -2216,6 +2293,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\setting-ata-alerts.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\setting-ata-alerts.md"
       ],
@@ -2244,6 +2322,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\TOC.md"
       ],
@@ -2272,6 +2351,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\whats-new-version-1.4.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\whats-new-version-1.4.md"
       ],
@@ -2300,6 +2380,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\whats-new-version-1.5.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\whats-new-version-1.5.md"
       ],
@@ -2328,6 +2409,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\working-with-suspicious-activities.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
       ],
@@ -2356,6 +2438,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-capacity-planning.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-capacity-planning.md"
       ],
@@ -2384,6 +2467,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-plan-and-design.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-plan-and-design.md"
       ],
@@ -2412,6 +2496,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-prerequisites.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-prerequisites.md"
       ],
@@ -2440,6 +2525,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\configure-event-collection.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\configure-event-collection.md"
       ],
@@ -2468,6 +2554,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\configure-port-mirroring.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\configure-port-mirroring.md"
       ],
@@ -2496,6 +2583,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\TOC.md"
       ],
@@ -2524,6 +2612,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\validate-port-mirroring.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\validate-port-mirroring.md"
       ],
@@ -2552,6 +2641,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\ata-technical-faq.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\ata-technical-faq.md"
       ],
@@ -2580,6 +2670,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\TOC.md"
       ],
@@ -2608,6 +2699,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
       ],
@@ -2636,6 +2728,7 @@
       "SourceFilePath": "ATADocs\\Understand\\ata-architecture.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\ata-architecture.md"
       ],
@@ -2664,6 +2757,7 @@
       "SourceFilePath": "ATADocs\\Understand\\ata-faq.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\ata-faq.md"
       ],
@@ -2692,6 +2786,7 @@
       "SourceFilePath": "ATADocs\\Understand\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\TOC.md"
       ],
@@ -2720,6 +2815,7 @@
       "SourceFilePath": "ATADocs\\Understand\\what-is-ata.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\what-is-ata.md"
       ],
@@ -2748,6 +2844,7 @@
       "SourceFilePath": "ATADocs\\Understand\\working-with-ata-console.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\working-with-ata-console.md"
       ],
@@ -2776,6 +2873,7 @@
       "SourceFilePath": "ATADocs\\Understand\\what-is-ata.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\what-is-ata.md"
       ],
@@ -2804,6 +2902,7 @@
       "SourceFilePath": "ATADocs\\Understand\\ata-architecture.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\ata-architecture.md"
       ],
@@ -2834,6 +2933,7 @@
       "DependencyFrom": [
         "ATADocs\\Understand\\ata-architecture.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\media\\ATA-traffic-flow.jpg"
       ],
@@ -2862,6 +2962,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-database-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-database-management.md"
       ],
@@ -2892,6 +2993,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\ata-database-management.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-mongoDB-moveDB.png"
       ],
@@ -2920,6 +3022,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-deploy-and-use.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-deploy-and-use.md"
       ],
@@ -2948,6 +3051,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-health-center.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-health-center.md"
       ],
@@ -2980,6 +3084,7 @@
         "ATADocs\\Understand\\working-with-ata-console.md",
         "ATADocs\\Understand\\ata-console-elements.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-Health-Center-Alert-red-dot.png",
         "ATADocs\\Understand\\media\\ATA-Health-Center-Alert-red-dot.png"
@@ -3011,6 +3116,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\ata-health-center.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-red-dot.png"
       ],
@@ -3041,6 +3147,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\ata-health-center.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-Health-Issue.JPG"
       ],
@@ -3069,6 +3176,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md"
       ],
@@ -3099,6 +3207,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-center-fullpartial.png"
       ],
@@ -3129,6 +3238,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-center-outdated.png"
       ],
@@ -3163,6 +3273,7 @@
         "ATADocs\\DeployUse\\setting-ata-alerts.md",
         "ATADocs\\Understand\\working-with-ata-console.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-config-icon.JPG",
         "ATADocs\\Understand\\media\\ATA-config-icon.JPG"
@@ -3194,6 +3305,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-gw-updated.png"
       ],
@@ -3222,6 +3334,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\install-ata.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\install-ata.md"
       ],
@@ -3252,6 +3365,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\install-ata.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-Center-Configuration.JPG"
       ],
@@ -3282,6 +3396,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\install-ata.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-Domain-Connectivity-User.JPG"
       ],
@@ -3312,6 +3427,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\install-ata.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-Gateway-Configuration.JPG"
       ],
@@ -3342,6 +3458,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\install-ata.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATAGWDomainController.png"
       ],
@@ -3372,6 +3489,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\install-ata.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-Config-GW-Settings.jpg"
       ],
@@ -3402,6 +3520,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\install-ata.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-performance-monitoring-add-counters.png"
       ],
@@ -3432,6 +3551,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\install-ata.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-VPN-Subnets.JPG"
       ],
@@ -3460,6 +3580,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\modifying-ata-configuration.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\modifying-ata-configuration.md"
       ],
@@ -3490,6 +3611,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\modifying-ata-configuration.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-chge-IP-after-clicking-save.png"
       ],
@@ -3520,6 +3642,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\modifying-ata-configuration.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-console-change-IP-bindings.jpg"
       ],
@@ -3550,6 +3673,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\modifying-ata-configuration.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-change-console-IP.jpg"
       ],
@@ -3580,6 +3704,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\modifying-ata-configuration.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-GW-change-DC-password.JPG"
       ],
@@ -3608,6 +3733,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\pre-installation-steps.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\pre-installation-steps.md"
       ],
@@ -3636,6 +3762,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\setting-ata-alerts.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\setting-ata-alerts.md"
       ],
@@ -3666,6 +3793,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\setting-ata-alerts.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-alerts-verbosity-language.png"
       ],
@@ -3694,6 +3822,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\whats-new-version-1.4.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\whats-new-version-1.4.md"
       ],
@@ -3724,6 +3853,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\whats-new-version-1.4.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-uninstall-center-bug.jpg"
       ],
@@ -3754,6 +3884,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\whats-new-version-1.4.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-GW-uninstall-bug.jpg"
       ],
@@ -3782,6 +3913,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\whats-new-version-1.5.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\whats-new-version-1.5.md"
       ],
@@ -3812,6 +3944,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\whats-new-version-1.5.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-GW-error.png"
       ],
@@ -3840,6 +3973,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\working-with-suspicious-activities.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
       ],
@@ -3870,6 +4004,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-Suspicious-Activity-Timeline.JPG"
       ],
@@ -3900,6 +4035,7 @@
       "DependencyFrom": [
         "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\media\\ATA-Input.JPG"
       ],
@@ -3928,6 +4064,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-capacity-planning.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-capacity-planning.md"
       ],
@@ -3958,6 +4095,7 @@
       "DependencyFrom": [
         "ATADocs\\PlanDesign\\ata-capacity-planning.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-1.png"
       ],
@@ -3988,6 +4126,7 @@
       "DependencyFrom": [
         "ATADocs\\PlanDesign\\ata-capacity-planning.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-2.png"
       ],
@@ -4018,6 +4157,7 @@
       "DependencyFrom": [
         "ATADocs\\PlanDesign\\ata-capacity-planning.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-3.png"
       ],
@@ -4048,6 +4188,7 @@
       "DependencyFrom": [
         "ATADocs\\PlanDesign\\ata-capacity-planning.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-5.png"
       ],
@@ -4078,6 +4219,7 @@
       "DependencyFrom": [
         "ATADocs\\PlanDesign\\ata-capacity-planning.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-7.png"
       ],
@@ -4108,6 +4250,7 @@
       "DependencyFrom": [
         "ATADocs\\PlanDesign\\ata-capacity-planning.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-12.png"
       ],
@@ -4138,6 +4281,7 @@
       "DependencyFrom": [
         "ATADocs\\PlanDesign\\ata-capacity-planning.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-14.png"
       ],
@@ -4166,6 +4310,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-plan-and-design.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-plan-and-design.md"
       ],
@@ -4194,6 +4339,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-prerequisites.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-prerequisites.md"
       ],
@@ -4222,6 +4368,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\configure-event-collection.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\configure-event-collection.md"
       ],
@@ -4252,6 +4399,7 @@
       "DependencyFrom": [
         "ATADocs\\PlanDesign\\configure-event-collection.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\media\\ATA-enable-siem-forward-events.png"
       ],
@@ -4282,6 +4430,7 @@
       "DependencyFrom": [
         "ATADocs\\PlanDesign\\configure-event-collection.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\media\\wef_ad_eventlogreaders.png"
       ],
@@ -4312,6 +4461,7 @@
       "DependencyFrom": [
         "ATADocs\\PlanDesign\\configure-event-collection.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\media\\wef_ad-event-log-reader-popup.png"
       ],
@@ -4342,6 +4492,7 @@
       "DependencyFrom": [
         "ATADocs\\PlanDesign\\configure-event-collection.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\media\\wef_subscription-prop.png"
       ],
@@ -4372,6 +4523,7 @@
       "DependencyFrom": [
         "ATADocs\\PlanDesign\\configure-event-collection.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\media\\wef_4776.png"
       ],
@@ -4402,6 +4554,7 @@
       "DependencyFrom": [
         "ATADocs\\PlanDesign\\configure-event-collection.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\media\\wef_http.png"
       ],
@@ -4430,6 +4583,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\validate-port-mirroring.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\validate-port-mirroring.md"
       ],
@@ -4460,6 +4614,7 @@
       "DependencyFrom": [
         "ATADocs\\PlanDesign\\validate-port-mirroring.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\media\\ATA-Port-Mirroring-Capture.jpg"
       ],
@@ -4490,6 +4645,7 @@
       "DependencyFrom": [
         "ATADocs\\PlanDesign\\validate-port-mirroring.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\media\\ATA-Port-Mirroring-filter-settings.jpg"
       ],
@@ -4520,6 +4676,7 @@
       "DependencyFrom": [
         "ATADocs\\PlanDesign\\validate-port-mirroring.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\media\\ATA-Port-Mirroring-Capture-traffic.jpg"
       ],
@@ -4548,6 +4705,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
       ],
@@ -4578,6 +4736,7 @@
       "DependencyFrom": [
         "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\media\\ATA-performance-counters.png"
       ],
@@ -4608,6 +4767,7 @@
       "DependencyFrom": [
         "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\media\\ATA-Gateway-perf-counters.png"
       ],
@@ -4636,6 +4796,7 @@
       "SourceFilePath": "ATADocs\\Understand\\ata-faq.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\ata-faq.md"
       ],
@@ -4664,6 +4825,7 @@
       "SourceFilePath": "ATADocs\\Understand\\what-is-ata.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\what-is-ata.md"
       ],
@@ -4692,6 +4854,7 @@
       "SourceFilePath": "ATADocs\\Understand\\working-with-ata-console.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\working-with-ata-console.md"
       ],
@@ -4722,6 +4885,7 @@
       "DependencyFrom": [
         "ATADocs\\Understand\\working-with-ata-console.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\media\\ATA-log-in-screen.jpg"
       ],
@@ -4753,6 +4917,7 @@
         "ATADocs\\Understand\\working-with-ata-console.md",
         "ATADocs\\Understand\\ata-console-elements.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\media\\ATA-console-search.png"
       ],
@@ -4784,6 +4949,7 @@
         "ATADocs\\Understand\\working-with-ata-console.md",
         "ATADocs\\Understand\\ata-console-elements.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\media\\ATA-mini-profile.jpg"
       ],
@@ -4812,6 +4978,7 @@
       "SourceFilePath": "ATADocs\\Understand\\ata-console-elements.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\ata-console-elements.md"
       ],
@@ -4842,6 +5009,7 @@
       "DependencyFrom": [
         "ATADocs\\Understand\\ata-console-elements.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\media\\attack-timeline.png"
       ],
@@ -4872,6 +5040,7 @@
       "DependencyFrom": [
         "ATADocs\\Understand\\ata-console-elements.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\media\\notification-bar.png"
       ],
@@ -4902,6 +5071,7 @@
       "DependencyFrom": [
         "ATADocs\\Understand\\ata-console-elements.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\media\\health-center.png"
       ],
@@ -4932,6 +5102,7 @@
       "DependencyFrom": [
         "ATADocs\\Understand\\ata-console-elements.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\media\\user-profile.png"
       ],
@@ -4962,6 +5133,7 @@
       "DependencyFrom": [
         "ATADocs\\Understand\\ata-console-elements.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\media\\computer-profile.png"
       ],
@@ -4992,6 +5164,7 @@
       "DependencyFrom": [
         "ATADocs\\Understand\\ata-console-elements.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\media\\ATA-Unresolved-Profile.jpg"
       ],
@@ -5020,6 +5193,7 @@
       "SourceFilePath": "ATADocs\\Understand\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\TOC.md"
       ],
@@ -5048,6 +5222,7 @@
       "SourceFilePath": "ATADocs\\Understand\\working-with-ata-console.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\working-with-ata-console.md"
       ],
@@ -5078,6 +5253,7 @@
       "DependencyFrom": [
         "ATADocs\\Understand\\working-with-ata-console.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\media\\ata-server-icon.png"
       ],
@@ -5106,6 +5282,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\TOC.md"
       ],
@@ -5134,6 +5311,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\TOC.md"
       ],
@@ -5162,6 +5340,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\TOC.md"
       ],
@@ -5190,6 +5369,7 @@
       "SourceFilePath": "ATADocs\\Understand\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\TOC.md"
       ],
@@ -5218,6 +5398,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\TOC.md"
       ],
@@ -5246,6 +5427,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\TOC.md"
       ],
@@ -5274,6 +5456,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\TOC.md"
       ],
@@ -5302,6 +5485,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-database-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-database-management.md"
       ],
@@ -5330,6 +5514,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-deploy-and-use.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-deploy-and-use.md"
       ],
@@ -5358,6 +5543,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\install-ata.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\install-ata.md"
       ],
@@ -5386,6 +5572,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\modifying-ata-configuration.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\modifying-ata-configuration.md"
       ],
@@ -5414,6 +5601,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\pre-installation-steps.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\pre-installation-steps.md"
       ],
@@ -5442,6 +5630,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-capacity-planning.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-capacity-planning.md"
       ],
@@ -5470,6 +5659,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-plan-and-design.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-plan-and-design.md"
       ],
@@ -5498,6 +5688,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-prerequisites.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-prerequisites.md"
       ],
@@ -5526,6 +5717,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\configure-event-collection.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\configure-event-collection.md"
       ],
@@ -5554,6 +5746,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\configure-port-mirroring.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\configure-port-mirroring.md"
       ],
@@ -5582,6 +5775,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\ata-technical-faq.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\ata-technical-faq.md"
       ],
@@ -5610,6 +5804,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
       ],
@@ -5638,6 +5833,7 @@
       "SourceFilePath": "ATADocs\\Understand\\ata-architecture.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\ata-architecture.md"
       ],
@@ -5666,6 +5862,7 @@
       "SourceFilePath": "ATADocs\\Understand\\ata-console-elements.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\ata-console-elements.md"
       ],
@@ -5694,6 +5891,7 @@
       "SourceFilePath": "ATADocs\\Understand\\ata-faq.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\ata-faq.md"
       ],
@@ -5722,6 +5920,7 @@
       "SourceFilePath": "ATADocs\\Understand\\what-is-ata.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\what-is-ata.md"
       ],
@@ -5750,6 +5949,7 @@
       "SourceFilePath": "ATADocs\\Understand\\working-with-ata-console.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\working-with-ata-console.md"
       ],
@@ -5780,6 +5980,7 @@
       "DependencyFrom": [
         "ATADocs\\Understand\\working-with-ata-console.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\media\\ATA-log-in-screen.jpg"
       ],
@@ -5808,6 +6009,7 @@
       "SourceFilePath": "ATADocs\\Understand\\ata-console-elements.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\ata-console-elements.md"
       ],
@@ -5836,6 +6038,7 @@
       "SourceFilePath": "ATADocs\\Understand\\working-with-ata-console.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\working-with-ata-console.md"
       ],
@@ -5864,6 +6067,7 @@
       "SourceFilePath": "ATADocs\\index.html",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\index.html"
       ],
@@ -5892,6 +6096,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\install-ata.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\install-ata.md"
       ],
@@ -5920,6 +6125,7 @@
       "SourceFilePath": "ATADocs\\index.html",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\index.html"
       ],
@@ -5948,6 +6154,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\pre-installation-steps.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\pre-installation-steps.md"
       ],
@@ -5976,6 +6183,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-prerequisites.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-prerequisites.md"
       ],
@@ -6004,6 +6212,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\configure-event-collection.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\configure-event-collection.md"
       ],
@@ -6032,6 +6241,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\configure-port-mirroring.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\configure-port-mirroring.md"
       ],
@@ -6060,6 +6270,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\validate-port-mirroring.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\validate-port-mirroring.md"
       ],
@@ -6088,6 +6299,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-capacity-planning.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-capacity-planning.md"
       ],
@@ -6116,6 +6328,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-plan-and-design.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-plan-and-design.md"
       ],
@@ -6144,6 +6357,7 @@
       "SourceFilePath": "ATADocs\\index.html",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\index.html"
       ],
@@ -6172,6 +6386,7 @@
       "SourceFilePath": "ATADocs\\Understand\\what-is-ata.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\what-is-ata.md"
       ],
@@ -6200,6 +6415,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-database-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-database-management.md"
       ],
@@ -6228,6 +6444,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-deploy-and-use.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-deploy-and-use.md"
       ],
@@ -6256,6 +6473,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-health-center.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-health-center.md"
       ],
@@ -6284,6 +6502,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md"
       ],
@@ -6312,6 +6531,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\install-ata.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\install-ata.md"
       ],
@@ -6340,6 +6560,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\manage-telemetry-settings.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\manage-telemetry-settings.md"
       ],
@@ -6368,6 +6589,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\modifying-ata-configuration.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\modifying-ata-configuration.md"
       ],
@@ -6396,6 +6618,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\pre-installation-steps.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\pre-installation-steps.md"
       ],
@@ -6424,6 +6647,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\setting-ata-alerts.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\setting-ata-alerts.md"
       ],
@@ -6452,6 +6676,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\whats-new-version-1.4.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\whats-new-version-1.4.md"
       ],
@@ -6480,6 +6705,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\whats-new-version-1.5.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\whats-new-version-1.5.md"
       ],
@@ -6508,6 +6734,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\working-with-detection-settings.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\working-with-detection-settings.md"
       ],
@@ -6536,6 +6763,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\working-with-suspicious-activities.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
       ],
@@ -6564,6 +6792,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-capacity-planning.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-capacity-planning.md"
       ],
@@ -6592,6 +6821,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-plan-and-design.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-plan-and-design.md"
       ],
@@ -6620,6 +6850,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-prerequisites.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-prerequisites.md"
       ],
@@ -6648,6 +6879,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\configure-event-collection.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\configure-event-collection.md"
       ],
@@ -6676,6 +6908,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\configure-port-mirroring.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\configure-port-mirroring.md"
       ],
@@ -6706,6 +6939,7 @@
       "DependencyFrom": [
         "ATADocs\\PlanDesign\\validate-port-mirroring.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\media\\ATA-Port-Mirroring-Capture-traffic.jpg"
       ],
@@ -6736,6 +6970,7 @@
       "DependencyFrom": [
         "ATADocs\\PlanDesign\\validate-port-mirroring.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\media\\ATA-Port-Mirroring-filter-settings.jpg"
       ],
@@ -6766,6 +7001,7 @@
       "DependencyFrom": [
         "ATADocs\\PlanDesign\\ata-capacity-planning.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-3.png"
       ],
@@ -6796,6 +7032,7 @@
       "DependencyFrom": [
         "ATADocs\\PlanDesign\\ata-capacity-planning.md"
       ],
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-5.png"
       ],
@@ -6824,6 +7061,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\validate-port-mirroring.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\validate-port-mirroring.md"
       ],
@@ -6852,6 +7090,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\ata-technical-faq.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\ata-technical-faq.md"
       ],
@@ -6880,6 +7119,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\ata-troubleshooting.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\ata-troubleshooting.md"
       ],
@@ -6908,6 +7148,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\troubleshooting-ata-monitoring-alerts.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\troubleshooting-ata-monitoring-alerts.md"
       ],
@@ -6936,6 +7177,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\troubleshooting-ata-using-ata-database.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\troubleshooting-ata-using-ata-database.md"
       ],
@@ -6964,6 +7206,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md"
       ],
@@ -6992,6 +7235,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
       ],
@@ -7020,6 +7264,7 @@
       "SourceFilePath": "ATADocs\\Understand\\ata-architecture.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\ata-architecture.md"
       ],
@@ -7048,6 +7293,7 @@
       "SourceFilePath": "ATADocs\\Understand\\ata-console-elements.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\ata-console-elements.md"
       ],
@@ -7076,6 +7322,7 @@
       "SourceFilePath": "ATADocs\\Understand\\ata-faq.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\ata-faq.md"
       ],
@@ -7104,6 +7351,7 @@
       "SourceFilePath": "ATADocs\\Understand\\ata-understand-and-explore.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\ata-understand-and-explore.md"
       ],
@@ -7132,6 +7380,7 @@
       "SourceFilePath": "ATADocs\\Understand\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\TOC.md"
       ],
@@ -7160,6 +7409,7 @@
       "SourceFilePath": "ATADocs\\Understand\\what-is-ata.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\what-is-ata.md"
       ],
@@ -7188,6 +7438,7 @@
       "SourceFilePath": "ATADocs\\Understand\\working-with-ata-console.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\working-with-ata-console.md"
       ],
@@ -7216,6 +7467,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-capacity-planning.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-capacity-planning.md"
       ],
@@ -7244,6 +7496,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-plan-and-design.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-plan-and-design.md"
       ],
@@ -7272,6 +7525,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-prerequisites.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-prerequisites.md"
       ],
@@ -7300,6 +7554,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\configure-event-collection.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\configure-event-collection.md"
       ],
@@ -7328,6 +7583,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\configure-port-mirroring.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\configure-port-mirroring.md"
       ],
@@ -7356,6 +7612,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\validate-port-mirroring.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\validate-port-mirroring.md"
       ],
@@ -7384,6 +7641,7 @@
       "SourceFilePath": "ATADocs\\Understand\\ata-architecture.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\ata-architecture.md"
       ],
@@ -7412,6 +7670,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\TOC.md"
       ],
@@ -7440,6 +7699,7 @@
       "SourceFilePath": "ATADocs\\index.html",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\index.html"
       ],
@@ -7468,6 +7728,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\TOC.md"
       ],
@@ -7496,6 +7757,7 @@
       "SourceFilePath": "ATADocs\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\TOC.md"
       ],
@@ -7524,6 +7786,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\TOC.md"
       ],
@@ -7552,6 +7815,7 @@
       "SourceFilePath": "ATADocs\\Understand\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\TOC.md"
       ],
@@ -7580,6 +7844,7 @@
       "SourceFilePath": "ATADocs\\index.html",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\index.html"
       ],
@@ -7608,6 +7873,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-database-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-database-management.md"
       ],
@@ -7636,6 +7902,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-health-center.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-health-center.md"
       ],
@@ -7664,6 +7931,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md"
       ],
@@ -7692,6 +7960,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\install-ata.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\install-ata.md"
       ],
@@ -7720,6 +7989,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\modifying-ata-configuration.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\modifying-ata-configuration.md"
       ],
@@ -7748,6 +8018,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\setting-ata-alerts.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\setting-ata-alerts.md"
       ],
@@ -7776,6 +8047,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\whats-new-version-1.4.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\whats-new-version-1.4.md"
       ],
@@ -7804,6 +8076,7 @@
       "SourceFilePath": "ATADocs\\DeployUse\\working-with-suspicious-activities.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
       ],
@@ -7832,6 +8105,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-capacity-planning.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-capacity-planning.md"
       ],
@@ -7860,6 +8134,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-prerequisites.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\ata-prerequisites.md"
       ],
@@ -7888,6 +8163,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\configure-event-collection.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\configure-event-collection.md"
       ],
@@ -7916,6 +8192,7 @@
       "SourceFilePath": "ATADocs\\PlanDesign\\validate-port-mirroring.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\PlanDesign\\validate-port-mirroring.md"
       ],
@@ -7944,6 +8221,7 @@
       "SourceFilePath": "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
       ],
@@ -7972,6 +8250,7 @@
       "SourceFilePath": "ATADocs\\Understand\\ata-architecture.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\ata-architecture.md"
       ],
@@ -8000,6 +8279,7 @@
       "SourceFilePath": "ATADocs\\Understand\\ata-console-elements.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\ata-console-elements.md"
       ],
@@ -8028,6 +8308,7 @@
       "SourceFilePath": "ATADocs\\Understand\\working-with-ata-console.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\working-with-ata-console.md"
       ],
@@ -8056,6 +8337,7 @@
       "SourceFilePath": "ATADocs\\Understand\\what-is-ata.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\what-is-ata.md"
       ],
@@ -8084,6 +8366,7 @@
       "SourceFilePath": "ATADocs\\index.html",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\index.html"
       ],
@@ -8112,6 +8395,7 @@
       "SourceFilePath": "ATADocs\\Understand\\ata-console-elements.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\ata-console-elements.md"
       ],
@@ -8140,6 +8424,7 @@
       "SourceFilePath": "ATADocs\\Understand\\working-with-ata-console.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
+      "TokenReference": null,
       "FilePathList": [
         "ATADocs\\Understand\\working-with-ata-console.md"
       ],

@@ -50,6 +50,9 @@
   "a785a273d93ded27d1e62d4222bc15722dee2ec7": [
     "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md"
   ],
+  "75d2b5e446085f04ab12eec28fa6aaac87bfb8e2": [
+    "ATADocs\\DeployUse\\install-ata.md"
+  ],
   "5d0cfa04c90568ebf17ac8c53131305252297847": [
     "ATADocs\\DeployUse\\install-ata.md"
   ],
@@ -109,6 +112,9 @@
   ],
   "5c56c21c1bce0e31c96df4b0adbde25b80cc2934": [
     "ATADocs\\DeployUse\\setting-ata-alerts.md"
+  ],
+  "4bb2039ef5c0250468a526bc3455f4e61d47e591": [
+    "ATADocs\\DeployUse\\TOC.md"
   ],
   "c123fe128e92f0f571027e4b3b7588099f85a509": [
     "ATADocs\\DeployUse\\TOC.md"
@@ -504,7 +510,8 @@
     "ATADocs\\DeployUse\\media\\ATA-mongoDB-moveDB.png"
   ],
   "d2b6088dd989cb01d54c714b18b23fdac454c71c": [
-    "ATADocs\\DeployUse\\media\\ATA-Health-Center-Alert-red-dot.png"
+    "ATADocs\\DeployUse\\media\\ATA-Health-Center-Alert-red-dot.png",
+    "ATADocs\\Understand\\media\\ATA-Health-Center-Alert-red-dot.png"
   ],
   "efd559ab69debefb5f3e2fb6fd1a0f293070fbf1": [
     "ATADocs\\DeployUse\\media\\ATA-red-dot.png"
@@ -647,6 +654,15 @@
   "d5119fef7939d5de9c08d40d1fd1a6f29128b810": [
     "ATADocs\\Understand\\media\\ATA-log-in-screen.jpg"
   ],
+  "18204afb92c709be98646c610653d47b6625e11b": [
+    "ATADocs\\Understand\\media\\ATA-console-search.png"
+  ],
+  "5a014a150f29b097053eae951f7ed49ce65518d0": [
+    "ATADocs\\Understand\\media\\ATA-mini-profile.jpg"
+  ],
+  "7120b9f786f14d58221be16961365ccf65c725ef": [
+    "ATADocs\\Understand\\ata-console-elements.md"
+  ],
   "5426ef4c7789a2036e234feb4be64f0995002c3e": [
     "ATADocs\\Understand\\ata-console-elements.md"
   ],
@@ -664,6 +680,21 @@
   ],
   "f41c1a30ac5ae655bb8fc19e5a8c5da2961593bc": [
     "ATADocs\\Understand\\ata-console-elements.md"
+  ],
+  "7ed12b436fccf9d40ecd76f13697812c159f69a3": [
+    "ATADocs\\Understand\\media\\attack-timeline.png"
+  ],
+  "5a5c773c62ea63438b12536bfdb91f0b2a6866bf": [
+    "ATADocs\\Understand\\media\\notification-bar.png"
+  ],
+  "2b57f03ff7f6b23f604e7ef93efa4bc72c1a544a": [
+    "ATADocs\\Understand\\media\\health-center.png"
+  ],
+  "746cfa4a7266e89f4083291f6903b6aea0509917": [
+    "ATADocs\\Understand\\media\\user-profile.png"
+  ],
+  "92803f3318fdfdbf17528b747b13f715ee40b7fe": [
+    "ATADocs\\Understand\\media\\computer-profile.png"
   ],
   "4fc9df3058f295d41f80db89e3805003cd18a9b7": [
     "ATADocs\\Understand\\media\\ATA-Unresolved-Profile.jpg"
@@ -688,5 +719,26 @@
   ],
   "218afda1e527c49e815a1928051c47a32ade8b21": [
     "ATADocs\\index.html"
+  ],
+  "2a1cdf2d3bcb5799b6d3438093300cab5ccb38fa": [
+    "ATADocs\\DeployUse\\install-ata-preinstall.md"
+  ],
+  "078f2801b7cf8beb3d4a2d61c6e83663575bee8d": [
+    "ATADocs\\DeployUse\\install-ata-step1.md"
+  ],
+  "500515e847d09a032159970005d556f012a6e8ec": [
+    "ATADocs\\DeployUse\\install-ata-step2.md"
+  ],
+  "1e0a77296b9f7a1f92624ebab985be965d5bef76": [
+    "ATADocs\\DeployUse\\install-ata-step3.md"
+  ],
+  "99b9db598e290917637f209a1be584d22e8823c7": [
+    "ATADocs\\DeployUse\\install-ata-step4.md"
+  ],
+  "1e9b5b53a27feecf18d493f037c6760fa40a86d9": [
+    "ATADocs\\DeployUse\\install-ata-step5.md"
+  ],
+  "dda484450e385ca5160fafadb1d088ce0486095a": [
+    "ATADocs\\DeployUse\\install-ata-step6.md"
   ]
 }

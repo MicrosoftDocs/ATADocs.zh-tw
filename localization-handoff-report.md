@@ -1,39 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [ATADocs\Understand\ata-console-elements.md](https://github.com/Microsoft/ATADocs-pr/blob/9c7fb4fdde47f50f81d8bcc64ed78ab735593464/ATADocs/Understand/ata-console-elements.md) | HandedOffSuccess | [Details](#5426ef4c7789a2036e234feb4be64f0995002c3e162)
- [ATADocs\Understand\working-with-ata-console.md](https://github.com/Microsoft/ATADocs-pr/blob/9c7fb4fdde47f50f81d8bcc64ed78ab735593464/ATADocs/Understand/working-with-ata-console.md) | HandedOffSuccess | [Details](#8441f09623a2dfda80f055d720c84c7b1519483a183)
 
 ## Item Details
-##### <a name='5426ef4c7789a2036e234feb4be64f0995002c3e162'></a> Source: [ATADocs\Understand\ata-console-elements.md](https://github.com/Microsoft/ATADocs-pr/blob/9c7fb4fdde47f50f81d8bcc64ed78ab735593464/ATADocs/Understand/ata-console-elements.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [ata-console-elements.5ff2d92b2ab24542a04c56ca369219bb9f3dfad4.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/e7fc9a74262dd9a78eea8d757a12602bdc30d8ef/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/ata-console-elements.5ff2d92b2ab24542a04c56ca369219bb9f3dfad4.zh-tw.xlf)
-* Handoff Datetime: 2016-03-22 23:54:43
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='8441f09623a2dfda80f055d720c84c7b1519483a183'></a> Source: [ATADocs\Understand\working-with-ata-console.md](https://github.com/Microsoft/ATADocs-pr/blob/9c7fb4fdde47f50f81d8bcc64ed78ab735593464/ATADocs/Understand/working-with-ata-console.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [working-with-ata-console.1727ee5b9929dac975a02036ec1253cb008ce881.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/e7fc9a74262dd9a78eea8d757a12602bdc30d8ef/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/working-with-ata-console.1727ee5b9929dac975a02036ec1253cb008ce881.zh-tw.xlf)
-* Handoff Datetime: 2016-03-22 23:54:43
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
 
 ## Error Details
 

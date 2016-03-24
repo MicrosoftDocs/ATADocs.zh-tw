@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "765b72e1a0d5b6d9971dd2fd383f4f6390f85013",
+  "LastProcessedCommit": "44038b97a708d76b138f2433a88086f565222b59",
   "LastTranslatedCommit": null,
   "Items": {
     "19ffcb31b9fc0f69362ca0b4fd2e2fdb06dc11d6": {
@@ -3274,7 +3274,10 @@
         "ATADocs\\Understand\\working-with-ata-console.md",
         "ATADocs\\DeployUse\\install-ata-step2.md",
         "ATADocs\\DeployUse\\install-ata-step6.md",
-        "ATADocs\\DeployUse\\install-ata-step3.md"
+        "ATADocs\\DeployUse\\install-ata-step3.md",
+        "ATADocs\\DeployUse\\modifying-ata-config-dcpassword.md",
+        "ATADocs\\DeployUse\\modifying-ata-config-centercert.md",
+        "ATADocs\\DeployUse\\modifying-ata-config-centerip.md"
       ],
       "TokenReference": null,
       "FilePathList": [
@@ -3619,7 +3622,8 @@
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-chge-IP-after-clicking-save.png",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "ATADocs\\DeployUse\\modifying-ata-configuration.md"
+        "ATADocs\\DeployUse\\modifying-ata-configuration.md",
+        "ATADocs\\DeployUse\\modifying-ata-config-centerip.md"
       ],
       "TokenReference": null,
       "FilePathList": [
@@ -3650,7 +3654,9 @@
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-console-change-IP-bindings.jpg",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "ATADocs\\DeployUse\\modifying-ata-configuration.md"
+        "ATADocs\\DeployUse\\modifying-ata-configuration.md",
+        "ATADocs\\DeployUse\\modifying-ata-config-iiscert.md",
+        "ATADocs\\DeployUse\\modifying-ata-config-consoleip.md"
       ],
       "TokenReference": null,
       "FilePathList": [
@@ -3681,7 +3687,8 @@
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-change-console-IP.jpg",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "ATADocs\\DeployUse\\modifying-ata-configuration.md"
+        "ATADocs\\DeployUse\\modifying-ata-configuration.md",
+        "ATADocs\\DeployUse\\modifying-ata-config-consoleip.md"
       ],
       "TokenReference": null,
       "FilePathList": [
@@ -3712,7 +3719,8 @@
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-GW-change-DC-password.JPG",
       "HandoffReason": 2,
       "DependencyFrom": [
-        "ATADocs\\DeployUse\\modifying-ata-configuration.md"
+        "ATADocs\\DeployUse\\modifying-ata-configuration.md",
+        "ATADocs\\DeployUse\\modifying-ata-config-dcpassword.md"
       ],
       "TokenReference": null,
       "FilePathList": [
@@ -8731,6 +8739,209 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-console-elements.5ff2d92b2ab24542a04c56ca369219bb9f3dfad4.zh-tw.xlf",
       "HandoffFileCommit": "2962260c03dde840ca59ec3ed42d3c51e3ee7006",
       "HandoffDateTime": "2016-03-24T20:43:16.8030493Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "b3896798335d290fcfb7c7e3122d8d3503d74b42": {
+      "FileHash": "b3896798335d290fcfb7c7e3122d8d3503d74b42",
+      "SourceFileCommit": "44038b97a708d76b138f2433a88086f565222b59",
+      "SourceFilePath": "ATADocs\\DeployUse\\modifying-ata-config-centercert.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "ATADocs\\DeployUse\\modifying-ata-config-centercert.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\modifying-ata-config-centercert.47a5010003ff67ec899123c54e6c8b85b9066f2c.zh-tw.xlf",
+      "HandoffFileCommit": "014a0f4b168ebdef129dd8dc8bd4013fcd1ebd20",
+      "HandoffDateTime": "2016-03-24T23:42:25.8033111Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "3d539575dd76c101482f58fbf3a5d4d080c93a35": {
+      "FileHash": "3d539575dd76c101482f58fbf3a5d4d080c93a35",
+      "SourceFileCommit": "44038b97a708d76b138f2433a88086f565222b59",
+      "SourceFilePath": "ATADocs\\DeployUse\\modifying-ata-config-centerip.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "ATADocs\\DeployUse\\modifying-ata-config-centerip.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\modifying-ata-config-centerip.95510f0562110a9a517b1f38b65d31e2b365e77e.zh-tw.xlf",
+      "HandoffFileCommit": "014a0f4b168ebdef129dd8dc8bd4013fcd1ebd20",
+      "HandoffDateTime": "2016-03-24T23:42:25.8033111Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "ce82d60d59409efd0f574394dd25d8b24e219294": {
+      "FileHash": "ce82d60d59409efd0f574394dd25d8b24e219294",
+      "SourceFileCommit": "44038b97a708d76b138f2433a88086f565222b59",
+      "SourceFilePath": "ATADocs\\DeployUse\\modifying-ata-config-consoleip.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "ATADocs\\DeployUse\\modifying-ata-config-consoleip.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\modifying-ata-config-consoleip.3efd9bc263cf92cf6d203c60252021215caa7ec0.zh-tw.xlf",
+      "HandoffFileCommit": "014a0f4b168ebdef129dd8dc8bd4013fcd1ebd20",
+      "HandoffDateTime": "2016-03-24T23:42:25.8033111Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "4495cd0c38f197007102873866833bc91961af7b": {
+      "FileHash": "4495cd0c38f197007102873866833bc91961af7b",
+      "SourceFileCommit": "44038b97a708d76b138f2433a88086f565222b59",
+      "SourceFilePath": "ATADocs\\DeployUse\\modifying-ata-config-dcpassword.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "ATADocs\\DeployUse\\modifying-ata-config-dcpassword.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\modifying-ata-config-dcpassword.71593ec491df4d6ace15d09e924eb8cbd0ca77a8.zh-tw.xlf",
+      "HandoffFileCommit": "014a0f4b168ebdef129dd8dc8bd4013fcd1ebd20",
+      "HandoffDateTime": "2016-03-24T23:42:25.8033111Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "d50d79ce1c611e433c4bae68210bd16d04d39530": {
+      "FileHash": "d50d79ce1c611e433c4bae68210bd16d04d39530",
+      "SourceFileCommit": "44038b97a708d76b138f2433a88086f565222b59",
+      "SourceFilePath": "ATADocs\\DeployUse\\modifying-ata-config-iiscert.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "ATADocs\\DeployUse\\modifying-ata-config-iiscert.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\modifying-ata-config-iiscert.d586053e78c311e016ef2b6cd8440e3e6387fabc.zh-tw.xlf",
+      "HandoffFileCommit": "014a0f4b168ebdef129dd8dc8bd4013fcd1ebd20",
+      "HandoffDateTime": "2016-03-24T23:42:25.8033111Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "66315e9c213356652d677bbb6332a3827913ba86": {
+      "FileHash": "66315e9c213356652d677bbb6332a3827913ba86",
+      "SourceFileCommit": "44038b97a708d76b138f2433a88086f565222b59",
+      "SourceFilePath": "ATADocs\\DeployUse\\modifying-ata-config-nicname.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "ATADocs\\DeployUse\\modifying-ata-config-nicname.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\modifying-ata-config-nicname.9781cee2740587d593a8ee46ef34235be5377433.zh-tw.xlf",
+      "HandoffFileCommit": "014a0f4b168ebdef129dd8dc8bd4013fcd1ebd20",
+      "HandoffDateTime": "2016-03-24T23:42:25.8033111Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "9aeffe8f2cfd09a6db834afaccff2978a306f3f2": {
+      "FileHash": "9aeffe8f2cfd09a6db834afaccff2978a306f3f2",
+      "SourceFileCommit": "44038b97a708d76b138f2433a88086f565222b59",
+      "SourceFilePath": "ATADocs\\DeployUse\\modifying-ata-configuration.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "ATADocs\\DeployUse\\modifying-ata-configuration.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\modifying-ata-configuration.373a9ee4d26d894405af0398021da33e811bd7aa.zh-tw.xlf",
+      "HandoffFileCommit": "014a0f4b168ebdef129dd8dc8bd4013fcd1ebd20",
+      "HandoffDateTime": "2016-03-24T23:42:25.8033111Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,

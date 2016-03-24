@@ -80,6 +80,9 @@
   "937b1fb274e33ffcfe3e1e3ebe0b47b029436135": [
     "ATADocs\\DeployUse\\manage-telemetry-settings.md"
   ],
+  "9aeffe8f2cfd09a6db834afaccff2978a306f3f2": [
+    "ATADocs\\DeployUse\\modifying-ata-configuration.md"
+  ],
   "59da20a14310ab6b6de90495c91bee25dfdefd74": [
     "ATADocs\\DeployUse\\modifying-ata-configuration.md"
   ],
@@ -740,5 +743,23 @@
   ],
   "dda484450e385ca5160fafadb1d088ce0486095a": [
     "ATADocs\\DeployUse\\install-ata-step6.md"
+  ],
+  "b3896798335d290fcfb7c7e3122d8d3503d74b42": [
+    "ATADocs\\DeployUse\\modifying-ata-config-centercert.md"
+  ],
+  "3d539575dd76c101482f58fbf3a5d4d080c93a35": [
+    "ATADocs\\DeployUse\\modifying-ata-config-centerip.md"
+  ],
+  "ce82d60d59409efd0f574394dd25d8b24e219294": [
+    "ATADocs\\DeployUse\\modifying-ata-config-consoleip.md"
+  ],
+  "4495cd0c38f197007102873866833bc91961af7b": [
+    "ATADocs\\DeployUse\\modifying-ata-config-dcpassword.md"
+  ],
+  "d50d79ce1c611e433c4bae68210bd16d04d39530": [
+    "ATADocs\\DeployUse\\modifying-ata-config-iiscert.md"
+  ],
+  "66315e9c213356652d677bbb6332a3827913ba86": [
+    "ATADocs\\DeployUse\\modifying-ata-config-nicname.md"
   ]
 }

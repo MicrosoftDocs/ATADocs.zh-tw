@@ -6,17 +6,17 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [ATADocs\PlanDesign\configure-event-collection.md](https://github.com/Microsoft/ATADocs-pr/blob/c89853d974ce4f7578a4be7b9aae6d8a3e10f514/ATADocs/PlanDesign/configure-event-collection.md) | HandedOffSuccess | [Details](#176c9a09abe4b481601359623d00492ad2a3892a139)
- [ATADocs\PlanDesign\configure-port-mirroring.md](https://github.com/Microsoft/ATADocs-pr/blob/c89853d974ce4f7578a4be7b9aae6d8a3e10f514/ATADocs/PlanDesign/configure-port-mirroring.md) | HandedOffSuccess | [Details](#fe684ef0625b16d5f8d9817ce98646058c2047d2140)
- [ATADocs\Troubleshoot\ata-technical-faq.md](https://github.com/Microsoft/ATADocs-pr/blob/c89853d974ce4f7578a4be7b9aae6d8a3e10f514/ATADocs/Troubleshoot/ata-technical-faq.md) | HandedOffSuccess | [Details](#1c207ffc68bd416cff0b2a0a9af1918c0cb278aa165)
- [ATADocs\Troubleshoot\troubleshooting-ata-using-ata-database.md](https://github.com/Microsoft/ATADocs-pr/blob/c89853d974ce4f7578a4be7b9aae6d8a3e10f514/ATADocs/Troubleshoot/troubleshooting-ata-using-ata-database.md) | HandedOffSuccess | [Details](#962da36b7b65b360693ee492d5c7aad6e425d6c6172)
+ [ATADocs\DeployUse\install-ata-step2.md](https://github.com/Microsoft/ATADocs-pr/blob/52ab0691ed1997c76d7411d7a45393efa6b0518c/ATADocs/DeployUse/install-ata-step2.md) | HandedOffSuccess | [Details](#3ddbf8a1b6181c1c1b97e6faf9ee815d7edced2712)
+ [ATADocs\DeployUse\install-ata-step4.md](https://github.com/Microsoft/ATADocs-pr/blob/52ab0691ed1997c76d7411d7a45393efa6b0518c/ATADocs/DeployUse/install-ata-step4.md) | HandedOffSuccess | [Details](#6170140efb5bff068840f72838a8b248f8e42ae114)
+ [ATADocs\DeployUse\install-ata-step6.md](https://github.com/Microsoft/ATADocs-pr/blob/52ab0691ed1997c76d7411d7a45393efa6b0518c/ATADocs/DeployUse/install-ata-step6.md) | HandedOffSuccess | [Details](#417943115718148fea9f61b06b7962c9a355dce016)
+ [ATADocs\DeployUse\modifying-ata-config-centerip.md](https://github.com/Microsoft/ATADocs-pr/blob/52ab0691ed1997c76d7411d7a45393efa6b0518c/ATADocs/DeployUse/modifying-ata-config-centerip.md) | HandedOffSuccess | [Details](#f02c908e012c294973ef05971b13d3fec189e30848)
 
 ## Item Details
-##### <a name='176c9a09abe4b481601359623d00492ad2a3892a139'></a> Source: [ATADocs\PlanDesign\configure-event-collection.md](https://github.com/Microsoft/ATADocs-pr/blob/c89853d974ce4f7578a4be7b9aae6d8a3e10f514/ATADocs/PlanDesign/configure-event-collection.md)
+##### <a name='3ddbf8a1b6181c1c1b97e6faf9ee815d7edced2712'></a> Source: [ATADocs\DeployUse\install-ata-step2.md](https://github.com/Microsoft/ATADocs-pr/blob/52ab0691ed1997c76d7411d7a45393efa6b0518c/ATADocs/DeployUse/install-ata-step2.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [configure-event-collection.3801e6c6906b6ccbddb4b52927299bc9ea18d42a.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/68e49c97bb98ebf72085906ce0727614e6b7e5d0/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/configure-event-collection.3801e6c6906b6ccbddb4b52927299bc9ea18d42a.zh-tw.xlf)
-* Handoff Datetime: 2016-03-31 15:53:21
+* Handoff File: [install-ata-step2.3d45321e7748ee948f41c47ba8a2385044872617.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/73f2a715eaf994796db64b138de3b05e3086463f/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/install-ata-step2.3d45321e7748ee948f41c47ba8a2385044872617.zh-tw.xlf)
+* Handoff Datetime: 2016-03-31 23:27:53
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -24,11 +24,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='fe684ef0625b16d5f8d9817ce98646058c2047d2140'></a> Source: [ATADocs\PlanDesign\configure-port-mirroring.md](https://github.com/Microsoft/ATADocs-pr/blob/c89853d974ce4f7578a4be7b9aae6d8a3e10f514/ATADocs/PlanDesign/configure-port-mirroring.md)
+##### <a name='6170140efb5bff068840f72838a8b248f8e42ae114'></a> Source: [ATADocs\DeployUse\install-ata-step4.md](https://github.com/Microsoft/ATADocs-pr/blob/52ab0691ed1997c76d7411d7a45393efa6b0518c/ATADocs/DeployUse/install-ata-step4.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [configure-port-mirroring.03dcf97d3e925aa440cd7b41d34415f22881df9b.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/68e49c97bb98ebf72085906ce0727614e6b7e5d0/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/configure-port-mirroring.03dcf97d3e925aa440cd7b41d34415f22881df9b.zh-tw.xlf)
-* Handoff Datetime: 2016-03-31 15:53:21
+* Handoff File: [install-ata-step4.2f79a925ca23bf573e0a526a5c2cb4eda0d405e8.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/73f2a715eaf994796db64b138de3b05e3086463f/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/install-ata-step4.2f79a925ca23bf573e0a526a5c2cb4eda0d405e8.zh-tw.xlf)
+* Handoff Datetime: 2016-03-31 23:27:53
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -36,11 +36,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='1c207ffc68bd416cff0b2a0a9af1918c0cb278aa165'></a> Source: [ATADocs\Troubleshoot\ata-technical-faq.md](https://github.com/Microsoft/ATADocs-pr/blob/c89853d974ce4f7578a4be7b9aae6d8a3e10f514/ATADocs/Troubleshoot/ata-technical-faq.md)
+##### <a name='417943115718148fea9f61b06b7962c9a355dce016'></a> Source: [ATADocs\DeployUse\install-ata-step6.md](https://github.com/Microsoft/ATADocs-pr/blob/52ab0691ed1997c76d7411d7a45393efa6b0518c/ATADocs/DeployUse/install-ata-step6.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [ata-technical-faq.fa1f89c776292e09c1d93eaa37cecd7df0b4a836.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/68e49c97bb98ebf72085906ce0727614e6b7e5d0/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/ata-technical-faq.fa1f89c776292e09c1d93eaa37cecd7df0b4a836.zh-tw.xlf)
-* Handoff Datetime: 2016-03-31 15:53:21
+* Handoff File: [install-ata-step6.cfd714775f8ca0497152aded917d1a1b0b009143.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/73f2a715eaf994796db64b138de3b05e3086463f/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/install-ata-step6.cfd714775f8ca0497152aded917d1a1b0b009143.zh-tw.xlf)
+* Handoff Datetime: 2016-03-31 23:27:53
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
@@ -48,11 +48,11 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='962da36b7b65b360693ee492d5c7aad6e425d6c6172'></a> Source: [ATADocs\Troubleshoot\troubleshooting-ata-using-ata-database.md](https://github.com/Microsoft/ATADocs-pr/blob/c89853d974ce4f7578a4be7b9aae6d8a3e10f514/ATADocs/Troubleshoot/troubleshooting-ata-using-ata-database.md)
+##### <a name='f02c908e012c294973ef05971b13d3fec189e30848'></a> Source: [ATADocs\DeployUse\modifying-ata-config-centerip.md](https://github.com/Microsoft/ATADocs-pr/blob/52ab0691ed1997c76d7411d7a45393efa6b0518c/ATADocs/DeployUse/modifying-ata-config-centerip.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [troubleshooting-ata-using-ata-database.59180de16ff041e4081a27aa3918a2ea95a29245.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/68e49c97bb98ebf72085906ce0727614e6b7e5d0/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/troubleshooting-ata-using-ata-database.59180de16ff041e4081a27aa3918a2ea95a29245.zh-tw.xlf)
-* Handoff Datetime: 2016-03-31 15:53:21
+* Handoff File: [modifying-ata-config-centerip.95510f0562110a9a517b1f38b65d31e2b365e77e.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/73f2a715eaf994796db64b138de3b05e3086463f/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/modifying-ata-config-centerip.95510f0562110a9a517b1f38b65d31e2b365e77e.zh-tw.xlf)
+* Handoff Datetime: 2016-03-31 23:27:53
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00

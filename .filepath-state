@@ -810,6 +810,9 @@
   "078f2801b7cf8beb3d4a2d61c6e83663575bee8d": [
     "ATADocs\\DeployUse\\install-ata-step1.md"
   ],
+  "3ddbf8a1b6181c1c1b97e6faf9ee815d7edced27": [
+    "ATADocs\\DeployUse\\install-ata-step2.md"
+  ],
   "292e0f49c4c90ae4ac36ecb4913bc853eeab940f": [
     "ATADocs\\DeployUse\\install-ata-step2.md"
   ],
@@ -821,6 +824,9 @@
   ],
   "1e0a77296b9f7a1f92624ebab985be965d5bef76": [
     "ATADocs\\DeployUse\\install-ata-step3.md"
+  ],
+  "6170140efb5bff068840f72838a8b248f8e42ae1": [
+    "ATADocs\\DeployUse\\install-ata-step4.md"
   ],
   "4d8160eda8d5b5c5414ff938a254d752c6531e03": [
     "ATADocs\\DeployUse\\install-ata-step4.md"
@@ -834,6 +840,9 @@
   "1e9b5b53a27feecf18d493f037c6760fa40a86d9": [
     "ATADocs\\DeployUse\\install-ata-step5.md"
   ],
+  "417943115718148fea9f61b06b7962c9a355dce0": [
+    "ATADocs\\DeployUse\\install-ata-step6.md"
+  ],
   "00fe63afb572c6953632598166dd722cc8bb251d": [
     "ATADocs\\DeployUse\\install-ata-step6.md"
   ],
@@ -845,6 +854,9 @@
   ],
   "b3896798335d290fcfb7c7e3122d8d3503d74b42": [
     "ATADocs\\DeployUse\\modifying-ata-config-centercert.md"
+  ],
+  "f02c908e012c294973ef05971b13d3fec189e308": [
+    "ATADocs\\DeployUse\\modifying-ata-config-centerip.md"
   ],
   "b2bba5f2f46d2dd9ddf7452113307bf0ca55759d": [
     "ATADocs\\DeployUse\\modifying-ata-config-centerip.md"

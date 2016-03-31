@@ -242,6 +242,9 @@
   "7aa4be5da967894f2e90f1aa10f270f752b5d771": [
     "ATADocs\\PlanDesign\\ata-prerequisites.md"
   ],
+  "176c9a09abe4b481601359623d00492ad2a3892a": [
+    "ATADocs\\PlanDesign\\configure-event-collection.md"
+  ],
   "6d8f974c6e2889977e32670c93e6b4a6d65c6126": [
     "ATADocs\\PlanDesign\\configure-event-collection.md"
   ],
@@ -268,6 +271,9 @@
   ],
   "cbf1fa75bf4488d5fe023cc556406c073cf5c5e0": [
     "ATADocs\\PlanDesign\\configure-event-collection.md"
+  ],
+  "fe684ef0625b16d5f8d9817ce98646058c2047d2": [
+    "ATADocs\\PlanDesign\\configure-port-mirroring.md"
   ],
   "2df6dea9606c7cc02eab175b26b49a6934d0920e": [
     "ATADocs\\PlanDesign\\configure-port-mirroring.md"
@@ -347,6 +353,9 @@
   "4f72d56afb9f53157569789b68455dcf49016a69": [
     "ATADocs\\Token\\ATA.md"
   ],
+  "1c207ffc68bd416cff0b2a0a9af1918c0cb278aa": [
+    "ATADocs\\Troubleshoot\\ata-technical-faq.md"
+  ],
   "1c184765ff67b47dfb48a4ab3e3f7972de86c70f": [
     "ATADocs\\Troubleshoot\\ata-technical-faq.md"
   ],
@@ -385,6 +394,9 @@
   ],
   "fec9fcc6606ba2213f2e41e15f1bdad6818696b9": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-monitoring-alerts.md"
+  ],
+  "962da36b7b65b360693ee492d5c7aad6e425d6c6": [
+    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-ata-database.md"
   ],
   "913a2010800e29b0e2a3942d0345b12f5eaf9651": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-ata-database.md"

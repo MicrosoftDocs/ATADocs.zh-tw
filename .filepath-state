@@ -560,6 +560,9 @@
   "302bd4d77858994e2d6b153391346ab5cffd59df": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
   ],
+  "09ee4f9793b98e98caefd1fea581f32358fb5f30": [
+    "ATADocs\\Understand\\ata-architecture.md"
+  ],
   "e9846dab3cece234c7a0aff580c0cf4d0a4e1ace": [
     "ATADocs\\Understand\\ata-architecture.md"
   ],

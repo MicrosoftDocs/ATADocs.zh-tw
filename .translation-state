@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "5d2b6ec1321e6d0db6618aa49b59358b69e0aee6",
+  "LastProcessedCommit": "7e1c4b2af65ded0da9144edad475e78fd43ac1e7",
   "LastTranslatedCommit": null,
   "Items": {
     "19ffcb31b9fc0f69362ca0b4fd2e2fdb06dc11d6": {
@@ -13008,6 +13008,35 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-architecture.76065513a13eb83d520e84ffefc28e530ce0a9fd.zh-tw.xlf",
       "HandoffFileCommit": "96c69b6de1d74040f408154a6118c1c15cc7cb74",
       "HandoffDateTime": "2016-04-11T18:10:36.5694068Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "b111e86b9c3a670391379a1d342eafe3511744bc": {
+      "FileHash": "b111e86b9c3a670391379a1d342eafe3511744bc",
+      "SourceFileCommit": "7e1c4b2af65ded0da9144edad475e78fd43ac1e7",
+      "SourceFilePath": "ATADocs\\DeployUse\\install-ata-step5.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "ATADocs\\DeployUse\\install-ata-step5.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\install-ata-step5.939491200e7347138888e6ccb69a84737be3bec2.zh-tw.xlf",
+      "HandoffFileCommit": "fe09e2da2979b220a5b2790d94056a2a873f0c03",
+      "HandoffDateTime": "2016-04-12T15:10:24.6646086Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,

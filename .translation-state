@@ -842,9 +842,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\ATA.802427cdba72b53cf44827c94a4e390a41905ad3.zh-tw.xlf",
+      "ArchiveFileCommit": "7a8b841543643f8120b45e397caf2795e12b5330",
+      "ArchiveFileDateTime": "2016-04-15T08:07:13.8235707Z",
       "ArchiveException": null
     },
     "fd6559d681163365a140e415f23960f7f975e4c3": {
@@ -7799,9 +7799,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\TOC.7ddc5acfa39575166941fca3973fc59ee376add6.zh-tw.xlf",
+      "ArchiveFileCommit": "7a8b841543643f8120b45e397caf2795e12b5330",
+      "ArchiveFileDateTime": "2016-04-15T08:07:13.8235707Z",
       "ArchiveException": null
     },
     "a844c4de8eb7f70ed0cde0fa3655836c179c0cf1": {
@@ -9684,9 +9684,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\TOC.f85b55eb3e40dff28191e34a95d45cd87b0e99f7.zh-tw.xlf",
+      "ArchiveFileCommit": "7a8b841543643f8120b45e397caf2795e12b5330",
+      "ArchiveFileDateTime": "2016-04-15T08:07:13.8235707Z",
       "ArchiveException": null
     },
     "1c184765ff67b47dfb48a4ab3e3f7972de86c70f": {
@@ -9742,9 +9742,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\TOC.60a4d3a4143fbc945b04636bebe37bf6bc2b2b81.zh-tw.xlf",
+      "ArchiveFileCommit": "7a8b841543643f8120b45e397caf2795e12b5330",
+      "ArchiveFileDateTime": "2016-04-15T08:07:13.8235707Z",
       "ArchiveException": null
     },
     "f231d1b160899ab1a846d8e4b011c36fde0ebf66": {
@@ -12671,9 +12671,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\validate-port-mirroring.93214b3442651e32f95b634b5a150aa281daeda3.zh-tw.xlf",
+      "ArchiveFileCommit": "7a8b841543643f8120b45e397caf2795e12b5330",
+      "ArchiveFileDateTime": "2016-04-15T08:07:13.8235707Z",
       "ArchiveException": null
     },
     "4eeb3e598f9ab9236ac5d40096fce798a6dfcbdf": {
@@ -12700,9 +12700,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\ata-technical-faq.fa1f89c776292e09c1d93eaa37cecd7df0b4a836.zh-tw.xlf",
+      "ArchiveFileCommit": "7a8b841543643f8120b45e397caf2795e12b5330",
+      "ArchiveFileDateTime": "2016-04-15T08:07:13.8235707Z",
       "ArchiveException": null
     },
     "89b9e066b599b36b58d4888f9a6ffe393c18a53d": {
@@ -12729,9 +12729,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\troubleshooting-ata-monitoring-alerts.9cc16f31eb10810ba6ba6a8bc5c54027bb123be6.zh-tw.xlf",
+      "ArchiveFileCommit": "7a8b841543643f8120b45e397caf2795e12b5330",
+      "ArchiveFileDateTime": "2016-04-15T08:07:13.8235707Z",
       "ArchiveException": null
     },
     "0a21b27386e9fd32a0e2d9156eb66309a32cfbe7": {
@@ -12758,9 +12758,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\troubleshooting-ata-using-ata-database.59180de16ff041e4081a27aa3918a2ea95a29245.zh-tw.xlf",
+      "ArchiveFileCommit": "7a8b841543643f8120b45e397caf2795e12b5330",
+      "ArchiveFileDateTime": "2016-04-15T08:07:13.8235707Z",
       "ArchiveException": null
     },
     "bef93352c66f613587eda4f571e8f23d12db0132": {
@@ -12787,9 +12787,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\troubleshooting-ata-using-logs.c237c8cdfd616baa4c8e47acb7d766c2f4de3c38.zh-tw.xlf",
+      "ArchiveFileCommit": "7a8b841543643f8120b45e397caf2795e12b5330",
+      "ArchiveFileDateTime": "2016-04-15T08:07:13.8235707Z",
       "ArchiveException": null
     },
     "e07df8a167da55d54e13a2874a1f375908f2bb43": {
@@ -12816,9 +12816,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\troubleshooting-ata-using-perf-counters.79e76fbe5bcf01cc8ac0bd412963c88b4d09ccfe.zh-tw.xlf",
+      "ArchiveFileCommit": "7a8b841543643f8120b45e397caf2795e12b5330",
+      "ArchiveFileDateTime": "2016-04-15T08:07:13.8235707Z",
       "ArchiveException": null
     },
     "e9846dab3cece234c7a0aff580c0cf4d0a4e1ace": {
@@ -12874,9 +12874,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\ata-faq.a1852401386ae01c22393b86dc4b7b33ab816de2.zh-tw.xlf",
+      "ArchiveFileCommit": "7a8b841543643f8120b45e397caf2795e12b5330",
+      "ArchiveFileDateTime": "2016-04-15T08:07:13.8235707Z",
       "ArchiveException": null
     },
     "80a018fe68a983e9812cad32809a8e47bceafed2": {
@@ -12903,9 +12903,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\TOC.602662a4c6e9c6b6819467b610eac5b1ea8b47e7.zh-tw.xlf",
+      "ArchiveFileCommit": "7a8b841543643f8120b45e397caf2795e12b5330",
+      "ArchiveFileDateTime": "2016-04-15T08:07:13.8235707Z",
       "ArchiveException": null
     },
     "3081c028c13803227b42e3d55fe038b4dc301eef": {
@@ -12932,9 +12932,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\what-is-ata.26e22f3b3bdc705961558ab294bf44dabd1ee498.zh-tw.xlf",
+      "ArchiveFileCommit": "7a8b841543643f8120b45e397caf2795e12b5330",
+      "ArchiveFileDateTime": "2016-04-15T08:07:13.8235707Z",
       "ArchiveException": null
     },
     "30cdd37dc2726b6ae3615dde3dac9316a7aa0003": {
@@ -12961,9 +12961,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\working-with-ata-console.1727ee5b9929dac975a02036ec1253cb008ce881.zh-tw.xlf",
+      "ArchiveFileCommit": "7a8b841543643f8120b45e397caf2795e12b5330",
+      "ArchiveFileDateTime": "2016-04-15T08:07:13.8235707Z",
       "ArchiveException": null
     },
     "09ee4f9793b98e98caefd1fea581f32358fb5f30": {
@@ -13019,9 +13019,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\ata-architecture.76065513a13eb83d520e84ffefc28e530ce0a9fd.zh-tw.xlf",
+      "ArchiveFileCommit": "7a8b841543643f8120b45e397caf2795e12b5330",
+      "ArchiveFileDateTime": "2016-04-15T08:07:13.8235707Z",
       "ArchiveException": null
     },
     "b111e86b9c3a670391379a1d342eafe3511744bc": {

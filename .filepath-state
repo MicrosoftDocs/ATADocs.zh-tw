@@ -948,30 +948,6 @@
   "4fc9df3058f295d41f80db89e3805003cd18a9b7": [
     "ATADocs\\Understand\\media\\ATA-Unresolved-Profile.jpg"
   ],
-  "4dd65d39668fd0f2d782d2eb83d763a6d213c24f": [
-    "ATADocs\\index.html"
-  ],
-  "dba071a93924518b040ee63575173cc0deeec5d6": [
-    "ATADocs\\index.html"
-  ],
-  "51d96acce3a73d392785abf8f347b32d5217088f": [
-    "ATADocs\\index.html"
-  ],
-  "c019c0c48e9f8ae57532ece0850b5583f3371f2f": [
-    "ATADocs\\index.html"
-  ],
-  "cacf218de4de8743c6a9b46ed67aa09b9df1c09e": [
-    "ATADocs\\index.html"
-  ],
-  "78175e5e559433f50389d54a92da5c5ad179583b": [
-    "ATADocs\\index.html"
-  ],
-  "407dd4556cfc884b4c17a01991dfc8ded3f569bb": [
-    "ATADocs\\index.html"
-  ],
-  "218afda1e527c49e815a1928051c47a32ade8b21": [
-    "ATADocs\\index.html"
-  ],
   "adc83fb994ee2150a8eab572c3864521a4045340": [
     "ATADocs\\DeployUse\\install-ata-preinstall.md"
   ],
@@ -1178,5 +1154,8 @@
   ],
   "66315e9c213356652d677bbb6332a3827913ba86": [
     "ATADocs\\DeployUse\\modifying-ata-config-nicname.md"
+  ],
+  "aaa1575d3c3fc2e47225dc3df41161808e92bfc9": [
+    "ATADocs\\index.md"
   ]
 }

@@ -106,7 +106,7 @@
  [ATADocs\Image\wef_ad-event-log-reader-popup.png](https://github.com/Microsoft/ATADocs-pr/blob/89d4e24a42285e2581007a747350037519b40287/ATADocs/Image/wef_ad-event-log-reader-popup.png) | HandedOffSuccess | [Details](#ae46394f83c94ae0f48d6a7d9a7cd6d18b58adf0131)
  [ATADocs\Image\wef_http.png](https://github.com/Microsoft/ATADocs-pr/blob/89d4e24a42285e2581007a747350037519b40287/ATADocs/Image/wef_http.png) | HandedOffSuccess | [Details](#d4d9ac890b80451972fbe194c30577b0655be0cd133)
  [ATADocs\Image\wef_subscription-prop.png](https://github.com/Microsoft/ATADocs-pr/blob/89d4e24a42285e2581007a747350037519b40287/ATADocs/Image/wef_subscription-prop.png) | HandedOffSuccess | [Details](#9b8562feafa85324c9a6e3e9020450535df920c6134)
- [ATADocs\index.html](https://github.com/Microsoft/ATADocs-pr/blob/764205145ac7d958e1f45c7c0ba41ce2781942d7/ATADocs/index.html) | HandedOffSuccess | [Details](#4dd65d39668fd0f2d782d2eb83d763a6d213c24f135)
+ [ATADocs\index.md](https://github.com/Microsoft/ATADocs-pr/blob/05f5ef153862cba2d129e7dea9d75d60a4b3e251/ATADocs/index.md) | HandedOffSuccess | [Details](#aaa1575d3c3fc2e47225dc3df41161808e92bfc9135)
  [ATADocs\PlanDesign\media\150x150.png](https://github.com/Microsoft/ATADocs-pr/blob/fecc373fb422e140bc330d29bc534ac9ff543172/ATADocs/PlanDesign/media/150x150.png) | HandedOffSuccess | [Details](#84421bf7f4ba657e685239fb27f4798a46485f71141)
  [ATADocs\PlanDesign\media\ATA-architecture-topology.jpg](https://github.com/Microsoft/ATADocs-pr/blob/adccdbdd1de031c3945b031d03cbbd2d23793e60/ATADocs/PlanDesign/media/ATA-architecture-topology.jpg) | HandedOffSuccess | [Details](#3b63dc0cff85980cb632069d4c34cc8894ecfc7c142)
  [ATADocs\PlanDesign\media\ATA-DNS-Suffix.png](https://github.com/Microsoft/ATADocs-pr/blob/adccdbdd1de031c3945b031d03cbbd2d23793e60/ATADocs/PlanDesign/media/ATA-DNS-Suffix.png) | HandedOffSuccess | [Details](#d44b3a04b32a061ffbd7e04912834ac56044f652143)
@@ -1941,11 +1941,11 @@
 * Dependency From: ATADocs\PlanDesign\configure-event-collection.md
 * [Back to Top](#report-top)
 
-##### <a name='4dd65d39668fd0f2d782d2eb83d763a6d213c24f135'></a> Source: [ATADocs\index.html](https://github.com/Microsoft/ATADocs-pr/blob/764205145ac7d958e1f45c7c0ba41ce2781942d7/ATADocs/index.html)
+##### <a name='aaa1575d3c3fc2e47225dc3df41161808e92bfc9135'></a> Source: [ATADocs\index.md](https://github.com/Microsoft/ATADocs-pr/blob/05f5ef153862cba2d129e7dea9d75d60a4b3e251/ATADocs/index.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [4dd65d39668fd0f2d782d2eb83d763a6d213c24f.html](https://github.com/Microsoft/EM.handoff/blob/10eb1aac3a401de005b6180e259fc1a751c2207e/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/4dd65d39668fd0f2d782d2eb83d763a6d213c24f.html)
-* Handoff Datetime: 2016-03-28 21:52:07
+* Handoff File: [index.cc3e62ac6c9901731450d753a0ecebc990048809.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/c43f63790bed0725f2b6b118a2a7a7c25010dc03/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/index.cc3e62ac6c9901731450d753a0ecebc990048809.zh-tw.xlf)
+* Handoff Datetime: 2016-04-18 17:52:47
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00

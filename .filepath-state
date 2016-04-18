@@ -107,6 +107,9 @@
   "6d665d68c1278360eb5bfa9ce3b823792faf6916": [
     "ATADocs\\DeployUse\\install-ata.md"
   ],
+  "a7f381cf1014b0405e65fba423047e285e52d841": [
+    "ATADocs\\DeployUse\\manage-telemetry-settings.md"
+  ],
   "51fc50e84f9de7b22ce989141103fa42aa9889e8": [
     "ATADocs\\DeployUse\\manage-telemetry-settings.md"
   ],
@@ -452,6 +455,9 @@
   "4f72d56afb9f53157569789b68455dcf49016a69": [
     "ATADocs\\Token\\ATA.md"
   ],
+  "d4a88e903b6529342d8bdc8e52b2b9a3dd84106f": [
+    "ATADocs\\Troubleshoot\\ata-technical-faq.md"
+  ],
   "4eeb3e598f9ab9236ac5d40096fce798a6dfcbdf": [
     "ATADocs\\Troubleshoot\\ata-technical-faq.md"
   ],
@@ -506,6 +512,9 @@
   "fec9fcc6606ba2213f2e41e15f1bdad6818696b9": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-monitoring-alerts.md"
   ],
+  "341cf688170786c3b7beeb9c9776ee7c1b555a7c": [
+    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-ata-database.md"
+  ],
   "0a21b27386e9fd32a0e2d9156eb66309a32cfbe7": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-ata-database.md"
   ],
@@ -521,6 +530,9 @@
   "995f2f7ae8eb24dad251bd1deb67446b3074d4e5": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-ata-database.md"
   ],
+  "faf3af5c19b98bdd71dc99b5dc51236ec1185e99": [
+    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md"
+  ],
   "bef93352c66f613587eda4f571e8f23d12db0132": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md"
   ],
@@ -532,6 +544,9 @@
   ],
   "568f440a14e7e286257af5626e1f9575843fe8a6": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md"
+  ],
+  "6b55c206bff4eaf0a315de5882003851c9d38753": [
+    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
   ],
   "e07df8a167da55d54e13a2874a1f375908f2bb43": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
@@ -559,6 +574,9 @@
   ],
   "302bd4d77858994e2d6b153391346ab5cffd59df": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
+  ],
+  "c9cdc41d9ff55616f4477eccbf1a2d1e1de5e438": [
+    "ATADocs\\Understand\\ata-architecture.md"
   ],
   "dbcd5e1523120a52a9af5d7fa4c46a3c14573af8": [
     "ATADocs\\Understand\\ata-architecture.md"
@@ -620,6 +638,9 @@
   "4f363731e75b6cf7be2069e1c9aa16fcf48fb0cb": [
     "ATADocs\\Understand\\TOC.md"
   ],
+  "ec243f4dea2d4acba463694ebe28713255139fa3": [
+    "ATADocs\\Understand\\what-is-ata.md"
+  ],
   "3081c028c13803227b42e3d55fe038b4dc301eef": [
     "ATADocs\\Understand\\what-is-ata.md"
   ],
@@ -652,6 +673,9 @@
   ],
   "2fcb4e9e708146f15516178d5ddd691ba0196ee1": [
     "ATADocs\\Understand\\what-is-ata.md"
+  ],
+  "4683bfe5dbda5dd44dbdfb3ed84cfdce8d8c83a2": [
+    "ATADocs\\Understand\\working-with-ata-console.md"
   ],
   "30cdd37dc2726b6ae3615dde3dac9316a7aa0003": [
     "ATADocs\\Understand\\working-with-ata-console.md"
@@ -923,9 +947,6 @@
   ],
   "4fc9df3058f295d41f80db89e3805003cd18a9b7": [
     "ATADocs\\Understand\\media\\ATA-Unresolved-Profile.jpg"
-  ],
-  "bd35194345e7704542aa52afcce464901ec13325": [
-    "ATADocs\\Understand\\media\\ata-server-icon.png"
   ],
   "4dd65d39668fd0f2d782d2eb83d763a6d213c24f": [
     "ATADocs\\index.html"

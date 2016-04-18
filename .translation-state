@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "7e1c4b2af65ded0da9144edad475e78fd43ac1e7",
+  "LastProcessedCommit": "13a9ef43dbde1793eeb40f0754058711691b8304",
   "LastTranslatedCommit": null,
   "Items": {
     "19ffcb31b9fc0f69362ca0b4fd2e2fdb06dc11d6": {
@@ -33,8 +33,8 @@
     },
     "cbde5c3d1a3b2ee4dad661739ded7c1e909eca48": {
       "FileHash": "cbde5c3d1a3b2ee4dad661739ded7c1e909eca48",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
-      "SourceFilePath": "ATADocs\\Image\\ATA-Kerberos-background.jpg",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
+      "SourceFilePath": "ATADocs\\Understand\\media\\ATA-Kerberos-background.jpg",
       "HandoffReason": 2,
       "DependencyFrom": [
         "ATADocs\\ata-faq.md",
@@ -715,8 +715,8 @@
     },
     "3b63dc0cff85980cb632069d4c34cc8894ecfc7c": {
       "FileHash": "3b63dc0cff85980cb632069d4c34cc8894ecfc7c",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
-      "SourceFilePath": "ATADocs\\Image\\ATA-architecture-topology.jpg",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
+      "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-architecture-topology.jpg",
       "HandoffReason": 2,
       "DependencyFrom": [
         "ATADocs\\pre-installation-steps.md",
@@ -755,8 +755,8 @@
     },
     "d44b3a04b32a061ffbd7e04912834ac56044f652": {
       "FileHash": "d44b3a04b32a061ffbd7e04912834ac56044f652",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
-      "SourceFilePath": "ATADocs\\Image\\ATA-DNS-Suffix.png",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
+      "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-DNS-Suffix.png",
       "HandoffReason": 2,
       "DependencyFrom": [
         "ATADocs\\pre-installation-steps.md",
@@ -820,7 +820,7 @@
     },
     "4f72d56afb9f53157569789b68455dcf49016a69": {
       "FileHash": "4f72d56afb9f53157569789b68455dcf49016a69",
-      "SourceFileCommit": "e288db2346e005ee6346f64dee904f097b26f3ef",
+      "SourceFileCommit": "89d4e24a42285e2581007a747350037519b40287",
       "SourceFilePath": "ATADocs\\Token\\ATA.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -2927,7 +2927,7 @@
     },
     "71172af8b9ffaf66bdf7bc8ef1db6aee70f2a2ca": {
       "FileHash": "71172af8b9ffaf66bdf7bc8ef1db6aee70f2a2ca",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "de436e526e2a3d1e86ddab01825bf841a8592f55",
       "SourceFilePath": "ATADocs\\Understand\\media\\ATA-traffic-flow.jpg",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -2987,7 +2987,7 @@
     },
     "a89424369313176e864ab91f5518cae5a9ca2ff8": {
       "FileHash": "a89424369313176e864ab91f5518cae5a9ca2ff8",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-mongoDB-moveDB.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3076,7 +3076,7 @@
     },
     "d2b6088dd989cb01d54c714b18b23fdac454c71c": {
       "FileHash": "d2b6088dd989cb01d54c714b18b23fdac454c71c",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-Health-Center-Alert-red-dot.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3110,7 +3110,7 @@
     },
     "efd559ab69debefb5f3e2fb6fd1a0f293070fbf1": {
       "FileHash": "efd559ab69debefb5f3e2fb6fd1a0f293070fbf1",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-red-dot.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3141,7 +3141,7 @@
     },
     "c4f3b468905bca6e23f5835219459a7e3af5b84e": {
       "FileHash": "c4f3b468905bca6e23f5835219459a7e3af5b84e",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-Health-Issue.JPG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3201,7 +3201,7 @@
     },
     "6349405da0cc5437d4907c1b377ebe448ef3810d": {
       "FileHash": "6349405da0cc5437d4907c1b377ebe448ef3810d",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-center-fullpartial.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3232,7 +3232,7 @@
     },
     "3779d05774a96f85f009cc401f08a47d742951e6": {
       "FileHash": "3779d05774a96f85f009cc401f08a47d742951e6",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-center-outdated.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3263,7 +3263,7 @@
     },
     "28bff0237cf9625b464859bd7f3dc309779c7fcb": {
       "FileHash": "28bff0237cf9625b464859bd7f3dc309779c7fcb",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-config-icon.JPG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3305,7 +3305,7 @@
     },
     "897dfb81c69563bcdb1239566b4a47f1e8a060cd": {
       "FileHash": "897dfb81c69563bcdb1239566b4a47f1e8a060cd",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-gw-updated.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3365,7 +3365,7 @@
     },
     "377436ada10ce7d4412b6b256396ea85ad93c5af": {
       "FileHash": "377436ada10ce7d4412b6b256396ea85ad93c5af",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-Center-Configuration.JPG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3397,7 +3397,7 @@
     },
     "5381c4c0d584f8697c8053ef5c9ee7b1ab576be3": {
       "FileHash": "5381c4c0d584f8697c8053ef5c9ee7b1ab576be3",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-Domain-Connectivity-User.JPG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3429,7 +3429,7 @@
     },
     "b79a81b193f258cfee46d1a6478d89e46c7eecdc": {
       "FileHash": "b79a81b193f258cfee46d1a6478d89e46c7eecdc",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-Gateway-Configuration.JPG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3461,7 +3461,7 @@
     },
     "dddd652fb096923a6ac044e9d8c151dc1af2982f": {
       "FileHash": "dddd652fb096923a6ac044e9d8c151dc1af2982f",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATAGWDomainController.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3493,7 +3493,7 @@
     },
     "28b811e014fbf38741d81c7418c6bb70ead5df74": {
       "FileHash": "28b811e014fbf38741d81c7418c6bb70ead5df74",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-Config-GW-Settings.jpg",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3525,7 +3525,7 @@
     },
     "bb82c0e8ef39951a2f35466d9912fe622fdac06e": {
       "FileHash": "bb82c0e8ef39951a2f35466d9912fe622fdac06e",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-performance-monitoring-add-counters.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3557,7 +3557,7 @@
     },
     "ce4a21e892357049d70b5ff1aa708547ca715b17": {
       "FileHash": "ce4a21e892357049d70b5ff1aa708547ca715b17",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-VPN-Subnets.JPG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3618,7 +3618,7 @@
     },
     "ea504d039c81989138676445a3ab7172415a1ef4": {
       "FileHash": "ea504d039c81989138676445a3ab7172415a1ef4",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-chge-IP-after-clicking-save.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3650,7 +3650,7 @@
     },
     "3edd04df7a3cad90fcf5a10adcf7533490caa6eb": {
       "FileHash": "3edd04df7a3cad90fcf5a10adcf7533490caa6eb",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-console-change-IP-bindings.jpg",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3683,7 +3683,7 @@
     },
     "0932dedf4e4f231714a6072c12093c6678b08100": {
       "FileHash": "0932dedf4e4f231714a6072c12093c6678b08100",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-change-console-IP.jpg",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3715,7 +3715,7 @@
     },
     "caffb72088ae1244fe4dc8010a33fa66ffab9cac": {
       "FileHash": "caffb72088ae1244fe4dc8010a33fa66ffab9cac",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-GW-change-DC-password.JPG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3805,7 +3805,7 @@
     },
     "f8847c09ae291ce8fb83cb013a7e5f5f3a4b6279": {
       "FileHash": "f8847c09ae291ce8fb83cb013a7e5f5f3a4b6279",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-alerts-verbosity-language.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3865,7 +3865,7 @@
     },
     "2693f2a42f01bacc6651248a0113d575c12054c3": {
       "FileHash": "2693f2a42f01bacc6651248a0113d575c12054c3",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-uninstall-center-bug.jpg",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3896,7 +3896,7 @@
     },
     "84844fbeab61dc307350394e1071c1bad6e20659": {
       "FileHash": "84844fbeab61dc307350394e1071c1bad6e20659",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-GW-uninstall-bug.jpg",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -3956,7 +3956,7 @@
     },
     "73222a255bcea2b987c049da4c47fde788155273": {
       "FileHash": "73222a255bcea2b987c049da4c47fde788155273",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-GW-error.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4016,7 +4016,7 @@
     },
     "3fdf7fa3a650e1b704edea8ef72a15bdf4fe52bb": {
       "FileHash": "3fdf7fa3a650e1b704edea8ef72a15bdf4fe52bb",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-Suspicious-Activity-Timeline.JPG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4047,7 +4047,7 @@
     },
     "9b28cbe44f594229da64d756ca97cbfa1b1c82c5": {
       "FileHash": "9b28cbe44f594229da64d756ca97cbfa1b1c82c5",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\DeployUse\\media\\ATA-Input.JPG",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4107,7 +4107,7 @@
     },
     "418aa302bb034a3b0ccf734d1daa8c9b04784fe3": {
       "FileHash": "418aa302bb034a3b0ccf734d1daa8c9b04784fe3",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-1.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4138,7 +4138,7 @@
     },
     "dc3fd1abf7b4588be5bd4f9de7a4dba5752f3f52": {
       "FileHash": "dc3fd1abf7b4588be5bd4f9de7a4dba5752f3f52",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-2.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4231,7 +4231,7 @@
     },
     "de4f0db38fdd16422e151b6759f276985c123437": {
       "FileHash": "de4f0db38fdd16422e151b6759f276985c123437",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-7.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4262,7 +4262,7 @@
     },
     "ff5b3f014794c191287e88b25ad04bf6c404db1a": {
       "FileHash": "ff5b3f014794c191287e88b25ad04bf6c404db1a",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-12.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4293,7 +4293,7 @@
     },
     "7038048d28b17ba2335f1ecb3249e27d7f58d7fb": {
       "FileHash": "7038048d28b17ba2335f1ecb3249e27d7f58d7fb",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-14.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4411,7 +4411,7 @@
     },
     "0b15335fec1868fca0cf265b525bc7223a25e859": {
       "FileHash": "0b15335fec1868fca0cf265b525bc7223a25e859",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\PlanDesign\\media\\ATA-enable-siem-forward-events.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4442,7 +4442,7 @@
     },
     "1c19abba75023e7073977641e2674ddd62d20326": {
       "FileHash": "1c19abba75023e7073977641e2674ddd62d20326",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\PlanDesign\\media\\wef_ad_eventlogreaders.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4473,7 +4473,7 @@
     },
     "ae46394f83c94ae0f48d6a7d9a7cd6d18b58adf0": {
       "FileHash": "ae46394f83c94ae0f48d6a7d9a7cd6d18b58adf0",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\PlanDesign\\media\\wef_ad-event-log-reader-popup.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4504,7 +4504,7 @@
     },
     "9b8562feafa85324c9a6e3e9020450535df920c6": {
       "FileHash": "9b8562feafa85324c9a6e3e9020450535df920c6",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\PlanDesign\\media\\wef_subscription-prop.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4535,7 +4535,7 @@
     },
     "52452ea87355476bda32308ec38a95c6f75a99ef": {
       "FileHash": "52452ea87355476bda32308ec38a95c6f75a99ef",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\PlanDesign\\media\\wef_4776.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4566,7 +4566,7 @@
     },
     "d4d9ac890b80451972fbe194c30577b0655be0cd": {
       "FileHash": "d4d9ac890b80451972fbe194c30577b0655be0cd",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\PlanDesign\\media\\wef_http.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4626,7 +4626,7 @@
     },
     "da52b59d7fcfd91fcbdbdce60af548d4ef879643": {
       "FileHash": "da52b59d7fcfd91fcbdbdce60af548d4ef879643",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\PlanDesign\\media\\ATA-Port-Mirroring-Capture.jpg",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4748,7 +4748,7 @@
     },
     "f5bfb600963437f26bbf2b098184ff12159c31fe": {
       "FileHash": "f5bfb600963437f26bbf2b098184ff12159c31fe",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\Troubleshoot\\media\\ATA-performance-counters.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4779,7 +4779,7 @@
     },
     "3a5b4e5c2de5a6e109cd66dd94a37f40b02fa5df": {
       "FileHash": "3a5b4e5c2de5a6e109cd66dd94a37f40b02fa5df",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\Troubleshoot\\media\\ATA-Gateway-perf-counters.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4928,7 +4928,7 @@
     },
     "18204afb92c709be98646c610653d47b6625e11b": {
       "FileHash": "18204afb92c709be98646c610653d47b6625e11b",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\Understand\\media\\ATA-console-search.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -4960,7 +4960,7 @@
     },
     "5a014a150f29b097053eae951f7ed49ce65518d0": {
       "FileHash": "5a014a150f29b097053eae951f7ed49ce65518d0",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "adccdbdd1de031c3945b031d03cbbd2d23793e60",
       "SourceFilePath": "ATADocs\\Understand\\media\\ATA-mini-profile.jpg",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -5021,7 +5021,7 @@
     },
     "7ed12b436fccf9d40ecd76f13697812c159f69a3": {
       "FileHash": "7ed12b436fccf9d40ecd76f13697812c159f69a3",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "cb2a865ec3524a3cf6b3fd23f921393825ce9dd6",
       "SourceFilePath": "ATADocs\\Understand\\media\\attack-timeline.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -5053,7 +5053,7 @@
     },
     "5a5c773c62ea63438b12536bfdb91f0b2a6866bf": {
       "FileHash": "5a5c773c62ea63438b12536bfdb91f0b2a6866bf",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "cb2a865ec3524a3cf6b3fd23f921393825ce9dd6",
       "SourceFilePath": "ATADocs\\Understand\\media\\notification-bar.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -5085,7 +5085,7 @@
     },
     "2b57f03ff7f6b23f604e7ef93efa4bc72c1a544a": {
       "FileHash": "2b57f03ff7f6b23f604e7ef93efa4bc72c1a544a",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "cb2a865ec3524a3cf6b3fd23f921393825ce9dd6",
       "SourceFilePath": "ATADocs\\Understand\\media\\health-center.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -5117,7 +5117,7 @@
     },
     "746cfa4a7266e89f4083291f6903b6aea0509917": {
       "FileHash": "746cfa4a7266e89f4083291f6903b6aea0509917",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "cb2a865ec3524a3cf6b3fd23f921393825ce9dd6",
       "SourceFilePath": "ATADocs\\Understand\\media\\user-profile.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -5149,7 +5149,7 @@
     },
     "92803f3318fdfdbf17528b747b13f715ee40b7fe": {
       "FileHash": "92803f3318fdfdbf17528b747b13f715ee40b7fe",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "cb2a865ec3524a3cf6b3fd23f921393825ce9dd6",
       "SourceFilePath": "ATADocs\\Understand\\media\\computer-profile.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -5181,7 +5181,7 @@
     },
     "4fc9df3058f295d41f80db89e3805003cd18a9b7": {
       "FileHash": "4fc9df3058f295d41f80db89e3805003cd18a9b7",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "e628e3d3aa179809b57b496696a7840fa4a51519",
       "SourceFilePath": "ATADocs\\Understand\\media\\ATA-Unresolved-Profile.jpg",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -5998,7 +5998,7 @@
     },
     "ede40a9e48ad2fdc2dc9a635adc503cd8d599fa1": {
       "FileHash": "ede40a9e48ad2fdc2dc9a635adc503cd8d599fa1",
-      "SourceFileCommit": "b98547e340bce87faba3e3aa209d738ddbc4612c",
+      "SourceFileCommit": "cb2a865ec3524a3cf6b3fd23f921393825ce9dd6",
       "SourceFilePath": "ATADocs\\Understand\\media\\ATA-log-in-screen.jpg",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6957,7 +6957,7 @@
     },
     "b37e2682c71aeeedf28194f14a319a40df6e8d6b": {
       "FileHash": "b37e2682c71aeeedf28194f14a319a40df6e8d6b",
-      "SourceFileCommit": "eb768858107f8be81b264e56168eee3e304d4b60",
+      "SourceFileCommit": "2efb1a161a7b4e42b451c02972d29245cfe8117a",
       "SourceFilePath": "ATADocs\\PlanDesign\\media\\ATA-Port-Mirroring-Capture-traffic.jpg",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -6988,7 +6988,7 @@
     },
     "8102e99a695cbdc6b1dd1e0efed4a2a749619e14": {
       "FileHash": "8102e99a695cbdc6b1dd1e0efed4a2a749619e14",
-      "SourceFileCommit": "eb768858107f8be81b264e56168eee3e304d4b60",
+      "SourceFileCommit": "2efb1a161a7b4e42b451c02972d29245cfe8117a",
       "SourceFilePath": "ATADocs\\PlanDesign\\media\\ATA-Port-Mirroring-filter-settings.jpg",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -7019,7 +7019,7 @@
     },
     "abdeb084afeb71e961318bbf0b27b51d7afa2009": {
       "FileHash": "abdeb084afeb71e961318bbf0b27b51d7afa2009",
-      "SourceFileCommit": "eb768858107f8be81b264e56168eee3e304d4b60",
+      "SourceFileCommit": "2efb1a161a7b4e42b451c02972d29245cfe8117a",
       "SourceFilePath": "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-3.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -7050,7 +7050,7 @@
     },
     "e9942281ff802e411d8857f4bf8d6a7c9a72c81a": {
       "FileHash": "e9942281ff802e411d8857f4bf8d6a7c9a72c81a",
-      "SourceFileCommit": "eb768858107f8be81b264e56168eee3e304d4b60",
+      "SourceFileCommit": "2efb1a161a7b4e42b451c02972d29245cfe8117a",
       "SourceFilePath": "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-5.png",
       "HandoffReason": 2,
       "DependencyFrom": [
@@ -7777,7 +7777,7 @@
     },
     "5b090bf4377f3afa9c2e2e2c6eb4fccdd78a4a3c": {
       "FileHash": "5b090bf4377f3afa9c2e2e2c6eb4fccdd78a4a3c",
-      "SourceFileCommit": "a51a0ad340e0a1a5dd20ed154c7721b734ebe435",
+      "SourceFileCommit": "0602a54ea493c8a72d89143bb59ec58e61eb9c95",
       "SourceFilePath": "ATADocs\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -9488,7 +9488,7 @@
     },
     "0ca0e4488587028831a20d04dd7a4ab22c988d16": {
       "FileHash": "0ca0e4488587028831a20d04dd7a4ab22c988d16",
-      "SourceFileCommit": "dffddac833cf1febb835d95f2c49482c77485211",
+      "SourceFileCommit": "ff2c86849a4a653ae4a9e2ddc6169b0002d463f3",
       "SourceFilePath": "ATADocs\\DeployUse\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -9662,7 +9662,7 @@
     },
     "a3d31d079cf6f629ebe7c0fd4a17c25ae411375f": {
       "FileHash": "a3d31d079cf6f629ebe7c0fd4a17c25ae411375f",
-      "SourceFileCommit": "dffddac833cf1febb835d95f2c49482c77485211",
+      "SourceFileCommit": "ff2c86849a4a653ae4a9e2ddc6169b0002d463f3",
       "SourceFilePath": "ATADocs\\PlanDesign\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -9720,7 +9720,7 @@
     },
     "0b53a85847a07b8c79b4164b3f7837638473bf83": {
       "FileHash": "0b53a85847a07b8c79b4164b3f7837638473bf83",
-      "SourceFileCommit": "dffddac833cf1febb835d95f2c49482c77485211",
+      "SourceFileCommit": "ff2c86849a4a653ae4a9e2ddc6169b0002d463f3",
       "SourceFilePath": "ATADocs\\Troubleshoot\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -9923,7 +9923,7 @@
     },
     "4dd65d39668fd0f2d782d2eb83d763a6d213c24f": {
       "FileHash": "4dd65d39668fd0f2d782d2eb83d763a6d213c24f",
-      "SourceFileCommit": "1d5727b4ebf7fed61cff9d3ffbb5df396983787b",
+      "SourceFileCommit": "764205145ac7d958e1f45c7c0ba41ce2781942d7",
       "SourceFilePath": "ATADocs\\index.html",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -11576,7 +11576,7 @@
     },
     "c5474244ade9fdd4a0e4532f7105a3ce011e29a1": {
       "FileHash": "c5474244ade9fdd4a0e4532f7105a3ce011e29a1",
-      "SourceFileCommit": "c9d49cfb651f8ff5f4bf6f9595a8a1507de58d0c",
+      "SourceFileCommit": "de9a5e8640c92e2ddd453cbedb88c56e045c2f5a",
       "SourceFilePath": "ATADocs\\DeployUse\\modifying-ata-config-centercert.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -11837,7 +11837,7 @@
     },
     "e2fdbc72d51f75dba8f4ce3fc1ac6953dc43b184": {
       "FileHash": "e2fdbc72d51f75dba8f4ce3fc1ac6953dc43b184",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\ata-database-management.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -11866,7 +11866,7 @@
     },
     "7b317005194bacc60988cb8ad68cc832a130cf88": {
       "FileHash": "7b317005194bacc60988cb8ad68cc832a130cf88",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\ata-health-center.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -11895,7 +11895,7 @@
     },
     "94997b240a8e00b59b2f0b747189dff96ec39621": {
       "FileHash": "94997b240a8e00b59b2f0b747189dff96ec39621",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -11924,7 +11924,7 @@
     },
     "3d395216582d6bf7965e35fe593dd38b4aef886f": {
       "FileHash": "3d395216582d6bf7965e35fe593dd38b4aef886f",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\install-ata.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -11953,7 +11953,7 @@
     },
     "adc83fb994ee2150a8eab572c3864521a4045340": {
       "FileHash": "adc83fb994ee2150a8eab572c3864521a4045340",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\install-ata-preinstall.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -11982,7 +11982,7 @@
     },
     "1996f4de44bf3c8c22ccedd55f985216ff4ac7cf": {
       "FileHash": "1996f4de44bf3c8c22ccedd55f985216ff4ac7cf",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\install-ata-step1.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12011,7 +12011,7 @@
     },
     "e73df2fb3fe55031bde1f7d86e5bd28efae9882f": {
       "FileHash": "e73df2fb3fe55031bde1f7d86e5bd28efae9882f",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\install-ata-step2.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12040,7 +12040,7 @@
     },
     "dd3c62c78bdc56f5c6dffd51b0bf186e96b62005": {
       "FileHash": "dd3c62c78bdc56f5c6dffd51b0bf186e96b62005",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\install-ata-step3.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12069,7 +12069,7 @@
     },
     "209cf292964d5df261861875d11e910dcf1c11dc": {
       "FileHash": "209cf292964d5df261861875d11e910dcf1c11dc",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\install-ata-step4.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12127,7 +12127,7 @@
     },
     "9f05d711f10c4653b410e7af3487a57435588de2": {
       "FileHash": "9f05d711f10c4653b410e7af3487a57435588de2",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\install-ata-step6.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12185,7 +12185,7 @@
     },
     "8fb4616734aa62dbd8ca43beda7908fe279d0a34": {
       "FileHash": "8fb4616734aa62dbd8ca43beda7908fe279d0a34",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\modifying-ata-config-centerip.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12214,7 +12214,7 @@
     },
     "7ecd71b5d08ce33aaa04414c4df55251ee539a21": {
       "FileHash": "7ecd71b5d08ce33aaa04414c4df55251ee539a21",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\modifying-ata-config-consoleip.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12243,7 +12243,7 @@
     },
     "b9e2ce9b9c5af49f56a411972af447a9bdf5fec1": {
       "FileHash": "b9e2ce9b9c5af49f56a411972af447a9bdf5fec1",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\modifying-ata-config-dcpassword.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12272,7 +12272,7 @@
     },
     "3bfe36dbd6840747a622f5eb11a1f6341afff38a": {
       "FileHash": "3bfe36dbd6840747a622f5eb11a1f6341afff38a",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\modifying-ata-config-iiscert.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12301,7 +12301,7 @@
     },
     "6fb1d0bf74f64a43492f44cf243e705511864cd6": {
       "FileHash": "6fb1d0bf74f64a43492f44cf243e705511864cd6",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\modifying-ata-config-nicname.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12330,7 +12330,7 @@
     },
     "b2d54599b781e115cabac7e453605bbc7de2a8c1": {
       "FileHash": "b2d54599b781e115cabac7e453605bbc7de2a8c1",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\modifying-ata-configuration.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12359,7 +12359,7 @@
     },
     "5a1de3d224af36fa3b3323f1b91e07dfc9994a7c": {
       "FileHash": "5a1de3d224af36fa3b3323f1b91e07dfc9994a7c",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\pre-installation-steps.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12388,7 +12388,7 @@
     },
     "85cfd7c6e9adf9feab842b6c94e73b95f6866f70": {
       "FileHash": "85cfd7c6e9adf9feab842b6c94e73b95f6866f70",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\setting-ata-alerts.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12417,7 +12417,7 @@
     },
     "9167046a35dc63a2dfbecd063fa616ed52be8051": {
       "FileHash": "9167046a35dc63a2dfbecd063fa616ed52be8051",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\whats-new-version-1.4.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12446,7 +12446,7 @@
     },
     "20634552884bf9aa67ef96122b36658a4c8d993c": {
       "FileHash": "20634552884bf9aa67ef96122b36658a4c8d993c",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\whats-new-version-1.5.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12475,7 +12475,7 @@
     },
     "9ba72bfe9b11799f36e3d95597c135c402bee299": {
       "FileHash": "9ba72bfe9b11799f36e3d95597c135c402bee299",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\working-with-detection-settings.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12504,7 +12504,7 @@
     },
     "aebde4e6cecab8aad3d7c827dd8724b2bfd59343": {
       "FileHash": "aebde4e6cecab8aad3d7c827dd8724b2bfd59343",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\DeployUse\\working-with-suspicious-activities.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12533,7 +12533,7 @@
     },
     "ca2e679ed498245f66995b90846eeb5094e08b13": {
       "FileHash": "ca2e679ed498245f66995b90846eeb5094e08b13",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-capacity-planning.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12562,7 +12562,7 @@
     },
     "5aef8c789516b3d88dc5c10e55a6733eaf3106c1": {
       "FileHash": "5aef8c789516b3d88dc5c10e55a6733eaf3106c1",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\PlanDesign\\ata-prerequisites.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12591,7 +12591,7 @@
     },
     "50aeef0747d55a1704fec316203600de72f08e53": {
       "FileHash": "50aeef0747d55a1704fec316203600de72f08e53",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\PlanDesign\\configure-event-collection.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12620,7 +12620,7 @@
     },
     "28fac11d0d7072ffe2265d691510e0ea469fa7a0": {
       "FileHash": "28fac11d0d7072ffe2265d691510e0ea469fa7a0",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\PlanDesign\\configure-port-mirroring.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12649,7 +12649,7 @@
     },
     "2a848561b53f66f053e7985d91a27e71b0dc43ea": {
       "FileHash": "2a848561b53f66f053e7985d91a27e71b0dc43ea",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\PlanDesign\\validate-port-mirroring.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12707,7 +12707,7 @@
     },
     "89b9e066b599b36b58d4888f9a6ffe393c18a53d": {
       "FileHash": "89b9e066b599b36b58d4888f9a6ffe393c18a53d",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\Troubleshoot\\troubleshooting-ata-monitoring-alerts.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12852,7 +12852,7 @@
     },
     "49e69e5c675945b5037623bbf885dc6c6b337c41": {
       "FileHash": "49e69e5c675945b5037623bbf885dc6c6b337c41",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "db03ba1fe18097b1908a64a70f3b281a918a5e25",
       "SourceFilePath": "ATADocs\\Understand\\ata-faq.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -12881,7 +12881,7 @@
     },
     "80a018fe68a983e9812cad32809a8e47bceafed2": {
       "FileHash": "80a018fe68a983e9812cad32809a8e47bceafed2",
-      "SourceFileCommit": "f901007261b29c78d680e8f8866cc12e49f10735",
+      "SourceFileCommit": "a800b23be3be60dfc271cb6876a42a9bbf5a718a",
       "SourceFilePath": "ATADocs\\Understand\\TOC.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -13026,7 +13026,7 @@
     },
     "b111e86b9c3a670391379a1d342eafe3511744bc": {
       "FileHash": "b111e86b9c3a670391379a1d342eafe3511744bc",
-      "SourceFileCommit": "7e1c4b2af65ded0da9144edad475e78fd43ac1e7",
+      "SourceFileCommit": "abe45147803406fa3b0b0962cf795f019930d571",
       "SourceFilePath": "ATADocs\\DeployUse\\install-ata-step5.md",
       "HandoffReason": 1,
       "DependencyFrom": null,
@@ -13051,6 +13051,238 @@
       "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\install-ata-step5.939491200e7347138888e6ccb69a84737be3bec2.zh-tw.xlf",
       "ArchiveFileCommit": "1e555e681739287a2946d5b7555a86498893d42c",
       "ArchiveFileDateTime": "2016-04-15T08:02:24.8334267Z",
+      "ArchiveException": null
+    },
+    "a7f381cf1014b0405e65fba423047e285e52d841": {
+      "FileHash": "a7f381cf1014b0405e65fba423047e285e52d841",
+      "SourceFileCommit": "1d866c59d791325e6388c735b911ff5f7f09364e",
+      "SourceFilePath": "ATADocs\\DeployUse\\manage-telemetry-settings.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "ATADocs\\DeployUse\\manage-telemetry-settings.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\manage-telemetry-settings.8695a3cab69c52f730f24c0a5aa69539621393a8.zh-tw.xlf",
+      "HandoffFileCommit": "4e27c0b5e0f9bb47cb8beb01c4aa6bfb2137c4ec",
+      "HandoffDateTime": "2016-04-18T15:24:30.4111437Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "d4a88e903b6529342d8bdc8e52b2b9a3dd84106f": {
+      "FileHash": "d4a88e903b6529342d8bdc8e52b2b9a3dd84106f",
+      "SourceFileCommit": "1d866c59d791325e6388c735b911ff5f7f09364e",
+      "SourceFilePath": "ATADocs\\Troubleshoot\\ata-technical-faq.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "ATADocs\\Troubleshoot\\ata-technical-faq.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-technical-faq.fa1f89c776292e09c1d93eaa37cecd7df0b4a836.zh-tw.xlf",
+      "HandoffFileCommit": "4e27c0b5e0f9bb47cb8beb01c4aa6bfb2137c4ec",
+      "HandoffDateTime": "2016-04-18T15:24:30.4111437Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "341cf688170786c3b7beeb9c9776ee7c1b555a7c": {
+      "FileHash": "341cf688170786c3b7beeb9c9776ee7c1b555a7c",
+      "SourceFileCommit": "1d866c59d791325e6388c735b911ff5f7f09364e",
+      "SourceFilePath": "ATADocs\\Troubleshoot\\troubleshooting-ata-using-ata-database.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "ATADocs\\Troubleshoot\\troubleshooting-ata-using-ata-database.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\troubleshooting-ata-using-ata-database.59180de16ff041e4081a27aa3918a2ea95a29245.zh-tw.xlf",
+      "HandoffFileCommit": "4e27c0b5e0f9bb47cb8beb01c4aa6bfb2137c4ec",
+      "HandoffDateTime": "2016-04-18T15:24:30.4111437Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "faf3af5c19b98bdd71dc99b5dc51236ec1185e99": {
+      "FileHash": "faf3af5c19b98bdd71dc99b5dc51236ec1185e99",
+      "SourceFileCommit": "1d866c59d791325e6388c735b911ff5f7f09364e",
+      "SourceFilePath": "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\troubleshooting-ata-using-logs.c237c8cdfd616baa4c8e47acb7d766c2f4de3c38.zh-tw.xlf",
+      "HandoffFileCommit": "4e27c0b5e0f9bb47cb8beb01c4aa6bfb2137c4ec",
+      "HandoffDateTime": "2016-04-18T15:24:30.4111437Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "6b55c206bff4eaf0a315de5882003851c9d38753": {
+      "FileHash": "6b55c206bff4eaf0a315de5882003851c9d38753",
+      "SourceFileCommit": "1d866c59d791325e6388c735b911ff5f7f09364e",
+      "SourceFilePath": "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\troubleshooting-ata-using-perf-counters.79e76fbe5bcf01cc8ac0bd412963c88b4d09ccfe.zh-tw.xlf",
+      "HandoffFileCommit": "4e27c0b5e0f9bb47cb8beb01c4aa6bfb2137c4ec",
+      "HandoffDateTime": "2016-04-18T15:24:30.4111437Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "c9cdc41d9ff55616f4477eccbf1a2d1e1de5e438": {
+      "FileHash": "c9cdc41d9ff55616f4477eccbf1a2d1e1de5e438",
+      "SourceFileCommit": "1d866c59d791325e6388c735b911ff5f7f09364e",
+      "SourceFilePath": "ATADocs\\Understand\\ata-architecture.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "ATADocs\\Understand\\ata-architecture.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-architecture.76065513a13eb83d520e84ffefc28e530ce0a9fd.zh-tw.xlf",
+      "HandoffFileCommit": "4e27c0b5e0f9bb47cb8beb01c4aa6bfb2137c4ec",
+      "HandoffDateTime": "2016-04-18T15:24:30.4111437Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "ec243f4dea2d4acba463694ebe28713255139fa3": {
+      "FileHash": "ec243f4dea2d4acba463694ebe28713255139fa3",
+      "SourceFileCommit": "1d866c59d791325e6388c735b911ff5f7f09364e",
+      "SourceFilePath": "ATADocs\\Understand\\what-is-ata.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "ATADocs\\Understand\\what-is-ata.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\what-is-ata.26e22f3b3bdc705961558ab294bf44dabd1ee498.zh-tw.xlf",
+      "HandoffFileCommit": "4e27c0b5e0f9bb47cb8beb01c4aa6bfb2137c4ec",
+      "HandoffDateTime": "2016-04-18T15:24:30.4111437Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "4683bfe5dbda5dd44dbdfb3ed84cfdce8d8c83a2": {
+      "FileHash": "4683bfe5dbda5dd44dbdfb3ed84cfdce8d8c83a2",
+      "SourceFileCommit": "1d866c59d791325e6388c735b911ff5f7f09364e",
+      "SourceFilePath": "ATADocs\\Understand\\working-with-ata-console.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "ATADocs\\Understand\\working-with-ata-console.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\working-with-ata-console.1727ee5b9929dac975a02036ec1253cb008ce881.zh-tw.xlf",
+      "HandoffFileCommit": "4e27c0b5e0f9bb47cb8beb01c4aa6bfb2137c4ec",
+      "HandoffDateTime": "2016-04-18T15:24:30.4111437Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
       "ArchiveException": null
     }
   }

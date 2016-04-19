@@ -210,7 +210,7 @@
  [.gitmodules](https://github.com/Microsoft/ATADocs-pr/blob/8bb87e8148118f62e410ff79eb5163922496bc89/.gitmodules) | Ignored | [Details](#02b9610d8199fe166824797f58d995e0692f91121)
  [.localization-config](https://github.com/Microsoft/ATADocs-pr/blob/8bb87e8148118f62e410ff79eb5163922496bc89/.localization-config) | Ignored | [Details](#5eae2556cd8e995860f05cae4bf6bf2bdf980f962)
  [.openpublishing.build.ps1](https://github.com/Microsoft/ATADocs-pr/blob/8bb87e8148118f62e410ff79eb5163922496bc89/.openpublishing.build.ps1) | Ignored | [Details](#543ad6a2f8038238cc5552bc8accd89176f3e9973)
- [.openpublishing.publish.config.json](https://github.com/Microsoft/ATADocs-pr/blob/8bb87e8148118f62e410ff79eb5163922496bc89/.openpublishing.publish.config.json) | Ignored | [Details](#cbd1b45109668ea6c12b5a661c67da3dc777d5754)
+ [.openpublishing.publish.config.json](https://github.com/Microsoft/ATADocs-pr/blob/8bb87e8148118f62e410ff79eb5163922496bc89/.openpublishing.publish.config.json) | Ignored | [Details](#84852a4788a6cfe418db67ca7f5765735acebcae4)
  [ATADocs\DeployUse\docfx.json](https://github.com/Microsoft/ATADocs-pr/blob/8bb87e8148118f62e410ff79eb5163922496bc89/ATADocs/DeployUse/docfx.json) | Ignored | [Details](#c45e4a7d1ad52ae258890cf2c2449de16b313b518)
  [ATADocs\docfx.json](https://github.com/Microsoft/ATADocs-pr/blob/8bb87e8148118f62e410ff79eb5163922496bc89/ATADocs/docfx.json) | Ignored | [Details](#18782720dea333e2051a0df575f170367cac825e60)
  [ATADocs\Image\ATA-alerts-email-settings.png](https://github.com/Microsoft/ATADocs-pr/blob/8bb87e8148118f62e410ff79eb5163922496bc89/ATADocs/Image/ATA-alerts-email-settings.png) | Ignored | [Details](#9e4da487d65aa093c3dd0f9b8331079ecb46928362)
@@ -282,7 +282,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='cbd1b45109668ea6c12b5a661c67da3dc777d5754'></a> Source: [.openpublishing.publish.config.json](https://github.com/Microsoft/ATADocs-pr/blob/8bb87e8148118f62e410ff79eb5163922496bc89/.openpublishing.publish.config.json)
+##### <a name='84852a4788a6cfe418db67ca7f5765735acebcae4'></a> Source: [.openpublishing.publish.config.json](https://github.com/Microsoft/ATADocs-pr/blob/8bb87e8148118f62e410ff79eb5163922496bc89/.openpublishing.publish.config.json)
 * Status: Ignored
 * Target File: 
 * Handoff File: 

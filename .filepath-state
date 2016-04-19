@@ -949,7 +949,7 @@
     "ATADocs\\Understand\\media\\ATA-Unresolved-Profile.jpg"
   ],
   "bd35194345e7704542aa52afcce464901ec13325": [
-    "ATADocs\\Understand\\media\\ata-server-icon.png"
+    "ATADocs\\Understand\\media\\ATA-server-icon.png"
   ],
   "adc83fb994ee2150a8eab572c3864521a4045340": [
     "ATADocs\\DeployUse\\install-ata-preinstall.md"
@@ -1157,6 +1157,9 @@
   ],
   "66315e9c213356652d677bbb6332a3827913ba86": [
     "ATADocs\\DeployUse\\modifying-ata-config-nicname.md"
+  ],
+  "d2eb72ecbe1aa703799f3c4226862307440b72bc": [
+    "ATADocs\\index.md"
   ],
   "aaa1575d3c3fc2e47225dc3df41161808e92bfc9": [
     "ATADocs\\index.md"

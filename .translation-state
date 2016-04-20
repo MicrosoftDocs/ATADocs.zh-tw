@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "948ec73df3e322ddc27a3f632ce818be05564159",
+  "LastProcessedCommit": "f6e33db8dda3fbeaa64ef8b5d75ec30571233f2c",
   "LastTranslatedCommit": null,
   "Items": {
     "19ffcb31b9fc0f69362ca0b4fd2e2fdb06dc11d6": {
@@ -13326,8 +13326,8 @@
         "ATADocs\\index.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\index.cc3e62ac6c9901731450d753a0ecebc990048809.zh-tw.xlf",
-      "HandoffFileCommit": "53231014cbc36cc8d4fd17f27852e981fc127ae5",
-      "HandoffDateTime": "2016-04-19T17:49:14.5439543Z",
+      "HandoffFileCommit": "12ffae2763a4df752fbb530feb6854e713f8becf",
+      "HandoffDateTime": "2016-04-20T17:45:07.8154709Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,

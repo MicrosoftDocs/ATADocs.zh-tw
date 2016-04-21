@@ -326,6 +326,9 @@
   "7aa4be5da967894f2e90f1aa10f270f752b5d771": [
     "ATADocs\\PlanDesign\\ata-prerequisites.md"
   ],
+  "da7fc285f828f5932a5b87172f606bc7982af2fa": [
+    "ATADocs\\PlanDesign\\configure-event-collection.md"
+  ],
   "50aeef0747d55a1704fec316203600de72f08e53": [
     "ATADocs\\PlanDesign\\configure-event-collection.md"
   ],
@@ -541,6 +544,9 @@
   ],
   "995f2f7ae8eb24dad251bd1deb67446b3074d4e5": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-ata-database.md"
+  ],
+  "bc279aa12245049e4f7a8b79eea622e28dd0ea94": [
+    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md"
   ],
   "faf3af5c19b98bdd71dc99b5dc51236ec1185e99": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md"

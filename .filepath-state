@@ -752,6 +752,9 @@
   "48da69f3fb8edd5bb2d55052f63560940f943679": [
     "ATADocs\\DeployUse\\working-with-detection-settings.md"
   ],
+  "e3831667a106e31109bc354a7ab4adc1c4109ce1": [
+    "ATADocs\\DeployUse\\pre-installation-steps.md"
+  ],
   "5a1de3d224af36fa3b3323f1b91e07dfc9994a7c": [
     "ATADocs\\DeployUse\\pre-installation-steps.md"
   ],
@@ -1172,6 +1175,9 @@
   ],
   "aaa1575d3c3fc2e47225dc3df41161808e92bfc9": [
     "ATADocs\\index.md"
+  ],
+  "eed994196b47e1e655237c409b46492c881f2762": [
+    "ATADocs\\Understand\\ata-common-questions.md"
   ],
   "e954163a5f82594377ac5a8315e4f270d6e12de4": [
     "ATADocs\\Understand\\ata-common-questions.md"

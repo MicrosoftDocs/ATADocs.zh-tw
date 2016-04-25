@@ -2,6 +2,9 @@
   "cbde5c3d1a3b2ee4dad661739ded7c1e909eca48": [
     "ATADocs\\Understand\\media\\ATA-Kerberos-background.jpg"
   ],
+  "d28e9545a0d65339adfa089b6b88f726a18ae8b5": [
+    "ATADocs\\DeployUse\\ata-database-management.md"
+  ],
   "e2fdbc72d51f75dba8f4ce3fc1ac6953dc43b184": [
     "ATADocs\\DeployUse\\ata-database-management.md"
   ],
@@ -74,6 +77,9 @@
   "a785a273d93ded27d1e62d4222bc15722dee2ec7": [
     "ATADocs\\DeployUse\\ata-update-1.5-migration-guide.md"
   ],
+  "6bcdd02400595584e37f1451e27347a2ab19ea31": [
+    "ATADocs\\DeployUse\\install-ata.md"
+  ],
   "3d395216582d6bf7965e35fe593dd38b4aef886f": [
     "ATADocs\\DeployUse\\install-ata.md"
   ],
@@ -121,6 +127,9 @@
   ],
   "937b1fb274e33ffcfe3e1e3ebe0b47b029436135": [
     "ATADocs\\DeployUse\\manage-telemetry-settings.md"
+  ],
+  "23f704b8748360d36234ccb646f51203a30c6e33": [
+    "ATADocs\\DeployUse\\modifying-ata-configuration.md"
   ],
   "b2d54599b781e115cabac7e453605bbc7de2a8c1": [
     "ATADocs\\DeployUse\\modifying-ata-configuration.md"
@@ -257,6 +266,9 @@
   "66f6fdf0e0fedad3ca450efcb9a1bd76f46f52bd": [
     "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
   ],
+  "e99b6dd62012dff921f3749cf745662f9eabdf7e": [
+    "ATADocs\\PlanDesign\\ata-capacity-planning.md"
+  ],
   "ca2e679ed498245f66995b90846eeb5094e08b13": [
     "ATADocs\\PlanDesign\\ata-capacity-planning.md"
   ],
@@ -289,6 +301,9 @@
   ],
   "da1fd596e3e49fc33a24cc7bcc0fae614c3092b9": [
     "ATADocs\\PlanDesign\\ata-capacity-planning.md"
+  ],
+  "42bea4f4dae0837db06b92d9f59f8f2a3e991e91": [
+    "ATADocs\\PlanDesign\\ata-prerequisites.md"
   ],
   "5aef8c789516b3d88dc5c10e55a6733eaf3106c1": [
     "ATADocs\\PlanDesign\\ata-prerequisites.md"
@@ -325,6 +340,9 @@
   ],
   "7aa4be5da967894f2e90f1aa10f270f752b5d771": [
     "ATADocs\\PlanDesign\\ata-prerequisites.md"
+  ],
+  "4cd6f408ad3567d4140088d6e727db8ed95ef474": [
+    "ATADocs\\PlanDesign\\configure-event-collection.md"
   ],
   "da7fc285f828f5932a5b87172f606bc7982af2fa": [
     "ATADocs\\PlanDesign\\configure-event-collection.md"
@@ -367,6 +385,9 @@
   ],
   "cbf1fa75bf4488d5fe023cc556406c073cf5c5e0": [
     "ATADocs\\PlanDesign\\configure-event-collection.md"
+  ],
+  "cd6876995f5dd79b63d8759312a88aa987283624": [
+    "ATADocs\\PlanDesign\\configure-port-mirroring.md"
   ],
   "28fac11d0d7072ffe2265d691510e0ea469fa7a0": [
     "ATADocs\\PlanDesign\\configure-port-mirroring.md"
@@ -467,6 +488,9 @@
   "4f72d56afb9f53157569789b68455dcf49016a69": [
     "ATADocs\\Token\\ATA.md"
   ],
+  "c123ea956b0a13b84662fda605ca22831e18336a": [
+    "ATADocs\\Troubleshoot\\ata-technical-faq.md"
+  ],
   "d4a88e903b6529342d8bdc8e52b2b9a3dd84106f": [
     "ATADocs\\Troubleshoot\\ata-technical-faq.md"
   ],
@@ -563,6 +587,9 @@
   "568f440a14e7e286257af5626e1f9575843fe8a6": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md"
   ],
+  "9bd0e575875f736ddf7cdf13761d231563d9a8eb": [
+    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
+  ],
   "6b55c206bff4eaf0a315de5882003851c9d38753": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
   ],
@@ -592,6 +619,9 @@
   ],
   "302bd4d77858994e2d6b153391346ab5cffd59df": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
+  ],
+  "7e1aa28d0fbc6c46c7e90e3fed32d9ae326663e6": [
+    "ATADocs\\Understand\\ata-architecture.md"
   ],
   "c9cdc41d9ff55616f4477eccbf1a2d1e1de5e438": [
     "ATADocs\\Understand\\ata-architecture.md"
@@ -662,6 +692,9 @@
   "4f363731e75b6cf7be2069e1c9aa16fcf48fb0cb": [
     "ATADocs\\Understand\\TOC.md"
   ],
+  "3fe0be899081bc0208bf2d6641ac3f9f6c9e06b9": [
+    "ATADocs\\Understand\\what-is-ata.md"
+  ],
   "ec243f4dea2d4acba463694ebe28713255139fa3": [
     "ATADocs\\Understand\\what-is-ata.md"
   ],
@@ -697,6 +730,9 @@
   ],
   "2fcb4e9e708146f15516178d5ddd691ba0196ee1": [
     "ATADocs\\Understand\\what-is-ata.md"
+  ],
+  "b0a0c29eb66eb7829157ff2a7d8f2a068bcfebc9": [
+    "ATADocs\\Understand\\working-with-ata-console.md"
   ],
   "4683bfe5dbda5dd44dbdfb3ed84cfdce8d8c83a2": [
     "ATADocs\\Understand\\working-with-ata-console.md"
@@ -751,6 +787,9 @@
   ],
   "48da69f3fb8edd5bb2d55052f63560940f943679": [
     "ATADocs\\DeployUse\\working-with-detection-settings.md"
+  ],
+  "d510f73cb755d9cedbed86829bf40c1f5b4e38b3": [
+    "ATADocs\\DeployUse\\pre-installation-steps.md"
   ],
   "e3831667a106e31109bc354a7ab4adc1c4109ce1": [
     "ATADocs\\DeployUse\\pre-installation-steps.md"
@@ -927,6 +966,9 @@
   "bd35194345e7704542aa52afcce464901ec13325": [
     "ATADocs\\Understand\\media\\ATA-server-icon.png"
   ],
+  "3279bbc4e6060a3a50dc21c9b33b9a72c24927cc": [
+    "ATADocs\\DeployUse\\install-ata-preinstall.md"
+  ],
   "adc83fb994ee2150a8eab572c3864521a4045340": [
     "ATADocs\\DeployUse\\install-ata-preinstall.md"
   ],
@@ -942,6 +984,9 @@
   "2a1cdf2d3bcb5799b6d3438093300cab5ccb38fa": [
     "ATADocs\\DeployUse\\install-ata-preinstall.md"
   ],
+  "d710c2c80d62f67c3dbf30c10a455f0e0a3f7153": [
+    "ATADocs\\DeployUse\\install-ata-step1.md"
+  ],
   "1996f4de44bf3c8c22ccedd55f985216ff4ac7cf": [
     "ATADocs\\DeployUse\\install-ata-step1.md"
   ],
@@ -956,6 +1001,9 @@
   ],
   "078f2801b7cf8beb3d4a2d61c6e83663575bee8d": [
     "ATADocs\\DeployUse\\install-ata-step1.md"
+  ],
+  "e898f5225f366f19f517dc9aed8e1a70a1a87fb4": [
+    "ATADocs\\DeployUse\\install-ata-step2.md"
   ],
   "e73df2fb3fe55031bde1f7d86e5bd28efae9882f": [
     "ATADocs\\DeployUse\\install-ata-step2.md"
@@ -975,6 +1023,9 @@
   "500515e847d09a032159970005d556f012a6e8ec": [
     "ATADocs\\DeployUse\\install-ata-step2.md"
   ],
+  "33582682ba8bc5b16abf59eeaa00c41c0a6e908e": [
+    "ATADocs\\DeployUse\\install-ata-step3.md"
+  ],
   "dd3c62c78bdc56f5c6dffd51b0bf186e96b62005": [
     "ATADocs\\DeployUse\\install-ata-step3.md"
   ],
@@ -989,6 +1040,9 @@
   ],
   "1e0a77296b9f7a1f92624ebab985be965d5bef76": [
     "ATADocs\\DeployUse\\install-ata-step3.md"
+  ],
+  "54b357e41066e35af80b160820207019b8435cd3": [
+    "ATADocs\\DeployUse\\install-ata-step4.md"
   ],
   "209cf292964d5df261861875d11e910dcf1c11dc": [
     "ATADocs\\DeployUse\\install-ata-step4.md"
@@ -1008,6 +1062,9 @@
   "99b9db598e290917637f209a1be584d22e8823c7": [
     "ATADocs\\DeployUse\\install-ata-step4.md"
   ],
+  "99545bdf751a5090cbfec30556f03fd9e49ca44e": [
+    "ATADocs\\DeployUse\\install-ata-step5.md"
+  ],
   "b111e86b9c3a670391379a1d342eafe3511744bc": [
     "ATADocs\\DeployUse\\install-ata-step5.md"
   ],
@@ -1025,6 +1082,9 @@
   ],
   "1e9b5b53a27feecf18d493f037c6760fa40a86d9": [
     "ATADocs\\DeployUse\\install-ata-step5.md"
+  ],
+  "09e1255860cd5d3b0e8abe2ee244af9c55dbc618": [
+    "ATADocs\\DeployUse\\install-ata-step6.md"
   ],
   "9f05d711f10c4653b410e7af3487a57435588de2": [
     "ATADocs\\DeployUse\\install-ata-step6.md"
@@ -1044,6 +1104,9 @@
   "dda484450e385ca5160fafadb1d088ce0486095a": [
     "ATADocs\\DeployUse\\install-ata-step6.md"
   ],
+  "1b47b62f320f7234597e7af4bcdda1628db47b34": [
+    "ATADocs\\DeployUse\\modifying-ata-config-centercert.md"
+  ],
   "c5474244ade9fdd4a0e4532f7105a3ce011e29a1": [
     "ATADocs\\DeployUse\\modifying-ata-config-centercert.md"
   ],
@@ -1055,6 +1118,9 @@
   ],
   "b3896798335d290fcfb7c7e3122d8d3503d74b42": [
     "ATADocs\\DeployUse\\modifying-ata-config-centercert.md"
+  ],
+  "89fea832dadfa5057d3dae1579526811ec1dfd32": [
+    "ATADocs\\DeployUse\\modifying-ata-config-centerip.md"
   ],
   "8fb4616734aa62dbd8ca43beda7908fe279d0a34": [
     "ATADocs\\DeployUse\\modifying-ata-config-centerip.md"
@@ -1074,6 +1140,9 @@
   "3d539575dd76c101482f58fbf3a5d4d080c93a35": [
     "ATADocs\\DeployUse\\modifying-ata-config-centerip.md"
   ],
+  "9142450387c3d0a131db07d4f4f1665f42920f26": [
+    "ATADocs\\DeployUse\\modifying-ata-config-consoleip.md"
+  ],
   "7ecd71b5d08ce33aaa04414c4df55251ee539a21": [
     "ATADocs\\DeployUse\\modifying-ata-config-consoleip.md"
   ],
@@ -1088,6 +1157,9 @@
   ],
   "ce82d60d59409efd0f574394dd25d8b24e219294": [
     "ATADocs\\DeployUse\\modifying-ata-config-consoleip.md"
+  ],
+  "750a92d86e1ed6f744b0f24390d0f7bc6e38418c": [
+    "ATADocs\\DeployUse\\modifying-ata-config-dcpassword.md"
   ],
   "b9e2ce9b9c5af49f56a411972af447a9bdf5fec1": [
     "ATADocs\\DeployUse\\modifying-ata-config-dcpassword.md"
@@ -1104,6 +1176,9 @@
   "4495cd0c38f197007102873866833bc91961af7b": [
     "ATADocs\\DeployUse\\modifying-ata-config-dcpassword.md"
   ],
+  "c02de9e3e4d792ddc0e6c2f0777433e81bdf687a": [
+    "ATADocs\\DeployUse\\modifying-ata-config-iiscert.md"
+  ],
   "3bfe36dbd6840747a622f5eb11a1f6341afff38a": [
     "ATADocs\\DeployUse\\modifying-ata-config-iiscert.md"
   ],
@@ -1118,6 +1193,9 @@
   ],
   "d50d79ce1c611e433c4bae68210bd16d04d39530": [
     "ATADocs\\DeployUse\\modifying-ata-config-iiscert.md"
+  ],
+  "e67e6a530680320bb9fae3ffb1a58e914edc7f07": [
+    "ATADocs\\DeployUse\\modifying-ata-config-nicname.md"
   ],
   "6fb1d0bf74f64a43492f44cf243e705511864cd6": [
     "ATADocs\\DeployUse\\modifying-ata-config-nicname.md"
@@ -1145,6 +1223,9 @@
   ],
   "aaa1575d3c3fc2e47225dc3df41161808e92bfc9": [
     "ATADocs\\index.md"
+  ],
+  "c0d893cb7222ab6c207e65ba1f1f494e4537ca3c": [
+    "ATADocs\\Understand\\ata-common-questions.md"
   ],
   "eed994196b47e1e655237c409b46492c881f2762": [
     "ATADocs\\Understand\\ata-common-questions.md"

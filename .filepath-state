@@ -810,39 +810,6 @@
   "897dfb81c69563bcdb1239566b4a47f1e8a060cd": [
     "ATADocs\\DeployUse\\media\\ATA-gw-updated.png"
   ],
-  "377436ada10ce7d4412b6b256396ea85ad93c5af": [
-    "ATADocs\\DeployUse\\media\\ATA-Center-Configuration.JPG"
-  ],
-  "5381c4c0d584f8697c8053ef5c9ee7b1ab576be3": [
-    "ATADocs\\DeployUse\\media\\ATA-Domain-Connectivity-User.JPG"
-  ],
-  "b79a81b193f258cfee46d1a6478d89e46c7eecdc": [
-    "ATADocs\\DeployUse\\media\\ATA-Gateway-Configuration.JPG"
-  ],
-  "dddd652fb096923a6ac044e9d8c151dc1af2982f": [
-    "ATADocs\\DeployUse\\media\\ATAGWDomainController.png"
-  ],
-  "28b811e014fbf38741d81c7418c6bb70ead5df74": [
-    "ATADocs\\DeployUse\\media\\ATA-Config-GW-Settings.jpg"
-  ],
-  "bb82c0e8ef39951a2f35466d9912fe622fdac06e": [
-    "ATADocs\\DeployUse\\media\\ATA-performance-monitoring-add-counters.png"
-  ],
-  "ce4a21e892357049d70b5ff1aa708547ca715b17": [
-    "ATADocs\\DeployUse\\media\\ATA-VPN-Subnets.JPG"
-  ],
-  "ea504d039c81989138676445a3ab7172415a1ef4": [
-    "ATADocs\\DeployUse\\media\\ATA-chge-IP-after-clicking-save.png"
-  ],
-  "3edd04df7a3cad90fcf5a10adcf7533490caa6eb": [
-    "ATADocs\\DeployUse\\media\\ATA-console-change-IP-bindings.jpg"
-  ],
-  "0932dedf4e4f231714a6072c12093c6678b08100": [
-    "ATADocs\\DeployUse\\media\\ATA-change-console-IP.jpg"
-  ],
-  "caffb72088ae1244fe4dc8010a33fa66ffab9cac": [
-    "ATADocs\\DeployUse\\media\\ATA-GW-change-DC-password.JPG"
-  ],
   "f8847c09ae291ce8fb83cb013a7e5f5f3a4b6279": [
     "ATADocs\\DeployUse\\media\\ATA-alerts-verbosity-language.png"
   ],
@@ -1166,6 +1133,9 @@
   ],
   "66315e9c213356652d677bbb6332a3827913ba86": [
     "ATADocs\\DeployUse\\modifying-ata-config-nicname.md"
+  ],
+  "9b6d88bd5fb94c27c0c2f60c196aa38499861d1b": [
+    "ATADocs\\index.md"
   ],
   "ed2ab447c37d2e821830201e441cd5988395fda5": [
     "ATADocs\\index.md"

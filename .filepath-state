@@ -1,7 +1,4 @@
 {
-  "cbde5c3d1a3b2ee4dad661739ded7c1e909eca48": [
-    "ATADocs\\Understand\\media\\ATA-Kerberos-background.jpg"
-  ],
   "863b6725f0d6edbfb1469e413cf8ba7ddfe6a048": [
     "ATADocs\\DeployUse\\ata-database-management.md"
   ],
@@ -461,6 +458,9 @@
   "349188b264359a5221b8b6bcef8db47ea6410b45": [
     "ATADocs\\PlanDesign\\TOC.md"
   ],
+  "2a4846a9af68755f2542c77663a11f31ed18d13a": [
+    "ATADocs\\PlanDesign\\validate-port-mirroring.md"
+  ],
   "1a909c9d31f10de93465c989505de81bc01bacc1": [
     "ATADocs\\PlanDesign\\validate-port-mirroring.md"
   ],
@@ -490,15 +490,6 @@
   ],
   "2967d4c4ebef6cf495bbac20f0b2c744b6f54a77": [
     "ATADocs\\PlanDesign\\validate-port-mirroring.md"
-  ],
-  "3b63dc0cff85980cb632069d4c34cc8894ecfc7c": [
-    "ATADocs\\Understand\\media\\ATA-architecture-topology.jpg",
-    "ATADocs\\DeployUse\\media\\ATA-architecture-topology.jpg",
-    "ATADocs\\PlanDesign\\media\\ATA-architecture-topology.jpg"
-  ],
-  "d44b3a04b32a061ffbd7e04912834ac56044f652": [
-    "ATADocs\\DeployUse\\media\\ATA-DNS-Suffix.png",
-    "ATADocs\\PlanDesign\\media\\ATA-DNS-Suffix.png"
   ],
   "2d876fba3180d808fcf91163b0e4e758cd8a9aa1": [
     "ATADocs\\TOC.md"
@@ -853,151 +844,6 @@
   ],
   "e55a4ca639dbe9e77cde76052fad9f5d605d5631": [
     "ATADocs\\DeployUse\\pre-installation-steps.md"
-  ],
-  "71172af8b9ffaf66bdf7bc8ef1db6aee70f2a2ca": [
-    "ATADocs\\Understand\\media\\ATA-traffic-flow.jpg"
-  ],
-  "a89424369313176e864ab91f5518cae5a9ca2ff8": [
-    "ATADocs\\DeployUse\\media\\ATA-mongoDB-moveDB.png"
-  ],
-  "d2b6088dd989cb01d54c714b18b23fdac454c71c": [
-    "ATADocs\\DeployUse\\media\\ATA-Health-Center-Alert-red-dot.png",
-    "ATADocs\\Understand\\media\\ATA-Health-Center-Alert-red-dot.png"
-  ],
-  "efd559ab69debefb5f3e2fb6fd1a0f293070fbf1": [
-    "ATADocs\\DeployUse\\media\\ATA-red-dot.png"
-  ],
-  "c4f3b468905bca6e23f5835219459a7e3af5b84e": [
-    "ATADocs\\DeployUse\\media\\ATA-Health-Issue.JPG"
-  ],
-  "6349405da0cc5437d4907c1b377ebe448ef3810d": [
-    "ATADocs\\DeployUse\\media\\ATA-center-fullpartial.png"
-  ],
-  "3779d05774a96f85f009cc401f08a47d742951e6": [
-    "ATADocs\\DeployUse\\media\\ATA-center-outdated.png"
-  ],
-  "28bff0237cf9625b464859bd7f3dc309779c7fcb": [
-    "ATADocs\\DeployUse\\media\\ATA-config-icon.JPG"
-  ],
-  "897dfb81c69563bcdb1239566b4a47f1e8a060cd": [
-    "ATADocs\\DeployUse\\media\\ATA-gw-updated.png"
-  ],
-  "f8847c09ae291ce8fb83cb013a7e5f5f3a4b6279": [
-    "ATADocs\\DeployUse\\media\\ATA-alerts-verbosity-language.png"
-  ],
-  "2693f2a42f01bacc6651248a0113d575c12054c3": [
-    "ATADocs\\DeployUse\\media\\ATA-uninstall-center-bug.jpg"
-  ],
-  "84844fbeab61dc307350394e1071c1bad6e20659": [
-    "ATADocs\\DeployUse\\media\\ATA-GW-uninstall-bug.jpg"
-  ],
-  "73222a255bcea2b987c049da4c47fde788155273": [
-    "ATADocs\\DeployUse\\media\\ATA-GW-error.png"
-  ],
-  "3fdf7fa3a650e1b704edea8ef72a15bdf4fe52bb": [
-    "ATADocs\\DeployUse\\media\\ATA-Suspicious-Activity-Timeline.JPG"
-  ],
-  "9b28cbe44f594229da64d756ca97cbfa1b1c82c5": [
-    "ATADocs\\DeployUse\\media\\ATA-Input.JPG"
-  ],
-  "418aa302bb034a3b0ccf734d1daa8c9b04784fe3": [
-    "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-1.png"
-  ],
-  "dc3fd1abf7b4588be5bd4f9de7a4dba5752f3f52": [
-    "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-2.png"
-  ],
-  "abdeb084afeb71e961318bbf0b27b51d7afa2009": [
-    "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-3.png"
-  ],
-  "d04a656dc82be230ec69d453646fa24700eb617e": [
-    "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-3.png"
-  ],
-  "e9942281ff802e411d8857f4bf8d6a7c9a72c81a": [
-    "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-5.png"
-  ],
-  "de6d3f7e3e8b87b25fab613f6b5f33b543d86fb2": [
-    "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-5.png"
-  ],
-  "de4f0db38fdd16422e151b6759f276985c123437": [
-    "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-7.png"
-  ],
-  "ff5b3f014794c191287e88b25ad04bf6c404db1a": [
-    "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-12.png"
-  ],
-  "7038048d28b17ba2335f1ecb3249e27d7f58d7fb": [
-    "ATADocs\\PlanDesign\\media\\ATA-traffic-estimation-14.png"
-  ],
-  "0b15335fec1868fca0cf265b525bc7223a25e859": [
-    "ATADocs\\PlanDesign\\media\\ATA-enable-siem-forward-events.png"
-  ],
-  "1c19abba75023e7073977641e2674ddd62d20326": [
-    "ATADocs\\PlanDesign\\media\\wef_ad_eventlogreaders.png"
-  ],
-  "ae46394f83c94ae0f48d6a7d9a7cd6d18b58adf0": [
-    "ATADocs\\PlanDesign\\media\\wef_ad-event-log-reader-popup.png"
-  ],
-  "9b8562feafa85324c9a6e3e9020450535df920c6": [
-    "ATADocs\\PlanDesign\\media\\wef_subscription-prop.png"
-  ],
-  "52452ea87355476bda32308ec38a95c6f75a99ef": [
-    "ATADocs\\PlanDesign\\media\\wef_4776.png"
-  ],
-  "d4d9ac890b80451972fbe194c30577b0655be0cd": [
-    "ATADocs\\PlanDesign\\media\\wef_http.png"
-  ],
-  "da52b59d7fcfd91fcbdbdce60af548d4ef879643": [
-    "ATADocs\\PlanDesign\\media\\ATA-Port-Mirroring-Capture.jpg"
-  ],
-  "8102e99a695cbdc6b1dd1e0efed4a2a749619e14": [
-    "ATADocs\\PlanDesign\\media\\ATA-Port-Mirroring-filter-settings.jpg"
-  ],
-  "d53cb342697190ab7611e40be4f8d31e8dc9ac15": [
-    "ATADocs\\PlanDesign\\media\\ATA-Port-Mirroring-filter-settings.jpg"
-  ],
-  "b37e2682c71aeeedf28194f14a319a40df6e8d6b": [
-    "ATADocs\\PlanDesign\\media\\ATA-Port-Mirroring-Capture-traffic.jpg"
-  ],
-  "9dca677c2775d44f0f8f3aeceb1d4df1afc8aa5e": [
-    "ATADocs\\PlanDesign\\media\\ATA-Port-Mirroring-Capture-traffic.jpg"
-  ],
-  "f5bfb600963437f26bbf2b098184ff12159c31fe": [
-    "ATADocs\\Troubleshoot\\media\\ATA-performance-counters.png"
-  ],
-  "3a5b4e5c2de5a6e109cd66dd94a37f40b02fa5df": [
-    "ATADocs\\Troubleshoot\\media\\ATA-Gateway-perf-counters.png"
-  ],
-  "ede40a9e48ad2fdc2dc9a635adc503cd8d599fa1": [
-    "ATADocs\\Understand\\media\\ATA-log-in-screen.jpg"
-  ],
-  "d5119fef7939d5de9c08d40d1fd1a6f29128b810": [
-    "ATADocs\\Understand\\media\\ATA-log-in-screen.jpg"
-  ],
-  "18204afb92c709be98646c610653d47b6625e11b": [
-    "ATADocs\\Understand\\media\\ATA-console-search.png"
-  ],
-  "5a014a150f29b097053eae951f7ed49ce65518d0": [
-    "ATADocs\\Understand\\media\\ATA-mini-profile.jpg"
-  ],
-  "7ed12b436fccf9d40ecd76f13697812c159f69a3": [
-    "ATADocs\\Understand\\media\\attack-timeline.png"
-  ],
-  "5a5c773c62ea63438b12536bfdb91f0b2a6866bf": [
-    "ATADocs\\Understand\\media\\notification-bar.png"
-  ],
-  "2b57f03ff7f6b23f604e7ef93efa4bc72c1a544a": [
-    "ATADocs\\Understand\\media\\health-center.png"
-  ],
-  "746cfa4a7266e89f4083291f6903b6aea0509917": [
-    "ATADocs\\Understand\\media\\user-profile.png"
-  ],
-  "92803f3318fdfdbf17528b747b13f715ee40b7fe": [
-    "ATADocs\\Understand\\media\\computer-profile.png"
-  ],
-  "4fc9df3058f295d41f80db89e3805003cd18a9b7": [
-    "ATADocs\\Understand\\media\\ATA-Unresolved-Profile.jpg"
-  ],
-  "bd35194345e7704542aa52afcce464901ec13325": [
-    "ATADocs\\Understand\\media\\ATA-server-icon.png"
   ],
   "56df7efc9248501aa8ad84db7bcd2a39687519ff": [
     "ATADocs\\DeployUse\\install-ata-preinstall.md"

@@ -1,32 +1,19 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [ATADocs\PlanDesign\validate-port-mirroring.md](https://github.com/Microsoft/ATADocs-pr/blob/e8d528cd8b0d96caa90e20fb3df24e792968dba3/ATADocs/PlanDesign/validate-port-mirroring.md) | HandedOffSuccess | [Details](#1a909c9d31f10de93465c989505de81bc01bacc1164)
- [ATADocs\Troubleshoot\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/587739d84e4402811c1f03fd570107f08a7524a7/ATADocs/Troubleshoot/TOC.md) | HandedOffSuccess | [Details](#b350630456ac2847366eabd6c498a558d17f2fc4173)
+ [ATADocs\PlanDesign\validate-port-mirroring.md](https://github.com/Microsoft/ATADocs-pr/blob/dcdc698238959498b11451c4aad39a952c18624d/ATADocs/PlanDesign/validate-port-mirroring.md) | HandedOffSuccess | [Details](#2a4846a9af68755f2542c77663a11f31ed18d13a164)
 
 ## Item Details
-##### <a name='1a909c9d31f10de93465c989505de81bc01bacc1164'></a> Source: [ATADocs\PlanDesign\validate-port-mirroring.md](https://github.com/Microsoft/ATADocs-pr/blob/e8d528cd8b0d96caa90e20fb3df24e792968dba3/ATADocs/PlanDesign/validate-port-mirroring.md)
+##### <a name='2a4846a9af68755f2542c77663a11f31ed18d13a164'></a> Source: [ATADocs\PlanDesign\validate-port-mirroring.md](https://github.com/Microsoft/ATADocs-pr/blob/dcdc698238959498b11451c4aad39a952c18624d/ATADocs/PlanDesign/validate-port-mirroring.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [validate-port-mirroring.93214b3442651e32f95b634b5a150aa281daeda3.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/2fe92a374b639fc697e89341d49005a3263b48d9/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/validate-port-mirroring.93214b3442651e32f95b634b5a150aa281daeda3.zh-tw.xlf)
-* Handoff Datetime: 2016-04-27 16:43:38
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='b350630456ac2847366eabd6c498a558d17f2fc4173'></a> Source: [ATADocs\Troubleshoot\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/587739d84e4402811c1f03fd570107f08a7524a7/ATADocs/Troubleshoot/TOC.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [TOC.60a4d3a4143fbc945b04636bebe37bf6bc2b2b81.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/2fe92a374b639fc697e89341d49005a3263b48d9/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/TOC.60a4d3a4143fbc945b04636bebe37bf6bc2b2b81.zh-tw.xlf)
-* Handoff Datetime: 2016-04-27 16:43:38
+* Handoff File: [validate-port-mirroring.93214b3442651e32f95b634b5a150aa281daeda3.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/643c3999686131d142a53a4ac11cd537a67b7c7e/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/validate-port-mirroring.93214b3442651e32f95b634b5a150aa281daeda3.zh-tw.xlf)
+* Handoff Datetime: 2016-04-27 20:24:25
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00

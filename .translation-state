@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "b127fb2a58174305d27f62610ecc39ab2a2c39f7",
+  "LastProcessedCommit": "6855dc29080bf9f8cf2c65121432755f3f79e781",
   "LastTranslatedCommit": null,
   "Items": {
     "19ffcb31b9fc0f69362ca0b4fd2e2fdb06dc11d6": {
@@ -15359,6 +15359,35 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\TOC.60a4d3a4143fbc945b04636bebe37bf6bc2b2b81.zh-tw.xlf",
       "HandoffFileCommit": "2fe92a374b639fc697e89341d49005a3263b48d9",
       "HandoffDateTime": "2016-04-27T16:43:38.0808241Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "2a4846a9af68755f2542c77663a11f31ed18d13a": {
+      "FileHash": "2a4846a9af68755f2542c77663a11f31ed18d13a",
+      "SourceFileCommit": "dcdc698238959498b11451c4aad39a952c18624d",
+      "SourceFilePath": "ATADocs\\PlanDesign\\validate-port-mirroring.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "ATADocs\\PlanDesign\\validate-port-mirroring.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\validate-port-mirroring.93214b3442651e32f95b634b5a150aa281daeda3.zh-tw.xlf",
+      "HandoffFileCommit": "643c3999686131d142a53a4ac11cd537a67b7c7e",
+      "HandoffDateTime": "2016-04-27T20:24:25.9603001Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,

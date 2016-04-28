@@ -1,32 +1,19 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [ATADocs\Troubleshoot\ata-technical-faq.md](https://github.com/Microsoft/ATADocs-pr/blob/345f73f751cfd6e0ce189d3489f713f5c3b3a9fc/ATADocs/Troubleshoot/ata-technical-faq.md) | HandedOffSuccess | [Details](#6003fcc8e48d206960bd8b6e3489e36bb68c25d8167)
- [ATADocs\Troubleshoot\troubleshooting-ata-using-ata-database.md](https://github.com/Microsoft/ATADocs-pr/blob/62ebda3dc5551319349bfe640914b71742c59ecf/ATADocs/Troubleshoot/troubleshooting-ata-using-ata-database.md) | HandedOffSuccess | [Details](#32694dac750b87a5a07b3a04a51c11054c50917f174)
+ [ATADocs\Troubleshoot\troubleshooting-ata-using-ata-database.md](https://github.com/Microsoft/ATADocs-pr/blob/959d1138b7270b87fd28387bd857cf8f8a28ce7f/ATADocs/Troubleshoot/troubleshooting-ata-using-ata-database.md) | HandedOffSuccess | [Details](#ca4834c8727a5b742f410df0375ad6b5b6ef7b3b174)
 
 ## Item Details
-##### <a name='6003fcc8e48d206960bd8b6e3489e36bb68c25d8167'></a> Source: [ATADocs\Troubleshoot\ata-technical-faq.md](https://github.com/Microsoft/ATADocs-pr/blob/345f73f751cfd6e0ce189d3489f713f5c3b3a9fc/ATADocs/Troubleshoot/ata-technical-faq.md)
+##### <a name='ca4834c8727a5b742f410df0375ad6b5b6ef7b3b174'></a> Source: [ATADocs\Troubleshoot\troubleshooting-ata-using-ata-database.md](https://github.com/Microsoft/ATADocs-pr/blob/959d1138b7270b87fd28387bd857cf8f8a28ce7f/ATADocs/Troubleshoot/troubleshooting-ata-using-ata-database.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [ata-technical-faq.fa1f89c776292e09c1d93eaa37cecd7df0b4a836.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/4a76dd0c1454e637be90e55746cb693dbabcd03b/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/ata-technical-faq.fa1f89c776292e09c1d93eaa37cecd7df0b4a836.zh-tw.xlf)
-* Handoff Datetime: 2016-04-28 21:49:26
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='32694dac750b87a5a07b3a04a51c11054c50917f174'></a> Source: [ATADocs\Troubleshoot\troubleshooting-ata-using-ata-database.md](https://github.com/Microsoft/ATADocs-pr/blob/62ebda3dc5551319349bfe640914b71742c59ecf/ATADocs/Troubleshoot/troubleshooting-ata-using-ata-database.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [troubleshooting-ata-using-ata-database.59180de16ff041e4081a27aa3918a2ea95a29245.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/4a76dd0c1454e637be90e55746cb693dbabcd03b/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/troubleshooting-ata-using-ata-database.59180de16ff041e4081a27aa3918a2ea95a29245.zh-tw.xlf)
-* Handoff Datetime: 2016-04-28 21:49:26
+* Handoff File: [troubleshooting-ata-using-ata-database.59180de16ff041e4081a27aa3918a2ea95a29245.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/653a7e048acf87c1fd3f3e6aa91489ea450c1a13/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/troubleshooting-ata-using-ata-database.59180de16ff041e4081a27aa3918a2ea95a29245.zh-tw.xlf)
+* Handoff Datetime: 2016-04-28 23:47:38
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00

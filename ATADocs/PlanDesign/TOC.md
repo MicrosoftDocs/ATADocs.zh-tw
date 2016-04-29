@@ -1,9 +1,14 @@
-# [Understand and Explore](/advanced-threat-analytics/understand-explore/what-is-ata)
-# [Plan and Design](ata-capacity-planning.md)
-## [Plan your ATA capacity](ata-capacity-planning.md)
-## [ATA Prerequisites](ata-prerequisites.md)
-## [Configure port mirroring](configure-port-mirroring.md)
-## [Validate port mirroring](validate-port-mirroring.md)
-## [Configure event collection](configure-event-collection.md)
-# [Deploy and Use](/advanced-threat-analytics/deploy-use/install-ata)
-# [Troubleshoot](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)
+# [膫解和探索](/advanced-threat-analytics/understand/what-is-ata)
+# [規劃和設計](ata-capacity-planning.md)
+## [規劃 ATA 容量](ata-capacity-planning.md)
+## [ATA 必要條件](ata-prerequisites.md)
+## [設定連接埠鏡像](configure-port-mirroring.md)
+## [驗證連接埠鏡像](validate-port-mirroring.md)
+## [設定事件收集](configure-event-collection.md)
+# [部署與使用](/advanced-threat-analytics/deployuse/install-ata)
+# [疑難排解](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)
+
+
+<!--HONumber=Mar16_HO4-->
+
+

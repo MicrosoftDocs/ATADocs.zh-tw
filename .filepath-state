@@ -89,6 +89,9 @@
   "aebde4e6cecab8aad3d7c827dd8724b2bfd59343": [
     "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
   ],
+  "2c3bf59a5f97d16845641da018074da8cc71b8c1": [
+    "ATADocs\\PlanDesign\\ata-capacity-planning.md"
+  ],
   "b56ea199504c11694489b1d500bd3be873730592": [
     "ATADocs\\PlanDesign\\ata-capacity-planning.md"
   ],
@@ -482,6 +485,9 @@
   "68090a038cec49009b6bd0ce0515a075f62483b8": [
     "ATADocs\\template.md"
   ],
+  "d9a2929431d80096bd0f484560d0ec9c9f745f46": [
+    "ATADocs\\Troubleshoot\\troubleshooting-ata-known-errors.md"
+  ],
   "7526b1dc382c661e94139531468404cf3ead7a1f": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-known-errors.md"
   ],
@@ -490,6 +496,9 @@
   ],
   "c6f27ec925b3b7b53b7c52cbea5186550c1422ff": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-known-errors.md"
+  ],
+  "647e2afd04a2998d2f9bfab1b9aa3f8d9085460c": [
+    "ATADocs\\Understand\\ata-technical-faq.md"
   ],
   "f633fe28bcc33e2ff19ffb342cd95e10a1cda44c": [
     "ATADocs\\Understand\\ata-technical-faq.md"
@@ -503,6 +512,9 @@
   "c7b315dfa77713f20f35d675079429119baa6508": [
     "ATADocs\\DeployUse\\configure-event-collection.md"
   ],
+  "184c86f5d44023250fb0fed388b76b0db64f4f3a": [
+    "ATADocs\\DeployUse\\configure-port-mirroring.md"
+  ],
   "f5bf92a8aa7e5047852348ff9baf9a4067772c91": [
     "ATADocs\\DeployUse\\configure-port-mirroring.md"
   ],
@@ -514,6 +526,9 @@
   ],
   "7f4d3d3e207515b85123252a6e64de21b75b223c": [
     "ATADocs\\DeployUse\\preinstall-ata.md"
+  ],
+  "965032eec59f602c3d012eb596d1ebfdca309433": [
+    "ATADocs\\DeployUse\\validate-port-mirroring.md"
   ],
   "7d1198f5e2d17fc7cfaeab4c4d1878c951b82acb": [
     "ATADocs\\DeployUse\\validate-port-mirroring.md"
@@ -538,6 +553,9 @@
   ],
   "bc5426c7bd21585bb4bd6be921353ce20fa0551b": [
     "ATADocs\\Understand\\whats-new-version-1.5.md"
+  ],
+  "1a3f7eb8b36343aecdc0a265092a7961c94bc5c6": [
+    "ATADocs\\Understand\\whats-new-version-1.6.md"
   ],
   "77a4aa4e541a3ca0c32fcc92258f7c01fa9a3b25": [
     "ATADocs\\Understand\\whats-new-version-1.6.md"

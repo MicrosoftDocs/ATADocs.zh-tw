@@ -542,6 +542,9 @@
   "4d75d036a8d278aef25a35725986b2881d2b5be9": [
     "ATADocs\\Understand\\ata-update-1.5-migration-guide.md"
   ],
+  "ac5562dfcc985b644f6c9141a6046ffb4d88f05a": [
+    "ATADocs\\Understand\\ata-update-1.6-migration-guide.md"
+  ],
   "45052f4982efa8cc34d7013721980a0bf817fcd5": [
     "ATADocs\\Understand\\ata-update-1.6-migration-guide.md"
   ],
@@ -553,6 +556,9 @@
   ],
   "bc5426c7bd21585bb4bd6be921353ce20fa0551b": [
     "ATADocs\\Understand\\whats-new-version-1.5.md"
+  ],
+  "15b3e0fd3491488501a0915c4cb61cc3db568ab5": [
+    "ATADocs\\Understand\\whats-new-version-1.6.md"
   ],
   "1a3f7eb8b36343aecdc0a265092a7961c94bc5c6": [
     "ATADocs\\Understand\\whats-new-version-1.6.md"

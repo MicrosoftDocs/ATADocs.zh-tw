@@ -1,39 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [ATADocs\Understand\ata-update-1.6-migration-guide.md](https://github.com/Microsoft/ATADocs-pr/blob/ee292a826d951bc8799c0a71d59f09ca0ccda336/ATADocs/Understand/ata-update-1.6-migration-guide.md) | HandedOffSuccess | [Details](#ac5562dfcc985b644f6c9141a6046ffb4d88f05a426)
- [ATADocs\Understand\whats-new-version-1.6.md](https://github.com/Microsoft/ATADocs-pr/blob/34956bae237e88f597d1d100a6b0c70994fb0b86/ATADocs/Understand/whats-new-version-1.6.md) | HandedOffSuccess | [Details](#15b3e0fd3491488501a0915c4cb61cc3db568ab5524)
 
 ## Item Details
-##### <a name='ac5562dfcc985b644f6c9141a6046ffb4d88f05a426'></a> Source: [ATADocs\Understand\ata-update-1.6-migration-guide.md](https://github.com/Microsoft/ATADocs-pr/blob/ee292a826d951bc8799c0a71d59f09ca0ccda336/ATADocs/Understand/ata-update-1.6-migration-guide.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [ata-update-1.6-migration-guide.fe715980eb0702f6dda7862931a6921ccd723d15.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/52a49cb6ee6cffe266315baeaa7532283aba282a/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/ata-update-1.6-migration-guide.fe715980eb0702f6dda7862931a6921ccd723d15.zh-tw.xlf)
-* Handoff Datetime: 2016-05-06 18:27:21
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
-##### <a name='15b3e0fd3491488501a0915c4cb61cc3db568ab5524'></a> Source: [ATADocs\Understand\whats-new-version-1.6.md](https://github.com/Microsoft/ATADocs-pr/blob/34956bae237e88f597d1d100a6b0c70994fb0b86/ATADocs/Understand/whats-new-version-1.6.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [whats-new-version-1.6.f3eab62daa4f485c10b62d2b219fb992c9802a70.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/52a49cb6ee6cffe266315baeaa7532283aba282a/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/whats-new-version-1.6.f3eab62daa4f485c10b62d2b219fb992c9802a70.zh-tw.xlf)
-* Handoff Datetime: 2016-05-06 18:27:21
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
 
 ## Error Details
 

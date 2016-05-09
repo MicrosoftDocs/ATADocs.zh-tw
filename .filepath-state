@@ -68,6 +68,9 @@
   "85cfd7c6e9adf9feab842b6c94e73b95f6866f70": [
     "ATADocs\\DeployUse\\setting-ata-alerts.md"
   ],
+  "0f48ccbe2fc2a9e9a4342cc4d27015eabea40b17": [
+    "ATADocs\\DeployUse\\TOC.md"
+  ],
   "17a5a93ba84e163f64f8afcb5d9696655740d29c": [
     "ATADocs\\DeployUse\\TOC.md"
   ],
@@ -109,6 +112,9 @@
   ],
   "ca2e679ed498245f66995b90846eeb5094e08b13": [
     "ATADocs\\PlanDesign\\ata-capacity-planning.md"
+  ],
+  "b8f0eccddbb56fd2258cfb298a83ce3c2174a601": [
+    "ATADocs\\PlanDesign\\ata-prerequisites.md"
   ],
   "1567deb2bd7a9354c0d6b3bc0435411771cc72e4": [
     "ATADocs\\PlanDesign\\ata-prerequisites.md"
@@ -443,6 +449,9 @@
   "3bfe36dbd6840747a622f5eb11a1f6341afff38a": [
     "ATADocs\\DeployUse\\modifying-ata-config-iiscert.md"
   ],
+  "de05c2e5996d05f6b31e3efa91290e380d708cb2": [
+    "ATADocs\\index.md"
+  ],
   "215869011b8dd0d1ac7ba45bf1da42f19aed6f5c": [
     "ATADocs\\index.md"
   ],
@@ -524,6 +533,9 @@
   "b30041b411c633308d20b5c833ca17c91deb9a01": [
     "ATADocs\\DeployUse\\operate-ata.md"
   ],
+  "3045c1fb822aab849c8b1c2befbf8f725110f1e4": [
+    "ATADocs\\DeployUse\\preinstall-ata.md"
+  ],
   "7f4d3d3e207515b85123252a6e64de21b75b223c": [
     "ATADocs\\DeployUse\\preinstall-ata.md"
   ],
@@ -532,6 +544,9 @@
   ],
   "7d1198f5e2d17fc7cfaeab4c4d1878c951b82acb": [
     "ATADocs\\DeployUse\\validate-port-mirroring.md"
+  ],
+  "b7f4b07796ee90d45b40bc00b749b56c5f11c83b": [
+    "ATADocs\\PlanDesign\\ata-architecture.md"
   ],
   "80a438cafbeacfe400f5472713c20ba0bca7d7f3": [
     "ATADocs\\PlanDesign\\ata-architecture.md"
@@ -556,6 +571,9 @@
   ],
   "bc5426c7bd21585bb4bd6be921353ce20fa0551b": [
     "ATADocs\\Understand\\whats-new-version-1.5.md"
+  ],
+  "5f5953a980425b0b5da87104a5e7e0a04c7b0fcf": [
+    "ATADocs\\Understand\\whats-new-version-1.6.md"
   ],
   "15b3e0fd3491488501a0915c4cb61cc3db568ab5": [
     "ATADocs\\Understand\\whats-new-version-1.6.md"

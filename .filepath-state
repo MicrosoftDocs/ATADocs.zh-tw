@@ -14,6 +14,9 @@
   "e2fdbc72d51f75dba8f4ce3fc1ac6953dc43b184": [
     "ATADocs\\DeployUse\\ata-database-management.md"
   ],
+  "cc7428be2b81d2c93e0dd4c45ac9c0c2ffac534a": [
+    "ATADocs\\DeployUse\\ata-health-center.md"
+  ],
   "c221459f4fa4987d655f4c5f12d257904fdfebb2": [
     "ATADocs\\DeployUse\\ata-health-center.md"
   ],
@@ -34,6 +37,9 @@
   ],
   "3d395216582d6bf7965e35fe593dd38b4aef886f": [
     "ATADocs\\DeployUse\\install-ata.md"
+  ],
+  "bc5d8ba077f2e34195cced4f316f8c8a5158d869": [
+    "ATADocs\\DeployUse\\manage-telemetry-settings.md"
   ],
   "3598c0e362e01371875a8f43eb649500acd6e17b": [
     "ATADocs\\DeployUse\\manage-telemetry-settings.md"
@@ -62,11 +68,17 @@
   "b2d54599b781e115cabac7e453605bbc7de2a8c1": [
     "ATADocs\\DeployUse\\modifying-ata-configuration.md"
   ],
+  "36e55ceddbfa5ef72c29f9077fab373fdf1e5125": [
+    "ATADocs\\DeployUse\\setting-ata-alerts.md"
+  ],
   "49ef41cbae98ef4c766629d8910720df63f47676": [
     "ATADocs\\DeployUse\\setting-ata-alerts.md"
   ],
   "85cfd7c6e9adf9feab842b6c94e73b95f6866f70": [
     "ATADocs\\DeployUse\\setting-ata-alerts.md"
+  ],
+  "8217e7613f5310612c3fba5cd6a21662ff41d360": [
+    "ATADocs\\DeployUse\\TOC.md"
   ],
   "0f48ccbe2fc2a9e9a4342cc4d27015eabea40b17": [
     "ATADocs\\DeployUse\\TOC.md"
@@ -92,6 +104,9 @@
   "aebde4e6cecab8aad3d7c827dd8724b2bfd59343": [
     "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
   ],
+  "abc77daf444c6e8681d1c79748d98f1d32de9d42": [
+    "ATADocs\\PlanDesign\\ata-capacity-planning.md"
+  ],
   "2c3bf59a5f97d16845641da018074da8cc71b8c1": [
     "ATADocs\\PlanDesign\\ata-capacity-planning.md"
   ],
@@ -112,6 +127,9 @@
   ],
   "ca2e679ed498245f66995b90846eeb5094e08b13": [
     "ATADocs\\PlanDesign\\ata-capacity-planning.md"
+  ],
+  "58dfd66b317a639ddd2df823cdd1c1dfa2a5e73c": [
+    "ATADocs\\PlanDesign\\ata-prerequisites.md"
   ],
   "b8f0eccddbb56fd2258cfb298a83ce3c2174a601": [
     "ATADocs\\PlanDesign\\ata-prerequisites.md"
@@ -179,6 +197,9 @@
   "0b53a85847a07b8c79b4164b3f7837638473bf83": [
     "ATADocs\\Troubleshoot\\TOC.md"
   ],
+  "446b4afd45192336b2bd595e3f7e3474cc172af3": [
+    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-ata-database.md"
+  ],
   "108509e713d1525a886e4add5c8a25e98e7bbf53": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-ata-database.md"
   ],
@@ -200,6 +221,9 @@
   "0a21b27386e9fd32a0e2d9156eb66309a32cfbe7": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-ata-database.md"
   ],
+  "925694878154d5fb218f1db6fef8949a3bb7e154": [
+    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md"
+  ],
   "fdf247148cd6d94fe1558970fb59f91b81d0325c": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md"
   ],
@@ -217,6 +241,9 @@
   ],
   "bef93352c66f613587eda4f571e8f23d12db0132": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md"
+  ],
+  "7e5f00eef0db1c2c523ca05917143a3e69bb8801": [
+    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
   ],
   "44f504bcbc233f21b2ae88ce962d24bbe6231e41": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
@@ -299,6 +326,9 @@
   "1996f4de44bf3c8c22ccedd55f985216ff4ac7cf": [
     "ATADocs\\DeployUse\\install-ata-step1.md"
   ],
+  "00de46b6f50079b2df46e8b55a4dbdef5acaee50": [
+    "ATADocs\\DeployUse\\install-ata-step2.md"
+  ],
   "5d7101913aea45c77e5e6d314ed95c1fbc0fd5b9": [
     "ATADocs\\DeployUse\\install-ata-step2.md"
   ],
@@ -343,6 +373,9 @@
   ],
   "209cf292964d5df261861875d11e910dcf1c11dc": [
     "ATADocs\\DeployUse\\install-ata-step4.md"
+  ],
+  "88999409ef976d50b6bb80803213b82146cee1fe": [
+    "ATADocs\\DeployUse\\install-ata-step5.md"
   ],
   "71e245b423e69387d6417e8e3f5eaa19401ca085": [
     "ATADocs\\DeployUse\\install-ata-step5.md"
@@ -494,6 +527,9 @@
   "68090a038cec49009b6bd0ce0515a075f62483b8": [
     "ATADocs\\template.md"
   ],
+  "120881be893c98694bc9979de2e362bb84bb5210": [
+    "ATADocs\\Troubleshoot\\troubleshooting-ata-known-errors.md"
+  ],
   "d9a2929431d80096bd0f484560d0ec9c9f745f46": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-known-errors.md"
   ],
@@ -506,6 +542,9 @@
   "c6f27ec925b3b7b53b7c52cbea5186550c1422ff": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-known-errors.md"
   ],
+  "a5efa3f2b838af537126945aaf71ae522ce8a8d2": [
+    "ATADocs\\Understand\\ata-technical-faq.md"
+  ],
   "647e2afd04a2998d2f9bfab1b9aa3f8d9085460c": [
     "ATADocs\\Understand\\ata-technical-faq.md"
   ],
@@ -514,6 +553,9 @@
   ],
   "3ddd6eb938e4b8ac6b5c28bbce128fe1c0772580": [
     "ATADocs\\Understand\\ata-technical-faq.md"
+  ],
+  "ce3f8bd462a560c505b5430ff730782e1f016974": [
+    "ATADocs\\DeployUse\\working-with-ata-console.md"
   ],
   "e187b7fea77773134ce0d3f7948ff082e0e40d16": [
     "ATADocs\\DeployUse\\working-with-ata-console.md"
@@ -526,6 +568,9 @@
   ],
   "f5bf92a8aa7e5047852348ff9baf9a4067772c91": [
     "ATADocs\\DeployUse\\configure-port-mirroring.md"
+  ],
+  "dabb2531fd656393b2de719a2303be017205aa4e": [
+    "ATADocs\\DeployUse\\install-ata-preinstall-software.md"
   ],
   "94c636a0df1adce24da23ff729c3bf47e5048df1": [
     "ATADocs\\DeployUse\\install-ata-preinstall-software.md"
@@ -566,8 +611,14 @@
   "165337874f829e5ba50bfc1eff172956acc48e5e": [
     "ATADocs\\Understand\\ata-update-1.6-migration-guide.md"
   ],
+  "66e9322774d10d0c41cc7bccda0f4b32bce4fe71": [
+    "ATADocs\\Understand\\whats-new-version-1.4.md"
+  ],
   "84da34ea982844245086173d85f4a52e814b3c52": [
     "ATADocs\\Understand\\whats-new-version-1.4.md"
+  ],
+  "c2a4a52abfdc6a7cb88f4aff57821feeb9b85c4a": [
+    "ATADocs\\Understand\\whats-new-version-1.5.md"
   ],
   "bc5426c7bd21585bb4bd6be921353ce20fa0551b": [
     "ATADocs\\Understand\\whats-new-version-1.5.md"

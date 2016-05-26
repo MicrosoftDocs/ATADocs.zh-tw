@@ -48,24 +48,30 @@ ATA 閘道會在本機儲存它們要連接的 ATA 中心之 IP 位址。 它們
 
 1.  開啟 ATA 主控台。
 
-2.  選取工具列上的 [設定] 選項並選取 [組態]****。
+2.  選取工具列上的 [設定] 選項，然後選取 [設定].
 
     ![ATA 組態設定圖示](media/ATA-config-icon.JPG)
 
-3.  選取 [ATA 中心]****。
+3.  選取 [一般].
 
-4.  在 [ATA 中心服務的 IP 位址: 連接埠]**** 下，選取其中一個現有的 IP 位址，或選取 [新增自訂 IP 位址]**** 並輸入 IP 位址。
+4.  在 [ATA 中心服務的 IP 位址: 連接埠] 下，選取其中一個現有的 IP 位址，或選取 [新增自訂 IP 位址] 並輸入 IP 位址。
 
-5.  按一下 [儲存]****。
+5.  按一下 [儲存].
 
 6.  您會看到有多少 ATA 閘道已同步到最新設定的通知。
 
     ![ATA 中心同步處理閘道影像](media/ATA-chge-IP-after-clicking-save.png)
 
-7.  當所有 ATA 閘道同步後，按一下 [啟動]**** 啟動新的 IP 位址。
+    >[!IMPORTANT]
+    >啟用新設定之前，請先驗證所有 ATA 閘道均已與最新設定同步。 在所有 ATA 閘道同步之前啟用新設定，可能會導致 ATA 閘道器無法如預期般運作。 如果有任何一個 ATA 閘道尚未同步，當您按一下 [啟用] 時，就會收到此錯誤︰
+    >
+    >    ![ATA 閘道同步錯誤](media/ataGW-not-synced.png)
+
+
+7.  當所有 ATA 閘道同步後，按一下 [啟動] 啟動新的 IP 位址。
 
     > [!NOTE]
-    > 如果您已輸入自訂的 IP 位址，直到您在 ATA 中心上安裝 IP 位址之前，您將無法按 [啟動]****。
+    > 如果您已輸入自訂的 IP 位址，直到您在 ATA 中心上安裝 IP 位址之前，您將無法按 [啟動]。
 
 8.  啟動變更後，請確定所有 ATA 閘道都能同步處理其設定。 通知列會指示有多少 ATA 閘道已順利同步處理其設定。
 
@@ -74,11 +80,11 @@ ATA 閘道會在本機儲存它們要連接的 ATA 中心之 IP 位址。 它們
 
 
 ## 另請參閱
-- [使用 ATA 主控台](/advanced-threat-analytics/understand/working-with-ata-console)
+- [使用 ATA 主控台](working-with-ata-console.md)
 - [安裝 ATA](install-ata.md)
-- [如需支援，請查看我們的論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO1-->
 
 

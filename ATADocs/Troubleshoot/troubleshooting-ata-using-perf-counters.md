@@ -26,7 +26,8 @@ ms.suite: ems
 ---
 
 # 使用效能計數器疑難排解 ATA
-ATA 效能計數器提供每個 ATA 元件執行程度的見解。
+ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元件會循序處理資料，因此當發生問題時，會導致連鎖反應而造成流量中斷。 若要修正此問題，您必須找出發生問題的元件，並在連鎖的源頭修正問題。
+請參閱 [ATA 架構](/advanced-threat-analytics/plan-design/ata-architecture)以了解內部 ATA 元件的流程。
 
 **ATA 元件程序**：
 
@@ -36,10 +37,12 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。
 
 3.  這個情形會回溯發生至初始的 NetworkListener 元件，它將會在無法轉送實體時減少流量。
 
-    這就表示為了修正導致流量減少的連鎖反應，您必須在連鎖的結尾修正此問題。
-    請參閱 [ATA 架構](/advanced-threat-analytics/Understand/ata-architecture)以瞭解內部 ATA 元件的流程。
+4. 使用在效能計數器中找到的資料，來了解每個元件的運作情況。
 
 ## ATA 閘道效能計數器
+
+在本節中，ATA 閘道的每個參考也都適用於 ATA 輕量型閘道。
+
 您可以新增 ATA 閘道的效能計數器來觀察 ATA 閘道的即時效能狀態。
 您可藉由開啟「效能監視器」並新增 ATA 閘道的所有計數器來完成此動作。 效能計數器物件的名稱是：「Microsoft ATA 閘道」。
 
@@ -49,11 +52,9 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。
 
 |計數器|說明|Threshold|疑難排解|
 |-----------|---------------|-------------|-------------------|
-|NetworkListener 擷取的剖析器訊息/秒|每秒由 ATA 閘道處理的流量。|沒有閾值|協助您了解 ATA 閘道正在剖析的流量。|
-|NetworkListener 擷取的減少訊息/秒|每秒由 ATA 閘道減少的流量。|此數字應保持為零 (可接受極少數的短時間減少高載)。|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
-|NetworkListener 擷取的減少 ETW 即時緩衝區/秒|每秒由 ATA 閘道減少的流量。|此數字應保持為零 (可接受極少數的短時間減少高載)。|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
-|NetworkListener 擷取的減少 ETW 記錄緩衝區/秒|每秒由 ATA 閘道減少的流量。|此數字應保持為零 (可接受極少數的短時間減少高載)。|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
-|NetworkListener 擷取的減少 ETW 事件/秒|每秒由 ATA 閘道減少的流量。|此數字應保持為零 (可接受極少數的短時間減少高載)。|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
+|NetworkListener PEF Parser Messages/Sec|每秒由 ATA 閘道處理的流量。|沒有閾值|協助您了解 ATA 閘道正在剖析的流量。|
+|NetworkListener PEF Dropped Events/Sec|每秒由 ATA 閘道減少的流量。|此數字應保持為零 (可接受極少數的短時間減少高載)。|檢查是否有任何元件達到其大小上限，並且封鎖 NetworkListener 所有的先前元件。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
+|NetworkListener ETW Dropped Events/Sec|每秒由 ATA 閘道減少的流量。|此數字應保持為零 (可接受極少數的短時間減少高載)。|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
 |NetworkActivityTranslator 訊息資料 # 區塊大小|為轉譯成網路活動 (NA) 而加入佇列的流量。|應小於上限 -1 (預設上限︰100,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
 |EntityResolver 活動區塊大小|做為解決方法而加入佇列的網路活動 (NA) 數量。|應小於上限 -1 (預設上限︰10,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
 |EntitySender 實體批次區塊大小|要傳送給 ATA 中心而加入佇列的網路活動 (NA) 數量。|應小於上限 -1 (預設上限︰1,000,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
@@ -74,16 +75,17 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。
 
 |計數器|說明|Threshold|疑難排解|
 |-----------|---------------|-------------|-------------------|
-|EntityReceiver 實體批次區塊大小|ATA 中心加入佇列的實體批次數目。|應小於上限 -1 (預設上限︰100)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。  請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
-|NetworkActivityProcessor 網路活動區塊大小|要處理而加入佇列的網路活動 (NA) 數目。|應小於上限 -1 (預設上限︰10,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
+|EntityReceiver 實體批次區塊大小|ATA 中心加入佇列的實體批次數目。|應小於上限 -1 (預設上限︰10,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。  請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
+|NetworkActivityProcessor 網路活動區塊大小|要處理而加入佇列的網路活動 (NA) 數目。|應小於上限 -1 (預設上限︰50,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
 |EntityProfiler 網路活動區塊大小|要分析而加入佇列的網路活動 (NA) 數目。|應小於上限 -1 (預設上限︰10,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
-|CenterDatabaseClient &#42; 區塊大小|要寫入資料庫而加入佇列的特定類型網路活動數目。|應小於上限 -1 (預設上限︰50,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
-|DetectionEngine 偵測時間|決定性偵測的最後一個完整週期所花費的總時間。|應小於 900,000 (15 分鐘)|檢查 CPU、記憶體或儲存體確定沒有問題。|
+|CenterDatabase &#42; Block Size|要寫入資料庫而加入佇列的特定類型網路活動數目。|應小於上限 -1 (預設上限︰50,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
+
 
 > [!NOTE]
 > -   時間計數器以毫秒為單位
 > -   有時候使用「報告」的圖形類型監視計數器的完整清單會更方便 (範例︰所有計數器的即時監視)。
 
+## 作業系統計數器
 以下是要注意的主要作業系統計數器清單︰
 
 |計數器|說明|Threshold|疑難排解|
@@ -99,7 +101,14 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。
 |\LogicalDisk(&#42;)\Disk Writes/sec|執行寫入作業至磁碟的速率。|沒有閾值|磁碟使用計數器 (可在疑難排解儲存體延遲時新增見解)|
 |\LogicalDisk(&#42;)\Disk Write Bytes/sec|每秒寫入磁碟的位元組數目。|沒有閾值|磁碟使用計數器可在疑難排解儲存體延遲時新增見解。|
 
+## 另請參閱
+- [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
+- [ATA 容量規劃](/advanced-threat-analytics/plan-design/ata-capacity-planning)
+- [設定事件收集](/advanced-threat-analytics/deploy-use/configure-event-collection)
+- [設定 Windows 事件轉送](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=May16_HO3-->
 
 

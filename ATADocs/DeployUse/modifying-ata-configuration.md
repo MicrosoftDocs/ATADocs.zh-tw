@@ -39,14 +39,12 @@ ms.suite: ems
 
 -   [變更網域連線密碼](modifying-ata-config-dcpassword.md)
 
--   [變更擷取網路介面卡的名稱](modifying-ata-config-nicname.md)
-
 ## 另請參閱
-- [使用 ATA 主控台](/advanced-threat-analytics/understand/working-with-ata-console)
+- [使用 ATA 主控台](working-with-ata-console.md)
 - [安裝 ATA](install-ata.md)
-- [如需支援，請查看我們的論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO1-->
 
 

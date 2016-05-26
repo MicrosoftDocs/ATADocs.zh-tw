@@ -1,12 +1,17 @@
-# [膫解和探索](what-is-ata.md)
+# [了解和探索](what-is-ata.md)
 ## [什麼是 Microsoft Advanced Threat Analytics？](what-is-ata.md)
-## [ATA 架構](ata-architecture.md)
-## [使用 ATA 主控台](working-with-ata-console.md)
-# [規劃和設計](/advanced-threat-analytics/plandesign/ata-capacity-planning)
-# [部署與使用](/advanced-threat-analytics/deployuse/install-ata)
+## [ATA 版本資訊](ata-release-notes.md)
+### [ATA 1.6 版的新功能](whats-new-version-1.6.md)
+#### [更新至 ATA 1.6 - 移轉指南](ata-update-1.6-migration-guide.md)
+### [ATA 1.5 版的新功能](whats-new-version-1.5.md)
+#### [更新至 ATA 1.5 - 移轉指南](ata-update-1.5-migration-guide.md)
+### [ATA 1.4 版的新功能](whats-new-version-1.4.md)
+## [常見問題集](ata-technical-faq.md)
+# [計劃和設計](/advanced-threat-analytics/plan-design/ata-capacity-planning)
+# [部署與使用](/advanced-threat-analytics/deploy-use/install-ata)
 # [疑難排解](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO1-->
 
 

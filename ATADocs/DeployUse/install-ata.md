@@ -31,7 +31,6 @@ ms.suite: ems
 
 若要設定 ATA，請遵循下列步驟︰
 
--   [安裝前的步驟](install-ata-preinstall.md)
 
 -   [步驟 1： 下載並安裝 ATA 中心](install-ata-step1.md)
 
@@ -48,11 +47,12 @@ ms.suite: ems
 
 ## 另請參閱
 
-- [如需支援，請查看我們的論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
-- [設定事件收集](/advanced-threat-analytics/plandesign/configure-event-collection)
-- [ATA 必要條件](/advanced-threat-analytics/plandesign/ata-prerequisites)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [設定事件收集](configure-event-collection.md)
+- [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=May16_HO1-->
 
 

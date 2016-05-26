@@ -26,10 +26,10 @@ ms.suite: ems
 ---
 
 # 使用 ATA 偵測設定
-[偵測]**** 組態頁面可讓您為具備異常情況且應該在網路上利用與其他實體不同方式處理的 IP 位址和子網路設定清單。
+[偵測] 組態頁面可讓您為具備異常情況且應該在網路上利用與其他實體不同方式處理的 IP 位址和子網路設定清單。
 
 ## 設定偵測
-在 [偵測]**** 頁面中，您可以定義下列項目︰
+在 [偵測] 頁面中，您可以定義下列項目︰
 
 -   **短期租用子網路** - 如果您的組織有任何子網路的 IP 位址非常短期，例如 VPN IP 位址子網路或 Wi-Fi 子網路，請務必將這些 IP 位址和子網路輸入 ATA，以便 ATA 了解從這些範圍儲存電腦和 IP 位址之間的關聯，儲存時間比其他 IP 位址還短。
 
@@ -44,9 +44,9 @@ ms.suite: ems
 ## 另請參閱
 - [處理可疑活動](working-with-suspicious-activities.md)
 - [修改 ATA 組態](modifying-ata-configuration.md)
-- [如需支援，請查看我們的論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO1-->
 
 

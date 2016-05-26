@@ -45,15 +45,15 @@ ms.suite: ems
 
 2.  開啟 Internet Information Services (IIS) 管理員.A。
 
-3.  展開伺服器名稱，然後展開 [網站]****。
+3.  展開伺服器名稱，然後展開 [網站].
 
-4.  選取 Microsoft ATA 主控台的站台，在 [動作] ****窗格中按一下 [繫結]****。
+4.  選取 Microsoft ATA 主控台的網站，在 [動作] 窗格中按一下 [繫結].
 
     ![ATA 主控台繫結動作](media/ATA-console-change-IP-bindings.jpg)
 
-5.  選取 [HTTPS]**** 並按一下 [編輯]****。
+5.  選取 [HTTPS]，然後按一下 [編輯].
 
-6.  在 [SSL 憑證]****下，選取新的憑證。
+6.  在 [SSL 憑證]下，選取新的憑證。
 
 7.  安裝新的 ATA 閘道前，請先下載 ATA 閘道安裝套件。
 
@@ -62,11 +62,11 @@ ms.suite: ems
 [網域連線密碼 »](modifying-ata-config-dcpassword.md)
 
 ## 另請參閱
-- [使用 ATA 主控台](/advanced-threat-analytics/understand/working-with-ata-console)
+- [使用 ATA 主控台](working-with-ata-console.md)
 - [安裝 ATA](install-ata.md)
-- [如需支援，請查看我們的論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
 
 
-<!--HONumber=Apr16_HO2-->
+<!--HONumber=May16_HO1-->
 
 

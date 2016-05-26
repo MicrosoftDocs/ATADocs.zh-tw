@@ -32,7 +32,9 @@ ms.suite: ems
 [步驟 5 »](install-ata-step5.md)
 
 ## 步驟 4： 安裝 ATA 閘道
-安裝 ATA 閘道前，請先驗證連接埠鏡像都已設定正確，而且 ATA 閘道可以查看往來網域控制站的資料流量。 詳細資訊請參閱[驗證連接埠鏡像](/advanced-threat-analytics/plandesign/validate-port-mirroring)。
+
+在專用伺服器上安裝 ATA 閘道之前，請先驗證連接埠鏡像都已正確設定，而且 ATA 閘道可以查看往來網域控制站的流量。 如需詳細資訊，請參閱[驗證連接埠鏡像](validate-port-mirroring.md)。
+
 
 > [!IMPORTANT]
 > 請確定 [KB2919355](http://support.microsoft.com/kb/2919355/) 已安裝。  執行以下 PowerShell Cmdlet 來檢查是否已安裝 hotfix：
@@ -41,13 +43,14 @@ ms.suite: ems
 
 在 ATA 閘道伺服器上執行下列步驟。
 
-1.  解壓縮 Zip 檔案。
+1.  解壓縮 Zip 檔案。 
+> [!NOTE] 從 ZIP 檔案直接安裝將會失敗。
 
-2.  從提高權限的命令提示字元中，執行 Microsoft ATA 閘道 Setup.exe，然後遵循安裝精靈的指示。
+2.  從提升權限的命令提示字元執行 **Microsoft ATA Gateway Setup.exe**，然後遵循安裝精靈的步驟。
 
-3.  在 [歡迎]**** 頁面中，選取您的語言，然後按一下 [下一步]****。
+3.  在 [歡迎] 頁面中選取您的語言，然後按一下 [下一步].
 
-4.  在 [ATA 閘道設定]**** 下，根據您的環境輸入下列資訊︰
+4.  在 [ATA 閘道設定] 下，根據您的環境輸入下列資訊︰
 
     ![ATA 閘道組態設定影像](media/ATA-Gateway-Configuration.JPG)
 
@@ -61,7 +64,7 @@ ms.suite: ems
     -   KB 3047154
 
         > [!IMPORTANT]
-        > -   請勿在虛擬化主機上安裝 KB 3047154。 這可能會導致連接埠鏡像無法正常運作。
+        > -   請勿將 KB 3047154 安裝於虛擬主機 (執行虛擬化的主機；可在虛擬機器上執行)。 這可能會導致連接埠鏡像無法正常運作。 
         > -   請勿在 ATA 閘道上安裝 Message Analyzer、Wireshark 或其他網路擷取軟體。 如果您需要擷取網路流量，請安裝並使用 Microsoft Network Monitor 3.4。
 
     -   ATA 閘道服務
@@ -70,7 +73,7 @@ ms.suite: ems
 
     -   自訂的效能監視資料收集組
 
-5.  安裝完成後，請按一下 [啟動]**** 開啟瀏覽器，並登入 ATA 主控台。
+5.  安裝完成之後，若是 ATA 閘道，請按一下 [啟動] 開啟瀏覽器，然後登入 ATA 主控台；若是 ATA 輕量型閘道，請按一下 [完成].
 
 
 >[!div class="step-by-step"]
@@ -79,11 +82,12 @@ ms.suite: ems
 
 ## 另請參閱
 
-- [如需支援，請查看我們的論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
-- [設定事件收集](/advanced-threat-analytics/plandesign/configure-event-collection)
-- [ATA 必要條件](/advanced-threat-analytics/plandesign/ata-prerequisites)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [設定事件收集](configure-event-collection.md)
+- [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
-<!--HONumber=Apr16_HO2-->
+
+<!--HONumber=May16_HO1-->
 
 

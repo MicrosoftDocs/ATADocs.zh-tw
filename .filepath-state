@@ -26,6 +26,9 @@
   "abc77daf444c6e8681d1c79748d98f1d32de9d42": [
     "ATADocs\\PlanDesign\\ata-capacity-planning.md"
   ],
+  "f0229756e4d55cf88d8f63393080373b7e1f90ea": [
+    "ATADocs\\PlanDesign\\ata-prerequisites.md"
+  ],
   "58dfd66b317a639ddd2df823cdd1c1dfa2a5e73c": [
     "ATADocs\\PlanDesign\\ata-prerequisites.md"
   ],
@@ -134,6 +137,9 @@
   "c4b9eb1106ff6ce6bf516cad665d49df5a5ee2d2": [
     "ATADocs\\template.md"
   ],
+  "f02309a66663311922454af40a68b9a9200b64d3": [
+    "ATADocs\\Troubleshoot\\troubleshooting-ata-known-errors.md"
+  ],
   "120881be893c98694bc9979de2e362bb84bb5210": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-known-errors.md"
   ],
@@ -170,6 +176,9 @@
   "4d75d036a8d278aef25a35725986b2881d2b5be9": [
     "ATADocs\\Understand\\ata-update-1.5-migration-guide.md"
   ],
+  "460e8ac37e94b02ebc045297caf86fa9c65704e3": [
+    "ATADocs\\Understand\\ata-update-1.6-migration-guide.md"
+  ],
   "ac5562dfcc985b644f6c9141a6046ffb4d88f05a": [
     "ATADocs\\Understand\\ata-update-1.6-migration-guide.md"
   ],
@@ -178,6 +187,9 @@
   ],
   "c2a4a52abfdc6a7cb88f4aff57821feeb9b85c4a": [
     "ATADocs\\Understand\\whats-new-version-1.5.md"
+  ],
+  "f67ed5e0f6e79fa37407092f78979cbb100a240a": [
+    "ATADocs\\Understand\\whats-new-version-1.6.md"
   ],
   "5f5953a980425b0b5da87104a5e7e0a04c7b0fcf": [
     "ATADocs\\Understand\\whats-new-version-1.6.md"

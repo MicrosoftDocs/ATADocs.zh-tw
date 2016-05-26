@@ -17,6 +17,9 @@
   "36e55ceddbfa5ef72c29f9077fab373fdf1e5125": [
     "ATADocs\\DeployUse\\setting-ata-alerts.md"
   ],
+  "76dd524dd48e6d79029e308c6c77440b0e4e0b27": [
+    "ATADocs\\DeployUse\\TOC.md"
+  ],
   "8217e7613f5310612c3fba5cd6a21662ff41d360": [
     "ATADocs\\DeployUse\\TOC.md"
   ],
@@ -61,6 +64,9 @@
   ],
   "e4816f70b26843d4ee3c15d9aefb7e64139ab5d5": [
     "ATADocs\\DeployUse\\working-with-detection-settings.md"
+  ],
+  "2d7eb7882ee12c5500dccd2bc0f34df21f150793": [
+    "ATADocs\\DeployUse\\install-ata-step1.md"
   ],
   "1a248d97a6723c3d8aa32a6afbcbe89739313c8c": [
     "ATADocs\\DeployUse\\install-ata-step1.md"
@@ -155,11 +161,11 @@
   "184c86f5d44023250fb0fed388b76b0db64f4f3a": [
     "ATADocs\\DeployUse\\configure-port-mirroring.md"
   ],
-  "dabb2531fd656393b2de719a2303be017205aa4e": [
-    "ATADocs\\DeployUse\\install-ata-preinstall-software.md"
-  ],
   "b30041b411c633308d20b5c833ca17c91deb9a01": [
     "ATADocs\\DeployUse\\operate-ata.md"
+  ],
+  "e19e295302c19b372fd7e53e63c9651afa379f9f": [
+    "ATADocs\\DeployUse\\preinstall-ata.md"
   ],
   "3045c1fb822aab849c8b1c2befbf8f725110f1e4": [
     "ATADocs\\DeployUse\\preinstall-ata.md"

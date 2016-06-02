@@ -20334,9 +20334,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\ata-prerequisites.79e9e750461cccf39f17f01df458a3eb6f3e6c8b.zh-tw.xlf",
+      "ArchiveFileCommit": "69cea1e8794669b9cdef54c2e9d1d29b8bcfc31c",
+      "ArchiveFileDateTime": "2016-06-02T02:44:28.2199223Z",
       "ArchiveException": null
     },
     "f02309a66663311922454af40a68b9a9200b64d3": {
@@ -20364,9 +20364,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\troubleshooting-ata-known-errors.09d3985d5b8120ee3069cc21c8701940c07afcce.zh-tw.xlf",
+      "ArchiveFileCommit": "69cea1e8794669b9cdef54c2e9d1d29b8bcfc31c",
+      "ArchiveFileDateTime": "2016-06-02T02:44:28.2199223Z",
       "ArchiveException": null
     },
     "460e8ac37e94b02ebc045297caf86fa9c65704e3": {
@@ -20394,9 +20394,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\ata-update-1.6-migration-guide.fe715980eb0702f6dda7862931a6921ccd723d15.zh-tw.xlf",
+      "ArchiveFileCommit": "69cea1e8794669b9cdef54c2e9d1d29b8bcfc31c",
+      "ArchiveFileDateTime": "2016-06-02T02:44:28.2199223Z",
       "ArchiveException": null
     },
     "f67ed5e0f6e79fa37407092f78979cbb100a240a": {
@@ -20424,9 +20424,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\whats-new-version-1.6.f3eab62daa4f485c10b62d2b219fb992c9802a70.zh-tw.xlf",
+      "ArchiveFileCommit": "69cea1e8794669b9cdef54c2e9d1d29b8bcfc31c",
+      "ArchiveFileDateTime": "2016-06-02T02:44:28.2199223Z",
       "ArchiveException": null
     },
     "2d7eb7882ee12c5500dccd2bc0f34df21f150793": {
@@ -20454,9 +20454,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\install-ata-step1.be25407df296fc13c33daad4579bcbd3e4664b05.zh-tw.xlf",
+      "ArchiveFileCommit": "69cea1e8794669b9cdef54c2e9d1d29b8bcfc31c",
+      "ArchiveFileDateTime": "2016-06-02T02:44:28.2199223Z",
       "ArchiveException": null
     },
     "e19e295302c19b372fd7e53e63c9651afa379f9f": {
@@ -20484,9 +20484,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\preinstall-ata.ad944ebc907cddb617baa953f8edd06ddc17f70a.zh-tw.xlf",
+      "ArchiveFileCommit": "69cea1e8794669b9cdef54c2e9d1d29b8bcfc31c",
+      "ArchiveFileDateTime": "2016-06-02T02:44:28.2199223Z",
       "ArchiveException": null
     },
     "76dd524dd48e6d79029e308c6c77440b0e4e0b27": {
@@ -20514,9 +20514,9 @@
       "HandbackException": null,
       "HandbackFailureTimes": 0,
       "UpdatedDateTime": "0001-01-01T00:00:00",
-      "ArchiveFilePath": null,
-      "ArchiveFileCommit": null,
-      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\archive\\TOC.d272a951086c3fc033212846ba52cf9d255d1bc5.zh-tw.xlf",
+      "ArchiveFileCommit": "69cea1e8794669b9cdef54c2e9d1d29b8bcfc31c",
+      "ArchiveFileDateTime": "2016-06-02T02:44:28.2199223Z",
       "ArchiveException": null
     }
   }

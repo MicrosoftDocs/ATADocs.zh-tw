@@ -1,11 +1,39 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [ATADocs\DeployUse\preinstall-ata.md](https://github.com/Microsoft/ATADocs-pr/blob/71c28b976639ffc67638ab2d4df3ef0d862da4b2/ATADocs/DeployUse/preinstall-ata.md) | InSyncHandedBackSuccess | [Details](#e19e295302c19b372fd7e53e63c9651afa379f9f119)
+ [ATADocs\DeployUse\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/71c28b976639ffc67638ab2d4df3ef0d862da4b2/ATADocs/DeployUse/TOC.md) | InSyncHandedBackSuccess | [Details](#76dd524dd48e6d79029e308c6c77440b0e4e0b27122)
 
 ## Item Details
+##### <a name='e19e295302c19b372fd7e53e63c9651afa379f9f119'></a> Source: [ATADocs\DeployUse\preinstall-ata.md](https://github.com/Microsoft/ATADocs-pr/blob/71c28b976639ffc67638ab2d4df3ef0d862da4b2/ATADocs/DeployUse/preinstall-ata.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [ATADocs\DeployUse\preinstall-ata.md](https://github.com/Microsoft/ATADocs-pr.zh-tw/blob/c49b8370620e950d96b2eb826c6d8acc22505aab/ATADocs/DeployUse/preinstall-ata.md)
+* Handoff File: [preinstall-ata.ad944ebc907cddb617baa953f8edd06ddc17f70a.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/33a628a87cf1bcdb1fe1600ff97f6fff63db7cc2/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/preinstall-ata.ad944ebc907cddb617baa953f8edd06ddc17f70a.zh-tw.xlf)
+* Handoff Datetime: 2016-05-26 19:03:05
+* Handoff Reason: Include
+* Archive File: [preinstall-ata.ad944ebc907cddb617baa953f8edd06ddc17f70a.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/69cea1e8794669b9cdef54c2e9d1d29b8bcfc31c/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/archive/preinstall-ata.ad944ebc907cddb617baa953f8edd06ddc17f70a.zh-tw.xlf)
+* Archive Datetime: 2016-06-02 02:44:28
+* Handback File: [preinstall-ata.ad944ebc907cddb617baa953f8edd06ddc17f70a.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/5b6f9185f59aa5c0d8a6a8f769d52c31b14f61a7/ol-handback/Microsoft/ATADocs-pr.zh-tw/master/preinstall-ata.ad944ebc907cddb617baa953f8edd06ddc17f70a.zh-tw.xlf)
+* Handback Datetime: 2016-06-02 23:40:16
+* [Back to Top](#report-top)
+
+##### <a name='76dd524dd48e6d79029e308c6c77440b0e4e0b27122'></a> Source: [ATADocs\DeployUse\TOC.md](https://github.com/Microsoft/ATADocs-pr/blob/71c28b976639ffc67638ab2d4df3ef0d862da4b2/ATADocs/DeployUse/TOC.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [ATADocs\DeployUse\TOC.md](https://github.com/Microsoft/ATADocs-pr.zh-tw/blob/c49b8370620e950d96b2eb826c6d8acc22505aab/ATADocs/DeployUse/TOC.md)
+* Handoff File: [TOC.d272a951086c3fc033212846ba52cf9d255d1bc5.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/33a628a87cf1bcdb1fe1600ff97f6fff63db7cc2/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/TOC.d272a951086c3fc033212846ba52cf9d255d1bc5.zh-tw.xlf)
+* Handoff Datetime: 2016-05-26 19:03:05
+* Handoff Reason: Include
+* Archive File: [TOC.d272a951086c3fc033212846ba52cf9d255d1bc5.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/69cea1e8794669b9cdef54c2e9d1d29b8bcfc31c/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/archive/TOC.d272a951086c3fc033212846ba52cf9d255d1bc5.zh-tw.xlf)
+* Archive Datetime: 2016-06-02 02:44:28
+* Handback File: [TOC.d272a951086c3fc033212846ba52cf9d255d1bc5.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/5b6f9185f59aa5c0d8a6a8f769d52c31b14f61a7/ol-handback/Microsoft/ATADocs-pr.zh-tw/master/TOC.d272a951086c3fc033212846ba52cf9d255d1bc5.zh-tw.xlf)
+* Handback Datetime: 2016-06-02 23:40:16
+* [Back to Top](#report-top)
+
 
 ## Error Details
 

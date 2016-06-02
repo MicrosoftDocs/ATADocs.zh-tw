@@ -32,7 +32,7 @@ ms.suite: ems
 1. [設定連接埠鏡像](configure-port-mirroring.md)
 2. [驗證連接埠鏡像](validate-port-mirroring.md)
 3. [設定事件收集](configure-event-collection.md)
-4. [在伺服器上設定軟體](install-ata-preinstall-software.md)
+
 
 
 ## 另請參閱
@@ -43,6 +43,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

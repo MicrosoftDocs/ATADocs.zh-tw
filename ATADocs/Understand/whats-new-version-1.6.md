@@ -48,24 +48,19 @@ ATA 1.6 的更新提供下列各方面的改良︰
 ### 新增偵測
 
 
-- **惡意的資料保護私人資訊要求**
-資料保護 API (DPAPI) 是使用密碼的資料保護服務。 有多種應用程式都使用此保護服務來儲存使用者的密碼，例如網站密碼和檔案共用認證。 為了在密碼遺失的情況下提供支援，使用者可以使用與密碼無關的修復金鑰，來解密受保護的資料。 在網域環境中，攻擊者可以從遠端竊取修復金鑰，並用來解密所有加入網域之電腦上受保護的資料。
+- **惡意的資料保護私人資訊要求**：資料保護 API (DPAPI) 是使用密碼的資料保護服務。 有多種應用程式都使用此保護服務來儲存使用者的密碼，例如網站密碼和檔案共用認證。 為了在密碼遺失的情況下提供支援，使用者可以使用與密碼無關的修復金鑰，來解密受保護的資料。 在網域環境中，攻擊者可以從遠端竊取修復金鑰，並用來解密所有加入網域之電腦上受保護的資料。
 
 
-- **Net Session 列舉**
-探查是進階攻擊鏈中的重要階段。 網域控制站 (DC) 可作為檔案伺服器，透過伺服器訊息區 (SMB) 通訊協定，來達成散發群組原則物件的目的。 在探查階段階段中，攻擊者可以查詢伺服器上所有使用中 SMB 工作階段的 DC，進而取得與這些 SMB 工作階段相關聯的所有使用者和 IP 位址。 攻擊者可以使用 SMB 工作階段列舉來鎖定敏感性帳戶，此舉有助於他們在網路間橫向移動。
+- **Net Session 列舉**：探查是進階攻擊鏈中的重要階段。 網域控制站 (DC) 可作為檔案伺服器，透過伺服器訊息區 (SMB) 通訊協定，來達成散發群組原則物件的目的。 在探查階段階段中，攻擊者可以查詢伺服器上所有使用中 SMB 工作階段的 DC，進而取得與這些 SMB 工作階段相關聯的所有使用者和 IP 位址。 攻擊者可以使用 SMB 工作階段列舉來鎖定敏感性帳戶，此舉有助於他們在網路間橫向移動。
 
 
-- **惡意的複寫要求**
-在 Active Directory 環境中，網域控制站之間會定期發生複寫。 攻擊者可以假冒 Active Directory 複寫要求 (有時假冒網域控制站)，藉此擷取儲存在 Active Directory 中的資料 (包括密碼雜湊)，而不需要使用磁碟區陰影複製等較具侵入性的技術。
+- **惡意的複寫要求**：在 Active Directory 環境中，網域控制站之間會定期發生複寫。 攻擊者可以假冒 Active Directory 複寫要求 (有時假冒網域控制站)，藉此擷取儲存在 Active Directory 中的資料 (包括密碼雜湊)，而不需要使用磁碟區陰影複製等較具侵入性的技術。
 
 
-- **MS11-013 弱點偵測**
-Kerberos 中因權限提高而出現弱點，讓 Kerberos 服務票證的特定部分可被偽造。 成功惡意探索此弱點的惡意使用者或攻擊者，可以取得網域控制站上權限提高的權杖。
+- **MS11-013 弱點偵測**：Kerberos 中因權限提高而出現弱點，讓 Kerberos 服務票證的特定部分可被偽造。 成功惡意探索此弱點的惡意使用者或攻擊者，可以取得網域控制站上權限提高的權杖。
 
 
-- **不尋常的通訊協定實作**
-驗證要求 (Kerberos 或 NTLM) 通常使用一組標準的方法和通訊協定來執行。 不過，為了成功進行驗證，要求只能符合一組特定的需求。 攻擊者可能會在環境中，以稍微偏離標準實作的方式來實作這些通訊協定。 這些偏差可能表示攻擊者嘗試執行 Pass-The-Hash、暴力密碼破解等攻擊。
+- **不尋常的通訊協定實作**：驗證要求 (Kerberos 或 NTLM) 通常使用一組標準的方法和通訊協定來執行。 不過，為了成功進行驗證，要求只能符合一組特定的需求。 攻擊者可能會在環境中，以稍微偏離標準實作的方式來實作這些通訊協定。 這些偏差可能表示攻擊者嘗試執行 Pass-The-Hash、暴力密碼破解等攻擊。
 
 
 ### 改進現有偵測
@@ -108,11 +103,13 @@ ATA 1.6 執行 ATA 資料庫所需的儲存空間大幅減少，現在只需要�
 ### 從 ATA 1.5 更新時的移轉失敗
 更新至 ATA 1.6 時，更新程序可能會失敗，並出現下列錯誤碼：
 
-![將 ATA 更新至 1.6 的錯誤](http://i.imgur.com/QrLSApr.png)
-如果您看到此錯誤，請檢閱 **C:\Users\<使用者>\AppData\Local\Temp** 中的部署記錄，並尋找下列例外狀況︰
+![將 ATA 更新至 1.6 錯誤](http://i.imgur.com/QrLSApr.png) 如果您看到此錯誤，請檢閱 **C:\Users\<使用者>\AppData\Local\Temp** 中的部署記錄，並尋找下列例外狀況︰
 
     System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> MongoDB.Driver.MongoWriteException: A write operation resulted in an error. E11000 duplicate key error index: ATA.UniqueEntityProfile.$_id_ dup key: { : "<guid>" } ---> MongoDB.Driver.MongoBulkWriteException`1: A bulk write operation resulted in one or more errors.  E11000 duplicate key error index: ATA.UniqueEntityProfile.$_id_ dup key: { : " <guid> " }
 
+您也可能會看到此錯誤︰System.ArgumentNullException: 不能是 Null。
+    
+如果您看到上述任一錯誤，請執行下列因應措施。
 
 **因應措施**： 
 
@@ -130,7 +127,14 @@ ATA 1.6 執行 ATA 資料庫所需的儲存空間大幅減少，現在只需要�
 7.  檢閱記錄以驗證產品正在執行，而且未發生錯誤。
 8.  [下載](http://aka.ms/ataremoveduplicateprofiles "下載") "RemoveDuplicateProfiles.exe" 工具，然後將其複製到主要安裝路徑 (%ProgramFiles%\Microsoft Advanced Threat Analytics\Center)
 9.  從提升權限的命令提示字元執行 “RemoveDuplicateProfiles.exe”，並等候其成功完成。
-10. 將 ATA 至 v1.6。
+10. 從這裡：…\Microsoft Advanced Threat Analytics\Center\MongoDB\bin 目錄：**Mongo ATA**，輸入下列命令：
+
+    db.SuspiciousActivities.remove({ "_t" : "RemoteExecutionSuspiciousActivity", "DetailsRecords" : { "$elemMatch" : { "ReturnCode" : null } } }, { "_id" : 1 });
+
+![更新因應措施](http://i.imgur.com/Nj99X2f.png)
+
+這應該會傳回 WriteResult({ "nRemoved" : XX })，其中 “XX” 是已刪除的可疑活動數目。 如果數目大於 0，請結束命令提示字元，並繼續進行更新程序。
+
 
 ### .Net Framework 4.6.1 需要重新啟動伺服器
 
@@ -147,6 +151,6 @@ ATA 更新程序會將資料匯出至 `<Center Installation Path>\Migration` 成
 
 [將 ATA 更新至 1.6 版 - 移轉指南](ata-update-1.6-migration-guide.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO4-->
 
 

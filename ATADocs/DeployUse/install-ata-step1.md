@@ -31,21 +31,25 @@ ms.suite: ems
 
 [步驟 2 »](install-ata-step2.md)
 
+此安裝程序提供執行 ATA 1.6 全新安裝的指示。 如需從舊版更新現有 ATA 部署的相關資訊，請參閱 [1.6 版 ATA 移轉指南](/advanced-threat-analytics/understand-explore/ata-update-1.6-migration-guide)。
+
+> [!IMPORTANT] 開始安裝之前，先在 ATA Center 伺服器和 ATA 閘道伺服器上安裝 KB2934520；若沒有這麼做，ATA 安裝將會安裝此更新，且您需要在 ATA 安裝期間重新啟動機器。
+
 ## 步驟 1： 下載並安裝 ATA 中心
 確認伺服器符合需求之後，您可以繼續 ATA 中心的安裝。
 
 在 ATA 中心伺服器上執行下列步驟。
 
-1.  從 [Microsoft 大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx)、[TechNet Evaluation Center](http://www.microsoft.com/en-us/evalcenter/) 或 [MSDN](https://msdn.microsoft.com/en-us/subscriptions/downloads) 下載 ATA.
+1.  從 [Microsoft 大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx)、[TechNet Evaluation Center](http://www.microsoft.com/en-us/evalcenter/) 或 [MSDN](https://msdn.microsoft.com/en-us/subscriptions/downloads) 下載 ATA。
 
 2.  請以本機系統管理員群組成員的使用者身分，登入 ATA 中心安裝所在的電腦。
 
 3.  執行 **Microsoft ATA Center Setup.EXE**，然後遵循安裝精靈的步驟。
 
 4.  如果未安裝 Microsoft .Net Framework，當您開始安裝時，系統會提示您進行安裝。 安裝 .NET Framework 之後，可能會出現重新開機的提示。
-5.  在**歡迎**頁面中選取要用於 ATA 安裝畫面的語言，然後按一下 [下一步].
+5.  在**歡迎**頁面上選取要用於 ATA 安裝畫面的語言，然後按 **[下一步]**。
 
-6.  閱讀 Microsoft 軟體授權條款，如果您接受條款，請按一下核取方塊，然後按一下 [下一步].
+6.  閱讀 Microsoft 軟體授權條款，如果您接受條款，請按一下核取方塊，然後按 **[下一步]**。
 
 7.  建議您將 ATA 設為自動更新。 如果您未在電腦上設定 Windows 使其執行此動作，就會看到 [使用 Microsoft Update 協助您的電腦保持在安全和最新的狀態] 畫面。 
     ![保持 ATA 最新狀態影像](media/ata_ms_update.png)
@@ -81,7 +85,7 @@ ms.suite: ems
 
 11.  安裝完成後，按一下 [啟動] 連線至 ATA 主控台。
 此時，系統會自動將您帶到 [一般] 設定頁面，以繼續進行 ATA 閘道的設定和部署。
-由於您使用 IP 位址登入網站，因此會收到與憑證相關的警告，這是正常現象，而您應該要按一下 [繼續瀏覽此網站].
+由於您使用 IP 位址登入網站，因此會收到與憑證相關的警告，這是正常現象，而您應該要按一下 **[繼續瀏覽此網站]**。
 
 ### 驗證安裝
 
@@ -90,8 +94,7 @@ ms.suite: ems
 
 
 
->[!div class="step-by-step"]
-[« 預先安裝](preinstall-ata.md)
+>[!div class="step-by-step"] [« 前置安裝](preinstall-ata.md)
 [步驟 2 »](install-ata-step2.md)
 
 ## 另請參閱
@@ -102,6 +105,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

@@ -65,9 +65,6 @@
   "2d7eb7882ee12c5500dccd2bc0f34df21f150793": [
     "ATADocs\\DeployUse\\install-ata-step1.md"
   ],
-  "1a248d97a6723c3d8aa32a6afbcbe89739313c8c": [
-    "ATADocs\\DeployUse\\install-ata-step1.md"
-  ],
   "00de46b6f50079b2df46e8b55a4dbdef5acaee50": [
     "ATADocs\\DeployUse\\install-ata-step2.md"
   ],
@@ -113,9 +110,6 @@
   "f02309a66663311922454af40a68b9a9200b64d3": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-known-errors.md"
   ],
-  "120881be893c98694bc9979de2e362bb84bb5210": [
-    "ATADocs\\Troubleshoot\\troubleshooting-ata-known-errors.md"
-  ],
   "a5efa3f2b838af537126945aaf71ae522ce8a8d2": [
     "ATADocs\\Understand\\ata-technical-faq.md"
   ],
@@ -149,9 +143,6 @@
   "460e8ac37e94b02ebc045297caf86fa9c65704e3": [
     "ATADocs\\Understand\\ata-update-1.6-migration-guide.md"
   ],
-  "ac5562dfcc985b644f6c9141a6046ffb4d88f05a": [
-    "ATADocs\\Understand\\ata-update-1.6-migration-guide.md"
-  ],
   "66e9322774d10d0c41cc7bccda0f4b32bce4fe71": [
     "ATADocs\\Understand\\whats-new-version-1.4.md"
   ],
@@ -159,9 +150,6 @@
     "ATADocs\\Understand\\whats-new-version-1.5.md"
   ],
   "f67ed5e0f6e79fa37407092f78979cbb100a240a": [
-    "ATADocs\\Understand\\whats-new-version-1.6.md"
-  ],
-  "5f5953a980425b0b5da87104a5e7e0a04c7b0fcf": [
     "ATADocs\\Understand\\whats-new-version-1.6.md"
   ]
 }

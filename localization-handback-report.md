@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [ATADocs\PlanDesign\ata-prerequisites.md](https://github.com/Microsoft/ATADocs-pr/blob/6232c8690885077d2bad4331db7740f542295df8/ATADocs/PlanDesign/ata-prerequisites.md) | InSyncHandedBackSuccess | [Details](#f0229756e4d55cf88d8f63393080373b7e1f90ea225)
 
 ## Item Details
-##### <a name='f0229756e4d55cf88d8f63393080373b7e1f90ea225'></a> Source: [ATADocs\PlanDesign\ata-prerequisites.md](https://github.com/Microsoft/ATADocs-pr/blob/6232c8690885077d2bad4331db7740f542295df8/ATADocs/PlanDesign/ata-prerequisites.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [ATADocs\PlanDesign\ata-prerequisites.md](https://github.com/Microsoft/ATADocs-pr.zh-tw/blob/367399c858cf93841a9b23a0e193a5947c1d1ff9/ATADocs/PlanDesign/ata-prerequisites.md)
-* Handoff File: [ata-prerequisites.79e9e750461cccf39f17f01df458a3eb6f3e6c8b.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/262d72604590f3fc581599ef3a00ee55ad4f343f/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/ata-prerequisites.79e9e750461cccf39f17f01df458a3eb6f3e6c8b.zh-tw.xlf)
-* Handoff Datetime: 2016-05-26 18:33:34
-* Handoff Reason: Include
-* Archive File: [ata-prerequisites.79e9e750461cccf39f17f01df458a3eb6f3e6c8b.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/69cea1e8794669b9cdef54c2e9d1d29b8bcfc31c/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/archive/ata-prerequisites.79e9e750461cccf39f17f01df458a3eb6f3e6c8b.zh-tw.xlf)
-* Archive Datetime: 2016-06-02 02:44:28
-* Handback File: [ata-prerequisites.79e9e750461cccf39f17f01df458a3eb6f3e6c8b.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/676baa5a2038d998246083a264acf10077f9c39e/ol-handback/Microsoft/ATADocs-pr.zh-tw/master/ata-prerequisites.79e9e750461cccf39f17f01df458a3eb6f3e6c8b.zh-tw.xlf)
-* Handback Datetime: 2016-06-08 10:05:51
-* [Back to Top](#report-top)
-
 
 ## Error Details
 

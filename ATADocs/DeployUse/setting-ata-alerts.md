@@ -2,7 +2,7 @@
 # required metadata
 
 title: 設定 ATA 通知 | Microsoft Advanced Threat Analytics
-description: 說明當 ATA 偵測到可疑的活動時，如何通知您 (透過電子郵件或 ATA 事件轉寄) 
+description: 描述如何設定 ATA 警示，所以偵測到可疑的活動時，您會收到通知。
 keywords:
 author: rkarlin
 manager: stevenpo
@@ -76,6 +76,6 @@ ATA 可在偵測到可疑的活動時通知您，方法是透過電子郵件或�
 [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

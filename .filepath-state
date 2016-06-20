@@ -23,8 +23,14 @@
   "90386f9abae36811a6543e9ef4bd1b17bfaece79": [
     "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
   ],
+  "3a8ddc5cb97572ad8cba43bbd1475c71bb0350cc": [
+    "ATADocs\\PlanDesign\\ata-capacity-planning.md"
+  ],
   "abc77daf444c6e8681d1c79748d98f1d32de9d42": [
     "ATADocs\\PlanDesign\\ata-capacity-planning.md"
+  ],
+  "1c639d731d29bd16864f40d34934fcd066bdcfdf": [
+    "ATADocs\\PlanDesign\\ata-prerequisites.md"
   ],
   "f0229756e4d55cf88d8f63393080373b7e1f90ea": [
     "ATADocs\\PlanDesign\\ata-prerequisites.md"
@@ -46,6 +52,9 @@
   ],
   "925694878154d5fb218f1db6fef8949a3bb7e154": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md"
+  ],
+  "83927d92d278b1b4115fa7ea1d258a3616984fa9": [
+    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
   ],
   "7e5f00eef0db1c2c523ca05917143a3e69bb8801": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md"
@@ -79,6 +88,9 @@
   ],
   "824e91048771865b8f604a2ae2ad454b81550036": [
     "ATADocs\\DeployUse\\modifying-ata-config-centercert.md"
+  ],
+  "2170e7eebde40bf407b239b20cbd95e4e4dc6ecb": [
+    "ATADocs\\DeployUse\\modifying-ata-config-centerip.md"
   ],
   "54caccd4f4337ed7193aa6b53c26bc5b96dd36ed": [
     "ATADocs\\DeployUse\\modifying-ata-config-centerip.md"
@@ -136,6 +148,9 @@
   ],
   "4d75d036a8d278aef25a35725986b2881d2b5be9": [
     "ATADocs\\Understand\\ata-update-1.5-migration-guide.md"
+  ],
+  "6ada3a8c2618ff180ea73ed20d0eaa9c1a55b642": [
+    "ATADocs\\Understand\\ata-update-1.6-migration-guide.md"
   ],
   "460e8ac37e94b02ebc045297caf86fa9c65704e3": [
     "ATADocs\\Understand\\ata-update-1.6-migration-guide.md"

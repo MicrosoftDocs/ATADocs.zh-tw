@@ -774,14 +774,14 @@
 
 ##### <a name='88999409ef976d50b6bb80803213b82146cee1fe16'></a> Source: [ATADocs\DeployUse\install-ata-step5.md](https://github.com/Microsoft/ATADocs-pr/blob/283d8383a6e7674e3a9fba06f3a8f73dcb038ea2/ATADocs/DeployUse/install-ata-step5.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [ATADocs\DeployUse\install-ata-step5.md](https://github.com/Microsoft/ATADocs-pr.zh-tw/blob/32116de4a194a2d61a619359d0c2c9939b625d73/ATADocs/DeployUse/install-ata-step5.md)
+* Target File: [ATADocs\DeployUse\install-ata-step5.md](https://github.com/Microsoft/ATADocs-pr.zh-tw/blob/94cfacc1fbc3c3a2a7dd6f9becf63aaf988327be/ATADocs/DeployUse/install-ata-step5.md)
 * Handoff File: [install-ata-step5.939491200e7347138888e6ccb69a84737be3bec2.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/ca8ae4e443fc45c30898937a70cccae41b9b6184/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/install-ata-step5.939491200e7347138888e6ccb69a84737be3bec2.zh-tw.xlf)
 * Handoff Datetime: 2016-05-18 17:44:31
 * Handoff Reason: Include
 * Archive File: [install-ata-step5.939491200e7347138888e6ccb69a84737be3bec2.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/150a014e075e1bbf283a218f64e95b27d74a9621/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/archive/install-ata-step5.939491200e7347138888e6ccb69a84737be3bec2.zh-tw.xlf)
 * Archive Datetime: 2016-05-20 00:37:41
-* Handback File: [install-ata-step5.939491200e7347138888e6ccb69a84737be3bec2.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/900de797631d27aab7aa16dadbc2819a3248bde6/ol-handback/Microsoft/ATADocs-pr.zh-tw/master/install-ata-step5.939491200e7347138888e6ccb69a84737be3bec2.zh-tw.xlf)
-* Handback Datetime: 2016-05-26 15:50:10
+* Handback File: [install-ata-step5.939491200e7347138888e6ccb69a84737be3bec2.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/6715407d072211aafd413103b8cb7e35ef75c77d/ol-handback/Microsoft/ATADocs-pr.zh-tw/master/install-ata-step5.939491200e7347138888e6ccb69a84737be3bec2.zh-tw.xlf)
+* Handback Datetime: 2016-06-22 22:20:43
 * [Back to Top](#report-top)
 
 ##### <a name='2817822f4978b38fe93cbaebe3ef3e335850ab9417'></a> Source: [ATADocs\DeployUse\install-ata-step6.md](https://github.com/Microsoft/ATADocs-pr/blob/5407cb4b98860b41b2c6f062cf47504f6d001b23/ATADocs/DeployUse/install-ata-step6.md)

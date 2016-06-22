@@ -181,7 +181,7 @@ ms.assetid: [GET ONE FROM guidgenerator.com]
 
 ### 連結的影像
 
-[![a[連結影像的替代文字](./media/AzRMS_elements.png)](https://azure.microsoft.com) 
+[![a連結影像的替代文字](./media/AzRMS_elements.png)](https://azure.microsoft.com) 
 
 ### 動畫 GIF
 

@@ -21,12 +21,12 @@ ms.assetid: c4a97980-6e19-4d10-bf69-f0b338266efa
     <section id="hero-content">
       <h1>Microsoft Advanced Threat Analytics 文件</h1>
       <h2>了解如何部署及管理 Microsoft Advanced Threat Analytics (ATA)，這項內部部署產品可協助 IT 安全性專業人員防止企業遭受進階的目標型攻擊。</h2>
-      <h3>您是 ATA 新手嗎？ <a href="https://www.microsoft.com/en-us/server-cloud/products/advanced-threat-analytics/" target="_blank">請瀏覽我們的產品頁面 &rarr;</a></h3>
+      <h3>您是 ATA 新手嗎？ <a href="http://go.microsoft.com/fwlink/?LinkId=816859" target="_blank">請瀏覽我們的產品頁面 &rarr;</a></h3>
     </section>
     <aside class="alert section-border">
       <p>準備好實際操作了嗎？</p>
       <ol class="action-list">
-        <li><a href="https://www.microsoft.com/en-us/evalcenter/evaluate-microsoft-advanced-threat-analytics" target="_blank" class="button-bordered button-translucent">立即試用</a></li>
+        <li><a href="https://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics" target="_blank" class="button-bordered button-translucent">立即試用</a></li>
       </ol>
     </aside>
     <section id="featured" class="container">
@@ -191,6 +191,6 @@ ms.assetid: c4a97980-6e19-4d10-bf69-f0b338266efa
 </article>
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

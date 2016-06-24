@@ -57,9 +57,7 @@
   "notification_subscribers": [
     ""
   ],
-  "branches_to_filter": [
-    "live"
-  ],
+  "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/ATADocs.zh-tw",
   "skip_source_output_uploading": false
 }

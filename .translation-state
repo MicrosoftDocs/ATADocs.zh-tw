@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "da7ec9b79f828bd89b658126853d712a0f4c456d",
+  "LastProcessedCommit": "5d5f8230084b030dc84633bdb47eb3e30f1fac33",
   "LastTranslatedCommit": "ff19f295a82deca175d950e5113b92cd2dc2d8c7",
   "Items": {
     "19ffcb31b9fc0f69362ca0b4fd2e2fdb06dc11d6": {
@@ -25914,6 +25914,41 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\whats-new-version-1.6.f3eab62daa4f485c10b62d2b219fb992c9802a70.zh-tw.xlf",
       "HandoffFileCommit": "ddd5448cd274988130b2e374a01b0e63fcdb4f4f",
       "HandoffDateTime": "2016-06-27T16:07:44.2338253Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null,
+      "BilingualFilePath": null,
+      "BilingualFileCommit": null,
+      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualException": null
+    },
+    "cbed991d201eed0a7124efb7e484cc6e222348da": {
+      "FileHash": "cbed991d201eed0a7124efb7e484cc6e222348da",
+      "SourceFileCommit": "e756cbc54c12cc09e3801850baca293495a1a1e2",
+      "SourceFilePath": "ATADocs\\Understand\\ata-update-1.6-migration-guide.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "ATADocs\\Understand\\ata-update-1.6-migration-guide.md"
+      ],
+      "HasMetadata": true,
+      "TranslationType": 1,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-update-1.6-migration-guide.fe715980eb0702f6dda7862931a6921ccd723d15.zh-tw.xlf",
+      "HandoffFileCommit": "021ac848ac680eb5bed06bafbbe33a0a76b3bf73",
+      "HandoffDateTime": "2016-06-28T06:55:55.0562361Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,

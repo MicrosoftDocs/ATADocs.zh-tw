@@ -47,6 +47,9 @@
   "90386f9abae36811a6543e9ef4bd1b17bfaece79": [
     "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
   ],
+  "ff8eb5361d3dfeaa3715d325ed91c0ad422211ed": [
+    "ATADocs\\PlanDesign\\ata-capacity-planning.md"
+  ],
   "2d43590ff64af2a1b9d13fe3f439192b959ad51c": [
     "ATADocs\\PlanDesign\\ata-capacity-planning.md"
   ],
@@ -61,6 +64,9 @@
   ],
   "abc77daf444c6e8681d1c79748d98f1d32de9d42": [
     "ATADocs\\PlanDesign\\ata-capacity-planning.md"
+  ],
+  "edb9c72c40e984e6166b708fa94d438e83e305bf": [
+    "ATADocs\\PlanDesign\\ata-prerequisites.md"
   ],
   "a4c6c6a8e8ed058f9c4721e18b48f8dfeff901d5": [
     "ATADocs\\PlanDesign\\ata-prerequisites.md"
@@ -125,6 +131,9 @@
   "e4816f70b26843d4ee3c15d9aefb7e64139ab5d5": [
     "ATADocs\\DeployUse\\working-with-detection-settings.md"
   ],
+  "c89d4d6f6af58bcc822b9599dcda65d0719a7419": [
+    "ATADocs\\DeployUse\\install-ata-step1.md"
+  ],
   "70eef6a46c453889a4c494642d5d3c1ba52141f6": [
     "ATADocs\\DeployUse\\install-ata-step1.md"
   ],
@@ -143,11 +152,17 @@
   "c22a1ec5cf4a04ea70945765b3b8ffce5401c645": [
     "ATADocs\\DeployUse\\install-ata-step3.md"
   ],
+  "f12e43a6918c0c02bb59e4a093720a805b7dbcfc": [
+    "ATADocs\\DeployUse\\install-ata-step4.md"
+  ],
   "732a5c2848754045ba6f6578a07cf474c07a0519": [
     "ATADocs\\DeployUse\\install-ata-step4.md"
   ],
   "2664440ca83cf3bb6dc66ad39ed0fa4a984230eb": [
     "ATADocs\\DeployUse\\install-ata-step4.md"
+  ],
+  "6400a0eabefac91b418e00eb670b1329fa1b5fb5": [
+    "ATADocs\\DeployUse\\install-ata-step5.md"
   ],
   "c56276aff0db626a03f7ce382ba1349ab6d638d8": [
     "ATADocs\\DeployUse\\install-ata-step5.md"
@@ -197,6 +212,9 @@
   "2a191da2646d91c3740c2f6fa8f638baf346e0f2": [
     "ATADocs\\index.md"
   ],
+  "2e51bc9cac43ff90000ca74cccd158e119cc6ec0": [
+    "ATADocs\\DeployUse\\ata-silent-installation.md"
+  ],
   "e8e66a82e3ef2767dc9bc2842200ebd8576cd1e0": [
     "ATADocs\\DeployUse\\ata-silent-installation.md"
   ],
@@ -233,11 +251,17 @@
   "ce3f8bd462a560c505b5430ff730782e1f016974": [
     "ATADocs\\DeployUse\\working-with-ata-console.md"
   ],
+  "17f30cbe478a868f3b6887bf48d8084934624191": [
+    "ATADocs\\DeployUse\\configure-event-collection.md"
+  ],
   "126ff3a8280b2cffe385cbad0a48db443b23a4ef": [
     "ATADocs\\DeployUse\\configure-event-collection.md"
   ],
   "c7b315dfa77713f20f35d675079429119baa6508": [
     "ATADocs\\DeployUse\\configure-event-collection.md"
+  ],
+  "7f7671fefd3fe97ede2a157c5707553270ac03e1": [
+    "ATADocs\\DeployUse\\configure-port-mirroring.md"
   ],
   "6a1ec8bd51eaa7226ce3dbefe412807222b4c4bf": [
     "ATADocs\\DeployUse\\configure-port-mirroring.md"
@@ -256,6 +280,9 @@
   ],
   "e19e295302c19b372fd7e53e63c9651afa379f9f": [
     "ATADocs\\DeployUse\\preinstall-ata.md"
+  ],
+  "e1ce20c48323e1fca04211c2691f6dfb6fa57fe5": [
+    "ATADocs\\DeployUse\\validate-port-mirroring.md"
   ],
   "0367d160ee3ec384aade0dea1eb28cd1b4ac8b8c": [
     "ATADocs\\DeployUse\\validate-port-mirroring.md"
@@ -283,6 +310,9 @@
   ],
   "4d75d036a8d278aef25a35725986b2881d2b5be9": [
     "ATADocs\\Understand\\ata-update-1.5-migration-guide.md"
+  ],
+  "190077cd6def34d5f15a6c7eb8f63fa85c3ec2f1": [
+    "ATADocs\\Understand\\ata-update-1.6-migration-guide.md"
   ],
   "cbed991d201eed0a7124efb7e484cc6e222348da": [
     "ATADocs\\Understand\\ata-update-1.6-migration-guide.md"

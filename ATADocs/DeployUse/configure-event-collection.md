@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # 設定事件收集
-若要增強偵測功能，ATA 需要識別碼為 4776 的 Windows 事件記錄檔。 將這項資訊轉送至 ATA 閘道的方法有兩個：設定 ATA 閘道接聽 SIEM 事件，或[設定 Windows 事件轉送](#configuring-windows-event-forwarding).
+若要增強偵測功能，ATA 需要識別碼為 4776 的 Windows 事件記錄檔。 將這項資訊轉送至 ATA 閘道的方法有兩個：設定 ATA 閘道接聽 SIEM 事件，或 [設定 Windows 事件轉送](#configuring-windows-event-forwarding).
 
 ## 事件收集
 除了收集和分析進出網域控制站的網路流量，ATA 可以使用 Windows 事件 4776 來進一步加強 ATA 的傳遞雜湊偵測。 這可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送。 所收集的事件可提供 ATA 透過網域控制站網路流量無法取得的額外資訊。

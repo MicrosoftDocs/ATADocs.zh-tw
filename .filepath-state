@@ -209,6 +209,9 @@
   "29080677d0a2afe12f8d872bcf32ba8b03e93117": [
     "ATADocs\\DeployUse\\modifying-ata-config-iiscert.md"
   ],
+  "91fe130cb37f40efd90d7e8023b93075f76a5ba4": [
+    "ATADocs\\index.md"
+  ],
   "2a191da2646d91c3740c2f6fa8f638baf346e0f2": [
     "ATADocs\\index.md"
   ],
@@ -259,6 +262,9 @@
   ],
   "c7b315dfa77713f20f35d675079429119baa6508": [
     "ATADocs\\DeployUse\\configure-event-collection.md"
+  ],
+  "a4befce4003951b18a5e1a9d8bc1addf9e7ea255": [
+    "ATADocs\\DeployUse\\configure-port-mirroring.md"
   ],
   "7f7671fefd3fe97ede2a157c5707553270ac03e1": [
     "ATADocs\\DeployUse\\configure-port-mirroring.md"

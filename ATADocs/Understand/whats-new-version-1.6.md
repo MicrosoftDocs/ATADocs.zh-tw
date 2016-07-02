@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: ATA 1.6 版的新功能 | Microsoft Advanced Threat Analytics
-description: 列出 ATA 1.6 版的新功能以及已知問題
-keywords:
+title: "ATA 1.6 版的新功能 | Microsoft Advanced Threat Analytics"
+description: "列出 ATA 1.6 版的新功能以及已知問題"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: eee114a62e1854b5821c0ca4a6f276e9dcd121c8
+
 
 ---
 
@@ -147,10 +141,11 @@ ATA 1.6 執行 ATA 資料庫所需的儲存空間大幅減少，現在只需要�
 ATA 更新程序會將資料匯出至 `<Center Installation Path>\Migration` 成為 JSON 檔案，以供您未來進行調查使用。
 
 ## 另請參閱
-[查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+[查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 [將 ATA 更新至 1.6 版 - 移轉指南](ata-update-1.6-migration-guide.md)
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

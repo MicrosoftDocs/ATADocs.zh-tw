@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 使用 ATA 資料庫疑難排解 ATA | Microsoft Advanced Threat Analytics
-description: 描述如何使用 ATA 資料庫來協助疑難排解問題 
-keywords:
+title: "使用 ATA 資料庫疑難排解 ATA | Microsoft Advanced Threat Analytics"
+description: "描述如何使用 ATA 資料庫來協助疑難排解問題"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 7de189008765d24e88a224d027146bf44fb6abbf
+
 
 ---
 
@@ -66,9 +60,10 @@ ATA 中心服務每隔一小時會將這個集合備份到名為「SystemProfile
 - [ATA 容量規劃](/advanced-threat-analytics/plan-design/ata-capacity-planning)
 - [設定事件收集](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [設定 Windows 事件轉送](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
-- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -20,19 +20,10 @@
   "c6b3196f6093b909e8d97f9a9ac230e35807eb72": [
     "ATADocs\\DeployUse\\manage-telemetry-settings.md"
   ],
-  "bc5d8ba077f2e34195cced4f316f8c8a5158d869": [
-    "ATADocs\\DeployUse\\manage-telemetry-settings.md"
-  ],
   "02598258f063e65767164334c995ab87d7ad0270": [
     "ATADocs\\DeployUse\\modifying-ata-configuration.md"
   ],
-  "6040bba509af74f553e038ffd308c784efd97f29": [
-    "ATADocs\\DeployUse\\modifying-ata-configuration.md"
-  ],
   "a32799b68d9a8b2949033ab5d1fc5910cff71258": [
-    "ATADocs\\DeployUse\\setting-ata-alerts.md"
-  ],
-  "6fc3c03e0933203437b0b3885f0b9f19539fed05": [
     "ATADocs\\DeployUse\\setting-ata-alerts.md"
   ],
   "7007fdee78565b7e29f15b05d430887c5d9bd268": [
@@ -42,9 +33,6 @@
     "ATADocs\\DeployUse\\TOC.md"
   ],
   "1214560096227e00af36ff7cb1a0a95988a2ad40": [
-    "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
-  ],
-  "90386f9abae36811a6543e9ef4bd1b17bfaece79": [
     "ATADocs\\DeployUse\\working-with-suspicious-activities.md"
   ],
   "ff8eb5361d3dfeaa3715d325ed91c0ad422211ed": [
@@ -101,13 +89,7 @@
   "7de189008765d24e88a224d027146bf44fb6abbf": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-ata-database.md"
   ],
-  "446b4afd45192336b2bd595e3f7e3474cc172af3": [
-    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-ata-database.md"
-  ],
   "4f02b0fba381eb76ad500e198392ec7624a3028a": [
-    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md"
-  ],
-  "925694878154d5fb218f1db6fef8949a3bb7e154": [
     "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md"
   ],
   "21d87591c9c791aa431c273479921e1c11825e09": [
@@ -129,9 +111,6 @@
     "ATADocs\\Understand\\what-is-ata.md"
   ],
   "3840a5f7abdd496ad245a3f1c2589ad1855fddb5": [
-    "ATADocs\\DeployUse\\working-with-detection-settings.md"
-  ],
-  "e4816f70b26843d4ee3c15d9aefb7e64139ab5d5": [
     "ATADocs\\DeployUse\\working-with-detection-settings.md"
   ],
   "c89d4d6f6af58bcc822b9599dcda65d0719a7419": [
@@ -174,9 +153,6 @@
     "ATADocs\\DeployUse\\install-ata-step5.md"
   ],
   "76305bc5f55e956c787fe3e8bd954a56f40fc56f": [
-    "ATADocs\\DeployUse\\install-ata-step6.md"
-  ],
-  "2817822f4978b38fe93cbaebe3ef3e335850ab94": [
     "ATADocs\\DeployUse\\install-ata-step6.md"
   ],
   "0cfeb67e663489d7264c88aafe04e77fcb63377f": [
@@ -281,13 +257,7 @@
   "44c755364a08b2aab9739b5a219e01f21d441b07": [
     "ATADocs\\DeployUse\\operate-ata.md"
   ],
-  "b30041b411c633308d20b5c833ca17c91deb9a01": [
-    "ATADocs\\DeployUse\\operate-ata.md"
-  ],
   "b4fc459fbab3d63de12efebb125762c18946bbdc": [
-    "ATADocs\\DeployUse\\preinstall-ata.md"
-  ],
-  "e19e295302c19b372fd7e53e63c9651afa379f9f": [
     "ATADocs\\DeployUse\\preinstall-ata.md"
   ],
   "e1ce20c48323e1fca04211c2691f6dfb6fa57fe5": [
@@ -309,9 +279,6 @@
     "ATADocs\\PlanDesign\\ata-architecture.md"
   ],
   "2f35fd0267299a17f54a123d239d965a4b40b26d": [
-    "ATADocs\\Understand\\ata-release-notes.md"
-  ],
-  "a84b79d0b83235d5a00081e55d20b93b143061d5": [
     "ATADocs\\Understand\\ata-release-notes.md"
   ],
   "87293e71e053e2d7a962a5b7362b92e5df677c77": [
@@ -354,9 +321,6 @@
     "ATADocs\\Understand\\whats-new-version-1.5.md"
   ],
   "eee114a62e1854b5821c0ca4a6f276e9dcd121c8": [
-    "ATADocs\\Understand\\whats-new-version-1.6.md"
-  ],
-  "f67ed5e0f6e79fa37407092f78979cbb100a240a": [
     "ATADocs\\Understand\\whats-new-version-1.6.md"
   ]
 }

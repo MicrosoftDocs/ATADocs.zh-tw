@@ -1,9 +1,8 @@
 ---
 asset_id: c4a97980-6e19-4d10-bf69-f0b338266efa
 layout: HubPage
-
-title: Advanced Threat Analytics 文件
-description: Microsoft Intune 技術文件 - 行動裝置與應用程式管理
+title: "Advanced Threat Analytics 文件"
+description: "Microsoft Intune 技術文件 - 行動裝置與應用程式管理"
 keywords: Advanced Threat Analytics Documentation, ATA documentation
 author: msstevenpo
 manager: stevenpo
@@ -14,6 +13,10 @@ ms.service: advanced-threat-analytics
 ms.technology: security
 ms.suite: ems
 ms.assetid: c4a97980-6e19-4d10-bf69-f0b338266efa
+translationtype: Human Translation
+ms.sourcegitcommit: 121f54e6d8da8220f1827188039e9a89c038f7ac
+ms.openlocfilehash: 91fe130cb37f40efd90d7e8023b93075f76a5ba4
+
 
 ---
 # Microsoft Advanced Threat Analytics 文件
@@ -105,7 +108,7 @@ ms.assetid: c4a97980-6e19-4d10-bf69-f0b338266efa
                 </li>
                 <li class="column-third">
                   <a href="/advanced-threat-analytics/plan-design/ata-prerequisites">
-                    <h3>ATA 必要條件<h3>
+                    <h3>ATA 必要條件</h3>
                     <p>規劃在環境中成功部署 ATA 的需求。</p>
                   </a>
                 </li>
@@ -191,6 +194,7 @@ ms.assetid: c4a97980-6e19-4d10-bf69-f0b338266efa
 </article>
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jun16_HO5-->
 
 

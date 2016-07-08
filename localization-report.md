@@ -326,7 +326,7 @@
  ----------- | ------ | ------- 
  [.gitignore](https://github.com/Microsoft/ATADocs-pr/blob/328cf2a66d2b924e26230eeefea8989aab797893/.gitignore) | Ignored | [Details](#7c4de7495fb4bb76bd8b9102a4ab583ce46e5cad0)
  [.gitmodules](https://github.com/Microsoft/ATADocs-pr/blob/328cf2a66d2b924e26230eeefea8989aab797893/.gitmodules) | Ignored | [Details](#3859a8ba527e4c2452a891cf1c365934546db4291)
- [.localization-config](https://github.com/Microsoft/ATADocs-pr/blob/328cf2a66d2b924e26230eeefea8989aab797893/.localization-config) | Ignored | [Details](#ebc6eeb9a9de8ed32a6ee9ed73f8c411ed23de082)
+ [.localization-config](https://github.com/Microsoft/ATADocs-pr/blob/328cf2a66d2b924e26230eeefea8989aab797893/.localization-config) | Ignored | [Details](#c52150bcbfc46102f41d125e4fc48bafab428d622)
  [.openpublishing.build.ps1](https://github.com/Microsoft/ATADocs-pr/blob/328cf2a66d2b924e26230eeefea8989aab797893/.openpublishing.build.ps1) | Ignored | [Details](#543ad6a2f8038238cc5552bc8accd89176f3e9973)
  [.openpublishing.publish.config.json](https://github.com/Microsoft/ATADocs-pr/blob/328cf2a66d2b924e26230eeefea8989aab797893/.openpublishing.publish.config.json) | Ignored | [Details](#101be1000dcf53dea6e27f1dc3715f2296d309de4)
  [ATADocs.zip](https://github.com/Microsoft/ATADocs-pr/blob/328cf2a66d2b924e26230eeefea8989aab797893/ATADocs.zip) | Ignored | [Details](#ee1cc6635424b2170380174d999c052124add94a5)
@@ -590,7 +590,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='ebc6eeb9a9de8ed32a6ee9ed73f8c411ed23de082'></a> Source: [.localization-config](https://github.com/Microsoft/ATADocs-pr/blob/328cf2a66d2b924e26230eeefea8989aab797893/.localization-config)
+##### <a name='c52150bcbfc46102f41d125e4fc48bafab428d622'></a> Source: [.localization-config](https://github.com/Microsoft/ATADocs-pr/blob/328cf2a66d2b924e26230eeefea8989aab797893/.localization-config)
 * Status: Ignored
 * Target File: 
 * Handoff File: 

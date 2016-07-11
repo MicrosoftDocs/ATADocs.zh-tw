@@ -19,7 +19,7 @@
 #### [變更 ATA 中心憑證](modifying-ata-config-centercert.md)
 #### [變更 ATA 主控台 IP 位址](modifying-ata-config-consoleip.md)
 #### [變更 IIS 憑證](modifying-ata-config-iiscert.md)
-#### [變更網域控制站密碼](modifying-ata-config-dcpassword.md)
+#### [變更網域連線密碼](modifying-ata-config-dcpassword.md)
 ### [使用 ATA 主控台](working-with-ata-console.md)
 ### [設定 ATA 警示](setting-ata-alerts.md)
 ### [進行 Syslog 和電子郵件伺服器設定](setting-syslog-email-server-settings.md)
@@ -31,6 +31,6 @@
 # [疑難排解](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO3-->
 
 

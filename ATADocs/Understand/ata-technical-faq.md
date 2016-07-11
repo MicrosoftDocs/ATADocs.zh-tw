@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: ATA 常見問題集 | Microsoft Advanced Threat Analytics
-description: 提供關於 ATA 的常見問題清單以及相關解答
-keywords:
+title: "ATA 常見問題集 | Microsoft Advanced Threat Analytics"
+description: "提供關於 ATA 的常見問題清單以及相關解答"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: bb6bc2bf0d0df3112ecfdb33c8e9d6e41f183145
+
 
 ---
 
@@ -30,7 +24,7 @@ ms.suite: ems
 
 
 ## ATA 如何授權？
-如需授權資訊，請參閱[如何購買 Advanced Threat Analytics](https://www.microsoft.com/en-us/server-cloud/products/advanced-threat-analytics/Purchasing.aspx)
+如需授權的相關資訊，請參閱[如何購買 Advanced Threat Analytics](https://www.microsoft.com/server-cloud/products/advanced-threat-analytics/Purchasing.aspx)
 
 
 ## 如果 ATA 閘道無法啟動，該怎麼辦？
@@ -54,7 +48,7 @@ ms.suite: ems
 Kerberos 保護又稱為彈性驗證安全通道 (FAST)，ATA 支援啟用 Kerberos 保護，但過度傳遞雜湊偵測時除外 (將無法運作)。
 ## 我需要多少 ATA 閘道？
 
-首先，建議您在任何可容納的網域控制站上使用 ATA 輕量型閘道；如需判斷這點，請參閱 [ATA Lightweight Gateway Sizing](/advanced-threat-analytics/plan-design/ata-capacity-planning#ATA-Lightweight-Gateway-Sizing) (ATA 輕量型閘道大小)。 
+首先，建議您在任何可容納 ATA 輕量型閘道的網域控制站上使用它；如需判斷這點，請參閱 [ATA 輕量型閘道大小](/advanced-threat-analytics/plan-design/ata-capacity-planning#ata-lightweight-gateway-sizing)。 
 
 如果 ATA 輕量型閘道可以涵蓋所有網域控制站，則不需要 ATA 閘道。
 
@@ -101,7 +95,7 @@ ATA 閘道需要至少兩張網路介面卡︰<br>1.一個 NIC 連線到內部�
 ATA 與 SIEM 已經雙向整合，如下所示︰
 
 1. 可將 ATA 設定為在可疑活動發生時將 Syslog 警示傳送至任何使用 CEF 格式的 SIEM 伺服器。
-2. 可將 ATA 設定為接收來自[這些 SIEM](/advanced-threat-analytics/deploy-use/configure-event-collection#SIEM-support) 每個 Windows 事件識別碼為 4776 的 Syslog 訊息。
+2. 可將 ATA 設定為接收來自[這些 SIEM](/advanced-threat-analytics/deploy-use/configure-event-collection#siem-support) 每個 Windows 事件識別碼為 4776 的 Syslog 訊息。
 
 ## ATA 是否可以監視 IaaS 解決方案上顯現的網域控制站？
 
@@ -143,10 +137,11 @@ Microsoft Advanced Threat Analytics 是內部部署的產品。
 - [ATA 容量規劃](/advanced-threat-analytics/plan-design/ata-capacity-planning)
 - [設定事件收集](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [設定 Windows 事件轉送](/advanced-threat-analytics/deploy-use/configure-event-collection#Configuring-Windows-Event-Forwarding)
-- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

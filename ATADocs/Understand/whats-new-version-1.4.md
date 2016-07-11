@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: ATA 1.4 版的新功能 | Microsoft Advanced Threat Analytics
-description: 列出 ATA 1.4 版的新功能以及已知問題
-keywords:
+title: "ATA 1.4 版的新功能 | Microsoft Advanced Threat Analytics"
+description: "列出 ATA 1.4 版的新功能以及已知問題"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: cbea47f9-34c1-42b6-ae9e-6a472b49e1a5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 3f7e2b32c43966cbb1adab1f88dd0e197313de65
+
 
 ---
 
@@ -64,7 +58,7 @@ ms.suite: ems
 下列已知問題存在於此版本中。
 
 ### 網路擷取軟體
-在 ATA 閘道上，您可以安裝的唯一支援網路擷取軟體是 [Microsoft 網路監視器 3.4](http://www.microsoft.com/en-us/download/details.aspx?id=4865)。 請勿安裝 Microsoft Message Analyzer 或其他任何網路擷取軟體。 安裝其他軟體將會造成 ATA 閘道停止正常運作。
+在 ATA 閘道上，您可以安裝的唯一支援網路擷取軟體是 [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865) (Microsoft 網路監視器 3.4)。 請勿安裝 Microsoft Message Analyzer 或其他任何網路擷取軟體。 安裝其他軟體將會造成 ATA 閘道停止正常運作。
 
 ### 從 Zip 檔案安裝
 安裝 ATA 閘道時，請務必從 zip 檔案解壓縮檔案至本機目錄，並從該處安裝。 請勿直接從 zip 檔案內部安裝 ATA 閘道，否則安裝將會失敗。
@@ -104,8 +98,9 @@ ms.suite: ems
 
 [將 ATA 更新至 1.6 版 - 移轉指南](ata-update-1.6-migration-guide.md)
 
-[查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+[查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

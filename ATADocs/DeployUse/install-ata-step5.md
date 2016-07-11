@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 安裝 ATA - 步驟 5 | Microsoft Advanced Threat Analytics
-description: 安裝 ATA 的步驟 5 協助您設定 ATA 閘道的設定。
-keywords:
+title: "安裝 ATA - 步驟 5 | Microsoft Advanced Threat Analytics"
+description: "安裝 ATA 的步驟 5 協助您設定 ATA 閘道的設定。"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,23 +10,20 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d6e7d7bef97bfc4ffde07959dd9256f0319d685f
+ms.openlocfilehash: 6400a0eabefac91b418e00eb670b1329fa1b5fb5
+
 
 ---
 
 # 安裝 ATA - 步驟 5
 
->[!div class="step-by-step"] [« 步驟 4](install-ata-step4.md)
-[步驟 6 »](install-ata-step6.md)
+>[!div class="step-by-step"]
+[«步驟 4](install-ata-step4.md)
+[步驟 6»](install-ata-step6.md)
 
 
 ## 步驟 5： 設定 ATA 閘道設定
@@ -53,8 +48,9 @@ ms.suite: ems
  - **網域同步器候選**<br>
 任何設為網域同步器候選的 ATA 閘道皆可負責進行 ATA 與 Active Directory 網域之間的同步處理。 取決於網域大小，初始同步處理可能需要一些時間，而且會耗用大量資源。根據預設，只會將 ATA 閘道設為網域同步器候選。 <br>建議不要將任何遠端站台的 ATA 閘道設為網域同步器候選。<br>如果網域控制站是唯讀的，請勿將其設定為網域同步器候選。 如需詳細資訊，請參閱 [ATA 架構](/advanced-threat-analytics/plan-design/ata-architecture#ata-lightweight-gateway-features)。
 
-> [!NOTE] 第一次啟動 ATA 閘道服務時會花幾分鐘時間，因為它要建立網路擷取剖析器的快取。<br>
-進行下一個排定的 ATA 閘道與 ATA 中心間的同步時，設定的變更將套用至 ATA 閘道。
+> [!NOTE] 
+> 第一次啟動 ATA 閘道服務時會花幾分鐘時間，因為它要建立網路擷取剖析器的快取。<br>
+> 進行下一個排定的 ATA 閘道與 ATA 中心間的同步時，設定的變更將套用至 ATA 閘道。
 
 
 
@@ -83,17 +79,19 @@ ms.suite: ems
     ![新增效能計數器影像](media/ATA-performance-monitoring-add-counters.png)
 
 
->[!div class="step-by-step"] [« 步驟 4](install-ata-step4.md)
-[步驟 6 »](install-ata-step6.md)
+>[!div class="step-by-step"]
+[«步驟 4](install-ata-step4.md)
+[步驟 6»](install-ata-step6.md)
 
 ## 另請參閱
 
-- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 變更 ATA 設定 - ATA 主控台 IP 位址 | Microsoft Advanced Threat Analytics
-description: 描述如何變更用來在 ATA 閘道上建立 ATA 主控台捷徑的 ATA 主控台 IP 位址。
-keywords:
+title: "變更 ATA 設定 - ATA 主控台 IP 位址 | Microsoft Advanced Threat Analytics"
+description: "描述如何變更用來在 ATA 閘道上建立 ATA 主控台捷徑的 ATA 主控台 IP 位址。"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,23 +10,19 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: 50118465-df34-4e04-b0cc-48808b6a96b1
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: ee775e66de1a56b5270b0d32c7d5ca33d4d7980c
+
 
 ---
 
 # 變更 ATA 設定 - ATA 主控台 IP 位址
 
 >[!div class="step-by-step"]
-[« ATA 中心憑證](modifying-ata-config-centercert.md)
+[«ATA 中心憑證](modifying-ata-config-centercert.md)
 [IIS 憑證 »](modifying-ata-config-iiscert.md)
 
 ## 變更 ATA 主控台 IP 位址
@@ -53,9 +47,9 @@ ms.suite: ems
 
 2.  開啟 Internet Information Services (IIS) 管理員。
 
-3.  展開伺服器名稱，然後展開 [網站].
+3.  展開伺服器名稱，然後展開 [網站]。
 
-4.  選取 Microsoft ATA 主控台的網站，在 [動作] 窗格中按一下 [繫結].
+4.  選取 Microsoft ATA 主控台的站台，在 [動作] 窗格中按一下 [繫結]。
 
     ![ATA 主控台繫結動作影像](media/ATA-console-change-IP-bindings.jpg)
 
@@ -63,7 +57,7 @@ ms.suite: ems
 
     ![編輯網站繫結影像](media/ATA-change-console-IP.jpg)
 
-6.  在 [動作] 窗格中，按一下 [管理網站] 下的 [重新啟動].
+6.  在 [動作] 窗格中，按一下 [Mange Website] (管理網站) 下的 [重新啟動]。
 
 7.  開啟系統管理員命令提示字元，並輸入下列命令來更新 HTTP.SYS 驅動程式︰
 
@@ -78,16 +72,17 @@ ms.suite: ems
 9. 如果 ATA 主控台 URL 是 FQDN，請使用 FQDN 的新 IP 位址來更新 DNS。
 
 >[!div class="step-by-step"]
-[« ATA 中心憑證](modifying-ata-config-centercert.md)
+[«ATA 中心憑證](modifying-ata-config-centercert.md)
 [IIS 憑證 »](modifying-ata-config-iiscert.md)
 
 
 ## 另請參閱
 - [使用 ATA 主控台](working-with-ata-console.md)
 - [安裝 ATA](install-ata.md)
-- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

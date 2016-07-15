@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 設定事件收集 | Microsoft Advanced Threat Analytics
-description: 描述使用 ATA 設定事件收集的選項
-keywords:
+title: "設定事件收集 | Microsoft Advanced Threat Analytics"
+description: "描述使用 ATA 設定事件收集的選項"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,21 +10,17 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d6e7d7bef97bfc4ffde07959dd9256f0319d685f
+ms.openlocfilehash: 17f30cbe478a868f3b6887bf48d8084934624191
+
 
 ---
 
 # 設定事件收集
-若要增強偵測功能，ATA 需要識別碼為 4776 的 Windows 事件記錄檔。 將這項資訊轉送至 ATA 閘道的方法有兩個：設定 ATA 閘道接聽 SIEM 事件，或 [設定 Windows 事件轉送](#configuring-windows-event-forwarding).
+若要增強偵測功能，ATA 需要識別碼為 4776 的 Windows 事件記錄檔。 將這項資訊轉送至 ATA 閘道的方法有兩個：設定 ATA 閘道接聽 SIEM 事件，或[設定 Windows 事件轉送](#configuring-windows-event-forwarding)。
 
 ## 事件收集
 除了收集和分析進出網域控制站的網路流量，ATA 可以使用 Windows 事件 4776 來進一步加強 ATA 的傳遞雜湊偵測。 這可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送。 所收集的事件可提供 ATA 透過網域控制站網路流量無法取得的額外資訊。
@@ -49,7 +43,7 @@ ms.suite: ems
 
 ## 將 ATA 閘道設定為接聽 SIEM 事件
 
-1.  在 ATA 閘道設定中，啟用 [Syslog Listener UDP] (Syslog 接聽程式 UDP).
+1.  在 ATA 閘道的設定中，啟用 **Syslog 接聽程式 UDP**。
 
     設定接聽的 IP 位址，如下圖。 預設的連接埠為 514。
 
@@ -158,7 +152,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 -   「索引鍵=值」對的順序不重要。
 
 #### QRadar
-QRadar 可讓您透過代理程式收集事件。 如果使用代理程式收集資料，則會收集不含毫秒資料的時間格式。 因為 ATA 需要毫秒資料，所以必須將 QRadar 設定為使用無代理程式 Windows 事件收集。 如需詳細資訊，請參閱 [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar: Agentless Windows Events Collection using the MSRPC Protocol") (QRadar︰使用 MSRPC 通訊協定的無代理程式 Windows 事件收集).
+QRadar 可讓您透過代理程式收集事件。 如果使用代理程式收集資料，則會收集不含毫秒資料的時間格式。 因為 ATA 需要毫秒資料，所以必須將 QRadar 設定為使用無代理程式 Windows 事件收集。 如需詳細資訊，請參閱 [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar: Agentless Windows Events Collection using the MSRPC Protocol")。
 
     <13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0
 
@@ -176,7 +170,8 @@ Message 是來自 Windows 事件的原始事件文字
 
 確定「索引鍵=值」組之間有 \t。
 
->[!NOTE] 不支援使用 WinCollect 進行 Windows 事件收集。
+>[!NOTE] 
+> 不支援使用 WinCollect 進行 Windows 事件收集。
 
 ## 設定 Windows 事件轉送
 如果您沒使用 SIEM 伺服器，可將您的網域控制站設定為直接轉送 Windows 事件識別碼 4776 至您的 ATA 閘道之一。
@@ -195,34 +190,34 @@ wecutil qc
 ![wef_ad_eventlogreaders](media/wef_ad_eventlogreaders.png)<br>
 以滑鼠右鍵按一下它，並選取 [內容]。 在 [成員] 索引標籤上，新增每個 ATA 閘道的電腦帳戶。
 ![wef_ad event log reader popup](media/wef_ad-event-log-reader-popup.png)
-6.  在 ATA 閘道上，開啟 [事件檢視器]，以滑鼠右鍵按一下 [訂閱]，然後選取 [建立訂閱].  
+6.  在 ATA 閘道上，開啟 [事件檢視器]，以滑鼠右鍵按一下 [訂閱]，然後選取 [建立訂閱]。  
 
     a. 在 [訂閱類型和來源電腦] 下，按一下 [選取電腦] 並加入網域控制站然後測試連線。
     ![wef_subscription prop](media/wef_subscription-prop.png)
 
-    b。 在 [要收集的事件] 下，按一下 [選取事件]。 選取 [依記錄]，向下捲動以選取 [安全性]。 然後，在 [內含/排除事件識別碼] 中輸入 **4776**.<br>
+    b。 在 [要收集的事件] 下，按一下 [選取事件]。 選取 [依記錄]，向下捲動以選取 [安全性]。 然後，在 [包含/排除事件識別碼] 中輸入 **4776**。<br>
     ![wef_4776](media/wef_4776.png)
 
-    c. 在 [變更使用者帳戶或設定進階設定] 下，按一下 [進階].
-將 [通訊協定] 設定為 [HTTP]，並將 [連接埠] 設定為 [5985].<br>
+    c. 在 [變更使用者帳戶或設定進階設定] 下，按一下 [進階]。
+將 [通訊協定] 設定為 **HTTP**，[連接埠] 設定為 **5985**。<br>
     ![wef_http](media/wef_http.png)
 
 7.  [選擇性] 如果您想要較短的輪詢間隔，在 ATA 閘道上，設定訂閱的活動訊號為 5 秒，就能加快輪詢速率。
-    wecutil ss <CollectionName>/cm:custom
-    wecutil ss <CollectionName> /hi:5000
+    wecutil ss <CollectionName>/cm:custom wecutil ss <CollectionName> /hi:5000
 
-8. 在 ATA 閘道的設定頁面上，啟用 [Windows Event Forwarding Collection] (Windows 事件轉送收集).
+8. 在 ATA 閘道的設定頁面上，啟用 [Windows 事件轉送收集]。
 
 > [!NOTE]
-當您啟用此設定，ATA 閘道會尋找已從網域控制站轉送給它的 Windows 事件的轉送事件記錄檔。
+> 當您啟用此設定，ATA 閘道會尋找已從網域控制站轉送給它的 Windows 事件的轉送事件記錄檔。
 
-如需詳細資訊，請參閱[設定電腦轉送及收集事件](https://technet.microsoft.com/en-us/library/cc748890)。
+如需詳細資訊，請參閱[設定電腦轉送及收集事件](https://technet.microsoft.com/library/cc748890)
 
 ## 另請參閱
 - [安裝 ATA](install-ata.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

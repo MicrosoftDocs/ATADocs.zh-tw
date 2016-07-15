@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 為 ATA 錯誤記錄檔進行疑難排解 | Microsoft Advanced Threat Analytics
-description: 說明如何針對 ATA 中的常見錯誤進行疑難排解 
-keywords:
+title: "為 ATA 錯誤記錄檔進行疑難排解 | Microsoft Advanced Threat Analytics"
+description: "說明如何針對 ATA 中的常見錯誤進行疑難排解"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e0745079465aecefd26571eea894d19b82cbc216
+ms.openlocfilehash: c72bca3cb1eef1f3fb59f666c6143cf5c095bde9
+
 
 ---
 
@@ -50,7 +44,7 @@ ms.suite: ems
 ## 部署錯誤
 |錯誤|說明|解決方法|
 |-------------|----------|---------|
-|.Net Framework 4.6.1 安裝失敗，並發生錯誤 0x800713ec|.Net Framework 4.6.1 的必要條件尚未安裝於伺服器。 |安裝 ATA 之前，請驗證伺服器上已安裝 Windows Update [KB2919442](https://www.microsoft.com/en-us/download/details.aspx?id=42135) 和 [KB2919355](https://support.microsoft.com/en-us/kb/2919355)。|
+|.Net Framework 4.6.1 安裝失敗，並發生錯誤 0x800713ec|.Net Framework 4.6.1 的必要條件尚未安裝於伺服器。 |安裝 ATA 之前，請驗證伺服器上已安裝 Windows Update [KB2919442](https://www.microsoft.com/download/details.aspx?id=42135) 和 [KB2919355](https://support.microsoft.com/kb/2919355)。|
 
 ![ATA .NET 安裝錯誤影像](media/netinstallerror.png)
 
@@ -59,10 +53,11 @@ ms.suite: ems
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
 - [ATA 容量規劃](/advanced-threat-analytics/plan-design/ata-capacity-planning)
 - [設定事件收集](/advanced-threat-analytics/deploy-use/configure-event-collection)
-- [設定 Windows 事件轉送](/advanced-threat-analytics/deploy-use/configure-event-collection#ATA_event_WEF)
-- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [設定 Windows 事件轉送](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jul16_HO1-->
 
 

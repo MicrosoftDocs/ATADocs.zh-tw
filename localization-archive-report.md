@@ -6,22 +6,22 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [ATADocs\DeployUse\setting-ata-alerts.md](https://github.com/Microsoft/ATADocs-pr/blob/3e8caf366d7121e83e5726375c8e1eb9a49b0b12/ATADocs/DeployUse/setting-ata-alerts.md) | OutofSyncHandedBackSuccess | [Details](#6fc3c03e0933203437b0b3885f0b9f19539fed05120)
+ [ATADocs\Troubleshoot\troubleshooting-ata-known-errors.md](https://github.com/Microsoft/ATADocs-pr/blob/e0745079465aecefd26571eea894d19b82cbc216/ATADocs/Troubleshoot/troubleshooting-ata-known-errors.md) | OutofSyncHandedBackSuccess | [Details](#c72bca3cb1eef1f3fb59f666c6143cf5c095bde9417)
 
 ## Item Details
-##### <a name='6fc3c03e0933203437b0b3885f0b9f19539fed05120'></a> Source: [ATADocs\DeployUse\setting-ata-alerts.md](https://github.com/Microsoft/ATADocs-pr/blob/3e8caf366d7121e83e5726375c8e1eb9a49b0b12/ATADocs/DeployUse/setting-ata-alerts.md)
+##### <a name='c72bca3cb1eef1f3fb59f666c6143cf5c095bde9417'></a> Source: [ATADocs\Troubleshoot\troubleshooting-ata-known-errors.md](https://github.com/Microsoft/ATADocs-pr/blob/e0745079465aecefd26571eea894d19b82cbc216/ATADocs/Troubleshoot/troubleshooting-ata-known-errors.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [setting-ata-alerts.451097ef44392d0ea58f76d60633ef3a1b47ee2d.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/e0312e9d83182da835e10dd112f7566bf975c262/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/setting-ata-alerts.451097ef44392d0ea58f76d60633ef3a1b47ee2d.zh-tw.xlf)
-* Handoff Datetime: 2016-06-07 23:34:21
+* Handoff File: [troubleshooting-ata-known-errors.09d3985d5b8120ee3069cc21c8701940c07afcce.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/3997356f6dbbdb96991cb4e49c18761c490ba490/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/troubleshooting-ata-known-errors.09d3985d5b8120ee3069cc21c8701940c07afcce.zh-tw.xlf)
+* Handoff Datetime: 2016-07-06 00:57:47
 * Handoff Reason: Include
-* Archive File: [setting-ata-alerts.451097ef44392d0ea58f76d60633ef3a1b47ee2d.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/99eaff297b208da0524977e4045b5632fafaf080/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/archive/setting-ata-alerts.451097ef44392d0ea58f76d60633ef3a1b47ee2d.zh-tw.xlf)
-* Archive Datetime: 2016-06-09 00:59:33
+* Archive File: [troubleshooting-ata-known-errors.09d3985d5b8120ee3069cc21c8701940c07afcce.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/29a46ae1c2a17be07ed7edaa7152af57cd7f1bf6/ol-handoff/Microsoft/ATADocs-pr.zh-tw/master/archive/troubleshooting-ata-known-errors.09d3985d5b8120ee3069cc21c8701940c07afcce.zh-tw.xlf)
+* Archive Datetime: 2016-07-09 01:19:55
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [ATADocs\DeployUse\setting-ata-alerts.md](https://github.com/Microsoft/ATADocs-pr.zh-tw/blob/32116de4a194a2d61a619359d0c2c9939b625d73/ATADocs/DeployUse/setting-ata-alerts.md)
-* Current Handback File: [setting-ata-alerts.451097ef44392d0ea58f76d60633ef3a1b47ee2d.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/900de797631d27aab7aa16dadbc2819a3248bde6/ol-handback/Microsoft/ATADocs-pr.zh-tw/master/setting-ata-alerts.451097ef44392d0ea58f76d60633ef3a1b47ee2d.zh-tw.xlf)
-* Current Handback Datetime: 2016-05-26 15:50:10
+* Current Target File: [ATADocs\Troubleshoot\troubleshooting-ata-known-errors.md](https://github.com/Microsoft/ATADocs-pr.zh-tw/blob/83527f2d77b5063061597380c213afa50aa8cfaf/ATADocs/Troubleshoot/troubleshooting-ata-known-errors.md)
+* Current Handback File: [troubleshooting-ata-known-errors.09d3985d5b8120ee3069cc21c8701940c07afcce.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/cf046ec3e12213b4e525b07819b35388bd01c24c/ol-handback/Microsoft/ATADocs-pr.zh-tw/master/troubleshooting-ata-known-errors.09d3985d5b8120ee3069cc21c8701940c07afcce.zh-tw.xlf)
+* Current Handback Datetime: 2016-06-08 10:36:57
 * [Back to Top](#report-top)
 
 

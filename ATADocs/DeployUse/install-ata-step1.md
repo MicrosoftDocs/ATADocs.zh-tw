@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 安裝 ATA - 步驟 1 | Microsoft Advanced Threat Analytics
-description: 安裝 ATA 的第一步驟是下載並安裝 ATA 中心到您所選的伺服器。
-keywords:
+title: "安裝 ATA - 步驟 1 | Microsoft Advanced Threat Analytics"
+description: "安裝 ATA 的第一步驟是下載並安裝 ATA 中心到您所選的伺服器。"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d6e7d7bef97bfc4ffde07959dd9256f0319d685f
+ms.openlocfilehash: c89d4d6f6af58bcc822b9599dcda65d0719a7419
+
 
 ---
 
@@ -33,14 +27,15 @@ ms.suite: ems
 
 此安裝程序提供執行 ATA 1.6 全新安裝的指示。 如需從舊版更新現有 ATA 部署的相關資訊，請參閱 [1.6 版 ATA 移轉指南](/advanced-threat-analytics/understand-explore/ata-update-1.6-migration-guide)。
 
-> [!IMPORTANT] 開始安裝之前，先在 ATA Center 伺服器和 ATA 閘道伺服器上安裝 KB2934520；若沒有這麼做，ATA 安裝將會安裝此更新，且您需要在 ATA 安裝期間重新啟動機器。
+> [!IMPORTANT] 
+> 開始安裝之前，先在 ATA Center 伺服器和 ATA 閘道伺服器上安裝 KB2934520；若沒有這麼做，ATA 安裝將會安裝此更新，且您需要在 ATA 安裝期間重新啟動機器。
 
 ## 步驟 1： 下載並安裝 ATA 中心
 確認伺服器符合需求之後，您可以繼續 ATA 中心的安裝。
 
 在 ATA 中心伺服器上執行下列步驟。
 
-1.  從 [Microsoft 大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx)、[TechNet Evaluation Center](http://www.microsoft.com/en-us/evalcenter/) 或 [MSDN](https://msdn.microsoft.com/en-us/subscriptions/downloads) 下載 ATA。
+1.  從 [Microsoft 大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx)、[TechNet Evaluation Center](http://www.microsoft.com/evalcenter/) 或 [MSDN](https://msdn.microsoft.com/subscriptions/downloads) 下載 ATA。
 
 2.  請以本機系統管理員群組成員的使用者身分，登入 ATA 中心安裝所在的電腦。
 
@@ -94,17 +89,20 @@ ms.suite: ems
 
 
 
->[!div class="step-by-step"] [« 前置安裝](preinstall-ata.md)
-[步驟 2 »](install-ata-step2.md)
+>[!div class="step-by-step"]
+[«前置安裝](preinstall-ata.md)
+[步驟 2»](install-ata-step2.md)
 
 ## 另請參閱
 
-- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [來瞧瞧 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/
+- home?forum=mata)
 - [設定事件收集](configure-event-collection.md)
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

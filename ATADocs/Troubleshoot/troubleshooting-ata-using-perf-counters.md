@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 使用效能計數器疑難排解 ATA | Microsoft Advanced Threat Analytics
-description: 描述如何使用效能計數器疑難排解 ATA 相關問題
-keywords:
+title: "使用效能計數器疑難排解 ATA | Microsoft Advanced Threat Analytics"
+description: "描述如何使用效能計數器疑難排解 ATA 相關問題"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,21 +10,17 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: df162a62-f273-4465-9887-94271f5000d2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 21d87591c9c791aa431c273479921e1c11825e09
+
 
 ---
 
 # 使用效能計數器疑難排解 ATA
-ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元件會循序處理資料，因此當發生問題時，會導致連鎖反應而造成流量中斷。 若要修正此問題，您必須找出發生問題的元件，並在連鎖的源頭修正問題。
+ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元件會循序處理資料，因此當發生問題時，會導致元件中某處的流量部分中斷。 若要修正此問題，您必須找出發生問題的元件，並在連鎖的源頭修正問題。 使用在效能計數器中找到的資料，來了解每個元件的運作情況。
 請參閱 [ATA 架構](/advanced-threat-analytics/plan-design/ata-architecture)以了解內部 ATA 元件的流程。
 
 **ATA 元件程序**：
@@ -37,7 +31,6 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 
 3.  這個情形會回溯發生至初始的 NetworkListener 元件，它將會在無法轉送實體時減少流量。
 
-4. 使用在效能計數器中找到的資料，來了解每個元件的運作情況。
 
 ## ATA 閘道效能計數器
 
@@ -98,7 +91,7 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 |LogicalDisk(&#42;)\Avg. 的集合規則|將資料寫入磁碟的平均延遲 (您應該選擇資料庫磁碟機做為執行個體)。|應小於 10 毫秒|檢查是否有特定程序，其利用的資料庫磁碟機超過預期。<br /><br />如果此磁碟機可以提供目前的工作負載，同時具有小於 10 毫秒的延遲，請洽詢儲存體小組/廠商。 使用磁碟使用計數器可判斷目前的工作負載。|
 |\LogicalDisk(&#42;)\Disk Reads/sec|執行讀取作業至磁碟的速率。|沒有閾值|磁碟使用計數器可在疑難排解儲存體延遲時新增見解。|
 |\LogicalDisk(&#42;)\Disk Read Bytes/sec|每秒從磁碟讀取的位元組數目。|沒有閾值|磁碟使用計數器可在疑難排解儲存體延遲時新增見解。|
-|\LogicalDisk(&#42;)\Disk Writes/sec|執行寫入作業至磁碟的速率。|沒有閾值|磁碟使用計數器 (可在疑難排解儲存體延遲時新增見解)|
+|\LogicalDisk&#42;\Disk Writes/sec|執行寫入作業至磁碟的速率。|沒有閾值|磁碟使用計數器 (可在疑難排解儲存體延遲時新增見解)|
 |\LogicalDisk(&#42;)\Disk Write Bytes/sec|每秒寫入磁碟的位元組數目。|沒有閾值|磁碟使用計數器可在疑難排解儲存體延遲時新增見解。|
 
 ## 另請參閱
@@ -106,9 +99,10 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 - [ATA 容量規劃](/advanced-threat-analytics/plan-design/ata-capacity-planning)
 - [設定事件收集](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [設定 Windows 事件轉送](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
-- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 使用 ATA 記錄檔來疑難排解 ATA | Microsoft Advanced Threat Analytics
-description: 描述如何使用 ATA 記錄檔來疑難排解問題
-keywords:
+title: "使用 ATA 記錄檔來疑難排解 ATA | Microsoft Advanced Threat Analytics"
+description: "描述如何使用 ATA 記錄檔來疑難排解問題"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 4f02b0fba381eb76ad500e198392ec7624a3028a
+
 
 ---
 
@@ -47,7 +41,7 @@ ATA 閘道有下列記錄檔︰
 > [!NOTE]
 > 前三個記錄檔有大小上限 50 MB。 到達該大小時，會開啟新的記錄檔，並將上一個記錄檔重新命名為「&lt;原始檔案名稱&gt;-Archived-00000」，該數字隨每次重新命名遞增。
 
-### ATA 中心記錄檔
+## ATA 中心記錄檔
 ATA 中心記錄位於名為 **Logs** 的子資料夾中。 在預設安裝位置中，其位於︰**C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs**。
 
 ATA 中心有下列記錄檔︰
@@ -64,7 +58,7 @@ ATA 中心有下列記錄檔︰
 > [!NOTE]
 > 前三個記錄檔有大小上限 50 MB。 到達該大小時，會開啟新的記錄檔，並將上一個記錄檔重新命名為「&lt;原始檔案名稱&gt;-Archived-00000」，該數字隨每次重新命名遞增。
 
-### ATA 主控台記錄檔
+## ATA 主控台記錄檔
 ATA 主控台記錄 (管理 API 記錄) 位於名為 **Logs** 的子資料夾中。 在預設安裝位置中，其位於︰**C:\Program Files\Microsoft Advanced Threat Analytics\Center\Management\Logs**。
 
 ATA 主控台有下列記錄檔︰
@@ -81,7 +75,7 @@ ATA 主控台有下列記錄檔︰
 > [!NOTE]
 > 前兩個記錄檔有大小上限 50 MB。 到達該大小時，會開啟新的記錄檔，並將上一個記錄檔重新命名為「&lt;原始檔案名稱&gt;-Archived-00000」，該數字隨每次重新命名遞增。
 
-### ATA 部署記錄檔
+## ATA 部署記錄檔
 對於安裝產品的使用者，ATA 部署記錄位於暫存記錄中。 在預設安裝位置中，其位於︰**C:\Users\Administrator\AppData\Local\Temp** (或 %temp% 上方的一個目錄)。
 
 ATA Center 部署記錄檔︰
@@ -103,9 +97,10 @@ ATA 閘道和 ATA 輕量型閘道部署記錄：
 - [ATA 容量規劃](/advanced-threat-analytics/plan-design/ata-capacity-planning)
 - [設定事件收集](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [設定 Windows 事件轉送](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
-- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

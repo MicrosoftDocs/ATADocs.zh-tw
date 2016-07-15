@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 什麼是 Microsoft Advanced Threat Analytics (ATA)？ | Microsoft Advanced Threat Analytics
-description: 說明何謂 Microsoft Advanced Threat Analytics (ATA)，以及它可以偵測到的可疑活動種類
-keywords:
+title: "什麼是 Microsoft Advanced Threat Analytics (ATA)？ | Microsoft Advanced Threat Analytics"
+description: "說明何謂 Microsoft Advanced Threat Analytics (ATA)，以及它可以偵測到的可疑活動種類"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 4831e7a773b69a87bbcd505a8116230f14611250
+
 
 ---
 
@@ -69,7 +63,6 @@ ATA 提供多個探察偵測。 這些偵測包括：
 
 ATA 使用行為分析和機器學習服務，而能夠偵測指向認證遭洩漏的可疑活動，例如異常登入、異常資源存取和異常工作時間。
 為了防止認證遭入侵，ATA 會偵測下列已知惡意攻擊和技術︰
-[定位服務] &gt; [重新整理內容位置] ：
 
  - **暴力密碼破解** <br>在暴力密碼破解攻擊中，攻擊者藉由嘗試多個使用者並搭配多次密碼嘗試，以嘗試猜測使用者認證。 攻擊者通常使用複雜的演算法或字典來嘗試系統允許的值。
 
@@ -123,8 +116,7 @@ ATA 會針對攻擊者使用的下列已知技術執行偵測，來偵測攻擊�
 在黃金票證攻擊中，攻擊者可竊取 KBTGT 的認證：Kerberos 黃金票證。 該票證可讓攻擊者在離線狀態建立 TGT 票證，用來存取網路中的資源。
 - **遠端執行**<br>
 攻擊者可嘗試在網域控制站上從遠端執行程式碼，以控制您的網路。
--   **惡意的複寫要求**
-在 Active Directory (AD) 環境中，網域控制站之間會定期發生複寫。 攻擊者可以假冒 AD 複寫要求 (有時假冒成網域控制站)，藉此擷取儲存在 AD 中的資料 (包括密碼雜湊)，而不需要使用磁碟區陰影複製等較具侵入性的技術。
+-   **惡意的複寫要求** 在 Active Directory (AD) 環境中，網域控制站之間會定期發生複寫。 攻擊者可以假冒 AD 複寫要求 (有時假冒成網域控制站)，藉此擷取儲存在 AD 中的資料 (包括密碼雜湊)，而不需要使用磁碟區陰影複製等較具侵入性的技術。
 
 ## 新功能
 
@@ -133,9 +125,10 @@ ATA 會針對攻擊者使用的下列已知技術執行偵測，來偵測攻擊�
 -   若要開始部署 ATA：[安裝 ATA](/advanced-threat-analytics/deploy-use/install-ata)
 
 ## 另請參閱
-[查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+[查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

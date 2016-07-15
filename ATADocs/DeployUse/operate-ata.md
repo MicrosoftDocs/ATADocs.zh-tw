@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 操作 ATA - 完成 | Microsoft Advanced Threat Analytics
-description: 引導您完成使用 ATA 和每日活動的步驟。
-keywords:
+title: "操作 ATA - 完成 | Microsoft Advanced Threat Analytics"
+description: "引導您完成使用 ATA 和每日活動的步驟。"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 44c755364a08b2aab9739b5a219e01f21d441b07
+
 
 ---
 
@@ -47,12 +41,13 @@ ms.suite: ems
 
 ## 另請參閱
 
-- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

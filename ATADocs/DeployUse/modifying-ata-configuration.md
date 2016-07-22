@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 變更 ATA 組態 | Microsoft Advanced Threat Analytics
-description: 提供可更新 ATA 組態的方法清單。
-keywords:
+title: "變更 ATA 組態 | Microsoft Advanced Threat Analytics"
+description: "提供可更新 ATA 組態的方法清單。"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: bcf0f7d3-8027-45c0-8002-19f71fcb30a6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 02598258f063e65767164334c995ab87d7ad0270
+
 
 ---
 
@@ -42,9 +36,10 @@ ms.suite: ems
 ## 另請參閱
 - [使用 ATA 主控台](working-with-ata-console.md)
 - [安裝 ATA](install-ata.md)
-- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

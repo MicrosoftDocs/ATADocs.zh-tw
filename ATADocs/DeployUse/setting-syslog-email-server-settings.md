@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 設定 ATA 通知 | Microsoft Advanced Threat Analytics
-description: 說明當 ATA 偵測到可疑的活動時，如何通知您 (透過電子郵件或 ATA 事件轉寄) 
-keywords:
+title: "設定 ATA 通知 | Microsoft Advanced Threat Analytics"
+description: "說明當 ATA 偵測到可疑的活動時，如何通知您 (透過電子郵件或 ATA 事件轉寄)"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,27 +10,23 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 66194d89c3e937923e576004a3ab4b7177f179c4
+
 
 ---
 
 ## 使用電子郵件伺服器設定提供 ATA
-當 ATA 偵測到可疑的活動時，就會通知您。 若要讓 ATA 能夠傳送電子郵件通知，您必須先進行**電子郵件伺服器設定**.
+當 ATA 偵測到可疑的活動時，就會通知您。 若要讓 ATA 能夠傳送電子郵件通知，您必須先進行**電子郵件伺服器設定**。
 
 1.  在 ATA 中央伺服器上，按一下桌面上的 [Microsoft Advanced Threat Analytics Management] 圖示。
 
-2.  輸入您的使用者名稱和密碼，然後按一下 [登入].
+2.  輸入您的使用者名稱和密碼，然後按一下 [登入]。
 
-3.  選取工具列上的 [設定] 選項，然後選取 [設定].
+3.  選取工具列上的 [設定] 選項並選取 [組態]。
 
     ![ATA 組態設定圖示](media/ATA-config-icon.JPG)
 
@@ -61,9 +55,9 @@ ms.suite: ems
 
 2.  在 ATA 中央伺服器上，按一下桌面上的 [Microsoft Advanced Threat Analytics Management] 圖示。
 
-3.  輸入您的使用者名稱和密碼，然後按一下 [登入].
+3.  輸入您的使用者名稱和密碼，然後按一下 [登入]。
 
-4.  選取工具列上的 [設定] 選項，然後選取 [設定].
+4.  選取工具列上的 [設定] 選項並選取 [組態]。
 
     ![ATA 組態設定圖示](media/ATA-config-icon.JPG)
 
@@ -80,9 +74,10 @@ ms.suite: ems
 
 
 ## 另請參閱
-[查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+[查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

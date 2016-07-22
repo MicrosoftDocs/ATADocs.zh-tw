@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: ATA 架構 | Microsoft Advanced Threat Analytics
-description: 描述 Microsoft Advanced Threat Analytics 的架構 (ATA)
-keywords:
+title: "ATA 架構 | Microsoft Advanced Threat Analytics"
+description: "描述 Microsoft Advanced Threat Analytics 的架構 (ATA)"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 2d753060f30cbcc7d16959355b86d64fdaa2ecd8
+
 
 ---
 
@@ -96,7 +90,7 @@ ATA 中心會從 ATA 閘道和 ATA 輕量型閘道接收剖析的流量、執行
 
 -   一個 ATA 中心可以監視單一 Active Directory 樹系。 如果您有多個 Active Directory 樹系，每個 Active Directory 樹系需要至少一個 ATA 中心。
 
--    在極大型的 Active Directory 部署中，單一 ATA 中心可能無法處理所有網域控制站的所有流量。 這種情況會需要多個 ATA 中心。 ATA 中心的數目應該取決於 [ATA 容量規劃](ata-capacity-planning.md)。.
+-    在極大型的 Active Directory 部署中，單一 ATA 中心可能無法處理所有網域控制站的所有流量。 這種情況會需要多個 ATA 中心。 ATA 中心的數目應該取決於 [ATA 容量規劃](ata-capacity-planning.md)。
 
 ## ATA 閘道和 ATA 輕量型閘道
 
@@ -173,19 +167,20 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 ### 事件
 若要增強 ATA 對傳遞雜湊攻擊、暴力密碼破解和仿效權杖的偵測，ATA 需要識別碼為 4776 的 Windows 事件記錄檔。 可透過下列兩種方式的其中一種轉送到 ATA 閘道，將 ATA 閘道設定為接聽 SIEM 事件，或使用 Windows 事件轉送。
 
--   將 ATA 閘道設定為接聽 SIEM 事件 <br>將您的 SIEM 設定為轉送特定 Windows 事件至 ATA。 ATA 支援許多 SIEM 廠商。 如需詳細資訊，請參閱 [Configure event collection](/advanced-threat-analytics/deploy-use/configure-event-collection) (設定事件收集)。.
+-   將 ATA 閘道設定為接聽 SIEM 事件 <br>將您的 SIEM 設定為轉送特定 Windows 事件至 ATA。 ATA 支援許多 SIEM 廠商。 如需詳細資訊，請參閱[設定事件收集](/advanced-threat-analytics/deploy-use/configure-event-collection)。
 
--   設定 Windows 事件轉送<br>ATA 可以取得事件的另一個方法是將網域控制站設定為將 Windows 事件 4776 轉送至 ATA 閘道。 如果您沒有 SIEM，或者 ATA 目前不支援您的 SIEM，這個方法特別有用。 如需 ATA 中 Windows 事件轉送的詳細資訊，請參閱 [Configuring Windows event forwarding](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding) (設定 Windows 事件轉送)。.
+-   設定 Windows 事件轉送<br>ATA 可以取得事件的另一個方法是將網域控制站設定為將 Windows 事件 4776 轉送至 ATA 閘道。 如果您沒有 SIEM，或者 ATA 目前不支援您的 SIEM，這個方法特別有用。 如需 ATA 中 Windows 事件轉送的詳細資訊，請參閱[設定 Windows 事件轉送](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)。
 
 ## 另請參閱
 - [ATA 必要條件](ata-prerequisites.md)
 - [ATA 容量規劃](ata-capacity-planning.md)
 - [設定事件收集](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [設定 Windows 事件轉送](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
-- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

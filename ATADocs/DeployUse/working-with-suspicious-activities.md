@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 處理可疑活動 | Microsoft Advanced Threat Analytics
-description: 描述如何檢閱 ATA 所識別的可疑活動
-keywords:
+title: "處理可疑活動 | Microsoft Advanced Threat Analytics"
+description: "描述如何檢閱 ATA 所識別的可疑活動"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: 44d7c899-816c-4f7f-91d3-84a09d291a24
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 1214560096227e00af36ff7cb1a0a95988a2ad40
+
 
 ---
 
@@ -61,9 +55,9 @@ ms.suite: ems
 ## 篩選可疑活動清單
 篩選可疑活動清單：
 
-1.  在畫面左側的 [篩選依據] 窗格中，選取下列其中一個項目︰[全部]、[開啟]、[已解決] 或 [已關閉].
+1.  在畫面左側的 [篩選依據] 窗格中，選取下列其中一個項目︰[所有]、[開啟的]、[已解析] 或 [已關閉]。
 
-2.  若要進一步篩選清單，請選取 [高]、[中] 或 [低].
+2.  若要進一步篩選清單，請選取 [高級]、[中級] 或 [低級]。
 
 **可疑活動嚴重性**
 
@@ -107,17 +101,18 @@ ms.suite: ems
 
 3.  不過，如果您回答「是」，可能會關閉可疑活動，來自此電腦的此類型未來活動可能不會產生可疑活動，或者會產生自動關閉的活動。
 
-4.  如果您不知道，可以按一下 [取消].
+4.  如果您不知道，您可以按一下 [取消]。
 
 ## 變更可疑活動的狀態
-您可以按一下可疑活動的目前狀態，然後選取下列 [開啟]、[已解決] 或 [已關閉] 其中一項來變更可疑活動的狀態.
+您可以按一下可疑活動的目前狀態，然後選取下列 [開啟]、[已解析] 或 [已關閉] 其中一項來變更可疑活動的狀態。
 
 ## 另請參閱
-- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [使用 ATA 偵測設定](working-with-detection-settings.md)
 - [修改 ATA 組態](modifying-ata-configuration.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

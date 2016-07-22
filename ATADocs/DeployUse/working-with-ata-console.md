@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 使用 ATA 主控台 | Microsoft Advanced Threat Analytics
-description: 描述如何登入 ATA 主控台和主控台的元件
-keywords:
+title: "使用 ATA 主控台 | Microsoft Advanced Threat Analytics"
+description: "描述如何登入 ATA 主控台和主控台的元件"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 7f9ca7dcb227f5dde1225c55150fd1c737722ce1
+
 
 ---
 
@@ -39,14 +33,15 @@ ms.suite: ems
 
     ![ATA 伺服器圖示](media/ata-server-icon.png)
 
-    > [!NOTE] 您也可以從 ATA 中心或 ATA 閘道開啟瀏覽器，然後瀏覽到您在為 ATA 主控台安裝 ATA 中心時設定的 IP 位址。    
+>[!NOTE]
+> 您也可以從 ATA 中心或 ATA 閘道開啟瀏覽器，然後瀏覽到您在為 ATA 主控台安裝 ATA 中心時設定的 IP 位址。    
 
 2.  輸入您的使用者名稱和密碼，然後按一下 [登入]。
 
 ![ATA 登入畫面影像](media/ATA-log-in-screen.jpg)
 
-    > [!NOTE]
-    > You have to log in with a user who is a member of the local administrator group OR of the Microsoft Advanced Threat Analytics Administrators group.
+> [!NOTE]
+> 您必須以特定使用者身分登入，該特定使用者為本機系統管理員群組或 Microsoft Advanced Threat Analytics 系統管理員群組成員。
 
 ## ATA 主控台
 
@@ -125,9 +120,10 @@ ATA 無法完全解析的設定檔將會利用旁邊的半實心圓形圖示來�
 
 
 ## 另請參閱
-[查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+[查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

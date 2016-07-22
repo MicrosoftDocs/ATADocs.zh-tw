@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: ATA 更新至 1.5 移轉指南 | Microsoft Advanced Threat Analytics
-description: 更新 ATA 至 1.5 版的程序
-keywords:
+title: "ATA 更新至 1.5 移轉指南 | Microsoft Advanced Threat Analytics"
+description: "更新 ATA 至 1.5 版的程序"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 87293e71e053e2d7a962a5b7362b92e5df677c77
+
 
 ---
 
@@ -44,7 +38,7 @@ ms.suite: ems
 
 ## 更新 ATA 至 1.5 版
 > [!NOTE]
-> 如果您的環境中沒有安裝 ATA，請下載包括 1.5 版的完整版本 ATA，並遵循 [Install ATA](/advanced-threat-analytics/deploy-use/install-ata) (安裝 ATA) 所述的標準安裝程序.
+> 如果您的環境中未安裝 ATA，請下載包括 1.5 版的完整版本 ATA，並遵循[安裝 ATA](/advanced-threat-analytics/deploy-use/install-ata) 中所述的標準安裝程序。
 
 如果您已經部署 ATA 1.4 版，此程序將逐步引導您進行更新安裝所需的步驟。
 
@@ -70,13 +64,13 @@ ms.suite: ems
 
     -   如果 ATA 中心是做為虛擬機器執行，而您想要取一個檢查點，請先關閉虛擬機器。
 
-    -   如果 ATA 中心是在實體伺服器上執行，請遵循建議的程序[back up MongoDB](https://docs.mongodb.org/manual/core/backups/) (備份 MongoDB).
+    -   如果 ATA 中心是在實體伺服器上執行，請遵循建議的程序[備份 MongoDB](https://docs.mongodb.org/manual/core/backups/)。
 
 2.  執行更新的檔案 Microsoft ATA Center Update.exe，遵循螢幕上的指示安裝更新。
 
-    1.  在 [歡迎] 頁面中選取您的語言，然後按一下 [下一步].
+    1.  在 [歡迎] 頁面中選取您的語言，然後按一下 [下一步]。
 
-    2.  閱讀使用者授權合約，如果您接受條款，請按一下核取方塊，然後按一下 [下一步].
+    2.  閱讀「使用者授權合約」，如果您接受條款，請勾選核取方塊並按 [下一步]。
 
     3.  選取您要執行完整 (預設值) 或部分移轉。
 
@@ -102,11 +96,11 @@ ms.suite: ems
 
 1.  刪除先前下載的舊版 ATA 閘道套件。
 
-2.  在 ATA 閘道的電腦上，開啟瀏覽器，並輸入您之前在 ATA 中心為 ATA 主控台設定的 IP 位址。 ATA 主控台開啟時，按一下設定圖示，然後選取 [設定].
+2.  在 ATA 閘道的電腦上，開啟瀏覽器，並輸入您之前在 ATA 中心為 ATA 主控台設定的 IP 位址。 ATA 主控台開啟時，按一下 [設定] 圖示，然後選取 [組態]。
 
     ![組態設定圖示](media/ATA-config-icon.JPG)
 
-3.  在 [ATA 閘道] 索引標籤中，按一下 [下載 ATA 閘道安裝程式].
+3.  在 [ATA 閘道] 索引標籤上，按一下 [下載 ATA 閘道安裝程式]。
 
 4.  將封裝儲存在本機。
 
@@ -136,9 +130,10 @@ ZIP 檔案包含下列項目：
 
 ## 另請參閱
 
-- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

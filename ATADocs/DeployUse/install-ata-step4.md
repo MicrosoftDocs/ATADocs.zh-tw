@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 安裝 ATA - 步驟 4 | Microsoft Advanced Threat Analytics
-description: 安裝 ATA 的步驟 4 協助您安裝 ATA 閘道。
-keywords:
+title: "安裝 ATA - 步驟 4 | Microsoft Advanced Threat Analytics"
+description: "安裝 ATA 的步驟 4 協助您安裝 ATA 閘道。"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d6e7d7bef97bfc4ffde07959dd9256f0319d685f
+ms.openlocfilehash: f12e43a6918c0c02bb59e4a093720a805b7dbcfc
+
 
 ---
 
@@ -44,11 +38,12 @@ ms.suite: ems
 在 ATA 閘道伺服器上執行下列步驟。
 
 1.  解壓縮 Zip 檔案。 
-> [!NOTE] 從 ZIP 檔案直接安裝將會失敗。
+> [!NOTE] 
+> 從 ZIP 檔案直接安裝將會失敗。
 
 2.  從提升權限的命令提示字元執行 **Microsoft ATA Gateway Setup.exe**，然後遵循安裝精靈的步驟。
 
-3.  在 [歡迎] 頁面中選取您的語言，然後按一下 [下一步].
+3.  在 [歡迎] 頁面中，選取您的語言，然後按一下 [下一步]。
 
 4.  在 [ATA 閘道設定] 下，根據您的環境輸入下列資訊︰
 
@@ -73,7 +68,7 @@ ms.suite: ems
 
     -   自訂的效能監視資料收集組
 
-5.  安裝完成之後，若是 ATA 閘道，請按一下 [啟動] 開啟瀏覽器，然後登入 ATA 主控台；若是 ATA 輕量型閘道，請按一下 [完成].
+5.  安裝完成之後，若是 ATA 閘道，請按一下 [啟動] 開啟瀏覽器，然後登入 ATA 主控台；若是 ATA 輕量型閘道，請按一下 [完成]。
 
 
 >[!div class="step-by-step"]
@@ -82,12 +77,13 @@ ms.suite: ems
 
 ## 另請參閱
 
-- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 驗證連接埠鏡像 | Microsoft Advanced Threat Analytics
-description: 描述如何驗證已正確設定連接埠鏡像
-keywords:
+title: "驗證連接埠鏡像 | Microsoft Advanced Threat Analytics"
+description: "描述如何驗證已正確設定連接埠鏡像"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,21 +10,18 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: ebd41719-c91a-4fdd-bcab-2affa2a2cace
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d6e7d7bef97bfc4ffde07959dd9256f0319d685f
+ms.openlocfilehash: e1ce20c48323e1fca04211c2691f6dfb6fa57fe5
+
 
 ---
 
 # 驗證連接埠鏡像
-> [!NOTE] 本文只有在部署 ATA 閘道 (而非 ATA 輕量型閘道) 時才適用。 若要判斷是否需要使用 ATA 閘道，請參閱[為您的部署選擇正確閘道](/advanced-threat-analytics/plan-design/ata-capacity-planning#Choosing-the-right-gateway-type-for-your-deployment)
+> [!NOTE] 
+> 本文只有在部署 ATA 閘道 (而非 ATA 輕量型閘道) 時才適用。 若要判斷是否需要使用 ATA 閘道，請參閱[為您的部署選擇正確閘道](/advanced-threat-analytics/plan-design/ata-capacity-planning#choosing-the-right-gateway-type-for-your-deployment)
  
 下列步驟會引導您逐步完成驗證已正確設定連接埠鏡像的程序。 若要讓 ATA 正常運作，ATA 閘道必須能夠看到網域控制站之間的流量。 ATA 使用的主要資料來源是對進出網域控制站的網路流量的深度封包檢查。 若要讓 ATA 查看網路流量，必須設定連接埠鏡像。 連接埠鏡像會將流量從一個連接埠 (來源連接埠) 複製到另一個連接埠 (目的地連接埠)。
 
@@ -193,7 +188,7 @@ ms.suite: ems
     
     
 ## 使用 Net Mon 驗證連接埠鏡像
-1.  安裝 [Microsoft 網路監視器 3.4](http://www.microsoft.com/download/details.aspx?id=4865).
+1.  安裝 [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865) (Microsoft 網路監視器 3.4)。
 
     > [!IMPORTANT]
     > 請勿在 ATA 閘道上安裝 Microsoft Message Analyzer 或其他流量擷取軟體。
@@ -204,11 +199,11 @@ ms.suite: ems
 
     2.  確定已啟用 P-Mode
 
-    3.  按一下 [新增擷取].
+    3.  按一下 [新增擷取]。
 
         ![建立新的擷取索引標籤影像](media/ATA-Port-Mirroring-Capture.jpg)
 
-3.  在 [顯示篩選] 視窗中，輸入下列篩選︰**KerberosV5 OR LDAP**，然後按一下 [套用].
+3.  在 [顯示篩選] 視窗中，輸入下列篩選︰**KerberosV5 或 LDAP**，然後按一下 [套用]。
 
     ![套用 KerberosV5 或 LDAP 篩選影像](media/ATA-Port-Mirroring-filter-settings.jpg)
 
@@ -225,9 +220,10 @@ ms.suite: ems
 ## 另請參閱
 
 - [設定連接埠鏡像](configure-port-mirroring.md)
-- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

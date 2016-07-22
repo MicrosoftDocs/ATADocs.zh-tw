@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: ATA 1.5 版的新功能 | Microsoft Advanced Threat Analytics
-description: 列出 ATA 1.5 版的新功能以及已知問題
-keywords:
+title: "ATA 1.5 版的新功能 | Microsoft Advanced Threat Analytics"
+description: "列出 ATA 1.5 版的新功能以及已知問題"
+keywords: 
 author: rkarlin
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-ata
 ms.service: advanced-threat-analytics
 ms.technology: security
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: bennyl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
+ms.openlocfilehash: 5836792bcfadb2585d05d4a195979bd6003c84cf
+
 
 ---
 
@@ -65,7 +59,7 @@ ms.suite: ems
 設定 ATA 閘道組態之後，當 ATA 閘道第一次啟動時，會顯示「未同步處理」標籤，直到服務完全啟動為止，在服務第一次啟動時，這可能需要多達 10 分鐘。
 
 ### 網路擷取軟體
-在 ATA 閘道上，您可以安裝的唯一支援網路擷取軟體是 [Microsoft 網路監視器 3.4](http://www.microsoft.com/en-us/download/details.aspx?id=4865)。 請勿安裝 Microsoft Message Analyzer 或其他任何網路擷取軟體。 安裝其他軟體將會造成 ATA 閘道停止正常運作。
+在 ATA 閘道上，您可以安裝的唯一支援網路擷取軟體是 [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865) (Microsoft 網路監視器 3.4)。 請勿安裝 Microsoft Message Analyzer 或其他任何網路擷取軟體。 安裝其他軟體將會造成 ATA 閘道停止正常運作。
 
 ### 虛擬化主機上的 KB
 請勿在虛擬化主機上安裝 KB 3047154。 這可能會導致連接埠鏡像無法正常運作。
@@ -76,9 +70,10 @@ ms.suite: ems
 
 [將 ATA 更新至 1.6 版 - 移轉指南](ata-update-1.6-migration-guide.md)
 
-[查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+[查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

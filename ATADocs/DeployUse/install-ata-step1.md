@@ -1,5 +1,5 @@
 ---
-title: "安裝 ATA - 步驟 1 | Microsoft Advanced Threat Analytics"
+title: "安裝 ATA - 步驟 1 | Microsoft ATA"
 description: "安裝 ATA 的第一步驟是下載並安裝 ATA 中心到您所選的伺服器。"
 keywords: 
 author: rkarlin
@@ -13,8 +13,8 @@ ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d6e7d7bef97bfc4ffde07959dd9256f0319d685f
-ms.openlocfilehash: c89d4d6f6af58bcc822b9599dcda65d0719a7419
+ms.sourcegitcommit: c512fd20f913c53ac936f7de288eb024d91cf9f1
+ms.openlocfilehash: 756c01d4fc4fbe7950cbbfc66fd65cf32b3bc44a
 
 
 ---
@@ -95,14 +95,13 @@ ms.openlocfilehash: c89d4d6f6af58bcc822b9599dcda65d0719a7419
 
 ## 另請參閱
 
-- [來瞧瞧 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/
-- home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

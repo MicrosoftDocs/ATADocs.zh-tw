@@ -1,5 +1,5 @@
 ---
-title: "ATA 必要條件 | Microsoft Advanced Threat Analytics"
+title: "ATA 必要條件 | Microsoft ATA"
 description: "描述在環境中成功部署 ATA 的需求"
 keywords: 
 author: rkarlin
@@ -13,8 +13,8 @@ ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f85b9a0f51bd18edaa91ea208d6e6c7c7de56cc
-ms.openlocfilehash: da887431d8e63a7ae8ceeb3e7e22011d356e3590
+ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
+ms.openlocfilehash: e3fd607681c7209409bd8bf7a06dffb5aaea21ec
 
 
 ---
@@ -273,6 +273,6 @@ ATA 主控台的存取是透過瀏覽器，支援下列瀏覽器︰
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

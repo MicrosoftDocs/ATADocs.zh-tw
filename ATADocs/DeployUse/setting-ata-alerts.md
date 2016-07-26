@@ -1,5 +1,5 @@
 ---
-title: "設定 ATA 通知 | Microsoft Advanced Threat Analytics"
+title: "設定 ATA 通知 | Microsoft ATA"
 description: "描述如何設定 ATA 警示，所以偵測到可疑的活動時，您會收到通知。"
 keywords: 
 author: rkarlin
@@ -13,8 +13,8 @@ ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
-ms.openlocfilehash: a32799b68d9a8b2949033ab5d1fc5910cff71258
+ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
+ms.openlocfilehash: 03f6f184e7f34d6985103f503b8d88a3fc820c18
 
 
 ---
@@ -71,6 +71,6 @@ ATA 可在偵測到可疑的活動時通知您，方法是透過電子郵件或�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

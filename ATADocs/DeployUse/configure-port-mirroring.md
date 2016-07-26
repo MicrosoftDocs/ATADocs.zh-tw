@@ -1,5 +1,5 @@
 ---
-title: "設定連接埠鏡像 | Microsoft Advanced Threat Analytics"
+title: "設定連接埠鏡像 | Microsoft ATA"
 description: "描述連接埠鏡像選項以及如何設定它們以進行 ATA"
 keywords: 
 author: rkarlin
@@ -13,8 +13,8 @@ ms.assetid: cdaddca3-e26e-4137-b553-8ed3f389c460
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 121f54e6d8da8220f1827188039e9a89c038f7ac
-ms.openlocfilehash: a4befce4003951b18a5e1a9d8bc1addf9e7ea255
+ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
+ms.openlocfilehash: 18b6ceb2c2d3eacb51cc150d5c7faaac5791a3d0
 
 
 ---
@@ -71,6 +71,6 @@ ATA 使用的主要資料來源是對進出網域控制站的網路流量的深�
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

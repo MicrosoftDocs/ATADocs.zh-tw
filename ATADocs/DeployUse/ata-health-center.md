@@ -1,5 +1,5 @@
 ---
-title: "ATA 健全狀況中心 | Microsoft Advanced Threat Analytics"
+title: "ATA 健康情況中心 | Microsoft ATA"
 description: "使用 ATA 健全狀況中心來查看 ATA 服務的運作情況，以及收看潛在問題的警示。"
 keywords: 
 author: rkarlin
@@ -13,8 +13,8 @@ ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
-ms.openlocfilehash: b38b96f0b2e6061e97d8b46163a04d2310709491
+ms.sourcegitcommit: c512fd20f913c53ac936f7de288eb024d91cf9f1
+ms.openlocfilehash: 87c92ce4ca7834df7483071a18f78ca6c6bfccd0
 
 
 ---
@@ -41,11 +41,10 @@ ATA 健全狀況中心可讓您知道 ATA 服務的運作情況，並向您警�
 ## 另請參閱
 - [使用 ATA 偵測設定](working-with-detection-settings.md)
 - [處理可疑活動](working-with-suspicious-activities.md)
-- [來瞧瞧 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/
-- home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

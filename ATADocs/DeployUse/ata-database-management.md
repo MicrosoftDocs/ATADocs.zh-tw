@@ -1,5 +1,5 @@
 ---
-title: "ATA 資料庫管理 |Microsoft Advanced Threat Analytics"
+title: "ATA 資料庫管理 | Microsoft ATA"
 description: "這些程序可協助您移動、備份或還原 ATA 資料庫。"
 keywords: 
 author: rkarlin
@@ -13,8 +13,8 @@ ms.assetid: 1d27dba8-fb30-4cce-a68a-f0b1df02b977
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
-ms.openlocfilehash: 6c0e2abe43da5351568cf8db4e6ffe6fa919d835
+ms.sourcegitcommit: 115ec28877665c79e5cbcd557528da156c8d7149
+ms.openlocfilehash: fd00623f9be396b3a2c384cce436996b5093cc3f
 
 
 ---
@@ -52,8 +52,7 @@ ms.openlocfilehash: 6c0e2abe43da5351568cf8db4e6ffe6fa919d835
 
 8.  執行下列命令： `db.SystemProfiles.update( {_t: "CenterSystemProfile"} , {$set:{"Configuration.CenterDatabaseClientConfiguration.DataPath" : "<New DB Location>"}})`
 
-
-    而不是 <New DB Location>，其中 `&lt;New DB Location&gt;` 是新的資料夾路徑。
+   而不是 <New DB Location>，其中 `&lt;New DB Location&gt;` 是新的資料夾路徑。
 
 9.  將 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Advanced Threat Analytics\Center\DatabaseDataPath 更新至新的資料夾路徑。
 
@@ -62,12 +61,11 @@ ms.openlocfilehash: 6c0e2abe43da5351568cf8db4e6ffe6fa919d835
 ## 另請參閱
 - [ATA 架構](/advanced-threat-analytics/plan-design/ata-architecture)
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
-- [來瞧瞧 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/
-- home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

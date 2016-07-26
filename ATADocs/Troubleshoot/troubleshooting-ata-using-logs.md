@@ -1,5 +1,5 @@
 ---
-title: "使用 ATA 記錄檔來疑難排解 ATA | Microsoft Advanced Threat Analytics"
+title: "使用 ATA 記錄檔為 ATA 疑難排解 | Microsoft ATA"
 description: "描述如何使用 ATA 記錄檔來疑難排解問題"
 keywords: 
 author: rkarlin
@@ -13,8 +13,8 @@ ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
-ms.openlocfilehash: 4f02b0fba381eb76ad500e198392ec7624a3028a
+ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
+ms.openlocfilehash: f13b448399f4184ebb110883800e87902d3b7ac3
 
 
 ---
@@ -101,6 +101,6 @@ ATA 閘道和 ATA 輕量型閘道部署記錄：
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

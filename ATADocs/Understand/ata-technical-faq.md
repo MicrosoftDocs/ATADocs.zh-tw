@@ -1,5 +1,5 @@
 ---
-title: "ATA 常見問題集 | Microsoft Advanced Threat Analytics"
+title: "ATA 常見問題 | Microsoft ATA"
 description: "提供關於 ATA 的常見問題清單以及相關解答"
 keywords: 
 author: rkarlin
@@ -13,8 +13,8 @@ ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
-ms.openlocfilehash: bb6bc2bf0d0df3112ecfdb33c8e9d6e41f183145
+ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
+ms.openlocfilehash: 1121dd059d70dfcf900db1e71c62c58c1080ad06
 
 
 ---
@@ -142,6 +142,6 @@ Microsoft Advanced Threat Analytics 是內部部署的產品。
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

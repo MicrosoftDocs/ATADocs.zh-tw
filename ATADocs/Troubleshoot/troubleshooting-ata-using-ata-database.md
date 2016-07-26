@@ -1,5 +1,5 @@
 ---
-title: "使用 ATA 資料庫疑難排解 ATA | Microsoft Advanced Threat Analytics"
+title: "使用 ATA 資料庫為 ATA 疑難排解 | Microsoft ATA"
 description: "描述如何使用 ATA 資料庫來協助疑難排解問題"
 keywords: 
 author: rkarlin
@@ -13,8 +13,8 @@ ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
-ms.openlocfilehash: 7de189008765d24e88a224d027146bf44fb6abbf
+ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
+ms.openlocfilehash: d2d6549c731a90fb0cdd21ba910c1238d131bc43
 
 
 ---
@@ -64,6 +64,6 @@ ATA 中心服務每隔一小時會將這個集合備份到名為「SystemProfile
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

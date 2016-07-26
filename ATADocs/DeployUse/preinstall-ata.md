@@ -1,5 +1,5 @@
 ---
-title: "安裝 ATA 之前 - 完成步驟 | Microsoft Advanced Threat Analytics"
+title: "安裝 ATA 之前 - 完成步驟 | Microsoft ATA"
 description: "引導您逐步執行在部署 ATA 前必須完成的必要步驟。"
 keywords: 
 author: rkarlin
@@ -13,8 +13,8 @@ ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8d1dedaf86031e8585cca23241aead58f7f3db4e
-ms.openlocfilehash: b4fc459fbab3d63de12efebb125762c18946bbdc
+ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
+ms.openlocfilehash: cec388976153a5885c0c6d62180018f4fc054707
 
 
 ---
@@ -38,6 +38,6 @@ ms.openlocfilehash: b4fc459fbab3d63de12efebb125762c18946bbdc
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

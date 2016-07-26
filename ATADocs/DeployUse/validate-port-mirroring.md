@@ -1,5 +1,5 @@
 ---
-title: "驗證連接埠鏡像 | Microsoft Advanced Threat Analytics"
+title: "驗證連接埠鏡像 | Microsoft ATA"
 description: "描述如何驗證已正確設定連接埠鏡像"
 keywords: 
 author: rkarlin
@@ -13,8 +13,8 @@ ms.assetid: ebd41719-c91a-4fdd-bcab-2affa2a2cace
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d6e7d7bef97bfc4ffde07959dd9256f0319d685f
-ms.openlocfilehash: e1ce20c48323e1fca04211c2691f6dfb6fa57fe5
+ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
+ms.openlocfilehash: 004732f86de15f5cf0058fdfa1759cd4b57a9128
 
 
 ---
@@ -224,6 +224,6 @@ ms.openlocfilehash: e1ce20c48323e1fca04211c2691f6dfb6fa57fe5
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

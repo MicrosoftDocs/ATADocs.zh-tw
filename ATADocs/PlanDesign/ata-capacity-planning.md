@@ -1,5 +1,5 @@
 ---
-title: "規劃 ATA 部署 | Microsoft Advanced Threat Analytics"
+title: "規劃 ATA 部署 | Microsoft ATA"
 description: "協助您規劃部署並決定支援您的網路需要多少 ATA 伺服器"
 keywords: 
 author: rkarlin
@@ -13,8 +13,8 @@ ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d6e7d7bef97bfc4ffde07959dd9256f0319d685f
-ms.openlocfilehash: ff8eb5361d3dfeaa3715d325ed91c0ad422211ed
+ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
+ms.openlocfilehash: a43184e0efa1de110f5c287c6079e80e1a9dd3de
 
 
 ---
@@ -184,6 +184,6 @@ ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

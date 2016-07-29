@@ -4,18 +4,18 @@ layout: HubPage
 title: "Advanced Threat Analytics 文件"
 description: "適用於 Advanced Threat Analytics (Microsoft 的安全性服務) 的技術文件。"
 keywords: "Advanced Threat Analytics 文件, ATA 文件"
-author: msstevenpo
-manager: stevenpo
+author: msmbaldwin
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: hubpage
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.suite: ems
 ms.assetid: c4a97980-6e19-4d10-bf69-f0b338266efa
 translationtype: Human Translation
-ms.sourcegitcommit: b74b0ee3c9a7b1e60064705998fb8e3ebe2f5c8e
-ms.openlocfilehash: ba6b3362da29d3a375fbb4dc56adcd64fa2b44ad
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: c9914415db42c9bb7dbf25717fb0b51fa5edaae1
 
 
 ---
@@ -195,6 +195,6 @@ ms.openlocfilehash: ba6b3362da29d3a375fbb4dc56adcd64fa2b44ad
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

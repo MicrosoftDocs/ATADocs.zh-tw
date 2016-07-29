@@ -3,18 +3,18 @@ title: "操作 ATA - 完成 | Microsoft ATA"
 description: "引導您完成使用 ATA 和每日活動的步驟。"
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: 347ad9b5e2992699e3c5f83932e7061f32751919
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: 7aaa8adca5e0e0c10157f9c8fadaf5374e060f47
 
 
 ---
@@ -48,6 +48,6 @@ ms.openlocfilehash: 347ad9b5e2992699e3c5f83932e7061f32751919
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

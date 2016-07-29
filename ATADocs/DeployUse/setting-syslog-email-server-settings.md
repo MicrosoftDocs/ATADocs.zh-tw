@@ -3,18 +3,18 @@ title: "設定 ATA 通知 | Microsoft ATA"
 description: "說明當 ATA 偵測到可疑的活動時，如何通知您 (透過電子郵件或 ATA 事件轉寄)"
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: 5864070fe3ad5aedf1ff79d8386caba4b6a79adc
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: 10a7f4c003bc974d344129756f30df990dadf13d
 
 
 ---
@@ -78,6 +78,6 @@ ms.openlocfilehash: 5864070fe3ad5aedf1ff79d8386caba4b6a79adc
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

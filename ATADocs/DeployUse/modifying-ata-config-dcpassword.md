@@ -3,18 +3,18 @@ title: "變更 ATA 設定 - 網域連線密碼 | Microsoft ATA"
 description: "描述如何變更 ATA 閘道上的網域連線密碼。"
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.assetid: 4a25561b-a5ed-44aa-9b72-366976b3c72a
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: 860a83aa4e6656480217a457bb2492431d73637a
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: 7b8904bcb379004b2038e6b9a14c87c3914f1e1f
 
 
 ---
@@ -59,6 +59,6 @@ ms.openlocfilehash: 860a83aa4e6656480217a457bb2492431d73637a
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,18 +3,18 @@ title: "變更 ATA 設定 - IIS 憑證 | Microsoft ATA"
 description: "描述如何變更 IIS 為 ATA 中心所使用的憑證。"
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.assetid: e58a0390-57ef-4c68-a987-2e75e5f3d6b3
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: 6516500f3134228cc92e269ef5ea8bfe4faa19d9
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: 18d3dfdc2262765d71d82f395273e2972118cbfb
 
 
 ---
@@ -62,6 +62,6 @@ ms.openlocfilehash: 6516500f3134228cc92e269ef5ea8bfe4faa19d9
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,18 +3,18 @@ title: "使用 ATA 偵測設定 | Microsoft ATA"
 description: "描述如何為具備異常情況且應該在網路上利用與其他實體不同方式處理的 IP 位址和子網路設定清單"
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.assetid: f4f2ae30-4849-4a4f-8f6d-bfe99a32c746
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: 3575bb9489cae181f7902be23c680830203fafe7
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: 692247420a849db5d77c3c035ee59c4a5c533686
 
 
 ---
@@ -42,6 +42,6 @@ ms.openlocfilehash: 3575bb9489cae181f7902be23c680830203fafe7
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

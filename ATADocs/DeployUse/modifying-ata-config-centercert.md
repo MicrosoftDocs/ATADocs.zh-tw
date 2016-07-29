@@ -3,18 +3,18 @@ title: "變更 ATA 設定 - ATA 中心憑證 | Microsoft ATA"
 description: "說明更新或取代 ATA 中心伺服器上本機電腦存放區中憑證的兩階段程序。"
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.assetid: c8855287-de3b-4cdd-be8f-2128f48a6f27
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: cda6fe75998149a42739907ae5a161d67392a509
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: 5ae9f13c417459e73d85cce3ebbb0293c3e08f83
 
 
 ---
@@ -70,6 +70,6 @@ ms.openlocfilehash: cda6fe75998149a42739907ae5a161d67392a509
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

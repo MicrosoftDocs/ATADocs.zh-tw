@@ -3,18 +3,18 @@ title: "使用 ATA 記錄檔為 ATA 疑難排解 | Microsoft ATA"
 description: "描述如何使用 ATA 記錄檔來疑難排解問題"
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: f13b448399f4184ebb110883800e87902d3b7ac3
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: 2889a5ae78de0e65515fabff80d146198142a495
 
 
 ---
@@ -101,6 +101,6 @@ ATA 閘道和 ATA 輕量型閘道部署記錄：
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

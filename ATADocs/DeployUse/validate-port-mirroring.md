@@ -3,18 +3,18 @@ title: "驗證連接埠鏡像 | Microsoft ATA"
 description: "描述如何驗證已正確設定連接埠鏡像"
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.assetid: ebd41719-c91a-4fdd-bcab-2affa2a2cace
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: 004732f86de15f5cf0058fdfa1759cd4b57a9128
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: d95fd582362fc650dffeb6c4fbf892ba3e367f12
 
 
 ---
@@ -224,6 +224,6 @@ ms.openlocfilehash: 004732f86de15f5cf0058fdfa1759cd4b57a9128
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

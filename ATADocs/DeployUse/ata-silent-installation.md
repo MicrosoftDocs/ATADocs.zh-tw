@@ -3,18 +3,18 @@ title: "無訊息安裝 ATA | Microsoft ATA"
 description: "說明如何以無訊息方式安裝 ATA。"
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: ef4477dbd7f894ecd371008cf0d2325179c55bf5
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: dce4cbaf894d383851a7039b6457a98c1d5ba5d4
 
 
 ---
@@ -217,6 +217,6 @@ Microsoft ATA v1.6 需要安裝 Microsoft .NET Framework 4.6.1。
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

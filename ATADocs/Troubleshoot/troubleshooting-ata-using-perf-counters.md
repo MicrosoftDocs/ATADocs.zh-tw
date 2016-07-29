@@ -3,18 +3,18 @@ title: "使用效能計數器為 ATA 疑難排解 | Microsoft ATA"
 description: "描述如何使用效能計數器疑難排解 ATA 相關問題"
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.assetid: df162a62-f273-4465-9887-94271f5000d2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: 95ba9fd4bee28d96715f7ba7cd04c7ebe788ef7b
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: 4b4ff22df77b904a654b57aca824c154ea935560
 
 
 ---
@@ -103,6 +103,6 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,18 +3,18 @@ title: "為 ATA 錯誤記錄檔疑難排解 | Microsoft ATA"
 description: "說明如何針對 ATA 中的常見錯誤進行疑難排解"
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: cf2e1ab1fec4906e0bf2df8e0407b1951081e62f
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: 6be26fd2d0348557fa7b1c78533eed8a2be1a39f
 
 
 ---
@@ -58,6 +58,6 @@ ms.openlocfilehash: cf2e1ab1fec4906e0bf2df8e0407b1951081e62f
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

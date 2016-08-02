@@ -3,26 +3,43 @@ title: "規劃 ATA 部署 | Microsoft ATA"
 description: "協助您規劃部署並決定支援您的網路需要多少 ATA 伺服器"
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod: identity-ata
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.prod: 
 ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: a43184e0efa1de110f5c287c6079e80e1a9dd3de
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: e0174ecac39b2a8cd469ed698853c447a85e4251
 
 
 ---
 
 # ATA 容量規劃
-本主題協助您判斷支援您的網路需要多少 ATA 伺服器，包括了解您需要多少 ATA 閘道和 ATA 輕量型閘道，以及您的 ATA 中心和 ATA 閘道的伺服器容量。
+本主題協助判斷監視您的網路需要多少 ATA 伺服器，包括了解您需要多少 ATA 閘道及/或 ATA 輕量型閘道，以及您 ATA 中心和 ATA 閘道的伺服器容量。
 
-## ATA 中心大小
+##使用調整大小工具
+若要判斷 ATA 部署容量，建議且最容易的方法是使用 [ATA 調整大小工具](http://aka.ms/atasizingtool)。 執行 ATA 調整大小工具，並從 Excel 檔案結果中，使用下列欄位判斷您需要的 ATA 容量︰
+
+- ATA 中心 CPU 及記憶體：比對結果檔案中 ATA 中心資料表的 **Busy Packets/sec** 欄位與 [ATA 中心資料表](#ata-center-sizing)中的**每秒封包數**欄位。
+
+- ATA 中心儲存體：比對結果檔案中 ATA 中心資料表的 **Avg Packets/sec** 欄位與 [ATA 中心資料表](#ata-center-sizing)中的**每秒封包數**欄位。
+- ATA 閘道︰比對結果檔案中 ATA 閘道資料表的 **Busy Packets/sec** 欄位與 [ATA 閘道資料表](#ata-gateway-sizing)或 [ATA 輕量型閘道資料表](#ata-lightweight-gateway-sizing)中的**每秒封包數**欄位，依據[您所選擇的閘道類型](#choosing-the-right-gateway-type-for-your-deployment)而定。
+
+
+![範例容量規劃工具](media/capacity tool.png)
+
+
+
+若基於某些原因而無法使用 ATA 調整大小工具，您需要以極短的收集間隔 (大約 5 秒)，手動收集 24 小時內所有網域控制站的 packet/sec 計數器資訊。 然後，對於每個網域控制站，您必須計算每日平均和最繁忙期間的 (15 分鐘) 平均。
+下列章節將說明如何從一個網域控制站收集 packets/sec 計數器的指示。
+
+
+
+### ATA 中心大小
 ATA 中心建議最少需要 30 天的資料來進行使用者行為分析。 ATA 資料庫在每個網域控制站中所需的磁碟空間定義如下。 如果您有多個網域控制站，總計每個網域控制站所需的磁碟空間來計算 ATA 資料庫所需的空間總量。
 > [!NOTE] 
 > 作為虛擬機器執行時不支援動態記憶體或任何其他記憶體佔用功能。
@@ -74,7 +91,7 @@ ATA 部署中能夠支援任何 ATA 閘道類型的組合︰
 - 總部資料中心 (具有每秒超過 10,000 個封包的網域控制站)
 
 
-## ATA 輕量型閘道大小
+### ATA 輕量型閘道大小
 
 ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站產生的網路流量而定。 
 > [!NOTE] 
@@ -95,7 +112,7 @@ ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站�
 > 如果網域控制站沒有 ATA 輕量型閘道所需的必要資源數量，網域控制站的效能不會受到影響，但 ATA 輕量型閘道可能無法如預期般運作。
 
 
-## ATA 閘道大小
+### ATA 閘道大小
 
 決定要部署多少 ATA 閘道時，請考慮下列項目。
 
@@ -184,6 +201,6 @@ ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

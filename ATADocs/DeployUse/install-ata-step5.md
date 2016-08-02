@@ -3,18 +3,18 @@ title: "安裝 ATA - 步驟 5 | Microsoft ATA"
 description: "安裝 ATA 的步驟 5 協助您設定 ATA 閘道的設定。"
 keywords: 
 author: rkarlin
-manager: stevenpo
+manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod: identity-ata
+ms.prod: 
 ms.service: advanced-threat-analytics
-ms.technology: security
+ms.technology: 
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5c7163bc7b1989672e587bfb4fa6a65cd4e3751
-ms.openlocfilehash: 3e9f68e9868dc9aaf20fe9d1c4fe2b8bdd685291
+ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
+ms.openlocfilehash: 3580e748d21db73b6fa8384d84e03b9954b823f8
 
 
 ---
@@ -36,10 +36,11 @@ ms.openlocfilehash: 3e9f68e9868dc9aaf20fe9d1c4fe2b8bdd685291
   - **描述**： <br>輸入 ATA 閘道的描述 (可選填)。
   - **連接埠鏡像網域控制站 (FQDN)** (ATA 閘道的必要項，無法針對 ATA 輕量型閘道進行設定)︰ <br>輸入您網域控制站的完整 FQDN，然後按一下加號將它新增至清單。 例如，**dc01.contoso.com**<br /><br />![範例 FDQN 影像](media/ATAGWDomainController.png)
 
-下列資訊適用於您在 [網域控制站] 清單中輸入的伺服器： -   所有透過連接埠鏡像受 ATA 閘道監視流量的網域控制站，都必須列在 [網域控制站] 清單中。 如果網域控制站未列在**網域控制站**清單中，可能無法如預期般偵測可疑的活動。
--   清單中至少有一個網域控制站是通用類別目錄伺服器。 這會讓 ATA 解析樹系中其他網域的電腦與使用者物件。
+下列資訊適用於您在**網域控制站**清單中輸入的伺服器：
 
- - **擷取網路介面卡** (必填)︰<br>
+- 所有透過連接埠鏡像受 ATA 閘道監視流量的網域控制站，都必須列在**網域控制站**清單中。 如果網域控制站未列在**網域控制站**清單中，可能無法如預期般偵測可疑的活動。
+- 清單中至少有一個網域控制站是通用類別目錄伺服器。 這會讓 ATA 解析樹系中其他網域的電腦與使用者物件。
+- **擷取網路介面卡** (必填)︰<br>
      - 針對專用伺服器上的 ATA 閘道，請選取設定為目的地鏡像連接埠的網路介面卡。 這些介面卡將會接收鏡像網域控制站的流量。
      - 針對 ATA 輕量型閘道，則應該是用來與組織中其他電腦通訊的所有網路介面卡。
 
@@ -70,7 +71,7 @@ ms.openlocfilehash: 3e9f68e9868dc9aaf20fe9d1c4fe2b8bdd685291
 
 3.  請查看 [ATA 疑難排解](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-known-errors)以取得協助。
 
-4.  如果這是第一個安裝的 ATA 閘道器，請於幾分鐘後登入 ATA 主控台，然後將開啟的螢幕向右撥動，以開啟 [通知] 窗格。 您應該會在主控台右邊的通知列中看到**最近已了解的實體**清單。
+4.  如果這是第一個安裝的 ATA 閘道，請於幾分鐘後登入 ATA 主控台，然後將開啟的螢幕向右撥動，以開啟 [通知] 窗格。 您應該會在主控台右邊的通知列中看到**最近已了解的實體**清單。
 
 5.  按一下桌面上的 [Microsoft Advanced Threat Analytics] 捷徑以連線到 ATA 主控台。 以您安裝 ATA 中心的相同使用者認證登入。
 6.  主控台的 [搜尋] 列中搜尋項目，例如您網域中的使用者或群組。
@@ -92,6 +93,6 @@ ms.openlocfilehash: 3e9f68e9868dc9aaf20fe9d1c4fe2b8bdd685291
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

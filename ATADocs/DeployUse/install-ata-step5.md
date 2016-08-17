@@ -58,7 +58,7 @@ ms.openlocfilehash: 3580e748d21db73b6fa8384d84e03b9954b823f8
     
 
 3. 您也可以選擇設定 [Syslog 接聽程式和 Windows 事件轉寄集合](configure-event-collection.md)。 
-4. 啟用 [Update ATA Gateway automatically] (自動更新 ATA 閘道) 後，在未來版本中，當您更新 ATA 中心時，所有 ATA 閘道都會自動更新。
+4. 啟用 **[Update ATA Gateway automatically] (自動更新 ATA 閘道)** 後，在未來版本中，當您更新 ATA 中心時，所有 ATA 閘道都會自動更新。
 3.  按一下 **[儲存]**。
 
 

@@ -54,7 +54,7 @@ ATA 可在偵測到可疑的活動時通知您，方法是透過電子郵件或�
 ![ATA 組態設定圖示](media/ATA-config-icon.JPG)
 
 2. 選取 [通知]。
-3. 在 **[Syslog notifications] (Syslog 通知)** 下，使用切換鍵來選取應該傳送的通知︰
+3. 在 **[Syslog notifications (Syslog 通知)]** 下，使用切換鍵來選取應該傳送的通知︰
 
 
     - 偵測到新的可疑活動

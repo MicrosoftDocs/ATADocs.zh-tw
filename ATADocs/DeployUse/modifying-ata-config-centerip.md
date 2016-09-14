@@ -4,7 +4,7 @@ description: "描述如何變更 IP 位址、連接埠或您 ATA 中心的憑證
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,15 @@ ms.assetid: 93b27f15-f7e5-49bb-870a-d81d09dfe9fc
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 4eb552b9f7d42895abf08ec4cd9216b5204c5e0b
+ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
+ms.openlocfilehash: e6d42610d1c785da5b7c7b1cf035d94c2fddff4b
 
 
 ---
+
+*適用於︰Advanced Threat Analytics 1.7 版*
+
+
 
 # 變更 ATA 設定 - ATA 中心 IP 位址
 
@@ -46,9 +50,9 @@ ATA 閘道會在本機儲存它們要連接的 ATA 中心之 IP 位址。 它們
 
     ![ATA 組態設定圖示](media/ATA-config-icon.JPG)
 
-3.  選取 [一般]。
+3.  選取 [中心]。
 
-4.  在 [ATA 中心服務的 IP 位址: 連接埠] 下，選取其中一個現有的 IP 位址，或選取 [新增自訂 IP 位址] 並輸入 IP 位址。
+4.  在 [中心服務 IP 位址 : 連接埠] 下，選取其中一個現有的 IP 位址，或選取 [新增自訂 IP 位址] 並輸入 IP 位址。
 
 5.  按一下 [儲存]。
 
@@ -76,10 +80,10 @@ ATA 閘道會在本機儲存它們要連接的 ATA 中心之 IP 位址。 它們
 ## 另請參閱
 - [使用 ATA 主控台](working-with-ata-console.md)
 - [安裝 ATA](install-ata.md)
-- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [查看 ATA 論壇！](https://aka.ms/ata-forum)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

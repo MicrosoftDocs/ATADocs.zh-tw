@@ -4,7 +4,7 @@ description: "說明更新或取代 ATA 中心伺服器上本機電腦存放區�
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,20 +13,24 @@ ms.assetid: c8855287-de3b-4cdd-be8f-2128f48a6f27
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 5ae9f13c417459e73d85cce3ebbb0293c3e08f83
+ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
+ms.openlocfilehash: e707d354396f8eeed58c13ee1e9e91df9888e030
 
 
 ---
+
+*適用於︰Advanced Threat Analytics 1.7 版*
+
+
 
 # 變更 ATA 設定 - ATA 中心憑證
 
 >[!div class="step-by-step"]
 [« ATA 中心伺服器的 IP 位址](modifying-ata-config-centerip.md)
-[ATA 主控台 IP 位址 »](modifying-ata-config-consoleip.md)
+[ATA 主控台 URL »](modifying-ata-config-consoleurl.md)
 
 ## 變更 ATA 中心憑證
-如果您的憑證過期，且在 ATA 中心伺服器的本機電腦存放區中安裝新憑證後需要更新或更換，請遵循此兩階段程序取代憑證︰
+如果您的憑證即將過期，且在 ATA 中心伺服器的本機電腦存放區中安裝新憑證後需要更新或更換，請遵循此兩階段程序取代憑證︰
 
 -   第一階段 – 更新您想 ATA 中心服務使用的憑證。 此時 ATA 中心服務仍會繫結至原始憑證。 當 ATA 閘道同步處理其設定時，它們將擁有兩個可有效相互驗證的潛在憑證。 只要 ATA 閘道可以用原始憑證來連接，就不會嘗試新的憑證。
 
@@ -35,6 +39,7 @@ ms.openlocfilehash: 5ae9f13c417459e73d85cce3ebbb0293c3e08f83
 > [!NOTE]
 > -   如果在第一階段 ATA 閘道已離線且從未取得更新的組態，您需要在 ATA 閘道上手動更新設定的 JSON 檔案。
 > -   您使用的憑證必須受 ATA 閘道所信任。
+> -   憑證也可用於 ATA 主控台，所以應符合 ATA 主控台位址以避免瀏覽器警告
 > -   如果您需要在啟用新的憑證後部署新的 ATA 閘道，則需要再次下載 ATA 閘道安裝套件。
 
 1.  開啟 ATA 主控台。
@@ -43,7 +48,7 @@ ms.openlocfilehash: 5ae9f13c417459e73d85cce3ebbb0293c3e08f83
 
     ![ATA 組態設定圖示](media/ATA-config-icon.JPG)
 
-3.  選取 [ATA 中心]。
+3.  選取 [中心]。
 
 4.  在 [憑證]下，選取清單中其中一個憑證。
 
@@ -61,15 +66,15 @@ ms.openlocfilehash: 5ae9f13c417459e73d85cce3ebbb0293c3e08f83
 
 >[!div class="step-by-step"]
 [« ATA 中心伺服器的 IP 位址](modifying-ata-config-centerip.md)
-[ATA 主控台 IP 位址 »](modifying-ata-config-consoleip.md)
+[ATA 主控台 URL »](modifying-ata-config-consoleurl.md)
 
 ## 另請參閱
 - [使用 ATA 主控台](working-with-ata-console.md)
 - [安裝 ATA](install-ata.md)
-- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+- [查看 ATA 論壇！](https://aka.ms/ata-forum)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

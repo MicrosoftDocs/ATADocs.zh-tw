@@ -4,7 +4,7 @@ description: "描述如何使用 ATA 記錄檔來疑難排解問題"
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,15 @@ ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 2889a5ae78de0e65515fabff80d146198142a495
+ms.sourcegitcommit: ee5f60e43f50562e7a7309eafa3b52cf946b0d3b
+ms.openlocfilehash: 493f255ae09b51d27079a186bb802f0f3f9706bc
 
 
 ---
+
+*適用於︰Advanced Threat Analytics 1.7 版*
+
+
 
 # 使用 ATA 記錄檔來疑難排解 ATA
 ATA 記錄提供深入解析，說明 ATA 的每個元件在任何指定時間點執行的動作。
@@ -25,7 +29,7 @@ ATA 記錄提供深入解析，說明 ATA 的每個元件在任何指定時間�
 ## ATA 閘道記錄檔
 在本節中，對 ATA 閘道的每個參考也都適用於 ATA 輕量型閘道。 
 
-ATA 閘道記錄檔位於名為 **Logs** 的子資料夾下。 在預設安裝位置中，其位於︰**C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**。
+ATA 閘道記錄檔位於安裝 ATA、稱為 **Logs** 的子資料夾中，預設位置為：  。 在預設安裝位置中，其位於︰**C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**。
 
 ATA 閘道有下列記錄檔︰
 
@@ -36,13 +40,17 @@ ATA 閘道有下列記錄檔︰
 -   **Microsoft.Tri.Gateway-Errors.log** – 此記錄檔只包含 ATA 閘道所捕捉的錯誤。 其主要用途是執行健康情況檢查，並調查需要與特定時間相互關聯的問題。
 
 -   **Microsoft.Tri.Gateway-ExceptionStatistics.log** – 此記錄檔群組所有類似的錯誤和例外狀況，並測量其計數。
-    每當 ATA 閘道服務啟動時，這個檔案開始是空的，而且會每分鐘更新一次。 其主要用途是了解 ATA 閘道是否有任何新的錯誤或問題。由於錯誤會經過分組，因此更容易閱讀及查看是否有新類型的錯誤或問題。
+    每當 ATA 閘道服務啟動時，這個檔案開始是空的，而且會每分鐘更新一次。其主要用途是了解 ATA 閘道是否有任何新的錯誤或問題 (由於錯誤會經過分組，因此更容易閱讀及快速了解是否有任何新的問題)。
+-   **Microsoft.Tri.Gateway.Updater.log** - 此記錄檔用於閘道更新程式程序中，負責更新閘道 (如果設定為自動執行)。 如果是 ATA 輕量型閘道更新程式，閘道更新程式程序也負責 ATA 輕量型閘道的資源限制。
+-   **Microsoft.Tri.Gateway.Updater-ExceptionStatistics.log** - 此記錄檔會將所有類似的錯誤和例外狀況分組，並測量其計數。 每當 ATA 更新程式服務啟動時，這個檔案開始是空的，而且會每分鐘更新一次。 它可讓您了解 ATA 更新程式是否有任何新的錯誤或問題。 這些錯誤會分組，方便您快速了解是否偵測到任何新的錯誤或問題。
 
 > [!NOTE]
-> 前三個記錄檔有大小上限 50 MB。 到達該大小時，會開啟新的記錄檔，並將上一個記錄檔重新命名為「&lt;原始檔案名稱&gt;-Archived-00000」，該數字隨每次重新命名遞增。
+> 前三個記錄檔有大小上限 50 MB。 到達該大小時，會開啟新的記錄檔，並將上一個記錄檔重新命名為「&lt;原始檔案名稱&gt;-Archived-00000」，該數字隨每次重新命名遞增。 根據預設，如果已經有超過 10 個相同類型的檔案，就會刪除最舊的檔案。
 
 ## ATA 中心記錄檔
 ATA 中心記錄位於名為 **Logs** 的子資料夾中。 在預設安裝位置中，其位於︰**C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs**。
+> [!Note]
+> ATA 主控台記錄檔先前位於 IIS 記錄檔之下，現在則位於 ATA 中心記錄檔之下。
 
 ATA 中心有下列記錄檔︰
 
@@ -53,27 +61,11 @@ ATA 中心有下列記錄檔︰
 -   **Microsoft.Tri.Center-Errors.log** – 此記錄檔只包含 ATA 中心所捕捉的錯誤。 其主要用途是執行健康情況檢查，並調查需要與特定時間相互關聯的問題。
 
 -   **Microsoft.Tri.Center-ExceptionStatistics.log** – 此記錄檔群組所有類似的錯誤和例外狀況，並測量其計數。
-    每當 ATA 中心服務啟動時，這個檔案開始是空的，而且會每分鐘更新一次。 其主要用途是了解 ATA 閘道是否有任何新的錯誤或問題。由於錯誤會經過分組，因此更容易閱讀及查看是否有新類型的錯誤或問題。
+    每當 ATA 中心服務啟動時，這個檔案開始是空的，而且會每分鐘更新一次。 其主要用途是了解 ATA 中心是否有任何新的錯誤或問題 - 由於錯誤會經過分組，因此更容易快速了解是否有新的錯誤或問題。
 
 > [!NOTE]
-> 前三個記錄檔有大小上限 50 MB。 到達該大小時，會開啟新的記錄檔，並將上一個記錄檔重新命名為「&lt;原始檔案名稱&gt;-Archived-00000」，該數字隨每次重新命名遞增。
+> 前三個記錄檔有大小上限 50 MB。 到達該大小時，會開啟新的記錄檔，並將上一個記錄檔重新命名為「&lt;原始檔案名稱&gt;-Archived-00000」，該數字隨每次重新命名遞增。 根據預設，如果已經有超過 10 個相同類型的檔案，就會刪除最舊的檔案。
 
-## ATA 主控台記錄檔
-ATA 主控台記錄 (管理 API 記錄) 位於名為 **Logs** 的子資料夾中。 在預設安裝位置中，其位於︰**C:\Program Files\Microsoft Advanced Threat Analytics\Center\Management\Logs**。
-
-ATA 主控台有下列記錄檔︰
-
--   **w3wp.log** – 此記錄檔包含管理程序 (IIS) 中發生的所有項目。
-
-
--   **w3wp-Errors.log** – 此記錄檔只包含管理程序 (IIS) 所捕捉的錯誤。
-
-
--   **8e75f9f1-ExceptionStatistics.log** – 此記錄檔群組所有類似的錯誤和例外狀況，並測量其計數。
-    每當閘道服務將啟動時，這個檔案開始是空的，而且會每分鐘更新一次。 其主要用途是了解 ATA 閘道是否有任何新的錯誤或問題。由於錯誤會經過分組，因此更容易閱讀及查看是否有新類型的錯誤或問題。
-
-> [!NOTE]
-> 前兩個記錄檔有大小上限 50 MB。 到達該大小時，會開啟新的記錄檔，並將上一個記錄檔重新命名為「&lt;原始檔案名稱&gt;-Archived-00000」，該數字隨每次重新命名遞增。
 
 ## ATA 部署記錄檔
 對於安裝產品的使用者，ATA 部署記錄位於暫存記錄中。 在預設安裝位置中，其位於︰**C:\Users\Administrator\AppData\Local\Temp** (或 %temp% 上方的一個目錄)。
@@ -92,6 +84,7 @@ ATA 閘道和 ATA 輕量型閘道部署記錄：
 
 -   **Microsoft Advanced Threat Analytics Gateway_20151214014801_001_MsiPackage.log** - 此記錄檔會列出 ATA 閘道二進位檔的部署程序步驟。 其主要用途是追蹤 ATA 閘道二進位檔的部署。
 
+
 ## 另請參閱
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
 - [ATA 容量規劃](/advanced-threat-analytics/plan-design/ata-capacity-planning)
@@ -101,6 +94,6 @@ ATA 閘道和 ATA 輕量型閘道部署記錄：
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

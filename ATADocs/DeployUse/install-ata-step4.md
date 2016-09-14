@@ -4,7 +4,7 @@ description: "安裝 ATA 的步驟 4 協助您安裝 ATA 閘道。"
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,15 @@ ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 6052a911c12f8dbb757ab8445f9e0c6ec09b530e
+ms.sourcegitcommit: 54e5105e78b6db9f33488135601381af5503aa4a
+ms.openlocfilehash: 305c939ebda636617ece6e41f0554af0e948c3ec
 
 
 ---
+
+*適用於︰Advanced Threat Analytics 1.7 版*
+
+
 
 # 安裝 ATA - 步驟 4
 
@@ -41,22 +45,32 @@ ms.openlocfilehash: 6052a911c12f8dbb757ab8445f9e0c6ec09b530e
 > [!NOTE] 
 > 從 ZIP 檔案直接安裝將會失敗。
 
-2.  從提升權限的命令提示字元執行 **Microsoft ATA Gateway Setup.exe**，然後遵循安裝精靈的步驟。
+2.  執行 **Microsoft ATA Gateway Setup.exe**，然後依照安裝精靈的步驟。
 
 3.  在 [歡迎] 頁面中，選取您的語言，然後按一下 [下一步]。
 
+4.  安裝精靈會自動檢查伺服器為網域控制站或專用伺服器。 如果是網域控制站，將會安裝 ATA 輕量型閘道，如果是專用伺服器，將會安裝 ATA 閘道。 
+    
+    例如，如果是 ATA 輕量型閘道，則顯示下列畫面讓您知道將會在您的網域控制站上安裝 ATA 輕量型閘道︰
+    
+    ![ATA 輕量型閘道安裝](media/ATA-lightweight-gateway-install-selected.png) 按 [下一步]。
+
+    > [!NOTE] 
+    > 如果網域控制站或專用伺服器不符合安裝的最低硬體需求，您會收到一則警告。 但這並不會阻止您按 [下一步] 和繼續進行安裝。 在不需要這麼多資料儲存空間的小型實驗室測試環境中，則需要使用此選項安裝 ATA。 如果是生產環境，強烈建議使用 ATA 的 [容量規劃](/advanced-threat-analytics/plan-design/ata-capacity-planning)指南，確保您的網域控制站或專用伺服器符合必要需求。
+
 4.  在 [ATA 閘道設定] 下，根據您的環境輸入下列資訊︰
 
-    ![ATA 閘道組態設定影像](media/ATA-Gateway-Configuration.JPG)
+    ![ATA 閘道組態設定影像](media/ATA-Gateway-Configuration.png)
 
     |欄位|說明|註解|
     |---------|---------------|------------|
     |安裝路徑|這是將安裝 ATA 閘道的位置。 位置預設為 %programfiles%\Microsoft Advanced Threat Analytics\Gateway|保留預設值|
-    |ATA 閘道服務 SSL 憑證|這是 ATA 閘道將使用的憑證。|自我簽署憑證僅適合使用在實驗室環境中。|
-    |ATA 閘道註冊|輸入 ATA 系統管理員的使用者名稱和密碼。|要使 ATA 閘道器向 ATA 中心登錄，請輸入已安裝 ATA 中心的使用者名稱和密碼。 此使用者必須是 ATA 中心下列其中一個本機群組的成員。<br /><br />-   系統管理員<br />-   Microsoft Advanced Threat Analytics 管理員 **注意︰**這些認證只用於登錄而不會儲存在 ATA 上。|
-    安裝 ATA 閘道期間將安裝及設定下列元件︰
+    |閘道服務 SSL 憑證|這是 ATA 閘道將使用的憑證。|自我簽署憑證僅適合使用在實驗室環境中。|
+    |閘道註冊|輸入 ATA 系統管理員的使用者名稱和密碼。|要使 ATA 閘道器向 ATA 中心登錄，請輸入已安裝 ATA 中心的使用者名稱和密碼。 此使用者必須是 ATA 中心下列其中一個本機群組的成員。<br /><br />-   系統管理員<br />-   Microsoft Advanced Threat Analytics 管理員 **注意︰**這些認證只用於登錄而不會儲存在 ATA 上。|
+    
+5. 按一下 [安裝]。 安裝 ATA 閘道期間將安裝及設定下列元件︰
 
-    -   KB 3047154
+    -   KB 3047154 (僅適用於 Windows Server 2012 R2)
 
         > [!IMPORTANT]
         > -   請勿將 KB 3047154 安裝於虛擬主機 (執行虛擬化的主機；可在虛擬機器上執行)。 這可能會導致連接埠鏡像無法正常運作。 
@@ -84,6 +98,6 @@ ms.openlocfilehash: 6052a911c12f8dbb757ab8445f9e0c6ec09b530e
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

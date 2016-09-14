@@ -4,7 +4,7 @@ description: "描述如何變更 ATA 閘道上的網域連線密碼。"
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,16 +13,20 @@ ms.assetid: 4a25561b-a5ed-44aa-9b72-366976b3c72a
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 7b8904bcb379004b2038e6b9a14c87c3914f1e1f
+ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
+ms.openlocfilehash: 7cee457a8959526b25a68c50efea2976bafbef75
 
 
 ---
 
+*適用於︰Advanced Threat Analytics 1.7 版*
+
+
+
 # 變更 ATA 設定 - 網域連線密碼
 
 >[!div class="step-by-step"]
-[« IIS 憑證](modifying-ata-config-iiscert.md)
+[« ATA 主控台 URL](modifying-ata-config-consoleurl.md)
 
 
 ## 變更網域連線密碼
@@ -31,26 +35,28 @@ ms.openlocfilehash: 7b8904bcb379004b2038e6b9a14c87c3914f1e1f
 如果您懷疑此情況已發生，請於 ATA 閘道的上的 Microsoft.Tri.Gateway Errors.log 檔案查看下列項目︰
 `The supplied credential is invalid.`
 
-若要修正此問題，請遵循此程序來更新 ATA 閘道上的網域連線密碼︰
+若要修正此問題，請遵循此程序來更新 ATA 中心上的網域連線密碼︰
 
-1.  ATA 閘道上開啟 ATA 主控台。
+1.  在 ATA 中心上開啟 ATA 主控台。
 
 2.  選取工具列上的 [設定] 選項並選取 [組態]。
 
     ![ATA 組態設定圖示](media/ATA-config-icon.JPG)
 
-3.  選取 [一般]。
+3.  選取 [目錄服務]。
 
-    ![ATAA 閘道變更密碼的影像](media/ATA-GW-change-DC-password.JPG)
+    ![ATAA 閘道變更密碼的影像](media/ATA-GW-change-DC-password.png)
 
-4.  在 [一般] 下，變更密碼。
+4.  在 [密碼] 下，變更密碼。
 
-5.  按一下 **[儲存]**。
+    如果 ATA 中心有連線到網域，請使用 [測試連線] 按鈕來驗證認證
+
+5.  按一下 [儲存]。
 
 6.  變更密碼後，手動檢查 ATA 閘道服務是否正在 ATA 閘道伺服器上執行。
 
 >[!div class="step-by-step"]
-[« IIS 憑證](modifying-ata-config-iiscert.md)
+[« ATA 主控台 URL](modifying-ata-config-consoleurl.md)
 
 ## 另請參閱
 - [使用 ATA 主控台](working-with-ata-console.md)
@@ -59,6 +65,6 @@ ms.openlocfilehash: 7b8904bcb379004b2038e6b9a14c87c3914f1e1f
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

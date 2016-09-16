@@ -14,8 +14,8 @@ ms.technology:
 ms.suite: ems
 ms.assetid: c4a97980-6e19-4d10-bf69-f0b338266efa
 translationtype: Human Translation
-ms.sourcegitcommit: 1d610cead982b7a87a03339d960e6a2236a97932
-ms.openlocfilehash: 6cca68b7f0410c9b40ffdb2c97feaf0663b93ae0
+ms.sourcegitcommit: 6d95045842d8bb19dba2e8d0fe13b1bf96e2e304
+ms.openlocfilehash: be7f4c021a6da9d58bb7e8329d9320db9ae19716
 
 
 ---
@@ -36,7 +36,7 @@ ms.openlocfilehash: 6cca68b7f0410c9b40ffdb2c97feaf0663b93ae0
       <h2 class="section-heading"><span class="icon icon-warning"></span> 主要內容</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><mark><b>新消息</b></mark> <a href="/understand-explore/whats-new-version-1.7">發行 ATA 1.7 版</a></li>
+          <li><mark><b>新消息</b></mark> <a href="/advanced-threat-analytics/understand-explore/whats-new-version-1.7">發行 ATA 1.7 版</a></li>
           <li><a href="/advanced-threat-analytics/understand-explore/what-is-ata">什麼是 Advanced Threat Analytics？</a></li>
           <li><a href="/advanced-threat-analytics/understand-explore/ata-technical-faq">常見問題集</a></li>
         </ul>
@@ -196,6 +196,6 @@ ms.openlocfilehash: 6cca68b7f0410c9b40ffdb2c97feaf0663b93ae0
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

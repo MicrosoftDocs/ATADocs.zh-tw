@@ -4,7 +4,7 @@ description: "提供關於 ATA 的常見問題清單以及相關解答"
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,12 @@ ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 09de79e1f8fee6b27c7ba403df1af4431bd099a9
-ms.openlocfilehash: 51440757c89130f8454e9c2b1abe7182f2b7eb41
+ms.sourcegitcommit: b8ad2f343b8397184cd860803f06b0d59c492f5a
+ms.openlocfilehash: 96b3ce171ca07bf44163d49b50377fccd6472a08
 
 
 ---
+*適用於︰Advanced Threat Analytics 1.7 版*
 
 # ATA 常見問題集
 本文章提供關於 ATA 的常見問題清單，並提供見解和解答。
@@ -39,23 +40,26 @@ ms.openlocfilehash: 51440757c89130f8454e9c2b1abe7182f2b7eb41
 這需要針對受監視的網域控制站從遠端執行，而不是從 ATA 閘道執行。
 
 ## 如何確認 Windows 事件轉送？
-您可以在 **\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin** 目錄中從命令提示字元執行︰
+您可以將下列程式碼放入一個檔案，然後在 **\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin** 目錄中從命令提示字元執行，如下所示︰
 
-        mongo ATA --eval "printjson(db.getCollectionNames())" | find /C "NtlmEvents"`
+mongo.exe ATA 檔案名稱
+
+        db.getCollectionNames().forEach(function(collection) {
+        if (collection.substring(0,10)=="NtlmEvent_") {
+                if (db[collection].count() > 0) {
+                                  print ("Found "+db[collection].count()+" NTLM events") 
+                                }
+                }
+        });
+
 ## ATA 會處理加密的流量嗎？
-不會分析加密的流量 (例如︰LDAPS、IPSEC ESP)。
+ATA 會分析多個網路通訊協定，以及從 SIEM 或透過 Windows 事件轉送收集的事件，因此即使不分析加密的流量 (例如 LDAPS 和 IPSEC ESP)，ATA 仍然可以運作，大多數偵測也不會受到影響
+
 ## ATA 會處理 Kerberos 防護嗎？
 Kerberos 保護又稱為彈性驗證安全通道 (FAST)，ATA 支援啟用 Kerberos 保護，但過度傳遞雜湊偵測時除外 (將無法運作)。
 ## 我需要多少 ATA 閘道？
 
-首先，建議您在任何可容納 ATA 輕量型閘道的網域控制站上使用它；如需判斷這點，請參閱 [ATA 輕量型閘道大小](/advanced-threat-analytics/plan-design/ata-capacity-planning#ata-lightweight-gateway-sizing)。 
-
-如果 ATA 輕量型閘道可以涵蓋所有網域控制站，則不需要 ATA 閘道。
-
-針對 ATA 輕量型閘道無法涵蓋的任何網域控制站，請在決定您需要多少 ATA 閘道時，考慮下列項目︰
-
- - 網域控制站產生的總流量，以及網路架構 (若要設定連接埠鏡像)。 如需深入了解如何判斷網域控制站產生多少流量，請參閱 [Domain controller traffic estimation](/advanced-threat-analytics/plan-design/ata-capacity-planning#Domain-controller-traffic-estimation) (網域控制站流量估計)。
- - 連接埠鏡像的操作限制也會決定您需要多少 ATA 閘道來支援網域控制站，例如︰每個交換器、每個資料中心，每個區域 - 每個環境有它自己的考量。 
+ATA 閘道數目取決於您的網路配置、封包的數量和 ATA 所擷取的事件數量。 若要得知確切的數字，請參閱 [ATA 輕量型閘道大小](/advanced-threat-analytics/plan-design/ata-capacity-planning#ata-lightweight-gateway-sizing)。 
 
 ## 我需要為 ATA 準備多少儲存空間？
 以一整天平均每秒 1000 個封包為例，您需要 0.3 GB 的儲存空間。<br /><br />如需 ATA 中心大小的詳細資訊，請參閱 [ATA Capacity Planning](/advanced-threat-analytics/plan-design/ata-capacity-planning) (ATA 容量規劃)。
@@ -79,11 +83,10 @@ ATA 輕量型閘道可以涵蓋大多數虛擬網域控制站；如需判斷 ATA
 有 2 個東西要備份︰
 
 -   ATA 儲存的流量和事件，可以使用任何支援的資料庫備份程序加以備份；如需詳細資訊，請參閱 [ATA database management](/advanced-threat-analytics/deploy-use/ata-database-management) (ATA 資料庫管理)。 
--   ATA 的設定儲存在資料庫中，且每個小時會自動備份。 
-
+-   ATA 的設定。 這儲存在資料庫中，每小時自動備份在 ATA 中心部署位置中的 [Backup] 資料夾。  請參閱 [ATA 資料庫管理](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/ata-database-management)了解詳細資訊。
 ## ATA 可以偵測什麼？
 ATA 可以偵測已知的惡意攻擊和技術、安全性問題和風險。
-如需 ATA 偵測的完整清單，請參閱 [What is Microsoft Advanced Threat Analytics?](what-is-ata.md) (什麼是 Microsoft Advanced Threat Analytics？)
+如需 ATA 偵測的完整清單，請參閱 [ATA 會執行哪些偵測？](ata-threats.md)。
 
 ## 我需要為 ATA 準備何種儲存體？
 建議使用具有低延遲磁碟存取 (不到 10 毫秒) 的快速存放裝置 (不建議使用 7200 RPM 磁碟)。 RAID 設定應該能夠支援大量寫入負載 (不建議使用 RAID 5/6 及其衍生項目)。
@@ -95,9 +98,9 @@ ATA 閘道需要至少兩張網路介面卡︰<br>1.一個 NIC 連線到內部�
 ATA 與 SIEM 已經雙向整合，如下所示︰
 
 1. 可將 ATA 設定為在可疑活動發生時將 Syslog 警示傳送至任何使用 CEF 格式的 SIEM 伺服器。
-2. 可將 ATA 設定為接收來自[這些 SIEM](/advanced-threat-analytics/deploy-use/configure-event-collection#siem-support) 每個 Windows 事件識別碼為 4776 的 Syslog 訊息。
+2. 可將 ATA 設定為接收來自[這些 SIEM](/advanced-threat-analytics/deploy-use/configure-event-collection#siem-support)，每個 Windows 事件識別碼為 4776 的 Syslog 訊息。
 
-## ATA 是否可以監視 IaaS 解決方案上顯現的網域控制站？
+## ATA 是否可以監視在 IaaS 解決方案上虛擬的網域控制站？
 
 是，您可以使用 ATA 輕量型閘道來監視任何 IaaS 解決方案中的網域控制站。
 
@@ -126,8 +129,7 @@ Microsoft Advanced Threat Analytics 是內部部署的產品。
 是。 因為電腦帳戶 (以及任何其他實體) 可以用來執行惡意活動，ATA 會監視所有電腦帳戶的行為以及環境中的所有其他實體。
 
 ## ATA 支援多網域和多樹系嗎？
-公開上市後，Microsoft Advanced Threat Analytics 將會支援具有相同樹系界限的多網域。 樹系本身是真正的「安全性界限」，使得多網域支援可以讓客戶的環境 100% 被 ATA 涵蓋。
-
+Microsoft Advanced Threat Analytics 支援在相同樹系邊界內的多網域環境。 多樹系則需要為每個樹系部署 ATA。
 ## 可以看到部署的整體健全狀況嗎？
 是，您可以檢視部署的整體健全狀況以及與組態、連線等相關的特定問題，而且系統會在問題發生時警示您。
 
@@ -142,6 +144,6 @@ Microsoft Advanced Threat Analytics 是內部部署的產品。
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

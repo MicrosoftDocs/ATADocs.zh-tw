@@ -4,7 +4,7 @@ description: "描述 Microsoft Advanced Threat Analytics 的架構 (ATA)"
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,16 @@ ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 18ce237fad1bb0de8e50cd640231ce1b36ab9a6b
+ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
+ms.openlocfilehash: c416fba5aace73cf585e7f6ca604a8c61c3c6fcc
 
 
 ---
+
+*適用於︰Advanced Threat Analytics 1.7 版*
+
+
+
 
 # ATA 架構
 此圖表中詳細說明 Advanced Threat Analytics 架構︰
@@ -181,6 +186,6 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

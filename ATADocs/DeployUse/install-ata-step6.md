@@ -4,7 +4,7 @@ description: "在安裝 ATA 的最後一個步驟裡，您可以設定短期租�
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/28/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,36 +13,47 @@ ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: c9712b0ad8d67b1e618cb75b14785f8079020864
+ms.sourcegitcommit: e3b690767e5c6f5561a97a73eccfbf50ddb04148
+ms.openlocfilehash: 57fe1272e95f69ef9d614505bbef0bb6c1d8ccb6
 
 
 ---
+
+*適用於︰Advanced Threat Analytics 1.7 版*
+
+
 
 # 安裝 ATA - 步驟 6
 
 >[!div class="step-by-step"]
 [« 步驟 5](install-ata-step5.md)
 
-## 步驟 6： 設定短期租用子網路和 Honeytoken 使用者
-短期租用子網路是 IP 位址指派變更非常快速的子網路，通常在幾秒或幾分鐘內就會變更。 例如，用於您 Vpn 和 Wi-fi IP 位址的 IP 位址。 若要輸入您組織中使用的短期租用子網路清單，請遵循下列步驟︰
+## 步驟 6： 設定 IP 位址排除項目和 Honeytoken 使用者
+ATA 可從兩種類型的偵測排除特定的 IP 位址和 IP 子網路︰**DNS 探查**和**傳遞票證**。 
 
-1.  從 ATA 閘道器電腦上的 ATA 主控台，按一下 [設定] 圖示，然後選取 [組態]。
+例如，**DNS 探查排除項目**可以是一個使用 DNS 做為掃描機制的安全性掃描程式。 排除項目可協助 ATA 忽略這類掃描器。 「傳遞票證」排除項目的一個範例是 NAT 裝置。    
+
+ATA 也可以用來設定 Honeytoken 使用者，用來當做惡意執行者的設陷 - 與此 (通常是休眠) 帳戶相關聯的任何驗證將會觸發警示。
+
+若要設定上述項目，請依照下列步驟進行：
+
+1.  從 ATA 主控台按一下設定圖示，然後選取 [設定]。
 
     ![ATA 組態設定](media/ATA-config-icon.JPG)
 
-2.  在 [偵測] 下方，輸入下列短期租用子網路的項目。 輸入使用斜線標記法格式的短期租用子網路，例如︰`192.168.0.0/24` 並按一下加號。
+2.  在 [偵測排除項目] 下，針對 [DNS 探查] 或 [傳遞票證] 輸入 IP 位址。 使用 CIDR 格式，例如︰`192.168.1.0/24`，然後按一下加號。
 
-3.  如是 Honeytoken 帳戶 SID，請輸入沒有任何網路活動的使用者帳戶 SID，並按一下加號。 例如：`S-1-5-21-72081277-1610778489-2625714895-10511`。
+    ![儲存變更](media/ATA-exclusions.png)
+
+3.  在 [偵測設定] 下輸入 Honeytoken 帳戶的 SID，然後按一下加號。 例如：`S-1-5-21-72081277-1610778489-2625714895-10511`。
+
+    ![ATA 組態設定](media/ATA-honeytoken.png)
 
     > [!NOTE]
     > 若要尋找使用者的 SID，請在 ATA 主控台中搜尋使用者，然後按一下 [帳戶資訊] 索引標籤。 
 
-4.  設定排除項目︰您可以設定要從特定可疑活動中排除的 IP 位址。 如需詳細資訊，請參閱[使用 ATA 偵測設定](working-with-detection-settings.md)。
+4.  按一下 [儲存]。
 
-5.  按一下 [儲存]。
-
-![儲存變更](media/ATA-VPN-Subnets.JPG)
 
 恭喜，您已成功部署 Microsoft Advanced Threat Analytics！
 
@@ -64,6 +75,6 @@ ATA 將立即開始掃描是否有可疑的活動。 某些活動 (例如某些�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

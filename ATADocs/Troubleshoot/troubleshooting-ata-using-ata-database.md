@@ -4,7 +4,7 @@ description: "描述如何使用 ATA 資料庫來協助疑難排解問題"
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,15 @@ ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: c86b6dc880238e262f696e88c54bc1bc7e01a1db
+ms.sourcegitcommit: af0508f82d8cf190dcd3ff058f4c2ff37b4b0595
+ms.openlocfilehash: dfc6c902cb13b1a2bf927cd235806ec32d9fefc3
 
 
 ---
+
+*適用於︰Advanced Threat Analytics 1.7 版*
+
+
 
 # 使用 ATA 資料庫疑難排解 ATA
 ATA 會使用 MongoDB 作為其資料庫。
@@ -45,15 +49,6 @@ ATA 會使用 MongoDB 作為其資料庫。
 `db.UniqueEntity.find({Name: "John Doe"})`<br>記下其識別碼 (由「`_id`」值指示) 在我們的範例中，我們假設識別碼是「`123bdd24-b269-h6e1-9c72-7737as875351`」<br>然後，搜尋正在尋找的日期前最接近的日期集合，在我們的範例為 20/10/2015。<br>然後，搜尋 John Doe 的帳戶 NTLM 活動︰ 
 
 `db.Ntlms_<closest date>.find({SourceAccountId: "123bdd24-b269-h6e1-9c72-7737as875351"})`
-## ATA 設定檔
-ATA 組態會儲存在資料庫的「SystemProfile 」集合中。
-ATA 中心服務每隔一小時會將這個集合備份到名為「SystemProfile.json」的檔案。 這位於名為「Backup」的子資料夾中。 在預設的 ATA 安裝位置中，它可以在這裡找到︰**C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup\SystemProfile.json**。 
-
-**注意**：建議在針對 ATA 進行重大變更時，在某處備份此檔案。
-
-可執行下列命令來還原所有設定︰
-
-`mongoimport.exe --db ATA --collection SystemProfile --file "<SystemProfile.json backup file>" --upsert`
 
 ## 另請參閱
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
@@ -64,6 +59,6 @@ ATA 中心服務每隔一小時會將這個集合備份到名為「SystemProfile
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

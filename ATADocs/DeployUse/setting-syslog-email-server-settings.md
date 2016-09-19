@@ -4,7 +4,7 @@ description: "說明當 ATA 偵測到可疑的活動時，如何通知您 (透�
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,15 @@ ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 10a7f4c003bc974d344129756f30df990dadf13d
+ms.sourcegitcommit: a4ba68547d6746625a44aca5d05790c3ad138f4e
+ms.openlocfilehash: 9a8461da7ff8b0f939a11f85e5e8dc21d191cc52
 
 
 ---
+
+*適用於︰Advanced Threat Analytics 1.7 版*
+
+
 
 ## 使用電子郵件伺服器設定提供 ATA
 當 ATA 偵測到可疑的活動時，就會通知您。 若要讓 ATA 能夠傳送電子郵件通知，您必須先進行**電子郵件伺服器設定**。
@@ -30,15 +34,15 @@ ms.openlocfilehash: 10a7f4c003bc974d344129756f30df990dadf13d
 
     ![ATA 組態設定圖示](media/ATA-config-icon.JPG)
 
-4.  在 [一般] 索引標籤的 [電子郵件伺服器] 下，輸入下列資訊：
+4.  在 [通知] 區段中的 [郵件伺服器] 下，輸入下列資訊︰
 
     |欄位|說明|值|
     |---------|---------------|---------|
-    |SMTP 伺服器的端點 (必要)|輸入 SMTP 伺服器的 FQDN。|例如：<br />smtp.contoso.com|
+    |SMTP 伺服器的端點 (必要)|輸入您 SMTP 伺服器的 FQDN，並選擇性地變更連接埠號碼 (預設值 25)。|例如：<br />smtp.contoso.com|
     |SSL|如果 SMTP 伺服器需要 SSL，請切換 SSL。 **注意︰**如果啟用 SSL，您也需要變更連接埠號碼。|預設會停用|
     |驗證|如果您的 SMTP 伺服器需要驗證，請啟用。 **注意︰**如果您啟用驗證，您必須提供有權連接到 SMTP 伺服器的電子郵件帳戶的使用者名稱和密碼。|預設會停用|
     |傳送來源 (必要)|輸入電子郵件傳送者的電子郵件地址。|例如：<br />ATA@contoso.com|
-    ![ATA 電子郵件伺服器設定影像](media/ATA-email-server.png)
+    ![ATA 電子郵件伺服器設定影像](media/ATA-email-server-1.7.png)
 
 ## 使用 Syslog 伺服器設定提供 ATA
 當 ATA 偵測到可疑的活動時，就會將通知傳送至 Syslog 伺服器來通知您。 如果您啟用 Syslog 通知，就可以為其進行下列設定。
@@ -61,15 +65,15 @@ ms.openlocfilehash: 10a7f4c003bc974d344129756f30df990dadf13d
 
     ![ATA 組態設定圖示](media/ATA-config-icon.JPG)
 
-5.  選取 [Syslog 伺服器]，然後輸入下列資訊：
+5.  在 [通知] 區段下，選取 [Syslog 伺服器]，然後輸入下列資訊：
 
     |欄位|說明|
     |---------|---------------|
-    |Syslog 伺服器端點|Syslog 伺服器的 FQDN|
-    |傳輸|可以是 UDC、TCP 或 TLS (安全 Syslog)|
+    |Syslog 伺服器端點|Syslog 伺服器的 FQDN，選擇性地變更連接埠號碼 (預設值 514)|
+    |傳輸|可以是 UDP、TCP 或 TLS (安全 Syslog)|
     |格式|這是 ATA 用來將事件傳送至 SIEM 伺服器 - RFC 5424 或 RFC 3164 的格式。|
 
-
+ ![ATA Syslog 伺服器設定影像](media/ata-syslog-server-settings-1.7.png)
 
 
 
@@ -78,6 +82,6 @@ ms.openlocfilehash: 10a7f4c003bc974d344129756f30df990dadf13d
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

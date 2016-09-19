@@ -4,7 +4,7 @@ description: "描述如何為具備異常情況且應該在網路上利用與其
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,27 +13,39 @@ ms.assetid: f4f2ae30-4849-4a4f-8f6d-bfe99a32c746
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 692247420a849db5d77c3c035ee59c4a5c533686
+ms.sourcegitcommit: 28b6211599395317eb6336c37fd3461b8f5635f6
+ms.openlocfilehash: 09248cdd5f8a66a164a5cd275f2765107f5c706d
 
 
 ---
+
+*適用於︰Advanced Threat Analytics 1.7 版*
+
+
 
 # 使用 ATA 偵測設定
 [偵測] 組態頁面可讓您為具備異常情況且應該在網路上利用與其他實體不同方式處理的 IP 位址和子網路設定清單。
 
 ## 設定偵測
-在 [偵測] 頁面中，您可以定義下列項目︰
-
--   **短期租用子網路** - 如果您的組織有任何子網路的 IP 位址非常短期，例如 VPN IP 位址子網路或 Wi-Fi 子網路，請務必將這些 IP 位址和子網路輸入 ATA，以便 ATA 了解從這些範圍儲存電腦和 IP 位址之間的關聯，儲存時間比其他 IP 位址還短。
+在 [偵測] 區段中，您可以定義下列項目︰
 
 -   **Honeytoken 帳戶 SID** – 這是應該沒有任何網路活動的使用者帳戶。 此帳戶將會設定為 ATA Honeytoken 使用者。 如果有人嘗試使用此使用者帳戶，ATA 會建立可疑活動，而且是惡意活動的指示。 若要設定 Honeytoken 使用者，您需要使用者帳戶的 SID，而不是使用者名稱。
 
-您可以從下列偵測排除 IP 位址。 如果您在其中一個清單中輸入 IP 位址，ATA 會從此特定類型的偵測活動排除該 IP 位址。
+>[!NOTE]
+> 您可以在 ATA 主控台中使用者設定檔的 [帳戶資訊] 索引標籤上找到使用者的 SID。
 
--   DNS 探察 IP 位址排除項目
+
+![ATA 偵測設定 honeytoken](media/ata-detection-settings-honeytoken-1.7.png)
+
+
+**偵測排除項目** - 您可以從下列偵測排除 IP 位址。 如果您在其中一個清單中輸入 IP 位址，ATA 會從此特定類型的偵測活動排除該 IP 位址。
+
+-   DNS 探查 IP 位址排除項目
 
 -   傳遞票證 IP 位址排除項目
+
+![ATA 偵測設定排除項目](media/ata-detection-settings-exclusions-1.7.png)
+
 
 ## 另請參閱
 - [處理可疑活動](working-with-suspicious-activities.md)
@@ -42,6 +54,6 @@ ms.openlocfilehash: 692247420a849db5d77c3c035ee59c4a5c533686
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -1,6 +1,6 @@
 # [了解和探索](/advanced-threat-analytics/understand-explore/what-is-ata)
 # [計劃和設計](/advanced-threat-analytics/plan-design/ata-capacity-planning)
-# [部署與使用](install-ata.md)
+# [部署與使用](preinstall-ata.md)
 ## [安裝 ATA 之前](preinstall-ata.md)
 ### [設定連接埠鏡像](configure-port-mirroring.md)
 ### [驗證連接埠鏡像](validate-port-mirroring.md)
@@ -17,12 +17,12 @@
 ### [變更 ATA 組態](modifying-ata-configuration.md)
 #### [變更 ATA 中心 IP 位址](modifying-ata-config-centerip.md)
 #### [變更 ATA 中心憑證](modifying-ata-config-centercert.md)
-#### [變更 ATA 主控台 IP 位址](modifying-ata-config-consoleip.md)
-#### [變更 IIS 憑證](modifying-ata-config-iiscert.md)
+#### [變更 ATA 主控台 URL](modifying-ata-config-consoleurl.md)
 #### [變更網域連線密碼](modifying-ata-config-dcpassword.md)
 ### [使用 ATA 主控台](working-with-ata-console.md)
-### [設定 ATA 警示](setting-ata-alerts.md)
+### [ATA 角色群組](ata-role-groups.md)
 ### [進行 Syslog 和電子郵件伺服器設定](setting-syslog-email-server-settings.md)
+### [設定 ATA 警示](setting-ata-alerts.md)
 ### [進行偵測設定](working-with-detection-settings.md)
 ### [ATA 健全狀況中心](ata-health-center.md)
 ### [處理可疑活動](working-with-suspicious-activities.md)
@@ -31,6 +31,6 @@
 # [疑難排解](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

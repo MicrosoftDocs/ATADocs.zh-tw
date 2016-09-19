@@ -4,7 +4,7 @@ description: "說明如何針對 ATA 中的常見錯誤進行疑難排解"
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,15 @@ ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 6be26fd2d0348557fa7b1c78533eed8a2be1a39f
+ms.sourcegitcommit: 15c1a0d7ae213876c0e3a955eaeea8887281b4e6
+ms.openlocfilehash: b073a1b969f8841c9bbe540722349a5ef70340d4
 
 
 ---
+
+*適用於︰Advanced Threat Analytics 1.7 版*
+
+
 
 # 為 ATA 錯誤記錄檔進行疑難排解
 本節詳細說明 ATA 部署中可能發生的錯誤，以及對其進行疑難排解所需的步驟。
@@ -33,10 +37,14 @@ ms.openlocfilehash: 6be26fd2d0348557fa7b1c78533eed8a2be1a39f
 |Microsoft.Tri.Infrastructure.ContractException：合約例外狀況|ATA 閘道無法同步處理 ATA 中心的設定。|請在 ATA 主控台中完成 ATA 閘道的設定。|
 |System.Reflection.ReflectionTypeLoadException: 無法載入一或多個要求的類型。 如需詳細資訊，請擷取 LoaderExceptions 屬性。|郵件分析器已安裝於 ATA 閘道。| 請將郵件分析器解除安裝。|
 |Error [配置] System.OutOfMemoryException: 擲回 'System.OutOfMemoryException' 類型的例外狀況。|ATA 閘道的記憶體不足。|請增加網域控制站上的記憶體數量。|
-|無法啟動即時消費者 ---> Microsoft.Opn.Runtime.Monitoring.MessageSessionException: PEFNDIS 事件提供者尚未就緒|未正確安裝 PEF (郵件分析器)。|如需因應措施，請連絡支援人員。|
+|無法啟動即時消費者 ---> Microsoft.Opn.Runtime.Monitoring.MessageSessionException: PEFNDIS 事件提供者尚未就緒|未正確安裝 PEF (郵件分析器)。|如果使用 HYPER-V，請嘗試升級 Hyper-V 整合服務，否則請連絡支援人員取得因應措施。|
 |安裝失敗，錯誤為：0x80070652|電腦上有其他擱置的安裝。|請等候其他安裝完成，如有必要，請重新啟動電腦。|
+|System.InvalidOperationException︰指定的分類中不存在執行個體 'Microsoft.Tri.Gateway'。|ATA 閘道中的程序名稱已啟用 PID|使用 [KB281884](https://support.microsoft.com/en-us/kb/281884) 停用程序名稱中的 PID|
+|System.InvalidOperationException︰類別不存在。|登錄中的計數器可能已停用|使用 [KB2554336](https://support.microsoft.com/en-us/kb/2554336) 重建效能計數器|
+|System.ApplicationException︰無法啟動 ETW 工作階段 MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329|HOSTS 檔案中有一個主機項目指向電腦的簡短名稱|從 C:\Windows\System32\drivers\etc\HOSTS 檔案移除主機項目，或將它變更為 FQDN。|
 
-## ATA 主控台錯誤
+
+## ATA IIS 錯誤 (不適用於 ATA v1.7 和更新版本)
 |錯誤|說明|解決方法|
 |-------------|----------|---------|
 |HTTP 錯誤 500.19 - 內部伺服器錯誤|IIS URL Rewrite Module 無法正確安裝。|請解除安裝，再重新安裝 IIS URL Rewrite Module。<br>[下載 IIS URL Rewrite Module](http://go.microsoft.com/fwlink/?LinkID=615137)|
@@ -58,6 +66,6 @@ ms.openlocfilehash: 6be26fd2d0348557fa7b1c78533eed8a2be1a39f
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

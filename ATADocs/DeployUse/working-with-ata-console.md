@@ -4,7 +4,7 @@ description: "描述如何登入 ATA 主控台和主控台的元件"
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,19 +13,22 @@ ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 1eb9397b541eb64cef553f61e8517568d16b0092
+ms.sourcegitcommit: a4ba68547d6746625a44aca5d05790c3ad138f4e
+ms.openlocfilehash: ab9abce7479971c80544476c54cbf0911d1a5822
 
 
 ---
+
+*適用於︰Advanced Threat Analytics 1.7 版*
+
+
 
 # 使用 ATA 主控台
 
 使用 ATA 主控台監視及回應 ATA 偵測到的可疑活動。
 
 ## 啟用 ATA 主控台的存取權
-任何身為 ATA 中心伺服器上之本機系統管理員群組成員的使用者都有權限可登入 ATA 主控台並管理 ATA 設定。
-為了讓使用者登入 ATA 主控台，而不用成為本機系統管理員，請將他們新增至本機群組︰**Microsoft Advanced Threat Analytics 系統管理員**。
+若要成功登入 ATA 主控台，您必須以被指派適當 ATA 角色的使用者登入，才能存取 ATA 主控台。 如需 ATA 中有關角色型存取控制 (RBAC) 的詳細資訊，請參閱[使用 ATA 角色群組](ata-role-groups.md)。
 
 ## 登入 ATA 主控台
 
@@ -38,10 +41,8 @@ ms.openlocfilehash: 1eb9397b541eb64cef553f61e8517568d16b0092
 
 2.  輸入您的使用者名稱和密碼，然後按一下 [登入]。
 
-![ATA 登入畫面影像](media/ATA-log-in-screen.jpg)
+![ATA 登入畫面影像](media/ATA-log-in-screen.png)
 
-> [!NOTE]
-> 您必須以特定使用者身分登入，該特定使用者為本機系統管理員群組或 Microsoft Advanced Threat Analytics 系統管理員群組成員。
 
 ## ATA 主控台
 
@@ -54,7 +55,7 @@ ATA 主控台可讓您依時間順序快速檢視所有可疑的活動。 不但
 
 這是您登入 ATA 主控台時會前往的預設登陸頁面。 根據預設，所有開啟的可疑活動都會顯示在攻擊時間表上。 您可以篩選攻擊時間表，顯示所有、開啟、關閉或已解析的可疑活動。 您也可以查看指派給每個活動的嚴重性。
 
-![ATA 攻擊時間表影像](media/attack-timeline.png)
+![ATA 攻擊時間表影像](media/attack-timeline-1.7.png)
 
 如需詳細資訊，請參閱[處理可疑活動](/advanced-threat-analytics/deploy-use/working-with-suspicious-activities)。
 
@@ -62,7 +63,7 @@ ATA 主控台可讓您依時間順序快速檢視所有可疑的活動。 不但
 
 偵測到新的可疑活動時，通知列會自動在右側開啟。 如果從上次登入之後有新的可疑活動，通知列會在您成功登入後開啟。 您可以隨時按一下右側箭號來存取通知列。
 
-![ATA 通知列影像](media/notification-bar.png)
+![ATA 通知列影像](media/notification-bar-1.7.png)
 
 ### 篩選窗格
 
@@ -78,7 +79,7 @@ ATA 主控台可讓您依時間順序快速檢視所有可疑的活動。 不但
 
 健康情況中心會在 ATA 部署未正常運作時向您提出警示。
 
-![ATA 健全狀況中心影像](media/health-center.png)
+![ATA 健全狀況中心影像](media/ATA-Health-Issue.jpg)
 
 每當您的系統發生問題，例如連線錯誤或中斷與 ATA 閘道的連線，[健全狀況中心] 圖示會顯示一個紅點來告知您。 ![ATA 健全狀況中心有紅點的影像](media/ATA-Health-Center-Alert-red-dot.png)
 
@@ -124,6 +125,6 @@ ATA 無法完全解析的設定檔將會利用旁邊的半實心圓形圖示來�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

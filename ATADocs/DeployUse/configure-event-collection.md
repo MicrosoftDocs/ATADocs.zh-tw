@@ -13,11 +13,15 @@ ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: fd0b2539841e6938e0f82a81bce04ffb9b5202b4
+ms.sourcegitcommit: 54e5105e78b6db9f33488135601381af5503aa4a
+ms.openlocfilehash: 118eb5bf505426f1947e96a4e01d0206abdce88d
 
 
 ---
+
+*適用於︰Advanced Threat Analytics 1.6 和 1.7 版*
+
+
 
 # 設定事件收集
 若要增強偵測功能，ATA 需要識別碼為 4776 的 Windows 事件記錄檔。 將這項資訊轉送至 ATA 閘道的方法有兩個：設定 ATA 閘道接聽 SIEM 事件，或[設定 Windows 事件轉送](#configuring-windows-event-forwarding)。
@@ -28,7 +32,7 @@ ms.openlocfilehash: fd0b2539841e6938e0f82a81bce04ffb9b5202b4
 ### SIEM/Syslog
 為了讓 ATA 可以取用 Syslog 伺服器上的資料，您需要執行下列操作︰
 
--   將您的其中一個 ATA 閘道伺服器設定為接聽及接受從 SIEM/Syslog 伺服器轉送的事件。
+-   將您的 ATA 閘道伺服器設定為接聽及接受從 SIEM/Syslog 伺服器轉送的事件。
 
 -   將您的 SIEM/Syslog 伺服器設定為轉送特定事件至 ATA 閘道。
 
@@ -43,13 +47,11 @@ ms.openlocfilehash: fd0b2539841e6938e0f82a81bce04ffb9b5202b4
 
 ## 將 ATA 閘道設定為接聽 SIEM 事件
 
-1.  在 ATA 閘道的設定中，啟用 **Syslog 接聽程式 UDP**。
-
-    設定接聽的 IP 位址，如下圖。 預設的連接埠為 514。
+1.  在 ATA 設定中，在 [事件] 索引標籤下啟用 **Syslog**，然後按 [儲存]。
 
     ![啟用 Syslog 接聽程式 UDP 映像](media/ATA-enable-siem-forward-events.png)
 
-2.  將 SIEM 或 Syslog 伺服器設定為轉送 Windows 事件識別碼 4776 給上圖中選取的 IP 位址。 如需有關如何設定 SIEM 的詳細資訊，請參閱您的 SIEM 線上說明或每部 SIEM 伺服器的特定格式需求的技術支援選項。
+2.  將 SIEM 或 Syslog 伺服器設定為轉送 Windows 事件識別碼 4776 給其中一個 ATA 閘道的 IP 位址。 如需有關如何設定 SIEM 的詳細資訊，請參閱您的 SIEM 線上說明或每部 SIEM 伺服器的特定格式需求的技術支援選項。
 
 ### SIEM 支援
 ATA 支援下列格式的 SIEM 事件：
@@ -174,41 +176,107 @@ Message 是來自 Windows 事件的原始事件文字
 > 不支援使用 WinCollect 進行 Windows 事件收集。
 
 ## 設定 Windows 事件轉送
-如果您沒使用 SIEM 伺服器，可將您的網域控制站設定為直接轉送 Windows 事件識別碼 4776 至您的 ATA 閘道之一。
 
-1.  使用具有系統管理員權限的網域帳戶登入所有網域控制站和 ATA 閘道機器。
-2. 請確定您連線的所有網域控制站和 ATA 閘道已加入相同網域。
-3.  在每個網域控制站上，在提高權限的命令提示字元中輸入：
-```
-winrm quickconfig
-```
-4.  在 ATA 閘道上，在提高權限的命令提示字元中輸入：
-```
-wecutil qc
-```
-5.  在每個網域控制站上，在 [Active Directory Users and Computers] 中瀏覽至 [Builtin] 資料夾，按兩下 [Event Log Readers] 群組。<br>
-![wef_ad_eventlogreaders](media/wef_ad_eventlogreaders.png)<br>
-以滑鼠右鍵按一下它，並選取 [內容]。 在 [成員] 索引標籤上，新增每個 ATA 閘道的電腦帳戶。
-![wef_ad event log reader popup](media/wef_ad-event-log-reader-popup.png)
-6.  在 ATA 閘道上，開啟 [事件檢視器]，以滑鼠右鍵按一下 [訂閱]，然後選取 [建立訂閱]。  
+### 具連接埠鏡像之 ATA 閘道的 WEF 設定
 
-    a. 在 [訂閱類型和來源電腦] 下，按一下 [選取電腦] 並加入網域控制站然後測試連線。
-    ![wef_subscription prop](media/wef_subscription-prop.png)
+設定從網域控制站鏡像連接埠到 ATA 閘道之後，請依照下面的指示使用來源起始組態來設定 Windows 事件轉送。 這是一個設定 Windows 事件轉送的方法。 
 
-    b。 在 [要收集的事件] 下，按一下 [選取事件]。 選取 [依記錄]，向下捲動以選取 [安全性]。 然後，在 [包含/排除事件識別碼] 中輸入 **4776**。<br>
-    ![wef_4776](media/wef_4776.png)
+**步驟 1︰新增網路服務帳戶到網域 Event Log Readers 群組。** 
 
-    c. 在 [變更使用者帳戶或設定進階設定] 下，按一下 [進階]。
-將 [通訊協定] 設定為 **HTTP**，[連接埠] 設定為 **5985**。<br>
-    ![wef_http](media/wef_http.png)
+在此案例中，我們假設 ATA 閘道是網域的成員。
 
-7.  [選擇性] 如果您想要較短的輪詢間隔，在 ATA 閘道上，設定訂閱的活動訊號為 5 秒，就能加快輪詢速率。
-    wecutil ss <CollectionName>/cm:custom wecutil ss <CollectionName> /hi:5000
+1.  開啟「Active Directory 使用者和電腦」，瀏覽至 [BuiltIn] 資料夾，然後按兩下 [Event Log Readers] 群組。 
+2.  選取 [成員]。
+4.  如果未列出 [Network Service]，請按一下 [新增]，在 [輸入要選取的物件名稱] 欄位中輸入 **Network Service**。 然後按一下 [檢查名稱]，再按兩次 [確定]。 
 
-8. 在 ATA 閘道的設定頁面上，啟用 [Windows 事件轉送收集]。
+**步驟 2︰在網域控制站上建立原則以設定 [設定目標訂閱管理員] 設定。** 
+> [!Note] 
+> 您可以建立這些設定的群組原則，並將群組原則套用到 ATA 閘道監視的每個網域控制站。 下面的步驟修改網域控制站的本機原則。     
 
-> [!NOTE]
-> 當您啟用此設定，ATA 閘道會尋找已從網域控制站轉送給它的 Windows 事件的轉送事件記錄檔。
+1.  在每個網域控制站上執行下列命令︰*winrm quickconfig*
+2.  在命令提示字元中輸入 *gpedit.msc*
+3.  展開 [電腦設定] > [系統管理範本] > [Windows 元件] > [事件轉送]
+
+ ![本機原則群組編輯器影像](media/wef 1 local group policy editor.png)
+
+4.  按兩下 [設定目標訂閱管理員]。
+   
+    1.  選取 [啟用]。
+    2.  在 [選項] 下，按一下 [顯示]。
+    3.  在 [SubscriptionManagers] 下，輸入下列值，然後按一下 [確定]：*Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (例如︰Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
+ 
+   ![設定目標訂閱影像](media/wef 2 config target sub manager.png)
+   
+    5.  按一下 [ **確定**]。
+    6.  在提升權限的命令提示字元中，輸入 *gpupdate /force*。 
+
+**步驟 3：在 ATA 閘道上執行下列步驟** 
+
+1.  開啟提升權限的命令提示字元，輸入 *wecutil qc*
+2.  開啟 [事件檢視器]。 
+3.  以滑鼠右鍵按一下 [訂閱]，然後選取 [建立訂閱]。 
+
+   1.   為訂閱輸入名稱和描述。 
+   2.   對於 [目的記錄檔]確認已選取 [轉送的事件]。 對於要讀取事件的 ATA，目的記錄檔必須是 [轉送的事件]。 
+   3.   選取 [來源電腦起始]，按一下 [選取電腦群組]。
+        1.  按一下 [加入網域電腦]。
+        2.  在 [輸入要選取的物件名稱] 欄位中輸入網域控制站的名稱。 然後按一下 [檢查名稱]，再按一下 [確定]。 
+       
+        ![事件檢視器影像](media/wef3 event viewer.png)
+   
+        
+        3.  按一下 [ **確定**]。
+   4.   按一下 [選取事件]。
+
+        1. 按一下 [依記錄]，然後選取 [安全性]。
+        2. 在 [包含/排除事件識別碼] 欄位中輸入 **4776**，然後按一下 [確定]。 
+
+ ![查詢篩選影像](media/wef 4 query filter.png)
+
+   5.   以滑鼠右鍵按一下建立的訂閱，然後選取 [執行階段狀態]，查看是否有任何問題及其狀態。 
+   6.   稍候幾分鐘之後，請查看事件 4776 出現在 ATA 閘道上 [轉送的事件] 中。
+
+
+### ATA 輕量型閘道的 WEF 設定
+當您在網域控制站上安裝 ATA 輕量型閘道時，可以設定網域控制站將事件轉送給自己。 執行下列步驟來設定使用 ATA 輕量型閘道時的 Windows 事件轉送。 這是一個設定 Windows 事件轉送的方法。  
+
+**步驟 1︰新增網路服務帳戶到網域 Event Log Readers 群組** 
+
+1.  開啟「Active Directory 使用者和電腦」，瀏覽至 [BuiltIn] 資料夾，然後按兩下 [Event Log Readers] 群組。 
+2.  選取 [成員]。
+3.  如果未列出 [Network Service]，請按一下 [新增]，在 [輸入要選取的物件名稱] 欄位中輸入 **Network Service**。 然後按一下 [檢查名稱]，再按兩次 [確定]。 
+
+**步驟 2︰安裝 ATA 輕量型閘道之後在網域控制站上執行下列步驟** 
+
+1.  開啟提升權限的命令提示字元，輸入 *winrm quickconfig* 和 *wecutil qc* 
+2.  開啟 [事件檢視器]。 
+3.  以滑鼠右鍵按一下 [訂閱]，然後選取 [建立訂閱]。 
+
+   1.   為訂閱輸入名稱和描述。 
+   2.   對於 [目的記錄檔]確認已選取 [轉送的事件]。 對於要讀取事件的 ATA，目的記錄檔必須是 [轉送的事件]。
+
+        1.  選取 [收集器起始]，按一下 [選取電腦]。 然後按一下 [加入網域電腦]。
+        2.  在 [輸入要選取的物件名稱] 中輸入網域控制站的名稱。 然後按一下 [檢查名稱]，再按一下 [確定]。
+
+            ![訂閱屬性影像](media/wef 5 sub properties computers.png)
+
+        3.  按一下 [ **確定**]。
+   3.   按一下 [選取事件]。
+
+        1.  按一下 [依記錄]，然後選取 [安全性]。
+        2.  在 [包含/排除事件識別碼] 中輸入 *4776*，然後按一下 [確定]。 
+
+![查詢篩選影像](media/wef 4 query filter.png)
+
+
+  4.    以滑鼠右鍵按一下建立的訂閱，然後選取 [執行階段狀態]，查看是否有任何問題及其狀態。 
+
+> [!Note] 
+> 您可能需要重新啟動網域控制站，設定才會生效。 
+
+稍候幾分鐘之後，請查看事件 4776 出現在 ATA 閘道上 [轉送的事件] 中。
+
+
 
 如需詳細資訊，請參閱[設定電腦轉送及收集事件](https://technet.microsoft.com/library/cc748890)
 
@@ -218,6 +286,6 @@ wecutil qc
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

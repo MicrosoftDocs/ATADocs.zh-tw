@@ -4,7 +4,7 @@ description: "描述 ATA 所收集的資料，並提供關閉資料收集的步�
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,15 @@ ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 7e849e9d902873cec7140a14b6f0709d3ef9ddd1
+ms.sourcegitcommit: 3a7e375da4acd5546347310c5965394b2addfe63
+ms.openlocfilehash: 0c6b8589fffe24298d0caf2cf2eb5e7e817e4da2
 
 
 ---
+
+*適用於︰Advanced Threat Analytics 1.7 版*
+
+
 
 # 管理遙測設定
 Advanced Threat Analytics (ATA) 會收集有關 ATA 的匿名遙測資料，並透過 HTTPS 連線將資料傳輸至 Microsoft 伺服器。  Microsoft 將使用此資料以協助改善未來的 ATA 版本。
@@ -63,6 +67,21 @@ Advanced Threat Analytics (ATA) 會收集有關 ATA 的匿名遙測資料，並�
 
     -   提供輸入
 
+- 健全狀況問題 - 為每個健全狀況問題收集下列匿名資料︰
+
+    (不會收集電腦名稱、使用者名稱和 IP 位址)
+
+    -   健全狀況問題類型
+
+    -   健全狀況問題識別碼
+
+    -   狀態
+
+    -   開始與結束時間
+
+- ATA 主控台 URL 位址 - 使用 ATA 主控台時的 URL 位址，即造訪 ATA 主控台中的哪些頁面。
+
+
 ### 停用資料收集
 請執行下列步驟，以停止收集及將遙測資料傳送到 Microsoft：
 
@@ -76,6 +95,6 @@ Advanced Threat Analytics (ATA) 會收集有關 ATA 的匿名遙測資料，並�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

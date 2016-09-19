@@ -13,17 +13,21 @@ ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: dce4cbaf894d383851a7039b6457a98c1d5ba5d4
+ms.sourcegitcommit: d0681cfa4ae763da9c88c8dec9b77a75494a5c9f
+ms.openlocfilehash: 7b9ba09d3757979c0b845f796a846e7e83b505af
 
 
 ---
+
+*適用於︰Advanced Threat Analytics 1.7 版*
+
+
 
 # ATA 無訊息安裝
 本文提供以無訊息方式安裝 ATA 的指示。
 ## 必要條件
 
-Microsoft ATA v1.6 需要安裝 Microsoft .NET Framework 4.6.1。 
+Microsoft ATA v1.7 需要安裝 Microsoft .NET Framework 4.6.1。 
 
 當您安裝或更新 ATA 時，.Net Framework 4.6.1 會隨著 Microsoft ATA 部署自動安裝。
 
@@ -217,6 +221,6 @@ Microsoft ATA v1.6 需要安裝 Microsoft .NET Framework 4.6.1。
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

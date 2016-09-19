@@ -4,7 +4,7 @@ description: "描述連接埠鏡像選項以及如何設定它們以進行 ATA"
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/28/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,15 +13,19 @@ ms.assetid: cdaddca3-e26e-4137-b553-8ed3f389c460
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 92d14179f9177aba824dd5c42c2ef5797af108cb
+ms.sourcegitcommit: e3b690767e5c6f5561a97a73eccfbf50ddb04148
+ms.openlocfilehash: d7f15f08a64a9d884a560f4f3429568cf33bdd34
 
 
 ---
 
+*適用於︰Advanced Threat Analytics 1.7 版*
+
+
+
 # 設定連接埠鏡像
 > [!NOTE] 
-> 本文只有在部署 ATA 閘道 (而非 ATA 輕量型閘道) 時才適用。 若要判斷是否需要使用 ATA 閘道，請參閱[為您的部署選擇正確閘道](/advanced-threat-analytics/plan-design/ata-capacity-planning#choosing-the-right-gateway-type-for-your-deployment)
+> 本文只有在部署 ATA 閘道 (而非 ATA 輕量型閘道) 時才適用。 若要判斷是否需要使用 ATA 閘道，請參閱[為您的部署選擇正確閘道](/advanced-threat-analytics/plan-design/ata-capacity-planning#choosing-the-right-gateway-type-for-your-deployment)。
  
 ATA 使用的主要資料來源是對進出網域控制站的網路流量的深度封包檢查。 為了讓 ATA 看到網路流量，您必須設定連接埠鏡像或使用網路 TAP。
 
@@ -71,6 +75,6 @@ ATA 使用的主要資料來源是對進出網域控制站的網路流量的深�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

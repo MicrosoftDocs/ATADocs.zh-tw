@@ -4,7 +4,7 @@ description: "描述在環境中成功部署 ATA 的需求"
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,15 @@ ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 87891f6ad683ed9536d3d3f27449feac9bd9dee1
+ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
+ms.openlocfilehash: a3fcf3b2ba7f90f2329d86ab9e8d19619cc7e28f
 
 
 ---
+
+*適用於︰Advanced Threat Analytics 1.7 版*
+
+
 
 # ATA 必要條件
 本文描述在您的環境中成功部署 ATA 的條件需求。
@@ -27,6 +31,8 @@ ms.openlocfilehash: 87891f6ad683ed9536d3d3f27449feac9bd9dee1
 
 
 ATA 是由 ATA 中心、ATA 閘道及 (或) ATA 輕量型閘道組成。 如需 ATA 元件的詳細資訊，請參閱 [ATA architecture](ata-architecture.md) (ATA 架構)。
+
+ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003 和更新版本的樹系功能等級 (FFL)。
 
 
 [開始之前](#before-you-start)︰本節列出在開始 ATA 安裝之前您應該收集的資訊以及您應該具備的帳戶和網路實體。
@@ -50,11 +56,10 @@ ATA 是由 ATA 中心、ATA 閘道及 (或) ATA 輕量型閘道組成。 如需 
     > [!NOTE]
     > 如果您已經在網域中設定不同組織單位 (OU) 的自訂 ACL，請確定選取的使用者具有讀取這些 OU 的權限。
 
--   具備一份 VPN 和 Wi-Fi 網路上使用的所有子網路清單，其會在極短的時間內 (幾秒或幾分鐘) 重新指派裝置之間的 IP 位址。  您會想要找出這些短期租用子網路，讓 ATA 可以減少其快取存留期以配合裝置之間的快速重新指派。 請參閱[安裝 ATA](/advanced-threat-analytics/deploy-use/install-ata) 了解短期租用子網路的設定。
--   確定 ATA 閘道或 ATA 中心未安裝郵件分析器和 Wire Shark。
--    選擇性︰使用者應該擁有「刪除的物件」容器的唯讀權限。 這可讓 ATA 偵測網域中的大量刪除物件。 如需設定刪除的物件容器的唯讀權限相關資訊，請參閱[檢視或設定目錄物件的權限](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx)主題中的**變更刪除的物件容器的權限**。
+-   確定 ATA 閘道未安裝郵件分析器和 Wire Shark。
+-    建議︰使用者應該擁有「刪除的物件」容器的唯讀權限。 這可讓 ATA 偵測網域中的大量刪除物件。 如需設定刪除的物件容器的唯讀權限相關資訊，請參閱[檢視或設定目錄物件的權限](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx)主題中的**變更刪除的物件容器的權限**。
 
--   選擇性︰沒有任何網路活動之使用者的使用者帳戶。 此帳戶將會設定為 ATA Honeytoken 使用者。 若要設定 Honeytoken 使用者，您需要使用者帳戶的 SID，而不是使用者名稱。
+-   選擇性︰沒有任何網路活動之使用者的使用者帳戶。 此帳戶將會設定為 ATA Honeytoken 使用者。 若要設定 Honeytoken 使用者，您需要使用者帳戶的 SID，而不是使用者名稱。 如需詳細資訊，請參閱[使用 ATA 偵測設定](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/working-with-detection-settings)主題。
 
 -   選擇性︰除了收集和分析進出網域控制站的網路流量，ATA 可以使用 Windows 事件 4776 來進一步加強 ATA 的傳遞雜湊偵測。 這可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送。 所收集的事件可提供 ATA 透過網域控制站網路流量無法取得的額外資訊。
 
@@ -62,13 +67,16 @@ ATA 是由 ATA 中心、ATA 閘道及 (或) ATA 輕量型閘道組成。 如需 
 ## ATA 中心需求
 本節列出 ATA 中心的需求。
 ### 一般
-ATA 中心可安裝在執行 Windows Server 2012 R2 的伺服器上。 ATA 中心可以安裝在屬於網域或工作群組的成員伺服器上。
+ATA 中心可安裝在執行 Windows Server 2012 R2 或 Windows Server 2016 的伺服器上。 ATA 中心可以安裝在屬於網域或工作群組的成員伺服器上。
 
-安裝 ATA 中心前，請確認已安裝下列更新︰[KB2919355](https://support.microsoft.com/kb/2919355/)。
+安裝執行 Windows Server 2012 R2 的 ATA 中心前，請確認已安裝下列更新︰[KB2919355](https://support.microsoft.com/kb/2919355/)。
 
 您可以執行下列 Windows PowerShell Cmdlet 來確認安裝與否：`[Get-HotFix -Id kb2919355]`。
 
 也可將 ATA 中心安裝為虛擬機器。 
+
+>[!NOTE] 
+> 作為虛擬機器執行時不支援動態記憶體或任何其他記憶體佔用功能。
 
 如果將 ATA 中心當做虛擬機器執行，請在建立新檢查點之前先關閉伺服器，以避免潛在的資料庫損毀。
 ### 伺服器規格
@@ -76,8 +84,6 @@ ATA 中心可安裝在執行 Windows Server 2012 R2 的伺服器上。 ATA 中�
 為了達到最佳效能，將 ATA 中心的 [電源選項] 設定為 [高效能]。<br>
 您要監視的網域控制站數目以及每個網域控制站的負載，決定了所需的伺服器規格。如需詳細資訊，請參閱 [ATA capacity planning](ata-capacity-planning.md) (ATA 容量規劃)。
 
->[!NOTE] 
-> 作為虛擬機器執行時不支援動態記憶體或任何其他記憶體佔用功能。
 
 ### 時間同步
 ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步至相差在 5 分鐘內。
@@ -85,11 +91,11 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 
 ### 網路介面卡
 您應該具備下列項目：
--   至少一個網路介面卡
+-   至少一張網路介面卡 (如果在 VLAN 環境中使用實體伺服器，建議使用兩張網路介面卡)
 
 -   兩個 IP 位址 (建議使用但非必要)
 
-ATA 中心和 ATA 閘道之間的通訊是在連接埠 443 上使用 SSL 加密。 此外，ATA 主控台在 IIS 上執行，並在連接埠 443 上使用 SSL 保護。 建議使用**兩個 IP 位址**。 ATA 中心服務會將連接埠 443 繫結到第一個 IP 位址，IIS 會將連接埠 443 繫結到第二個 IP 位址。
+ATA 中心和 ATA 閘道之間的通訊是在連接埠 443 上使用 SSL 加密。 此外，ATA 主控台也會在連接埠 443 上使用 SSL。 建議使用**兩個 IP 位址**。 ATA 中心服務會將連接埠 443 繫結到第一個 IP 位址，ATA 主控台會將連接埠 443 繫結到第二個 IP 位址。
 
 > [!NOTE]
 > 可以單一 IP 位址使用兩個不同的連接埠，但建議使用兩個 IP 位址。
@@ -97,7 +103,7 @@ ATA 中心和 ATA 閘道之間的通訊是在連接埠 443 上使用 SSL 加密�
 ### 連接埠
 下表列出 ATA 中心正常運作最少要開啟的連接埠。
 
-在此表中，IP 位址 1 繫結至 ATA 中心服務，IP 位址 2 繫結至 ATA 主控台的 IIS 服務：
+在此表中，IP 位址 1 繫結至 ATA 中心服務，IP 位址 2 繫結至 ATA 主控台：
 
 |通訊協定|傳輸|Port|去/從|方向|IP 位址|
 |------------|-------------|--------|-----------|-------------|--------------|
@@ -116,22 +122,20 @@ ATA 中心和 ATA 閘道之間的通訊是在連接埠 443 上使用 SSL 加密�
 > 憑證的提供者類型必須是密碼編譯服務提供者 (CSP)。
 
 
-ATA 中心需要下列服務的憑證︰
+> 不支援使用自動更新憑證。
 
--   Internet Information Services (IIS) – Web 伺服器憑證
-
--   ATA Center 服務 – 伺服器驗證憑證
 
 > [!NOTE]
-> 如果您要從其他電腦存取 ATA 主控台，請確定這些電腦會信任 IIS 使用的憑證，否則在進入登入頁面之前就會出現警告頁面，指出網站的安全性憑證有問題。
+> 如果您要從其他電腦存取 ATA 主控台，請確定這些電腦信任 ATA 中心使用的憑證，否則在進入登入頁面之前就會出現警告頁面，指出網站的安全性憑證有問題。
 
 ## ATA 閘道需求
 本節列出 ATA 閘道的需求。
 ### 一般
-ATA 閘道可安裝在執行 Windows Server 2012 R2 的伺服器上。
+ATA 閘道可安裝在執行 Windows Server 2012 R2 或 Windows Server 2016 (包括 Server Core) 的伺服器上。
 ATA 閘道可以安裝在屬於網域或工作群組的成員伺服器上。
+ATA 閘道可以用來監視具 Windows Server 2003 或更新版本之網域功能等級的網域控制站。
 
-安裝 ATA 閘道前，請確認已安裝下列更新︰[KB2919355](https://support.microsoft.com/kb/2919355/)。
+安裝執行 Windows Server 2012 R2 的 ATA 閘道前，請確認已安裝下列更新︰[KB2919355](https://support.microsoft.com/kb/2919355/)。
 
 您可以執行下列 Windows PowerShell Cmdlet 來確認安裝與否：`[Get-HotFix -Id kb2919355]`。
 
@@ -143,6 +147,8 @@ ATA 閘道可以支援監視多個網域控制站，依進出網域控制站的�
 
 >[!NOTE] 
 > 作為虛擬機器執行時不支援動態記憶體或任何其他記憶體佔用功能。
+
+如需 ATA 閘道硬體需求的詳細資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。
 
 ### 時間同步
 ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步至相差在 5 分鐘內。
@@ -184,14 +190,14 @@ ATA 閘道需要至少一個管理介面卡和至少一個擷取介面卡︰
 |DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
 |透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|輸出|
 |NetBIOS|UDP|137|網路上的所有裝置|輸出|
-|SSL|TCP|443 或如中心服務所設定|ATA 中心：<br /><br />- 中心服務 IP 位址<br />- IIS IP 位址|輸出|
+|SSL|TCP|443 或如中心服務所設定|ATA 中心：<br /><br />- 中心服務 IP 位址<br />- 主控台 IP 位址|輸出|
 |Syslog (選擇性)|UDP|514|SIEM 伺服器|輸入|
 
 > [!NOTE]
 > 隨著 ATA 閘道完成解析程序的一部分，在 ATA 閘道網路中的裝置上，下列連接埠必須開啟輸入。
 >
-> -   透過 RPC 的 NTLM
-> -   NetBIOS
+> -   透過 RPC 的 NTLM (TCP 連接埠 135)
+> -   NetBIOS (UDP 連接埠 137)
 
 ### 憑證
 請確定 ATA 中心可以存取您的 CRL 發佈點。 如果 ATA 閘道沒有網際網路存取權，請遵循手動匯入 CRL 的程序，小心安裝整個鏈結的所有 CRL 發佈點。<br>
@@ -205,11 +211,9 @@ ATA 閘道需要至少一個管理介面卡和至少一個擷取介面卡︰
 ## ATA 輕量型閘道需求
 本節列出 ATA 輕量型閘道的需求。
 ### 一般
-ATA 輕量型閘道支援在執行 Windows Server 2008 R2 SP1、Windows Server 2012、Windows Server 2012 R2 的網域控制站上進行安裝。
+ATA 輕量型閘道可在執行 Windows Server 2008 R2 SP1、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 (包括 Core 但不包括 Nano) 的網域控制站上安裝。
 
 網域控制站可以是唯讀網域控制站 (RODC)。
-
-網域控制站不可以是 Server Core。
 
 在安裝 ATA 輕量型閘道之前，在執行 Windows Server 2012 R2 SP1 的網域控制站上確認已安裝下列更新︰[KB2919355](https://support.microsoft.com/kb/2919355/)。
 您可以執行下列 Windows PowerShell Cmdlet 來確認安裝與否：`[Get-HotFix -Id kb2919355]`。
@@ -223,6 +227,7 @@ ATA 輕量型閘道可以部署在各種負載和大小的網域控制站上，�
 >[!NOTE] 
 > 作為虛擬機器執行時不支援動態記憶體或任何其他記憶體佔用功能。
 
+如需 ATA 輕量型閘道硬體需求的詳細資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。
 
 ### 時間同步
 ATA 中心伺服器、ATA 輕量型閘道伺服器和網域控制站的時間必須同步至相差在 5 分鐘內。
@@ -238,7 +243,7 @@ ATA 輕量型閘道可為所有網域控制站的網路介面卡監視其上的�
 |DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
 |透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|輸出|
 |NetBIOS|UDP|137|網路上的所有裝置|輸出|
-|SSL|TCP|443 或如中心服務所設定|ATA 中心：<br /><br />- 中心服務 IP 位址<br />- IIS IP 位址|輸出|
+|SSL|TCP|443 或如中心服務所設定|ATA 中心：<br /><br />- 中心服務 IP 位址<br />- 主控台 IP 位址|輸出|
 |Syslog (選擇性)|UDP|514|SIEM 伺服器|輸入|
 
 > [!NOTE]
@@ -260,6 +265,8 @@ ATA 主控台的存取是透過瀏覽器，支援下列瀏覽器︰
 
 -   Internet Explorer 第 10 版及更新版本
 
+-   Microsoft Edge
+
 -   Google Chrome 40 和更新版本
 
 -   螢幕解析度最低需求為 1700 像素
@@ -273,6 +280,7 @@ ATA 主控台的存取是透過瀏覽器，支援下列瀏覽器︰
 
 
 
-<!--HONumber=Jul16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

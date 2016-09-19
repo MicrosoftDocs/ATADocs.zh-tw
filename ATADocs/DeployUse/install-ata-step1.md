@@ -4,7 +4,7 @@ description: "安裝 ATA 的第一步驟是下載並安裝 ATA 中心到您所�
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,21 +13,25 @@ ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d89f6c5e0ac9712ce2fde057c9ef8e4025e8a144
-ms.openlocfilehash: 41d538039a8fa0511a74dd6cd5d840a1dea516e8
+ms.sourcegitcommit: d0681cfa4ae763da9c88c8dec9b77a75494a5c9f
+ms.openlocfilehash: 7365b09e98d422a8670725b47a1c2380f00e23fb
 
 
 ---
+
+*適用於︰Advanced Threat Analytics 1.7 版*
+
+
 
 # 安裝 ATA - 步驟 1
 
 >[!div class="step-by-step"]
 [步驟 2 »](install-ata-step2.md)
 
-此安裝程序提供執行 ATA 1.6 全新安裝的指示。 如需從舊版更新現有 ATA 部署的相關資訊，請參閱 [1.6 版 ATA 移轉指南](/advanced-threat-analytics/understand-explore/ata-update-1.6-migration-guide)。
+此安裝程序提供執行 ATA 1.7 全新安裝的指示。 如需從舊版更新現有 ATA 部署的相關資訊，請參閱 [1.7 版 ATA 移轉指南](/advanced-threat-analytics/understand-explore/ata-update-1.7-migration-guide)。
 
 > [!IMPORTANT] 
-> 開始安裝之前，先在 ATA Center 伺服器和 ATA 閘道伺服器上安裝 KB2934520；若沒有這麼做，ATA 安裝將會安裝此更新，且您需要在 ATA 安裝期間重新啟動機器。
+> 如果使用 Windows 2012 R2，開始安裝之前，您可以先在 ATA 中心伺服器和 ATA 閘道伺服器上安裝 KB2934520；若沒有這麼做，ATA 安裝將會安裝此更新，且您需要在 ATA 安裝期間重新啟動機器。
 
 ## 步驟 1： 下載並安裝 ATA 中心
 確認伺服器符合需求之後，您可以繼續 ATA 中心的安裝。
@@ -57,19 +61,16 @@ ms.openlocfilehash: 41d538039a8fa0511a74dd6cd5d840a1dea516e8
     |---------|---------------|------------|
     |安裝路徑|這是將安裝 ATA 中心的位置。 位置預設為 %programfiles%\Microsoft Advanced Threat Analytics\Center|保留預設值|
     |資料庫資料路徑|這將會是 MongoDB 資料庫檔案的所在位置。 位置預設為 %programfiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data|變更位置至有空間可隨著您的規模成長的位置。 **注意：** <ul><li>在實際執行環境中，您應該根據容量規劃使用具有足夠空間的磁碟機。</li><li>大規模部署的資料庫應該放在個別的實體磁碟上。</li></ul>如需大小資訊，請參閱 [ATA 容量規劃](/advanced-threat-analytics/plan-design/ata-capacity-planning)。|
-    |ATA 中心服務 IP 位址：連接埠|這是 ATA 中心服務會接聽 ATA 閘道通訊的 IP 位址。<br /><br />**預設連接埠：**443|按一下向下箭頭選取 ATA 中心服務要使用的 IP 位址。<br /><br />此 IP 位址與 ATA 中心服務的連接埠不能和 ATA 主控台的 IP 位址與連接埠相同。 請務必變更 ATA 主控台的連接埠。|
-    |ATA 中心服務 SSL 憑證|這是 ATA 中心服務將使用的憑證。|按一下鑰匙圖示以選取安裝的憑證，或者，在實驗室環境中部署時可選取自我簽署的憑證。|
-    |ATA 主控台 IP 位址|這是 ATA 主控台的 IIS 將使用的 IP 位址。|按一下向下箭頭選取 ATA 主控台要使用的 IP 位址。 **注意︰** 記下此 IP 位址，可讓您更輕鬆地從 ATA 閘道存取 ATA 主控台。|
-    |ATA 主控台 SSL 憑證|這是IIS 將使用的憑證。|按一下鑰匙圖示以選取安裝的憑證，或者，在實驗室環境中部署時可選取自我簽署的憑證。|
-
-    ![ATA 中心設定映像](media/ATA-Center-Configuration.JPG)
+    |中心服務 IP 位址: 連接埠|這是 ATA 中心服務會接聽 ATA 閘道通訊的 IP 位址。<br /><br />**預設連接埠：**443|按一下向下箭頭選取 ATA 中心服務要使用的 IP 位址。<br /><br />此 IP 位址與 ATA 中心服務的連接埠不能和 ATA 主控台的 IP 位址與連接埠相同。 請務必變更 ATA 主控台的連接埠。|
+    |中心服務 SSL 憑證|這是 ATA 主控台與 ATA 中心服務將使用的憑證。|按一下鑰匙圖示以選取安裝的憑證，或者，在實驗室環境中部署時可選取自我簽署的憑證。|
+    |主控台 IP 位址|這是 ATA 主控台將使用的 IP 位址。|按一下向下箭頭選取 ATA 主控台要使用的 IP 位址。 **注意︰** 記下此 IP 位址，可讓您更輕鬆地從 ATA 閘道存取 ATA 主控台。|
+    
+    ![ATA 中心設定映像](media/ATA-Center-Configuration.png)
 
 10.  按一下 [安裝] 來安裝 ATA 中心及其元件。
     安裝 ATA 中心時將安裝及設定下列元件︰
 
-    -   Internet Information Services (IIS)
-
-    -   ATA 中心服務和 ATA 主控台 IIS 站台
+    -   ATA 中心服務
 
     -   MongoDB
 
@@ -101,6 +102,6 @@ ms.openlocfilehash: 41d538039a8fa0511a74dd6cd5d840a1dea516e8
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

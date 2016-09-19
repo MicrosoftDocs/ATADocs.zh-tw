@@ -13,11 +13,15 @@ ms.assetid: 1d27dba8-fb30-4cce-a68a-f0b1df02b977
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 83222c6d29434d93fa1b5ecd613de30408ccfe59
+ms.sourcegitcommit: 5cd030f3b952d08c6617a6cda121c344a9c36f51
+ms.openlocfilehash: b4e68e9e8dbd94075a34a8e3e8f42d4f534caf50
 
 
 ---
+
+*適用於︰Advanced Threat Analytics 1.7 版*
+
+
 
 # ATA 資料庫管理
 如果您要移動、備份或還原 ATA 資料庫，請使用這些程序以使用 MongoDB。
@@ -46,17 +50,18 @@ ms.openlocfilehash: 83222c6d29434d93fa1b5ecd613de30408ccfe59
 
 6.  啟動 **MongoDB** 服務。
 
-7.  開啟命令提示字元，並透過執行 `mongo.exe ATA` 來執行 Mongo 殼層。
+7. 啟動 **Microsoft Advanced Threat Analytics 中心**服務。
 
-    根據預設，mongo.exe 位於︰C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin
+## ATA 設定檔
+ATA 組態會儲存在資料庫的「SystemProfile 」集合中。
+ATA 中心服務每小時會將此集合備份到名為 "SystemProfile_*timestamp*.json" 的檔案。 會儲存 10 個最新的版本。
+這位於名為「Backup」的子資料夾中。 在預設的 ATA 安裝位置中，可以在這裡找到︰*C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup\SystemProfile_*timestamp*.json*。 
 
-8.  執行下列命令： `db.SystemProfiles.update( {_t: "CenterSystemProfile"} , {$set:{"Configuration.CenterDatabaseClientConfiguration.DataPath" : "<New DB Location>"}})`
+**注意**：建議在針對 ATA 進行重大變更時，在某處備份此檔案。
 
-   而不是 <New DB Location>，其中 `&lt;New DB Location&gt;` 是新的資料夾路徑。
+可執行下列命令來還原所有設定︰
 
-9.  將 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Advanced Threat Analytics\Center\DatabaseDataPath 更新至新的資料夾路徑。
-
-9. 啟動 **Microsoft Advanced Threat Analytics 中心**服務。
+`mongoimport.exe --db ATA --collection SystemProfile --file "<SystemProfile.json backup file>" --upsert`
 
 ## 另請參閱
 - [ATA 架構](/advanced-threat-analytics/plan-design/ata-architecture)
@@ -66,6 +71,6 @@ ms.openlocfilehash: 83222c6d29434d93fa1b5ecd613de30408ccfe59
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

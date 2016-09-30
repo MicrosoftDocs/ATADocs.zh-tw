@@ -4,7 +4,7 @@ description: "列出每個版本的更新項目，以及已知問題和移轉指
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.assetid: cbea47f9-34c1-42b6-ae9e-6a472b49e1a5
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd63e2011a1608532474f9f3940c4e2fe02ba8c5
-ms.openlocfilehash: dd5f1f49cd11ea8a4a2b8fc0bb7ff614ee463aab
+ms.sourcegitcommit: d47d9e7be294c68d764710c15c4bb78539e42f62
+ms.openlocfilehash: 4672dc22ef36d7a835a75341d7a960186141c36f
 
 
 ---
@@ -37,6 +37,6 @@ ms.openlocfilehash: dd5f1f49cd11ea8a4a2b8fc0bb7ff614ee463aab
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

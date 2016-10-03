@@ -13,8 +13,8 @@ ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b8ad2f343b8397184cd860803f06b0d59c492f5a
-ms.openlocfilehash: 96b3ce171ca07bf44163d49b50377fccd6472a08
+ms.sourcegitcommit: 7d081a6e14adffc675de203001074c3435cce6b2
+ms.openlocfilehash: 8896df26157f9da903e68ac7a1d21f7f80f95026
 
 
 ---
@@ -83,7 +83,7 @@ ATA 輕量型閘道可以涵蓋大多數虛擬網域控制站；如需判斷 ATA
 有 2 個東西要備份︰
 
 -   ATA 儲存的流量和事件，可以使用任何支援的資料庫備份程序加以備份；如需詳細資訊，請參閱 [ATA database management](/advanced-threat-analytics/deploy-use/ata-database-management) (ATA 資料庫管理)。 
--   ATA 的設定。 這儲存在資料庫中，每小時自動備份在 ATA 中心部署位置中的 [Backup] 資料夾。  請參閱 [ATA 資料庫管理](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/ata-database-management)了解詳細資訊。
+-   ATA 的設定。 這儲存在資料庫中，每小時自動備份在 ATA 中心部署位置中的 [Backup] 資料夾。  請參閱 [ATA 資料庫管理](https://docs.microsoft.com/advanced-threat-analytics/deploy-use/ata-database-management)了解詳細資訊。
 ## ATA 可以偵測什麼？
 ATA 可以偵測已知的惡意攻擊和技術、安全性問題和風險。
 如需 ATA 偵測的完整清單，請參閱 [ATA 會執行哪些偵測？](ata-threats.md)。
@@ -144,6 +144,6 @@ Microsoft Advanced Threat Analytics 支援在相同樹系邊界內的多網域�
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 54e5105e78b6db9f33488135601381af5503aa4a
-ms.openlocfilehash: 118eb5bf505426f1947e96a4e01d0206abdce88d
+ms.sourcegitcommit: d2c1c00ff649557c1a0a16385e025c9d597c3bbf
+ms.openlocfilehash: 91ce3a3fef27673712a708aa1e92c32298cedd84
 
 
 ---
@@ -54,7 +54,7 @@ ms.openlocfilehash: 118eb5bf505426f1947e96a4e01d0206abdce88d
 2.  將 SIEM 或 Syslog 伺服器設定為轉送 Windows 事件識別碼 4776 給其中一個 ATA 閘道的 IP 位址。 如需有關如何設定 SIEM 的詳細資訊，請參閱您的 SIEM 線上說明或每部 SIEM 伺服器的特定格式需求的技術支援選項。
 
 ### SIEM 支援
-ATA 支援下列格式的 SIEM 事件：
+ATA 支援下列格式的 SIEM 事件：  
 
 #### RSA 安全性分析
 &lt;Syslog Header&gt;RsaSA\n2015-May-19 09:07:09\n4776\nMicrosoft-Windows-Security-Auditing\nSecurity\XXXXX.subDomain.domain.org.il\nYYYYY$\nMMMMM \n0x0
@@ -282,10 +282,10 @@ Message 是來自 Windows 事件的原始事件文字
 
 ## 另請參閱
 - [安裝 ATA](install-ata.md)
-- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/en-US/home?forum=mata)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

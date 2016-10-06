@@ -4,7 +4,7 @@ description: "列出 ATA 1.7 版的新功能以及已知問題"
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 08/28/2016
+ms.date: 09/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ae6a3295d2fffabdb8e5f713674379e4af499ac2
-ms.openlocfilehash: af9101260b1a0d5d9da32398f638f76e0c8c40a7
+ms.sourcegitcommit: d47d9e7be294c68d764710c15c4bb78539e42f62
+ms.openlocfilehash: 62f2aadc978547647a1dc3c27ed3453f7ed15828
 
 
 ---
@@ -32,6 +32,8 @@ ATA 1.7 的更新提供下列各方面的改良︰
 -   支援 Windows Server 2016 和 Windows Server Core
 
 -   使用者體驗改善
+
+-   次要變更
 
 
 ### 新的和更新的偵測項目
@@ -63,54 +65,19 @@ ATA 1.7 的更新提供下列各方面的改良︰
 ### 閘道自動更新可能會失敗
 **徵兆︰** 在 WAN 連結慢速的環境中，ATA 閘道更新可能會達到更新的逾時 (100 秒) 而無法順利完成。
 在 ATA 主控台中，ATA 閘道將會有很長一段時間處於「正在更新 (正在下載套件)」狀態，然後最後失敗。
-
 **因應措施︰** 若要解決此問題，請從 ATA 主控台下載最新的 ATA 閘道套件，以手動方式更新 ATA 閘道。
 
-### 從 ATA 1.6 更新時發生移轉失敗
-更新至 ATA 1.7 時，更新程序可能會失敗並傳回錯誤碼 *0x80070643*：
+ > [!IMPORTANT]
+ 不支援為 ATA 所使用的憑證自動更新憑證。 使用這些憑證可能會在自動更新憑證時導致 ATA 停止運作。 
 
-![將 ATA 更新為 1.7 的錯誤](media/ata-update-error.png)
-
-檢閱部署記錄檔，從中找出失敗的原因。 部署記錄檔位於 **%temp%\.。 .\Microsoft Advanced Thread Analytics Center_{date_stamp}_MsiPackage.log** 中。 
-
-下表列出您應尋找的錯誤，以及修正錯誤時所應使用的對應 Mongo 指令碼。 請參閱表格下方的範例，了解 Mongo 指令碼的執行方法︰
-
-| 部署記錄檔中的錯誤                                                                                                                  | Mongo 指令碼                                                                                                                                                                         |
-|---|---|
-| System.FormatException: Size {size},is larger than MaxDocumentSize 16777216 <br>在檔案的更下方處︰<br>  Microsoft.Tri.Center.Deployment.Package.Actions.DatabaseActions.MigrateUniqueEntityProfiles(Boolean isPartial)                                                                                        | db.UniqueEntityProfile.find().forEach(function(obj){if(Object.bsonsize(obj) > 12582912) {print(obj._id);print(Object.bsonsize(obj));db.UniqueEntityProfile.remove({_id:obj._id});}}) |
-| System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown<br>在檔案的更下方處︰<br>Microsoft.Tri.Center.Deployment.Package.Actions.DatabaseActions.ReduceSuspiciousActivityDetailsRecords(IMongoCollection`1 suspiciousActivityCollection, Int32 deletedDetailRecordMaxCount) | db.SuspiciousActivity.find().forEach(function(obj){if(Object.bsonsize(obj) > 500000),{print(obj._id);print(Object.bsonsize(obj));db.SuspiciousActivity.remove({_id:obj._id});}})     |
-|System.Security.Cryptography.CryptographicException: Bad Length<br>在檔案的更下方處︰<br> Microsoft.Tri.Center.Deployment.Package.Actions.DatabaseActions.MigrateCenterSystemProfile(IMongoCollection`1 systemProfileCollection)| CenterThumbprint=db.SystemProfile.find({_t:"CenterSystemProfile"}).toArray()[0].Configuration.SecretManagerConfiguration.CertificateThumbprint;db.SystemProfile.update({_t:"CenterSystemProfile"},{$set:{"Configuration.ManagementClientConfiguration.ServerCertificateThumbprint":CenterThumbprint}})|
-
-
-若要執行適當的指令碼，請遵循下列步驟。 
-
-1.  從提高權限的命令提示字元中，瀏覽至下列位置︰ **\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**
-2.  類型 - **Mongo.exe ATA**   (*注意*︰ATA 必須大寫。)
-3.  從上表找出符合部署記錄檔中所述錯誤的指令碼，然後貼上該指令碼。
-
-![ATA Mongo 指令碼](media/ATA-mongoDB-script.png)
-
-此時您應能夠重新啟動升級。
-
-### ATA 會回報許多 "*Reconnaissance using directory services enumerations* 可疑活動︰
+### 針對 JIS 編碼無瀏覽器支援
+**徵兆：**ATA 主控台在使用 JIS 編碼的瀏覽器上可能不會如預期般運作 **因應措施：** 將瀏覽器的編碼變更為 Unicode UTF-8。
  
-這很可能是組織中所有 (或許多) 的用戶腦電腦全都執行了網路掃描工具所致。 當出現此問題時︰
+## 次要變更
 
-1. 若您能確定原因，或能確定為用戶端電腦上執行的特定應用程式所致，請將透過電子郵件將此資訊傳送給 microsoft.com 的 ATAEval。
-2. 使用下列 mongo 指令碼關閉所有事件 (請參閱前文中 mongo 指令碼的執行方法)：
-
-db.SuspiciousActivity.update({_t: "SamrReconnaissanceSuspiciousActivity"}, {$set: {Status: "Dismissed"}}, {multi: true})
-
-### ATA 會針對所關閉的可疑活動傳送通知︰
-您如有設定通知，ATA 可能持續針對所關閉的可疑活動傳送通知 (電子郵件、syslog 及事件記錄檔)。
-此問題目前沒有任何相對的因應措施。 
-
-### 若停用 TLS 1.0 與 TLS 1.1，ATA 閘道可能無法在 ATA 中心註冊︰
-若 ATA 閘道 (或輕量型閘道) 停用 TLS 1.0 與 TLS 1.1，其可能無法在 ATA 中心註冊
-
-### 無法自動更新 ATA 所使用的憑證
-使用自動憑證更新可能會在憑證自動更新時，導致 ATA 停止運作。 
-
+- ATA 現在針對 ATA 主控台是使用 OWIN 而不是 IIS。
+- 如果 ATA 中心服務已關閉，您將無法存取 ATA 主控台。
+- 由於 ATA NNR 中的變更，已不再需要短期的租用子網路。
 
 ## 另請參閱
 [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
@@ -120,6 +87,6 @@ db.SuspiciousActivity.update({_t: "SamrReconnaissanceSuspiciousActivity"}, {$set
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

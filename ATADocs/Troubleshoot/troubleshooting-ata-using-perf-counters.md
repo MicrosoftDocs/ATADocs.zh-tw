@@ -4,7 +4,7 @@ description: "描述如何使用效能計數器疑難排解 ATA 相關問題"
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 08/21/2016
+ms.date: 09/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.assetid: df162a62-f273-4465-9887-94271f5000d2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 21f28848dd22cfbcbb4b4871300621203b445fb4
-ms.openlocfilehash: a6113c106653039ca3b4337d9250d9b9baca4611
+ms.sourcegitcommit: d47d9e7be294c68d764710c15c4bb78539e42f62
+ms.openlocfilehash: e1ff02f8d78eacc5c4fccdc1cc973d8a07f9c6ca
 
 
 ---
@@ -47,13 +47,13 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 
 |計數器|說明|閾值|疑難排解|
 |-----------|---------------|-------------|-------------------|
-|Microsoft ATA Gateway\NetworkListener PEF Parser Messages/Sec|每秒由 ATA 閘道處理的流量。|沒有閾值|協助您了解 ATA 閘道正在剖析的流量。|
-|NetworkListener PEF Dropped Events/Sec|每秒由 ATA 閘道減少的流量。|此數字應保持為零 (可接受極少數的短時間減少高載)。|檢查是否有任何元件達到其大小上限，並且封鎖 NetworkListener 所有的先前元件。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
-|ATA GW Counter/NetworkListener ETW Dropped Events/Sec|每秒由 ATA 閘道減少的流量。|此數字應保持為零 (可接受極少數的短時間減少高載)。|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
-|ATA GW Counter/NetworkActivityTranslator Message Data # Block Size|為轉譯成網路活動 (NA) 而加入佇列的流量。|應小於上限 -1 (預設上限︰100,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
-|ATA GW Counter/EntityResolver Activity Block Size|做為解決方法而加入佇列的網路活動 (NA) 數量。|應小於上限 -1 (預設上限︰10,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
-|ATA GW Counter/EntitySender Entity Batch Block Size|要傳送給 ATA 中心而加入佇列的網路活動 (NA) 數量。|應小於上限 -1 (預設上限︰1,000,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
-|ATA GW Counter/EntitySender Batch Send Time|傳送最後一個批次所花的時間。|大部分時候應小於 1000 毫秒|檢查 ATA 閘道和 ATA 中心之間是否有任何網路問題。|
+|Microsoft ATA Gateway\NetworkListener PEF Parser Messages\Sec|每秒由 ATA 閘道處理的流量。|沒有閾值|協助您了解 ATA 閘道正在剖析的流量。|
+|NetworkListener PEF Dropped Events\Sec|每秒由 ATA 閘道減少的流量。|此數字應保持為零 (可接受極少數的短時間減少高載)。|檢查是否有任何元件達到其大小上限，並且封鎖 NetworkListener 所有的先前元件。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
+|Microsoft ATA Gateway\NetworkListener ETW Dropped Events\Sec|每秒由 ATA 閘道減少的流量。|此數字應保持為零 (可接受極少數的短時間減少高載)。|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
+|Microsoft ATA Gateway\NetworkActivityTranslator Message Data # Block Size|為轉譯成網路活動 (NA) 而加入佇列的流量。|應小於上限 -1 (預設上限︰100,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
+|Microsoft ATA Gateway\EntityResolver Activity Block Size|做為解決方法而加入佇列的網路活動 (NA) 數量。|應小於上限 -1 (預設上限︰10,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
+|Microsoft ATA Gateway\EntitySender Entity Batch Block Size|要傳送給 ATA 中心而加入佇列的網路活動 (NA) 數量。|應小於上限 -1 (預設上限︰1,000,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
+|Microsoft ATA Gateway\EntitySender Batch Send Time|傳送最後一個批次所花的時間。|大部分時候應小於 1000 毫秒|檢查 ATA 閘道和 ATA 中心之間是否有任何網路問題。|
 
 > [!NOTE]
 > -   時間計數器以毫秒為單位。
@@ -109,15 +109,15 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 |計數器|說明|閾值|疑難排解|
 |-----------|---------------|-------------|-------------------|
 |Processor(_Total)\% Processor Time|處理器花費在執行非閒置執行緒的經過時間百分比。|平均小於 80%|檢查是否有花費的處理器時間遠超過預期的特定程序。<br /><br />新增更多處理器。<br /><br />減少每部伺服器的流量。<br /><br />"Processor(_Total)\% Processor Time" 計數器在虛擬伺服器上可能會較不精確，在此情況下，要測量處理器電源不足，更精確的方式是透過 "System\Processor Queue Length" 計數器。|
-|System\Context Switches/sec|所有處理器從一個執行緒切換到另一個執行緒的組合速率。|小於 5000&#42; 個核心 (實體核心)|檢查是否有花費的處理器時間遠超過預期的特定程序。<br /><br />新增更多處理器。<br /><br />減少每部伺服器的流量。<br /><br />"Processor(_Total)\% Processor Time" 計數器在虛擬伺服器上可能會較不精確，在此情況下，要測量處理器電源不足，更精確的方式是透過 "System\Processor Queue Length" 計數器。|
+|System\Context Switches\sec|所有處理器從一個執行緒切換到另一個執行緒的組合速率。|小於 5000&#42; 個核心 (實體核心)|檢查是否有花費的處理器時間遠超過預期的特定程序。<br /><br />新增更多處理器。<br /><br />減少每部伺服器的流量。<br /><br />"Processor(_Total)\% Processor Time" 計數器在虛擬伺服器上可能會較不精確，在此情況下，要測量處理器電源不足，更精確的方式是透過 "System\Processor Queue Length" 計數器。|
 |System\Processor Queue Length|準備好執行，且正等候排程的執行緒數目。|小於 5&#42; 個核心 (實體核心)|檢查是否有花費的處理器時間遠超過預期的特定程序。<br /><br />新增更多處理器。<br /><br />減少每部伺服器的流量。<br /><br />"Processor(_Total)\% Processor Time" 計數器在虛擬伺服器上可能會較不精確，在此情況下，要測量處理器電源不足，更精確的方式是透過 "System\Processor Queue Length" 計數器。|
 |Memory\Available MBytes|可供配置的實體記憶體 (RAM) 數量。|應大於 512|檢查是否有花費的實體記憶體遠超過預期的特定程序。<br /><br />減少實體記憶體數量。<br /><br />減少每部伺服器的流量。|
-|LogicalDisk(&#42;)\Avg. 的集合規則|從磁碟讀取資料的平均延遲 (您應該選擇資料庫磁碟機做為執行個體)。|應小於 10 毫秒|檢查是否有特定程序，其利用的資料庫磁碟機超過預期。<br /><br />如果此磁碟機可以提供目前的工作負載，同時具有小於 10 毫秒的延遲，請洽詢儲存體小組/廠商。 使用磁碟使用計數器可判斷目前的工作負載。|
-|LogicalDisk(&#42;)\Avg. 的集合規則|將資料寫入磁碟的平均延遲 (您應該選擇資料庫磁碟機做為執行個體)。|應小於 10 毫秒|檢查是否有特定程序，其利用的資料庫磁碟機超過預期。<br /><br />如果此磁碟機可以提供目前的工作負載，同時具有小於 10 毫秒的延遲，請洽詢儲存體小組/廠商。 使用磁碟使用計數器可判斷目前的工作負載。|
-|\LogicalDisk(&#42;)\Disk Reads/sec|執行讀取作業至磁碟的速率。|沒有閾值|磁碟使用計數器可在疑難排解儲存體延遲時新增見解。|
-|\LogicalDisk(&#42;)\Disk Read Bytes/sec|每秒從磁碟讀取的位元組數目。|沒有閾值|磁碟使用計數器可在疑難排解儲存體延遲時新增見解。|
-|\LogicalDisk&#42;\Disk Writes/sec|執行寫入作業至磁碟的速率。|沒有閾值|磁碟使用計數器 (可在疑難排解儲存體延遲時新增見解)|
-|\LogicalDisk(&#42;)\Disk Write Bytes/sec|每秒寫入磁碟的位元組數目。|沒有閾值|磁碟使用計數器可在疑難排解儲存體延遲時新增見解。|
+|LogicalDisk(&#42;)\Avg. Disk sec\Read|從磁碟讀取資料的平均延遲 (您應該選擇資料庫磁碟機做為執行個體)。|應小於 10 毫秒|檢查是否有特定程序，其利用的資料庫磁碟機超過預期。<br /><br />如果此磁碟機可以提供目前的工作負載，同時具有小於 10 毫秒的延遲，請洽詢儲存體小組/廠商。 使用磁碟使用計數器可判斷目前的工作負載。|
+|LogicalDisk(&#42;)\Avg. Disk sec\Write|將資料寫入磁碟的平均延遲 (您應該選擇資料庫磁碟機做為執行個體)。|應小於 10 毫秒|檢查是否有特定程序，其利用的資料庫磁碟機超過預期。<br /><br />如果此磁碟機可以提供目前的工作負載，同時具有小於 10 毫秒的延遲，請洽詢儲存體小組\廠商。 使用磁碟使用計數器可判斷目前的工作負載。|
+|\LogicalDisk(&#42;)\Disk Reads\sec|執行讀取作業至磁碟的速率。|沒有閾值|磁碟使用計數器可在疑難排解儲存體延遲時新增見解。|
+|\LogicalDisk(&#42;)\Disk Read Bytes\sec|每秒從磁碟讀取的位元組數目。|沒有閾值|磁碟使用計數器可在疑難排解儲存體延遲時新增見解。|
+|\LogicalDisk&#42;\Disk Writes\sec|執行寫入作業至磁碟的速率。|沒有閾值|磁碟使用計數器 (可在疑難排解儲存體延遲時新增見解)|
+|\LogicalDisk(&#42;)\Disk Write Bytes\sec|每秒寫入磁碟的位元組數目。|沒有閾值|磁碟使用計數器可在疑難排解儲存體延遲時新增見解。|
 
 ## 另請參閱
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
@@ -128,6 +128,6 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

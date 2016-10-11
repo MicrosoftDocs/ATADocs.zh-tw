@@ -13,8 +13,8 @@ ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: 87cb9534a45d3a8ca29d6a803ca399a33a3d3ea6
+ms.sourcegitcommit: d3ec5d56444d618efcfc617172e93e0e8e8a1768
+ms.openlocfilehash: 6fd96a8bf2fb1e064cc05858a020cbc2e55746f4
 
 
 ---
@@ -71,23 +71,25 @@ ATA 1.6 的更新提供下列各方面的改良︰
 
 2.  執行安裝檔案 Microsoft ATA Center Setup.exe，並遵循螢幕上的指示安裝更新。
 
-    1.  ATA 1.6 需要安裝 .Net Framework 4.6.1。 如果尚未安裝，ATA 安裝會在安裝過程中安裝 .Net Framework 4.6.1<br>
-    > [!NOTE]
-    > .Net Framework 4.6.1 安裝可能需要重新啟動伺服器。 只有在重新啟動伺服器之後，才會繼續進行 ATA 安裝。
-5.  在 [歡迎] 頁面中，選取您的語言，然後按一下 [下一步]。
+    1.  ATA 1.6 需要安裝 .Net Framework 4.6.1。 如果尚未安裝，ATA 安裝會在安裝過程中安裝 .Net Framework 4.6.1。
+    
+        > [!NOTE] 
+        > .Net Framework 4.6.1 安裝可能需要重新啟動伺服器。 只有在重新啟動伺服器之後，才會繼續進行 ATA 安裝。
+    
+    2.  在 [歡迎] 頁面中，選取您的語言，然後按一下 [下一步]。
 
-    6.  閱讀使用者授權合約，如果您接受條款，請按 [下一步]。
+    3.  閱讀使用者授權合約，如果您接受條款，請按 [下一步]。
 
-    7.  您現在可以使用 Microsoft Update 讓 ATA 保持最新狀態。  在 [Microsoft Update] 頁面中，選取 **[當我檢查更新時使用 Microsoft Update (建議選項)]**。
+    4.  您現在可以使用 Microsoft Update 讓 ATA 保持最新狀態。  在 [Microsoft Update] 頁面中，選取 **[當我檢查更新時使用 Microsoft Update (建議選項)]**。
     ![保持 ATA 最新狀態影像](media/ata_ms_update.png) 如此會調整 Windows 設定，以允許其他 Microsoft 產品 (包括 ATA) 更新，如下所示。 
      ![Windows 自動更新影像](media/ata_installupdatesautomatically.png)
 
-    8.  開始安裝之前，ATA 會執行整備檢查。 檢閱檢查的結果，確保已成功設定必要條件，且至少具有磁碟空間下限。 
+    5.  開始安裝之前，ATA 會執行整備檢查。 檢閱檢查的結果，確保已成功設定必要條件，且至少具有磁碟空間下限。 
     ![ATA 整備檢查影像](media/ata_install_readinesschecks.png)
 
-    3.  按一下 [更新]。 按一下 [更新] 之後，ATA 會離線直到更新程序完成。
+    6.  按一下 [更新]。 按一下 [更新] 之後，ATA 會離線直到更新程序完成。
 
-4.  在更新 ATA 中心之後，ATA 閘道會報告它們現在已經過期。
+3.  在更新 ATA 中心之後，ATA 閘道會報告它們現在已經過期。
 
     ![閘道過期的圖片](media/ATA-center-outdated.png)
 
@@ -140,6 +142,6 @@ ZIP 檔案包含下列項目：
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -13,8 +13,8 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d47d9e7be294c68d764710c15c4bb78539e42f62
-ms.openlocfilehash: 62f2aadc978547647a1dc3c27ed3453f7ed15828
+ms.sourcegitcommit: a024cab5e706b32273d563095f5d7e690d6ed055
+ms.openlocfilehash: dec9fc03cdf718627dd72ac0c48f934fe507c7ac
 
 
 ---
@@ -73,6 +73,12 @@ ATA 1.7 的更新提供下列各方面的改良︰
 ### 針對 JIS 編碼無瀏覽器支援
 **徵兆：**ATA 主控台在使用 JIS 編碼的瀏覽器上可能不會如預期般運作 **因應措施：** 將瀏覽器的編碼變更為 Unicode UTF-8。
  
+### 使用 VMware 時的「已丟棄連接埠鏡像流量」
+
+在 VMware 上使用輕量閘道時的「已丟棄連接埠鏡像流量」警示
+
+若在 VMware 虛擬機器上使用網域控制站，可能會收到有關於**已丟棄連接埠鏡像流量**的警示。 當 VMware 中的組態不相符時，即可能會發生此情況。 若要避免這些警示，可檢查是否已將下列設定設為 [0] 或 [已停用]：TsoEnable、LargeSendOffload、IPv4、TSO Offload。 此外也請考慮停用 [IPv4 Giant TSO Offload]。 如需詳細資訊，請參閱 VMware 文件。
+
 ## 次要變更
 
 - ATA 現在針對 ATA 主控台是使用 OWIN 而不是 IIS。
@@ -87,6 +93,6 @@ ATA 1.7 的更新提供下列各方面的改良︰
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

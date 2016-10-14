@@ -13,8 +13,8 @@ ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
-ms.openlocfilehash: fc268bcb2e3d027b09fa3349427934f60783b971
+ms.sourcegitcommit: 3768cd103fc2a938d2d39fe34179d74587abc118
+ms.openlocfilehash: be58ce053a2ddb59fa1556027e432c0499f8deb4
 
 
 ---
@@ -42,7 +42,7 @@ ms.openlocfilehash: fc268bcb2e3d027b09fa3349427934f60783b971
     |**使用者名稱** (必填)|輸入唯讀使用者名稱，例如︰**ATAuser**。|
     |**密碼** (必填)|輸入唯讀使用者的密碼，例如︰**Pencil1**。|
     |**網域** (必填)|輸入唯讀使用者的網域，例如︰**contoso.com**。 **注意︰**您務必輸入使用者所在網域的完整 FQDN。 例如，如果使用者的帳戶是在 corp.contoso.com 網域中，您需要輸入 `corp.contoso.com`，而非 contoso.com|
-    |自動更新所有 ATA 閘道 |如果您啟用此設定，在未來版本中，當您更新 ATA 中心時，所有 ATA 閘道都會自動更新。|
+    
 
     儲存之後，主控台中的歡迎訊息會變更如下︰![ATA 歡迎階段 1 完成](media/ATA_1.7-welcome-provide-username-finished.png)
 
@@ -62,6 +62,6 @@ ms.openlocfilehash: fc268bcb2e3d027b09fa3349427934f60783b971
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

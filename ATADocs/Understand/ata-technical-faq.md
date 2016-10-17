@@ -13,8 +13,8 @@ ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7d081a6e14adffc675de203001074c3435cce6b2
-ms.openlocfilehash: 8896df26157f9da903e68ac7a1d21f7f80f95026
+ms.sourcegitcommit: 3768cd103fc2a938d2d39fe34179d74587abc118
+ms.openlocfilehash: 175fdf824812bd4280422f90e4eec506ddd278e4
 
 
 ---
@@ -22,10 +22,6 @@ ms.openlocfilehash: 8896df26157f9da903e68ac7a1d21f7f80f95026
 
 # ATA 常見問題集
 本文章提供關於 ATA 的常見問題清單，並提供見解和解答。
-
-
-## ATA 如何授權？
-如需授權資訊，請參閱[如何購買 Advanced Threat Analytics](https://www.microsoft.com/cloud-platform/advanced-threat-analytics-pricing)
 
 
 ## 如果 ATA 閘道無法啟動，該怎麼辦？
@@ -144,6 +140,6 @@ Microsoft Advanced Threat Analytics 支援在相同樹系邊界內的多網域�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

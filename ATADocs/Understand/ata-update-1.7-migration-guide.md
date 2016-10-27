@@ -13,8 +13,8 @@ ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e3b690767e5c6f5561a97a73eccfbf50ddb04148
-ms.openlocfilehash: 5c20c41c3fe587f18087d64f4f84c1df65072fde
+ms.sourcegitcommit: 3a821bf1479af529fd65e2153f8b722999c83a4f
+ms.openlocfilehash: 444bc4744834219d9db7bc8c209f33c039f90dad
 
 
 ---
@@ -28,6 +28,7 @@ ATA 1.7 的更新提供下列各方面的改良︰
   
 
 ## 將 ATA 更新至 1.7 版
+
 > [!NOTE] 
 > 如果您的環境中未安裝 ATA，請下載包括 1.7 版的 ATA 完整版本，並依照[安裝 ATA](/advanced-threat-analytics/deploy-use/install-ata) 所描述的標準安裝程序。
 
@@ -81,8 +82,8 @@ ATA 1.7 的更新提供下列各方面的改良︰
 > 更新所有 ATA 閘道以確保 ATA 正常運作。
 > 在所有閘道上設定的 Syslog 接聽程式連接埠將會變更為 514。
  
-    > [!NOTE] 
-    > To install new ATA Gateways, go the **Gateways** screen and click **Download Gateway Setup** to get the ATA 1.7 installation package and follow the instructions for new Gateway installation as described in [Step 4. Install the ATA Gateway](/advanced-threat-analytics/deploy-use/install-ata-step4) .
+> [!NOTE] 
+> 若要安裝新的 ATA 閘道，請移至 **[閘道]** 畫面，然後按一下 **[下載閘道安裝程式]** 取得 ATA 1.7 安裝套件，並遵循[步驟 4：安裝 ATA 閘道](/advanced-threat-analytics/deploy-use/install-ata-step4)中所述之新閘道安裝指示。
 
 
 
@@ -92,6 +93,6 @@ ATA 1.7 的更新提供下列各方面的改良︰
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

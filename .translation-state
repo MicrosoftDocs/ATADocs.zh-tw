@@ -1013,8 +1013,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ATA.802427cdba72b53cf44827c94a4e390a41905ad3.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ATA.802427cdba72b53cf44827c94a4e390a41905ad3.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "fd6559d681163365a140e415f23960f7f975e4c3": {
       "FileHash": "fd6559d681163365a140e415f23960f7f975e4c3",
@@ -21626,8 +21634,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\TOC.f85b55eb3e40dff28191e34a95d45cd87b0e99f7.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\TOC.f85b55eb3e40dff28191e34a95d45cd87b0e99f7.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "7d9117a66b44f454b6c9890f257d1ab9b233a235": {
       "FileHash": "7d9117a66b44f454b6c9890f257d1ab9b233a235",
@@ -21661,8 +21677,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\TOC.7ddc5acfa39575166941fca3973fc59ee376add6.zh-tw.xlf with commit: 50c04857665e577fa77db45ccbbb87f0ef420441 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\TOC.7ddc5acfa39575166941fca3973fc59ee376add6.zh-tw.xlf with commit:50c04857665e577fa77db45ccbbb87f0ef420441 canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "ff9ed644ccbfd378d191f8374cd45d30a943db4f": {
       "FileHash": "ff9ed644ccbfd378d191f8374cd45d30a943db4f",
@@ -21696,8 +21720,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\TOC.60a4d3a4143fbc945b04636bebe37bf6bc2b2b81.zh-tw.xlf with commit: 50c04857665e577fa77db45ccbbb87f0ef420441 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\TOC.60a4d3a4143fbc945b04636bebe37bf6bc2b2b81.zh-tw.xlf with commit:50c04857665e577fa77db45ccbbb87f0ef420441 canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "b4f08518d602675f7f2bec2b793ff8c7d85ca084": {
       "FileHash": "b4f08518d602675f7f2bec2b793ff8c7d85ca084",
@@ -22011,8 +22043,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\TOC.602662a4c6e9c6b6819467b610eac5b1ea8b47e7.zh-tw.xlf with commit: 50c04857665e577fa77db45ccbbb87f0ef420441 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\TOC.602662a4c6e9c6b6819467b610eac5b1ea8b47e7.zh-tw.xlf with commit:50c04857665e577fa77db45ccbbb87f0ef420441 canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "fb845fb41dfbec50711fefa64b6a561433040d0b": {
       "FileHash": "fb845fb41dfbec50711fefa64b6a561433040d0b",
@@ -24146,8 +24186,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\TOC.d272a951086c3fc033212846ba52cf9d255d1bc5.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\TOC.d272a951086c3fc033212846ba52cf9d255d1bc5.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "663c023e895dea81a0079d6bb445a1a87cb0917b": {
       "FileHash": "663c023e895dea81a0079d6bb445a1a87cb0917b",
@@ -24496,8 +24544,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-database-management.a56f4c673b1abb517456517d2a5886e745fd1a90.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-database-management.a56f4c673b1abb517456517d2a5886e745fd1a90.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "b38b96f0b2e6061e97d8b46163a04d2310709491": {
       "FileHash": "b38b96f0b2e6061e97d8b46163a04d2310709491",
@@ -24531,8 +24587,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-health-center.57b81f1003786f30d809cae62862a88289e1f7e4.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-health-center.57b81f1003786f30d809cae62862a88289e1f7e4.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "e8e66a82e3ef2767dc9bc2842200ebd8576cd1e0": {
       "FileHash": "e8e66a82e3ef2767dc9bc2842200ebd8576cd1e0",
@@ -24671,8 +24735,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\install-ata.ebb339fe6f06fe279a930dbf42e95a14d812c2f3.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\install-ata.ebb339fe6f06fe279a930dbf42e95a14d812c2f3.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "70eef6a46c453889a4c494642d5d3c1ba52141f6": {
       "FileHash": "70eef6a46c453889a4c494642d5d3c1ba52141f6",
@@ -24741,8 +24813,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\install-ata-step2.3d45321e7748ee948f41c47ba8a2385044872617.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\install-ata-step2.3d45321e7748ee948f41c47ba8a2385044872617.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "0209d8352704fef6caf059d152d6bde6127d3d55": {
       "FileHash": "0209d8352704fef6caf059d152d6bde6127d3d55",
@@ -24776,8 +24856,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\install-ata-step3.82c3e0752e5bb0305f5acc701171b2086e5820d9.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\install-ata-step3.82c3e0752e5bb0305f5acc701171b2086e5820d9.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "732a5c2848754045ba6f6578a07cf474c07a0519": {
       "FileHash": "732a5c2848754045ba6f6578a07cf474c07a0519",
@@ -24881,8 +24969,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\install-ata-step6.cfd714775f8ca0497152aded917d1a1b0b009143.zh-tw.xlf with commit: 50c04857665e577fa77db45ccbbb87f0ef420441 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\install-ata-step6.cfd714775f8ca0497152aded917d1a1b0b009143.zh-tw.xlf with commit:50c04857665e577fa77db45ccbbb87f0ef420441 canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "c6b3196f6093b909e8d97f9a9ac230e35807eb72": {
       "FileHash": "c6b3196f6093b909e8d97f9a9ac230e35807eb72",
@@ -24916,8 +25012,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\manage-telemetry-settings.8695a3cab69c52f730f24c0a5aa69539621393a8.zh-tw.xlf with commit: 50c04857665e577fa77db45ccbbb87f0ef420441 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\manage-telemetry-settings.8695a3cab69c52f730f24c0a5aa69539621393a8.zh-tw.xlf with commit:50c04857665e577fa77db45ccbbb87f0ef420441 canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "0cfeb67e663489d7264c88aafe04e77fcb63377f": {
       "FileHash": "0cfeb67e663489d7264c88aafe04e77fcb63377f",
@@ -24951,8 +25055,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\modifying-ata-config-centercert.47a5010003ff67ec899123c54e6c8b85b9066f2c.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\modifying-ata-config-centercert.47a5010003ff67ec899123c54e6c8b85b9066f2c.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "373eb5722a5450bca87cf66933990249286138ab": {
       "FileHash": "373eb5722a5450bca87cf66933990249286138ab",
@@ -24986,8 +25098,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\modifying-ata-config-centerip.95510f0562110a9a517b1f38b65d31e2b365e77e.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\modifying-ata-config-centerip.95510f0562110a9a517b1f38b65d31e2b365e77e.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "ee775e66de1a56b5270b0d32c7d5ca33d4d7980c": {
       "FileHash": "ee775e66de1a56b5270b0d32c7d5ca33d4d7980c",
@@ -25056,8 +25176,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\modifying-ata-config-dcpassword.71593ec491df4d6ace15d09e924eb8cbd0ca77a8.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\modifying-ata-config-dcpassword.71593ec491df4d6ace15d09e924eb8cbd0ca77a8.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "07888a46e26a7f87dc3b6424d97aba0813b43d02": {
       "FileHash": "07888a46e26a7f87dc3b6424d97aba0813b43d02",
@@ -25126,8 +25254,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\modifying-ata-configuration.373a9ee4d26d894405af0398021da33e811bd7aa.zh-tw.xlf with commit: 50c04857665e577fa77db45ccbbb87f0ef420441 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\modifying-ata-configuration.373a9ee4d26d894405af0398021da33e811bd7aa.zh-tw.xlf with commit:50c04857665e577fa77db45ccbbb87f0ef420441 canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "44c755364a08b2aab9739b5a219e01f21d441b07": {
       "FileHash": "44c755364a08b2aab9739b5a219e01f21d441b07",
@@ -25161,8 +25297,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\operate-ata.9fb8be5f31f851cb5a21bb843445e9b55c735f08.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\operate-ata.9fb8be5f31f851cb5a21bb843445e9b55c735f08.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "b4fc459fbab3d63de12efebb125762c18946bbdc": {
       "FileHash": "b4fc459fbab3d63de12efebb125762c18946bbdc",
@@ -25196,8 +25340,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\preinstall-ata.ad944ebc907cddb617baa953f8edd06ddc17f70a.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\preinstall-ata.ad944ebc907cddb617baa953f8edd06ddc17f70a.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "a32799b68d9a8b2949033ab5d1fc5910cff71258": {
       "FileHash": "a32799b68d9a8b2949033ab5d1fc5910cff71258",
@@ -25231,8 +25383,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\setting-ata-alerts.451097ef44392d0ea58f76d60633ef3a1b47ee2d.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\setting-ata-alerts.451097ef44392d0ea58f76d60633ef3a1b47ee2d.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "66194d89c3e937923e576004a3ab4b7177f179c4": {
       "FileHash": "66194d89c3e937923e576004a3ab4b7177f179c4",
@@ -25266,8 +25426,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\setting-syslog-email-server-settings.d464a4d838651c67c76c3a67ff324b8b6e9967e6.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\setting-syslog-email-server-settings.d464a4d838651c67c76c3a67ff324b8b6e9967e6.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "0367d160ee3ec384aade0dea1eb28cd1b4ac8b8c": {
       "FileHash": "0367d160ee3ec384aade0dea1eb28cd1b4ac8b8c",
@@ -25336,8 +25504,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\working-with-ata-console.3cae6c5a1945b7c0d2da65952fc41d520e9ae029.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\working-with-ata-console.3cae6c5a1945b7c0d2da65952fc41d520e9ae029.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "3840a5f7abdd496ad245a3f1c2589ad1855fddb5": {
       "FileHash": "3840a5f7abdd496ad245a3f1c2589ad1855fddb5",
@@ -25371,8 +25547,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\working-with-detection-settings.a0ede837b20ea8c02f6b21da44651b71c1ac9257.zh-tw.xlf with commit: 50c04857665e577fa77db45ccbbb87f0ef420441 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\working-with-detection-settings.a0ede837b20ea8c02f6b21da44651b71c1ac9257.zh-tw.xlf with commit:50c04857665e577fa77db45ccbbb87f0ef420441 canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "1214560096227e00af36ff7cb1a0a95988a2ad40": {
       "FileHash": "1214560096227e00af36ff7cb1a0a95988a2ad40",
@@ -25406,8 +25590,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\working-with-suspicious-activities.ab7855486c33fccaacaae9897e5481968f71807f.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\working-with-suspicious-activities.ab7855486c33fccaacaae9897e5481968f71807f.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "2d753060f30cbcc7d16959355b86d64fdaa2ecd8": {
       "FileHash": "2d753060f30cbcc7d16959355b86d64fdaa2ecd8",
@@ -25441,8 +25633,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-architecture.f3061a537234611f48c7c71f24b061804ad31b68.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-architecture.f3061a537234611f48c7c71f24b061804ad31b68.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "2d43590ff64af2a1b9d13fe3f439192b959ad51c": {
       "FileHash": "2d43590ff64af2a1b9d13fe3f439192b959ad51c",
@@ -25581,8 +25781,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\troubleshooting-ata-using-ata-database.59180de16ff041e4081a27aa3918a2ea95a29245.zh-tw.xlf with commit: 50c04857665e577fa77db45ccbbb87f0ef420441 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\troubleshooting-ata-using-ata-database.59180de16ff041e4081a27aa3918a2ea95a29245.zh-tw.xlf with commit:50c04857665e577fa77db45ccbbb87f0ef420441 canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "4f02b0fba381eb76ad500e198392ec7624a3028a": {
       "FileHash": "4f02b0fba381eb76ad500e198392ec7624a3028a",
@@ -25616,8 +25824,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\troubleshooting-ata-using-logs.c237c8cdfd616baa4c8e47acb7d766c2f4de3c38.zh-tw.xlf with commit: 50c04857665e577fa77db45ccbbb87f0ef420441 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\troubleshooting-ata-using-logs.c237c8cdfd616baa4c8e47acb7d766c2f4de3c38.zh-tw.xlf with commit:50c04857665e577fa77db45ccbbb87f0ef420441 canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "21d87591c9c791aa431c273479921e1c11825e09": {
       "FileHash": "21d87591c9c791aa431c273479921e1c11825e09",
@@ -25651,8 +25867,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\troubleshooting-ata-using-perf-counters.79e76fbe5bcf01cc8ac0bd412963c88b4d09ccfe.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\troubleshooting-ata-using-perf-counters.79e76fbe5bcf01cc8ac0bd412963c88b4d09ccfe.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "2f35fd0267299a17f54a123d239d965a4b40b26d": {
       "FileHash": "2f35fd0267299a17f54a123d239d965a4b40b26d",
@@ -25686,8 +25910,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-release-notes.cd5912fb95129b60636ef4e9612fe0740d0ee2db.zh-tw.xlf with commit: 50c04857665e577fa77db45ccbbb87f0ef420441 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-release-notes.cd5912fb95129b60636ef4e9612fe0740d0ee2db.zh-tw.xlf with commit:50c04857665e577fa77db45ccbbb87f0ef420441 canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "bb6bc2bf0d0df3112ecfdb33c8e9d6e41f183145": {
       "FileHash": "bb6bc2bf0d0df3112ecfdb33c8e9d6e41f183145",
@@ -25721,8 +25953,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-technical-faq.938a847200169f6a473355460f812f482e6eb068.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-technical-faq.938a847200169f6a473355460f812f482e6eb068.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "87293e71e053e2d7a962a5b7362b92e5df677c77": {
       "FileHash": "87293e71e053e2d7a962a5b7362b92e5df677c77",
@@ -25756,8 +25996,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-update-1.5-migration-guide.67f35ccbe2b021acd909074d85359f05c4a001cb.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-update-1.5-migration-guide.67f35ccbe2b021acd909074d85359f05c4a001cb.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "7e45e3d671f71a73b8d07593e0ad9a09dc9e2619": {
       "FileHash": "7e45e3d671f71a73b8d07593e0ad9a09dc9e2619",
@@ -25826,8 +26074,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\what-is-ata.26e22f3b3bdc705961558ab294bf44dabd1ee498.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\what-is-ata.26e22f3b3bdc705961558ab294bf44dabd1ee498.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "3f7e2b32c43966cbb1adab1f88dd0e197313de65": {
       "FileHash": "3f7e2b32c43966cbb1adab1f88dd0e197313de65",
@@ -25861,8 +26117,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\whats-new-version-1.4.18129e66e996839697a22f71aaa38c1401497e01.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\whats-new-version-1.4.18129e66e996839697a22f71aaa38c1401497e01.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "5836792bcfadb2585d05d4a195979bd6003c84cf": {
       "FileHash": "5836792bcfadb2585d05d4a195979bd6003c84cf",
@@ -25896,8 +26160,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\whats-new-version-1.5.ba2a9f8802670c08962d29771ae25ae6abc76477.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\whats-new-version-1.5.ba2a9f8802670c08962d29771ae25ae6abc76477.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "eee114a62e1854b5821c0ca4a6f276e9dcd121c8": {
       "FileHash": "eee114a62e1854b5821c0ca4a6f276e9dcd121c8",
@@ -25931,8 +26203,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\whats-new-version-1.6.f3eab62daa4f485c10b62d2b219fb992c9802a70.zh-tw.xlf with commit: 50c04857665e577fa77db45ccbbb87f0ef420441 failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\whats-new-version-1.6.f3eab62daa4f485c10b62d2b219fb992c9802a70.zh-tw.xlf with commit:50c04857665e577fa77db45ccbbb87f0ef420441 canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "cbed991d201eed0a7124efb7e484cc6e222348da": {
       "FileHash": "cbed991d201eed0a7124efb7e484cc6e222348da",
@@ -26001,8 +26281,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-silent-installation.c7999e6e550c9bfcd0d2992e016db6840458d398.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-silent-installation.c7999e6e550c9bfcd0d2992e016db6840458d398.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "17f30cbe478a868f3b6887bf48d8084934624191": {
       "FileHash": "17f30cbe478a868f3b6887bf48d8084934624191",
@@ -26036,8 +26324,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\configure-event-collection.76d422c1eaa8e04689ce451d7a7bb84d119fda52.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\configure-event-collection.76d422c1eaa8e04689ce451d7a7bb84d119fda52.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "7f7671fefd3fe97ede2a157c5707553270ac03e1": {
       "FileHash": "7f7671fefd3fe97ede2a157c5707553270ac03e1",
@@ -26106,8 +26402,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\install-ata-step1.be25407df296fc13c33daad4579bcbd3e4664b05.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\install-ata-step1.be25407df296fc13c33daad4579bcbd3e4664b05.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "f12e43a6918c0c02bb59e4a093720a805b7dbcfc": {
       "FileHash": "f12e43a6918c0c02bb59e4a093720a805b7dbcfc",
@@ -26141,8 +26445,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\install-ata-step4.2f79a925ca23bf573e0a526a5c2cb4eda0d405e8.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\install-ata-step4.2f79a925ca23bf573e0a526a5c2cb4eda0d405e8.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "6400a0eabefac91b418e00eb670b1329fa1b5fb5": {
       "FileHash": "6400a0eabefac91b418e00eb670b1329fa1b5fb5",
@@ -26176,8 +26488,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\install-ata-step5.939491200e7347138888e6ccb69a84737be3bec2.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\install-ata-step5.939491200e7347138888e6ccb69a84737be3bec2.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "e1ce20c48323e1fca04211c2691f6dfb6fa57fe5": {
       "FileHash": "e1ce20c48323e1fca04211c2691f6dfb6fa57fe5",
@@ -26211,8 +26531,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\validate-port-mirroring.efb9ffcfc3a0f0dbd2cf5317e76edadca57c4d9d.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\validate-port-mirroring.efb9ffcfc3a0f0dbd2cf5317e76edadca57c4d9d.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "ff8eb5361d3dfeaa3715d325ed91c0ad422211ed": {
       "FileHash": "ff8eb5361d3dfeaa3715d325ed91c0ad422211ed",
@@ -26246,8 +26574,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-capacity-planning.7dded00c6a8ca713a36c240993fc56aa469bbb4b.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-capacity-planning.7dded00c6a8ca713a36c240993fc56aa469bbb4b.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "edb9c72c40e984e6166b708fa94d438e83e305bf": {
       "FileHash": "edb9c72c40e984e6166b708fa94d438e83e305bf",
@@ -26316,8 +26652,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-update-1.6-migration-guide.fe715980eb0702f6dda7862931a6921ccd723d15.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-update-1.6-migration-guide.fe715980eb0702f6dda7862931a6921ccd723d15.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "a4befce4003951b18a5e1a9d8bc1addf9e7ea255": {
       "FileHash": "a4befce4003951b18a5e1a9d8bc1addf9e7ea255",
@@ -26351,8 +26695,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\configure-port-mirroring.e622298bb90efd1f6be9ed80b0b2c691da7ec043.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\configure-port-mirroring.e622298bb90efd1f6be9ed80b0b2c691da7ec043.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "91fe130cb37f40efd90d7e8023b93075f76a5ba4": {
       "FileHash": "91fe130cb37f40efd90d7e8023b93075f76a5ba4",
@@ -26386,8 +26738,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\index.cc3e62ac6c9901731450d753a0ecebc990048809.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\index.cc3e62ac6c9901731450d753a0ecebc990048809.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "da887431d8e63a7ae8ceeb3e7e22011d356e3590": {
       "FileHash": "da887431d8e63a7ae8ceeb3e7e22011d356e3590",
@@ -26421,8 +26781,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-prerequisites.79e9e750461cccf39f17f01df458a3eb6f3e6c8b.zh-tw.xlf with commit: cebe4c76b97ee4c46a81413178e86b958682133b failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\ata-prerequisites.79e9e750461cccf39f17f01df458a3eb6f3e6c8b.zh-tw.xlf with commit:cebe4c76b97ee4c46a81413178e86b958682133b canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "c72bca3cb1eef1f3fb59f666c6143cf5c095bde9": {
       "FileHash": "c72bca3cb1eef1f3fb59f666c6143cf5c095bde9",
@@ -26456,8 +26824,16 @@
       "ArchiveException": null,
       "BilingualFilePath": null,
       "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
-      "BilingualException": null
+      "BilingualDateTime": "2016-10-27T23:39:07.5351974Z",
+      "BilingualException": {
+        "internal_error_code": "bilingual_uploading_failed",
+        "internal_error_message": "Bilingual file: ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\troubleshooting-ata-known-errors.09d3985d5b8120ee3069cc21c8701940c07afcce.zh-tw.xlf with commit: 558f1e62cc62d783d241e50c343cc983015f3b0f failed.",
+        "internal_error_retriable": false,
+        "exception_message": "bilingual file:ol-handback\\Microsoft\\ATADocs-pr.zh-tw\\master\\troubleshooting-ata-known-errors.09d3985d5b8120ee3069cc21c8701940c07afcce.zh-tw.xlf with commit:558f1e62cc62d783d241e50c343cc983015f3b0f canot be found",
+        "exception_type": "System.IO.FileNotFoundException",
+        "stack_trace": "   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass32_0.<UploadBilingualFiles>b__0(Tuple`3 fileToBeUpload) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\LocalizationCore.cs:line 493",
+        "extended_information": null
+      }
     },
     "ba6b3362da29d3a375fbb4dc56adcd64fa2b44ad": {
       "FileHash": "ba6b3362da29d3a375fbb4dc56adcd64fa2b44ad",

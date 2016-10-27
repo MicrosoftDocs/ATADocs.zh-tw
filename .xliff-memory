@@ -1,0 +1,504 @@
+{
+  "Table": {
+    "ATADocs\\DeployUse\\install-ata-step4.md.239541cdbe8216a7b5940d315377fe58012202cd.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\install-ata-step4.md",
+      "XliffHash": "239541cdbe8216a7b5940d315377fe58012202cd",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\305c939ebda636617ece6e41f0554af0e948c3ec.b197d028f64ca730becb505649d24d3f00900ef8.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\preinstall-ata.md.28b4fe41f8779c31ee0c0fc4109dd946412756fc.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\preinstall-ata.md",
+      "XliffHash": "28b4fe41f8779c31ee0c0fc4109dd946412756fc",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\0c1a53ff7192ec5a343330750d600d545c0e0237.550bc6fa7ee8b5f7a2262c93241baf95e05f3d23.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\install-ata-step2.md.6a0880ee9f4d7709acb6ce52d8e929c8db50e9ff.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\install-ata-step2.md",
+      "XliffHash": "6a0880ee9f4d7709acb6ce52d8e929c8db50e9ff",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\be58ce053a2ddb59fa1556027e432c0499f8deb4.faef4bba0615b1e1dc8e9515b77e0112e101c3c9.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\ata-health-center.md.4b782590a8ddf66da4c2727047191effda8c2960.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\ata-health-center.md",
+      "XliffHash": "4b782590a8ddf66da4c2727047191effda8c2960",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\9f408d7c2cb9c14caee175a1dd1c9ddb1baf9faa.4245ec701785a2196b28731dfe20343af84179ff.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\modifying-ata-config-consoleurl.md.9aedb254403e3bf8b9dfda3c92e706fe921ad7bd.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\modifying-ata-config-consoleurl.md",
+      "XliffHash": "9aedb254403e3bf8b9dfda3c92e706fe921ad7bd",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\b3d11a87f1909c1fd964fa990e5d36a91691a844.39b49b11a4588cc7c12b3001157187c08ae7b32a.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\manage-telemetry-settings.md.f9c6a2b0cb90dd5d77a7ee74537851ab870a82bd.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\manage-telemetry-settings.md",
+      "XliffHash": "f9c6a2b0cb90dd5d77a7ee74537851ab870a82bd",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\0c6b8589fffe24298d0caf2cf2eb5e7e817e4da2.3aadb61e0e58b3cae55bf5dbd204a162a5f6c6d4.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\Understand\\whats-new-version-1.6.md.5a87afbc54f81b52c28c4943892f8256d77ff973.HT": {
+      "SourceFilename": "ATADocs\\Understand\\whats-new-version-1.6.md",
+      "XliffHash": "5a87afbc54f81b52c28c4943892f8256d77ff973",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\0f801b4d5f2ab9a103b2ca292c75f26040699dd0.654536e4efde029f8c98d5c267c58a8b0d12a225.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\setting-ata-alerts.md.1e209b1c543b551d2bb4087743d1fe3128bc51a7.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\setting-ata-alerts.md",
+      "XliffHash": "1e209b1c543b551d2bb4087743d1fe3128bc51a7",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\a5787be5a5a0df96651b3be8e056bcdd4340df94.6eccc5732c12c0d6d96242bddf23198b61cb14dd.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\Understand\\what-is-ata.md.1075871ef45ceb356388c948b8b5a6408b8c9742.HT": {
+      "SourceFilename": "ATADocs\\Understand\\what-is-ata.md",
+      "XliffHash": "1075871ef45ceb356388c948b8b5a6408b8c9742",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\0bc2bcc42b2b59cf297b4af86f0c38aafebc379f.38163c2966cd7a0575d806ae2651daaf435f45c1.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\ata-database-management.md.c114fa98e66cb21a542d1649a17e731e820909df.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\ata-database-management.md",
+      "XliffHash": "c114fa98e66cb21a542d1649a17e731e820909df",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\b4e68e9e8dbd94075a34a8e3e8f42d4f534caf50.01df7a4c665a608ec5528b8eac57a2e1f8b1fa15.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\working-with-suspicious-activities.md.3e9f2b28495c1ac76f754e601e4fa4e871462b36.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\working-with-suspicious-activities.md",
+      "XliffHash": "3e9f2b28495c1ac76f754e601e4fa4e871462b36",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\30fbeb0682bd4b253d7a6eb52b8b31e487b363cb.0738c5dd67aa8da6b30a212a546b0473644c2ae2.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\ata-role-groups.md.7b715ffb102bbbb06d9c66d4bf901e422e4a46e3.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\ata-role-groups.md",
+      "XliffHash": "7b715ffb102bbbb06d9c66d4bf901e422e4a46e3",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\869d8f830d5dc70c927f172d77642b0c97bdcd84.376753a6b4836fb3fc0908ac8dfb5817dbeb16cb.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\PlanDesign\\ata-prerequisites.md.10bd953e22c746f3bc6f41706b5e7fcd1d64c480.HT": {
+      "SourceFilename": "ATADocs\\PlanDesign\\ata-prerequisites.md",
+      "XliffHash": "10bd953e22c746f3bc6f41706b5e7fcd1d64c480",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\a6fe3a8f042ca7f35180e99e5bc3ffd14f0ea6d8.716628c7cbf92d9790badbb5c1a8041c409f9a6b.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\install-ata-step1.md.3e74ad2936d1f57c9621186e597ee9055225bede.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\install-ata-step1.md",
+      "XliffHash": "3e74ad2936d1f57c9621186e597ee9055225bede",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\cf7ae4eccdf70e4e8661ac55ec15fff00bc9c62e.e96f90383a57b394c0e0a665ee8a00be794ef243.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\modifying-ata-config-centercert.md.8ce5c7ec94220e0f02f61d6bd33d5839b0ace29d.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\modifying-ata-config-centercert.md",
+      "XliffHash": "8ce5c7ec94220e0f02f61d6bd33d5839b0ace29d",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\e707d354396f8eeed58c13ee1e9e91df9888e030.e849d20c3340e469ea5d7c3645f787bf6f1cd954.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\install-ata.md.239698c431723918769a178f5c46d52c3721faa0.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\install-ata.md",
+      "XliffHash": "239698c431723918769a178f5c46d52c3721faa0",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\6e55fcbb1570e43b55eafd6aaeb67b037b508a96.f2a9b34b3c7d4d37a08a170bd089220f674ca878.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\operate-ata.md.0a85bb7e38038d55f7302b8ee368dc7ed3a96912.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\operate-ata.md",
+      "XliffHash": "0a85bb7e38038d55f7302b8ee368dc7ed3a96912",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\5f011486d7dff8aa70720351a465ce4db823cc66.b462be5dc5271bc44d03c505a167fe4d13308ade.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\Troubleshoot\\troubleshooting-ata-known-errors.md.26a18039f76e8775cb69ddb0e45e1656bbcac09e.HT": {
+      "SourceFilename": "ATADocs\\Troubleshoot\\troubleshooting-ata-known-errors.md",
+      "XliffHash": "26a18039f76e8775cb69ddb0e45e1656bbcac09e",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\76330b40ce9dc11638684bfa59650b8641386dfa.2f158fb96e5b6348b49cf2fe7ec55caa57142c57.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md.7b9b0ec1812368828e43aaac3e85e01f06360c0d.HT": {
+      "SourceFilename": "ATADocs\\Troubleshoot\\troubleshooting-ata-using-perf-counters.md",
+      "XliffHash": "7b9b0ec1812368828e43aaac3e85e01f06360c0d",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\e1ff02f8d78eacc5c4fccdc1cc973d8a07f9c6ca.868c12e7965c89cee74a2970f379ed3af89daaf1.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md.4edd3731522a210840df7eb04f799b5aa7f5d572.HT": {
+      "SourceFilename": "ATADocs\\Troubleshoot\\troubleshooting-ata-using-logs.md",
+      "XliffHash": "4edd3731522a210840df7eb04f799b5aa7f5d572",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\f8024edbfad1961db7fa469cc2907c55bb5ec93f.0c1e1bbabed454fa01500f6573cca35f6a0159b3.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\index.md.98f5f68f44e9459a93a1d891eec53cbba182f6e5.HT": {
+      "SourceFilename": "ATADocs\\index.md",
+      "XliffHash": "98f5f68f44e9459a93a1d891eec53cbba182f6e5",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\be7f4c021a6da9d58bb7e8329d9320db9ae19716.65a86d05f99400c743105d9dfefd95031027738a.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\Understand\\whats-new-version-1.7.md.27345ef351f24350b913c1c99c6895bd73e15927.HT": {
+      "SourceFilename": "ATADocs\\Understand\\whats-new-version-1.7.md",
+      "XliffHash": "27345ef351f24350b913c1c99c6895bd73e15927",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\521edfe3b58b4bf8d28d3beb13b3ad0bdb2e84ae.51cd1fceab226c02d48d7a96a6f80b5b66e845c9.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\working-with-ata-console.md.eb76ff4d02992d12a40bdb384583422fe15c3700.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\working-with-ata-console.md",
+      "XliffHash": "eb76ff4d02992d12a40bdb384583422fe15c3700",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\ab9abce7479971c80544476c54cbf0911d1a5822.5cd7058a0f28183a5db8ca73d4b13184b629bb70.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\configure-event-collection.md.ab701fc921bd3592bd0ab239eb70db438d32d730.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\configure-event-collection.md",
+      "XliffHash": "ab701fc921bd3592bd0ab239eb70db438d32d730",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\ee8f5c19c55dfe5287c24d0f17725d564bd283d2.c3dd4be5a794ab3d9cf98bc183e5b4d7750afb2b.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\Understand\\ata-release-notes.md.e73edfe76e59d3f6215f5cc5b485baefa09c6587.HT": {
+      "SourceFilename": "ATADocs\\Understand\\ata-release-notes.md",
+      "XliffHash": "e73edfe76e59d3f6215f5cc5b485baefa09c6587",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\4672dc22ef36d7a835a75341d7a960186141c36f.07328d7f38868145a07781d2b27923ef8f93ff17.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\validate-port-mirroring.md.1b512b4ff6fb1eaf034ab9b740004ac8a514b19a.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\validate-port-mirroring.md",
+      "XliffHash": "1b512b4ff6fb1eaf034ab9b740004ac8a514b19a",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\59d50b0d9c5adc78aca260412872076c84db8d57.2f54173612be38064147054733cee4139fbd0c15.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\PlanDesign\\ata-architecture.md.bcc43380229001b34158ff57d0dc1ecda15fb0d6.HT": {
+      "SourceFilename": "ATADocs\\PlanDesign\\ata-architecture.md",
+      "XliffHash": "bcc43380229001b34158ff57d0dc1ecda15fb0d6",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\c416fba5aace73cf585e7f6ca604a8c61c3c6fcc.50199ddd6212fbefa0c548016283744deb9a35cf.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\Understand\\whats-new-version-1.5.md.e89bef6184eaf3a4be3d979a92ab4ee37963a5f2.HT": {
+      "SourceFilename": "ATADocs\\Understand\\whats-new-version-1.5.md",
+      "XliffHash": "e89bef6184eaf3a4be3d979a92ab4ee37963a5f2",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\c6e39cf057ed5e2a86acb8c41301252ed8339922.bf2622d0c668838c426e6b56c7bd63371fda35e1.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\Understand\\TOC.md.434283174b283fa008fabfebe4e61bf7f03a44fa.HT": {
+      "SourceFilename": "ATADocs\\Understand\\TOC.md",
+      "XliffHash": "434283174b283fa008fabfebe4e61bf7f03a44fa",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\9400faf20d61616b686591bc64ec3723b6923dca.06da0e0eab6b995c4401e3429719480912163c35.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\TOC.md.aaf1eeace83d27c3e4706c0d4cad38f80b9efecc.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\TOC.md",
+      "XliffHash": "aaf1eeace83d27c3e4706c0d4cad38f80b9efecc",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\d68ae6c21b225caff57c17cce0e0ee575c7825dc.7c6ee5a750d2ff2f52d4be8cf257e7c9abd22518.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\setting-syslog-email-server-settings.md.f9fb32cc51a7bef31f9a08b264c75aba07e446ad.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\setting-syslog-email-server-settings.md",
+      "XliffHash": "f9fb32cc51a7bef31f9a08b264c75aba07e446ad",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\9a8461da7ff8b0f939a11f85e5e8dc21d191cc52.9cdf7e15a84a009f4006bb3a05f91465d8bee45a.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\install-ata-step5.md.cdca57b60b729e084b2dd0425d6759b37f0cc69a.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\install-ata-step5.md",
+      "XliffHash": "cdca57b60b729e084b2dd0425d6759b37f0cc69a",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\14b04a771f0c18170f0c80d388ab012574d40bee.edc9ceff065a5aa2da55d47919438f108729c02b.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\configure-port-mirroring.md.ba72ba94e0ea39a9ff8151cfda67ef4c5f72b434.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\configure-port-mirroring.md",
+      "XliffHash": "ba72ba94e0ea39a9ff8151cfda67ef4c5f72b434",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\d7f15f08a64a9d884a560f4f3429568cf33bdd34.2796af453fa21d8d350fb687cfbf60365e428e59.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\modifying-ata-configuration.md.05f518c61cf7ce7bfc156218533214e345088bbe.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\modifying-ata-configuration.md",
+      "XliffHash": "05f518c61cf7ce7bfc156218533214e345088bbe",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\b79a5726b40130b28b0b52d42eede69a4dacc8b6.bf704676f16b6780a1437e0557407210edd918e0.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\working-with-detection-settings.md.ff09e53bdf3a07225cdd002ee933d4ee1122790d.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\working-with-detection-settings.md",
+      "XliffHash": "ff09e53bdf3a07225cdd002ee933d4ee1122790d",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\09248cdd5f8a66a164a5cd275f2765107f5c706d.b5826f7b59578854949e53929bfc77709f8a91b5.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\modifying-ata-config-centerip.md.eec31ab4c6419bc70a87141fe2cf391c8526ae82.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\modifying-ata-config-centerip.md",
+      "XliffHash": "eec31ab4c6419bc70a87141fe2cf391c8526ae82",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\e6d42610d1c785da5b7c7b1cf035d94c2fddff4b.a4e3b8ec620513e4f75f597582407aedb357f6a8.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\PlanDesign\\ata-capacity-planning.md.32d858831c709aac39e8402c07ed49ad60261ff4.HT": {
+      "SourceFilename": "ATADocs\\PlanDesign\\ata-capacity-planning.md",
+      "XliffHash": "32d858831c709aac39e8402c07ed49ad60261ff4",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\09bf48be4c651af6ca1ae66a47f940d504570c8a.2f9bd7828868daf3fba197cfe5a449fd1280b26d.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\Troubleshoot\\troubleshooting-ata-using-ata-database.md.7105c762f182cd8ef69562ac46d0b8badcc142be.HT": {
+      "SourceFilename": "ATADocs\\Troubleshoot\\troubleshooting-ata-using-ata-database.md",
+      "XliffHash": "7105c762f182cd8ef69562ac46d0b8badcc142be",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\dfc6c902cb13b1a2bf927cd235806ec32d9fefc3.fd26db70b8d9b1a099511ec6450063b511fd4fb7.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\Understand\\whats-new-version-1.4.md.b3f91dc04a3769087c8662c3b0fd3faeaecd7e93.HT": {
+      "SourceFilename": "ATADocs\\Understand\\whats-new-version-1.4.md",
+      "XliffHash": "b3f91dc04a3769087c8662c3b0fd3faeaecd7e93",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\b66a315c9a98192cbd3b6feea462445c085091b1.c6e4f64f7d7a94bfe45b1d068e4099952643a84d.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\install-ata-step3.md.2fc0f23203689afd8bc51e49bacaf779675e71cf.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\install-ata-step3.md",
+      "XliffHash": "2fc0f23203689afd8bc51e49bacaf779675e71cf",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\277d08756b456d1a61fb9fdcb5014a6a1b4782ad.073e01f2cf0c4f918a50ff4fe8e8a8263656e02c.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\Understand\\ata-update-1.7-migration-guide.md.2089a492327f629e5d1631cc2b337b27f334dff0.HT": {
+      "SourceFilename": "ATADocs\\Understand\\ata-update-1.7-migration-guide.md",
+      "XliffHash": "2089a492327f629e5d1631cc2b337b27f334dff0",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\444bc4744834219d9db7bc8c209f33c039f90dad.0a86dbe5d04c174d5eeb6bdfa9ffcdda0a5cd98f.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\Understand\\ata-technical-faq.md.8615b4f83fba3700909ad3d98620303fad157143.HT": {
+      "SourceFilename": "ATADocs\\Understand\\ata-technical-faq.md",
+      "XliffHash": "8615b4f83fba3700909ad3d98620303fad157143",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\175fdf824812bd4280422f90e4eec506ddd278e4.f03232edccb20cb6a00ef62d1415c7602e31a6d1.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\install-ata-step6.md.93ad2da7ee8483263c3ae330b3290f693176037f.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\install-ata-step6.md",
+      "XliffHash": "93ad2da7ee8483263c3ae330b3290f693176037f",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\9ee2f36d8f0b7eae061873e8735139ccc4da00d1.f552207df6dcf5792b1b1cc67a8f8307037517af.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\Understand\\ata-threats.md.b3630f9cc41efb9952971dbf9df9315e2556b823.HT": {
+      "SourceFilename": "ATADocs\\Understand\\ata-threats.md",
+      "XliffHash": "b3630f9cc41efb9952971dbf9df9315e2556b823",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\bbadd975918978570d5983500b8026fa95ed1c28.8f4d2e4b98eed942682be1d073c9be07238189c3.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\Understand\\ata-update-1.6-migration-guide.md.e1a57591b51a5237c0c49422876c406d1b881b9e.HT": {
+      "SourceFilename": "ATADocs\\Understand\\ata-update-1.6-migration-guide.md",
+      "XliffHash": "e1a57591b51a5237c0c49422876c406d1b881b9e",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\9fcd59ff4b7a41e99ab1db8fc3582d039b3c0f59.a8d91698444a5cfc2c5634d693e3a9d5efce29bd.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\Troubleshoot\\TOC.md.9fa4a8a66e8914ac134129225772fca7c71be149.HT": {
+      "SourceFilename": "ATADocs\\Troubleshoot\\TOC.md",
+      "XliffHash": "9fa4a8a66e8914ac134129225772fca7c71be149",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\6b396d328f5a7cc588261bc2b8e7560ead14c6db.89714c0f16dbe45b403636cedef9edd384f943a2.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\Understand\\ata-update-1.5-migration-guide.md.8617eed45f965ebf6e185b052309a3d71a63efb8.HT": {
+      "SourceFilename": "ATADocs\\Understand\\ata-update-1.5-migration-guide.md",
+      "XliffHash": "8617eed45f965ebf6e185b052309a3d71a63efb8",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\637d847af82d15a5b88fb43274f606a9b89da445.72afff82e62f3d47f9876b0ca8db970e04dc599f.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\ata-silent-installation.md.5bfc98bf58f036392bece63bd33fd2b79d879ce0.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\ata-silent-installation.md",
+      "XliffHash": "5bfc98bf58f036392bece63bd33fd2b79d879ce0",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\7b9ba09d3757979c0b845f796a846e7e83b505af.9088785d33a7a34749d36e16763f9edf2976b579.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\PlanDesign\\TOC.md.b910f88d8e623619b1daa0d5bf2ae785916acc5e.HT": {
+      "SourceFilename": "ATADocs\\PlanDesign\\TOC.md",
+      "XliffHash": "b910f88d8e623619b1daa0d5bf2ae785916acc5e",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\e3c2c20c9a754a12ecbaea1c9e71dcd06fc2e21a.89c592da970aa8d04393bef503a49eb529adb370.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    },
+    "ATADocs\\DeployUse\\modifying-ata-config-dcpassword.md.c9f7074fbcb86271da1a1dd27fba3988d8c4f585.HT": {
+      "SourceFilename": "ATADocs\\DeployUse\\modifying-ata-config-dcpassword.md",
+      "XliffHash": "c9f7074fbcb86271da1a1dd27fba3988d8c4f585",
+      "TranslationType": 1,
+      "IsArchived": false,
+      "ArchivedDateTime": "0001-01-01T00:00:00",
+      "SkeletonFile": "ol-xliffcache\\Microsoft\\ATADocs-pr.zh-tw\\live\\7cee457a8959526b25a68c50efea2976bafbef75.3c73c96a35ae076be650ebaa19bd70379ba4ef0d.xml",
+      "LocXliff": null,
+      "LocXliffCommit": null
+    }
+  }
+}

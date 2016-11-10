@@ -4,7 +4,7 @@ description: "安裝 ATA 的第一步驟是下載並安裝 ATA 中心到您所�
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 10/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d0681cfa4ae763da9c88c8dec9b77a75494a5c9f
-ms.openlocfilehash: 7365b09e98d422a8670725b47a1c2380f00e23fb
+ms.sourcegitcommit: c71d5ed1c705de558f1144820703ffe84850679b
+ms.openlocfilehash: cf7ae4eccdf70e4e8661ac55ec15fff00bc9c62e
 
 
 ---
@@ -43,6 +43,9 @@ ms.openlocfilehash: 7365b09e98d422a8670725b47a1c2380f00e23fb
 2.  請以本機系統管理員群組成員的使用者身分，登入 ATA 中心安裝所在的電腦。
 
 3.  執行 **Microsoft ATA Center Setup.EXE**，然後遵循安裝精靈的步驟。
+
+> [!NOTE]   
+> 請務必從本機磁碟機執行安裝檔案，而不是從掛接的 ISO 檔案執行，以避免安裝過程中必須重新開機的問題。   
 
 4.  如果未安裝 Microsoft .Net Framework，當您開始安裝時，系統會提示您進行安裝。 安裝 .NET Framework 之後，可能會出現重新開機的提示。
 5.  在**歡迎**頁面上選取要用於 ATA 安裝畫面的語言，然後按 **[下一步]**。
@@ -102,6 +105,6 @@ ms.openlocfilehash: 7365b09e98d422a8670725b47a1c2380f00e23fb
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

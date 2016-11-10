@@ -1,12 +1,13 @@
 # [了解和探索](/advanced-threat-analytics/understand-explore/what-is-ata)
-# [計劃和設計](ata-architecture.md)
+# [規劃和設計](ata-architecture.md)
 ## [ATA 架構](ata-architecture.md)
 ## [規劃 ATA 容量](ata-capacity-planning.md)
 ## [ATA 必要條件](ata-prerequisites.md)
-# [部署與使用](/advanced-threat-analytics/deploy-use/preinstall-ata)
-# [疑難排解](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)
+# [部署](/advanced-threat-analytics/deploy-use/preinstall-ata)
+# [使用](/advanced-threat-analytics/deploy-use/operate-ata)
+# [疑難排解](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-known-errors)
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO5-->
 
 

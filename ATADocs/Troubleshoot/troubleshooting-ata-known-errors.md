@@ -4,7 +4,7 @@ description: "說明如何針對 ATA 中的常見錯誤進行疑難排解"
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 15c1a0d7ae213876c0e3a955eaeea8887281b4e6
-ms.openlocfilehash: b073a1b969f8841c9bbe540722349a5ef70340d4
+ms.sourcegitcommit: f334f9c8440e4bb0202579de220f6530d0aabad8
+ms.openlocfilehash: aa16eeb45272ffcf28bbb28ed9a02f30f52b15d0
 
 
 ---
@@ -23,9 +23,9 @@ ms.openlocfilehash: b073a1b969f8841c9bbe540722349a5ef70340d4
 
 
 
-# 為 ATA 錯誤記錄檔進行疑難排解
+# <a name="troubleshooting-the-ata-error-log"></a>為 ATA 錯誤記錄檔進行疑難排解
 本節詳細說明 ATA 部署中可能發生的錯誤，以及對其進行疑難排解所需的步驟。
-## ATA 閘道錯誤
+## <a name="ata-gateway-errors"></a>ATA 閘道錯誤
 |錯誤|說明|解決方法|
 |-------------|----------|---------|
 |System.DirectoryServices.Protocols.LdapException：發生本機錯誤|ATA 閘道無法對網域控制站進行驗證。|1.確認網域控制站的 DNS 記錄在 DNS 伺服器中正確設定。 <br>2.驗證 ATA 閘道的時間與網域控制站的時間同步。|
@@ -44,12 +44,21 @@ ms.openlocfilehash: b073a1b969f8841c9bbe540722349a5ef70340d4
 |System.ApplicationException︰無法啟動 ETW 工作階段 MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329|HOSTS 檔案中有一個主機項目指向電腦的簡短名稱|從 C:\Windows\System32\drivers\etc\HOSTS 檔案移除主機項目，或將它變更為 FQDN。|
 
 
-## ATA IIS 錯誤 (不適用於 ATA v1.7 和更新版本)
+
+## <a name="ata-lightweight-gateway-errors"></a>ATA 輕量型閘道錯誤
+
+**錯誤**：在 VMware 上使用輕量閘道時的「已丟棄連接埠鏡像流量」警示
+
+**描述**：若在 VMware 虛擬機器上使用 DC，可能會收到有關於**已丟棄連接埠鏡像流量**的警示。 這可能是 VMware 中的設定不相符所致。 
+**解決方法**：若要避免這些警示，可檢查是否已將下列設定設為 [0] 或 [已停用]：TsoEnable、LargeSendOffload、IPv4、TSO Offload。 此外也請考慮停用 [IPv4 Giant TSO Offload]。 如需詳細資訊，請參閱 VMware 文件。
+
+
+## <a name="ata-iis-errors-not-applicable-for-ata-v17-and-above"></a>ATA IIS 錯誤 (不適用於 ATA v1.7 和更新版本)
 |錯誤|說明|解決方法|
 |-------------|----------|---------|
 |HTTP 錯誤 500.19 - 內部伺服器錯誤|IIS URL Rewrite Module 無法正確安裝。|請解除安裝，再重新安裝 IIS URL Rewrite Module。<br>[下載 IIS URL Rewrite Module](http://go.microsoft.com/fwlink/?LinkID=615137)|
 
-## 部署錯誤
+## <a name="deployment-errors"></a>部署錯誤
 |錯誤|說明|解決方法|
 |-------------|----------|---------|
 |.Net Framework 4.6.1 安裝失敗，並發生錯誤 0x800713ec|.Net Framework 4.6.1 的必要條件尚未安裝於伺服器。 |安裝 ATA 之前，請驗證伺服器上已安裝 Windows Update [KB2919442](https://www.microsoft.com/download/details.aspx?id=42135) 和 [KB2919355](https://support.microsoft.com/kb/2919355)。|
@@ -57,7 +66,7 @@ ms.openlocfilehash: b073a1b969f8841c9bbe540722349a5ef70340d4
 ![ATA .NET 安裝錯誤影像](media/netinstallerror.png)
 
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
 - [ATA 容量規劃](/advanced-threat-analytics/plan-design/ata-capacity-planning)
 - [設定事件收集](/advanced-threat-analytics/deploy-use/configure-event-collection)
@@ -66,6 +75,6 @@ ms.openlocfilehash: b073a1b969f8841c9bbe540722349a5ef70340d4
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO5-->
 
 

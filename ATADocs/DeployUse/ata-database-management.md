@@ -4,7 +4,7 @@ description: "這些程序可協助您移動、備份或還原 ATA 資料庫。"
 keywords: 
 author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 10/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.assetid: 1d27dba8-fb30-4cce-a68a-f0b1df02b977
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5cd030f3b952d08c6617a6cda121c344a9c36f51
-ms.openlocfilehash: b4e68e9e8dbd94075a34a8e3e8f42d4f534caf50
+ms.sourcegitcommit: f334f9c8440e4bb0202579de220f6530d0aabad8
+ms.openlocfilehash: e295e0a0a8b5adbd40ddeb7e389ff82c7482c6d9
 
 
 ---
@@ -23,16 +23,16 @@ ms.openlocfilehash: b4e68e9e8dbd94075a34a8e3e8f42d4f534caf50
 
 
 
-# ATA 資料庫管理
+# <a name="ata-database-management"></a>ATA 資料庫管理
 如果您要移動、備份或還原 ATA 資料庫，請使用這些程序以使用 MongoDB。
 
-## 備份 ATA 資料庫
+## <a name="backing-up-the-ata-database"></a>備份 ATA 資料庫
 請參閱[相關 MongoDB 文件](http://docs.mongodb.org/manual/administration/backup/)。
 
-## 還原 ATA 資料庫
+## <a name="restoring-the-ata-database"></a>還原 ATA 資料庫
 請參閱[相關 MongoDB 文件](http://docs.mongodb.org/manual/administration/backup/)。
 
-## 將 ATA 資料庫移至其他磁碟機
+## <a name="moving-the-ata-database-to-another-drive"></a>將 ATA 資料庫移至其他磁碟機
 
 1.  停止 **Microsoft Advanced Threat Analytics 中心**服務。
 
@@ -52,18 +52,7 @@ ms.openlocfilehash: b4e68e9e8dbd94075a34a8e3e8f42d4f534caf50
 
 7. 啟動 **Microsoft Advanced Threat Analytics 中心**服務。
 
-## ATA 設定檔
-ATA 組態會儲存在資料庫的「SystemProfile 」集合中。
-ATA 中心服務每小時會將此集合備份到名為 "SystemProfile_*timestamp*.json" 的檔案。 會儲存 10 個最新的版本。
-這位於名為「Backup」的子資料夾中。 在預設的 ATA 安裝位置中，可以在這裡找到︰*C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup\SystemProfile_*timestamp*.json*。 
-
-**注意**：建議在針對 ATA 進行重大變更時，在某處備份此檔案。
-
-可執行下列命令來還原所有設定︰
-
-`mongoimport.exe --db ATA --collection SystemProfile --file "<SystemProfile.json backup file>" --upsert`
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [ATA 架構](/advanced-threat-analytics/plan-design/ata-architecture)
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
@@ -71,6 +60,6 @@ ATA 中心服務每小時會將此集合備份到名為 "SystemProfile_*timestam
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO5-->
 
 

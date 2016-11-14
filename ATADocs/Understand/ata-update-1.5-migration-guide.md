@@ -13,8 +13,8 @@ ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: be23c15ce709b710dc48b333fc464aa190772573
+ms.sourcegitcommit: c71d5ed1c705de558f1144820703ffe84850679b
+ms.openlocfilehash: 637d847af82d15a5b88fb43274f606a9b89da445
 
 
 ---
@@ -44,7 +44,7 @@ ms.openlocfilehash: be23c15ce709b710dc48b333fc464aa190772573
 
 依照下列步驟將 ATA 更新至 1.5 版：
 
-1.  [下載更新 1.5](http://aka.ms/ata1_5update)
+1.  從 VLSC 或 MSDN 下載 ATA v1.5。
       > [!NOTE]
          您也可以使用更新的完整版 ATA 來執行更新至 1.5 版。
 
@@ -134,6 +134,6 @@ ZIP 檔案包含下列項目：
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

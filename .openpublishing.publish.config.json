@@ -68,6 +68,12 @@
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft.zh-tw",
       "branch": "master"
+    },
+    {
+      "path_to_root": "_repo.en-us",
+      "url": "https://github.com/Microsoft/ATADocs-pr",
+      "branch": "live"
     }
-  ]
+  ],
+  "need_generate_pdf_url_template": false
 }

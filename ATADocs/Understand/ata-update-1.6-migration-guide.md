@@ -1,25 +1,26 @@
 ---
-title: "ATA 更新至 1.6 移轉指南 | Microsoft ATA"
+title: "ATA 更新至 1.6 移轉指南 | Microsoft Docs"
 description: "將 ATA 更新至 1.6 版的程序"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
 ms.technology: 
-ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
+ms.assetid: 0756ef64-3aef-4a69-8981-24fa8f285c6a
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3ec5d56444d618efcfc617172e93e0e8e8a1768
-ms.openlocfilehash: 6fd96a8bf2fb1e064cc05858a020cbc2e55746f4
+ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
+ms.openlocfilehash: e361c1b659210934b9fcd70c7c438a47030eeeba
 
 
 ---
 
-# 將 ATA 更新至 1.6 移轉指南
+# <a name="ata-update-to-16-migration-guide"></a>將 ATA 更新至 1.6 移轉指南
 ATA 1.6 的更新提供下列各方面的改良︰
 
 -   新增偵測
@@ -36,7 +37,7 @@ ATA 1.6 的更新提供下列各方面的改良︰
 
 -   支援 IBM QRadar
 
-## 將 ATA 更新至 1.6 版
+## <a name="updating-ata-to-version-16"></a>將 ATA 更新至 1.6 版
 > [!NOTE] 
 > 如果您的環境中未安裝 ATA，請下載包括 1.6 版的 ATA 完整版本，並遵循[安裝 ATA](/advanced-threat-analytics/deploy-use/install-ata) 所述的標準安裝程序。
 
@@ -61,7 +62,7 @@ ATA 1.6 的更新提供下列各方面的改良︰
     > [!IMPORTANT]
     > 更新所有 ATA 閘道以確保 ATA 正常運作。
 
-### 步驟 1︰更新 ATA 中心
+### <a name="step-1-update-the-ata-center"></a>步驟 1︰更新 ATA 中心
 
 1.  備份您的資料庫：(選擇性)
 
@@ -96,7 +97,7 @@ ATA 1.6 的更新提供下列各方面的改良︰
 > [!IMPORTANT] 
 > 更新所有 ATA 閘道以確保 ATA 正常運作。
 
-### 步驟 2： 下載 ATA 閘道安裝套件
+### <a name="step-2-download-the-ata-gateway-setup-package"></a>步驟 2： 下載 ATA 閘道安裝套件
 設定網域連線設定後，您可以下載 ATA 閘道安裝套件。
 
 若要下載 ATA 閘道安裝套件：
@@ -117,7 +118,7 @@ ZIP 檔案包含下列項目：
 
 -   包含連線至 ATA 中心所需資訊的組態設定檔
 
-### 步驟 3：更新 ATA 閘道
+### <a name="step-3-update-the-ata-gateways"></a>步驟 3：更新 ATA 閘道
 
 1.  在每個 ATA 閘道上，將檔案從 ATA 閘道套件解壓縮，然後執行 **Microsoft ATA Gateway Setup.exe** 檔案。
 
@@ -136,12 +137,12 @@ ZIP 檔案包含下列項目：
 ![閘道已更新的圖片](media/ATA-gw-updated.png)
 
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

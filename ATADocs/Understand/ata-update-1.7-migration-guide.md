@@ -1,25 +1,26 @@
 ---
-title: "ATA 更新至 1.7 移轉指南 | Microsoft ATA"
+title: "ATA 更新至 1.7 移轉指南 | Microsoft Docs"
 description: "將 ATA 更新至 1.7 版的程序"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
 ms.technology: 
-ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
+ms.assetid: 8eefcd45-7a4b-4074-ac5b-1ffc48e6654a
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3a821bf1479af529fd65e2153f8b722999c83a4f
-ms.openlocfilehash: 444bc4744834219d9db7bc8c209f33c039f90dad
+ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
+ms.openlocfilehash: 4fa8b77aeffff327672396e9819215cc536af918
 
 
 ---
 
-# ATA 更新至 1.7 移轉指南
+# <a name="ata-update-to-17-migration-guide"></a>ATA 更新至 1.7 移轉指南
 ATA 1.7 的更新提供下列各方面的改良︰
 
 -   新增偵測
@@ -27,7 +28,7 @@ ATA 1.7 的更新提供下列各方面的改良︰
 -   改進現有偵測
   
 
-## 將 ATA 更新至 1.7 版
+## <a name="updating-ata-to-version-17"></a>將 ATA 更新至 1.7 版
 
 > [!NOTE] 
 > 如果您的環境中未安裝 ATA，請下載包括 1.7 版的 ATA 完整版本，並依照[安裝 ATA](/advanced-threat-analytics/deploy-use/install-ata) 所描述的標準安裝程序。
@@ -49,7 +50,7 @@ ATA 1.7 的更新提供下列各方面的改良︰
     > [!IMPORTANT]
     > 更新所有 ATA 閘道以確保 ATA 正常運作。
 
-### 步驟 1︰更新 ATA 中心
+### <a name="step-1-update-the-ata-center"></a>步驟 1︰更新 ATA 中心
 
 1.  備份您的資料庫：(選擇性)
 
@@ -87,12 +88,12 @@ ATA 1.7 的更新提供下列各方面的改良︰
 
 
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO3-->
 
 

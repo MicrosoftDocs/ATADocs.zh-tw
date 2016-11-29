@@ -1,20 +1,21 @@
 ---
-title: "ATA 1.7 版的新功能 | Microsoft ATA"
+title: "ATA 1.7 版的新功能 | Microsoft Docs"
 description: "列出 ATA 1.7 版的新功能以及已知問題"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
 ms.technology: 
-ms.assetid: 
+ms.assetid: be9ee613-4eb3-40f1-8973-e7f0a707ff57
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f334f9c8440e4bb0202579de220f6530d0aabad8
-ms.openlocfilehash: 03a5e6a5398ffcc43e712bd4a3c2f872cd91c0b4
+ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
+ms.openlocfilehash: 8032e373567ce500c7741480d56d232f34b05446
 
 
 ---
@@ -75,9 +76,15 @@ ATA 1.7 的更新提供下列各方面的改良︰
  
 ### <a name="dropped-port-mirror-traffic-when-using-vmware"></a>使用 VMware 時的「已丟棄連接埠鏡像流量」
 
-在 VMware 上使用輕量閘道時的「已丟棄連接埠鏡像流量」警示
+在 VMware 上使用輕量閘道時的「已丟棄連接埠鏡像流量」警示。
 
-若在 VMware 虛擬機器上使用網域控制站，可能會收到有關於**已丟棄連接埠鏡像流量**的警示。 當 VMware 中的組態不相符時，即可能會發生此情況。 若要避免這些警示，可檢查是否已將下列設定設為 [0] 或 [已停用]：TsoEnable、LargeSendOffload、IPv4、TSO Offload。 此外也請考慮停用 [IPv4 Giant TSO Offload]。 如需詳細資訊，請參閱 VMware 文件。
+若在 VMware 虛擬機器上使用網域控制站，可能會收到有關於**已丟棄連接埠鏡像流量**的警示。 當 VMware 中的組態不相符時，即可能會發生此情況。 若要避免這些警示，可檢查是否已將虛擬機器中的下列設定設為 [0] 或 [已停用]：  
+
+- TsoEnable
+- LargeSendOffload(IPv4)
+- IPv4 TSO Offload
+
+此外也請考慮停用 [IPv4 Giant TSO Offload]。 如需詳細資訊，請參閱 VMware 文件。
 
 ### <a name="automatic-gateway-update-fail-when-updating-to-17-update-1"></a>自動閘道更新在更新為 1.7 update 1 時失敗
 
@@ -110,6 +117,6 @@ ATA 1.7 的更新提供下列各方面的改良︰
 
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 

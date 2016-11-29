@@ -1,33 +1,34 @@
 ---
-title: "使用 ATA 資料庫為 ATA 疑難排解 | Microsoft ATA"
+title: "使用 ATA 資料庫為 ATA 進行疑難排解 | Microsoft Docs"
 description: "描述如何使用 ATA 資料庫來協助疑難排解問題"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
 ms.technology: 
-ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
+ms.assetid: 377a3c81-5c1d-486f-8942-85249aacf560
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af0508f82d8cf190dcd3ff058f4c2ff37b4b0595
-ms.openlocfilehash: dfc6c902cb13b1a2bf927cd235806ec32d9fefc3
+ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
+ms.openlocfilehash: bff3224736981f38616172a6b1717d7d125c3c0a
 
 
 ---
 
-*適用於︰Advanced Threat Analytics 1.7 版*
+適用於︰Advanced Threat Analytics 1.7 版
 
 
 
-# 使用 ATA 資料庫疑難排解 ATA
+# <a name="troubleshooting-ata-using-the-ata-database"></a>使用 ATA 資料庫疑難排解 ATA
 ATA 會使用 MongoDB 作為其資料庫。
 您可以使用預設命令列或使用者介面工具來與資料庫互動，以執行進階工作和疑難排解。
 
-## 與資料庫互動
+## <a name="interacting-with-the-database"></a>與資料庫互動
 查詢資料庫的預設和最基本的方式是使用 Mongo 殼層︰
 
 1.  開啟命令列視窗，並將路徑變更為 MongoDB bin 資料夾。 預設路徑為︰**C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**。
@@ -50,7 +51,7 @@ ATA 會使用 MongoDB 作為其資料庫。
 
 `db.Ntlms_<closest date>.find({SourceAccountId: "123bdd24-b269-h6e1-9c72-7737as875351"})`
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
 - [ATA 容量規劃](/advanced-threat-analytics/plan-design/ata-capacity-planning)
 - [設定事件收集](/advanced-threat-analytics/deploy-use/configure-event-collection)
@@ -59,6 +60,6 @@ ATA 會使用 MongoDB 作為其資料庫。
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 

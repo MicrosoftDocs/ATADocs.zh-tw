@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -36,7 +36,6 @@ ms.openlocfilehash: 9d7e2a03633acc97d6f918c97f9b67b553d5202e
 ## <a name="moving-the-ata-database-to-another-drive"></a>將 ATA 資料庫移至其他磁碟機
 
 1.  停止 **Microsoft Advanced Threat Analytics 中心**服務。
-
 > [!Important] 
 > 繼續下一步之前，請確定 ATA 中心服務已經停止。
 

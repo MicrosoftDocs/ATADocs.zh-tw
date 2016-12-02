@@ -1,10 +1,11 @@
 ---
-title: "變更 ATA 設定 - ATA 中心 IP 位址 | Microsoft ATA"
+title: "變更 ATA 設定 - ATA 中心 IP 位址 | Microsoft Docs"
 description: "描述如何變更 IP 位址、連接埠或您 ATA 中心的憑證。"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,24 +14,24 @@ ms.assetid: 93b27f15-f7e5-49bb-870a-d81d09dfe9fc
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
-ms.openlocfilehash: e6d42610d1c785da5b7c7b1cf035d94c2fddff4b
+ms.sourcegitcommit: bc7af91a925928183d179391f15d3a24cda2b576
+ms.openlocfilehash: d0fed03deb5f50747383a398dfb2eca74ad0cdf0
 
 
 ---
 
-*適用於︰Advanced Threat Analytics 1.7 版*
+適用於︰Advanced Threat Analytics 1.7 版
 
 
 
-# 變更 ATA 設定 - ATA 中心 IP 位址
+# <a name="change-ata-configuration---ata-center-ip-address"></a>變更 ATA 設定 - ATA 中心 IP 位址
 
 >[!div class="step-by-step"]
 [ATA 中心憑證 »](modifying-ata-config-centercert.md)
 
 初始部署後，請小心修改 ATA Center。 更新 IP 位址和連接埠或憑證時，請使用下列程序。
 
-## 變更 ATA 中心伺服器所使用的 IP 位址
+## <a name="change-the-ip-address-used-by-the-ata-center-server"></a>變更 ATA 中心伺服器所使用的 IP 位址
 如果您要變更 ATA 中心 IP 位址和連接埠或憑證，請考量下列事項。
 
 ATA 閘道會在本機儲存它們要連接的 ATA 中心之 IP 位址。 它們會定期連接到 ATA 中心，並提取組態變更。 要變更 ATA 閘道如何連線到 ATA 中心有兩個階段。
@@ -77,13 +78,12 @@ ATA 閘道會在本機儲存它們要連接的 ATA 中心之 IP 位址。 它們
 [變更 ATA 中心憑證 »](modifying-ata-config-centercert.md)
 
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [使用 ATA 主控台](working-with-ata-console.md)
-- [安裝 ATA](install-ata.md)
 - [查看 ATA 論壇！](https://aka.ms/ata-forum)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 

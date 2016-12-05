@@ -1,10 +1,11 @@
 ---
-title: "設定事件收集 | Microsoft ATA"
+title: "設定事件收集 | Microsoft Docs"
 description: "描述使用 ATA 設定事件收集的選項"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
-ms.date: 09/28/2016
+ms.date: 11/28/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +14,8 @@ ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d2c1c00ff649557c1a0a16385e025c9d597c3bbf
-ms.openlocfilehash: 91ce3a3fef27673712a708aa1e92c32298cedd84
+ms.sourcegitcommit: bc7af91a925928183d179391f15d3a24cda2b576
+ms.openlocfilehash: 2932fd80fd3a5ff6830f8629df824591e3fc47c3
 
 
 ---
@@ -23,13 +24,13 @@ ms.openlocfilehash: 91ce3a3fef27673712a708aa1e92c32298cedd84
 
 
 
-# 設定事件收集
+# <a name="configure-event-collection"></a>設定事件收集
 若要增強偵測功能，ATA 需要識別碼為 4776 的 Windows 事件記錄檔。 將這項資訊轉送至 ATA 閘道的方法有兩個：設定 ATA 閘道接聽 SIEM 事件，或[設定 Windows 事件轉送](#configuring-windows-event-forwarding)。
 
-## 事件收集
+## <a name="event-collection"></a>事件收集
 除了收集和分析進出網域控制站的網路流量，ATA 可以使用 Windows 事件 4776 來進一步加強 ATA 的傳遞雜湊偵測。 這可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送。 所收集的事件可提供 ATA 透過網域控制站網路流量無法取得的額外資訊。
 
-### SIEM/Syslog
+### <a name="siemsyslog"></a>SIEM/Syslog
 為了讓 ATA 可以取用 Syslog 伺服器上的資料，您需要執行下列操作︰
 
 -   將您的 ATA 閘道伺服器設定為接聽及接受從 SIEM/Syslog 伺服器轉送的事件。
@@ -42,10 +43,10 @@ ms.openlocfilehash: 91ce3a3fef27673712a708aa1e92c32298cedd84
 
 如需如何設定轉送特定事件到另一部伺服器的資訊，請參閱您的 SIEM/Syslog 伺服器產品的文件。 
 
-### Windows 事件轉送
+### <a name="windows-event-forwarding"></a>Windows 事件轉送
 如果您沒使用 SIEM/Syslog 伺服器，可將 Windows 網域控制站設定為轉送 Windows 事件識別碼 4776 以供 ATA 收集及分析。 Windows 事件識別碼 4776 提供 NTLM 驗證的相關資料。
 
-## 將 ATA 閘道設定為接聽 SIEM 事件
+## <a name="configuring-the-ata-gateway-to-listen-for-siem-events"></a>將 ATA 閘道設定為接聽 SIEM 事件
 
 1.  在 ATA 設定中，在 [事件] 索引標籤下啟用 **Syslog**，然後按 [儲存]。
 
@@ -53,10 +54,10 @@ ms.openlocfilehash: 91ce3a3fef27673712a708aa1e92c32298cedd84
 
 2.  將 SIEM 或 Syslog 伺服器設定為轉送 Windows 事件識別碼 4776 給其中一個 ATA 閘道的 IP 位址。 如需有關如何設定 SIEM 的詳細資訊，請參閱您的 SIEM 線上說明或每部 SIEM 伺服器的特定格式需求的技術支援選項。
 
-### SIEM 支援
+### <a name="siem-support"></a>SIEM 支援
 ATA 支援下列格式的 SIEM 事件：  
 
-#### RSA 安全性分析
+#### <a name="rsa-security-analytics"></a>RSA 安全性分析
 &lt;Syslog Header&gt;RsaSA\n2015-May-19 09:07:09\n4776\nMicrosoft-Windows-Security-Auditing\nSecurity\XXXXX.subDomain.domain.org.il\nYYYYY$\nMMMMM \n0x0
 
 -   Syslog Header 是選擇性參數。
@@ -85,7 +86,7 @@ ATA 支援下列格式的 SIEM 事件：
 
 -   順序很重要，而且訊息中不應包含任何其他東西。
 
-#### HP Arcsight
+#### <a name="hp-arcsight"></a>HP Arcsight
 CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The domain controller attempted to validate the credentials for an account.|Low| externalId=4776 cat=Security rt=1426218619000 shost=KKKKKK dhost=YYYYYY.subDomain.domain.com duser=XXXXXX cs2=Security cs3=Microsoft-Windows-Security-Auditing cs4=0x0 cs3Label=EventSource cs4Label=Reason or Error Code
 
 -   必須符合通訊協定定義。
@@ -116,7 +117,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
     -   “Reason or Error Code” = NTLM 的結果碼
 
-#### Splunk
+#### <a name="splunk"></a>Splunk
 &lt;Syslog Header&gt;\r\nEventCode=4776\r\nLogfile=Security\r\nSourceName=Microsoft-Windows-Security-Auditing\r\nTimeGenerated=20150310132717.784882-000\r\ComputerName=YYYYY\r\nMessage=
 
 電腦會嘗試驗證帳戶的認證。
@@ -153,7 +154,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
 -   「索引鍵=值」對的順序不重要。
 
-#### QRadar
+#### <a name="qradar"></a>QRadar
 QRadar 可讓您透過代理程式收集事件。 如果使用代理程式收集資料，則會收集不含毫秒資料的時間格式。 因為 ATA 需要毫秒資料，所以必須將 QRadar 設定為使用無代理程式 Windows 事件收集。 如需詳細資訊，請參閱 [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar: Agentless Windows Events Collection using the MSRPC Protocol")。
 
     <13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0
@@ -175,9 +176,9 @@ Message 是來自 Windows 事件的原始事件文字
 >[!NOTE] 
 > 不支援使用 WinCollect 進行 Windows 事件收集。
 
-## 設定 Windows 事件轉送
+## <a name="configuring-windows-event-forwarding"></a>設定 Windows 事件轉送
 
-### 具連接埠鏡像之 ATA 閘道的 WEF 設定
+### <a name="wef-configuration-for-ata-gateways-with-port-mirroring"></a>具連接埠鏡像之 ATA 閘道的 WEF 設定
 
 設定從網域控制站鏡像連接埠到 ATA 閘道之後，請依照下面的指示使用來源起始組態來設定 Windows 事件轉送。 這是一個設定 Windows 事件轉送的方法。 
 
@@ -237,7 +238,7 @@ Message 是來自 Windows 事件的原始事件文字
    6.   稍候幾分鐘之後，請查看事件 4776 出現在 ATA 閘道上 [轉送的事件] 中。
 
 
-### ATA 輕量型閘道的 WEF 設定
+### <a name="wef-configuration-for-the-ata-lightweight-gateway"></a>ATA 輕量型閘道的 WEF 設定
 當您在網域控制站上安裝 ATA 輕量型閘道時，可以設定網域控制站將事件轉送給自己。 執行下列步驟來設定使用 ATA 輕量型閘道時的 Windows 事件轉送。 這是一個設定 Windows 事件轉送的方法。  
 
 **步驟 1︰新增網路服務帳戶到網域 Event Log Readers 群組** 
@@ -280,12 +281,12 @@ Message 是來自 Windows 事件的原始事件文字
 
 如需詳細資訊，請參閱[設定電腦轉送及收集事件](https://technet.microsoft.com/library/cc748890)
 
-## 另請參閱
-- [安裝 ATA](install-ata.md)
+## <a name="see-also"></a>另請參閱
+- [安裝 ATA](install-ata-step1.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

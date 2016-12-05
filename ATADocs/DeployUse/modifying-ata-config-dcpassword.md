@@ -1,10 +1,11 @@
 ---
-title: "變更 ATA 設定 - 網域連線密碼 | Microsoft ATA"
+title: "變更 ATA 設定 - 網域連線密碼 | Microsoft Docs"
 description: "描述如何變更 ATA 閘道上的網域連線密碼。"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,27 +14,26 @@ ms.assetid: 4a25561b-a5ed-44aa-9b72-366976b3c72a
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
-ms.openlocfilehash: 7cee457a8959526b25a68c50efea2976bafbef75
+ms.sourcegitcommit: bc7af91a925928183d179391f15d3a24cda2b576
+ms.openlocfilehash: a6dbdb0d53a0a7f6903ec858bb44054c624ae226
 
 
 ---
 
-*適用於︰Advanced Threat Analytics 1.7 版*
+適用於︰Advanced Threat Analytics 1.7 版
 
 
 
-# 變更 ATA 設定 - 網域連線密碼
+# <a name="change-ata-configuration---domain-connectivity-password"></a>變更 ATA 設定 - 網域連線密碼
 
 >[!div class="step-by-step"]
 [« ATA 主控台 URL](modifying-ata-config-consoleurl.md)
 
 
-## 變更網域連線密碼
+## <a name="change-the-domain-connectivity-password"></a>變更網域連線密碼
 如果您修改網域連線密碼，請確定輸入的密碼正確。 否則 ATA 閘道服務會停止在 ATA 閘道上執行。
 
-如果您懷疑此情況已發生，請於 ATA 閘道的上的 Microsoft.Tri.Gateway Errors.log 檔案查看下列項目︰
-`The supplied credential is invalid.`
+如果您懷疑此情況已發生，請於 ATA 閘道上的 Microsoft.Tri.Gateway Errors.log 檔案查看下列項目︰`The supplied credential is invalid.`
 
 若要修正此問題，請遵循此程序來更新 ATA 中心上的網域連線密碼︰
 
@@ -58,13 +58,12 @@ ms.openlocfilehash: 7cee457a8959526b25a68c50efea2976bafbef75
 >[!div class="step-by-step"]
 [« ATA 主控台 URL](modifying-ata-config-consoleurl.md)
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [使用 ATA 主控台](working-with-ata-console.md)
-- [安裝 ATA](install-ata.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 

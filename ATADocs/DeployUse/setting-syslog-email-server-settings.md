@@ -1,29 +1,30 @@
 ---
-title: "設定 ATA 通知 | Microsoft ATA"
+title: "設定電子郵件設定 | Microsoft 文件"
 description: "說明當 ATA 偵測到可疑的活動時，如何通知您 (透過電子郵件或 ATA 事件轉寄)"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
 ms.technology: 
-ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
+ms.assetid: bff20bf7-8b53-49da-81e5-b818a1c3b24e
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4ba68547d6746625a44aca5d05790c3ad138f4e
-ms.openlocfilehash: 9a8461da7ff8b0f939a11f85e5e8dc21d191cc52
+ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
+ms.openlocfilehash: d967cbf2674c5f561e63f66b64640ac08daad6c0
 
 
 ---
 
-*適用於︰Advanced Threat Analytics 1.7 版*
+適用於︰Advanced Threat Analytics 1.7 版
 
 
 
-## 使用電子郵件伺服器設定提供 ATA
+## <a name="provide-ata-with-up-your-email-server-settings"></a>使用電子郵件伺服器設定提供 ATA
 當 ATA 偵測到可疑的活動時，就會通知您。 若要讓 ATA 能夠傳送電子郵件通知，您必須先進行**電子郵件伺服器設定**。
 
 1.  在 ATA 中央伺服器上，按一下桌面上的 [Microsoft Advanced Threat Analytics Management] 圖示。
@@ -44,7 +45,7 @@ ms.openlocfilehash: 9a8461da7ff8b0f939a11f85e5e8dc21d191cc52
     |傳送來源 (必要)|輸入電子郵件傳送者的電子郵件地址。|例如：<br />ATA@contoso.com|
     ![ATA 電子郵件伺服器設定影像](media/ATA-email-server-1.7.png)
 
-## 使用 Syslog 伺服器設定提供 ATA
+## <a name="provide-ata-with-your-syslog-server-settings"></a>使用 Syslog 伺服器設定提供 ATA
 當 ATA 偵測到可疑的活動時，就會將通知傳送至 Syslog 伺服器來通知您。 如果您啟用 Syslog 通知，就可以為其進行下列設定。
 
 1.  設定 Syslog 通知前，請先洽詢您的 SIEM 系統管理員以了解下列資訊︰
@@ -77,11 +78,11 @@ ms.openlocfilehash: 9a8461da7ff8b0f939a11f85e5e8dc21d191cc52
 
 
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 

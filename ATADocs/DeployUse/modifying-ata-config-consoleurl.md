@@ -3,8 +3,9 @@ title: "變更 ATA 設定 - ATA 主控台 IP 位址 | Microsoft Advanced Threat 
 description: "描述如何變更用來在 ATA 閘道上建立 ATA 主控台捷徑的 ATA 主控台 IP 位址。"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: stevenpo
-ms.date: 08/24/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: identity-ata
 ms.service: advanced-threat-analytics
@@ -13,23 +14,23 @@ ms.assetid: 50118465-df34-4e04-b0cc-48808b6a96b1
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
-ms.openlocfilehash: b3d11a87f1909c1fd964fa990e5d36a91691a844
+ms.sourcegitcommit: bc7af91a925928183d179391f15d3a24cda2b576
+ms.openlocfilehash: 8f816c8eda0a1b11a42314a18b1c8c39ac6a7ba8
 
 
 ---
 
-*適用於︰Advanced Threat Analytics 1.7 版*
+適用於︰Advanced Threat Analytics 1.7 版
 
 
 
-# 變更 ATA 設定 - ATA 主控台 URL
+# <a name="change-ata-configuration---ata-console-url"></a>變更 ATA 設定 - ATA 主控台 URL
 
 >[!div class="step-by-step"]
 [« ATA 中心憑證](modifying-ata-config-centercert.md)
 [網域連線密碼 »](modifying-ata-config-dcpassword.md)
 
-## 變更 ATA 主控台 URL
+## <a name="change-the-ata-console-url"></a>變更 ATA 主控台 URL
 根據預設，ATA 主控台 URL 是當您安裝 ATA 中心時，為 ATA 主控台 IP 位址所選擇的 IP 位址。
 
 在下列情況下將使用 URL：
@@ -60,20 +61,22 @@ ms.openlocfilehash: b3d11a87f1909c1fd964fa990e5d36a91691a844
 5.  在 [主控台 URL] 下，視需要修改 URL：
 
     ![ATA 主控台 URL](media/ATA-chge-center-URL.png)
-6.  按一下 [儲存]。
+> [!NOTE]
+> 請勿在 URL 的結尾包含斜線 /。
+
+6.  按一下 **[儲存]**。
 
 >[!div class="step-by-step"]
 [« ATA 中心憑證](modifying-ata-config-centercert.md)
 [網域連線密碼 »](modifying-ata-config-dcpassword.md)
 
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [使用 ATA 主控台](working-with-ata-console.md)
-- [安裝 ATA](install-ata.md)
 - [查看 ATA 論壇！](https://aka.ms/ata-forum)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -1,10 +1,11 @@
 ---
-title: "變更 ATA 設定 - ATA 中心憑證 | Microsoft ATA"
+title: "變更 ATA 設定 - ATA 中心憑證 | Microsoft Docs"
 description: "說明更新或取代 ATA 中心伺服器上本機電腦存放區中憑證的兩階段程序。"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 11/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,23 +14,23 @@ ms.assetid: c8855287-de3b-4cdd-be8f-2128f48a6f27
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
-ms.openlocfilehash: e707d354396f8eeed58c13ee1e9e91df9888e030
+ms.sourcegitcommit: bc7af91a925928183d179391f15d3a24cda2b576
+ms.openlocfilehash: 534b5f476e580919b11327ddbf9a35edad130515
 
 
 ---
 
-*適用於︰Advanced Threat Analytics 1.7 版*
+適用於︰Advanced Threat Analytics 1.7 版
 
 
 
-# 變更 ATA 設定 - ATA 中心憑證
+# <a name="change-ata-configuration---ata-center-certificate"></a>變更 ATA 設定 - ATA 中心憑證
 
 >[!div class="step-by-step"]
 [« ATA 中心伺服器的 IP 位址](modifying-ata-config-centerip.md)
 [ATA 主控台 URL »](modifying-ata-config-consoleurl.md)
 
-## 變更 ATA 中心憑證
+## <a name="change-the-ata-center-certificate"></a>變更 ATA 中心憑證
 如果您的憑證即將過期，且在 ATA 中心伺服器的本機電腦存放區中安裝新憑證後需要更新或更換，請遵循此兩階段程序取代憑證︰
 
 -   第一階段 – 更新您想 ATA 中心服務使用的憑證。 此時 ATA 中心服務仍會繫結至原始憑證。 當 ATA 閘道同步處理其設定時，它們將擁有兩個可有效相互驗證的潛在憑證。 只要 ATA 閘道可以用原始憑證來連接，就不會嘗試新的憑證。
@@ -68,13 +69,12 @@ ms.openlocfilehash: e707d354396f8eeed58c13ee1e9e91df9888e030
 [« ATA 中心伺服器的 IP 位址](modifying-ata-config-centerip.md)
 [ATA 主控台 URL »](modifying-ata-config-consoleurl.md)
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [使用 ATA 主控台](working-with-ata-console.md)
-- [安裝 ATA](install-ata.md)
 - [查看 ATA 論壇！](https://aka.ms/ata-forum)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -1,8 +1,9 @@
 ---
-title: "無訊息安裝 ATA | Microsoft ATA"
+title: "以無訊息方式安裝 ATA | Microsoft Docs"
 description: "說明如何以無訊息方式安裝 ATA。"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
@@ -13,19 +14,19 @@ ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d0681cfa4ae763da9c88c8dec9b77a75494a5c9f
-ms.openlocfilehash: 7b9ba09d3757979c0b845f796a846e7e83b505af
+ms.sourcegitcommit: b7f9dac8c00f213ee0cefc9ff93f2c9ca40cd28b
+ms.openlocfilehash: 7d7eeaf450a38a23c5c3a4d6d192a773f4cd036c
 
 
 ---
 
-*適用於︰Advanced Threat Analytics 1.7 版*
+適用於︰Advanced Threat Analytics 1.7 版
 
 
 
-# ATA 無訊息安裝
+# <a name="ata-silent-installation"></a>ATA 無訊息安裝
 本文提供以無訊息方式安裝 ATA 的指示。
-## 必要條件
+## <a name="prerequisites"></a>必要條件
 
 Microsoft ATA v1.7 需要安裝 Microsoft .NET Framework 4.6.1。 
 
@@ -36,7 +37,7 @@ Microsoft ATA v1.7 需要安裝 Microsoft .NET Framework 4.6.1。
 使用 ATA 無訊息安裝方法時，安裝程式會設定為在安裝結束時自動重新啟動伺服器安裝 (如有必要)。 若要避免在安裝過程中重新啟動伺服器，請使用 `-NoRestart` 旗標。 使用 `-NoRestart` 旗標且安裝過程中必須重新啟動時，安裝程式會暫停，直到重新啟動伺服器為止。 若要追蹤部署進度，請監視位於 **%AppData%\Local\Temp** 中的 ATA 安裝程式記錄檔。
 
 
-## 安裝 ATA 中心
+## <a name="install-the-ata-center"></a>安裝 ATA 中心
 
 使用下列命令安裝 ATA 中心：
 
@@ -77,7 +78,7 @@ Microsoft ATA v1.7 需要安裝 Microsoft .NET Framework 4.6.1。
     “Microsoft ATA Center Setup.exe” /quiet --LicenseAccepted NetFrameworkCommandLineArguments ="/q" CenterIpAddress=192.168.0.10 CenterPort=443 CenterCertificateThumbprint= ‎"1E2079739F624148ABDF502BF9C799FCB8C7212F”
     ConsoleIpAddress=192.168.0.11  ConsoleCertificateThumbprint=”G9530253C976BFA9342FD1A716C0EC94207BFD5A”
 
-## 更新 ATA 中心
+## <a name="update-the-ata-center"></a>更新 ATA 中心
 
 使用下列命令更新 ATA 中心：
 
@@ -102,7 +103,7 @@ Microsoft ATA v1.7 需要安裝 Microsoft .NET Framework 4.6.1。
 
         “Microsoft ATA Center Setup.exe” /quiet NetFrameworkCommandLineArguments="/q"
 
-## 以無訊息方式將 ATA 中心解除安裝
+## <a name="uninstall-the-ata-center-silently"></a>以無訊息方式將 ATA 中心解除安裝
 
 使用下列命令執行 ATA 中心的無訊息解除安裝：**語法**：
 
@@ -129,7 +130,7 @@ Microsoft ATA v1.7 需要安裝 Microsoft .NET Framework 4.6.1。
 
     “Microsoft ATA Center Setup.exe” /quiet /uninstall --DeleteExistingDatabaseData
 
-## ATA 閘道無訊息安裝
+## <a name="ata-gateway-silent-installation"></a>ATA 閘道無訊息安裝
 使用下列命令以無訊息方式安裝 ATA 閘道：
 
 **語法**：
@@ -146,7 +147,6 @@ Microsoft ATA v1.7 需要安裝 Microsoft .NET Framework 4.6.1。
 |NoRestart|/norestart|否|抑制任何重新啟動嘗試。 根據預設，UI 會在重新啟動前出現提示。|
 |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|是|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
-|LicenseAccepted|--LicenseAccepted|是|指出已閱讀並核准授權。 無訊息安裝時必須設定。|
 
 **安裝參數**：
 
@@ -162,7 +162,7 @@ Microsoft ATA v1.7 需要安裝 Microsoft .NET Framework 4.6.1。
     ConsoleAccountName=”user@contoso.com” ConsoleAccountPassword=“userpwd”
     
 
-## 更新 ATA 閘道
+## <a name="update-the-ata-gateway"></a>更新 ATA 閘道
 
 使用下列命令以無訊息方式更新 ATA 閘道：
 
@@ -185,7 +185,7 @@ Microsoft ATA v1.7 需要安裝 Microsoft .NET Framework 4.6.1。
 
         Microsoft ATA Gateway Setup.exe /quiet NetFrameworkCommandLineArguments="/q"
 
-## 以無訊息方式將 ATA 閘道解除安裝
+## <a name="uninstall-the-ata-gateway-silently"></a>以無訊息方式將 ATA 閘道解除安裝
 
 使用下列命令執行 ATA 閘道的無訊息解除安裝：**語法**：
 
@@ -214,13 +214,13 @@ Microsoft ATA v1.7 需要安裝 Microsoft .NET Framework 4.6.1。
 
 
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Dec16_HO1-->
 
 

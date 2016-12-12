@@ -14,17 +14,17 @@ ms.technology:
 ms.suite: ems
 ms.assetid: c4a97980-6e19-4d10-bf69-f0b338266efa
 translationtype: Human Translation
-ms.sourcegitcommit: 6d95045842d8bb19dba2e8d0fe13b1bf96e2e304
-ms.openlocfilehash: be7f4c021a6da9d58bb7e8329d9320db9ae19716
+ms.sourcegitcommit: 1dda7ed8bb461a15ae2cc9d379822ed4a96245ff
+ms.openlocfilehash: 6eeae28243bc000ad9424e655cfde75b10abe03a
 
 
 ---
-# Microsoft Advanced Threat Analytics 文件
+# <a name="microsoft-advanced-threat-analytics-documentation"></a>Microsoft Advanced Threat Analytics 文件
 <article id="main">
     <section id="hero-content">
       <h1>Microsoft Advanced Threat Analytics 文件</h1>
       <h2>了解如何部署及管理 Microsoft Advanced Threat Analytics (ATA)，這項內部部署產品可協助 IT 安全性專業人員防止企業遭受進階的目標型攻擊。</h2>
-      <h3>您是 ATA 新手嗎？ <a href="http://go.microsoft.com/fwlink/?LinkId=816859" target="_blank">請瀏覽我們的產品頁面 &rarr;</a></h3>
+      <h3>您是 ATA 新手嗎？ <a href="http://go.microsoft.com/fwlink/?LinkId=816859" target="_blank">請瀏覽我們的產品頁面&rarr;</a></h3>
     </section>
     <aside class="alert section-border">
       <p>準備好實際操作了嗎？</p>
@@ -136,7 +136,7 @@ ms.openlocfilehash: be7f4c021a6da9d58bb7e8329d9320db9ae19716
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/advanced-threat-analytics/deploy-use/install-ata">
+                  <a href="/advanced-threat-analytics/deploy-use/install-ata-step1">
                     <h3>安裝 ATA</h3>
                     <p>請遵循詳細的逐步安裝指南。</p>
                   </a>
@@ -196,6 +196,6 @@ ms.openlocfilehash: be7f4c021a6da9d58bb7e8329d9320db9ae19716
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 

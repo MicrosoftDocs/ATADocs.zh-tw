@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/28/2016
+ms.date: 12/08/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bc7af91a925928183d179391f15d3a24cda2b576
-ms.openlocfilehash: 2932fd80fd3a5ff6830f8629df824591e3fc47c3
+ms.sourcegitcommit: d16364cd4113534c3101ebfa7750c0d0b837856d
+ms.openlocfilehash: 9ac9478512f2e5f6d15dd9b5cba9970a51ffa4da
 
 
 ---
@@ -28,13 +28,14 @@ ms.openlocfilehash: 2932fd80fd3a5ff6830f8629df824591e3fc47c3
 若要增強偵測功能，ATA 需要識別碼為 4776 的 Windows 事件記錄檔。 將這項資訊轉送至 ATA 閘道的方法有兩個：設定 ATA 閘道接聽 SIEM 事件，或[設定 Windows 事件轉送](#configuring-windows-event-forwarding)。
 
 ## <a name="event-collection"></a>事件收集
-除了收集和分析進出網域控制站的網路流量，ATA 可以使用 Windows 事件 4776 來進一步加強 ATA 的傳遞雜湊偵測。 這可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送。 所收集的事件可提供 ATA 透過網域控制站網路流量無法取得的額外資訊。
+除了收集和分析進出網域控制站的網路流量，ATA 可以使用 Windows 事件 4776 來進一步加強 ATA 的傳遞雜湊偵測。 這可從您的 SIEM 接收，或藉由在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 ATA 透過網域控制站網路流量無法取得的額外資訊。
 
 ### <a name="siemsyslog"></a>SIEM/Syslog
 為了讓 ATA 可以取用 Syslog 伺服器上的資料，您需要執行下列操作︰
 
 -   將您的 ATA 閘道伺服器設定為接聽及接受從 SIEM/Syslog 伺服器轉送的事件。
-
+> [!NOTE]
+> ATA 只接聽 IPv4，而不會接聽 IPv6。 
 -   將您的 SIEM/Syslog 伺服器設定為轉送特定事件至 ATA 閘道。
 
 > [!IMPORTANT]
@@ -287,6 +288,6 @@ Message 是來自 Windows 事件的原始事件文字
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

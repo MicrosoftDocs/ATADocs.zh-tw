@@ -1,10 +1,11 @@
 ---
-title: "規劃 ATA 部署 | Microsoft ATA"
+title: "規劃 ATA 部署 | Microsoft Docs"
 description: "協助您規劃部署並決定支援您的網路需要多少 ATA 伺服器"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 11/6/2016
 ms.topic: get-started-article
 ms.service: advanced-threat-analytics
 ms.prod: 
@@ -12,20 +13,20 @@ ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e3b690767e5c6f5561a97a73eccfbf50ddb04148
-ms.openlocfilehash: 09bf48be4c651af6ca1ae66a47f940d504570c8a
+ms.sourcegitcommit: 56eff27ffdd988d5cc9e67352859ddfedebb2144
+ms.openlocfilehash: 93ec7373a166529332d7c4809c756ab3ba240868
 
 
 ---
 
-*適用於︰Advanced Threat Analytics 1.7 版*
+適用於︰Advanced Threat Analytics 1.7 版
 
 
 
-# ATA 容量規劃
+# <a name="ata-capacity-planning"></a>ATA 容量規劃
 本主題協助判斷監視您的網路需要多少 ATA 伺服器，包括了解您需要多少 ATA 閘道及/或 ATA 輕量型閘道，以及您 ATA 中心和 ATA 閘道的伺服器容量。
 
-##使用調整大小工具
+##<a name="using-the-sizing-tool"></a>使用調整大小工具
 若要判斷 ATA 部署容量，建議且最容易的方法是使用 [ATA 調整大小工具](http://aka.ms/atasizingtool)。 執行 ATA 調整大小工具，並從 Excel 檔案結果中，使用下列欄位判斷您需要的 ATA 容量︰
 
 - ATA 中心 CPU 及記憶體：比對結果檔案中 ATA 中心資料表的 **Busy Packets/sec** 欄位與 [ATA 中心資料表](#ata-center-sizing)中的**每秒封包數**欄位。
@@ -43,22 +44,21 @@ ms.openlocfilehash: 09bf48be4c651af6ca1ae66a47f940d504570c8a
 
 
 
-### ATA 中心大小
-ATA 中心建議最少需要 30 天的資料來進行使用者行為分析。 ATA 資料庫在每個網域控制站中所需的磁碟空間定義如下。 如果您有多個網域控制站，總計每個網域控制站所需的磁碟空間來計算 ATA 資料庫所需的空間總量。
+### <a name="ata-center-sizing"></a>ATA 中心大小
+ATA 中心建議最少需要 30 天的資料來進行使用者行為分析。
  
 
-|每秒封包數&#42;|CPU (核心&#42;&#42;)|記憶體 (GB)|每日資料庫儲存體 (GB)|每月資料庫儲存體 (GB)|IOPS&#42;&#42;&#42;|
+|來自所有 DC 的每秒封包數|CPU (核心&#42;)|記憶體 (GB)|每日資料庫儲存體 (GB)|每月資料庫儲存體 (GB)|IOPS&#42;&#42;|
 |---------------------------|-------------------------|-------------------|---------------------------------|-----------------------------------|-----------------------------------|
 |1,000|2|32|0.3|9|30 (100)
 |10,000|4|48|3|90|200 (300)
 |40,000|8|64|12|360|500 (1,000)
 |100,000|12|96|30|900|1,000 (1,500)
 |400,000|40|128|120|1,800|2,000 (2,500)
-&#42;由所有 ATA 閘道監視的所有網域控制站上，每秒封包的每日平均總數。
 
-&#42;&#42;這包括實體核心，不包括超執行緒核心。
+&#42;這包括實體核心，不包括超執行緒核心。
 
-&#42;&#42;&#42;平均數目 (尖峰數目)
+&#42;&#42;平均數目 (尖峰數目)
 > [!NOTE]
 > -   ATA 中心可以從所有受監視的網域控制站處理的彙總最大值為每秒 400,000 個畫面格 (FPS)。
 > -   此處決定的儲存體數量為淨值，您應該隨時考量到未來的成長，並且確定資料庫所在的磁碟至少有 20% 的可用空間。
@@ -70,7 +70,7 @@ ATA 中心建議最少需要 30 天的資料來進行使用者行為分析。 AT
 > -   當於實體伺服器上執行工作時，ATA 資料庫需要您**停用** BIOS 中的非統一記憶體存取 (NUMA)。 您的系統可能會將 NUMA 作為節點交錯參考，在此情況下您必須**啟用**節點交錯以停用 NUMA。 如需詳細資訊，請參閱您的 BIOS 文件。 請注意，當 ATA 中心在虛擬伺服器上執行時，這並不相關。
 
 
-## 為您的部署選擇正確的閘道類型
+## <a name="choosing-the-right-gateway-type-for-your-deployment"></a>為您的部署選擇正確的閘道類型
 ATA 部署中能夠支援任何 ATA 閘道類型的組合︰
 
 - 僅限 ATA 閘道
@@ -98,7 +98,7 @@ ATA 部署中能夠支援任何 ATA 閘道類型的組合︰
 - 總部資料中心 (具有每秒超過 10,000 個封包的網域控制站)
 
 
-### ATA 輕量型閘道大小
+### <a name="ata-lightweight-gateway-sizing"></a>ATA 輕量型閘道大小
 
 ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站產生的網路流量而定。 
 
@@ -119,9 +119,10 @@ ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站�
 > -   如果網域控制站沒有 ATA 輕量型閘道所需的必要資源數量，網域控制站的效能不會受到影響，但 ATA 輕量型閘道可能無法如預期般運作。
 > -   作為虛擬機器執行時不支援動態記憶體或任何其他記憶體佔用功能。
 > -   為了達到最佳效能，將 ATA 輕量型閘道的 **[電源選項]** 設定為 [高效能]。
+> -   至少需要 5 GB 的空間，建議要有 10 GB。 這包括 ATA 二進位檔、[ATA 記錄](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)和[效能記錄檔](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-perf-counters)所需空間。
 
 
-### ATA 閘道大小
+### <a name="ata-gateway-sizing"></a>ATA 閘道大小
 
 決定要部署多少 ATA 閘道時，請考慮下列項目。
 
@@ -153,9 +154,10 @@ ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站�
 > [!NOTE] 
 > -   不支援動態記憶體。
 > -   為了達到最佳效能，將 ATA 閘道的 [電源選項] 設定為 [高效能]。
+> -   至少需要 5 GB 的空間，建議要有 10 GB。 這包括 ATA 二進位檔、[ATA 記錄](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)和[效能記錄檔](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-perf-counters)所需空間。
 
 
-## 網域控制站流量估計
+## <a name="domain-controller-traffic-estimation"></a>網域控制站流量估計
 您可以使用各種工具來探索網域控制站的每秒平均封包數。 如果您沒有任何工具可追蹤此計數器，您可以使用效能監視器來收集所需的資訊。
 
 若要判斷每秒封包數，請對每個網域控制站執行下列動作︰
@@ -205,13 +207,13 @@ ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站�
 
     ![每秒封包數計數器影像](media/ATA-traffic-estimation-14.png)
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [ATA 必要條件](ata-prerequisites.md)
 - [ATA 架構](ata-architecture.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

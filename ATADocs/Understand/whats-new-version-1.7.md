@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/25/2016
+ms.date: 12/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: be9ee613-4eb3-40f1-8973-e7f0a707ff57
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
-ms.openlocfilehash: 8032e373567ce500c7741480d56d232f34b05446
+ms.sourcegitcommit: 00ddddfd927ed1ba4c52d4774085da04ce359bde
+ms.openlocfilehash: 1c8d7983c5fd86ae3ef2c906eba3f0781cffb99b
 
 
 ---
@@ -30,14 +30,14 @@ ATA 1.7 的更新提供下列各方面的改良︰
 
 -   以角色為基礎的存取控制
 
--   支援 Windows Server 2016 和 Windows Server Core
+-   支援 Windows Server 2016 和 Windows Server 2016 Core
 
 -   使用者體驗改善
 
 -   次要變更
 
 
-### <a name="new-updated-detections"></a>新的和更新的偵測項目
+### <a name="new--updated-detections"></a>新的和更新的偵測項目
 
 
 - **使用目錄服務列舉探查** 在探查階段中，攻擊者會使用不同的方法收集網路中實體的相關資訊。 使用 SAM-R 通訊協定的目錄服務列舉可讓攻擊者取得網域中的使用者和群組清單，了解不同實體之間的互動。 
@@ -55,7 +55,7 @@ ATA 1.7 的更新提供下列各方面的改良︰
 
 - **角色型存取控制** 角色型存取控制 (RBAC) 功能。 ATA 1.7 包含三個角色︰ATA 管理員、ATA 分析員和 ATA 執行者。
 
-- **支援 Windows Server 2016 和 Windows Server Core** ATA 1.7 支援在執行 Windows Server 2012 Server Core 和 Windows Server 2012 R2 Server Core 的網域控制站上部署輕量型閘道。 此外，此版本支援 Windows Server 2016 的 ATA 中心與 ATA 閘道兩個元件。
+- **支援 Windows Server 2016 和 Windows Server Core** ATA 1.7 支援在執行 Windows Server 2008 R2 SP1 (不含 Server Core)、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 (包含 Core 但不含 Nano) 的網域控制站上部署輕量型閘道。 此外，此版本支援 Windows Server 2016 的 ATA 中心與 ATA 閘道兩個元件。
 
 ### <a name="user-experience"></a>使用者體驗
 - **設定體驗** 我們在此版本中重新設計了 ATA 設定體驗，讓您能獲得更好的使用者體驗，也對有多個 ATA 閘道的環境有更好的支援。 此版本也引進 ATA 閘道更新頁面，可以更簡單、更好管理各種不同閘道的自動更新。
@@ -102,6 +102,12 @@ ATA 1.7 的更新提供下列各方面的改良︰
 
 3. db.SystemProfile.update({_t:"ServiceSystemProfile"},{$set:{"Configuration.ManagementClientConfiguration.ServerCertificateThumbprint":CenterThumbprint}}, {multi: true})
 
+### <a name="export-suspicious-activity-details-to-excel-may-fail"></a>將可疑活動詳細資料匯出至 Excel 可能失敗
+嘗試將可疑活動詳細資料匯出至 Excel 檔案時，作業可能會因下列錯誤而失敗：*Error [BsonClassMapSerializer`1] System.FormatException: 將類別 Microsoft.Tri.Common.Data.NetworkActivities.SuspiciousActivityActivity 的 Activity 屬性還原序列化時發生錯誤: Element 'ResourceIdentifier' 不符合類別 Microsoft.Tri.Common.Data.EventActivities.NtlmEvent 的任何欄位或屬性。---> System.FormatException: 項目 'ResourceIdentifier' 不符合類別 Microsoft.Tri.Common.Data.EventActivities.NtlmEvent 的任何欄位或屬性。*
+
+若要解決此問題，請從提升權限的命令提示字元瀏覽至下列位置：**%ProgramFiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**，然後執行以下項目：
+1.  **Mongo.exe ATA** (ATA 必須大寫)
+2.  **db.SuspiciousActivityActivity.update({ "Activity._t": "NtlmEvent" },{$unset: {"Activity.ResourceIdentifier": ""}}, {multi: true});**
 
 ## <a name="minor-changes"></a>次要變更
 
@@ -117,6 +123,6 @@ ATA 1.7 的更新提供下列各方面的改良︰
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

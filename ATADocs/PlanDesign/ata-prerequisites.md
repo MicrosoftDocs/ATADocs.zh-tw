@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 12/14/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: 56f397c373e0b6827aab084e21c804a135049a27
+ms.sourcegitcommit: 67b430fbed97bd08e5f538043c783e70ed2ab956
+ms.openlocfilehash: 60ec036a8c22fb34c673653a6378437ab14f9853
 
 
 ---
@@ -142,6 +142,9 @@ ATA 閘道可以用來監視具 Windows Server 2003 或更新版本之網域功�
 
 如需使用虛擬機器與 ATA 閘道的資訊，請參閱 [Configure port mirroring](/advanced-threat-analytics/deploy-use/configure-port-mirroring) (設定連接埠鏡像)。
 
+> [!NOTE]
+> 至少需要 5 GB 的空間，建議要有 10 GB。 這包括 ATA 二進位檔、[ATA 記錄](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)和[效能記錄檔](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-perf-counters)所需空間。
+
 ### <a name="server-specifications"></a>伺服器規格
 為了達到最佳效能，將 ATA 閘道的 [電源選項] 設定為 [高效能]。<br>
 ATA 閘道可以支援監視多個網域控制站，依進出網域控制站的網路傳輸量而定。
@@ -212,12 +215,15 @@ ATA 閘道需要至少一個管理介面卡和至少一個擷取介面卡︰
 ## <a name="ata-lightweight-gateway-requirements"></a>ATA 輕量型閘道需求
 本節列出 ATA 輕量型閘道的需求。
 ### <a name="general"></a>一般
-ATA 輕量型閘道可在執行 Windows Server 2008 R2 SP1、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 (包括 Core 但不包括 Nano) 的網域控制站上安裝。
+ATA 輕量型閘道可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 (包含 Core 但不含 Nano) 的網域控制站上安裝。
 
 網域控制站可以是唯讀網域控制站 (RODC)。
 
 在安裝 ATA 輕量型閘道之前，在執行 Windows Server 2012 R2 SP1 的網域控制站上確認已安裝下列更新︰[KB2919355](https://support.microsoft.com/kb/2919355/)。
 您可以執行下列 Windows PowerShell Cmdlet 來確認安裝與否：`[Get-HotFix -Id kb2919355]`。
+
+> [!NOTE]
+> 至少需要 5 GB 的空間，建議要有 10 GB。 這包括 ATA 二進位檔、[ATA 記錄](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs.md)和[效能記錄檔](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-perf-counters.md)所需空間。
 
 ### <a name="server-specifications"></a>伺服器規格
 
@@ -282,6 +288,6 @@ ATA 主控台的存取是透過瀏覽器，支援下列瀏覽器︰
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

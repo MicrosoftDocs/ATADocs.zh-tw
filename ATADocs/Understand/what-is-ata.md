@@ -1,8 +1,9 @@
 ---
-title: "什麼是 Microsoft Advanced Threat Analytics (ATA)？ | Microsoft ATA"
+title: "什麼是 Microsoft Advanced Threat Analytics (ATA)？ | Microsoft Docs"
 description: "說明何謂 Microsoft Advanced Threat Analytics (ATA)，以及它可以偵測到的可疑活動種類"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 09/28/2016
 ms.topic: article
@@ -13,19 +14,19 @@ ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3768cd103fc2a938d2d39fe34179d74587abc118
-ms.openlocfilehash: 0bc2bcc42b2b59cf297b4af86f0c38aafebc379f
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: 70d66bccfda484722afa63a7f85dc8f85013f54f
 
 
 ---
 
-*適用於︰Advanced Threat Analytics 1.7 版*
+適用於︰Advanced Threat Analytics 1.7 版
 
 
-## 什麼是 Advanced Threat Analytics？
+## <a name="what-is-advanced-threat-analytics"></a>什麼是 Advanced Threat Analytics？
 Advanced Threat Analytics (ATA) 是內部部署平台，可協助保護您的企業免於受到多種進階鎖定目標類型的網路攻擊和內部威脅。
 
-## ATA 的運作方式
+## <a name="how-ata-works"></a>ATA 的運作方式
 ATA 會從網路中的記錄檔和事件取得多個資料來源的資訊，了解組織中使用者和其他實體的行為，並建立其相關行為的設定檔。
 ATA 可以從下列項目接收事件和記錄檔︰
 
@@ -39,7 +40,7 @@ ATA 可以從下列項目接收事件和記錄檔︰
 
 如需 ATA 架構的詳細資訊，請參閱 [ATA 架構](/advanced-threat-analytics/plan-design/ata-architecture)。
 
-## ATA 有何作用？
+## <a name="what-does-ata-do"></a>ATA 有何作用？
 
 ATA 技術會偵測多個可疑的活動，將焦點放在網路攻擊狙殺鏈的幾個階段，包括︰
 
@@ -90,17 +91,17 @@ ATA 也會偵測**安全性問題與風險**，包括︰
   ![範例 ATA 螢幕信任中斷](media/sample screen broken trust.png)
 
 
-## 新功能
+## <a name="whats-next"></a>新功能
 
 -   如需 ATA 如何融入網路的詳細資訊︰[ATA 架構](/advanced-threat-analytics/plan-design/ata-architecture)
 
 -   若要開始部署 ATA：[安裝 ATA](/advanced-threat-analytics/deploy-use/install-ata)
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

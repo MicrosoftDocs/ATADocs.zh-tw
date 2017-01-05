@@ -1,8 +1,9 @@
 ---
-title: "安裝 ATA - 步驟 5 | Microsoft ATA"
+title: "安裝 ATA - 步驟 5 | Microsoft Docs"
 description: "安裝 ATA 的步驟 5 協助您設定 ATA 閘道的設定。"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: get-started-article
@@ -13,24 +14,24 @@ ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 39eadb9143740741fa592f983f03def5367ada46
-ms.openlocfilehash: 14b04a771f0c18170f0c80d388ab012574d40bee
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: b30fe6bc977184fb8cc297e10724c7fe48ee6934
 
 
 ---
 
-*適用於︰Advanced Threat Analytics 1.7 版*
+適用於︰Advanced Threat Analytics 1.7 版
 
 
 
-# 安裝 ATA - 步驟 5
+# <a name="install-ata---step-5"></a>安裝 ATA - 步驟 5
 
 >[!div class="step-by-step"]
 [«步驟 4](install-ata-step4.md)
 [步驟 6»](install-ata-step6.md)
 
 
-## 步驟 5： 設定 ATA 閘道設定
+## <a name="step-5-configure-the-ata-gateway-settings"></a>步驟 5： 設定 ATA 閘道設定
 安裝 ATA 閘道後，執行下列步驟來設定 ATA 閘道的設定。
 
 1.  在 ATA 主控台中，移至 [設定]，在 [系統] 下選取 [閘道]。
@@ -67,7 +68,7 @@ ms.openlocfilehash: 14b04a771f0c18170f0c80d388ab012574d40bee
 3. 按一下 **[儲存]**。
 
 
-## 驗證安裝
+## <a name="validate-installations"></a>驗證安裝
 若要驗證 ATA 閘道是否已成功部署，請檢查下列各項︰
 
 1.  檢查名為 **Microsoft Advanced Threat Analytics 閘道**的服務是否正在執行。 儲存 ATA 閘道設定後，可能需幾分鐘時間來啟動服務。
@@ -87,7 +88,7 @@ ms.openlocfilehash: 14b04a771f0c18170f0c80d388ab012574d40bee
 [«步驟 4](install-ata-step4.md)
 [步驟 6»](install-ata-step6.md)
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)
@@ -96,6 +97,6 @@ ms.openlocfilehash: 14b04a771f0c18170f0c80d388ab012574d40bee
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 

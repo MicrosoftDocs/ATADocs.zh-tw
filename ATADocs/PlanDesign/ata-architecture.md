@@ -1,8 +1,9 @@
 ---
-title: "ATA 架構 | Microsoft ATA"
+title: "ATA 架構 | Microsoft Docs"
 description: "描述 Microsoft Advanced Threat Analytics 的架構 (ATA)"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: article
@@ -13,18 +14,18 @@ ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 050f1ef0b39d69b64ede53243a7fa2d33d0e4813
-ms.openlocfilehash: c416fba5aace73cf585e7f6ca604a8c61c3c6fcc
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: 06cc0de7e335a120d9e4c988dcc6a74087f027c6
 
 
 ---
 
-*適用於︰Advanced Threat Analytics 1.7 版*
+適用於︰Advanced Threat Analytics 1.7 版
 
 
 
 
-# ATA 架構
+# <a name="ata-architecture"></a>ATA 架構
 此圖表中詳細說明 Advanced Threat Analytics 架構︰
 
 ![ATA 架構拓撲圖表](media/ATA-architecture-topology.jpg)
@@ -35,7 +36,7 @@ ATA 監視網域控制站網路流量的方法是，運用使用實體或虛擬�
 
 ![ATA 流量圖表](media/ATA-traffic-flow.jpg)
 
-## ATA 元件
+## <a name="ata-components"></a>ATA 元件
 ATA 包含下列項目：
 
 -   **ATA 中心** <br>
@@ -48,7 +49,7 @@ ATA 輕量型閘道直接安裝在網域控制站上，直接監視其流量，�
 ATA 部署的組成可以是連接至所有 ATA 閘道的單一 ATA 中心、所有 ATA 輕量型閘道，或 ATA 閘道和 ATA 輕量型閘道的組合。
 
 
-## 部署選項
+## <a name="deployment-options"></a>部署選項
 您可以使用下列閘道組合部署 ATA︰
 
 -   **只使用 ATA 閘道** <br>
@@ -63,7 +64,7 @@ ATA 部署的組成可以是連接至所有 ATA 閘道的單一 ATA 中心、所
 
 
 
-## ATA 中心
+## <a name="ata-center"></a>ATA 中心
 **ATA 中心**會執行下列功能：
 
 -   管理 ATA 閘道和 ATA 輕量型閘道組態設定
@@ -97,9 +98,9 @@ ATA 中心會從 ATA 閘道和 ATA 輕量型閘道接收剖析的流量、執行
 
 -    在極大型的 Active Directory 部署中，單一 ATA 中心可能無法處理所有網域控制站的所有流量。 這種情況會需要多個 ATA 中心。 ATA 中心的數目應該取決於 [ATA 容量規劃](ata-capacity-planning.md)。
 
-## ATA 閘道和 ATA 輕量型閘道
+## <a name="ata-gateway-and-ata-lightweight-gateway"></a>ATA 閘道和 ATA 輕量型閘道
 
-### 閘道核心功能
+### <a name="gateway-core-functionality"></a>閘道核心功能
 **ATA 閘道** 和 **ATA 輕量型閘道** 兩者都有相同的核心功能︰
 
 -   擷取和檢查網域控制站網路流量 (ATA 閘道為連接埠鏡像流量，ATA 輕量型閘道為網域控制站的本機流量) 
@@ -125,7 +126,7 @@ ATA 閘道會從您的網路接收網路流量和 Windows 事件，並在下列�
 |實體解析程式|實體解析程式會接受剖析的資料 (網路流量和事件)，並利用 Active Directory 解析資料以找出帳戶與身分識別資訊。 然後在剖析的資料中找出符合的 IP 位址。 實體解析程式會有效率地檢查封包標頭，啟用機器名稱、屬性和身分識別的驗證封包剖析。 實體解析程式會結合已剖析驗證封包與實際封包中的資料。|
 |實體傳送者|實體傳送者負責將剖析和相符的資料傳送到 ATA 中心。|
 
-## ATA 輕量型閘道功能
+## <a name="ata-lightweight-gateway-features"></a>ATA 輕量型閘道功能
 
 下列功能的運作方式不同，視您執行的是 ATA 閘道或 ATA 輕量型閘道而定。
 
@@ -158,10 +159,10 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 
 
 
-## 您的網路元件
+## <a name="your-network-components"></a>您的網路元件
 請確定下列事項以使用 ATA︰
 
-### 連接埠鏡像
+### <a name="port-mirroring"></a>連接埠鏡像
 如果使用 ATA 閘道，您就必須為要受監視的網域控制站設定連接埠鏡像，並使用實體或虛擬交換器將 ATA 閘道設定為目的地。 另一個選項是使用網路 TAP。 如果部分 (而非全部) 的網域控制站受到監視，ATA 就會運作，但是偵測會比較沒有效率。
 
 雖然連接埠鏡像會將所有網域控制站的網路流量都鏡像處理到 ATA 閘道，但是只有少部分的流量會傳送與壓縮至 ATA 中心進行分析。
@@ -169,14 +170,14 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 您的網域控制站和 ATA 閘道可以為實體或虛擬，如需詳細資訊，請參閱 [Configure port mirroring](/advanced-threat-analytics/deploy-use/configure-port-mirroring) (設定連接埠鏡像)。
 
 
-### 事件
+### <a name="events"></a>事件
 若要增強 ATA 對傳遞雜湊攻擊、暴力密碼破解和仿效權杖的偵測，ATA 需要識別碼為 4776 的 Windows 事件記錄檔。 可透過下列兩種方式的其中一種轉送到 ATA 閘道，將 ATA 閘道設定為接聽 SIEM 事件，或使用 Windows 事件轉送。
 
 -   將 ATA 閘道設定為接聽 SIEM 事件 <br>將您的 SIEM 設定為轉送特定 Windows 事件至 ATA。 ATA 支援許多 SIEM 廠商。 如需詳細資訊，請參閱[設定事件收集](/advanced-threat-analytics/deploy-use/configure-event-collection)。
 
 -   設定 Windows 事件轉送<br>ATA 可以取得事件的另一個方法是將網域控制站設定為將 Windows 事件 4776 轉送至 ATA 閘道。 如果您沒有 SIEM，或者 ATA 目前不支援您的 SIEM，這個方法特別有用。 如需 ATA 中 Windows 事件轉送的詳細資訊，請參閱[設定 Windows 事件轉送](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)。
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [ATA 必要條件](ata-prerequisites.md)
 - [ATA 容量規劃](ata-capacity-planning.md)
 - [設定事件收集](/advanced-threat-analytics/deploy-use/configure-event-collection)
@@ -186,6 +187,6 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

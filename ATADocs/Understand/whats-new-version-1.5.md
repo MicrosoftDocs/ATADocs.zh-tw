@@ -1,8 +1,9 @@
 ---
-title: "ATA 1.5 版的新功能 | Microsoft ATA"
+title: "ATA 1.5 版的新功能 | Microsoft Docs"
 description: "列出 ATA 1.5 版的新功能以及已知問題"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
@@ -13,16 +14,16 @@ ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f13750f9cdff98aadcd59346bfbbb73c2f3a26f0
-ms.openlocfilehash: c6e39cf057ed5e2a86acb8c41301252ed8339922
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: 4130f19c828045327d9d439059a2beda9bca13dc
 
 
 ---
 
-# ATA 1.5 版的新功能
+# <a name="whats-new-in-ata-version-15"></a>ATA 1.5 版的新功能
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。
 
-## 什麼是 ATA 1.5 更新的新功能？
+## <a name="whats-new-in-the-ata-15-update"></a>什麼是 ATA 1.5 更新的新功能？
 更新至 ATA 1.5 提供下列各方面的改良︰
 
 -   更快速的偵測時間
@@ -39,34 +40,34 @@ ms.openlocfilehash: c6e39cf057ed5e2a86acb8c41301252ed8339922
 
 -   增強的監視和疑難排解有更多的效能計數器
 
-## 已知問題
+## <a name="known-issues"></a>已知問題
 下列已知問題存在於此版本中。
 
-### 新 ATA 閘道器安裝失敗
+### <a name="new-ata-gateway-installation-fails"></a>新 ATA 閘道器安裝失敗
 將 ATA 部署更新至 ATA 1.5 版之後，您會在安裝新 ATA 閘道時收到下列錯誤︰未安裝 Microsoft Advanced Threat Analytics 閘道
 
 ![ATA GW 錯誤](media/ata-install-error.png)
 
 <b>因應措施︰</b>傳送電子郵件給 <ataeval@microsoft.com> 以要求因應措施步驟。
-### 部署
+### <a name="deployment"></a>部署
 指定給「資料庫資料路徑」和「資料庫日誌路徑」的資料夾必須是空的 (沒有檔案或子資料夾)。
 如果不是空的，將不會進行部署。
 
-### 從 Zip 檔案安裝
+### <a name="installation-from-zip-file"></a>從 Zip 檔案安裝
 安裝 ATA 閘道時，請務必從 zip 檔案解壓縮檔案至本機目錄，並從該處安裝。 請勿直接從 zip 檔案內部安裝 ATA 閘道，否則安裝將會失敗。
 
-### 設定
+### <a name="configuration"></a>設定
 設定 ATA 閘道組態之後，當 ATA 閘道第一次啟動時，會顯示「未同步處理」標籤，直到服務完全啟動為止，在服務第一次啟動時，這可能需要多達 10 分鐘。
 
-### 網路擷取軟體
+### <a name="network-capture-software"></a>網路擷取軟體
 在 ATA 閘道上，您可以安裝的唯一支援網路擷取軟體是 [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865) (Microsoft 網路監視器 3.4)。 請勿安裝 Microsoft Message Analyzer 或其他任何網路擷取軟體。 安裝其他軟體將會造成 ATA 閘道停止正常運作。
 
-### 虛擬化主機上的 KB
+### <a name="kb-on-virtualization-host"></a>虛擬化主機上的 KB
 請勿在虛擬化主機上安裝 KB 3047154。 這可能會導致連接埠鏡像無法正常運作。
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 
-[將 ATA 更新至 1.5 版 - 移轉指南](ata-update-1.5-migration-guide.md)
+[將 ATA 更新為 1.5 版 - 移轉指南](ata-update-1.5-migration-guide.md)
 
 [將 ATA 更新至 1.6 版 - 移轉指南](ata-update-1.6-migration-guide.md)
 
@@ -74,6 +75,6 @@ ms.openlocfilehash: c6e39cf057ed5e2a86acb8c41301252ed8339922
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 

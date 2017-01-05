@@ -1,8 +1,9 @@
 ---
-title: "安裝 ATA - 步驟 4 | Microsoft ATA"
+title: "安裝 ATA - 步驟 4 | Microsoft Docs"
 description: "安裝 ATA 的步驟 4 協助您安裝 ATA 閘道。"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: get-started-article
@@ -13,23 +14,23 @@ ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 54e5105e78b6db9f33488135601381af5503aa4a
-ms.openlocfilehash: 305c939ebda636617ece6e41f0554af0e948c3ec
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: ebaab5e8768d6b78c6d9ff93fa1430673827e483
 
 
 ---
 
-*適用於︰Advanced Threat Analytics 1.7 版*
+適用於︰Advanced Threat Analytics 1.7 版
 
 
 
-# 安裝 ATA - 步驟 4
+# <a name="install-ata---step-4"></a>安裝 ATA - 步驟 4
 
 >[!div class="step-by-step"]
 [« 步驟 3](install-ata-step3.md)
 [步驟 5 »](install-ata-step5.md)
 
-## 步驟 4： 安裝 ATA 閘道
+## <a name="step-4-install-the-ata-gateway"></a>步驟 4： 安裝 ATA 閘道
 
 在專用伺服器上安裝 ATA 閘道之前，請先驗證連接埠鏡像都已正確設定，而且 ATA 閘道可以查看往來網域控制站的流量。 如需詳細資訊，請參閱[驗證連接埠鏡像](validate-port-mirroring.md)。
 
@@ -89,7 +90,7 @@ ms.openlocfilehash: 305c939ebda636617ece6e41f0554af0e948c3ec
 [« 步驟 3](install-ata-step3.md)
 [步驟 5 »](install-ata-step5.md)
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)
@@ -98,6 +99,6 @@ ms.openlocfilehash: 305c939ebda636617ece6e41f0554af0e948c3ec
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

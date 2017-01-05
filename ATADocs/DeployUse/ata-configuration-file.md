@@ -1,8 +1,9 @@
 ---
-title: "ATA 設定檔 | Microsoft ATA"
-description: "備份 ATA 設定。"
+title: "匯出和匯入 ATA 組態 |Microsoft Docs"
+description: "如何匯出和匯入 ATA 組態。"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 10/31/2016
 ms.topic: article
@@ -13,17 +14,17 @@ ms.assetid: 1d27dba8-fb30-4cce-a68a-f0b1df02b977
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f334f9c8440e4bb0202579de220f6530d0aabad8
-ms.openlocfilehash: 542bdf983e26fa98c036de55860b482d0b1d734d
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: f0307ae2e8f222e7c58db234b0fb393072ac7444
 
 
 ---
 
-*適用於︰Advanced Threat Analytics 1.7 版*
+適用於︰Advanced Threat Analytics 1.7 版
 
 
 
-# <a name="ata-configuration-file"></a>ATA 設定檔
+# <a name="export-and-import-the-ata-configuration"></a>匯出和匯入 ATA 組態
 ATA 組態會儲存在資料庫的「SystemProfile 」集合中。
 ATA 中心服務每小時會將此集合備份到名為 "SystemProfile_*timestamp*.json" 的檔案。 會儲存 10 個最新的版本。
 這位於名為「Backup」的子資料夾中。 在預設的 ATA 安裝位置中，可以在這裡找到︰*C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup\SystemProfile_*timestamp*.json*。 
@@ -42,6 +43,6 @@ ATA 中心服務每小時會將此集合備份到名為 "SystemProfile_*timestam
 
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

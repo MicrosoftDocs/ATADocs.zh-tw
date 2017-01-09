@@ -1,8 +1,9 @@
 ---
-title: "安裝 ATA - 步驟 2 | Microsoft ATA"
+title: "安裝 ATA - 步驟 2 | Microsoft Docs"
 description: "安裝 ATA 的步驟 2 協助您設定 ATA 中心伺服器網域連線設定"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f334f9c8440e4bb0202579de220f6530d0aabad8
-ms.openlocfilehash: 3f78d0dd6b1e3f419c7e72e0449f77e7d2b3167d
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: 4ca0f9b9c73ddb1432eaf31b75f78af4541e3e29
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: 3f78d0dd6b1e3f419c7e72e0449f77e7d2b3167d
 
 
 
-# <a name="install-ata-step-2"></a>安裝 ATA - 步驟 2
+# <a name="install-ata---step-2"></a>安裝 ATA - 步驟 2
 
 >[!div class="step-by-step"]
 [« 步驟 1](install-ata-step1.md)
@@ -63,6 +64,6 @@ ms.openlocfilehash: 3f78d0dd6b1e3f419c7e72e0449f77e7d2b3167d
 
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

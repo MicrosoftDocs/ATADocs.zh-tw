@@ -24,7 +24,7 @@ ms.openlocfilehash: d967cbf2674c5f561e63f66b64640ac08daad6c0
 
 
 
-## <a name="provide-ata-with-up-your-email-server-settings"></a>使用電子郵件伺服器設定提供 ATA
+# <a name="provide-ata-with-up-your-email-server-settings"></a>使用電子郵件伺服器設定提供 ATA
 當 ATA 偵測到可疑的活動時，就會通知您。 若要讓 ATA 能夠傳送電子郵件通知，您必須先進行**電子郵件伺服器設定**。
 
 1.  在 ATA 中央伺服器上，按一下桌面上的 [Microsoft Advanced Threat Analytics Management] 圖示。

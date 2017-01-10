@@ -22,7 +22,7 @@ ms.openlocfilehash: 2671937cf0ed9ff2865073b97ee735da99fa7d7f
 
 適用於︰Advanced Threat Analytics 1.7 版
 
-## <a name="what-threats-does-ata-look-for"></a>ATA 會尋找哪些威脅？
+# <a name="what-threats-does-ata-look-for"></a>ATA 會尋找哪些威脅？
 
 ATA 提供下列進階攻擊各階段的偵測︰探查、認證入侵、橫向移動、權限提升、網域支配等等。 這些偵測的目標是在造成組織危害之前偵測到進階攻擊和內部威脅。
 每個階段的偵測會產生與問題階段相關的數個可疑活動，而每個可疑活動各與不同類別的可能攻擊相互關聯。

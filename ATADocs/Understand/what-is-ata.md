@@ -23,7 +23,7 @@ ms.openlocfilehash: 70d66bccfda484722afa63a7f85dc8f85013f54f
 適用於︰Advanced Threat Analytics 1.7 版
 
 
-## <a name="what-is-advanced-threat-analytics"></a>什麼是 Advanced Threat Analytics？
+# <a name="what-is-advanced-threat-analytics"></a>什麼是 Advanced Threat Analytics？
 Advanced Threat Analytics (ATA) 是內部部署平台，可協助保護您的企業免於受到多種進階鎖定目標類型的網路攻擊和內部威脅。
 
 ## <a name="how-ata-works"></a>ATA 的運作方式

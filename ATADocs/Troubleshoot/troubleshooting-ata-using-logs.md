@@ -1,8 +1,9 @@
 ---
-title: "使用 ATA 記錄檔為 ATA 疑難排解 | Microsoft ATA"
+title: "使用 ATA 記錄檔為 ATA 進行疑難排解 | Microsoft Docs"
 description: "描述如何使用 ATA 記錄檔來疑難排解問題"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: article
@@ -13,20 +14,20 @@ ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c71d5ed1c705de558f1144820703ffe84850679b
-ms.openlocfilehash: f8024edbfad1961db7fa469cc2907c55bb5ec93f
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: 3a2ae61ba1b54efd5dca5f0f71dc71b98872145d
 
 
 ---
 
-*適用於︰Advanced Threat Analytics 1.7 版*
+適用於︰Advanced Threat Analytics 1.7 版
 
 
 
-# 使用 ATA 記錄檔來疑難排解 ATA
+# <a name="troubleshooting-ata-using-the-ata-logs"></a>使用 ATA 記錄檔來疑難排解 ATA
 ATA 記錄提供深入解析，說明 ATA 的每個元件在任何指定時間點執行的動作。
 
-## ATA 閘道記錄檔
+## <a name="ata-gateway-logs"></a>ATA 閘道記錄檔
 在本節中，對 ATA 閘道的每個參考也都適用於 ATA 輕量型閘道。 
 
 ATA 閘道記錄檔位於安裝 ATA、稱為 **Logs** 的子資料夾中，預設位置為：**C:\Program Files\Microsoft Advanced Threat Analytics\**。在預設安裝位置中，其位於︰**C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**。
@@ -47,7 +48,7 @@ ATA 閘道有下列記錄檔︰
 > [!NOTE]
 > 前三個記錄檔有大小上限 50 MB。 到達該大小時，會開啟新的記錄檔，並將上一個記錄檔重新命名為「&lt;原始檔案名稱&gt;-Archived-00000」，該數字隨每次重新命名遞增。 根據預設，如果已經有超過 10 個相同類型的檔案，就會刪除最舊的檔案。
 
-## ATA 中心記錄檔
+## <a name="ata-center-logs"></a>ATA 中心記錄檔
 ATA 中心記錄位於名為 **Logs** 的子資料夾中。 在預設安裝位置中，其位於︰**C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs**。
 > [!Note]
 > ATA 主控台記錄檔先前位於 IIS 記錄檔之下，現在則位於 ATA 中心記錄檔之下。
@@ -67,7 +68,7 @@ ATA 中心有下列記錄檔︰
 > 前三個記錄檔有大小上限 50 MB。 到達該大小時，會開啟新的記錄檔，並將上一個記錄檔重新命名為「&lt;原始檔案名稱&gt;-Archived-00000」，該數字隨每次重新命名遞增。 根據預設，如果已經有超過 10 個相同類型的檔案，就會刪除最舊的檔案。
 
 
-## ATA 部署記錄檔
+## <a name="ata-deployment-logs"></a>ATA 部署記錄檔
 對於安裝產品的使用者，ATA 部署記錄位於暫存記錄中。 在預設安裝位置中，其位於︰**C:\Users\Administrator\AppData\Local\Temp** (或 %temp% 上方的一個目錄)。
 
 ATA Center 部署記錄檔︰
@@ -85,7 +86,7 @@ ATA 閘道和 ATA 輕量型閘道部署記錄：
 -   **Microsoft Advanced Threat Analytics Gateway_YYYYMMDDHHMMSS_001_MsiPackage.log** - 此記錄檔會列出 ATA 閘道二進位檔的部署程序步驟。 其主要用途是追蹤 ATA 閘道二進位檔的部署。
 
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
 - [ATA 容量規劃](/advanced-threat-analytics/plan-design/ata-capacity-planning)
 - [設定事件收集](/advanced-threat-analytics/deploy-use/configure-event-collection)
@@ -94,6 +95,6 @@ ATA 閘道和 ATA 輕量型閘道部署記錄：
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 

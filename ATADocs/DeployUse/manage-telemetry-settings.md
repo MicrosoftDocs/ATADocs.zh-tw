@@ -1,8 +1,9 @@
 ---
-title: "管理遙測設定 | Microsoft ATA"
+title: "管理遙測設定 | Microsoft Docs"
 description: "描述 ATA 所收集的資料，並提供關閉資料收集的步驟。"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 08/24/2016
 ms.topic: article
@@ -13,20 +14,20 @@ ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3a7e375da4acd5546347310c5965394b2addfe63
-ms.openlocfilehash: 0c6b8589fffe24298d0caf2cf2eb5e7e817e4da2
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: c7366dcc2cbd7a9eba1503e5af3290ec4ac73c32
 
 
 ---
 
-*適用於︰Advanced Threat Analytics 1.7 版*
+適用於︰Advanced Threat Analytics 1.7 版
 
 
 
-# 管理遙測設定
+# <a name="manage-telemetry-settings"></a>管理遙測設定
 Advanced Threat Analytics (ATA) 會收集有關 ATA 的匿名遙測資料，並透過 HTTPS 連線將資料傳輸至 Microsoft 伺服器。  Microsoft 將使用此資料以協助改善未來的 ATA 版本。
 
-## 收集的資料
+## <a name="data-collected"></a>收集的資料
 收集的匿名資料包含下列內容︰
 
 -   來自 ATA 中心和 ATA 閘道的效能計數器
@@ -82,19 +83,19 @@ Advanced Threat Analytics (ATA) 會收集有關 ATA 的匿名遙測資料，並�
 - ATA 主控台 URL 位址 - 使用 ATA 主控台時的 URL 位址，即造訪 ATA 主控台中的哪些頁面。
 
 
-### 停用資料收集
+### <a name="disable-data-collection"></a>停用資料收集
 請執行下列步驟，以停止收集及將遙測資料傳送到 Microsoft：
 
 1.  登入 ATA 主控台，按一下工具列中的三個點，然後選取 [關於]。
 
 2.  取消選取**將使用資訊傳送給我們，以於未來協助改善客戶經驗**的核取方塊。
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [1.6 版的新功能](/advanced-threat-analytics/understand-explore/whats-new-version-1.6)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

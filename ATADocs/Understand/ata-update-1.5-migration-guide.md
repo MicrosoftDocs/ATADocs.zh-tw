@@ -1,8 +1,9 @@
 ---
-title: "ATA 更新至 1.5 移轉指南 | Microsoft ATA"
+title: "ATA 更新至 1.5 移轉指南 | Microsoft Docs"
 description: "更新 ATA 至 1.5 版的程序"
 keywords: 
 author: rkarlin
+ms.author: rkarlin
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: article
@@ -13,13 +14,13 @@ ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c71d5ed1c705de558f1144820703ffe84850679b
-ms.openlocfilehash: 637d847af82d15a5b88fb43274f606a9b89da445
+ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
+ms.openlocfilehash: c23512e159c2f01bc0a930f71373aa5315f0310c
 
 
 ---
 
-# ATA 更新至 1.5 移轉指南
+# <a name="ata-update-to-15-migration-guide"></a>ATA 更新至 1.5 移轉指南
 更新至 ATA 1.5 提供下列各方面的改良︰
 
 -   更快速的偵測時間
@@ -36,7 +37,7 @@ ms.openlocfilehash: 637d847af82d15a5b88fb43274f606a9b89da445
 
 -   增強的監視和疑難排解有更多的效能計數器
 
-## 更新 ATA 至 1.5 版
+## <a name="updating-ata-to-version-15"></a>更新 ATA 至 1.5 版
 > [!NOTE]
 > 如果您的環境中未安裝 ATA，請下載包括 1.5 版的完整版本 ATA，並遵循[安裝 ATA](/advanced-threat-analytics/deploy-use/install-ata) 中所述的標準安裝程序。
 
@@ -58,7 +59,7 @@ ms.openlocfilehash: 637d847af82d15a5b88fb43274f606a9b89da445
     > [!IMPORTANT]
     > 更新所有 ATA 閘道以確保 ATA 正常運作。
 
-### 步驟 1︰更新 ATA 中心
+### <a name="step-1-update-the-ata-center"></a>步驟 1︰更新 ATA 中心
 
 1.  備份您的資料庫：(選擇性)
 
@@ -89,7 +90,7 @@ ms.openlocfilehash: 637d847af82d15a5b88fb43274f606a9b89da445
 > [!IMPORTANT]
 > - 更新所有 ATA 閘道以確保 ATA 正常運作。
 
-### 步驟 2： 下載 ATA 閘道安裝套件
+### <a name="step-2-download-the-ata-gateway-setup-package"></a>步驟 2： 下載 ATA 閘道安裝套件
 設定網域連線設定後，您可以下載 ATA 閘道安裝套件。
 
 若要下載 ATA 閘道安裝套件：
@@ -110,7 +111,7 @@ ZIP 檔案包含下列項目：
 
 -   包含連線至 ATA 中心所需資訊的組態設定檔
 
-### 步驟 3：更新 ATA 閘道
+### <a name="step-3-update-the-ata-gateways"></a>步驟 3：更新 ATA 閘道
 
 1.  在每個 ATA 閘道上，解壓縮 ATA 閘道套件的檔案，執行 Microsoft ATA Gateway Setup 檔案。
 
@@ -128,12 +129,12 @@ ZIP 檔案包含下列項目：
 
 ![閘道已更新的圖片](media/ATA-gw-updated.png)
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 

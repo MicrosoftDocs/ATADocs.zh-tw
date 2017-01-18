@@ -14,8 +14,8 @@ ms.assetid: 05e49e23-6e0a-4ec0-9a63-a2093173c8a1
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fca7f1b2b8260cad6e0ce32aad1c9e1b53fc0ad5
-ms.openlocfilehash: 9d7e2a03633acc97d6f918c97f9b67b553d5202e
+ms.sourcegitcommit: 7dc860fe31da1374a4466f8e56e55e6520bc10dc
+ms.openlocfilehash: 5ef56d1b615595baee95478be9baaebab7ed5cb4
 
 
 ---
@@ -63,6 +63,6 @@ ms.openlocfilehash: 9d7e2a03633acc97d6f918c97f9b67b553d5202e
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

@@ -14,8 +14,8 @@ ms.technology:
 ms.suite: ems
 ms.assetid: c4a97980-6e19-4d10-bf69-f0b338266efa
 translationtype: Human Translation
-ms.sourcegitcommit: 1dda7ed8bb461a15ae2cc9d379822ed4a96245ff
-ms.openlocfilehash: 6eeae28243bc000ad9424e655cfde75b10abe03a
+ms.sourcegitcommit: dc1bfcd10b1856a7b92189f5cfd3b7492cf15bcb
+ms.openlocfilehash: 22af8d46b375e86c203da1cadd89416b42c45db7
 
 
 ---
@@ -74,9 +74,9 @@ ms.openlocfilehash: 6eeae28243bc000ad9424e655cfde75b10abe03a
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/advanced-threat-analytics/understand-explore/ata-release-notes">
+                  <a href="/advanced-threat-analytics/understand-explore/whats-new-version-1.7">
                     <h3>ATA 版本資訊</h3>
-                    <p>查看最新版本的更新項目清單，以及已知問題和移轉指南。</p>
+                    <p>查看最新版本的新功能，以及已知問題和移轉指南。</p>
                   </a>
                 </li>
               </ul>
@@ -118,7 +118,7 @@ ms.openlocfilehash: 6eeae28243bc000ad9424e655cfde75b10abe03a
           </li>
           <li class="journey-step">
             <header class="journey-step-header row">
-              <a href="/advanced-threat-analytics/deploy-use/preinstall-ata">
+              <a href="/advanced-threat-analytics/deploy-use/configure-port-mirroring">
                 <div class="title column-third">
                   <span class="step-number">3</span>
                   <p>部署與使用</p>
@@ -130,7 +130,7 @@ ms.openlocfilehash: 6eeae28243bc000ad9424e655cfde75b10abe03a
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="/advanced-threat-analytics/deploy-use/preinstall-ata">
+                  <a href="/advanced-threat-analytics/deploy-use/configure-port-mirroring">
                     <h3>安裝 ATA 之前</h3>
                     <p>安裝 ATA 之前，請執行下列步驟。</p>
                   </a>
@@ -142,7 +142,7 @@ ms.openlocfilehash: 6eeae28243bc000ad9424e655cfde75b10abe03a
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/advanced-threat-analytics/deploy-use/operate-ata">
+                  <a href="/advanced-threat-analytics/deploy-use/modifying-ata-config-centerip">
                     <h3>操作 ATA</h3>
                     <p>修改 ATA 設定及使用 ATA 執行每日監視。</p>
                   </a>
@@ -196,6 +196,6 @@ ms.openlocfilehash: 6eeae28243bc000ad9424e655cfde75b10abe03a
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

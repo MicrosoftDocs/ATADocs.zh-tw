@@ -20,12 +20,12 @@
 ### [2.驗證連接埠鏡像](validate-port-mirroring.md)
 ### [3.設定事件收集](configure-event-collection.md)
 ## 安裝 ATA
-### [步驟 1](install-ata-step1.md)
-### [步驟 2](install-ata-step2.md)
-### [步驟 3](install-ata-step3.md)
-### [步驟 4](install-ata-step4.md)
-### [步驟 5](install-ata-step5.md)
-### [步驟 6](install-ata-step6.md)
+### [步驟 1 下載及安裝中心](/advanced-threat-analytics/deploy-use/install-ata-step1.md)
+### [步驟 2 連線至 AD](/advanced-threat-analytics/deploy-use/install-ata-step2.md)
+### [步驟 3 下載 GW 套件](/advanced-threat-analytics/deploy-use/install-ata-step3.md)
+### [步驟 4 安裝 GW](/advanced-threat-analytics/deploy-use/install-ata-step4.md)
+### [步驟 5 設定 GW](/advanced-threat-analytics/deploy-use/install-ata-step5.md)
+### [步驟 6 排除與 Honeytoken](/advanced-threat-analytics/deploy-use/install-ata-step6.md)
 ### [無訊息安裝](ata-silent-installation.md)
 # 用法
 ## [變更 ATA 中心 IP 位址](modifying-ata-config-centerip.md)
@@ -49,6 +49,6 @@
 ## [使用資料庫進行疑難排解](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-ata-database)
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

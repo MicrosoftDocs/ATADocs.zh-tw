@@ -20,12 +20,12 @@
 ### [2.驗證連接埠鏡像](/advanced-threat-analytics/deploy-use/validate-port-mirroring)
 ### [3.設定事件收集](/advanced-threat-analytics/deploy-use/configure-event-collection)
 ## 安裝 ATA
-### [步驟 1 下載及安裝中心](/advanced-threat-analytics/deploy-use/install-ata-step1.md)
-### [步驟 2 連線至 AD](/advanced-threat-analytics/deploy-use/install-ata-step2.md)
-### [步驟 3 下載 GW 套件](/advanced-threat-analytics/deploy-use/install-ata-step3.md)
-### [步驟 4 安裝 GW](/advanced-threat-analytics/deploy-use/install-ata-step4.md)
-### [步驟 5 設定 GW](/advanced-threat-analytics/deploy-use/install-ata-step5.md)
-### [步驟 6 排除與 Honeytoken](/advanced-threat-analytics/deploy-use/install-ata-step6.md)
+### [步驟 1 下載及安裝中心](/advanced-threat-analytics/deploy-use/install-ata-step1)
+### [步驟 2 連線至 AD](/advanced-threat-analytics/deploy-use/install-ata-step2)
+### [步驟 3 下載 GW 套件](/advanced-threat-analytics/deploy-use/install-ata-step3)
+### [步驟 4 安裝 GW](/advanced-threat-analytics/deploy-use/install-ata-step4)
+### [步驟 5 設定 GW](/advanced-threat-analytics/deploy-use/install-ata-step5)
+### [步驟 6 排除與 Honeytoken](/advanced-threat-analytics/deploy-use/install-ata-step6)
 ### [無訊息安裝](/advanced-threat-analytics/deploy-use/ata-silent-installation)
 # 用法
 ## [變更 ATA 中心 IP 位址](/advanced-threat-analytics/deploy-use/modifying-ata-config-centerip)

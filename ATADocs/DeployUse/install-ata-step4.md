@@ -1,11 +1,11 @@
 ---
-title: "安裝 ATA - 步驟 4 | Microsoft Docs"
-description: "安裝 ATA 的步驟 4 協助您安裝 ATA 閘道。"
+title: "安裝 Advanced Threat Analytics - 步驟 4 | Microsoft Docs"
+description: "安裝 ATA 的步驟&4; 協助您安裝 ATA 閘道。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 01/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: ebaab5e8768d6b78c6d9ff93fa1430673827e483
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: 9b5891f4e864dcd7bfa8c5cc5ba6d9977806e033
 
 
 ---
@@ -99,6 +99,6 @@ ms.openlocfilehash: ebaab5e8768d6b78c6d9ff93fa1430673827e483
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

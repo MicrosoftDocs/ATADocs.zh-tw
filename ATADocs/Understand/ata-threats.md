@@ -1,11 +1,11 @@
 ---
-title: "ATA 會偵測哪些威脅？ | Microsoft Docs"
+title: "Advanced Threat Analytics 能偵測到什麼威脅？ | Microsoft Docs"
 description: "列出 Advanced Threat Analytics 偵測的威脅"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: 2671937cf0ed9ff2865073b97ee735da99fa7d7f
+ms.sourcegitcommit: 22d08a20291b1651a36247e9ffbeff8c881aefc5
+ms.openlocfilehash: 2378405d9d55ad40cb2cbfa21d2848536b86c1aa
 
 
 ---
@@ -84,6 +84,6 @@ ATA 會針對攻擊者使用的下列已知技術執行偵測，來偵測攻擊�
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

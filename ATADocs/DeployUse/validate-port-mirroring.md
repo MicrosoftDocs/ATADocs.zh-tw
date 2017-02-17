@@ -1,11 +1,11 @@
 ---
-title: "驗證連接埠鏡像 | Microsoft Docs"
+title: "在 Advanced Threat Analytics 中驗證連接埠鏡像 | Microsoft Docs"
 description: "描述如何驗證已正確設定連接埠鏡像"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 01/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: ebd41719-c91a-4fdd-bcab-2affa2a2cace
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: a836fca1fb11a980ca4d52a7e189f36aa37ffcd1
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: 47d24324288351c460be330d71bfdd41cd456fc0
 
 
 ---
@@ -229,6 +229,6 @@ ms.openlocfilehash: a836fca1fb11a980ca4d52a7e189f36aa37ffcd1
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

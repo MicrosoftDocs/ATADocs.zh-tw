@@ -1,11 +1,11 @@
 ---
-title: "設定事件收集 | Microsoft Docs"
+title: "在 Advanced Threat Analytics 中設定事件收集 | Microsoft Docs"
 description: "描述使用 ATA 設定事件收集的選項"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/08/2016
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d16364cd4113534c3101ebfa7750c0d0b837856d
-ms.openlocfilehash: 9ac9478512f2e5f6d15dd9b5cba9970a51ffa4da
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: bc9bee71273fba1df0b62dbaf162570b22c49b44
 
 
 ---
@@ -288,6 +288,6 @@ Message 是來自 Windows 事件的原始事件文字
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

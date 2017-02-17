@@ -1,11 +1,11 @@
 ---
-title: "變更 ATA 設定 | Microsoft Docs"
+title: "變更 Advanced Threat Analytics 組態 | Microsoft Docs"
 description: "提供可更新 ATA 組態的方法清單。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/29/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: bcf0f7d3-8027-45c0-8002-19f71fcb30a6
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bc7af91a925928183d179391f15d3a24cda2b576
-ms.openlocfilehash: f1e0939160cfdc54d4474f43e01582893cda82ef
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: 823d773efd85a453c3e0bf8f263f86ac02aaa237
 
 
 ---
@@ -42,6 +42,6 @@ ms.openlocfilehash: f1e0939160cfdc54d4474f43e01582893cda82ef
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Feb17_HO1-->
 
 

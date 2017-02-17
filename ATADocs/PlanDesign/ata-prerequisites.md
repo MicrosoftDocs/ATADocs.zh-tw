@@ -1,11 +1,11 @@
 ---
-title: "ATA 必要條件 | Microsoft Docs"
+title: "Advanced Threat Analytics 必要條件 | Microsoft Docs"
 description: "描述在環境中成功部署 ATA 的需求"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2016
+ms.date: 2/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67b430fbed97bd08e5f538043c783e70ed2ab956
-ms.openlocfilehash: 60ec036a8c22fb34c673653a6378437ab14f9853
+ms.sourcegitcommit: 88ca89f2311bf4e73b3d0b57db3e4377e99fd8b2
+ms.openlocfilehash: eae08c573fafaa3fa8643a2e115f7fc710e4d3f9
 
 
 ---
@@ -219,8 +219,9 @@ ATA 輕量型閘道可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)�
 
 網域控制站可以是唯讀網域控制站 (RODC)。
 
-在安裝 ATA 輕量型閘道之前，在執行 Windows Server 2012 R2 SP1 的網域控制站上確認已安裝下列更新︰[KB2919355](https://support.microsoft.com/kb/2919355/)。
-您可以執行下列 Windows PowerShell Cmdlet 來確認安裝與否：`[Get-HotFix -Id kb2919355]`。
+在將 ATA 輕量型閘道安裝在執行 Windows Server 2012 R2 SP1 的網域控制站上之前，請確認已安裝下列更新︰[KB2919355](https://support.microsoft.com/kb/2919355/) 和 [KB3000850](https://support.microsoft.com/help/3000850/november-2014-update-rollup-for-windows-rt-8.1,-windows-8.1,-and-windows-server-2012-r2) (依此順序)。 
+
+您可以執行下列 Windows PowerShell Cmdlet 來確認安裝與否：`[Get-HotFix -Id kb2919355] [Get-HotFix -Id KB3000850]`。
 
 > [!NOTE]
 > 至少需要 5 GB 的空間，建議要有 10 GB。 這包括 ATA 二進位檔、[ATA 記錄](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs.md)和[效能記錄檔](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-perf-counters.md)所需空間。
@@ -288,6 +289,6 @@ ATA 主控台的存取是透過瀏覽器，支援下列瀏覽器︰
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

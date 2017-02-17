@@ -1,11 +1,11 @@
 ---
-title: "以無訊息方式安裝 ATA | Microsoft Docs"
+title: "以無訊息方式安裝 Advanced Threat Analytics | Microsoft Docs"
 description: "說明如何以無訊息方式安裝 ATA。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 01/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b7f9dac8c00f213ee0cefc9ff93f2c9ca40cd28b
-ms.openlocfilehash: 7d7eeaf450a38a23c5c3a4d6d192a773f4cd036c
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: 31fca93099bbd44f6429f9274c941ed65556d588
 
 
 ---
@@ -221,6 +221,6 @@ Microsoft ATA v1.7 需要安裝 Microsoft .NET Framework 4.6.1。
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

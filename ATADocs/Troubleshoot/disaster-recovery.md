@@ -14,8 +14,8 @@ ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8ffbbfd96507612b8ec44f232f4ece42988eb588
-ms.openlocfilehash: 3bc9e48f1d8843aef40016a2c5a82f6c7510be3c
+ms.sourcegitcommit: e3f763f7c1cce6c451a1cc969771b73543c76673
+ms.openlocfilehash: 0669ccb78207dde1ede06a229af896bed0b19d28
 
 
 ---
@@ -30,7 +30,7 @@ ms.openlocfilehash: 3bc9e48f1d8843aef40016a2c5a82f6c7510be3c
 >[!NOTE]
 > 描述的程序並無法復原先前所偵測到的可疑活動，但可以使 ATA 中心恢復完整功能。 除此之外，部分行為偵測的學習期間將會重新開始，但大部分由 ATA 所提供的偵測，在 ATA 中心還原之後便可以運作。 
 
-## <a name="how-to-recovery-your-ata-center-after-disaster"></a>如何在災害後復原您的 ATA 中心
+## <a name="how-to-recover-your-ata-center-after-a-disaster"></a>如何在發生災害之後復原您的 ATA 中心
 
 1. ATA 中心組態會於每小時備份為檔案。 找出最新的 ATA 中心組態備份複本，並將它儲存在另一部電腦上。 如需尋找這些檔案的完整解釋，請參閱[匯出和匯入 ATA 組態](/advanced-threat-analytics/deploy-use/ata-configuration-file)。 
 2. 匯出 ATA 中心憑證。
@@ -72,6 +72,6 @@ ms.openlocfilehash: 3bc9e48f1d8843aef40016a2c5a82f6c7510be3c
 
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

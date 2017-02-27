@@ -14,8 +14,8 @@ ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: bc9bee71273fba1df0b62dbaf162570b22c49b44
+ms.sourcegitcommit: 6fddbbae0a0734834a21975c7690e06ac28dc64d
+ms.openlocfilehash: e31e3b8a94c8beef22be2f06ecaeb89545b3f62d
 
 
 ---
@@ -187,56 +187,58 @@ Message 是來自 Windows 事件的原始事件文字
 
 在此案例中，我們假設 ATA 閘道是網域的成員。
 
-1.  開啟「Active Directory 使用者和電腦」，瀏覽至 [BuiltIn] 資料夾，然後按兩下 [Event Log Readers] 群組。 
-2.  選取 [成員]。
-4.  如果未列出 [Network Service]，請按一下 [新增]，在 [輸入要選取的物件名稱] 欄位中輸入 **Network Service**。 然後按一下 [檢查名稱]，再按兩次 [確定]。 
+1.    開啟「Active Directory 使用者和電腦」，瀏覽至 [BuiltIn] 資料夾，然後按兩下 [Event Log Readers] 群組。 
+2.    選取 [成員]。
+4.    如果未列出 [Network Service]，請按一下 [新增]，在 [輸入要選取的物件名稱] 欄位中輸入 **Network Service**。 然後按一下 [檢查名稱]，再按兩次 [確定]。 
+
+請注意，在將 [網路服務] 新增到 [Event Log Readers] 群組後，您必須重新啟動網域控制站，變更才會生效。
 
 **步驟 2︰在網域控制站上建立原則以設定 [設定目標訂閱管理員] 設定。** 
 > [!Note] 
 > 您可以建立這些設定的群組原則，並將群組原則套用到 ATA 閘道監視的每個網域控制站。 下面的步驟修改網域控制站的本機原則。     
 
-1.  在每個網域控制站上執行下列命令︰*winrm quickconfig*
+1.    在每個網域控制站上執行下列命令︰*winrm quickconfig*
 2.  在命令提示字元中輸入 *gpedit.msc*
-3.  展開 [電腦設定] > [系統管理範本] > [Windows 元件] > [事件轉送]
+3.    展開 [電腦設定] > [系統管理範本] > [Windows 元件] > [事件轉送]
 
  ![本機原則群組編輯器影像](media/wef 1 local group policy editor.png)
 
-4.  按兩下 [設定目標訂閱管理員]。
+4.    按兩下 [設定目標訂閱管理員]。
    
-    1.  選取 [啟用]。
-    2.  在 [選項] 下，按一下 [顯示]。
-    3.  在 [SubscriptionManagers] 下，輸入下列值，然後按一下 [確定]：*Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (例如︰Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
+    1.    選取 [啟用]。
+    2.    在 [選項] 下，按一下 [顯示]。
+    3.    在 [SubscriptionManagers] 下，輸入下列值，然後按一下 [確定]：    *Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (例如：Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
  
    ![設定目標訂閱影像](media/wef 2 config target sub manager.png)
    
-    5.  按一下 [ **確定**]。
-    6.  在提升權限的命令提示字元中，輸入 *gpupdate /force*。 
+    5.    按一下 [ **確定**]。
+    6.    在提升權限的命令提示字元中，輸入 *gpupdate /force*。 
 
 **步驟 3：在 ATA 閘道上執行下列步驟** 
 
-1.  開啟提升權限的命令提示字元，輸入 *wecutil qc*
-2.  開啟 [事件檢視器]。 
-3.  以滑鼠右鍵按一下 [訂閱]，然後選取 [建立訂閱]。 
+1.    開啟提升權限的命令提示字元，輸入 *wecutil qc*
+2.    開啟 [事件檢視器]。 
+3.    以滑鼠右鍵按一下 [訂閱]，然後選取 [建立訂閱]。 
 
-   1.   為訂閱輸入名稱和描述。 
-   2.   對於 [目的記錄檔]確認已選取 [轉送的事件]。 對於要讀取事件的 ATA，目的記錄檔必須是 [轉送的事件]。 
-   3.   選取 [來源電腦起始]，按一下 [選取電腦群組]。
-        1.  按一下 [加入網域電腦]。
-        2.  在 [輸入要選取的物件名稱] 欄位中輸入網域控制站的名稱。 然後按一下 [檢查名稱]，再按一下 [確定]。 
+   1.    為訂閱輸入名稱和描述。 
+   2.    對於 [目的記錄檔]確認已選取 [轉送的事件]。 對於要讀取事件的 ATA，目的記錄檔必須是 [轉送的事件]。 
+   3.    選取 [來源電腦起始]，按一下 [選取電腦群組]。
+        1.    按一下 [加入網域電腦]。
+        2.    在 [輸入要選取的物件名稱] 欄位中輸入網域控制站的名稱。 然後按一下 [檢查名稱]，再按一下 [確定]。 
        
         ![事件檢視器影像](media/wef3 event viewer.png)
    
         
-        3.  按一下 [ **確定**]。
-   4.   按一下 [選取事件]。
+        3.    按一下 [ **確定**]。
+   4.    按一下 [選取事件]。
 
         1. 按一下 [依記錄]，然後選取 [安全性]。
         2. 在 [包含/排除事件識別碼] 欄位中輸入 **4776**，然後按一下 [確定]。 
 
  ![查詢篩選影像](media/wef 4 query filter.png)
 
-   5.   以滑鼠右鍵按一下建立的訂閱，然後選取 [執行階段狀態]，查看是否有任何問題及其狀態。 
-   6.   稍候幾分鐘之後，請查看事件 4776 出現在 ATA 閘道上 [轉送的事件] 中。
+   5.    以滑鼠右鍵按一下建立的訂閱，然後選取 [執行階段狀態]，查看是否有任何問題及其狀態。 
+   6.    稍候幾分鐘之後，請查看事件 4776 出現在 ATA 閘道上 [轉送的事件] 中。
 
 
 ### <a name="wef-configuration-for-the-ata-lightweight-gateway"></a>ATA 輕量型閘道的 WEF 設定
@@ -244,29 +246,29 @@ Message 是來自 Windows 事件的原始事件文字
 
 **步驟 1︰新增網路服務帳戶到網域 Event Log Readers 群組** 
 
-1.  開啟「Active Directory 使用者和電腦」，瀏覽至 [BuiltIn] 資料夾，然後按兩下 [Event Log Readers] 群組。 
-2.  選取 [成員]。
-3.  如果未列出 [Network Service]，請按一下 [新增]，在 [輸入要選取的物件名稱] 欄位中輸入 **Network Service**。 然後按一下 [檢查名稱]，再按兩次 [確定]。 
+1.    開啟「Active Directory 使用者和電腦」，瀏覽至 [BuiltIn] 資料夾，然後按兩下 [Event Log Readers] 群組。 
+2.    選取 [成員]。
+3.    如果未列出 [Network Service]，請按一下 [新增]，在 [輸入要選取的物件名稱] 欄位中輸入 **Network Service**。 然後按一下 [檢查名稱]，再按兩次 [確定]。 
 
 **步驟 2︰安裝 ATA 輕量型閘道之後在網域控制站上執行下列步驟** 
 
-1.  開啟提升權限的命令提示字元，輸入 *winrm quickconfig* 和 *wecutil qc* 
-2.  開啟 [事件檢視器]。 
-3.  以滑鼠右鍵按一下 [訂閱]，然後選取 [建立訂閱]。 
+1.    開啟提升權限的命令提示字元，輸入 *winrm quickconfig* 和 *wecutil qc* 
+2.    開啟 [事件檢視器]。 
+3.    以滑鼠右鍵按一下 [訂閱]，然後選取 [建立訂閱]。 
 
-   1.   為訂閱輸入名稱和描述。 
-   2.   對於 [目的記錄檔]確認已選取 [轉送的事件]。 對於要讀取事件的 ATA，目的記錄檔必須是 [轉送的事件]。
+   1.    為訂閱輸入名稱和描述。 
+   2.    對於 [目的記錄檔]確認已選取 [轉送的事件]。 對於要讀取事件的 ATA，目的記錄檔必須是 [轉送的事件]。
 
-        1.  選取 [收集器起始]，按一下 [選取電腦]。 然後按一下 [加入網域電腦]。
-        2.  在 [輸入要選取的物件名稱] 中輸入網域控制站的名稱。 然後按一下 [檢查名稱]，再按一下 [確定]。
+        1.    選取 [收集器起始]，按一下 [選取電腦]。 然後按一下 [加入網域電腦]。
+        2.    在 [輸入要選取的物件名稱] 中輸入網域控制站的名稱。 然後按一下 [檢查名稱]，再按一下 [確定]。
 
             ![訂閱屬性影像](media/wef 5 sub properties computers.png)
 
-        3.  按一下 [ **確定**]。
-   3.   按一下 [選取事件]。
+        3.    按一下 [ **確定**]。
+   3.    按一下 [選取事件]。
 
-        1.  按一下 [依記錄]，然後選取 [安全性]。
-        2.  在 [包含/排除事件識別碼] 中輸入 *4776*，然後按一下 [確定]。 
+        1.    按一下 [依記錄]，然後選取 [安全性]。
+        2.    在 [包含/排除事件識別碼] 中輸入 *4776*，然後按一下 [確定]。 
 
 ![查詢篩選影像](media/wef 4 query filter.png)
 
@@ -288,6 +290,6 @@ Message 是來自 Windows 事件的原始事件文字
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

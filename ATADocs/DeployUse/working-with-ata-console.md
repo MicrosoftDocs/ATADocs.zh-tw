@@ -1,11 +1,11 @@
 ---
-title: "使用 ATA 主控台 | Microsoft Docs"
+title: "了解 Advanced Threat Analytics 主控台 | Microsoft Docs"
 description: "描述如何登入 ATA 主控台和主控台的元件"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/29/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7dc860fe31da1374a4466f8e56e55e6520bc10dc
-ms.openlocfilehash: c315b3b307628b31b42a6d393513b86ce88e8aa1
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: cb712537b42c4e86ed24607e70c614e8d37025c0
 
 
 ---
@@ -126,6 +126,6 @@ ATA 無法完全解析的設定檔將會利用旁邊的半實心圓形圖示來�
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Feb17_HO1-->
 
 

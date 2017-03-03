@@ -1,11 +1,11 @@
 ---
-title: "使用 ATA 資料庫為 ATA 進行疑難排解 | Microsoft Docs"
+title: "使用資料庫針對 Advanced Threat Analytics 進行疑難排解 | Microsoft Docs"
 description: "描述如何使用 ATA 資料庫來協助疑難排解問題"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/29/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: 377a3c81-5c1d-486f-8942-85249aacf560
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7dc860fe31da1374a4466f8e56e55e6520bc10dc
-ms.openlocfilehash: fd2cc788ec3fb2c64d47694997762f740f5af503
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: 301e57f7bd66a0e557054d9b7a641c4c1c200142
 
 
 ---
@@ -59,6 +59,6 @@ ATA 會使用 MongoDB 作為其資料庫。
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Feb17_HO1-->
 
 

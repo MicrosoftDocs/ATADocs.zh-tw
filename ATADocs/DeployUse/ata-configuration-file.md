@@ -1,11 +1,11 @@
 ---
-title: "匯出和匯入 ATA 組態 |Microsoft Docs"
+title: "匯出和匯入 Advanced Threat Analytics 組態 | Microsoft Docs"
 description: "如何匯出和匯入 ATA 組態。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: 1d27dba8-fb30-4cce-a68a-f0b1df02b977
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: f0307ae2e8f222e7c58db234b0fb393072ac7444
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: 5ea29a5b64fd1f786200d3bbb62cd3964f8802e2
 
 
 ---
@@ -43,6 +43,6 @@ ATA 中心服務每小時會將此集合備份到名為 "SystemProfile_*timestam
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

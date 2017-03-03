@@ -1,11 +1,11 @@
 ---
-title: "ATA 常見問題 | Microsoft Docs"
+title: "Advanced Threat Analytics 常見問題集 | Microsoft Docs"
 description: "提供關於 ATA 的常見問題清單以及相關解答"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 02/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: f806437df3a2c581631e924798a367e5e48be6f8
+ms.sourcegitcommit: bdb830bb7d8ecb6e04bb9c62b40904300fc1b404
+ms.openlocfilehash: 715d6987a74d2d6222acd6747f3cf425a6a901da
 
 
 ---
@@ -27,6 +27,7 @@ ms.openlocfilehash: f806437df3a2c581631e924798a367e5e48be6f8
 
 ## <a name="what-should-i-do-if-the-ata-gateway-wont-start"></a>如果 ATA 閘道無法啟動，該怎麼辦？
 在目前的錯誤記錄檔中尋找最新的錯誤 (ATA 安裝在 Logs 資料夾下)。
+
 ## <a name="how-can-i-test-ata"></a>如何測試 ATA？
 您可以模擬可疑的活動，也就是進行下列作業之一執行端對端測試︰
 
@@ -54,6 +55,7 @@ ATA 會分析多個網路通訊協定，以及從 SIEM 或透過 Windows 事件�
 
 ## <a name="does-ata-work-with-kerberos-armoring"></a>ATA 會處理 Kerberos 防護嗎？
 Kerberos 保護又稱為彈性驗證安全通道 (FAST)，ATA 支援啟用 Kerberos 保護，但過度傳遞雜湊偵測時除外 (將無法運作)。
+
 ## <a name="how-many-ata-gateways-do-i-need"></a>我需要多少 ATA 閘道？
 
 ATA 閘道數目取決於您的網路配置、封包的數量和 ATA 所擷取的事件數量。 若要得知確切的數字，請參閱 [ATA 輕量型閘道大小](/advanced-threat-analytics/plan-design/ata-capacity-planning#ata-lightweight-gateway-sizing)。 
@@ -81,12 +83,16 @@ ATA 輕量型閘道可以涵蓋大多數虛擬網域控制站；如需判斷 ATA
 
 -   ATA 儲存的流量和事件，可以使用任何支援的資料庫備份程序加以備份；如需詳細資訊，請參閱 [ATA database management](/advanced-threat-analytics/deploy-use/ata-database-management) (ATA 資料庫管理)。 
 -   ATA 的設定。 這儲存在資料庫中，每小時自動備份在 ATA 中心部署位置中的 [Backup] 資料夾。  請參閱 [ATA 資料庫管理](https://docs.microsoft.com/advanced-threat-analytics/deploy-use/ata-database-management)了解詳細資訊。
+
+
+
 ## <a name="what-can-ata-detect"></a>ATA 可以偵測什麼？
+
 ATA 可以偵測已知的惡意攻擊和技術、安全性問題和風險。
 如需 ATA 偵測的完整清單，請參閱 [ATA 會執行哪些偵測？](ata-threats.md)。
 
 ## <a name="what-kind-of-storage-do-i-need-for-ata"></a>我需要為 ATA 準備何種儲存體？
-建議使用具有低延遲磁碟存取 (不到 10 毫秒) 的快速存放裝置 (不建議使用 7200 RPM 磁碟)。 RAID 設定應該能夠支援大量寫入負載 (不建議使用 RAID 5/6 及其衍生項目)。
+建議使用具有低延遲磁碟存取 (不到 10 毫秒) 的快速存放裝置 (不建議使用 7200 RPM 磁碟)。 RAID 設定應該能夠支援大量寫入負載 (不建議使用 RAID&5;/6 及其衍生項目)。
 
 ## <a name="how-many-nics-does-the-ata-gateway-require"></a>ATA 閘道需要多少 NIC？
 ATA 閘道需要至少兩張網路介面卡︰<br>1.一個 NIC 連線到內部網路和 ATA 中心。<br>2.NIC，將用來透過連接埠鏡像擷取網域控制站的網路流量。<br>* 這不適用於 ATA 輕量型閘道，該閘道原本就會使用網域控制站所使用的所有網路介面卡。
@@ -98,7 +104,6 @@ ATA 與 SIEM 已經雙向整合，如下所示︰
 2. 可將 ATA 設定為接收來自[這些 SIEM](/advanced-threat-analytics/deploy-use/configure-event-collection#siem-support)，每個 Windows 事件識別碼為 4776 的 Syslog 訊息。
 
 ## <a name="can-ata-monitor-domain-controllers-virtualized-on-your-iaas-solution"></a>ATA 是否可以監視在 IaaS 解決方案上虛擬的網域控制站？
-
 是，您可以使用 ATA 輕量型閘道來監視任何 IaaS 解決方案中的網域控制站。
 
 ## <a name="is-this-an-on-premises-or-in-cloud-offering"></a>這是內部部署或雲端產品？
@@ -127,6 +132,7 @@ Microsoft Advanced Threat Analytics 是內部部署的產品。
 
 ## <a name="can-ata-support-multi-domain-and-multi-forest"></a>ATA 支援多網域和多樹系嗎？
 Microsoft Advanced Threat Analytics 支援在相同樹系邊界內的多網域環境。 多樹系則需要為每個樹系部署 ATA。
+
 ## <a name="can-you-see-the-overall-health-of-the-deployment"></a>可以看到部署的整體健全狀況嗎？
 是，您可以檢視部署的整體健全狀況以及與組態、連線等相關的特定問題，而且系統會在問題發生時警示您。
 
@@ -141,6 +147,6 @@ Microsoft Advanced Threat Analytics 支援在相同樹系邊界內的多網域�
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

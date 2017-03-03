@@ -1,11 +1,11 @@
 ---
-title: "管理遙測設定 | Microsoft Docs"
+title: "管理 Advanced Threat Analytics 遙測設定 | Microsoft Docs"
 description: "描述 ATA 所收集的資料，並提供關閉資料收集的步驟。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: c7366dcc2cbd7a9eba1503e5af3290ec4ac73c32
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: 1b6da432e81bc42b772b2146213d2f24bee6231a
 
 
 ---
@@ -96,6 +96,6 @@ Advanced Threat Analytics (ATA) 會收集有關 ATA 的匿名遙測資料，並�
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

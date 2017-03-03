@@ -1,11 +1,11 @@
 ---
-title: "規劃 ATA 部署 | Microsoft Docs"
+title: "規劃 Advanced Threat Analytics 部署 | Microsoft Docs"
 description: "協助您規劃部署並決定支援您的網路需要多少 ATA 伺服器"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2016
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.service: advanced-threat-analytics
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56eff27ffdd988d5cc9e67352859ddfedebb2144
-ms.openlocfilehash: 93ec7373a166529332d7c4809c756ab3ba240868
+ms.sourcegitcommit: 0bacaaaa543d74e9575811d64b4cd41ac0fdb140
+ms.openlocfilehash: 2cdf7e00b575ee759a54fb99fb97cbfcee5a43de
 
 
 ---
@@ -54,13 +54,13 @@ ATA 中心建議最少需要 30 天的資料來進行使用者行為分析。
 |10,000|4|48|3|90|200 (300)
 |40,000|8|64|12|360|500 (1,000)
 |100,000|12|96|30|900|1,000 (1,500)
-|400,000|40|128|120|1,800|2,000 (2,500)
+|400,000|40|128|120|3,600|4,000 (5,000)
 
 &#42;這包括實體核心，不包括超執行緒核心。
 
 &#42;&#42;平均數目 (尖峰數目)
 > [!NOTE]
-> -   ATA 中心可以從所有受監視的網域控制站處理的彙總最大值為每秒 400,000 個畫面格 (FPS)。
+> -   ATA 中心可以從所有受監視的網域控制站處理的彙總最大值為每秒 400,000 個畫面格 (FPS)。 在某些環境中，部分 ATA 中心可以處理高於 400,000 個畫面格的整體流量。 請連絡 askcesec@microsoft.com 以取得這類環境的協助。
 > -   此處決定的儲存體數量為淨值，您應該隨時考量到未來的成長，並且確定資料庫所在的磁碟至少有 20% 的可用空間。
 > -   如果您的可用空間達到最小值 (20% 或 100 GB)，將會刪除最舊的資料集合。 這個情況將會持續發生，直到只剩下 5% 或 50 GB 的可用空間，屆時資料收集將會停止運作。
 > -   讀取和寫入活動的儲存體延遲應少於 10 毫秒。
@@ -115,7 +115,7 @@ ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站�
 
 &#42;&#42;&#42;此網域控制站已安裝的記憶體總數。
 
-> [!NOTE]   
+> [!NOTE]    
 > -   如果網域控制站沒有 ATA 輕量型閘道所需的必要資源數量，網域控制站的效能不會受到影響，但 ATA 輕量型閘道可能無法如預期般運作。
 > -   作為虛擬機器執行時不支援動態記憶體或任何其他記憶體佔用功能。
 > -   為了達到最佳效能，將 ATA 輕量型閘道的 **[電源選項]** 設定為 [高效能]。
@@ -126,13 +126,13 @@ ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站�
 
 決定要部署多少 ATA 閘道時，請考慮下列項目。
 
--   **Active Directory 樹系和網域**<br>
+-    **Active Directory 樹系和網域**<br>
     ATA 可以為來自單一 Active Directory 樹系的多個網域監視其流量。 監視多個 Active Directory 樹系需要個別 ATA 部署。 單一 ATA 部署不應該設定為監視來自不同樹系之網域控制站的網路流量。
 
--   **連接埠鏡像**<br>
+-    **連接埠鏡像**<br>
 連接埠鏡像考量可能需要您在每個資料中心或分支網站部署多個 ATA 閘道。
 
--   **容量**<br>
+-    **容量**<br>
     ATA 閘道可以支援監視多個網域控制站，依受監視的網域控制站網路流量而定。 
 <br>
 
@@ -214,6 +214,6 @@ ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

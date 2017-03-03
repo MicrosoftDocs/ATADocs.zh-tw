@@ -1,11 +1,11 @@
 ---
-title: "使用 ATA 偵測設定 | Microsoft Docs"
+title: "設定 Advanced Threat Analytics 偵測設定 | Microsoft Docs"
 description: "描述如何為具備異常情況且應該在網路上利用與其他實體不同方式處理的 IP 位址和子網路設定清單"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: f4f2ae30-4849-4a4f-8f6d-bfe99a32c746
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: 93f2a72c9623674c73b3ee83ecf12be8e0766365
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: c88d74793c6210704f2a187df6508bf525907118
 
 
 ---
@@ -55,6 +55,6 @@ ms.openlocfilehash: 93f2a72c9623674c73b3ee83ecf12be8e0766365
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

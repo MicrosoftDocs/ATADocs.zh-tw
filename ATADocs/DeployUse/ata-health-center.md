@@ -1,11 +1,11 @@
 ---
-title: "ATA 健全狀況中心 | Microsoft Docs"
+title: "監視 Advanced Threat Analytics 健全狀況中心警示 | Microsoft Docs"
 description: "使用 ATA 健全狀況中心來查看 ATA 服務的運作情況，以及收看潛在問題的警示。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 85e285c5d88e5916e0bf0eb7dd327cb4cb45b4cb
-ms.openlocfilehash: bff593f07d70cd559a1ee75d3b75c61b6534432d
+ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
+ms.openlocfilehash: 25030dd40c7bbd9f036dbf0d228017f571d4ba71
 
 
 ---
@@ -50,6 +50,6 @@ ATA 健全狀況中心可讓您知道 ATA 服務的運作情況，並向您警�
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "使用角色群組 - 完整 | Microsoft Docs"
+title: "針對存取管理的 Advanced Threat Analytics 角色群組 |Microsoft Docs"
 description: "逐步引導您使用 ATA 角色群組。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 2/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -14,8 +14,8 @@ ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3ba53b7b1c34359f00da9fc9717496cfc7d4271d
-ms.openlocfilehash: b49906802bf0cae86178cbdcc34e4178691d39e4
+ms.sourcegitcommit: 88ca89f2311bf4e73b3d0b57db3e4377e99fd8b2
+ms.openlocfilehash: 7919c9658f2e05b448e3a773bd5ab4c6cb96625f
 
 
 ---
@@ -28,6 +28,10 @@ ms.openlocfilehash: b49906802bf0cae86178cbdcc34e4178691d39e4
 # <a name="ata-role-groups"></a>ATA 角色群組
 
 角色群組可以進行 ATA 的存取管理。 使用角色群組可以隔離安全性小組內的責任，並授與使用者執行工作所需的存取權。 本文說明存取管理和 ATA 角色授權，以及協助您在 ATA 中準備和執行角色群組。
+
+> [!NOTE]
+> ATA 中心上的所有本機系統管理員都會自動成為 Microsoft Advanced Threat Analytics 系統管理員。
+
 ## <a name="types-of-ata-role-groups"></a>ATA 角色群組的類型 
 
 ATA 引進了 3 種類型的角色群組︰ATA 管理員、ATA 使用者以及 ATA 檢視者。 下表描述 ATA 中每個角色可用的存取類型。 視您指派何種角色而定，ATA 中的各種畫面與功能表選項將無法使用，如下所示︰
@@ -48,13 +52,13 @@ ATA 引進了 3 種類型的角色群組︰ATA 管理員、ATA 使用者以及 A
 
 當使用者嘗試存取不適用於其角色群組的頁面時，他們會被重新導向至 ATA 未授權的頁面。 
 
-## <a name="add-remove-users---ata-role-groups"></a>新增 \ 移除使用者 - ATA 角色群組 
+## <a name="add--remove-users---ata-role-groups"></a>新增 \ 移除使用者 - ATA 角色群組 
 
 ATA 使用本機的 Windows 群組做為角色群組的基礎。 若要新增或移除使用者，請使用 [本機使用者和群組] MMC (Lusrmgr.msc)。 您可以在加入網域的電腦上新增網域帳戶以及本機帳戶。 
 
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 

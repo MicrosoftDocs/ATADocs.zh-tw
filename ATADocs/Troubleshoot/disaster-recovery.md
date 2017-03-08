@@ -13,14 +13,10 @@ ms.technology:
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 1d483b4e37ccfdc0eadaf895edf425f8aebfddee
-ms.openlocfilehash: f27099ed3935aa5b3ece18397144f39e8e87564c
-ms.lasthandoff: 02/28/2017
-
-
+ms.openlocfilehash: 3f9ca1e33c9e82f730d199f92b2f9778519ac973
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 適用於︰Advanced Threat Analytics 1.7 版
 
 
@@ -72,4 +68,3 @@ ms.lasthandoff: 02/28/2017
 - [設定事件收集](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [設定 Windows 事件轉送](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-

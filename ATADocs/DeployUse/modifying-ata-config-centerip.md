@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 93b27f15-f7e5-49bb-870a-d81d09dfe9fc
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 6ad9e90fc05ce284868542df7e61585f37324fad
-
-
+ms.openlocfilehash: c90f34b0567df43d977ca23e38319eafe01c51e3
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 適用於︰Advanced Threat Analytics 1.7 版
 
 
@@ -81,9 +78,3 @@ ATA 閘道會在本機儲存它們要連接的 ATA 中心之 IP 位址。 它們
 ## <a name="see-also"></a>另請參閱
 - [使用 ATA 主控台](working-with-ata-console.md)
 - [查看 ATA 論壇！](https://aka.ms/ata-forum)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

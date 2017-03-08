@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 9d26567a0a9a00d4cb1a9421a4ef2e30a52c11a8
-ms.openlocfilehash: 9e550cf8fe795cb679fbcfe10ef40d2ede7875b4
-
-
+ms.openlocfilehash: 5b58a8ec2f2fc1fe08e2b1099c3e9eda2f6d4c49
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 適用於︰Advanced Threat Analytics 1.7 版
 
 
@@ -219,8 +216,3 @@ Microsoft ATA v1.7 需要安裝 Microsoft .NET Framework 4.6.1。
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
-
-
-<!--HONumber=Feb17_HO3-->
-
-

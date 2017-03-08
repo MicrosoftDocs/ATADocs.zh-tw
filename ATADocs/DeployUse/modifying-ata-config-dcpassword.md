@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 4a25561b-a5ed-44aa-9b72-366976b3c72a
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: fce61880e1d47ac006ca919992d1766e5ef8eca3
-
-
+ms.openlocfilehash: e9cb7bcf6f32559f7b2f330df4333c3fdc55a283
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 適用於︰Advanced Threat Analytics 1.7 版
 
 
@@ -61,9 +58,3 @@ ms.openlocfilehash: fce61880e1d47ac006ca919992d1766e5ef8eca3
 ## <a name="see-also"></a>另請參閱
 - [使用 ATA 主控台](working-with-ata-console.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

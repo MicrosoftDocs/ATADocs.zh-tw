@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: cdaddca3-e26e-4137-b553-8ed3f389c460
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 8e18bcefc023f1c37b2255000c244bc54bca4fe7
-
-
+ms.openlocfilehash: f91c728614cbe03f794fd0ad45ccc19af712cf54
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 適用於︰Advanced Threat Analytics 1.7 版
 
 
@@ -72,9 +69,3 @@ ATA 使用的主要資料來源是對進出網域控制站的網路流量的深�
 ## <a name="see-also"></a>另請參閱
 - [驗證連接埠鏡像](validate-port-mirroring.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

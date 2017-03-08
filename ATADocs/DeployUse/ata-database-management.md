@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 05e49e23-6e0a-4ec0-9a63-a2093173c8a1
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 95ac5a45fb69e8b23c60ec95e285a8f8d361853c
-
-
+ms.openlocfilehash: e5bb1fa702d58b725b7052e5848741d4d24f279e
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *適用於︰Advanced Threat Analytics 1.7 版*
 
 
@@ -59,10 +56,4 @@ ms.openlocfilehash: 95ac5a45fb69e8b23c60ec95e285a8f8d361853c
 - [ATA 架構](/advanced-threat-analytics/plan-design/ata-architecture)
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 3f9ca1e33c9e82f730d199f92b2f9778519ac973
-ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+ms.openlocfilehash: e315e9731fa9715c3b41b9292349ee5aca13fbce
+ms.sourcegitcommit: 4f5927f30089655e3984d69623ea4439b7c36845
 translationtype: HT
 ---
 適用於︰Advanced Threat Analytics 1.7 版
@@ -31,7 +31,7 @@ translationtype: HT
 
 1. ATA 中心組態會於每小時備份為檔案。 找出最新的 ATA 中心組態備份複本，並將它儲存在另一部電腦上。 如需尋找這些檔案的完整解釋，請參閱[匯出和匯入 ATA 組態](/advanced-threat-analytics/deploy-use/ata-configuration-file)。 
 2. 匯出 ATA 中心憑證。
-    1. 在 [憑證管理員] 中，瀏覽到 [憑證 (本機電腦)]  ->  [個人]  -> [憑證]，然後選取 [ATA 中心]。
+    1. 在 [憑證管理員] (`certlm.msc`) 中，瀏覽至 [憑證 (本機電腦)]  ->  [個人]  -> [憑證]，然後選取 [ATA 中心]。
     2. 以滑鼠右鍵按一下 [ATA 中心]，然後選取 [所有工作]，並選取 [匯出]。 
      ![ATA 中心憑證](media/ata-center-cert.png)
     3. 依照指示匯出憑證，也請務必匯出私密金鑰。
@@ -44,12 +44,12 @@ translationtype: HT
 
 1. 使用和先前的 ATA 中心電腦相同的 IP 位址與電腦名稱，建立新的 Windows Server 電腦。
 4. 將您在上面備份的憑證匯入到新的伺服器。
-5. 依照指示[將 ATA 中心部署到](/advanced-threat-analytics/deploy-use/install-ata-step1)新建立的 Windows Server 上。 您不需要再次部署 ATA 閘道。 當系統提示您提供憑證時，請提供您在備份 ATA 中心設定時匯出的憑證。 
+5. 依照指示[將 ATA 中心部署到](/advanced-threat-analytics/deploy-use/install-ata-step1)新建立的 Windows Server 上。 選取的 IP 位址與連接埠，必須與舊中心相同。 您不需要再次部署 ATA 閘道。 當系統提示您提供憑證時，請提供您在備份 ATA 中心設定時匯出的憑證。 
 ![ATA 中心還原](media/ata-center-restore.png)
 6. 匯入已備份的 ATA 中心組態：
     1. 從 MongoDB 移除預設 ATA 中心系統設定檔文件： 
         1. 移至 **C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**。 
-        2. 執行 `mongo.exe` 
+        2. 執行 `mongo.exe ATA` 
         3. 執行此命令以移除預設系統設定檔：`db.SystemProfile.remove({})`
     2. 使用步驟 1 中的備份檔案執行命令：`mongoimport.exe --db ATA --collection SystemProfile --file "<SystemProfile.json backup file>" --upsert`。</br>
     如需尋找並匯入備份檔案的完整解釋，請參閱[匯出和匯入 ATA 組態](/advanced-threat-analytics/deploy-use/ata-configuration-file)。 

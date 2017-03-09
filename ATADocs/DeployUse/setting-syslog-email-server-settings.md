@@ -13,18 +13,15 @@ ms.technology:
 ms.assetid: bff20bf7-8b53-49da-81e5-b818a1c3b24e
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 22d08a20291b1651a36247e9ffbeff8c881aefc5
-ms.openlocfilehash: 9b4db2f6489afc1687783d0a879f9303f3a8c775
-
-
+ms.openlocfilehash: 0723eb35f181ca1186099fd11eb23d6d4ab9e525
+ms.sourcegitcommit: 2b87cd81ac96f12c47b756493b85da8154ee7a0a
+translationtype: HT
 ---
-
 適用於︰Advanced Threat Analytics 1.7 版
 
 
 
-# <a name="provide-ata-with-up-your-email-server-settings"></a>使用電子郵件伺服器設定提供 ATA
+# <a name="provide-ata-with-your-email-server-settings"></a>使用電子郵件伺服器設定提供 ATA
 當 ATA 偵測到可疑的活動時，就會通知您。 若要讓 ATA 能夠傳送電子郵件通知，您必須先進行**電子郵件伺服器設定**。
 
 1.  在 ATA 中央伺服器上，按一下桌面上的 [Microsoft Advanced Threat Analytics Management] 圖示。
@@ -80,9 +77,3 @@ ms.openlocfilehash: 9b4db2f6489afc1687783d0a879f9303f3a8c775
 
 ## <a name="see-also"></a>另請參閱
 [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

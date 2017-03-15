@@ -1,13 +1,13 @@
 ---
 layout: LandingPage
 description: "深入了解如何使用 Advanced Threat Analytics。"
-ms.openlocfilehash: d81c3fcc7e8de6a0c73ef78a7fc827e21fe662c5
-ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+ms.openlocfilehash: af0cd91660b33f2d9a38e713085576e1ed180b8f
+ms.sourcegitcommit: 998e8aed5835b228e907aab78845723a02521741
 translationtype: HT
 ---
 # <a name="advanced-threat-analytics-documentation"></a>Advanced Threat Analytics 文件
 
-控制並協助保護電子郵件、文件以及在公司牆外所共用的敏感性資料。 從簡單的分類到內嵌標籤與權限，Azure 資訊保護都可隨時強化資料的保護 — 無論儲存資料位置或與之共用的使用者為何。
+Advanced Threat Analytics (ATA) 為內部部署平台，可協助保護您的企業免於遭受多種類型的新式目標式網路攻擊及內部威脅。ATA 利用您網路中的多種資料來源，了解使用者與組織中其他實體的行為，從而建立其行為設定檔，並使用 ATA 專屬的網分析引擎，擷取及剖析多個通訊協定的網路流量。
 
 <ul class="panelContent cardsFTitle">
     <li>

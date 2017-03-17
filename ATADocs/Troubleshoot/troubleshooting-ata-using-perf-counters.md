@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: df162a62-f273-4465-9887-94271f5000d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 929885891e2fc490e3ff358559e4995c545466b3
-ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+ms.openlocfilehash: 5c4662cd2d83135227cf86e339d5e30f9713f022
+ms.sourcegitcommit: 998e8aed5835b228e907aab78845723a02521741
 translationtype: HT
 ---
 適用於︰Advanced Threat Analytics 1.7 版
@@ -32,6 +32,16 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 2.  然後，先前的元件最終將會開始增加**其**本身的大小，直到它封鎖先前的元件且不會傳送多個實體。
 
 3.  這會在傳回 NetworkListener 元件時發生，此元件將會在無法再轉送實體時捨棄流量。
+
+
+## <a name="retrieving-performance-monitor-files-for-troubleshooting"></a>擷取效能監視器檔案供疑難排解之用
+
+若要從各項 ATA 元件擷取效能監視器檔案 (BLG)：
+1.  開啟效能監視器。
+2.  停止名為「Microsoft ATA 閘道」或「Microsoft ATA 中心」的資料收集器集合工具。
+3.  移至資料收集器集合工具資料夾 (預設值為 "C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs\DataCollectorSets" 或 "C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs\DataCollectorSets")。
+4.  複製最近修改過的 BLG 檔案。
+5.  重新啟動名為「Microsoft ATA 閘道」或「Microsoft ATA 中心」的資料收集器集合工具。
 
 
 ## <a name="ata-gateway-performance-counters"></a>ATA 閘道效能計數器

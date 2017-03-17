@@ -5,15 +5,15 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/5/2017
 ms.topic: get-started-article
 ms.service: advanced-threat-analytics
 ms.prod: 
 ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 4e0a6dd325c172ba4eb3b68fe4d4aab96f20684b
-ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+ms.openlocfilehash: ce017adf26e30a5fde3c89a30c33f87d71716a4c
+ms.sourcegitcommit: 998e8aed5835b228e907aab78845723a02521741
 translationtype: HT
 ---
 適用於︰Advanced Threat Analytics 1.7 版
@@ -22,6 +22,9 @@ translationtype: HT
 
 # <a name="ata-capacity-planning"></a>ATA 容量規劃
 本主題協助判斷監視您的網路需要多少 ATA 伺服器，包括了解您需要多少 ATA 閘道及/或 ATA 輕量型閘道，以及您 ATA 中心和 ATA 閘道的伺服器容量。
+
+> [!NOTE] 
+> 所有效能需求符合本文所述條件的 IaaS 廠商，都能部署 ATA 中心。
 
 ##<a name="using-the-sizing-tool"></a>使用調整大小工具
 若要判斷 ATA 部署容量，建議且最容易的方法是使用 [ATA 調整大小工具](http://aka.ms/atasizingtool)。 執行 ATA 調整大小工具，並從 Excel 檔案結果中，使用下列欄位判斷您需要的 ATA 容量︰
@@ -60,6 +63,7 @@ ATA 中心建議最少需要 30 天的資料來進行使用者行為分析。
 > -   ATA 中心可以從所有受監視的網域控制站處理的彙總最大值為每秒 400,000 個畫面格 (FPS)。 在某些環境中，部分 ATA 中心可以處理高於 400,000 個畫面格的整體流量。 請連絡 askcesec@microsoft.com 以取得這類環境的協助。
 > -   此處決定的儲存體數量為淨值，您應該隨時考量到未來的成長，並且確定資料庫所在的磁碟至少有 20% 的可用空間。
 > -   如果您的可用空間達到最小值 (20% 或 100 GB)，將會刪除最舊的資料集合。 這個情況將會持續發生，直到只剩下 5% 或 50 GB 的可用空間，屆時資料收集將會停止運作。
+> - 所有效能需求符合本文所述條件的 IaaS 廠商，都能部署 ATA 中心。
 > -   讀取和寫入活動的儲存體延遲應少於 10 毫秒。
 > -   讀取和寫入活動之間的比率在每秒 100,000 個封包以下時大約為 1:3，在每秒 100,000 個封包以上時大約為 1:6。
 > -   作為虛擬機器執行時不支援動態記憶體或任何其他記憶體佔用功能。

@@ -1,28 +1,32 @@
---
-# <a name="required-metadata"></a>必要的中繼資料
-
-title: 疑難排解 Advanced Threat Analytics 錯誤記錄的問題 | Microsoft Docs 描述：說明如何疑難排解 ATA 關鍵字中常見的錯誤：作者：rkarlin ms.author: rkarlin manager: mbaldwin ms.date: 3/14/2017 ms.topic: article ms.prod: ms.service: advanced-threat-analytics ms.technology: ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
-
-# <a name="optional-metadata"></a>選擇性中繼資料
-
-#<a name="robots"></a>ROBOTS:
-#<a name="audience"></a>audience:
-#<a name="msdevlang"></a>ms.devlang:
-ms.reviewer: arzinger
-
-ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
-#<a name="mscustom"></a>ms.custom:
-
 ---
-
-適用於︰Advanced Threat Analytics 1.7 版
+title: "針對 Advanced Threat Analytics 錯誤記錄檔進行疑難排解 | Microsoft Docs"
+description: "說明如何針對 ATA 中的常見錯誤進行疑難排解"
+keywords: 
+author: rkarlin
+ms.author: rkarlin
+manager: mbaldwin
+ms.date: 3/14/2017
+ms.topic: article
+ms.prod: 
+ms.service: advanced-threat-analytics
+ms.technology: 
+ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
+ms.reviewer: arzinger
+ms.suite: ems
+ms.openlocfilehash: 0c72b14a042e473c0cd59811db63ecafc4ec02d4
+ms.sourcegitcommit: f18c0841d85e54eca940c8cbf226938b3c2bc80f
+translationtype: HT
+---
+*適用於︰Advanced Threat Analytics 1.7 版*
 
 
 
 # <a name="troubleshooting-the-ata-error-log"></a>為 ATA 錯誤記錄檔進行疑難排解
+
 本節詳細說明 ATA 部署中可能發生的錯誤，以及對其進行疑難排解所需的步驟。
+
 ## <a name="ata-gateway-errors"></a>ATA 閘道錯誤
+
 |錯誤|說明|解決方法|
 |-------------|----------|---------|
 |System.DirectoryServices.Protocols.LdapException：發生本機錯誤|ATA 閘道無法對網域控制站進行驗證。|1.確認網域控制站的 DNS 記錄在 DNS 伺服器中正確設定。 <br>2.驗證 ATA 閘道的時間與網域控制站的時間同步。|

@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 70b8c4886f1c7459412eafc0646abfe1cc5d37d3
-ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+ms.openlocfilehash: da6e72ac5c2966f3e77ce3bef8fe23fcda6770a4
+ms.sourcegitcommit: 9b128d6946e32b00f595e00902b9ff95f18141ff
 translationtype: HT
 ---
 適用於︰Advanced Threat Analytics 1.7 版
@@ -58,6 +58,8 @@ ATA 也可以用來設定 Honeytoken 使用者，用來當做惡意執行者的�
 檢查受攻擊的時間線以便檢視偵測到的可疑活動，並搜尋使用者或電腦並檢視其設定檔。
 
 ATA 將立即開始掃描是否有可疑的活動。 某些活動 (例如某些可疑行為的活動) 會等到 ATA 有時間建立行為設定檔之後 (至少三週) 才可以使用。
+
+若要確定 ATA 已啟動並執行，以及攔截網路中的漏洞，您可以查看 [ATA 攻擊模擬腳本](https://docs.microsoft.com/enterprise-mobility-security/solutions/ata-attack-simulation-playbook)。
 
 
 >[!div class="step-by-step"]

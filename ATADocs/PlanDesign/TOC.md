@@ -47,9 +47,4 @@
 ## [使用記錄進行疑難排解](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)
 ## [使用效能計數器進行疑難排解](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-perf-counters)
 ## [使用資料庫進行疑難排解](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-ata-database)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-
+## [災害復原](/advanced-threat-analytics/troubleshoot/disaster-recovery)

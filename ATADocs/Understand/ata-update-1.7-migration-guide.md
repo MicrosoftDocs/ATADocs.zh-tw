@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 8eefcd45-7a4b-4074-ac5b-1ffc48e6654a
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 3dd8cdfca31f8177b9c915fe85e5b8ecb33b4d58
-
-
+ms.openlocfilehash: 036e0309a5c7fa06b3a503a1b44705965916979f
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 # <a name="ata-update-to-17-migration-guide"></a>ATA 更新至 1.7 移轉指南
 ATA 1.7 的更新提供下列各方面的改良︰
 
@@ -91,9 +88,3 @@ ATA 1.7 的更新提供下列各方面的改良︰
 ## <a name="see-also"></a>另請參閱
 
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

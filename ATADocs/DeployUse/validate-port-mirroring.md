@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: ebd41719-c91a-4fdd-bcab-2affa2a2cace
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 47d24324288351c460be330d71bfdd41cd456fc0
-
-
+ms.openlocfilehash: cbd7606b94f59fc49038c2333924d9e4a101b4e3
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 適用於︰Advanced Threat Analytics 1.7 版
 
 
@@ -226,9 +223,3 @@ ms.openlocfilehash: 47d24324288351c460be330d71bfdd41cd456fc0
 
 - [設定連接埠鏡像](configure-port-mirroring.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

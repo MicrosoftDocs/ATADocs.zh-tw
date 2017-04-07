@@ -12,20 +12,17 @@ ms.technology:
 ms.assetid: a8afbd91-c888-4dfc-94ab-72e38745163e
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: cae588383a7ea64a8e907e64cd2d7d15223feae3
-
-
+ms.openlocfilehash: 21c7486061b6945d557a42d3964b70637829f4b0
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 # <a name="support-for-microsoft-advanced-threat-analytics-ata-versions"></a>Microsoft Advanced Threat Analytics (ATA) 各版本的支援
 
 Microsoft 計劃每年發行數次 ATA 的更新，而每個更新版本從其公開上市 (GA) 發行日算起支援&12; 個月。 將提供完整&12; 個月的技術支援。 不過，我們的支援結構現在是動態的，進化成根據最新版本可用性的兩個不同維護階段。
 
--   安全性和重大更新維護階段 - 執行 ATA 的最新版本時，就會收到安全性和重大更新。
+-    安全性和重大更新維護階段 - 執行 ATA 的最新版本時，就會收到安全性和重大更新。
 
--   安全性更新 (僅限) 維護階段 - 發行新的 ATA 版本之後，較舊版本在剩餘的&12; 個月支援週期內，會降低成只有安全性更新 (如以下版本維護支援範例所示)。
+-    安全性更新 (僅限) 維護階段 - 發行新的 ATA 版本之後，較舊版本在剩餘的&12; 個月支援週期內，會降低成只有安全性更新 (如以下版本維護支援範例所示)。
  
 ![版本維護支援範例](media/versions.png)
 
@@ -50,9 +47,3 @@ Microsoft 計劃每年發行數次 ATA 的更新，而每個更新版本從其�
 
 ## <a name="see-also"></a>另請參閱
 [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

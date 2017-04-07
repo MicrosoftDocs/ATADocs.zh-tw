@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: cbea47f9-34c1-42b6-ae9e-6a472b49e1a5
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 69127773d9c3130bd07dee0b65956b93848ec399
-
-
+ms.openlocfilehash: 3884e7d40a598aed292cc492bfa1bd5a5e360990
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 # <a name="what39s-new-in-ata-version-14"></a>ATA 1.4 版的新功能
 這些版本資訊提供 Advanced Threat Analytics 1.4 版中已知問題的相關資訊。
 
@@ -100,8 +97,3 @@ ms.openlocfilehash: 69127773d9c3130bd07dee0b65956b93848ec399
 [將 ATA 更新至 1.6 版 - 移轉指南](ata-update-1.6-migration-guide.md)
 
 [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-<!--HONumber=Feb17_HO1-->
-
-

@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 2c4ae574b3ce7346ba05abb357c23cfdab6482a4
-
-
+ms.openlocfilehash: 489d85e7e8250dffe8d40225b31ed308a9a79969
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 適用於︰Advanced Threat Analytics 1.7 版
 
 
@@ -52,11 +49,11 @@ ATA 部署的組成可以是連接至所有 ATA 閘道的單一 ATA 中心、所
 ## <a name="deployment-options"></a>部署選項
 您可以使用下列閘道組合部署 ATA︰
 
--   **只使用 ATA 閘道** <br>
+-    **只使用 ATA 閘道** <br>
 如果 ATA 部署只包含 ATA 閘道，不含任何 ATA 輕量型閘道，則所有網域控制站必須設定為啟用 ATA 閘道的連接埠鏡像，或者必須先準備好網路 TAP。
--   **只使用 ATA 輕量型閘道**<br>
+-    **只使用 ATA 輕量型閘道**<br>
 如果 ATA 部署只包含 ATA 輕量型閘道，則 ATA 輕量型閘道就會部署在每個網域控制站，不需要任何其他伺服器或連接埠鏡像設定。
--   **同時使用 ATA 閘道和 ATA 輕量型閘道**<br>
+-    **同時使用 ATA 閘道和 ATA 輕量型閘道**<br>
 如果 ATA 部署同時包含 ATA 閘道和 ATA 輕量型閘道，則 ATA 輕量型閘道安裝在部分網域控制站 (例如，分公司站台的所有網域控制站)，而其他網域控制站都受 ATA 閘道監視 (例如，主要資料中心的較大網域控制站)。
 
 在這 3 個案例中，所有的閘道都會將資料傳送至 ATA 中心。
@@ -130,7 +127,7 @@ ATA 閘道會從您的網路接收網路流量和 Windows 事件，並在下列�
 
 下列功能的運作方式不同，視您執行的是 ATA 閘道或 ATA 輕量型閘道而定。
 
--   **網域同步器候選**<br>
+-    **網域同步器候選**<br>
 網域同步器閘道負責主動同步處理特定 Active Directory 網域中的所有實體 (類似網域控制站自行複寫時所使用的機制)。 從候選清單中隨機選擇一個閘道，當成網域同步器。 <br><br>
 如果同步器離線超過 30 分鐘，就會選擇其他的候選。 如果特定的網域沒有任何網域同步器可用，ATA 就不能主動同步處理實體和其變更；不過，當 ATA 在受監視的流量中被偵測到時，會出現擷取新實體的反應。 
 <br>如無任何網域同步器可用，而您搜尋的實體又沒有任何相關流量，就不會顯示任何搜尋結果。<br><br>
@@ -138,7 +135,7 @@ ATA 閘道會從您的網路接收網路流量和 Windows 事件，並在下列�
 因為所有的 ATA 輕量型閘道皆較可能部署在分公司站台和小型的網域控制站上，所以它們預設不是同步器候選。
 
 
--   **資源限制**<br>
+-    **資源限制**<br>
 ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制站上的可用運算和記憶體容量。 監視處理程序每 10 秒執行一次，會動態更新 ATA 輕量型閘道處理程序的 CPU 和記憶體使用量配額，以確定在任何指定的時點，網域控制站都至少有 15% 的可用運算和記憶體資源。<br><br>
 無論網域控制站發生什麼事，這項處理程序一律會釋出資源以確定網域控制站的核心功能不受影響。<br><br>
 如果這導致 ATA 輕量型閘道用盡資源，只有部分的流量受到監視，[健康情況] 頁面就會顯示監視警示：「已卸除連接埠鏡像網路流量」。
@@ -183,10 +180,4 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 - [設定事件收集](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [設定 Windows 事件轉送](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

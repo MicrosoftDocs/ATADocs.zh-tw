@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 88ca89f2311bf4e73b3d0b57db3e4377e99fd8b2
-ms.openlocfilehash: 7919c9658f2e05b448e3a773bd5ab4c6cb96625f
-
-
+ms.openlocfilehash: 69034316493b8783cbeaaae9aac6af237da39dc8
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 適用於︰Advanced Threat Analytics 1.7 版
 
 
@@ -55,10 +52,4 @@ ATA 引進了 3 種類型的角色群組︰ATA 管理員、ATA 使用者以及 A
 ## <a name="add--remove-users---ata-role-groups"></a>新增 \ 移除使用者 - ATA 角色群組 
 
 ATA 使用本機的 Windows 群組做為角色群組的基礎。 若要新增或移除使用者，請使用 [本機使用者和群組] MMC (Lusrmgr.msc)。 您可以在加入網域的電腦上新增網域帳戶以及本機帳戶。 
-
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

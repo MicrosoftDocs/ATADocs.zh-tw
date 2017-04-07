@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 23ea3185e0d3556f524d8131a715a6057988f04c
-
-
+ms.openlocfilehash: fea114b062a7861ac284b4bf746fff68c5c1bd52
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 適用於︰Advanced Threat Analytics 1.7 版
 
 
@@ -44,7 +41,7 @@ ms.openlocfilehash: 23ea3185e0d3556f524d8131a715a6057988f04c
     |**密碼** (必填)|輸入唯讀使用者的密碼，例如︰**Pencil1**。|
     |**網域** (必填)|輸入唯讀使用者的網域，例如︰**contoso.com**。 **注意︰**您務必輸入使用者所在網域的完整 FQDN。 例如，如果使用者的帳戶是在 corp.contoso.com 網域中，您需要輸入 `corp.contoso.com`，而非 contoso.com|
 
-2. 您也可以選擇按一下 [測試連線]，這會測試網域的連線，並檢查提供的認證有提供存取權。 這只在 ATA 中心具有網域連線時有效。   
+2. 您也可以選擇按一下 [測試連線]，這會測試網域的連線，並檢查提供的認證有提供存取權。 這只在 ATA 中心具有網域連線時有效。     
 
     儲存之後，主控台中的歡迎訊息會變更如下︰![ATA 歡迎階段 1 完成](media/ATA_1.7-welcome-provide-username-finished.png)
 
@@ -61,9 +58,3 @@ ms.openlocfilehash: 23ea3185e0d3556f524d8131a715a6057988f04c
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 25030dd40c7bbd9f036dbf0d228017f571d4ba71
-
-
+ms.openlocfilehash: e929714ca33dfaa82bdf93dbaf230abadef1b86d
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 適用於︰Advanced Threat Analytics 1.7 版
 
 
@@ -47,9 +44,3 @@ ATA 健全狀況中心可讓您知道 ATA 服務的運作情況，並向您警�
 - [使用 ATA 偵測設定](working-with-detection-settings.md)
 - [處理可疑活動](working-with-suspicious-activities.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

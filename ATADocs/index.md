@@ -1,14 +1,13 @@
 ---
 layout: LandingPage
 description: "深入了解如何使用 Advanced Threat Analytics。"
-translationtype: Human Translation
-ms.sourcegitcommit: c4e5418a8b5f7093792f52f1553307039f38ff5f
-ms.openlocfilehash: 1fe4d6e06150cc1425c92165445fd087544b8904
-
+ms.openlocfilehash: ddf06db756bd991c49200ba35b6a515832ccc3cb
+ms.sourcegitcommit: 9b128d6946e32b00f595e00902b9ff95f18141ff
+translationtype: HT
 ---
 # <a name="advanced-threat-analytics-documentation"></a>Advanced Threat Analytics 文件
 
-控制並協助保護電子郵件、文件以及在公司牆外所共用的敏感性資料。 從簡單的分類到內嵌標籤與權限，Azure 資訊保護都可隨時強化資料的保護 — 無論儲存資料位置或與之共用的使用者為何。
+Advanced Threat Analytics (ATA) 為內部部署平台，可協助保護您的企業免於遭受多種類型的新式目標式網路攻擊及內部威脅。ATA 利用您網路中的多種資料來源，了解使用者與組織中其他實體的行為，從而建立其行為設定檔，並使用 ATA 專屬的網分析引擎，擷取及剖析多個通訊協定的網路流量。
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -131,15 +130,10 @@ ms.openlocfilehash: 1fe4d6e06150cc1425c92165445fd087544b8904
                 <div class="card">
                     <div class="cardText">
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=836487">評估</a></p>
+                        <p><a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/ata-attack-simulation-playbook">查看 ATA 攻擊模擬腳本</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </li>  
 </ul>
-
-
-
-<!--HONumber=Feb17_HO3-->
-
-

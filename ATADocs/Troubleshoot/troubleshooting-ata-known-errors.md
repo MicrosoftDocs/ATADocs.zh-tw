@@ -5,28 +5,28 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
 ms.technology: 
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
-ms.reviewer: bennyl
+ms.reviewer: arzinger
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 47fe467a9244d6ea8925a255552aa0f5c785dce3
-
-
+ms.openlocfilehash: 0c72b14a042e473c0cd59811db63ecafc4ec02d4
+ms.sourcegitcommit: f18c0841d85e54eca940c8cbf226938b3c2bc80f
+translationtype: HT
 ---
-
 *適用於︰Advanced Threat Analytics 1.7 版*
 
 
 
 # <a name="troubleshooting-the-ata-error-log"></a>為 ATA 錯誤記錄檔進行疑難排解
+
 本節詳細說明 ATA 部署中可能發生的錯誤，以及對其進行疑難排解所需的步驟。
+
 ## <a name="ata-gateway-errors"></a>ATA 閘道錯誤
+
 |錯誤|說明|解決方法|
 |-------------|----------|---------|
 |System.DirectoryServices.Protocols.LdapException：發生本機錯誤|ATA 閘道無法對網域控制站進行驗證。|1.確認網域控制站的 DNS 記錄在 DNS 伺服器中正確設定。 <br>2.驗證 ATA 閘道的時間與網域控制站的時間同步。|
@@ -38,7 +38,7 @@ ms.openlocfilehash: 47fe467a9244d6ea8925a255552aa0f5c785dce3
 |Microsoft.Tri.Infrastructure.ContractException：合約例外狀況|ATA 閘道無法同步處理 ATA 中心的設定。|請在 ATA 主控台中完成 ATA 閘道的設定。|
 |System.Reflection.ReflectionTypeLoadException: 無法載入一或多個要求的類型。 如需詳細資訊，請擷取 LoaderExceptions 屬性。|郵件分析器已安裝於 ATA 閘道。| 請將郵件分析器解除安裝。|
 |Error [配置] System.OutOfMemoryException: 擲回 'System.OutOfMemoryException' 類型的例外狀況。|ATA 閘道的記憶體不足。|請增加網域控制站上的記憶體數量。|
-|無法啟動即時消費者 ---> Microsoft.Opn.Runtime.Monitoring.MessageSessionException: PEFNDIS 事件提供者尚未就緒|未正確安裝 PEF (郵件分析器)。|如果使用 HYPER-V，請嘗試升級 Hyper-V 整合服務，否則請連絡支援人員取得因應措施。|
+|無法啟動即時消費者 ---> Microsoft.Opn.Runtime.Monitoring.MessageSessionException: PEFNDIS 事件提供者尚未就緒|未正確安裝 PEF (郵件分析器)。|若是使用 HYPER-V，請嘗試升級 Hyper-V 整合服務，否則請連絡支援人員詢問其因應措施。|
 |安裝失敗，錯誤為：0x80070652|電腦上有其他擱置的安裝。|請等候其他安裝完成，如有必要，請重新啟動電腦。|
 |System.InvalidOperationException︰指定的分類中不存在執行個體 'Microsoft.Tri.Gateway'。|ATA 閘道中的程序名稱已啟用 PID|使用 [KB281884](https://support.microsoft.com/en-us/kb/281884) 停用程序名稱中的 PID|
 |System.InvalidOperationException︰類別不存在。|登錄中的計數器可能已停用|使用 [KB2554336](https://support.microsoft.com/en-us/kb/2554336) 重建效能計數器|
@@ -74,9 +74,3 @@ ms.openlocfilehash: 47fe467a9244d6ea8925a255552aa0f5c785dce3
 - [設定事件收集](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [設定 Windows 事件轉送](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

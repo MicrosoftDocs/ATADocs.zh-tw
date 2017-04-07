@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 27b139e5-12b9-4953-8f53-eb58e8ce0038
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: e31dabc43ada8eac4ebed86af0ac4b43dc410246
-
-
+ms.openlocfilehash: ac10d24c443e0278a1d0995598fb9c1cf0fb4de6
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 # <a name="whats-new-in-ata-version-16"></a>ATA 1.6 版的新功能
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。
 
@@ -108,21 +105,21 @@ ATA 1.6 執行 ATA 資料庫所需的儲存空間大幅減少，現在只需要�
 
 **因應措施**： 
 
-1.  將 "data_old" 資料夾移至暫存資料夾 (通常位於 %ProgramFiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin)。
-2.  解除安裝 ATA 中心 v1.5，並刪除所有資料庫資料。
+1.    將 "data_old" 資料夾移至暫存資料夾 (通常位於 %ProgramFiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin)。
+2.    解除安裝 ATA 中心 v1.5，並刪除所有資料庫資料。
 ![解除安裝 ATA 1.5](http://i.imgur.com/x4nJycx.png)
-3.  重新安裝 ATA 中心 v1.5。 請務必使用與先前 ATA 1.5 安裝相同的設定 (憑證、IP 位址、DB 路徑等)。
-4.  依下列順序停止這些服務：
-    1.  Microsoft Advanced Threat Analytics 中心
-    2.  MongoDB
-5.  以 “data_old” 資料夾中的檔案取代 MongoDB 資料庫檔案。
-6.  依下列順序啟動這些服務：
-    1.  MongoDB
-    2.  Microsoft Advanced Threat Analytics 中心
-7.  檢閱記錄以驗證產品正在執行，而且未發生錯誤。
-8.  [下載](http://aka.ms/ataremoveduplicateprofiles "下載") "RemoveDuplicateProfiles.exe" 工具，然後將其複製到主要安裝路徑 (%ProgramFiles%\Microsoft Advanced Threat Analytics\Center)
-9.  從提升權限的命令提示字元執行 “RemoveDuplicateProfiles.exe”，並等候其成功完成。
-10. 從這裡：…\Microsoft Advanced Threat Analytics\Center\MongoDB\bin 目錄：**Mongo ATA**，輸入下列命令：
+3.    重新安裝 ATA 中心 v1.5。 請務必使用與先前 ATA 1.5 安裝相同的設定 (憑證、IP 位址、DB 路徑等)。
+4.    依下列順序停止這些服務：
+    1.    Microsoft Advanced Threat Analytics 中心
+    2.    MongoDB
+5.    以 “data_old” 資料夾中的檔案取代 MongoDB 資料庫檔案。
+6.    依下列順序啟動這些服務：
+    1.    MongoDB
+    2.    Microsoft Advanced Threat Analytics 中心
+7.    檢閱記錄以驗證產品正在執行，而且未發生錯誤。
+8.    [下載](http://aka.ms/ataremoveduplicateprofiles "下載") "RemoveDuplicateProfiles.exe" 工具，然後將其複製到主要安裝路徑 (%ProgramFiles%\Microsoft Advanced Threat Analytics\Center)
+9.    從提升權限的命令提示字元執行 “RemoveDuplicateProfiles.exe”，並等候其成功完成。
+10.    從這裡：…\Microsoft Advanced Threat Analytics\Center\MongoDB\bin 目錄：**Mongo ATA**，輸入下列命令：
 
     db.SuspiciousActivities.remove({ "_t" : "RemoteExecutionSuspiciousActivity", "DetailsRecords" : { "$elemMatch" : { "ReturnCode" : null } } }, { "_id" : 1 });
 
@@ -145,8 +142,3 @@ ATA 更新程序會將資料匯出至 `<Center Installation Path>\Migration` 成
 [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 [將 ATA 更新至 1.6 版 - 移轉指南](ata-update-1.6-migration-guide.md)
-
-
-<!--HONumber=Feb17_HO1-->
-
-

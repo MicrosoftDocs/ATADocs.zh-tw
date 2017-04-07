@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 782c066e6a7ef8a5da9e2b8ceb16742da6f52506
-
-
+ms.openlocfilehash: 06aa85cededdc3647aadaaca7d594ce3bbbb0723
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 *適用於︰Advanced Threat Analytics 1.7 版*
 
 
@@ -40,7 +37,7 @@ ATA 可在偵測到可疑的活動時通知您，方法是透過電子郵件或�
 
 2. 在 [通知] 區段下，選取 [設定]。
 3. 在 [郵件收件者]下，指定將透過電子郵件接收通知的收件者。
->   [!NOTE]
+>    [!NOTE]
 >   只有在建立可疑活動時，才會傳送可疑活動的電子郵件警示。
 
 4. 在 [通知時機:] 下，使用切換鍵來選取應該傳送的通知︰
@@ -77,9 +74,3 @@ ATA 可在偵測到可疑的活動時通知您，方法是透過電子郵件或�
 
 ## <a name="see-also"></a>另請參閱
 [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
 ms.reviewer: bennyl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b28cb3a0da844b7c460c03726222bc775a9e47da
-ms.openlocfilehash: 58df6ec3473118d0e11a5128eabd8feaa29f9fd2
-
-
+ms.openlocfilehash: 5bde3ff8abbdace3c56bb86b8889b53320470b00
+ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+translationtype: HT
 ---
-
 適用於︰Advanced Threat Analytics 1.7 版
 
 
@@ -42,8 +39,8 @@ ATA 閘道有下列記錄檔︰
 
 -   **Microsoft.Tri.Gateway-ExceptionStatistics.log** – 此記錄檔群組所有類似的錯誤和例外狀況，並測量其計數。
     每當 ATA 閘道服務啟動時，這個檔案開始是空的，而且會每分鐘更新一次。 其主要用途是了解 ATA 閘道是否有任何新的錯誤或問題 (由於錯誤會經過分組，因此更容易快速了解是否出現任何新的問題)。
--   **Microsoft.Tri.Gateway.Updater.log** - 此記錄檔用於閘道更新程式程序中，負責更新閘道 (如果設定為自動執行)。 如果是 ATA 輕量型閘道更新程式，閘道更新程式程序也負責 ATA 輕量型閘道的資源限制。
--   **Microsoft.Tri.Gateway.Updater-ExceptionStatistics.log** - 此記錄檔會將所有類似的錯誤和例外狀況分組，並測量其計數。 每當 ATA 更新程式服務啟動時，這個檔案開始是空的，而且會每分鐘更新一次。 它可讓您了解 ATA 更新程式是否有任何新的錯誤或問題。 這些錯誤會分組，方便您快速了解是否偵測到任何新的錯誤或問題。
+-    **Microsoft.Tri.Gateway.Updater.log** - 此記錄檔用於閘道更新程式程序中，負責更新閘道 (如果設定為自動執行)。 如果是 ATA 輕量型閘道更新程式，閘道更新程式程序也負責 ATA 輕量型閘道的資源限制。
+-    **Microsoft.Tri.Gateway.Updater-ExceptionStatistics.log** - 此記錄檔會將所有類似的錯誤和例外狀況分組，並測量其計數。 每當 ATA 更新程式服務啟動時，這個檔案開始是空的，而且會每分鐘更新一次。 它可讓您了解 ATA 更新程式是否有任何新的錯誤或問題。 這些錯誤會分組，方便您快速了解是否偵測到任何新的錯誤或問題。
 
 > [!NOTE]
 > 前三個記錄檔有大小上限 50 MB。 到達該大小時，會開啟新的記錄檔，並將上一個記錄檔重新命名為「&lt;原始檔案名稱&gt;-Archived-00000」，該數字隨每次重新命名遞增。 根據預設，如果已經有超過 10 個相同類型的檔案，就會刪除最舊的檔案。
@@ -92,9 +89,3 @@ ATA 閘道和 ATA 輕量型閘道部署記錄：
 - [設定事件收集](/advanced-threat-analytics/deploy-use/configure-event-collection)
 - [設定 Windows 事件轉送](/advanced-threat-analytics/deploy-use/configure-event-collection#configuring-windows-event-forwarding)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
-

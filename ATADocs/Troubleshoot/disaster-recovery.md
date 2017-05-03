@@ -31,7 +31,7 @@ translationtype: HT
 
 1. ATA 中心組態會於每小時備份為檔案。 找出最新的 ATA 中心組態備份複本，並將它儲存在另一部電腦上。 如需尋找這些檔案的完整解釋，請參閱[匯出和匯入 ATA 組態](/advanced-threat-analytics/deploy-use/ata-configuration-file)。 
 2. 匯出 ATA 中心憑證。
-    1. 在 [憑證管理員] (`certlm.msc`) 中，瀏覽至 [憑證 (本機電腦)]  ->  [個人]  -> [憑證]，然後選取 [ATA 中心]。
+    1. 在 [憑證管理員] \(`certlm.msc`) 中，瀏覽至 [憑證 (本機電腦)]  ->  [個人]  -> [憑證]，然後選取 [ATA 中心]。
     2. 以滑鼠右鍵按一下 [ATA 中心]，然後選取 [所有工作]，並選取 [匯出]。 
      ![ATA 中心憑證](media/ata-center-cert.png)
     3. 依照指示匯出憑證，也請務必匯出私密金鑰。

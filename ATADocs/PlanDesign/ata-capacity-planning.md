@@ -5,15 +5,15 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/5/2017
+ms.date: 4/30/2017
 ms.topic: get-started-article
 ms.service: advanced-threat-analytics
 ms.prod: 
 ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ce017adf26e30a5fde3c89a30c33f87d71716a4c
-ms.sourcegitcommit: 998e8aed5835b228e907aab78845723a02521741
+ms.openlocfilehash: 205febf09e078765c381e2bf2832d6262e0fe922
+ms.sourcegitcommit: cb2a4df6805d41bf030d3439ef87281fc6acc98f
 translationtype: HT
 ---
 適用於︰Advanced Threat Analytics 1.7 版
@@ -54,6 +54,7 @@ ATA 中心建議最少需要 30 天的資料來進行使用者行為分析。
 |10,000|4|48|3|90|200 (300)
 |40,000|8|64|12|360|500 (1,000)
 |100,000|12|96|30|900|1,000 (1,500)
+|200,000|24|112|60|1,800|2,000 (3,000)
 |400,000|40|128|120|3,600|4,000 (5,000)
 
 &#42;這包括實體核心，不包括超執行緒核心。

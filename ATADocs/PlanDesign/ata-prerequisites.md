@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/16/2017
+ms.date: 4/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ebc02319374079ebb09bb6480ebef7f871bc9beb
-ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+ms.openlocfilehash: 270a16feada7db5462c5232f023c0bab9ef23c7e
+ms.sourcegitcommit: cb2a4df6805d41bf030d3439ef87281fc6acc98f
 translationtype: HT
 ---
 適用於︰Advanced Threat Analytics 1.7 版
@@ -137,6 +137,7 @@ ATA 閘道可以用來監視具 Windows Server 2003 或更新版本之網域功�
 
 您可以執行下列 Windows PowerShell Cmdlet 來確認安裝與否：`[Get-HotFix -Id kb2919355]`。
 
+
 如需使用虛擬機器與 ATA 閘道的資訊，請參閱 [Configure port mirroring](/advanced-threat-analytics/deploy-use/configure-port-mirroring) (設定連接埠鏡像)。
 
 > [!NOTE]
@@ -223,6 +224,10 @@ ATA 輕量型閘道可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)�
 如果是安裝在 Windows server 2012 R2 Server Core，應該也要安裝下列更新： [KB3000850](https://support.microsoft.com/help/3000850/november-2014-update-rollup-for-windows-rt-8.1%2c-windows-8.1%2c-and-windows-server-2012-r2)。
 
  您可以執行下列 Windows PowerShell Cmdlet 來確認安裝與否：`[Get-HotFix -Id kb3000850]`
+
+
+於安裝期間安裝的 .Net Framework 4.6.1 可能會導致網域控制站重新開機。
+
 
 > [!NOTE]
 > 至少需要 5 GB 的空間，建議要有 10 GB。 這包括 ATA 二進位檔、[ATA 記錄](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs.md)和[效能記錄檔](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-perf-counters.md)所需空間。

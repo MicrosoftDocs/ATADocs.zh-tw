@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 04/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 5bde3ff8abbdace3c56bb86b8889b53320470b00
-ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+ms.openlocfilehash: 4a5b48f490a13cfb990f49b864462b556e36c3ce
+ms.sourcegitcommit: cb2a4df6805d41bf030d3439ef87281fc6acc98f
 translationtype: HT
 ---
 適用於︰Advanced Threat Analytics 1.7 版
@@ -27,7 +27,7 @@ ATA 記錄提供深入解析，說明 ATA 的每個元件在任何指定時間�
 ## <a name="ata-gateway-logs"></a>ATA 閘道記錄檔
 在本節中，對 ATA 閘道的每個參考也都適用於 ATA 輕量型閘道。 
 
-ATA 閘道記錄檔位於安裝 ATA、稱為 **Logs** 的子資料夾中，預設位置為：**C:\Program Files\Microsoft Advanced Threat Analytics\**。在預設安裝位置中，其位於︰**C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**。
+ATA 閘道記錄位於 ATA 安裝所在，名為 **Logs** 的子資料夾；預設位置為：**C:\Program Files\Microsoft Advanced Threat Analytics\**。 在預設安裝位置中，其位於︰**C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**。
 
 ATA 閘道有下列記錄檔︰
 
@@ -81,6 +81,10 @@ ATA 閘道和 ATA 輕量型閘道部署記錄：
 -   **Microsoft Advanced Threat Analytics Gateway_YYYYMMDDHHMMSS.log** - 此記錄檔會列出 ATA 閘道的部署程序步驟。 其主要用途是追蹤 ATA 閘道部署程序。
 
 -   **Microsoft Advanced Threat Analytics Gateway_YYYYMMDDHHMMSS_001_MsiPackage.log** - 此記錄檔會列出 ATA 閘道二進位檔的部署程序步驟。 其主要用途是追蹤 ATA 閘道二進位檔的部署。
+
+
+> [!NOTE] 
+> 除了此處所提及的部署記錄之外，另有其他開頭為 "Microsoft Advanced Threat Analytics" 的記錄，也可提供部署處理序的其他資訊。
 
 
 ## <a name="see-also"></a>另請參閱

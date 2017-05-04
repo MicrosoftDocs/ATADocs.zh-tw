@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 4/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: cdaddca3-e26e-4137-b553-8ed3f389c460
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f91c728614cbe03f794fd0ad45ccc19af712cf54
-ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+ms.openlocfilehash: ff27dbe4b2b5e44add5dfd93e0a71419ba818ea6
+ms.sourcegitcommit: cb2a4df6805d41bf030d3439ef87281fc6acc98f
 translationtype: HT
 ---
 適用於︰Advanced Threat Analytics 1.7 版
@@ -40,6 +40,7 @@ ATA 使用的主要資料來源是對進出網域控制站的網路流量的深�
 
 > [!NOTE]
 > 如果被連接埠鏡像的網域控制站是透過 WAN 連結進行連線，請確定 WAN 連結可以處理 ERSPAN 流量的額外負載。
+> ATA 只在流量達到 NIC 及網域控制站發生相同狀況時，才會監視流量。 當流量分散到不同的連接埠時，ATA 不會監視流量。
 
 ## <a name="supported-port-mirroring-options"></a>支援的連接埠鏡像選項
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/7/2017
+ms.date: 4/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 69034316493b8783cbeaaae9aac6af237da39dc8
-ms.sourcegitcommit: 49e892a82275efa5146998764e850959f20d3216
+ms.openlocfilehash: 6243c03af9e40b8774b2ce7089a47e54569ba45e
+ms.sourcegitcommit: cb2a4df6805d41bf030d3439ef87281fc6acc98f
 translationtype: HT
 ---
 適用於︰Advanced Threat Analytics 1.7 版
@@ -46,10 +46,13 @@ ATA 引進了 3 種類型的角色群組︰ATA 管理員、ATA 使用者以及 A
 |閘道 - 刪除 |可用|無法使用|無法使用|
 |監視的 DC - 新增 |可用|無法使用|無法使用|
 |監視的 DC - 刪除|可用|無法使用|無法使用|
+|檢視警示及可疑的活動|可用|可用|可用|
+
 
 當使用者嘗試存取不適用於其角色群組的頁面時，他們會被重新導向至 ATA 未授權的頁面。 
 
 ## <a name="add--remove-users---ata-role-groups"></a>新增 \ 移除使用者 - ATA 角色群組 
 
-ATA 使用本機的 Windows 群組做為角色群組的基礎。 若要新增或移除使用者，請使用 [本機使用者和群組] MMC (Lusrmgr.msc)。 您可以在加入網域的電腦上新增網域帳戶以及本機帳戶。 
+ATA 使用本機的 Windows 群組做為角色群組的基礎。 ATA 中心伺服器上的角色群組必須接受管理。
+若要新增或移除使用者，請使用 [本機使用者和群組] MMC (Lusrmgr.msc)。 您可以在加入網域的電腦上新增網域帳戶以及本機帳戶。 
 

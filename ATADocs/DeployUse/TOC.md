@@ -42,6 +42,7 @@
 ## [ATA 資料庫管理](ata-database-management.md)
 ## [匯出/匯入 ATA 組態](ata-configuration-file.md)
 ## [管理 ATA 遙測](manage-telemetry-settings.md)
+## [調查偽造的 PAC 攻擊](use-case-forged-pac.md)
 # 疑難排解
 ## [使用已知錯誤進行疑難排解](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-known-errors)
 ## [使用記錄進行疑難排解](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)

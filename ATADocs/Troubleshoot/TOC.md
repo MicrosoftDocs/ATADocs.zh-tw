@@ -15,7 +15,7 @@
 ## [規劃 ATA 容量](/advanced-threat-analytics/plan-design/ata-capacity-planning)
 ## [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
 # 部署
-## 預先安裝步驟
+## 安裝前步驟
 ### [1.設定連接埠鏡像](/advanced-threat-analytics/deploy-use/configure-port-mirroring)
 ### [2.驗證連接埠鏡像](/advanced-threat-analytics/deploy-use/validate-port-mirroring)
 ### [3.設定事件收集](/advanced-threat-analytics/deploy-use/configure-event-collection)
@@ -42,6 +42,7 @@
 ## [ATA 資料庫管理](/advanced-threat-analytics/deploy-use/ata-database-management)
 ## [匯出/匯入 ATA 組態](/advanced-threat-analytics/deploy-use/ata-configuration-file)
 ## [管理 ATA 遙測](/advanced-threat-analytics/deploy-use/manage-telemetry-settings)
+## [調查偽造的 PAC 攻擊](/use-case-forged-pac)
 # 疑難排解
 ## [使用已知錯誤進行疑難排解](troubleshooting-ata-known-errors.md)
 ## [使用記錄進行疑難排解](troubleshooting-ata-using-logs.md)

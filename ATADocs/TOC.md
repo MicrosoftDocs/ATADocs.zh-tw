@@ -42,7 +42,7 @@
 ## [ATA 資料庫管理](/advanced-threat-analytics/deploy-use/ata-database-management)
 ## [匯出/匯入 ATA 組態](/advanced-threat-analytics/deploy-use/ata-configuration-file)
 ## [管理 ATA 遙測](/advanced-threat-analytics/deploy-use/manage-telemetry-settings)
-## [調查偽造的 PAC 攻擊](/use-case-forged-pac)
+## [調查偽造的 PAC 攻擊](/advanced-threat-analytics/deploy-use/use-case-forged-pac)
 # 疑難排解
 ## [使用已知錯誤進行疑難排解](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-known-errors)
 ## [使用記錄進行疑難排解](/advanced-threat-analytics/troubleshoot/troubleshooting-ata-using-logs)

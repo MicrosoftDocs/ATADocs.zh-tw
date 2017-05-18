@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 0c72b14a042e473c0cd59811db63ecafc4ec02d4
-ms.sourcegitcommit: f18c0841d85e54eca940c8cbf226938b3c2bc80f
-translationtype: HT
+ms.openlocfilehash: a87fed6bf8ce69ea3391e729c57217d1cff8ffc2
+ms.sourcegitcommit: a1595b51c95235eede3d3b34a02f24bedd5dfc5a
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 05/14/2017
 ---
 *適用於︰Advanced Threat Analytics 1.7 版*
 
@@ -43,7 +45,7 @@ translationtype: HT
 |System.InvalidOperationException︰指定的分類中不存在執行個體 'Microsoft.Tri.Gateway'。|ATA 閘道中的程序名稱已啟用 PID|使用 [KB281884](https://support.microsoft.com/en-us/kb/281884) 停用程序名稱中的 PID|
 |System.InvalidOperationException︰類別不存在。|登錄中的計數器可能已停用|使用 [KB2554336](https://support.microsoft.com/en-us/kb/2554336) 重建效能計數器|
 |System.ApplicationException︰無法啟動 ETW 工作階段 MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329|HOSTS 檔案中有一個主機項目指向電腦的簡短名稱|從 C:\Windows\System32\drivers\etc\HOSTS 檔案移除主機項目，或將它變更為 FQDN。|
-|System.IO.IOException：驗證失敗，因為遠端群體已經關閉傳輸資料流。|ATA 閘道上已停用 TLS 1.0，但是 .Net 設定為使用 TLS 1.2|使用下列其中一個選項： </br> 在 ATA 閘道上啟用 TLS 1.0 </br>如下所示設定登錄機碼，讓 LLS 和 TLS 使用作業系統預設值，以便在 .Net 上啟用 TLS 1.2：`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"`|
+|System.IO.IOException：驗證失敗，因為遠端群體已經關閉傳輸資料流。|ATA 閘道上已停用 TLS 1.0，但是 .Net 設定為使用 TLS 1.2|使用下列其中一個選項： </br> 在 ATA 閘道上啟用 TLS 1.0 </br>如下所示設定登錄機碼，讓 LLS 和 TLS 使用作業系統預設值，以便在 .Net 上啟用 TLS 1.2：`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`|
 
 
 

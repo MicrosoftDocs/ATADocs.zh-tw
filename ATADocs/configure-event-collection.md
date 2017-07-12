@@ -1,0 +1,105 @@
+---
+title: "在 Advanced Threat Analytics 中設定 Windows 事件轉送 | Microsoft Docs"
+description: "描述使用 ATA 設定 Windows 事件轉送的選項"
+keywords: 
+author: rkarlin
+ms.author: rkarlin
+manager: mbaldwin
+ms.date: 7/2/2017
+ms.topic: get-started-article
+ms.prod: 
+ms.service: advanced-threat-analytics
+ms.technology: 
+ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
+ms.reviewer: bennyl
+ms.suite: ems
+ms.openlocfilehash: 6469f602d2da833e96bba72003aad3fe2b67eb48
+ms.sourcegitcommit: fa50f37b134d7579d7c310852dff60e5f1996eaa
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/03/2017
+---
+適用於︰Advanced Threat Analytics 1.8 版
+
+
+
+<a id="configuring-windows-event-forwarding" class="xliff"></a>
+
+# 設定 Windows 事件轉送
+
+若要增強偵測功能，ATA 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757。 這些事件可透過 ATA 輕量型閘道自動讀取；如果未部署 ATA 輕量型閘道，則可以透過下列兩個方式之一轉送至 ATA 閘道：藉由將 ATA 閘道設定為接聽 SIEM 事件，或藉由[設定 Windows 事件轉送](#configuring-windows-event-forwarding)。
+
+> [!NOTE]
+> 針對 ATA 1.8 版及更新版本，ATA 輕量型閘道不再需要事件收集設定。 ATA 輕量型閘道現在可以在本機讀取事件，而不需要設定事件轉送。
+
+<a id="wef-configuration-for-ata-gateways-with-port-mirroring" class="xliff"></a>
+
+### 具連接埠鏡像之 ATA 閘道的 WEF 設定
+
+設定從網域控制站鏡像連接埠到 ATA 閘道之後，請依照下面的指示使用來源起始組態來設定 Windows 事件轉送。 這是一個設定 Windows 事件轉送的方法。 
+
+**步驟 1︰新增網路服務帳戶到網域 Event Log Readers 群組。** 
+
+在此案例中，我們假設 ATA 閘道是網域的成員。
+
+1.  開啟「Active Directory 使用者和電腦」，瀏覽至 [BuiltIn] 資料夾，然後按兩下 [Event Log Readers] 群組。 
+2.  選取 [成員]。
+4.  如果未列出 [Network Service]，請按一下 [新增]，在 [輸入要選取的物件名稱] 欄位中輸入 **Network Service**。 然後按一下 [檢查名稱]，再按兩次 [確定]。 
+
+請注意，在將 [網路服務] 新增到 [Event Log Readers] 群組後，您必須重新啟動網域控制站，變更才會生效。
+
+**步驟 2︰在網域控制站上建立原則以設定 [設定目標訂閱管理員] 設定。** 
+> [!Note] 
+> 您可以建立這些設定的群組原則，並將群組原則套用到 ATA 閘道監視的每個網域控制站。 下面的步驟修改網域控制站的本機原則。     
+
+1.  在每個網域控制站上執行下列命令︰*winrm quickconfig*
+2.  在命令提示字元中輸入 *gpedit.msc*
+3.  展開 [電腦設定] > [系統管理範本] > [Windows 元件] > [事件轉送]
+
+ ![本機原則群組編輯器影像](media/wef 1 local group policy editor.png)
+
+4.  按兩下 [設定目標訂閱管理員]。
+   
+    1.  選取 [啟用]。
+    2.  在 [選項] 下，按一下 [顯示]。
+    3.  在 [SubscriptionManagers] 下，輸入下列值，然後按一下 [確定]：*Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (例如︰Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
+ 
+   ![設定目標訂閱影像](media/wef 2 config target sub manager.png)
+   
+    5.  按一下 [ **確定**]。
+    6.  在提升權限的命令提示字元中，輸入 *gpupdate /force*。 
+
+**步驟 3：在 ATA 閘道上執行下列步驟** 
+
+1.  開啟提升權限的命令提示字元，輸入 *wecutil qc*
+2.  開啟 [事件檢視器]。 
+3.  以滑鼠右鍵按一下 [訂閱]，然後選取 [建立訂閱]。 
+
+   1.   為訂閱輸入名稱和描述。 
+   2.   對於 [目的記錄檔]確認已選取 [轉送的事件]。 對於要讀取事件的 ATA，目的記錄檔必須是 [轉送的事件]。 
+   3.   選取 [來源電腦起始]，按一下 [選取電腦群組]。
+        1.  按一下 [加入網域電腦]。
+        2.  在 [輸入要選取的物件名稱] 欄位中輸入網域控制站的名稱。 然後按一下 [檢查名稱]，再按一下 [確定]。 
+       
+        ![事件檢視器影像](media/wef3 event viewer.png)
+   
+        
+        3.  按一下 [ **確定**]。
+   4.   按一下 [選取事件]。
+
+        1. 按一下 [依記錄]，然後選取 [安全性]。
+        2. 在 [Includes/Excludes Event ID (包含/排除事件識別碼)] 欄位中鍵入事件編號，然後按一下 [確定]。 
+
+ ![查詢篩選影像](media/wef 4 query filter.png)
+
+   5.   以滑鼠右鍵按一下建立的訂閱，然後選取 [執行階段狀態]，查看是否有任何問題及其狀態。 
+   6.   幾分鐘後，請檢查您設定要轉送的事件是否出現在 ATA 閘道上 [轉送的事件] 中。
+
+
+如需詳細資訊，請參閱[設定電腦轉送及收集事件](https://technet.microsoft.com/library/cc748890)
+
+<a id="see-also" class="xliff"></a>
+
+## 另請參閱
+- [安裝 ATA](install-ata-step1.md)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

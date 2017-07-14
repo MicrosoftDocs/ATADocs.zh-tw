@@ -13,24 +13,22 @@ ms.technology:
 ms.assetid: 44d7c899-816c-4f7f-91d3-84a09d291a24
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1ff15a323f461cf8436e1ff7e15738a49bf3973c
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: d943dc9aae7192f46f079175c2216b5b27e459e2
+ms.sourcegitcommit: 3177d5894413fbd363b9aca8130f3f7a369223b8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/10/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
 
 
-<a id="working-with-suspicious-activities" class="xliff"></a>
-
 # 處理可疑活動
+<a id="working-with-suspicious-activities" class="xliff"></a>
 本主題說明如何使用 Advanced Threat Analytics 的基本概念。
 
-<a id="review-suspicious-activities-on-the-attack-time-line" class="xliff"></a>
-
 ## 在攻擊時間表上檢閱可疑活動
+<a id="review-suspicious-activities-on-the-attack-time-line" class="xliff"></a>
 登入 ATA 主控台之後，您會自動進入開啟的**可疑活動時間表**。 可疑活動會依時間順序列出，最新的可疑活動位於時間表頂端。
 每個可疑活動都有下列資訊︰
 
@@ -60,9 +58,8 @@ ms.lasthandoff: 06/30/2017
 
 ![ATA 可疑活動時間表影像](media/ATA-Suspicious-Activity-Timeline.JPG)
 
-<a id="filter-suspicious-activities-list" class="xliff"></a>
-
 ## 篩選可疑活動清單
+<a id="filter-suspicious-activities-list" class="xliff"></a>
 篩選可疑活動清單：
 
 1.  在畫面左側的 [篩選依據] 窗格中，選取下列其中一個項目︰[所有]、[開啟的]、[已解析] 或 [已關閉]。
@@ -86,9 +83,8 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="remediating-suspicious-activities" class="xliff"></a>
-
 ## 修復可疑活動
+<a id="remediating-suspicious-activities" class="xliff"></a>
 您可以按一下可疑活動的目前狀態，然後選取下列的其中一項來變更可疑活動的狀態：[開啟]、[已隱藏]、[已關閉] 或 [已刪除]。
 若要這樣做，請按一下特定可疑活動右上角的三個點，以顯示可用動作清單。
 
@@ -112,9 +108,7 @@ ms.lasthandoff: 06/30/2017
 > 只有 ATA 系統管理員才能修改設定頁面。
 
 
-<a id="see-also" class="xliff"></a>
-
 ## 另請參閱
+<a id="see-also" class="xliff"></a>
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-- [使用 ATA 偵測設定](working-with-detection-settings.md)
 - [修改 ATA 組態](modifying-ata-center-configuration.md)

@@ -13,34 +13,30 @@ ms.technology:
 ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7e396cddb818c0e80f8b7d78764a58d6abd560e5
-ms.sourcegitcommit: fa50f37b134d7579d7c310852dff60e5f1996eaa
+ms.openlocfilehash: 59e5cafcff7b84ffb9dc161cd0b50cd3014e455a
+ms.sourcegitcommit: 3177d5894413fbd363b9aca8130f3f7a369223b8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/10/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
 
+# 使用 ATA 系統健康狀態和事件
 <a id="working-with-ata-system-health-and-events" class="xliff"></a>
 
-# 使用 ATA 系統健康狀態和事件
-
-<a id="ata-health-center" class="xliff"></a>
-
 ## ATA 健全狀況中心
+<a id="ata-health-center" class="xliff"></a>
 ATA 健全狀況中心可讓您知道 ATA 服務的運作情況，並向您警示問題。
 
-<a id="working-with-the-ata-health-center" class="xliff"></a>
-
 ## 使用 ATA 健全狀況中心
+<a id="working-with-the-ata-health-center" class="xliff"></a>
 當功能表列中的健全狀況中心圖示上方出現警示 (一個紅點)，就是 ATA 健全狀況中心在告訴您有問題發生。
 
 ![ATA 健全狀況中心紅點工具列](media/ATA-Health-Center-Alert-red-dot.png)
 
-<a id="managing-ata-health" class="xliff"></a>
-
 ### 管理 ATA 健全狀況
+<a id="managing-ata-health" class="xliff"></a>
 若要檢查系統的整體健全狀況，按一下功能表列中的健全狀況中心圖示 ![ATA 健全狀況中心圖示](media/ATA-red-dot.png)
 
 -   可將所有未解決的警示設定為**已解決**或**已解除**。 在 [警示] 中，按一下 [未解決] 並捲動到 [已解決] 或 [已解除]。
@@ -56,9 +52,8 @@ ATA 健全狀況中心可讓您知道 ATA 服務的運作情況，並向您警�
 
 
 
+## 另請參閱
 <a id="see-also" class="xliff"></a>
 
-## 另請參閱
-- [使用 ATA 偵測設定](working-with-detection-settings.md)
 - [處理可疑活動](working-with-suspicious-activities.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

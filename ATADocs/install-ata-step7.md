@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 07/2/2017
+ms.date: 07/9/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,26 +13,24 @@ ms.technology:
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d261273adfa23392a9c0b8408483aa02708f1eee
-ms.sourcegitcommit: fa50f37b134d7579d7c310852dff60e5f1996eaa
+ms.openlocfilehash: 2b969089d8c4c2d861591342f7367e8cc5430b24
+ms.sourcegitcommit: 3177d5894413fbd363b9aca8130f3f7a369223b8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/10/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
 
 
-<a id="install-ata---step-7" class="xliff"></a>
-
 # 安裝 ATA - 步驟 7
+<a id="install-ata---step-7" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« 步驟 6](install-ata-step6.md)
 
-<a id="step-7-configure-ip-address-exclusions-and-honeytoken-user" class="xliff"></a>
-
 ## 步驟 ７： 設定 IP 位址排除項目和 Honeytoken 使用者
+<a id="step-7-configure-ip-address-exclusions-and-honeytoken-user" class="xliff"></a>
 ATA 可從一些偵測排除特定 IP 位址或使用者。 
 
 例如，**DNS 探查排除項目**可以是一個使用 DNS 做為掃描機制的安全性掃描程式。 排除項目可協助 ATA 忽略這類掃描器。 「傳遞票證」排除項目的一個範例是 NAT 裝置。    
@@ -51,7 +49,7 @@ ATA 也可以用來設定 Honeytoken 使用者，用來當做惡意執行者的�
 
    ![Honeytoken](media/honeytoken.png)
 
-3. 按一下 [排除]。 針對每個威脅類型，輸入要從這些威脅偵測排除的使用者帳戶或 IP 位址，然後按一下「加號」符號。 [加入實體 (使用者或電腦)] 欄位是可搜尋的，而且會自動填入您網路中的實體。
+3. 按一下 [排除]。 針對每個威脅類型，輸入要從這些威脅偵測排除的使用者帳戶或 IP 位址，然後按一下「加號」符號。 [加入實體] \(使用者或電腦\) 欄位是可搜尋的，而且會自動填入您網路中的實體。 如需詳細資訊，請參閱[從偵測中排除實體](excluding-entities-from-detections.md)
 
    ![排除](media/exclusions.png)
 
@@ -75,9 +73,8 @@ ATA 將立即開始掃描是否有可疑的活動。 某些活動 (例如某些�
 [« 步驟 6](install-ata-step6.md)
 
 
-<a id="see-also" class="xliff"></a>
-
 ## 另請參閱
+<a id="see-also" class="xliff"></a>
 
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)

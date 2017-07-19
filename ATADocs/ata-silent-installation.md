@@ -23,13 +23,9 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="ata-silent-installation" class="xliff"></a>
-
-# ATA 無訊息安裝
+# <a name="ata-silent-installation"></a>ATA 無訊息安裝
 本文提供以無訊息方式安裝 ATA 的指示。
-<a id="prerequisites" class="xliff"></a>
-
-## 必要條件
+## <a name="prerequisites"></a>必要條件
 
 ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。 
 
@@ -42,9 +38,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 若要追蹤部署進度，請監視位於 **%AppData%\Local\Temp** 中的 ATA 安裝程式記錄檔。
 
 
-<a id="install-the-ata-center" class="xliff"></a>
-
-## 安裝 ATA 中心
+## <a name="install-the-ata-center"></a>安裝 ATA 中心
 
 使用下列命令安裝 ATA 中心：
 
@@ -84,9 +78,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
     "Microsoft ATA Center Setup.exe" /quiet --LicenseAccepted NetFrameworkCommandLineArguments ="/q" CenterIpAddress=192.168.0.10 CenterPort=443 CenterCertificateThumbprint= ‎"1E2079739F624148ABDF502BF9C799FCB8C7212F"
     ConsoleIpAddress=192.168.0.11  ConsoleCertificateThumbprint="G9530253C976BFA9342FD1A716C0EC94207BFD5A"
 
-<a id="update-the-ata-center" class="xliff"></a>
-
-## 更新 ATA 中心
+## <a name="update-the-ata-center"></a>更新 ATA 中心
 
 使用下列命令更新 ATA 中心：
 
@@ -110,9 +102,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
         "Microsoft ATA Center Setup.exe" /quiet NetFrameworkCommandLineArguments="/q"
 
-<a id="uninstall-the-ata-center-silently" class="xliff"></a>
-
-## 以無訊息方式將 ATA 中心解除安裝
+## <a name="uninstall-the-ata-center-silently"></a>以無訊息方式將 ATA 中心解除安裝
 
 使用下列命令執行 ATA 中心的無訊息解除安裝：**語法**：
 
@@ -138,9 +128,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
     "Microsoft ATA Center Setup.exe" /quiet /uninstall --DeleteExistingDatabaseData
 
-<a id="ata-gateway-silent-installation" class="xliff"></a>
-
-## ATA 閘道無訊息安裝
+## <a name="ata-gateway-silent-installation"></a>ATA 閘道無訊息安裝
 使用下列命令以無訊息方式安裝 ATA 閘道：
 
 **語法**：
@@ -175,9 +163,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
     ConsoleAccountName="user@contoso.com" ConsoleAccountPassword="userpwd"
     
 
-<a id="update-the-ata-gateway" class="xliff"></a>
-
-## 更新 ATA 閘道
+## <a name="update-the-ata-gateway"></a>更新 ATA 閘道
 
 使用下列命令以無訊息方式更新 ATA 閘道：
 
@@ -199,9 +185,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
         Microsoft ATA Gateway Setup.exe /quiet NetFrameworkCommandLineArguments="/q"
 
-<a id="uninstall-the-ata-gateway-silently" class="xliff"></a>
-
-## 以無訊息方式將 ATA 閘道解除安裝
+## <a name="uninstall-the-ata-gateway-silently"></a>以無訊息方式將 ATA 閘道解除安裝
 
 使用下列命令執行 ATA 閘道的無訊息解除安裝：**語法**：
 
@@ -229,9 +213,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)

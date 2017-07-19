@@ -23,24 +23,16 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="ata-database-management" class="xliff"></a>
-
-# ATA 資料庫管理
+# <a name="ata-database-management"></a>ATA 資料庫管理
 如果您要移動、備份或還原 ATA 資料庫，請使用這些程序以使用 MongoDB。
 
-<a id="backing-up-the-ata-database" class="xliff"></a>
-
-## 備份 ATA 資料庫
+## <a name="backing-up-the-ata-database"></a>備份 ATA 資料庫
 請參閱[相關 MongoDB 文件](http://docs.mongodb.org/manual/administration/backup/)。
 
-<a id="restoring-the-ata-database" class="xliff"></a>
-
-## 還原 ATA 資料庫
+## <a name="restoring-the-ata-database"></a>還原 ATA 資料庫
 請參閱[相關 MongoDB 文件](http://docs.mongodb.org/manual/administration/backup/)。
 
-<a id="moving-the-ata-database-to-another-drive" class="xliff"></a>
-
-## 將 ATA 資料庫移至其他磁碟機
+## <a name="moving-the-ata-database-to-another-drive"></a>將 ATA 資料庫移至其他磁碟機
 
 1.  停止 **Microsoft Advanced Threat Analytics 中心**服務。
 > [!Important] 
@@ -62,9 +54,7 @@ ms.lasthandoff: 06/30/2017
 
 7. 啟動 **Microsoft Advanced Threat Analytics 中心**服務。
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [ATA 架構](ata-architecture.md)
 - [ATA 必要條件](ata-prerequisites.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

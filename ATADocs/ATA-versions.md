@@ -20,9 +20,7 @@ ms.lasthandoff: 07/03/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
-<a id="support-for-microsoft-advanced-threat-analytics-ata-versions" class="xliff"></a>
-
-# Microsoft Advanced Threat Analytics (ATA) 各版本的支援
+# <a name="support-for-microsoft-advanced-threat-analytics-ata-versions"></a>Microsoft Advanced Threat Analytics (ATA) 各版本的支援
 
 Microsoft 計劃每年發行數次 ATA 更新，而每個更新版本從其公開上市 (GA) 發行日算起支援 12 個月。 將提供完整 12 個月的技術支援。 不過，我們的支援結構現在是動態的，進化成根據最新版本可用性的兩個不同維護階段。
 
@@ -35,9 +33,7 @@ Microsoft 計劃每年發行數次 ATA 更新，而每個更新版本從其公�
 > [!Note]
 > 最新 ATA 版本一律是在安全性和重大更新維護階段中。 這表示如果您遭遇需要重大更新的程式碼缺失，則必須安裝最新分支版本，才能接收修正程式。 所有其他支援的版本只能接收安全性更新。 當某個版本過了 12 個月的週期之後，所有支援就會結束。 這時，客戶必須更新成支援的版本。
 
-<a id="version-history" class="xliff"></a>
-
-## 版本歷程記錄
+## <a name="version-history"></a>版本歷程記錄
 
 |版本|組建編號|可供取得日期| 支援結束日期|
 |----|----|----|----|
@@ -53,7 +49,5 @@ Microsoft 計劃每年發行數次 ATA 更新，而每個更新版本從其公�
 
 
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

@@ -23,15 +23,11 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="change-ata-configuration---domain-connectivity-password" class="xliff"></a>
-
-# 變更 ATA 設定 - 網域連線密碼
+# <a name="change-ata-configuration---domain-connectivity-password"></a>變更 ATA 設定 - 網域連線密碼
 
 
 
-<a id="change-the-domain-connectivity-password" class="xliff"></a>
-
-## 變更網域連線密碼
+## <a name="change-the-domain-connectivity-password"></a>變更網域連線密碼
 如果您修改網域連線密碼，請確定輸入的密碼正確。 否則 ATA 閘道服務會停止在 ATA 閘道上執行。
 
 如果您懷疑此情況已發生，請於 ATA 閘道上的 Microsoft.Tri.Gateway Errors.log 檔案查看下列項目︰`The supplied credential is invalid.`
@@ -58,8 +54,6 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [使用 ATA 主控台](working-with-ata-console.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

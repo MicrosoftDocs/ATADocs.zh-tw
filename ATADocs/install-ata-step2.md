@@ -23,17 +23,13 @@ ms.lasthandoff: 07/03/2017
 
 
 
-<a id="install-ata---step-2" class="xliff"></a>
-
-# 安裝 ATA - 步驟 2
+# <a name="install-ata---step-2"></a>安裝 ATA - 步驟 2
 
 >[!div class="step-by-step"]
 [« 步驟 1](install-ata-step1.md)
 [步驟 3 »](install-ata-step3.md)
 
-<a id="step-2-provide-a-username-and-password-to-connect-to-your-active-directory-forest" class="xliff"></a>
-
-## 步驟 2： 提供使用者名稱和密碼來連線到您的 Active Directory 樹系
+## <a name="step-2-provide-a-username-and-password-to-connect-to-your-active-directory-forest"></a>步驟 2： 提供使用者名稱和密碼來連線到您的 Active Directory 樹系
 
 第一次開啟 ATA 主控台時會出現下列畫面︰
 
@@ -59,9 +55,7 @@ ms.lasthandoff: 07/03/2017
 [步驟 3 »](install-ata-step3.md)
 
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)

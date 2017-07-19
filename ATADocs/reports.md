@@ -22,9 +22,7 @@ ms.lasthandoff: 06/30/2017
 適用於︰Advanced Threat Analytics 1.8 版
 
 
-<a id="ata-reports" class="xliff"></a>
-
-# ATA 報表
+# <a name="ata-reports"></a>ATA 報表
 
 主控台中的 ATA 報表區段可讓您產生報表，以提供系統狀態資訊，除了系統健康狀態，還報告您環境中偵測到的可疑活動。
 
@@ -56,9 +54,7 @@ ms.lasthandoff: 06/30/2017
 > 排程的報表會以電子郵件形式傳送，您必須已在 [設定] 下設定電子郵件伺服器，然後在 [Notifications and Reports (通知與報表)] 下選取 [郵件伺服器]，才能傳送這些報表。
 
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [ATA 必要條件](ata-prerequisites.md)
 - [ATA 容量規劃](ata-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)

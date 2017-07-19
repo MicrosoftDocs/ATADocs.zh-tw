@@ -23,9 +23,7 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="troubleshooting-ata-center-service-startup" class="xliff"></a>
-
-# 針對 ATA 中心服務啟動進行疑難排解
+# <a name="troubleshooting-ata-center-service-startup"></a>針對 ATA 中心服務啟動進行疑難排解
 
 如果您的 ATA 中心未啟動，請執行下列疑難排解程序：
 
@@ -38,9 +36,7 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [ATA 必要條件](ata-prerequisites.md)
 - [ATA 容量規劃](ata-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)

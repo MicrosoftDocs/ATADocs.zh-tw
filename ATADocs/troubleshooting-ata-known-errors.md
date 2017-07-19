@@ -23,15 +23,11 @@ ms.lasthandoff: 07/03/2017
 
 
 
-<a id="troubleshooting-ata-known-issues" class="xliff"></a>
-
-# 針對 ATA 已知問題進行疑難排解
+# <a name="troubleshooting-ata-known-issues"></a>針對 ATA 已知問題進行疑難排解
 
 本節詳細說明 ATA 部署中可能發生的錯誤，以及對其進行疑難排解所需的步驟。
 
-<a id="ata-gateway-and-lightweight-gateway-errors" class="xliff"></a>
-
-## ATA 閘道和輕量型閘道錯誤
+## <a name="ata-gateway-and-lightweight-gateway-errors"></a>ATA 閘道和輕量型閘道錯誤
 
 |錯誤|說明|解決方法|
 |-------------|----------|---------|
@@ -54,9 +50,7 @@ ms.lasthandoff: 07/03/2017
 |在 VMware 上使用輕量型閘道時的「已丟棄連接埠鏡像流量」警示|若在 VMware 虛擬機器上使用 DC，可能會收到有關**已丟棄連接埠鏡像流量**的警示。 這可能是 VMware 中的設定不相符所致。 |若要避免這些警示，可檢查是否已將下列設定設為 [0] 或 [已停用]：TsoEnable、LargeSendOffload、IPv4、TSO Offload。 此外也請考慮停用 [IPv4 Giant TSO Offload]。 如需詳細資訊，請參閱 VMware 文件。|
 
 
-<a id="deployment-errors" class="xliff"></a>
-
-## 部署錯誤
+## <a name="deployment-errors"></a>部署錯誤
 |錯誤|說明|解決方法|
 |-------------|----------|---------|
 |.Net Framework 4.6.1 安裝失敗，並發生錯誤 0x800713ec|.Net Framework 4.6.1 的必要條件尚未安裝於伺服器。 |安裝 ATA 之前，請驗證伺服器上已安裝 Windows Update [KB2919442](https://www.microsoft.com/download/details.aspx?id=42135) 和 [KB2919355](https://support.microsoft.com/kb/2919355)。|
@@ -68,9 +62,7 @@ ms.lasthandoff: 07/03/2017
 
 
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [ATA 必要條件](ata-prerequisites.md)
 - [ATA 容量規劃](ata-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)

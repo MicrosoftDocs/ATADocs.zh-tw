@@ -23,16 +23,12 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="modifying-the-ata-center-configuration" class="xliff"></a>
-
-# 修改 ATA 中心設定
+# <a name="modifying-the-ata-center-configuration"></a>修改 ATA 中心設定
 
 
 初始部署後，請小心修改 ATA Center。 更新 IP 位址、連接埠、主控台 URL 和憑證時，請使用下列程序。
 
-<a id="the-ata-center-ip-address" class="xliff"></a>
-
-## ATA 中心 IP 位址
+## <a name="the-ata-center-ip-address"></a>ATA 中心 IP 位址
 
 ATA 閘道會在本機儲存它們要連接的 ATA 中心之 IP 位址。 它們會定期連接到 ATA 中心，並提取組態變更。 要變更 ATA 閘道如何連線到 ATA 中心有兩個階段。
 
@@ -45,9 +41,7 @@ ATA 閘道會在本機儲存它們要連接的 ATA 中心之 IP 位址。 它們
 > -   如果 ATA 中心伺服器上安裝了新 IP 位址，您可以在進行變更時，從 IP 位址清單中加以選取。 不過，如果基於某些原因無法於 ATA 中心伺服器上安裝 IP 位址，您可以選取自訂的 IP 位址並以手動方式新增。 除非伺服器上已安裝 IP 位址，否則您無法啟動新的 IP 位址。
 > -   如果您需要在啟用新的 IP 位址後部署新的 ATA 閘道，您需要再次下載 ATA 閘道安裝套件。
 
-<a id="the-console-url" class="xliff"></a>
-
-## 主控台 URL
+## <a name="the-console-url"></a>主控台 URL
 
 在下列情況下將使用 URL：
 
@@ -62,9 +56,7 @@ ATA 閘道會在本機儲存它們要連接的 ATA 中心之 IP 位址。 它們
 > [!NOTE]
 > 修改 ATA 主控台 URL 後，您應該於安裝新的 ATA 閘道前下載 ATA 閘道安裝套件。
 
-<a id="the-ata-center-certificate" class="xliff"></a>
-
-## ATA 中心憑證
+## <a name="the-ata-center-certificate"></a>ATA 中心憑證
 如果您的憑證即將過期，且在 ATA 中心伺服器的本機電腦存放區中安裝新憑證後需要更新或更換，請遵循此兩階段程序取代憑證︰
 
 -   第一階段 – 更新您想 ATA 中心服務使用的憑證。 此時 ATA 中心服務仍會繫結至原始憑證。 當 ATA 閘道同步處理其設定時，它們將擁有兩個可有效相互驗證的潛在憑證。 只要 ATA 閘道可以用原始憑證來連接，就不會嘗試新的憑證。
@@ -77,9 +69,7 @@ ATA 閘道會在本機儲存它們要連接的 ATA 中心之 IP 位址。 它們
 > -   憑證也可用於 ATA 主控台，所以應符合 ATA 主控台位址以避免瀏覽器警告
 > -   如果您需要在啟用新的憑證後部署新的 ATA 閘道，則需要再次下載 ATA 閘道安裝套件。
 
-<a id="changing-the-ata-center-configuration" class="xliff"></a>
-
-## 變更 ATA 中心設定
+## <a name="changing-the-ata-center-configuration"></a>變更 ATA 中心設定
 
 1.  開啟 ATA 主控台。
 
@@ -111,8 +101,6 @@ ATA 閘道會在本機儲存它們要連接的 ATA 中心之 IP 位址。 它們
 
 
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [使用 ATA 主控台](working-with-ata-console.md)
 - [查看 ATA 論壇！](https://aka.ms/ata-forum)

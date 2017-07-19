@@ -23,9 +23,7 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="set-ata-notifications" class="xliff"></a>
-
-# 設定 ATA 通知
+# <a name="set-ata-notifications"></a>設定 ATA 通知
 ATA 可在偵測到可疑的活動時通知您，方法是透過電子郵件或使用 ATA 事件轉寄，並將事件轉寄到您的 SIEM/syslog 伺服器。 您必須先[設定電子郵件伺服器和 Syslog 伺服器](setting-syslog-email-server-settings.md)，才能選取要接收的通知。
 
 > [!NOTE]
@@ -52,7 +50,5 @@ ATA 可在偵測到可疑的活動時通知您，方法是透過電子郵件或�
 
 
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

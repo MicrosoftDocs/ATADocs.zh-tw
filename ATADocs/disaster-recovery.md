@@ -23,17 +23,13 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="ata-disaster-recovery" class="xliff"></a>
-
-# ATA 災害復原
+# <a name="ata-disaster-recovery"></a>ATA 災害復原
 本文描述如何在失去 ATA 中心功能，但 ATA 閘道仍可運作的情況下，快速復原 ATA 中心並還原 ATA 功能。 
 
 >[!NOTE]
 > 描述的程序並無法復原先前所偵測到的可疑活動，但可以使 ATA 中心恢復完整功能。 除此之外，部分行為偵測的學習期間將會重新開始，但大部分由 ATA 所提供的偵測，在 ATA 中心還原之後便可以運作。 
 
-<a id="back-up-your-ata-center-configuration" class="xliff"></a>
-
-## 備份您的 ATA 中心設定
+## <a name="back-up-your-ata-center-configuration"></a>備份您的 ATA 中心設定
 
 1. ATA 中心組態會於每小時備份為檔案。 找出最新的 ATA 中心組態備份複本，並將它儲存在另一部電腦上。 如需尋找這些檔案的完整解釋，請參閱[匯出和匯入 ATA 組態](/advanced-threat-analytics/deploy-use/ata-configuration-file)。 
 2. 匯出 ATA 中心憑證。
@@ -46,9 +42,7 @@ ms.lasthandoff: 06/30/2017
   > [!NOTE] 
   > 如果您無法匯出私密金鑰，您必須建立新憑證並將它部署至 ATA (如[變更 ATA 中心憑證](/advanced-threat-analytics/deploy-use/modifying-ata-config-centercert)中所述)，然後將它匯出。 
 
-<a id="recover-your-ata-center" class="xliff"></a>
-
-## 復原您的 ATA 中心
+## <a name="recover-your-ata-center"></a>復原您的 ATA 中心
 
 1. 使用和先前的 ATA 中心電腦相同的 IP 位址與電腦名稱，建立新的 Windows Server 電腦。
 4. 將您在上面備份的憑證匯入到新的伺服器。
@@ -69,9 +63,7 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [ATA 必要條件](/advanced-threat-analytics/plan-design/ata-prerequisites)
 - [ATA 容量規劃](/advanced-threat-analytics/plan-design/ata-capacity-planning)
 - [設定事件收集](/advanced-threat-analytics/deploy-use/configure-event-collection)

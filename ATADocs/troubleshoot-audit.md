@@ -21,9 +21,7 @@ ms.lasthandoff: 07/05/2017
 ---
 *適用於︰Advanced Threat Analytics 1.8 版*
 
-<a id="working-with-ata-audit-logs" class="xliff"></a>
-
-# 使用 ATA 稽核記錄檔
+# <a name="working-with-ata-audit-logs"></a>使用 ATA 稽核記錄檔
 
 ATA 稽核記錄檔會先保留在 [應用程式及服務] 下的 Windows 事件記錄檔，然後再放在 ATA 中心和 ATA 閘道電腦的 **Microsoft ATA**。
 
@@ -41,8 +39,6 @@ ATA 閘道的稽核記錄檔包含：
 *設定變更稽核記錄檔會包含先前的設定和新的設定。
 
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [處理可疑活動](working-with-suspicious-activities.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

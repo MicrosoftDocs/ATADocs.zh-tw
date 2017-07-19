@@ -23,9 +23,7 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="configure-port-mirroring" class="xliff"></a>
-
-# 設定連接埠鏡像
+# <a name="configure-port-mirroring"></a>設定連接埠鏡像
 > [!NOTE] 
 > 本文只有在部署 ATA 閘道 (而非 ATA 輕量型閘道) 時才適用。 若要判斷是否需要使用 ATA 閘道，請參閱[為您的部署選擇正確閘道](ata-capacity-planning.md#choosing-the-right-gateway-type-for-your-deployment)。
  
@@ -46,9 +44,7 @@ ATA 使用的主要資料來源是對進出網域控制站的網路流量的深�
 > 如果被連接埠鏡像的網域控制站是透過 WAN 連結進行連線，請確定 WAN 連結可以處理 ERSPAN 流量的額外負載。
 > ATA 只在流量達到 NIC 及網域控制站發生相同狀況時，才會監視流量。 當流量分散到不同的連接埠時，ATA 不會監視流量。
 
-<a id="supported-port-mirroring-options" class="xliff"></a>
-
-## 支援的連接埠鏡像選項
+## <a name="supported-port-mirroring-options"></a>支援的連接埠鏡像選項
 
 |ATA 閘道|網域控制站|考量|
 |---------------|---------------------|------------------|
@@ -73,8 +69,6 @@ ATA 使用的主要資料來源是對進出網域控制站的網路流量的深�
 
 設定連接埠鏡像之後，先驗證連接埠鏡像運作正常，再安裝 ATA 閘道。
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [驗證連接埠鏡像](validate-port-mirroring.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

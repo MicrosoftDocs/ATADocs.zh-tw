@@ -23,18 +23,14 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="install-ata---step-5" class="xliff"></a>
-
-# 安裝 ATA - 步驟 5
+# <a name="install-ata---step-5"></a>安裝 ATA - 步驟 5
 
 >[!div class="step-by-step"]
 [«步驟 4](install-ata-step4.md)
 [步驟 6»](install-ata-step6.md)
 
 
-<a id="step-5-configure-the-ata-gateway-settings" class="xliff"></a>
-
-## 步驟 5： 設定 ATA 閘道設定
+## <a name="step-5-configure-the-ata-gateway-settings"></a>步驟 5： 設定 ATA 閘道設定
 安裝 ATA 閘道後，執行下列步驟來設定 ATA 閘道的設定。
 
 1.  在 ATA 主控台中，移至 [設定]，在 [系統] 下選取 [閘道]。
@@ -72,9 +68,7 @@ ms.lasthandoff: 06/30/2017
 5. 按一下 **[儲存]**。
 
 
-<a id="validate-installations" class="xliff"></a>
-
-## 驗證安裝
+## <a name="validate-installations"></a>驗證安裝
 若要驗證 ATA 閘道是否已成功部署，請檢查下列各項︰
 
 1.  檢查名為 **Microsoft Advanced Threat Analytics 閘道**的服務是否正在執行。 儲存 ATA 閘道設定後，可能需幾分鐘時間來啟動服務。
@@ -94,9 +88,7 @@ ms.lasthandoff: 06/30/2017
 [«步驟 4](install-ata-step4.md)
 [步驟 6»](install-ata-step6.md)
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)

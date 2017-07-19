@@ -23,9 +23,7 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="provide-ata-with-your-email-server-settings" class="xliff"></a>
-
-# 使用電子郵件伺服器設定提供 ATA
+# <a name="provide-ata-with-your-email-server-settings"></a>使用電子郵件伺服器設定提供 ATA
 當 ATA 偵測到可疑的活動時，就會通知您。 若要讓 ATA 能夠傳送電子郵件通知，您必須先進行**電子郵件伺服器設定**。
 
 1.  在 ATA 中央伺服器上，按一下桌面上的 [Microsoft Advanced Threat Analytics Management] 圖示。
@@ -46,9 +44,7 @@ ms.lasthandoff: 06/30/2017
     |傳送來源 (必要)|輸入電子郵件傳送者的電子郵件地址。|例如：<br />ATA@contoso.com|
     ![ATA 電子郵件伺服器設定影像](media/ata-email-server.png)
 
-<a id="provide-ata-with-your-syslog-server-settings" class="xliff"></a>
-
-## 使用 Syslog 伺服器設定提供 ATA
+## <a name="provide-ata-with-your-syslog-server-settings"></a>使用 Syslog 伺服器設定提供 ATA
 當 ATA 偵測到可疑的活動時，就會將通知傳送至 Syslog 伺服器來通知您。 如果您啟用 Syslog 通知，就可以為其進行下列設定。
 
 1.  設定 Syslog 通知前，請先洽詢您的 SIEM 系統管理員以了解下列資訊︰
@@ -81,7 +77,5 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

@@ -23,19 +23,13 @@ ms.lasthandoff: 07/05/2017
 
 
 
-<a id="install-ata---step-6" class="xliff"></a>
-
-# 安裝 ATA - 步驟 6
+# <a name="install-ata---step-6"></a>安裝 ATA - 步驟 6
 
 >[!div class="step-by-step"]
 [« 步驟 5](install-ata-step5.md)
 
-<a id="step-6-configure-event-collection-and-vpn" class="xliff"></a>
-
-## 步驟 6： 設定事件收集和 VPN
-<a id="configure-event-collection" class="xliff"></a>
-
-### 設定事件收集
+## <a name="step-6-configure-event-collection-and-vpn"></a>步驟 6： 設定事件收集和 VPN
+### <a name="configure-event-collection"></a>設定事件收集
 為增強偵測功能，ATA 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757。 這些事件可透過 ATA 輕量型閘道自動讀取；如果未部署 ATA 輕量型閘道，則可以透過下列兩個方式之一轉送至 ATA 閘道：藉由將 ATA 閘道設定為接聽 SIEM 事件，或藉由[設定 Windows 事件轉送](#configuring-windows-event-forwarding)。
 
 > [!NOTE]
@@ -43,9 +37,7 @@ ms.lasthandoff: 07/05/2017
 
 除了收集和分析進出網域控制站的網路流量，ATA 可以使用 Windows 事件進一步加強偵測。 它會使用加強各種偵測的 NTLM 事件 4776，以及增強偵測機密群組修改的事件 4732、4733、4728、4729、4756 和 4757。 這可從您的 SIEM 接收，或藉由在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 ATA 透過網域控制站網路流量無法取得的額外資訊。
 
-<a id="siemsyslog" class="xliff"></a>
-
-#### SIEM/Syslog
+#### <a name="siemsyslog"></a>SIEM/Syslog
 為了讓 ATA 可以取用 Syslog 伺服器上的資料，您需要執行下列操作︰
 
 -   將您的 ATA 閘道伺服器設定為接聽及接受從 SIEM/Syslog 伺服器轉送的事件。
@@ -62,9 +54,7 @@ ms.lasthandoff: 07/05/2017
 > [!NOTE]
 >如果您沒使用 SIEM/Syslog 伺服器，可將 Windows 網域控制站設定為轉送 Windows 事件識別碼 4776 以供 ATA 收集及分析。 Windows 事件識別碼 4776 提供 NTLM 驗證的相關資料。
 
-<a id="configuring-the-ata-gateway-to-listen-for-siem-events" class="xliff"></a>
-
-#### 將 ATA 閘道設定為接聽 SIEM 事件
+#### <a name="configuring-the-ata-gateway-to-listen-for-siem-events"></a>將 ATA 閘道設定為接聽 SIEM 事件
 
 1.  在 ATA 組態中，按一下 [資料來源] 下的 [SIEM]，開啟 [Syslog]，然後按一下 [儲存]。
 
@@ -74,9 +64,7 @@ ms.lasthandoff: 07/05/2017
 
 ATA 支援下列格式的 SIEM 事件：  
 
-<a id="rsa-security-analytics" class="xliff"></a>
-
-#### RSA 安全性分析
+#### <a name="rsa-security-analytics"></a>RSA 安全性分析
 &lt;Syslog Header&gt;RsaSA\n2015-May-19 09:07:09\n4776\nMicrosoft-Windows-Security-Auditing\nSecurity\XXXXX.subDomain.domain.org.il\nYYYYY$\nMMMMM \n0x0
 
 -   Syslog Header 是選擇性參數。
@@ -105,9 +93,7 @@ ATA 支援下列格式的 SIEM 事件：
 
 -   順序很重要，而且訊息中不應包含任何其他東西。
 
-<a id="hp-arcsight" class="xliff"></a>
-
-#### HP Arcsight
+#### <a name="hp-arcsight"></a>HP Arcsight
 CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The domain controller attempted to validate the credentials for an account.|Low| externalId=4776 cat=Security rt=1426218619000 shost=KKKKKK dhost=YYYYYY.subDomain.domain.com duser=XXXXXX cs2=Security cs3=Microsoft-Windows-Security-Auditing cs4=0x0 cs3Label=EventSource cs4Label=Reason or Error Code
 
 -   必須符合通訊協定定義。
@@ -138,9 +124,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
     -   “Reason or Error Code” = NTLM 的結果碼
 
-<a id="splunk" class="xliff"></a>
-
-#### Splunk
+#### <a name="splunk"></a>Splunk
 &lt;Syslog Header&gt;\r\nEventCode=4776\r\nLogfile=Security\r\nSourceName=Microsoft-Windows-Security-Auditing\r\nTimeGenerated=20150310132717.784882-000\r\ComputerName=YYYYY\r\nMessage=
 
 電腦會嘗試驗證帳戶的認證。
@@ -177,9 +161,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
 -   「索引鍵=值」對的順序不重要。
 
-<a id="qradar" class="xliff"></a>
-
-#### QRadar
+#### <a name="qradar"></a>QRadar
 QRadar 可讓您透過代理程式收集事件。 如果使用代理程式收集資料，則會收集不含毫秒資料的時間格式。 因為 ATA 需要毫秒資料，所以必須將 QRadar 設定為使用無代理程式 Windows 事件收集。 如需詳細資訊，請參閱 [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar: Agentless Windows Events Collection using the MSRPC Protocol")。
 
     <13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0
@@ -202,9 +184,7 @@ Message 是來自 Windows 事件的原始事件文字
 > 不支援使用 WinCollect 進行 Windows 事件收集。
 
 
-<a id="configuring-vpn" class="xliff"></a>
-
-### 設定 VPN
+### <a name="configuring-vpn"></a>設定 VPN
 
 ATA 會收集 VPN 資料，以協助分析電腦連線到網路的位置。
 
@@ -226,9 +206,7 @@ ATA 會收集 VPN 資料，以協助分析電腦連線到網路的位置。
 [步驟 7 »](install-ata-step7.md)
 
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)

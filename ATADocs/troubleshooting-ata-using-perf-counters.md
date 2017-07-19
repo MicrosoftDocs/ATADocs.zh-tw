@@ -23,9 +23,7 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="troubleshooting-ata-using-the-performance-counters" class="xliff"></a>
-
-# 使用效能計數器疑難排解 ATA
+# <a name="troubleshooting-ata-using-the-performance-counters"></a>使用效能計數器疑難排解 ATA
 ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元件會循序處理資料，因此當發生問題時，會導致元件中某處的流量部分中斷。 若要修正此問題，您必須找出發生問題的元件，並在連鎖的源頭修正問題。 使用在效能計數器中找到的資料，來了解每個元件的運作情況。
 請參閱 [ATA 架構](ata-architecture.md)以了解內部 ATA 元件的流程。
 
@@ -38,9 +36,7 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 3.  這會在傳回 NetworkListener 元件時發生，此元件將會在無法再轉送實體時捨棄流量。
 
 
-<a id="retrieving-performance-monitor-files-for-troubleshooting" class="xliff"></a>
-
-## 擷取效能監視器檔案供疑難排解之用
+## <a name="retrieving-performance-monitor-files-for-troubleshooting"></a>擷取效能監視器檔案供疑難排解之用
 
 若要從各項 ATA 元件擷取效能監視器檔案 (BLG)：
 1.  開啟效能監視器。
@@ -50,9 +46,7 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 5.  重新啟動名為「Microsoft ATA 閘道」或「Microsoft ATA 中心」的資料收集器集合工具。
 
 
-<a id="ata-gateway-performance-counters" class="xliff"></a>
-
-## ATA 閘道效能計數器
+## <a name="ata-gateway-performance-counters"></a>ATA 閘道效能計數器
 
 在本節中，ATA 閘道的每個參考也都適用於 ATA 輕量型閘道。
 
@@ -75,9 +69,7 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 > -   時間計數器以毫秒為單位。
 > -   有時候使用「報告」圖形類型監視計數器的完整清單會更方便 (範例︰所有計數器的即時監視)
 
-<a id="ata-lightweight-gateway-performance-counters" class="xliff"></a>
-
-## ATA 輕量型閘道效能計數器
+## <a name="ata-lightweight-gateway-performance-counters"></a>ATA 輕量型閘道效能計數器
 效能計數器可用於輕量型閘道中的配額管理，確保 ATA 不會耗盡安裝所在的網域控制站太多的資源。
 若要測量 ATA 在輕量型閘道上強制執行的資源限制，請新增這些計數器。
 
@@ -102,9 +94,7 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 |Process(Microsoft.Tri.Gateway)\Private Bytes|輕量型閘道處理序實際正在使用的認可記憶體量 (以位元組表示)。|沒有閾值。 | 比較此計數器的結果與 GatewayUpdaterResourceManager Commit Memory Max Size 中找到的限制。 如果您看到處理序經常在經過一段時間之後達到最大的限制 (處理序達到限制時，就會開始捨棄流量)，表示您需要對輕量型閘道提供更多資源。| 
 |Process(Microsoft.Tri.Gateway)\Working Set|輕量型閘道處理序實際正在使用的實體記憶體量 (以位元組表示)。|沒有閾值。 |比較此計數器的結果與 GatewayUpdaterResourceManager Working Set Limit Size 中找到的限制。 如果您看到處理序經常在經過一段時間之後達到最大的限制 (處理序達到限制時，就會開始捨棄流量)，表示您需要對輕量型閘道提供更多資源。|
 
-<a id="ata-center-performance-counters" class="xliff"></a>
-
-## ATA 中心效能計數器
+## <a name="ata-center-performance-counters"></a>ATA 中心效能計數器
 您可以新增 ATA 中心的效能計數器來觀察 ATA 中心的即時效能狀態。
 
 您可藉由開啟「效能監視器」並新增 ATA 中心的所有計數器來完成此動作。 效能計數器物件的名稱是：「Microsoft ATA 中心」。
@@ -123,9 +113,7 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 > -   時間計數器以毫秒為單位
 > -   有時候使用「報告」的圖形類型監視計數器的完整清單會更方便 (範例︰所有計數器的即時監視)。
 
-<a id="operating-system-counters" class="xliff"></a>
-
-## 作業系統計數器
+## <a name="operating-system-counters"></a>作業系統計數器
 以下是要注意的主要作業系統計數器清單︰
 
 |計數器|說明|閾值|疑難排解|
@@ -141,9 +129,7 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 |\LogicalDisk&#42;\Disk Writes\sec|執行寫入作業至磁碟的速率。|沒有閾值|磁碟使用計數器 (可在疑難排解儲存體延遲時新增見解)|
 |\LogicalDisk(&#42;)\Disk Write Bytes\sec|每秒寫入磁碟的位元組數目。|沒有閾值|磁碟使用計數器可在疑難排解儲存體延遲時新增見解。|
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [ATA 必要條件](ata-prerequisites.md)
 - [ATA 容量規劃](ata-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)

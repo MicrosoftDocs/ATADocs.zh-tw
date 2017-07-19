@@ -23,17 +23,13 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="install-ata---step-3" class="xliff"></a>
-
-# 安裝 ATA - 步驟 3
+# <a name="install-ata---step-3"></a>安裝 ATA - 步驟 3
 
 >[!div class="step-by-step"]
 [« 步驟 2](install-ata-step2.md)
 [步驟 4 »](install-ata-step4.md)
 
-<a id="step-3-download-the-ata-gateway-setup-package" class="xliff"></a>
-
-## 步驟 3： 下載 ATA 閘道安裝套件
+## <a name="step-3-download-the-ata-gateway-setup-package"></a>步驟 3： 下載 ATA 閘道安裝套件
 設定網域連線設定後，您可以下載 ATA 閘道安裝套件。 ATA 閘道可以安裝在專用伺服器或網域控制站上。 如果您將其安裝在網域控制站上，則會作為 ATA 輕量型閘道安裝。 如需 ATA 輕量型閘道的詳細資訊，請參閱 [ATA 架構](ata-architecture.md)。 
 
 按一下頁面頂端之步驟清單中的 [Download Gateway Setup (下載閘道安裝程式)] 以移至 [閘道] 頁面：
@@ -59,9 +55,7 @@ ZIP 檔案包含下列項目：
 [« 步驟 2](install-ata-step2.md)
 [步驟 4 »](install-ata-step4.md)
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)

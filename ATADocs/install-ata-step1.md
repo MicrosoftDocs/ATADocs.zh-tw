@@ -22,9 +22,7 @@ ms.lasthandoff: 07/03/2017
 適用於︰Advanced Threat Analytics 1.8 版
 
 
-<a id="install-ata---step-1" class="xliff"></a>
-
-# 安裝 ATA - 步驟 1
+# <a name="install-ata---step-1"></a>安裝 ATA - 步驟 1
 
 >[!div class="step-by-step"]
 [步驟 2 »](install-ata-step2.md)
@@ -34,9 +32,7 @@ ms.lasthandoff: 07/03/2017
 > [!IMPORTANT] 
 > 如果使用 Windows 2012 R2，開始安裝之前，您可以先在 ATA 中心伺服器和 ATA 閘道伺服器上安裝 KB2934520；若沒有這麼做，ATA 安裝將會安裝此更新，且您需要在 ATA 安裝期間重新啟動機器。
 
-<a id="step-1-download-and-install-the-ata-center" class="xliff"></a>
-
-## 步驟 1： 下載並安裝 ATA 中心
+## <a name="step-1-download-and-install-the-ata-center"></a>步驟 1： 下載並安裝 ATA 中心
 確認伺服器符合需求之後，您可以繼續 ATA 中心的安裝。
     
 > [!NOTE]
@@ -90,9 +86,7 @@ ms.lasthandoff: 07/03/2017
 此時，系統會自動將您帶到 [一般] 設定頁面，以繼續進行 ATA 閘道的設定和部署。
 由於您使用 IP 位址登入網站，因此會收到與憑證相關的警告，這是正常現象，而您應該要按一下 **[繼續瀏覽此網站]**。
 
-<a id="validate-installation" class="xliff"></a>
-
-### 驗證安裝
+### <a name="validate-installation"></a>驗證安裝
 
 1.  檢查名為 **Microsoft Advanced Threat Analytics 中心**的服務是否正在執行。
 2.  按一下桌面上的 [Microsoft Advanced Threat Analytics] 捷徑以連線到 ATA 主控台。 以您安裝 ATA 中心的相同使用者認證登入。
@@ -103,9 +97,7 @@ ms.lasthandoff: 07/03/2017
 [«前置安裝](configure-port-mirroring.md)
 [步驟 2»](install-ata-step2.md)
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)

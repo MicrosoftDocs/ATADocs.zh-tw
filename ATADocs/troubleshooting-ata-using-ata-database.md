@@ -23,15 +23,11 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="troubleshooting-ata-using-the-ata-database" class="xliff"></a>
-
-# 使用 ATA 資料庫疑難排解 ATA
+# <a name="troubleshooting-ata-using-the-ata-database"></a>使用 ATA 資料庫疑難排解 ATA
 ATA 會使用 MongoDB 作為其資料庫。
 您可以使用預設命令列或使用者介面工具來與資料庫互動，以執行進階工作和疑難排解。
 
-<a id="interacting-with-the-database" class="xliff"></a>
-
-## 與資料庫互動
+## <a name="interacting-with-the-database"></a>與資料庫互動
 查詢資料庫的預設和最基本的方式是使用 Mongo 殼層︰
 
 1.  開啟命令列視窗，並將路徑變更為 MongoDB bin 資料夾。 預設路徑為︰**C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**。
@@ -53,9 +49,7 @@ ATA 會使用 MongoDB 作為其資料庫。
 
 `db.Ntlms_<closest date>.find({SourceAccountId: "123bdd24-b269-h6e1-9c72-7737as875351"})`
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [ATA 必要條件](ata-prerequisites.md)
 - [ATA 容量規劃](ata-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)

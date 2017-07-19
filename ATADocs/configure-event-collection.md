@@ -23,18 +23,14 @@ ms.lasthandoff: 07/03/2017
 
 
 
-<a id="configuring-windows-event-forwarding" class="xliff"></a>
-
-# 設定 Windows 事件轉送
+# <a name="configuring-windows-event-forwarding"></a>設定 Windows 事件轉送
 
 若要增強偵測功能，ATA 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757。 這些事件可透過 ATA 輕量型閘道自動讀取；如果未部署 ATA 輕量型閘道，則可以透過下列兩個方式之一轉送至 ATA 閘道：藉由將 ATA 閘道設定為接聽 SIEM 事件，或藉由[設定 Windows 事件轉送](#configuring-windows-event-forwarding)。
 
 > [!NOTE]
 > 針對 ATA 1.8 版及更新版本，ATA 輕量型閘道不再需要事件收集設定。 ATA 輕量型閘道現在可以在本機讀取事件，而不需要設定事件轉送。
 
-<a id="wef-configuration-for-ata-gateways-with-port-mirroring" class="xliff"></a>
-
-### 具連接埠鏡像之 ATA 閘道的 WEF 設定
+### <a name="wef-configuration-for-ata-gateways-with-port-mirroring"></a>具連接埠鏡像之 ATA 閘道的 WEF 設定
 
 設定從網域控制站鏡像連接埠到 ATA 閘道之後，請依照下面的指示使用來源起始組態來設定 Windows 事件轉送。 這是一個設定 Windows 事件轉送的方法。 
 
@@ -98,8 +94,6 @@ ms.lasthandoff: 07/03/2017
 
 如需詳細資訊，請參閱[設定電腦轉送及收集事件](https://technet.microsoft.com/library/cc748890)
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [安裝 ATA](install-ata-step1.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

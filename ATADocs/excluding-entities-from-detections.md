@@ -23,8 +23,7 @@ ms.lasthandoff: 07/11/2017
 
 
 
-# 從偵測中排除實體
-<a id="excluding-entities-from-detections" class="xliff"></a>
+# <a name="excluding-entities-from-detections"></a>從偵測中排除實體
 本主題說明如何排除實體以免觸發警示，以盡量減少良性的肯定，但同時確保可捕獲真肯定。 為了避免 ATA 針對來自特定使用者，屬於您平常企業營運一部份的活動發出不必要的警示，您可以將特定實體設為靜音或排除，以避免引發警示。
 
 例如，如果您有執行 DNS 偵察的安全性掃描程式，或是在網域控制站遠端執行指令碼的系統管理員，而這些都是屬於組織中正常 IT 作業之一的許可活動。
@@ -58,7 +57,6 @@ ms.lasthandoff: 07/11/2017
 > 只有 ATA 系統管理員才能修改設定頁面。
 
 
-## 另請參閱
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>另請參閱
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [修改 ATA 組態](modifying-ata-center-configuration.md)

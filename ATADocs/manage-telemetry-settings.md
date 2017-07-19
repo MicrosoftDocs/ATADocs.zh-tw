@@ -23,14 +23,10 @@ ms.lasthandoff: 07/03/2017
 
 
 
-<a id="manage-telemetry-settings" class="xliff"></a>
-
-# 管理遙測設定
+# <a name="manage-telemetry-settings"></a>管理遙測設定
 Advanced Threat Analytics (ATA) 會收集有關 ATA 的匿名遙測資料，並透過 HTTPS 連線將資料傳輸至 Microsoft 伺服器。  Microsoft 將使用此資料以協助改善未來的 ATA 版本。
 
-<a id="data-collected" class="xliff"></a>
-
-## 收集的資料
+## <a name="data-collected"></a>收集的資料
 收集的匿名資料包含下列內容︰
 
 -   來自 ATA 中心和 ATA 閘道的效能計數器
@@ -86,17 +82,13 @@ Advanced Threat Analytics (ATA) 會收集有關 ATA 的匿名遙測資料，並�
 - ATA 主控台 URL 位址 - 使用 ATA 主控台時的 URL 位址，即造訪 ATA 主控台中的哪些頁面。
 
 
-<a id="disable-data-collection" class="xliff"></a>
-
-### 停用資料收集
+### <a name="disable-data-collection"></a>停用資料收集
 請執行下列步驟，以停止收集及將遙測資料傳送到 Microsoft：
 
 1.  登入 ATA 主控台，按一下工具列中的三個點，然後選取 [關於]。
 
 2.  取消選取**將使用資訊傳送給我們，以於未來協助改善客戶經驗**的核取方塊。
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 - [使用事件記錄檔來為 ATA 進行疑難排解](troubleshooting-ata-using-logs.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

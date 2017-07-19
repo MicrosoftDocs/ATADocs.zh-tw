@@ -22,14 +22,10 @@ ms.lasthandoff: 07/03/2017
 適用於︰Advanced Threat Analytics 1.8 版
 
 
-<a id="what-is-advanced-threat-analytics" class="xliff"></a>
-
-# 什麼是 Advanced Threat Analytics？
+# <a name="what-is-advanced-threat-analytics"></a>什麼是 Advanced Threat Analytics？
 Advanced Threat Analytics (ATA) 是內部部署平台，可協助保護您的企業免於受到多種進階鎖定目標類型的網路攻擊和內部威脅。
 
-<a id="how-ata-works" class="xliff"></a>
-
-## ATA 的運作方式
+## <a name="how-ata-works"></a>ATA 的運作方式
 
 ATA 會利用專用的網路剖析引擎擷取和剖析多個通訊協定 (例如 Kerberos、DNS、RPC、NTLM 和其他) 的網路流量，進行驗證、授權和資訊的收集。 ATA 會透過下列項目收集此資訊：
 
@@ -46,9 +42,7 @@ ATA 可以從下列項目接收事件和記錄檔︰
 
 如需 ATA 架構的詳細資訊，請參閱 [ATA 架構](ata-architecture.md)。
 
-<a id="what-does-ata-do" class="xliff"></a>
-
-## ATA 有何作用？
+## <a name="what-does-ata-do"></a>ATA 有何作用？
 
 ATA 技術會偵測多個可疑的活動，將焦點放在網路攻擊狙殺鏈的幾個階段，包括︰
 
@@ -100,24 +94,18 @@ ATA 也會偵測**安全性問題與風險**，包括︰
   ![範例 ATA 螢幕信任中斷](media/broken-trust-sa.png)
 
 
-<a id="known-issues" class="xliff"></a>
-
-## 已知問題
+## <a name="known-issues"></a>已知問題
 
 - 如果您在更新至 ATA 1.7 後，未先更新 ATA 閘道就立即更新至 ATA 1.8，您將無法移轉至 ATA 1.8。 您必須先將所有閘道更新至 1.7.1 或 1.7.2 版，才能將 ATA 中心更新至 1.8 版。
 
 - 如果您選取執行完整移轉的選項，視資料庫大小而定，可能需要很長的時間。 當您選取移轉選項時，會顯示估計時間 (請記下此時間，再決定要選取哪個選項)。 
 
 
-<a id="whats-next" class="xliff"></a>
-
-## 新功能
+## <a name="whats-next"></a>新功能
 
 -   如需 ATA 如何融入網路的詳細資訊︰[ATA 架構](ata-architecture.md)
 
 -   若要開始部署 ATA：[安裝 ATA](install-ata-step1.md)
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

@@ -23,17 +23,13 @@ ms.lasthandoff: 06/30/2017
 
 
 
-<a id="install-ata---step-4" class="xliff"></a>
-
-# 安裝 ATA - 步驟 4
+# <a name="install-ata---step-4"></a>安裝 ATA - 步驟 4
 
 >[!div class="step-by-step"]
 [« 步驟 3](install-ata-step3.md)
 [步驟 5 »](install-ata-step5.md)
 
-<a id="step-4-install-the-ata-gateway" class="xliff"></a>
-
-## 步驟 4： 安裝 ATA 閘道
+## <a name="step-4-install-the-ata-gateway"></a>步驟 4： 安裝 ATA 閘道
 
 在專用伺服器上安裝 ATA 閘道之前，請先驗證連接埠鏡像都已正確設定，而且 ATA 閘道可以查看往來網域控制站的流量。 如需詳細資訊，請參閱[驗證連接埠鏡像](validate-port-mirroring.md)。
 
@@ -92,9 +88,7 @@ ms.lasthandoff: 06/30/2017
 [« 步驟 3](install-ata-step3.md)
 [步驟 5 »](install-ata-step5.md)
 
-<a id="see-also" class="xliff"></a>
-
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)

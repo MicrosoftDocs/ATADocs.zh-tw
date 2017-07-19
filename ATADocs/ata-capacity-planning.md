@@ -22,15 +22,13 @@ ms.lasthandoff: 07/11/2017
 
 
 
-# ATA 容量規劃
-<a id="ata-capacity-planning" class="xliff"></a>
+# <a name="ata-capacity-planning"></a>ATA 容量規劃
 本主題將協助您判斷監視您的網路需要多少部 ATA 伺服器。 同時也將協助您了解需要多少 ATA 閘道及/或 ATA 輕量型閘道，以及 ATA 中心和 ATA 閘道的伺服器容量。
 
 > [!NOTE] 
 > 所有效能需求符合本文所述條件的 IaaS 廠商，都能部署 ATA 中心。
 
-##使用調整大小工具
-<a id="using-the-sizing-tool" class="xliff"></a>
+##<a name="using-the-sizing-tool"></a>使用調整大小工具
 若要判斷 ATA 部署容量，建議且最容易的方法是使用 [ATA 調整大小工具](http://aka.ms/atasizingtool)。 執行 ATA 調整大小工具，並從 Excel 檔案結果中，使用下列欄位判斷您需要的 ATA 容量︰
 
 - ATA 中心 CPU 及記憶體：比對 ATA 中心資料表結果檔案中的 [Busy Packets/sec] 欄位與 [ATA 中心資料表](#ata-center-sizing)中的 [每秒封包數] 欄位。
@@ -48,8 +46,7 @@ ms.lasthandoff: 07/11/2017
 
 
 
-### ATA 中心大小
-<a id="ata-center-sizing" class="xliff"></a>
+### <a name="ata-center-sizing"></a>ATA 中心大小
 ATA 中心建議最少需要 30 天的資料來進行使用者行為分析。
  
 
@@ -77,8 +74,7 @@ ATA 中心建議最少需要 30 天的資料來進行使用者行為分析。
 > -   當於實體伺服器上執行工作時，ATA 資料庫需要您**停用** BIOS 中的非統一記憶體存取 (NUMA)。 您的系統可能會將 NUMA 作為節點交錯參考，在此情況下您必須**啟用**節點交錯以停用 NUMA。 如需詳細資訊，請參閱您的 BIOS 文件。 當 ATA 中心在虛擬伺服器上執行時，這並不相關。
 
 
-## 為您的部署選擇正確的閘道類型
-<a id="choosing-the-right-gateway-type-for-your-deployment" class="xliff"></a>
+## <a name="choosing-the-right-gateway-type-for-your-deployment"></a>為您的部署選擇正確的閘道類型
 ATA 部署中能夠支援任何 ATA 閘道類型的組合︰
 
 - 僅限 ATA 閘道
@@ -106,8 +102,7 @@ ATA 部署中能夠支援任何 ATA 閘道類型的組合︰
 - 總部資料中心 (具有每秒超過 10,000 個封包的網域控制站)
 
 
-### ATA 輕量型閘道大小
-<a id="ata-lightweight-gateway-sizing" class="xliff"></a>
+### <a name="ata-lightweight-gateway-sizing"></a>ATA 輕量型閘道大小
 
 ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站產生的網路流量而定。 
 
@@ -131,8 +126,7 @@ ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站�
 > -   至少需要 5 GB 的空間並建議使用 10 GB，包括 ATA 二進位檔、[ATA 記錄檔](troubleshooting-ata-using-logs.md)和[效能記錄檔](troubleshooting-ata-using-perf-counters.md)所需的空間。
 
 
-### ATA 閘道大小
-<a id="ata-gateway-sizing" class="xliff"></a>
+### <a name="ata-gateway-sizing"></a>ATA 閘道大小
 
 決定要部署多少個 ATA 閘道時，請考慮下列問題。
 
@@ -167,8 +161,7 @@ ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站�
 > -   至少需要 5 GB 的空間並建議使用 10 GB，包括 ATA 二進位檔、[ATA 記錄檔](troubleshooting-ata-using-logs.md)和[效能記錄檔](troubleshooting-ata-using-perf-counters.md)所需的空間。
 
 
-## 網域控制站流量估計
-<a id="domain-controller-traffic-estimation" class="xliff"></a>
+## <a name="domain-controller-traffic-estimation"></a>網域控制站流量估計
 您可以使用各種工具來探索網域控制站的每秒平均封包數。 如果您沒有任何工具可追蹤此計數器，您可以使用效能監視器來收集所需的資訊。
 
 若要判斷每秒封包數，請對每個網域控制站執行下列步驟：
@@ -218,8 +211,7 @@ ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站�
 
     ![每秒封包數計數器影像](media/ATA-traffic-estimation-14.png)
 
-## 另請參閱
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>另請參閱
 - [ATA 必要條件](ata-prerequisites.md)
 - [ATA 架構](ata-architecture.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

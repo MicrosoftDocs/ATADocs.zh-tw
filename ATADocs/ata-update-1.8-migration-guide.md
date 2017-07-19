@@ -19,8 +19,7 @@ ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/10/2017
 ---
-# 將 ATA 更新至 1.8 版
-<a id="updating-ata-to-version-18" class="xliff"></a>
+# <a name="updating-ata-to-version-18"></a>將 ATA 更新至 1.8 版
 
 > [!NOTE] 
 > 如果您的環境中未安裝 ATA，請下載包括 1.8 版的 ATA 完整版本，並遵循[安裝 ATA](install-ata-step1.md) 中所述的標準安裝程序。
@@ -42,8 +41,7 @@ ms.lasthandoff: 07/10/2017
     > [!IMPORTANT]
     > 更新所有 ATA 閘道以確保 ATA 正常運作。
 
-### 步驟 1︰更新 ATA 中心
-<a id="step-1-update-the-ata-center" class="xliff"></a>
+### <a name="step-1-update-the-ata-center"></a>步驟 1︰更新 ATA 中心
 
 1.  備份您的資料庫：(選擇性)
 
@@ -84,7 +82,6 @@ ms.lasthandoff: 07/10/2017
 > 若要安裝新的 ATA 閘道，請移至 [閘道] 畫面，然後按一下 [下載閘道安裝程式] 取得 ATA 1.8 閘道安裝套件，並遵循[步驟 4：安裝 ATA 閘道](install-ata-step4.md)中所述的新閘道安裝指示。
 
 
-## 另請參閱
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>另請參閱
 
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

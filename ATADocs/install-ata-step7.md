@@ -23,14 +23,12 @@ ms.lasthandoff: 07/10/2017
 
 
 
-# 安裝 ATA - 步驟 7
-<a id="install-ata---step-7" class="xliff"></a>
+# <a name="install-ata---step-7"></a>安裝 ATA - 步驟 7
 
 >[!div class="step-by-step"]
 [« 步驟 6](install-ata-step6.md)
 
-## 步驟 ７： 設定 IP 位址排除項目和 Honeytoken 使用者
-<a id="step-7-configure-ip-address-exclusions-and-honeytoken-user" class="xliff"></a>
+## <a name="step-7-configure-ip-address-exclusions-and-honeytoken-user"></a>步驟 ７： 設定 IP 位址排除項目和 Honeytoken 使用者
 ATA 可從一些偵測排除特定 IP 位址或使用者。 
 
 例如，**DNS 探查排除項目**可以是一個使用 DNS 做為掃描機制的安全性掃描程式。 排除項目可協助 ATA 忽略這類掃描器。 「傳遞票證」排除項目的一個範例是 NAT 裝置。    
@@ -73,8 +71,7 @@ ATA 將立即開始掃描是否有可疑的活動。 某些活動 (例如某些�
 [« 步驟 6](install-ata-step6.md)
 
 
-## 另請參閱
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>另請參閱
 
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)

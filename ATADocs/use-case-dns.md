@@ -21,13 +21,11 @@ ms.lasthandoff: 07/11/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
-# 調查使用 DNS 探查
-<a id="investigating-reconnaissance-using-dns" class="xliff"></a>
+# <a name="investigating-reconnaissance-using-dns"></a>調查使用 DNS 探查
 
 如果 ATA 在您的網路上偵測到**使用 DNS 探查**，就會向您提出警示，使用本文可協助您調查警示並了解如何修復問題。
 
-## 什麼是使用 DNS 探查？
-<a id="what-is-reconnaissance-using-dns" class="xliff"></a>
+## <a name="what-is-reconnaissance-using-dns"></a>什麼是使用 DNS 探查？
 
 **使用 DNS 探查**警示指出有來自不尋常主機的可疑網域名稱系統 (DNS) 查詢，在您的內部網路上執行探查。
 
@@ -35,13 +33,11 @@ ms.lasthandoff: 07/11/2017
 對敵人而言，您的 DNS 包含對應內部網路的重要資訊，包括所有伺服器清單，通常也包括對應至其 IP 位址的所有用戶端清單。 此外，這項資訊之所以有價值，是因為它會列出在指定網路環境中通常是描述性的主機名稱。 藉由擷取這項資訊，敵人就可以在活動期間將火力集中在相關實體上。 [Nmap](https://nmap.org/)、[Fierce](https://github.com/mschwager/fierce) 及內建工具 (例如 [Nslookup](https://technet.microsoft.com/library/cc725991(v=ws.11).aspx)) 等工具提供使用 DNS 探查的主機探索功能。
 在內部主機中偵測到使用 DNS 查詢探查會造成問題，表示現有主機可能遭到入侵、可能有更廣泛的網路入侵，或可能有測試人員威脅。
 
-## DNS 查詢類型
-<a id="dns-query-types" class="xliff"></a>
+## <a name="dns-query-types"></a>DNS 查詢類型
 
 DNS 通訊協定中有數種查詢類型。 ATA 會偵測 AXFR (傳輸) 要求，並在發現時建立警示。 這種類型的查詢應該只來自 DNS 伺服器。
 
-## 探索攻擊
-<a id="discovering-the-attack" class="xliff"></a>
+## <a name="discovering-the-attack"></a>探索攻擊
 
 當攻擊者嘗試執行使用 DNS 探查時，ATA 會偵測到此攻擊，並標示為中嚴重性。
 
@@ -49,8 +45,7 @@ DNS 通訊協定中有數種查詢類型。 ATA 會偵測 AXFR (傳輸) 要求�
  
 ATA 會顯示來源電腦的名稱，以及所執行之實際 DNS 查詢的其他詳細資料。 例如，可能有多個嘗試來自同一個主機。
 
-## 調查
-<a id="investigating" class="xliff"></a>
+## <a name="investigating"></a>調查
 
 若要調查使用 DNS 探查，您必須先判斷查詢的原因。 這些原因可以識別為下列其中一個類別： 
 -   真肯定：您的網路上有攻擊者或惡意程式碼。 可能是入侵周邊網路的攻擊者，或是測試人員威脅。
@@ -75,8 +70,7 @@ ATA 會顯示來源電腦的名稱，以及所執行之實際 DNS 查詢的其�
     2.  執行主機型分析。 
     3.  如果活動不是來自可疑的使用者，則應該在電腦上執行鑑識調查分析，以判斷其是否已受到惡意程式碼的入侵。
 
-## 調查後
-<a id="post-investigation" class="xliff"></a>
+## <a name="post-investigation"></a>調查後
 
 用來入侵主機的惡意程式碼可能包含具有後門程式功能的特洛伊木馬病毒。 如果在遭入侵的主機中發現成功的橫向移動，修復動作應該延伸到這些主機 (包括變更主機上所使用的任何密碼和認證)，以及包含在橫向移動中的任何主機。 
 
@@ -84,14 +78,12 @@ ATA 會顯示來源電腦的名稱，以及所執行之實際 DNS 查詢的其�
 
 Microsoft 建議您使用可透過 Microsoft 帳戶小組連絡的專業事件回應與復原小組，協助偵測攻擊者是否已在您網路中部署持續性方法。
 
-## 降低
-<a id="mitigation" class="xliff"></a>
+## <a name="mitigation"></a>降低
 
 您可以停用區域傳輸，或將區域傳輸僅限於指定的 IP 位址，來保護內部 DNS 伺服器，以防止發生使用 DNS 探查。 如需限制區域傳輸的其他資訊，請參閱 Windows Server Technet 文章：[Restrict Zone Transfers](https://technet.microsoft.com/library/ee649273(v=ws.10).aspx) (限制區域傳輸)。 您可以[使用 IPsec 保護區域傳輸](https://technet.microsoft.com/library/ee649192(v=ws.10).aspx)，進一步鎖定限制的區域傳輸。 「修改區域傳輸」是檢查清單中的一項工作，應該加以解決才能[保護 DNS 伺服器免受內部和外部攻擊](https://technet.microsoft.com/library/cc770432(v=ws.11).aspx)。
 
 
 
-## 另請參閱
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>另請參閱
 - [處理可疑活動](working-with-suspicious-activities.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

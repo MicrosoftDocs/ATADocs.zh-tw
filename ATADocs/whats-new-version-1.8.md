@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2017
+ms.date: 7/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,14 +13,13 @@ ms.technology:
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: 
 ms.suite: ems
-ms.openlocfilehash: 6850c5e8e264a9610e377a9ab4aadca338971ee1
-ms.sourcegitcommit: be6bdfa24a9b25a3375a4768d513b93900b3a498
+ms.openlocfilehash: 63dd37548dbf4e150f32880543c3bf421bf3fe71
+ms.sourcegitcommit: 3cd268cf353ff8bc3d0b8f9a8c10a34353d1fcf1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 07/16/2017
 ---
-# ATA 1.8 版的新功能
-<a id="whats-new-in-ata-version-18" class="xliff"></a>
+# <a name="whats-new-in-ata-version-18"></a>ATA 1.8 版的新功能
 
 [從下載中心下載](https://www.microsoft.com/download/details.aspx?id=55536) \(英文\) 最新的 ATA 更新版本，或者從[評估中心](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)下載完整版本。
 
@@ -28,8 +27,7 @@ ms.lasthandoff: 07/11/2017
 
 
 
-## 新的和更新的偵測項目
-<a id="new--updated-detections" class="xliff"></a>
+## <a name="new--updated-detections"></a>新的和更新的偵測項目
 
 - 不尋常的通訊協定實作已改進為能夠偵測 WannaCry 惡意程式碼。
 
@@ -48,8 +46,7 @@ ms.lasthandoff: 07/11/2017
     - 不尋常的通訊協定實作
     - 信任中斷
 
-## 改進可疑活動的分級
-<a id="improved-triage-of-suspicious-activities" class="xliff"></a>
+## <a name="improved-triage-of-suspicious-activities"></a>改進可疑活動的分級
 
 -   新增！ ATA 1.8 可讓您在分級程序期間，執行下列可疑活動動作： 
     - **排除實體**使其未來不會引發可疑活動，以防止 ATA 在偵測到良性的真肯定時發出警示 (例如系統管理員執行遠端程式碼或偵測安全性掃描程式)。
@@ -57,32 +54,32 @@ ms.lasthandoff: 07/11/2017
     - 從攻擊時間表中**刪除可疑活動**。
 -   追蹤可疑活動警示的程序現在更有效率。 可疑活動時間表已經過重新設計。 在 ATA 1.8 中，您將能夠在單一畫面上顯示更多可疑活動資訊，其中包含用於分級和調查的更佳資訊。 
 
-## 可協助您調查的新報表
-<a id="new-reports-to-help-you-investigate" class="xliff"></a> 
+## <a name="new-reports-to-help-you-investigate"></a>可協助您調查的新報表 
 -   新增！ 新增了**摘要報表**，可讓您查看 ATA 中所有摘要的資料，包括可疑活動、健康狀態問題等等。 您甚至可以定義週期性自動產生的自訂報表。
 -   新增！ 新增了**敏感性群組報表**，可讓您查看特定期間內在敏感性群組中所做的全部變更。
 
 
-## 基礎結構改進
-<a id="infrastructure-improvements" class="xliff"></a>
+## <a name="infrastructure-improvements"></a>基礎結構改進
 
 -   已提升 ATA 中心效能。 在 ATA 1.8 中，ATA 中心每秒可以處理超過 1 百萬個封包。
 -   ATA 輕量型閘道現在可以在本機讀取事件，而不需要設定事件轉送。
 -   您現在可以為監視警示和可疑活動分別設定電子郵件。
 
-## 安全性改善
-<a id="security-improvements" class="xliff"></a>
+## <a name="security-improvements"></a>安全性改善
 
 -   新增！ **單一登入進行 ATA 管理**。 ATA 支援與 Windows 驗證整合的單一登入 (如果您已登入電腦，ATA 會使用該權杖將您登入 ATA 主控台)。 您也可以使用智慧卡進行登入。 ATA 閘道和 ATA 輕量型閘道的無訊息安裝指令碼現在使用登入的使用者內容，而不需要提供認證。
 -   本機系統權限已從 ATA 閘道處理序中移除，因此您現在可以使用虛擬帳戶 (僅適用於獨立 ATA 閘道)、受管理的服務帳戶和群組受管理的服務帳戶，以執行 ATA 閘道處理序。   
 -   新增了 ATA 中心和閘道的稽核記錄檔，所有動作現在會記錄在 Windows 事件記錄檔中。
 -   新增了對 ATA 中心 KSP 憑證的支援。
 
+## <a name="additional-changes"></a>其他變更
+
+- 新增附註的選項已從 [可疑活動] 移除
+- 緩和可疑活動的建議已從可疑活動時間表移除。
 
 
 
-## 另請參閱
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>另請參閱
 [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 
 [將 ATA 更新至 1.8 版 - 移轉指南](ata-update-1.8-migration-guide.md)

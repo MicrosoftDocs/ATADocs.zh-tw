@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 4d95e5b13d06ea0963b7cac129be4eb1458e5d4c
-ms.sourcegitcommit: 53b56220fa761671442da273364bdb3d21269c9e
+ms.openlocfilehash: 5410f706e84517eb964e991deeb21001a09d0cef
+ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 07/25/2017
 ---
 *適用於︰Advanced Threat Analytics 1.8 版*
 
@@ -146,6 +146,7 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 
 下表提供的網域控制站範例，其運算資源足可供應比目前所需更大的配額，所以全部的流量都受到監視︰
 
+> [!div class="mx-tableFixed"]
 ||||||
 |-|-|-|-|-|
 |Active Directory (Lsass.exe)|ATA 輕量型閘道 (Microsoft.Tri.Gateway.exe)|其他 (其他處理程序) |ATA 輕量型閘道配額|閘道卸除中|
@@ -153,6 +154,7 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 
 如果 Active Directory 需要執行更多的運算，就會減少 ATA 輕量型閘道需要的配額。 下例中，ATA 輕量型閘道需要比配置更多的配額，所以卸除了部分流量 (只監視部分流量)︰
 
+> [!div class="mx-tableFixed"]
 ||||||
 |-|-|-|-|-|
 |Active Directory (Lsass.exe)|ATA 輕量型閘道 (Microsoft.Tri.Gateway.exe)|其他 (其他處理程序) |ATA 輕量型閘道配額|為閘道卸除中|

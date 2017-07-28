@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 06/28/2017
+ms.date: 07/20/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 5b46d53d4e72ebe32b6e1f57960694194b71b31c
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: 7e130da2b5a177658e176a428101c11d02bc2a3f
+ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/25/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -49,6 +49,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
     
 **安裝選項**：
 
+> [!div class="mx-tableFixed"]
 |Name|語法|對無訊息安裝而言是否為必要？|說明|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
@@ -58,6 +59,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 **安裝參數**：
 
+> [!div class="mx-tableFixed"]
 |Name|語法|對無訊息安裝而言是否為必要？|說明|
 |-------------|----------|---------|---------|
 |InstallationPath|InstallationPath="<InstallPath>"|否|設定 ATA 二進位檔案的安裝路徑。 預設路徑︰C:\Program Files\Microsoft Advanced Threat Analytics\Center|
@@ -89,6 +91,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 **安裝選項**：
 
+> [!div class="mx-tableFixed"]
 |Name|語法|對無訊息安裝而言是否為必要？|說明|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
@@ -111,6 +114,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 **安裝選項**：
 
+> [!div class="mx-tableFixed"]
 |Name|語法|對無訊息解除安裝而言是否為必要？|說明|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|是|執行解除安裝程式，但不顯示任何 UI 和提示。|
@@ -119,6 +123,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 **安裝參數**：
 
+> [!div class="mx-tableFixed"]
 |Name|語法|對無訊息解除安裝而言是否為必要？|說明|
 |-------------|----------|---------|---------|
 |DeleteExistingDatabaseData|DeleteExistingDatabaseData|否|刪除現有資料庫中的所有檔案。|
@@ -134,7 +139,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 **語法**：
 
     Microsoft ATA Gateway Setup.exe [/quiet] [/Help] [NetFrameworkCommandLineArguments ="/q"] 
-    [GatewayCertificateThumbprint="<CertThumbprint >"] [ConsoleAccountName="<AccountName>"] 
+    [ConsoleAccountName="<AccountName>"] 
     [ConsoleAccountPassword="<AccountPassword>"]
 
 > [!NOTE]
@@ -143,6 +148,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 **安裝選項**：
 
+> [!div class="mx-tableFixed"]
 |Name|語法|對無訊息安裝而言是否為必要？|說明|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
@@ -151,9 +157,9 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 **安裝參數**：
 
-|Name|語法|對無訊息安裝而言是否為必要？|說明|
+> [!div class="mx-tableFixed"]
+|Name|語法|對無訊息安裝而言是否為必要？|描述|
 |-------------|----------|---------|---------|
-|GatewayCertificateThumbprint|GatewayCertificateThumbprint="<CertThumbprint >"|否|設定 ATA 中心服務的憑證指紋。 此憑證可用來保護 ATA 中心和 ATA 閘道之間的通訊。 如果未設定，安裝將會產生自我簽署憑證。|
 |ConsoleAccountName|ConsoleAccountName="<AccountName>"|是|為用來向 ATA 中心註冊 ATA 閘道的使用者帳戶 (user@domain.com) 設定名稱。|
 |ConsoleAccountPassword|ConsoleAccountPassword="<AccountPassword>"|是|為用來向 ATA 中心註冊 ATA 閘道的使用者帳戶 (user@domain.com) 設定密碼。|
 
@@ -174,6 +180,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 **安裝選項**：
 
+> [!div class="mx-tableFixed"]
 |Name|語法|對無訊息安裝而言是否為必要？|說明|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
@@ -193,6 +200,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
     
 **安裝選項**：
 
+> [!div class="mx-tableFixed"]
 |Name|語法|對無訊息解除安裝而言是否為必要？|說明|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|是|執行解除安裝程式，但不顯示任何 UI 和提示。|

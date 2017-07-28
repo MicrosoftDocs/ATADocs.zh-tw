@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 377a3c81-5c1d-486f-8942-85249aacf560
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 112ee57f79b20b4e42b15c6fdc4566bbdcebe29f
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: 174918812562b9bfe892fcde90d92e208b26ffc3
+ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/25/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -34,6 +34,7 @@ ATA 會使用 MongoDB 作為其資料庫。
 
 2.  執行：`mongo.exe ATA`。 請確定輸入全部大寫字母的 ATA。
 
+> [!div class="mx-tableFixed"]
 |作法|語法|附註|
 |-------------|----------|---------|
 |檢查資料庫中的集合。|`show collections`|可讓端對端測試有效查看正在寫入到資料庫的流量，及 ATA 正在接收的事件 4776。|

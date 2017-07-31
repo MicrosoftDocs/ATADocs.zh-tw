@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/16/2017
+ms.date: 7/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: 
 ms.suite: ems
-ms.openlocfilehash: 63dd37548dbf4e150f32880543c3bf421bf3fe71
-ms.sourcegitcommit: 3cd268cf353ff8bc3d0b8f9a8c10a34353d1fcf1
+ms.openlocfilehash: b4754c749cad25a6aa4da94563df29f9f99e2a20
+ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 07/25/2017
 ---
 # <a name="whats-new-in-ata-version-18"></a>ATA 1.8 版的新功能
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 07/16/2017
     - **排除實體**使其未來不會引發可疑活動，以防止 ATA 在偵測到良性的真肯定時發出警示 (例如系統管理員執行遠端程式碼或偵測安全性掃描程式)。
     - **隱藏週期性**可疑活動使其不會發出警示。
     - 從攻擊時間表中**刪除可疑活動**。
--   追蹤可疑活動警示的程序現在更有效率。 可疑活動時間表已經過重新設計。 在 ATA 1.8 中，您將能夠在單一畫面上顯示更多可疑活動資訊，其中包含用於分級和調查的更佳資訊。 
+-   追蹤可疑活動警示的程序現在更有效率。 可疑活動時間表已經過重新設計。 在 ATA 1.8 中，您只要在單一畫面上就能看到更多可疑的活動，並有更詳細的資訊可用於分級和調查用途。 
 
 ## <a name="new-reports-to-help-you-investigate"></a>可協助您調查的新報表 
 -   新增！ 新增了**摘要報表**，可讓您查看 ATA 中所有摘要的資料，包括可疑活動、健康狀態問題等等。 您甚至可以定義週期性自動產生的自訂報表。
@@ -77,6 +77,51 @@ ms.lasthandoff: 07/16/2017
 - 新增附註的選項已從 [可疑活動] 移除
 - 緩和可疑活動的建議已從可疑活動時間表移除。
 
+## <a name="known-issues"></a>已知問題
+
+### <a name="ata-gateway-on-windows-server-core"></a>Windows Server Core 上的 ATA 閘道
+
+**徵兆**：在具有 .Net Framework 4.7 的 Windows Server 2012R2 Core 上將 ATA 閘道版本升級至 1.8 可能失敗，並出現錯誤：Microsoft Advanced Threat Analytics 閘道已停止運作。 
+
+![閘道核心錯誤](./media/gateway-core-error.png)
+
+在 Windows Server 2016 Core 上可能不會出現錯誤，但當您嘗試安裝時，處理序將會失敗，而且會在伺服器上的應用程式事件記錄檔中記錄事件 1000 和 1001 (處理序損毀)。
+
+**描述**：.NET Framework 4.7 發生問題，導致使用 WPF 技術 (例如 ATA) 的應用程式無法載入。 如需詳細資訊，[請參閱 KB 4034015](https://support.microsoft.com/help/4034015/wpf-window-can-t-be-loaded-after-you-install-the-net-framework-4-7-on)。 
+
+**因應措施**：將 .Net 4.7 解除安裝。[請參閱 KB 3186497](https://support.microsoft.com/help/3186497/the-net-framework-4-7-offline-installer-for-windows) 以將 .NET 版本還原為 .NET 4.6.2，然後將 ATA 閘道版本更新至 1.8。 ATA 升級完成之後，您就可以重新安裝 .NET 4.7。  未來版本將會有更新以修正此問題。
+
+### <a name="lightweight-gateway-event-log-permissions"></a>輕量型閘道事件記錄檔權限
+
+**徵兆**：升級至 ATA 1.8 後，先前已授與權限以存取安全性事件記錄檔的應用程式或服務可能會喪失權限。 
+
+**描述**：為了讓您更輕鬆地部署 ATA，ATA 1.8 不需要 Windows 事件轉送設定就可直接存取安全性事件記錄檔。 同時，ATA 會作為低權限的本機服務執行，以維護更嚴格的安全性。 為了提供 ATA 讀取事件的存取權，ATA 服務會對自己授與安全性事件記錄檔的權限。 當發生這種情況時，可能會停用先前為其他服務設定的權限。
+
+**因應措施**：執行下列 Windows PowerShell 指令碼。 這會從 ATA 移除登錄中未正確新增的權限，並透過其他 API 加以新增。 這可能會還原其他應用程式的權限。 如果未還原，則必須將其手動還原。 未來版本將會有更新以修正此問題。 
+
+       $ATADaclEntry = "(A;;0x1;;;S-1-5-80-1717699148-1527177629-2874996750-2971184233-2178472682)"
+        try {
+        $SecurityDescriptor = Get-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\Eventlog\Security -Name CustomSD
+        $ATASddl = "O:BAG:SYD:" + $ATADaclEntry 
+        if($SecurityDescriptor.CustomSD -eq $ATASddl) {
+        Remove-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\Eventlog\Security -Name CustomSD
+        }
+    }
+    catch
+    {
+    # registry key does not exist
+    }
+
+    $EventLogConfiguration = New-Object -TypeName System.Diagnostics.Eventing.Reader.EventLogConfiguration("Security")
+    $EventLogConfiguration.SecurityDescriptor = $EventLogConfiguration.SecurityDescriptor + $ATADaclEntry
+
+### <a name="proxy-interference"></a>Proxy 干擾
+
+**徵兆**：升級至 ATA 1.8 後，ATA 閘道服務可能會無法啟動。 在 ATA 錯誤記錄檔中，您可能會看到下列例外狀況：System.Net.Http.HttpRequestException: 傳送要求時發生錯誤。---> System.Net.WebException: 遠端伺服器傳回錯誤: (407) 要求 Proxy 驗證。
+
+**描述**：從 ATA 1.8 開始，ATA 閘道使用 HTTP 通訊協定與 ATA 中心進行通訊。 如果安裝了 ATA 閘道的電腦使用 Proxy 伺服器來連線到 ATA 中心，可能會中斷此通訊。 
+
+**因應措施**：在 ATA 閘道服務帳戶上停用 Proxy 伺服器。 未來版本將會有更新以修正此問題。
 
 
 ## <a name="see-also"></a>另請參閱

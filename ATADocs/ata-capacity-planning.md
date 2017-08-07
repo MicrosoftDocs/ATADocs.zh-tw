@@ -5,18 +5,18 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/9/2017
+ms.date: 7/25/2017
 ms.topic: get-started-article
 ms.service: advanced-threat-analytics
 ms.prod: 
 ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: af88c02c6e2e5f679aca75b17a288c72ab300069
-ms.sourcegitcommit: be6bdfa24a9b25a3375a4768d513b93900b3a498
+ms.openlocfilehash: 54dd8bab3381fc221c75c53191ef052fc83b61ec
+ms.sourcegitcommit: e7f83eb636db00333fe3965324a10a2ef5e2beba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 07/30/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -65,7 +65,7 @@ ATA 中心建議最少需要 30 天的資料來進行使用者行為分析。
 > [!NOTE]
 > -   針對來自所有受監視的網域控制站，ATA 中心每秒彙總最多可以處理 1 百萬個封包。 在某些環境中，部分 ATA 中心可以處理高於 400,000 個畫面格的整體流量。 請連絡 askcesec@microsoft.com 以取得這類環境的協助。
 > -   此處決定的儲存體數量為淨值。 您應該隨時考量到未來的成長，並且確定資料庫所在的磁碟至少有 20% 的可用空間。
-> -   如果您的可用空間達到最小值 (20% 或 100 GB)，則會刪除最舊的資料集合。 會持續刪除到只剩下 5% 或 50 GB 的可用空間，屆時資料收集會停止運作。
+> -   如果您的可用空間達到最小值 (20% 或 200 GB)，則會刪除最舊的資料集合。 會持續刪除到只剩下 5% 或 50 GB 的可用空間，屆時資料收集會停止運作。
 > - 所有效能需求符合本文所述條件的 IaaS 廠商，都能部署 ATA 中心。
 > -   讀取和寫入活動的儲存體延遲應少於 10 毫秒。
 > -   讀取和寫入活動之間的比率在每秒 100,000 個封包以下時大約為 1:3，在每秒 100,000 個封包以上時大約為 1:6。

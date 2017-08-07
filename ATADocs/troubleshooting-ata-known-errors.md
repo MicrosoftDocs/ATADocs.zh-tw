@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/23/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 28b3bca7e84213b0f41bd8e2de61c006592819d5
-ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
+ms.openlocfilehash: 734455b06514cadb232916b8db76e47b8bf3e67a
+ms.sourcegitcommit: e7f83eb636db00333fe3965324a10a2ef5e2beba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 07/30/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -51,6 +51,7 @@ ms.lasthandoff: 07/25/2017
 |在 VMware 上使用輕量型閘道時的「已丟棄連接埠鏡像流量」警示|若在 VMware 虛擬機器上使用 DC，可能會收到有關**已丟棄連接埠鏡像流量**的警示。 這可能是 VMware 中的設定不相符所致。 |若要避免這些警示，可檢查是否已將下列設定設為 [0] 或 [已停用]：TsoEnable、LargeSendOffload、IPv4、TSO Offload。 此外也請考慮停用 [IPv4 Giant TSO Offload]。 如需詳細資訊，請參閱 VMware 文件。|
 |System.Net.WebException: 遠端伺服器傳回錯誤: (407) 要求 Proxy 驗證|Proxy 伺服器中斷 ATA 閘道與 ATA 中心的通訊。|停用 ATA 閘道機器上的 Proxy。 <br></br>請注意，Proxy 設定可能依各帳戶為依據。|
 |System.IO.DirectoryNotFoundException: 系統找不到指定的路徑。 (來自 HRESULT 的例外狀況: 0x80070003)|一或多個操作 ATA 所需的服務未啟動。|啟動下列服務： <br></br>效能記錄檔及警示 (PLA)、工作排程器 (排程)。|
+|System.Net.WebException: 遠端伺服器傳回錯誤: (403) 禁止|ATA 閘道或輕量型閘道可能會因為 ATA 中心未受信任，而遭禁止建立 HTTP 連線。|將 ATA 中心的 NetBIOS 名稱和 FQDN 新增到受信任的網站清單，並清除 Interne Explorer 上的快取 (或者，如果不是設定 NetBIOS/FQDN，則是以設定中指定的 ATA 中心名稱)。|
 
 ## <a name="deployment-errors"></a>部署錯誤
 > [!div class="mx-tableFixed"]

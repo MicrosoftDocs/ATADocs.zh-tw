@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2017
+ms.date: 8/2/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 14b0d68ce797eeaa99c9e067f7f8caacee1a7b74
-ms.sourcegitcommit: 3cd268cf353ff8bc3d0b8f9a8c10a34353d1fcf1
+ms.openlocfilehash: 0a9d92e5851f1cf64c5e4b4e1ee57d7ee4562d96
+ms.sourcegitcommit: 7bc04eb4d004608764b3ded1febf32bc4ed020be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 08/02/2017
 ---
 *適用於︰Advanced Threat Analytics 1.8 版*
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 07/16/2017
 > 如需如何規劃資源和容量的資訊，請參閱 [ ATA capacity planning](ata-capacity-planning.md) (ATA 容量規劃)。
 
 
-ATA 是由 ATA 中心、ATA 閘道及 (或) ATA 輕量型閘道組成。 如需 ATA 元件的詳細資訊，請參閱 [ATA architecture](ata-architecture.md) (ATA 架構)。
+ATA 是由 ATA 中心、ATA 閘道及 (或) ATA 輕量型閘道所組成。 如需 ATA 元件的詳細資訊，請參閱 [ATA architecture](ata-architecture.md) (ATA 架構)。
 
 ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003 和更新版本的樹系功能等級 (FFL)。
 
@@ -51,12 +51,12 @@ ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003
 本節列出在開始 ATA 安裝之前您應該收集的資訊以及您應該具備的帳戶和網路實體。
 
 
--   在即將監視的網域中，具有所有物件讀取存取權的使用者帳戶和密碼。
+-   在監視的網域中，具有所有物件讀取存取權的使用者帳戶和密碼。
 
     > [!NOTE]
     > 如果您已經在網域中設定不同組織單位 (OU) 的自訂 ACL，請確定選取的使用者具有讀取這些 OU 的權限。
 
--   請勿在 ATA 閘道或輕量型閘道上安裝 Microsoft 郵件分析器。 郵件分析器驅動程式與 ATA 閘道和輕量型閘道驅動程式衝突。 如果您在 ATA 閘道上執行 Wireshark，在停止 Wireshark 擷取後，需要重新啟動 Microsoft Advanced Threat Analytics 閘道服務。 如果不這麼做，閘道就不會再擷取任何流量。 請注意，在 ATA 輕量型閘道上執行 Wireshark 不會干擾 ATA 輕量型閘道。
+-   請勿在 ATA 閘道或輕量型閘道上安裝 Microsoft 郵件分析器。 郵件分析器驅動程式與 ATA 閘道和輕量型閘道驅動程式衝突。 如果您在 ATA 閘道上執行 Wireshark，在停止 Wireshark 擷取後，需要重新啟動 Microsoft Advanced Threat Analytics 閘道服務。 否則，閘道會停止擷取流量。 請注意，在 ATA 輕量型閘道上執行 Wireshark 不會干擾 ATA 輕量型閘道。
 
 -    建議︰使用者應該擁有「刪除的物件」容器的唯讀權限。 這可讓 ATA 偵測網域中的大量刪除物件。 如需設定刪除的物件容器的唯讀權限相關資訊，請參閱[檢視或設定目錄物件的權限](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx)主題中的**變更刪除的物件容器的權限**。
 
@@ -94,7 +94,7 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 您應該具備下列項目：
 -   至少一張網路介面卡 (如果在 VLAN 環境中使用實體伺服器，建議使用兩張網路介面卡)
 
--   ATA 中心和 ATA 閘道之間的通訊 IP 位址，是在連接埠 443 上使用 SSL 加密。 
+-   ATA 中心和 ATA 閘道之間的通訊 IP 位址，是在連接埠 443 上使用 SSL 加密。 (ATA 服務會繫結 ATA 中心在連接埠 443 上的所有 IP 位址)。
 
 ### <a name="ports"></a>連接埠
 下表列出 ATA 中心正常運作最少要開啟的連接埠。
@@ -114,19 +114,23 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 |**Netlogon** (如已加入網域即為選擇性)|TCP 和 UDP|445|網域控制站|輸出|
 |**Windows 時間** (如已加入網域即為選擇性)|UDP|123|網域控制站|輸出|
 
+> [!NOTE]
+> 需要 LDAP 以測試 ATA 閘道和網域控制站之間的認證。 測試是從 ATA 中心對網域控制站進行，以測試這些認證的有效性。之後，ATA 閘道便能在一般通訊中使用 LDAP。
+
+
 ### <a name="certificates"></a>憑證
 請確定 ATA 中心可以存取您的 CRL 發佈點。 如果 ATA 閘道沒有網際網路存取權，請遵循[手動匯入 CRL 的程序](https://technet.microsoft.com/library/aa996972%28v=exchg.65%29.aspx)，小心安裝整個鏈結的所有 CRL 發佈點。
 
 為了簡化 ATA 的安裝，您可以在安裝期間安裝自我簽署憑證。 部署後，可將自我簽署的憑證取代為由內部憑證授權單位發出、ATA 閘道將會使用的憑證。<br>
-> [!NOTE]
-> 憑證的提供者類型可以是密碼編譯服務提供者 (CSP) 或金鑰儲存提供者 (KSP)。
 
-
-> 不支援使用自動更新憑證。
+> [!WARNING]
+> - 不支援更新現有憑證的程序。 更新憑證的唯一方法是建立新憑證，然後設定 ATA 使用新憑證。
 
 
 > [!NOTE]
-> 如果您要從其他電腦存取 ATA 主控台，請確定這些電腦信任 ATA 中心使用的憑證，否則在進入登入頁面之前就會出現警告頁面，指出網站的安全性憑證有問題。
+> - 憑證的提供者類型可以是密碼編譯服務提供者 (CSP) 或金鑰儲存提供者 (KSP)。
+> - 請勿更新 ATA 中心憑證。 在憑證到期之前，更新憑證的正確方式是建立新憑證並選擇該新憑證。 
+> - 如果您要從其他電腦存取 ATA 主控台，請確定這些電腦信任 ATA 中心使用的憑證，否則在進入登入頁面之前就會出現警告頁面，指出網站的安全性憑證有問題。
 
 ## <a name="ata-gateway-requirements"></a>ATA 閘道需求
 本節列出 ATA 閘道的需求。

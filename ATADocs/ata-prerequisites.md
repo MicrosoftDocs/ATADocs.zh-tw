@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/2/2017
+ms.date: 8/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0a9d92e5851f1cf64c5e4b4e1ee57d7ee4562d96
-ms.sourcegitcommit: 7bc04eb4d004608764b3ded1febf32bc4ed020be
+ms.openlocfilehash: bd3ddca6f233499441bf82a0cdb5a79078df0bf5
+ms.sourcegitcommit: 28f5d0f39149955c0d1059e13db289d13be9b642
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 08/07/2017
 ---
 *適用於︰Advanced Threat Analytics 1.8 版*
 
@@ -115,8 +115,7 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 |**Windows 時間** (如已加入網域即為選擇性)|UDP|123|網域控制站|輸出|
 
 > [!NOTE]
-> 需要 LDAP 以測試 ATA 閘道和網域控制站之間的認證。 測試是從 ATA 中心對網域控制站進行，以測試這些認證的有效性。之後，ATA 閘道便能在一般通訊中使用 LDAP。
-
+> 需要 LDAP 以測試要在 ATA 閘道及網域控制站之間使用的認證。 測試會從 ATA 中心對網域控制站進行，以測試這些認證的有效性。之後，ATA 閘道便能在一般解析程序中使用 LDAP。
 
 ### <a name="certificates"></a>憑證
 請確定 ATA 中心可以存取您的 CRL 發佈點。 如果 ATA 閘道沒有網際網路存取權，請遵循[手動匯入 CRL 的程序](https://technet.microsoft.com/library/aa996972%28v=exchg.65%29.aspx)，小心安裝整個鏈結的所有 CRL 發佈點。

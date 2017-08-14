@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/23/2017
+ms.date: 8/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: 
 ms.suite: ems
-ms.openlocfilehash: b4754c749cad25a6aa4da94563df29f9f99e2a20
-ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
+ms.openlocfilehash: a067dbaaac9ed115baa7ee13bf5dd1099f038eaf
+ms.sourcegitcommit: 5fd505fac6b69b6c732bb2da121eff23c5eb303e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="whats-new-in-ata-version-18"></a>ATA 1.8 版的新功能
 
@@ -78,6 +78,9 @@ ms.lasthandoff: 07/25/2017
 - 緩和可疑活動的建議已從可疑活動時間表移除。
 
 ## <a name="known-issues"></a>已知問題
+
+> [!WARNING]
+> 若要避免這些已知問題，請使用 1.8 更新 1 來更新或部署。
 
 ### <a name="ata-gateway-on-windows-server-core"></a>Windows Server Core 上的 ATA 閘道
 

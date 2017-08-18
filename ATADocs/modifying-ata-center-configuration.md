@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/2/2017
+ms.date: 8/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 93b27f15-f7e5-49bb-870a-d81d09dfe9fc
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e9fa0b9162aabdaa9a42c532cf69af37decf3e05
-ms.sourcegitcommit: 7bc04eb4d004608764b3ded1febf32bc4ed020be
+ms.openlocfilehash: bfd86dadbc773b349f28a6327ec2e177da74be8d
+ms.sourcegitcommit: 8b622fa5457cf1a540504899c8c98e860b946e01
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 08/14/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -68,7 +68,7 @@ ms.lasthandoff: 08/02/2017
 
 按照此程序來取代憑證：
 
-1. 在目前的憑證到期之前，建立新的憑證並確認將新憑證安裝在 ATA 中心伺服器上。 
+1. 在目前的憑證到期之前，建立新的憑證並確認將新憑證安裝在 ATA 中心伺服器上。 <br></br>建議您從內部憑證授權單位選擇憑證，但也可以建立新的自我簽署憑證。 如需詳細資訊，請參閱 [New-selfsignedcertificate](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate)。
 
 2. 在 ATA 設定中，於 [中心] 下選取新建立的憑證。 此時 ATA 中心服務仍然繫結至原始憑證。 
 

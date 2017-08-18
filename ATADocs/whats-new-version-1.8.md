@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/8/2017
+ms.date: 8/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: 
 ms.suite: ems
-ms.openlocfilehash: a067dbaaac9ed115baa7ee13bf5dd1099f038eaf
-ms.sourcegitcommit: 5fd505fac6b69b6c732bb2da121eff23c5eb303e
+ms.openlocfilehash: 1ec9308e046a228ac1276eb1aace58eec47e95d0
+ms.sourcegitcommit: 8b622fa5457cf1a540504899c8c98e860b946e01
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/14/2017
 ---
 # <a name="whats-new-in-ata-version-18"></a>ATA 1.8 版的新功能
 
@@ -76,6 +76,7 @@ ms.lasthandoff: 08/09/2017
 
 - 新增附註的選項已從 [可疑活動] 移除
 - 緩和可疑活動的建議已從可疑活動時間表移除。
+- 開始使用 ATA 1.8 版。ATA 閘道與輕量型閘道會管理自己的憑證，且不需要系統管理員互動來管理。
 
 ## <a name="known-issues"></a>已知問題
 

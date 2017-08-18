@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: bd3ddca6f233499441bf82a0cdb5a79078df0bf5
-ms.sourcegitcommit: 28f5d0f39149955c0d1059e13db289d13be9b642
+ms.openlocfilehash: dfcdffb3458124cade644cc06a4c359458eb26fe
+ms.sourcegitcommit: 8b622fa5457cf1a540504899c8c98e860b946e01
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/14/2017
 ---
 *適用於︰Advanced Threat Analytics 1.8 版*
 
@@ -118,9 +118,12 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 > 需要 LDAP 以測試要在 ATA 閘道及網域控制站之間使用的認證。 測試會從 ATA 中心對網域控制站進行，以測試這些認證的有效性。之後，ATA 閘道便能在一般解析程序中使用 LDAP。
 
 ### <a name="certificates"></a>憑證
-請確定 ATA 中心可以存取您的 CRL 發佈點。 如果 ATA 閘道沒有網際網路存取權，請遵循[手動匯入 CRL 的程序](https://technet.microsoft.com/library/aa996972%28v=exchg.65%29.aspx)，小心安裝整個鏈結的所有 CRL 發佈點。
 
-為了簡化 ATA 的安裝，您可以在安裝期間安裝自我簽署憑證。 部署後，可將自我簽署的憑證取代為由內部憑證授權單位發出、ATA 閘道將會使用的憑證。<br>
+為了簡化 ATA 的安裝，您可以在安裝期間安裝自我簽署憑證。 部署後，可將自我簽署的憑證取代為由內部憑證授權單位發出、ATA 中心將會使用的憑證。
+
+
+請確定 ATA 中心及 ATA 閘道可以存取您的 CRL 發佈點。 如果沒有網際網路存取權，請遵循[手動匯入 CRL 的程序](https://technet.microsoft.com/library/aa996972%28v=exchg.65%29.aspx)，小心安裝整個鏈結的所有 CRL 發佈點。
+
 
 > [!WARNING]
 > - 不支援更新現有憑證的程序。 更新憑證的唯一方法是建立新憑證，然後設定 ATA 使用新憑證。
@@ -128,8 +131,8 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 
 > [!NOTE]
 > - 憑證的提供者類型可以是密碼編譯服務提供者 (CSP) 或金鑰儲存提供者 (KSP)。
-> - 請勿更新 ATA 中心憑證。 在憑證到期之前，更新憑證的正確方式是建立新憑證並選擇該新憑證。 
 > - 如果您要從其他電腦存取 ATA 主控台，請確定這些電腦信任 ATA 中心使用的憑證，否則在進入登入頁面之前就會出現警告頁面，指出網站的安全性憑證有問題。
+> - 開始使用 ATA 1.8 版。ATA 閘道與輕量型閘道會管理自己的憑證，且不需要系統管理員互動來管理。
 
 ## <a name="ata-gateway-requirements"></a>ATA 閘道需求
 本節列出 ATA 閘道的需求。

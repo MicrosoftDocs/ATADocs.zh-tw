@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2017
+ms.date: 8/20/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: dfcdffb3458124cade644cc06a4c359458eb26fe
-ms.sourcegitcommit: 8b622fa5457cf1a540504899c8c98e860b946e01
+ms.openlocfilehash: 313ee78070ab991d3d1b30441be8a4cee990eace
+ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 08/20/2017
 ---
 *適用於︰Advanced Threat Analytics 1.8 版*
 
@@ -276,8 +276,12 @@ ATA 主控台的存取是透過瀏覽器，支援下列瀏覽器︰
 
 -   螢幕解析度最低需求為 1700 像素
 
-## <a name="see-also"></a>另請參閱
+## <a name="related-videos"></a>相關影片
+- [選擇正確的 ATA 閘道類型](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
+
+## <a name="see-also"></a>另請參閱
+- [ATA 調整大小工具](http://aka.ms/atasizingtool)
 - [ATA 架構](ata-architecture.md)
 - [安裝 ATA](install-ata-step1.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

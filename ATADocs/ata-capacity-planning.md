@@ -12,11 +12,11 @@ ms.prod:
 ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 54dd8bab3381fc221c75c53191ef052fc83b61ec
-ms.sourcegitcommit: e7f83eb636db00333fe3965324a10a2ef5e2beba
+ms.openlocfilehash: cdc3767fd9fdc00dbb92457c980f6f7e8b99907b
+ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2017
+ms.lasthandoff: 08/20/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -211,7 +211,13 @@ ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站�
 
     ![每秒封包數計數器影像](media/ATA-traffic-estimation-14.png)
 
+
+## <a name="related-videos"></a>相關影片
+- [選擇正確的 ATA 閘道類型](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
+
+
 ## <a name="see-also"></a>另請參閱
+- [ATA 調整大小工具](http://aka.ms/atasizingtool)
 - [ATA 必要條件](ata-prerequisites.md)
 - [ATA 架構](ata-architecture.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

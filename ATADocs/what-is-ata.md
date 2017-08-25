@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 06/26/2017
+ms.date: 08/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c338441b37c41b810023ecf5c5ae348651f5ad64
-ms.sourcegitcommit: fa50f37b134d7579d7c310852dff60e5f1996eaa
+ms.openlocfilehash: db2133e05fb7d2390f4b7e05dd219be71bf4e157
+ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/20/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -107,5 +107,10 @@ ATA 也會偵測**安全性問題與風險**，包括︰
 
 -   若要開始部署 ATA：[安裝 ATA](install-ata-step1.md)
 
+## <a name="related-videos"></a>相關影片
+- [加入安全性社群](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)
+
+
 ## <a name="see-also"></a>另請參閱
+[ATA 可疑活動腳本](http://aka.ms/ataplaybook)
 [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 07/5/2017
+ms.date: 08/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 5410f706e84517eb964e991deeb21001a09d0cef
-ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
+ms.openlocfilehash: 250c68f0efc7064f7ec4a4578342c935d04e815b
+ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 08/20/2017
 ---
 *適用於︰Advanced Threat Analytics 1.8 版*
 
@@ -180,8 +180,13 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 
 -   設定 Windows 事件轉送<br>讓 ATA 取得事件的另一個方法，是將網域控制站設定為將 Windows 事件 4776、4732、4733、4728、4729、4756 和 4757 轉送至 ATA 閘道。 如果您沒有 SIEM，或者 ATA 目前不支援您的 SIEM，這個方法特別有用。 如需 ATA 中 Windows 事件轉送的詳細資訊，請參閱[設定 Windows 事件轉送](configure-event-collection.md#configuring-windows-event-forwarding)。 請注意，這只適用於實體的 ATA 閘道，ATA 輕量型閘道不適用 。
 
+## <a name="related-videos"></a>相關影片
+- [選擇正確的 ATA 閘道類型](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
+
+
 ## <a name="see-also"></a>另請參閱
 - [ATA 必要條件](ata-prerequisites.md)
+- [ATA 調整大小工具](http://aka.ms/atasizingtool)
 - [ATA 容量規劃](ata-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-collection.md#configuring-windows-event-forwarding)

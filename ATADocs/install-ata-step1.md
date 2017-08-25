@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 97fa1522ca43cf92416ac845b8886f2905e9981b
-ms.sourcegitcommit: fa50f37b134d7579d7c310852dff60e5f1996eaa
+ms.openlocfilehash: 3dc73583295136567ac221006430a3e8bc1353d9
+ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/20/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -97,8 +97,13 @@ ms.lasthandoff: 07/03/2017
 [«前置安裝](configure-port-mirroring.md)
 [步驟 2»](install-ata-step2.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="related-videos"></a>相關影片
+- [選擇正確的 ATA 閘道類型](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
+
+## <a name="see-also"></a>另請參閱
+- [ATA POC 部署指南](http://aka.ms/atapoc)
+- [ATA 調整大小工具](http://aka.ms/atasizingtool)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)
 - [ATA 必要條件](ata-prerequisites.md)

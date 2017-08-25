@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 06/12/2017
+ms.date: 08/20/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 7fb024e6-297a-4ad9-b962-481bb75a0ba3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 68c169ffd0f42bd8b030dc12f4711cbde2718a99
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: 22541007bd6ebf0e37818e205bac57191ca6f28d
+ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/20/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -55,8 +55,13 @@ ZIP 檔案包含下列項目：
 [« 步驟 2](install-ata-step2.md)
 [步驟 4 »](install-ata-step4.md)
 
-## <a name="see-also"></a>另請參閱
 
+## <a name="related-videos"></a>相關影片
+- [選擇正確的 ATA 閘道類型](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
+
+## <a name="see-also"></a>另請參閱
+- [ATA POC 部署指南](http://aka.ms/atapoc)
+- [ATA 調整大小工具](http://aka.ms/atasizingtool)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)
 - [ATA 必要條件](ata-prerequisites.md)

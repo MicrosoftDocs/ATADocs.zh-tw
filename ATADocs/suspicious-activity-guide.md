@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 1fe5fd6f-1b79-4a25-8051-2f94ff6c71c1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8c93f4485998bbb1b2b440f01fed8d96ad4e2842
-ms.sourcegitcommit: 7bc04eb4d004608764b3ded1febf32bc4ed020be
+ms.openlocfilehash: f9f9fee8ad8d75d3510c86890201dd719e074b8c
+ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 08/20/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -204,7 +204,13 @@ ATA 提供下列各進階攻擊階段的偵測︰探察、認證入侵、橫向�
 |------|----|------|----------|
 | 當刪除的帳戶超過所有帳戶的 5% 時，ATA 就會引發此警示。 這需要已刪除項目容器的讀取權限。 | 了解為何突然刪除您所有帳戶的 5%。 | 移除可刪除 Active Directory 中帳戶之使用者的權限。 如需詳細資訊，請參閱 [View or Set Permissions on a Directory Object](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx) (檢視或設定目錄物件的權限)。 | 低 |
 
+## <a name="related-videos"></a>相關影片
+- [加入安全性社群](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)
+
+
 ## <a name="see-also"></a>另請參閱
+- [ATA 可疑活動腳本](http://aka.ms/ataplaybook)
+- [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [處理可疑活動](working-with-suspicious-activities.md)
 - [調查偽造的 PAC 攻擊](use-case-forged-pac.md)
 - [針對 ATA 已知錯誤進行疑難排解](troubleshooting-ata-known-errors.md)

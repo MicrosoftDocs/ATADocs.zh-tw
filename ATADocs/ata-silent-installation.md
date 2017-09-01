@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 07/20/2017
+ms.date: 08/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7e130da2b5a177658e176a428101c11d02bc2a3f
-ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
+ms.openlocfilehash: c38db312ea877b63580d745153aa58ea34a160a6
+ms.sourcegitcommit: 9ce330726e5de8c05eae6a20d3e6c1d8bef3cd0e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 08/29/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
 
-
 # <a name="ata-silent-installation"></a>ATA 無訊息安裝
 本文提供以無訊息方式安裝 ATA 的指示。
+
 ## <a name="prerequisites"></a>必要條件
 
 ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。 
@@ -134,6 +134,11 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
     "Microsoft ATA Center Setup.exe" /quiet /uninstall --DeleteExistingDatabaseData
 
 ## <a name="ata-gateway-silent-installation"></a>ATA 閘道無訊息安裝
+
+> [!NOTE]
+> 使用 System Center Configuration Manager 或其他軟體部署系統，以無訊息方式部署 ATA 輕量型閘道時，建議建立兩個部署套件：</br>- Net Framework 4.6.1，包括重新啟動網域控制站</br>- ATA 閘道。 </br>讓 ATA 閘道套件相依於 .Net Framework 套件的部署。 </br>取得 [.Net Framework 4.6.1 離線部署套件](https://www.microsoft.com/download/details.aspx?id=49982)。 
+
+
 使用下列命令以無訊息方式安裝 ATA 閘道：
 
 **語法**：

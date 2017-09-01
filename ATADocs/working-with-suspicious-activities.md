@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/20/2017
+ms.date: 08/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 44d7c899-816c-4f7f-91d3-84a09d291a24
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: fcee6f1887e6842d1ccdfd2863620af8a5a8279f
-ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
+ms.openlocfilehash: 62ce117423a189a1c2ce00b862f323db6ed328cb
+ms.sourcegitcommit: 46dd0e695f16a0dd23bbfa140eba15ea6a34d7af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 08/28/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -59,7 +59,7 @@ ms.lasthandoff: 08/20/2017
 ## <a name="filter-suspicious-activities-list"></a>篩選可疑活動清單
 篩選可疑活動清單：
 
-1.  在畫面左側的 [篩選依據] 窗格中，選取下列其中一個項目︰[所有]、[開啟的]、[已解析] 或 [已關閉]。
+1.  在畫面左側的 [篩選依據] 窗格中，選取下列其中一個項目︰[所有]、[開啟]、[已關閉] 或 [已隱藏]。
 
 2.  若要進一步篩選清單，請選取 [高級]、[中級] 或 [低級]。
 
@@ -93,7 +93,7 @@ ms.lasthandoff: 08/20/2017
 -   **關閉**：用於追蹤您已識別、研究與修正以緩解的可疑活動。
 
     > [!NOTE]
-    > 如果在短時間內偵測到相同的活動，ATA 可能會重新開啟已經解析的活動。
+    > 如果在短時間內偵測到相同的活動，ATA 可能會重新開啟已經關閉的活動。
 
 -   **隱藏**：隱藏活動表示您想要暫時將它忽略，只有出現新的執行個體時才會再次收到警示。 這表示如果有類似的警示，ATA 不會將它重新開啟。 但如果此警示停止 7 天，然後再次出現，您將會再次收到警示。
 

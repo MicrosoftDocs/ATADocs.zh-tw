@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2017
+ms.date: 8/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7067477066a2341fa15b2b0d283b2d7721239d5e
-ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
+ms.openlocfilehash: 793273aeea3c78b54d4dc189acaff9bdf8ae58f9
+ms.sourcegitcommit: 46dd0e695f16a0dd23bbfa140eba15ea6a34d7af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 08/28/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -65,7 +65,7 @@ ATA 主控台可讓您依時間順序快速檢視所有可疑的活動。 不但
 
 ### <a name="attack-time-line"></a>攻擊時間表
 
-這是您登入 ATA 主控台時會前往的預設登陸頁面。 根據預設，所有開啟的可疑活動都會顯示在攻擊時間表上。 您可以篩選攻擊時間表，顯示所有、開啟、關閉或已解析的可疑活動。 您也可以查看指派給每個活動的嚴重性。
+這是您登入 ATA 主控台時會前往的預設登陸頁面。 根據預設，所有開啟的可疑活動都會顯示在攻擊時間表上。 您可以篩選攻擊時間軸，以顯示 [所有]、[開啟]、[已解除] 或 [已隱藏] 的可疑活動。 您也可以查看指派給每個活動的嚴重性。
 
 ![ATA 攻擊時間表影像](media/ATA-Suspicious-Activity-Timeline.jpg)
 
@@ -94,8 +94,6 @@ ATA 主控台可讓您依時間順序快速檢視所有可疑的活動。 不但
 ![ATA 健全狀況中心影像](media/ATA-Health-Issue.jpg)
 
 每當您的系統發生問題，例如連線錯誤或中斷與 ATA 閘道的連線，[健全狀況中心] 圖示會顯示一個紅點來告知您。 ![ATA 健全狀況中心有紅點的影像](media/ATA-Health-Center-Alert-red-dot.png)
-
-健康情況中心警示可以關閉或解決，並且根據其嚴重性分類為 [高]、[中] 或 [低]。 如果您解除 ATA 服務偵測為仍在作用中的警示，它會自動移至開啟的警示清單。 如果系統偵測到已不再構成警示 (情況已修正)，它會自動移至已解除的清單。
 
 ### <a name="user-and-computer-profiles"></a>使用者和電腦設定檔
 

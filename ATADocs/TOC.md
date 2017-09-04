@@ -17,20 +17,19 @@
 ## [規劃 ATA 容量](ata-capacity-planning.md)
 ## [ATA 必要條件](ata-prerequisites.md)
 # 部署
-## 預先安裝步驟
+## [1 下載並安裝 Center](install-ata-step1.md)
+## [2 連線到 AD](install-ata-step2.md)
+## [3 下載 ATA 閘道套件](install-ata-step3.md)
+## [4 安裝 ATA 閘道](install-ata-step4.md)
+## [5 設定 ATA 閘道](install-ata-step5.md)
+## [6 事件收件及 VPN](install-ata-step6.md)
+## [7 排除與 Honeytoken](install-ata-step7.md)
+## [無訊息安裝](ata-silent-installation.md)
+## ATA 閘道的其他步驟
 ### [1.設定連接埠鏡像](configure-port-mirroring.md)
 ### [2.驗證連接埠鏡像](validate-port-mirroring.md)
 ### [3.設定 Windows 事件轉送](configure-event-collection.md)
-## 安裝 ATA
-### [步驟 1 下載及安裝中心](install-ata-step1.md)
-### [步驟 2 連線至 AD](install-ata-step2.md)
-### [步驟 3 下載 ATA 閘道安裝套件](install-ata-step3.md)
-### [步驟 4 安裝 ATA 閘道](install-ata-step4.md)
-### [步驟 5 設定 ATA 閘道](install-ata-step5.md)
-### [步驟 6 事件收集與 VPN](install-ata-step6.md)
-### [步驟 7 排除與 Honeytoken](install-ata-step7.md)
-### [無訊息安裝](ata-silent-installation.md)
-# 用法
+# 請使用 [系統管理] 工作區中的 [已連線的管理群組]
 ## [使用 ATA 主控台](working-with-ata-console.md)
 ## [處理可疑活動](working-with-suspicious-activities.md)
 ###[從偵測中排除實體](excluding-entities-from-detections.md)

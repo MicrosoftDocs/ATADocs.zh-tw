@@ -1,16 +1,16 @@
 # 了解和探索
 ## [什麼是 Microsoft Advanced Threat Analytics？](what-is-ata.md)
 ## [ATA 會偵測哪些威脅？](ata-threats.md)
-## ATA 中的新增功能?
+## ATA 的新功能?
 ### [ATA 1.8 版中的新增功能](whats-new-version-1.8.md)
 #### [更新為 ATA 1.8 - 移轉指南](ata-update-1.8-migration-guide.md)
-### [ATA 1.7 版中的新增功能](whats-new-version-1.7.md)
+### [ATA 1.7 版的新功能](whats-new-version-1.7.md)
 #### [更新為 ATA 1.7 - 移轉指南](ata-update-1.7-migration-guide.md)
-### [ATA 1.6 版中的新增功能](whats-new-version-1.6.md)
+### [ATA 1.6 版的新功能](whats-new-version-1.6.md)
 #### [更新為 ATA 1.6 - 移轉指南](ata-update-1.6-migration-guide.md)
-### [ATA 1.5 版中的新增功能](whats-new-version-1.5.md)
+### [ATA 1.5 版的新功能](whats-new-version-1.5.md)
 #### [更新為 ATA 1.5 - 移轉指南](ata-update-1.5-migration-guide.md)
-### [ATA 1.4 版中的新增功能](whats-new-version-1.4.md)
+### [ATA 1.4 版的新功能](whats-new-version-1.4.md)
 ## [常見問題集](ata-technical-faq.md)
 # 計劃和設計
 ## [ATA 架構](ata-architecture.md)
@@ -23,7 +23,7 @@
 ## [3 下載 ATA 閘道套件](install-ata-step3.md)
 ## [4 安裝 ATA 閘道](install-ata-step4.md)
 ## [5 設定 ATA 閘道](install-ata-step5.md)
-## [6 事件收集及 VPN](install-ata-step6.md)
+## [6 事件收件及 VPN](install-ata-step6.md)
 ## [7 排除與 Honeytoken](install-ata-step7.md)
 ## [無訊息安裝](ata-silent-installation.md)
 ## ATA 閘道的其他步驟
@@ -36,17 +36,16 @@
 ###[從偵測中排除實體](excluding-entities-from-detections.md)
 ## [設定 ATA 通知](setting-ata-alerts.md)
 ## [ATA 報表](reports.md)
-## [ATA 健康情況中心](ata-health-center.md)
+## [ATA 健全狀況中心](ata-health-center.md)
 ## [ATA 角色群組](ata-role-groups.md)
 ## [變更 ATA 中心設定](modifying-ata-center-configuration.md)
 ## [變更網域連線密碼](modifying-ata-config-dcpassword.md)
-## [設定 Syslog 和電子郵件伺服器設定](setting-syslog-email-server-settings.md)
+## [進行 Syslog 和電子郵件伺服器設定](setting-syslog-email-server-settings.md)
 ## [ATA 資料庫管理](ata-database-management.md)
-## [匯出/匯入 ATA 設定](ata-configuration-file.md)
+## [匯出/匯入 ATA 組態](ata-configuration-file.md)
 ## [管理 ATA 遙測](manage-telemetry-settings.md)
 # 調查
-## [使用偽造的授權資料攻擊進行權限提升](use-case-forged-pac.md)
-## [使用 DNS 進行偵察](use-case-dns.md)
+## [可疑活動指南](suspicious-activity-guide.md)
 # 疑難排解
 ## [使用稽核記錄](troubleshoot-audit.md)
 ## [針對已知問題進行疑難排解](troubleshooting-ata-known-errors.md)

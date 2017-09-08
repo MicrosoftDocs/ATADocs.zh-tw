@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/20/2017
+ms.date: 09/03/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 527e62553913dc12b2b0d5ff149f765002de7946
-ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
+ms.openlocfilehash: f5cb87148741c92dc7832da16cc37a749fa72fae
+ms.sourcegitcommit: 654500928025e3cb127e095c17cc1d6444defd3a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 09/03/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -51,11 +51,7 @@ ATA 也可以用來設定 Honeytoken 使用者，用來當做惡意執行者的�
 
    ![排除](media/exclusions.png)
 
-
-  > [!NOTE]
-  > 若要尋找使用者的 SID，請在 ATA 主控台中搜尋使用者，然後按一下 [帳戶資訊] 索引標籤。 
-
-4.  按一下 [儲存]。
+4.  按一下 **[儲存]**。
 
 
 恭喜，您已成功部署 Microsoft Advanced Threat Analytics！

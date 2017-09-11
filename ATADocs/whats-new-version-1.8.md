@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/14/2017
+ms.date: 9/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: 
 ms.suite: ems
-ms.openlocfilehash: 1ec9308e046a228ac1276eb1aace58eec47e95d0
-ms.sourcegitcommit: 8b622fa5457cf1a540504899c8c98e860b946e01
+ms.openlocfilehash: 2793a602a0cd0fb9902197acd45dd5bdd4612ea4
+ms.sourcegitcommit: 654500928025e3cb127e095c17cc1d6444defd3a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/03/2017
 ---
 # <a name="whats-new-in-ata-version-18"></a>ATA 1.8 版的新功能
 
@@ -126,6 +126,14 @@ ms.lasthandoff: 08/14/2017
 **描述**：從 ATA 1.8 開始，ATA 閘道使用 HTTP 通訊協定與 ATA 中心進行通訊。 如果安裝了 ATA 閘道的電腦使用 Proxy 伺服器來連線到 ATA 中心，可能會中斷此通訊。 
 
 **因應措施**：在 ATA 閘道服務帳戶上停用 Proxy 伺服器。 未來版本將會有更新以修正此問題。
+
+### <a name="report-settings-reset"></a>報表設定重設
+
+**徵兆**：當您更新至 1.8 Update 1 時，會清除對已排程報表所做的任何設定。
+
+**描述**：從 1.8 更新至 1.8 Update 1 會重設報表排程設定。
+
+**因應措施**：更新至 1.8 Update 1 之前，請複製並重新輸入報表設定，這也可透過指令碼來完成。如需詳細資訊，請參閱[匯出和匯入 ATA 設定](ata-configuration-file.md)。
 
 
 ## <a name="see-also"></a>另請參閱

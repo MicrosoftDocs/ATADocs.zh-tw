@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/20/2017
+ms.date: 9/3/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f9c2df3c454e2098277f4c475dc1d69378a90987
-ms.sourcegitcommit: 46dd0e695f16a0dd23bbfa140eba15ea6a34d7af
+ms.openlocfilehash: d7f5423104b3e42777b6ce8013832b3bac6353be
+ms.sourcegitcommit: 654500928025e3cb127e095c17cc1d6444defd3a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/03/2017
 ---
 *適用於︰Advanced Threat Analytics 1.8 版*
 
@@ -124,13 +124,19 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 
 請確定 ATA 中心及 ATA 閘道可以存取您的 CRL 發佈點。 如果沒有網際網路存取權，請遵循[手動匯入 CRL 的程序](https://technet.microsoft.com/library/aa996972%28v=exchg.65%29.aspx)，小心安裝整個鏈結的所有 CRL 發佈點。
 
+憑證必須包含：
+-   私密金鑰
+-   密碼編譯服務提供者 (CSP) 或金鑰儲存提供者 (KSP) 的提供者類型
+-   2048 位元的公用金鑰長度
+-   針對 KeyEncipherment 和 ServerAuthentication 使用方式旗標所設定的值
+
+例如，您可以使用標準**網頁伺服器**或**電腦**範本。
 
 > [!WARNING]
 > - 不支援更新現有憑證的程序。 更新憑證的唯一方法是建立新憑證，然後設定 ATA 使用新憑證。
 
 
 > [!NOTE]
-> - 憑證的提供者類型可以是密碼編譯服務提供者 (CSP) 或金鑰儲存提供者 (KSP)。
 > - 如果您要從其他電腦存取 ATA 主控台，請確定這些電腦信任 ATA 中心使用的憑證，否則在進入登入頁面之前就會出現警告頁面，指出網站的安全性憑證有問題。
 > - 開始使用 ATA 1.8 版。ATA 閘道與輕量型閘道會管理自己的憑證，且不需要系統管理員互動來管理。
 

@@ -1,7 +1,5 @@
 {
   "build_entry_point": "docs.ps1",
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
       "docset_name": "ATADocs",
@@ -55,7 +53,8 @@
     }
   ],
   "notification_subscribers": [
-    ""
+    "CnE_Content_Brno@moravia.com",
+    "CnE_UE_Bugfixing_ENG@moravia.com"
   ],
   "branches_to_filter": [
     "live-oldev",
@@ -72,13 +71,18 @@
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft.zh-tw",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "_repo.en-us",
       "url": "https://github.com/Microsoft/ATADocs-pr",
-      "branch": "live"
+      "branch": "live",
+      "branch_mapping": {}
     }
   ],
-  "need_generate_pdf_url_template": false
+  "branch_target_mapping": {},
+  "need_generate_pdf_url_template": false,
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false
 }

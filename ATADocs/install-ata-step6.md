@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/29/2017
+ms.date: 09/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ac591d960028268f6c1ebd74706839a3b91597da
-ms.sourcegitcommit: 9ce330726e5de8c05eae6a20d3e6c1d8bef3cd0e
+ms.openlocfilehash: 068c3ca2858934f68beea9d092fbeb113b77ba2a
+ms.sourcegitcommit: 34c3d6f56f175994b672842c7576040956ceea69
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/19/2017
 ---
 *適用於︰Advanced Threat Analytics 1.8 版*
 
@@ -27,8 +27,9 @@ ms.lasthandoff: 08/29/2017
 
 >[!div class="step-by-step"]
 [« 步驟 5](install-ata-step5.md)
+[步驟 7 »](vpn-integration-install-step.md)
 
-## <a name="step-6-configure-event-collection-and-vpn"></a>步驟 6： 設定事件收集和 VPN
+## <a name="step-6-configure-event-collection"></a>步驟 6： 設定事件收集
 ### <a name="configure-event-collection"></a>設定事件收集
 為增強偵測功能，ATA 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757。 這些事件可透過 ATA 輕量型閘道自動讀取；如果未部署 ATA 輕量型閘道，則可以透過下列兩個方式之一轉送至 ATA 閘道：藉由將 ATA 閘道設定為接聽 SIEM 事件，或藉由[設定 Windows 事件轉送](configure-event-collection.md)。
 
@@ -184,26 +185,10 @@ Message 是來自 Windows 事件的原始事件文字
 > 不支援使用 WinCollect 進行 Windows 事件收集。
 
 
-### <a name="configuring-vpn"></a>設定 VPN
-
-ATA 會收集 VPN 資料，以協助分析電腦連線到網路的位置。
-
-若要設定 VPN 資料，請移至 [組態] > [VPN]，然後輸入 VPN 的 **Radius 帳戶共用密碼**。
-
-![設定 VPN](./media/vpn.png)
-
-請參閱 VPN 文件以取得共用密碼。 支援的 VPN 廠商如下：
-
-- Microsoft
-- F5
-- Check Point
-- Cisco ASA
-
-
 
 >[!div class="step-by-step"]
 [« 步驟 5](install-ata-step5.md)
-[步驟 7 »](install-ata-step7.md)
+[步驟 7 »](vpn-integration-install-step.md)
 
 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/20/2017
+ms.date: 10/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: db2133e05fb7d2390f4b7e05dd219be71bf4e157
-ms.sourcegitcommit: 129bee06ff89b72d21b64f9aa0d1a29f66bf9153
+ms.openlocfilehash: 1afaf258198c1b18aca5cc2e4be6774600f72a73
+ms.sourcegitcommit: e9f2bfd610b7354ea3fef749275f16819d60c186
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 10/09/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -109,6 +109,7 @@ ATA 也會偵測**安全性問題與風險**，包括︰
 
 ## <a name="related-videos"></a>相關影片
 - [加入安全性社群](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)
+- [ATA 部署概觀](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 
 
 ## <a name="see-also"></a>另請參閱

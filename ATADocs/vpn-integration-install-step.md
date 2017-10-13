@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 09/19/2017
+ms.date: 10/9/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e0aed853-ba52-46e1-9c55-b336271a68e7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 384384ebd6b6fadcaa5636200ccd08667d9c41a5
-ms.sourcegitcommit: 34c3d6f56f175994b672842c7576040956ceea69
+ms.openlocfilehash: c02649a6acb6a083145ba81b3b9c1647e7f8ea2a
+ms.sourcegitcommit: e9f2bfd610b7354ea3fef749275f16819d60c186
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 10/09/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/19/2017
 [« 步驟 5](install-ata-step5.md)
 [步驟 8 »](install-ata-step7.md)
 
-## <a name="step-7-integrate-vpn"></a>步驟 ７： 整合 VPN
+## <a name="step-7-integrate-vpn"></a>步驟 7. 整合 VPN
 
 ### <a name="configuring-vpn"></a>設定 VPN
 
@@ -37,7 +37,7 @@ ATA 會收集 VPN 資料，這些資料有助於描繪電腦連線到網路的�
 
 在 ATA 中設定 VPN 資料：
 
-1. 移至 [設定]，然後按一下 [VPN] 索引標籤。
+1. 移至 設定，然後按一下VPN 索引標籤。
 
 2. 輸入您 RADIUS 伺服器的**帳戶共用密碼**。 若要取得共用密碼，請參閱您的 VPN 文件。
 
@@ -67,6 +67,7 @@ ATA 會收集 VPN 資料，這些資料有助於描繪電腦連線到網路的�
 
 
 ## <a name="related-videos"></a>相關影片
+- [ATA 部署概觀](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 - [選擇正確的 ATA 閘道類型](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
 

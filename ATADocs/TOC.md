@@ -38,14 +38,16 @@
 ## [ATA 角色群組](ata-role-groups.md)
 ## [變更 ATA 中心設定](modifying-ata-center-configuration.md)
 ## [變更網域連線密碼](modifying-ata-config-dcpassword.md)
-###[從偵測中排除實體](excluding-entities-from-detections.md)
+## [從偵測中排除實體](excluding-entities-from-detections.md)
 ## [匯出/匯入 ATA 組態](ata-configuration-file.md)
 ## [管理 ATA 遙測](manage-telemetry-settings.md)
 ## [設定 ATA 通知](setting-ata-alerts.md)
 ## [進行 Syslog 和電子郵件伺服器設定](setting-syslog-email-server-settings.md)
-## [SIEM 記錄檔參考](cef-format-sa.md)
 ## [處理可疑活動](working-with-suspicious-activities.md)
 ## [使用 ATA 主控台](working-with-ata-console.md)
+## [ATA 參考資訊]
+### [SIEM 記錄檔參考](cef-format-sa.md)
+### [事件識別碼參考](event-id-reference.md)
 # 調查
 ## [可疑活動指南](suspicious-activity-guide.md)
 # 疑難排解

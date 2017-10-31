@@ -45,7 +45,7 @@
 ## [進行 Syslog 和電子郵件伺服器設定](setting-syslog-email-server-settings.md)
 ## [處理可疑活動](working-with-suspicious-activities.md)
 ## [使用 ATA 主控台](working-with-ata-console.md)
-## [ATA 參考資訊]
+## ATA 參考資訊
 ### [SIEM 記錄檔參考](cef-format-sa.md)
 ### [事件識別碼參考](event-id-reference.md)
 # 調查

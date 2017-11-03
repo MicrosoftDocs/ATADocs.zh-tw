@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 21661568ccb75811fa860137fe053714b28a7260
-ms.sourcegitcommit: 699d238ef9022cfd59663bd8e4e7636daa218f4b
+ms.openlocfilehash: 819f006ae89960ed8f9494ce36ba4fd7f120357a
+ms.sourcegitcommit: 5563c6861bb5db5cb73e058e5a51b4938b9a7d46
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 10/30/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -66,6 +66,6 @@ ms.lasthandoff: 10/09/2017
 ## <a name="see-also"></a>另請參閱
 - [ATA 必要條件](ata-prerequisites.md)
 - [ATA 容量規劃](ata-capacity-planning.md)
-- [設定事件收集](configure-event-collection.md)
-- [設定 Windows 事件轉送](configure-event-collection#configuring-windows-event-forwarding)
+- [設定事件收集](install-ata-step6.md)
+- [設定 Windows 事件轉送](configure-event-collection.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

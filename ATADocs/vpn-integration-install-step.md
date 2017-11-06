@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 10/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e0aed853-ba52-46e1-9c55-b336271a68e7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c02649a6acb6a083145ba81b3b9c1647e7f8ea2a
-ms.sourcegitcommit: e9f2bfd610b7354ea3fef749275f16819d60c186
+ms.openlocfilehash: 748121a709ac05756edf34e04e13b996190e9711
+ms.sourcegitcommit: b951c64228d4f165ee1fcc5acc0ad6bb8482d6a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 10/31/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -29,33 +29,67 @@ ms.lasthandoff: 10/09/2017
 [« 步驟 5](install-ata-step5.md)
 [步驟 8 »](install-ata-step7.md)
 
-## <a name="step-7-integrate-vpn"></a>步驟 7. 整合 VPN
+## <a name="step-7-integrate-vpn"></a>步驟 ７： 整合 VPN
 
-### <a name="configuring-vpn"></a>設定 VPN
+Microsoft Advanced Threat Analytics (ATA) 1.8 版可以從 VPN 解決方案收集計量資訊。 設定了 ATA 之後，使用者的設定檔頁面就會含有來自 VPN 連線的資訊，例如 IP 位址與原始的連線位置。 這會利用提供其他有關使用者活動的資訊，來補充調查程序。 將外部 IP 位址解析為位置的呼叫是匿名的。 不會在此呼叫中傳送個人識別資訊。
+
+ATA 會透過接聽轉送到 ATA 閘道的 RADIUS 計量事件，與您的 VPN 解決方案相整合。 這項機制依據標準 RADIUS 計量 ([RFC 2866](https://tools.ietf.org/html/rfc2866)) 運作，並且支援下列 VPN 廠商：
+
+-   Microsoft
+-   F5
+-   Check Point
+-   Cisco ASA
+
+## <a name="prerequisites"></a>必要條件
+
+若要啟用 VPN 整合，請確定已設定了下列項目：
+
+-   啟動您 ATA 閘道和 ATA 輕量型閘道上的連接埠 UDP 1813。
+
+-   將 ATA 中心連線到網際網路，如此即可查詢連入 IP 位址的位置。
+
+在下列範例中，我們使用 Microsoft 路由及遠端存取伺服器 (RRAS) 描述 VPN 設定程序。
+
+如果您使用協力廠商 VPN 解決方案，請參考其文件以了解如何啟用 RADIUS 計量的相關指示。
+
+## <a name="configure-radius-accounting-on-the-vpn-system"></a>在 VPN 系統上設定 RADIUS 計量
+
+請在 RRAS 伺服器上執行下列作業。
+ 
+1.  開啟路由及遠端存取主控台。
+2.  在伺服器名稱上按一下滑鼠右鍵，然後按一下 [屬性]。
+3.  在 [安全性] 索引標籤的 [計量提供者] 下，選取 [RADIUS 計量]，然後按一下 [設定]。
+
+    ![RADIUS 設定](./media/radius-setup.png)
+
+4.  在 [新增 RADIUS 伺服器] 視窗中，鍵入最接近之 ATA 閘道或 ATA 輕量型閘道的**伺服器名稱**。 在 [連接埠] 下，確定已設為預設的 1813。 按一下 [變更]，並鍵入您能記住的新共用祕密英數字元字串。 您稍後必須將其填入 ATA 設定中。 選取 [傳送 RADIUS 計量開啟及計量關閉訊息] 方塊，然後在所有已開啟的對話方塊上按一下 [確定]。
+ 
+     ![VPN 設定](./media/vpn-set-accounting.png)
+     
+### <a name="configure-vpn-in-ata"></a>在 APA 中設定 VPN
 
 ATA 會收集 VPN 資料，這些資料有助於描繪電腦連線到網路的來源位置，而且有助於偵測異常 VPN 連線。
 
 在 ATA 中設定 VPN 資料：
 
-1. 移至 設定，然後按一下VPN 索引標籤。
+1.  在 ATA 主控台中，開啟 [ATA 設定] 頁面，並前往 [VPN]。
+ 
+  ![ATA 設定功能表](./media/config-menu.png)
 
-2. 輸入您 RADIUS 伺服器的**帳戶共用密碼**。 若要取得共用密碼，請參閱您的 VPN 文件。
+2.  開啟 [Radius 計量]，然後鍵入先前在 RRAS VPN 伺服器上設定的**共用秘密**。 然後按一下 [儲存]。
+ 
 
- ![設定 ATA VPN](media/vpn.png)
+  ![設定 ATA VPN](./media/vpn.png)
 
-3.  一旦啟用此選項，所有 ATA 閘道與輕量型閘道都會在連接埠 1813 上接聽 RADIUS 帳戶處理事件。 
 
-4.  在設定此選項之後，VPN 的 RADIUS 帳戶處理事件應該會被轉送到任何 ATA 閘道或 ATA 輕量型閘道。
+啟用 ATA VPN 之後，所有 ATA 閘道及輕量型閘道就會在連接埠 1813 上接聽 RADIUS 計量事件。 
 
-5.  在 ATA 閘道接收 VPN 事件並將它們傳送給 ATA 中心進行處理之後，ATA 中心必須有網際網路連線，HTTPS 連接埠 443 才能將 VPN 事件中的外部 IP 地址解析為其地理位置。
+您的設定已大功告成，使用者的設定檔頁面現已可看到 VPN 活動：
+ 
+   ![VPN 設定](./media/vpn-user.png)
 
-將外部 IP 位址解析為位置的呼叫是匿名的。 不會在此呼叫中傳送個人識別資訊。
+在 ATA 閘道接收 VPN 事件並將它們傳送給 ATA 中心進行處理之後，ATA 中心必須有網際網路連線，HTTPS 連接埠 443 才能將 VPN 事件中的外部 IP 地址解析為其地理位置。
 
-支援的 VPN 廠商如下：
-- Microsoft
-- F5
-- Check Point
-- Cisco ASA
 
 
 

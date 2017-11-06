@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/20/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 2362f6bf64147b972e9c45e3b97bab4280c6eeac
-ms.sourcegitcommit: 46dd0e695f16a0dd23bbfa140eba15ea6a34d7af
+ms.openlocfilehash: 09936cf9f86711ea6d48d0571178d2387694d412
+ms.sourcegitcommit: 835ea2b8190eb753aaf8d400531040ce1845d75a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -48,12 +48,11 @@ ms.lasthandoff: 08/28/2017
 |System.ApplicationException︰無法啟動 ETW 工作階段 MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329|HOSTS 檔案中有一個主機項目指向電腦的簡短名稱|從 C:\Windows\System32\drivers\etc\HOSTS 檔案移除主機項目，或將它變更為 FQDN。|
 |System.IO.IOException：驗證失敗，因為遠端群體已經關閉傳輸資料流。|ATA 閘道上已停用 TLS 1.0，但是 .Net 設定為使用 TLS 1.2|使用下列其中一個選項： </br> 在 ATA 閘道上啟用 TLS 1.0 </br>將登錄機碼設定為使用 SSL 和 TLS 的作業系統預設，以在 .Net 上啟用 TLS 1.2，方式如下： </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001 `</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
 |System.TypeLoadException：無法從組件 'Microsoft.Opn.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' 載入類型 'Microsoft.Opn.Runtime.Values.BinaryValueBufferManager'|ATA 閘道無法載入必要的剖析檔案。|請檢查目前是否已安裝 Microsoft 郵件分析器。 不支援郵件分析器與 ATA 閘道/輕量型閘道一起安裝。 請解除安裝郵件分析器，然後重新啟動閘道服務。|
-|在 VMware 上使用輕量型閘道時的「已丟棄連接埠鏡像流量」警示|若在 VMware 虛擬機器上使用 DC，可能會收到有關**已丟棄連接埠鏡像流量**的警示。 這可能是 VMware 中的設定不相符所致。 |若要避免這些警示，可檢查是否已將下列設定設為 [0] 或 [已停用]：TsoEnable、LargeSendOffload、IPv4、TSO Offload。 此外也請考慮停用 [IPv4 Giant TSO Offload]。 如需詳細資訊，請參閱 VMware 文件。|
 |System.Net.WebException: 遠端伺服器傳回錯誤: (407) 要求 Proxy 驗證|Proxy 伺服器中斷 ATA 閘道與 ATA 中心的通訊。|停用 ATA 閘道機器上的 Proxy。 <br></br>請注意，Proxy 設定可能依各帳戶為依據。|
 |System.IO.DirectoryNotFoundException: 系統找不到指定的路徑。 (來自 HRESULT 的例外狀況: 0x80070003)|一或多個操作 ATA 所需的服務未啟動。|啟動下列服務： <br></br>效能記錄檔及警示 (PLA)、工作排程器 (排程)。|
 |System.Net.WebException: 遠端伺服器傳回錯誤: (403) 禁止|ATA 閘道或輕量型閘道可能會因為 ATA 中心未受信任，而遭禁止建立 HTTP 連線。|將 ATA 中心的 NetBIOS 名稱和 FQDN 新增到受信任的網站清單，並清除 Interne Explorer 上的快取 (或者，如果不是設定 NetBIOS/FQDN，則是以設定中指定的 ATA 中心名稱)。|
 |System.Net.Http.HttpRequestException：PostAsync 失敗 [requestTypeName=StopNetEventSessionRequest]|由於 WMI 的問題，ATA 閘道或 ATA 輕量型閘道無法停止並啟動收集網路流量的 ETW 工作階段|請依照 [WMI：重建 WMI 存放庫](https://blogs.technet.microsoft.com/askperf/2009/04/13/wmi-rebuilding-the-wmi-repository/) \(英文\) 中的指示來修正 WMI 問題|
-
+|System.Net.Sockets.SocketException：嘗試採行其存取權限所禁止的方式存取通訊端|另一個應用程式正於 ATA 閘道上使用連接埠 514|使用 `netstat -o` 建立哪個處理序正在使用該連接埠。|
  
 ## <a name="deployment-errors"></a>部署錯誤
 > [!div class="mx-tableFixed"]

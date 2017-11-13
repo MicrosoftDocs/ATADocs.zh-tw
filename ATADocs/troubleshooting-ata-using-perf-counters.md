@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 06/23/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: df162a62-f273-4465-9887-94271f5000d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: bc3ad332e1a8af6259eadaecc4638f27fded67c6
-ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
+ms.openlocfilehash: 2172b6b8e1c54345841357e1f4d0a7dec2c346db
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 11/07/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -105,18 +105,18 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 > [!div class="mx-tableFixed"]
 |計數器|說明|閾值|疑難排解|
 |-----------|---------------|-------------|-------------------|
-|Microsoft ATA Center\EntityReceiver Entity Batch Block Size|ATA 中心加入佇列的實體批次數目。|應小於上限 -1 (預設上限︰10,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。  請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
-|Microsoft ATA Center\NetworkActivityProcessor Network Activity Block Size|要處理而加入佇列的網路活動 (NA) 數目。|應小於上限 -1 (預設上限︰50,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
-|Microsoft ATA Center\EntityProfiler Network Activity Block Size|要分析而加入佇列的網路活動 (NA) 數目。|應小於上限 -1 (預設上限︰10,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
-|Microsoft ATA Center\Database &#42; Block Size|要寫入資料庫而加入佇列的特定類型網路活動數目。|應小於上限 -1 (預設上限︰50,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
+|Microsoft ATA Center\EntityReceiver Entity Batch Block Size|ATA 中心加入佇列的實體批次數目。|應小於上限 -1 (預設上限︰10,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。  請參閱上述的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
+|Microsoft ATA Center\NetworkActivityProcessor Network Activity Block Size|要處理而加入佇列的網路活動 (NA) 數目。|應小於上限 -1 (預設上限︰50,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上述的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
+|Microsoft ATA Center\EntityProfiler Network Activity Block Size|要分析而加入佇列的網路活動 (NA) 數目。|應小於上限 -1 (預設上限︰10,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上述的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
+|Microsoft ATA Center\Database &#42; Block Size|要寫入資料庫而加入佇列的特定類型網路活動數目。|應小於上限 -1 (預設上限︰50,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上述的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
 
 
 > [!NOTE]
 > -   時間計數器以毫秒為單位
-> -   有時候使用「報告」的圖形類型監視計數器的完整清單會更方便 (範例︰所有計數器的即時監視)。
+> -   有時候，如果要監視計數器的完整清單，使用「報告」的圖形類型會更方便 (範例︰所有計數器的即時監視)。
 
 ## <a name="operating-system-counters"></a>作業系統計數器
-以下是要注意的主要作業系統計數器清單︰
+下表列出要注意的主要作業系統計數器︰
 
 > [!div class="mx-tableFixed"]
 |計數器|說明|閾值|疑難排解|
@@ -125,8 +125,8 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 |System\Context Switches\sec|所有處理器從一個執行緒切換到另一個執行緒的組合速率。|小於 5000&#42; 個核心 (實體核心)|檢查是否有花費的處理器時間遠超過預期的特定程序。<br /><br />新增更多處理器。<br /><br />減少每部伺服器的流量。<br /><br />"Processor(_Total)\% Processor Time" 計數器在虛擬伺服器上可能會較不精確，在此情況下，要測量處理器電源不足，更精確的方式是透過 "System\Processor Queue Length" 計數器。|
 |System\Processor Queue Length|準備好執行，且正等候排程的執行緒數目。|小於 5&#42; 個核心 (實體核心)|檢查是否有花費的處理器時間遠超過預期的特定程序。<br /><br />新增更多處理器。<br /><br />減少每部伺服器的流量。<br /><br />"Processor(_Total)\% Processor Time" 計數器在虛擬伺服器上可能會較不精確，在此情況下，要測量處理器電源不足，更精確的方式是透過 "System\Processor Queue Length" 計數器。|
 |Memory\Available MBytes|可供配置的實體記憶體 (RAM) 數量。|應大於 512|檢查是否有花費的實體記憶體遠超過預期的特定程序。<br /><br />減少實體記憶體數量。<br /><br />減少每部伺服器的流量。|
-|LogicalDisk(&#42;)\Avg. Disk sec\Read|從磁碟讀取資料的平均延遲 (您應該選擇資料庫磁碟機做為執行個體)。|應小於 10 毫秒|檢查是否有特定程序，其利用的資料庫磁碟機超過預期。<br /><br />如果此磁碟機可以提供目前的工作負載，同時具有小於 10 毫秒的延遲，請洽詢儲存體小組/廠商。 使用磁碟使用計數器可判斷目前的工作負載。|
-|LogicalDisk(&#42;)\Avg. Disk sec\Write|將資料寫入磁碟的平均延遲 (您應該選擇資料庫磁碟機做為執行個體)。|應小於 10 毫秒|檢查是否有特定程序，其利用的資料庫磁碟機超過預期。<br /><br />如果此磁碟機可以提供目前的工作負載，同時具有小於 10 毫秒的延遲，請洽詢儲存體小組\廠商。 使用磁碟使用計數器可判斷目前的工作負載。|
+|LogicalDisk(&#42;)\Avg.Disk sec\Read|從磁碟讀取資料的平均延遲 (您應該選擇資料庫磁碟機做為執行個體)。|應小於 10 毫秒|檢查是否有特定程序，其利用的資料庫磁碟機超過預期。<br /><br />如果此磁碟機提供目前工作負載之際，延遲可以小於 10 毫秒，請洽詢儲存體小組/廠商。 使用磁碟使用計數器可判斷目前的工作負載。|
+|LogicalDisk(&#42;)\Avg.Disk sec\Write|將資料寫入磁碟的平均延遲 (您應該選擇資料庫磁碟機做為執行個體)。|應小於 10 毫秒|檢查是否有特定程序，其利用的資料庫磁碟機超過預期。<br /><br />如果此磁碟機提供目前工作負載之際，延遲可以小於 10 毫秒，請洽詢儲存體小組/廠商。 使用磁碟使用計數器可判斷目前的工作負載。|
 |\LogicalDisk(&#42;)\Disk Reads\sec|執行讀取作業至磁碟的速率。|沒有閾值|磁碟使用計數器可在疑難排解儲存體延遲時新增見解。|
 |\LogicalDisk(&#42;)\Disk Read Bytes\sec|每秒從磁碟讀取的位元組數目。|沒有閾值|磁碟使用計數器可在疑難排解儲存體延遲時新增見解。|
 |\LogicalDisk&#42;\Disk Writes\sec|執行寫入作業至磁碟的速率。|沒有閾值|磁碟使用計數器 (可在疑難排解儲存體延遲時新增見解)|

@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: e5a9718c-b22e-41f7-a614-f00fc4997682
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 89d3d80e647e61cded6e2428ed1d1f8905552867
-ms.sourcegitcommit: 42ce07e3207da10e8dd7585af0e34b51983c4998
+ms.openlocfilehash: 540d1cb0754dc9191a985625a8f988cb44c9f000
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="updating-ata-to-version-18"></a>將 ATA 更新至 1.8 版
 
 > [!NOTE] 
 > 如果您的環境中未安裝 ATA，請下載包括 1.8 版的 ATA 完整版本，並遵循[安裝 ATA](install-ata-step1.md) 中所述的標準安裝程序。
 
-如果您已經部署 ATA 1.7 版，此程序將逐步引導您進行更新部署所需的步驟。
+如果您已經部署 ATA 1.7 版，此程序會逐步引導您進行更新部署所需的步驟。
 
 > [!NOTE] 
 >  只有 ATA 1.7 版 Update 1 和 1.7 版 Update 2 可以更新至 ATA 1.8 版，任何舊版的 ATA 都不能直接更新至 ATA 1.8 版。
@@ -45,7 +45,7 @@ ms.lasthandoff: 07/25/2017
 
 1.  備份您的資料庫：(選擇性)
 
-    -   如果 ATA 中心是做為虛擬機器執行，而您想要取一個檢查點，請先關閉虛擬機器。
+    -   如果 ATA 中心是作為虛擬機器執行，而您想要取得一個檢查點，請先關閉虛擬機器。
 
     -   如果 ATA 中心正在實體伺服器上執行，請參閱[災害復原](disaster-recovery.md)一文以取得備份資料庫的相關資訊。
 
@@ -53,14 +53,14 @@ ms.lasthandoff: 07/25/2017
 
     -  在 [歡迎] 頁面中，選擇您的語言，然後按一下 [下一步]。
 
-    -  如果您未在 1.7 版中啟用自動更新，系統會提示您設定 ATA 使用 Microsoft Update 讓 ATA 保持最新狀態。  在 [Microsoft Update] 頁面中，選取 **[當我檢查更新時使用 Microsoft Update (建議選項)]**。
+    -  如果您未在 1.7 版中啟用自動更新，系統會提示您設定 ATA，以使用 Microsoft Update 讓 ATA 保持最新狀態。  在 [Microsoft Update] 頁面中，選取 **[當我檢查更新時使用 Microsoft Update (建議選項)]**。
     ![保持 ATA 最新狀態影像](media/ata_ms_update.png)
      
-     這會調整 Windows 設定，以啟用 ATA 更新。 
+     這會調整 Windows 設定，以針對 ATA 啟用更新。 
     
-    -  在 [資料移轉] 畫面中，選取您要移轉所有或部分資料。 如果您選擇只移轉部分資料，除異常行為偵測之外的所有偵測都將立即運作，建置完整的設定檔需時三週。  
+    -  在 [資料移轉] 畫面中，選取您要移轉所有或部分資料。 如果您選擇只移轉部分資料，除了異常行為偵測以外 (其需要三週的時間以建置完整的設定檔)，所有偵測都會立即運作。  
     
-    **部分**資料移轉花費的時間比安裝還短得多。 如果您選取 [完整] 資料移轉，可能需要很長一段時間才能完成安裝。 請務必觀察 [資料移轉] 畫面中列出的預估時間和所需磁碟空間。 這些數字取決於您之前在舊版 ATA 儲存的擷取網路流量。 例如，在畫面下方您會看到來自超大型資料庫的資料移轉：
+    **部分**資料移轉花費的時間比安裝還短得多。 如果您選取 [完整] 資料移轉，可能需要很長一段時間才能完成安裝。 請務必觀察 [資料移轉] 畫面中列出的預估時間和所需磁碟空間。 這些數字取決於您之前在舊版 ATA 儲存的擷取網路流量。 例如，在下面的畫面中，您可以看到來自大型資料庫的資料移轉：
          
     ![ATA 資料移轉](media/migration-data-migration.png)
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 07/25/2017
 
     ![更新成功畫面](media/migration-center-success.png)
 
-5.  在 [更新] 畫面中，如果您已經設定 ATA 閘道自動更新，它們將會現在更新，如果沒有，請按一下每個 ATA 閘道旁邊的 [更新]。
+5.  在 [更新] 畫面中，如果您已經設定 ATA 閘道自動更新，它們就會現在更新。如果未設定自動更新，請按一下每個 ATA 閘道旁邊的 [更新]。
   
 ![更新閘道影像](media/migration-update-gw.png)
 

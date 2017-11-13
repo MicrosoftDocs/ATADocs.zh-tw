@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 7fb024e6-297a-4ad9-b962-481bb75a0ba3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f466dddfd2c490d71a57fb27aa833c5ee3a0e5e2
-ms.sourcegitcommit: e9f2bfd610b7354ea3fef749275f16819d60c186
+ms.openlocfilehash: ab80ec5b172311e955a25fed677c40cee1e95269
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/07/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -30,9 +30,9 @@ ms.lasthandoff: 10/09/2017
 [步驟 4 »](install-ata-step4.md)
 
 ## <a name="step-3-download-the-ata-gateway-setup-package"></a>步驟 3： 下載 ATA 閘道安裝套件
-設定網域連線設定後，您可以下載 ATA 閘道安裝套件。 ATA 閘道可以安裝在專用伺服器或網域控制站上。 如果您將其安裝在網域控制站上，則會作為 ATA 輕量型閘道安裝。 如需 ATA 輕量型閘道的詳細資訊，請參閱 [ATA 架構](ata-architecture.md)。 
+設定網域連線設定後，您可以下載 ATA 閘道安裝套件。 ATA 閘道可以安裝在專用伺服器或網域控制站上。 如果您將其安裝在網域控制站上，它會作為 ATA 輕量型閘道安裝。 如需 ATA 輕量型閘道的詳細資訊，請參閱 [ATA 架構](ata-architecture.md)。 
 
-按一下頁面頂端之步驟清單中的 [Download Gateway Setup (下載閘道安裝程式)] 以移至 [閘道] 頁面：
+按一下頁面頂端之步驟清單中的 [下載閘道安裝程式] 以移至 [閘道] 頁面。
 
 ![ATA 閘道組態設定](media/ATA_1.7-welcome-download-gateway.PNG)
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 10/09/2017
 2.  將封裝儲存在本機。
 3.  將封裝複製到 ATA 閘道安裝所在的專用伺服器或網域控制站。 您也可以從專用伺服器或網域控制站開啟 ATA 主控台，並跳過此步驟。
 
-ZIP 檔案包含下列項目：
+ZIP 檔案包含下列檔案：
 
 -   ATA 閘道安裝程式
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 09/03/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f0cef288b36bb070d632c78d773c769f7862ff19
-ms.sourcegitcommit: 654500928025e3cb127e095c17cc1d6444defd3a
+ms.openlocfilehash: 25c2defd02e260248d30eb76f6ae297c1b36325f
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2017
+ms.lasthandoff: 11/07/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -87,7 +87,7 @@ ATA 閘道數目取決於您的網路配置、封包的數量和 ATA 所擷取�
 ## <a name="how-do-i-monitor-a-virtual-domain-controller-using-ata"></a>如何使用 ATA 監視虛擬網域控制站？
 ATA 輕量型閘道可以涵蓋大多數虛擬網域控制站；如需判斷 ATA 輕量型閘道是否適合您的環境，請參閱 [ATA Capacity Planning](ata-capacity-planning.md) (ATA 容量規劃)。
 
-如果 ATA 輕量型閘道無法涵蓋某個虛擬網域控制站，您可以有虛擬或實體的 ATA 閘道，如 [Configure port mirroring](configure-port-mirroring.md) (設定連接埠鏡像) 中所述。  <br />最簡單的方式是在每一個有虛擬網域控制站的主機上有一個虛擬 ATA 閘道。<br />如果您的虛擬網域控制站要在主機之間移動，您需要執行下列其中一項作業︰
+如果 ATA 輕量型閘道無法涵蓋某個虛擬網域控制站，您可以有虛擬或實體的 ATA 閘道，如[設定連接埠鏡像](configure-port-mirroring.md)中所述。  <br />最簡單的方式是在每一個有虛擬網域控制站的主機上有一個虛擬 ATA 閘道。<br />如果您的虛擬網域控制站要在主機之間移動，您需要執行下列其中一項步驟︰
 
 -   當虛擬網域控制站移至另一部主機時，請預先將該主機中的 ATA 閘道設定為可以從最近移動的虛擬網域控制站接收流量。
 -   請務必將虛擬 ATA 閘道與虛擬網域控制站緊密聯結，這樣當它移動時，ATA 閘道才會隨之移動。
@@ -105,15 +105,15 @@ ATA 可以偵測已知的惡意攻擊和技術、安全性問題和風險。
 如需 ATA 偵測的完整清單，請參閱 [ATA 會執行哪些偵測？](ata-threats.md)。
 
 ## <a name="what-kind-of-storage-do-i-need-for-ata"></a>我需要為 ATA 準備何種儲存體？
-建議使用具有低延遲磁碟存取 (不到 10 毫秒) 的快速存放裝置 (不建議使用 7200 RPM 磁碟)。 RAID 設定應該能夠支援大量寫入負載 (不建議使用 RAID 5/6 及其衍生項目)。
+建議使用具有低延遲磁碟存取 (不到 10 毫秒) 的快速存放裝置 (不建議使用 7200-RPM 磁碟)。 RAID 設定應該能夠支援大量寫入負載 (不建議使用 RAID 5/6 及其衍生項目)。
 
 ## <a name="how-many-nics-does-the-ata-gateway-require"></a>ATA 閘道需要多少 NIC？
-ATA 閘道需要至少兩張網路介面卡︰<br>1.一個 NIC 連線到內部網路和 ATA 中心。<br>2.NIC，將用來透過連接埠鏡像擷取網域控制站的網路流量。<br>* 這不適用於 ATA 輕量型閘道，該閘道原本就會使用網域控制站所使用的所有網路介面卡。
+ATA 閘道需要至少兩張網路介面卡︰<br>1.一個 NIC 連線到內部網路和 ATA 中心。<br>2.用來透過連接埠鏡像擷取網域控制站網路流量的 NIC。<br>* 這不適用於 ATA 輕量型閘道，該閘道原本就會使用網域控制站所使用的所有網路介面卡。
 
 ## <a name="what-kind-of-integration-does-ata-have-with-siems"></a>ATA 與 SIEM 有何種整合？
 ATA 與 SIEM 已經雙向整合，如下所示︰
 
-1. 可將 ATA 設定為在可疑活動發生時將 Syslog 警示傳送至任何使用 CEF 格式的 SIEM 伺服器。
+1. 可將 ATA 設定為在偵測到可疑活動時，將 Syslog 警示傳送至任何使用 CEF 格式的 SIEM 伺服器。
 2. 可將 ATA 設定為從[這些 SIEM](install-ata-step6.md) 接收 Windows 事件的 Syslog 訊息。
 
 ## <a name="can-ata-monitor-domain-controllers-virtualized-on-your-iaas-solution"></a>ATA 是否可以監視在 IaaS 解決方案上虛擬的網域控制站？
@@ -128,7 +128,7 @@ Microsoft Advanced Threat Analytics 是內部部署的產品。
 ## <a name="do-you-have-to-write-your-own-rules-and-create-a-thresholdbaseline"></a>必須撰寫自己的規則，並建立臨界值/基準嗎？
 使用 Microsoft Advanced Threat Analytics 不需要建立規則、臨界值或基準然後調整。 ATA 會分析使用者、裝置、資源的行為 — 以及它們之間的關聯性 — 可以快速偵測可疑的活動和已知的攻擊。 在部署三個星期之後，ATA 開始偵測行為的可疑活動。 另外，在部署之後，ATA 會立即啟動偵測已知的惡意攻擊和安全性問題。
 
-## <a name="if-you-are-already-breached-will-microsoft-advanced-threat-analytics-be-able-to-identify-abnormal-behavior"></a>如果已經被滲透，Microsoft Advanced Threat Analytics 能夠識別異常行為嗎？
+## <a name="if-you-are-already-breached-can-microsoft-advanced-threat-analytics-identify-abnormal-behavior"></a>如果已經被滲透，Microsoft Advanced Threat Analytics 是否可以識別異常行為？
 可以，即使在您被滲透後才安裝 ATA，ATA 仍然可以偵測到駭客的可疑活動。 ATA 不只針對使用者的行為，也會查看組織安全圖中的其他使用者。 初始分析期間，如果攻擊者的行為異常，便會被視為「極端值」，ATA 會持續報告其異常行為。 此外，如果駭客嘗試竊取其他使用者認證 (例如，傳遞票證)，或嘗試在其中一個網域控制站上執行遠端執行，ATA 會偵測到可疑的活動。
 
 ## <a name="does-this-only-leverage-traffic-from-active-directory"></a>這些只需要利用 Active Directory 的流量？
@@ -141,13 +141,13 @@ Microsoft Advanced Threat Analytics 是內部部署的產品。
 否。 ATA 會監視對 Active Directory 執行驗證和授權要求的網路中的所有裝置，包括非 Windows 和行動裝置。
 
 ## <a name="does-ata-monitor-computer-accounts-as-well-as-user-accounts"></a>ATA 會監視電腦帳戶以及使用者帳戶嗎？
-是。 因為電腦帳戶 (以及任何其他實體) 可以用來執行惡意活動，ATA 會監視所有電腦帳戶的行為以及環境中的所有其他實體。
+是。 因為電腦帳戶 (以及任何其他實體) 可以用來執行惡意活動，ATA 會監視所有電腦帳戶的行為，以及環境中的所有其他實體。
 
 ## <a name="can-ata-support-multi-domain-and-multi-forest"></a>ATA 支援多網域和多樹系嗎？
 Microsoft Advanced Threat Analytics 支援在相同樹系邊界內的多網域環境。 多樹系則需要為每個樹系部署 ATA。
 
 ## <a name="can-you-see-the-overall-health-of-the-deployment"></a>可以看到部署的整體健全狀況嗎？
-是，您可以檢視部署的整體健全狀況以及與組態、連線等相關的特定問題，而且系統會在問題發生時警示您。
+是，您可以檢視部署的整體健全狀況，以及與設定、連線等相關的特定問題，而且系統會在問題發生時警示您。
 
 
 ## <a name="see-also"></a>另請參閱

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/4/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 1d186a96-ef70-4787-aa64-c03d1db94ce0
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f85d52420c55e2f1119ad14eb1a6c957fbc50be6
-ms.sourcegitcommit: be6bdfa24a9b25a3375a4768d513b93900b3a498
+ms.openlocfilehash: 5ec554b303a19a6e7b12cd788755604f1aaf43db
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 11/07/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 07/11/2017
 **使用 DNS 探查**警示指出有來自不尋常主機的可疑網域名稱系統 (DNS) 查詢，在您的內部網路上執行探查。
 
 網域名稱系統 (DNS) 是實作為階層分散式資料庫的服務，提供主機名稱和網域名稱的解析。 DNS 資料庫中的名稱會形成階層式樹狀檢視結構，稱為網域命名空間。
-對敵人而言，您的 DNS 包含對應內部網路的重要資訊，包括所有伺服器清單，通常也包括對應至其 IP 位址的所有用戶端清單。 此外，這項資訊之所以有價值，是因為它會列出在指定網路環境中通常是描述性的主機名稱。 藉由擷取這項資訊，敵人就可以在活動期間將火力集中在相關實體上。 [Nmap](https://nmap.org/)、[Fierce](https://github.com/mschwager/fierce) 及內建工具 (例如 [Nslookup](https://technet.microsoft.com/library/cc725991(v=ws.11).aspx)) 等工具提供使用 DNS 探查的主機探索功能。
+對敵人而言，您的 DNS 包含對應內部網路的重要資訊，包括所有伺服器清單，通常也包括對應至其 IP 位址的所有用戶端清單。 此外，這項資訊之所以有價值，是因為它會列出主機名稱，而主機名稱在指定網路環境中通常有描述性的作用。 藉由擷取這項資訊，敵人就可以在活動期間將火力集中在相關實體上。 [Nmap](https://nmap.org/)、[Fierce](https://github.com/mschwager/fierce) 及內建工具 (例如 [Nslookup](https://technet.microsoft.com/library/cc725991(v=ws.11).aspx)) 等工具提供使用 DNS 探查的主機探索功能。
 在內部主機中偵測到使用 DNS 查詢探查會造成問題，表示現有主機可能遭到入侵、可能有更廣泛的網路入侵，或可能有測試人員威脅。
 
 ## <a name="dns-query-types"></a>DNS 查詢類型
@@ -56,7 +56,7 @@ ATA 會顯示來源電腦的名稱，以及所執行之實際 DNS 查詢的其�
 
 ![透過 ATA 解決 DNS 探查問題](./media/dns-recon-diagram.png)
  
-1.  第一個步驟是識別產生警示的電腦，如下所述：
+1.  第一個步驟是識別產生警示的電腦，如下列畫面所示：
  
     ![在 ATA 中檢視 DNS 探查可疑活動](./media/dns-recon.png)
 2.  識別這部電腦的正身。 它是工作站、伺服器、系統管理工作站、滲透測試站台，還是其他？
@@ -80,7 +80,7 @@ Microsoft 建議您使用可透過 Microsoft 帳戶小組連絡的專業事件�
 
 ## <a name="mitigation"></a>降低
 
-您可以停用區域傳輸，或將區域傳輸僅限於指定的 IP 位址，來保護內部 DNS 伺服器，以防止發生使用 DNS 探查。 如需限制區域傳輸的其他資訊，請參閱 Windows Server Technet 文章：[Restrict Zone Transfers](https://technet.microsoft.com/library/ee649273(v=ws.10).aspx) (限制區域傳輸)。 您可以[使用 IPsec 保護區域傳輸](https://technet.microsoft.com/library/ee649192(v=ws.10).aspx)，進一步鎖定限制的區域傳輸。 「修改區域傳輸」是檢查清單中的一項工作，應該加以解決才能[保護 DNS 伺服器免受內部和外部攻擊](https://technet.microsoft.com/library/cc770432(v=ws.11).aspx)。
+您可以停用區域傳輸，或將區域傳輸僅限於指定的 IP 位址，來保護內部 DNS 伺服器，以防止發生使用 DNS 探查。 如需限制區域傳輸的詳細資訊，請參閱[限制區域傳輸](https://technet.microsoft.com/library/ee649273(v=ws.10).aspx) \(英文\)。 您可以[使用 IPsec 保護區域傳輸](https://technet.microsoft.com/library/ee649192(v=ws.10).aspx)，進一步鎖定限制的區域傳輸。 「修改區域傳輸」是檢查清單中的一項工作，應該加以解決才能[保護 DNS 伺服器免受內部和外部攻擊](https://technet.microsoft.com/library/cc770432(v=ws.11).aspx)。
 
 
 

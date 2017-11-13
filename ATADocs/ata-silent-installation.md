@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/29/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c38db312ea877b63580d745153aa58ea34a160a6
-ms.sourcegitcommit: 9ce330726e5de8c05eae6a20d3e6c1d8bef3cd0e
+ms.openlocfilehash: 3210d9153cd6781ae13a784e1f2b5927e0703009
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 11/07/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -33,7 +33,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 > [!Note] 
 > .Net framework 4.6.1 安裝可能需要重新啟動伺服器。 在網域控制站上安裝 ATA 閘道時，請考慮為這些網域控制站排定維護期間。
-使用 ATA 無訊息安裝方法時，安裝程式會設定為在安裝結束時自動重新啟動伺服器安裝 (如有必要)。 由於 Windows Installer 錯誤，norestart 旗標無法可靠地用來確定伺服器不會重新啟動，因此請務必只在維護期間執行無訊息安裝。
+使用 ATA 無訊息安裝方法時，安裝程式會設定為在安裝結束時自動重新啟動伺服器安裝 (如有必要)。 由於 Windows Installer 的某個錯誤，norestart 旗標無法可靠地用來確定伺服器不會重新啟動，因此請務必只在維護期間執行無訊息安裝。
 
 若要追蹤部署進度，請監視位於 **%AppData%\Local\Temp** 中的 ATA 安裝程式記錄檔。
 
@@ -66,9 +66,9 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 |DatabaseDataPath|DatabaseDataPath= "<DBPath>"|否|設定 ATA 資料庫的資料夾路徑。 預設路徑︰C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data|
 |CenterIpAddress|CenterIpAddress=<CenterIPAddress>|是|設定 ATA 中心服務的 IP 位址|
 |CenterPort|CenterPort=<CenterPort>|是|設定 ATA 中心服務的網路連接埠|
-|CenterCertificateThumbprint|CenterCertificateThumbprint="<CertThumbprint>"|否|設定 ATA 中心服務的憑證指紋。 此憑證可用來保護 ATA 中心和 ATA 閘道之間的通訊。 如果未設定，安裝將會產生自我簽署憑證。|
+|CenterCertificateThumbprint|CenterCertificateThumbprint="<CertThumbprint>"|否|設定 ATA 中心服務的憑證指紋。 此憑證可用來保護 ATA 中心和 ATA 閘道之間的通訊。 如果未設定，安裝會產生自我簽署憑證。|
 |ConsoleIpAddress|ConsoleIpAddress=<ConsoleIPAddress>|是|設定 ATA 主控台的 IP 位址|
-|ConsoleCertificateThumbprint|ConsoleCertificateThumbprint="<CertThumbprint >"|否|指定 ATA 主控台的憑證指紋。 此憑證可用來驗證 ATA 主控台網站的身分識別。如果未指定，安裝將會產生自我簽署憑證|
+|ConsoleCertificateThumbprint|ConsoleCertificateThumbprint="<CertThumbprint >"|否|指定 ATA 主控台的憑證指紋。 此憑證會用來驗證 ATA 主控台網站的身分識別。 如果未指定，安裝會產生自我簽署憑證|
 
 **範例**：若要使用預設安裝路徑和單一 IP 位址安裝 ATA 中心︰
 
@@ -168,7 +168,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 |ConsoleAccountName|ConsoleAccountName="<AccountName>"|是|為用來向 ATA 中心註冊 ATA 閘道的使用者帳戶 (user@domain.com) 設定名稱。|
 |ConsoleAccountPassword|ConsoleAccountPassword="<AccountPassword>"|是|為用來向 ATA 中心註冊 ATA 閘道的使用者帳戶 (user@domain.com) 設定密碼。|
 
-**範例**：若要以無訊息方式安裝 ATA 閘道，請使用您的 ATA 系統管理員認證登入已加入網域的電腦，而不需要指定認證。 否則，請使用指定的認證向 ATA 中心註冊：
+**範例**：若要以無訊息方式安裝 ATA 閘道，請使用您的 ATA 系統管理員認證登入已加入網域的電腦，使您不需要在安裝期間指定認證。 否則，請使用指定的認證向 ATA 中心註冊：
 
     "Microsoft ATA Gateway Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" 
     ConsoleAccountName="user@contoso.com" ConsoleAccountPassword="userpwd"

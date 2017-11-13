@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 6a2e559f5aef382230476dde44e8118f2f26b3cf
-ms.sourcegitcommit: e9f2bfd610b7354ea3fef749275f16819d60c186
+ms.openlocfilehash: c4cd30446193ff2d9ab4069b1312593a2102282a
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/07/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -43,9 +43,9 @@ ms.lasthandoff: 10/09/2017
     |**密碼** (必填)|輸入唯讀使用者的密碼，例如︰**Pencil1**。|
     |**網域** (必填)|輸入唯讀使用者的網域，例如︰**contoso.com**。**注意︰**您務必輸入使用者所在網域的完整 FQDN。 例如，如果使用者的帳戶是在 corp.contoso.com 網域中，您需要輸入 `corp.contoso.com`，而非 contoso.com|
 
-2. 您可以按一下 [測試連線]，以測試網域的連線，並檢查提供的認證有提供存取權。 這只在 ATA 中心具有網域連線時有效。   
+2. 您可以按一下 [測試連線]，以測試網域的連線，並檢查提供的認證有提供存取權。 這在 ATA 中心具有網域連線時有效。    
 
-    儲存之後，主控台中的歡迎訊息會變更如下︰![ATA 歡迎階段 1 完成](media/ATA_1.7-welcome-provide-username-finished.png)
+    儲存之後，主控台中的歡迎訊息會變更成下列訊息︰![ATA 歡迎階段 1 完成](media/ATA_1.7-welcome-provide-username-finished.png)
 
 3. 在主控台中，按一下 [下載閘道安裝程式並安裝第一個閘道] 繼續。
 

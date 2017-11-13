@@ -5,25 +5,25 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/19/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.service: advanced-threat-analytics
 ms.prod: 
 ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 713d0070f6cc8949ceab80b2940469c1abc8adab
-ms.sourcegitcommit: 34c3d6f56f175994b672842c7576040956ceea69
+ms.openlocfilehash: a0cc958cd7c802d02c96b6d7d3bc7e7180bd3d95
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 11/07/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
 
 
 # <a name="ata-capacity-planning"></a>ATA 容量規劃
-本主題將協助您判斷監視您的網路需要多少部 ATA 伺服器。 同時也將協助您了解需要多少 ATA 閘道及/或 ATA 輕量型閘道，以及 ATA 中心和 ATA 閘道的伺服器容量。
+本文將協助您決定監視您的網路需要多少部 ATA 伺服器。 文章的內容可協助您了解需要多少 ATA 閘道及/或 ATA 輕量型閘道，以及 ATA 中心和 ATA 閘道的伺服器容量。
 
 > [!NOTE] 
 > 所有效能需求符合本文所述條件的 IaaS 廠商，都能部署 ATA 中心。
@@ -123,7 +123,7 @@ ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站�
 > -   如果網域控制站沒有 ATA 輕量型閘道所需的資源，網域控制站的效能不會受到影響，但 ATA 輕量型閘道可能無法如預期般運作。
 > -   作為虛擬機器執行時不支援動態記憶體或任何其他記憶體佔用功能。
 > -   為了達到最佳效能，將 ATA 輕量型閘道的 **[電源選項]** 設定為 [高效能]。
-> -   至少需要 5 GB 的空間並建議使用 10 GB，包括 ATA 二進位檔、[ATA 記錄檔](troubleshooting-ata-using-logs.md)和[效能記錄檔](troubleshooting-ata-using-perf-counters.md)所需的空間。
+> -   至少需要 5 GB 的空間，建議使用 10 GB，其中包括 ATA 二進位檔、[ATA 記錄檔](troubleshooting-ata-using-logs.md)和[效能記錄檔](troubleshooting-ata-using-perf-counters.md)所需的空間。
 
 
 ### <a name="ata-gateway-sizing"></a>ATA 閘道大小
@@ -158,7 +158,7 @@ ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站�
 > [!NOTE] 
 > -   不支援動態記憶體。
 > -   為了達到最佳效能，將 ATA 閘道的 [電源選項] 設定為 [高效能]。
-> -   至少需要 5 GB 的空間並建議使用 10 GB，包括 ATA 二進位檔、[ATA 記錄檔](troubleshooting-ata-using-logs.md)和[效能記錄檔](troubleshooting-ata-using-perf-counters.md)所需的空間。
+> -   至少需要 5 GB 的空間，建議使用 10 GB，其中包括 ATA 二進位檔、[ATA 記錄檔](troubleshooting-ata-using-logs.md)和[效能記錄檔](troubleshooting-ata-using-perf-counters.md)所需的空間。
 
 
 ## <a name="domain-controller-traffic-estimation"></a>網域控制站流量估計

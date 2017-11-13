@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/21/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 601b48ba-a327-4aff-a1f9-2377a2bb7a42
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: ca460647fbed07820e8d19083d5aca19a05bc0a8
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: d9e226f06c407cb16a3486f81658e05433b00fb1
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -34,7 +34,7 @@ ATA 可以將可疑活動和監視警示事件轉送到您的 SIEM。 可疑活�
 -   shost - 此警示的來源電腦
 -   outcome - 適用於指出該警示中執行活動成功/失敗的警示  
 -   msg - 警示的描述
--   cnt - 適用於具有警示發生次數的警示 (例如猜對幾次密碼的暴力密碼破解)
+-   cnt - 適用於具有警示發生次數的警示 (例如猜過幾次密碼的暴力密碼破解)
 -   app - 用於此警示的通訊協定
 -   externalId - ATA 寫入對應至此警示之事件記錄檔的事件識別碼
 -   cs#label 與 cs# - 這些是 CEF 允許使用的客戶字串，cs#label 是新欄位的名稱，而 cs# 是其值，例如：cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909ae198ca1ec04d05e65fa

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/25/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 5d639e84-2e37-43a9-9667-49be6c4fa8b7
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 7bd0f90acbb6a2d8eb84fd09bc4d859fff082273
-ms.sourcegitcommit: 5563c6861bb5db5cb73e058e5a51b4938b9a7d46
+ms.openlocfilehash: 07be2dad511158a9234c99287f7eefd7cc12ba83
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -74,7 +74,7 @@ ATA 中心事件檢視器會記錄 ATA 的事件。 這篇文章會提供事件�
 
 1022 – ATA 中心外部 IP 位址解析失敗健康情況警示 
  
-## <a name="ata-suspicious-ctivity-events"></a>ATA 可疑活動事件
+## <a name="ata-suspicious-activity-events"></a>ATA 可疑活動事件
 
 2001 – 異常行為可疑活動 
 
@@ -114,9 +114,9 @@ ATA 中心事件檢視器會記錄 ATA 的事件。 這篇文章會提供事件�
 
 2022 – 黃金票證可疑活動 
 
-2023 – 異常敏感性群組成員資格變更可疑活動 
-
 2023 – 暴力密碼破解可疑活動 
+
+2024 – 異常敏感性群組成員資格變更可疑活動  
 
 ## <a name="ata-auditing-events"></a>ATA 稽核事件
 

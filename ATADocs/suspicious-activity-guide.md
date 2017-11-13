@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 09/6/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 1fe5fd6f-1b79-4a25-8051-2f94ff6c71c1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: cd6e2968cad2393e2f56ece03be880622a3a0c6a
-ms.sourcegitcommit: 79abfe095f5def259ebb5018d49f9aadd5f2d4f4
+ms.openlocfilehash: bff477a66b837d82bb10a43a0dad7d36c6542d9f
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2017
+ms.lasthandoff: 11/07/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 10/01/2017
 
 如需如何使用 ATA 警示的詳細資訊，請參閱[處理可疑活動](working-with-suspicious-activities.md)。
 
-如有疑問或意見反應，請透過 [ATAEval@microsoft.com](mailto:ATAEval@microsoft.com) 與我們連絡。
+如有疑問或意見反應，請透過 [ATAEval@microsoft.com](mailto:ATAEval@microsoft.com) 與 ATA 小組連絡。
 
 ## <a name="abnormal-sensitive-group-modification"></a>敏感性群組的異常修改
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 10/01/2017
 
 
 此偵測需要[網域控制站上稽核的事件](https://docs.microsoft.com/advanced-threat-analytics/configure-event-collection)。
-使用 [ATA 稽核 (AuditPol、進階稽核設定強制、輕量型閘道服務探索)](https://aka.ms/ataauditingblog) 中參考的工具，以確保您的網域控制站稽核所需的事件。
+若要確保您的網域控制站稽核所需的事件，請使用 [ATA 稽核 (AuditPol、進階稽核設定強制、輕量型閘道服務探索)](https://aka.ms/ataauditingblog) \(英文\) 中參考的工具。
 
 **調查**
 
@@ -109,7 +109,7 @@ ms.lasthandoff: 10/01/2017
 
 1.  基本架構金鑰 - 這是在網域控制站上執行的惡意程式碼，允許在不知道帳戶密碼的情況下，使用任何帳戶向網域進行驗證。 此惡意程式碼通常會使用較弱的加密演算法，來加密網域控制站上的使用者密碼。 在此偵測中，來自來源電腦之 KRB_ERR 訊息的加密方法相較於先前學到的行為已降級。
 
-2.  黃金票證 - 在[黃金票證](#golden-ticket)警示中，來自來源電腦的 TGS_REQ (服務要求) 訊息之 TGT 欄位的加密方法相較於先前學到的行為已降級。 請注意，這不是依據時間異常 (如同其他黃金票證偵測)。 此外，ATA 未偵測到與上述服務要求建立關聯的任何 Kerberos 驗證要求。
+2.  黃金票證 - 在[黃金票證](#golden-ticket)警示中，來自來源電腦的 TGS_REQ (服務要求) 訊息之 TGT 欄位的加密方法相較於先前學到的行為已降級。 這不是依據時間異常偵測 (如同其他黃金票證偵測)。 此外，ATA 未偵測到與先前服務要求建立關聯的任何 Kerberos 驗證要求。
 
 3.  越過雜湊 - 來自來源電腦的 AS_REQ 訊息加密類型相較於先前學到的行為 (亦即電腦使用 AES) 已降級。
 
@@ -131,7 +131,7 @@ ms.lasthandoff: 10/01/2017
 2.  黃金票證 - 遵循[黃金票證](#golden-ticket)可疑活動的指示進行。   
     此外，由於建立黃金票證需要網域系統管理員權限，因此請實作[傳遞雜湊建議](http://aka.ms/PtH)。
 
-3.  越過雜湊 - 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 這會防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次將會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引。 另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。 由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](http://aka.ms/PtH)的最佳做法。
+3.  越過雜湊 - 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 這可防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引。 另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。 由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](http://aka.ms/PtH)的最佳做法。
 
 ## 黃金票證<a name="golden-ticket"></a>
 
@@ -139,7 +139,7 @@ ms.lasthandoff: 10/01/2017
 
 具有網域系統管理員權限的攻擊者可能會危害 [KRBTGT 帳戶](https://technet.microsoft.com/library/dn745899(v=ws.11).aspx#Sec_KRBTGT)。 他們可以利用 KRBTGT 帳戶建立 Kerberos 票證授權票證 (TGT)，以提供任何資源的授權，並將票證到期日設定為任何時間。 這個假 TGT 稱為「黃金票證」，可讓攻擊者在網路中取得永續性。
 
-在此偵測中，當 Kerberos 票證授與票證使用超過[使用者票證最長存留期](https://technet.microsoft.com/library/jj852169(v=ws.11).aspx)安全性原則中所指定的允許時間時，就會觸發警示。
+在此偵測中，當 Kerberos 票證授與票證使用超過[使用者票證最長存留期](https://technet.microsoft.com/library/jj852169(v=ws.11).aspx) \(機器翻譯\) 安全性原則中所指定的允許時間時，就會觸發警示。
 
 **調查**
 
@@ -151,7 +151,7 @@ ms.lasthandoff: 10/01/2017
 
 **補救**
 
-根據 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)，變更 Kerberos 票證授權票證 (KRBTGT) 密碼兩次。 重設 KRBTGT 兩次將會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。  
+根據 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)，變更 Kerberos 票證授權票證 (KRBTGT) 密碼兩次。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。  
 此外，由於建立黃金票證需要網域系統管理員權限，因此請實作[傳遞雜湊建議](http://aka.ms/PtH)。
 
 ## <a name="honeytoken-activity"></a>Honeytoken 活動
@@ -189,9 +189,9 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 **補救**
 
-1. 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 這會防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。 
+1. 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 這可防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。 
 
-2. 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次將會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。 由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](http://aka.ms/PtH)的最佳做法。
+2. 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。 由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](http://aka.ms/PtH)的最佳做法。
 
 ## <a name="identity-theft-using-pass-the-ticket-attack"></a>使用傳遞票證攻擊竊取身分
 
@@ -207,9 +207,9 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 **補救**
 
-1. 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 這會防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。  
+1. 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 這可防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。  
 
-2. 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次將會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。  由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](http://aka.ms/PtH)中的最佳做法。
+2. 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。  由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](http://aka.ms/PtH)中的最佳做法。
 
 ## <a name="malicious-data-protection-private-information-request"></a>惡意的資料保護私人資訊要求
 
@@ -237,7 +237,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 在 Active Directory 複寫程序中，某個網域控制站上所做的變更，會與所有其他網域控制站同步處理。 若具有必要權限，攻擊者就可以起始複寫要求，讓他們擷取儲存在 Active Directory 中的資料，包括密碼雜湊。
 
-在此偵測中，當複寫要求是從電腦而不是網域控制站起始時，就會觸發警示。
+在此偵測中，當複寫要求從非網域控制站的電腦起始時，就會觸發警示。
 
 **調查**
 
@@ -399,7 +399,7 @@ DNS 通訊協定中有數種查詢類型。 ATA 會偵測源自於非 DNS 伺服
 
 **說明**
 
-某些服務會以純文字傳送帳戶認證。 即使是敏感性帳戶也可能會發生此情況。 監視網路流量的攻擊者可能會惡意攔截並重複使用這些認證。 敏感性帳戶的任何純文字密碼將會觸發警示；至於非敏感性帳戶，如果有五或多個不同的帳戶從相同的來源電腦傳送純文字密碼，則會觸發警示。 
+某些服務會以純文字傳送帳戶認證。 即使是敏感性帳戶也可能會發生此情況。 監視網路流量的攻擊者可能會惡意攔截並重複使用這些認證。 敏感性帳戶的任何純文字密碼都會觸發警示。若為非敏感性帳戶，如果有五個以上不同的帳戶從相同的來源電腦傳送純文字密碼，則會觸發警示。 
 
 **調查**
 
@@ -417,7 +417,7 @@ DNS 通訊協定中有數種查詢類型。 ATA 會偵測源自於非 DNS 伺服
 
 在暴力密碼破解攻擊中，攻擊者會嘗試使用許多不同的密碼對不同的帳戶進行驗證，直到找到至少一個帳戶的正確密碼。 找到後，攻擊者就可以使用該帳戶登入。
 
-在此偵測中，當發生許多驗證失敗時，就會觸發警示。這可能是在許多使用者之間水平使用少量密碼、只對一些使用者「垂直」使用大量密碼，或這兩個選項的任意組合。
+在此偵測中，當發生許多驗證失敗時，就會觸發警示。這可能是在許多使用者之間使用一小組密碼 (水平分佈)，或是只有少數使用者但使用一大組密碼 (垂直分佈)，或者是這兩個選項的任意組合。
 
 **調查**
 
@@ -453,7 +453,7 @@ ATA 會持續三週學習使用者、電腦和資源的實體行為。 此行為
 
 **說明**
 
-攻擊者會使用以非標準方式實作各種通訊協定 (SMB、Kerberos、NTLM) 的工具。 雖然 Windows 通常會直接接受這種類型的網路流量而不發出警告，但 ATA 能夠辨識可能的惡意用途。 此行為可能會以越過雜湊和暴力密碼破解，以及透過進階勒索軟體的惡意探索等攻擊手法來表示。
+攻擊者會使用以非標準方式實作各種通訊協定 (SMB、Kerberos、NTLM) 的工具。 雖然 Windows 會接受這種類型的網路流量而不發出警告，但 ATA 能夠辨識可能的惡意用途。 此行為可能會以越過雜湊和暴力密碼破解，以及透過進階勒索軟體的惡意探索等攻擊手法來表示。
 
 **調查**
 

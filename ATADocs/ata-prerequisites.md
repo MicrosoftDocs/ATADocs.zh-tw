@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d0d7ce6aae1bb59d266ddc0f7162ecfbc477b78a
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 29aef3eeddf6045d200f9b27809567f18a2fa2d0
+ms.sourcegitcommit: 4d9d1e089bbb50baceb87f273ddf2d3aaa9a78e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/14/2017
 ---
 *適用於︰Advanced Threat Analytics 1.8 版*
 
@@ -101,7 +101,7 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 
 |通訊協定|傳輸|Port|去/從|方向|
 |------------|-------------|--------|-----------|-------------|
-|**SSL** (ATA 通訊)|TCP|443 或可設定|ATA 閘道|輸入|
+|**SSL** (ATA 通訊)|TCP|443|ATA 閘道|輸入|
 |**HTTP** (選擇性)|TCP|80|公司網路|輸入|
 |**HTTPS**|TCP|443|公司網路和 ATA 閘道|輸入|
 |**SMTP** (選擇性)|TCP|25|SMTP 伺服器|輸出|
@@ -206,7 +206,7 @@ ATA 閘道需要至少一個管理介面卡和至少一個擷取介面卡︰
 |DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
 |透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|輸出|
 |NetBIOS|UDP|137|網路上的所有裝置|輸出|
-|SSL|TCP|443 或如中心服務所設定|ATA 中心：<br /><br />- 中心服務 IP 位址<br />- 主控台 IP 位址|輸出|
+|SSL|TCP|443|ATA 中心|輸出|
 |Syslog (選擇性)|UDP|514|SIEM 伺服器|輸入|
 
 > [!NOTE]
@@ -262,7 +262,7 @@ ATA 輕量型閘道可為所有網域控制站的網路介面卡監視其上的�
 |DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
 |透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|輸出|
 |NetBIOS|UDP|137|網路上的所有裝置|輸出|
-|SSL|TCP|443 或如中心服務所設定|ATA 中心：<br /><br />- 中心服務 IP 位址<br />- 主控台 IP 位址|輸出|
+|SSL|TCP|443|ATA 中心|輸出|
 |Syslog (選擇性)|UDP|514|SIEM 伺服器|輸入|
 
 > [!NOTE]

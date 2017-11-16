@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/28/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 793273aeea3c78b54d4dc189acaff9bdf8ae58f9
-ms.sourcegitcommit: 46dd0e695f16a0dd23bbfa140eba15ea6a34d7af
+ms.openlocfilehash: 26c093c4163593611b175f4f0002f443e593f952
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 11/07/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -27,10 +27,10 @@ ms.lasthandoff: 08/28/2017
 
 使用 ATA 主控台監視及回應 ATA 偵測到的可疑活動。
 
-鍵入 ? 鍵將會提供 ATA 入口網站協助工具的鍵盤快速鍵。 
+輸入 `?` 鍵可提供 ATA 入口網站協助工具的鍵盤快速鍵。 
 
 ## <a name="enabling-access-to-the-ata-console"></a>啟用 ATA 主控台的存取權
-若要成功登入 ATA 主控台，您必須以被指派適當 ATA 角色的使用者登入，才能存取 ATA 主控台。 如需 ATA 中有關角色型存取控制 (RBAC) 的詳細資訊，請參閱[使用 ATA 角色群組](ata-role-groups.md)。
+若要成功登入 ATA 主控台，必須使用被指派適當 ATA 角色的使用者來登入，才能存取 ATA 主控台。 如需 ATA 中有關角色型存取控制 (RBAC) 的詳細資訊，請參閱[使用 ATA 角色群組](ata-role-groups.md)。
 
 ## <a name="logging-into-the-ata-console"></a>登入 ATA 主控台
 
@@ -44,10 +44,10 @@ ms.lasthandoff: 08/28/2017
  >[!NOTE]
  > 您也可以從 ATA 中心或 ATA 閘道開啟瀏覽器，然後瀏覽到您在為 ATA 主控台安裝 ATA 中心時設定的 IP 位址。    
 
-2.  如果安裝 ATA 中心的電腦與您嘗試存取 ATA 主控台的電腦都已加入網域，ATA 支援與 Windows 驗證整合的單一登入 (如果您已登入電腦，ATA 會使用該權杖將您登入 ATA 主控台)。 您也可以使用智慧卡進行登入。 您在 ATA 中的權限會與您的[系統管理員角色](ata-role-groups.md)對應。
+2.  如果安裝 ATA 中心的電腦與您嘗試存取 ATA 主控台的電腦都已加入網域，則 ATA 會支援與 Windows 驗證整合的單一登入 (如果您已登入電腦，ATA 會使用該權杖將您登入 ATA 主控台)。 您也可以使用智慧卡進行登入。 您在 ATA 中的權限會與您的[系統管理員角色](ata-role-groups.md)對應。
 
  > [!NOTE]
- > 請務必使用您的 ATA 系統管理員使用者名稱和密碼，登入您要存取 ATA 主控台的電腦。 或者，您可以使用不同的使用者身分執行瀏覽器，或登出 Windows 並使用 ATA 系統管理員使用者身分登入。 若要提示 ATA 主控台要求認證，請使用 IP 位址存取主控台，系統將提示您輸入認證。
+ > 請務必使用您的 ATA 系統管理員使用者名稱和密碼，以登入您要存取 ATA 主控台的電腦。 或者，您可以使用不同的使用者身分執行瀏覽器，或登出 Windows 並使用 ATA 系統管理員使用者身分登入。 若要提示 ATA 主控台要求認證，請使用 IP 位址存取主控台，系統便會提示您輸入認證。
 
 3. 若要使用 SSO 進行登入，請確定 ATA 主控台網站已在您的瀏覽器中定義為近端內部網路網站，而且您使用簡短名稱或 localhost 進行存取。
 
@@ -93,11 +93,11 @@ ATA 主控台可讓您依時間順序快速檢視所有可疑的活動。 不但
 
 ![ATA 健全狀況中心影像](media/ATA-Health-Issue.jpg)
 
-每當您的系統發生問題，例如連線錯誤或中斷與 ATA 閘道的連線，[健全狀況中心] 圖示會顯示一個紅點來告知您。 ![ATA 健全狀況中心有紅點的影像](media/ATA-Health-Center-Alert-red-dot.png)
+每當系統發生問題時 (例如連線錯誤或中斷與 ATA 閘道的連線)，[健康情況中心] 圖示就會顯示一個紅點來告知您。 ![ATA 健全狀況中心有紅點的影像](media/ATA-Health-Center-Alert-red-dot.png)
 
 ### <a name="user-and-computer-profiles"></a>使用者和電腦設定檔
 
-ATA 會為網路中每個使用者和電腦建置設定檔。 在使用者設定檔中，ATA 會顯示一般資訊，例如群組成員資格、最近的登入和最近存取的資源。 它也會提供使用者在其中透過 VPN 連線的位置清單。 如需 ATA 視為敏感性的群組成員資格清單，請參閱下文。
+ATA 會為網路中每個使用者和電腦建置設定檔。 在使用者設定檔中，ATA 會顯示一般資訊，例如群組成員資格、最近的登入和最近存取的資源。 它也會提供使用者透過 VPN 連線所在位置的清單。 如需 ATA 視為敏感性的群組成員資格清單，請參閱下列清單。
 
 ![使用者設定檔](media/user-profile.png)
 
@@ -107,7 +107,7 @@ ATA 會為網路中每個使用者和電腦建置設定檔。 在使用者設定
 
 ATA 會在下列頁面上提供實體 (電腦、裝置、使用者) 的其他資訊︰[摘要]、[活動] 和 [可疑的活動]。
 
-ATA 無法完全解析的設定檔將會利用旁邊的半實心圓形圖示來識別。
+針對 ATA 無法完全解析的設定檔，可利用其旁邊的半實心圓形圖示來識別。
 
 
 ![ATA 無法解析的設定檔影像](media/ATA-Unresolved-Profile.jpg)
@@ -138,7 +138,7 @@ ATA 將下列群組清單視為**敏感性**。 屬於這些群組的任何實�
 
 ### <a name="mini-profile"></a>小型設定檔
 
-在主控台中出現單一實體的任何位置，例如使用者或電腦，如果您將滑鼠停留在實體上，就會自動開啟小型設定檔，顯示下列資訊 (如果有的話)︰
+如果您將滑鼠停留在主控台中出現單一實體的任何位置上 (例如使用者或電腦)，就會自動開啟小型設定檔並顯示下列資訊 (如果有的話)︰
 
 ![ATA 小型設定檔影像](media/ATA-mini-profile.jpg)
 

@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: be9ee613-4eb3-40f1-8973-e7f0a707ff57
 ms.reviewer: 
 ms.suite: ems
-ms.openlocfilehash: 036871da05f59e380b045139e735762c1cc8a363
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: 7bbca4eeb6ad8c5b9cf161f60144bbd27ca3c8d2
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="whats-new-in-ata-version-17"></a>ATA 1.7 版的新功能
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。
@@ -104,9 +104,9 @@ ATA 1.7 的更新提供下列各方面的改良︰
 ### <a name="export-suspicious-activity-details-to-excel-may-fail"></a>將可疑活動詳細資料匯出至 Excel 可能失敗
 嘗試將可疑活動詳細資料匯出至 Excel 檔案時，作業可能會因下列錯誤而失敗：*Error [BsonClassMapSerializer`1] System.FormatException: 將類別 Microsoft.Tri.Common.Data.NetworkActivities.SuspiciousActivityActivity 的 Activity 屬性還原序列化時發生錯誤: Element 'ResourceIdentifier' 不符合類別 Microsoft.Tri.Common.Data.EventActivities.NtlmEvent 的任何欄位或屬性。---> System.FormatException: 項目 'ResourceIdentifier' 不符合類別 Microsoft.Tri.Common.Data.EventActivities.NtlmEvent 的任何欄位或屬性。*
 
-若要解決此問題，請從提升權限的命令提示字元瀏覽至下列位置：**%ProgramFiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**，然後執行以下項目：
-1.  **Mongo.exe ATA** (ATA 必須大寫)
-2.  **db.SuspiciousActivityActivity.update({ "Activity._t": "NtlmEvent" },{$unset: {"Activity.ResourceIdentifier": ""}}, {multi: true});**
+若要解決此問題，請從提升權限的命令提示字元瀏覽至下列位置：**%ProgramFiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**，然後執行以下命令：
+1.  `Mongo.exe ATA` (ATA 必須是大寫)
+2.  `db.SuspiciousActivityActivity.update({ "Activity._t": "NtlmEvent" },{$unset: {"Activity.ResourceIdentifier": ""}}, {multi: true});`
 
 ## <a name="minor-changes"></a>次要變更
 

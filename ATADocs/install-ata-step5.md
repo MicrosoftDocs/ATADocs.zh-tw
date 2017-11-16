@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 518153d03f41956871ec5e7bf680f72187e4919c
-ms.sourcegitcommit: e9f2bfd610b7354ea3fef749275f16819d60c186
+ms.openlocfilehash: 05af384d91e899c1c0bc50ec2da6147eb47adb82
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/07/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -50,36 +50,36 @@ ms.lasthandoff: 10/09/2017
       - 清單中應至少有一個網域控制站是通用類別目錄。 這會讓 ATA 解析樹系中其他網域的電腦與使用者物件。
 
   - **擷取網路介面卡** (必填)︰
-  - 針對專用伺服器上的 ATA 閘道，請選取設定為目的地鏡像連接埠的網路介面卡。 這些介面卡將會接收鏡像網域控制站的流量。
+  - 針對專用伺服器上的 ATA 閘道，請選取設定為目的地鏡像連接埠的網路介面卡。 這些介面卡會接收鏡像網域控制站的流量。
   - 針對 ATA 輕量型閘道，則應該是用來與組織中其他電腦通訊的所有網路介面卡。
 
 
-  - **網域同步器候選**：任何設為網域同步器候選的 ATA 閘道皆可負責進行 ATA 與 Active Directory 網域之間的同步處理。 取決於網域大小，初始同步處理可能需要一些時間，而且會耗用大量資源。 根據預設，只有 ATA 閘道會設為網域同步器候選。
-   建議不要將任何遠端站台的 ATA 閘道設為網域同步器候選。
-   如果網域控制站是唯讀的，請勿將它設定為網域同步器候選。 如需詳細資訊，請參閱 [ATA 架構](ata-architecture.md#ata-lightweight-gateway-features)。
+  - **網域同步器候選**：任何設為網域同步器候選的 ATA 閘道皆可負責進行 ATA 與 Active Directory 網域之間的同步處理。 根據網域的大小而定，首次同步處理可能需要一些時間，而且會耗用大量資源。 根據預設，只有 ATA 閘道會設為網域同步器候選。
+   建議停用所有遠端站台 ATA 閘道，使它們不會成為網域同步器候選。
+   如果網域控制站是唯讀的，請勿將其設定為網域同步器候選。 如需詳細資訊，請參閱 [ATA 架構](ata-architecture.md#ata-lightweight-gateway-features)。
 
   > [!NOTE] 
   > 安裝後第一次啟動 ATA 閘道服務時會花幾分鐘時間，因為它要建立網路擷取剖析器的快取。
-  > 進行下一個排定的 ATA 閘道與 ATA 中心間的同步時，設定的變更將套用至 ATA 閘道。
+  > 在 ATA 閘道與 ATA 中心進行下一次的排程同步時，設定的變更便會套用至 ATA 閘道。
 
 3. 您也可以選擇設定 [Syslog 接聽程式和 Windows 事件轉寄集合](configure-event-collection.md)。 
-4. 啟用 [Update ATA Gateway automatically] \(自動更新 ATA 閘道\) 後，在未來版本中，當您更新 ATA 中心時，所有 ATA 閘道都會自動更新。
+4. 啟用 [自動更新 ATA 閘道]，使您於未來將 ATA 中心更新為新的版本時，此 ATA 閘道也會自動更新。
 
-5. 按一下 [儲存]。
+5. 按一下 **[儲存]**。
 
 
 ## <a name="validate-installations"></a>驗證安裝
-若要驗證 ATA 閘道是否已成功部署，請檢查下列各項︰
+若要驗證 ATA 閘道是否已成功部署，請檢查下列步驟︰
 
 1.  檢查名為 **Microsoft Advanced Threat Analytics 閘道**的服務是否正在執行。 儲存 ATA 閘道設定後，可能需幾分鐘時間來啟動服務。
 
-2.  如果服務未啟動，請檢閱位於預設資料夾 “%programfiles%\Microsoft Advanced Threat Analytics\Gateway\Logs” 中的 “Microsoft.Tri.Gateway-Errors.log” 檔案，然後查看 [ATA 疑難排解](troubleshooting-ata-known-errors.md)以取得協助。
+2.  如果服務未啟動，請檢閱位於預設資料夾 “%programfiles%\Microsoft Advanced Threat Analytics\Gateway\Logs” 中的 “Microsoft.Tri.Gateway-Errors.log” 檔案，然後查看 [ATA 疑難排解](troubleshooting-ata-known-errors.md) 取得協助。
 
 3.  如果這是第一個安裝的 ATA 閘道，請於幾分鐘後登入 ATA 主控台，然後將開啟的螢幕向右撥動，以開啟 [通知] 窗格。 您應該會在主控台右邊的通知列中看到**最近已了解的實體**清單。
 
 4.  按一下桌面上的 [Microsoft Advanced Threat Analytics] 捷徑以連線到 ATA 主控台。 以您安裝 ATA 中心的相同使用者認證登入。
 5.  主控台的 [搜尋] 列中搜尋項目，例如您網域中的使用者或群組。
-6.  開啟效能監視器。 在效能樹狀目錄中，按一下 [效能監視器]，然後按一下加號圖示以 [新增計數器]。 展開 [Microsoft ATA 閘道]，向下捲動至 [Network Listener PEF Captured Messages/Sec] 並新增它。 接著，請確定您有在圖形上看到活動。
+6.  開啟效能監視器。 在效能樹狀目錄中，按一下 [效能監視器]，然後按一下加號圖示以 [新增計數器]。 展開 [Microsoft ATA 閘道]，向下捲動至 [Network Listener PEF Captured Messages/Sec] 並加以新增。 接著，請確定您有在圖形上看到活動。
 
     ![新增效能計數器影像](media/ATA-performance-monitoring-add-counters.png)
 

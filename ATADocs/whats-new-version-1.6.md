@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 27b139e5-12b9-4953-8f53-eb58e8ce0038
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c5beb4868fb8ced42457a8cadd1123956dd69ad7
-ms.sourcegitcommit: 470675730967e0c36ebc90fc399baa64e7901f6b
+ms.openlocfilehash: 47a8b5c52bf978d5e07007a3402a567be39e2157
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="whats-new-in-ata-version-16"></a>ATA 1.6 版的新功能
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。
@@ -103,7 +103,7 @@ ATA 1.6 執行 ATA 資料庫所需的儲存空間大幅減少，現在只需要�
 
 您也可能會看到此錯誤︰System.ArgumentNullException: 不能是 Null。
     
-如果您看到上述任一錯誤，請執行下列因應措施。
+如果您看到上述任一錯誤，請執行下列因應措施：
 
 **因應措施**： 
 
@@ -120,19 +120,19 @@ ATA 1.6 執行 ATA 資料庫所需的儲存空間大幅減少，現在只需要�
     2.  Microsoft Advanced Threat Analytics 中心
 7.  檢閱記錄以驗證產品正在執行，而且未發生錯誤。
 8.  [下載](http://aka.ms/ataremoveduplicateprofiles "下載") "RemoveDuplicateProfiles.exe" 工具，然後將其複製到主要安裝路徑 (%ProgramFiles%\Microsoft Advanced Threat Analytics\Center)
-9.  從提升權限的命令提示字元執行 “RemoveDuplicateProfiles.exe”，並等候其成功完成。
+9.  從提升權限的命令提示字元執行 `RemoveDuplicateProfiles.exe`，並等候其成功完成。
 10. 從這裡：…\Microsoft Advanced Threat Analytics\Center\MongoDB\bin 目錄：**Mongo ATA**，輸入下列命令：
 
-    db.SuspiciousActivities.remove({ "_t" : "RemoteExecutionSuspiciousActivity", "DetailsRecords" : { "$elemMatch" : { "ReturnCode" : null } } }, { "_id" : 1 });
+          db.SuspiciousActivities.remove({ "_t" : "RemoteExecutionSuspiciousActivity", "DetailsRecords" : { "$elemMatch" : { "ReturnCode" : null } } }, { "_id" : 1 });
 
 ![更新因應措施](http://i.imgur.com/Nj99X2f.png)
 
-這應該會傳回 WriteResult({ "nRemoved" : XX })，其中 “XX” 是已刪除的可疑活動數目。 如果數目大於 0，請結束命令提示字元，並繼續進行更新程序。
+這應該會傳回 `WriteResult({ "nRemoved" : XX })`，其中 “XX” 是已刪除的可疑活動數目。 如果數目大於 0，請結束命令提示字元，並繼續進行更新程序。
 
 
 ### <a name="net-framework-461-requires-restarting-the-server"></a>.Net Framework 4.6.1 需要重新啟動伺服器
 
-在某些情況下，安裝 .Net Framework 4.6.1 可能需要您重新啟動伺服器。 請注意，在 [Microsoft Advanced Threat Analytics 中心安裝程式] 對話方塊中按一下 [確定] 將會自動重新啟動伺服器。 當您在網域控制站上安裝 ATA 輕量型閘道時，這一點特別重要，因為您可能需要在安裝前規劃維護期間。
+在某些情況下，安裝 .Net Framework 4.6.1 可能需要您重新啟動伺服器。 請注意，在 [Microsoft Advanced Threat Analytics 中心安裝程式] 對話方塊中按一下 [確定]，會自動重新啟動伺服器。 當您在網域控制站上安裝 ATA 輕量型閘道時，這一點特別重要，因為您可能需要在安裝前規劃維護期間。
     ![.NET Framework 重新啟動](media/ata-net-framework-restart.png)
 
 ### <a name="historical-network-activities-no-longer-migrated"></a>不再移轉歷史網路活動

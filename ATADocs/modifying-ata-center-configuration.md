@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/14/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 93b27f15-f7e5-49bb-870a-d81d09dfe9fc
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: bfd86dadbc773b349f28a6327ec2e177da74be8d
-ms.sourcegitcommit: 8b622fa5457cf1a540504899c8c98e860b946e01
+ms.openlocfilehash: 4fe4569cd6477775e8a888d2acd05511f16fb5f6
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 11/07/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 08/14/2017
   > [!NOTE]
   > 如果輸入了自訂的 IP 位址，除非在 ATA 中心上安裝此 IP 位址，否則將無法按一下 [啟動]。
     
-3. 等候 ATA 閘道進行同步。 現在，這些閘道會有兩個可能的 URL 可存取 ATA 主控台。 只要 ATA 閘道可以使用原始 URL 來連線，就不會嘗試使用新 URL。
+3. 等候 ATA 閘道進行同步。現在，這些閘道會有兩個可能的 URL 可存取 ATA 主控台。 只要 ATA 閘道可以使用原始 URL 來連線，就不會嘗試使用新 URL。
 
 4. 更新的設定在所有 ATA 閘道同步之後，便可啟動新的 URL。 當您啟動新 URL 時，ATA 閘道就會使用新的 URL 來存取 ATA 中心。 ATA 閘道連線到 ATA 中心服務之後，將會提取最新的設定，並將僅有 ATA 主控台的新 URL。 
 
@@ -68,13 +68,13 @@ ms.lasthandoff: 08/14/2017
 
 按照此程序來取代憑證：
 
-1. 在目前的憑證到期之前，建立新的憑證並確認將新憑證安裝在 ATA 中心伺服器上。 <br></br>建議您從內部憑證授權單位選擇憑證，但也可以建立新的自我簽署憑證。 如需詳細資訊，請參閱 [New-selfsignedcertificate](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate)。
+1. 在目前的憑證到期之前，建立新的憑證並確認將新憑證安裝在 ATA 中心伺服器上。 <br></br>建議您從內部憑證授權單位選擇憑證，但也可以建立新的自我簽署憑證。 如需詳細資訊，請參閱 [New-SelfSignedCertificate](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate) \(英文\)。
 
 2. 在 ATA 設定中，於 [中心] 下選取新建立的憑證。 此時 ATA 中心服務仍然繫結至原始憑證。 
 
  ![變更 ATA 組態](media/change-center-config.png)
 
-3. 等候 ATA 閘道進行同步。 現在，這些閘道會有兩個可能的憑證，可進行相互驗證。 只要 ATA 閘道可以使用原始憑證來連線，就不會嘗試使用新憑證。
+3. 等候 ATA 閘道進行同步。現在，這些閘道會有兩個可能的憑證，可進行相互驗證。 只要 ATA 閘道可以使用原始憑證來連線，就不會嘗試使用新憑證。
 
 4. 更新的設定在所有 ATA 閘道同步之後，便可啟動 ATA 中心服務所繫結的新憑證。 啟動新憑證時，ATA 中心服務會繫結到新憑證。 ATA 閘道現在會使用新的憑證向 ATA 中心驗證。 ATA 閘道連線到 ATA 中心服務之後，將會提取最新的設定，並將僅有 ATA 中心的新憑證。 
 

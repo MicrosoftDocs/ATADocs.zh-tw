@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 49d0df5f3d835a879990d590b447ed3b4de88685
-ms.sourcegitcommit: e9f2bfd610b7354ea3fef749275f16819d60c186
+ms.openlocfilehash: 0feb12a2e86adae124016c90431209ec33cdbcb5
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/07/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -33,9 +33,9 @@ ATA 可從一些偵測排除特定 IP 位址或使用者。
 
 例如，**DNS 探查排除項目**可以是一個使用 DNS 做為掃描機制的安全性掃描程式。 排除項目可協助 ATA 忽略這類掃描器。 「傳遞票證」排除項目的一個範例是 NAT 裝置。    
 
-ATA 也可以用來設定 Honeytoken 使用者，用來當做惡意執行者的設陷 - 與此 (通常是休眠) 帳戶相關聯的任何驗證將會觸發警示。
+ATA 也能讓您設定 Honeytoken 使用者，用來作為針對惡意執行者的陷阱。所有與此 (通常是休眠的) 帳戶相關聯的驗證都會觸發警示。
 
-若要設定上述項目，請依照下列步驟進行：
+若要設定此帳戶，請遵循下列步驟︰
 
 1.  從 ATA 主控台按一下設定圖示，然後選取 [設定]。
 
@@ -58,7 +58,7 @@ ATA 也可以用來設定 Honeytoken 使用者，用來當做惡意執行者的�
 
 檢查受攻擊的時間線以便檢視偵測到的可疑活動，並搜尋使用者或電腦並檢視其設定檔。
 
-ATA 將立即開始掃描是否有可疑的活動。 某些活動 (例如某些可疑行為的活動) 會等到 ATA 有時間建立行為設定檔之後 (至少三週) 才可以使用。
+ATA 會立即開始掃描是否有可疑的活動。 某些活動 (例如某些可疑行為的活動) 需等到 ATA 有時間建置行為設定檔之後 (至少需三週的時間) 才會提供。
 
 若要確定 ATA 已啟動並執行，以及攔截網路中的漏洞，您可以查看 [ATA 攻擊模擬腳本](https://docs.microsoft.com/enterprise-mobility-security/solutions/ata-attack-simulation-playbook)。
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 07/3/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b0e94ca7d817d6d5735921fefd7c9f4cf2cbd866
-ms.sourcegitcommit: fa50f37b134d7579d7c310852dff60e5f1996eaa
+ms.openlocfilehash: 2f5db3fad62b0fe2243b5bbd82677426ee6fe90c
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 11/07/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 07/03/2017
 Advanced Threat Analytics (ATA) 會收集有關 ATA 的匿名遙測資料，並透過 HTTPS 連線將資料傳輸至 Microsoft 伺服器。  Microsoft 將使用此資料以協助改善未來的 ATA 版本。
 
 ## <a name="data-collected"></a>收集的資料
-收集的匿名資料包含下列內容︰
+收集的匿名資料包含下列參數︰
 
 -   來自 ATA 中心和 ATA 閘道的效能計數器
 
@@ -79,7 +79,7 @@ Advanced Threat Analytics (ATA) 會收集有關 ATA 的匿名遙測資料，並�
 
     -   開始與結束時間
 
-- ATA 主控台 URL 位址 - 使用 ATA 主控台時的 URL 位址，即造訪 ATA 主控台中的哪些頁面。
+- ATA 主控台 URL 位址 - 使用 ATA 主控台時的 URL 位址，也就是所要造訪的 ATA 主控台中的頁面。
 
 
 ### <a name="disable-data-collection"></a>停用資料收集

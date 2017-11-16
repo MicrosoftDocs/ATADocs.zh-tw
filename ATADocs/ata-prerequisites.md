@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/25/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 2f720118b1d9ac08f26b7057e5c7b6706ff4b0b1
-ms.sourcegitcommit: 0cc999b20e919abe4d6edaedee78185788a3e3b9
+ms.openlocfilehash: 29aef3eeddf6045d200f9b27809567f18a2fa2d0
+ms.sourcegitcommit: 4d9d1e089bbb50baceb87f273ddf2d3aaa9a78e8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2017
+ms.lasthandoff: 11/14/2017
 ---
 *適用於︰Advanced Threat Analytics 1.8 版*
 
@@ -56,13 +56,13 @@ ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003
     > [!NOTE]
     > 如果您已經在網域中設定不同組織單位 (OU) 的自訂 ACL，請確定選取的使用者具有讀取這些 OU 的權限。
 
--   請勿在 ATA 閘道或輕量型閘道上安裝 Microsoft 郵件分析器。 郵件分析器驅動程式與 ATA 閘道和輕量型閘道驅動程式衝突。 如果您在 ATA 閘道上執行 Wireshark，在停止 Wireshark 擷取後，需要重新啟動 Microsoft Advanced Threat Analytics 閘道服務。 否則，閘道會停止擷取流量。 請注意，在 ATA 輕量型閘道上執行 Wireshark 不會干擾 ATA 輕量型閘道。
+-   請勿在 ATA 閘道或輕量型閘道上安裝 Microsoft 郵件分析器。 郵件分析器驅動程式與 ATA 閘道和輕量型閘道驅動程式衝突。 如果您在 ATA 閘道上執行 Wireshark，在停止 Wireshark 擷取後，需要重新啟動 Microsoft Advanced Threat Analytics 閘道服務。 否則，閘道會停止擷取流量。 在 ATA 輕量型閘道上執行 Wireshark 不會干擾 ATA 輕量型閘道。
 
--    建議︰使用者應該擁有「刪除的物件」容器的唯讀權限。 這可讓 ATA 偵測網域中的大量刪除物件。 如需設定「刪除的物件」容器的唯讀權限相關資訊，請參閱[檢視或設定目錄物件的權限](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx) \(英文\) 主題中的＜變更刪除的物件容器的權限＞。
+-    建議︰使用者應該擁有「刪除的物件」容器的唯讀權限。 這可讓 ATA 偵測網域中的大量刪除物件。 如需設定「已刪除物件」容器的唯讀權限相關資訊，請參閱[檢視或設定目錄物件的權限](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx) \(英文\) 文章中的＜變更刪除的物件容器的權限＞。
 
 -   選擇性︰沒有任何網路活動之使用者的使用者帳戶。 此帳戶設定為 ATA Honeytoken 使用者。 若要設定 Honeytoken 使用者，您需要使用者帳戶的 SID，而不是使用者名稱。 如需詳細資訊，請參閱[設定 IP 位址排除項目和 Honeytoken 使用者](install-ata-step7.md)。
 
--   選擇性︰除了收集和分析進出網域控制站的網路流量之外，ATA 還會使用 Windows 事件 4776、4732、4733、4728、4729、4756 和 4757 進一步加強 ATA 的傳遞雜湊、暴力密碼破解、修改敏感性群組以及 Honey Token 偵測。 這些可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送。 所收集的事件可提供 ATA 透過網域控制站網路流量無法取得的額外資訊。
+-   選擇性︰除了收集和分析進出網域控制站的網路流量之外，ATA 還會使用 Windows 事件 4776、4732、4733、4728、4729、4756 和 4757 進一步加強 ATA 的傳遞雜湊、暴力密碼破解、修改敏感性群組以及 Honey Token 偵測。 這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 ATA 透過網域控制站網路流量無法取得的額外資訊。
 
 
 ## <a name="ata-center-requirements"></a>ATA 中心需求
@@ -101,7 +101,7 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 
 |通訊協定|傳輸|Port|去/從|方向|
 |------------|-------------|--------|-----------|-------------|
-|**SSL** (ATA 通訊)|TCP|443 或可設定|ATA 閘道|輸入|
+|**SSL** (ATA 通訊)|TCP|443|ATA 閘道|輸入|
 |**HTTP** (選擇性)|TCP|80|公司網路|輸入|
 |**HTTPS**|TCP|443|公司網路和 ATA 閘道|輸入|
 |**SMTP** (選擇性)|TCP|25|SMTP 伺服器|輸出|
@@ -185,10 +185,10 @@ ATA 閘道需要至少一個管理介面卡和至少一個擷取介面卡︰
         > [!NOTE]
         > 如果 ATA 閘道是網域的成員，這會自動設定。
 
--   **擷取介面卡** - 將用來擷取進出網域控制站的流量。
+-   **擷取介面卡** - 用來擷取進出網域控制站的流量。
 
     > [!IMPORTANT]
-    > -   設定擷取介面卡的連接埠鏡像做為網域控制站網路流量的目的地。 如需其他資訊，請參閱[設定連接埠鏡像](configure-port-mirroring.md)。 一般而言，設定通訊埠鏡像必須與網路或虛擬化團隊合作。
+    > -   設定擷取介面卡的連接埠鏡像做為網域控制站網路流量的目的地。 如需詳細資訊，請參閱[設定連接埠鏡像](configure-port-mirroring.md)。 一般而言，設定通訊埠鏡像必須與網路或虛擬化團隊合作。
     > -   為您的環境設定靜態、無法經路由傳送的 IP 位址，沒有預設閘道也沒有 DNS 伺服器位址。 例如，1.1.1.1/32。 這會確保擷取網路介面卡可以擷取最大的流量，而且管理網路介面卡會用於傳送和接收必要的網路流量。
 
 ### <a name="ports"></a>連接埠
@@ -206,7 +206,7 @@ ATA 閘道需要至少一個管理介面卡和至少一個擷取介面卡︰
 |DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
 |透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|輸出|
 |NetBIOS|UDP|137|網路上的所有裝置|輸出|
-|SSL|TCP|443 或如中心服務所設定|ATA 中心：<br /><br />- 中心服務 IP 位址<br />- 主控台 IP 位址|輸出|
+|SSL|TCP|443|ATA 中心|輸出|
 |Syslog (選擇性)|UDP|514|SIEM 伺服器|輸入|
 
 > [!NOTE]
@@ -239,7 +239,7 @@ ATA 輕量型閘道可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)�
 
 ### <a name="server-specifications"></a>伺服器規格
 
-ATA 輕量型閘道在網域控制站上需要安裝至少兩個核心和 6 GB 的 RAM。
+ATA 輕量型閘道至少需要在網域控制站上安裝 2 個核心和 6 GB 的 RAM。
 為了達到最佳效能，將 ATA 輕量型閘道的 **[電源選項]** 設定為 [高效能]。
 ATA 輕量型閘道可以部署在各種負載和大小的網域控制站上，依進出網域控制站的網路流量，以及安裝在該網域控制站上的資源數量而定。
 
@@ -262,7 +262,7 @@ ATA 輕量型閘道可為所有網域控制站的網路介面卡監視其上的�
 |DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
 |透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|輸出|
 |NetBIOS|UDP|137|網路上的所有裝置|輸出|
-|SSL|TCP|443 或如中心服務所設定|ATA 中心：<br /><br />- 中心服務 IP 位址<br />- 主控台 IP 位址|輸出|
+|SSL|TCP|443|ATA 中心|輸出|
 |Syslog (選擇性)|UDP|514|SIEM 伺服器|輸入|
 
 > [!NOTE]

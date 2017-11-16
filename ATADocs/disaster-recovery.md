@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 819f006ae89960ed8f9494ce36ba4fd7f120357a
-ms.sourcegitcommit: 5563c6861bb5db5cb73e058e5a51b4938b9a7d46
+ms.openlocfilehash: 005f698c19c99c31dfa0e660e489f8c402eb1bc6
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -45,10 +45,10 @@ ms.lasthandoff: 10/30/2017
 ## <a name="recover-your-ata-center"></a>復原您的 ATA 中心
 
 1. 使用和先前的 ATA 中心電腦相同的 IP 位址與電腦名稱，建立新的 Windows Server 電腦。
-4. 將您在上面備份的憑證匯入到新的伺服器。
+4. 將您於先前所備份的憑證匯入到新的伺服器。
 5. 依照指示[將 ATA 中心部署到](install-ata-step1.md)新建立的 Windows Server 上。 您不需要再次部署 ATA 閘道。 當系統提示您提供憑證時，請提供您在備份 ATA 中心設定時匯出的憑證。 
 ![ATA 中心還原](media/disaster-recovery-deploymentss.png)
-6. 匯入已備份的 ATA 中心組態：
+6. 匯入已備份的 ATA 中心設定：
     1. 從 MongoDB 移除預設 ATA 中心系統設定檔文件： 
         1. 移至 **C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**。 
         2. 執行 `mongo.exe ATA` 

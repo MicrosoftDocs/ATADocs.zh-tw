@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 08/28/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: 44d7c899-816c-4f7f-91d3-84a09d291a24
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 62ce117423a189a1c2ce00b862f323db6ed328cb
-ms.sourcegitcommit: 46dd0e695f16a0dd23bbfa140eba15ea6a34d7af
+ms.openlocfilehash: b78f0407d74c3c8e0187c9934d3d7555104cd6ec
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 11/07/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
 
 
 # <a name="working-with-suspicious-activities"></a>處理可疑活動
-本主題說明如何使用 Advanced Threat Analytics 的基本概念。
+本文說明如何使用 Advanced Threat Analytics 的基本概念。
 
 ## <a name="review-suspicious-activities-on-the-attack-time-line"></a>在攻擊時間表上檢閱可疑活動
 登入 ATA 主控台之後，您會自動進入開啟的**可疑活動時間表**。 可疑活動會依時間順序列出，最新的可疑活動位於時間表頂端。
@@ -52,16 +52,16 @@ ms.lasthandoff: 08/28/2017
 
 > [!NOTE]
 > -   當滑鼠停留在使用者或電腦上時，會顯示實體小型設定檔，提供實體的其他相關資訊，並包含實體連結的可疑活動數目。
-> -   如果您按一下實體，它會帶您到使用者或電腦的實體設定檔。
+> -   如果您按一下實體，就會帶您到使用者或電腦的實體設定檔。
 
 ![ATA 可疑活動時間表影像](media/ATA-Suspicious-Activity-Timeline.JPG)
 
 ## <a name="filter-suspicious-activities-list"></a>篩選可疑活動清單
 篩選可疑活動清單：
 
-1.  在畫面左側的 [篩選依據] 窗格中，選取下列其中一個項目︰[所有]、[開啟]、[已關閉] 或 [已隱藏]。
+1.  在畫面左側的 [篩選依據] 窗格中，選取下列其中一個選項︰[所有]、[開啟]、[已關閉] 或 [已隱藏]。
 
-2.  若要進一步篩選清單，請選取 [高級]、[中級] 或 [低級]。
+2.  若要進一步篩選清單，請選取 [高]、[中] 或 [低]。
 
 **可疑活動嚴重性**
 
@@ -81,7 +81,7 @@ ms.lasthandoff: 08/28/2017
 
 
 ## <a name="remediating-suspicious-activities"></a>修復可疑活動
-您可以按一下可疑活動的目前狀態，然後選取下列的其中一項來變更可疑活動的狀態：[開啟]、[已隱藏]、[已關閉] 或 [已刪除]。
+您可以按一下可疑活動的目前狀態，然後選取下列其中一項來變更可疑活動的狀態：[開啟]、[已隱藏]、[已關閉] 或 [已刪除]。
 若要這樣做，請按一下特定可疑活動右上角的三個點，以顯示可用動作清單。
 
 ![可疑活動的 ATA 動作](./media/sa-actions.png)
@@ -93,9 +93,9 @@ ms.lasthandoff: 08/28/2017
 -   **關閉**：用於追蹤您已識別、研究與修正以緩解的可疑活動。
 
     > [!NOTE]
-    > 如果在短時間內偵測到相同的活動，ATA 可能會重新開啟已經關閉的活動。
+    > 如果在短時間內再次偵測到相同的活動，ATA 可能會重新開啟已經關閉的活動。
 
--   **隱藏**：隱藏活動表示您想要暫時將它忽略，只有出現新的執行個體時才會再次收到警示。 這表示如果有類似的警示，ATA 不會將它重新開啟。 但如果此警示停止 7 天，然後再次出現，您將會再次收到警示。
+-   **隱藏**：隱藏活動表示您想要暫時將它忽略，只有出現新的執行個體時才會再次收到警示。 這表示如果有類似的警示，ATA 不會將它重新開啟。 但如果此警示在停止七天後再次出現，您便會再次收到警示。
 
 - **刪除**：如果您刪除警示，則會將它從系統和資料庫中刪除，而且您將「無法」予以還原。 按一下 [刪除] 之後，您將可以刪除相同類型的所有可疑活動。
 

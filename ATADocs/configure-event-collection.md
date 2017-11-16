@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 11/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3ebf3165973c14c45d33c95769f0e6ae47e3e795
-ms.sourcegitcommit: 835ea2b8190eb753aaf8d400531040ce1845d75a
+ms.openlocfilehash: 482b16462d115c7bcc2854d30c2ef19fce37f2c0
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 11/07/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -35,17 +35,17 @@ ms.lasthandoff: 10/23/2017
 
 ### <a name="wef-configuration-for-ata-gateways-with-port-mirroring"></a>具連接埠鏡像之 ATA 閘道的 WEF 設定
 
-設定從網域控制站鏡像連接埠到 ATA 閘道之後，請依照下面的指示使用來源起始組態來設定 Windows 事件轉送。 這是一個設定 Windows 事件轉送的方法。 
+設定從網域控制站到 ATA 閘道之間的連接埠鏡像之後，請依照下列指示以使用來源起始設定來設定 Windows 事件轉送。 這是一個設定 Windows 事件轉送的方法。 
 
 **步驟 1︰新增網路服務帳戶到網域 Event Log Readers 群組。** 
 
-在此案例中，我們假設 ATA 閘道是網域的成員。
+在此案例中，假設 ATA 閘道是網域的成員。
 
-1.  開啟「Active Directory 使用者和電腦」，瀏覽至 [BuiltIn] 資料夾，然後按兩下 [Event Log Readers] 群組。 
+1.  開啟 [Active Directory 使用者和電腦]，瀏覽至 **BuiltIn** 資料夾，然後按兩下 [Event Log Readers]。 
 2.  選取 [成員]。
 4.  如果未列出 [Network Service]，請按一下 [新增]，在 [輸入要選取的物件名稱] 欄位中輸入 **Network Service**。 然後按一下 [檢查名稱]，再按兩次 [確定]。 
 
-請注意，在將 [網路服務] 新增到 [Event Log Readers] 群組後，您必須重新啟動網域控制站，變更才會生效。
+在將 [網路服務] 新增到 [Event Log Readers] 群組後，請重新啟動網域控制站，變更才會生效。
 
 **步驟 2︰在網域控制站上建立原則以設定 [設定目標訂閱管理員] 設定。** 
 > [!Note] 
@@ -61,7 +61,7 @@ ms.lasthandoff: 10/23/2017
    
     1.  選取 [啟用]。
     2.  在 [選項] 下，按一下 [顯示]。
-    3.  在 [SubscriptionManagers] 下，輸入下列值，然後按一下 [確定]：*Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (例如︰Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
+    3.  在 [SubscriptionManagers] 下，輸入下列值，然後按一下 [確定]：*Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (例如：Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
  
    ![設定目標訂閱影像](media/wef 2 config target sub manager.png)
    
@@ -75,7 +75,7 @@ ms.lasthandoff: 10/23/2017
 3.  以滑鼠右鍵按一下 [訂閱]，然後選取 [建立訂閱]。 
 
    1.   為訂閱輸入名稱和描述。 
-   2.   對於 [目的記錄檔]確認已選取 [轉送的事件]。 對於要讀取事件的 ATA，目的記錄檔必須是 [轉送的事件]。 
+   2.   針對 [目的地記錄檔]，請確認已選取 [轉送的事件]。 對於要讀取事件的 ATA，目的記錄檔必須是 [轉送的事件]。 
    3.   選取 [來源電腦起始]，按一下 [選取電腦群組]。
         1.  按一下 [加入網域電腦]。
         2.  在 [輸入要選取的物件名稱] 欄位中輸入網域控制站的名稱。 然後按一下 [檢查名稱]，再按一下 [確定]。 
@@ -91,11 +91,11 @@ ms.lasthandoff: 10/23/2017
 
  ![查詢篩選影像](media/wef 4 query filter.png)
 
-   5.   以滑鼠右鍵按一下建立的訂閱，然後選取 [執行階段狀態]，查看是否有任何問題及其狀態。 
+   5.   以滑鼠右鍵按一下建立的訂閱，然後選取 [執行階段狀態]，以查看該狀態是否有任何問題。 
    6.   幾分鐘後，請檢查您設定要轉送的事件是否出現在 ATA 閘道上 [轉送的事件] 中。
 
 
-如需詳細資訊，請參閱[設定電腦轉送及收集事件](https://technet.microsoft.com/library/cc748890)
+如需詳細資訊，請參閱[設定電腦以轉送和收集事件](https://technet.microsoft.com/library/cc748890)
 
 ## <a name="see-also"></a>另請參閱
 - [安裝 ATA](install-ata-step1.md)

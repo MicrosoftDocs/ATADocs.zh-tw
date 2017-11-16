@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 07/30/2017
+ms.date: 11/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b04fb8a4-b366-4b55-9d4c-6f054fa58a90
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c581bc48aa57c6eb9e0c1db6eeec81400ea9061a
-ms.sourcegitcommit: e7f83eb636db00333fe3965324a10a2ef5e2beba
+ms.openlocfilehash: 0d3b57e852a18bf9602d3a75ab627c23496f7285
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2017
+ms.lasthandoff: 11/07/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -29,7 +29,7 @@ ATA 健康狀態中心會在 ATA 部署發生問題時，引發監視警示來�
 ### <a name="center-running-out-of-disk-space"></a>中心磁碟空間用盡
 |警示|說明|解決方法|嚴重性|
 |----|----|----|----|
-|ATA 中心電腦磁碟機上用來儲存 ATA 資料庫的可用空間不足。|這表示硬碟的可用空間小於 200 GB 或不到 20% (以較小者為準)。 當 ATA 認為磁碟機空間不足時，就會開始從資料庫刪除舊資料。 如果舊資料因偵測引擎仍需要而無法刪除，您將會收到此警示。 當您收到此警示時，ATA 會停止追蹤新活動。|增加磁碟機大小或釋出該磁碟機的空間。|高|
+|ATA 中心電腦磁碟機上用來儲存 ATA 資料庫的可用空間不足。|這表示硬碟的可用空間小於 200 GB 或不到 20% (以較小者為準)。 當 ATA 認為磁碟機空間不足時，就會開始從資料庫刪除舊資料。 如果舊資料因偵測引擎仍需要而無法刪除，您會收到此警示。 當您收到此警示時，ATA 會停止追蹤新活動。|增加磁碟機大小或釋出該磁碟機的空間。|高|
 ### <a name="failure-sending-mail"></a>傳送郵件失敗
 |警示|說明|解決方法|嚴重性|
 |----|----|----|----|
@@ -38,7 +38,7 @@ ATA 健康狀態中心會在 ATA 部署發生問題時，引發監視警示來�
 ### <a name="center-overloaded"></a>中心超載
 |警示|說明|解決方法|嚴重性|
 |----|----|----|----|
-|ATA 中心無法處理從 ATA 閘道傳輸的資料量。 |ATA 中心將會停止分析新的網路流量和事件。 這表示在此監視警示作用中時，偵測和分析的正確性會降低。|確定您為 ATA 中心提供足夠的資源。 如需如何適當地規劃 ATA 中心容量的詳細資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。 [使用效能計數器疑難排解 ATA](troubleshooting-ata-using-perf-counters.md) 來調查 ATA 中心的效能。|高|
+|ATA 中心無法處理從 ATA 閘道傳輸的資料量。 |ATA 中心停止分析新的網路流量和事件。 這表示在此監視警示作用中時，偵測和分析的正確性會降低。|確定您為 ATA 中心提供足夠的資源。 如需如何適當地規劃 ATA 中心容量的詳細資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。 [使用效能計數器疑難排解 ATA](troubleshooting-ata-using-perf-counters.md) 來調查 ATA 中心的效能。|高|
 
 ### <a name="failure-connecting-to-the-siem-server-using-syslog"></a>無法連線到使用 Syslog 的 SIEM 伺服器
 |警示|說明|解決方法|嚴重性|
@@ -51,20 +51,20 @@ ATA 健康狀態中心會在 ATA 部署發生問題時，引發監視警示來�
 ### <a name="ata-center-certificate-expired"></a>ATA 中心憑證已過期
 |警示|說明|解決方法|嚴重性|
 |----|----|----|----|
-|ATA 中心憑證已過期。|憑證過期後：從 ATA 閘道連線到 ATA 中心將會失敗。 ATA 中心處理序將會損毀，而且所有 ATA 功能將會停止。|[更換 ATA 中心憑證](modifying-ata-center-configuration.md)|高|
+|ATA 中心憑證已過期。|憑證過期後：從 ATA 閘道連線到 ATA 中心會失敗。 ATA 中心處理序會損毀，而且所有 ATA 功能停止。|[更換 ATA 中心憑證](modifying-ata-center-configuration.md)|高|
 ## <a name="ata-gateway-issues"></a>ATA 閘道問題
 ### <a name="read-only-user-password-to-expire-shortly"></a>唯讀使用者密碼即將過期
 |警示|說明|解決方法|嚴重性|
 |----|----|----|----|
-|用來對 Active Directory 執行實體解析的唯讀使用者密碼即將在不到 30 天內過期。|如果此使用者的密碼過期，所有 ATA 閘道將會停止執行，而且不會收集任何新資料。|[變更網域連線密碼](modifying-ata-config-dcpassword.md)，然後更新 ATA 主控台中的密碼。|中型|
+|用來對 Active Directory 執行實體解析的唯讀使用者密碼即將在不到 30 天內過期。|如果此使用者的密碼過期，所有 ATA 閘道停止執行，而且不會收集任何新資料。|[變更網域連線密碼](modifying-ata-config-dcpassword.md)，然後更新 ATA 主控台中的密碼。|中型|
 ### <a name="read-only-user-password-expired"></a>唯讀使用者密碼已過期
 |警示|說明|解決方法|嚴重性|
 |----|----|----|----|
-|用來取得目錄資料的唯讀使用者密碼已過期。|所有 ATA 閘道將會停止執行 (或即將停止執行)，而且不會收集任何新資料。|[變更網域連線密碼](modifying-ata-config-dcpassword.md)，然後更新 ATA 主控台中的密碼。|高|
+|用來取得目錄資料的唯讀使用者密碼已過期。|所有 ATA 閘道停止執行 (或即將停止執行)，而且不會收集任何新資料。|[變更網域連線密碼](modifying-ata-config-dcpassword.md)，然後更新 ATA 主控台中的密碼。|高|
 ### <a name="gateway-certificate-about-to-expire"></a>閘道憑證即將過期
 |警示|說明|解決方法|嚴重性|
 |----|----|----|----|
-|ATA 閘道憑證將會在不到 3 週內過期。|從特定 ATA 閘道連線到 ATA 中心將會失敗。 不會從該 ATA 閘道傳送任何資料。|ATA 閘道憑證應該會自動更新。 閱讀 ATA 閘道和 ATA 中心記錄檔，以了解為何該憑證未自動更新。|中型|
+|ATA 閘道憑證將會在不到 3 週內過期。|從特定 ATA 閘道連線到 ATA 中心會失敗。 不會從該 ATA 閘道傳送任何資料。|ATA 閘道憑證應該會自動更新。 閱讀 ATA 閘道和 ATA 中心記錄檔，以了解為何該憑證未自動更新。|中型|
 
 ### <a name="gateway-certificate-expired"></a>閘道憑證已過期
 |警示|說明|解決方法|嚴重性|
@@ -73,7 +73,7 @@ ATA 健康狀態中心會在 ATA 部署發生問題時，引發監視警示來�
 ### <a name="domain-synchronizer-not-assigned"></a>未指派網域同步器
 |警示|說明|解決方法|嚴重性|
 |----|----|----|----|
-|未將網域同步器指派給任何 ATA 閘道。 如果沒有設定為網域同步器候選的 ATA 閘道，就可能會發生此情況。|當網域未同步處理時，實體的變更可能會造成 ATA 中的實體資訊變成過期或遺失，但不會影響任何偵測。|確定至少將一個 ATA 閘道設定為[網域同步器](install-ata-step5.md)。|低|
+|未將網域同步器指派給任何 ATA 閘道。 如果沒有設定為網域同步器候選的 ATA 閘道，就可能會發生此情況。|當網域未同步處理時，實體的變更可能會造成 ATA 中的實體資訊變成過期或遺失，但不影響任何偵測。|確定至少將一個 ATA 閘道設定為[網域同步器](install-ata-step5.md)。|低|
 ### <a name="allsome-of-the-capture-network-adapters-on-a-gateway-are-not-available"></a>閘道上的所有/部分擷取網路介面卡無法使用
 |警示|說明|解決方法|嚴重性|
 |----|----|----|----|

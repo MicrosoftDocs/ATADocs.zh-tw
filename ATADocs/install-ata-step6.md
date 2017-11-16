@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3798f7faeb62e44d3877880c2d594332502e76c5
-ms.sourcegitcommit: e9f2bfd610b7354ea3fef749275f16819d60c186
+ms.openlocfilehash: 2f38ee3b8a50a4776709f1a5aa1f37af869a916b
+ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/07/2017
 ---
 *適用於︰Advanced Threat Analytics 1.8 版*
 
@@ -29,17 +29,17 @@ ms.lasthandoff: 10/09/2017
 [« 步驟 5](install-ata-step5.md)
 [步驟 7 »](vpn-integration-install-step.md)
 
-## <a name="step-6-configure-event-collection"></a>步驟 6. 設定事件收集
+## <a name="step-6-configure-event-collection"></a>步驟 6： 設定事件收集
 ### <a name="configure-event-collection"></a>設定事件收集
 為增強偵測功能，ATA 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757。 這些事件可透過 ATA 輕量型閘道自動讀取；如果未部署 ATA 輕量型閘道，則可以透過下列兩個方式之一轉送至 ATA 閘道：藉由將 ATA 閘道設定為接聽 SIEM 事件，或藉由[設定 Windows 事件轉送](configure-event-collection.md)。
 
 > [!NOTE]
 > 針對 ATA 1.8 版及更新版本，ATA 輕量型閘道不再需要事件收集設定。 ATA 輕量型閘道現在可以在本機讀取事件，而不需要設定事件轉送。
 
-除了收集和分析進出網域控制站的網路流量，ATA 可以使用 Windows 事件進一步加強偵測。 它會使用加強各種偵測的 NTLM 事件 4776，以及增強偵測機密群組修改的事件 4732、4733、4728、4729、4756 和 4757。 這可從您的 SIEM 接收，或藉由在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 ATA 透過網域控制站網路流量無法取得的額外資訊。
+除了收集和分析進出網域控制站的網路流量，ATA 可以使用 Windows 事件進一步加強偵測。 它會針對 NTLM 使用能增強各種偵測的事件 4776，並使用事件 4732、4733、4728、4729、4756 和 4757 以增強偵測機密群組修改。 這可從您的 SIEM 接收，或藉由在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 ATA 透過網域控制站網路流量無法取得的額外資訊。
 
 #### <a name="siemsyslog"></a>SIEM/Syslog
-為了讓 ATA 可以取用 Syslog 伺服器上的資料，您需要執行下列操作︰
+為了讓 ATA 可以取用 Syslog 伺服器上的資料，您需要執行下列步驟︰
 
 -   將您的 ATA 閘道伺服器設定為接聽及接受從 SIEM/Syslog 伺服器轉送的事件。
 > [!NOTE]
@@ -61,7 +61,7 @@ ms.lasthandoff: 10/09/2017
 
     ![啟用 Syslog 接聽程式 UDP 映像](media/ATA-enable-siem-forward-events.png)
 
-2.  將 SIEM 或 Syslog 伺服器設定為轉送 Windows 事件識別碼 4776 給其中一個 ATA 閘道的 IP 位址。 如需有關如何設定 SIEM 的詳細資訊，請參閱您的 SIEM 線上說明或每部 SIEM 伺服器的特定格式需求的技術支援選項。
+2.  將 SIEM 或 Syslog 伺服器設定為轉送 Windows 事件識別碼 4776 給其中一個 ATA 閘道的 IP 位址。 如需有關如何設定 SIEM 的詳細資訊，請參閱您的 SIEM 線上說明或每部 SIEM 伺服器之特定格式需求的技術支援選項。
 
 ATA 支援下列格式的 SIEM 事件：  
 
@@ -76,7 +76,7 @@ ATA 支援下列格式的 SIEM 事件：
 
     1.  RsaSA 常數 (必須出現)。
 
-    2.  實際事件的時間戳記 (請確定它不是抵達 SIEM 傳送至 ATA 的時間戳記)。 精確度最好在毫秒以內，這非常重要。
+    2.  實際事件的時間戳記 (請確定它不是抵達 SIEM 傳送至 ATA 的時間戳記)。 精確度最好在毫秒以內，這很重要。
 
     3.  Windows 事件識別碼
 
@@ -107,7 +107,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
     -   externalId = Windows 事件識別碼
 
-    -   rt = 實際事件的時間戳記 (請確定它不是抵達 SIEM 傳送給我們的時間戳記)。 精確度最好在毫秒以內，這非常重要。
+    -   rt = 實際事件的時間戳記 (請確定它不是抵達 SIEM 或傳送至 ATA 的時間戳記)。 精確度最好在毫秒以內，這很重要。
 
     -   cat = Windows 事件記錄檔名稱
 
@@ -144,7 +144,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
 -   欄位格式是「索引鍵=值」。
 
--   下列索引鍵必須存在而且有一個值︰
+-   下列索引鍵必須存在且具有值︰
 
     -   EventCode = Windows 事件識別碼
 
@@ -152,7 +152,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
     -   SourceName = Windows 事件提供者名稱
 
-    -   TimeGenerated = 實際事件的時間戳記 (請確定它不是抵達 SIEM 傳送至 ATA 的時間戳記)。 必須符合 yyyyMMddHHmmss.FFFFFF 的格式，精確度最好在毫秒以內，這非常重要。
+    -   TimeGenerated = 實際事件的時間戳記 (請確定它不是抵達 SIEM 傳送至 ATA 的時間戳記)。 必須符合 yyyyMMddHHmmss.FFFFFF 的格式，精確度最好在毫秒以內，這很重要。
 
     -   ComputerName = 來源主機名稱
 
@@ -175,7 +175,7 @@ QRadar 可讓您透過代理程式收集事件。 如果使用代理程式收集
 - DC 完整網域名稱
 - Windows 事件識別碼
 
-TimeGenerated 是實際事件的時間戳記 (請確定它不是抵達 SIEM 或傳送至 ATA 的時間戳記)。 必須符合 yyyyMMddHHmmss.FFFFFF 的格式，精確度最好在毫秒以內，這非常重要。
+TimeGenerated 是實際事件的時間戳記 (請確定它不是抵達 SIEM 或傳送至 ATA 的時間戳記)。 必須符合 yyyyMMddHHmmss.FFFFFF 的格式，精確度最好在毫秒以內，這很重要。
 
 Message 是來自 Windows 事件的原始事件文字
 

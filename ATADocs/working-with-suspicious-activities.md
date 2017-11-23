@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 12/112017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 44d7c899-816c-4f7f-91d3-84a09d291a24
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b78f0407d74c3c8e0187c9934d3d7555104cd6ec
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 62bc4ad19e632550261e8cf90df53d82d878f8fc
+ms.sourcegitcommit: 261a8ed1a28089c3e40ba4aff43f287db5d9dd4a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/21/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -47,8 +47,6 @@ ms.lasthandoff: 11/07/2017
     -   新增可疑活動的注意事項。
 
     -   提供可疑活動的輸入。
-
--   提供如何回應可疑活動的建議。
 
 > [!NOTE]
 > -   當滑鼠停留在使用者或電腦上時，會顯示實體小型設定檔，提供實體的其他相關資訊，並包含實體連結的可疑活動數目。

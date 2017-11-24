@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 005f698c19c99c31dfa0e660e489f8c402eb1bc6
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: fca262cde38ea35c431b12173b6395eed32abc54
+ms.sourcegitcommit: 261a8ed1a28089c3e40ba4aff43f287db5d9dd4a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/21/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -40,23 +40,25 @@ ms.lasthandoff: 11/07/2017
     4. 將匯出的憑證檔案備份到另一部電腦上。
 
   > [!NOTE] 
-  > 如果您無法匯出私密金鑰，您必須建立新憑證並將它部署至 ATA (如[變更 ATA 中心憑證](modifying-ata-center-configuration#the-ata-center-certificate)中所述)，然後將它匯出。 
+  > 如果您無法匯出私密金鑰，您必須建立新憑證並將它部署至 ATA (如[變更 ATA 中心憑證](modifying-ata-center-configuration.md)中所述)，然後將它匯出。 
 
 ## <a name="recover-your-ata-center"></a>復原您的 ATA 中心
 
 1. 使用和先前的 ATA 中心電腦相同的 IP 位址與電腦名稱，建立新的 Windows Server 電腦。
-4. 將您於先前所備份的憑證匯入到新的伺服器。
-5. 依照指示[將 ATA 中心部署到](install-ata-step1.md)新建立的 Windows Server 上。 您不需要再次部署 ATA 閘道。 當系統提示您提供憑證時，請提供您在備份 ATA 中心設定時匯出的憑證。 
+2. 將您於先前所備份的憑證匯入到新的伺服器。
+3. 依照指示[將 ATA 中心部署到](install-ata-step1.md)新建立的 Windows Server 上。 您不需要再次部署 ATA 閘道。 當系統提示您提供憑證時，請提供您在備份 ATA 中心設定時匯出的憑證。 
 ![ATA 中心還原](media/disaster-recovery-deploymentss.png)
-6. 匯入已備份的 ATA 中心設定：
+4. 停止 ATA 中心服務。
+5. 匯入已備份的 ATA 中心設定：
     1. 從 MongoDB 移除預設 ATA 中心系統設定檔文件： 
         1. 移至 **C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**。 
         2. 執行 `mongo.exe ATA` 
-        3. 執行此命令以移除預設系統設定檔：`db.SystemProfile.remove({})`
+        3. 啟動 ATA 中心服務。
+        4. 執行此命令以移除預設系統設定檔：`db.SystemProfile.remove({})`
     2. 使用步驟 1 中的備份檔案執行命令：`mongoimport.exe --db ATA --collection SystemProfile --file "<SystemProfile.json backup file>" --upsert`。</br>
     如需尋找並匯入備份檔案的完整解釋，請參閱[匯出和匯入 ATA 組態](ata-configuration-file.md)。 
     3. 開啟 ATA 主控台。 您應該會在 [組態/閘道] 索引標籤下看見所有 ATA 閘道皆已連結。 
-    5. 請務必定義[目錄服務使用者](install-ata-step2.md)並選擇[網域控制器同步器](install-ata-step5.md)。 
+    4. 請務必定義[目錄服務使用者](install-ata-step2.md)並選擇[網域控制器同步器](install-ata-step5.md)。 
 
 
 

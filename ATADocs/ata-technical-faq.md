@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 12/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 25c2defd02e260248d30eb76f6ae297c1b36325f
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: da225af4578d4673040315f8814b9067a46517ce
+ms.sourcegitcommit: d41dcc40196a165026fd27db7bbd74d87b8fedda
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/10/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -66,7 +66,8 @@ mongo.exe ATA 檔案名稱
         });
 
 ## <a name="does-ata-work-with-encrypted-traffic"></a>ATA 會處理加密的流量嗎？
-ATA 仰賴於分析多個網路通訊協定，以及從 SIEM 或透過 Windows 事件轉送所收集的事件。因此，即使不分析加密的流量 (例如 LDAPS 和 IPSEC)，ATA 仍然可以運作，大多數偵測也不會受到影響。
+ATA 需要分析多個網路通訊協定，以及從 SIEM 或透過 Windows 事件轉送收集到的事件。 若偵測以流量經過加密的網路通訊協定 (例如 LDAPS 及IPSEC) 為基礎，就不會進行分析。
+
 
 ## <a name="does-ata-work-with-kerberos-armoring"></a>ATA 會處理 Kerberos 防護嗎？
 Kerberos 保護又稱為彈性驗證安全通道 (FAST)，ATA 支援啟用 Kerberos 保護，但過度傳遞雜湊偵測時除外 (將無法運作)。

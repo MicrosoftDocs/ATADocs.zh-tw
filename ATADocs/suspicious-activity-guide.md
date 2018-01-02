@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 12/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 1fe5fd6f-1b79-4a25-8051-2f94ff6c71c1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: bff477a66b837d82bb10a43a0dad7d36c6542d9f
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: b72b60aabb616f6ef5f1307d9d229ae1229681d2
+ms.sourcegitcommit: 2550ea51d36a7411d84ef19c5af25595289b02bf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/13/2017
 ---
 適用於︰Advanced Threat Analytics 1.8 版
 
@@ -292,6 +292,34 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 **補救**
 
 確定具有 Windows Server 2012 R2 以前作業系統的所有網域控制站與 [KB3011780](https://support.microsoft.com/help/2496930/ms11-013-vulnerabilities-in-kerberos-could-allow-elevation-of-privilege) 一起安裝，而且 2012 R2 以前的所有成員伺服器和網域控制站已更新 KB2496930。 如需詳細資訊，請參閱 [Silver PAC](https://technet.microsoft.com/library/security/ms11-013.aspx) 和[偽造 PAC](https://technet.microsoft.com/library/security/ms14-068.aspx)。
+
+## <a name="reconnaissance-using-account-enumeration"></a>使用帳戶列舉偵查
+
+**說明**
+
+在帳戶列舉探查中，攻擊者會使用含有上千筆使用者名稱的目錄或 KrbGuess 這類工具，嘗試猜測網域中的使用者名稱。 攻擊者利用這些名字提出 Kerberos 要求，試著在您的網域中找到有效的使用者名稱。 如果成功猜到使用者名稱，攻擊者將會收到 Kerberos 錯誤**需要預先驗證**，而不是**未知的安全性主體**。 
+
+在這項偵測中，ATA 可以偵測到攻擊來源、猜測嘗試總次數及相符次數。 如果有太多未知的使用者，ATA 會將其偵測為可疑的活動。 
+
+**調查**
+
+1. 按一下警示以移至其詳細資料頁面。 
+
+2. 關於帳戶是否存在，主機電腦該對網域控制站進行查詢嗎 (例如 Exchange 伺服器)？ <br></br>
+在可能產生這個行為的主機上，有指令碼或應用程式在執行嗎？ <br></br>
+如果以上其中一個問題的答案是肯定的，請**關閉**可疑活動 (其為誤判)，並將主機從可疑活動中排除。
+
+3. 下載警示詳細資料的 Excel 試算表，以便查看分成現有及非現有帳戶的帳戶嘗試清單。 如果您在查看試算表中的非現有帳戶工作表時，發現帳戶很眼熟，帳戶有可能是已停用的帳戶，或已離開公司的員工。 在這種情況下，嘗試就不太可能來自字典。 最有可能的是，應用程式或指令碼在檢查哪個帳戶仍然存在於 Active Directory 中。 這屬於良性真肯定。
+
+3. 如果大部分都是不熟悉的名稱，有任何猜測嘗試與 Active Directory 中的現有帳戶名稱相符嗎？ 如果沒有相符的名稱，嘗試即無效，但您應該要注意警示，看看是否有隨著時間而更新。
+
+4. 如果有任何猜測嘗試與現有帳戶名稱相符，您應該將此視為高優先順序的警示。 攻擊者得知帳戶存在於您的環境中，而且可以嘗試使用暴力密碼破解，使用探索到的使用者名稱存取您的網域。 請檢查猜到的帳戶名稱，了解是否有其他可疑活動。 請檢查是否有任何相符的帳戶為敏感性帳戶。
+
+
+**補救**
+
+[複雜且很長的密碼](https://docs.microsoft.com/windows/device-security/security-policy-settings/password-policy)提供必要的第一層安全性，以防止暴力密碼破解攻擊。
+
 
 ## <a name="reconnaissance-using-directory-services-queries"></a>使用目錄服務查詢探查
 

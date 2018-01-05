@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 12/20/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 29aef3eeddf6045d200f9b27809567f18a2fa2d0
-ms.sourcegitcommit: 4d9d1e089bbb50baceb87f273ddf2d3aaa9a78e8
+ms.openlocfilehash: d3f112c455fbf2bbab2137d158cbd31fe6e02f7e
+ms.sourcegitcommit: 5a02c6d497265e65633f96f5f8264a29a18a1114
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/20/2017
 ---
 *適用於︰Advanced Threat Analytics 1.8 版*
 
@@ -249,10 +249,15 @@ ATA 輕量型閘道可以部署在各種負載和大小的網域控制站上，�
 如需 ATA 輕量型閘道硬體需求的詳細資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。
 
 ### <a name="time-synchronization"></a>時間同步
+
 ATA 中心伺服器、ATA 輕量型閘道伺服器和網域控制站的時間必須同步到相差五分鐘內。
+
 ### <a name="network-adapters"></a>網路介面卡
+
 ATA 輕量型閘道可為所有網域控制站的網路介面卡監視其上的本機流量。 <br>
 部署後，如果您想要修改監視的網路介面卡，您可以使用 ATA 主控台。
+
+執行 Windows 2008 R2 且啟用 Broadcom 網路介面卡小組的網域控制站不支援輕量型閘道。
 
 ### <a name="ports"></a>連接埠
 下表列出 ATA 輕量型閘道至少需要的連接埠：

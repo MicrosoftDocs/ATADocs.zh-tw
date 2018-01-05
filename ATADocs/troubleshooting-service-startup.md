@@ -1,11 +1,11 @@
 ---
-title: "使用記錄檔針對 Advanced Threat Analytics 進行疑難排解 | Microsoft Docs"
-description: "描述如何使用 ATA 記錄檔來疑難排解問題"
+title: "為 Advanced Threat Analytics 服務啟動進行疑難排解 | Microsoft Docs"
+description: "本文描述如何為 ATA 啟動問題進行疑難排解"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,17 +13,19 @@ ms.technology:
 ms.assetid: 5a65285c-d1de-4025-9bb4-ef9c20b13cfa
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 125376b1e3530481a3b9f62c4661dd10dce13f22
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 33ff11f592984b754521c562414ffeabd2d1f255
+ms.sourcegitcommit: 91158e5e63ce2021a1f5f85d47de03d963b7cb70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/20/2017
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於︰Advanced Threat Analytics 1.8 版*
 
 
 
-# <a name="troubleshooting-ata-center-service-startup"></a>針對 ATA 中心服務啟動進行疑難排解
+# <a name="troubleshooting-service-startup"></a>為服務啟動進行疑難排解
+
+## <a name="troubleshooting-ata-center-service-startup"></a>針對 ATA 中心服務啟動進行疑難排解
 
 如果您的 ATA 中心未啟動，請執行下列疑難排解程序：
 
@@ -42,6 +44,22 @@ ms.lasthandoff: 11/07/2017
         logman start "Microsoft ATA Center"
         sc start ATACenter
 
+## <a name="troubleshooting-ata-lightweight-gateway-startup"></a>為 ATA 輕量型閘道啟動進行疑難排解
+
+**徵兆**
+
+您的 ATA 閘道未啟動且您收到此錯誤：<br></br>
+System.Net.Http.HttpRequestException: 回應狀態碼未指出成功: 500 (內部伺服器錯誤)
+
+**描述**
+
+在輕量型閘道安裝程序中，ATA 會配置 CPU 閾值，使輕量型閘道能夠以 15% 的緩衝區來利用 CPU，從而導致此問題發生。 若您使用了登錄機碼個別設定閾值：這項衝突會造成輕量型閘道無法啟動。 
+
+**解決方法**
+
+1. 在登錄機碼下，如果有名為 **Disable Performance Counters** 的 DWORD 值，請確認其設為 **0**：`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\` `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfProc\Performance`
+ 
+2. 然後重新啟動效能記錄檔及警示 (PLA) 服務。 ATA 輕量型閘道會自動偵測變更並重新啟動服務。
 
 
 ## <a name="see-also"></a>另請參閱

@@ -58,3 +58,4 @@
 ## [使用資料庫進行疑難排解](troubleshooting-ata-using-ata-database.md)
 ## [對服務啟動進行疑難排解](troubleshooting-service-startup.md)
 ## [災害復原](disaster-recovery.md)
+# [資源](ata-resources.md)

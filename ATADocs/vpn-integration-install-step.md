@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: e0aed853-ba52-46e1-9c55-b336271a68e7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 2eab8649f225071ad548a8134b385d46f02b3222
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 8d7468103e14e31116c4b6cb9846ecdcd2bf0ef0
+ms.sourcegitcommit: 55f7ac32bcd4ac8edb8b8b3b47993bf96b9acce2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 01/15/2018
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於︰Advanced Threat Analytics 1.8 版*
 
 
 
@@ -37,7 +37,6 @@ ATA 會透過接聽轉送到 ATA 閘道的 RADIUS 計量事件，與您的 VPN �
 
 -   Microsoft
 -   F5
--   Check Point
 -   Cisco ASA
 
 ## <a name="prerequisites"></a>必要條件
@@ -46,7 +45,7 @@ ATA 會透過接聽轉送到 ATA 閘道的 RADIUS 計量事件，與您的 VPN �
 
 -   啟動您 ATA 閘道和 ATA 輕量型閘道上的連接埠 UDP 1813。
 
--   將 ATA 中心連線到網際網路，如此即可查詢連入 IP 位址的位置。
+-   ATA 中心必須可以使用 HTTPS (連接埠 443) 存取 *ti.ata.azure.com*，才可查詢連入 IP 位址的位置。
 
 下列範例會使用 Microsoft 路由及遠端存取伺服器 (RRAS) 來描述 VPN 設定程序。
 
@@ -68,7 +67,7 @@ ATA 會透過接聽轉送到 ATA 閘道的 RADIUS 計量事件，與您的 VPN �
      
 ### <a name="configure-vpn-in-ata"></a>在 APA 中設定 VPN
 
-ATA 會收集 VPN 資料，這些資料有助於描繪電腦連線到網路的來源位置，而且有助於偵測異常 VPN 連線。
+ATA 會收集 VPN 資料，並找出經由 VPN 使用認證的時間與位置，同時能將該資料整合到您的調查中。 如此一來，即可提供其他資訊以協助您調查 ATA 所回報的警示。
 
 在 ATA 中設定 VPN 資料：
 
@@ -88,8 +87,7 @@ ATA 會收集 VPN 資料，這些資料有助於描繪電腦連線到網路的�
  
    ![VPN 設定](./media/vpn-user.png)
 
-在 ATA 閘道接收 VPN 事件並將它們傳送給 ATA 中心進行處理之後，ATA 中心必須有網際網路連線，HTTPS 連接埠 443 才能將 VPN 事件中的外部 IP 地址解析為其地理位置。
-
+在 ATA 閘道收到 VPN 事件，並將其傳送到 ATA 中心進行處理後，ATA 中心即需使用 HTTPS (連接埠 443) 存取 *ti.ata.azure.com*，才可將 VPN 事件中的外部 IP 位址，解析為其地理位置。
 
 
 

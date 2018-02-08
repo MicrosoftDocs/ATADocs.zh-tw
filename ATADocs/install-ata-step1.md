@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 2/1/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: advanced-threat-analytics
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f35c495193806f1c1ccc00800402d9b0aca36982
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 7a5dd2c722244ec94ebf49555483ddd201b5ba54
+ms.sourcegitcommit: 7684a9942719a90444ab567ffe9b2ff86438c04b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 02/01/2018
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於︰Advanced Threat Analytics 1.8 版*
 
 
 # <a name="install-ata---step-1"></a>安裝 ATA - 步驟 1
@@ -90,6 +90,10 @@ ms.lasthandoff: 11/07/2017
 
 1.  檢查名為 **Microsoft Advanced Threat Analytics 中心**的服務是否正在執行。
 2.  按一下桌面上的 [Microsoft Advanced Threat Analytics] 捷徑以連線到 ATA 主控台。 以您安裝 ATA 中心的相同使用者認證登入。
+
+### <a name="set-anti-virus-exclusions"></a>設定防毒程式排除項目
+
+在安裝 ATA 中心後，您應排除 MongoDB 資料庫目錄，使防毒應用程式不持續對其進行掃描。 在資料庫中的預設路徑為︰**C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data**。
 
 
 

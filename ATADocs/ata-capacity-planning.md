@@ -5,20 +5,20 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 2/1/2018
 ms.topic: get-started-article
 ms.service: advanced-threat-analytics
 ms.prod: 
 ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a0cc958cd7c802d02c96b6d7d3bc7e7180bd3d95
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 76173dfa0b41195e641235f8792723fa7b038a68
+ms.sourcegitcommit: 7684a9942719a90444ab567ffe9b2ff86438c04b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 02/01/2018
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於︰Advanced Threat Analytics 1.8 版*
 
 
 
@@ -39,6 +39,9 @@ ms.lasthandoff: 11/07/2017
 
 ![範例容量規劃工具](media/capacity tool.png)
 
+
+> [!NOTE]
+> 由於不同的環境會有差異，而且存在著多項特殊且無法預期的網路流量特性，因此在您一開始部署及 ATA 及執行縮放工具之後，可能必須調整及微調您的容量部署。
 
 
 若基於某些原因而無法使用 ATA 調整大小工具，請以極短的收集間隔 (大約 5 秒)，手動收集 24 小時內所有網域控制站的 packet/sec 計數器資訊。 然後，對於每個網域控制站，您必須計算每日平均和最繁忙期間的 (15 分鐘) 平均。

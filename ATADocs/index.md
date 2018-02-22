@@ -1,11 +1,11 @@
 ---
 layout: LandingPage
 description: "深入了解如何使用 Advanced Threat Analytics。"
-ms.openlocfilehash: 187c9d85f9ce0d8c695962c0e7a1dfce7053d59c
-ms.sourcegitcommit: fa50f37b134d7579d7c310852dff60e5f1996eaa
+ms.openlocfilehash: 12160c89355a961deacc3e7e0f3b0249f7804e76
+ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="advanced-threat-analytics-documentation"></a>Advanced Threat Analytics 文件
 
@@ -31,7 +31,7 @@ Advanced Threat Analytics (ATA) 為內部部署平台，可協助保護您的企
         </a>
     </li>
     <li>
-        <a href="/advanced-threat-analytics/understand-explore/what-is-ata">
+        <a href="/advanced-threat-analytics/what-is-ata">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -49,7 +49,7 @@ Advanced Threat Analytics (ATA) 為內部部署平台，可協助保護您的企
         </a>
     </li>
     <li>
-        <a href="/advanced-threat-analytics/understand-explore/ata-technical-faq"> 
+        <a href="/advanced-threat-analytics/ata-technical-faq"> 
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -67,7 +67,7 @@ Advanced Threat Analytics (ATA) 為內部部署平台，可協助保護您的企
         </a>
     </li>
     <li>
-        <a href="/advanced-threat-analytics/plan-design/ata-architecture"> 
+        <a href="/advanced-threat-analytics/ata-architecture"> 
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -85,7 +85,7 @@ Advanced Threat Analytics (ATA) 為內部部署平台，可協助保護您的企
         </a>
     </li>
     <li>
-        <a href="/advanced-threat-analytics/plan-design/ata-capacity-planning"> 
+        <a href="/advanced-threat-analytics/ata-capacity-planning"> 
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

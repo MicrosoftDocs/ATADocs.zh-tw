@@ -1,1 +1,41 @@
-# [索引](index.md)
+# 了解與探索 - 預覽！
+## [什麼是 Azure 進階威脅防護？](what-is-atp.md)
+## [常見問題集](atp-technical-faq.md)
+# 計劃和設計
+## [Azure ATP 必要條件](atp-prerequisites.md)
+## [Azure ATP 架構](atp-architecture.md)
+## [規劃 Azure ATP 容量](atp-capacity-planning.md)
+# 部署
+## [1 在工作區管理入口網站中建立工作區](install-atp-step1.md)
+## [2 連線到 AD](install-atp-step2.md)
+## [3 下載 Azure ATP 感應器套件](install-atp-step3.md)
+## [4 安裝 Azure ATP 感應器](install-atp-step4.md)
+## [5 設定 Azure ATP 感應器](install-atp-step5.md)
+## [6 VPN 整合](install-atp-step6-vpn.md)
+## [7 排除與 Honeytoken 帳戶](install-atp-step7.md)
+### [8 設定 SAM-R 所需的權限](install-atp-step8-samr.md)
+## [無訊息安裝](ATP-silent-installation.md)
+## Azure ATP 感應器額外步驟
+### [設定連接埠鏡像](configure-port-mirroring.md)
+### [設定事件收集](configure-event-collection.md)
+### [設定 Windows 事件轉送](configure-event-forwarding.md)
+### [設定 Proxy 以進行通訊](configure-proxy.md)
+# 用法
+## [Azure ATP 健康情況中心](atp-health-center.md)
+## [Azure ATP 報表](reports.md)
+## [Azure ATP 角色群組](atp-role-groups.md)
+## [變更網域連線密碼](modifying-atp-config-dcpassword.md)
+## [從偵測中排除實體](excluding-entities-from-detections.md)
+## [與 Windows Defender ATP 整合](integrate-wd-atp.md)
+## [監視警示](monitoring-alerts.md)
+## [設定 Azure ATP 通知](notifications.md)
+## [與 Syslog 整合](setting-syslog.md)
+## [使用機密帳戶](sensitive-accounts.md)
+## [使用 Azure ATP 工作區入口網站](workspace-portal.md)
+## Azure ATP 參考資訊
+### [SIEM 記錄檔參考](cef-format-sa.md)
+# 調查
+## [處理可疑活動](working-with-suspicious-activities.md)
+## [可疑活動指南](suspicious-activity-guide.md)
+## [使用 Azure ATP 調查橫向移動路徑](use-case-lateral-movement-path.md)
+## [調查實體](entity-profiles.md)

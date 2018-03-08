@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 47fa5ad5d6fb7800c7df4b878d16ec335e2b70e5
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: f077bbd9990affbb6c552c5ad8875fdfebbd70f2
+ms.sourcegitcommit: 84556e94a3efdf20ca1ebf89a481550d7f8f0f69
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/08/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/21/2018
  
 1.  確認**目前使用者**可使用 IE 瀏覽 DC 的下列 URL 來存取處理器端點：https://triprd1wcuse1sensorapi.eastus.cloudapp.azure.com (適用於美國)，您應該會收到錯誤 503：
 
- ![服務無法使用](/media/service-unavailable.png)
+ ![服務無法使用](./media/service-unavailable.png)
  
 2.  如果您沒有收到錯誤 503，請檢閱 Proxy 設定並再試一次。
 
@@ -39,11 +39,11 @@ ms.lasthandoff: 02/21/2018
 
 如果您收到「錯誤: 系統找不到指定的登錄機碼或值。」 這表示在 **LOCAL_SYSTEM** 層級沒有設定任何 Proxy
  
- ![Proxy 本機系統錯誤](/media/proxy-local-system-error.png)
+ ![Proxy 本機系統錯誤](./media/proxy-local-system-error.png)
 
 如果結果為「比較的結果: 不同」，則表示已針對 **LOCAL_SYSTEM** 設定 Proxy，但它與 **CURRENT_USER** 不相同：
  
-  ![Proxy 比較的結果](/media/proxy-result-compared.png)
+  ![Proxy 比較的結果](./media/proxy-result-compared.png)
 
 5.  如果 **LOCAL_SYSTEM** 沒有正確的 Proxy 設定 (未設定或是與 **CURRENT_USER** 不同)，則您可能需要從 **CURRENT_USER** 將 Proxy 設定複製到 **LOCAL_SYSTEM**。 請確定在您修改登錄機碼之前，先將它備份：
 

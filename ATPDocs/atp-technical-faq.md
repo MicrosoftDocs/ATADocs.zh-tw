@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/20/2018
+ms.date: 2/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c37b46f66715a34145b6123a9278fbc53d4f0d15
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 6a6a34b9a2aae0e507fe18872a31368cf3f3e9d0
+ms.sourcegitcommit: 21d8f9abf909fc5f0e0da03cd100fa8fb950baa4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 02/27/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/21/2018
 
 ## <a name="where-can-i-get-a-license-for-azure-advanced-threat-protection-atp"></a>哪裡可以取得 Azure 進階威脅防護 (ATP) 的授權？
 
-如果您直接透過 Office 365 入口網站或透過雲端解決方案提供者 (CSP) 授權模型取得 Enterprise Mobility + Security 5 (EMS 5) 的授權，而且無法透過 Microsoft 大量授權服務中心 (VLSC) 存取 Azure ATP，請連絡 Microsoft 客戶支援服務以取得啟動 Azure 進階威脅防護 (ATP) 的程序。
+如果您直接透過 Office 365 入口網站或透過雲端解決方案提供者 (CSP) 授權模型取得 Enterprise Mobility + Security 5 (EMS E5) 的授權，而且無法透過 Microsoft 大量授權服務中心 (VLSC) 存取 Azure ATP，請連絡 Microsoft 客戶支援服務以取得啟動 Azure 進階威脅防護 (ATP) 的程序。
 
 ## <a name="what-should-i-do-if-the-azure-atp-sensor-or-standalone-sensor-doesnt-start"></a>如果 Azure ATP 感應器或獨立感應器無法啟動該怎麼辦？
 在目前的錯誤記錄檔中尋找最新的錯誤 (在 Azure ATP 安裝位置的 "Logs" 資料夾下)。
@@ -117,7 +117,7 @@ Azure 進階威脅防護支援在相同樹系邊界內的多網域環境。 多�
 ## <a name="what-data-does-azure-atp-collect"></a>Azure ATP 會收集什麼資料？ 
 Azure ATP 會將來自您已設定伺服器 (網域控制站、成員伺服器等) 的資訊，收集並儲存至特別針對系統管理、追蹤及報告用途的資料庫中。 收集的資訊包括針對網域控制站的雙向網路流量 (例如 Kerberos 驗證、NTLM 驗證、DNS 查詢)、安全性記錄 (例如 Windows 安全性事件)、Active Directory 資訊 (結構、子網路、網站)，以及實體資訊 (例如名稱、電子郵件地址及電話號碼)。 
 
-Microsoft 會使用這份資料來： 
+Microsoft 會使用這份資料： 
 
 -   主動識別您組織中的攻擊指標 (IOA) 
 -   在偵測到可能的攻擊時產生警示 

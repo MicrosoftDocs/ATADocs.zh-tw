@@ -25,7 +25,7 @@ ms.lasthandoff: 11/07/2017
 
 # <a name="export-and-import-the-ata-configuration"></a>匯出和匯入 ATA 組態
 ATA 組態會儲存在資料庫的「SystemProfile 」集合中。
-ATA 中心服務每小時會將此集合備份成名為 **SystemProfile_*timestamp*.json **的檔案。會儲存 10 個最新的版本。此檔案位於名為 **Backup** 的子資料夾中。在預設的 ATA 安裝位置中，可以在這裡找到︰*C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup\SystemProfile_*timestamp*.json*。 
+ATA 中心服務每小時會將此集合備份成名為 **SystemProfile_*timestamp*.json**的檔案。會儲存 10 個最新的版本。此檔案位於名為 **Backup** 的子資料夾中。在預設的 ATA 安裝位置中，可以在這裡找到︰*C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup\SystemProfile_*timestamp*.json*。 
 
 **注意**：建議在針對 ATA 進行重大變更時，在某處備份此檔案。
 

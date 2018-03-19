@@ -43,3 +43,4 @@
 ## [調查實體](entity-profiles.md)
 # 疑難排解
 ## [針對已知問題進行疑難排解](troubleshooting-atp-known-issues.md)
+## [支援與資訊](atp-support.md)

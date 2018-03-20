@@ -1,11 +1,12 @@
 ---
 layout: LandingPage
 description: "深入了解如何使用 Advanced Threat Analytics。"
-ms.openlocfilehash: 12160c89355a961deacc3e7e0f3b0249f7804e76
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.topic: landing-page
+ms.openlocfilehash: 2091c0c3de5e4509570985ab9bad014075eebdd7
+ms.sourcegitcommit: 72520128141a98771a62d68785703ef1c2130c19
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="advanced-threat-analytics-documentation"></a>Advanced Threat Analytics 文件
 

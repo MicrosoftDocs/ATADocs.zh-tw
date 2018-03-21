@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2017
+ms.date: 3/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 24eca4c6-c949-42ea-97b9-41ef0fb611f1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 862420fb6914dbf9ee57c36bc21103cc7dddf7af
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: f27020f1b4a5fa7aa8fefbda28eac0c2ad6c64d0
+ms.sourcegitcommit: 912e453753156902618ae6ebb8489c2320c06fc6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/12/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -31,7 +31,10 @@ Azure ATP 需要安裝 Microsoft .NET Framework 4.7。
 
 當您安裝 Azure ATP 時，也會在部署 Azure ATP 之際自動安裝 .Net Framework 4.7。
 
-> [!Note] 
+> [!IMPORTANT] 
+> 確定您已安裝最新版的 .Net Framework。 如已安裝舊版的 .Net，您的 Azure ATP 無訊息安裝會卡在迴圈中，無法安裝。 
+
+> [!NOTE] 
 > .Net Framework 4.7 的安裝可能需要重新啟動伺服器。 在網域控制站上安裝 Azure ATP 感應器時，請考慮為這些網域控制站排定維護時段。
 使用 Azure ATP 無訊息安裝模式時，安裝程式會設定為在安裝結束時自動重新啟動伺服器 (如有必要)。 由於 Windows Installer 的某個錯誤，*norestart* 旗標無法可靠地用來確定伺服器不會重新啟動，因此請務必只在維護時段執行無訊息安裝。
 

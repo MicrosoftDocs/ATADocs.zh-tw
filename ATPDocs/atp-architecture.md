@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/27/2018
+ms.date: 3/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ffa58d4e6ca24773f7168dd94ad0596878eaf151
-ms.sourcegitcommit: 21d8f9abf909fc5f0e0da03cd100fa8fb950baa4
+ms.openlocfilehash: 640974bbeb0ff147b21da24d6ad6df2f54e9ab4d
+ms.sourcegitcommit: 912e453753156902618ae6ebb8489c2320c06fc6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/12/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -74,6 +74,8 @@ Azure ATP 工作區管理入口網站可讓您：
 
 > [!NOTE]
 > Azure ATP 目前支援建立兩個工作區。 建議您為生產環境建立主要工作區，而其他工作區作為預備環境。
+> 刪除工作區之後，您可以連絡支援人員重新啟動它。 您最多可有三個刪除的工作區。 若要增加儲存的刪除工作區數量，請連絡 Azure ATP 支援。
+
 
 ### <a name="azure-atp-workspace-portal"></a>Azure ATP 工作區入口網站
 
@@ -119,6 +121,8 @@ Azure ATP 工作區入口網站可讓您管理下列 Azure ATP 功能：
 -   將相關資料傳輸至 Azure ATP 雲端服務
 
 -   從單一 Azure ATP 獨立感應器監視多個網域控制站，或使用單一 Azure ATP 感應器監視單一網域控制站。
+
+Azure ATP 最多支援 100 個感應器。 如果您想要安裝更多，請連絡 Azure ATP 支援。
 
 Azure ATP 獨立感應器會從您的網路接收網路流量和 Windows 事件，並在下列主要元件中加以處理︰
 

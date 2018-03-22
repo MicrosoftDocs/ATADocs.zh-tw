@@ -2,6 +2,8 @@
 ## [什麼是 Microsoft Advanced Threat Analytics？](what-is-ata.md)
 ## [ATA 會偵測哪些威脅？](ata-threats.md)
 ## ATA 的新功能?
+### [ATA 1.9 版的新功能](whats-new-version-1.9.md)
+#### [更新為 ATA 1.9 - 移轉指南](ata-update-1.9-migration-guide.md)
 ### [ATA 1.8 版中的新增功能](whats-new-version-1.8.md)
 #### [更新為 ATA 1.8 - 移轉指南](ata-update-1.8-migration-guide.md)
 ### [ATA 1.7 版的新功能](whats-new-version-1.7.md)
@@ -26,6 +28,7 @@
 ## [6 事件收集](install-ata-step6.md)
 ## [7 VPN 整合](vpn-integration-install-step.md)
 ## [8 排除與 Honeytoken](install-ata-step7.md)
+## [9 設定 SAM-R](install-ata-step9-samr.md)
 ## [無訊息安裝](ata-silent-installation.md)
 ## ATA 閘道的其他步驟
 ### [1.設定連接埠鏡像](configure-port-mirroring.md)
@@ -42,9 +45,12 @@
 ## [匯出/匯入 ATA 組態](ata-configuration-file.md)
 ## [管理 ATA 遙測](manage-telemetry-settings.md)
 ## [設定 ATA 通知](setting-ata-alerts.md)
-## [進行 Syslog 和電子郵件伺服器設定](setting-syslog-email-server-settings.md)
+## [進行 syslog 和電子郵件伺服器設定](setting-syslog-email-server-settings.md)
+## [標記敏感性帳戶](tag-sensitive-accounts.md)
 ## [處理可疑活動](working-with-suspicious-activities.md)
 ## [使用 ATA 主控台](working-with-ata-console.md)
+### [實體設定檔](entity-profiles.md)
+##[防止橫向移動路徑](use-case-lateral-movement-path.md)
 ## ATA 參考資訊
 ### [SIEM 記錄檔參考](cef-format-sa.md)
 ### [事件識別碼參考](event-id-reference.md)

@@ -1,25 +1,25 @@
 ---
-title: "ATA SIEM 記錄檔參考 | Microsoft Docs"
-description: "提供從 ATA 傳送到您 SIEM 的可疑活動記錄檔範例。"
-keywords: 
+title: ATA SIEM 記錄檔參考 | Microsoft Docs
+description: 提供從 ATA 傳送到您 SIEM 的可疑活動記錄檔範例。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 601b48ba-a327-4aff-a1f9-2377a2bb7a42
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: d9e226f06c407cb16a3486f81658e05433b00fb1
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 7c6eaba8f80dcc7a8fc767f2bb8168221fbc7207
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 # <a name="ata-siem-log-reference"></a>ATA SIEM 記錄檔參考
@@ -86,12 +86,16 @@ May  3 12:36:47 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|RemoteExecutionSus
 05-14-2017          12:13:12               Auth.Warning    192.168.0.220     1 2017-05-14T09:13:12.102468+00:00 CENTER ATA 1116 EncryptionDowngradeSuspiciousAct ï»¿CEF:0|Microsoft|ATA|1.8.6455.41882|EncryptionDowngradeSuspiciousActivity|加密降級活動|5|start=2017-05-14T09:13:03.3509467Z app=Kerberos msg=來自 CLIENT2 的 KRB_ERR 訊息之 ETYPE_INFO2 欄位的加密方法已根據先前學到的行為降級。 這可能是 DC3 上基本架構金鑰的結果。 externalId=2011 cs1Label=url cs1=https://center/suspiciousActivity/59181fa88ca1ec045cdfe630
 ### <a name="unusual-protocol-implementation"></a>不尋常的通訊協定實作
 May  3 12:28:19 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|AbnormalProtocolSuspiciousActivity|不尋常的通訊協定實作|5|start=2017-05-03T12:28:05.3561302Z app=Ntlm shost=CLIENT1 suser=Administrator outcome=Success msg=系統管理員已成功從 CLIENT1 使用不尋常的通訊協定實作對 DC1 進行驗證。 這可能是用來執行傳遞雜湊和暴力密碼破解等攻擊之惡意工具的結果。 cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909cce38ca1ec04d05f4ab4
-### <a name="sensitive-account-credentials-exposed"></a>已公開敏感性帳戶認證
-May  3 13:23:18 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|LdapSimpleBindCleartextPasswordSuspiciousActivity|已公開敏感性帳戶認證|3|start=2017-05-03T13:23:09.7798589Z app=Ldap shost=CLIENT1 suser=Administrator msg=有人從 CLIENT1 使用 LDAP 簡單繫結以純文字公開系統管理員的認證。 cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909d9c68ca1ec04d05f9918
-### <a name="services-exposing-account-credentials"></a>服務公開帳戶認證
-May  3 13:34:23 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|LdapSimpleBindCleartextPasswordSuspiciousActivity|服務公開帳戶認證|3|start=2017-05-03T13:28:36.5159194Z app=Ldap shost=daf::220 msg=在 daf::220 (daf::220) 上執行的服務使用 LDAP 簡單繫結以純文字公開帳戶認證。 cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909dc5f8ca1ec04d05fa8b1
 ### <a name="pass-the-ticket"></a>Pass the ticket
 May  4 13:15:41 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|PassTheTicketSuspiciousActivity|使用傳遞票證攻擊竊取身分|10|start=2017-05-04T13:13:44.5160000Z app=Kerberos shost=CLIENT1 suser=Administrator request=krbtgt/DOMAIN1.TEST.LOCAL msg=系統管理員的 Kerberos 票證已從 CLIENT2 竊取到 CLIENT1，並用來存取 krbtgt/DOMAIN1.TEST.LOCAL。 cs2Label=ticketSourceComputer cs2=CLIENT2 cs3Label=ticketSourceComputerIpAddress cs3= cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/590b29168ca1ec0ba438acf6
+
+### <a name="monitoring-alert"></a>監視警示
+2018-01-30T10:42:09.102595+00:00 CENTER ATA 4932 CenterDatabaseDisconnectedMonito ï»¿CEF:0|Microsoft|ATA|1.8.6765.50002|CenterDatabaseDisconnectedMonitoringAlert|CenterDatabaseDisconnectedMonitoringAlert|10|externalId=1005 cs1Label=url cs1=https://center/monitoring msg=CENTER 中心所使用的資料庫已關閉。 最後偵測到的執行時間為 1/30/2018 10:39:39 AM UTC。
+
+> [!NOTE]
+> 所有監視警示皆已透過上述的相同範本傳送完成。
+
+
 
 ## <a name="see-also"></a>另請參閱
 - [ATA 必要條件](ata-prerequisites.md)

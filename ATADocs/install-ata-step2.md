@@ -1,25 +1,25 @@
 ---
-title: "安裝 Advanced Threat Analytics - 步驟 2 | Microsoft Docs"
-description: "安裝 ATA 的步驟 2 協助您設定 ATA 中心伺服器網域連線設定"
-keywords: 
+title: 安裝 Advanced Threat Analytics - 步驟 2 | Microsoft Docs
+description: 安裝 ATA 的步驟 2 協助您設定 ATA 中心伺服器網域連線設定
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c4cd30446193ff2d9ab4069b1312593a2102282a
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 2b3505693650f353772511804198b617f53d0437
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 

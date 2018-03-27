@@ -1,25 +1,25 @@
 ---
-title: "設定 Advanced Threat Analytics 通知 | Microsoft Docs"
-description: "描述如何設定 ATA 警示，所以偵測到可疑的活動時，您會收到通知。"
-keywords: 
+title: 設定 Advanced Threat Analytics 通知 | Microsoft Docs
+description: 描述如何設定 ATA 警示，所以偵測到可疑的活動時，您會收到通知。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: dce36e1943ee18f27dfc11d5bc9094c5fd97edb6
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 0b4d783d55d38d2a50c651ba47c584fed8bcee50
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 

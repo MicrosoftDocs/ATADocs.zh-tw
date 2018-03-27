@@ -1,25 +1,25 @@
 ---
-title: "ATA 可疑活動指南 | Microsoft Docs"
+title: ATA 可疑活動指南 | Microsoft Docs
 d|Description: This article provides a list of the suspicious activities ATA can detect and steps for remediation.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/17/2017
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1fe5fd6f-1b79-4a25-8051-2f94ff6c71c1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0d951edf1037422c1ee52c8b1e35308665aad256
-ms.sourcegitcommit: 91158e5e63ce2021a1f5f85d47de03d963b7cb70
+ms.openlocfilehash: d76c34b115bd38bdb1eb82fbff1c0857b0ad8dfa
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 03/22/2018
 ---
-*適用於︰Advanced Threat Analytics 1.8 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 # <a name="advanced-threat-analytics-suspicious-activity-guide"></a>Advanced Threat Analytics 可疑活動指南
@@ -63,6 +63,8 @@ ms.lasthandoff: 12/20/2017
 
 ## <a name="broken-trust-between-computers-and-domain"></a>電腦與網域之間的信任中斷
 
+> ![注意] 這項可疑的活動已淘汰，只會顯示在 1.9 版以前的 ATA。
+
 **描述**
 
 信任中斷表示 Active Directory 安全性需求對有問題的電腦可能無效。 這通常會視為基準安全性與合規性失敗，而且是攻擊者容易攻擊的目標。 在此偵測中，如果在 24 小時內從電腦帳戶看到超過 5 次 Kerberos 驗證失敗，就會觸發警示。
@@ -76,6 +78,7 @@ ms.lasthandoff: 12/20/2017
 
 視需要將電腦重新加回網域，或重設電腦的密碼。
 
+
 ## <a name="brute-force-attack-using-ldap-simple-bind"></a>使用 LDAP 簡單繫結的暴力密碼破解攻擊
 
 **描述**
@@ -85,7 +88,7 @@ ms.lasthandoff: 12/20/2017
 
 在暴力密碼破解攻擊中，攻擊者會嘗試使用許多不同的密碼對不同的帳戶進行驗證，直到找到至少一個帳戶的正確密碼。 找到後，攻擊者就可以使用該帳戶登入。
 
-在此偵測中，當 ATA 偵測到正在使用許多不同的密碼時，就會觸發警示。 這可能是在許多使用者之間「水平」使用少量密碼、只對一些使用者「垂直」使用大量密碼，或這兩個選項的任意組合。
+在此偵測中，當 ATA 偵測到大量的簡單繫結驗證時，便會觸發警示。 這可能是在許多使用者之間「水平」使用少量密碼、只對一些使用者「垂直」使用大量密碼，或這兩個選項的任意組合。
 
 **調查**
 
@@ -103,15 +106,15 @@ ms.lasthandoff: 12/20/2017
 
 **描述**
 
-利用弱式 Kerberos 加密 Cypher 的各種攻擊方法。 在此偵測中，ATA 會了解電腦和使用者所使用的 Kerberos 加密類型，並在使用下列較弱的 Cypher 時向您發出警示：(1) 對來源電腦及/或使用者而言不尋常，以及 (2) 符合已知的攻擊手法。
+加密降級是一種減弱 Kerberos 的方法，它會針對通訊協定通常會以最高加密層級進行加密的不同欄位，對其加密層級做出降級。 攻擊者將能較為輕鬆地對減弱的加密欄位進行離線暴力密碼破解。 利用弱式 Kerberos 加密 Cypher 的各種攻擊方法。 在此偵測中，ATA 會了解電腦和使用者所使用的 Kerberos 加密類型，並在使用下列較弱的 Cypher 時向您發出警示：(1) 對來源電腦及/或使用者而言不尋常，以及 (2) 符合已知的攻擊手法。
 
 有三種偵測類型：
 
-1.  基本架構金鑰 - 這是在網域控制站上執行的惡意程式碼，允許在不知道帳戶密碼的情況下，使用任何帳戶向網域進行驗證。 此惡意程式碼通常會使用較弱的加密演算法，來加密網域控制站上的使用者密碼。 在此偵測中，來自來源電腦之 KRB_ERR 訊息的加密方法相較於先前學到的行為已降級。
+1.  基本架構金鑰 - 這是在網域控制站上執行的惡意程式碼，允許在不知道帳戶密碼的情況下，使用任何帳戶向網域進行驗證。 此惡意程式碼通常會使用較弱的加密演算法，來推測出網域控制站上的使用者密碼。 在此偵測中，來自要求票證帳戶之網域控制站的 KRB_ERR 訊息加密方法相較於先前學到的行為已降級。
 
 2.  黃金票證 - 在[黃金票證](#golden-ticket)警示中，來自來源電腦的 TGS_REQ (服務要求) 訊息之 TGT 欄位的加密方法相較於先前學到的行為已降級。 這不是依據時間異常偵測 (如同其他黃金票證偵測)。 此外，ATA 未偵測到與先前服務要求建立關聯的任何 Kerberos 驗證要求。
 
-3.  越過雜湊 - 來自來源電腦的 AS_REQ 訊息加密類型相較於先前學到的行為 (亦即電腦使用 AES) 已降級。
+3.  越過雜湊 - 攻擊者可以透過 Kerberos AS 要求，使用竊取的弱式雜湊建立強式票證。 在此偵測中，來自來源電腦的 AS_REQ 訊息加密類型相較於先前學到的行為 (亦即電腦使用 AES) 已降級。
 
 **調查**
 
@@ -347,6 +350,8 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
  - 如果上述所有問題的答案均為否，則假設這是惡意的。
 
+6. 如果沒有涉及之帳戶的相關資訊，您可以移至端點並檢查於警示期間登入的帳戶。
+
 **補救**
 
 使用 [SAMRi10 工具](https://gallery.technet.microsoft.com/SAMRi10-Hardening-Remote-48d94b5b)來強化您的環境，以防止此攻擊手法。
@@ -428,6 +433,9 @@ DNS 通訊協定中有數種查詢類型。 ATA 會偵測源自於非 DNS 伺服
 
 ## <a name="sensitive-account-credentials-exposed--services-exposing-account-credentials"></a>已公開的敏感性帳戶認證與要公開帳戶認證的服務
 
+> [!NOTE]
+> 這項可疑的活動已淘汰，只會顯示在 1.9 版以前的 ATA。 若為 ATA 1.9 或更新版本，請參閱[報表](reports.md)。
+
 **描述**
 
 某些服務會以純文字傳送帳戶認證。 即使是敏感性帳戶也可能會發生此情況。 監視網路流量的攻擊者可能會惡意攔截並重複使用這些認證。 敏感性帳戶的任何純文字密碼都會觸發警示。若為非敏感性帳戶，如果有五個以上不同的帳戶從相同的來源電腦傳送純文字密碼，則會觸發警示。 
@@ -448,7 +456,7 @@ DNS 通訊協定中有數種查詢類型。 ATA 會偵測源自於非 DNS 伺服
 
 在暴力密碼破解攻擊中，攻擊者會嘗試使用許多不同的密碼對不同的帳戶進行驗證，直到找到至少一個帳戶的正確密碼。 找到後，攻擊者就可以使用該帳戶登入。
 
-在此偵測中，當發生許多驗證失敗時，就會觸發警示。這可能是在許多使用者之間使用一小組密碼 (水平分佈)，或是只有少數使用者但使用一大組密碼 (垂直分佈)，或者是這兩個選項的任意組合。
+在此偵測中，當發生許多使用 Kerberos 或 NTLM 的驗證失敗時就會觸發警示。這可能是在許多使用者之間使用一小組密碼 (水平分佈)，或是只有少數使用者但使用一大組密碼 (垂直分佈)，或者是這兩個選項的任意組合。 可觸發警示的最低期限為一週。
 
 **調查**
 
@@ -461,6 +469,30 @@ DNS 通訊協定中有數種查詢類型。 ATA 會偵測源自於非 DNS 伺服
 **補救**
 
 [複雜且很長的密碼](https://docs.microsoft.com/windows/device-security/security-policy-settings/password-policy)提供必要的第一層安全性，以防止暴力密碼破解攻擊。
+
+## 可疑的服務建立 <a name="suspicious-service-creation"></a>
+
+**描述**
+
+攻擊者嘗試在您的網路上執行可疑的服務。 當看似可疑的新服務在網域控制站上建立時，ATA 會發出警示。 這項警示依賴事件 7045，並且會受 ATA 閘道或輕量型閘道所涵蓋的每個網域控制站偵測。
+
+**調查**
+
+1. 若有問題的電腦為系統管理工作站，或是 IT 團隊成員及服務帳戶會在上方執行系統管理工作的電腦，此警示可能會是誤判，您可能需要**隱藏**警示，並視需要將它新增至排除清單。
+
+2. 該服務是否為您在此電腦上知道的服務？
+
+ - 有問題的**帳戶**是否可以安裝此服務？
+
+ - 如果這兩個問題的答案均為「是」，請**關閉**警示或將它新增至排除清單。
+
+3. 如果其中一個問題的答案為「否」，則應視為真肯定。
+
+**補救**
+
+- 在網域電腦上實作具有較低權限的存取，以僅允許特定使用者建立新的服務。
+
+
 
 ## <a name="suspicion-of-identity-theft-based-on-abnormal-behavior"></a>基於異常行為懷疑身分遭竊
 
@@ -484,7 +516,7 @@ ATA 會持續三週學習使用者、電腦和資源的實體行為。 此行為
 
 **描述**
 
-攻擊者會使用以非標準方式實作各種通訊協定 (SMB、Kerberos、NTLM) 的工具。 雖然 Windows 會接受這種類型的網路流量而不發出警告，但 ATA 能夠辨識可能的惡意用途。 此行為可能會以越過雜湊和暴力密碼破解，以及透過進階勒索軟體的惡意探索等攻擊手法來表示。
+攻擊者會使用以非標準方式實作各種通訊協定 (SMB、Kerberos、NTLM) 的工具。 雖然 Windows 會接受這種類型的網路流量而不發出警告，但 ATA 能夠辨識可能的惡意用途。 此行為表示越過雜湊，以及進階勒索軟體所使用的惡意探索等技術，例如 WannaCry。
 
 **調查**
 
@@ -513,6 +545,10 @@ ATA 會持續三週學習使用者、電腦和資源的實體行為。 此行為
 2. [移除 WannaCry](https://support.microsoft.com/help/890830/remove-specific-prevalent-malware-with-windows-malicious-software-remo)
 
 3. WanaKiwi 可以解密受到某種勒索軟體支配的資料，但只適用於使用者尚未重新啟動或關閉電腦的情況。 如需詳細資訊，請參閱 [Wanna Cry Ransomware](https://answers.microsoft.com/en-us/windows/forum/windows_10-security/wanna-cry-ransomware/5afdb045-8f36-4f55-a992-53398d21ed07?auth=1) (Wanna Cry 勒索軟體)
+
+
+>[!NOTE]
+> 若要停用可疑的活動，請連絡支援人員。
 
 ## <a name="related-videos"></a>相關影片
 - [加入安全性社群](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)

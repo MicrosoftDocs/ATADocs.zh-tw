@@ -1,25 +1,25 @@
 ---
-title: "針對 ATA 已知問題進行疑難排解 | Microsoft Docs"
-description: "描述如何針對 Advanced Threat Analytics 中的已知問題進行疑難排解"
-keywords: 
+title: 針對 ATA 已知問題進行疑難排解 | Microsoft Docs
+description: 描述如何針對 Advanced Threat Analytics 中的已知問題進行疑難排解
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: f13416c4179d65ee8096d246ea92969b1cf9af43
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: a7172447de5b4d4088da2d8d687a7bec47a01551
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/07/2017
 ## <a name="ata-gateway-and-lightweight-gateway-errors"></a>ATA 閘道和輕量型閘道錯誤
 
 > [!div class="mx-tableFixed"]
-|錯誤|描述|解決方法|
+|錯誤|說明|解決方案|
 |-------------|----------|---------|
 |System.DirectoryServices.Protocols.LdapException：發生本機錯誤|ATA 閘道無法對網域控制站進行驗證。|1.確認網域控制站的 DNS 記錄在 DNS 伺服器中正確設定。 <br>2.驗證 ATA 閘道的時間與網域控制站的時間同步。|
 |System.IdentityModel.Tokens.SecurityTokenValidationException︰無法驗證憑證鏈結|ATA 閘道無法驗證 ATA 中心的憑證。|1.驗證已將根 CA 憑證安裝在 ATA 閘道上受信任的憑證授權單位憑證存放區中。 <br>2.驗證憑證撤銷清單 (CRL) 可供使用，而且可以執行憑證撤銷驗證。|
@@ -56,7 +56,7 @@ ms.lasthandoff: 11/07/2017
  
 ## <a name="deployment-errors"></a>部署錯誤
 > [!div class="mx-tableFixed"]
-|錯誤|描述|解決方法|
+|錯誤|說明|解決方案|
 |-------------|----------|---------|
 |.Net Framework 4.6.1 安裝失敗，並發生錯誤 0x800713ec|.Net Framework 4.6.1 的必要條件尚未安裝於伺服器。 |安裝 ATA 之前，請驗證伺服器上已安裝 Windows Update [KB2919442](https://www.microsoft.com/download/details.aspx?id=42135) 和 [KB2919355](https://support.microsoft.com/kb/2919355)。|
 |System.Threading.Tasks.TaskCanceledException：工作已取消|因為無法連線到 ATA 中心，所以部署程序已逾時。|1.  藉由使用 ATA 中心的 IP 位址瀏覽至 ATA 中心，來檢查與其的網路連線。 <br></br>2.  檢查 Proxy 或防火牆設定。|

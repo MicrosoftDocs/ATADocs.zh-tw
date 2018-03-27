@@ -1,25 +1,25 @@
 ---
-title: "以無訊息方式安裝 Advanced Threat Analytics | Microsoft Docs"
-description: "說明如何以無訊息方式安裝 ATA。"
-keywords: 
+title: 以無訊息方式安裝 Advanced Threat Analytics | Microsoft Docs
+description: 說明如何以無訊息方式安裝 ATA。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3210d9153cd6781ae13a784e1f2b5927e0703009
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 44002cc41abc39f3c70b7a2f5ff131604fd703ba
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 # <a name="ata-silent-installation"></a>ATA 無訊息安裝
@@ -50,7 +50,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 **安裝選項**：
 
 > [!div class="mx-tableFixed"]
-|Name|語法|對無訊息安裝而言是否為必要？|說明|
+|名稱|語法|對無訊息安裝而言是否為必要？|說明|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
 |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
@@ -60,7 +60,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 **安裝參數**：
 
 > [!div class="mx-tableFixed"]
-|Name|語法|對無訊息安裝而言是否為必要？|說明|
+|名稱|語法|對無訊息安裝而言是否為必要？|說明|
 |-------------|----------|---------|---------|
 |InstallationPath|InstallationPath="<InstallPath>"|否|設定 ATA 二進位檔案的安裝路徑。 預設路徑︰C:\Program Files\Microsoft Advanced Threat Analytics\Center|
 |DatabaseDataPath|DatabaseDataPath= "<DBPath>"|否|設定 ATA 資料庫的資料夾路徑。 預設路徑︰C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data|
@@ -92,7 +92,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 **安裝選項**：
 
 > [!div class="mx-tableFixed"]
-|Name|語法|對無訊息安裝而言是否為必要？|說明|
+|名稱|語法|對無訊息安裝而言是否為必要？|說明|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
 |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
@@ -115,7 +115,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 **安裝選項**：
 
 > [!div class="mx-tableFixed"]
-|Name|語法|對無訊息解除安裝而言是否為必要？|說明|
+|名稱|語法|對無訊息解除安裝而言是否為必要？|說明|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|是|執行解除安裝程式，但不顯示任何 UI 和提示。|
 |解除安裝|/uninstall|是|從伺服器執行 ATA 中心的無訊息解除安裝。|
@@ -124,7 +124,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 **安裝參數**：
 
 > [!div class="mx-tableFixed"]
-|Name|語法|對無訊息解除安裝而言是否為必要？|說明|
+|名稱|語法|對無訊息解除安裝而言是否為必要？|說明|
 |-------------|----------|---------|---------|
 |DeleteExistingDatabaseData|DeleteExistingDatabaseData|否|刪除現有資料庫中的所有檔案。|
 
@@ -154,7 +154,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 **安裝選項**：
 
 > [!div class="mx-tableFixed"]
-|Name|語法|對無訊息安裝而言是否為必要？|說明|
+|名稱|語法|對無訊息安裝而言是否為必要？|說明|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
 |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
@@ -163,7 +163,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 **安裝參數**：
 
 > [!div class="mx-tableFixed"]
-|Name|語法|對無訊息安裝而言是否為必要？|描述|
+|名稱|語法|對無訊息安裝而言是否為必要？|說明|
 |-------------|----------|---------|---------|
 |ConsoleAccountName|ConsoleAccountName="<AccountName>"|是|為用來向 ATA 中心註冊 ATA 閘道的使用者帳戶 (user@domain.com) 設定名稱。|
 |ConsoleAccountPassword|ConsoleAccountPassword="<AccountPassword>"|是|為用來向 ATA 中心註冊 ATA 閘道的使用者帳戶 (user@domain.com) 設定密碼。|
@@ -186,7 +186,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 **安裝選項**：
 
 > [!div class="mx-tableFixed"]
-|Name|語法|對無訊息安裝而言是否為必要？|說明|
+|名稱|語法|對無訊息安裝而言是否為必要？|說明|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
 |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
@@ -206,7 +206,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 **安裝選項**：
 
 > [!div class="mx-tableFixed"]
-|Name|語法|對無訊息解除安裝而言是否為必要？|說明|
+|名稱|語法|對無訊息解除安裝而言是否為必要？|說明|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|是|執行解除安裝程式，但不顯示任何 UI 和提示。|
 |解除安裝|/uninstall|是|從伺服器執行 ATA 閘道的無訊息解除安裝。|

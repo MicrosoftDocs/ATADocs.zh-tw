@@ -1,25 +1,25 @@
 ---
-title: "以效能計數器針對 Advanced Threat Analytics 進行疑難排解 | Microsoft Docs"
-description: "描述如何使用效能計數器疑難排解 ATA 相關問題"
-keywords: 
+title: 以效能計數器針對 Advanced Threat Analytics 進行疑難排解 | Microsoft Docs
+description: 描述如何使用效能計數器疑難排解 ATA 相關問題
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: df162a62-f273-4465-9887-94271f5000d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 2172b6b8e1c54345841357e1f4d0a7dec2c346db
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 78f23d3f2552ed7ddc086be2620fbb627b676722
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 
@@ -40,10 +40,10 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 
 若要從各項 ATA 元件擷取效能監視器檔案 (BLG)：
 1.  開啟效能監視器。
-2.  停止名為「Microsoft ATA 閘道」或「Microsoft ATA 中心」的資料收集器集合工具。
+2.  停止名為 **Microsoft ATA 閘道**或 **Microsoft ATA 中心**的資料收集器集合工具。
 3.  移至資料收集器集合工具資料夾 (預設值為 "C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs\DataCollectorSets" 或 "C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs\DataCollectorSets")。
 4.  複製最近修改過的 BLG 檔案。
-5.  重新啟動名為「Microsoft ATA 閘道」或「Microsoft ATA 中心」的資料收集器集合工具。
+5.  重新啟動名為 **Microsoft ATA 閘道**或 **Microsoft ATA 中心**的資料收集器集合工具。
 
 
 ## <a name="ata-gateway-performance-counters"></a>ATA 閘道效能計數器
@@ -51,7 +51,7 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 在本節中，ATA 閘道的每個參考也都適用於 ATA 輕量型閘道。
 
 您可以新增 ATA 閘道的效能計數器來觀察 ATA 閘道的即時效能狀態。
-您可藉由開啟「效能監視器」並新增 ATA 閘道的所有計數器來完成此動作。 效能計數器物件的名稱是：「Microsoft ATA 閘道」。
+您可藉由開啟**效能監視器**並新增 ATA 閘道的所有計數器來完成此動作。 效能計數器物件的名稱是：**Microsoft ATA 閘道**。
 
 以下是要注意的主要 ATA 閘道計數器清單︰
 
@@ -62,19 +62,19 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 |NetworkListener PEF Dropped Events\Sec|每秒由 ATA 閘道減少的流量。|此數字應保持為零 (可接受極少數的短時間減少高載)。|檢查是否有任何元件達到其大小上限，並且封鎖 NetworkListener 所有的先前元件。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
 |Microsoft ATA Gateway\NetworkListener ETW Dropped Events\Sec|每秒由 ATA 閘道減少的流量。|此數字應保持為零 (可接受極少數的短時間減少高載)。|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
 |Microsoft ATA Gateway\NetworkActivityTranslator Message Data # Block Size|為轉譯成網路活動 (NA) 而加入佇列的流量。|應小於上限 -1 (預設上限︰100,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
-|Microsoft ATA Gateway\EntityResolver Activity Block Size|做為解決方法而加入佇列的網路活動 (NA) 數量。|應小於上限 -1 (預設上限︰10,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
+|Microsoft ATA Gateway\EntityResolver Activity Block Size|要解析而加入佇列的網路活動 (NA) 數目。|應小於上限 -1 (預設上限︰10,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
 |Microsoft ATA Gateway\EntitySender Entity Batch Block Size|要傳送給 ATA 中心而加入佇列的網路活動 (NA) 數量。|應小於上限 -1 (預設上限︰1,000,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
 |Microsoft ATA Gateway\EntitySender Batch Send Time|傳送最後一個批次所花的時間。|大部分時候應小於 1000 毫秒|檢查 ATA 閘道和 ATA 中心之間是否有任何網路問題。|
 
 > [!NOTE]
 > -   時間計數器以毫秒為單位。
-> -   有時候使用「報告」圖形類型監視計數器的完整清單會更方便 (範例︰所有計數器的即時監視)
+> -   有時候使用**報表**圖形類型監視計數器的完整清單會更方便 (範例︰所有計數器的即時監視)
 
 ## <a name="ata-lightweight-gateway-performance-counters"></a>ATA 輕量型閘道效能計數器
 效能計數器可用於輕量型閘道中的配額管理，確保 ATA 不會耗盡安裝所在的網域控制站太多的資源。
 若要測量 ATA 在輕量型閘道上強制執行的資源限制，請新增這些計數器。
 
-您可藉由開啟「效能監視器」並新增 ATA 輕量型閘道的所有計數器來完成此動作。 效能計數器物件的名稱是：「Microsoft ATA 閘道器」和「Microsoft ATA 閘道更新程式」。
+您可藉由開啟**效能監視器**並新增 ATA 輕量型閘道的所有計數器來完成此動作。 效能計數器物件的名稱是：**Microsoft ATA 閘道**和 **Microsoft ATA 閘道更新程式**。
 
 > [!div class="mx-tableFixed"]
 |計數器|說明|閾值|疑難排解|
@@ -98,7 +98,7 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 ## <a name="ata-center-performance-counters"></a>ATA 中心效能計數器
 您可以新增 ATA 中心的效能計數器來觀察 ATA 中心的即時效能狀態。
 
-您可藉由開啟「效能監視器」並新增 ATA 中心的所有計數器來完成此動作。 效能計數器物件的名稱是：「Microsoft ATA 中心」。
+您可藉由開啟**效能監視器**並新增 ATA 中心的所有計數器來完成此動作。 效能計數器物件的名稱是：**Microsoft ATA 中心**。
 
 以下是要注意的主要 ATA 中心計數器清單︰
 
@@ -123,7 +123,7 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 |-----------|---------------|-------------|-------------------|
 |Processor(_Total)\% Processor Time|處理器花費在執行非閒置執行緒的經過時間百分比。|平均小於 80%|檢查是否有花費的處理器時間遠超過預期的特定程序。<br /><br />新增更多處理器。<br /><br />減少每部伺服器的流量。<br /><br />"Processor(_Total)\% Processor Time" 計數器在虛擬伺服器上可能會較不精確，在此情況下，要測量處理器電源不足，更精確的方式是透過 "System\Processor Queue Length" 計數器。|
 |System\Context Switches\sec|所有處理器從一個執行緒切換到另一個執行緒的組合速率。|小於 5000&#42; 個核心 (實體核心)|檢查是否有花費的處理器時間遠超過預期的特定程序。<br /><br />新增更多處理器。<br /><br />減少每部伺服器的流量。<br /><br />"Processor(_Total)\% Processor Time" 計數器在虛擬伺服器上可能會較不精確，在此情況下，要測量處理器電源不足，更精確的方式是透過 "System\Processor Queue Length" 計數器。|
-|System\Processor Queue Length|準備好執行，且正等候排程的執行緒數目。|小於 5&#42; 個核心 (實體核心)|檢查是否有花費的處理器時間遠超過預期的特定程序。<br /><br />新增更多處理器。<br /><br />減少每部伺服器的流量。<br /><br />"Processor(_Total)\% Processor Time" 計數器在虛擬伺服器上可能會較不精確，在此情況下，要測量處理器電源不足，更精確的方式是透過 "System\Processor Queue Length" 計數器。|
+|System\Processor Queue Length|準備好執行，且正等候排程的執行緒數目。|少於五&#42;個核心 (實體核心)|檢查是否有花費的處理器時間遠超過預期的特定程序。<br /><br />新增更多處理器。<br /><br />減少每部伺服器的流量。<br /><br />"Processor(_Total)\% Processor Time" 計數器在虛擬伺服器上可能會較不精確，在此情況下，要測量處理器電源不足，更精確的方式是透過 "System\Processor Queue Length" 計數器。|
 |Memory\Available MBytes|可供配置的實體記憶體 (RAM) 數量。|應大於 512|檢查是否有花費的實體記憶體遠超過預期的特定程序。<br /><br />減少實體記憶體數量。<br /><br />減少每部伺服器的流量。|
 |LogicalDisk(&#42;)\Avg.Disk sec\Read|從磁碟讀取資料的平均延遲 (您應該選擇資料庫磁碟機做為執行個體)。|應小於 10 毫秒|檢查是否有特定程序，其利用的資料庫磁碟機超過預期。<br /><br />如果此磁碟機提供目前工作負載之際，延遲可以小於 10 毫秒，請洽詢儲存體小組/廠商。 使用磁碟使用計數器可判斷目前的工作負載。|
 |LogicalDisk(&#42;)\Avg.Disk sec\Write|將資料寫入磁碟的平均延遲 (您應該選擇資料庫磁碟機做為執行個體)。|應小於 10 毫秒|檢查是否有特定程序，其利用的資料庫磁碟機超過預期。<br /><br />如果此磁碟機提供目前工作負載之際，延遲可以小於 10 毫秒，請洽詢儲存體小組/廠商。 使用磁碟使用計數器可判斷目前的工作負載。|

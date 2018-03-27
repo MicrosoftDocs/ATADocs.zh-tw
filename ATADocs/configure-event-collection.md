@@ -1,25 +1,25 @@
 ---
-title: "在 Advanced Threat Analytics 中設定 Windows 事件轉送 | Microsoft Docs"
-description: "描述使用 ATA 設定 Windows 事件轉送的選項"
-keywords: 
+title: 在 Advanced Threat Analytics 中設定 Windows 事件轉送 | Microsoft Docs
+description: 描述使用 ATA 設定 Windows 事件轉送的選項
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 482b16462d115c7bcc2854d30c2ef19fce37f2c0
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 2c8f67d0c8d9020eb0e7ae16e8410db473ace044
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 11/07/2017
 > 針對 ATA 1.8 版及更新版本，ATA 輕量型閘道不再需要事件收集設定。 ATA 輕量型閘道現在可以在本機讀取事件，而不需要設定事件轉送。
 
 
-為增強偵測功能，ATA 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757。 這些事件可透過 ATA 輕量型閘道自動讀取；如果未部署 ATA 輕量型閘道，則可以透過下列兩個方式之一轉送至 ATA 閘道：藉由將 ATA 閘道設定為接聽 SIEM 事件，或藉由設定 Windows 事件轉送。
+為增強偵測功能，ATA 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757、7045。 這些事件可透過 ATA 輕量型閘道自動讀取；如果未部署 ATA 輕量型閘道，則可以透過下列兩個方式之一轉送至 ATA 閘道：藉由將 ATA 閘道設定為接聽 SIEM 事件，或藉由設定 Windows 事件轉送。
 
 
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 11/07/2017
  
    ![設定目標訂閱影像](media/wef 2 config target sub manager.png)
    
-    5.  按一下 [ **確定**]。
+    5.  按一下 [確定]。
     6.  在提升權限的命令提示字元中，輸入 *gpupdate /force*。 
 
 **步驟 3：在 ATA 閘道上執行下列步驟** 
@@ -83,7 +83,7 @@ ms.lasthandoff: 11/07/2017
         ![事件檢視器影像](media/wef3 event viewer.png)
    
         
-        3.  按一下 [ **確定**]。
+        3.  按一下 [確定]。
    4.   按一下 [選取事件]。
 
         1. 按一下 [依記錄]，然後選取 [安全性]。

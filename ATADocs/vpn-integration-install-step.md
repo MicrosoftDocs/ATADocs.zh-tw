@@ -1,25 +1,25 @@
 ---
-title: "安裝 Advanced Threat Analytics - 步驟 7 | Microsoft Docs"
-description: "在這個安裝 ATA 的步驟中，您要整合您的 VPN。"
-keywords: 
+title: 安裝 Advanced Threat Analytics - 步驟 7 | Microsoft Docs
+description: 在這個安裝 ATA 的步驟中，您要整合您的 VPN。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: e0aed853-ba52-46e1-9c55-b336271a68e7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f8a4e3ce06e775706f9bf05f5511d6b5ee53e8cc
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 42cedc6f23f61b9ff5f4789c10aad1282b1308a7
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/22/2018
 ---
-*適用於︰Advanced Threat Analytics 1.8 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 

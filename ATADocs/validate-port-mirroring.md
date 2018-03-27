@@ -1,25 +1,25 @@
 ---
-title: "在 Advanced Threat Analytics 中驗證連接埠鏡像 | Microsoft Docs"
-description: "描述如何驗證已正確設定連接埠鏡像"
-keywords: 
+title: 在 Advanced Threat Analytics 中驗證連接埠鏡像 | Microsoft Docs
+description: 描述如何驗證已正確設定連接埠鏡像
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: ebd41719-c91a-4fdd-bcab-2affa2a2cace
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c0105b940e97a5854d45e147b724f1169c73ad65
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 8ebc7598128abe1fbebd10418bada5d68d9df9a1
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 

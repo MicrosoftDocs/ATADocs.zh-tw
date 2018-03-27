@@ -1,25 +1,25 @@
 ---
-title: "什麼是 Microsoft Advanced Threat Analytics (ATA)？ | Microsoft Docs"
-description: "說明何謂 Microsoft Advanced Threat Analytics (ATA)，以及它可以偵測到的可疑活動種類"
-keywords: 
+title: 什麼是 Microsoft Advanced Threat Analytics (ATA)？ | Microsoft Docs
+description: 說明何謂 Microsoft Advanced Threat Analytics (ATA)，以及它可以偵測到的可疑活動種類
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 44f50b2daefb5a54c56b90289faf08b897494093
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 2f83f3ff564596c37716d79b955ac4fca7d94aa2
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 # <a name="what-is-advanced-threat-analytics"></a>什麼是 Advanced Threat Analytics？
@@ -47,7 +47,7 @@ ATA 可以從下列項目接收事件和記錄檔︰
 ATA 技術會偵測多個可疑的活動，將焦點放在網路攻擊狙殺鏈的幾個階段，包括︰
 
 -   「偵查」階段，此時攻擊者會收集有關環境的建構方式、有哪些不同的資產，以及存在何種實體等資訊。 他們通常會著手規劃下一階段的攻擊。
--   「橫向移動週期」階段，此時攻擊者會將時間與精力放在在網路內部分散攻擊面。
+-   橫向移動週期，此時攻擊者會將時間與精力放在在網路內部分散攻擊面。
 -   「網域支配 (持續性)」階段，此時攻擊者會擷取資訊，以便使用各種進入點、認證和技術繼續進行攻擊活動。 
 
 無論何種公司受到攻擊，或者何種資訊遭到鎖定，這些網路攻擊階段都非常類似而且可預測。

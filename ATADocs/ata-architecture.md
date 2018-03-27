@@ -1,25 +1,25 @@
 ---
-title: "Advanced Threat Analytics 架構 | Microsoft Docs"
-description: "描述 Microsoft Advanced Threat Analytics 的架構 (ATA)"
-keywords: 
+title: Advanced Threat Analytics 架構 | Microsoft Docs
+description: 描述 Microsoft Advanced Threat Analytics 的架構 (ATA)
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 66f5678285c203476aee3daafae22ac7b34d0ae2
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: b620e5b6203d387de389cfb857c2dd6125239ed9
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-*適用於︰Advanced Threat Analytics 1.8 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 

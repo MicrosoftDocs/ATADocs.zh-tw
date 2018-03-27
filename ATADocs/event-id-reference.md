@@ -1,25 +1,25 @@
 ---
-title: "ATA 事件識別碼參考 | Microsoft Docs"
-description: "提供 ATA 事件識別碼的清單及其描述。"
-keywords: 
+title: ATA 事件識別碼參考 | Microsoft Docs
+description: 提供 ATA 事件識別碼的清單及其描述。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5d639e84-2e37-43a9-9667-49be6c4fa8b7
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 07be2dad511158a9234c99287f7eefd7cc12ba83
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: e9147f4333f481eaec4967dd32846bd123866941
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 # <a name="ata-event-id-reference"></a>ATA 事件識別碼參考
@@ -84,8 +84,6 @@ ATA 中心事件檢視器會記錄 ATA 的事件。 這篇文章會提供事件�
 
 2004 – LDAP 暴力密碼破解可疑活動 
 
-2005 – 電腦預先驗證失敗可疑活動 
-
 2006 – 目錄服務複寫可疑活動 
 
 2007 – DNS 探察可疑活動 
@@ -97,8 +95,6 @@ ATA 中心事件檢視器會記錄 ATA 的事件。 這篇文章會提供事件�
 2013 – 偽造的 PAC 可疑活動 
 
 2014 – Honeytoken 活動的可疑活動 
-
-2015 – LDAP 純文字密碼可疑活動 
 
 2016 – 大量物件刪除可疑活動 
 

@@ -1,25 +1,25 @@
 ---
-title: "Advanced Threat Analytics 能偵測到什麼威脅？ | Microsoft Docs"
-description: "列出 Advanced Threat Analytics 偵測的威脅"
-keywords: 
+title: Advanced Threat Analytics 能偵測到什麼威脅？ | Microsoft Docs
+description: 列出 Advanced Threat Analytics 偵測的威脅
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 842b2a5d4e211c2b2fcb4cd0afc96bb33ac42311
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 2d5d5769f4016b09f899ff09c4d1888698d81819
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於：Advanced Threat Analytics 1.9 版*
 
 # <a name="what-threats-does-ata-look-for"></a>ATA 會尋找哪些威脅？
 

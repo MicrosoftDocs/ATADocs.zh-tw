@@ -1,25 +1,25 @@
 ---
-title: "安裝 Advanced Threat Analytics - 步驟 1 | Microsoft Docs"
-description: "安裝 ATA 的第一步驟是下載並安裝 ATA 中心到您所選的伺服器。"
-keywords: 
+title: 安裝 Advanced Threat Analytics - 步驟 1 | Microsoft Docs
+description: 安裝 ATA 的第一步驟是下載並安裝 ATA 中心到您所選的伺服器。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/1/2018
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7a5dd2c722244ec94ebf49555483ddd201b5ba54
-ms.sourcegitcommit: 7684a9942719a90444ab567ffe9b2ff86438c04b
+ms.openlocfilehash: 27a016fe71d08dd8e8852fc44d5dea142f914d9e
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/22/2018
 ---
-*適用於︰Advanced Threat Analytics 1.8 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 # <a name="install-ata---step-1"></a>安裝 ATA - 步驟 1
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/01/2018
 >[!div class="step-by-step"]
 [步驟 2 »](install-ata-step2.md)
 
-此安裝程序提供執行 ATA 1.8 全新安裝的指示。 如需從舊版更新現有 ATA 部署的資訊，請參閱 [1.8 版 ATA 移轉指南](ata-update-1.8-migration-guide.md)。
+此安裝程序提供執行 ATA 1.8 全新安裝的指示。 如需從舊版更新現有 ATA 部署的資訊，請參閱 [1.9 版 ATA 移轉指南](ata-update-1.9-migration-guide.md)。
 
 > [!IMPORTANT] 
 > 如果使用 Windows 2012 R2，開始安裝之前，您可以先在 ATA 中心伺服器和 ATA 閘道伺服器上安裝 KB2934520；若沒有這麼做，ATA 安裝會安裝此更新，並需要在 ATA 安裝期間重新啟動。

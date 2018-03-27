@@ -1,25 +1,25 @@
 ---
-title: "Advanced Threat Analytics 的災害復原 | Microsoft Docs"
-description: "描述如何於災害發生後快速復原 ATA 功能"
-keywords: 
+title: Advanced Threat Analytics 的災害復原 | Microsoft Docs
+description: 描述如何於災害發生後快速復原 ATA 功能
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: fca262cde38ea35c431b12173b6395eed32abc54
-ms.sourcegitcommit: 261a8ed1a28089c3e40ba4aff43f287db5d9dd4a
+ms.openlocfilehash: 72598380f574e0475e4796887f44131009911be2
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 03/22/2018
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 

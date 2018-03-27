@@ -1,25 +1,25 @@
 ---
-title: "了解 Advanced Threat Analytics 主控台 | Microsoft Docs"
-description: "描述如何登入 ATA 主控台和主控台的元件"
-keywords: 
+title: 了解 Advanced Threat Analytics 主控台 | Microsoft Docs
+description: 描述如何登入 ATA 主控台和主控台的元件
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 26c093c4163593611b175f4f0002f443e593f952
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 2ecffce7d692a9f1ecea8d8c5220ce3b2dbf848e
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 
@@ -77,6 +77,10 @@ ATA 主控台可讓您依時間順序快速檢視所有可疑的活動。 不但
 
 ![ATA 通知列影像](media/notification-bar-1.7.png)
 
+### <a name="whats-new"></a>新功能
+
+新版本的 ATA 發行後，[最新消息] 視窗會出現在右上角，讓您知道最新版本中新增了哪些功能。 它也會提供您可下載該版本的連結。
+
 ### <a name="filtering-panel"></a>篩選窗格
 
 您可以根據狀態和嚴重性，篩選要顯示在攻擊時間表的可疑活動，或者要顯示在實體設定檔可疑活動索引標籤中的可疑活動。
@@ -94,23 +98,6 @@ ATA 主控台可讓您依時間順序快速檢視所有可疑的活動。 不但
 ![ATA 健全狀況中心影像](media/ATA-Health-Issue.jpg)
 
 每當系統發生問題時 (例如連線錯誤或中斷與 ATA 閘道的連線)，[健康情況中心] 圖示就會顯示一個紅點來告知您。 ![ATA 健全狀況中心有紅點的影像](media/ATA-Health-Center-Alert-red-dot.png)
-
-### <a name="user-and-computer-profiles"></a>使用者和電腦設定檔
-
-ATA 會為網路中每個使用者和電腦建置設定檔。 在使用者設定檔中，ATA 會顯示一般資訊，例如群組成員資格、最近的登入和最近存取的資源。 它也會提供使用者透過 VPN 連線所在位置的清單。 如需 ATA 視為敏感性的群組成員資格清單，請參閱下列清單。
-
-![使用者設定檔](media/user-profile.png)
-
-在電腦設定檔中，ATA 會顯示一般資訊，例如最近的登入和最近存取的資源。
-
-![電腦設定檔](media/computer-profile.png)
-
-ATA 會在下列頁面上提供實體 (電腦、裝置、使用者) 的其他資訊︰[摘要]、[活動] 和 [可疑的活動]。
-
-針對 ATA 無法完全解析的設定檔，可利用其旁邊的半實心圓形圖示來識別。
-
-
-![ATA 無法解析的設定檔影像](media/ATA-Unresolved-Profile.jpg)
 
 ### <a name="sensitive-groups"></a>敏感性群組
 
@@ -142,7 +129,7 @@ ATA 將下列群組清單視為**敏感性**。 屬於這些群組的任何實�
 
 ![ATA 小型設定檔影像](media/ATA-mini-profile.jpg)
 
--   Name
+-   名稱
 
 -   圖片
 

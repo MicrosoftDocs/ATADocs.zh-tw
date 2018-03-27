@@ -1,25 +1,25 @@
 ---
-title: "安裝 Advanced Threat Analytics - 步驟 8 | Microsoft Docs"
-description: "在安裝 ATA 的最後一個步驟裡，您可以設定 Honeytoken 使用者。"
-keywords: 
+title: 安裝 Advanced Threat Analytics - 步驟 8 | Microsoft Docs
+description: 在安裝 ATA 的最後一個步驟裡，您可以設定 Honeytoken 使用者。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0feb12a2e86adae124016c90431209ec33cdbcb5
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 8d7d53222c4eb98fba554b59f14d8728a88c9d95
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 
@@ -27,6 +27,7 @@ ms.lasthandoff: 11/07/2017
 
 >[!div class="step-by-step"]
 [« 步驟 7](vpn-integration-install-step.md)
+[步驟 9 »](install-ata-step9-samr.md)
 
 ## <a name="step-8-configure-ip-address-exclusions-and-honeytoken-user"></a>步驟 8： 設定 IP 位址排除項目和 Honeytoken 使用者
 ATA 可從一些偵測排除特定 IP 位址或使用者。 
@@ -65,7 +66,7 @@ ATA 會立即開始掃描是否有可疑的活動。 某些活動 (例如某些�
 
 >[!div class="step-by-step"]
 [« 步驟 7](vpn-integration-install-step.md)
-
+[步驟 9 »](install-ata-step9-samr.md)
 
 
 ## <a name="related-videos"></a>相關影片

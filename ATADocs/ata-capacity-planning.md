@@ -1,24 +1,24 @@
 ---
-title: "規劃 Advanced Threat Analytics 部署 | Microsoft Docs"
-description: "協助您規劃部署並決定支援您的網路需要多少 ATA 伺服器"
-keywords: 
+title: 規劃 Advanced Threat Analytics 部署 | Microsoft Docs
+description: 協助您規劃部署並決定支援您的網路需要多少 ATA 伺服器
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/1/2018
+ms.date: 3/21/2018
 ms.topic: get-started-article
 ms.service: advanced-threat-analytics
-ms.prod: 
+ms.prod: ''
 ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 76173dfa0b41195e641235f8792723fa7b038a68
-ms.sourcegitcommit: 7684a9942719a90444ab567ffe9b2ff86438c04b
+ms.openlocfilehash: e58fe62fc655fed8f17ae800dda20e022e198a26
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/22/2018
 ---
-*適用於︰Advanced Threat Analytics 1.8 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/01/2018
 > [!NOTE] 
 > 所有效能需求符合本文所述條件的 IaaS 廠商，都能部署 ATA 中心。
 
-##<a name="using-the-sizing-tool"></a>使用調整大小工具
+## <a name="using-the-sizing-tool"></a>使用調整大小工具
 若要判斷 ATA 部署容量，建議且最容易的方法是使用 [ATA 調整大小工具](http://aka.ms/atasizingtool)。 執行 ATA 調整大小工具，並從 Excel 檔案結果中，使用下列欄位判斷您需要的 ATA 容量︰
 
 - ATA 中心 CPU 及記憶體：比對 ATA 中心資料表結果檔案中的 [Busy Packets/sec] 欄位與 [ATA 中心資料表](#ata-center-sizing)中的 [每秒封包數] 欄位。
@@ -47,6 +47,9 @@ ms.lasthandoff: 02/01/2018
 若基於某些原因而無法使用 ATA 調整大小工具，請以極短的收集間隔 (大約 5 秒)，手動收集 24 小時內所有網域控制站的 packet/sec 計數器資訊。 然後，對於每個網域控制站，您必須計算每日平均和最繁忙期間的 (15 分鐘) 平均。
 下列章節將說明如何從一個網域控制站收集 packets/sec 計數器的指示。
 
+
+> [!NOTE]
+> 由於不同的環境會有差異，而且存在著多項特殊且無法預期的網路流量特性，因此在您一開始部署及 ATA 及執行縮放工具之後，可能必須調整及微調您的容量部署。
 
 
 ### <a name="ata-center-sizing"></a>ATA 中心大小
@@ -67,8 +70,7 @@ ATA 中心建議最少需要 30 天的資料來進行使用者行為分析。
 &#42;&#42;平均數目 (尖峰數目)
 > [!NOTE]
 > -   針對來自所有受監視的網域控制站，ATA 中心每秒彙總最多可以處理 1 百萬個封包。 在某些環境中，相同的 ATA 中心可以處理超過 1M 的整體流量。 請連絡 askcesec@microsoft.com 以取得這類環境的協助。
-> -   此處決定的儲存體數量為淨值。 您應該隨時考量到未來的成長，並且確定資料庫所在的磁碟至少有 20% 的可用空間。
-> -   如果您的可用空間達到最小值 (20% 或 200 GB)，則會刪除最舊的資料集合。 會持續刪除到只剩下 5% 或 50 GB 的可用空間，屆時資料收集會停止運作。
+> -   如果您的可用空間達到最小值 (20% 或 200 GB)，則會刪除最舊的資料集合。 如果無法成功地將資料集合減少至此等級，將會記錄警示。  ATA 會繼續運作，直到達到 5% 或 50 GB 可用空間的閾值。  此時，ATA 將會停止填入資料庫，並會發出其他警示。
 > - 所有效能需求符合本文所述條件的 IaaS 廠商，都能部署 ATA 中心。
 > -   讀取和寫入活動的儲存體延遲應少於 10 毫秒。
 > -   讀取和寫入活動之間的比率在每秒 100,000 個封包以下時大約為 1:3，在每秒 100,000 個封包以上時大約為 1:6。
@@ -163,56 +165,6 @@ ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站�
 > -   為了達到最佳效能，將 ATA 閘道的 [電源選項] 設定為 [高效能]。
 > -   至少需要 5 GB 的空間，建議使用 10 GB，其中包括 ATA 二進位檔、[ATA 記錄檔](troubleshooting-ata-using-logs.md)和[效能記錄檔](troubleshooting-ata-using-perf-counters.md)所需的空間。
 
-
-## <a name="domain-controller-traffic-estimation"></a>網域控制站流量估計
-您可以使用各種工具來探索網域控制站的每秒平均封包數。 如果您沒有任何工具可追蹤此計數器，您可以使用效能監視器來收集所需的資訊。
-
-若要判斷每秒封包數，請對每個網域控制站執行下列步驟：
-
-1.  開啟效能監視器。
-
-    ![效能監視器影像](media/ATA-traffic-estimation-1.png)
-
-2.  展開**資料收集器集合工具**。
-
-    ![資料收集器集合工具影像](media/ATA-traffic-estimation-2.png)
-
-3.  以滑鼠右鍵按一下 [使用者定義]，然後選取 [新增] &gt;[資料收集器集合工具]。
-
-    ![新資料收集器集合工具影像](media/ATA-traffic-estimation-3.png)
-
-4.  輸入資料收集器集合工具的名稱，然後選取 [手動建立 (進階)]。
-
-5.  在 [要包含哪些資料類型?] 下，選取 [Create data logs, and Performance counter (建立資料記錄檔和效能計數器)]。
-
-    ![新資料收集器集合工具的資料類型影像](media/ATA-traffic-estimation-5.png)
-
-6.  在 [要記錄哪些效能計數器 ] 下，按一下 [新增]。
-
-7.  展開**網路介面卡**，然後選取 [封包/秒] 並選取適當的執行個體。 如果您不確定，您可以選取 [&lt;所有執行個體&gt;]，然後按一下 [新增] 和 [確定]。
-
-    > [!NOTE]
-    > 若要在命令列中執行這項作業，請執行 `ipconfig /all` 以查看介面卡和設定的名稱。
-
-    ![新增效能計數器影像](media/ATA-traffic-estimation-7.png)
-
-8.  將**取樣間隔**變更為 **1 秒**。
-
-9. 設定您想要儲存資料的位置。
-
-10. 在 [建立資料收集器集合工具] 下，選取 [立即啟動這個資料收集器集合工具] 並按一下 [完成]。
-
-    您現在應該會看到您所建立的資料收集器集合工具，以綠色三角形表示它正在運作。
-
-11. 24 小時之後，以滑鼠右鍵按一下資料收集器集合工具並選取 [停止]，以停止資料收集器集合工具。
-
-    ![停止資料收集器集合工具影像](media/ATA-traffic-estimation-12.png)
-
-12. 在檔案總管中，瀏覽至儲存 .blg 檔案的資料夾，然後按兩下以在效能監視器中將其開啟。
-
-13. 選取封包/秒計數器，並記錄平均值和最大值。
-
-    ![每秒封包數計數器影像](media/ATA-traffic-estimation-14.png)
 
 
 ## <a name="related-videos"></a>相關影片

@@ -1,25 +1,25 @@
 ---
-title: "於部署 Advanced Threat Analytics 時設定連接埠鏡像 | Microsoft Docs"
-description: "描述連接埠鏡像選項以及如何設定它們以進行 ATA"
-keywords: 
+title: 於部署 Advanced Threat Analytics 時設定連接埠鏡像 | Microsoft Docs
+description: 描述連接埠鏡像選項以及如何設定它們以進行 ATA
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: cdaddca3-e26e-4137-b553-8ed3f389c460
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: fb9c6aa3962f7fc121f3737a32c9a5cfb2fcfb8e
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 9ed585d37363fbae2604fe0ea705a0ea30b9b283
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 

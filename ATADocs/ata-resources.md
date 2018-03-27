@@ -1,25 +1,25 @@
 ---
-title: "Advanced Threat Analytics 資源及整備藍圖 |Microsoft Docs"
-description: "提供 ATA 資源、影片、使用者入門、部署和整備藍圖連結的清單。"
-keywords: 
+title: Advanced Threat Analytics 資源及整備藍圖 |Microsoft Docs
+description: 提供 ATA 資源、影片、使用者入門、部署和整備藍圖連結的清單。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 42a1a34f-ed6b-4538-befb-452168a30e8c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 33aec9dd89fc189144387e59c3b48b9d440936d2
-ms.sourcegitcommit: 55f7ac32bcd4ac8edb8b8b3b47993bf96b9acce2
+ms.openlocfilehash: a56a24a2012239ed05f0a2f214dba345a817df39
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 03/22/2018
 ---
-*適用於︰Advanced Threat Analytics 1.8 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 # <a name="ata-readiness-roadmap"></a>ATA 整備藍圖 
 本文件提供整備藍圖，協助您開始使用 Advanced Threat Analytics。

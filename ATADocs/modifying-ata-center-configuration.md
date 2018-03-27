@@ -1,25 +1,24 @@
 ---
-title: "變更 Advanced Threat Analytics ATA 中心設定 | Microsoft Docs"
-description: "描述如何變更您 ATA 中心的 IP 位址、連接埠、主控台 URL 或憑證。"
-keywords: 
+title: 變更 Advanced Threat Analytics ATA 中心設定 | Microsoft Docs
+description: 描述如何變更您 ATA 中心的 IP 位址、連接埠、主控台 URL 或憑證。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/7/2017
-ms.topic: article
-ms.prod: 
+ms.date: 3/21/2018
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 93b27f15-f7e5-49bb-870a-d81d09dfe9fc
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 4fe4569cd6477775e8a888d2acd05511f16fb5f6
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.openlocfilehash: 294b9204f9ca6a40a835e5360a7011947e3255b4
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/22/2018
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 
@@ -53,7 +52,9 @@ ms.lasthandoff: 11/07/2017
     
 3. 等候 ATA 閘道進行同步。現在，這些閘道會有兩個可能的 URL 可存取 ATA 主控台。 只要 ATA 閘道可以使用原始 URL 來連線，就不會嘗試使用新 URL。
 
-4. 更新的設定在所有 ATA 閘道同步之後，便可啟動新的 URL。 當您啟動新 URL 時，ATA 閘道就會使用新的 URL 來存取 ATA 中心。 ATA 閘道連線到 ATA 中心服務之後，將會提取最新的設定，並將僅有 ATA 主控台的新 URL。 
+4. 在所有 ATA 閘道皆已使用更新的設定同步後，請在 [中心設定] 頁面中按一下 [啟動] 按鈕來啟動新的 URL。 當您啟動新 URL 時，ATA 閘道就會使用新的 URL 來存取 ATA 中心。 ATA 閘道連線到 ATA 中心服務之後，將會提取最新的設定，並將僅有 ATA 主控台的新 URL。 
+5. 
+ ![啟動憑證](media/center-activation.png)
 
 > [!NOTE]
 > -   在啟動新的 URL 時，如果 ATA 閘道離線，且從未取得更新的設定，請在 ATA 閘道上手動更新設定 JSON 檔案。

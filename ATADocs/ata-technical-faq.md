@@ -1,25 +1,25 @@
 ---
-title: "Advanced Threat Analytics 常見問題集 | Microsoft Docs"
-description: "提供關於 ATA 的常見問題清單以及相關解答"
-keywords: 
+title: Advanced Threat Analytics 常見問題集 | Microsoft Docs
+description: 提供關於 ATA 的常見問題清單以及相關解答
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: da225af4578d4673040315f8814b9067a46517ce
-ms.sourcegitcommit: d41dcc40196a165026fd27db7bbd74d87b8fedda
+ms.openlocfilehash: 5fe0e6f0d8c75c099aa6623cd0f5245c955d9ffa
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 03/22/2018
 ---
-適用於︰Advanced Threat Analytics 1.8 版
+*適用於：Advanced Threat Analytics 1.9 版*
 
 # <a name="ata-frequently-asked-questions"></a>ATA 常見問題集
 本文章提供關於 ATA 的常見問題清單，並提供見解和解答。
@@ -83,7 +83,9 @@ ATA 閘道數目取決於您的網路配置、封包的數量和 ATA 所擷取�
 ## <a name="why-are-certain-accounts-considered-sensitive"></a>為何將某些帳戶視為機密？
 當帳戶屬於我們指定為機密的特定群組時 (例如，「網域系統管理員」)，會發生這種情況。
 
-若要了解為何是機密帳戶，您可以檢閱其群組成員資格，以了解它所屬的機密群組 (其所屬的群組也可以是因為另一個群組而機密，因此您應該執行相同的程序，直到找出最高層級的機密群組)。
+若要了解為何是機密帳戶，您可以檢閱其群組成員資格，以了解它所屬的機密群組 (其所屬的群組也可以是因為另一個群組而機密，因此您應該執行相同的程序，直到找出最高層級的機密群組)。 
+
+此外，您可以手動將使用者、群組或電腦標記為敏感性。 如需詳細資訊，請參閱[標記敏感性帳戶](tag-sensitive-accounts.md)。
 
 ## <a name="how-do-i-monitor-a-virtual-domain-controller-using-ata"></a>如何使用 ATA 監視虛擬網域控制站？
 ATA 輕量型閘道可以涵蓋大多數虛擬網域控制站；如需判斷 ATA 輕量型閘道是否適合您的環境，請參閱 [ATA Capacity Planning](ata-capacity-planning.md) (ATA 容量規劃)。

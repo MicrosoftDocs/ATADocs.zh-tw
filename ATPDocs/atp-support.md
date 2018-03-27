@@ -1,23 +1,23 @@
 ---
-title: "Azure ATP 支援 | Microsoft Docs"
-description: "說明從 Azure ATP 取得支援說明的流程。"
-keywords: 
+title: Azure ATP 支援 | Microsoft Docs
+description: 說明從 Azure ATP 取得支援說明的流程。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/13/2018
+ms.date: 3/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 966d9e4e8e086b6f131d6fa33060d11073f82b4f
-ms.sourcegitcommit: c77e378d18e654bea4b4af4f24cc941a6659ce99
+ms.openlocfilehash: 58e3b0d04b196f0c49b6e146952c1819c8413ee3
+ms.sourcegitcommit: adfa7a3a3918518b6b14b94d3c0a9f899142196a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -58,6 +58,10 @@ Azure 進階威脅防護產品小組會在 [Enterprise Mobility + Security 部�
 如需其他支援選項，請連絡 Microsoft。
 
 ### <a name="self-help"></a>自行解決問題
+
+#### <a name="system-status-page"></a>[系統狀態] 頁面 
+
+若要檢視 Azure ATP 的系統狀態，請前往[**系統狀態**](https://health.atp.azure.com/)頁面。 此頁面可讓您了解工作區管理入口網站是否正常運作、是否偵測到任何問題、感應器是否可將流量傳送至雲端。 您可從 Azure ATP 的功能表列存取 [系統狀態]。
 
 #### <a name="on-demand-videos"></a>隨選影片
 

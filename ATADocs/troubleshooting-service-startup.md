@@ -1,25 +1,25 @@
 ---
-title: "為 Advanced Threat Analytics 服務啟動進行疑難排解 | Microsoft Docs"
-description: "本文描述如何為 ATA 啟動問題進行疑難排解"
-keywords: 
+title: 為 Advanced Threat Analytics 服務啟動進行疑難排解 | Microsoft Docs
+description: 本文描述如何為 ATA 啟動問題進行疑難排解
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/20/2017
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5a65285c-d1de-4025-9bb4-ef9c20b13cfa
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 33ff11f592984b754521c562414ffeabd2d1f255
-ms.sourcegitcommit: 91158e5e63ce2021a1f5f85d47de03d963b7cb70
+ms.openlocfilehash: 87d3f1de8167c1198e6b334826f90df83cc96780
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 03/22/2018
 ---
-*適用於︰Advanced Threat Analytics 1.8 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 

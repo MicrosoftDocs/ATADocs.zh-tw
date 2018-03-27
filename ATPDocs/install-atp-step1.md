@@ -1,23 +1,23 @@
 ---
-title: "安裝 Azure 進階威脅防護 - 步驟 1 | Microsoft Docs"
-description: "安裝 Azure ATP 的第一個步驟包含建立 Azure ATP 部署的工作區。"
-keywords: 
+title: 安裝 Azure 進階威脅防護 - 步驟 1 | Microsoft Docs
+description: 安裝 Azure ATP 的第一個步驟包含建立 Azure ATP 部署的工作區。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/11/2018
+ms.date: 3/15/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 15ee7d0b-9a0c-46b9-bc71-98d0b4619ed0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5eabf4fc3965e8745b7e2c0fbae4973deb358814
-ms.sourcegitcommit: 912e453753156902618ae6ebb8489c2320c06fc6
+ms.openlocfilehash: 833e0bdf61ce25a8c56d820ad04981cd44321ac2
+ms.sourcegitcommit: f9d07a6b1f2193f0d2906092e252eb1d7398b493
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/16/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 03/12/2018
 
 1.  輸入 [Azure ATP 工作區入口網站](https://portal.atp.azure.com)。
 
-2.  使用至少具備受控網域內所有物件讀取存取權的內部部署 Azure Active Directory 使用者帳戶來登入。
+2.  使用您的 Azure Active Directory 使用者帳戶登入。
 
 ## <a name="step-2-create-a-workspace"></a>步驟 2： 建立工作區
 

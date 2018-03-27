@@ -1,25 +1,25 @@
 ---
-title: "Advanced Threat Analytics 必要條件 | Microsoft Docs"
-description: "描述在環境中成功部署 ATA 的需求"
-keywords: 
+title: Advanced Threat Analytics 必要條件 | Microsoft Docs
+description: 描述在環境中成功部署 ATA 的需求
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/1/2018
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: dd422a7feffcddc0f56b54b11d5dadb029457a8e
-ms.sourcegitcommit: 7684a9942719a90444ab567ffe9b2ff86438c04b
+ms.openlocfilehash: 419df4c4404bf26a85c1a955139d0dee6f50828e
+ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/22/2018
 ---
-*適用於︰Advanced Threat Analytics 1.8 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 
 
@@ -68,7 +68,12 @@ ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003
 ## <a name="ata-center-requirements"></a>ATA 中心需求
 本節列出 ATA 中心的需求。
 ### <a name="general"></a>一般
-ATA 中心可安裝在執行 Windows Server 2012 R2 或 Windows Server 2016 的伺服器上。 ATA 中心可以安裝在屬於網域或工作群組的成員伺服器上。
+ATA 中心可安裝在執行 Windows Server 2012 R2 或 Windows Server 2016 的伺服器上。 
+
+ > [!NOTE]
+ > ATA 中心不支援 Windows Server Core。
+
+ATA 中心可以安裝在屬於網域或工作群組的成員伺服器上。
 
 安裝執行 Windows Server 2012 R2 的 ATA 中心前，請確認已安裝下列更新︰[KB2919355](https://support.microsoft.com/kb/2919355/)。
 
@@ -83,7 +88,8 @@ ATA 中心可安裝在執行 Windows Server 2012 R2 或 Windows Server 2016 的�
 
 ### <a name="server-specifications"></a>伺服器規格
 
-當於實體伺服器上執行工作時，ATA 資料庫需要您**停用** BIOS 中的非統一記憶體存取 (NUMA)。 您的系統可能會將 NUMA 當成節點交錯來參考，在此情況下您必須**啟用**節點交錯以停用 NUMA。 如需詳細資訊，請參閱您的 BIOS 文件。 <br>
+當於實體伺服器上執行工作時，ATA 資料庫需要您**停用** BIOS 中的非統一記憶體存取 (NUMA)。 您的系統可能會將 NUMA 當成節點交錯來參考，在此情況下您必須**啟用**節點交錯以停用 NUMA。 如需詳細資訊，請參閱您的 BIOS 文件。<br>
+
 為了達到最佳效能，將 ATA 中心的 [電源選項] 設定為 [高效能]。<br>
 您要監視的網域控制站數目以及每個網域控制站的負載，決定了所需的伺服器規格。 如需詳細資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。
 
@@ -117,6 +123,7 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 |**Kerberos** (如已加入網域即為選擇性)|TCP 和 UDP|88|網域控制站|輸出|
 |**Netlogon** (如已加入網域即為選擇性)|TCP 和 UDP|445|網域控制站|輸出|
 |**Windows 時間** (若已加入網域即為選擇性)|UDP|123|網域控制站|輸出|
+|**Netlogon (SMB、CIFS、SAM-R)**|TCP 和 UDP|445|閘道與裝置|輸入與輸出|
 
 > [!NOTE]
 > 需要 LDAP 以測試要在 ATA 閘道及網域控制站之間使用的認證。 測試會從 ATA 中心對網域控制站進行，以測試這些認證的有效性。之後，ATA 閘道便能在一般解析程序中使用 LDAP。

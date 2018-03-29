@@ -1,23 +1,23 @@
 ---
-title: "使用 Azure ATP 報表 | Microsoft Docs"
-description: "描述如何在 Azure ATP 中產生報表以監視您的網路。"
-keywords: 
+title: 使用 Azure ATP 報表 | Microsoft Docs
+description: 描述如何在 Azure ATP 中產生報表以監視您的網路。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 2/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2c2d6b1a-fc8c-4ff7-b07d-64ce6159f84d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2ebc0d9bb860bd93f14c4c511b034c740b59dffb
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 8d9c7f9208ce76e6c2ca915729b9c64f769ae7bd
+ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/28/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -25,6 +25,7 @@ ms.lasthandoff: 02/21/2018
 # <a name="azure-atp-reports"></a>Azure ATP 報表
 
 工作區入口網站中的 Azure ATP 報表區段可讓您產生報表，以提供系統狀態資訊，除了系統健康狀態，還報告您環境中偵測到的可疑活動。
+
 
 若要存取報表頁面，請按一下功能表列中的報表圖示：![報表圖示](./media/atp-report-icon.png)。
 可用的報表包括： 
@@ -51,6 +52,9 @@ ms.lasthandoff: 02/21/2018
 1. 在 [報表] 頁面中，按一下 [Set scheduled reports (設定排程的報表)]，或在 Azure ATP 工作區入口網站的 [設定] 頁面中，按一下 [Notifications and Reports (通知與報表)] 下的 [排程的報表]。
 
    ![排程報表](./media/atp-sched-reports.png)
+ 
+ > [!NOTE]
+ > 每日報表是設計為在午夜 (UTC) 過後不久傳送。
 
 2. 按一下已選取報表類型旁的 [排程]，以設定傳送報表的頻率和電子郵件地址，按一下電子郵件地址旁的加號予以新增，然後按一下 [儲存]。
 

@@ -1,23 +1,23 @@
 ---
-title: "Azure 進階威脅防護必要條件 | Microsoft Docs"
-description: "描述在環境中成功部署 Azure ATP 的需求"
-keywords: 
+title: Azure 進階威脅防護必要條件 | Microsoft Docs
+description: 描述在環境中成功部署 Azure ATP 的需求
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/25/2018
+ms.date: 3/28/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3cb4eb8a914f1fd4be0c1ddb26f9be3964c529f7
-ms.sourcegitcommit: 26d833f7d9502db73876ced9879789db395224f7
+ms.openlocfilehash: 3c8e0b239c335981b2030021d1d4e319b2810fda
+ms.sourcegitcommit: 7c9fe4eb781bec71129310a6e0c5e76b022a0213
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/28/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -131,11 +131,13 @@ Azure ATP 獨立感應器需要至少一個管理介面卡和至少一個擷取�
 
 |通訊協定|傳輸|Port|去/從|方向|
 |------------|-------------|--------|-----------|-------------|
+|**內部連接埠**|||||
+|SSL (*.atp.azure.com)|TCP|443|Azure ATP 雲端服務|輸出|
+|**內部連接埠**|||||
 |LDAP|TCP 和 UDP|389|網域控制站|輸出|
 |安全的 LDAP (LDAPS)|TCP|636|網域控制站|輸出|
 |LDAP 至通用類別|TCP|3268|網域控制站|輸出|
 |LDAPS 至通用類別|TCP|3269|網域控制站|輸出|
-|SSL (*.atp.azure.com)|TCP|443|Azure ATP 雲端服務|輸出|
 |Kerberos|TCP 和 UDP|88|網域控制站|輸出|
 |Netlogon (SMB、CIFS、SAM-R)|TCP 和 UDP|445|網域控制站|輸出|
 |Windows Time|UDP|123|網域控制站|輸出|
@@ -195,7 +197,9 @@ Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的�
 
 |通訊協定|傳輸|Port|去/從|方向|
 |------------|-------------|--------|-----------|-------------|
+|**內部連接埠**|||||
 |SSL (*.atp.azure.com)|TCP|443|Azure ATP 雲端服務|輸出|
+|**內部連接埠**|||||
 |DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
 |透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|輸出|
 |Netlogon (SMB、CIFS、SAM-R)|TCP/UDP|445|網域控制站|輸出|

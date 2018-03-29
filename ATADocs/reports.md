@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 3/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 38ea49b5-cd5e-43e5-bc39-5071f759633b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b7f921bb2eb655a929eb19c849788c1bf9f64527
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: 9a113d8d090c5a90a07043a0ef75e1be0fc840c3
+ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -51,6 +51,9 @@ ms.lasthandoff: 03/22/2018
 1. 在 [報表] 頁面中，按一下 [Set scheduled reports (設定排程的報表)]，或在 ATA 主控台的 [設定] 頁面中，按一下 [Notifications and Reports (通知與報表)] 下的 [排程的報表]。
 
    ![排程報表](./media/ata-sched-reports.png)
+
+  > [!NOTE]
+  > 每日報表是設計為在午夜 (UTC) 過後不久傳送。
 
 2. 按一下已選取報表類型旁的 [排程]，以設定傳送報表的頻率和電子郵件地址，按一下電子郵件地址旁的加號予以新增，然後按一下 [儲存]。
 

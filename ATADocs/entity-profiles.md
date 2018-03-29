@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 3/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 581a3257-32dc-453f-b84e-b9f99186f5d3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f9e19a1d033238f506fc0523bf50af6e204ba0cf
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: f2fd6f28eb6bf11aa3705f5320fcdae01d02f6d0
+ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -46,6 +46,8 @@ ms.lasthandoff: 03/22/2018
 - 使用者存取的資源數
 - 使用者從哪個位置登入 VPN
 
+  ![實體功能表](media/entity-menu.png)
+
 對於電腦，您可以看到：
 - 電腦有多少開啟的可疑活動
 - 登入電腦的使用者數
@@ -53,7 +55,7 @@ ms.lasthandoff: 03/22/2018
 - 從電腦存取 VPN 的位置數
 - 電腦所使用的 IP 位址清單
 
-![實體功能表](media/entity-menu.png)
+  ![實體功能表電腦](media/entity-computer.png)
 
 使用活動時間軸上的 [篩選依據] 按鈕，您可以依活動類型篩選活動。 您也可以篩選掉特定的 (雜訊) 活動類型。 當您想要了解實體在網路中之行為的基本概念時，這對調查相當實用。 您也可以移至特定日期，並將篩選的活動匯出到 Excel。 匯出的檔案提供目錄服務變更 (針對帳戶在 Active Directory 中變更的項目) 的頁面，以及適用於活動的個別頁面。 
 

@@ -1,23 +1,23 @@
 ---
-title: "Azure ATP 可疑活動指南 | Microsoft Docs"
+title: Azure ATP 可疑活動指南 | Microsoft Docs
 d|Description: This article provides a list of the suspicious activities Azure ATP can detect and steps for remediation.
-keywords: 
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 3/25/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ee8e45b6ef2da2d8866a1795bdab3987180acefe
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: ec9a2bc18262f88ada0a7a4ac56b5a4b2c104165
+ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/28/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -240,6 +240,21 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 如需詳細資訊，請參閱[在 SharePoint Server 2013 中授與 Active Directory 網域服務權限，以進行設定檔同步處理](https://technet.microsoft.com/library/hh296982.aspx)。
 您可以利用 [AD ACL 掃描程式](https://blogs.technet.microsoft.com/pfesweplat/2013/05/13/take-control-over-ad-permissions-and-the-ad-acl-scanner-tool/)或建立 Windows PowerShell 指令碼，以判斷誰在網域中具有這些權限。
 
+
+## <a name="password-exposed-in-cleartext-report"></a>密碼在純文字報表中曝光
+
+**描述**
+
+某些服務會以純文字傳送帳戶認證。 即使是使用者帳戶，也會發生此情況。 監視網路流量的攻擊者可能會惡意攔截並重複使用這些認證。 
+
+**調查**
+
+按一下報表頁面，並下載「密碼在純文字報表中曝光」。 在 Excel 試算表中查看哪些帳戶已曝光。
+來源電腦上通常會有使用 LDAP 簡單繫結的指令碼或舊版應用程式。
+
+**補救**
+
+確認來源電腦上的設定，並確定未使用 LDAP 簡單繫結。 您可以改用 LDAP SAL 或 LDAPS，而不要使用 LDAP 簡單繫結。
 
 ## <a name="privilege-escalation-using-forged-authorization-data"></a>使用偽造授權資料提升權限
 

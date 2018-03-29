@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/18/2018
+ms.date: 3/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,16 +13,25 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6b3c9ddd1873b3139009a44e9c1f7a85ea3b6901
-ms.sourcegitcommit: adfa7a3a3918518b6b14b94d3c0a9f899142196a
+ms.openlocfilehash: 0693bd3a25d6438874d422bedf8da05931a15d54
+ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 適用於：Azure 進階威脅防護
 
 
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能 
+
+## <a name="azure-atp-release-226"></a>Azure ATP 2.26 版
+
+發行日期：2018 年 3 月 25 日
+
+- 當 Azure ATP 因為偵測到可疑活動向您提供警示，但您將它視為良性積極 (非屬可疑活動的合法動作) 時，您可以選擇將該電腦與 IP 位址排除而不再予以偵測，包括：加密降級、LDAP 暴力密碼破解攻擊、偽造的 PAC、暴力密碼破解攻擊與傳遞雜湊 (Pass-the-hash)。
+-   Azure ATP 感應器效能已改進。
+-   已針對工作區部署新增一個區域，您現在可以在亞洲部署工作區。 
+
 
 ## <a name="azure-atp-release-225"></a>Azure ATP 2.25 版
 

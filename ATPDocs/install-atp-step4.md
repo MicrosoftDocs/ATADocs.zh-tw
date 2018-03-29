@@ -1,23 +1,23 @@
 ---
-title: "安裝 Azure 進階威脅防護 - 步驟 4 | Microsoft Docs"
-description: "安裝 Azure ATP 的步驟四可協助您安裝 Azure ATP 獨立感應器。"
-keywords: 
+title: 安裝 Azure 進階威脅防護 - 步驟 4 | Microsoft Docs
+description: 安裝 Azure ATP 的步驟四可協助您安裝 Azure ATP 獨立感應器。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2017
+ms.date: 3/25/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 51911e39-76c7-4dcd-bc0b-ec6235d0403f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7b003882f21f22b3427fb95534ca2bde255b14e6
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 56b3cea2089c64e2c78361c44d049d6de67764b6
+ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/28/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -35,11 +35,16 @@ ms.lasthandoff: 02/21/2018
 
 
 > [!IMPORTANT]
->請確定電腦上已安裝 .Net Framework 4.7。 如果尚未安裝 .Net Framework 4.7，Azure ATP 感應器安裝套件便會加以安裝，如此將需要伺服器重新開機。 請確認此電腦可以連線到 Azure ATP 雲端服務端點：https://triprd1wceuw1sensorapi.atp.azure.com (適用於歐洲) 或 https://triprd1wcuse1sensorapi.atp.azure.com (適用於美國)。
+>請確定電腦上已安裝 .Net Framework 4.7。 如果尚未安裝 .Net Framework 4.7，Azure ATP 感應器安裝套件便會加以安裝，如此將需要伺服器重新開機。
 
 在 Azure ATP 感應器伺服器或網域控制站上執行下列步驟。
 
-1.  解壓縮 Zip 檔案。 
+1. 檢查機器是否可以連線到相關的 Azure ATP 雲端服務端點：
+  - https://triprd1wceuw1sensorapi.atp.azure.com (適用於歐洲)  
+  - https://triprd1wcuse1sensorapi.atp.azure.com (適用於美國)
+  - https://triprd1wcasse1sensorapi.atp.azure.com (適用於亞洲)
+
+2. 將安裝檔案從 zip 檔案解壓縮。 
 > [!NOTE] 
 > 從 ZIP 檔案直接安裝會失敗。
 

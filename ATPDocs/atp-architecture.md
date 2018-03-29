@@ -1,23 +1,23 @@
 ---
-title: "Azure 進階威脅防護架構 | Microsoft Docs"
-description: "描述 Azure 進階威脅防護 (ATP) 的架構"
-keywords: 
+title: Azure 進階威脅防護架構 | Microsoft Docs
+description: 描述 Azure 進階威脅防護 (ATP) 的架構
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/11/2018
+ms.date: 3/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 640974bbeb0ff147b21da24d6ad6df2f54e9ab4d
-ms.sourcegitcommit: 912e453753156902618ae6ebb8489c2320c06fc6
+ms.openlocfilehash: 57f4eb56eaa0547d18421b17fb5804840e4997e3
+ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -122,7 +122,7 @@ Azure ATP 工作區入口網站可讓您管理下列 Azure ATP 功能：
 
 -   從單一 Azure ATP 獨立感應器監視多個網域控制站，或使用單一 Azure ATP 感應器監視單一網域控制站。
 
-Azure ATP 最多支援 100 個感應器。 如果您想要安裝更多，請連絡 Azure ATP 支援。
+根據預設值，Azure ATP 最多支援 100 個感應器。 如果您想要安裝更多，請連絡 Azure ATP 支援。
 
 Azure ATP 獨立感應器會從您的網路接收網路流量和 Windows 事件，並在下列主要元件中加以處理︰
 

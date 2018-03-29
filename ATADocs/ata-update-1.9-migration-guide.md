@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 03/21/2018
+ms.date: 03/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 99865293dd5aa6648516fbebbf61977176b1de36
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: 0bd4bca536facb9ad4b7fea627f2ef512949728e
+ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="updating-ata-to-version-19"></a>將 ATA 更新至 1.9 版
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 03/22/2018
 
 請遵循下列步驟將 ATA 更新至 1.9 版：
 
-1.  [從下載中心下載 ATA 1.9 版的更新](https://www.microsoft.com/download/details.aspx?id=55536)，或從 [評估中心](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)下載完整版本。<br>
+1.  [從下載中心下載 ATA 1.9 版的更新](https://www.microsoft.com/download/details.aspx?id=56725)，或從 [評估中心](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)下載完整版本。<br>
 在移轉版本中，檔案只能用於從 ATA 1.8 版更新。 在評估中心的版本中，會使用相同的安裝檔案 (Microsoft ATA Center Setup.exe) 來安裝新的 ATA 部署及升級現有的部署。
 
 2.  更新 ATA 中心

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/25/2018
+ms.date: 4/15/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ec9a2bc18262f88ada0a7a4ac56b5a4b2c104165
-ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
+ms.openlocfilehash: 6246849cf7e8566b27c969b73e9c96cb0e7b7978
+ms.sourcegitcommit: e0209c6db649a1ced8303bb1692596b9a19db60d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -100,14 +100,20 @@ ms.lasthandoff: 03/28/2018
 
 **調查**
 
-先查看警示的描述，以了解要處理上述三種偵測類型的哪一種。
+首先請檢查警示的描述，以查看是上述三種偵測類型中的哪一種。 如需詳細資訊，請下載 Excel 試算表。
 
-1.  基本架構金鑰 - 您可以使用 [Azure ATP 小組所撰寫的掃描程式](https://gallery.technet.microsoft.com/Aorato-Skeleton-Key-24e46b73) \(英文\)，來檢查基本架構金鑰是否已影響到您的網域控制站。
-    如果掃描程式在一或多個網域控制站上找到惡意程式碼，則為真肯定。
+1.  基本架構金鑰 - 您可以使用 [Azure ATP 小組所撰寫的掃描程式](https://gallery.technet.microsoft.com/Aorato-Skeleton-Key-24e46b73) \(英文\)，來檢查基本架構金鑰是否已影響到您的網域控制站。 如果掃描程式在一或多個網域控制站上找到惡意程式碼，則為真肯定。
 
-2.  黃金票證 - 在某些情況下，很少使用的自訂應用程式會使用較低的加密 Cipher 進行驗證。 檢查來源電腦上是否有任何這類自訂應用程式。 如果是，則可能是良性真肯定，因此可予以隱藏。
+2.  黃金票證 - 在 Excel 試算表中，移至 [網路活動] 索引標籤。您會看到相關的降級欄位為 [要求票證加密類型]，且 [來源電腦支援的加密類型] 包含更強的加密方法。
 
-3.  越過雜湊 - 在某些情況下，當透過智慧卡設定的使用者必須進行互動式登入時，可能會觸發此警示，且將停用此設定後再啟用。 檢查相關帳戶是否有類似的變更。 如果是，這可能是良性真肯定，因此可予以隱藏。
+  1. 請檢查來源電腦和帳戶，或是在有多部來源電腦和帳戶的情況下，檢查它們是否有任何共同點 (例如，所有的行銷人員都使用可能會導致觸發警示的特定應用程式)。 在某些情況下，可能會有很少使用的自訂應用程式，正在使用較低的加密編碼器進行驗證。 檢查來源電腦上是否有任何這類自訂應用程式。 如果是，則可能是良性真肯定，因此可予以隱藏。
+  
+  2. 檢查那些票證所存取的資源，如果有所有票證都會存取的資源，請驗證該資源以確定它是票證應存取的有效資源。 此外，請驗證目標資源是否支援強式加密方法。 您可以透過在 Active Directory 中檢查資源服務帳戶的 msDS-SupportedEncryptionTypes 屬性來檢查這點。
+
+3.  Overpass-the-Hash - 在 Excel 試算表中，移至 [網路活動] 索引標籤。您會看到相關的降級欄位為 [加密時間戳記加密類型]，且 [來源電腦支援的加密類型] 包含更強的加密方法。
+
+  1. 如果最近有變更智慧卡設定，則使用者在使用智慧卡登入時可能會觸發此警示。 檢查相關帳戶是否有類似的變更。 如果是，這可能是良性真肯定，因此可予以隱藏。
+  2. 檢查那些票證所存取的資源，如果有所有票證都會存取的資源，請驗證該資源以確定它是票證應存取的有效資源。 此外，請驗證目標資源是否支援強式加密方法。 您可以透過在 Active Directory 中檢查資源服務帳戶的 msDS-SupportedEncryptionTypes 屬性來檢查這點。
 
 **補救**
 
@@ -225,9 +231,10 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 **調查**
 
-1. 有問題的電腦是否為網域控制站？ 例如，有複寫問題之新升級的網域控制站。 如果是，請**關閉並排除**可疑活動。  
+1.  有問題的電腦是否為網域控制站？ 例如，有複寫問題之新升級的網域控制站。 如果是，請**關閉**可疑活動。 
+2.  有問題的電腦是否預期會從 Active Directory 複寫資料？ 例如，Azure AD Connect。 如果是，請**關閉並排除**可疑活動。
+3.  按一下來源電腦或帳戶以移至其設定檔頁面。 檢查複寫期間所發生的事件，並搜尋不尋常的活動，例如當時登入的使用者，以及被存取的資源有哪些。 如果您已啟用 Windows Defender ATP 整合，請按一下 [Windows Defender ATP] 徽章 ![[Windows Defender ATP] 徽章](./media/wd-badge.png) 以進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序和警示。 
 
-2. 有問題的電腦是否預期會從 Active Directory 複寫資料？ 例如，Azure AD Connect。 如果是，請**關閉並排除**可疑活動。
 
 **補救**
 
@@ -352,7 +359,7 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 
 2. 來源電腦是否正在執行安全性掃描程式？ 如果是，請在 ATP 中直接透過 [關閉並排除]，或透過 [排除] 頁面 (位於 [設定] 下，且僅適用於 Azure ATP 系統管理員)，來**排除實體**。
 
-3. 如果上述問題的答案皆為否，請假設此為惡意行為。
+3. 如果上述所有問題的答案都是否定的，請繼續針對來源電腦進行調查。 按一下來源電腦以移至其設定檔頁面。 檢查要求期間所發生的事件，並搜尋不尋常的活動，例如當時登入的使用者，以及被存取的資源有哪些。 如果您已啟用 Windows Defender ATP 整合，請按一下 [Windows Defender ATP] 徽章 ![[Windows Defender ATP] 徽章](./media/wd-badge.png) 以進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序和警示。 
 
 **補救**
 
@@ -386,7 +393,7 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 
 使用 [Net Cease 工具](https://gallery.technet.microsoft.com/Net-Cease-Blocking-Net-1e8dcb5b)來強化您的環境，以防止此攻擊。
 
-## <a name="remote-execution-attempt-detected"></a>偵測到遠端執行嘗試
+## <a name="remote-execution-attempt"></a>遠端執行嘗試
 
 **描述**
 
@@ -402,7 +409,7 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 
  - 如果這兩個問題的答案均為「是」，請**關閉**警示。
 
-3. 如果其中一個問題的答案為「否」，則應視為真肯定。
+3. 如果針對這兩個問題的答案都是否定的，則應將此事件視為真肯定。 試著透過檢查電腦和帳戶設定檔，來找出嘗試的來源。 按一下來源電腦或帳戶以移至其設定檔頁面。 檢查這些嘗試的期間所發生的事件，並搜尋不尋常的活動，例如當時登入的使用者，以及被存取的資源有哪些。 如果您已啟用 Windows Defender ATP 整合，請按一下 [Windows Defender ATP] 徽章 ![[Windows Defender ATP] 徽章](./media/wd-badge.png) 以進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序和警示。 
 
 **補救**
 
@@ -420,21 +427,25 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 
 **調查**
 
-1. 如果有許多相關帳戶，請按一下 [下載詳細資料] 以檢視 Excel 試算表中的清單。
+1.  按一下 [下載詳細資料] 以在 Excel 試算表中檢視完整資訊。 您可以取得下列資訊： 
+   -    被攻擊帳戶的清單
+   -    登入嘗試成功進行驗證之被猜測帳戶的清單
+   -    如果驗證嘗試是使用 NTLM 來執行，您將會看到相關的事件活動 
+   -    如果驗證嘗試是使用 Kerberos 來執行，您將會看到相關的網路活動
 
-2. 按一下警示以移至其詳細資料頁面。 檢查是否有任何登入嘗試已結束且成功驗證，這些嘗試會顯示為資訊圖表右邊的**猜對的帳戶**。 如果是，平常是否從來源電腦使用任何**猜對的帳戶**？ 如果是，請**隱藏**可疑活動。
+2.  按一下來源電腦以移至其設定檔頁面。 檢查這些嘗試的期間所發生的事件，並搜尋不尋常的活動，例如當時登入的使用者，以及被存取的資源有哪些。 如果您已啟用 Windows Defender ATP 整合，請按一下 [Windows Defender ATP] 徽章 ![[Windows Defender ATP] 徽章](./media/wd-badge.png) 以進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序和警示。 
 
-3. 如果沒有**猜對的帳戶**，平常是否從來源電腦使用任何**受攻擊的帳戶**？ 如果是，請**隱藏**可疑活動。
+3.  如果驗證是使用 NTLM 來執行，且您多次看到該警示，且沒有來源電腦嘗試存取之伺服器的足夠相關資訊，則您應該對涉及的網域控制站啟用 **NTLM 稽核**。 若要這樣做，請開啟事件 8004。 這是 NTLM 驗證事件，其中包含來源電腦嘗試存取的來源電腦、使用者帳戶及**伺服器**的相關資訊。 知道驗證確認是由哪一部伺服器所傳送的之後，您應該透過檢查其事件 (例如 4624) 來調查它，以進一步了解驗證程序。 
 
 **補救**
 
 [複雜且很長的密碼](https://docs.microsoft.com/windows/device-security/security-policy-settings/password-policy)提供必要的第一層安全性，以防止暴力密碼破解攻擊。
 
-## <a name="suspicious-service-creation---preview-feature"></a>可疑服務建立 - 預覽功能！
+## <a name="suspicious-service-creation"></a>可疑的服務建立
 
 **描述**
 
-可疑的服務已在您組織中的網域控制站上建立。 此警示會依賴事件 7045，以在您的端點上識別此可疑活動。 您應該透過設定 [Windows 事件轉寄](configure-event-forwarding.md)，或是將 7045 事件轉寄至 SIEM 並[設定您的 SIEM](configure-event-collection.md) 來使它成為能將事件轉寄至 ATP 的資料來源，來將事件 7045 從端點轉送至 ATP。
+可疑的服務已在您組織中的網域控制站上建立。 此警示會依賴事件 7045，以在您的端點上識別此可疑活動。 
 
 **調查**
 
@@ -488,7 +499,8 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 3. WanaKiwi 可以解密受到某種勒索軟體支配的資料，但只適用於使用者尚未重新啟動或關閉電腦的情況。 如需詳細資訊，請參閱 [Wanna Cry Ransomware](https://answers.microsoft.com/en-us/windows/forum/windows_10-security/wanna-cry-ransomware/5afdb045-8f36-4f55-a992-53398d21ed07?auth=1) (Wanna Cry 勒索軟體)
 
 
->![NOTE] 若要停用可疑的活動，請連絡支援服務。
+> [!NOTE]
+> 若要停用可疑的活動，請連絡支援人員。
 
 
 ## <a name="see-also"></a>另請參閱

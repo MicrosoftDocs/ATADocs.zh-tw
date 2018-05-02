@@ -4,7 +4,7 @@ description: 說明 Microsoft Advanced Threat Analytics (ATA) 各版本的不同
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 4/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -12,11 +12,11 @@ ms.technology: ''
 ms.assetid: a8afbd91-c888-4dfc-94ab-72e38745163e
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 88ccd0e1667805d96ddd69145c4c85475ed6a2fc
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: 93c26e0049936b3db1253a785c6b28bffe0ab197
+ms.sourcegitcommit: e0209c6db649a1ced8303bb1692596b9a19db60d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -44,7 +44,9 @@ Microsoft 計劃每年發行數次 ATA 更新，而每個更新版本從其公�
 |1.7|1.7.5402|2016-08-31|2017-08-30|
 |1.7.1|1.7.5647|2016-10-06|2017-10-05|
 |1.7.2|1.7.5757|2016-11-15|2017-11-14|
-
+|1.8|1.8.6645|30-JUN-2017|30-JUN-2018|
+|1.8.1|1.8.6765|02-AUG-2017|02-AUG-2018|
+|1.9|1.9.7312|21-MAR-2018|21-MAR-2019|
 
 
 

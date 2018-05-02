@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/15/2018
+ms.date: 4/10/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 15ee7d0b-9a0c-46b9-bc71-98d0b4619ed0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 833e0bdf61ce25a8c56d820ad04981cd44321ac2
-ms.sourcegitcommit: f9d07a6b1f2193f0d2906092e252eb1d7398b493
+ms.openlocfilehash: a4c2f03955eddb4615b347fa8a211501546e6f4a
+ms.sourcegitcommit: e0209c6db649a1ced8303bb1692596b9a19db60d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -32,7 +32,8 @@ ms.lasthandoff: 03/16/2018
 在 Azure ATP 中，您可以管理及監視多個工作區。 如果您想要建立示範工作區和測試工作區，以便在推出到整個組織之前先概念證明 Azure ATP，則管理及監視多個工作區非常有用。 這也需要支援多個樹系的部署。 單一工作區僅能監視來自單一樹系的多個網域。 
 
 > [!NOTE]
-> 您最多可以有兩個使用中的工作區。 刪除工作區之後，您可以連絡支援人員重新啟動它。 您最多可有三個刪除的工作區。 若要增加儲存的刪除工作區數量，請連絡 Azure ATP 支援。
+> - 您最多可以有兩個使用中的工作區。 刪除工作區之後，您可以連絡支援人員重新啟動它。 您最多可有三個刪除的工作區。 若要增加儲存的刪除工作區數量，請連絡 Azure ATP 支援。
+> - 目前，Azure ATP 資料中心部署在歐洲、北美地區/美國中部/加勒比海和亞洲。
 
 ## <a name="step-1-enter-the-workspace-management-portal"></a>步驟 1： 進入工作區管理入口網站
 

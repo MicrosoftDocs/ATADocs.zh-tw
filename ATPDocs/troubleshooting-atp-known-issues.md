@@ -1,28 +1,33 @@
 ---
-title: "針對 Azure ATP 已知問題進行疑難排解 | Microsoft Docs"
-description: "描述如何針對 Azure ATP 的問題進行疑難排解。"
-keywords: 
+title: 針對 Azure ATP 已知問題進行疑難排解 | Microsoft Docs
+description: 描述如何針對 Azure ATP 的問題進行疑難排解。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/6/2018
+ms.date: 4/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2895a38e2328fb7de4fe7f47d00c4e40ac854e74
-ms.sourcegitcommit: 84556e94a3efdf20ca1ebf89a481550d7f8f0f69
+ms.openlocfilehash: 2112e9fea1f316ff12d87b3a477b78bff4457a5f
+ms.sourcegitcommit: e0209c6db649a1ced8303bb1692596b9a19db60d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 適用於：Azure 進階威脅防護
 
 
 # <a name="troubleshooting-azure-atp-known-issues"></a>針對 Azure ATP 已知問題進行疑難排解 
+
+
+## <a name="deployment-log-location"></a>部署記錄位置
+ 
+對於安裝產品的使用者，Azure ATP 部署記錄位於暫存記錄中。 在預設安裝位置中，其位於︰C:\Users\Administrator\AppData\Local\Temp (或 %temp% 上方的一個目錄)。
 
 ## <a name="azure-atp-sensor-nic-teaming-issue"></a>Azure ATP 感應器 NIC 小組問題
 
@@ -30,14 +35,14 @@ ms.lasthandoff: 03/08/2018
 
 如果尚未安裝感應器：
 
-1.  從 [https://nmap.org/npcap/](https://nmap.org/npcap/) \(英文\) 下載 Npcap。
+1.  從 [https://nmap.org/npcap/](https://nmap.org/npcap/) 下載 Npcap。
 2.  如果您已安裝 WinPcap，請將它解除安裝。
 3.  使用下列選項安裝 Npcap：loopback_support=no & winpcap_mode=yes
 4.  安裝感應器套件。
 
 如果您已安裝感應器：
 
-1.  從 [https://nmap.org/npcap/](https://nmap.org/npcap/) \(英文\) 下載 Npcap。
+1.  從 [https://nmap.org/npcap/](https://nmap.org/npcap/) 下載 Npcap。
 2.  將感應器解除安裝。
 3.  將 WinPcap 解除安裝。
 4.  使用下列選項安裝 Npcap：loopback_support=no & winpcap_mode=yes

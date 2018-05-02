@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/28/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3c8e0b239c335981b2030021d1d4e319b2810fda
-ms.sourcegitcommit: 7c9fe4eb781bec71129310a6e0c5e76b022a0213
+ms.openlocfilehash: 9a9998360a24fd7f4d4151d4572c7715be03d34d
+ms.sourcegitcommit: d2d2750bfb0198c8488d538f1773fda6eda5e6f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/23/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -88,7 +88,7 @@ Azure ATP 獨立感應器可以用來監視具 Windows Server 2003 或更新版�
 如需使用虛擬機器與 Azure ATP 獨立感應器的相關資訊，請參閱[設定連接埠鏡像](configure-port-mirroring.md)。
 
 > [!NOTE]
-> 至少需要 5 GB 的空間，建議要有 10 GB。 這包括 Azure ATP 二進位檔、Azure ATP 記錄檔和效能記錄檔所需的空間。
+> 至少需要 5 GB 的磁碟空間，建議要有 10 GB。 這包括 Azure ATP 二進位檔、Azure ATP 記錄檔和效能記錄檔所需的空間。
 
 ### <a name="server-specifications"></a>伺服器規格
 為了達到最佳效能，將 Azure ATP 獨立感應器的 [電源選項] 設定為 [高效能]。<br>
@@ -107,9 +107,9 @@ Azure ATP 獨立感應器可以支援監視多個網域控制站，依進出網�
 ### <a name="network-adapters"></a>網路介面卡
 Azure ATP 獨立感應器需要至少一個管理介面卡和至少一個擷取介面卡︰
 
--   **管理介面卡** - 用於您公司網路上的通訊。 此介面卡應進行下列設定：
+-   **管理介面卡** - 用於您公司網路上的通訊。 感應器會使用此配接器來查詢它正在保護的 DC，並對電腦帳戶執行解析。 <br>此介面卡應進行下列設定：
 
-    -   包含預設感應器的靜態 IP 位址
+    -   靜態 IP 位址，包含預設閘道
 
     -   慣用和替代的 DNS 伺服器
 
@@ -164,11 +164,11 @@ Azure ATP 感應器可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)�
 
 若要讓網域控制站與雲端服務通訊，您必須在防火牆和 Proxy 中針對 *.atp.azure.com 開啟連接埠 443。
 
-於安裝期間會安裝 .Net Framework 4.7，並可能會導致網域控制站重新開機。
+安裝期間會安裝 .Net Framework 4.7，並可能會要求網域控制站重新開機 (如果重新啟動已暫止)。
 
 
 > [!NOTE]
-> 至少需要 5 GB 的空間，建議要有 10 GB。 這包括 Azure ATP 二進位檔、Azure ATP 記錄檔和效能記錄檔所需的空間。
+> 至少需要 5 GB 的磁碟空間，建議要有 10 GB。 這包括 Azure ATP 二進位檔、Azure ATP 記錄檔和效能記錄檔所需的空間。
 
 ### <a name="server-specifications"></a>伺服器規格
 

@@ -1,57 +1,75 @@
 ---
-title: "設定您的 Proxy 或防火牆，以啟用與感應器的 Azure ATP 通訊 | Microsoft Docs"
-description: "描述如何設定防火牆或 Proxy，以允許 Azure ATP 雲端服務和 Azure ATP 感應器之間的通訊"
-keywords: 
+title: 設定您的 Proxy 或防火牆，以啟用與感應器的 Azure ATP 通訊 | Microsoft Docs
+description: 描述如何設定防火牆或 Proxy，以允許 Azure ATP 雲端服務和 Azure ATP 感應器之間的通訊
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f077bbd9990affbb6c552c5ad8875fdfebbd70f2
-ms.sourcegitcommit: 84556e94a3efdf20ca1ebf89a481550d7f8f0f69
+ms.openlocfilehash: c52fa6d7cb42605f1809a40926e391bf39fe3eb2
+ms.sourcegitcommit: d2d2750bfb0198c8488d538f1773fda6eda5e6f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/23/2018
 ---
 適用於：Azure 進階威脅防護
 
 
 
-# <a name="configure-your-proxy-to-allow-communication-between-azure-atp-sensors-and-the-azure-atp-cloud-service"></a>設定您的 Proxy 以允許 Azure ATP 感應器與 Azure ATP 雲端服務之間的通訊
+# <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-azure-atp-sensor"></a>設定 Azure ATP 感應器的端點 Proxy 和網際網路連線設定
 
-若要讓網域控制站與雲端服務通訊，您必須在防火牆或 Proxy 中開啟：*.atp.azure.com 連接埠 443。 設定必須是在電腦層級 (=電腦帳戶) 而不是在使用者帳戶層級。 您可以使用下列步驟測試您的組態：
+每個 Azure 進階威脅防護 (ATP) 感應器都需要 Azure ATP 雲端服務的網際網路連線，才能成功運作。 在某些組織中，網域控制站不會直接連線到網際網路，而是透過 Web Proxy 連線來連線。 每個 Azure ATP 感應器都要求您使用 Microsoft Windows Internet (WinINET) Proxy 設定來回報感應器資料，並與 Azure ATP 服務進行通訊。 如果您使用 WinHTTP 進行 Proxy 設定，則仍需要為感應器和 ATP Azure 雲端服務之間的通訊設定 Windows Internet (WinINet) 瀏覽器 Proxy 設定。
+
+
+設定 Proxy 時，您需要知道內嵌 Azure ATP 感應器服務使用 **LocalService** 帳戶在系統內容中執行，而 Azure ATP Sensor Updater 服務使用 **LocalSystem** 帳戶在系統內容中執行。 
+
+> [!NOTE]
+> 如果您在網路拓撲中使用 Transparent Proxy 或 WPAD，則不需要針對您的 Proxy 設定 WinINET。
+
+## <a name="configure-the-proxy"></a>設定 Proxy 
+
+使用以登錄為基礎的靜態 Proxy 手動設定您的 Proxy 伺服器，讓 Azure ATP 感應器在不允許電腦連線到網際網路時回報診斷資料，並與 Azure ATP 雲端服務進行通訊。
+
+> [!NOTE]
+> 登錄變更應僅套用至 LocalService 和 LocalSystem。
+
+靜態 Proxy 可透過登錄進行設定。 您必須將您在使用者內容中使用的 Proxy 設定複製到 localsystem 和 localservice。 複製您的使用者內容 Proxy 設定：
+
+1.   在修改登錄機碼之前，請務必先進行備份。
+
+2. 在登錄中，在登錄機碼 `HKCU\Software\Microsoft\Windows\CurrentVersion\InternetSetting\Connections\DefaultConnectionSetting` 下搜尋值為 `DefaultConnectionSetting` 的 REG_BINARY 並複製它。
  
-1.  確認**目前使用者**可使用 IE 瀏覽 DC 的下列 URL 來存取處理器端點：https://triprd1wcuse1sensorapi.eastus.cloudapp.azure.com (適用於美國)，您應該會收到錯誤 503：
+2.  如果 LocalSystem 沒有正確的 Proxy 設定 (未設定或是與 Current_User 不同)，則您可能需要從 Current_User 將 Proxy 設定複製到 LocalSystem。 在登錄機碼 `HKU\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\InternetSetting\Connections\DefaultConnectionSetting` 下。
 
- ![服務無法使用](./media/service-unavailable.png)
- 
-2.  如果您沒有收到錯誤 503，請檢閱 Proxy 設定並再試一次。
+3.  將 Current_user `DefaultConnectionSetting` 中的值貼為 REG_BINARY。
 
-3.  如果 Proxy 設定適用於 **CURRENT_USER** (也就是您有看到 503 錯誤)，則請以提升權限的命令提示字元執行下列命令，查看 WinInet Proxy 設定是否已針對 **LOCAL_SYSTEM** 帳戶 (由感應器更新程式服務使用) 啟用：
- 
-    reg compare "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Connections" "HKU\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections" /v DefaultConnectionSettings
+4.  如果 LocalService 沒有正確的 Proxy 設定，則將 Current_User 中的 Proxy 設定複製到 LocalService。 在登錄機碼 `HKU\S-1-5-19\Software\Microsoft\Windows\CurrentVersion\InternetSetting\Connections\DefaultConnectionSetting` 下。
 
-如果您收到「錯誤: 系統找不到指定的登錄機碼或值。」 這表示在 **LOCAL_SYSTEM** 層級沒有設定任何 Proxy
- 
- ![Proxy 本機系統錯誤](./media/proxy-local-system-error.png)
+5.  將 Current_User `DefaultConnectionSetting` 中的值貼為 REG_BINARY。
 
-如果結果為「比較的結果: 不同」，則表示已針對 **LOCAL_SYSTEM** 設定 Proxy，但它與 **CURRENT_USER** 不相同：
- 
-  ![Proxy 比較的結果](./media/proxy-result-compared.png)
+> [!NOTE]
+> 這將影響所有應用程式，包括使用 WinINET 搭配 LocalService、LocalSytem 內容的 Windows 服務。
 
-5.  如果 **LOCAL_SYSTEM** 沒有正確的 Proxy 設定 (未設定或是與 **CURRENT_USER** 不同)，則您可能需要從 **CURRENT_USER** 將 Proxy 設定複製到 **LOCAL_SYSTEM**。 請確定在您修改登錄機碼之前，先將它備份：
 
- Current user key: HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Connections\DefaultConnectionSettings” Local system key: HKU\S-1-5-18\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections\DefaultConnectionSettings”
+## <a name="enable-access-to-azure-atp-service-urls-in-the-proxy-server"></a>啟用 Proxy 伺服器中的 Azure ATP 服務 URL 存取
 
- 
-6.  針對 **Local_Service** 帳戶完成步驟 4 和 5，它與 **Local_System** 相同，但應該是 S-1-5-19 而非 S-1-5-18。
+如果 Proxy 或防火牆根據預設封鎖了所有流量，並且只允許特定網域通過，或者啟用了 HTTPS 掃描 (SSL 檢查)，請確定下列 URL 已列入白名單，以允許與連接埠 443 中的 Azure ATP 服務進行通訊：
 
+|服務位置|.Atp.Azure.com DNS 記錄|
+|----|----|
+|美國 |triprd1wcusw1sensorapi.atp.azure.com<br>triprd1wcuswb1sensorapi.atp.azure.com<br>triprd1wcuse1sensorapi.atp.azure.com|
+|歐洲|triprd1wceun1sensorapi.atp.azure.com<br>triprd1wceuw1sensorapi.atp.azure.com|
+|亞洲|triprd1wcasse1sensorapi.atp.azure.com|
+
+> [!NOTE]
+> 針對 Azure ATP 網路流量 (感應器和 Azure ATP 服務之間) 執行 SSL 檢查時，SSL 檢查必須支援相互檢查。
 
 
 ## <a name="see-also"></a>另請參閱

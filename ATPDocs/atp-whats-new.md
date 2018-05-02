@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/25/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,16 +13,42 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0693bd3a25d6438874d422bedf8da05931a15d54
-ms.sourcegitcommit: 158bf048d549342f2d4689f98ab11f397d9525a2
+ms.openlocfilehash: edf9222f7ccaca33317120a7cdaacf04873a67a4
+ms.sourcegitcommit: d2d2750bfb0198c8488d538f1773fda6eda5e6f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/23/2018
 ---
 適用於：Azure 進階威脅防護
 
 
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能 
+
+
+
+## <a name="azure-atp-release-229"></a>Azure ATP 2.29 版
+
+發行日期：2018 年 4 月 22 日
+ 
+- 此版本包含針對多個問題的修正和改善。 
+ 
+ 
+## <a name="azure-atp-release-228"></a>Azure ATP 2.28 版
+
+發行日期：2018 年 4 月 15 日
+ 
+-   使用者若是角色群組 Azure ATP 使用者和 Azure ATP 檢視者的成員，現在就有權限可查看監視警示。
+- 此版本包含針對多個問題的修正和改善。 
+
+
+## <a name="azure-atp-release-227"></a>Azure ATP 2.27 版
+
+發行日期：2018 年 4 月 8 日
+
+- 您現在可以從上方導覽列提供使用者意見反應。 按一下功能表列中的笑臉，可讓您透過電子郵件，向 Azure Advanced Threat Protection 小組傳送您的意見反應。
+
+- 此版本包含針對多個問題的修正和改善。 
+ 
 
 ## <a name="azure-atp-release-226"></a>Azure ATP 2.26 版
 

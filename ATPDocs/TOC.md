@@ -6,6 +6,7 @@
 ## [Azure ATP 必要條件](atp-prerequisites.md)
 ## [Azure ATP 架構](atp-architecture.md)
 ## [規劃 Azure ATP 容量](atp-capacity-planning.md)
+### [設定 Proxy 以進行通訊](configure-proxy.md)
 # 部署
 ## [1 在工作區管理入口網站中建立工作區](install-atp-step1.md)
 ## [2 連線到 AD](install-atp-step2.md)
@@ -21,7 +22,6 @@
 ### [驗證連接埠鏡像](validate-port-mirroring.md)
 ### [設定事件收集](configure-event-collection.md)
 ### [設定 Windows 事件轉送](configure-event-forwarding.md)
-### [設定 Proxy 以進行通訊](configure-proxy.md)
 # 用法
 ## [Azure ATP 健康情況中心](atp-health-center.md)
 ## [Azure ATP 報表](reports.md)
@@ -44,3 +44,4 @@
 # 疑難排解
 ## [針對已知問題進行疑難排解](troubleshooting-atp-known-issues.md)
 ## [支援與資訊](atp-support.md)
+## [Azure ATP 整備藍圖](atp-resources.md)

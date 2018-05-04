@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 4/25/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 7597ed25-87f5-472c-a496-d5f205c9c391
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a49478698adea15637698f4c715cdd34a9a601c4
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: 6e32f3ce59b049d0ced68a1330eefca7315bf49d
+ms.sourcegitcommit: 5c0f914b44bfb8e03485f12658bfa9a7cd3d8bbc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/30/2018
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -28,9 +28,9 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="step-9-configure-sam-r-required-permissions"></a>步驟 9： 設定 SAM-R 所需的權限
 
-[橫向移動路徑](use-case-lateral-movement-path.md)偵測有賴於識別特定電腦上本機系統管理員的查詢。 這些查詢會透過[步驟 2.連線到 AD](install-ata-step2.md) 中建立的 ATA 服務帳戶，使用 SAM-R 通訊協定來執行。
+[橫向移動路徑](use-case-lateral-movement-path.md)偵測有賴於識別特定電腦上本機系統管理員的查詢。 這些查詢會透過[步驟 2.連線到 AD](install-ata-step2.md) 中建立的 Azure ATP 服務帳戶，使用 SAM-R 通訊協定來執行。
  
-若要確保 Windows 用戶端和伺服器允許 ATA 服務帳戶執行這項 SAM-R 作業，必須對群組原則進行修改。
+若要確保 Windows 用戶端和伺服器允許 ATA 服務帳戶執行這項 SAM R 作業，您必須修改 [群組原則]，在 [網路存取] 原則列出的已設定帳戶之外新增 ATA 服務帳戶。
 
 1. 找出原則：
 

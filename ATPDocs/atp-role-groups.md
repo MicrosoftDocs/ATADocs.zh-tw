@@ -1,23 +1,23 @@
 ---
-title: "適用於存取管理的 Azure 進階威脅防護角色群組 | Microsoft Docs"
-description: "逐步引導您使用 Azure ATP 角色群組。"
-keywords: 
+title: 適用於存取管理的 Azure 進階威脅防護角色群組 | Microsoft Docs
+description: 逐步引導您使用 Azure ATP 角色群組。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2017
+ms.date: 4/30/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 86cb55fd2b5ce81460dead4b8b753c88f79edd7b
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 8fda27ed8ed4a589ff205e815e8b3cf97026b819
+ms.sourcegitcommit: 5c0f914b44bfb8e03485f12658bfa9a7cd3d8bbc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/30/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -46,10 +46,9 @@ Azure ATP 導入三種類型的安全性群組：Azure ATP「工作區名稱」�
 |活動 |Azure ATP「工作區名稱」系統管理員|Azure ATP「工作區名稱」使用者|Azure ATP「工作區名稱」檢視者|
 |----|----|----|----|
 |登入|可用|可用|可用|
-|提供可疑活動的輸入|可用|可用|無法使用|
 |變更可疑活動的狀態|可用|可用|無法使用|
-|透過電子郵件/取得連結共用/匯出可疑的活動|可用|可用|無法使用|
-|變更監視警示的狀態|可用|可用|無法使用|
+|透過電子郵件/取得連結共用/匯出可疑的活動|可用|可用|可用|
+|變更監視警示的狀態|可用|無法使用|無法使用|
 |更新 Azure ATP 設定|可用|無法使用|無法使用|
 |感應器 - 新增|可用|無法使用|無法使用|
 |感應器 - 刪除 |可用|無法使用|無法使用|
@@ -62,7 +61,7 @@ Azure ATP 導入三種類型的安全性群組：Azure ATP「工作區名稱」�
 
 ## <a name="add-and-remove-users"></a>新增及移除使用者 
 
-Azure ATP 使用 Azure AD 安全性群組作為角色群組的基礎。 可以從 [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All groups](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All groups) 來管理角色群組。  只可以將 AAD 使用者加入或移除自安全性群組。 
+Azure ATP 使用 Azure AD 安全性群組作為角色群組的基礎。 您可以從[https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All群組](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All groups)管理角色群組。  只可以將 AAD 使用者加入或移除自安全性群組。 
 
 
 ## <a name="see-also"></a>另請參閱

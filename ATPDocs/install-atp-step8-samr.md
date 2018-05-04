@@ -1,23 +1,23 @@
 ---
-title: "設定 SAM-R 以在 Azure ATP 中啟用橫向移動路徑偵測 | Microsoft Docs"
-description: "描述如何設定 SAM-R 以在 Azure ATP 中啟用橫向移動路徑偵測"
-keywords: 
+title: 設定 SAM-R 以在 Azure ATP 中啟用橫向移動路徑偵測 | Microsoft Docs
+description: 描述如何設定 SAM-R 以在 Azure ATP 中啟用橫向移動路徑偵測
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 4/29/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: b09adce3-0fbc-40e3-a53f-31f57fe79ca3
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0e2ac4fb68fb1429610a0416582c871c9ae704df
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 24b42c5425933d8931a85e0ba454a69e0ca94a21
+ms.sourcegitcommit: 5c0f914b44bfb8e03485f12658bfa9a7cd3d8bbc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/30/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 02/21/2018
 
 [橫向移動路徑](use-case-lateral-movement-path.md)偵測有賴於識別特定電腦上本機系統管理員的查詢。 這些查詢是透過[步驟 2.連線到 AD](install-atp-step2.md) 中建立的 Azure ATP 服務帳戶，使用 SAM-R 通訊協定來執行。
  
-若要確保 Windows 用戶端和伺服器允許 Azure ATP 服務帳戶執行這項 SAM-R 作業，必須對群組原則進行修改。
+若要確保 Windows 用戶端和伺服器允許 Azure ATP 帳戶執行這項 SAM R 作業，您必須修改 [群組原則]，在 [網路存取] 原則列出的已設定帳戶之外新增 Azure ATP 服務帳戶。
 
 1. 找出原則：
 

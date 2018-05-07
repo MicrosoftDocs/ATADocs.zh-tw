@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/27/2018
+ms.date: 4/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 435e5141c8abda338c1115004d1876ff5b7736a4
-ms.sourcegitcommit: e0209c6db649a1ced8303bb1692596b9a19db60d
+ms.openlocfilehash: 838c5ce470bdf78ec81aed5d6fa1cf2407abc6f9
+ms.sourcegitcommit: 5c0f914b44bfb8e03485f12658bfa9a7cd3d8bbc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/30/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -30,6 +30,8 @@ ms.lasthandoff: 04/16/2018
 Azure ATP 會運用使用實體或虛擬交換器針對 Azure ATP 獨立感應器的連接埠鏡像，監視網域控制站的網路流量。 如果您直接在網域控制站上部署 Azure ATP 感應器，則可免除連接埠鏡像的需求。 此外，Azure ATP 可以利用 Windows 事件 (直接從網域控制站或 SIEM 伺服器轉寄)，分析攻擊和威脅的資料。 Azure ATP 會從 Azure ATP 獨立感應器和 Azure ATP 感應器接收已剖析的流量。 然後執行分析、執行決定性偵測，並執行機器學習和行為演算法，以了解您的網路，啟用異常偵測並警告您可疑的活動。
 
 本節說明網路與事件擷取的流程，並深入描述下列 ATP 主要元件的功能︰Azure ATP 獨立感應器、Azure ATP 感應器 (核心功能與 Azure ATP 獨立感應器相同) 和 Azure ATP 雲端服務。 
+
+直接在網域控制站上安裝時，感應器會直接從網域控制站存取所需的事件記錄檔。 當感應器已剖析這些記錄檔和網路流量之後，Azure ATP 只會傳送此剖析資訊給 Azure ATP 服務 (並非所有的記錄檔)。
 
 ## <a name="azure-atp-components"></a>Azure ATP 元件
 Azure ATP 包含下列元件：

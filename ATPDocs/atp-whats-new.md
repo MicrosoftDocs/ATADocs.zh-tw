@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: edf9222f7ccaca33317120a7cdaacf04873a67a4
-ms.sourcegitcommit: d2d2750bfb0198c8488d538f1773fda6eda5e6f9
+ms.openlocfilehash: de761df3badbd1ae1118c96d018a24dd22318328
+ms.sourcegitcommit: 5c0f914b44bfb8e03485f12658bfa9a7cd3d8bbc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -25,6 +25,15 @@ ms.lasthandoff: 04/23/2018
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能 
 
 
+
+## <a name="azure-atp-release-230"></a>Azure ATP 2.30 版
+
+發行日期：2018 年 4 月 29 日
+ 
+- 加密降級可疑活動現在包含描述 Azure ATP 所偵測到之徵兆的辨識項區段，導致其懷疑發生加密降級活動。 
+-   Azure ATP 現在會針對從 Azure ATP 傳送的所有電子郵件使用 Azure Email Orchestrator，包括可疑活動、監視警示和報表。 您會看到這些電子郵件通知現在遵循一致的格式使其容易使用，而從電子郵件連結到的 Excel 檔案將會從主控台中下載。
+ 
+ 
 
 ## <a name="azure-atp-release-229"></a>Azure ATP 2.29 版
 

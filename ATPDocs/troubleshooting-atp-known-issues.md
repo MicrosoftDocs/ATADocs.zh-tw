@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/10/2018
+ms.date: 4/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2112e9fea1f316ff12d87b3a477b78bff4457a5f
-ms.sourcegitcommit: e0209c6db649a1ced8303bb1692596b9a19db60d
+ms.openlocfilehash: c430ec58c197c8fcc6e539d0923278cd8469987d
+ms.sourcegitcommit: 5c0f914b44bfb8e03485f12658bfa9a7cd3d8bbc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/30/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -28,6 +28,24 @@ ms.lasthandoff: 04/16/2018
 ## <a name="deployment-log-location"></a>部署記錄位置
  
 對於安裝產品的使用者，Azure ATP 部署記錄位於暫存記錄中。 在預設安裝位置中，其位於︰C:\Users\Administrator\AppData\Local\Temp (或 %temp% 上方的一個目錄)。
+
+## <a name="proxy-authentication-problem-presents-as-licensing-error"></a>Proxy 驗證問題顯示為授權錯誤
+
+感應器安裝期間您會收到下列錯誤：**感應器由於授權問題而無法註冊。**
+
+部署記錄項目：[1C60:1AA8][2018-03-24T23:59:13]i000: 2018-03-25 02:59:13.1237 Info  InteractiveDeploymentManager ValidateCreateSensorAsync returned [\[]validateCreateSensorResult=LicenseInvalid[\]] [1C60:1AA8][2018-03-24T23:59:56]i000: 2018-03-25 02:59:56.4856 Info  InteractiveDeploymentManager ValidateCreateSensorAsync returned [\[]validateCreateSensorResult=LicenseInvalid[\]] [1C60:1AA8][2018-03-25T00:27:56]i000: 2018-03-25 03:27:56.7399 Debug SensorBootstrapperApplication Engine.Quit [\[]deploymentResultStatus=1602 isRestartRequired=False[\]] [1C60:15B8][2018-03-25T00:27:56]i500: Shutting down, exit code: 0x642
+
+
+**原因：**
+
+在某些情況下，透過 Proxy 進行通訊時，可能會在驗證期間以錯誤 401 或 403 回應 Azure ATP 感應器，而不是錯誤 407。 Azure ATP 感應器將錯誤 401 或 403 解譯為授權問題，而不是 Proxy 驗證問題。 
+
+**解決方法：**
+
+請確定感應器可透過設定的 Proxy 瀏覽至 *.atp.azure.com，而無需進行驗證。 如需詳細資訊，請參閱[設定 Proxy 以進行通訊](configure-proxy.md)。
+
+
+
 
 ## <a name="azure-atp-sensor-nic-teaming-issue"></a>Azure ATP 感應器 NIC 小組問題
 

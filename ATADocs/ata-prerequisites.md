@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 5/6/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 419df4c4404bf26a85c1a955139d0dee6f50828e
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: 91ce961b832fd02ba343b3f55ae3570fe4b10207
+ms.sourcegitcommit: 39a1ddeb6c9dd0817f92870b711627350b7f6f03
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/08/2018
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -121,9 +121,7 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 |**LDAPS** (選擇性)|TCP|636|網域控制站|輸出|
 |**DNS**|TCP 和 UDP|53|DNS 伺服器|輸出|
 |**Kerberos** (如已加入網域即為選擇性)|TCP 和 UDP|88|網域控制站|輸出|
-|**Netlogon** (如已加入網域即為選擇性)|TCP 和 UDP|445|網域控制站|輸出|
 |**Windows 時間** (若已加入網域即為選擇性)|UDP|123|網域控制站|輸出|
-|**Netlogon (SMB、CIFS、SAM-R)**|TCP 和 UDP|445|閘道與裝置|輸入與輸出|
 
 > [!NOTE]
 > 需要 LDAP 以測試要在 ATA 閘道及網域控制站之間使用的認證。 測試會從 ATA 中心對網域控制站進行，以測試這些認證的有效性。之後，ATA 閘道便能在一般解析程序中使用 LDAP。
@@ -212,7 +210,7 @@ ATA 閘道需要至少一個管理介面卡和至少一個擷取介面卡︰
 |LDAP 至通用類別|TCP|3268|網域控制站|輸出|
 |LDAPS 至通用類別|TCP|3269|網域控制站|輸出|
 |Kerberos|TCP 和 UDP|88|網域控制站|輸出|
-|Netlogon|TCP 和 UDP|445|網域控制站|輸出|
+|Netlogon (SMB、CIFS、SAM-R)|TCP 和 UDP|445|網路上的所有裝置|輸出|
 |Windows Time|UDP|123|網域控制站|輸出|
 |DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
 |透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|輸出|
@@ -225,6 +223,10 @@ ATA 閘道需要至少一個管理介面卡和至少一個擷取介面卡︰
 >
 > -   透過 RPC 的 NTLM (TCP 連接埠 135)
 > -   NetBIOS (UDP 連接埠 137)
+> - 使用 Directory 服務使用者帳戶，ATA 閘道會查詢您組織中的端點以尋找使用 SAM-R (網路登入) 的本機系統管理員，來建置[橫向移動路徑圖表](use-case-lateral-movement-path.md)。 如需詳細資訊，請參閱[設定 SAM-R 必要權限](install-ata-step9-samr.md)。
+> - 下列連接埠需要為 ATA 閘道在網路上的裝置上針對傳入開啟：
+>   -   透過 RPC 的 NTLM (TCP 連接埠 135) (針對解析目的)
+>   -   NetBIOS (UDP 連接埠 137) (針對解析目的)
 
 ## <a name="ata-lightweight-gateway-requirements"></a>ATA 輕量型閘道需求
 本節列出 ATA 輕量型閘道的需求。
@@ -280,12 +282,17 @@ ATA 輕量型閘道可為所有網域控制站的網路介面卡監視其上的�
 |NetBIOS|UDP|137|網路上的所有裝置|輸出|
 |SSL|TCP|443|ATA 中心|輸出|
 |Syslog (選擇性)|UDP|514|SIEM 伺服器|輸入|
+|Netlogon (SMB、CIFS、SAM-R)|TCP 和 UDP|445|網路上的所有裝置|輸出|
 
 > [!NOTE]
 > 作為 ATA 輕量型閘道所執行之解析程序的一部分，必須在 ATA 輕量型閘道網路中的裝置上，開啟下列連接埠的輸入。
 >
 > -   透過 RPC 的 NTLM
 > -   NetBIOS
+> - 使用 Directory 服務使用者帳戶，ATA 輕量型 閘道會查詢您組織中的端點以尋找使用 SAM-R (網路登入) 的本機系統管理員，來建置[橫向移動路徑圖表](use-case-lateral-movement-path.md)。 如需詳細資訊，請參閱[設定 SAM-R 必要權限](install-ata-step9-samr.md)。
+> - 下列連接埠需要為 ATA 閘道在網路上的裝置上針對傳入開啟：
+>   -   透過 RPC 的 NTLM (TCP 連接埠 135) (針對解析目的)
+>   -   NetBIOS (UDP 連接埠 137) (針對解析目的)
 
 ## <a name="ata-console"></a>ATA 主控台
 透過瀏覽器存取到 ATA 主控台，支援的瀏覽器和設定︰

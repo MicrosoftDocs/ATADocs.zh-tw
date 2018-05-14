@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/29/2018
+ms.date: 5/8/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: de761df3badbd1ae1118c96d018a24dd22318328
-ms.sourcegitcommit: 5c0f914b44bfb8e03485f12658bfa9a7cd3d8bbc
+ms.openlocfilehash: 6d794e2d30b51d78bd3e4af76d8bd4a48b2d413f
+ms.sourcegitcommit: 8472f3f46fc90da7471cd1065cdb2f6a1d5a9f69
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/08/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -25,6 +25,13 @@ ms.lasthandoff: 04/30/2018
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能 
 
 
+
+## <a name="azure-atp-release-231"></a>Azure ATP 2.31 版
+
+2018 年 5 月 6 日發行
+ 
+- 已對名稱解析進行改善。 在這項作業中，除了 RPC 與 NetBIOS 動態解析外，感應器可能會發出 TLS Client Hello 封包至端點 RDP 連接埠 (3389)。 
+- 此版本包含針對多個問題的修正和改善。 
 
 ## <a name="azure-atp-release-230"></a>Azure ATP 2.30 版
 

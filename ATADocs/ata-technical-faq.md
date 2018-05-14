@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 5/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 5fe0e6f0d8c75c099aa6623cd0f5245c955d9ffa
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: f372b4b85c240079da157052e2c20c46801398be
+ms.sourcegitcommit: 39a1ddeb6c9dd0817f92870b711627350b7f6f03
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/08/2018
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -51,6 +51,10 @@ ms.lasthandoff: 03/22/2018
 
 如需 ATA 版本升級矩陣，請參閱 [ATA 升級路徑](upgrade-path.md)。
 
+
+## <a name="how-does-the-ata-center-update-its-latest-signatures"></a>ATA 中心如何更新其最新的特徵標記？
+
+ATA 中心上安裝較新的版本時，會加強 ATA 偵測機制。 您可透過使用 Microsoft Update (MU) 或從下載中心或大量授權網站下載新版本，來升級中心。
 
 ## <a name="how-do-i-verify-windows-event-forwarding"></a>如何確認 Windows 事件轉送？
 您可以將下列程式碼放入一個檔案，然後在 **\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin** 目錄中從命令提示字元執行，如下所示︰

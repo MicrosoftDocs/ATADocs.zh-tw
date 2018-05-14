@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/8/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9a9998360a24fd7f4d4151d4572c7715be03d34d
-ms.sourcegitcommit: d2d2750bfb0198c8488d538f1773fda6eda5e6f9
+ms.openlocfilehash: ae859121fbe856c93b8568ef38bf0b4bdb77837a
+ms.sourcegitcommit: 8472f3f46fc90da7471cd1065cdb2f6a1d5a9f69
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/08/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -139,21 +139,21 @@ Azure ATP 獨立感應器需要至少一個管理介面卡和至少一個擷取�
 |LDAP 至通用類別|TCP|3268|網域控制站|輸出|
 |LDAPS 至通用類別|TCP|3269|網域控制站|輸出|
 |Kerberos|TCP 和 UDP|88|網域控制站|輸出|
-|Netlogon (SMB、CIFS、SAM-R)|TCP 和 UDP|445|網域控制站|輸出|
+|Netlogon (SMB、CIFS、SAM-R)|TCP 和 UDP|445|網路上的所有裝置|輸出|
 |Windows Time|UDP|123|網域控制站|輸出|
 |DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
 |透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|輸出|
 |NetBIOS|UDP|137|網路上的所有裝置|輸出|
 |Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|輸入|
 |RADIUS|UDDP|1813|RADIUS|輸入|
+|RDP|TCP|3389|網路上的所有裝置|輸出|
 
 > [!NOTE]
 > - 使用 Directory 服務使用者帳戶，感應器會查詢您組織中的端點以尋找使用 SAM-R (網路登入) 的本機系統管理員，以建置[橫向移動路徑圖表](use-case-lateral-movement-path.md)。 如需詳細資訊，請參閱[設定 SAM-R 必要權限](install-atp-step8-samr.md)。
 > - 下列連接埠需要為 Azure ATP 獨立感應器在網路上的裝置上針對傳入開啟：
 >   -   透過 RPC 的 NTLM (TCP 連接埠 135) (針對解析目的)
 >   -   NetBIOS (UDP 連接埠 137) (針對解析目的)
->   -   SAM-R 查詢 (TCP/UDP 連接埠 445) (針對偵測目的)
-
+>   -   RDP (TCP 連接埠 3389)，只提供 *Client hello* 的第一個套件作解析之用<br> 請注意，不會在任何連接埠上執行任何驗證。
 
 ## <a name="azure-atp-sensor-requirements"></a>Azure ATP 感應器需求
 本節列出 Azure ATP 感應器的需求。
@@ -202,18 +202,18 @@ Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的�
 |**內部連接埠**|||||
 |DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
 |透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|輸出|
-|Netlogon (SMB、CIFS、SAM-R)|TCP/UDP|445|網域控制站|輸出|
+|Netlogon (SMB、CIFS、SAM-R)|TCP/UDP|445|網路上的所有裝置|輸出|
 |NetBIOS|UDP|137|網路上的所有裝置|輸出|
 |Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|輸入|
 |RADIUS|UDDP|1813|RADIUS|輸入|
+|TLS 至 RDP 連接埠|TCP|3389|網路上的所有裝置|輸出|
 
 > [!NOTE]
-> - 使用 Directory 服務使用者帳戶，感應器會查詢您組織中的端點以尋找使用 SAM-R (網路登入) 的本機系統管理員，以建置[橫向移動路徑圖表](use-case-lateral-movement-path.md)。
-> - 下列連接埠需要為 Azure ATP 感應器在網路上的裝置上針對傳入開啟：
+> - 使用 Directory 服務使用者帳戶，感應器會查詢您組織中的端點以尋找使用 SAM-R (網路登入) 的本機系統管理員，以建置[橫向移動路徑圖表](use-case-lateral-movement-path.md)。 如需詳細資訊，請參閱[設定 SAM-R 必要權限](install-atp-step8-samr.md)。
+> - 下列連接埠需要為 Azure ATP 獨立感應器在網路上的裝置上針對傳入開啟：
 >   -   透過 RPC 的 NTLM (TCP 連接埠 135) (針對解析目的)
 >   -   NetBIOS (UDP 連接埠 137) (針對解析目的)
->   -   SAM-R 查詢 (TCP/UDP 連接埠 445) (針對偵測目的)
-
+>   -   RDP (TCP 連接埠 3389)，只提供 *Client hello* 的第一個套件作解析之用<br> 請注意，不會在任何連接埠上執行任何驗證。
 
 
 

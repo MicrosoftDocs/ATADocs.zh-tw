@@ -14,6 +14,7 @@
 #### [更新為 ATA 1.5 - 移轉指南](ata-update-1.5-migration-guide.md)
 ### [ATA 1.4 版的新功能](whats-new-version-1.4.md)
 ## [常見問題集](ata-technical-faq.md)
+## [ATA 合規性、信任、資料安全性與隱私權](ata-privacy-compliance.md)
 # 計劃和設計
 ## [ATA 架構](ata-architecture.md)
 ## [規劃 ATA 容量](ata-capacity-planning.md)

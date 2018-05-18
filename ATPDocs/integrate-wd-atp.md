@@ -1,23 +1,23 @@
 ---
-title: "Azure 進階威脅防護與 Windows Defender ATP 的整合 | Microsoft Docs"
-description: "如何將 Azure 進階威脅防護與 Windows Defender ATP 整合，以獲得完整的威脅偵測涵蓋範圍"
-keywords: 
+title: Azure 進階威脅防護與 Windows Defender ATP 的整合 | Microsoft Docs
+description: 如何將 Azure 進階威脅防護與 Windows Defender ATP 整合，以獲得完整的威脅偵測涵蓋範圍
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 5/16/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: f6f3ed75-d6bb-4966-a9a7-5339c4f3ebac
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3521e500548b04febbff37d3dfe9150cf6f2d35b
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 17ade33a55039eaf8abc98901cdab9ebeef850c5
+ms.sourcegitcommit: 714a01edc9006b38d1163d03852dafc2a5fddb5f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/16/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -96,8 +96,10 @@ Azure ATP 技術可偵測多種可疑的活動，專注於網路攻擊狙殺鏈�
  ![Windows Defender ATP 呈現灰色](./media/wd-grey.png)
 
 在 Windows Defender ATP 入口網站中，當您在端點上按一下時，就可檢視 Azure ATP 警示。 如果您在 Windows Defender ATP 中按一下此實體的警示，該實體的設定檔頁面會在 Azure ATP 中開啟。 
+ 
+ > ![注意] Azure ATP 與 Windows Defender ATP 的整合僅支援來自內部部署 AD 的使用者與電腦。 來自 Azure AD 以及在 Azure 中管理之虛擬機器的使用者不會在整合中出現 
 
- ![Windows Defender ATP 警示](./media/wd-atp-alerts.png)
+![Windows Defender ATP 警示](./media/wd-atp-alerts.png)
 
 
 ## <a name="see-also"></a>另請參閱

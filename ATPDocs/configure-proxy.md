@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/16/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c52fa6d7cb42605f1809a40926e391bf39fe3eb2
-ms.sourcegitcommit: d2d2750bfb0198c8488d538f1773fda6eda5e6f9
+ms.openlocfilehash: 5a1fd5631a568419c600f35d44f09c9c61f17129
+ms.sourcegitcommit: 714a01edc9006b38d1163d03852dafc2a5fddb5f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/16/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -68,6 +68,11 @@ ms.lasthandoff: 04/23/2018
 |歐洲|triprd1wceun1sensorapi.atp.azure.com<br>triprd1wceuw1sensorapi.atp.azure.com|
 |亞洲|triprd1wcasse1sensorapi.atp.azure.com|
 
+
+您也可以自己建立的特定工作區強化防火牆與 Proxy 規則，方法是為下列 DNS 記錄建立規則：
+- <Workspace-Name>.atp.azure.com - 針對主控台連線
+- <Workspace-Name>sensorapi.atp.azure.com - 針對感應器連線
+ 
 > [!NOTE]
 > 針對 Azure ATP 網路流量 (感應器和 Azure ATP 服務之間) 執行 SSL 檢查時，SSL 檢查必須支援相互檢查。
 

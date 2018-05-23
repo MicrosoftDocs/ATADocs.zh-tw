@@ -44,7 +44,7 @@
 ## [變更網域連線密碼](modifying-ata-config-dcpassword.md)
 ## [從偵測中排除實體](excluding-entities-from-detections.md)
 ## [匯出/匯入 ATA 組態](ata-configuration-file.md)
-## [管理 ATA 遙測](manage-telemetry-settings.md)
+## [管理系統產生的記錄](manage-telemetry-settings.md)
 ## [設定 ATA 通知](setting-ata-alerts.md)
 ## [進行 syslog 和電子郵件伺服器設定](setting-syslog-email-server-settings.md)
 ## [標記敏感性帳戶](tag-sensitive-accounts.md)

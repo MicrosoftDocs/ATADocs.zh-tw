@@ -1,22 +1,22 @@
 ---
-title: "規劃 Azure 進階威脅防護部署 | Microsoft Docs"
-description: "協助您規劃部署並決定支援您的網路需要多少 Azure ATP 伺服器"
-keywords: 
+title: 規劃 Azure 進階威脅防護部署 | Microsoft Docs
+description: 協助您規劃部署並決定支援您的網路需要多少 Azure ATP 伺服器
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/11/2018
+ms.date: 5/22/2018
 ms.topic: get-started-article
 ms.service: azure-advanced-threat-protection
-ms.prod: 
+ms.prod: ''
 ms.assetid: da0ee438-35f8-4097-b3a1-1354ad59eb32
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 577b7a5105e8de773f57b1e00bc1c9cb51096799
-ms.sourcegitcommit: 912e453753156902618ae6ebb8489c2320c06fc6
+ms.openlocfilehash: 35d3495585cce321adccb05f202fd664356db37f
+ms.sourcegitcommit: 324dc941282f2948366afa5a919bda0b029bd59d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 05/22/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 03/12/2018
 若基於某些原因而無法使用 Azure ATP 調整大小工具，請以極短的收集間隔 (大約 5 秒) 手動收集所有網域控制站 24 小時內的 packet/sec 計數器資訊。 然後，對於每個網域控制站，您必須計算每日平均和最繁忙期間的 (15 分鐘) 平均。
 下列章節將說明如何從一個網域控制站收集 packets/sec 計數器的指示。
 
-## 為您的部署選擇正確的感應器類型<a name="choosing-the right-sensor-type-for-your-deployment"></a>
+## 為您的部署選擇正確的感應器類型<a name="choosing-the-right-sensor-type-for-your-deployment"></a>
 在 Azure ATP 部署中，支援任何 Azure ATP 獨立感應器類型的組合：
 
 - 僅限 Azure ATP 獨立感應器

@@ -1,23 +1,23 @@
 ---
-title: "在 Azure 進階威脅防護中驗證連接埠鏡像 | Microsoft Docs"
-description: "描述如何驗證已在 Azure ATP 中正確設定連接埠鏡像"
-keywords: 
+title: 在 Azure 進階威脅防護中驗證連接埠鏡像 | Microsoft Docs
+description: 描述如何驗證已在 Azure ATP 中正確設定連接埠鏡像
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 5/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0a56cf27-9eaa-4ad0-ae6c-9d0484c69094
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7628fa491ddbe477cab7eb414409028c0f94f44d
-ms.sourcegitcommit: 84556e94a3efdf20ca1ebf89a481550d7f8f0f69
+ms.openlocfilehash: b3d9d35d31eee7ae46800e0547f18330d66e90cc
+ms.sourcegitcommit: 324dc941282f2948366afa5a919bda0b029bd59d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/22/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="validate-port-mirroring"></a>驗證連接埠鏡像
 > [!NOTE] 
-> 本文僅適用於您部署 Azure ATP 獨立感應器 (而非 Azure ATP 感應器) 的情況。 若要判斷是否需要使用 Azure ATP 感應器，請參閱[為您的部署選擇正確感應器](atp-capacity-planning#choosing-the-right-sensor-type-for-your-deployment)。
+> 本文僅適用於您部署 Azure ATP 獨立感應器 (而非 Azure ATP 感應器) 的情況。 若要判斷是否需要使用 Azure ATP 感應器，請參閱[為您的部署選擇正確感應器](atp-capacity-planning.md#choosing-the-right-sensor-type-for-your-deployment)。
  
 下列步驟會引導您逐步完成驗證已正確設定連接埠鏡像的程序。 若要讓 Azure ATP 正常運作，Azure ATP 獨立感應器必須能夠看到網域控制站之間的流量。 Azure ATP 所使用的主要資料來源，是針對您網域控制站之雙向網路流量的深度封包檢查。 若要讓 Azure ATP 查看網路流量，必須設定連接埠鏡像。 連接埠鏡像會將流量從一個連接埠 (來源連接埠) 複製到另一個連接埠 (目的地連接埠)。
 

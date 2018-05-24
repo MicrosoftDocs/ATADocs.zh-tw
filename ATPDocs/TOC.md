@@ -2,6 +2,7 @@
 ## [什麼是 Azure 進階威脅防護？](what-is-atp.md)
 ## [常見問題集](atp-technical-faq.md)
 ## [Azure ATP 的新功能](atp-whats-new.md)
+## [Azure ATP 資料安全性和隱私權](atp-privacy-compliance.md)
 # 計劃和設計
 ## [Azure ATP 必要條件](atp-prerequisites.md)
 ## [Azure ATP 架構](atp-architecture.md)

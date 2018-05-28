@@ -1,11 +1,11 @@
 ---
-title: 進階威脅分析合規性、信任、資料安全性和隱私權 | Microsoft Docs
-description: 提供 ATA 資源、影片、使用者入門、部署和整備藍圖連結的清單。
+title: 進階威脅分析個人資料原則 | Microsoft Docs
+description: 提供如何從 ATA 刪除私人資訊和個人資料的相關資訊連結。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/16/2018
+ms.date: 5/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: 1b2d185c-62cd-45f0-b0dd-687b51317f32
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: dee55446c18ee9bc560045c94f9421840fc28fc2
-ms.sourcegitcommit: 714a01edc9006b38d1163d03852dafc2a5fddb5f
+ms.openlocfilehash: b89e841412385c9eca20e40d78ff10be342c6b22
+ms.sourcegitcommit: 571297209b15e9dc4d43c5e57da359973da8d207
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
-# <a name="ata-compliance-trust-data-security-and-privacy"></a>ATA 合規性、信任、資料安全性和隱私權 
+# <a name="ata-data-security-and-privacy"></a>ATA 資料安全性和隱私權
 
-如需 ATA 信任與合規性的相關資訊，請參閱[服務信任入口網站](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)與 [Microsoft 365 Enterprise GDPR 合規性網站](https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview)。
+[!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
 ## <a name="searching-for-and-identifying-personal-data"></a>搜尋與識別個人資料 
 
@@ -36,6 +36,7 @@ ATA 中與實體相關的所有資料皆衍生自 Active Directory (AD)，且會
 ATA 中有關使用者和實體的個人資料會衍生自您組織 AD 的使用者物件。 因此，對 AD 使用者設定檔進行的任何變更都會在 ATA 中產生影響。 
 
 ## <a name="deleting-personal-data"></a>刪除個人資料 
+
 
 雖然 ATA 中的資料會複寫且一律從 AD 更新，但在實體於 AD 內刪除時，會保留實體留在 ATA 中的資料以供安全性調查之用。 
 
@@ -74,29 +75,17 @@ ATA 中有關使用者和實體的個人資料會衍生自您組織 AD 的使用
 ATA 可讓您將所有安全性相關資訊匯出為 Excel，其中可能包含個人資料。 
 
  
-## <a name="opt-out-of-telemetry"></a>選擇不使用遙測 
+## <a name="opt-out-of-system-generated-logs"></a>選擇退出系統產生記錄 
 
-ATA 會收集各部署的匿名遙測，並透過 HTTPS 將此資料傳輸至 Microsoft 伺服器。 Microsoft 將使用此資料以協助改善未來的 ATA 版本。 
+ATA 會收集各部署的匿名系統產生記錄，並透過 HTTPS 將此資料傳輸至 Microsoft 伺服器。 Microsoft 將使用此資料以協助改善未來的 ATA 版本。 
 
-如需詳細資訊，請參閱[管理遙測設定](manage-telemetry-settings.md)。
+如需詳細資訊，請參閱[管理系統產生的記錄](manage-telemetry-settings.md)。
 
 若要停用資料收集：
 
 1. 登入 ATA 主控台，按一下工具列中的三個點，然後選取 [關於]。 
 2. 取消選取**將使用資訊傳送給我們，以於未來協助改善客戶經驗**的核取方塊。 
 
- 
-
- 
-
- 
-
 ## <a name="additional-resources"></a>其他資源
 
-[Microsoft 安全性 Channel 9 頁面](https://channel9.msdn.com/Shows/Microsoft-Security/)
-
-## <a name="community-resources"></a>社群資源
-
-[ATA 部落格](https://aka.ms/ATABlog)
-[ATA 社群](https://aka.ms/ATACommunity)
-[提供有關 ATA 的意見反應](https://aka.ms/ATAUserVoice)
+- 如需 ATA 信任與合規性的相關資訊，請參閱[服務信任入口網站](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)與 [Microsoft 365 Enterprise GDPR 合規性網站](https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview)。

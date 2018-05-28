@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/6/2018
+ms.date: 5/21/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 1fe5fd6f-1b79-4a25-8051-2f94ff6c71c1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: db63df945bf218f384c9f9dac6f111f5290aa138
-ms.sourcegitcommit: 39a1ddeb6c9dd0817f92870b711627350b7f6f03
+ms.openlocfilehash: b6c11292fd8e7436257e4616c65d76aad1aed8de
+ms.sourcegitcommit: c01f93bd9e41355d2f47f648e3fea7736e1218f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/21/2018
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -119,7 +119,7 @@ ms.lasthandoff: 05/08/2018
 **調查**
 
 先查看警示的描述，以了解要處理上述三種偵測類型的哪一種。 如需詳細資訊，請下載 Excel 試算表。
-1.  基本架構金鑰 - 您可以使用 ATA 小組所撰寫的掃描程式，來檢查基本架構金鑰是否影響您的網域控制站。 如果掃描程式在一或多個網域控制站上找到惡意程式碼，則為真肯定。
+1.  基本架構金鑰 - 您可以使用 [ATA 小組所撰寫的掃描程式](https://gallery.technet.microsoft.com/Aorato-Skeleton-Key-24e46b73) \(英文\)，以檢查基本架構金鑰是否影響您的網域控制站。 如果掃描程式在一或多個網域控制站上找到惡意程式碼，則為真肯定。
 2.  黃金票證 - 在 Excel 試算表中，移至 [網路活動] 索引標籤。您會看到相關的降級欄位為 [要求票證加密類型]，且 [來源電腦支援的加密類型] 包含更強的加密方法。
   a.    請檢查來源電腦和帳戶，或是在有多部來源電腦和帳戶的情況下，檢查它們是否有任何共同點 (例如，所有的行銷人員都使用可能會導致觸發警示的特定應用程式)。 在某些情況下，可能會有很少使用的自訂應用程式，正在使用較低的加密編碼器進行驗證。 檢查來源電腦上是否有任何這類自訂應用程式。 如果是，則可能是良性真肯定，您可以**隱藏**它。
   b.    檢查那些票證所存取的資源，如果有所有票證都會存取的資源，請驗證該資源以確定它是票證應存取的有效資源。 此外，請驗證目標資源是否支援強式加密方法。 您可以透過在 Active Directory 中檢查資源服務帳戶的 `msDS-SupportedEncryptionTypes` 屬性來檢查這點。

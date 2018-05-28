@@ -1,23 +1,23 @@
 ---
-title: "處理 Azure 進階威脅防護中的可疑活動 | Microsoft Docs"
-description: "描述如何檢閱由 Azure ATP 所識別的可疑活動"
-keywords: 
+title: 處理 Azure 進階威脅防護中的可疑活動 | Microsoft Docs
+description: 描述如何檢閱由 Azure ATP 所識別的可疑活動
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 5/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: a06004bd-9f77-4e8e-a0e5-4727d6651a0f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a5e7598e94e1d6d4b09c827770e062be9fefd1c4
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 1dccee094f4d6a8ec9bdc94a1d1314fa0675da9d
+ms.sourcegitcommit: 324dc941282f2948366afa5a919bda0b029bd59d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/22/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 02/21/2018
 # <a name="working-with-suspicious-activities"></a>處理可疑活動
 本文說明使用 Azure 進階威脅防護的基本概念。
 
-## <a name="review-suspicious-activities-on-the-attack-time-line"></a>在攻擊時間表上檢閱可疑活動
+## 檢閱攻擊時間表上的可疑活動 <a name="review-suspicious-activities-on-the-attack-time-line"></a>
 登入 Azure ATP 工作區入口網站之後，您會自動進入開啟的**可疑活動時間表**。 可疑活動會依時間順序列出，最新的可疑活動位於時間表頂端。
 每個可疑活動都有下列資訊︰
 

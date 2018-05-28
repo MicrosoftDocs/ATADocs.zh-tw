@@ -1,23 +1,23 @@
 ---
-title: "了解 Azure 進階威脅防護工作區入口網站 | Microsoft Docs"
-description: "描述如何登入 Azure ATP 工作區入口網站及工作區入口網站的元件"
-keywords: 
+title: 了解 Azure 進階威脅防護工作區入口網站 | Microsoft Docs
+description: 描述如何登入 Azure ATP 工作區入口網站及工作區入口網站的元件
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 5/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4ba46d60-3a74-480e-8f0f-9a082d62f343
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 21cc8b6b27efb514d2a313fc0959152d601d4344
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 40e139cc5e7dc6396914b0314d2d698a4782af02
+ms.sourcegitcommit: 324dc941282f2948366afa5a919bda0b029bd59d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/22/2018
 ---
 適用於：Azure 進階威脅防護
 
@@ -64,7 +64,7 @@ Azure ATP 的新版本發行之後，[最新消息] 視窗會出現在右上角�
 
 您可以根據狀態和嚴重性，篩選要顯示在攻擊時間表的可疑活動，或者要顯示在實體設定檔可疑活動索引標籤中的可疑活動。
 
-### <a name="search-bar"></a>搜尋列
+### 搜尋列 <a name="search-bar"></a>
 
 您可以在上層功能表找到搜尋列。 您可以搜尋 Azure ATP 中的特定使用者、電腦或群組。 若要試試看，請開始輸入。 在搜尋列底部，會顯示找到的搜尋結果數目。 
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/22/2018
+ms.date: 5/29/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 224e629a-0e82-458c-bb03-b67070a9241d
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: d6bf11d55743b7422985577f512f16af93159618
-ms.sourcegitcommit: 571297209b15e9dc4d43c5e57da359973da8d207
+ms.openlocfilehash: 1f9ed3dba82d032b0cd13bdc462ff6e58a4af6ad
+ms.sourcegitcommit: 3eade64779002d2c8ae005565bc69e1b3f89fb7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34560219"
 ---
 適用於：Azure 進階威脅防護
 
@@ -44,7 +45,7 @@ Azure ATP 個人資料是透過 Azure ATP 感應器從 Active Directory 收集�
 
 ## <a name="export-personal-data"></a>匯出個人資料 
 
-在 Azure ATP 中，您可以將安全性警示資訊[匯出]((working-with-suspicious-activities.md#review-suspicious-activities-on-the-attack-time-line)到 Excel。 這也會匯出個人資料。 
+在 Azure ATP 中，您可以將安全性警示資訊[匯出](working-with-suspicious-activities.md#review-suspicious-activities-on-the-attack-time-line)到 Excel。 這也會匯出個人資料。 
  
 ## <a name="audit-personal-data"></a>稽核個人資料
 

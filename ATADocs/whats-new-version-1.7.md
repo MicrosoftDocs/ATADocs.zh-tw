@@ -1,23 +1,24 @@
 ---
-title: "ATA 1.7 版的新功能 | Microsoft Docs"
-description: "列出 ATA 1.7 版的新功能以及已知問題"
-keywords: 
+title: ATA 1.7 版的新功能 | Microsoft Docs
+description: 列出 ATA 1.7 版的新功能以及已知問題
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: be9ee613-4eb3-40f1-8973-e7f0a707ff57
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.openlocfilehash: 7bbca4eeb6ad8c5b9cf161f60144bbd27ca3c8d2
 ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24018213"
 ---
 # <a name="whats-new-in-ata-version-17"></a>ATA 1.7 版的新功能
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。
@@ -71,7 +72,7 @@ ATA 1.7 的更新提供下列各方面的改良︰
  不支援為 ATA 所使用的憑證自動更新憑證。 使用這些憑證可能會在自動更新憑證時導致 ATA 停止運作。 
 
 ### <a name="no-browser-support-for-jis-encoding"></a>針對 JIS 編碼無瀏覽器支援
-**徵兆：**ATA 主控台在使用 JIS 編碼的瀏覽器上可能不會如預期般運作 **因應措施：** 將瀏覽器的編碼變更為 Unicode UTF-8。
+**徵兆：** ATA 主控台在使用 JIS 編碼的瀏覽器上可能不會如預期般運作 **因應措施：** 將瀏覽器的編碼變更為 Unicode UTF-8。
  
 ### <a name="dropped-port-mirror-traffic-when-using-vmware"></a>使用 VMware 時的「已丟棄連接埠鏡像流量」
 

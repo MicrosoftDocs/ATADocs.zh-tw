@@ -18,6 +18,7 @@ ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/22/2018
+ms.locfileid: "30010154"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -39,8 +40,8 @@ ms.lasthandoff: 03/22/2018
     |欄位|說明|值|
     |---------|---------------|---------|
     |SMTP 伺服器的端點 (必要)|輸入您 SMTP 伺服器的 FQDN，並選擇性地變更連接埠號碼 (預設值 25)。|例如：<br />smtp.contoso.com|
-    |SSL|如果 SMTP 伺服器需要 SSL，請切換 SSL。 **注意︰**如果啟用 SSL，您也需要變更連接埠號碼。|預設會停用|
-    |驗證|如果您的 SMTP 伺服器需要驗證，請啟用。 **注意︰**如果啟用驗證，您必須提供有權連線到 SMTP 伺服器的電子郵件帳戶使用者名稱和密碼。|預設會停用|
+    |SSL|如果 SMTP 伺服器需要 SSL，請切換 SSL。 **注意︰** 如果啟用 SSL，您也需要變更連接埠號碼。|預設會停用|
+    |驗證|如果您的 SMTP 伺服器需要驗證，請啟用。 **注意︰** 如果啟用驗證，您必須提供有權連線到 SMTP 伺服器的電子郵件帳戶使用者名稱和密碼。|預設會停用|
     |傳送來源 (必要)|輸入電子郵件傳送者的電子郵件地址。|例如：<br />ATA@contoso.com|
     ![ATA 電子郵件伺服器設定影像](media/ata-email-server.png)
 

@@ -1,15 +1,15 @@
 ---
-title: "什麼是 Azure 進階威脅防護 (ATP)？ | Microsoft Docs"
-description: "說明何謂 Azure 進階威脅防護 (ATP)，以及它可以偵測到的可疑活動種類"
-keywords: 
+title: 什麼是 Azure 進階威脅防護 (ATP)？ | Microsoft Docs
+description: 說明何謂 Azure 進階威脅防護 (ATP)，以及它可以偵測到的可疑活動種類
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 2/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2d14d0e9-1b03-4bcc-ae97-8fd41526ffc5
 ms.reviewer: itargoet
 ms.suite: ems
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/21/2018
+ms.locfileid: "29445074"
 ---
 適用於：Azure 進階威脅防護
 

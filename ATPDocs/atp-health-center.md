@@ -1,15 +1,15 @@
 ---
-title: "監視 Azure 進階威脅防護系統健康狀態和事件 | Microsoft Docs"
-description: "使用 Azure ATP 工作區健康狀態中心來查看 Azure ATP 服務的運作情況、收看潛在問題的警示，以及在事件檢視器中檢視系統事件。"
-keywords: 
+title: 監視 Azure 進階威脅防護系統健康狀態和事件 | Microsoft Docs
+description: 使用 Azure ATP 工作區健康狀態中心來查看 Azure ATP 服務的運作情況、收看潛在問題的警示，以及在事件檢視器中檢視系統事件。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 2/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1b7e72c3-a538-443f-981c-398ffafa5ab8
 ms.reviewer: itargoet
 ms.suite: ems
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/21/2018
+ms.locfileid: "29444904"
 ---
 適用於：Azure 進階威脅防護
 

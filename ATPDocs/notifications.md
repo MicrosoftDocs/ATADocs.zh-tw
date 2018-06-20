@@ -1,15 +1,15 @@
 ---
-title: "設定 Azure 進階威脅防護通知 | Microsoft Docs"
-description: "描述如何設定 Azure ATP 警示，讓您在偵測到可疑的活動時會收到通知。"
-keywords: 
+title: 設定 Azure 進階威脅防護通知 | Microsoft Docs
+description: 描述如何設定 Azure ATP 警示，讓您在偵測到可疑的活動時會收到通知。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 2/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4308f03e-b2a7-4e38-a750-540ff94faa81
 ms.reviewer: itargoet
 ms.suite: ems
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/21/2018
+ms.locfileid: "29444844"
 ---
 適用於：Azure 進階威脅防護
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/22/2018
+ms.locfileid: "30009814"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 03/22/2018
     |---------|------------|
     |**使用者名稱** (必填)|輸入唯讀使用者名稱，例如︰**ATAuser**。|
     |**密碼** (必填)|輸入唯讀使用者的密碼，例如︰**Pencil1**。|
-    |**網域** (必填)|輸入唯讀使用者的網域，例如︰**contoso.com**。**注意︰**您務必輸入使用者所在網域的完整 FQDN。 例如，如果使用者的帳戶是在 corp.contoso.com 網域中，您需要輸入 `corp.contoso.com`，而非 contoso.com|
+    |**網域** (必填)|輸入唯讀使用者的網域，例如︰**contoso.com**。**注意︰** 您務必輸入使用者所在網域的完整 FQDN。 例如，如果使用者的帳戶是在 corp.contoso.com 網域中，您需要輸入 `corp.contoso.com`，而非 contoso.com|
 
 2. 您可以按一下 [測試連線]，以測試網域的連線，並檢查提供的認證有提供存取權。 這在 ATA 中心具有網域連線時有效。    
 

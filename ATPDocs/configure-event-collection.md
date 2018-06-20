@@ -18,6 +18,7 @@ ms.sourcegitcommit: 45d0108d0cbf8fe7550d13486d3d9c06c1e58506
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30213977"
 ---
 適用於：Azure 進階威脅防護
 

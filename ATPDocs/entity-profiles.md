@@ -1,15 +1,15 @@
 ---
-title: "使用 Azure Advanced Threat Protection 工作區入口網站中的使用者設定檔 | Microsoft Docs"
-description: "描述如何在 Azure ATP 工作區入口網站中調查使用者設定檔畫面中的使用者"
-keywords: 
+title: 使用 Azure Advanced Threat Protection 工作區入口網站中的使用者設定檔 | Microsoft Docs
+description: 描述如何在 Azure ATP 工作區入口網站中調查使用者設定檔畫面中的使用者
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 2/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 17458706-79fb-4c23-aa42-66979164a45f
 ms.reviewer: itargoet
 ms.suite: ems
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/21/2018
+ms.locfileid: "29444974"
 ---
 適用於：Azure 進階威脅防護
 

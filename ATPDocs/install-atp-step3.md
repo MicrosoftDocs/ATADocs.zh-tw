@@ -1,15 +1,15 @@
 ---
-title: "安裝 Azure 進階威脅防護 - 步驟 3 | Microsoft Docs"
-description: "安裝 Azure ATP 的步驟三協助您下載 Azure ATP 獨立感應器安裝套件。"
-keywords: 
+title: 安裝 Azure 進階威脅防護 - 步驟 3 | Microsoft Docs
+description: 安裝 Azure ATP 的步驟三協助您下載 Azure ATP 獨立感應器安裝套件。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 2/21/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 95bb4ec1-841f-41b7-92fe-fbd144085724
 ms.reviewer: itargoet
 ms.suite: ems
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/21/2018
+ms.locfileid: "29444934"
 ---
 適用於：Azure 進階威脅防護
 

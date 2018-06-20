@@ -1,15 +1,15 @@
 ---
-title: "變更 Azure 進階威脅防護設定 - 網域連線密碼 | Microsoft Docs"
-description: "描述如何變更 Azure ATP 獨立式感應器上的「網域連線密碼」。"
-keywords: 
+title: 變更 Azure 進階威脅防護設定 - 網域連線密碼 | Microsoft Docs
+description: 描述如何變更 Azure ATP 獨立式感應器上的「網域連線密碼」。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 2/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: e7f065fa-1ad1-4e87-bd80-99cc695efbf5
 ms.reviewer: itargoet
 ms.suite: ems
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/21/2018
+ms.locfileid: "29444824"
 ---
 適用於：Azure 進階威脅防護
 

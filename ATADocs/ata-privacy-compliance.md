@@ -18,6 +18,7 @@ ms.sourcegitcommit: 571297209b15e9dc4d43c5e57da359973da8d207
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34470724"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 

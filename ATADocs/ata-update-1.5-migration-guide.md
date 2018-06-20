@@ -1,15 +1,15 @@
 ---
-title: "Advanced Threat Analytics 更新至 1.5 移轉指南 | Microsoft Docs"
-description: "更新 ATA 至 1.5 版的程序"
-keywords: 
+title: Advanced Threat Analytics 更新至 1.5 移轉指南 | Microsoft Docs
+description: 更新 ATA 至 1.5 版的程序
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: advanced-threat-analytics
-ms.technology: 
+ms.technology: ''
 ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
 ms.reviewer: bennyl
 ms.suite: ems
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/07/2017
+ms.locfileid: "24019318"
 ---
 # <a name="ata-update-to-15-migration-guide"></a>ATA 更新至 1.5 移轉指南
 更新至 ATA 1.5 提供下列各方面的改良︰

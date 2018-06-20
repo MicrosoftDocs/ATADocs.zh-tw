@@ -1,15 +1,15 @@
 ---
-title: "以無訊息模式安裝 Azure 進階威脅防護 | Microsoft Docs"
-description: "說明如何以無訊息模式安裝 Azure ATP。"
-keywords: 
+title: 以無訊息模式安裝 Azure 進階威脅防護 | Microsoft Docs
+description: 說明如何以無訊息模式安裝 Azure ATP。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/11/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 24eca4c6-c949-42ea-97b9-41ef0fb611f1
 ms.reviewer: itargoet
 ms.suite: ems
@@ -18,6 +18,7 @@ ms.sourcegitcommit: 912e453753156902618ae6ebb8489c2320c06fc6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/12/2018
+ms.locfileid: "29856476"
 ---
 適用於：Azure 進階威脅防護
 

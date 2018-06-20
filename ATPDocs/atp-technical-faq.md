@@ -1,15 +1,15 @@
 ---
-title: "Azure 進階威脅防護常見問題集 | Microsoft Docs"
-description: "提供關於 Azure ATP 的常見問題清單以及相關解答"
-keywords: 
+title: Azure 進階威脅防護常見問題集 | Microsoft Docs
+description: 提供關於 Azure ATP 的常見問題清單以及相關解答
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
@@ -18,6 +18,7 @@ ms.sourcegitcommit: c77e378d18e654bea4b4af4f24cc941a6659ce99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/15/2018
+ms.locfileid: "29883945"
 ---
 適用於：Azure 進階威脅防護
 

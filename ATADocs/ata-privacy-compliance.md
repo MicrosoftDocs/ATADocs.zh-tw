@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/22/2018
+ms.date: 6/26/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1b2d185c-62cd-45f0-b0dd-687b51317f32
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: b89e841412385c9eca20e40d78ff10be342c6b22
-ms.sourcegitcommit: 571297209b15e9dc4d43c5e57da359973da8d207
+ms.openlocfilehash: 34c758cf96b583c32ad19aa2f8deab7a3bb96392
+ms.sourcegitcommit: 7d025a2518ce63f38ce609dc21d8c3bacdd6a8e7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34470724"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36948943"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -37,7 +37,6 @@ ATA 中與實體相關的所有資料皆衍生自 Active Directory (AD)，且會
 ATA 中有關使用者和實體的個人資料會衍生自您組織 AD 的使用者物件。 因此，對 AD 使用者設定檔進行的任何變更都會在 ATA 中產生影響。 
 
 ## <a name="deleting-personal-data"></a>刪除個人資料 
-
 
 雖然 ATA 中的資料會複寫且一律從 AD 更新，但在實體於 AD 內刪除時，會保留實體留在 ATA 中的資料以供安全性調查之用。 
 

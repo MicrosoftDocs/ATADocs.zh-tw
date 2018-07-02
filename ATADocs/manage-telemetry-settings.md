@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,20 +13,20 @@ ms.technology: ''
 ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7f1a0cb9a7e237259a9b77b96e16c6680336c2b0
-ms.sourcegitcommit: 324dc941282f2948366afa5a919bda0b029bd59d
+ms.openlocfilehash: 1216d70f75376f295e9b6164babdaf24241195b4
+ms.sourcegitcommit: 7d025a2518ce63f38ce609dc21d8c3bacdd6a8e7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444513"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36948909"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
 
 
 # <a name="manage-system-generated-logs-note"></a>管理系統產生記錄> [!NOTE]
-> 如果您想要檢視或刪除個人資料，請檢閱 [Microsoft 合規性管理員](https://servicetrust.microsoft.com/ComplianceManager) \(英文\) 中的 Microsoft 指引和 [Microsoft 365 企業版合規性網站的 GDPR 小節](https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr)。 如果您要尋找有關 GDPR 的一般資訊，請參閱[服務信任入口網站的 GDPR 小節](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) \(英文\)。
 
+[!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
 Advanced Threat Analytics (ATA) 會收集有關 ATA 的匿名系統產生記錄，並透過 HTTPS 連線將資料傳輸至 Microsoft 伺服器。  Microsoft 將使用此資料以協助改善未來的 ATA 版本。
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/16/2018
+ms.date: 6/5/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: f6f3ed75-d6bb-4966-a9a7-5339c4f3ebac
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 17ade33a55039eaf8abc98901cdab9ebeef850c5
-ms.sourcegitcommit: 714a01edc9006b38d1163d03852dafc2a5fddb5f
+ms.openlocfilehash: 6d6c2cdb157d4e3f75794c8c40abfc7556e314d5
+ms.sourcegitcommit: b218f60b42a25fe486d774d97719590e6fa74e10
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34760068"
 ---
 適用於：Azure 進階威脅防護
 
@@ -25,9 +26,6 @@ ms.lasthandoff: 05/16/2018
 
 Azure 進階威脅防護可讓您將 Azure ATP 與 Windows Defender ATP 整合，以獲得更加完整的威脅防護解決方案。 在 Azure ATP 監視您網域控制站上流量的同時，Windows Defender ATP 會監視您的端點，使兩者能一起提供可供您保護環境的單一介面。
 
-> [!NOTE]
-> 目前，只有 Windows Defender ATP 私人預覽客戶才能進行整合。
- 
 藉由將 Windows Defender ATP 整合到 Azure ATP 中，您就可以利用這兩個服務的完整功能並保護您的環境，包括：
 
 - Azure ATP 感應器和獨立感應器：可直接放置在網域控制站，或是從您的網域控制站連接埠鏡像至 ATP，來擷取並剖析多個通訊協定 (例如 Kerberos、DNS、RPC、NTLM 和其他通訊協定) 的網路流量，以進行驗證、授權和資訊收集。 

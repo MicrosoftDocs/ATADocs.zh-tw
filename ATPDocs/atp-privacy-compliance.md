@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/29/2018
+ms.date: 6/26/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 224e629a-0e82-458c-bb03-b67070a9241d
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: 1f9ed3dba82d032b0cd13bdc462ff6e58a4af6ad
-ms.sourcegitcommit: 3eade64779002d2c8ae005565bc69e1b3f89fb7d
+ms.openlocfilehash: d64cc0d40acc31e2187305c38a625924a91db06b
+ms.sourcegitcommit: 7d025a2518ce63f38ce609dc21d8c3bacdd6a8e7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34560219"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36948926"
 ---
 適用於：Azure 進階威脅防護
 

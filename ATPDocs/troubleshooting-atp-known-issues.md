@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 15c857085fb7d003f783981a89fe02e920a8e49a
-ms.sourcegitcommit: 3539dd3f9ab7729e5326b904fc64985c808bc8ce
+ms.openlocfilehash: d460a57d82f3eb233192235067e116f5ede5f5df
+ms.sourcegitcommit: b218f60b42a25fe486d774d97719590e6fa74e10
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34760051"
 ---
 適用於：Azure 進階威脅防護
 
@@ -68,7 +69,7 @@ ms.lasthandoff: 05/21/2018
 
 ## <a name="windows-defender-atp-integration-issue"></a>Windows Defender ATP 整合問題
 
-Azure 進階威脅防護可讓您將 Azure ATP 與 Windows Defender ATP 整合。 目前，只有 Windows Defender ATP 私人預覽客戶才能進行整合。 
+Azure 進階威脅防護可讓您將 Azure ATP 與 Windows Defender ATP 整合。 
 
 ## <a name="vmware-virtual-machine-sensor-issue"></a>VMware 虛擬機器感應器問題
 

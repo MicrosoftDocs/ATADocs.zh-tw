@@ -18,6 +18,7 @@
 ## [7 排除與 Honeytoken 帳戶](install-atp-step7.md)
 ## [8 設定 SAM-R 所需的權限](install-atp-step8-samr.md)
 ## [無訊息安裝](ATP-silent-installation.md)
+## [更新 ATP 感應器](sensor-update.md)
 ## Azure ATP 感應器額外步驟
 ### [設定連接埠鏡像](configure-port-mirroring.md)
 ### [驗證連接埠鏡像](validate-port-mirroring.md)

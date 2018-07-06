@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/6/2018
+ms.date: 6/10/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9b28cf2497e1f742416f996e4b2dcaf934dc9142
-ms.sourcegitcommit: 39a1ddeb6c9dd0817f92870b711627350b7f6f03
+ms.openlocfilehash: de0b8f1673098a1b4b00255f4543ca18a903c83f
+ms.sourcegitcommit: f61616a8269d27a8fcde6ecf070a00e2c56481ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35259220"
 ---
 適用於：Azure 進階威脅防護
 
@@ -462,6 +463,26 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 **補救**
 
 - 在網域電腦上實作具有較低權限的存取，以僅允許特定使用者建立新的服務。
+
+## 可疑的 VPN 連線 - 預覽<a name="suspicious-vpn-detection"></a>
+
+**描述**
+
+Azure ATP 會連續一個月學習使用者 VPN 連線的實體行為。 
+
+VPN 行為模型以下列活動為基礎：使用者登入的機器以及使用者連線的來源位置。 
+
+當經機器學習演算法計算，發現與使用者的行為產生偏差時，就會開啟警示。
+
+**調查**
+
+1.  有問題的使用者是否預期會執行這些作業？
+2.  請將下列情況視為可能的誤判：變更位置的使用者，以及正在移動並從新裝置連線的使用者。
+
+**補救**
+
+1.  請考慮重設該使用者的密碼。 這可防止攻擊者使用舊的認證建立新的 VPN 連線。
+2.  請考慮禁止此使用者透過 VPN 連線。
 
 ## <a name="unusual-protocol-implementation"></a>不尋常的通訊協定實作
 

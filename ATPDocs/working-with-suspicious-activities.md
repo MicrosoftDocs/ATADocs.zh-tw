@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: a06004bd-9f77-4e8e-a0e5-4727d6651a0f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1dccee094f4d6a8ec9bdc94a1d1314fa0675da9d
-ms.sourcegitcommit: 324dc941282f2948366afa5a919bda0b029bd59d
+ms.openlocfilehash: 7caae52ff7402fdc8cb18ce1a01bba469c2d649b
+ms.sourcegitcommit: f61616a8269d27a8fcde6ecf070a00e2c56481ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35259203"
 ---
 適用於：Azure 進階威脅防護
 
@@ -49,6 +50,25 @@ ms.lasthandoff: 05/22/2018
 > -   如果您按一下實體，就會帶您到使用者或電腦的實體設定檔。
 
 ![Azure ATP 可疑活動時間表影像](media/atp-sa-timeline.png)
+
+## 預覽偵測<a name="preview-detections"></a>
+
+Azure ATP 研究小組會持續致力於實作新偵測攻擊的新探索。 因為 Azure ATP 是一種雲端服務，所以可以快速發行這些新偵測，讓 Azure ATP 客戶盡快受益於新偵測。
+
+這些偵測會標上預覽徽章，協助您找出新偵測，並知道它們是產品的新偵測。 如果您關閉預覽偵測，則它們不會顯示在 Azure ATP 主控台中 (不在時間軸或實體設定檔中)，而且不會開啟新警示。
+
+![預覽偵測 VPN](./media/preview-detection-vpn.png) 
+
+預設會在 Azure ATP 中啟用預覽偵測。 
+
+停用預覽偵測：
+
+1. 在 Azure ATP 主控台中，按一下設定 cog。
+2. 在左功能表中，按一下 [偵測]。
+3. 使用滑桿開啟和關閉預覽偵測。
+ 
+![預覽偵測](./media/preview-detections.png) 
+
 
 ## <a name="filter-suspicious-activities-list"></a>篩選可疑活動清單
 篩選可疑活動清單：

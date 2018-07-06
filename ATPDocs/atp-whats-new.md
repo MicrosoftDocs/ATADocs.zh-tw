@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/13/2018
+ms.date: 6/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,16 +13,72 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a40c2b188e777ca78462e4a3901b311af457d9ae
-ms.sourcegitcommit: 170bc1c04d1ea0538dddbb497d8045781a6a8b74
+ms.openlocfilehash: 7282b58e25c3cc79f40ca05477bb015f8746cd0d
+ms.sourcegitcommit: 7d025a2518ce63f38ce609dc21d8c3bacdd6a8e7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2018
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36948984"
 ---
 適用於：Azure 進階威脅防護
 
 
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能 
+
+## <a name="azure-atp-release-237"></a>Azure ATP 2.37 版
+
+發行日期：2018 年 6 月 24 日
+
+- 此版本包含針對多個問題的修正和改善。 
+
+## <a name="azure-atp-release-236"></a>Azure ATP 2.36 版
+
+發行日期：2018 年 6 月 17 日
+
+- 此版本包含針對多個問題的修正和改善。 
+
+
+## <a name="azure-atp-release-235"></a>Azure ATP 2.35 版
+
+發行日期：2018 年 6 月 10 日
+ 
+- **新預覽偵測**<br></br>從現在起，Azure ATP 將利用它是雲端服務的事實 (即以更快的週期提供新功能)，並盡快提供新偵測。 這些新偵測在第一次發行時會標示為「預覽」。 新偵測通常會在數週內從預覽移至正式運作。 您預設會看到預覽偵測。 如需退出的資訊，請參閱[預覽偵測](working-with-suspicious-activities.md#preview-detections)。
+ 
+- **可疑 VPN 偵測**<br></br>此版本介紹可疑 VPN 偵測的預覽版本。 Azure ATP 會學習使用者 VPN 行為 (包括使用者登入的電腦以及使用者從中連線的位置)，並在與預期行為有所偏差時對您發出警示。 如需詳細資訊，請參閱[可疑 VPN 偵測](suspicious-activity-guide.md#suspicious-vpn-detection)。
+
+- [Delayed update] \(延遲更新\)<br></br>每次 Azure ATP 更新時，您現在都可以選擇設定 Azure ATP 感應器稍後更新。 您現在可以將每個 Azure ATP 感應器設定為 [Delayed update] \(延遲更新\)，以在 Azure ATP 雲端服務更新後的 24 小時更新。 此功能可讓您在特定測試感應器上測試更新，而且只有在稍後才會更新生產感應器。 如果您在第一個更新週期期間發現問題，請開啟支援票證。 如需詳細資訊，請參閱[更新 Azure ATP 感應器](sensor-update.md)。
+
+- **更新異常通訊協定實作偵測**<br></br>異常通訊協定實作偵測現在會提供相關資訊。 您現在可以看到 Azure ATP 懷疑哪個潛在攻擊工具在您的網路上工作。 如需詳細資訊，請參閱[可疑活動指南](suspicious-activity-guide.md)。
+ 
+- **過期感應器警示**<br></br>Azure ATP 包括新監視警示，讓您知道感應器是否過期超過三個版本。 如果您看到此警示，則應該更新感應器，或調查為什麼未自動更新感應器。 如果警示再次發生，則請解除安裝並重新安裝感應器。
+
+- 此版本包含針對多個問題的修正和改善。 
+
+## <a name="azure-atp-release-234"></a>Azure ATP 2.34 版
+
+發行日期：2018 年 6 月 3 日
+ 
+- 此版本包含針對多個問題的修正和改善。 
+
+ 
+## <a name="azure-atp-release-233"></a>Azure ATP 2.33 版
+
+發行日期：2018 年 5 月 27 日
+
+- 預覽功能：Azure ATP 現在支援新語言以及 13 個新地區設定：
+    - 捷克文
+    - 匈牙利文
+    - 義大利文
+    - 韓文
+    - 荷蘭文
+    - 波蘭文
+    - 葡萄牙文 (巴西)
+    - 葡萄牙文 (葡萄牙)
+    - 俄羅斯
+    - 瑞典文
+    - 土耳其文
+    - 簡體中文
+    - 中文 (台灣)
 
 
 

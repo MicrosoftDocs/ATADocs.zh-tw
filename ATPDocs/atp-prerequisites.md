@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/21/2018
+ms.date: 6/7/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1fc2b3656701ee5db54a4f918ab617a2ad487780
-ms.sourcegitcommit: 3539dd3f9ab7729e5326b904fc64985c808bc8ce
+ms.openlocfilehash: 070062cccb26bd99be48614bf8d40bd781d7b240
+ms.sourcegitcommit: 37b9ff946aad31eed1c6eab5d55d44fce167e20a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34827480"
 ---
 適用於：Azure 進階威脅防護
 
@@ -82,7 +83,7 @@ Azure ATP 獨立感應器可安裝在執行 Windows Server 2012 R2 或 Windows S
 Azure ATP 獨立感應器可以安裝在屬於網域或工作群組之成員的伺服器上。
 Azure ATP 獨立感應器可以用來監視具 Windows Server 2003 或更新版本之網域功能等級的網域控制站。
 
-若要讓網域控制站與雲端服務通訊，您必須在防火牆和 Proxy 中針對 *.atp.azure.com 開啟連接埠 443。
+若要讓獨立感應器與雲端服務通訊，您必須在防火牆和 Proxy 中針對 *.atp.azure.com 開啟連接埠 443
 
 
 如需使用虛擬機器與 Azure ATP 獨立感應器的相關資訊，請參閱[設定連接埠鏡像](configure-port-mirroring.md)。
@@ -145,7 +146,7 @@ Azure ATP 獨立感應器需要至少一個管理介面卡和至少一個擷取�
 |透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|輸出|
 |NetBIOS|UDP|137|網路上的所有裝置|輸出|
 |Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|輸入|
-|RADIUS|UDDP|1813|RADIUS|輸入|
+|RADIUS|UDP|1813|RADIUS|輸入|
 |RDP|TCP|3389|網路上的所有裝置|輸出|
 
 > [!NOTE]
@@ -205,7 +206,7 @@ Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的�
 |Netlogon (SMB、CIFS、SAM-R)|TCP/UDP|445|網路上的所有裝置|輸出|
 |NetBIOS|UDP|137|網路上的所有裝置|輸出|
 |Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|輸入|
-|RADIUS|UDDP|1813|RADIUS|輸入|
+|RADIUS|UDP|1813|RADIUS|輸入|
 |TLS 至 RDP 連接埠|TCP|3389|網路上的所有裝置|輸出|
 
 > [!NOTE]

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/22/2018
+ms.date: 6/26/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 77a2464634b4286d2f6d35504e9ab7512cf7b612
-ms.sourcegitcommit: 324dc941282f2948366afa5a919bda0b029bd59d
+ms.openlocfilehash: 39709e4749b7f897bffb914dd1e15c80277d6ed8
+ms.sourcegitcommit: 7d025a2518ce63f38ce609dc21d8c3bacdd6a8e7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444768"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36948960"
 ---
 適用於：Azure 進階威脅防護
 
@@ -29,8 +29,7 @@ ms.locfileid: "34444768"
 
 Azure ATP 提供角色型安全性，可根據組織的特定安全性和合規性需求來保護資料。 Azure ATP 支援三種不同的角色：系統管理員、使用者和檢視者。 
 
-> [!NOTE]
-> 如果您想要檢視或刪除個人資料，請檢閱 [Microsoft 合規性管理員](https://servicetrust.microsoft.com/ComplianceManager) \(英文\) 中的 Microsoft 指引和 [Microsoft 365 企業版合規性網站的 GDPR 小節](https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr)。 如果您要尋找有關 GDPR 的一般資訊，請參閱[服務信任入口網站的 GDPR 小節](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) \(英文\)。
+[!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
 角色群組可針對 Azure ATP 啟用存取管理。 使用角色群組可以隔離安全性小組內的責任，並授與使用者執行工作所需的存取權。 本文說明存取管理和 Azure ATP 角色授權，並可協助您在 ATP 中開始使用角色群組。
 
@@ -67,7 +66,7 @@ Azure ATP 導入三種類型的安全性群組：Azure ATP「工作區名稱」�
 
 ## <a name="add-and-remove-users"></a>新增及移除使用者 
 
-Azure ATP 使用 Azure AD 安全性群組作為角色群組的基礎。 您可以從[https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All群組](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All groups)管理角色群組。  只可以將 AAD 使用者加入或移除自安全性群組。 
+Azure ATP 使用 Azure AD 安全性群組作為角色群組的基礎。 您可以從 [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All%20groups](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All%20groups) 管理角色群組。 只可以將 AAD 使用者加入或移除自安全性群組。 
 
 
 ## <a name="see-also"></a>另請參閱

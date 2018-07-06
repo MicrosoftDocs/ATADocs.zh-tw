@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 15ee7d0b-9a0c-46b9-bc71-98d0b4619ed0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a4c2f03955eddb4615b347fa8a211501546e6f4a
-ms.sourcegitcommit: e0209c6db649a1ced8303bb1692596b9a19db60d
+ms.openlocfilehash: cadd708c20733324b939db1e35d12aae3f2d80f2
+ms.sourcegitcommit: 40dbce8045f689376a50275fb12e3c5c32ca8092
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31007265"
+ms.lasthandoff: 07/04/2018
+ms.locfileid: "37799071"
 ---
 適用於：Azure 進階威脅防護
 
@@ -33,8 +33,7 @@ ms.locfileid: "31007265"
 在 Azure ATP 中，您可以管理及監視多個工作區。 如果您想要建立示範工作區和測試工作區，以便在推出到整個組織之前先概念證明 Azure ATP，則管理及監視多個工作區非常有用。 這也需要支援多個樹系的部署。 單一工作區僅能監視來自單一樹系的多個網域。 
 
 > [!NOTE]
-> - 您最多可以有兩個使用中的工作區。 刪除工作區之後，您可以連絡支援人員重新啟動它。 您最多可有三個刪除的工作區。 若要增加儲存的刪除工作區數量，請連絡 Azure ATP 支援。
-> - 目前，Azure ATP 資料中心部署在歐洲、北美地區/美國中部/加勒比海和亞洲。
+> 目前，Azure ATP 資料中心部署在歐洲、北美地區/美國中部/加勒比海和亞洲。
 
 ## <a name="step-1-enter-the-workspace-management-portal"></a>步驟 1： 進入工作區管理入口網站
 
@@ -69,7 +68,7 @@ ms.locfileid: "31007265"
 - 只能編輯主要工作區。 若要變更其他工作區，您可以將它們刪除並再次新增。 如果您想要刪除主要工作區，則必須先關閉整合，並將該工作區設定為非**主要**，之後才能刪除。
 - 若要編輯主要工作區，您必須先關閉工作區中現有的整合。
 
-- 資料保留：已刪除的工作區不會顯示在 UI 中，但是其資料會根據 [Microsoft 資料保留原則](https://www.microsoft.com/trustcenter/privacy/you-own-your-data)而保留。
+- 資料保留 - 刪除的工作區不會在 UI 中顯示。 如需 Azure ATP 資料保留的詳細資訊，請參閱 [Aure ATP 資料安全性與隱私權](atp-privacy-compliance.md)。
 
 
 >[!div class="step-by-step"]

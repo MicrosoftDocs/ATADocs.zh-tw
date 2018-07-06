@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/29/2018
+ms.date: 7/4/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 838c5ce470bdf78ec81aed5d6fa1cf2407abc6f9
-ms.sourcegitcommit: 5c0f914b44bfb8e03485f12658bfa9a7cd3d8bbc
+ms.openlocfilehash: 3f99aff656f6eff67a4077817c761c7627511bb2
+ms.sourcegitcommit: 40dbce8045f689376a50275fb12e3c5c32ca8092
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 07/04/2018
+ms.locfileid: "37799175"
 ---
 適用於：Azure 進階威脅防護
 
@@ -72,11 +73,12 @@ Azure ATP 工作區管理入口網站可讓您：
 
 -   與其他 Microsoft 安全性服務整合
 
-將您的主要工作區設定為 [主要]。 只有一個工作區可以設定為主要工作區。 將工作區設定為主要工作區會影響整合，您只能針對主要工作區將 Azure ATP 與 Windows Defender ATP 整合。 您稍後可以變更要作為主要工作區的工作區，但若要這麼做，您必須移除已針對目前主要工作區設定的所有整合。
+將您的主要工作區設定為 [主要]。 將工作區設定為主要工作區會影響整合，您只能針對主要工作區將 Azure ATP 與 Windows Defender ATP 整合。 
 
 > [!NOTE]
-> Azure ATP 目前支援建立兩個工作區。 建議您為生產環境建立主要工作區，而其他工作區作為預備環境。
-> 刪除工作區之後，您可以連絡支援人員重新啟動它。 您最多可有三個刪除的工作區。 若要增加儲存的刪除工作區數量，請連絡 Azure ATP 支援。
+> - Azure ATP 目前僅支援建立一個工作區。 刪除工作區之後，您可以連絡支援人員重新啟動它。 您最多可有三個刪除的工作區。 若要增加儲存的刪除工作區數量，請連絡 Azure ATP 支援。
+> - 若工作區在 60 天內未安裝感應器，工作區就可能會刪除，而必須再次建立。
+
 
 
 ### <a name="azure-atp-workspace-portal"></a>Azure ATP 工作區入口網站

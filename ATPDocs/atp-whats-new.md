@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/24/2018
+ms.date: 7/4/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,17 +13,23 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7282b58e25c3cc79f40ca05477bb015f8746cd0d
-ms.sourcegitcommit: 7d025a2518ce63f38ce609dc21d8c3bacdd6a8e7
+ms.openlocfilehash: f38e7fc2fb1c50718cac27664737e46d83fa6084
+ms.sourcegitcommit: 40dbce8045f689376a50275fb12e3c5c32ca8092
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36948984"
+ms.lasthandoff: 07/04/2018
+ms.locfileid: "37799088"
 ---
 適用於：Azure 進階威脅防護
 
 
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能 
+
+## <a name="azure-atp-release-238"></a>Azure ATP 2.38 版
+
+發行日期：2018 年 7 月 1 日
+
+- 此版本包含多個問題的修正與改善，並且加強了 Azure ATP 入口網站。 
 
 ## <a name="azure-atp-release-237"></a>Azure ATP 2.37 版
 

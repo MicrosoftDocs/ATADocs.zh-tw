@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 39709e4749b7f897bffb914dd1e15c80277d6ed8
-ms.sourcegitcommit: 7d025a2518ce63f38ce609dc21d8c3bacdd6a8e7
+ms.openlocfilehash: c41e695124b65623e9c2aed5aeb6e76369add5b6
+ms.sourcegitcommit: 4170888deee71060e9a17c8a1ac772cc2fe4b51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36948960"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37800652"
 ---
 適用於：Azure 進階威脅防護
 
@@ -66,7 +66,7 @@ Azure ATP 導入三種類型的安全性群組：Azure ATP「工作區名稱」�
 
 ## <a name="add-and-remove-users"></a>新增及移除使用者 
 
-Azure ATP 使用 Azure AD 安全性群組作為角色群組的基礎。 您可以從 [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All%20groups](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All%20groups) 管理角色群組。 只可以將 AAD 使用者加入或移除自安全性群組。 
+Azure ATP 使用 Azure AD 安全性群組作為角色群組的基礎。 您可以從[https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All群組](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UserManagementMenuBlade/All%20groups)管理角色群組。 只可以將 AAD 使用者加入或移除自安全性群組。 
 
 
 ## <a name="see-also"></a>另請參閱

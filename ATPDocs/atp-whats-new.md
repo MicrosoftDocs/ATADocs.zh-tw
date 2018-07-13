@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/4/2018
+ms.date: 7/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,17 +13,25 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f38e7fc2fb1c50718cac27664737e46d83fa6084
-ms.sourcegitcommit: 40dbce8045f689376a50275fb12e3c5c32ca8092
+ms.openlocfilehash: f533d835c9129dd56db5ac6e0ef2cca4b33cc043
+ms.sourcegitcommit: 4170888deee71060e9a17c8a1ac772cc2fe4b51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/04/2018
-ms.locfileid: "37799088"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37800703"
 ---
 適用於：Azure 進階威脅防護
 
 
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能 
+
+## <a name="azure-atp-release-239"></a>Azure ATP 2.39 版
+
+發行日期：2018 年 7 月 5 日
+-   **加入新的偵測：Kerberos 黃金票證 - 不存在的帳戶** (預覽)<br>這個新偵測所能防禦針對網域中不存在帳戶所建立黃金票證的攻擊，因此得以協助保護您的組織。 如需詳細資訊，請參閱 [Azure 進階威脅防護可疑活動指南](suspicious-activity-guide.md#golden-ticket)
+
+- 此版本包含針對多個問題的修正和改善。 
+
 
 ## <a name="azure-atp-release-238"></a>Azure ATP 2.38 版
 

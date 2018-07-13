@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 7/5/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: de0b8f1673098a1b4b00255f4543ca18a903c83f
-ms.sourcegitcommit: f61616a8269d27a8fcde6ecf070a00e2c56481ac
+ms.openlocfilehash: 610a84ac0e9b3c199971ced47dc5a5d08db00287
+ms.sourcegitcommit: 4170888deee71060e9a17c8a1ac772cc2fe4b51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35259220"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37800669"
 ---
 適用於：Azure 進階威脅防護
 
@@ -182,25 +182,44 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 2. 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。  由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](http://aka.ms/PtH)中的最佳做法。
 
-## Kerberos 萬能票證 (Golden Ticket)<a name="golden-ticket"></a>
+## Kerberos 黃金票證 (Golden Ticket)<a name="golden-ticket"></a>
 
 **描述**
 
-具有網域系統管理員權限的攻擊者可能會危害 [KRBTGT 帳戶](https://technet.microsoft.com/library/dn745899(v=ws.11).aspx#Sec_KRBTGT)。 他們可以利用 KRBTGT 帳戶建立 Kerberos 票證授權票證 (TGT)，以提供任何資源的授權，並將票證到期日設定為任何時間。 這個假 TGT 稱為「黃金票證」，可讓攻擊者在網路中取得永續性。
+具有網域系統管理員權限的攻擊者可能會危害 [KRBTGT 帳戶](https://technet.microsoft.com/library/dn745899(v=ws.11).aspx#Sec_KRBTGT)。 他們可以利用 KRBTGT 帳戶建立 Kerberos 票證授權票證 (TGT)，以提供任何資源的授權，並將票證到期日設定為任何時間。 這個假 TGT 稱為「黃金票證」，可讓攻擊者在網路上持續存在。
 
-在此偵測中，當 Kerberos 票證授與票證使用超過[使用者票證最長存留期](https://technet.microsoft.com/library/jj852169(v=ws.11).aspx) \(機器翻譯\) 安全性原則中所指定的允許時間時，就會觸發警示。
+在此偵測中，當 Kerberos 票證授與的票證使用超過[使用者票證最長存留期](https://technet.microsoft.com/library/jj852169(v=ws.11).aspx)中指定的允許時間時，就會觸發警示。這是**時間異常**黃金票證攻擊，若是透過不存在的帳戶，則是**不存在的帳戶**黃金票證攻擊。
+安全性原則。
 
 **調查**
 
-1. 群組原則中的 [使用者票證最長存留期] 設定最近 (過去幾小時內) 是否有任何變更？ 如果是，請**關閉**警示 (這是誤判)。
+- **時間異常**
+   1.   群組原則中的 [使用者票證最長存留期] 設定最近 (過去幾小時內) 是否有任何變更？ 檢查該特定值是否低於票證的使用時間。 如果是，請關閉警示 (這是誤判)。
+   2.   涉及此警示的 Azure ATP 感應器是否為虛擬機器？ 如果是，它最近是否從儲存狀態繼續？ 如果是，請關閉此警示。
+   3.   如果上述問題的答案為否，則假設這是惡意的。
+- **不存在的帳戶**
+   1.   詢問以下問題：
+         - 使用者是否為已知且有效的網域使用者？ 如果是，請關閉警示 (這是誤判)。
+         - 該使用者是否為最近新增？ 如果是，請關閉警示，變更可能尚未同步處理。
+         - 該使用者是否最近從 AD 刪除？ 如果是，請關閉警示。
+   2.   如果上述問題的答案為否，則假設這是惡意的。
 
-2. 涉及此警示的 Azure ATP 獨立感應器是否為虛擬機器？ 如果是，它最近是否從儲存狀態繼續？ 如果是，請**關閉**此警示。
+1. 對於這兩種類型的黃金票證攻擊，請按一下來源電腦以移至其 [設定檔] 頁面。 檢查活動發生的前後期間發生什麼事，並尋找異常活動，包括當時登入的使用者以及被存取的資源。 
 
-3. 如果上述問題的答案為否，則假設這是惡意的。
+2.  登入電腦的所有使用者是否都可登入？ 他們的權限為何？ 
+
+3.  這些使用者是否可以存取這些資源？<br>
+如果您已啟用 Windows Defender ATP 整合，請按一下 Windows Defender ATP 徽章 ![WD 徽章](./media/wd-badge.png)。
+ 
+ 4. 若要進一步調查機器，請在 Windows Defender ATP 中，檢查警示出現的前後期間有哪些處理序和警示出現。
 
 **補救**
 
+
 根據 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)，變更 Kerberos 票證授權票證 (KRBTGT) 密碼兩次。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 此外，由於建立黃金票證需要網域系統管理員權限，因此請實作[傳遞雜湊建議](http://aka.ms/PtH)。
+
+
+
 
 ## <a name="malicious-data-protection-private-information-request"></a>惡意的資料保護私人資訊要求
 
@@ -232,9 +251,14 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 **調查**
 
-1.  有問題的電腦是否為網域控制站？ 例如，有複寫問題之新升級的網域控制站。 如果是，請**關閉**可疑活動。 
-2.  有問題的電腦是否預期會從 Active Directory 複寫資料？ 例如，Azure AD Connect。 如果是，請**關閉並排除**可疑活動。
-3.  按一下來源電腦或帳戶以移至其設定檔頁面。 檢查複寫期間所發生的事件，並搜尋不尋常的活動，例如當時登入的使用者，以及被存取的資源有哪些。 如果您已啟用 Windows Defender ATP 整合，請按一下 [Windows Defender ATP] 徽章 ![[Windows Defender ATP] 徽章](./media/wd-badge.png) 以進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序和警示。 
+> [!NOTE]
+> 如果有未安裝 Azure ATP 感應器的網域控制站，則 Azure ATP 不會涵蓋這些網域控制站。 在此情況下，如果您在未註冊或未受保護的網域控制站上部署新的網域控制站，則 Azure ATP 一開始可能不會將之識別為網域控制站。 強烈建議您在每個網域控制站上都安裝 Azure ATP 感應器，以便能完整涵蓋。
+
+1. 有問題的電腦是否為網域控制站？ 例如，有複寫問題之新升級的網域控制站。 如果是，請**關閉**可疑活動。 
+2.  有問題的電腦是否預期會從 Active Directory 複寫資料？ 例如，Azure AD Connect 或網路效能監視裝置。 如果是，請**關閉並排除**可疑活動。
+3. 複寫要求是否傳送自 NAT 或 Proxy 的 IP 位址？ 如果是，請檢查裝置後方是否有新的網域控制站，或者裝置是否產生可疑活動。 
+
+4. 按一下來源電腦或帳戶以移至其設定檔頁面。 檢查複寫期間所發生的事件，並搜尋不尋常的活動，例如當時登入的使用者，以及被存取的資源有哪些。 如果您已啟用 Windows Defender ATP 整合，請按一下 [Windows Defender ATP] 徽章 ![[Windows Defender ATP] 徽章](./media/wd-badge.png) 以進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序和警示。 
 
 
 **補救**
@@ -505,9 +529,9 @@ VPN 行為模型以下列活動為基礎：使用者登入的機器以及使用�
 
 2. 如果找不到任何攻擊工具，請檢查來源電腦所執行的應用程式是否實作自己的 NTLM 或 SMB 堆疊。
 
-3. 否則，請對可疑活動中相關的來源電腦執行 WannaCry 掃描程式指令碼 (例如[此掃描程式](https://github.com/apkjet/TrustlookWannaCryToolkit/tree/master/scanner))，來確認這是否由 WannaCry 所造成。 如果掃描程式判定此電腦受到感染或易受攻擊，請著手修補電腦並從網路移除及封鎖惡意程式碼。
+3. 按一下來源電腦以移至其設定檔頁面。 檢查警示出現前後期間的事件，並搜尋異常活動，例如當時登入的使用者，以及被存取的資源。 如果您已啟用 Windows Defender ATP 整合，請按一下 [Windows Defender ATP] 徽章 ![wd 徽章](./media/wd-badge.png) 以進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序和警示。
 
-4. 如果該指令碼判定此電腦未受到感染且不容易受攻擊，它可能仍受到感染，但已停用 SMBv1 或已修補電腦，這會影響掃描工具。
+
 
 **補救**
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 7/15/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 42a1a34f-ed6b-4538-befb-452168a30e8c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a56a24a2012239ed05f0a2f214dba345a817df39
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: 39451c20d934c0d3e49f8790dc55169a230e238c
+ms.sourcegitcommit: a9b8bc26d3cb5645f21a68dc192b4acef8f54895
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30010222"
+ms.lasthandoff: 07/16/2018
+ms.locfileid: "39064044"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -29,7 +29,7 @@ ms.locfileid: "30010222"
 
 Advanced Threat Analytics (ATA) 是內部部署平台，可協助保護您的企業免於受到多種進階鎖定目標類型的網路攻擊和內部威脅。 您可以利用下列資源深入了解 ATA：
 
-- [ATA 概觀](https://aka.ms/ATAOverview)
+- [ATA 概觀](what-is-ata.md)
 
 - [ATA 簡介影片 - 簡短版](https://aka.ms/ATAShort)
 
@@ -49,9 +49,9 @@ ATA 由 ATA 中心和 ATA 閘道構成，您可將前者安裝在伺服器上，
 
 如果目前使用實體伺服器，則應規劃容量。 為 ATA 配置空間時，可從調整大小工具取得協助：
 
-[ATA 調整大小工具](http://aka.ms/atasizing) - 調整大小的工具會自動收集 ATA 所需的流量多寡。 其會自動為 ATA 中心和 ATA 輕量型閘道提供支援能力以及資源建議。
+[ATA 調整大小工具](ata-capacity-planning.md) - 調整大小的工具會自動收集 ATA 所需的流量多寡。 其會自動為 ATA 中心和 ATA 輕量型閘道提供支援能力以及資源建議。
 
-[ATA 容量規劃](https://docs.microsoft.com/en-us/advanced-threat-analytics/ata-capacity-planning)
+[ATA 容量規劃](ata-capacity-planning.md)
 
 ## <a name="deploy-ata"></a>部署 ATA
 
@@ -69,7 +69,7 @@ ATA 中的基本必要設定，會一併於安裝精靈作業中進行。 但您
 
 [稽核設定](https://aka.ms/ataauditingblog) – 在ATA 部署前後，稽核網域控制站的健全狀況。
 
-[ATA 一般文件](https://docs.microsoft.com/en-us/advanced-threat-analytics/)
+[ATA 一般文件](https://docs.microsoft.com/advanced-threat-analytics/)
 
 ## <a name="work-with-ata"></a>使用 ATA
 
@@ -77,7 +77,7 @@ ATA 開始運作之後，您即可檢視在攻擊時間表中偵測到的可疑�
 
 [ATA 可疑活動實戰手冊](http://aka.ms/ataplaybook) - 本文會運用網際網路上現成的研究工具，逐步說明認證竊取攻擊技巧。 您可了解 ATA 如何協助您掌握每個攻擊面所帶來的威脅。
 
-[ATA 可疑活動指南](http://aka.ms/atasaguide)
+[ATA 可疑活動指南](suspicious-activity-guide.md)
 
 
 
@@ -85,7 +85,7 @@ ATA 開始運作之後，您即可檢視在攻擊時間表中偵測到的可疑�
 
 [ATA 最佳做法](https://aka.ms/atasecbestpractices) - 保護 ATA 安全的最佳做法。
 
-[ATA 常見問題集](http://aka.ms/atafaq) - 本文提供有關 ATA 的常見問題清單，並提供深入分析和解答。
+[ATA 常見問題集](ata-technical-faq.md) - 本文提供有關 ATA 的常見問題清單，並提供深入分析和解答。
 
 ## <a name="additional-resources"></a>其他資源
 

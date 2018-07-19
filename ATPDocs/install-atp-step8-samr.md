@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/29/2018
+ms.date: 7/17/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b09adce3-0fbc-40e3-a53f-31f57fe79ca3
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 24b42c5425933d8931a85e0ba454a69e0ca94a21
-ms.sourcegitcommit: 5c0f914b44bfb8e03485f12658bfa9a7cd3d8bbc
+ms.openlocfilehash: a529c9751fc993ec0913a54772d46161f39199f6
+ms.sourcegitcommit: 8feb9b65dc0e1de0ace00aca11784e54f9852a15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2018
-ms.locfileid: "32298287"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39098163"
 ---
 適用於：Azure 進階威脅防護
 
@@ -26,6 +26,7 @@ ms.locfileid: "32298287"
 
 >[!div class="step-by-step"]
 [« 步驟 7](install-atp-step7.md)
+[步驟 9 »](atp-multi-forest.md)
 
 ## <a name="step-8-configure-sam-r-required-permissions"></a>步驟 8： 設定 SAM-R 所需的權限
 
@@ -51,6 +52,7 @@ ms.locfileid: "32298287"
 
 >[!div class="step-by-step"]
 [« 步驟 7](install-atp-step7.md)
+[步驟 9 »](atp-multi-forest.md)
 
 
 

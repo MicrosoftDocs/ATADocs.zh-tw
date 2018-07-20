@@ -4,7 +4,7 @@ description: 說明 Microsoft Advanced Threat Analytics (ATA) 各版本的不同
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/10/2018
+ms.date: 7/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: a8afbd91-c888-4dfc-94ab-72e38745163e
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 93c26e0049936b3db1253a785c6b28bffe0ab197
-ms.sourcegitcommit: e0209c6db649a1ced8303bb1692596b9a19db60d
+ms.openlocfilehash: 2aebec8f93153f626905067880235479705aa20a
+ms.sourcegitcommit: a9b8bc26d3cb5645f21a68dc192b4acef8f54895
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31007282"
+ms.lasthandoff: 07/16/2018
+ms.locfileid: "39064013"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -29,14 +29,12 @@ Microsoft 計劃每年發行數次 ATA 更新，而每個更新版本從其公�
 
 -   安全性更新 (僅限) 維護階段 - 發行新的 ATA 版本之後，較舊版本在剩餘的 12 個月支援週期內，會降低成只有安全性更新 (如以下版本維護支援範例所示)。
  
-![版本維護支援範例](media/versions.png)
-
 > [!Note]
 > 最新 ATA 版本一律是在安全性和重大更新維護階段中。 這表示如果您遭遇需要重大更新的程式碼缺失，則必須安裝最新分支版本，才能接收修正程式。 所有其他支援的版本都只能接收到安全性更新。 當某個版本過了 12 個月的週期之後，所有支援就會結束。 這時，客戶必須更新成支援的版本。
 
 ## <a name="version-history"></a>版本歷程記錄
 
-|版本|組建編號|可供取得日期| 支援結束日期|
+|版本|組建編號|可供取得日期|支援結束日期|
 |----|----|----|----|
 |1.4|1.4.2457|2015-08-31|2016-08-30|
 |1.5|1.5.2946|2015-12-17|2016-12-16|
@@ -48,7 +46,7 @@ Microsoft 計劃每年發行數次 ATA 更新，而每個更新版本從其公�
 |1.8|1.8.6645|30-JUN-2017|30-JUN-2018|
 |1.8.1|1.8.6765|02-AUG-2017|02-AUG-2018|
 |1.9|1.9.7312|21-MAR-2018|21-MAR-2019|
-
+|1.9.1|1.9.7412|2018-07-01|2019-07-01|
 
 
 

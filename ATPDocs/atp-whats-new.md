@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/5/2018
+ms.date: 7/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,17 +13,25 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f533d835c9129dd56db5ac6e0ef2cca4b33cc043
-ms.sourcegitcommit: 4170888deee71060e9a17c8a1ac772cc2fe4b51e
+ms.openlocfilehash: 9e28c18f118f7a2dc9d516cf62a113245a7be1fa
+ms.sourcegitcommit: a9b8bc26d3cb5645f21a68dc192b4acef8f54895
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37800703"
+ms.lasthandoff: 07/16/2018
+ms.locfileid: "39064078"
 ---
 適用於：Azure 進階威脅防護
 
 
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能 
+
+## <a name="azure-atp-release-240"></a>Azure ATP 2.40 版
+
+發行日期：2018 年 7 月 15 日
+
+- 傳遞票證偵測現在會在 [警示詳細資料] 頁面中包含辨識項區段。 如此可提供額外的資訊以調查警示。
+
+- 使用者存取控制旗標 (位在使用者設定檔中的 [目錄] 資料下) 現已包含圖例，讓您可以更清楚了解開啟和關閉的屬性有哪些。  
 
 ## <a name="azure-atp-release-239"></a>Azure ATP 2.39 版
 

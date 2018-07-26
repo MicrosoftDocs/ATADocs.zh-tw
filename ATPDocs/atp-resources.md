@@ -2,10 +2,10 @@
 title: Azure 進階威脅防護實用資源清單 | Microsoft Docs
 description: 本文提供 Azure ATP 實用資源清單
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 4/29/2018
+ms.date: 7/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 34dc152c-6b7f-4128-93fe-aad56c282730
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b8d91468664a76436078772ad1fc8510ea56d67a
-ms.sourcegitcommit: 5c0f914b44bfb8e03485f12658bfa9a7cd3d8bbc
+ms.openlocfilehash: 498d1b4d14db079583da1999bfb68a5648111362
+ms.sourcegitcommit: 63a36cd96aec30e90dd77bee1d0bddb13d2c4c64
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2018
-ms.locfileid: "32298481"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39227133"
 ---
 適用於：Azure 進階威脅防護
 
@@ -46,7 +46,7 @@ Azure ATP 是由位於 Azure 中的雲端服務以及可安裝在網域控制站
 - [Azure ATP (屬於 EMS E5)](http://aka.ms/aatptrial) 有效試用期為 90 天。
 - [部署指南](install-atp-step1.md)遵循下列步驟在您的環境中部署 Azure ATP。
 - [整合 Azure ATP 與 Windows Defender ATP](integrate-wd-atp.md)
-- 
+
 ## <a name="azure-atp-settings"></a>Azure ATP 設定
 
 Azure ATP 中的基本必要設定是在建立工作區時設定。 但您仍可進行一些其他設定來微調 Azure ATP，更正確地偵測環境，例如 SIEM 整合和稽核設定。 
@@ -64,6 +64,7 @@ Azure ATP 開始運作之後，您即可檢視在活動時間表中偵測到的�
 ## <a name="security-best-practices"></a>安全性最佳做法
 
 - [Azure ATP 常見問題集](atp-technical-faq.md) - 本文提供有關 Azure ATP 的常見問題清單，並提供深入解析和答案。 
+
 ## <a name="community-resources"></a>社群資源
 
 部落格：[Azure ATP 部落格](https://aka.ms/aatpblog)

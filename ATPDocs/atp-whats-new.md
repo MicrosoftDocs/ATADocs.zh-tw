@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/15/2018
+ms.date: 7/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,17 +13,40 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9e28c18f118f7a2dc9d516cf62a113245a7be1fa
-ms.sourcegitcommit: a9b8bc26d3cb5645f21a68dc192b4acef8f54895
+ms.openlocfilehash: be3a4315384d5df03b1f04f0a71a960c66858b05
+ms.sourcegitcommit: 63a36cd96aec30e90dd77bee1d0bddb13d2c4c64
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2018
-ms.locfileid: "39064078"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39227218"
 ---
 適用於：Azure 進階威脅防護
 
 
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能 
+
+
+## <a name="azure-atp-release-241"></a>Azure ATP 2.41 版
+
+發行日期：2018 年 7 月 22 日
+
+- **Azure ATP 多樹系支援正逐步推出 (預覽)** <br> Azure ATP 現在可支援擁有多個樹系的組織，讓您能跨樹系監視活動和分析使用者。 這項新功能可讓您：
+
+  - 透過單一管理點來檢視和調查多個樹系中使用者執行的活動。
+  - 提供了進階 Active Directory 整合和帳戶解析，以改進偵測及減少誤判。
+  - 針對涵蓋範圍跨越組織的情況，有更佳的監視警示和報告。
+
+
+-   **新的偵測：DCShadow**<br>新增了兩個警示，以協助抵擋網域控制站陰影 (DCShadow) 攻擊：
+
+    -   可疑的網域控制站升級 (潛在的 DCShadow 攻擊) - 此偵測可協助偵測下列攻擊：電腦模擬網域控制站，然後嘗試以複寫來將變更散佈到網域中的其他網域控制站。
+
+    -   可疑的複寫要求 (潛在的 DCShadow 攻擊) - 此偵測可協助防禦下列攻擊：嘗試對不是網域控制站的電腦執行 DC 升級，以進一步變更目錄物件。
+
+-   **改進的加密降級資訊**<br>加密降級偵測現在為偵測到的特定攻擊類型提供更多相關資訊：Overpass-the-Hash、黃金票證和基本架構金鑰。 此外，這些警示已經過彙總，讓調查更容易進行。
+- 此版本包含針對多個問題的修正和改善。 
+
+
 
 ## <a name="azure-atp-release-240"></a>Azure ATP 2.40 版
 
@@ -45,7 +68,7 @@ ms.locfileid: "39064078"
 
 發行日期：2018 年 7 月 1 日
 
-- 此版本包含多個問題的修正與改善，並且加強了 Azure ATP 入口網站。 
+- 此版本包含多個問題的修正與改善，並且加強了 Azure ATP 入口網站。
 
 ## <a name="azure-atp-release-237"></a>Azure ATP 2.37 版
 

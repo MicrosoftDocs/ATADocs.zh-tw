@@ -2,10 +2,10 @@
 title: 什麼是 Microsoft Advanced Threat Analytics (ATA)？ | Microsoft Docs
 description: 說明何謂 Microsoft Advanced Threat Analytics (ATA)，以及它可以偵測到的可疑活動種類
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 7/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 2f83f3ff564596c37716d79b955ac4fca7d94aa2
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: adca31a6767031fce19f1a14bf8031c911717c9c
+ms.sourcegitcommit: 63a36cd96aec30e90dd77bee1d0bddb13d2c4c64
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30009756"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39227235"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -33,7 +33,7 @@ ATA 會利用專用的網路剖析引擎來擷取和剖析多個通訊協定 (�
 -   從網域控制站和 DNS 伺服器將連接埠鏡像設定至 ATA 閘道，及/或
 -   在網域控制站上直接部署 ATA 輕量型閘道 (LGW)
 
-ATA 會從多個資料來源 (例如網路中的記錄檔和事件) 取得資訊，了解組織中使用者和其他實體的行為，並建立其相關行為的設定檔。
+ATA 會從多個資料來源 (例如網路中的記錄檔和事件) 取得資訊，以了解組織中使用者和其他實體的行為，並建立有關他們的行為設定檔。
 ATA 可以從下列項目接收事件和記錄檔︰
 
 -   SIEM 整合
@@ -47,9 +47,9 @@ ATA 可以從下列項目接收事件和記錄檔︰
 
 ATA 技術會偵測多個可疑的活動，將焦點放在網路攻擊狙殺鏈的幾個階段，包括︰
 
--   「偵查」階段，此時攻擊者會收集有關環境的建構方式、有哪些不同的資產，以及存在何種實體等資訊。 他們通常會著手規劃下一階段的攻擊。
+-   「偵查」階段，此時攻擊者會收集有關環境的建構方式、有哪些不同的資產，以及存在何種實體等資訊。 一般而言，攻擊者在此階段建立其下一個攻擊階段的計畫。
 -   橫向移動週期，此時攻擊者會將時間與精力放在在網路內部分散攻擊面。
--   「網域支配 (持續性)」階段，此時攻擊者會擷取資訊，以便使用各種進入點、認證和技術繼續進行攻擊活動。 
+-   「網域支配 (持續性)」階段，此時攻擊者會擷取資訊，以便能使用各種進入點、認證和技術來繼續進行攻擊活動。 
 
 無論何種公司受到攻擊，或者何種資訊遭到鎖定，這些網路攻擊階段都非常類似而且可預測。
 ATA 會搜尋三種主要的攻擊︰惡意攻擊、異常行為和安全性問題與風險。
@@ -68,7 +68,7 @@ ATA 會搜尋三種主要的攻擊︰惡意攻擊、異常行為和安全性問�
 
 如需偵測的完整清單及其描述，請參閱 [ATA 可以偵測哪些可疑的活動？](ata-threats.md)。 
 
-ATA 會偵測這些可疑的活動，並且在 ATA 主控台中呈現各項資訊，包括人員、內容、時間和方式的清楚檢視。 透過監視此簡單且方便使用的儀表板，您就可以看到 ATA 懷疑網路中的用戶端 1 和用戶端 2 電腦上有傳遞票證攻擊的警示。
+ATA 會偵測這些可疑的活動，並且在 ATA 主控台中呈現各項資訊，包括人員、內容、時間和方式的清楚檢視。 透過監視此簡單且方便使用的儀表板，就可以看到警示，指出 ATA 懷疑網路中的用戶端 1 和用戶端 2 電腦上有傳遞票證攻擊。
 
  ![ATA 傳遞票證畫面範例](media/pass_the_ticket_sa.png)
 

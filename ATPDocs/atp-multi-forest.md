@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/17/2018
+ms.date: 7/20/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c76e459709c786082bea7566a61e5384a235eda4
-ms.sourcegitcommit: 8feb9b65dc0e1de0ace00aca11784e54f9852a15
+ms.openlocfilehash: a48bf96bd6a71282455d932a35aac23ba4c8193a
+ms.sourcegitcommit: 7909deafdd9323f074d0ff2f590e307bcfaaabad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39098180"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39202127"
 ---
 適用於：Azure 進階威脅防護
 
@@ -44,7 +44,7 @@ Azure ATP 可支援擁有多個樹系的組織，讓您能跨樹系監視活動�
 為了偵測跨樹系活動，Azure ATP 感應器會查詢遠端樹系中的網域控制站，以建立所有相關實體的設定檔，包括來自遠端樹系的使用者和電腦。 
 
 > [!NOTE]
-> - 為了使此方法能夠運作，所有其他樹系都必須信任安裝 Azure ATP 感應器的樹系。
+> - Azure ATP 感應器可以安裝在所有樹系上 (如果存在最小的單向信任)。
 > - 您在 Azure ATP 主控台中的 [目錄服務] 下設定的使用者，必須在所有其他樹系中都受到信任。
 
 

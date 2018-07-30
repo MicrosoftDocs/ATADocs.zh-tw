@@ -2,10 +2,10 @@
 title: Azure ATP 可疑活動指南 | Microsoft Docs
 d|Description: This article provides a list of the suspicious activities Azure ATP can detect and steps for remediation.
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 7/5/2018
+ms.date: 7/24/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 83c855a89ad418769c81a4f1da3950ae0b6c54f7
-ms.sourcegitcommit: a9b8bc26d3cb5645f21a68dc192b4acef8f54895
+ms.openlocfilehash: 7ae5ac30d1d17084df4c30d502a58767b97a4582
+ms.sourcegitcommit: 63a36cd96aec30e90dd77bee1d0bddb13d2c4c64
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2018
-ms.locfileid: "39064112"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39227167"
 ---
 適用於：Azure 進階威脅防護
 
@@ -468,6 +468,72 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 **補救**
 
 [複雜且很長的密碼](https://docs.microsoft.com/windows/device-security/security-policy-settings/password-policy)提供必要的第一層安全性，以防止暴力密碼破解攻擊。
+
+## <a name="suspicious-domain-controller-promotion-potential-dcshadow-attack---preview"></a>可疑的網域控制站升級 (潛在的 DCShadow 攻擊) - 預覽
+
+**描述**
+
+網域控制站陰影 (DCShadow) 攻擊是藉由惡意複寫來變更目錄物件。 透過使用複寫流程來建立惡意的網域控制站，便可以從任何電腦進行此攻擊。
+ 
+DCShadow 使用 RPC 和 LDAP 進行：
+1. 將電腦帳戶註冊為網域控制站 (使用網域管理員權限)，以及
+2. 對 DRSUAPI 執行複寫 (使用授與的複寫權限)，並將變更傳送到目錄物件。
+ 
+在此偵測中，當網路中的電腦嘗試註冊為惡意網域控制站時，就會觸發警示。 
+
+**調查**
+ 
+1. 有問題的電腦是否為網域控制站？ 例如，有複寫問題之新升級的網域控制站。 如果是，請**關閉**可疑活動。
+2. 有問題的電腦是否預期會從 Active Directory 複寫資料？ 例如，Azure AD Connect。 如果是，請**關閉並排除**可疑活動。
+3. 按一下來源電腦或帳戶以移至其設定檔頁面。 檢查複寫前後期間的事件，並搜尋異常活動，例如當時登入的使用者及其存取的資源，以及電腦的作業系統為何？
+   1. 所有登入電腦的使用者，是否都可在該電腦登入？ 他們的權限為何？ 使用者是否有權限將伺服器升級成網域控制站？ (是否為網域管理員？)
+   2. 使用者是否可存取這些資源？
+   3. 電腦是否為執行 Windows Server OS (或是 Windows/Linux)？ 非伺服器電腦不應複寫資料。
+如果您啟用了 Windows Defender ATP 整合，請按一下 Windows Defender ATP 徽章 ![Windows Defender ATP 徽章](./media/wd-badge.png) 來進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序和警示。
+
+4. 查看 [事件檢視器]，以了解其[目錄服務記錄檔中記錄的 Active Directory 事件](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/cc961809(v=technet.10)) \(英文\)。 您可以使用記錄來監視 Active Directory 中的變更。 根據預設，Active Directory 只記錄重大錯誤事件，但如果此警示重複出現，請在相關的網域控制站上啟用此稽核，以供後續調查。
+
+**補救**
+
+檢查組織中具有以下權限的人員： 
+- 複寫目錄變更 
+- 全部複寫目錄變更 
+ 
+ 
+如需詳細資訊，請參閱[在 SharePoint Server 2013 中授與 Active Directory 網域服務權限，以進行設定檔同步處理](https://technet.microsoft.com/library/hh296982.aspx)。 
+
+您可以利用 [AD ACL 掃描程式](https://blogs.technet.microsoft.com/pfesweplat/2013/05/13/take-control-over-ad-permissions-and-the-ad-acl-scanner-tool/)或建立 Windows PowerShell 指令碼，以判斷誰在網域中具有這些權限。
+ 
+
+
+
+## <a name="suspicious-replication-request-potential-dcshadow-attack---preview"></a>可疑的複寫要求 (潛在的 DCShadow 攻擊) - 預覽
+
+**描述** 
+
+在 Active Directory 複寫程序中，某個網域控制站上所做的變更，會與所有網域控制站同步處理。 若有足夠的權限，攻擊者就可授與其電腦帳戶權限，以便能夠模擬網域控制站。 攻擊者會力圖起始惡意的複寫要求，以便能夠變更真正網域控制站上的 Active Directory 物件，攻擊者就能持續存在網域中。
+在此偵測中，針對受到 Azure ATP 保護的真正網域控制站，當產生了可疑的複寫要求時，就會觸發警示。 此行為表示可能是網域控制站陰影攻擊所使用的技術。
+
+**調查** 
+ 
+1. 有問題的電腦是否為網域控制站？ 例如，有複寫問題之新升級的網域控制站。 如果是，請**關閉**可疑活動。
+2. 有問題的電腦是否預期會從 Active Directory 複寫資料？ 例如，Azure AD Connect。 如果是，請**關閉並排除**可疑活動。
+3. 按一下來源電腦以移至其設定檔頁面。 檢查複寫**前後期間**的事件，並搜尋異常活動，例如當時登入的使用者、被使用的資源，以及電腦的作業系統為何？
+
+   1.  所有登入電腦的使用者，是否都可在該電腦登入？ 他們的權限為何？ 使用者是否有權限執行複寫 (是否為網域管理員)？
+   2.  使用者是否可存取這些資源？
+   3. 電腦是否為執行 Windows Server OS (或是 Windows/Linux)？ 非伺服器電腦不應複寫資料。
+如果您啟用了 Windows Defender ATP 整合，請按一下 Windows Defender ATP 徽章 ![Windows Defender ATP 徽章](./media/wd-badge.png) 來進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序和警示。
+1. 查看 [事件檢視器]，以了解其[目錄服務記錄檔中記錄的 Active Directory 事件](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/cc961809(v=technet.10)) \(英文\)。 您可以使用記錄來監視 Active Directory 中的變更。 根據預設，Active Directory 只記錄重大錯誤事件，但如果此警示重複出現，請在相關的網域控制站上啟用此稽核，以供後續調查。
+
+**補救**
+
+檢查組織中具有以下權限的人員： 
+- 複寫目錄變更 
+- 全部複寫目錄變更 
+
+若要這麼做，您可以利用 [AD ACL 掃描程式](https://blogs.technet.microsoft.com/pfesweplat/2013/05/13/take-control-over-ad-permissions-and-the-ad-acl-scanner-tool/) \(英文\) 或建立 Windows PowerShell 指令碼，以判斷網域中具有這些權限的人員。
+
 
 ## <a name="suspicious-service-creation"></a>可疑的服務建立
 

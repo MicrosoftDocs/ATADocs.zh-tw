@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7ae5ac30d1d17084df4c30d502a58767b97a4582
-ms.sourcegitcommit: 63a36cd96aec30e90dd77bee1d0bddb13d2c4c64
+ms.openlocfilehash: 4e6a7d90ad5670b3d1c01ba70d7b5a81e8808b5e
+ms.sourcegitcommit: 759e99f670c42c2dd60d07b2200d3de01ddf6055
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39227167"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39335872"
 ---
 適用於：Azure 進階威脅防護
 
@@ -101,7 +101,7 @@ ms.locfileid: "39227167"
 
 **調查**
 
-首先請檢查警示的描述，以查看是上述三種偵測類型中的哪一種。 如需詳細資訊，請下載 Excel 試算表。
+先查看警示的描述，以了解要處理上述三種偵測類型的哪一種。 如需詳細資訊，請下載 Excel 試算表。
 
 1.  基本架構金鑰 - 您可以使用 [Azure ATP 小組所撰寫的掃描程式](https://gallery.technet.microsoft.com/Aorato-Skeleton-Key-24e46b73) \(英文\)，來檢查基本架構金鑰是否已影響到您的網域控制站。 如果掃描程式在一或多個網域控制站上找到惡意程式碼，則為真肯定。
 
@@ -109,9 +109,9 @@ ms.locfileid: "39227167"
 
   1. 檢查那些票證所存取的資源，如果有所有票證都會存取的資源，請驗證該資源以確定它是票證應存取的有效資源。 此外，請驗證目標資源是否支援強式加密方法。 您可以透過在 Active Directory 中檢查資源服務帳戶的 msDS-SupportedEncryptionTypes 屬性來檢查這點。
   
-  2. 請檢查來源電腦和帳戶，或是在有多部來源電腦和帳戶的情況下，檢查它們是否有任何共同點 (例如，所有的行銷人員都使用可能會導致觸發警示的特定應用程式)。 在某些情況下，可能會有很少使用的自訂應用程式，正在使用較低的加密編碼器進行驗證。 檢查來源電腦上是否有任何這類自訂應用程式。 如果是，則可能是良性真肯定，因此可予以隱藏。
+  2. 請檢查來源電腦和帳戶，或如果有多個來源電腦和帳戶，檢查它們是否有共通的某些項目。 例如，您所有的行銷人員是否使用可能觸發警示的特定應用程式。 在某些情況下，可能會有很少使用的自訂應用程式，正在使用較低的加密編碼器進行驗證。 檢查來源電腦上是否有任何這類自訂應用程式。 如果是，則可能是良性真肯定，因此可予以隱藏。
   
-  
+
 
 3.  Overpass-the-Hash - 在 Excel 試算表中，移至 [網路活動] 索引標籤。您會看到相關的降級欄位為 [加密時間戳記加密類型]，且 [來源電腦支援的加密類型] 包含更強的加密方法。
 
@@ -120,7 +120,7 @@ ms.locfileid: "39227167"
 
 **補救**
 
-1.  基本架構金鑰 - 移除惡意程式碼。 如需詳細資訊，請參閱 SecureWorks 的 [Skeleton Key Malware Analysis](https://www.secureworks.com/research/skeleton-key-malware-analysis) (基本架構金鑰惡意程式碼分析)。
+1.  基本架構金鑰 - 移除惡意程式碼。 如需詳細資訊，請參閱[基本架構金鑰惡意程式碼分析](https://www.virusbulletin.com/virusbulletin/2016/01/paper-digital-bian-lian-face-changing-skeleton-key-malware) \(英文\)。
 
 2.  黃金票證 - 遵循[黃金票證](#golden-ticket)可疑活動的指示進行。   
     此外，由於建立黃金票證需要網域系統管理員權限，因此請實作[傳遞雜湊建議](http://aka.ms/PtH)。
@@ -377,7 +377,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 **描述**
 
-您的 DNS 伺服器包含您網路中所有電腦、IP 位址和服務的對應。 攻擊者會使用這項資訊來對應您的網路結構，並鎖定感興趣的電腦以在稍後用於攻擊步驟。
+您的 DNS 伺服器包含您網路中所有電腦、IP 位址和服務的對應。 攻擊者會使用此資訊來對應您的網路結構，並鎖定感興趣的電腦以在稍後用於攻擊步驟。
 
 DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 伺服器的 AXFR (傳輸) 要求。
 
@@ -392,14 +392,14 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 **補救**
 
 您可以停用區域傳輸，或將區域傳輸僅限於指定的 IP 位址，來保護內部 DNS 伺服器，以防止發生使用 DNS 探查。 如需限制區域傳輸的詳細資訊，請參閱 [Restrict Zone Transfers](https://technet.microsoft.com/library/ee649273(v=ws.10).aspx) (限制區域傳輸)。
-「修改區域傳輸」是檢查清單中的一項工作，應該加以解決才能[保護 DNS 伺服器免受內部和外部攻擊](https://technet.microsoft.com/library/cc770432(v=ws.11).aspx)。
+「修改區域傳輸」是檢查清單中的一個工作，應該加以解決才能[保護 DNS 伺服器免受內部和外部攻擊](https://technet.microsoft.com/library/cc770432(v=ws.11).aspx)。
 
 ## <a name="reconnaissance-using-smb-session-enumeration"></a>使用 SMB 工作階段列舉探查
 
 
 **描述**
 
-伺服器訊息區 (SMB) 列舉可讓攻擊者取得使用者最近登入位置的相關資訊。 一旦攻擊者擁有這項資訊，他們就可以在網路中橫向移動來到達特定敏感性帳戶。
+伺服器訊息區 (SMB) 列舉可讓攻擊者取得使用者最近登入位置的相關資訊。 一旦攻擊者擁有此資訊，他們就可以在網路中橫向移動來到達特定敏感性帳戶。
 
 在此偵測中，對網域控制站執行 SMB 工作階段列舉時，就會觸發警示，因為這不應該發生。
 

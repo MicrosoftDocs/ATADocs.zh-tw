@@ -1,11 +1,11 @@
 ---
-title: Advanced Threat Analytics 必要條件 | Microsoft Docs
+title: Advanced Threat Analytics 先決條件 | Microsoft Docs
 description: 描述在環境中成功部署 ATA 的需求
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 5/6/2018
+ms.date: 7/25/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,25 +13,25 @@ ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 90c4bcad1b5a2d6da06153706129d9670ad57e1c
-ms.sourcegitcommit: 321ff1af2c140f41600c4c42ac4d455b3cdb9440
+ms.openlocfilehash: 199830a6cd0b84cf897311cc80472a078f582b59
+ms.sourcegitcommit: 759e99f670c42c2dd60d07b2200d3de01ddf6055
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232999"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39335906"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
 
 
-# <a name="ata-prerequisites"></a>ATA 必要條件
+# <a name="ata-prerequisites"></a>ATA 先決條件
 本文描述在您的環境中成功部署 ATA 的條件需求。
 
 > [!NOTE]
 > 如需如何規劃資源和容量的資訊，請參閱 [ ATA capacity planning](ata-capacity-planning.md) (ATA 容量規劃)。
 
 
-ATA 是由 ATA 中心、ATA 閘道及 (或) ATA 輕量型閘道所組成。 如需 ATA 元件的詳細資訊，請參閱 [ATA architecture](ata-architecture.md) (ATA 架構)。
+ATA 是由 ATA 中心、ATA 閘道和/或ATA 輕量型閘道所組成。 如需 ATA 元件的詳細資訊，請參閱 [ATA architecture](ata-architecture.md) (ATA 架構)。
 
 ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003 和更新版本的樹系功能等級 (FFL)。
 
@@ -110,7 +110,7 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 ### <a name="ports"></a>連接埠
 下表列出 ATA 中心正常運作最少要開啟的連接埠。
 
-|通訊協定|傳輸|Port|去/從|方向|
+|通訊協定|傳輸|Port|至/自|方向|
 |------------|-------------|--------|-----------|-------------|
 |**SSL** (ATA 通訊)|TCP|443|ATA 閘道|輸入|
 |**HTTP** (選擇性)|TCP|80|公司網路|輸入|
@@ -129,7 +129,7 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 
 ### <a name="certificates"></a>憑證
 
-為了簡化 ATA 的安裝，您可以在安裝期間安裝自我簽署憑證。 部署後，可將自我簽署的憑證取代為由內部憑證授權單位發出、ATA 中心將會使用的憑證。
+為了加快 ATA 的安裝和部署速度，您可以在安裝期間安裝自我簽署憑證。 如果您已選擇使用自我簽署憑證，則完成初始部署之後，建議將自我簽署憑證替換為來自內部憑證授權單位、要由 ATA 中心使用的憑證。
 
 
 請確定 ATA 中心及 ATA 閘道可以存取您的 CRL 發佈點。 若沒有網際網路存取，請遵循[手動匯入 CRL 的程序](https://technet.microsoft.com/library/aa996972%28v=exchg.65%29.aspx)，並務必安裝整個鏈結的所有 CRL 發佈點。
@@ -139,6 +139,7 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 -   密碼編譯服務提供者 (CSP) 或金鑰儲存提供者 (KSP) 的提供者類型
 -   2048 位元的公用金鑰長度
 -   針對 KeyEncipherment 和 ServerAuthentication 使用方式旗標所設定的值
+-   "KeyExchange" (AT\_KEYEXCHANGE) 的 KeySpec (KeyNumber) 值。 請注意，不支援 "Signature" (AT\_SIGNATURE) 值。 
 
 例如，您可以使用標準**網頁伺服器**或**電腦**範本。
 
@@ -204,7 +205,7 @@ ATA 閘道需要至少一個管理介面卡和至少一個擷取介面卡︰
 ### <a name="ports"></a>連接埠
 下表列出在管理介面卡上設定 ATA 閘道至少需要的連接埠：
 
-|通訊協定|傳輸|Port|去/從|方向|
+|通訊協定|傳輸|Port|至/自|方向|
 |------------|-------------|--------|-----------|-------------|
 |LDAP|TCP 和 UDP|389|網域控制站|輸出|
 |安全的 LDAP (LDAPS)|TCP|636|網域控制站|輸出|
@@ -278,7 +279,7 @@ ATA 輕量型閘道可為所有網域控制站的網路介面卡監視其上的�
 ### <a name="ports"></a>連接埠
 下表列出 ATA 輕量型閘道至少需要的連接埠：
 
-|通訊協定|傳輸|Port|去/從|方向|
+|通訊協定|傳輸|Port|至/自|方向|
 |------------|-------------|--------|-----------|-------------|
 |DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
 |透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|輸出|

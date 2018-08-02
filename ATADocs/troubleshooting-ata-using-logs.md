@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 9f00d01d7986b6a04c4ba69f25e5c84259c66f99
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: b2b00342c3c13615386fa1c16d98d28fbbf1d121
+ms.sourcegitcommit: eebf1156aaae199b6aaa7e431cd6372e572b1e9f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30010351"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39396378"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -30,7 +30,7 @@ ATA 記錄提供深入解析，說明 ATA 的每個元件在任何指定時間�
 ## <a name="ata-gateway-logs"></a>ATA 閘道記錄檔
 在本節中，對 ATA 閘道的每個參考也都適用於 ATA 輕量型閘道。 
 
-ATA 閘道記錄位於 ATA 安裝所在，名為 **Logs** 的子資料夾；預設位置為：**C:\Program Files\Microsoft Advanced Threat Analytics\**。 在預設安裝位置中，其位於︰**C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**。
+ATA 閘道記錄位於 ATA 安裝所在，名為 **Logs** 的子資料夾；預設位置為：**C:\Program Files\Microsoft Advanced Threat Analytics\\**。 在預設安裝位置中，它位於︰**C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**。
 
 ATA 閘道有下列記錄檔︰
 
@@ -91,7 +91,7 @@ ATA 閘道和 ATA 輕量型閘道部署記錄：
 
 
 ## <a name="see-also"></a>另請參閱
-- [ATA 必要條件](ata-prerequisites.md)
+- [ATA 先決條件](ata-prerequisites.md)
 - [ATA 容量規劃](ata-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-collection.md#configuring-windows-event-forwarding)

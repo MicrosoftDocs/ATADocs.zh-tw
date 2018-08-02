@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3547519f-8d9c-40a9-8f0e-c7ba21081203
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: df06235de3a29051f9ffcd889bb95936ed9fc27d
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 1b37bcbfc304ee0ef71d80eb84f6298d64e50d3f
+ms.sourcegitcommit: eebf1156aaae199b6aaa7e431cd6372e572b1e9f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
-ms.locfileid: "29445004"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39396412"
 ---
 適用於：Azure 進階威脅防護 1.9 版
 
@@ -57,17 +57,17 @@ ms.locfileid: "29445004"
 2.  在命令提示字元中輸入 *gpedit.msc*
 3.  展開 [電腦設定] > [系統管理範本] > [Windows 元件] > [事件轉送]
 
- ![本機原則群組編輯器影像](media/wef 1 local group policy editor.png)
+ ![本機原則群組編輯器影像](media/wef%201%20local%20group%20policy%20editor.png)
 
 4.  按兩下 [設定目標訂閱管理員]。
    
-    1.  選取 [啟用]。
+    1.  選取 [已啟用] 。
     2.  在 [選項] 下，按一下 [顯示]。
     3.  在 [SubscriptionManagers] 下，輸入下列值，然後按一下 [確定]：*Server=http://<fqdnATPSensor>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (例如：Server=http://atpsensor9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
  
-   ![設定目標訂閱影像](media/wef 2 config target sub manager.png)
+   ![設定目標訂閱影像](media/wef%202%20config%20target%20sub%20manager.png)
    
-    5.  按一下 [ **確定**]。
+    5.  按一下 [確定] 。
     6.  在提升權限的命令提示字元中，輸入 *gpupdate /force*。 
 
 **步驟 3：在 Azure ATP 獨立感應器上執行下列步驟** 
@@ -82,10 +82,10 @@ ms.locfileid: "29445004"
         1.  按一下 [加入網域電腦]。
         2.  在 [輸入要選取的物件名稱] 欄位中輸入網域控制站的名稱。 然後按一下 [檢查名稱]，再按一下 [確定]。 
        
-        ![事件檢視器影像](media/wef3 event viewer.png)
+        ![事件檢視器影像](media/wef3%20event%20viewer.png)
    
         
-        3.  按一下 [ **確定**]。
+        3.  按一下 [確定] 。
    4.   按一下 [選取事件]。
 
         1. 按一下 [依記錄]，然後選取 [安全性]。

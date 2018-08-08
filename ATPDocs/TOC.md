@@ -43,7 +43,8 @@
 ## [處理可疑活動](working-with-suspicious-activities.md)
 ## [可疑活動指南](suspicious-activity-guide.md)
 ## [使用 Azure ATP 調查橫向移動路徑](use-case-lateral-movement-path.md)
-## [調查實體](entity-profiles.md)
+## [調查實體](investigate-entity.md)
+## [了解實體設定檔](entity-profiles.md)
 # 疑難排解
 ## [針對已知問題進行疑難排解](troubleshooting-atp-known-issues.md)
 ## [支援與資訊](atp-support.md)

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 51911e39-76c7-4dcd-bc0b-ec6235d0403f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 56b3cea2089c64e2c78361c44d049d6de67764b6
-ms.sourcegitcommit: 759e99f670c42c2dd60d07b2200d3de01ddf6055
+ms.openlocfilehash: a6876de4f5cf293d58da08ab4e3a8443e76480f1
+ms.sourcegitcommit: ca6153d046d8ba225ee5bf92cf55d0bd57cf4765
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "30202267"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39585064"
 ---
 適用於：Azure 進階威脅防護
 
@@ -49,14 +49,14 @@ ms.locfileid: "30202267"
 > [!NOTE] 
 > 從 ZIP 檔案直接安裝會失敗。
 
-2.  執行 **Azure ATP sensor setup.exe** 並按照安裝精靈的指示操作。
+3.  執行 **Azure ATP sensor setup.exe** 並按照安裝精靈的指示操作。
 
-3.  在 [歡迎] 頁面中，選取您的語言，然後按一下 [下一步]。
+4.  在 [歡迎] 頁面中，選取您的語言，然後按一下 [下一步]。
 
      ![Azure ATP 獨立感應器安裝語言](media/sensor-install-language.png)
 
 
-4.  安裝精靈會自動檢查伺服器為網域控制站或專用伺服器。 如果是網域控制站，則其中已安裝 Azure ATP 感應器。如果是專用伺服器，則其中已安裝 Azure ATP 獨立感應器。 
+5.  安裝精靈會自動檢查伺服器為網域控制站或專用伺服器。 如果是網域控制站，則其中已安裝 Azure ATP 感應器。如果是專用伺服器，則其中已安裝 Azure ATP 獨立感應器。 
     
     例如，針對 Azure ATP 獨立感應器，會顯示下列畫面，讓您知道您的專用伺服器上已安裝 Azure ATP 獨立感應器：
     
@@ -67,7 +67,7 @@ ms.locfileid: "30202267"
     > [!NOTE] 
     > 如果網域控制站或專用伺服器不符合安裝的最低硬體需求，您會收到一則警告。 但這並不會阻止您按 [下一步] 和繼續進行安裝。 在不需要這麼多資料儲存空間的小型實驗室測試環境中，這可能會是安裝 Azure ATP 的正確選項。 針對生產環境，強烈建議使用 Azure ATP 的 [容量規劃](atp-capacity-planning.md)指南，確保您的網域控制站或專用伺服器符合必要需求。
 
-4.  在 [設定感應器] 下，輸入從上一個步驟複製的安裝路徑和存取金鑰 (視您的環境而定)：
+6.  在 [設定感應器] 下，輸入從上一個步驟複製的安裝路徑和存取金鑰 (視您的環境而定)：
 
     ![Azure ATP 獨立感應器設定的影像](media/sensor-install-config.png)
 
@@ -75,7 +75,7 @@ ms.locfileid: "30202267"
 
       - 存取金鑰：這是擷取自上一個步驟中的工作區入口網站。
     
-5. 按一下 [安裝]。 安裝 Azure ATP 感應器期間將安裝及設定下列元件︰
+7. 按一下 [安裝]。 安裝 Azure ATP 感應器期間將安裝及設定下列元件︰
 
     -   KB 3047154 (僅適用於 Windows Server 2012 R2)
 
@@ -86,7 +86,7 @@ ms.locfileid: "30202267"
     -   Azure ATP 感應器服務和 Azure ATP 感應器更新程式服務
     -   Microsoft Visual C++ 2013 可轉散發元件
 
-5.  安裝完成後，請按一下 [啟動] 以開啟瀏覽器，並登入 Azure ATP 工作區入口網站。
+8.  安裝完成後，請按一下 [啟動] 以開啟瀏覽器，並登入 Azure ATP 工作區入口網站。
 
 
 >[!div class="step-by-step"]

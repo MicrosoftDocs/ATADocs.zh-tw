@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 58e3b0d04b196f0c49b6e146952c1819c8413ee3
-ms.sourcegitcommit: adfa7a3a3918518b6b14b94d3c0a9f899142196a
+ms.openlocfilehash: 281db5cfee9366babfcdf30e14a80122aa6d04c8
+ms.sourcegitcommit: 7ab273d1a4c05b457ee02f1631f642346d687b1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
-ms.locfileid: "29977568"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39625603"
 ---
 適用於：Azure 進階威脅防護
 
@@ -30,7 +30,7 @@ ms.locfileid: "29977568"
 
 |欲執行的動作...|做法：|
 |----|----|
-|查看我們最熱門的文件|閱讀前五個頁面：|- [什麼是 Azure 進階威脅防護？](what-is-atp.md)<br>- [Azure ATP 必要條件](atp-prerequisites.md)<br>- [Azure ATP 架構](atp-architecture.md)<br>- [Azure ATP 容量規劃](atp-capacity-planning.md)<br>- [建立工作區](install-atp-step1.md)|
+|查看我們最熱門的文件|閱讀前五個頁面：<br>- [什麼是 Azure 進階威脅防護？](what-is-atp.md)<br>- [Azure ATP 必要條件](atp-prerequisites.md)<br>- [Azure ATP 架構](atp-architecture.md)<br>- [Azure ATP 容量規劃](atp-capacity-planning.md)<br>- [建立工作區](install-atp-step1.md)|
 |與產品小組和您的同事交流|請前往 Azure 進階威脅防護的[技術社群](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection)。|
 |確認訂用帳戶資訊，並取得支援功能的清單|請參閱 Azure 進階威脅防護網站的[訂用帳戶資訊](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)與[功能清單](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。|
 

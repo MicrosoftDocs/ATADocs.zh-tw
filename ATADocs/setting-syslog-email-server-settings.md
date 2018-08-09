@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: bff20bf7-8b53-49da-81e5-b818a1c3b24e
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a77e7e86d635d80ee09338843c42e003220133a0
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: f415fabe71512a5f9948a824d04e7bfece086ba4
+ms.sourcegitcommit: ca6153d046d8ba225ee5bf92cf55d0bd57cf4765
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30010154"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39585030"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -43,6 +43,7 @@ ms.locfileid: "30010154"
     |SSL|如果 SMTP 伺服器需要 SSL，請切換 SSL。 **注意︰** 如果啟用 SSL，您也需要變更連接埠號碼。|預設會停用|
     |驗證|如果您的 SMTP 伺服器需要驗證，請啟用。 **注意︰** 如果啟用驗證，您必須提供有權連線到 SMTP 伺服器的電子郵件帳戶使用者名稱和密碼。|預設會停用|
     |傳送來源 (必要)|輸入電子郵件傳送者的電子郵件地址。|例如：<br />ATA@contoso.com|
+    
     ![ATA 電子郵件伺服器設定影像](media/ata-email-server.png)
 
 ## <a name="provide-ata-with-your-syslog-server-settings"></a>使用 Syslog 伺服器設定提供 ATA

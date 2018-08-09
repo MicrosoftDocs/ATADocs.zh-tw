@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b620e5b6203d387de389cfb857c2dd6125239ed9
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: fa2b5fa5da1d73f90cac6937bef71fd239e498fc
+ms.sourcegitcommit: ca6153d046d8ba225ee5bf92cf55d0bd57cf4765
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30010052"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39585047"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -92,6 +92,7 @@ ATA 中心會從 ATA 閘道和 ATA 輕量型閘道接收剖析過的流量。 �
 |資料庫|ATA 使用 MongoDB，其目的為在系統中儲存所有資料︰<br /><br />-   網路活動<br />-   事件活動<br />-   唯一實體<br />-   可疑活動<br />-   ATA 設定|
 |偵測器|偵測器使用機器學習演算法和決定性規則，在您的網路中尋找可疑活動和異常使用者行為。|
 |ATA 主控台|ATA 主控台可用來設定 ATA 及監視 ATA 在網路上偵測到的可疑活動。 ATA 主控台並未依存於 ATA 中心服務，即使在服務停止時，只要它可以和資料庫通訊，就會持續執行。|
+
 決定要在網路上部署多少 ATA 中心時，請考慮下列準則︰
 
 -   一個 ATA 中心可以監視單一 Active Directory 樹系。 如果您有多個 Active Directory 樹系，每個 Active Directory 樹系需要至少一個 ATA 中心。

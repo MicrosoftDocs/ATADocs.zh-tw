@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 7/29/2018
+ms.date: 8/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: de15c920-8904-4124-8bdc-03abd9f667cf
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b89cc6e7933c4f75e69cd045551518b2806b3cf0
-ms.sourcegitcommit: 759e99f670c42c2dd60d07b2200d3de01ddf6055
+ms.openlocfilehash: 730cf886f199c101ea14a09f177d7682238c2b7e
+ms.sourcegitcommit: 14c05a210ae92d35100c984ff8c6d171db7c3856
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336111"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567707"
 ---
 適用於：Azure 進階威脅防護
 
@@ -47,13 +47,13 @@ ms.locfileid: "39336111"
 
 
 
-1. 在 Azure ATP 工作區入口網站中，在實體位於橫向移動路徑 ![橫向圖示](./media/lateral-movement-icon.png) 或 ![路徑圖示](./media/paths-icon.png)時，搜尋新增至實體設定檔的橫向移動徽章。 請注意，只有在過去 48 小時內有橫向移動時，才會顯示該徽章。 
+1. 在 Azure ATP 工作區入口網站中，在實體位於橫向移動路徑 ![橫向圖示](./media/lateral-movement-icon.png) 或 ![路徑圖示](./media/paths-icon.png)。 請注意，只有在過去 48 小時內有橫向移動時，才會顯示該徽章。 
 
 2. 在隨即開啟的使用者設定檔頁面中，按一下 [橫向移動路徑] 索引標籤。 
 
 3. 顯示的圖表能提供針對敏感性使用者之可能路徑的地圖。 圖表會顯示過去 48 小時內觀察到的可能連線。 如果過去兩天內沒有偵測到任何活動，就不會顯示圖表。 
 
-4. 檢閱報表以查看並了解敏感性使用者認證的暴露程度。 例如，在此地圖中，您可以依照 [登入者] 灰色箭頭來查看 Samira 使用其特殊權限認證登入的位置。 在此案例中，Samira 的敏感性認證是儲存在 REDMOND-WA-DEV 這部電腦上。 現在，請注意有哪些其他使用者登入哪部電腦並產生最大程度的暴露與弱點。 您可以查看 [身為系統管理員] 黑色箭頭，以了解誰在該資源上具有系統管理權限。 在此範例中，所有屬於 [Contoso All] 群組的使用者都能從該資源存取使用者認證。  
+4. 檢閱報表以查看並了解敏感性使用者認證的暴露程度。 例如，在此地圖中，您可以依照 [登入者] 灰色箭頭來查看 Samira 使用其特殊權限認證登入的位置。 在此案例中，Samira 的敏感性認證是儲存在 REDMOND-WA-DEV 這部電腦上。 現在，請注意有哪些其他使用者登入哪部電腦並產生最大程度的暴露與弱點。 您可以查看 [身為系統管理員] 黑色箭頭，以了解誰在該資源上具有系統管理權限。 在此範例中，所有屬於 [Contoso All] 的使用者都能從該資源存取使用者認證。  
 
  ![使用者設定檔橫向移動路徑](media/user-profile-lateral-movement-paths.png)
 

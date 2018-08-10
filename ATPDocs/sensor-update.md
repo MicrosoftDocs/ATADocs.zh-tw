@@ -2,10 +2,10 @@
 title: 更新 Azure ATP 感應器 | Microsoft Docs
 description: 此描述如何在 Azure ATP 中更新感應器。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 6/24/2018
+ms.date: 8/06/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b6a9cbb203068e1318425631f9f83c796bb26aa8
-ms.sourcegitcommit: 7d025a2518ce63f38ce609dc21d8c3bacdd6a8e7
+ms.openlocfilehash: 35ca436a1da10b1675daed974920c9dc8ccc3da0
+ms.sourcegitcommit: ca6153d046d8ba225ee5bf92cf55d0bd57cf4765
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36948981"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39585013"
 ---
 適用於：Azure 進階威脅防護
 

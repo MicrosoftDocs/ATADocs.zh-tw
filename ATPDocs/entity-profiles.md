@@ -2,10 +2,10 @@
 title: 使用 Azure Advanced Threat Protection 工作區入口網站中的使用者設定檔 | Microsoft Docs
 description: 描述如何在 Azure ATP 工作區入口網站中調查使用者設定檔畫面中的使用者
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 8/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: 17458706-79fb-4c23-aa42-66979164a45f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6ceefeeba6a52abf5da7ff44135cff55e9beab02
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: cd34be695a190c719f991f8cc4b374942363a7c1
+ms.sourcegitcommit: 14c05a210ae92d35100c984ff8c6d171db7c3856
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
-ms.locfileid: "29444974"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567877"
 ---
 適用於：Azure 進階威脅防護
 
 
 
-# <a name="investigating-entity-profiles"></a>調查實體設定檔
+# <a name="understanding-entity-profiles"></a>了解實體設定檔
 
 實體設定檔提供您專為完整深入調查使用者、電腦、裝置，以及他們有權存取的資源及其歷程記錄所設計的全方位實體頁面。 設定檔頁面會利用新的 Azure ATP 邏輯活動轉譯程式，此轉譯程式可查看一組發生的活動 (彙總最多一分鐘)，並將它們組成單一邏輯活動，以讓您更深入了解您使用者的實際活動。
 

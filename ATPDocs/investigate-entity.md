@@ -2,10 +2,10 @@
 title: 如何利用 Azure ATP 來調查使用者與電腦 | Microsoft Docs
 description: 描述如何使用 Azure 進階威脅防護 (ATP) 來調查使用者、實體、電腦或裝置執行的可疑活動
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 5/6/2018
+ms.date: 8/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,14 +13,14 @@ ms.technology: ''
 ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4ef4151a311dd5b076737cba9f3c7aa7454a32a7
-ms.sourcegitcommit: 714a01edc9006b38d1163d03852dafc2a5fddb5f
+ms.openlocfilehash: 722ef73fe2c039a567b4f3d807f97e4ede16dc67
+ms.sourcegitcommit: ca6153d046d8ba225ee5bf92cf55d0bd57cf4765
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190446"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39585215"
 ---
-適用於：Azure 進階威脅防護 1.9 版
+適用於：Azure 進階威脅防護
 
 
 
@@ -34,7 +34,7 @@ ms.locfileid: "34190446"
 
 若要存取實體設定檔頁面，請按一下可疑活動時間軸中的實體名稱 (例如使用者名稱)。 您也可在可疑活動頁面將滑鼠移至實體名稱上，來查看迷你版本的實體設定檔。
 
-實體設定檔可讓您檢視實體活動、目錄資料以及實體的橫向移動路徑。 如需詳細資訊，請參閱[調查實體設定檔 ](entity-profiles.md)。
+實體設定檔可讓您檢視實體活動、目錄資料以及實體的橫向移動路徑。 如需詳細資訊，請參閱[了解實體設定檔](entity-profiles.md)。
 
 ## <a name="check-entity-tags"></a>查看實體標籤
 
@@ -47,9 +47,9 @@ Azure ATP 會從 Active Directory 中提出標籤，以為您提供可監視 Act
 - 已過期：實體在 Active Directory 中已過期。
 - 新增：實體建立時間不到 30 天。
 
-## <a name="look-at-the-user-access-control-flags"></a>查看使用者存取控制旗標
+## <a name="look-at-the-user-account-control-flags"></a>查看使用者帳戶控制旗標
 
-使用者存取控制旗標也會從 Active Directory 匯入。 Azure ATP 包含 10 個有助於調查的旗標： 
+使用者帳戶控制旗標也會從 Active Directory 匯入。 Azure ATP 實體目錄資料包含 10 個有助於調查的旗標： 
 - 密碼永久有效
 - 具信任可委派
 - 需要智慧卡
@@ -61,9 +61,9 @@ Azure ATP 會從 Active Directory 中提出標籤，以為您提供可監視 Act
 - 不需要 Kerberos 預先驗證
 - 帳戶已停用 
 
-Azure ATP 能夠讓您得知這些旗標在 Active Directory 中的開啟/關閉狀態。 具顏色的圖示表示該旗標在 Active Directory 中為開啟狀態；在下面的範例中，只有**帳戶已停用**在 Active Directory 中處於開啟狀態。
+Azure ATP 能夠讓您得知這些旗標在 Active Directory 中的開啟/關閉狀態。 彩色圖示與對應的切換開關指出每個旗標的狀態。 在下面的範例中，Active Directory 只有**密碼永久有效**是開啟的。
 
- ![使用者存取控制旗標](./media/user-access-flags.png)
+ ![使用者帳戶控制旗標](./media/user-access-flags.png)
 
 ## <a name="cross-check-with-windows-defender"></a>利用 Windows Defender 進行交叉檢查
 
@@ -74,7 +74,7 @@ Azure ATP 能夠讓您得知這些旗標在 Active Directory 中的開啟/關閉
 
 Azure ATP 會從 Azure Active Directory 匯入使用者與群組資訊，以便您識別有哪些使用者因為在以下 Active Directory 群組中具成員身分，所以會自動視為具敏感性：
 
--   系統管理員
+-   Administrators
 -   Power Users
 -   Account Operators
 -   Server Operators
@@ -92,7 +92,7 @@ Azure ATP 會從 Azure Active Directory 匯入使用者與群組資訊，以便�
 -   Schema Admins 
 -   Enterprise Admins
 
-此外，您可在 Azure ATP 中**手動標記**實體為具敏感性。 這一點很重要，因為部分 Azure ATP 偵測 (例如敏感性群組修改偵測與橫向移動路徑) 會仰賴於實體的敏感度狀態。 若您將其他使用者或群組手動標記為具敏感性 (例如董事會成員、公司主管、業務總監等)，Azure ATP 會將其視作具敏感性。 如需詳細資訊，請參閱[使用敏感性帳戶](sensitive-accounts.md)。
+此外，您可在 Azure ATP 中**手動標記**實體為具敏感性。 這一點很重要，因為部分 Azure ATP 偵測 (例如敏感性群組修改偵測與橫向移動路徑) 會仰賴於實體的敏感度狀態。 若您將其他使用者或群組手動標記為具敏感性 (例如董事會成員、公司主管、業務總監等)，Azure ATP 會將其視為具敏感性。 如需詳細資訊，請參閱[使用敏感性帳戶](sensitive-accounts.md)。
 
 ## <a name="be-aware-of-lateral-movement-paths"></a>注意橫向移動路徑
 
@@ -105,7 +105,7 @@ Azure ATP 可協助您預防使用橫向移動路徑的攻擊。 橫向移動是
 
 ## <a name="is-it-a-honeytoken-entity"></a>其是否為 honeytoken 實體？
 
-在您開始調查前，必須先了解實體是否為 honeytoken。 為方便起見，Azure ATP 可讓您將帳戶與實體標記為 honeytoken。 然後，當您在調查期間開啟實體設定檔或迷你設定檔時，就會看到 honeytoken 徽章，提醒您目前查看的活動由標記為 honeytoken 的帳戶執行。
+在您開始調查前，必須先了解實體是否為 honeytoken。 您可以將帳戶與實體標示為 Azure ATP 中的 honeytoken。 當您開啟您已標示為 honeytoken 之帳戶或實體的實體設定檔或迷你設定檔時，您會看到 honeytoken 徽章。 調查時，honeytoken 徽章可警示您正在檢閱的活動是由您標示為 honeytoken 的帳戶所執行的。
 
 
     

@@ -1,23 +1,24 @@
 ---
-title: "安裝 Azure 進階威脅防護 - 步驟 7 | Microsoft Docs"
-description: "在安裝 Azure ATP 的最後一個步驟裡，您要設定 Honeytoken 使用者。"
-keywords: 
-author: rkarlin
-ms.author: rkarlin
+title: 安裝 Azure 進階威脅防護 - 步驟 7 | Microsoft Docs
+description: 在安裝 Azure ATP 的最後一個步驟裡，您要設定 Honeytoken 使用者。
+keywords: ''
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 2/21/2017
+ms.date: 8/2/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1ad5e923-9bbd-4f56-839a-b11a9f387d4b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: bef13d0f4799a4483eda6604a8ed96befaa13508
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 7b3c128f6e2b524d778d68af7bcea65476cae2b7
+ms.sourcegitcommit: 14c05a210ae92d35100c984ff8c6d171db7c3856
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567997"
 ---
 適用於：Azure 進階威脅防護
 
@@ -29,15 +30,15 @@ ms.lasthandoff: 02/21/2018
 [« 步驟 6](install-atp-step6-vpn.md)
 [步驟 8 »](install-atp-step8-samr.md)
 
-## <a name="step-7-configure-detection-exclusions-and-honeytoken-user"></a>步驟 ７： 設定偵測排除範圍和 Honeytoken 使用者
+## <a name="step-7-configure-detection-exclusions-and-honeytoken-accounts"></a>步驟 7： 設定偵測排除範圍和 Honeytoken 帳戶
 
 Azure ATP 可從一些偵測排除特定 IP 位址或使用者。 
 
 例如，**DNS 探查排除項目**可以是一個使用 DNS 做為掃描機制的安全性掃描程式。 排除能協助 Azure ATP 略過這類掃描程式。  
 
-Azure ATP 也能讓您設定 Honeytoken 使用者，用來作為針對惡意執行者的陷阱。所有與此 (通常是休眠的) 帳戶相關聯的驗證都會觸發警示。
+Azure ATP 也能讓您設定 honeytoken 帳戶，用來做為針對惡意執行者的陷阱。與這些 honeytoken 帳戶 (通常是休眠的) 關聯的任何驗證都會觸發警示。
 
-若要設定此帳戶，請遵循下列步驟︰
+若要設定，請依照下列步驟執行︰
 
 1.  從 Azure ATP 工作區入口網站中，按一下設定圖示，然後選取 [設定]。
 
@@ -49,11 +50,12 @@ Azure ATP 也能讓您設定 Honeytoken 使用者，用來作為針對惡意執�
 
    ![Honeytoken](media/honeytoken-sensitive.png)
 
-4. 按一下 [排除]。 針對每個威脅類型，輸入要從這些威脅偵測排除的使用者帳戶或 IP 位址，然後按一下「加號」符號。 [加入實體] \(使用者或電腦\) 欄位是可搜尋的，而且會自動填入您網路中的實體。 如需詳細資訊，請參閱[從偵測中排除實體](excluding-entities-from-detections.md)和[可疑活動指南](suspicious-activity-guide.md)。
+4. 按一下 [排除]。 針對每個威脅類型，輸入要排除而不予偵測的使用者帳戶或 IP 位址。 
+5. 按一下加號。 [加入實體] \(使用者或電腦\) 欄位是可搜尋的，而且會自動填入您網路中的實體。 如需詳細資訊，請參閱[從偵測中排除實體](excluding-entities-from-detections.md)和[可疑活動指南](suspicious-activity-guide.md)。
 
    ![排除](media/exclusions.png)
 
-5.  按一下 **[儲存]**。
+6.  按一下 [儲存]。
 
 
 恭喜，您已成功部署 Azure 進階威脅防護！

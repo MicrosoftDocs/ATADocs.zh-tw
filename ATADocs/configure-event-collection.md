@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 2c8f67d0c8d9020eb0e7ae16e8410db473ace044
-ms.sourcegitcommit: 759e99f670c42c2dd60d07b2200d3de01ddf6055
+ms.openlocfilehash: 755450654d870ec0235232e08194c1094c22f030
+ms.sourcegitcommit: ca6153d046d8ba225ee5bf92cf55d0bd57cf4765
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "30010239"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39585083"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -56,15 +56,15 @@ ms.locfileid: "30010239"
 2.  在命令提示字元中輸入 *gpedit.msc*
 3.  展開 [電腦設定] > [系統管理範本] > [Windows 元件] > [事件轉送]
 
- ![本機原則群組編輯器影像](media/wef 1 local group policy editor.png)
+![本機原則群組編輯器影像](media/wef 1 local group policy editor.png)
 
 4.  按兩下 [設定目標訂閱管理員]。
    
     1.  選取 [啟用]。
     2.  在 [選項] 下，按一下 [顯示]。
-    3.  在 [SubscriptionManagers] 下，輸入下列值，然後按一下 [確定]：*Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (例如：Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
+    3.  在 [SubscriptionManagers] 下，輸入下列值，然後按一下 [確定]：*Server=`http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10*` (例如：Server=`http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10`)
  
-   ![設定目標訂閱影像](media/wef 2 config target sub manager.png)
+    ![設定目標訂閱影像](media/wef 2 config target sub manager.png)
    
     5.  按一下 [確定]。
     6.  在提升權限的命令提示字元中，輸入 *gpupdate /force*。 
@@ -75,25 +75,25 @@ ms.locfileid: "30010239"
 2.  開啟 [事件檢視器]。 
 3.  以滑鼠右鍵按一下 [訂閱]，然後選取 [建立訂閱]。 
 
-   1.   為訂閱輸入名稱和描述。 
-   2.   針對 [目的地記錄檔]，請確認已選取 [轉送的事件]。 對於要讀取事件的 ATA，目的記錄檔必須是 [轉送的事件]。 
-   3.   選取 [來源電腦起始]，按一下 [選取電腦群組]。
+    1.  為訂閱輸入名稱和描述。 
+    2.  針對 [目的地記錄檔]，請確認已選取 [轉送的事件]。 對於要讀取事件的 ATA，目的記錄檔必須是 [轉送的事件]。 
+    3.  選取 [來源電腦起始]，按一下 [選取電腦群組]。
         1.  按一下 [加入網域電腦]。
         2.  在 [輸入要選取的物件名稱] 欄位中輸入網域控制站的名稱。 然後按一下 [檢查名稱]，再按一下 [確定]。 
-       
-        ![事件檢視器影像](media/wef3 event viewer.png)
-   
-        
+ 
+    ![事件檢視器影像](media/wef3 event viewer.png)
+ 
+ 
         3.  按一下 [確定]。
-   4.   按一下 [選取事件]。
+     4. 按一下 [選取事件]。
 
         1. 按一下 [依記錄]，然後選取 [安全性]。
-        2. 在 [Includes/Excludes Event ID (包含/排除事件識別碼)] 欄位中鍵入事件編號，然後按一下 [確定]。 例如，鍵入 4776，如下範例所示。
+        2. 在 [Includes/Excludes Event ID] \(包含/排除事件識別碼\) 欄位中鍵入事件編號，然後按一下 [確定]。 例如，鍵入 4776，如下範例所示。
 
- ![查詢篩選影像](media/wef 4 query filter.png)
+    ![查詢篩選影像](media/wef 4 query filter.png)
 
-   5.   以滑鼠右鍵按一下建立的訂閱，然後選取 [執行階段狀態]，以查看該狀態是否有任何問題。 
-   6.   幾分鐘後，請檢查您設定要轉送的事件是否出現在 ATA 閘道上 [轉送的事件] 中。
+    5.  以滑鼠右鍵按一下建立的訂閱，然後選取 [執行階段狀態]，以查看該狀態是否有任何問題。 
+    6.  幾分鐘後，請檢查您設定要轉送的事件是否出現在 ATA 閘道上 [轉送的事件] 中。
 
 
 如需詳細資訊，請參閱[設定電腦以轉送和收集事件](https://technet.microsoft.com/library/cc748890)

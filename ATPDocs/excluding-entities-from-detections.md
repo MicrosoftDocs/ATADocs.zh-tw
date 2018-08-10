@@ -2,10 +2,10 @@
 title: 在 Azure 進階威脅防護中從偵測中排除實體 | Microsoft Doc
 description: 說明如何停止 Azure ATP 將特定實體活動視為可疑的活動
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 8/2/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cae3ed45-8fbc-4f25-ba24-3cc407c6ea93
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 60a2fae0ef044993786fb3b7e2d21a3ac27bb9f0
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 2a91ebbe3811aeefe6fcef660807976794513f32
+ms.sourcegitcommit: 14c05a210ae92d35100c984ff8c6d171db7c3856
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
-ms.locfileid: "29444914"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567826"
 ---
 適用於：Azure 進階威脅防護
 

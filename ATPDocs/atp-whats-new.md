@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 7/29/2018
+ms.date: 8/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,17 +13,25 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ebdae7617dd550631186ab87cba922758649fd45
-ms.sourcegitcommit: 759e99f670c42c2dd60d07b2200d3de01ddf6055
+ms.openlocfilehash: 0062fc22df357e338d8eaf446688ea8bba56019c
+ms.sourcegitcommit: 14c05a210ae92d35100c984ff8c6d171db7c3856
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39335974"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567945"
 ---
 適用於：Azure 進階威脅防護
 
-
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能 
+
+
+## <a name="azure-atp-release-243"></a>Azure ATP 2.43 版
+
+發行日期：2018 年 8 月 5 日
+
+- 此版本包含針對多個問題的修正和改善。
+
+
 
 ## <a name="azure-atp-release-242"></a>Azure ATP 2.42 版
 
@@ -36,7 +44,7 @@ ms.locfileid: "39335974"
 
 發行日期：2018 年 7 月 22 日
 
-- **Azure ATP 多樹系支援正逐步推出 (預覽)** <br> Azure ATP 現在可支援擁有多個樹系的組織，讓您能跨樹系監視活動和分析使用者。 這個新功能可讓您：
+- **Azure ATP 多樹系支援正逐步推出 (預覽)** <br> Azure ATP 現在可支援擁有多個樹系的組織，讓您能跨樹系監視活動和分析使用者。 這項新功能可讓您：
 
   - 透過單一管理點來檢視和調查多個樹系中使用者執行的活動。
   - 提供了進階 Active Directory 整合和帳戶解析，以改進偵測及減少誤判。
@@ -128,8 +136,8 @@ ms.locfileid: "39335974"
     - 俄羅斯
     - 瑞典文
     - 土耳其文
-    - 中文 (中國)
-    - 中文 (台灣) 
+    - 簡體中文
+    - 中文 (台灣)
 
 
 
@@ -143,7 +151,7 @@ ms.locfileid: "39335974"
 
 2018 年 5 月 6 日發行
  
-- 已對名稱解析進行改善。 在此作業中，除了 RPC 與 NetBIOS 動態解析外，感應器可能會發出 TLS Client Hello 封包至端點 RDP 連接埠 (3389)。 
+- 已對名稱解析進行改善。 在這項作業中，除了 RPC 與 NetBIOS 動態解析外，感應器可能會發出 TLS Client Hello 封包至端點 RDP 連接埠 (3389)。 
 - 此版本包含針對多個問題的修正和改善。 
 
 ## <a name="azure-atp-release-230"></a>Azure ATP 2.30 版
@@ -201,12 +209,12 @@ ms.locfileid: "39335974"
 發行日期：2018 年 3 月 11 日
 
 **新的和更新的偵測項目**
-  - 可疑服務的建立作業 – 攻擊者嘗試在您的網路上執行可疑的服務。 Azure ATP 發現特定電腦上有人正在執行可疑的新服務時，會產生警示。 此偵測是以事件為基礎 (不是網路流量)，偵測位置是您網路中將事件 7045 轉寄至 Azure ATP 的任何網域控制站。 如需詳細資訊，請參閱[可疑活動指南](suspicious-activity-guide.md)。
+  - 可疑服務的建立作業 – 攻擊者嘗試在您的網路上執行可疑的服務。 Azure ATP 發現特定電腦上有人正在執行可疑的新服務時，會產生警示。 這項偵測是以事件為基礎 (不是網路流量)，偵測位置是您網路中將事件 7045 轉寄至 Azure ATP 的任何網域控制站。 如需詳細資訊，請參閱[可疑活動指南](suspicious-activity-guide.md)。
 
 **改良的調查**
   - Azure ATP 包含豐富的[實體設定檔](entity-profiles.md)。 實體設定檔為您提供專為深入調查使用者活動所設計的平台。這包括他們存取的資源、登入的電腦及其他更多。 實體設定檔也提供目錄資料，讓您識別往來實體的潛在橫向移動路徑，讓您深入了解您組織中的潛在漏洞。
 
-  - ATP 可讓您將實體手動標記為*機密*，以加強偵測和監視。 此標記會影響很多 Azure ATP 偵測，例如機密群組修改偵測和[橫向移動路徑](use-case-lateral-movement-path.md)，這些都仰賴於視為機密的實體。
+  - ATP 可讓您將實體手動標記為「機密」，以加強偵測和監視。 這項標記會影響很多 Azure ATP 偵測，例如機密群組修改偵測和[橫向移動路徑](use-case-lateral-movement-path.md)，這些都仰賴於視為機密的實體。
 
 **可協助您調查的新報表**
   - [在純文字格式報表中公開的密碼](reports.md)可讓您偵測服務傳送的帳戶認證何時會以純文字傳送。 這可讓您調查服務，並改善您的網路安全性層級。 此報表會取代純文字的可疑活動警示。
@@ -218,7 +226,7 @@ ms.locfileid: "39335974"
  -  Azure ATP 感應器基礎結構已改進效能：流量的彙總檢視可最佳化 CPU 和封包管線，並重複使用網域控制站的通訊端，將 SSL 工作階段減少至 DC。
 
 ## <a name="see-also"></a>另請參閱
-- [Azure ATP 先決條件](atp-prerequisites.md)
+- [Azure ATP 必要條件](atp-prerequisites.md)
 - [Azure ATP 容量規劃](atp-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-forwarding.md#configuring-windows-event-forwarding)

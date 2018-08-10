@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4e6a7d90ad5670b3d1c01ba70d7b5a81e8808b5e
-ms.sourcegitcommit: 759e99f670c42c2dd60d07b2200d3de01ddf6055
+ms.openlocfilehash: 4667e13af4e86a18d1b50a2ea575f9c749f0c541
+ms.sourcegitcommit: ca6153d046d8ba225ee5bf92cf55d0bd57cf4765
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39335872"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39585232"
 ---
 適用於：Azure 進階威脅防護
 
@@ -101,7 +101,7 @@ ms.locfileid: "39335872"
 
 **調查**
 
-先查看警示的描述，以了解要處理上述三種偵測類型的哪一種。 如需詳細資訊，請下載 Excel 試算表。
+先查看警示的描述，以了解您處理的是上述三種偵測類型的哪一種。 如需詳細資訊，請下載 Excel 試算表。
 
 1.  基本架構金鑰 - 您可以使用 [Azure ATP 小組所撰寫的掃描程式](https://gallery.technet.microsoft.com/Aorato-Skeleton-Key-24e46b73) \(英文\)，來檢查基本架構金鑰是否已影響到您的網域控制站。 如果掃描程式在一或多個網域控制站上找到惡意程式碼，則為真肯定。
 
@@ -125,7 +125,7 @@ ms.locfileid: "39335872"
 2.  黃金票證 - 遵循[黃金票證](#golden-ticket)可疑活動的指示進行。   
     此外，由於建立黃金票證需要網域系統管理員權限，因此請實作[傳遞雜湊建議](http://aka.ms/PtH)。
 
-3.  越過雜湊 - 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 這可防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引。 另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。 由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](http://aka.ms/PtH)的最佳做法。
+3.  越過雜湊 - 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 這可防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指導方針。 另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。 由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](http://aka.ms/PtH)的最佳做法。
 
 ## <a name="honeytoken-activity"></a>Honeytoken 活動
 
@@ -191,7 +191,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 具有網域系統管理員權限的攻擊者可能會危害 [KRBTGT 帳戶](https://technet.microsoft.com/library/dn745899(v=ws.11).aspx#Sec_KRBTGT)。 他們可以利用 KRBTGT 帳戶建立 Kerberos 票證授權票證 (TGT)，以提供任何資源的授權，並將票證到期日設定為任何時間。 這個假 TGT 稱為「黃金票證」，可讓攻擊者在網路上持續存在。
 
 在此偵測中，當 Kerberos 票證授與的票證使用超過[使用者票證最長存留期](https://technet.microsoft.com/library/jj852169(v=ws.11).aspx)中指定的允許時間時，就會觸發警示。這是**時間異常**黃金票證攻擊，若是透過不存在的帳戶，則是**不存在的帳戶**黃金票證攻擊。
-安全性原則。
+
 
 **調查**
 
@@ -276,21 +276,6 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 您可以利用 [AD ACL 掃描程式](https://blogs.technet.microsoft.com/pfesweplat/2013/05/13/take-control-over-ad-permissions-and-the-ad-acl-scanner-tool/)或建立 Windows PowerShell 指令碼，以判斷誰在網域中具有這些權限。
 
 
-## <a name="password-exposed-in-cleartext-report"></a>密碼在純文字報表中曝光
-
-**描述**
-
-某些服務會以純文字傳送帳戶認證。 即使是使用者帳戶，也會發生此情況。 監視網路流量的攻擊者可能會惡意攔截並重複使用這些認證。 
-
-**調查**
-
-按一下報表頁面，並下載「密碼在純文字報表中曝光」。 在 Excel 試算表中查看哪些帳戶已曝光。
-來源電腦上通常會有使用 LDAP 簡單繫結的指令碼或舊版應用程式。
-
-**補救**
-
-確認來源電腦上的設定，並確定未使用 LDAP 簡單繫結。 您可以改用 LDAP SAL 或 LDAPS，而不要使用 LDAP 簡單繫結。
-
 ## <a name="privilege-escalation-using-forged-authorization-data"></a>使用偽造授權資料提升權限
 
 **描述**
@@ -303,7 +288,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 2. 目的地電腦 (在 [已存取] 欄下) 是否已透過 MS14-068 (網域控制站) 或 MS11-013 (伺服器) 修補？ 如果是，請**關閉**可疑活動 (這是誤判)。
 
-3. 如果否，來源電腦, 執行 (在 [來源] 欄下) 是否為已知要修改 PAC 的 OS/應用程式？ 如果是，請**隱藏**可疑活動 (這是良性真肯定)。
+3. 如果否，源電腦是否執行 (在 [來源] 欄下) 已知會修改 PAC 的 OS/應用程式？ 如果是，請**隱藏**可疑活動 (這是良性真肯定)。
 
 4. 如果上述兩個問題的答案均為否，則假設這是惡意的。
 
@@ -377,7 +362,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 **描述**
 
-您的 DNS 伺服器包含您網路中所有電腦、IP 位址和服務的對應。 攻擊者會使用此資訊來對應您的網路結構，並鎖定感興趣的電腦以在稍後用於攻擊步驟。
+您的 DNS 伺服器包含您網路中所有電腦、IP 位址和服務的對應。 攻擊者會使用這項資訊來對應您的網路結構，並鎖定感興趣的電腦以在稍後用於攻擊步驟。
 
 DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 伺服器的 AXFR (傳輸) 要求。
 
@@ -392,14 +377,14 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 **補救**
 
 您可以停用區域傳輸，或將區域傳輸僅限於指定的 IP 位址，來保護內部 DNS 伺服器，以防止發生使用 DNS 探查。 如需限制區域傳輸的詳細資訊，請參閱 [Restrict Zone Transfers](https://technet.microsoft.com/library/ee649273(v=ws.10).aspx) (限制區域傳輸)。
-「修改區域傳輸」是檢查清單中的一個工作，應該加以解決才能[保護 DNS 伺服器免受內部和外部攻擊](https://technet.microsoft.com/library/cc770432(v=ws.11).aspx)。
+「修改區域傳輸」是檢查清單中的一項工作，應該加以解決才能[保護 DNS 伺服器免受內部和外部攻擊](https://technet.microsoft.com/library/cc770432(v=ws.11).aspx)。
 
 ## <a name="reconnaissance-using-smb-session-enumeration"></a>使用 SMB 工作階段列舉探查
 
 
 **描述**
 
-伺服器訊息區 (SMB) 列舉可讓攻擊者取得使用者最近登入位置的相關資訊。 一旦攻擊者擁有此資訊，他們就可以在網路中橫向移動來到達特定敏感性帳戶。
+伺服器訊息區 (SMB) 列舉可讓攻擊者取得使用者最近登入位置的相關資訊。 一旦攻擊者擁有這項資訊，他們就可以在網路中橫向移動來到達特定敏感性帳戶。
 
 在此偵測中，對網域控制站執行 SMB 工作階段列舉時，就會觸發警示，因為這不應該發生。
 

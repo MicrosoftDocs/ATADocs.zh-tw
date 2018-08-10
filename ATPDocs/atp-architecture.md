@@ -2,10 +2,10 @@
 title: Azure 進階威脅防護架構 | Microsoft Docs
 description: 描述 Azure 進階威脅防護 (ATP) 的架構
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 7/4/2018
+ms.date: 8/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3f99aff656f6eff67a4077817c761c7627511bb2
-ms.sourcegitcommit: 40dbce8045f689376a50275fb12e3c5c32ca8092
+ms.openlocfilehash: 8264799f3aad2fb27287f56513458f34a3a7b0c6
+ms.sourcegitcommit: 14c05a210ae92d35100c984ff8c6d171db7c3856
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/04/2018
-ms.locfileid: "37799175"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567639"
 ---
 適用於：Azure 進階威脅防護
 
 
 # <a name="azure-atp-architecture"></a>Azure ATP 架構
-此圖表能詳細說明 Azure 進階威脅防護的架構：
+Azure 進階威脅防護架構：
 
 ![Azure ATP 架構拓撲圖表](media/atp-architecture-topology.png)
 
@@ -110,13 +110,13 @@ Azure ATP 工作區入口網站可讓您管理下列 Azure ATP 功能：
 
 ## <a name="azure-atp-sensor-and-azure-atp-standalone-sensor"></a>Azure ATP 感應器和 Azure ATP 獨立感應器
 
-**Azure ATP 感應器**和 **Azure ATP 獨立感應器**兩者都有相同的核心功能：
+**Azure ATP 感應器**和 **Azure ATP 獨立感應器**都有相同的核心功能：
 
 -   擷取並檢查網域控制站的網路流量。 這是 Azure ATP 獨立感應器的連接埠鏡像流量，和 Azure ATP 感應器中網域控制站的本機流量。 
 
 -   直接從網域控制站 (針對 ATP 感應器) 或從 SIEM 或 Syslog 伺服器 (針對 ATP 獨立感應器) 接收 Windows 事件
 
--  從您的 VPN 提供者接收 RADIUS 帳戶處理資訊
+-   從您的 VPN 提供者接收 RADIUS 帳戶處理資訊
 
 -   從 Active Directory 網域擷取使用者和電腦的相關資料
 
@@ -132,7 +132,7 @@ Azure ATP 獨立感應器會從您的網路接收網路流量和 Windows 事件�
 
 |||
 |-|-|
-|網路接聽程式|網路接聽程式會擷取網路流量並剖析流量。 這項工作會使用大量的 CPU，因此在規劃 Azure ATP 感應器或 Azure ATP 獨立感應器時，請務必檢查 [Azure ATP 必要條件](atp-prerequisites.md)。|
+|網路接聽程式|網路接聽程式會擷取網路流量並剖析流量。 此工作會使用大量的 CPU，因此在規劃 Azure ATP 感應器或 Azure ATP 獨立感應器時，請務必檢查 [Azure ATP 必要條件](atp-prerequisites.md)。|
 |事件接聽程式|事件接聽程式會擷取並剖析從網路上 SIEM 伺服器轉寄的 Windows 事件。|
 |Windows 事件記錄讀取器|Windows 事件記錄讀取器會讀取及剖析從網域控制站轉寄至 Azure ATP 獨立感應器之 Windows 事件記錄的 Windows 事件。|
 |網路活動轉譯程式 | 將剖析的流量轉譯為 Azure ATP 所使用的流量邏輯表示法 (NetworkActivity)。
@@ -176,7 +176,7 @@ Azure ATP 感應器包含的監視元件，會評估其執行所在網域控制�
 
 
 ## <a name="your-network-components"></a>您的網路元件
-若要使用 Azure ATP，請務必檢查是否已設定好下列元件。
+檢查是否已設定好下列元件，以搭配 Azure ATP 使用。
 
 ### <a name="port-mirroring"></a>連接埠鏡像
 如果使用 Azure ATP 獨立感應器，就必須為要監視的網域控制站設定連接埠鏡像，並使用實體或虛擬交換器將 Azure ATP 獨立感應器設定為目的地。 另一個選項是使用網路 TAP。 如果只有部分 (而非全部) 的網域控制站受到監視，Azure ATP 仍可運作，但是偵測比較沒有效率。

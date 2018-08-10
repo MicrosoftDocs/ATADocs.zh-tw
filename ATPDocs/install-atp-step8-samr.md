@@ -2,10 +2,10 @@
 title: 設定 SAM-R 以在 Azure ATP 中啟用橫向移動路徑偵測 | Microsoft Docs
 description: 描述如何設定 SAM-R 以在 Azure ATP 中啟用橫向移動路徑偵測
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 7/17/2018
+ms.date: 7/31/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b09adce3-0fbc-40e3-a53f-31f57fe79ca3
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a529c9751fc993ec0913a54772d46161f39199f6
-ms.sourcegitcommit: 8feb9b65dc0e1de0ace00aca11784e54f9852a15
+ms.openlocfilehash: 955051a93b017af2f1d97bccf32735e9ceaaf19f
+ms.sourcegitcommit: 14c05a210ae92d35100c984ff8c6d171db7c3856
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39098163"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567843"
 ---
 適用於：Azure 進階威脅防護
 
@@ -32,7 +32,7 @@ ms.locfileid: "39098163"
 
 [橫向移動路徑](use-case-lateral-movement-path.md)偵測有賴於識別特定電腦上本機系統管理員的查詢。 這些查詢是透過[步驟 2.連線到 AD](install-atp-step2.md) 中建立的 Azure ATP 服務帳戶，使用 SAM-R 通訊協定來執行。
  
-若要確保 Windows 用戶端和伺服器允許 Azure ATP 帳戶執行這項 SAM R 作業，您必須修改 [群組原則]，在 [網路存取] 原則列出的已設定帳戶之外新增 Azure ATP 服務帳戶。
+若要確保 Windows 用戶端和伺服器允許 Azure ATP 帳戶執行 SAM-R，您必須修改 [群組原則]，在 [網路存取] 原則列出的已設定帳戶之外新增 Azure ATP 服務帳戶。
 
 1. 找出原則：
 
@@ -45,9 +45,12 @@ ms.locfileid: "39098163"
  
   ![新增服務](./media/samr-add-service.png)
 
-3. **AATP 服務** (在安裝期間建立的 Azure ATP 服務) 現在具備在環境中執行 SAMR 的適當權限。
+3. **AATP 服務** (在安裝期間建立的 Azure ATP 服務) 現在具備在環境中執行 SAM-R 的適當權限。
 
-如需有關 SAM-R 以及此群組原則的詳細資訊，請參閱[網路存取：限制允許對 SAM 發出遠端呼叫的用戶端](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls) \(英文\)。
+> [!NOTE]
+> 強制執行新原則之前，請確定您的環境仍然是安全的，不要透過在稽核模式中啟用及驗證您建議的變更而影響應用程式相容性。
+
+如需有關 SAM-R 與此群組原則的詳細資訊，請參閱[網路存取：限制允許對 SAM 發出遠端呼叫的用戶端](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls) \(機器翻譯\)。
 
 
 >[!div class="step-by-step"]

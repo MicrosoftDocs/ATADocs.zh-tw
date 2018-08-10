@@ -2,10 +2,10 @@
 title: 設定 SAM-R 以在 Advanced Threat Analytics 中啟用橫向移動路徑偵測 | Microsoft Docs
 description: 描述如何設定 SAM-R 以在 Advanced Threat Analytics (ATA) 中啟用橫向移動路徑偵測
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 4/25/2018
+ms.date: 7/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 7597ed25-87f5-472c-a496-d5f205c9c391
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6e32f3ce59b049d0ced68a1330eefca7315bf49d
-ms.sourcegitcommit: 5c0f914b44bfb8e03485f12658bfa9a7cd3d8bbc
+ms.openlocfilehash: 65068251436b17aac9ad8efc3d4842c8e2a109cf
+ms.sourcegitcommit: 14c05a210ae92d35100c984ff8c6d171db7c3856
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2018
-ms.locfileid: "32298362"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567962"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -44,9 +44,12 @@ ms.locfileid: "32298362"
  
   ![新增服務](./media/samr-add-service.png)
 
-3. **ATA 服務** (在安裝期間建立的 ATA 服務) 現在具備在環境中執行 SAMR 的適當權限。
+3. **ATA 服務** (在安裝期間建立的 ATA 服務) 現在具備在環境中執行 SAM-R 的適當權限。
 
-如需有關 SAM-R 以及此群組原則的詳細資訊，請參閱[網路存取：限制允許對 SAM 發出遠端呼叫的用戶端](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls) \(英文\)。
+> [!NOTE]
+> 強制執行新原則之前，請確定您的環境仍然是安全的，不要透過在稽核模式中啟用及驗證您建議的變更而影響應用程式相容性。 
+
+ 如需有關 SAM-R 與群組原則的詳細資訊，請參閱[網路存取：限制允許對 SAM 發出遠端呼叫的用戶端](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls) \(機器翻譯\)。
 
 
 >[!div class="step-by-step"]

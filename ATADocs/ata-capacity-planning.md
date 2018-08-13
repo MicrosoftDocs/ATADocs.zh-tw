@@ -12,12 +12,12 @@ ms.prod: ''
 ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e58fe62fc655fed8f17ae800dda20e022e198a26
-ms.sourcegitcommit: 63a36cd96aec30e90dd77bee1d0bddb13d2c4c64
+ms.openlocfilehash: 5fafa4e8e9644c870a92c1684fa5165ef68b31a7
+ms.sourcegitcommit: 1de2b047c0e9f92a106169f7634c480f694baf10
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "30010018"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "39585101"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -155,6 +155,7 @@ ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站�
 |10,000|3|12|
 |20,000|6|24|
 |50,000|16|48|
+
 &#42;由特定 ATA 閘道在當天最忙碌的時段監視的所有網域控制站上，每秒封包的平均總數。
 
 &#42;網域控制站的連接埠鏡像總流量不能超過 ATA 閘道上的擷取 NIC 容量。

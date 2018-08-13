@@ -14,10 +14,10 @@ ms.assetid: 27b139e5-12b9-4953-8f53-eb58e8ce0038
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 47a8b5c52bf978d5e07007a3402a567be39e2157
-ms.sourcegitcommit: 4d2ac5b02c682840703edb0661be09055d57d728
+ms.sourcegitcommit: 1de2b047c0e9f92a106169f7634c480f694baf10
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 08/13/2018
 ms.locfileid: "24018553"
 ---
 # <a name="whats-new-in-ata-version-16"></a>ATA 1.6 版的新功能

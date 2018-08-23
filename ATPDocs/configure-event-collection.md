@@ -2,10 +2,10 @@
 title: 安裝 Azure 進階威脅防護 | Microsoft Docs
 description: 在安裝 ATP 的這個步驟中，您要設定資料來源。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 3/28/2018
+ms.date: 8/15/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,20 +13,18 @@ ms.technology: ''
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2c2a8e6d70d937c559c110a18feec4afc75271e9
-ms.sourcegitcommit: 45d0108d0cbf8fe7550d13486d3d9c06c1e58506
+ms.openlocfilehash: 8f52a8e5851cee9fc0ff15d97cd39e98695f9a83
+ms.sourcegitcommit: 121c49d559e71741136db1626455b065e8624ff9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30213977"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "41734649"
 ---
 適用於：Azure 進階威脅防護
 
 
 
-# <a name="install-azure-atp"></a>安裝 Azure ATP
-
-## <a name="configure-event-collection"></a>設定事件收集
+# <a name="configure-event-collection"></a>設定事件收集
 
 為增強偵測功能，Azure ATP 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757 和 7045。 Azure ATP 感應器可以直接讀取這些事件。如果沒有部署 Azure ATP 感應器，則有兩種方法可以將之轉寄到 Azure ATP 獨立感應器：一種是將 Azure ATP 獨立感應器設定為接聽 SIEM 事件，另一種是[設定 Windows 事件轉寄](configure-event-forwarding.md)。
 
@@ -35,7 +33,7 @@ ms.locfileid: "30213977"
 
 除了收集和分析進出網域控制站的網路流量之外，Azure ATP 可以使用 Windows 事件來進一步加強偵測。 它會針對 NTLM 使用能增強各種偵測的事件 4776，並使用事件 4732、4733、4728、4729、4756、4757 和 7045 以增強偵測機密群組修改與服務建立。 這可從您的 SIEM 接收，或藉由在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
 
-### <a name="siemsyslog"></a>SIEM/Syslog
+## <a name="siemsyslog"></a>SIEM/Syslog
 為了讓 Azure ATP 可以取用 Syslog 伺服器上的資料，您需要執行下列步驟︰
 
 -   將您的 Azure ATP 感應器伺服器設定為接聽及接受從 SIEM/Syslog 伺服器轉寄的事件。
@@ -54,7 +52,7 @@ ms.locfileid: "30213977"
 > [!NOTE]
 >如果您沒有使用 SIEM/Syslog 伺服器，則可將 Windows 網域控制站設定為轉寄所有必要事件以供 ATP 收集及分析。
 
-### <a name="configuring-the-azure-atp-sensor-to-listen-for-siem-events"></a>設定 Azure ATP 感應器以接聽 SIEM 事件
+## <a name="configuring-the-azure-atp-sensor-to-listen-for-siem-events"></a>設定 Azure ATP 感應器以接聽 SIEM 事件
 
 1.  在 Azure ATP 設定中，按一下 [資料來源] 下的 [SIEM]，開啟 [Syslog]，然後按一下 [儲存]。
 
@@ -64,7 +62,7 @@ ms.locfileid: "30213977"
 
 Azure ATP 支援下列格式的 SIEM 事件：  
 
-### <a name="rsa-security-analytics"></a>RSA 安全性分析
+## <a name="rsa-security-analytics"></a>RSA 安全性分析
 &lt;Syslog Header&gt;RsaSA\n2015-May-19 09:07:09\n4776\nMicrosoft-Windows-Security-Auditing\nSecurity\XXXXX.subDomain.domain.org.il\nYYYYY$\nMMMMM \n0x0
 
 -   Syslog Header 是選擇性參數。
@@ -93,7 +91,7 @@ Azure ATP 支援下列格式的 SIEM 事件：
 
 -   順序很重要，而且訊息中不應包含任何其他東西。
 
-### <a name="hp-arcsight"></a>HP Arcsight
+## <a name="hp-arcsight"></a>HP Arcsight
 CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The domain controller attempted to validate the credentials for an account.|Low| externalId=4776 cat=Security rt=1426218619000 shost=KKKKKK dhost=YYYYYY.subDomain.domain.com duser=XXXXXX cs2=Security cs3=Microsoft-Windows-Security-Auditing cs4=0x0 cs3Label=EventSource cs4Label=Reason or Error Code
 
 -   必須符合通訊協定定義。
@@ -124,7 +122,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
     -   “Reason or Error Code” = NTLM 的結果碼
 
-### <a name="splunk"></a>Splunk
+## <a name="splunk"></a>Splunk
 &lt;Syslog Header&gt;\r\nEventCode=4776\r\nLogfile=Security\r\nSourceName=Microsoft-Windows-Security-Auditing\r\nTimeGenerated=20150310132717.784882-000\r\ComputerName=YYYYY\r\nMessage=
 
 電腦會嘗試驗證帳戶的認證。
@@ -161,7 +159,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
 -   「索引鍵=值」對的順序不重要。
 
-### <a name="qradar"></a>QRadar
+## <a name="qradar"></a>QRadar
 QRadar 可讓您透過代理程式收集事件。 如果使用代理程式收集資料，則會收集不含毫秒資料的時間格式。 因為 Azure ATP 需要毫秒資料，所以必須將 QRadar 設定為使用無代理程式 Windows 事件收集。 如需詳細資訊，請參閱 [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar：使用 MSRPC 通訊協定的無代理程式 Windows 事件集合")。
 
     <13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0

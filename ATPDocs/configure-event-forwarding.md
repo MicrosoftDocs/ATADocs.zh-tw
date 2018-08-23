@@ -2,10 +2,10 @@
 title: 在 Azure 進階威脅防護中設定 Windows 事件轉寄 | Microsoft Docs
 description: 描述使用 Azure ATP 設定 Windows 事件轉寄的選項
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 02/21/2018
+ms.date: 08/12/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,14 +13,14 @@ ms.technology: ''
 ms.assetid: 3547519f-8d9c-40a9-8f0e-c7ba21081203
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1b37bcbfc304ee0ef71d80eb84f6298d64e50d3f
-ms.sourcegitcommit: eebf1156aaae199b6aaa7e431cd6372e572b1e9f
+ms.openlocfilehash: 730ff2e96da8dc6329cf4855e9e7d279ef5a067d
+ms.sourcegitcommit: 845b8c0b6e0ec2d2e882672fd9f17ed573fafa56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39396412"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "41734678"
 ---
-適用於：Azure 進階威脅防護 1.9 版
+適用於：Azure 進階威脅防護
 
 
 
@@ -61,14 +61,14 @@ ms.locfileid: "39396412"
 
 4.  按兩下 [設定目標訂閱管理員]。
    
-    1.  選取 [已啟用] 。
+    1.  選取 [啟用]。
     2.  在 [選項] 下，按一下 [顯示]。
-    3.  在 [SubscriptionManagers] 下，輸入下列值，然後按一下 [確定]：*Server=http://<fqdnATPSensor>:5985/wsman/SubscriptionManager/WEC,Refresh=10* (例如：Server=http://atpsensor9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
- 
-   ![設定目標訂閱影像](media/wef%202%20config%20target%20sub%20manager.png)
-   
-    5.  按一下 [確定] 。
-    6.  在提升權限的命令提示字元中，輸入 *gpupdate /force*。 
+    3.  在 [SubscriptionManagers] 下，輸入下列值，然後按一下 [確定]：*Server=`http://<fqdnATPSensor>:5985/wsman/SubscriptionManager/WEC,Refresh=10*` (例如：Server=`http://atpsensor9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10`)
+    
+    ![設定目標訂閱影像](media/wef%202%20config%20target%20sub%20manager.png)
+    
+5.  按一下 [確定]。
+6.  在提升權限的命令提示字元中，輸入 *gpupdate /force*。 
 
 **步驟 3：在 Azure ATP 獨立感應器上執行下列步驟** 
 
@@ -85,13 +85,13 @@ ms.locfileid: "39396412"
         ![事件檢視器影像](media/wef3%20event%20viewer.png)
    
         
-        3.  按一下 [確定] 。
+        3.  按一下 [確定]。
    4.   按一下 [選取事件]。
 
         1. 按一下 [依記錄]，然後選取 [安全性]。
         2. 在 [Includes/Excludes Event ID (包含/排除事件識別碼)] 欄位中鍵入事件編號，然後按一下 [確定]。 例如，輸入 4776，如下列範例所示：
 
- ![查詢篩選影像](media/wef-4-query-filter.png)
+        ![查詢篩選影像](media/wef-4-query-filter.png)
 
    5.   以滑鼠右鍵按一下建立的訂閱，然後選取 [執行階段狀態]，以查看該狀態是否有任何問題。 
    6.   幾分鐘後，請檢查您設定要轉寄的事件是否出現在 Azure ATP 上的 [轉送的事件] 中。

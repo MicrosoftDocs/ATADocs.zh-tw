@@ -2,10 +2,10 @@
 title: Advanced Threat Analytics 的災害復原 | Microsoft Docs
 description: 描述如何於災害發生後快速復原 ATA 功能
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 8/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 72598380f574e0475e4796887f44131009911be2
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: 5e6fac695e1dc51a1a0afcf20330918be82c75e9
+ms.sourcegitcommit: 121c49d559e71741136db1626455b065e8624ff9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30009548"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "41734680"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -54,12 +54,12 @@ ms.locfileid: "30009548"
     1. 從 MongoDB 移除預設 ATA 中心系統設定檔文件： 
         1. 移至 **C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**。 
         2. 執行 `mongo.exe ATA` 
-        3. 啟動 ATA 中心服務。
-        4. 執行此命令以移除預設系統設定檔：`db.SystemProfile.remove({})`
+        3. 執行此命令以移除預設系統設定檔：`db.SystemProfile.remove({})`
     2. 使用步驟 1 中的備份檔案執行命令：`mongoimport.exe --db ATA --collection SystemProfile --file "<SystemProfile.json backup file>" --upsert`。</br>
     如需尋找並匯入備份檔案的完整解釋，請參閱[匯出和匯入 ATA 組態](ata-configuration-file.md)。 
-    3. 開啟 ATA 主控台。 您應該會在 [組態/閘道] 索引標籤下看見所有 ATA 閘道皆已連結。 
-    4. 請務必定義[目錄服務使用者](install-ata-step2.md)並選擇[網域控制器同步器](install-ata-step5.md)。 
+    3. 啟動 ATA 中心服務。
+    4. 開啟 ATA 主控台。 您應該會在 [組態/閘道] 索引標籤下看見所有 ATA 閘道皆已連結。
+    5. 請務必定義[目錄服務使用者](install-ata-step2.md)並選擇[網域控制器同步器](install-ata-step5.md)。 
 
 
 

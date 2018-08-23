@@ -2,10 +2,10 @@
 title: 安裝 Azure 進階威脅防護 - 步驟 5 | Microsoft Docs
 description: 安裝 Azure ATP 的步驟 5 可協助您設定 Azure ATP 獨立感應器的設定。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 2/21/2017
+ms.date: 8/12/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d7c95f8c-04f8-4946-9bae-c27ed362fcb0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a2e61758e06aedfe607afc0d3365227af872fe20
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 05355460ec8dac4febc24096e802135cf52e1cc8
+ms.sourcegitcommit: dc56b9e9533db1a2dc314b199e90191bb25adaba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
-ms.locfileid: "29444924"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "41734659"
 ---
 適用於：Azure 進階威脅防護
 
@@ -54,8 +54,7 @@ ms.locfileid: "29444924"
      - 針對專用伺服器上的 Azure ATP 獨立感應器，請選取設定為目的地鏡像連接埠的網路介面卡。 這些介面卡會接收鏡像網域控制站的流量。
      - 針對 Azure ATP 感應器，則應該是用來與組織中其他電腦通訊的所有網路介面卡。
 
-
-  - **網域同步器候選**：任何設為網域同步器候選的 Azure ATP 獨立感應器皆可負責進行 Azure ATP 與 Active Directory 網域之間的同步處理。 根據網域的大小而定，首次同步處理可能需要一些時間，而且會耗用大量資源。 根據預設，只有 Azure ATP 獨立感應器會設定為網域同步器候選。
+    - **網域同步器候選**：任何設為網域同步器候選的 Azure ATP 獨立感應器皆可負責進行 Azure ATP 與 Active Directory 網域之間的同步處理。 根據網域的大小而定，首次同步處理可能需要一些時間，而且會耗用大量資源。 根據預設，只有 Azure ATP 獨立感應器會設定為網域同步器候選。
    建議不要讓任何遠端站台 Azure ATP 感應器成為網域同步器候選。
    如果網域控制站是唯讀的，請勿將其設定為網域同步器候選。 如需詳細資訊，請參閱 [Azure ATP 架構](atp-architecture.md#azure-atp-sensor-features)。
   

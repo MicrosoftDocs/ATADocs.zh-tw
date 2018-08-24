@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2d14d0e9-1b03-4bcc-ae97-8fd41526ffc5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5ccac90a171c895ee8b4d5336a125ccd7fa66239
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: c889fc070ffaf79a89c072d83edf6cc6f1cd0413
+ms.sourcegitcommit: 121c49d559e71741136db1626455b065e8624ff9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
-ms.locfileid: "29445074"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "41734612"
 ---
 適用於：Azure 進階威脅防護
 
@@ -62,6 +62,8 @@ Azure ATP 會搜尋三種主要的攻擊︰惡意攻擊、異常行為和安全�
 -   越過雜湊
 -   偽造的 PAC (MS14-068)
 -   黃金票證
+    -   時間異常
+    -   非現有帳戶 - 新增
 -   惡意的複寫
 -   目錄服務列舉
 -   SMB 工作階段列舉
@@ -73,6 +75,9 @@ Azure ATP 會搜尋三種主要的攻擊︰惡意攻擊、異常行為和安全�
 -   加密降級
 -   遠端執行
 -   惡意的服務建立
+-   可疑網域控制站升級 (潛在的 DcShadow 攻擊) - 新增
+-   可疑複寫要求 (潛在 DCShadow 攻擊) - 新增
+-   VPN 
 
 
 Azure ATP 會偵測這些可疑的活動，並且在 Azure ATP 工作區入口網站中呈現各項資訊，包括人員、內容、時間和方式的清楚檢視。 透過監視此簡單且方便使用的儀表板，您就會警覺到 Azure ATP 懷疑網路中的用戶端 1 和用戶端 2 電腦上有傳遞票證攻擊。

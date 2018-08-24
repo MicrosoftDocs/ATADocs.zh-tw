@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8e7af3846d31031b645c65c7550b696fe4738e5d
-ms.sourcegitcommit: a9b8bc26d3cb5645f21a68dc192b4acef8f54895
+ms.openlocfilehash: a6b4f668533ab3169c10cfc9b194b8bd392db6d1
+ms.sourcegitcommit: 121c49d559e71741136db1626455b065e8624ff9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2018
-ms.locfileid: "39064061"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "41734687"
 ---
 適用於：Azure 進階威脅防護
 
@@ -31,14 +31,14 @@ Azure ATP 提供角色型安全性，可根據組織的特定安全性和合規�
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
-角色群組可針對 Azure ATP 啟用存取管理。 使用角色群組可以隔離安全性小組內的責任，並授與使用者執行工作所需的存取權。 本文說明存取管理和 Azure ATP 角色授權，並可協助您在 ATP 中開始使用角色群組。
+角色群組可針對 Azure ATP 啟用存取管理。 使用角色群組可以隔離安全性小組內的責任，並授與使用者執行工作所需的存取權。 此文章說明存取管理與 Azure ATP 角色授權，並可協助您在 ATP 中開始使用角色群組。
 
 > [!NOTE]
 > 租用戶 Azure Active Directory 上的任何全域管理員或安全性系統管理員，都會自動是 Azure ATP 系統管理員。
 
-## <a name="accessing-the-workspace-management-portal"></a>存取工作區管理入口網站
+## <a name="accessing-the-management-portal"></a>存取管理入口網站
 
-只有具備全域管理員或安全性系統管理員目錄角色的 Azure AD 使用者，才能存取工作區管理入口網站。 進入入口網站之後，您可以建立不同的工作區。 針對每個工作區，Azure ATP 服務會在 Azure Active Directory 租用戶中建立三個安全性群組：系統管理員、使用者、檢視者。 
+只有具備全域系統管理員或安全性系統管理員目錄角色的 Azure AD 使用者，才能存取管理入口網站。 進入入口網站之後，您可以建立您的工作區。 Azure ATP 服務會在 Azure Active Directory 租用戶中建立三個安全性群組：Administrators、Users、Viewers。 
 
 > [!NOTE]
 > Azure ATP 工作區入口網站的存取權只會授與工作區 Azure AD 安全性群組內的使用者，以及全域系統管理員和安全性系統管理員。

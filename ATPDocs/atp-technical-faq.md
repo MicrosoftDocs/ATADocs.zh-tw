@@ -2,10 +2,10 @@
 title: Azure 進階威脅防護常見問題集 | Microsoft Docs
 description: 提供關於 Azure ATP 的常見問題清單以及相關解答
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 3/13/2018
+ms.date: 8/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d7f7f4841c40fb78dc06bae1c06e3c57d2e7f7ee
-ms.sourcegitcommit: c77e378d18e654bea4b4af4f24cc941a6659ce99
+ms.openlocfilehash: 6550f6b6575af56eab7de911b22b1e4f27cff0f3
+ms.sourcegitcommit: 121c49d559e71741136db1626455b065e8624ff9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2018
-ms.locfileid: "29883945"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "41734667"
 ---
 適用於：Azure 進階威脅防護
 
@@ -31,19 +31,21 @@ ms.locfileid: "29883945"
 您可以直接透過 [Office 365 入口網站](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing)或雲端解決方案提供者 (CSP) 授權模型，取得 Enterprise Mobility + Security 5 (EMS E5) 的授權。                  
 
 ## <a name="what-should-i-do-if-the-azure-atp-sensor-or-standalone-sensor-doesnt-start"></a>如果 Azure ATP 感應器或獨立感應器無法啟動該怎麼辦？
-在目前的錯誤記錄檔中尋找最新的錯誤 (在 Azure ATP 安裝位置的 "Logs" 資料夾下)。
+在目前的錯誤[記錄檔](troubleshooting-atp-using-logs.md)中尋找最新的錯誤 (在 Azure ATP 安裝位置的 "Logs" 資料夾下)。
 
 ## <a name="how-can-i-test-azure-atp"></a>如何測試 Azure ATP？
-透過執行下列命令，您能以端對端測試的方式模擬可疑的活動：
+您能以端對端測試的方式模擬可疑的活動。 在下列案例中，我們模擬了 DNS 偵察：
 
--  使用 Nslookup.exe 進行 DNS 探查
-
-
-這需要針對受監視的網域控制站從遠端執行，而不是從 Azure ATP 獨立感應器執行。
-
+1.  確認已安裝 Azure ATP 感應器並已在網域控制站上設定 (或已安裝並設定獨立感應器與相關的連接埠鏡像)
+2.  開啟 CMD
+3.  執行下列命令：nslookup -<DC iP address>
+    1.  按 Enter
+    2.  輸入：Is -d <FQDN>
+    3.  視您的環境設定而定，從「拒絕查詢」到您的 DNS 記錄清單等都可能會不一樣。 
+4. 在 Azure ATP 主控台中檢視與模擬之 DNS 偵察相關的警示。 
 
 ## <a name="does-azure-atp-work-with-encrypted-traffic"></a>Azure ATP 是否能搭配加密的流量使用？
-Azure ATP 需要分析多個網路通訊協定，以及從 SIEM 或透過 Windows 事件轉寄收集到的事件。 系統並不會分析以搭配加密流量的網路通訊協定 (例如 LDAPS 及IPSEC) 為基礎的偵測。
+Azure ATP 需要分析多個網路通訊協定，以及從 SIEM 或透過 Windows 事件轉寄收集到的事件。  系統不會將具有加密流量的網路通訊協定 (例如，LDAPS 與 IPSEC) 解密，但會進行分析。
 
 
 ## <a name="does-azure-atp-work-with-kerberos-armoring"></a>Azure ATP 是否能搭配 Kerberos 保護使用？
@@ -81,7 +83,7 @@ Azure ATP 獨立感應器至少需要兩個網路介面卡：<br>1.連線到內�
 Azure ATP 與 SIEM 具有雙向整合，如下所示︰
 
 1. 可設定 Azure ATP 針對健康情況警示及在偵測到可疑活動時，將 Syslog 警示傳送至任何使用 CEF 格式的 SIEM 伺服器。
-2. 可設定 Azure ATP 以接收來自[這些 SIEM](configure-event-collection.md) 之 Windows 事件的 Syslog 訊息。
+2. 可以設定 Azure ATP 以接收來自[這些 SIEM](configure-event-collection.md) 之 Windows 事件的 Syslog 訊息。
 
 ## <a name="how-do-i-configure-the-azure-atp-sensors-to-communicate-with-azure-atp-cloud-service-when-i-have-a-proxy"></a>在有 Proxy 的情況下，我要如何設定 Azure ATP 感應器以和 Azure ATP 雲端服務通訊？
 
@@ -110,7 +112,7 @@ Azure ATP 與 SIEM 具有雙向整合，如下所示︰
 是。 因為電腦帳戶 (以及任何其他實體) 可以用來執行惡意活動，所以 Azure ATP 會監視所有電腦帳戶的行為，以及環境中的所有其他實體。
 
 ## <a name="can-azure-atp-support-multi-domain-and-multi-forest"></a>Azure ATP 是否能支援多網域和多樹系？
-Azure 進階威脅防護支援在相同樹系邊界內的多網域環境。 多樹系針對每個樹系皆需要一個 Azure ATP 工作區。
+Azure 進階威脅防護支援多網域環境與多樹系。 此功能目前處於公開預覽狀態。 如需詳細資訊與已知限制，請參閱[多樹系支援](atp-multi-forest.md)。
 
 ## <a name="can-you-see-the-overall-health-of-the-deployment"></a>可以看到部署的整體健全狀況嗎？
 是，您可以檢視部署的整體健全狀況，以及與設定、連線等相關的特定問題，而且系統會在問題發生時警示您。

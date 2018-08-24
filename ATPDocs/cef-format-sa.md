@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: adfb47e8dd006b660c4a031080eaecd6d2d5be84
-ms.sourcegitcommit: ca6153d046d8ba225ee5bf92cf55d0bd57cf4765
+ms.openlocfilehash: 840f6cb885d4917039af168d00b7094b8f6567c4
+ms.sourcegitcommit: 121c49d559e71741136db1626455b065e8624ff9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39585249"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "41734559"
 ---
 適用於：Azure 進階威脅防護
 

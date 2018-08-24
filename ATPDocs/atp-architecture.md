@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/05/2018
+ms.date: 8/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8264799f3aad2fb27287f56513458f34a3a7b0c6
-ms.sourcegitcommit: 14c05a210ae92d35100c984ff8c6d171db7c3856
+ms.openlocfilehash: a6cb3ca9b4f9498caa0810cec129c24b0f2e587b
+ms.sourcegitcommit: 121c49d559e71741136db1626455b065e8624ff9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567639"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "41734639"
 ---
 適用於：Azure 進階威脅防護
 
@@ -28,20 +28,17 @@ Azure 進階威脅防護架構：
 
 ![Azure ATP 架構拓撲圖表](media/atp-architecture-topology.png)
 
-Azure ATP 會運用使用實體或虛擬交換器針對 Azure ATP 獨立感應器的連接埠鏡像，監視網域控制站的網路流量。 如果您直接在網域控制站上部署 Azure ATP 感應器，則可免除連接埠鏡像的需求。 此外，Azure ATP 可以利用 Windows 事件 (直接從網域控制站或 SIEM 伺服器轉寄)，分析攻擊和威脅的資料。 Azure ATP 會從 Azure ATP 獨立感應器和 Azure ATP 感應器接收已剖析的流量。 然後執行分析、執行決定性偵測，並執行機器學習和行為演算法，以了解您的網路，啟用異常偵測並警告您可疑的活動。
+Azure ATP 會運用使用實體或虛擬交換器針對 Azure ATP 獨立感應器的連接埠鏡像，監視網域控制站的網路流量。 如果您直接在網域控制站上部署 Azure ATP 感應器，則可免除連接埠鏡像的需求。 此外，Azure ATP 可以利用 Windows 事件 (直接從網域控制站或 SIEM 伺服器轉寄)，分析攻擊和威脅的資料。 Azure ATP 會從 Azure ATP 感應器和 Azure ATP 獨立感應器接收已剖析的流量。 接著，Azure ATP 會執行分析、執行確定性偵測，並執行機器學習和行為演算法，以了解您的網路，啟用異常偵測並警告您可疑的活動。
 
-本節說明網路與事件擷取的流程，並深入描述下列 ATP 主要元件的功能︰Azure ATP 獨立感應器、Azure ATP 感應器 (核心功能與 Azure ATP 獨立感應器相同) 和 Azure ATP 雲端服務。 
+此節說明網路與事件擷取的流程，並向下切入下列 ATP 主要元件的功能︰Azure ATP 感應器、Azure ATP 獨立感應器 (核心功能與 Azure ATP 感應器相同，但需要額外的硬體、連接埠鏡像與設定，且不支援 Windows 事件追蹤 (ETW)) 與 Azure ATP 雲端服務。 
 
-直接在網域控制站上安裝時，感應器會直接從網域控制站存取所需的事件記錄檔。 當感應器已剖析這些記錄檔和網路流量之後，Azure ATP 只會傳送此剖析資訊給 Azure ATP 服務 (並非所有的記錄檔)。
+直接在網域控制站上安裝時，ATP 感應器會直接從網域控制站存取所需的事件記錄檔。 當感應器已剖析這些記錄檔和網路流量之後，Azure ATP 只會傳送此剖析資訊給 Azure ATP 服務 (並非所有的記錄檔)。
 
 ## <a name="azure-atp-components"></a>Azure ATP 元件
 Azure ATP 包含下列元件：
 
 -   **Azure ATP 工作區管理入口網站** <br>
-Azure ATP 工作區管理入口網站可讓您建立工作區，並整合其他 Microsoft 服務。
-
-> [!NOTE]
-> 只有來自單一 Active Directory 樹系的感應器才能連線至單一工作區。
+Azure ATP 工作區管理入口網站可讓您建立並管理工作區，並整合其他 Microsoft 服務。
 
 -   **Azure ATP 工作區入口網站** <br>
 Azure ATP 工作區入口網站會接收來自 ATP 感應器和獨立感應器的資料。 它會監視、管理，並調查您環境中的威脅。
@@ -50,30 +47,28 @@ Azure ATP 工作區入口網站會接收來自 ATP 感應器和獨立感應器�
 Azure ATP 感應器直接安裝在網域控制站上並直接監視其流量，不需要專用伺服器或設定連接埠鏡像。 
 
 -   **Azure ATP 獨立感應器**<br>
-Azure ATP 獨立感應器是安裝在使用連接埠鏡像或網路 TAP 來監視網域控制站流量的專用伺服器上。 它可以替代 Azure ATP 感應器。
+Azure ATP 獨立感應器是安裝在使用連接埠鏡像或網路 TAP 來監視網域控制站流量的專用伺服器上。 這是 Azure ATP 感應器的替代解決方案，Azure ATP 感應器需要額外的硬體、連接埠鏡像與設定。 Azure ATP 獨立感應器不支援 ATP 感應器支援的 Windows 事件追蹤 (ETW) 型偵測。 
 
 ## <a name="deployment-options"></a>部署選項
 您可以使用下列感應器組合部署 Azure ATP︰
 
 -   **只使用 Azure ATP 感應器**<br>
-Azure ATP 部署可以只包含 Azure ATP 感應器：Azure ATP 感應器是部署在每個網域控制站上，不需要設定任何其他伺服器或連接埠鏡像。
+Azure ATP 部署可以只包含 Azure ATP 感應器：Azure ATP 感應器是直接部署在每個網域控制站上，不需要設定任何其他伺服器或連接埠鏡像。
 
 -   **只使用 Azure ATP 獨立感應器** <br>
 您的 Azure ATP 部署可以只包含 Azure ATP 獨立感應器，不需要任何 Azure ATP 感應器：所有網域控制站都必須設定以啟用針對 Azure ATP 獨立感應器的連接埠鏡像，否則便必須具備網路 TAP。
 
 -   **同時使用 Azure ATP 獨立感應器和 Azure ATP 感應器**<br>
-您的 Azure ATP 部署同時包含 Azure ATP 獨立感應器和 Azure ATP 感應器。 Azure ATP 感應器會安裝在您部分的網域控制站上 (例如您分支網站中的所有網域控制站)。 同時，其他網域控制站則是由 Azure ATP 獨立感應器監視 (例如您主要資料中心中的大型網域控制站)。
+您的 Azure ATP 部署同時包含 Azure ATP 獨立感應器和 Azure ATP 感應器。 Azure ATP 感應器會安裝在您部分的網域控制站上 (例如您分支網站中的所有網域控制站)。 同時，其他網域控制站則是由 Azure ATP 獨立感應器監視 (例如您主要資料中心中的大型網域控制站)。 
 
 
-### <a name="azure-atp-workspace-management-portal"></a>Azure ATP 工作區管理入口網站
+### <a name="azure-atp-management-portal"></a>Azure ATP 管理入口網站
 
-Azure ATP 工作區管理入口網站可讓您：
+Azure ATP 管理入口網站可讓您：
 
--   建立及管理 Azure ATP 工作區
+-   建立及管理您的 Azure ATP 工作區
 
 -   與其他 Microsoft 安全性服務整合
-
-將您的主要工作區設定為 [主要]。 將工作區設定為主要工作區會影響整合，您只能針對主要工作區將 Azure ATP 與 Windows Defender ATP 整合。 
 
 > [!NOTE]
 > - Azure ATP 目前僅支援建立一個工作區。 刪除工作區之後，您可以連絡支援人員重新啟動它。 您最多可有三個刪除的工作區。 若要增加儲存的刪除工作區數量，請連絡 Azure ATP 支援。
@@ -99,20 +94,16 @@ Azure ATP 工作區入口網站可讓您管理下列 Azure ATP 功能：
 |實體接收者|接收來自所有 Azure ATP 感應器和 Azure ATP 獨立感應器的實體批次。|
 |網路活動處理器|處理每個批次中收到的所有網路活動。 例如，比對可能從不同電腦執行的各種 Kerberos 步驟|
 |實體程分析工具|根據流量與事件設定所有唯一實體。 例如，Azure ATP 會針對每個使用者設定檔更新登入電腦清單。|
-|Azure ATP 工作區管理入口網站|管理您的 Azure ATP 工作區。|
+|Azure ATP 管理入口網站|管理您的 Azure ATP 工作區。|
 |Azure ATP 工作區入口網站|Azure ATP 工作區用來設定 Azure ATP，以及監視 Azure ATP 在您網路上所偵測到的可疑活動。 Azure ATP 工作區不需仰賴 Azure ATP 感應器，甚至在 Azure ATP 感應器服務停止時仍可執行。 |
 |偵測器|偵測器使用機器學習演算法和決定性規則，在您的網路中尋找可疑活動和異常使用者行為。|
-
-決定要在網路上部署多少 Azure ATP 工作區時，請考慮下列準則︰
-
--   一個 Azure ATP 工作區可以監視單一 Active Directory 樹系。 如果您有多個 Active Directory 樹系，每個 Active Directory 樹系需要至少一個 Azure ATP 雲端服務。
 
 
 ## <a name="azure-atp-sensor-and-azure-atp-standalone-sensor"></a>Azure ATP 感應器和 Azure ATP 獨立感應器
 
 **Azure ATP 感應器**和 **Azure ATP 獨立感應器**都有相同的核心功能：
 
--   擷取並檢查網域控制站的網路流量。 這是 Azure ATP 獨立感應器的連接埠鏡像流量，和 Azure ATP 感應器中網域控制站的本機流量。 
+-   擷取並檢查網域控制站的網路流量。 這是 Azure ATP 感應器中的網域控制站本機流量，和 Azure ATP 獨立感應器中的連接埠鏡像流量。 
 
 -   直接從網域控制站 (針對 ATP 感應器) 或從 SIEM 或 Syslog 伺服器 (針對 ATP 獨立感應器) 接收 Windows 事件
 
@@ -124,7 +115,7 @@ Azure ATP 工作區入口網站可讓您管理下列 Azure ATP 功能：
 
 -   將相關資料傳輸至 Azure ATP 雲端服務
 
--   從單一 Azure ATP 獨立感應器監視多個網域控制站，或使用單一 Azure ATP 感應器監視單一網域控制站。
+-   監視 Azure ATP 感應器的單一網域控制站，或從單一 Azure ATP 獨立感應器監視多個網域控制站。
 
 根據預設值，Azure ATP 最多支援 100 個感應器。 如果您想要安裝更多，請連絡 Azure ATP 支援。
 
@@ -141,9 +132,9 @@ Azure ATP 獨立感應器會從您的網路接收網路流量和 Windows 事件�
 
 ## <a name="azure-atp-sensor-features"></a>Azure ATP 感應器功能
 
-下列功能的運作方式，視您執行的是 Azure ATP 獨立感應器或 Azure ATP 感應器而有所不同。
+下列功能的運作方式，視您執行的是 Azure ATP 感應器或 Azure ATP 獨立感應器而有所不同。
 
--   Azure ATP 感應器可在本機讀取事件，而不需要設定事件轉寄。
+-   Azure ATP 感應器會讀取本機事件，而不需要購買及維護額外的硬體或設定事件轉送，但 ATP 獨立感應器則需要。 Azure ATP 感應器也支援 Windows 事件追蹤 (ETW)，這提供多個偵測的記錄資訊。 ETW 型偵測包括「可疑複寫要求」與「可疑網域控制站升級」，這兩者都是潛在的 DCShadow 攻擊，而且 ATP 獨立感應器不支援它們。  
 
 -   **網域同步器候選**<br>
 網域同步器候選負責主動同步處理特定 Active Directory 網域中的所有實體 (類似網域控制站進行複寫時所使用的機制)。 系統會從候選清單中隨機選擇一個感應器作為網域同步器。 <br><br>
@@ -179,7 +170,7 @@ Azure ATP 感應器包含的監視元件，會評估其執行所在網域控制�
 檢查是否已設定好下列元件，以搭配 Azure ATP 使用。
 
 ### <a name="port-mirroring"></a>連接埠鏡像
-如果使用 Azure ATP 獨立感應器，就必須為要監視的網域控制站設定連接埠鏡像，並使用實體或虛擬交換器將 Azure ATP 獨立感應器設定為目的地。 另一個選項是使用網路 TAP。 如果只有部分 (而非全部) 的網域控制站受到監視，Azure ATP 仍可運作，但是偵測比較沒有效率。
+若您使用 Azure ATP 獨立感應器，必須為受監視的網域控制站設定連接埠鏡像。 使用實體或虛擬交換器將 Azure ATP 獨立感應器設定為目的地。 另一個選項是使用網路 TAP。 如果只有部分 (而非全部) 的網域控制站受到監視，Azure ATP 仍可運作，但是偵測比較沒有效率。
 
 雖然連接埠鏡像會將所有網域控制站的網路流量都鏡像處理到 Azure ATP 獨立感應器，但是有少部分的流量會傳送並壓縮至 Azure ATP 雲端服務進行分析。
 
@@ -187,9 +178,12 @@ Azure ATP 感應器包含的監視元件，會評估其執行所在網域控制�
 
 
 ### <a name="events"></a>事件
-若要增強 Azure ATP 偵測傳遞雜湊、暴力密碼破解、修改敏感性群組、建立可疑服務，以及修改 Honey Token 的能力，Azure ATP 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757 和 7045。 Azure ATP 感應器可以直接讀取這些事件。如果沒有部署 Azure ATP 感應器，則有兩種方法可以將之轉寄到 Azure ATP 獨立感應器：一種是將 Azure ATP 獨立感應器設定為接聽 SIEM 事件，另一種是[設定 Windows 事件轉寄](configure-event-forwarding.md)。
+為讓 Azure ATP 能夠偵測傳遞雜湊 (Pass-the-Hash)、可疑驗證失敗、敏感性群組修改、可疑服務建立與蜂蜜權杖 (Honey Token) 活動等攻擊類型，Azure ATP 必須分析下列 Windows 事件的記錄：4776、4732、4733、4728、4729、4756、4757 與 7045。 這些事件會由具有正確進階稽核原則設定的 Azure ATP 感應器自動讀取。 在已部署 Azure ATP 獨立感應器的情況中，事件記錄能以下列兩種方式的其中一種轉送到獨立感應器：設定 Azure ATP 獨立感應器以接聽 SIEM 事件，或透過[設定 Windows 事件轉送](configure-event-forwarding.md). 
 
--   設定 Azure ATP 獨立感應器接聽 SIEM 事件 <br>將您的 SIEM 設定為將特定 Windows 事件轉寄至 ATP。 Azure ATP 能支援數個 SIEM 廠商。 如需詳細資訊，請參閱[設定事件轉寄](configure-event-forwarding.md)。
+> [!NOTE]
+> - 獨立感應器的 Windows 事件轉送不支援 ETW (Windows 事件追蹤)。 ETW 型偵測包括「可疑複寫要求」與「可疑網域控制站升級」，這兩者都是潛在的 DCShadow 攻擊。  
+
+-   設定 Azure ATP 獨立感應器接聽 SIEM 事件 <br>將您的 SIEM 設定為將特定 Windows 事件轉寄至 ATP。 Azure ATP 能支援數個 SIEM 廠商。 如需詳細資訊，請參閱[設定 Windows 事件轉送](configure-event-forwarding.md)。
 
 -   設定 Windows 事件轉送<br>讓 Azure ATP 取得事件的另一個方法，是將網域控制站設定為將 Windows 事件 4776、4732、4733、4728、4729、4756、4757 和 7045 轉寄至 Azure ATP 獨立感應器。 如果您沒有 SIEM，或是 ATP 目前不支援您的 SIEM，這個方法特別有用。 如需 ATP 中 Windows 事件轉寄的詳細資訊，請參閱[設定 Windows 事件轉寄](configure-event-forwarding.md)。 這只適用於實體 Azure ATP 獨立感應器，不適用 Azure ATP 感應器。
 

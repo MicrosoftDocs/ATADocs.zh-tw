@@ -2,10 +2,10 @@
 title: Azure 進階威脅防護多重樹系支援 | Microsoft Docs
 description: 如何在 Azure ATP 中設定多個 Active Directory 樹系的支援。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 7/20/2018
+ms.date: 8/20/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a48bf96bd6a71282455d932a35aac23ba4c8193a
-ms.sourcegitcommit: 7909deafdd9323f074d0ff2f590e307bcfaaabad
+ms.openlocfilehash: 2a3460c39d6428831cc34231321fff745dbe0701
+ms.sourcegitcommit: 121c49d559e71741136db1626455b065e8624ff9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39202127"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "41734521"
 ---
 適用於：Azure 進階威脅防護
 
@@ -29,14 +29,14 @@ ms.locfileid: "39202127"
 
 ## <a name="step-9--set-up-azure-advanced-threat-protection-multi-forest-support"></a>步驟 9：  設定 Azure 進階威脅防護多重樹系支援
 
-Azure ATP 可支援擁有多個樹系的組織，讓您能跨樹系監視活動和分析使用者。 
+Azure ATP 可支援擁有多個樹系的組織，讓您能輕鬆地從單一管理點跨樹系監視活動和分析使用者。 
 
-企業組織可能有數個 Active Directory 樹系，通常用於不同用途，包括來自公司合併和收購、地理分佈和安全性界限的舊版基礎結構 (紅色樹系)。 您可以使用 Azure ATP 保護多個樹系，讓所有資料向單一的主要工作區報告，以便可以透過單一管理點來進行監視和調查。
+企業組織通常有數個 Active Directory 樹系，通常用於不同用途，包括來自公司合併和收購、地理分佈和安全性界限的舊版基礎結構 (紅色樹系)。 您可以使用 Azure ATP 保護多個樹系，以便可以透過單一管理點來進行監視和調查。
 
 支援多個 Active Directory 樹系的功能可提供以下功能：
--   您可以透過單一管理點，檢視和調查多個樹系中使用者執行的活動。 
--   多樹系支援提供了進階 Active Directory 整合和帳戶解析，以改進偵測及減少誤判。 
--   有了多重樹系支援之後，便不再需要多個工作區，所以會有更多的控制權且更容易部署，且網域控制站都在單一 Azure ATP 主控台集中監視，進而為整個組織提供更好的監視警示和報告。
+-   透過單一管理點來檢視和調查多個樹系中使用者執行的活動。 
+-   提供了進階 Active Directory 整合和帳戶解析，以改進偵測及減少誤判。 
+-   更好的控制和更簡單的部署方式。 當您的網域控制站全都是從單一 Azure ATP 主控台來監視時，可獲得跨組織涵蓋範圍的改良監視警示與回報功能。
 
 
 ## <a name="how-azure-atp-detects-activities-across-multiple-forests"></a>Azure ATP 如何跨多個樹系偵測活動 
@@ -87,8 +87,8 @@ Azure ATP 可支援擁有多個樹系的組織，讓您能跨樹系監視活動�
 
 
 ## <a name="see-also"></a>另請參閱
-- [ATA 調整大小工具](http://aka.ms/aatpsizingtool)
-- [ATA 架構](atp-architecture.md)
-- [安裝 ATA](install-atp-step1.md)
+- [ATP 調整大小工具](http://aka.ms/aatpsizingtool)
+- [ATP 架構](atp-architecture.md)
+- [安裝 ATP](install-atp-step1.md)
 - [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
 

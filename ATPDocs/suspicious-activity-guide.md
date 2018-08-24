@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 7/24/2018
+ms.date: 8/20/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4667e13af4e86a18d1b50a2ea575f9c749f0c541
-ms.sourcegitcommit: ca6153d046d8ba225ee5bf92cf55d0bd57cf4765
+ms.openlocfilehash: 4aa58228ea23f58ea37b10f941467e9dc076992f
+ms.sourcegitcommit: f534a318be71b840aecb6a84744d8cd1f251a7aa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39585232"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41734833"
 ---
 適用於：Azure 進階威脅防護
 
@@ -125,7 +125,7 @@ ms.locfileid: "39585232"
 2.  黃金票證 - 遵循[黃金票證](#golden-ticket)可疑活動的指示進行。   
     此外，由於建立黃金票證需要網域系統管理員權限，因此請實作[傳遞雜湊建議](http://aka.ms/PtH)。
 
-3.  越過雜湊 - 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 這可防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指導方針。 另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。 由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](http://aka.ms/PtH)的最佳做法。
+3.  越過雜湊 - 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 這可防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引。 另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。 由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](http://aka.ms/PtH)的最佳做法。
 
 ## <a name="honeytoken-activity"></a>Honeytoken 活動
 
@@ -200,7 +200,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
    2.   涉及此警示的 Azure ATP 感應器是否為虛擬機器？ 如果是，它最近是否從儲存狀態繼續？ 如果是，請關閉此警示。
    3.   如果上述問題的答案為否，則假設這是惡意的。
 
-- **不存在的帳戶** (預覽)
+- **不存在的帳戶**
    1.   詢問以下問題：
          - 使用者是否為已知且有效的網域使用者？ 如果是，請關閉警示 (這是誤判)。
          - 該使用者是否為最近新增？ 如果是，請關閉警示，變更可能尚未同步處理。
@@ -288,7 +288,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 2. 目的地電腦 (在 [已存取] 欄下) 是否已透過 MS14-068 (網域控制站) 或 MS11-013 (伺服器) 修補？ 如果是，請**關閉**可疑活動 (這是誤判)。
 
-3. 如果否，源電腦是否執行 (在 [來源] 欄下) 已知會修改 PAC 的 OS/應用程式？ 如果是，請**隱藏**可疑活動 (這是良性真肯定)。
+3. 如果否，來源電腦, 執行 (在 [來源] 欄下) 是否為已知要修改 PAC 的 OS/應用程式？ 如果是，請**隱藏**可疑活動 (這是良性真肯定)。
 
 4. 如果上述兩個問題的答案均為否，則假設這是惡意的。
 
@@ -454,7 +454,7 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 
 [複雜且很長的密碼](https://docs.microsoft.com/windows/device-security/security-policy-settings/password-policy)提供必要的第一層安全性，以防止暴力密碼破解攻擊。
 
-## <a name="suspicious-domain-controller-promotion-potential-dcshadow-attack---preview"></a>可疑的網域控制站升級 (潛在的 DCShadow 攻擊) - 預覽
+## <a name="suspicious-domain-controller-promotion-potential-dcshadow-attack---new"></a>可疑網域控制站升級 (潛在的 DcShadow 攻擊) - 新增
 
 **描述**
 
@@ -489,10 +489,11 @@ DCShadow 使用 RPC 和 LDAP 進行：
 
 您可以利用 [AD ACL 掃描程式](https://blogs.technet.microsoft.com/pfesweplat/2013/05/13/take-control-over-ad-permissions-and-the-ad-acl-scanner-tool/)或建立 Windows PowerShell 指令碼，以判斷誰在網域中具有這些權限。
  
+> [!NOTE]
+> 只有 ATP 感應器才支援可疑網域控制站升級 (潛在 DCShadow 攻擊) 偵測。 
 
 
-
-## <a name="suspicious-replication-request-potential-dcshadow-attack---preview"></a>可疑的複寫要求 (潛在的 DCShadow 攻擊) - 預覽
+## <a name="suspicious-replication-request-potential-dcshadow-attack---new"></a>可疑複寫要求 (潛在 DCShadow 攻擊) - 新增
 
 **描述** 
 
@@ -519,6 +520,9 @@ DCShadow 使用 RPC 和 LDAP 進行：
 
 若要這麼做，您可以利用 [AD ACL 掃描程式](https://blogs.technet.microsoft.com/pfesweplat/2013/05/13/take-control-over-ad-permissions-and-the-ad-acl-scanner-tool/) \(英文\) 或建立 Windows PowerShell 指令碼，以判斷網域中具有這些權限的人員。
 
+> [!NOTE]
+> 只有 ATP 感應器才支援可疑複寫要求 (潛在 DCShadow 攻擊) 偵測。 
+
 
 ## <a name="suspicious-service-creation"></a>可疑的服務建立
 
@@ -542,7 +546,7 @@ DCShadow 使用 RPC 和 LDAP 進行：
 
 - 在網域電腦上實作具有較低權限的存取，以僅允許特定使用者建立新的服務。
 
-## 可疑的 VPN 連線 - 預覽<a name="suspicious-vpn-detection"></a>
+## 可疑 VPN 連線 <a name="suspicious-vpn-detection"></a>
 
 **描述**
 

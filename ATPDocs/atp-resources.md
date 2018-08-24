@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 7/23/2018
+ms.date: 8/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 34dc152c-6b7f-4128-93fe-aad56c282730
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 498d1b4d14db079583da1999bfb68a5648111362
-ms.sourcegitcommit: 63a36cd96aec30e90dd77bee1d0bddb13d2c4c64
+ms.openlocfilehash: 7018fb46a9d9da326ba999aff34a5ac2de6b860c
+ms.sourcegitcommit: 121c49d559e71741136db1626455b065e8624ff9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39227133"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "41734660"
 ---
 適用於：Azure 進階威脅防護
 
@@ -26,17 +26,17 @@ ms.locfileid: "39227133"
 
 # <a name="azure-atp-readiness-guide"></a>Azure ATP 整備指南
 
-本文為您提供的整備藍圖，有協助您開始使用 Azure Advanced Threat Analytics 的資源清單。 
+此文章為您提供的整備藍圖，其中包含協助您開始使用「Azure 進階威脅防護」的資源清單。 
 
 ## <a name="understanding-azure-atp"></a>了解 Azure ATP
 
-Azure 進階威脅防護 (ATP) 為雲端服務，可保護您的企業免於多種進階目標式網路攻擊及內部威脅。 您可以利用下列資源深入了解 Azure ATP： 
+Azure 進階威脅防護 (ATP) 為雲端服務，可識別並保護您的企業免於多種進階目標式網路攻擊與內部威脅。 您可以利用下列資源深入了解 Azure ATP： 
 - [Azure ATP 概觀](what-is-atp.md)
 - [Azure ATP 簡介影片 - 完整版](https://www.youtube.com/watch?v=KX-xpFc0sBw) 
 
 ## <a name="deployment-decisions"></a>部署決定
 
-Azure ATP 是由位於 Azure 中的雲端服務以及可安裝在網域控制站或專用伺服器的感應器所組成。 在您啟動並執行 Azure ATP 之前，請務必選擇最適合您部署的感應器。<br>如果目前使用實體伺服器，則應規劃容量。 為您的感應器配置空間時，可從調整大小工具取得協助： 
+Azure ATP 是由位於 Azure 中的雲端服務以及可安裝在網域控制站上的整合式感應器或專用伺服器上的獨立感應器所組成。 在您啟動並執行 Azure ATP 之前，請務必選擇最適合您部署與需求的感應器類型。 Azure ATP 整合式感應提供加強的安全性、較低的營運成本與較簡單的部署方式。 Azure ATP 獨立感應器要求實體硬體、額外的設定步驟與較高的營運成本。 <br>若您使用實體伺服器，容量規劃非常重要。 為您的感應器配置空間時，可從調整大小工具取得協助： 
 - [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool) - 調整大小的工具會自動收集 Azure ATP 監視器的流量多寡。 其會自動為感應器提供支援能力以及資源建議。 
 - [ATA 容量規劃指南](atp-capacity-planning.md)
 
@@ -49,14 +49,14 @@ Azure ATP 是由位於 Azure 中的雲端服務以及可安裝在網域控制站
 
 ## <a name="azure-atp-settings"></a>Azure ATP 設定
 
-Azure ATP 中的基本必要設定是在建立工作區時設定。 但您仍可進行一些其他設定來微調 Azure ATP，更正確地偵測環境，例如 SIEM 整合和稽核設定。 
+Azure ATP 中的必要基本設定是在建立工作區時設定的。 但您仍可進行一些額外設定來微調 Azure ATP，更正確地在您的環境中進行偵測，例如 SIEM 整合與稽核設定。 
 
 - [Azure ATP 一般文件](what-is-atp.md)
-- [稽核設定](https://blogs.technet.microsoft.com/positivesecurity/2017/08/18/ata-auditing-auditpol-advanced-audit-settings-enforcement-lightweight-gateway-service-discovery/) – 在ATA 部署前後，稽核網域控制站的健全狀況。 
+- [稽核設定](https://blogs.technet.microsoft.com/positivesecurity/2017/08/18/ata-auditing-auditpol-advanced-audit-settings-enforcement-lightweight-gateway-service-discovery/) – 在 ATP 部署前後，稽核網域控制站的健康情況。 
 
 ## <a name="work-with-azure-atp"></a>使用 Azure ATP
 
-Azure ATP 開始運作之後，您即可檢視在活動時間表中偵測到的可疑活動。 這是您登入 Azure ATP 入口網站時會前往的預設登陸頁面。 根據預設，所有開啟的可疑活動都會顯示在攻擊時間表上。 您也可以查看指派給每個活動的嚴重性。 透過向下切入實體 (電腦、裝置、使用者) 來開啟其提供詳細資訊的設定檔頁面，以調查每項可疑活動。 以下資源有助於您處理 Azure ATP 的可疑活動： 
+Azure ATP 開始運作之後，檢視在 Azure ATP 入口網站活動時間表中偵測到的可疑活動。 活動時間表是登入 Azure ATP 入口網站之後的預設登陸頁面。 根據預設，所有開啟的可疑活動都會顯示在攻擊時間表上。 您也可以查看指派給每個活動的嚴重性。 透過向下切入實體 (電腦、裝置、使用者) 來開啟其提供詳細資訊的設定檔頁面，以調查每個可疑活動。 以下資源有助於您處理 Azure ATP 的可疑活動： 
 
 - [Azure ATP 可疑活動指南](suspicious-activity-guide.md)了解使用 Azure ATP 偵測進行分級及採取下一個步驟。
 - [將群組標記為機密](sensitive-accounts.md)掌握機密安全性群組的認證暴露。

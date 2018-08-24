@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/06/2018
+ms.date: 8/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,16 +13,40 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0062fc22df357e338d8eaf446688ea8bba56019c
-ms.sourcegitcommit: 14c05a210ae92d35100c984ff8c6d171db7c3856
+ms.openlocfilehash: 83b7b88d2b1ba61a2ae2733f1401d98b341ad3bd
+ms.sourcegitcommit: 121c49d559e71741136db1626455b065e8624ff9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567945"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "41734622"
 ---
 適用於：Azure 進階威脅防護
 
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能 
+
+
+## <a name="azure-atp-release-245"></a>Azure ATP 2.45 版
+
+發行日期：2018 年 8 月 19 日
+
+- **Azure ATP 加入 Windows 事件追蹤 (ETW) 做為額外的資料來源**  <br> 除了現有的網路流量與 Windows 事件之外，加入 Windows 事件追蹤 (ETW) 做為額外的事件來源。 ETW 提供額外的可疑活動偵測，包括：可疑網域控制站升級與可疑網域控制站複寫要求 (兩者都是潛在的 DCShadow 攻擊)。 <br>
+只有網域控制站上安裝的 ATP 感應器才支援 ETW 型偵測。 ATP 獨立感應器不支援 ETW 偵測。 <br>  
+
+- **現在公開推出四種新的偵測方式** <br>
+  - 可疑 VPN 連線
+  - Kerberos 黃金票證 – 不存在的帳戶 
+  - 可疑網域控制站升級 (潛在 DcShadow 攻擊) – ETW 型偵測，只有 ATP 感應器才支援 
+  - 可疑網域控制站複寫要求 (潛在 DcShadow 攻擊) – ETW 型偵測，只有 ATP 感應器才支援
+
+- 此版本也包含針對多個問題的修正和改善。
+
+
+## <a name="azure-atp-release-244"></a>Azure ATP 2.44 版
+
+發行日期：2018 年 8 月 12 日
+
+- 此版本包含針對多個問題的修正和改善。
+- 在感應器機器上建立的記錄檔已不再包含「例外狀況統計資料」記錄檔。
 
 
 ## <a name="azure-atp-release-243"></a>Azure ATP 2.43 版
@@ -214,7 +238,7 @@ ms.locfileid: "39567945"
 **改良的調查**
   - Azure ATP 包含豐富的[實體設定檔](entity-profiles.md)。 實體設定檔為您提供專為深入調查使用者活動所設計的平台。這包括他們存取的資源、登入的電腦及其他更多。 實體設定檔也提供目錄資料，讓您識別往來實體的潛在橫向移動路徑，讓您深入了解您組織中的潛在漏洞。
 
-  - ATP 可讓您將實體手動標記為「機密」，以加強偵測和監視。 這項標記會影響很多 Azure ATP 偵測，例如機密群組修改偵測和[橫向移動路徑](use-case-lateral-movement-path.md)，這些都仰賴於視為機密的實體。
+  - ATP 可讓您將實體手動標記為*機密*，以加強偵測和監視。 這項標記會影響很多 Azure ATP 偵測，例如機密群組修改偵測和[橫向移動路徑](use-case-lateral-movement-path.md)，這些都仰賴於視為機密的實體。
 
 **可協助您調查的新報表**
   - [在純文字格式報表中公開的密碼](reports.md)可讓您偵測服務傳送的帳戶認證何時會以純文字傳送。 這可讓您調查服務，並改善您的網路安全性層級。 此報表會取代純文字的可疑活動警示。

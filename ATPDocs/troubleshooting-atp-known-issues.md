@@ -2,10 +2,10 @@
 title: 針對 Azure ATP 已知問題進行疑難排解 | Microsoft Docs
 description: 描述如何針對 Azure ATP 的問題進行疑難排解。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 5/21/2018
+ms.date: 8/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d460a57d82f3eb233192235067e116f5ede5f5df
-ms.sourcegitcommit: b218f60b42a25fe486d774d97719590e6fa74e10
+ms.openlocfilehash: 986dc057127e8de1e26a78dd7a138b02efeebf99
+ms.sourcegitcommit: dc56b9e9533db1a2dc314b199e90191bb25adaba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34760051"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "41734585"
 ---
 適用於：Azure 進階威脅防護
 
@@ -28,7 +28,7 @@ ms.locfileid: "34760051"
 
 ## <a name="deployment-log-location"></a>部署記錄位置
  
-對於安裝產品的使用者，Azure ATP 部署記錄位於暫存記錄中。 在預設安裝位置中，其位於︰C:\Users\Administrator\AppData\Local\Temp (或 %temp% 上方的一個目錄)。
+針對安裝產品的使用者，Azure ATP 部署記錄位於 temp 目錄中。 在預設安裝位置中，其位於︰C:\Users\Administrator\AppData\Local\Temp (或 %temp% 上方的一個目錄)。 如需詳細資訊，請參閱[使用記錄檔針對 ATP 進行疑難排解](troubleshooting-atp-using-logs.md)。
 
 ## <a name="proxy-authentication-problem-presents-as-licensing-error"></a>Proxy 驗證問題顯示為授權錯誤
 

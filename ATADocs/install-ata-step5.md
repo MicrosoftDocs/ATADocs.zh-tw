@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d8a8f5df37422f98f6ea3357c672297395907a8d
-ms.sourcegitcommit: 1de2b047c0e9f92a106169f7634c480f694baf10
+ms.openlocfilehash: 1c75b9c74e1b53f81b5f957d9e78a8b425b6b28e
+ms.sourcegitcommit: ad83eaba24d5a6af465351291ba0e423319f78d3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "30009739"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903918"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -46,9 +46,9 @@ ms.locfileid: "30009739"
   - **描述**：輸入 ATA 閘道的描述 (選擇性)。
   - **連接埠鏡像的網域控制站 (FQDN)** (如果是 ATA 閘道則必填，無法針對 ATA 輕量型閘道變更)︰輸入您網域控制站的完整 FQDN，然後按一下加號將它新增至清單。 例如，**dc01.contoso.com**
 
-      下列資訊適用於您在**網域控制站**清單中輸入的伺服器：
-      - 所有透過連接埠鏡像受 ATA 閘道監視流量的網域控制站，都必須列在**網域控制站**清單中。 如果網域控制站未列在**網域控制站**清單中，可能無法如預期般偵測可疑的活動。
-      - 清單中應至少有一個網域控制站是通用類別目錄。 這會讓 ATA 解析樹系中其他網域的電腦與使用者物件。
+    下列資訊適用於您在**網域控制站**清單中輸入的伺服器：
+    - 所有透過連接埠鏡像受 ATA 閘道監視流量的網域控制站，都必須列在**網域控制站**清單中。 如果網域控制站未列在**網域控制站**清單中，可能無法如預期般偵測可疑的活動。
+    - 清單中應至少有一個網域控制站是通用類別目錄。 這會讓 ATA 解析樹系中其他網域的電腦與使用者物件。
 
   - **擷取網路介面卡** (必填)︰
   - 針對專用伺服器上的 ATA 閘道，請選取設定為目的地鏡像連接埠的網路介面卡。 這些介面卡會接收鏡像網域控制站的流量。

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0b4d783d55d38d2a50c651ba47c584fed8bcee50
-ms.sourcegitcommit: 1de2b047c0e9f92a106169f7634c480f694baf10
+ms.openlocfilehash: 60e02ef1aff6b16bc56b12b8883ca2f5ed4a1f74
+ms.sourcegitcommit: 56886d06abd25035ffc9885c69aca9b0ebf14abc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "30010137"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "42903901"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -36,17 +36,17 @@ ATA 可在偵測到可疑的活動時通知您，方法是透過電子郵件或�
 
 
 1. 在 ATA 主控台中，選取工具列上的 [設定] 選項，然後選取 [設定]。
-
-![ATA 組態設定圖示](media/ATA-config-icon.png)
-
-2. 在 [Notifications & Reports (通知與報表)] 區段中，選取 [通知]。
-3. 在 [郵件通知] 下，指定要透過電子郵件傳送的通知 - 新的可疑活動和新的健康狀態問題。 您可以為所要傳送的可疑活動和健康狀態警示設定個別電子郵件地址，例如，您可以將可疑活動通知傳送給安全性分析師，並將健康狀態警示通知傳送給 IT 系統管理員。
->   [!NOTE]
->   只有在建立可疑活動時，才會傳送可疑活動的電子郵件警示。
-3. 在 [Syslog 通知] 下，指定要傳送到 Syslog 伺服器的通知 (新的可疑活動、更新的可疑活動，以及新的健康狀態問題)。
-5. 按一下 **[儲存]**。
-
-![ATA 郵件通知設定影像](media/ata-mail-notification-settings.png)
+    
+    ![ATA 組態設定圖示](media/ATA-config-icon.png)
+    
+1. 在 [Notifications & Reports (通知與報表)] 區段中，選取 [通知]。
+1. 在 [郵件通知] 下，指定要透過電子郵件傳送的通知 - 新的可疑活動和新的健康狀態問題。 您可以為所要傳送的可疑活動和健康狀態警示設定個別電子郵件地址，例如，您可以將可疑活動通知傳送給安全性分析師，並將健康狀態警示通知傳送給 IT 系統管理員。
+    >   [!NOTE]
+    >   只有在建立可疑活動時，才會傳送可疑活動的電子郵件警示。
+1. 在 [Syslog 通知] 下，指定要傳送到 Syslog 伺服器的通知 (新的可疑活動、更新的可疑活動，以及新的健康狀態問題)。
+1. 按一下 **[儲存]**。
+    
+    ![ATA 郵件通知設定影像](media/ata-mail-notification-settings.png)
 
 
 

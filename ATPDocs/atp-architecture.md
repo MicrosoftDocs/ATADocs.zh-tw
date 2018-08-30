@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a6cb3ca9b4f9498caa0810cec129c24b0f2e587b
-ms.sourcegitcommit: 121c49d559e71741136db1626455b065e8624ff9
+ms.openlocfilehash: c7fda04658dc70406fc7c0d543286e46da4cfa86
+ms.sourcegitcommit: 56886d06abd25035ffc9885c69aca9b0ebf14abc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "41734639"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43039074"
 ---
 適用於：Azure 進階威脅防護
 
@@ -91,9 +91,6 @@ Azure ATP 工作區入口網站可讓您管理下列 Azure ATP 功能：
 
 |||
 |-|-|
-|實體接收者|接收來自所有 Azure ATP 感應器和 Azure ATP 獨立感應器的實體批次。|
-|網路活動處理器|處理每個批次中收到的所有網路活動。 例如，比對可能從不同電腦執行的各種 Kerberos 步驟|
-|實體程分析工具|根據流量與事件設定所有唯一實體。 例如，Azure ATP 會針對每個使用者設定檔更新登入電腦清單。|
 |Azure ATP 管理入口網站|管理您的 Azure ATP 工作區。|
 |Azure ATP 工作區入口網站|Azure ATP 工作區用來設定 Azure ATP，以及監視 Azure ATP 在您網路上所偵測到的可疑活動。 Azure ATP 工作區不需仰賴 Azure ATP 感應器，甚至在 Azure ATP 感應器服務停止時仍可執行。 |
 |偵測器|偵測器使用機器學習演算法和決定性規則，在您的網路中尋找可疑活動和異常使用者行為。|

@@ -46,6 +46,8 @@
 ## [調查實體](investigate-entity.md)
 ## [了解實體設定檔](entity-profiles.md)
 # 疑難排解
+## [進階稽核原則檢查](atp-advanced-audit-policy.md)
 ## [針對已知問題進行疑難排解](troubleshooting-atp-known-issues.md)
+## [使用記錄進行疑難排解](troubleshooting-atp-using-logs.md)
 ## [支援與資訊](atp-support.md)
 ## [Azure ATP 整備藍圖](atp-resources.md)

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4aa58228ea23f58ea37b10f941467e9dc076992f
-ms.sourcegitcommit: f534a318be71b840aecb6a84744d8cd1f251a7aa
+ms.openlocfilehash: f382c5a7625ff29303ad92d05ec703c9ef1d72e3
+ms.sourcegitcommit: 04ec22abdfa571ec0e6e036e809f4e108a5c6f3d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "41734833"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42709771"
 ---
 適用於：Azure 進階威脅防護
 
@@ -200,7 +200,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
    2.   涉及此警示的 Azure ATP 感應器是否為虛擬機器？ 如果是，它最近是否從儲存狀態繼續？ 如果是，請關閉此警示。
    3.   如果上述問題的答案為否，則假設這是惡意的。
 
-- **不存在的帳戶**
+- **不存在的帳戶 - 新增** 
    1.   詢問以下問題：
          - 使用者是否為已知且有效的網域使用者？ 如果是，請關閉警示 (這是誤判)。
          - 該使用者是否為最近新增？ 如果是，請關閉警示，變更可能尚未同步處理。
@@ -362,7 +362,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 **描述**
 
-您的 DNS 伺服器包含您網路中所有電腦、IP 位址和服務的對應。 攻擊者會使用這項資訊來對應您的網路結構，並鎖定感興趣的電腦以在稍後用於攻擊步驟。
+您的 DNS 伺服器包含您網路中所有電腦、IP 位址和服務的對應。 攻擊者會使用此資訊來對應您的網路結構，並鎖定感興趣的電腦以在稍後用於攻擊步驟。
 
 DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 伺服器的 AXFR (傳輸) 要求。
 
@@ -384,7 +384,7 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 
 **描述**
 
-伺服器訊息區 (SMB) 列舉可讓攻擊者取得使用者最近登入位置的相關資訊。 一旦攻擊者擁有這項資訊，他們就可以在網路中橫向移動來到達特定敏感性帳戶。
+伺服器訊息區 (SMB) 列舉可讓攻擊者取得使用者最近登入位置的相關資訊。 一旦攻擊者擁有此資訊，他們就可以在網路中橫向移動來到達特定敏感性帳戶。
 
 在此偵測中，對網域控制站執行 SMB 工作階段列舉時，就會觸發警示，因為這不應該發生。
 
@@ -546,7 +546,8 @@ DCShadow 使用 RPC 和 LDAP 進行：
 
 - 在網域電腦上實作具有較低權限的存取，以僅允許特定使用者建立新的服務。
 
-## 可疑 VPN 連線 <a name="suspicious-vpn-detection"></a>
+
+## 可疑 VPN 連線 - 新增 <a name="suspicious-vpn-detection"></a>
 
 **描述**
 

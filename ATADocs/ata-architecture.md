@@ -2,10 +2,10 @@
 title: Advanced Threat Analytics 架構 | Microsoft Docs
 description: 描述 Microsoft Advanced Threat Analytics 的架構 (ATA)
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 8/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: fa2b5fa5da1d73f90cac6937bef71fd239e498fc
-ms.sourcegitcommit: ca6153d046d8ba225ee5bf92cf55d0bd57cf4765
+ms.openlocfilehash: f2ae9948f6865480797b4a2a8b761c12553728b9
+ms.sourcegitcommit: 56886d06abd25035ffc9885c69aca9b0ebf14abc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39585047"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43039014"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -120,7 +120,7 @@ ATA 閘道會從您的網路接收網路流量和 Windows 事件，並在下列�
 
 |||
 |-|-|
-|網路接聽程式|網路接聽程式會擷取網路流量和剖析流量。 這項工作會使用大量的 CPU，因此請務必在規劃 ATA 閘道或 ATA 輕量型閘道時檢查 [ATA Prerequisites](ata-prerequisites.md) (ATA 必要條件)。|
+|網路接聽程式|網路接聽程式會擷取網路流量和剖析流量。 此工作會使用大量的 CPU，因此請務必在規劃 ATA 閘道或 ATA 輕量型閘道時檢查 [ATA Prerequisites](ata-prerequisites.md) (ATA 必要條件)。|
 |事件接聽程式|事件接聽程式會擷取及剖析從網路上 SIEM 伺服器轉送的 Windows 事件。|
 |Windows 事件記錄讀取器|Windows 事件記錄讀取器會讀取及剖析從網域控制站轉送至 ATA 閘道之 Windows 事件記錄的 Windows 事件。|
 |網路活動轉譯程式 | 將剖析的流量轉譯為 ATA 所用的流量邏輯表示法 (NetworkActivity)。
@@ -143,7 +143,7 @@ ATA 閘道會從您的網路接收網路流量和 Windows 事件，並在下列�
 
 -   **資源限制**<br>
 ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制站上的可用運算和記憶體容量。 監視處理程序每 10 秒執行一次，會動態更新 ATA 輕量型閘道處理程序的 CPU 和記憶體使用量配額，以確定在任何指定的時點，網域控制站都至少有 15% 的可用運算和記憶體資源。<br><br>
-無論網域控制站發生什麼事，這項處理程序一律會釋出資源以確定網域控制站的核心功能不受影響。<br><br>
+無論網域控制站發生什麼事，此處理程序一律會釋出資源以確定網域控制站的核心功能不受影響。<br><br>
 如果這導致 ATA 輕量型閘道用盡資源，則只有部分的流量受到監視，且 [健康情況] 頁面就會顯示監視警示：「已卸除連接埠鏡像網路流量」。
 
 下表提供的網域控制站範例，其運算資源足可供應比目前所需更大的配額，所以全部的流量都受到監視︰
@@ -179,7 +179,7 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 
 -   將 ATA 閘道設定為接聽 SIEM 事件 <br>將您的 SIEM 設定為轉送特定 Windows 事件至 ATA。 ATA 支援許多 SIEM 廠商。 如需詳細資訊，請參閱[設定事件收集](configure-event-collection.md)。
 
--   設定 Windows 事件轉送<br>讓 ATA 取得事件的另一個方法，是將網域控制站設定為將 Windows 事件 4776、4732、4733、4728、4729、4756 和 4757 轉送至 ATA 閘道。 如果您沒有 SIEM，或者 ATA 目前不支援您的 SIEM，這個方法特別有用。 如需 ATA 中 Windows 事件轉送的詳細資訊，請參閱[設定 Windows 事件轉送](configure-event-collection.md#configuring-windows-event-forwarding)。 這只適用於實體的 ATA 閘道，ATA 輕量型閘道不適用。
+-   設定 Windows 事件轉送<br>讓 ATA 取得事件的另一個方法，是將網域控制站設定為將 Windows 事件 4776、4732、4733、4728、4729、4756 和 4757 轉送至 ATA 閘道。 如果您沒有 SIEM，或者 ATA 目前不支援您的 SIEM，這個方法特別有用。 若要完成您在 ATA 中的 Windows 事件轉送設定，請參閱[設定 Windows 事件轉送](configure-event-collection.md#configuring-windows-event-forwarding)。 這只適用於實體的 ATA 閘道，ATA 輕量型閘道不適用。
 
 ## <a name="related-videos"></a>相關影片
 - [選擇正確的 ATA 閘道類型](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)

@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/20/2018
+ms.date: 8/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c7fda04658dc70406fc7c0d543286e46da4cfa86
-ms.sourcegitcommit: 56886d06abd25035ffc9885c69aca9b0ebf14abc
+ms.openlocfilehash: 6b94282411cd2918e475acb08600265455d9e0f3
+ms.sourcegitcommit: 6f1406f28c4c2af6a36bc691ebaf4e819adc6b4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43039074"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43675129"
 ---
 適用於：Azure 進階威脅防護
 
@@ -191,5 +191,4 @@ Azure ATP 感應器包含的監視元件，會評估其執行所在網域控制�
 - [Azure ATP 容量規劃](atp-capacity-planning.md)
 - [設定事件轉寄](configure-event-forwarding.md)
 - [設定 Windows 事件轉送](configure-event-forwarding.md)
-
-- - [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)

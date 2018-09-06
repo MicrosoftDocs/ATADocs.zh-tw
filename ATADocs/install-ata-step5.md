@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1c75b9c74e1b53f81b5f957d9e78a8b425b6b28e
-ms.sourcegitcommit: ad83eaba24d5a6af465351291ba0e423319f78d3
+ms.openlocfilehash: 50a46bad5f138344cc3e62a3fca236e98e71f904
+ms.sourcegitcommit: 6f1406f28c4c2af6a36bc691ebaf4e819adc6b4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42903918"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43675163"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -53,8 +53,7 @@ ms.locfileid: "42903918"
   - **擷取網路介面卡** (必填)︰
   - 針對專用伺服器上的 ATA 閘道，請選取設定為目的地鏡像連接埠的網路介面卡。 這些介面卡會接收鏡像網域控制站的流量。
   - 針對 ATA 輕量型閘道，則應該是用來與組織中其他電腦通訊的所有網路介面卡。
-
-
+  
   - **網域同步器候選**：任何設為網域同步器候選的 ATA 閘道皆可負責進行 ATA 與 Active Directory 網域之間的同步處理。 根據網域的大小而定，首次同步處理可能需要一些時間，而且會耗用大量資源。 根據預設，只有 ATA 閘道會設為網域同步器候選。
    建議停用所有遠端站台 ATA 閘道，使它們不會成為網域同步器候選。
    如果網域控制站是唯讀的，請勿將其設定為網域同步器候選。 如需詳細資訊，請參閱 [ATA 架構](ata-architecture.md#ata-lightweight-gateway-features)。

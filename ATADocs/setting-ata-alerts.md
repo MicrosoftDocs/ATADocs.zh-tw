@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 60e02ef1aff6b16bc56b12b8883ca2f5ed4a1f74
-ms.sourcegitcommit: 56886d06abd25035ffc9885c69aca9b0ebf14abc
+ms.openlocfilehash: 55e56b9b2a3bbb04024fc7431e1ee7d1e459cfea
+ms.sourcegitcommit: d8ee6c236dc91802a8315fb97a9dc0ac501861cf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "42903901"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43353074"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -41,8 +41,10 @@ ATA 可在偵測到可疑的活動時通知您，方法是透過電子郵件或�
     
 1. 在 [Notifications & Reports (通知與報表)] 區段中，選取 [通知]。
 1. 在 [郵件通知] 下，指定要透過電子郵件傳送的通知 - 新的可疑活動和新的健康狀態問題。 您可以為所要傳送的可疑活動和健康狀態警示設定個別電子郵件地址，例如，您可以將可疑活動通知傳送給安全性分析師，並將健康狀態警示通知傳送給 IT 系統管理員。
+    
     >   [!NOTE]
     >   只有在建立可疑活動時，才會傳送可疑活動的電子郵件警示。
+
 1. 在 [Syslog 通知] 下，指定要傳送到 Syslog 伺服器的通知 (新的可疑活動、更新的可疑活動，以及新的健康狀態問題)。
 1. 按一下 **[儲存]**。
     

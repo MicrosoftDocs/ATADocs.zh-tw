@@ -2,10 +2,10 @@
 title: 進階威脅分析個人資料原則 | Microsoft Docs
 description: 提供如何從 ATA 刪除私人資訊和個人資料的相關資訊連結。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 6/26/2018
+ms.date: 9/04/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1b2d185c-62cd-45f0-b0dd-687b51317f32
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: 34c758cf96b583c32ad19aa2f8deab7a3bb96392
-ms.sourcegitcommit: 7d025a2518ce63f38ce609dc21d8c3bacdd6a8e7
+ms.openlocfilehash: 831fceafe3672d916d18801eb1273a62a81c84cd
+ms.sourcegitcommit: f9400ae27d22607e4146dc9b8a0b9ba6f61fdd38
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36948943"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43743326"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -52,7 +52,7 @@ ATA 中有關使用者和實體的個人資料會衍生自您組織 AD 的使用
 
 此動作會從 ATA 資料庫永久刪除實體。 若要執行此命令，請提供命令名稱 `deleteAccount`、`SamName` 和 `UpnName`，或是與您欲刪除之電腦或使用者名稱相關的 `GUID`。 例如： 
 
-`C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongo.exe" ATA --eval “var params= deleteAccount,admin1@contoso.com;” GDPR.js `
+`"C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongo.exe" ATA --eval "var params='deleteAccount,admin1@contoso.com';" GDPR.js`
 
 執行此動作會從資料庫完全移除具有 UPN admin1@contoso.com 的實體，以及與該實體相關的所有活動與安全性警示。 
 
@@ -64,7 +64,7 @@ ATA 中有關使用者和實體的個人資料會衍生自您組織 AD 的使用
 
 例如： 
 
-`C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongo.exe" ATA --eval “var params= deleteOldData,30;” GDPR.js`
+`"C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongo.exe" ATA --eval "var params='deleteOldData,30';" GDPR.js`
 
 此指令碼會從資料庫移除所有超過 30 天的實體活動與安全性警示。 您只會保留最後 30 天的資料。
 

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a06004bd-9f77-4e8e-a0e5-4727d6651a0f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7caae52ff7402fdc8cb18ce1a01bba469c2d649b
-ms.sourcegitcommit: f61616a8269d27a8fcde6ecf070a00e2c56481ac
+ms.openlocfilehash: 4cf099faae920f23eeeaacdc8f10129005fdc896
+ms.sourcegitcommit: 93a133430ac85d6db7afad5f6f2583b3a39c423a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35259203"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43469663"
 ---
 適用於：Azure 進階威脅防護
 
@@ -53,7 +53,7 @@ ms.locfileid: "35259203"
 
 ## 預覽偵測<a name="preview-detections"></a>
 
-Azure ATP 研究小組會持續致力於實作新偵測攻擊的新探索。 因為 Azure ATP 是一種雲端服務，所以可以快速發行這些新偵測，讓 Azure ATP 客戶盡快受益於新偵測。
+Azure ATP 研究小組會持續致力於實作新偵測攻擊的新探索。 由於 Azure ATP 是雲端服務，所以新偵測能快速推出，讓 Azure ATP 客戶盡快享受到新偵測的優點。
 
 這些偵測會標上預覽徽章，協助您找出新偵測，並知道它們是產品的新偵測。 如果您關閉預覽偵測，則它們不會顯示在 Azure ATP 主控台中 (不在時間軸或實體設定檔中)，而且不會開啟新警示。
 

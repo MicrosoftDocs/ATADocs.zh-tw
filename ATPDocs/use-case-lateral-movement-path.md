@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: de15c920-8904-4124-8bdc-03abd9f667cf
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 730cf886f199c101ea14a09f177d7682238c2b7e
-ms.sourcegitcommit: 14c05a210ae92d35100c984ff8c6d171db7c3856
+ms.openlocfilehash: 270b84c24ef8b52565ee97c2c15374645eb54a2c
+ms.sourcegitcommit: 93a133430ac85d6db7afad5f6f2583b3a39c423a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567707"
+ms.lasthandoff: 09/02/2018
+ms.locfileid: "43469646"
 ---
 適用於：Azure 進階威脅防護
 
@@ -28,7 +28,7 @@ ms.locfileid: "39567707"
 橫向移動是攻擊者使用非敏感性帳戶來取得敏感性帳戶存取權的方式。 此攻擊可利用[可疑活動指南](suspicious-activity-guide.md)中描述的方法達成。 橫向移動是攻擊者利用共用帳戶、群組與電腦中儲存之登入認證的非敏感性帳戶，來識別並取得您網路中敏感性帳戶和電腦存取權限的手段。 一旦攻擊者取得存取權限，攻擊者還能利用您網域控制站上的資料。
 
 
-## <a name="discovery-your-at-risk-sensitive-accounts"></a>探索具有風險的敏感性帳戶
+## <a name="discover-your-at-risk-sensitive-accounts"></a>探索具風險的敏感性帳戶
 
 若要探索網路中有哪些敏感性帳戶因和非敏感性的帳戶、群組與電腦之間具有連線而處於公開的狀態，請遵循這些步驟。 
 

@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/20/2018
+ms.date: 9/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 5e6fac695e1dc51a1a0afcf20330918be82c75e9
-ms.sourcegitcommit: 121c49d559e71741136db1626455b065e8624ff9
+ms.openlocfilehash: dea1d1b936344121c2f1cd3132ed6bd0f2cccaba
+ms.sourcegitcommit: f9400ae27d22607e4146dc9b8a0b9ba6f61fdd38
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "41734680"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43743377"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -32,7 +32,7 @@ ms.locfileid: "41734680"
 
 ## <a name="back-up-your-ata-center-configuration"></a>備份您的 ATA 中心設定
 
-1. ATA 中心組態會於每小時備份為檔案。 找出最新的 ATA 中心組態備份複本，並將它儲存在另一部電腦上。 如需尋找這些檔案的完整解釋，請參閱[匯出和匯入 ATA 組態](ata-configuration-file.md)。 
+1. ATA 中心設定會每 4 小時備份至檔案一次。 找出最新的 ATA 中心組態備份複本，並將它儲存在另一部電腦上。 如需尋找這些檔案的完整解釋，請參閱[匯出和匯入 ATA 組態](ata-configuration-file.md)。 
 2. 匯出 ATA 中心憑證。
     1. 在 [憑證管理員] 中，瀏覽到 [憑證 (本機電腦)]  ->  [個人]  -> [憑證]，然後選取 [ATA 中心]。
     2. 以滑鼠右鍵按一下 [ATA 中心]，然後選取 [所有工作]，並選取 [匯出]。 

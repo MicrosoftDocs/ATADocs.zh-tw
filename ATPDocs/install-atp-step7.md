@@ -6,19 +6,19 @@ author: mlottner
 ms.author: mlottner
 manager: mbaldwin
 ms.date: 8/2/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: 1ad5e923-9bbd-4f56-839a-b11a9f387d4b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7b3c128f6e2b524d778d68af7bcea65476cae2b7
-ms.sourcegitcommit: 14c05a210ae92d35100c984ff8c6d171db7c3856
+ms.openlocfilehash: 268898c5b39d889b29c2d4f560c8cff3ac70f274
+ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567997"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44125952"
 ---
 適用於：Azure 進階威脅防護
 
@@ -30,7 +30,7 @@ ms.locfileid: "39567997"
 [« 步驟 6](install-atp-step6-vpn.md)
 [步驟 8 »](install-atp-step8-samr.md)
 
-## <a name="step-7-configure-detection-exclusions-and-honeytoken-accounts"></a>步驟 7： 設定偵測排除範圍和 Honeytoken 帳戶
+## <a name="step-7-configure-detection-exclusions-and-honeytoken-accounts"></a>步驟 ７： 設定偵測排除範圍和 Honeytoken 帳戶
 
 Azure ATP 可從一些偵測排除特定 IP 位址或使用者。 
 
@@ -55,7 +55,7 @@ Azure ATP 也能讓您設定 honeytoken 帳戶，用來做為針對惡意執行�
 
    ![排除](media/exclusions.png)
 
-6.  按一下 [儲存]。
+6.  按一下 **[儲存]**。
 
 
 恭喜，您已成功部署 Azure 進階威脅防護！

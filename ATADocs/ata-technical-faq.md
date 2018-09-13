@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 5/6/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f372b4b85c240079da157052e2c20c46801398be
-ms.sourcegitcommit: 39a1ddeb6c9dd0817f92870b711627350b7f6f03
+ms.openlocfilehash: c28783170764c117a07fa19946c83638f24dc1a6
+ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33913302"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44166488"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -127,11 +127,11 @@ ATA 與 SIEM 已經雙向整合，如下所示︰
 ## <a name="can-ata-monitor-domain-controllers-virtualized-on-your-iaas-solution"></a>ATA 是否可以監視在 IaaS 解決方案上虛擬的網域控制站？
 是，您可以使用 ATA 輕量型閘道來監視任何 IaaS 解決方案中的網域控制站。
 
-## <a name="is-this-an-on-premises-or-in-cloud-offering"></a>這是內部部署或雲端產品？
+## <a name="is-this-an-on-premises-or-in-cloud-offering"></a>這是內部部署或雲端供應項目？
 Microsoft Advanced Threat Analytics 是內部部署的產品。
 
 ## <a name="is-this-going-to-be-a-part-of-azure-active-directory-or-on-premises-active-directory"></a>它會成為 Azure Active Directory 或內部部署 Active Directory 的一部分嗎？
-此解決方案目前是獨立產品，不屬於 Azure Active Directory 或內部部署 Active Directory。
+此解決方案目前是獨立供應項目，不屬於 Azure Active Directory 或內部部署 Active Directory。
 
 ## <a name="do-you-have-to-write-your-own-rules-and-create-a-thresholdbaseline"></a>必須撰寫自己的規則，並建立臨界值/基準嗎？
 使用 Microsoft Advanced Threat Analytics 不需要建立規則、臨界值或基準然後調整。 ATA 會分析使用者、裝置、資源的行為 — 以及它們之間的關聯性 — 可以快速偵測可疑的活動和已知的攻擊。 在部署三個星期之後，ATA 開始偵測行為的可疑活動。 另外，在部署之後，ATA 會立即啟動偵測已知的惡意攻擊和安全性問題。

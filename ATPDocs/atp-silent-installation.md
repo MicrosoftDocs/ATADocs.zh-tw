@@ -6,19 +6,19 @@ author: mlottner
 ms.author: mlottner
 manager: mbaldwin
 ms.date: 8/7/2017
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: 24eca4c6-c949-42ea-97b9-41ef0fb611f1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b318e4eefe05aee9ab99221d4ccd1e20764047a2
-ms.sourcegitcommit: 1de2b047c0e9f92a106169f7634c480f694baf10
+ms.openlocfilehash: 363400531fe2b4e2634fa80ec1f65ad80923606f
+ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "39631628"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44125782"
 ---
 適用於：Azure 進階威脅防護
 
@@ -67,7 +67,7 @@ Azure ATP 要求您必須安裝 Microsoft .NET Framework 4.7。
 |名稱|語法|對無訊息安裝而言是否為必要？|說明|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
-|說明|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
+|[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|是|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
 
 **安裝參數**：
@@ -98,7 +98,7 @@ Azure ATP 要求您必須安裝 Microsoft .NET Framework 4.7。
 |名稱|語法|對無訊息安裝而言是否為必要？|說明|
 |-------------|----------|---------|---------|
 |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
-|說明|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
+|[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|是|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
 
 
@@ -117,9 +117,9 @@ Azure ATP 要求您必須安裝 Microsoft .NET Framework 4.7。
 > [!div class="mx-tableFixed"]
 |名稱|語法|對無訊息解除安裝而言是否為必要？|說明|
 |-------------|----------|---------|---------|
-|無訊息|/quiet|是|執行解除安裝程式，但不顯示任何 UI 和提示。|
+|Quiet|/quiet|是|執行解除安裝程式，但不顯示任何 UI 和提示。|
 |解除安裝|/uninstall|是|從伺服器中執行 Azure ATP 感應器的無訊息解除安裝。|
-|說明|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
+|[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 
 **範例**：以無訊息模式將 Azure ATP 感應器從伺服器解除安裝：
 

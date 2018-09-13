@@ -5,19 +5,20 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
-ms.topic: get-started-article
+ms.date: 6/14/2018
+ms.topic: conceptual
 ms.prod: ''
 ms.service: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8d7d53222c4eb98fba554b59f14d8728a88c9d95
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: f15f897539f2f41941675960e425f669cba2c878
+ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44126020"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -42,7 +43,7 @@ ATA 也能讓您設定 Honeytoken 使用者，用來作為針對惡意執行者�
 
     ![ATA 組態設定](media/ATA-config-icon.png)
 
-2.  在 [偵測] 下，按一下 [一般]。
+2.  在 [偵測] 下，按一下 [實體標記]。
 
 2. 在 [Honeytoken 帳戶] 下，輸入 Honeytoken 帳戶名稱。 [Honeytoken 帳戶] 欄位是可搜尋的，而且會自動顯示您網路中的實體。
 

@@ -6,19 +6,19 @@ author: mlottner
 ms.author: mlottner
 manager: mbaldwin
 ms.date: 8/26/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f1c9e4bc90289e7c7bfb90710ecbc83beb368ba8
-ms.sourcegitcommit: 56886d06abd25035ffc9885c69aca9b0ebf14abc
+ms.openlocfilehash: 78c30240489e81109aadcb17f9f7395642d2b19b
+ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43038978"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44126343"
 ---
 適用於：Azure 進階威脅防護
 
@@ -124,7 +124,7 @@ Azure ATP 獨立感應器需要至少一個管理介面卡和至少一個擷取�
 -   **擷取介面卡** - 用來擷取進出網域控制站的流量。
 
     > [!IMPORTANT]
-    > -   設定擷取介面卡的連接埠鏡像做為網域控制站網路流量的目的地。 如需詳細資訊，請參閱[設定連接埠鏡像](configure-port-mirroring.md)。 一般而言，設定連接埠鏡像必須與網路或虛擬化團隊合作。
+    > -   設定擷取介面卡的連接埠鏡像做為網域控制站網路流量的目的地。 如需詳細資訊，請參閱[設定連接埠鏡像](configure-port-mirroring.md)。 一般而言，設定通訊埠鏡像必須與網路或虛擬化團隊合作。
     > -   為您的環境設定靜態、無法路由傳送的 IP 位址 (使用 /32 遮罩)，沒有預設感應器閘道也沒有 DNS 伺服器位址。 例如，10.10.0.10/32。 這會確保擷取網路介面卡可以擷取最大的流量，而且管理網路介面卡會用於傳送和接收必要的網路流量。
 
 ### <a name="ports"></a>連接埠

@@ -6,19 +6,19 @@ author: mlottner
 ms.author: mlottner
 manager: mbaldwin
 ms.date: 8/30/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6b94282411cd2918e475acb08600265455d9e0f3
-ms.sourcegitcommit: 6f1406f28c4c2af6a36bc691ebaf4e819adc6b4b
+ms.openlocfilehash: f23ae083ea09150849f95b58d1ab441af061f7bf
+ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43675129"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44166590"
 ---
 適用於：Azure 進階威脅防護
 

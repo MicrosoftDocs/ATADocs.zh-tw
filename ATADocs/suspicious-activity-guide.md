@@ -6,19 +6,19 @@ author: mlottner
 ms.author: mlottner
 manager: mbaldwin
 ms.date: 7/29/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: 1fe5fd6f-1b79-4a25-8051-2f94ff6c71c1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1a2585ac6d9bf73e7ad92dd6a053d7daf77a40f5
-ms.sourcegitcommit: 759e99f670c42c2dd60d07b2200d3de01ddf6055
+ms.openlocfilehash: 313a5e2521d7d110339d4d84a6e26d778a650aed
+ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39335923"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44126411"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -64,7 +64,7 @@ ms.locfileid: "39335923"
 
 ## <a name="broken-trust-between-computers-and-domain"></a>電腦與網域之間的信任中斷
 
-> ![注意] 此可疑的活動已淘汰，只會顯示在 1.9 版以前的 ATA。
+> ![注意] 這項可疑的活動已淘汰，只會顯示在 1.9 版以前的 ATA。
 
 **描述**
 
@@ -306,7 +306,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 在帳戶列舉探查中，攻擊者會使用含有上千筆使用者名稱的目錄或 KrbGuess 這類工具，嘗試猜測網域中的使用者名稱。 攻擊者利用這些名字提出 Kerberos 要求，試著在您的網域中找到有效的使用者名稱。 如果成功猜到使用者名稱，攻擊者將會收到 Kerberos 錯誤**需要預先驗證**，而不是**未知的安全性主體**。 
 
-在此偵測中，ATA 可以偵測到攻擊來源、猜測嘗試總次數及相符次數。 如果有太多未知的使用者，ATA 會將其偵測為可疑的活動。 
+在這項偵測中，ATA 可以偵測到攻擊來源、猜測嘗試總次數及相符次數。 如果有太多未知的使用者，ATA 會將其偵測為可疑的活動。 
 
 **調查**
 
@@ -367,7 +367,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 **描述**
 
-您的 DNS 伺服器包含您網路中所有電腦、IP 位址和服務的對應。 攻擊者會使用此資訊來對應您的網路結構，並鎖定感興趣的電腦以在稍後用於攻擊步驟。
+您的 DNS 伺服器包含您網路中所有電腦、IP 位址和服務的對應。 攻擊者會使用這項資訊來對應您的網路結構，並鎖定感興趣的電腦以在稍後用於攻擊步驟。
 
 DNS 通訊協定中有數種查詢類型。 ATA 會偵測源自於非 DNS 伺服器的 AXFR (傳輸) 要求。
 
@@ -381,14 +381,14 @@ DNS 通訊協定中有數種查詢類型。 ATA 會偵測源自於非 DNS 伺服
 **補救**
 
 您可以停用區域傳輸，或將區域傳輸僅限於指定的 IP 位址，來保護內部 DNS 伺服器，以防止發生使用 DNS 探查。 如需限制區域傳輸的詳細資訊，請參閱 [Restrict Zone Transfers](https://technet.microsoft.com/library/ee649273(v=ws.10).aspx) (限制區域傳輸)。
-「修改區域傳輸」是檢查清單中的一個工作，應該加以解決才能[保護 DNS 伺服器免受內部和外部攻擊](https://technet.microsoft.com/library/cc770432(v=ws.11).aspx)。
+「修改區域傳輸」是檢查清單中的一項工作，應該加以解決才能[保護 DNS 伺服器免受內部和外部攻擊](https://technet.microsoft.com/library/cc770432(v=ws.11).aspx)。
 
 ## <a name="reconnaissance-using-smb-session-enumeration"></a>使用 SMB 工作階段列舉探查
 
 
 **描述**
 
-伺服器訊息區 (SMB) 列舉可讓攻擊者取得使用者最近登入位置的相關資訊。 一旦攻擊者擁有此資訊，他們就可以在網路中橫向移動來到達特定敏感性帳戶。
+伺服器訊息區 (SMB) 列舉可讓攻擊者取得使用者最近登入位置的相關資訊。 一旦攻擊者擁有這項資訊，他們就可以在網路中橫向移動來到達特定敏感性帳戶。
 
 在此偵測中，對網域控制站執行 SMB 工作階段列舉時，就會觸發警示，因為這不應該發生。
 
@@ -434,7 +434,7 @@ DNS 通訊協定中有數種查詢類型。 ATA 會偵測源自於非 DNS 伺服
 ## <a name="sensitive-account-credentials-exposed--services-exposing-account-credentials"></a>已公開的敏感性帳戶認證與要公開帳戶認證的服務
 
 > [!NOTE]
-> 此可疑的活動已淘汰，只會顯示在 1.9 版以前的 ATA。 若為 ATA 1.9 或更新版本，請參閱[報表](reports.md)。
+> 這項可疑的活動已淘汰，只會顯示在 1.9 版以前的 ATA。 若為 ATA 1.9 或更新版本，請參閱[報表](reports.md)。
 
 **描述**
 
@@ -477,7 +477,7 @@ DNS 通訊協定中有數種查詢類型。 ATA 會偵測源自於非 DNS 伺服
 
 **描述**
 
-攻擊者嘗試在您的網路上執行可疑的服務。 當看似可疑的新服務在網域控制站上建立時，ATA 會發出警示。 此警示依賴事件 7045，並且會受 ATA 閘道或輕量型閘道所涵蓋的每個網域控制站偵測。
+攻擊者嘗試在您的網路上執行可疑的服務。 當看似可疑的新服務在網域控制站上建立時，ATA 會發出警示。 這項警示依賴事件 7045，並且會受 ATA 閘道或輕量型閘道所涵蓋的每個網域控制站偵測。
 
 **調查**
 

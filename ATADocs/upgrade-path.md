@@ -7,18 +7,18 @@ ms.author: mlottner
 manager: mbaldwin
 ms.date: 8/20/2018
 ms.topic: conceptual
-ms.prod: ''
-ms.service: advanced-threat-analytics
+ms.prod: advanced-threat-analytics
+ms.service: ''
 ms.technology: ''
 ms.assetid: 88720401-1fb2-4353-ad39-32bc0088f0de
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 10640e447c474897035eda48dc5681a3316e4e90
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: 38600b4e537f583c106462bce26690c7bc14bfe8
+ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44166352"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46133535"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 

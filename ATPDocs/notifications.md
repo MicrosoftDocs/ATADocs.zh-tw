@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4308f03e-b2a7-4e38-a750-540ff94faa81
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 080b3469c862d4063db5a4832f63dd3614905fac
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: c3fc5adbb700c4b8df66c243a655cf98aacc79af
+ms.sourcegitcommit: 9f02f0f6669b25f39b616bb0885bb55b8c4f050b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44166052"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46362420"
 ---
 適用於：Azure 進階威脅防護
 
@@ -39,8 +39,8 @@ Azure ATP 可以在偵測到可疑的活動或健康狀態警示時，透過電�
  
  >  [!NOTE]
  >   只有在建立可疑活動時，才會傳送可疑活動的電子郵件警示。
-
-5. 按一下 **[儲存]**。
+ 
+4. 按一下 **[儲存]**。
 
  ![Azure ATP 通知](media/atp-notifications.png)
 

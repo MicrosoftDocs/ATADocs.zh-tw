@@ -1,12 +1,13 @@
 ---
 layout: LandingPage
 description: 了解如何使用 Azure 進階威脅防護。
-ms.openlocfilehash: 0d7ec7d0aefceb27ba435af98a75538e5be37b6e
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.service: azure-advanced-threat-protection
+ms.openlocfilehash: 5c7261a99e1b6209598a29e5d3a751ea77a150ce
+ms.sourcegitcommit: e0b9252c770b3a3695af1642b76e3304f3df15d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
-ms.locfileid: "29444124"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46566582"
 ---
 # <a name="azure-advanced-threat-protection-documentation"></a>Azure 進階威脅防護文件
 

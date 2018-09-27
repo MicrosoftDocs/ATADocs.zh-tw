@@ -2,10 +2,10 @@
 title: 以效能計數器針對 Advanced Threat Analytics 進行疑難排解 | Microsoft Docs
 description: 描述如何使用效能計數器疑難排解 ATA 相關問題
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 9/25/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.service: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: df162a62-f273-4465-9887-94271f5000d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c7a0ded6092740f92c12fbd7c57100293bf735c2
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 455e66b286916f125fcc34d61b167b86ccc59740
+ms.sourcegitcommit: caaa864708ec631ca4903f6270ad0012951ceef1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46134121"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47114454"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -108,7 +108,7 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 |-----------|---------------|-------------|-------------------|
 |Microsoft ATA Center\EntityReceiver Entity Batch Block Size|ATA 中心加入佇列的實體批次數目。|應小於上限 -1 (預設上限︰10,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。  請參閱上述的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
 |Microsoft ATA Center\NetworkActivityProcessor Network Activity Block Size|要處理而加入佇列的網路活動 (NA) 數目。|應小於上限 -1 (預設上限︰50,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上述的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
-|Microsoft ATA Center\EntityProfiler Network Activity Block Size|要分析而加入佇列的網路活動 (NA) 數目。|應小於上限 -1 (預設上限︰10,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上述的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
+|Microsoft ATA Center\EntityProfiler Network Activity Block Size|要分析而加入佇列的網路活動 (NA) 數目。|應小於上限 -1 (預設上限︰100,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上述的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
 |Microsoft ATA Center\Database &#42; Block Size|要寫入資料庫而加入佇列的特定類型網路活動數目。|應小於上限 -1 (預設上限︰50,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上述的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
 
 

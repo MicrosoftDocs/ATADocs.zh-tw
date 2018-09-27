@@ -7,18 +7,17 @@ ms.author: rkarlin
 manager: mbaldwin
 ms.date: 5/22/2018
 ms.topic: conceptual
-ms.prod: advanced-threat-analytics
 ms.service: ''
 ms.technology: ''
 ms.assetid: 0a56cf27-9eaa-4ad0-ae6c-9d0484c69094
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 541da173d7e0391deb4f64ff36ac344a53d147ff
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 15e53ef145b9d7bbbc980730acec6c3b92c1a0fa
+ms.sourcegitcommit: e0b9252c770b3a3695af1642b76e3304f3df15d4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133866"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46566599"
 ---
 適用於：Azure 進階威脅防護
 

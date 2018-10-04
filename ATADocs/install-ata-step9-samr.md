@@ -13,19 +13,19 @@ ms.technology: ''
 ms.assetid: 7597ed25-87f5-472c-a496-d5f205c9c391
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: df128b4f8258a7d937934795db92cf8fb89fb214
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 7fae5fa320aab6a2ad6db4695b0087eab72344e8
+ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133392"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453947"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
 # <a name="install-ata---step-9"></a>安裝 ATA - 步驟 9
 
->[!div class="step-by-step"]
-[« 步驟 8](install-ata-step7.md)
+> [!div class="step-by-step"]
+> [« 步驟 8](install-ata-step7.md)
 
 ## <a name="step-9-configure-sam-r-required-permissions"></a>步驟 9： 設定 SAM-R 所需的權限
 
@@ -52,8 +52,8 @@ ms.locfileid: "46133392"
  如需有關 SAM-R 與群組原則的詳細資訊，請參閱[網路存取：限制允許對 SAM 發出遠端呼叫的用戶端](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls) \(機器翻譯\)。
 
 
->[!div class="step-by-step"]
-[« 步驟 8](install-ata-step7.md)
+> [!div class="step-by-step"]
+> [« 步驟 8](install-ata-step7.md)
 
 ## <a name="see-also"></a>另請參閱
 - [ATA POC 部署指南](http://aka.ms/atapoc)

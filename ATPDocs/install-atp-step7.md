@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1ad5e923-9bbd-4f56-839a-b11a9f387d4b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 268898c5b39d889b29c2d4f560c8cff3ac70f274
-ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
+ms.openlocfilehash: 9252e47978a4adc0e2059a3111b362ff2b042daf
+ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125952"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453794"
 ---
 適用於：Azure 進階威脅防護
 
@@ -26,9 +26,9 @@ ms.locfileid: "44125952"
 
 # <a name="install-azure-atp---step-7"></a>安裝 Azure ATP - 步驟 7
 
->[!div class="step-by-step"]
-[« 步驟 6](install-atp-step6-vpn.md)
-[步驟 8 »](install-atp-step8-samr.md)
+> [!div class="step-by-step"]
+> [« 步驟 6](install-atp-step6-vpn.md)
+> [步驟 8 »](install-atp-step8-samr.md)
 
 ## <a name="step-7-configure-detection-exclusions-and-honeytoken-accounts"></a>步驟 ７： 設定偵測排除範圍和 Honeytoken 帳戶
 
@@ -66,9 +66,9 @@ Azure ATP 會立即開始掃描是否有可疑的活動。 某些偵測 (例如�
 
 
 
->[!div class="step-by-step"]
-[« 步驟 6](install-atp-step6-vpn.md)
-[步驟 8 »](install-atp-step8-samr.md)
+> [!div class="step-by-step"]
+> [« 步驟 6](install-atp-step6-vpn.md)
+> [步驟 8 »](install-atp-step8-samr.md)
 
 ## <a name="see-also"></a>另請參閱
 - [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool) \(英文\)

@@ -13,19 +13,19 @@ ms.technology: ''
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a6ba913710d5158c2e39105061acbebd566c5f13
-ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
+ms.openlocfilehash: ad120cfe3e736935a557f66417794cd531fa5b2e
+ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126190"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47454083"
 ---
 適用於：Azure 進階威脅防護
 
 # <a name="install-azure-atp---step-9"></a>安裝 Azure ATP - 步驟 9
 
->[!div class="step-by-step"]
-[« 步驟 8](install-atp-step8-samr.md)
+> [!div class="step-by-step"]
+> [« 步驟 8](install-atp-step8-samr.md)
 
 ## <a name="step-9--set-up-azure-advanced-threat-protection-multi-forest-support"></a>步驟 9：  設定 Azure 進階威脅防護多重樹系支援
 
@@ -82,8 +82,8 @@ Azure ATP 可支援擁有多個樹系的組織，讓您能輕鬆地從單一管�
 -   使用者在某樹系中為了存取其他樹系中的資源而執行的互動式登入，不會顯示在 Azure ATP 儀表板。
 
 
->[!div class="step-by-step"]
-[« 步驟 8](install-atp-step8-samr.md)
+> [!div class="step-by-step"]
+> [« 步驟 8](install-atp-step8-samr.md)
 
 
 ## <a name="see-also"></a>另請參閱

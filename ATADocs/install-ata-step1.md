@@ -13,20 +13,20 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e37954252708da31347b0af6479fbafbfd9433a7
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: ea20c87fe7990542ad68de7ae6dfeefad062e378
+ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133730"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47454151"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
 
 # <a name="install-ata---step-1"></a>安裝 ATA - 步驟 1
 
->[!div class="step-by-step"]
-[步驟 2 »](install-ata-step2.md)
+> [!div class="step-by-step"]
+> [步驟 2 »](install-ata-step2.md)
 
 此安裝程序提供執行 ATA 1.8 全新安裝的指示。 如需從舊版更新現有 ATA 部署的資訊，請參閱 [1.9 版 ATA 移轉指南](ata-update-1.9-migration-guide.md)。
 
@@ -98,9 +98,9 @@ ms.locfileid: "46133730"
 
 
 
->[!div class="step-by-step"]
-[«前置安裝](configure-port-mirroring.md)
-[步驟 2»](install-ata-step2.md)
+> [!div class="step-by-step"]
+> [«前置安裝](configure-port-mirroring.md)
+> [步驟 2»](install-ata-step2.md)
 
 ## <a name="related-videos"></a>相關影片
 - [選擇正確的 ATA 閘道類型](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)

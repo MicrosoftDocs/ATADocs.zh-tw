@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 7fb024e6-297a-4ad9-b962-481bb75a0ba3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 86941e2081c3893d3ea8499b435968fbad243015
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: d49770f435985027690ddfc05a9359e84841c0ff
+ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133152"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47454032"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -26,9 +26,9 @@ ms.locfileid: "46133152"
 
 # <a name="install-ata---step-3"></a>安裝 ATA - 步驟 3
 
->[!div class="step-by-step"]
-[« 步驟 2](install-ata-step2.md)
-[步驟 4 »](install-ata-step4.md)
+> [!div class="step-by-step"]
+> [« 步驟 2](install-ata-step2.md)
+> [步驟 4 »](install-ata-step4.md)
 
 ## <a name="step-3-download-the-ata-gateway-setup-package"></a>步驟 3： 下載 ATA 閘道安裝套件
 設定網域連線設定後，您可以下載 ATA 閘道安裝套件。 ATA 閘道可以安裝在專用伺服器或網域控制站上。 如果您將其安裝在網域控制站上，它會作為 ATA 輕量型閘道安裝。 如需 ATA 輕量型閘道的詳細資訊，請參閱 [ATA 架構](ata-architecture.md)。 
@@ -52,9 +52,9 @@ ZIP 檔案包含下列檔案：
 -   包含連線至 ATA 中心所需資訊的組態設定檔
 
 
->[!div class="step-by-step"]
-[« 步驟 2](install-ata-step2.md)
-[步驟 4 »](install-ata-step4.md)
+> [!div class="step-by-step"]
+> [« 步驟 2](install-ata-step2.md)
+> [步驟 4 »](install-ata-step4.md)
 
 
 ## <a name="related-videos"></a>相關影片

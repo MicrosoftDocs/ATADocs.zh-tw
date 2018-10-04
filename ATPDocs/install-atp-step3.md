@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 95bb4ec1-841f-41b7-92fe-fbd144085724
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f10dd0714b2574ff9e1e476bc1865b1a0ed337b8
-ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
+ms.openlocfilehash: 96d459bd00d39bb21ce363d079b5b24ceca4ace7
+ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125901"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47454015"
 ---
 適用於：Azure 進階威脅防護
 
@@ -26,9 +26,9 @@ ms.locfileid: "44125901"
 
 # <a name="install-azure-atp---step-3"></a>安裝 Azure ATP - 步驟 3
 
->[!div class="step-by-step"]
-[« 步驟 2](install-atp-step2.md)
-[步驟 4 »](install-atp-step4.md)
+> [!div class="step-by-step"]
+> [« 步驟 2](install-atp-step2.md)
+> [步驟 4 »](install-atp-step4.md)
 
 ## <a name="step-3-download-the-azure-atp-sensor-setup-package"></a>步驟 3： 下載 Azure ATP 感應器安裝套件
 設定網域連線設定後，您可以下載 Azure ATP 感應器安裝套件。 Azure ATP 感應器安裝套件可以安裝在專用伺服器或網域控制站上。 當直接安裝在網域控制站上時，它會安裝為 Azure ATP 感應器，當安裝在專用的伺服器上且使用連接埠鏡像時，則會安裝為 Azure ATP 獨立感應器。 如需 Azure ATP 感應器的詳細資訊，請參閱 [Azure ATP 架構](atp-architecture.md)。 
@@ -52,9 +52,9 @@ ZIP 檔案包含下列檔案：
 -   包含連線至 Azure ATP 雲端服務所需資訊的組態設定檔
 
 
->[!div class="step-by-step"]
-[« 步驟 2](install-atp-step2.md)
-[步驟 4 »](install-atp-step4.md)
+> [!div class="step-by-step"]
+> [« 步驟 2](install-atp-step2.md)
+> [步驟 4 »](install-atp-step4.md)
 
 
 ## <a name="see-also"></a>另請參閱

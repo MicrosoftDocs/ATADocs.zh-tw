@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ae8a95f0-278c-4a12-ae69-14282364fba1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b2f83da3192770ddde05b04bed46a558a4491290
-ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
+ms.openlocfilehash: 45c1ddfc80c481549ceb08ed45f535ca029b9626
+ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125884"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453828"
 ---
 適用於：Azure 進階威脅防護
 
@@ -26,9 +26,9 @@ ms.locfileid: "44125884"
 
 # <a name="install-azure-atp---step-2"></a>安裝 Azure ATP - 步驟 2
 
->[!div class="step-by-step"]
-[« 步驟 1](install-atp-step1.md)
-[步驟 3 »](install-atp-step3.md)
+> [!div class="step-by-step"]
+> [« 步驟 1](install-atp-step1.md)
+> [步驟 3 »](install-atp-step3.md)
 
 ## <a name="step-2-provide-a-username-and-password-to-connect-to-your-active-directory-forest"></a>步驟 2： 提供使用者名稱和密碼來連線到您的 Active Directory 樹系
 
@@ -51,9 +51,9 @@ ms.locfileid: "44125884"
 3. 在工作區入口網站中，按一下 [下載感應器安裝程式並安裝第一個感應器] 以繼續。
 
 
->[!div class="step-by-step"]
-[« 步驟 1](install-atp-step1.md)
-[步驟 3 »](install-atp-step3.md)
+> [!div class="step-by-step"]
+> [« 步驟 1](install-atp-step1.md)
+> [步驟 3 »](install-atp-step3.md)
 
 
 ## <a name="see-also"></a>另請參閱

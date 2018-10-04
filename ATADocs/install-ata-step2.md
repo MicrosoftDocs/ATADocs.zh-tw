@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 4b2e7ae1dad939db3a2394876acfe9ed4042924b
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 431368a1ceee57870a3eadf176b5899b69784c98
+ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133254"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47454117"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -26,9 +26,9 @@ ms.locfileid: "46133254"
 
 # <a name="install-ata---step-2"></a>安裝 ATA - 步驟 2
 
->[!div class="step-by-step"]
-[« 步驟 1](install-ata-step1.md)
-[步驟 3 »](install-ata-step3.md)
+> [!div class="step-by-step"]
+> [« 步驟 1](install-ata-step1.md)
+> [步驟 3 »](install-ata-step3.md)
 
 ## <a name="step-2-provide-a-username-and-password-to-connect-to-your-active-directory-forest"></a>步驟 2： 提供使用者名稱和密碼來連線到您的 Active Directory 樹系
 
@@ -51,9 +51,9 @@ ms.locfileid: "46133254"
 3. 在主控台中，按一下 [下載閘道安裝程式並安裝第一個閘道] 繼續。
 
 
->[!div class="step-by-step"]
-[« 步驟 1](install-ata-step1.md)
-[步驟 3 »](install-ata-step3.md)
+> [!div class="step-by-step"]
+> [« 步驟 1](install-ata-step1.md)
+> [步驟 3 »](install-ata-step3.md)
 
 
 ## <a name="see-also"></a>另請參閱

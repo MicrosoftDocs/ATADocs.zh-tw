@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: eacc3c2449e6fd7771c43b97b8ed08276ab130d2
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: b45012f82a2457d09a616c2bd9e7e8866d0f5cdc
+ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133529"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453930"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -26,9 +26,9 @@ ms.locfileid: "46133529"
 
 # <a name="install-ata---step-8"></a>安裝 ATA - 步驟 8
 
->[!div class="step-by-step"]
-[« 步驟 7](vpn-integration-install-step.md)
-[步驟 9 »](install-ata-step9-samr.md)
+> [!div class="step-by-step"]
+> [« 步驟 7](vpn-integration-install-step.md)
+> [步驟 9 »](install-ata-step9-samr.md)
 
 ## <a name="step-8-configure-ip-address-exclusions-and-honeytoken-user"></a>步驟 8： 設定 IP 位址排除項目和 Honeytoken 使用者
 ATA 可從一些偵測排除特定 IP 位址或使用者。 
@@ -65,9 +65,9 @@ ATA 會立即開始掃描是否有可疑的活動。 某些活動 (例如某些�
 若要確定 ATA 已啟動並執行，以及攔截網路中的漏洞，您可以查看 [ATA 攻擊模擬腳本](https://docs.microsoft.com/enterprise-mobility-security/solutions/ata-attack-simulation-playbook)。
 
 
->[!div class="step-by-step"]
-[« 步驟 7](vpn-integration-install-step.md)
-[步驟 9 »](install-ata-step9-samr.md)
+> [!div class="step-by-step"]
+> [« 步驟 7](vpn-integration-install-step.md)
+> [步驟 9 »](install-ata-step9-samr.md)
 
 
 ## <a name="related-videos"></a>相關影片

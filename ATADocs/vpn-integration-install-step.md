@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e0aed853-ba52-46e1-9c55-b336271a68e7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 409dfa161c12c22d41deb399e9d4e256fa2863dc
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 8a651e177d37361ccbca178075fb2ac33a434a90
+ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133832"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453913"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -26,9 +26,9 @@ ms.locfileid: "46133832"
 
 # <a name="install-ata---step-7"></a>安裝 ATA - 步驟 7
 
->[!div class="step-by-step"]
-[« 步驟 5](install-ata-step5.md)
-[步驟 8 »](install-ata-step7.md)
+> [!div class="step-by-step"]
+> [« 步驟 5](install-ata-step5.md)
+> [步驟 8 »](install-ata-step7.md)
 
 ## <a name="step-7-integrate-vpn"></a>步驟 ７： 整合 VPN
 
@@ -93,9 +93,9 @@ ATA 會收集 VPN 資料，並找出經由 VPN 使用認證的時間與位置，
 
 
 
->[!div class="step-by-step"]
-[« 步驟 6](install-ata-step5.md)
-[步驟 8 »](install-ata-step7.md)
+> [!div class="step-by-step"]
+> [« 步驟 6](install-ata-step5.md)
+> [步驟 8 »](install-ata-step7.md)
 
 
 

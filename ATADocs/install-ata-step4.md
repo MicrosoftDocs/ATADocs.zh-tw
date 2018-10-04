@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 886b044725976559a35ee40e461e455320cb2200
-ms.sourcegitcommit: 9f02f0f6669b25f39b616bb0885bb55b8c4f050b
+ms.openlocfilehash: 0973554e0fba448bc48526d1499768b2a2c864b1
+ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46362454"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453845"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -26,9 +26,9 @@ ms.locfileid: "46362454"
 
 # <a name="install-ata---step-4"></a>安裝 ATA - 步驟 4
 
->[!div class="step-by-step"]
-[« 步驟 3](install-ata-step3.md)
-[步驟 5 »](install-ata-step5.md)
+> [!div class="step-by-step"]
+> [« 步驟 3](install-ata-step3.md)
+> [步驟 5 »](install-ata-step5.md)
 
 ## <a name="step-4-install-the-ata-gateway"></a>步驟 4： 安裝 ATA 閘道
 
@@ -85,9 +85,9 @@ ms.locfileid: "46362454"
 6.  安裝完成之後，若是 ATA 閘道，請按一下 [啟動] 開啟瀏覽器，然後登入 ATA 主控台；若是 ATA 輕量型閘道，請按一下 [完成]。
 
 
->[!div class="step-by-step"]
-[« 步驟 3](install-ata-step3.md)
-[步驟 5 »](install-ata-step5.md)
+> [!div class="step-by-step"]
+> [« 步驟 3](install-ata-step3.md)
+> [步驟 5 »](install-ata-step5.md)
 
 
 ## <a name="related-videos"></a>相關影片

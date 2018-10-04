@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 51911e39-76c7-4dcd-bc0b-ec6235d0403f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9eaa6b37d56c3d8b18c3f5d015581cf7975d6e93
-ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
+ms.openlocfilehash: 87a2b47261293fffffe9d822d698b551a332a481
+ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126315"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47454134"
 ---
 適用於：Azure 進階威脅防護
 
@@ -26,9 +26,9 @@ ms.locfileid: "44126315"
 
 # <a name="install-azure-atp---step-4"></a>安裝 Azure ATP - 步驟 4
 
->[!div class="step-by-step"]
-[« 步驟 3](install-atp-step3.md)
-[步驟 5 »](install-atp-step5.md)
+> [!div class="step-by-step"]
+> [« 步驟 3](install-atp-step3.md)
+> [步驟 5 »](install-atp-step5.md)
 
 ## <a name="step-4-install-the-azure-atp-sensor"></a>步驟 4： 安裝 Azure ATP 感應器
 
@@ -89,9 +89,9 @@ ms.locfileid: "44126315"
 8.  安裝完成後，請按一下 [啟動] 以開啟瀏覽器，並登入 Azure ATP 工作區入口網站。
 
 
->[!div class="step-by-step"]
-[« 步驟 3](install-atp-step3.md)
-[步驟 5 »](install-atp-step5.md)
+> [!div class="step-by-step"]
+> [« 步驟 3](install-atp-step3.md)
+> [步驟 5 »](install-atp-step5.md)
 
 
 ## <a name="see-also"></a>另請參閱

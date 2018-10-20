@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 7/29/2018
+ms.date: 10/14/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.service: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1fe5fd6f-1b79-4a25-8051-2f94ff6c71c1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: be809f422e797f08655b7841fc7f9ecb7423a0a6
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: be1a699ffd1ab0925df43910aec7f8166d4e423d
+ms.sourcegitcommit: 58c75026e5ec4dcab3b0852a41f9f0a0ad6f22eb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133917"
+ms.lasthandoff: 10/14/2018
+ms.locfileid: "49315841"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -42,7 +42,7 @@ ms.locfileid: "46133917"
 
 **描述**
 
-攻擊者將使用者新增至具有高權限的群組。 如此一來就能存取更多資源並取得永續性。 此偵測需要分析使用者的群組修改活動，並在敏感性群組中出現異常新增時發出警示。 ATA 會持續執行分析。 可觸發警示的最低期限是每個網域控制站一個月。
+攻擊者將使用者新增至具有高權限的群組。 他們這樣做以取得更多資源的存取權並取得持續入侵管道。 此偵測需要分析使用者群組修改活動，並在敏感性群組中出現異常新增時發出警示。 ATA 會持續執行分析。 可觸發警示的最短期限是每個網域控制站一個月。
 
 如需 ATA 中敏感性群組的定義，請參閱[使用 ATA 主控台](working-with-ata-console.md#sensitive-groups)。
 
@@ -64,15 +64,16 @@ ms.locfileid: "46133917"
 
 ## <a name="broken-trust-between-computers-and-domain"></a>電腦與網域之間的信任中斷
 
-> ![注意] 這項可疑的活動已淘汰，只會顯示在 1.9 版以前的 ATA。
+> [!NOTE]
+> 電腦與網域之間的信任中斷警示已過時，而且只會出現在 ATA 1.9 版之前。
 
 **描述**
 
-信任中斷表示 Active Directory 安全性需求對有問題的電腦可能無效。 這通常會視為基準安全性與合規性失敗，而且是攻擊者容易攻擊的目標。 在此偵測中，如果在 24 小時內從電腦帳戶看到超過 5 次 Kerberos 驗證失敗，就會觸發警示。
+信任中斷表示 Active Directory 安全性需求對那些有問題的電腦可能無效。 這會被視為基準安全性與合規性失敗，而且是攻擊者容易攻擊的目標。 在此偵測中，如果在 24 小時內從電腦帳戶看到超過五次 Kerberos 驗證失敗，就會觸發警示。
 
 **調查**
 
-有問題的電腦是否允許網域使用者登入？ 
+正在調查的電腦是否允許網域使用者登入？ 
 - 如果是，您可以在補救步驟中忽略此電腦。
 
 **補救**
@@ -107,7 +108,7 @@ ms.locfileid: "46133917"
 
 **描述**
 
-加密降級是一種減弱 Kerberos 的方法，它會針對通訊協定通常會以最高加密層級進行加密的不同欄位，對其加密層級做出降級。 攻擊者將能較為輕鬆地對減弱的加密欄位進行離線暴力密碼破解。 利用弱式 Kerberos 加密 Cypher 的各種攻擊方法。 在此偵測中，ATA 會了解電腦和使用者所使用的 Kerberos 加密類型，並在使用下列較弱的 Cypher 時向您發出警示：(1) 對來源電腦及/或使用者而言不尋常，以及 (2) 符合已知的攻擊手法。
+加密降級是一種減弱 Kerberos 的方法，它會針對通訊協定一般會以最高加密層級進行加密的不同欄位，對其加密層級做出降級。 攻擊者將能較為輕鬆地對減弱的加密欄位進行離線暴力密碼破解。 利用弱式 Kerberos 加密 Cypher 的各種攻擊方法。 在此偵測中，ATA 會了解電腦與使用者所使用的 Kerberos 加密類型，並在使用下列較弱的 Cypher 時向您發出警示：(1) 對來源電腦及/或使用者而言不尋常，以及 (2) 符合已知的攻擊手法。
 
 有三種偵測類型：
 
@@ -121,8 +122,8 @@ ms.locfileid: "46133917"
 
 先查看警示的描述，以了解要處理上述三種偵測類型的哪一種。 如需詳細資訊，請下載 Excel 試算表。
 1.  基本架構金鑰 - 您可以使用 [ATA 小組所撰寫的掃描程式](https://gallery.technet.microsoft.com/Aorato-Skeleton-Key-24e46b73) \(英文\)，以檢查基本架構金鑰是否影響您的網域控制站。 如果掃描程式在一或多個網域控制站上找到惡意程式碼，則為真肯定。
-2.  黃金票證 - 在 Excel 試算表中，移至 [網路活動] 索引標籤。您會看到相關的降級欄位為 [要求票證加密類型]，且 [來源電腦支援的加密類型] 包含更強的加密方法。
-  a.    請檢查來源電腦和帳戶，或是在有多部來源電腦和帳戶的情況下，檢查它們是否有任何共同點 (例如，所有的行銷人員都使用可能會導致觸發警示的特定應用程式)。 在某些情況下，可能會有很少使用的自訂應用程式，正在使用較低的加密編碼器進行驗證。 檢查來源電腦上是否有任何這類自訂應用程式。 如果是，則可能是良性真肯定，您可以**隱藏**它。
+2.  黃金票證 - 在 Excel 試算表中，移至 [網路活動] 索引標籤。您會看到相關的降級欄位為 [要求票證加密類型]，且 [來源電腦支援的加密類型] 列出更強的加密方法。
+  a.    請檢查來源電腦與帳戶，或是在有多部來源電腦與帳戶的情況下，檢查它們是否有任何共同點 (例如，所有的行銷人員都使用可能會導致觸發警示的特定應用程式)。 在某些情況下，可能會有很少使用的自訂應用程式，正在使用較低的加密編碼器進行驗證。 檢查來源電腦上是否有任何這類自訂應用程式。 如果是，則可能是良性真肯定，您可以**隱藏**它。
   b.    檢查那些票證所存取的資源，如果有所有票證都會存取的資源，請驗證該資源以確定它是票證應存取的有效資源。 此外，請驗證目標資源是否支援強式加密方法。 您可以透過在 Active Directory 中檢查資源服務帳戶的 `msDS-SupportedEncryptionTypes` 屬性來檢查這點。
 3.  Overpass-the-Hash - 在 Excel 試算表中，移至 [網路活動] 索引標籤。您會看到相關的降級欄位為 [加密時間戳記加密類型]，且 [來源電腦支援的加密類型] 包含更強的加密方法。
   a.    如果最近有變更智慧卡設定，則使用者在使用智慧卡登入時可能會觸發此警示。 檢查相關帳戶是否有類似的變更。 如果是，這可能是良性真肯定，您可以**隱藏**它。
@@ -133,9 +134,9 @@ ms.locfileid: "46133917"
 1.  基本架構金鑰 - 移除惡意程式碼。 如需詳細資訊，請參閱[基本架構金鑰惡意程式碼分析](https://www.virusbulletin.com/virusbulletin/2016/01/paper-digital-bian-lian-face-changing-skeleton-key-malware) \(英文\)。
 
 2.  黃金票證 - 遵循[黃金票證](#golden-ticket)可疑活動的指示進行。   
-    此外，由於建立黃金票證需要網域系統管理員權限，因此請實作[傳遞雜湊建議](http://aka.ms/PtH)。
+    此外，由於建立黃金票證需要網域系統管理員權限，因此請實作[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)。
 
-3.  越過雜湊 - 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 這可防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引。 另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。 由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](http://aka.ms/PtH)的最佳做法。
+3.  越過雜湊 - 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 這可防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引。 另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。 由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)的最佳做法。
 
 
 ## <a name="honeytoken-activity"></a>Honeytoken 活動
@@ -143,9 +144,9 @@ ms.locfileid: "46133917"
 
 **描述**
 
-Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關的惡意活動。 Honeytoken 帳戶應保留未使用，同時擁有具吸引力的名稱來引誘攻擊者 (例如 SQL-Admin)。 任何來自這些帳戶的活動可能表示惡意行為。
+Honeytoken 帳戶是假帳戶，可設定來識別及追蹤與這些帳戶相關的惡意活動。 Honeytoken 帳戶應保留未使用，同時擁有具吸引力的名稱來引誘攻擊者 (例如 SQL-Admin)。 任何來自這些帳戶的活動可能表示惡意行為。
 
-如需 honeytoken 帳戶的詳細資訊，請參閱[安裝 ATA - 步驟 7](install-ata-step7.md)。
+如需 honey token 帳戶的詳細資訊，請參閱[安裝 ATA - 步驟 7](install-ata-step7.md)。
 
 **調查**
 
@@ -169,13 +170,13 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 **調查**
 
-所使用的雜湊是否來自目標使用者所擁有或定期使用的電腦？ 如果是，這是誤判。 如果否，則可能是真肯定。
+檢查所使用的雜湊是來自目標使用者所擁有或定期使用的電腦？ 如果是，則警示為誤判；否則，可能是真的有問題。
 
 **補救**
 
-1. 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 這可防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。 
+1. 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 重設密碼可防止攻擊者從密碼雜湊建立新的 Kerberos 票證。 現有的票證在到期之前仍可使用。 
 
-2. 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。 由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](http://aka.ms/PtH)的最佳做法。
+2. 如果涉及的帳戶是敏感性帳戶，請考慮重設 KRBTGT 帳戶兩次，如在黃金票證可疑活動中一樣。 重設 KRBTGT 兩次可使所有網域 Kerberos 票證失效，因此在這樣做之前請務必先做好規劃。 請參閱[客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) \(英文\) 中的指導方針，另請參閱並使用[重設 KRBTGT 帳戶密碼/金鑰工具](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) \(英文\)。 由於這通常是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)的最佳做法。
 
 ## <a name="identity-theft-using-pass-the-ticket-attack"></a>使用傳遞票證攻擊竊取身分
 
@@ -185,23 +186,23 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 **調查**
 
-1. 按一下 [下載詳細資料] 按鈕，以檢視相關 IP 位址的完整清單。 一或兩部電腦的 IP 位址是否屬於從過小 DHCP 集區配置的子網路，例如 VPN 或 WiFi？ 是否共用 IP 位址？ 例如，透過 NAT 裝置？ 如果上述任何問題的答案為是，則為誤判。
+1. 按一下 [下載詳細資料] 按鈕，以檢視相關 IP 位址的完整清單。 一或兩部電腦的 IP 位址是否屬於從過小 DHCP 集區配置的子網路，例如 VPN 或 WiFi？ 是否共用 IP 位址？ 例如，透過 NAT 裝置？ 如果上述任何問題的答案為是，則警示為誤判。
 
 2. 是否有自訂應用程式代表使用者轉送票證？ 如果是，則為良性真肯定。
 
 **補救**
 
-1. 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 這可防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。  
+1. 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 密碼重設可防止攻擊者從密碼雜湊建立新的 Kerberos 票證。 任何現有的票證在到期之前仍可用。  
 
-2. 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。  由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](http://aka.ms/PtH)中的最佳做法。
+2. 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。  由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)中的最佳做法。
 
 ## Kerberos 萬能票證 (Golden Ticket)<a name="golden-ticket"></a>
 
 **描述**
 
-具有網域系統管理員權限的攻擊者可能會危害 [KRBTGT 帳戶](https://technet.microsoft.com/library/dn745899(v=ws.11).aspx#Sec_KRBTGT)。 他們可以利用 KRBTGT 帳戶建立 Kerberos 票證授權票證 (TGT)，以提供任何資源的授權，並將票證到期日設定為任何時間。 這個假 TGT 稱為「黃金票證」，可讓攻擊者在網路中取得永續性。
+具有網域系統管理員權限的攻擊者可能會危害您的 [KRBTGT 帳戶](https://technet.microsoft.com/library/dn745899(v=ws.11).aspx#Sec_KRBTGT)。 攻擊者可以使用 KRBTGT 帳戶來建立 Kerberos 票證授權票證 (TGT) ，提供對您任何資源的授權。 票證到期日可設定為任意時間。 這個假 TGT 稱為「黃金票證」，可讓攻擊者在您的網路中取得並維持永續性。
 
-在此偵測中，當 Kerberos 票證授與票證使用超過[使用者票證最長存留期](https://technet.microsoft.com/library/jj852169(v=ws.11).aspx) \(機器翻譯\) 安全性原則中所指定的允許時間時，就會觸發警示。
+在此偵測中，當 Kerberos 票證授權票證 (TGT) 使用超過[使用者票證最長存留期](https://technet.microsoft.com/library/jj852169(v=ws.11).aspx) \(英文\) 安全性原則中所指定的允許時間時，就會觸發警示。
 
 **調查**
 
@@ -214,14 +215,14 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 **補救**
 
 根據 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)，變更 Kerberos 票證授權票證 (KRBTGT) 密碼兩次。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。  
-此外，由於建立黃金票證需要網域系統管理員權限，因此請實作[傳遞雜湊建議](http://aka.ms/PtH)。
+此外，由於建立黃金票證需要網域系統管理員權限，因此請實作[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)。
 
 
 ## <a name="malicious-data-protection-private-information-request"></a>惡意的資料保護私人資訊要求
 
 **描述**
 
-Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的密碼、加密檔案和其他敏感性資料。 網域控制站會保留備份的主要金鑰，該金鑰可用來解密已加入網域的 Windows 電腦上使用 DPAPI 加密的所有密碼。 攻擊者可以使用主要金鑰，來解密所有已加入網域之電腦上由 DPAPI 保護的所有密碼。
+Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的密碼、加密檔案及其他敏感性資料。 網域控制站會保留備份的主要金鑰，該金鑰可用來解密已加入網域的 Windows 電腦上使用 DPAPI 加密的所有密碼。 攻擊者可以使用主要金鑰，來解密所有已加入網域之電腦上由 DPAPI 保護的所有密碼。
 在此偵測中，當使用 DPAPI 來擷取備份的主要金鑰時，就會觸發警示。
 
 **調查**
@@ -230,11 +231,11 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 2. 如果是且一律應該這麼做，請**關閉並排除**可疑活動。
 
-3. 如果是且不應該這麼做，請**關閉**可疑活動。
+3. 如果是且不應該這麼做，請**關閉可疑活動。
 
 **補救**
 
-若要使用 DPAPI，攻擊者需要網域系統管理員權限。 實作[傳遞雜湊建議](http://aka.ms/PtH)。
+若要使用 DPAPI，攻擊者需要網域系統管理員權限。 實作[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)。
 
 ## <a name="malicious-replication-of-directory-services"></a>惡意的目錄服務複寫
 
@@ -267,14 +268,14 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 **描述**
 
-在某些情況下，攻擊者會執行拒絕服務的攻擊 (DoS)，而不是只竊取資訊。 刪除大量帳戶即為一種 DoS 攻擊手法。
+在某些情況下，攻擊者會執行阻斷服務攻擊 (DoS)，而不是只竊取資訊。 刪除大量帳戶是一種嘗試進行 DoS 攻擊的手法。 
 
 在此偵測中，當刪除的帳戶超過所有帳戶的 5% 時，就會觸發警示。 此偵測需要已刪除物件容器的讀取權限。  
 如需設定已刪除物件容器之唯讀權限的資訊，請參閱 [View or Set Permissions on a Directory Object](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx) (檢視或設定目錄物件的權限) 中的 **Changing permissions on a deleted object container** (變更已刪除物件容器的權限)。
 
 **調查**
 
-檢閱已刪除的帳戶清單，並了解是否有可能造成此大量刪除的模式或業務理由。
+檢閱已刪除的帳戶清單，並判斷是否有可能造成此大量刪除的模式或業務理由。
 
 **補救**
 
@@ -284,21 +285,21 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 **描述**
 
-舊版 Windows Server 中的已知弱點可讓攻擊者操作專用權屬性憑證 (PAC)，這是 Kerberos 票證中包含使用者授權資料 (在 Active Directory 中為群組成員資格) 的欄位，會授與攻擊者更多權限。
+舊版 Windows Server 中的已知弱點可能會被攻擊者用來操縱 Privileged Attribute Certificate (PAC)。 PAC 是 Kerberos 票證中的一個領域，它具有使用者授權資料 (在 Active Directory 中，這是群組成員資格) 而且會將額外權限授與攻擊者。
 
 **調查**
 
-1. 按一下警示以移至其詳細資料頁面。
+1. 按一下警示以存取其詳細資料頁面。
 
 2. 目的地電腦 (在 [已存取] 欄下) 是否已透過 MS14-068 (網域控制站) 或 MS11-013 (伺服器) 修補？ 如果是，請**關閉**可疑活動 (這是誤判)。
 
-3. 如果否，來源電腦, 執行 (在 [來源] 欄下) 是否為已知要修改 PAC 的 OS/應用程式？ 如果是，請**隱藏**可疑活動 (這是良性真肯定)。
+3. 若目的地電腦未修補，來源電腦 (在 [來源] 欄下) 是否為已知要修改 PAC 的 OS/應用程式？ 如果是，請**隱藏**可疑活動 (這是良性真肯定)。
 
-4. 如果上述兩個問題的答案均為否，則假設這是惡意的。
+4. 若前兩個問題的答案為否，則假設此活動為惡意。
 
 **補救**
 
-確定具有 Windows Server 2012 R2 以前作業系統的所有網域控制站與 [KB3011780](https://support.microsoft.com/help/2496930/ms11-013-vulnerabilities-in-kerberos-could-allow-elevation-of-privilege) 一起安裝，而且 2012 R2 以前的所有成員伺服器和網域控制站已更新 KB2496930。 如需詳細資訊，請參閱 [Silver PAC](https://technet.microsoft.com/library/security/ms11-013.aspx) 和[偽造 PAC](https://technet.microsoft.com/library/security/ms14-068.aspx)。
+確定具有 Windows Server 2012 R2 以前作業系統的所有網域控制站與 [KB3011780](https://support.microsoft.com/help/2496930/ms11-013-vulnerabilities-in-kerberos-could-allow-elevation-of-privilege) 一起安裝，而且 2012 R2 以前的所有成員伺服器與網域控制站已更新 KB2496930。 如需詳細資訊，請參閱 [Silver PAC](https://technet.microsoft.com/library/security/ms11-013.aspx) 與[偽造 PAC](https://technet.microsoft.com/library/security/ms14-068.aspx)。
 
 ## <a name="reconnaissance-using-account-enumeration"></a>使用帳戶列舉偵查
 
@@ -334,7 +335,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 攻擊者可利用目錄服務探查來對應目錄結構，並鎖定特殊權限帳戶以在稍後用於攻擊步驟。 安全性帳戶管理員遠端 (SAM-R) 通訊協定是用來查詢目錄以執行這類對應的其中一種方法。
 
-在此偵測中，在部署 ATA 之後的第一個月內不會觸發任何警示。 在學習期間，ATA 會分析哪個 SAM-R 查詢是從哪部電腦發出，包括敏感性帳戶的列舉和個別查詢。
+在此偵測中，在部署 ATA 之後的第一個月內不會觸發任何警示。 在學習期間，ATA 會分析哪個 SAM-R 查詢是從哪部電腦發出，包括敏感性帳戶的列舉與個別查詢。
 
 **調查**
 
@@ -359,15 +360,15 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 **補救**
 
 使用 [SAMRi10 工具](https://gallery.technet.microsoft.com/SAMRi10-Hardening-Remote-48d94b5b)來強化您的環境，以防止此攻擊手法。
-若此工具不適用您的網域控制站 (DC)：
+若此工具不適用您的網域控制站：
 1. 電腦是否在執行弱點掃描工具？  
-2. 調查攻擊中的特定查詢使用者及群組是否經過授權，或是具有高價值的帳戶 (例如，CEO、CFO、IT 管理等)。  若是如此，也請查看端點上的其他活動，並監視已查詢帳戶登入的電腦，因為這些可能是橫向移動的目標。
+2. 調查在攻擊中被查詢的特定使用者及群組是否為具有特殊權限或高價值的帳戶 (例如執行長、財務長、IT 管理等)。  若是如此，也請查看端點上的其他活動，並監視已查詢帳戶登入的電腦，因為這些可能是橫向移動的目標。
 
 ## <a name="reconnaissance-using-dns"></a>使用 DNS 探查
 
 **描述**
 
-您的 DNS 伺服器包含您網路中所有電腦、IP 位址和服務的對應。 攻擊者會使用這項資訊來對應您的網路結構，並鎖定感興趣的電腦以在稍後用於攻擊步驟。
+您的 DNS 伺服器包含您網路中所有電腦、IP 位址與服務的對應。 攻擊者會使用這項資訊來對應您的網路結構，並鎖定感興趣的電腦以在稍後用於攻擊步驟。
 
 DNS 通訊協定中有數種查詢類型。 ATA 會偵測源自於非 DNS 伺服器的 AXFR (傳輸) 要求。
 
@@ -381,7 +382,7 @@ DNS 通訊協定中有數種查詢類型。 ATA 會偵測源自於非 DNS 伺服
 **補救**
 
 您可以停用區域傳輸，或將區域傳輸僅限於指定的 IP 位址，來保護內部 DNS 伺服器，以防止發生使用 DNS 探查。 如需限制區域傳輸的詳細資訊，請參閱 [Restrict Zone Transfers](https://technet.microsoft.com/library/ee649273(v=ws.10).aspx) (限制區域傳輸)。
-「修改區域傳輸」是檢查清單中的一項工作，應該加以解決才能[保護 DNS 伺服器免受內部和外部攻擊](https://technet.microsoft.com/library/cc770432(v=ws.11).aspx)。
+「修改區域傳輸」是檢查清單中的一項工作，應該加以解決才能[保護 DNS 伺服器免受內部與外部攻擊](https://technet.microsoft.com/library/cc770432(v=ws.11).aspx)。
 
 ## <a name="reconnaissance-using-smb-session-enumeration"></a>使用 SMB 工作階段列舉探查
 
@@ -390,7 +391,7 @@ DNS 通訊協定中有數種查詢類型。 ATA 會偵測源自於非 DNS 伺服
 
 伺服器訊息區 (SMB) 列舉可讓攻擊者取得使用者最近登入位置的相關資訊。 一旦攻擊者擁有這項資訊，他們就可以在網路中橫向移動來到達特定敏感性帳戶。
 
-在此偵測中，對網域控制站執行 SMB 工作階段列舉時，就會觸發警示，因為這不應該發生。
+在此偵測中，對網域控制站執行 SMB 工作階段列舉時，就會觸發警示。
 
 **調查**
 
@@ -402,27 +403,27 @@ DNS 通訊協定中有數種查詢類型。 ATA 會偵測源自於非 DNS 伺服
 
 3. 如果是且警示已更新，請**隱藏**可疑活動。  
 
-4. 如果是且不應該再這麼做，請**關閉**可疑活動。
+4. 如果是且不應該更新，請**關閉**可疑活動。
 
-5. 如果上述所有問題的答案均為否，則假設這是惡意的。
+5. 如果上述所有問題的答案均為否，則假設該活動為惡意。
 
 **補救**
 
-使用 [Net Cease 工具](https://gallery.technet.microsoft.com/Net-Cease-Blocking-Net-1e8dcb5b)來強化您的環境，以防止此攻擊。
+使用 [Net Cease 工具](https://gallery.technet.microsoft.com/Net-Cease-Blocking-Net-1e8dcb5b)來強化您的環境，以防止此類型的攻擊。
 
 ## <a name="remote-execution-attempt-detected"></a>偵測到遠端執行嘗試
 
 **描述**
 
-盜用系統管理認證或使用零時差惡意探索的攻擊者可能會在您的網域控制站上執行遠端命令。 這可用於取得持續性、收集資訊、發動拒絕服務 (DOS) 的攻擊或任何其他原因。 ATA 會偵測 PSexec 和遠端 WMI 連線。
+盜用系統管理認證或使用零時差惡意探索的攻擊者可能會在您的網域控制站上執行遠端命令。 這可用於取得持續性、收集資訊、發動拒絕服務 (DOS) 的攻擊或任何其他原因。 ATA 會偵測 PSexec 與遠端 WMI 連線。
 
 **調查**
 
-1. 對網域控制站執行系統管理工作的系統管理工作站以及 IT 小組成員和服務帳戶經常會發生這種情況。 如果是這種情況，而且由於相同的系統管理員或電腦執行工作而更新警示，請**隱藏**警示。
+1. 對網域控制站執行系統管理工作的系統管理工作站以及 IT 小組成員與服務帳戶經常會發生這種情況。 如果是這種情況，而且由於相同的系統管理員或電腦執行工作而更新警示，請**隱藏**警示。
 2.  有問題的電腦是否可以對您的網域控制站執行此遠端執行？
   - 有問題的帳戶是否可以對您的網域控制站執行此遠端執行？
   - 如果這兩個問題的答案均為「是」，請 [關閉] 警示。
-3.  如果針對這兩個問題的答案都是否定的，則應將此事件視為真肯定。 試著透過檢查電腦和帳戶設定檔，來找出嘗試的來源。 按一下來源電腦或帳戶以移至其設定檔頁面。 檢查這些嘗試的期間所發生的事件，並搜尋不尋常的活動，例如當時登入的使用者，以及被存取的資源有哪些。
+3.  如果針對這兩個問題的答案皆為否，則應將此活動視為真的有問題。 試著透過檢查電腦與帳戶設定檔，來找出嘗試的來源。 按一下來源電腦或帳戶以移至其設定檔頁面。 檢查這些嘗試的期間所發生的事件，並搜尋不尋常的活動，例如當時登入的使用者，以及被存取的資源有哪些。
 
 
 **補救**
@@ -496,12 +497,11 @@ DNS 通訊協定中有數種查詢類型。 ATA 會偵測源自於非 DNS 伺服
 - 在網域電腦上實作具有較低權限的存取，以僅允許特定使用者建立新的服務。
 
 
-
 ## <a name="suspicion-of-identity-theft-based-on-abnormal-behavior"></a>基於異常行為懷疑身分遭竊
 
 **描述**
 
-ATA 會持續三週學習使用者、電腦和資源的實體行為。 此行為模型是以下列活動為依據：實體已登入的電腦、實體已要求存取的資源，以及這些作業發生的時間。 當實體的行為根據機器學習演算法發現有所偏差時，ATA 就會傳送警示。 
+ATA 會持續三週學習使用者、電腦與資源的實體行為。 此行為模型是以下列活動為依據：實體已登入的電腦、實體已要求存取的資源，以及這些作業發生的時間。 當實體的行為根據機器學習演算法發現有所偏差時，ATA 就會傳送警示。 
 
 **調查**
 
@@ -512,7 +512,7 @@ ATA 會持續三週學習使用者、電腦和資源的實體行為。 此行為
 
 **補救**
 
-根據此異常行為的發生原因，應該採取不同的動作。 例如，如果是由於掃描網路所致，則應該從網路封鎖發生此問題的電腦 (除非已核准)。
+ 應該根據造成此異常行為發生的原因採取不同的動作。 例如，若已掃描網路，來源電腦應該會被封鎖在網路之外 (除非已獲核准)。
 
 ## <a name="unusual-protocol-implementation"></a>不尋常的通訊協定實作
 
@@ -523,35 +523,35 @@ ATA 會持續三週學習使用者、電腦和資源的實體行為。 此行為
 
 **調查**
 
-從可疑活動時間軸找出不尋常的通訊協定，按一下可疑活動以移至其詳細資料頁面；下列通訊協定會出現在箭號上方：Kerberos 或 NTLM。
+從可疑活動時間軸找出不尋常的通訊協定，按一下可疑活動以存取其詳細資料頁面；下列通訊協定會出現在箭號上方：Kerberos 或 NTLM。
 
-- **Kerberos**：如果已使用 Mimikatz 等駭客工具 (可能是執行越過雜湊攻擊)，通常會觸發此警示。 檢查來源電腦所執行的應用程式是否實作自己的 Kerberos 堆疊，而不是根據 Kerberos RFC。 如果是這種情況，則為良性真肯定；而且您可以**關閉**警示。 如果持續觸發警示，而且仍是這種情況，您可以**隱藏**警示。
+- **Kerberos**：如果已使用 Mimikatz 等駭客工具潛在使用越過雜湊攻擊，通常會觸發此警示。 檢查來源電腦所執行的應用程式是否實作自己的 Kerberos 堆疊，但該堆疊不符合 Kerberos RFC 規範。 如果是這種情況，則真的有問題，而且您可以**關閉**警示。 如果持續觸發警示，而且仍是這種情況，您可以**隱藏**警示。
 
-- **NTLM**：可能是 WannaCry，或是 Metasploit、Medusa 和 Hydra 等工具。  
+- **NTLM**：可能是 WannaCry，或是 Metasploit、Medusa 與 Hydra 等工具。  
 
-若要判斷這是否為 WannaCry 攻擊，請執行下列步驟：
+若要判斷活動是否為 WannaCry 攻擊，請執行下列步驟：
 
 1. 檢查來源電腦是否執行 Metasploit、Medusa 或 Hydra 等攻擊工具。
 
 2. 如果找不到任何攻擊工具，請檢查來源電腦所執行的應用程式是否實作自己的 NTLM 或 SMB 堆疊。
 
-3. 否則，請對可疑活動中相關的來源電腦執行 WannaCry 掃描程式指令碼 (例如[此掃描程式](https://github.com/apkjet/TrustlookWannaCryToolkit/tree/master/scanner))，來確認這是否由 WannaCry 所造成。 如果掃描程式判定此電腦受到感染或易受攻擊，請著手修補電腦並從網路移除及封鎖惡意程式碼。
+3. 若否，請對可疑活動中的相關來源電腦執行 WannaCry 掃描程式指令碼 (例如[此掃描程式](https://github.com/apkjet/TrustlookWannaCryToolkit/tree/master/scanner))，來確認這是否由 WannaCry 所造成。 如果掃描程式判定此電腦受到感染或易受攻擊，請著手修補電腦並從網路移除及封鎖惡意程式碼。
 
 4. 如果該指令碼判定此電腦未受到感染且不容易受攻擊，它可能仍受到感染，但已停用 SMBv1 或已修補電腦，這會影響掃描工具。
 
 **補救**
 
-修補您所有的電腦，特別是套用安全性更新。
+將最新的補充程式套用到您的所有電腦，然後檢查是否已套用所有安全性更新。
 
 1. [停用 SMBv1](https://blogs.technet.microsoft.com/filecab/2016/09/16/stop-using-smb1/)
 
 2. [移除 WannaCry](https://support.microsoft.com/help/890830/remove-specific-prevalent-malware-with-windows-malicious-software-remo)
 
-3. WanaKiwi 可以解密受到某種勒索軟體支配的資料，但只適用於使用者尚未重新啟動或關閉電腦的情況。 如需詳細資訊，請參閱 [Wanna Cry Ransomware](https://answers.microsoft.com/en-us/windows/forum/windows_10-security/wanna-cry-ransomware/5afdb045-8f36-4f55-a992-53398d21ed07?auth=1) (Wanna Cry 勒索軟體)
+3.  由某些勒索軟體所控制的資料有時候可被解密。 只有當使用者尚未重新啟動或關閉電腦時，才能進行解密。 如需詳細資訊，請參閱 [Wanna Cry 勒索軟體](https://answers.microsoft.com/en-us/windows/forum/windows_10-security/wanna-cry-ransomware/5afdb045-8f36-4f55-a992-53398d21ed07?auth=1) \(英文\)
 
 
 >[!NOTE]
-> 若要停用可疑的活動，請連絡支援人員。
+> 若要停用可疑活動警示，請連絡支援人員。
 
 ## <a name="related-videos"></a>相關影片
 - [加入安全性社群](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)

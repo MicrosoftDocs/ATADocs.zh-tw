@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ca22fc6430556d49a6709be2f46c0c0b8746fa38
-ms.sourcegitcommit: 0c05308c832e4b03ea3945788de39feabfdb5671
+ms.openlocfilehash: 3edcde9466ade71afe22a735256f3cb84f88df17
+ms.sourcegitcommit: 58c75026e5ec4dcab3b0852a41f9f0a0ad6f22eb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48914497"
+ms.lasthandoff: 10/14/2018
+ms.locfileid: "49315858"
 ---
 適用於：Azure 進階威脅防護
 
@@ -99,9 +99,9 @@ ms.locfileid: "48914497"
 1.  基本架構金鑰 - 移除惡意程式碼。 如需詳細資訊，請參閱[基本架構金鑰惡意程式碼分析](https://www.virusbulletin.com/virusbulletin/2016/01/paper-digital-bian-lian-face-changing-skeleton-key-malware) \(英文\)。
 
 2.  黃金票證 - 遵循[黃金票證](#golden-ticket)可疑活動的指示進行。   
-    此外，由於建立黃金票證需要網域系統管理員權限，因此請實作[傳遞雜湊建議](http://aka.ms/PtH)。
+    此外，由於建立黃金票證需要網域系統管理員權限，因此請實作[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)。
 
-3.  越過雜湊 - 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 這可防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引。 另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。 由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](http://aka.ms/PtH)的最佳做法。
+3.  越過雜湊 - 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 這可防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引。 另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。 由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)的最佳做法。
 
 ## <a name="honeytoken-activity"></a>Honeytoken 活動
 
@@ -140,7 +140,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 1. 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 這可防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。 
 
-2. 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。 由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](http://aka.ms/PtH)的最佳做法。
+2. 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。 由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)的最佳做法。
 
 ## <a name="identity-theft-using-pass-the-ticket-attack"></a>使用傳遞票證攻擊竊取身分
 
@@ -158,7 +158,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 1. 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 這可防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。  
 
-2. 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。  由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](http://aka.ms/PtH)中的最佳做法。
+2. 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。  由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)中的最佳做法。
 
 ## Kerberos 黃金票證 (Golden Ticket)<a name="golden-ticket"></a>
 
@@ -195,7 +195,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 **補救**
 
 
-根據 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)，變更 Kerberos 票證授權票證 (KRBTGT) 密碼兩次。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 此外，由於建立黃金票證需要網域系統管理員權限，因此請實作[傳遞雜湊建議](http://aka.ms/PtH)。
+根據 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)，變更 Kerberos 票證授權票證 (KRBTGT) 密碼兩次。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 此外，由於建立黃金票證需要網域系統管理員權限，因此請實作[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)。
 
 
 
@@ -217,7 +217,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 **補救**
 
-若要使用 DPAPI，攻擊者需要網域系統管理員權限。 實作[傳遞雜湊建議](http://aka.ms/PtH)。
+若要使用 DPAPI，攻擊者需要網域系統管理員權限。 實作[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)。
 
 ## <a name="malicious-replication-of-directory-services"></a>惡意的目錄服務複寫
 
@@ -434,7 +434,7 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 
 **描述**
 
-大多數組織中的 DNS 通訊協定通常不會受到監視，而且很少會因惡意活動遭到封鎖。 這讓攻擊者有機會在遭入侵的電腦上濫用 DNS 通訊協定。 透過 DNS 的惡意通訊可能用於資料外洩、命令和控制，及/或規避公司網路限制。
+大多數組織中的 DNS 通訊協定通常不會受到監視，而且很少會因惡意活動遭到封鎖。 這讓攻擊者有機會在遭入侵的電腦上濫用 DNS 通訊協定。 透過 DNS 的惡意通訊可用來竊取資料、命令和控制攻擊和/或規避公司網路限制。
 
 **調查**
 > [!NOTE]
@@ -442,9 +442,9 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 
 
 1.  某些合法公司會使用 DNS 進行定期通訊。 請檢查已註冊查詢網域是否屬於信任的來源，例如您的防毒提供者。 如果網域已知並受信任，而且允許 DNS 查詢，則可以關閉警示，並在未來警示中[排除](excluding-entities-from-detections.md)該網域。 
-3.   如果已註冊的查詢網域未受信任，請指出在來源電腦上建立要求的程序。 使用 [Process Monitor](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon) 可協助進行這項工作。
-4.  判斷可疑活動何時開始？ 是否已在組織中部署或安裝任何新程式 (AV)？ 同一時間是否有其他警示？
-5.  按一下來源電腦以存取其設定檔頁面。 檢查 DNS 查詢出現前後期間的事件，並搜尋異常活動，例如當時登入的使用者，以及所使用的資源。 如果您已啟用 Windows Defender ATP 整合，請按一下 Windows Defender ATP 徽章 ![[Windows Defender ATP] 徽章](./media/wd-badge.png) 以進一步調查電腦。 使用 Windows Defender ATP，您可以查看在警示期間所發生的處理程序和警示。
+2.   如果已註冊的查詢網域未受信任，請指出在來源電腦上建立要求的程序。 使用 [Process Monitor](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon) 可協助進行這項工作。
+3.  判斷可疑活動何時開始？ 是否已在組織中部署或安裝任何新程式 (AV)？ 同一時間是否有其他警示？
+4.  按一下來源電腦以存取其設定檔頁面。 檢查 DNS 查詢出現前後期間的事件，並搜尋異常活動，例如當時登入的使用者，以及所使用的資源。 如果您已啟用 Windows Defender ATP 整合，請按一下 Windows Defender ATP 徽章 ![[Windows Defender ATP] 徽章](./media/wd-badge.png) 以進一步調查電腦。 使用 Windows Defender ATP，您可以查看在警示期間所發生的處理程序和警示。
 
 **補救**：如果在調查後發現已註冊的查詢網域不受信任，建議封鎖目的地網域以避免未來的所有通訊。 
 
@@ -470,7 +470,7 @@ DCShadow 使用 RPC 和 LDAP 進行：
    3. 電腦是否為執行 Windows Server OS (或是 Windows/Linux)？ 非伺服器電腦不應複寫資料。
 如果您啟用了 Windows Defender ATP 整合，請按一下 Windows Defender ATP 徽章 ![Windows Defender ATP 徽章](./media/wd-badge.png) 來進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序和警示。
 
-4. 查看 [事件檢視器]，以了解其[目錄服務記錄檔中記錄的 Active Directory 事件](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/cc961809(v=technet.10)) \(英文\)。 您可以使用記錄來監視 Active Directory 中的變更。 根據預設，Active Directory 只記錄重大錯誤事件，但如果此警示重複出現，請在相關的網域控制站上啟用此稽核，以供後續調查。
+4. 查看 [事件檢視器]，以了解其[目錄服務記錄檔中記錄的 Active Directory 事件](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/cc961809(v=technet.10)/) \(英文\)。 您可以使用記錄來監視 Active Directory 中的變更。 根據預設，Active Directory 只記錄重大錯誤事件，但如果此警示重複出現，請在相關的網域控制站上啟用此稽核，以供後續調查。
 
 **補救**
 
@@ -529,7 +529,7 @@ DCShadow 使用 RPC 和 LDAP 進行：
    2.  使用者是否可存取這些資源？
    3. 電腦是否為執行 Windows Server OS (或是 Windows/Linux)？ 非伺服器電腦不應複寫資料。
 如果您啟用了 Windows Defender ATP 整合，請按一下 Windows Defender ATP 徽章 ![Windows Defender ATP 徽章](./media/wd-badge.png) 來進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序和警示。
-1. 查看 [事件檢視器]，以了解其[目錄服務記錄檔中記錄的 Active Directory 事件](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/cc961809(v=technet.10)) \(英文\)。 您可以使用記錄來監視 Active Directory 中的變更。 根據預設，Active Directory 只記錄重大錯誤事件，但如果此警示重複出現，請在相關的網域控制站上啟用此稽核，以供後續調查。
+1. 查看 [事件檢視器]，以了解其[目錄服務記錄檔中記錄的 Active Directory 事件](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/cc961809(v=technet.10)/) \(英文\)。 您可以使用記錄來監視 Active Directory 中的變更。 根據預設，Active Directory 只記錄重大錯誤事件，但如果此警示重複出現，請在相關的網域控制站上啟用此稽核，以供後續調查。
 
 **補救**
 

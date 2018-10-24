@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4308f03e-b2a7-4e38-a750-540ff94faa81
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e6f3647ecaab82a32950fadd0a101385a2cc0051
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: acbab806e7f49052e0789927f452217c12efd992
+ms.sourcegitcommit: 8cb370eab974652451066570e435d8a4f304fa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783044"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49326756"
 ---
 適用於：Azure 進階威脅防護
 
@@ -32,13 +32,13 @@ Azure ATP 會在偵測到可疑的活動並引發安全性警訊或健康狀態�
 
 1. 在 Azure ATP 入口網站中，選取工具列上的 [設定] 選項，然後選取 [設定]。
 
-![Azure ATP 組態設定圖示](media/atp-config-menu.png)
+ ![Azure ATP 組態設定圖示](media/atp-config-menu.png)
 
 2. 按一下 [通知]。
 3. 在 [郵件通知] 下，指定要透過電子郵件傳送的通知 - 可針對新的警示 (可疑的活動) 和新的健康狀態問題傳送。 
  
  >  [!NOTE]
- >   只有在建立可疑活動時，才會傳送可疑活動的電子郵件警示。
+ > 只有在建立可疑活動時，才會傳送可疑活動的電子郵件警示。
  
 4. 按一下 **[儲存]**。
 

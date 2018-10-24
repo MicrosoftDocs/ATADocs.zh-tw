@@ -2,10 +2,10 @@
 title: 在 Azure 進階威脅防護中設定電子郵件通知設定 | Microsoft Docs
 description: 說明當 Azure ATP 偵測到可疑的活動時，如何通知您 (透過電子郵件或 Azure ATP 事件轉寄)
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 2/21/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a2d29c9c-7ecb-4804-b74b-fde899b28648
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 399773b174f52cfc26888fcaa9923de4f258e897
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: 18f6d38f871539cf0701b697c9d0c5d9d96a27e4
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44166879"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783537"
 ---
 適用於：Azure 進階威脅防護
 
@@ -26,7 +26,7 @@ ms.locfileid: "44166879"
 
 # <a name="integrate-with-syslog"></a>與 Syslog 整合
 
-當 Azure ATP 偵測到可疑的活動與健康狀態警示時，就會將通知傳送至 Syslog 伺服器來通知您。 如果您啟用 Syslog 通知，就可以為其進行下列設定。
+當 Azure ATP 偵測到可疑的活動與安全性警訊和健康狀態警訊時，就會將通知傳送至 Syslog 伺服器以便通知您。 如果您啟用 Syslog 通知，即可進行下列設定：
 
 1.  設定 Syslog 通知前，請先洽詢您的 SIEM 系統管理員以了解下列資訊︰
 
@@ -38,7 +38,7 @@ ms.locfileid: "44166879"
 
     -   要用來傳送資料 RFC 3164 或 5424 的格式
 
-2.  輸入工作區入口網站 URL。
+2.  輸入工作區 URL。
 
 3.  輸入您的 Azure Active Directory 使用者名稱和密碼，然後按一下 [登入]。
 
@@ -63,4 +63,4 @@ ms.locfileid: "44166879"
 ## <a name="see-also"></a>另請參閱
 
 - [使用機密帳戶](sensitive-accounts.md)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

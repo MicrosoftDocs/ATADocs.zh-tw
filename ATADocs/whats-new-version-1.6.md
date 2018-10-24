@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 01/23/2017
-ms.topic: article
-ms.prod: ''
-ms.service: advanced-threat-analytics
+ms.topic: conceptual
+ms.prod: advanced-threat-analytics
+ms.service: ''
 ms.technology: ''
 ms.assetid: 27b139e5-12b9-4953-8f53-eb58e8ce0038
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 47a8b5c52bf978d5e07007a3402a567be39e2157
-ms.sourcegitcommit: 1de2b047c0e9f92a106169f7634c480f694baf10
+ms.openlocfilehash: 5fd3b7a0abb3c70e87634e28273fe5ce8b6d4d9a
+ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "24018553"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46133611"
 ---
 # <a name="whats-new-in-ata-version-16"></a>ATA 1.6 版的新功能
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。
@@ -46,20 +46,21 @@ ATA 1.6 的更新提供下列各方面的改良︰
 - **惡意的資料保護私人資訊要求**：資料保護 API (DPAPI) 是使用密碼的資料保護服務。 有多種應用程式都使用此保護服務來儲存使用者的密碼，例如網站密碼和檔案共用認證。 為了在密碼遺失的情況下提供支援，使用者可以使用與密碼無關的修復金鑰，來解密受保護的資料。 在網域環境中，攻擊者可以從遠端竊取修復金鑰，並用來解密所有加入網域之電腦上受保護的資料。
 
 
-- **Net Session 列舉**：探查是進階攻擊鏈中的重要階段。 網域控制站 (DC) 可作為檔案伺服器，透過伺服器訊息區 (SMB) 通訊協定，來達成散發群組原則物件的目的。 在探查階段階段中，攻擊者可以查詢伺服器上所有使用中 SMB 工作階段的 DC，進而取得與這些 SMB 工作階段相關聯的所有使用者和 IP 位址。 攻擊者可以使用 SMB 工作階段列舉來鎖定敏感性帳戶，此舉有助於他們在網路間橫向移動。
+- **Net Session 列舉**：探查是進階攻擊鏈中的重要階段。 網域控制站 (DC) 可作為檔案伺服器，透過伺服器訊息區 (SMB) 通訊協定，來達成散發群組原則物件的目的。 作為偵察階段的一部分，攻擊者可以查詢所有使用中 SMB 工作階段的 DC。 這會允許他們存取與這些 SMB 工作階段建立關聯的所有使用者和 IP 地址。 攻擊者可以使用 SMB 工作階段列舉來鎖定敏感性帳戶，此舉有助於他們在網路間橫向移動。
 
 
-- **惡意的複寫要求**：在 Active Directory 環境中，網域控制站之間會定期發生複寫。 攻擊者可以假冒 Active Directory 複寫要求 (有時假冒網域控制站)，藉此擷取儲存在 Active Directory 中的資料 (包括密碼雜湊)，而不需要使用磁碟區陰影複製等較具侵入性的技術。
+- **惡意的複寫要求**：在 Active Directory 環境中，網域控制站之間會定期發生複寫。 攻擊者可以詐騙 Active Directory 複寫要求 (有時會模擬網域控制器)。 此詐騙允許攻擊者擷取儲存於 Active Directory 中的資料，包括密碼雜湊，而不需使用磁碟區陰影複製服務等更具侵入性的技術。
 
 
-- **MS11-013 弱點偵測**：Kerberos 中因權限提高而出現弱點，讓 Kerberos 服務票證的特定部分可被偽造。 成功惡意探索此弱點的惡意使用者或攻擊者，可以取得網域控制站上權限提高的權杖。
+- **MS11-013 弱點偵測**  
+Kerberos 中因權限提高而出現弱點，讓 Kerberos 服務票證的特定部分可受到偽造。 成功惡意探索此弱點的惡意使用者或攻擊者，可以取得網域控制站上權限提高的權杖。
 
 
-- **不尋常的通訊協定實作**：驗證要求 (Kerberos 或 NTLM) 通常使用一組標準的方法和通訊協定來執行。 不過，為了成功進行驗證，要求只能符合一組特定的需求。 攻擊者可能會在環境中，以稍微偏離標準實作的方式來實作這些通訊協定。 這些偏差可能表示攻擊者嘗試執行 Pass-The-Hash、暴力密碼破解等攻擊。
+- **不尋常的通訊協定實作**：驗證要求 (Kerberos 或 NTLM) 通常使用一組標準的方法和通訊協定來執行。 不過，為了成功進行驗證，要求只能符合一組特定的需求。 攻擊者可能會在環境中，以稍微偏離標準實作的方式來實作這些通訊協定。 這些偏差可能表示攻擊者嘗試執行雜湊傳遞、暴力密碼破解等攻擊。
 
 
 ### <a name="improvements-to-existing-detections"></a>改進現有偵測
-ATA 1.6 包含改良的偵測邏輯，可減少 Golden Ticket、Honey Token、暴力密碼破解和遠端執行等現有偵測的誤判和誤否定情況。
+ATA 1.6 包含改善的偵測邏輯，可減少 Golden Ticket、Honey Token、暴力密碼破解和遠端執行等現有偵測的誤判和誤否定情況。
 
 ### <a name="the-ata-lightweight-gateway"></a>ATA 輕量型閘道
 此版 ATA 引進新的 ATA 閘道部署選項，以便直接在網域控制站上安裝 ATA 閘道。 此部署選項移除了 ATA 閘道的非必要性功能，並引進以 DC 上可用資源為基礎的動態資源管理，以確保 DC 的現有作業不受影響。 ATA 輕量型閘道可降低 ATA 部署的成本。 同時可讓您更輕鬆地在分支網站中進行部署，這些分支網站中的硬體資源容量有限，或是無法設定連接埠鏡像支援。
@@ -84,7 +85,7 @@ ATA 1.6 執行 ATA 資料庫所需的儲存空間大幅減少，現在只需要�
 
 ### <a name="failure-to-recognize-new-path-in-manually-moved-databases"></a>無法在手動移動的資料庫辨識新路徑
 
-在手動移動資料庫路徑的部署中，ATA 部署不會使用新的資料庫路徑進行更新。 這可能會導致下列問題︰
+在手動移動資料庫路徑的部署中，ATA 部署不會使用新的資料庫路徑進行更新。 此手動移動的資料庫路徑可能會導致下列問題：
 
 
 - ATA 可能會使用 ATA 中心的系統磁碟機中所有可用空間，而不會循環刪除舊的網路活動。
@@ -92,9 +93,10 @@ ATA 1.6 執行 ATA 資料庫所需的儲存空間大幅減少，現在只需要�
 
 - 將 ATA 更新至 1.6 版時，更新前的整備檢查可能會失敗，如下圖所示。
     ![整備檢查失敗](media/ata_failed_readinesschecks.png)
-    >[!Important]
-將 ATA 更新至 1.6 版之前，請使用正確的資料庫路徑更新下列登錄機碼︰`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Advanced Threat Analytics\Center\DatabaseDataPath`
-
+    
+    > [!IMPORTANT]
+    > 將 ATA 更新至 1.6 版之前，請使用正確的資料庫路徑更新下列登錄機碼︰`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Advanced Threat Analytics\Center\DatabaseDataPath`
+    
 ### <a name="migration-failure-when-updating-from-ata-15"></a>從 ATA 1.5 更新時的移轉失敗
 更新至 ATA 1.6 時，更新程序可能會失敗，並出現下列錯誤碼：
 
@@ -133,12 +135,11 @@ ATA 1.6 執行 ATA 資料庫所需的儲存空間大幅減少，現在只需要�
 
 ### <a name="net-framework-461-requires-restarting-the-server"></a>.Net Framework 4.6.1 需要重新啟動伺服器
 
-在某些情況下，安裝 .Net Framework 4.6.1 可能需要您重新啟動伺服器。 請注意，在 [Microsoft Advanced Threat Analytics 中心安裝程式] 對話方塊中按一下 [確定]，會自動重新啟動伺服器。 當您在網域控制站上安裝 ATA 輕量型閘道時，這一點特別重要，因為您可能需要在安裝前規劃維護期間。
-    ![.NET Framework 重新啟動](media/ata-net-framework-restart.png)
+![.NET Framework 重新啟動](media/ata-net-framework-restart.png)
 
 ### <a name="historical-network-activities-no-longer-migrated"></a>不再移轉歷史網路活動
 此版 ATA 提供改良的偵測引擎，因此可提供更精確的偵測，並減少許多誤判的情況，特別是針對 Pass-the-Hash。
-改良後的新偵測引擎利用內嵌偵測技術，不需要存取歷史網路活動就能進行偵測，因此大幅提升 ATA 中心的效能。 這也表示不需要在更新程序期間移轉歷史網路活動。
+改善後的新偵測引擎利用內嵌偵測技術，不需要存取歷史網路活動就能進行偵測，因此大幅提升 ATA 中心的效能。 這也表示不需要在更新程序期間移轉歷史網路活動。
 ATA 更新程序會將資料匯出至 `<Center Installation Path>\Migration` 成為 JSON 檔案，以供您未來進行調查使用。
 
 ## <a name="see-also"></a>另請參閱

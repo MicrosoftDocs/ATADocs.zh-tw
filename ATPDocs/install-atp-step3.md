@@ -1,24 +1,24 @@
 ---
-title: 安裝 Azure 進階威脅防護 - 步驟 3 | Microsoft Docs
-description: 安裝 Azure ATP 的步驟三協助您下載 Azure ATP 獨立感應器安裝套件。
+title: 安裝 Azure 進階威脅防護 | Microsoft Docs
+description: 安裝 Azure ATP 的步驟三可協助您下載 Azure ATP 感應器安裝套件。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 2/21/2017
-ms.topic: conceptual
+ms.date: 10/04/2018
+ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: 95bb4ec1-841f-41b7-92fe-fbd144085724
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 96d459bd00d39bb21ce363d079b5b24ceca4ace7
-ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
+ms.openlocfilehash: 5a9eea9550af90577ad1763384a134f5889edc5f
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47454015"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783775"
 ---
 適用於：Azure 進階威脅防護
 
@@ -42,7 +42,7 @@ ms.locfileid: "47454015"
 
 1.  按一下 [感應器]。
 2.  將封裝儲存在本機。
-3.  複製 [存取金鑰]。 Azure ATP 感應器連線到您的 Azure ATP 工作區需要存取金鑰。 存取金鑰是部署感應器的單次密碼，其後所有的通訊都是使用驗證的憑證和 TLS 加密來執行。 如果需要重新產生新的存取金鑰，您可以使用 [重新產生] 按鈕，且它不會對先前部署的感應器有任何影響，因為它只用於感應器的初始註冊。
+3.  複製存取**金鑰**。 Azure ATP 感應器連線到您的 Azure ATP 工作區需要存取金鑰。 存取金鑰是部署感應器的單次密碼，其後所有的通訊都是使用驗證的憑證和 TLS 加密來執行。 如果需要重新產生新的存取金鑰，您可以使用 [重新產生] 按鈕，且它不會對先前部署的感應器有任何影響，因為它只用於感應器的初始註冊。
 4.  將套件複製到您要安裝 Azure ATP 感應器的專用伺服器或網域控制站。 您也可以從專用伺服器或網域控制站開啟 Azure ATP 工作區入口網站，並跳過此步驟。
 
 ZIP 檔案包含下列檔案：
@@ -65,4 +65,4 @@ ZIP 檔案包含下列檔案：
 
 - [Azure ATP 必要條件](atp-prerequisites.md)
 
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

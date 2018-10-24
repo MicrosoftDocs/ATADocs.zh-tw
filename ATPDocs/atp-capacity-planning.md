@@ -2,22 +2,22 @@
 title: 規劃 Azure 進階威脅防護部署 | Microsoft Docs
 description: 協助您規劃部署並決定支援您的網路需要多少 Azure ATP 伺服器
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 5/22/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.service: azure-advanced-threat-protection
 ms.prod: ''
 ms.assetid: da0ee438-35f8-4097-b3a1-1354ad59eb32
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3426829c0c3b9b52ec1c0fb2c7f19e5a0944bfdf
-ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
+ms.openlocfilehash: 9f2b8f31f88c14f67c8a03b748ac3d2fb6179a62
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126360"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783452"
 ---
 適用於：Azure 進階威脅防護
 
@@ -26,13 +26,13 @@ ms.locfileid: "44126360"
 # <a name="azure-atp-capacity-planning"></a>Azure ATP 容量規劃
 此文章可協助您判斷您需要多少 Azure ATP 感應器和獨立感應器。
 
-> [!NOTE] 
-> 調整大小工具有兩個工作表 - 一個用於 ATA，另一個則用於 Azure ATP。 請確定您使用正確的工作表。
-
 ## <a name="using-the-sizing-tool"></a>使用調整大小工具
 若要判斷 Azure ATP 部署容量，建議且最容易的方法是使用 [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool)。 執行 Azure ATP 調整大小工具，並從 Excel 檔案結果中，使用下列欄位判斷感應器所使用的記憶體和 CPU︰
 
-- Azure ATP 感應器：根據[您選擇的感應器類型](#choosing-the-right-sensor-type-for-your-deployment)，比對結果檔案內 Azure ATP 感應器表格中的 **Busy Packets/sec** 欄位與 [Azure ATP 獨立感應器表格](#azure-atp-sensor-sizing)或 [Azure ATP 感應器表格](#azure-atp-standalone-sensor-sizing)中的 **PACKETS PER SECOND** 欄位。
+> [!NOTE] 
+> 調整大小工具有兩個工作表 - 一個用於 ATA，另一個則用於 Azure ATP。 請確定您使用正確的工作表。
+
+- Azure ATP 感應器：根據[您選擇的感應器類型](#choosing-the-right-sensor-type-for-your-deployment)，將結果檔案內 Azure ATP 感應器表格中的 [Busy Packets/sec] \(每秒忙碌封包數\) 欄位與 [Azure ATP 獨立感應器表格](#azure-atp-sensor-sizing)或 [Azure ATP 感應器表格](#azure-atp-standalone-sensor-sizing)中的 [PACKETS PER SECOND] \(每秒封包數\) 欄位進行比對。
 
 
 ![範例容量規劃工具](media/capacity-tool.png)
@@ -42,10 +42,10 @@ ms.locfileid: "44126360"
 下列章節將說明如何從一個網域控制站收集 packets/sec 計數器的指示。
 
 ## 為您的部署選擇正確的感應器類型<a name="choosing-the-right-sensor-type-for-your-deployment"></a>
-在 Azure ATP 部署中，支援任何 Azure ATP 獨立感應器類型的組合：
+在 Azure ATP 部署中，支援任何 Azure ATP 感應器類型的組合：
 
-- 僅限 Azure ATP 獨立感應器
 - 僅限 Azure ATP 感應器
+- 僅限 Azure ATP 獨立感應器
 - 上列兩者的組合
 
 當您決定感應器部署類型時，請考慮下列優點：
@@ -58,10 +58,10 @@ ms.locfileid: "44126360"
 決定要部署多少個 Azure ATP 獨立感應器時，請考慮下列問題。
 
 -   **Active Directory 樹系和網域**<br>
-    Azure ATP 可以針對您所建立的每個工作區，監視單一 Active Directory 樹系內多個網域的流量。 若要監視多個樹系，您需要建立多個工作區。 
+    Azure ATP 可以針對您所建立的每個工作區，監視多個 Active Directory 樹系內多個網域的流量。 
 
 -   **連接埠鏡像**<br>
-連接埠鏡像考量可能需要您在每個資料中心或分支網站部署多個 Azure ATP 獨立感應器。
+    連接埠鏡像考量可能需要您在每個資料中心或分支網站部署多個 Azure ATP 獨立感應器。
 
 -   **容量**<br>
     Azure ATP 獨立感應器可以支援監視多個網域控制站，依受監視的網域控制站的網路流量而定。 
@@ -149,4 +149,4 @@ Azure ATP 感應器可以支援監視一個網域控制站，依網域控制站�
 - [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool) \(英文\)
 - [Azure ATP 必要條件](atp-prerequisites.md)
 - [Azure ATP 架構](atp-architecture.md)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

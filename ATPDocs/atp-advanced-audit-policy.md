@@ -5,20 +5,20 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/30/2018
-ms.topic: get-started-article
+ms.date: 10/04/2018
+ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: ab1e8dd9-a6c2-4c68-89d5-343b8ec56142
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d37a55bdb1c437f7775f530cfc143146eb38ba96
-ms.sourcegitcommit: 93a133430ac85d6db7afad5f6f2583b3a39c423a
+ms.openlocfilehash: d2d7027a53d6bbc26d037ceeef4c5083865bb7e7
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2018
-ms.locfileid: "43469699"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783095"
 ---
 適用於：Azure 進階威脅防護
 
@@ -32,7 +32,9 @@ Azure ATP 偵測憑藉特定 Windows 事件記錄檔來取得特定案例的可�
 ![進階稽核原則健全狀況警示](media/atp-health-alert-audit-policy.png)
 
 
-透過 GPO 可啟用進階安全性稽核原則。 這些稽核事件會記錄在網域控制站的 Windows 事件上。 這應在 Active Directory 的**預設網域控制站原則**中啟用。
+您可透過 [預設網域控制站原則] GPO 來啟用進階安全性稽核原則。 這些稽核事件會記錄在網域控制站的 Windows 事件上。 
+
+
 
 <br>請使用下列指示修改網域控制站的進階稽核原則：
 
@@ -50,9 +52,12 @@ Azure ATP 偵測憑藉特定 Windows 事件記錄檔來取得特定案例的可�
 
     ![認證驗證](media/atp-advanced-audit-policy-check-step-3.png)
 
-6. 前往 [帳戶登入]，按兩下 [稽核安全性群組管理]，然後為 [設定下列稽核事件] 同時選取成功和失敗事件。
+6. 前往 [帳戶管理]，按兩下 [稽核安全性群組管理]，然後針對成功和失敗事件均選取 [設定下列稽核事件]。
 
     ![稽核安全性群組管理](media/atp-advanced-audit-policy-check-step-4.png)
+
+> [!NOTE]
+> - 如果您選擇使用本機原則，請務必在本機原則中新增 [帳戶登入] 與 [帳戶管理] 稽核記錄。 如果您要設定進階稽核原則，請務必強制執行[稽核原則子類別](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/audit-force-audit-policy-subcategory-settings-to-override)。
 
 7. 在套用 GPO 後，新的事件會顯示在您的 **Windows 事件記錄檔**下。
 
@@ -60,4 +65,4 @@ Azure ATP 偵測憑藉特定 Windows 事件記錄檔來取得特定案例的可�
 - [Azure ATP 必要條件](atp-prerequisites.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-forwarding.md#configuring-windows-event-forwarding)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

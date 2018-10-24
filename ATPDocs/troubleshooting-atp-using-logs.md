@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/13/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: de796346-647d-48e1-970a-8f072e990f1e
 ms.reviewer: ''
 ms.suite: ''
-ms.openlocfilehash: fee526b836b9fbbf28624bdce4354267ab968cd6
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: 2cd1d7b070818044e74838178b0fab5838ab46ef
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44166081"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783248"
 ---
 *適用對象：Azure 進階威脅防護*
 
@@ -63,4 +63,4 @@ Azure ATP 感應器部署記錄：
 - [Azure ATP 容量規劃](atp-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-forwarding.md#configuring-windows-event-forwarding)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

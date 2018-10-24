@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/05/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1b7e72c3-a538-443f-981c-398ffafa5ab8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 033d338e9c1e5e85673e362069ff0a815cda127c
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: 8fdaa7311d39680ed8e9389f5dc9b7cdeca73197
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44165587"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48782891"
 ---
 適用於：Azure 進階威脅防護
 
@@ -46,8 +46,7 @@ Azure ATP 工作區健康狀態中心可讓您知道 Azure ATP 工作區的運�
 
     > [!NOTE]
     > 如果在短時間內偵測到相同的活動，Azure ATP 可能會重新開啟已經關閉的活動。
-    > 每個工作區都有它自己的健康狀態中心。
-
+    
 -   **隱藏**：隱藏活動表示您想要暫時將它忽略，只有出現新的執行個體時才會再次收到警示。 如果有類似的警示，Azure ATP 不會將它重新開啟。 但如果此警示在停止七天後再次出現，您便會再次收到警示。
 
 -   **重新開啟**：您可以重新開啟關閉或隱藏的問題，使它重新在時間軸中顯示為「開啟」。
@@ -56,7 +55,7 @@ Azure ATP 工作區健康狀態中心可讓您知道 Azure ATP 工作區的運�
 
 
 
-![Azure ATP 工作區健全狀況中心問題影像](media/atp-health-issue.png)
+![Azure ATP 健康狀態中心問題的圖片](media/atp-health-issue.png)
 
 
 
@@ -66,4 +65,4 @@ Azure ATP 工作區健康狀態中心可讓您知道 Azure ATP 工作區的運�
 ## <a name="see-also"></a>另請參閱
 
 - [處理可疑活動](working-with-suspicious-activities.md)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

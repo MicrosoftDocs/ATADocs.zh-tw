@@ -1,11 +1,11 @@
 ---
-title: 安裝 Azure 進階威脅防護 - 步驟 2 | Microsoft Docs
+title: 安裝 Azure 進階威脅防護 | Microsoft Docs
 description: 安裝 Azure ATP 的步驟 2 可協助您設定 Azure ATP 雲端服務上的網域連線設定
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 2/21/2017
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ae8a95f0-278c-4a12-ae69-14282364fba1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 45c1ddfc80c481549ceb08ed45f535ca029b9626
-ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
+ms.openlocfilehash: 7e13bf0e3d32fc14cf1f0a91f3e7d18accea067c
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453828"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48782984"
 ---
 適用於：Azure 進階威脅防護
 
@@ -32,7 +32,7 @@ ms.locfileid: "47453828"
 
 ## <a name="step-2-provide-a-username-and-password-to-connect-to-your-active-directory-forest"></a>步驟 2： 提供使用者名稱和密碼來連線到您的 Active Directory 樹系
 
-當您第一次開啟 Azure ATP 工作區入口網站時，會出現下列畫面：
+當您第一次開啟 Azure ATP 入口網站時，會出現下列畫面：
 
 ![Azure ATP 歡迎使用階段 1](media/directory-services.png)
 
@@ -48,7 +48,7 @@ ms.locfileid: "47453828"
     |**密碼** (必填)|輸入唯讀使用者的密碼，例如︰**Pencil1**。|
     |**網域** (必填)|輸入唯讀使用者的網域，例如︰**contoso.com**。 **注意︰** 您務必輸入使用者所在網域的完整 FQDN。 例如，如果使用者的帳戶是在 corp.contoso.com 網域中，您需要輸入 `corp.contoso.com`，而非 contoso.com|
 
-3. 在工作區入口網站中，按一下 [下載感應器安裝程式並安裝第一個感應器] 以繼續。
+3. 在 Azure ATP 入口網站中，按一下 [下載感應器安裝程式並安裝第一個感應器] 以繼續。
 
 
 > [!div class="step-by-step"]
@@ -60,4 +60,4 @@ ms.locfileid: "47453828"
 - [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool) \(英文\)
 - [設定事件收集](configure-event-collection.md)
 - [Azure ATP 必要條件](atp-prerequisites.md)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

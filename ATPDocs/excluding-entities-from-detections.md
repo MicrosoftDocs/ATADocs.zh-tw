@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/2/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,19 +13,19 @@ ms.technology: ''
 ms.assetid: cae3ed45-8fbc-4f25-ba24-3cc407c6ea93
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d5ac2ae53dfe13b850a06f6dd4b89a91ffedd946
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: 432f55891440975e511ab5cd3e2972a1c7a33f37
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44166029"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48782925"
 ---
 適用於：Azure 進階威脅防護
 
 
 
 # <a name="excluding-entities-from-detections"></a>從偵測中排除實體
-本文說明如何排除實體以免觸發警示，以盡量減少良性的真肯定判斷，但能同時確保可攔截到真肯定判斷。 為了避免 Azure ATP 針對來自特定使用者，屬於您平常企業營運一部份的活動發出不必要的警示，您可以將特定實體設為靜音或排除，以避免引發警示。
+本文說明如何排除實體以免觸發警訊，以盡量減少良性誤判，同時確保您能攔截到真正的問題點。 為了避免 Azure ATP 針對來自特定使用者，屬於您平常企業營運一部份的活動發出不必要的警示，您可以將特定實體設為靜音或排除，以避免引發警示。
 
 例如，如果您有執行 DNS 偵察的安全性掃描程式，或是在網域控制站遠端執行指令碼的系統管理員，而這些都是屬於組織中正常 IT 作業之一的許可活動。 如需有關 Azure ATP 偵測協助您決定要排除哪些實體的詳細資訊，請參閱[可疑活動指南](suspicious-activity-guide.md)。
 
@@ -63,4 +63,4 @@ ms.locfileid: "44166029"
 ## <a name="see-also"></a>另請參閱
 
 - [與 Windows Defender ATP 整合](integrate-wd-atp.md)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

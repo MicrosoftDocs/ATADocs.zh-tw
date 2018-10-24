@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 9/05/2018
+ms.date: 10/07/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,16 +13,52 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f6f291ebed680278391498361737e0f8be5ea710
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: dc008506e7b19a8d6eafd455a4414b1513608811
+ms.sourcegitcommit: c4978be196e0039c7a5d5887bec4cbc5c01d64f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44166675"
+ms.lasthandoff: 10/07/2018
+ms.locfileid: "48848625"
 ---
 適用於：Azure 進階威脅防護
 
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能 
+
+## <a name="azure-atp-release-249"></a>Azure ATP 2.49 版
+發行日期：2018 年 10 月 7 日
+-   **新增偵測：可疑的 DNS 通訊** (預覽)<br>新增可協助防範可疑 DNS 通訊攻擊的偵測：
+
+    -   這項偵測可協助偵測對 DNS 通訊協定的攻擊。 大多數組織中的 DNS 通訊協定都不會受到監視，而且很少會因惡意活動遭到封鎖。 這讓攻擊者有機會在遭入侵的電腦上濫用 DNS 通訊協定。 透過 DNS 的惡意通訊可用來竊取資料、命令和控制攻擊和/或規避公司網路限制。
+
+- **新功能** <br>Azure ATP **使用者角色**已增強下列功能：
+  - 變更安全性警訊的狀態 (重新開啟、關閉、排除、隱藏)
+  - 設定已排程報表
+  - 設定實體標記 (敏感性和 honeytoken)
+  - 排除偵測
+  - 變更語言
+  - 設定透過電子郵件或 syslog 的通知
+
+
+- 已找出並解決發生在 2018 年 9 月 16 日**使用目錄服務查詢探查**安全性警訊中的暫時增加情況。 
+
+- 此版本也包含針對多個問題的修正和改善。
+
+
+## <a name="azure-atp-release-248"></a>Azure ATP 2.48 版
+發行日期：2018 年 9 月 16 日
+- **安全性警訊：** 使用目錄服務查詢探查
+
+  現在已改善此安全性警訊的資訊圖表和辨識項。 
+
+- **從偵測中排除實體** 
+
+  您現在可以選擇從下列偵測中排除實體以減少誤判： 
+  - 可疑的 VPN 連線 (使用者排除)
+  - 可疑的網域控制站升級 (潛在的 DcShadow 攻擊)
+  - 可疑的複寫要求 (潛在的 DcShadow 攻擊)
+
+- 此版本也包含針對多個問題的修正和改善。
+
 
 ## <a name="azure-atp-release-247"></a>Azure ATP 2.47 版
 發行日期：2018 年 9 月 2 日
@@ -270,8 +306,8 @@ Azure 進階威脅防護現在會檢查網域控制站的現有進階稽核原�
  -  Azure ATP 感應器基礎結構已改進效能：流量的彙總檢視可最佳化 CPU 和封包管線，並重複使用網域控制站的通訊端，將 SSL 工作階段減少至 DC。
 
 ## <a name="see-also"></a>另請參閱
+- [什麼是 Azure 進階威脅防護？](what-is-atp.md)
+- [常見問題集](atp-technical-faq.md)
 - [Azure ATP 必要條件](atp-prerequisites.md)
-- [Azure ATP 容量規劃](atp-capacity-planning.md)
-- [設定事件收集](configure-event-collection.md)
-- [設定 Windows 事件轉送](configure-event-forwarding.md#configuring-windows-event-forwarding)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [Azure ATP 容量規劃](atp-capacity-planning.md) (configure-event-forwarding.md#configuring-windows-event-forwarding)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

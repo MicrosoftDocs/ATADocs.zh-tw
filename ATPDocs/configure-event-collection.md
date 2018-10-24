@@ -5,20 +5,20 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/15/2018
-ms.topic: conceptual
+ms.date: 10/04/2018
+ms.topic: get-started-article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 91e3caf8e15313069e4c2cec194a11855fd45c24
-ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
+ms.openlocfilehash: eaf798149c828b641ba037ffbb6854ca07c6732a
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126173"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783588"
 ---
 適用於：Azure 進階威脅防護
 
@@ -29,7 +29,7 @@ ms.locfileid: "44126173"
 為增強偵測功能，Azure ATP 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757 和 7045。 Azure ATP 感應器可以直接讀取這些事件。如果沒有部署 Azure ATP 感應器，則有兩種方法可以將之轉寄到 Azure ATP 獨立感應器：一種是將 Azure ATP 獨立感應器設定為接聽 SIEM 事件，另一種是[設定 Windows 事件轉寄](configure-event-forwarding.md)。
 
 > [!NOTE]
-> 在設定事件收集之前，務必要執行 ATA 稽核指令碼，以確保網域控制站已正確設定為可記錄必要的事件。 
+> 在設定事件收集之前，請務必執行 Azure ATP 稽核指令碼，以確保網域控制站已正確設定為可記錄必要的事件。 
 
 除了收集和分析進出網域控制站的網路流量之外，Azure ATP 可以使用 Windows 事件來進一步加強偵測。 它會針對 NTLM 使用能增強各種偵測的事件 4776，並使用事件 4732、4733、4728、4729、4756、4757 和 7045 以增強偵測機密群組修改與服務建立。 這可從您的 SIEM 接收，或藉由在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
 
@@ -50,7 +50,7 @@ ms.locfileid: "44126173"
 如需如何設定轉送特定事件到另一部伺服器的資訊，請參閱您的 SIEM/Syslog 伺服器產品的文件。 
 
 > [!NOTE]
->如果您沒有使用 SIEM/Syslog 伺服器，則可將 Windows 網域控制站設定為轉寄所有必要事件以供 ATP 收集及分析。
+>如果您並未使用 SIEM/Syslog 伺服器，則可將 Windows 網域控制站設定為轉寄所有必要事件以供 Azure ATP 收集及分析。
 
 ## <a name="configuring-the-azure-atp-sensor-to-listen-for-siem-events"></a>設定 Azure ATP 感應器以接聽 SIEM 事件
 
@@ -188,4 +188,4 @@ Message 是來自 Windows 事件的原始事件文字
 - [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool) \(英文\)
 - [Azure ATP SIEM 記錄檔參考](cef-format-sa.md)
 - [Azure ATP 必要條件](atp-prerequisites.md)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

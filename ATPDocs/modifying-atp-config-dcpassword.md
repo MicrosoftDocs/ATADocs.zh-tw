@@ -2,10 +2,10 @@
 title: 變更 Azure 進階威脅防護設定 - 網域連線密碼 | Microsoft Docs
 description: 描述如何變更 Azure ATP 獨立式感應器上的「網域連線密碼」。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 2/14/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e7f065fa-1ad1-4e87-bd80-99cc695efbf5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e5b3fd544fb52cd2979ab95d34918ffba3f56541
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: a175a23a087b11d481dbcf055bff4fe5577b4f8e
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44166182"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783112"
 ---
 適用於：Azure 進階威脅防護
 
@@ -33,12 +33,12 @@ ms.locfileid: "44166182"
 
 如果您懷疑此情況已發生，請於 Azure ATP 獨立式感應器上的 Microsoft.Tri.sensor-Errors.log 檔案查看下列錯誤︰`The supplied credential is invalid.`
 
-請遵循此程序來更新 Azure ATP 工作區入口網站上的網域連線密碼︰
+請遵循此程序來更新 Azure ATP 入口網站上的網域連線密碼︰
 
 > [!NOTE]
 > 這是來自 Active Directory 內部部署的使用者名稱與密碼，而不是來自 Azure AD。
 
-1.  存取工作區 URL，在上開啟 Azure ATP 工作區入口網站。
+1.  存取工作區 URL，以開啟 Azure ATP 入口網站。
 
 2.  選取工具列上的 [設定] 選項並選取 [組態]。
 
@@ -57,9 +57,9 @@ ms.locfileid: "44166182"
 
 6.  變更密碼之後，手動檢查 Azure ATP 獨立式感應器服務已在 Azure ATP 獨立式感應器伺服器上執行。
 
-7. 在工作區入口網站的 [組態] 下，移至 [感應器] 頁面並檢查感應器狀態。
+7. 在 Azure ATP 入口網站中，移至 [設定] 下方的 [感應器] 頁面，並檢查感應器狀態。
 
 ## <a name="see-also"></a>另請參閱
 
 - [與 Windows Defender ATP 整合](integrate-wd-atp.md)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

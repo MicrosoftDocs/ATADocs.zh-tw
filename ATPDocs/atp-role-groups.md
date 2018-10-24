@@ -2,10 +2,10 @@
 title: 適用於存取管理的 Azure 進階威脅防護角色群組 | Microsoft Docs
 description: 逐步引導您使用 Azure ATP 角色群組。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 7/15/2018
+ms.date: 10/07/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 28a500aeeeef127425ac292b53dbdc34aa1aad45
-ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
+ms.openlocfilehash: 7ae3f0adca3137664f0a89c15e8feee71d0cd915
+ms.sourcegitcommit: c4978be196e0039c7a5d5887bec4cbc5c01d64f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125935"
+ms.lasthandoff: 10/07/2018
+ms.locfileid: "48848608"
 ---
 適用於：Azure 進階威脅防護
 
@@ -31,35 +31,40 @@ Azure ATP 提供角色型安全性，可根據組織的特定安全性和合規�
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
-角色群組可針對 Azure ATP 啟用存取管理。 使用角色群組可以隔離安全性小組內的責任，並授與使用者執行工作所需的存取權。 此文章說明存取管理與 Azure ATP 角色授權，並可協助您在 ATP 中開始使用角色群組。
+角色群組可針對 Azure ATP 啟用存取管理。 使用角色群組可以隔離安全性小組內的責任，並授與使用者執行工作所需的存取權。 本文說明存取管理與 Azure ATP 角色授權，並可協助您在 Azure ATP 中開始使用角色群組。
 
 > [!NOTE]
 > 租用戶 Azure Active Directory 上的任何全域管理員或安全性系統管理員，都會自動是 Azure ATP 系統管理員。
 
-## <a name="accessing-the-management-portal"></a>存取管理入口網站
+## <a name="accessing-the-azure-atp-portal"></a>存取 Azure ATP 入口網站
 
-只有具備全域系統管理員或安全性系統管理員目錄角色的 Azure AD 使用者，才能存取管理入口網站。 進入入口網站之後，您可以建立您的工作區。 Azure ATP 服務會在 Azure Active Directory 租用戶中建立三個安全性群組：Administrators、Users、Viewers。 
+只有具備全域管理員或安全性系統管理員目錄角色的 Azure AD 使用者，才能存取 Azure ATP 入口網站 (portal.atp.azure.com)。 進入入口網站之後，您可以建立您的工作區。 Azure ATP 服務會在 Azure Active Directory 租用戶中建立三個安全性群組：Administrators、Users、Viewers。 
 
 > [!NOTE]
-> Azure ATP 工作區入口網站的存取權只會授與工作區 Azure AD 安全性群組內的使用者，以及全域系統管理員和安全性系統管理員。
+> Azure ATP 入口網站的存取權只會授與 Azure Active Directory 中的 Azure ATP 安全性群組使用者，以及租用戶的全域管理員和安全性系統管理員。
 
 
 ## <a name="types-of-azure-atp-security-groups"></a>Azure ATP 安全性群組的類型 
 
-Azure ATP 導入三種類型的安全性群組：Azure ATP「工作區名稱」系統管理員，Azure ATP「工作區名稱」使用者和 Azure ATP「工作區名稱」檢視者。 下表描述每個角色在 Azure ATP 工作區入口網站中可用的存取類型。 根據您所指派的角色而定，Azure ATP 工作區入口網站中的某些畫面與功能表選項將會無法使用，如下所示︰
+Azure ATP 提供三種類型的安全性群組：Azure ATP (工作區名稱) 系統管理員，Azure ATP (工作區名稱) 使用者和 Azure ATP (工作區名稱) 檢視者。 下表描述每個角色在 Azure ATP 入口網站中可用的存取類型。 根據您所指派的角色而定，這些使用者將會無法使用 Azure ATP 入口網站中的各種畫面與功能表選項，如下所示：
 
-|活動 |Azure ATP「工作區名稱」系統管理員|Azure ATP「工作區名稱」使用者|Azure ATP「工作區名稱」檢視者|
+|活動 |Azure ATP (工作區名稱) 系統管理員|Azure ATP (工作區名稱) 使用者|Azure ATP (工作區名稱) 檢視者|
 |----|----|----|----|
 |登入|可用|可用|可用|
-|變更可疑活動的狀態|可用|可用|無法使用|
-|透過電子郵件/取得連結共用/匯出可疑的活動|可用|可用|可用|
+|變更安全性警訊的狀態 (重新開啟、關閉、排除、隱藏)|可用|可用|無法使用|
+|共用/匯出安全性警訊 (透過電子郵件、取得連結、下載詳細資料)|可用|可用|可用|
+|下載報表|可用|可用|可用|
 |變更監視警示的狀態|可用|無法使用|無法使用|
-|更新 Azure ATP 設定|可用|無法使用|無法使用|
-|感應器 - 新增|可用|無法使用|無法使用|
-|感應器 - 刪除 |可用|無法使用|無法使用|
-|監視的 DC - 新增 |可用|無法使用|無法使用|
-|監視的 DC - 刪除|可用|無法使用|無法使用|
-|檢視警示及可疑的活動|可用|可用|可用|
+|更新 Azure ATP 設定 - 感應器 (下載、重新產生金鑰、設定、刪除)|可用|無法使用|無法使用|
+|更新 Azure ATP 設定 - 資料來源 (目錄服務、SIEM、VPN WD-ATP)|可用|無法使用|無法使用|
+|更新 ATP 設定 - 更新|可用|無法使用|無法使用|
+|更新 ATP 設定 - 排程報告|可用|可用|無法使用|
+|更新 ATP 設定 - 實體標記 (敏感性和 honeytoken)|可用|可用|無法使用|
+|更新 ATP 設定 - 排除|可用|可用|無法使用|
+|更新 ATP 設定 - 語言|可用|可用|無法使用|
+|更新 ATP 設定 - 通知 (電子郵件和 syslog)|可用|可用|無法使用|
+|更新 ATP 設定 - 預覽偵測|可用|可用|無法使用|
+|檢視實體設定檔和安全性警訊|可用|可用|可用|
 
 
 當使用者嘗試存取不適用於其角色群組的頁面時，便會被重新導向至 Azure ATP 未授權頁面。 
@@ -70,8 +75,8 @@ Azure ATP 導入三種類型的安全性群組：Azure ATP「工作區名稱」�
 Azure ATP 使用 Azure AD 安全性群組作為角色群組的基礎。 您可以從 [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/All%20groups](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/All%20groups) 管理角色群組。 只可以將 Azure AD 使用者加入或移除自安全性群組。 
 
 ## <a name="see-also"></a>另請參閱
-- [ATA 調整大小工具](http://aka.ms/aatpsizingtool)
-- [ATA 架構](atp-architecture.md)
-- [安裝 ATA](install-atp-step1.md)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [ATP 調整大小工具](http://aka.ms/aatpsizingtool)
+- [ATP 架構](atp-architecture.md)
+- [安裝 Azure ATP](install-atp-step1.md)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
 

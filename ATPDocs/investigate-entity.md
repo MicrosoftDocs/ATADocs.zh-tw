@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/6/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0c0558dbe0b4eba849adb635a84bc934e406e56f
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: 72e26d9cdc539da168d1bc7c274971526eec61d1
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44166556"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783299"
 ---
 適用於：Azure 進階威脅防護
 
@@ -26,13 +26,13 @@ ms.locfileid: "44166556"
 
 # <a name="investigate-an-entity-with-azure-atp"></a>利用 Azure ATP 調查實體
 
-本文說明在以 Azure 進階威脅防護 (ATP) 偵測到可疑活動後，調查實體的程序。 在時間線檢視可疑的活動後，您可向下鑽研至與活動相關的實體，並使用下列參數與詳細資料來了解發生的問題，以及降低風險所需採取的動作。
+本文說明在以 Azure 進階威脅防護 (ATP) 偵測到可疑活動後，調查實體的程序。 檢視時間軸中的安全性警訊後，您可向下鑽研至警訊涉及的實體，並使用下列參數與詳細資料來了解發生的問題，以及降低風險所需採取的動作。
 
 ## <a name="look-at-the-entity-profile"></a>查看實體設定檔
 
 實體設定檔提供您專為完整深入調查使用者、電腦、裝置，以及他們有權存取的資源及其歷程記錄所設計的全方位實體頁面。 設定檔頁面會利用新的 Azure ATP 邏輯活動轉譯程式，此轉譯程式可查看一組發生的活動 (彙總最多一分鐘)，並將它們組成單一邏輯活動，以讓您更深入了解您使用者的實際活動。
 
-若要存取實體設定檔頁面，請按一下可疑活動時間軸中的實體名稱 (例如使用者名稱)。 您也可在可疑活動頁面將滑鼠移至實體名稱上，來查看迷你版本的實體設定檔。
+若要存取實體設定檔頁面，請按一下安全性警訊時間軸中的實體名稱 (例如使用者名稱)。 您也可以將滑鼠移至實體名稱上，在安全性警訊頁面中查看迷你版本的實體設定檔。
 
 實體設定檔可讓您檢視實體活動、目錄資料以及實體的橫向移動路徑。 如需詳細資訊，請參閱[了解實體設定檔](entity-profiles.md)。
 
@@ -112,4 +112,4 @@ Azure ATP 可協助您預防使用橫向移動路徑的攻擊。 橫向移動是
 ## <a name="see-also"></a>另請參閱
 
 - [處理可疑活動](working-with-suspicious-activities.md)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

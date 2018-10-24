@@ -7,18 +7,18 @@ ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/21/2018
 ms.topic: conceptual
-ms.prod: ''
-ms.service: advanced-threat-analytics
+ms.prod: advanced-threat-analytics
+ms.service: ''
 ms.technology: ''
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0a939f36a86e1ad6cd275a16a4dd4468defa7a76
-ms.sourcegitcommit: a5823d0dfc48783ab990a99ca3f65b614fb49e75
+ms.openlocfilehash: 512e7fa979a6fd5e140d65836b533b720a6dc03b
+ms.sourcegitcommit: 1b23381ca4551a902f6343428d98f44480077d30
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44697203"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403211"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -27,16 +27,16 @@ ms.locfileid: "44697203"
 # <a name="configuring-windows-event-forwarding"></a>設定 Windows 事件轉送
 
 > [!NOTE]
-> 針對 ATA 1.8 版及更新版本，ATA 輕量型閘道不再需要事件收集設定。 ATA 輕量型閘道現在可以在本機讀取事件，而不需要設定事件轉送。
-
+> 針對 ATA 1.8 版及更新版本，ATA 輕量型閘道不再需要事件收集設定。 ATA 輕量型閘道現在會本機讀取事件，而不需要設定事件轉送。
 
 為增強偵測功能，ATA 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757、7045。 這些事件可透過 ATA 輕量型閘道自動讀取；如果未部署 ATA 輕量型閘道，則可以透過下列兩個方式之一轉送至 ATA 閘道：藉由將 ATA 閘道設定為接聽 SIEM 事件，或藉由設定 Windows 事件轉送。
 
-
+> [!NOTE]
+> 如果您使用 Server Core，則 [wecuti](https://docs.microsoft.com/windows-server/administration/windows-commands/wecutil) 可用於建立和管理從遠端電腦機轉送之事件的訂用帳戶。
 
 ### <a name="wef-configuration-for-ata-gateways-with-port-mirroring"></a>具連接埠鏡像之 ATA 閘道的 WEF 設定
 
-設定從網域控制站到 ATA 閘道之間的連接埠鏡像之後，請依照下列指示以使用來源起始設定來設定 Windows 事件轉送。 這是一個設定 Windows 事件轉送的方法。 
+在設定從網域控制站到 ATA 閘道之間的連接埠鏡像後，請使用下列指示以使用來源起始設定來設定 Windows 事件轉送。 這是一個設定 Windows 事件轉送的方法。 
 
 **步驟 1︰新增網路服務帳戶到網域 Event Log Readers 群組。** 
 
@@ -44,7 +44,7 @@ ms.locfileid: "44697203"
 
 1.  開啟 [Active Directory 使用者和電腦]，瀏覽至 **BuiltIn** 資料夾，然後按兩下 [Event Log Readers]。 
 2.  選取 [成員]。
-4.  如果未列出 [Network Service]，請按一下 [新增]，在 [輸入要選取的物件名稱] 欄位中輸入 **Network Service**。 然後按一下 [檢查名稱]，再按兩次 [確定]。 
+3.  如果未列出 [Network Service]，請按一下 [新增]，在 [輸入要選取的物件名稱] 欄位中輸入 **Network Service**。 然後按一下 [檢查名稱]，再按兩次 [確定]。 
 
 在將 [網路服務] 新增到 [Event Log Readers] 群組後，請重新啟動網域控制站，變更才會生效。
 
@@ -62,7 +62,9 @@ ms.locfileid: "44697203"
    
     1.  選取 [啟用]。
     2.  在 [選項] 下，按一下 [顯示]。
-    3.  在 [SubscriptionManagers] 下，輸入下列值，然後按一下 [確定]：*Server=`http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10*` (例如：Server=`http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10`)
+    3.  在 [SubscriptionManagers] 下，輸入下列值，然後按一下 [確定]：*Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* 
+    
+        *(例如：Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)*
  
     ![設定目標訂閱影像](media/wef%202%20config%20target%20sub%20manager.png)
    

@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/21/2018
-ms.topic: article
-ms.prod: ''
-ms.service: advanced-threat-analytics
+ms.topic: conceptual
+ms.prod: advanced-threat-analytics
+ms.service: ''
 ms.technology: ''
 ms.assetid: 5a65285c-d1de-4025-9bb4-ef9c20b13cfa
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 87d3f1de8167c1198e6b334826f90df83cc96780
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: e3f59bc7c6873407d8764dc5ab64bfd7a52fdebe
+ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30009263"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46133339"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -30,7 +30,8 @@ ms.locfileid: "30009263"
 
 如果您的 ATA 中心未啟動，請執行下列疑難排解程序：
 
-1.  執行下列 Windows PowerShell 命令：`Get-Service Pla | Select Status`，以確定效能計數器服務正在執行。 如果未執行，則是平台問題，而您必須確定讓此服務再次執行。
+1.  執行下列 Windows PowerShell 命令：`Get-Service Pla | Select Status`
+    確定效能計數器服務正在執行。 如果未執行，則是平台問題，而您必須確定讓此服務再次執行。
 2.  如果正在執行，請嘗試將它重新啟動，看看是否會解決此問題：`Restart-Service Pla`
 3.  嘗試手動建立新的資料收集器 (任何收集器都可以，即使只收集電腦 CPU 也可以)。
 如果可以啟動，代表平台應該沒問題。 如果無法啟動，則可能仍是平台問題。
@@ -58,7 +59,8 @@ System.Net.Http.HttpRequestException: 回應狀態碼未指出成功: 500 (內�
 
 **解決方法**
 
-1. 在登錄機碼下，如果有名為 **Disable Performance Counters** 的 DWORD 值，請確認其設為 **0**：`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\` `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfProc\Performance`
+1. 在登錄機碼下，如果有稱為 **Disable Performance Counters** 的 DWORD 值，請確認其設為 **0**：`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\`
+    `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfProc\Performance`
  
 2. 然後重新啟動效能記錄檔及警示 (PLA) 服務。 ATA 輕量型閘道會自動偵測變更並重新啟動服務。
 

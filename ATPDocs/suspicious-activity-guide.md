@@ -1,11 +1,11 @@
 ---
-title: Azure ATP 可疑活動指南 | Microsoft Docs
-d|Description: This article provides a list of the suspicious activities Azure ATP can detect and steps for remediation.
+title: Azure ATP 安全性警訊指南 | Microsoft Docs
+d|Description: This article provides a list of the security alerts issued by Azure ATP and steps for remediation.
 keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/20/2018
+ms.date: 10/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,19 +13,19 @@ ms.technology: ''
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7146c9830a6d3e4f9f655020aa2711e8aeeba40d
-ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
+ms.openlocfilehash: ca22fc6430556d49a6709be2f46c0c0b8746fa38
+ms.sourcegitcommit: 0c05308c832e4b03ea3945788de39feabfdb5671
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126445"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48914497"
 ---
 適用於：Azure 進階威脅防護
 
 
-# <a name="azure-advanced-threat-protection-suspicious-activity-guide"></a>Azure 進階威脅防護可疑活動指南
+# <a name="azure-advanced-threat-protection-security-alert-guide"></a>Azure 進階威脅防護安全性警訊指南
 
-在適當的調查之後，任何可疑活動可分類為：
+在適當的調查之後，所有 Azure ATP 安全性警訊可分類為：
 
 -   **真肯定**︰由 Azure ATP 所偵測到的惡意動作。
 
@@ -33,33 +33,9 @@ ms.locfileid: "44126445"
 
 -   **誤判**：假警示，表示活動並未發生。
 
-如需如何使用 Azure ATP 警示的詳細資訊，請參閱[處理可疑活動](working-with-suspicious-activities.md)。
+如需如何使用 Azure ATP 安全性警訊的詳細資訊，請參閱[使用安全性警訊](working-with-suspicious-activities.md)。
 
 
-## <a name="abnormal-sensitive-group-modification"></a>敏感性群組的異常修改
-
-
-**描述**
-
-攻擊者將使用者新增至具有高權限的群組。 如此一來就能存取更多資源並取得永續性。 此偵測需要分析使用者的群組修改活動，並在敏感性群組中出現異常新增時發出警示。 ATP 會持續執行分析。 可觸發警示的最低期限是每個網域控制站一個月。
-
-如需 Azure ATP 中敏感性群組的定義，請參閱[處理敏感性帳戶](sensitive-accounts.md)。
-
-
-此偵測需要[網域控制站上稽核的事件](configure-event-collection.md)。
-以確保您的網域控制站會稽核所需的事件。
-
-**調查**
-
-1. 群組修改是否合法？ </br>合法的群組修改很少發生且經判定並不「正常」，這可能會造成警示，因此會視為良性真肯定。
-
-2. 如果新增的物件是使用者帳戶，請檢查使用者帳戶在新增至系統管理員群組之後採取了哪些動作。 移至 Azure ATP 中的使用者頁面以取得更多內容。 新增前後是否有與帳戶建立關聯的任何其他可疑活動？ 下載**敏感性群組修改**報表，以查看同一時段內有誰做了哪些其他修改。
-
-**補救**
-
-減少授權修改敏感性群組的使用者數目。
-
-如果適用，請設定 [Privileged Access Management for Active Directory](https://docs.microsoft.com/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services)。
 
 
 ## <a name="brute-force-attack-using-ldap-simple-bind"></a>使用 LDAP 簡單繫結的暴力密碼破解攻擊
@@ -406,7 +382,7 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 
 使用 [Net Cease 工具](https://gallery.technet.microsoft.com/Net-Cease-Blocking-Net-1e8dcb5b)來強化您的環境，以防止此攻擊。
 
-## <a name="remote-execution-attempt"></a>遠端執行嘗試
+## <a name="remote-code-execution-attempt"></a>遠端程式碼執行嘗試
 
 **描述**
 
@@ -454,7 +430,25 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 
 [複雜且很長的密碼](https://docs.microsoft.com/windows/device-security/security-policy-settings/password-policy)提供必要的第一層安全性，以防止暴力密碼破解攻擊。
 
-## <a name="suspicious-domain-controller-promotion-potential-dcshadow-attack---new"></a>可疑網域控制站升級 (潛在的 DcShadow 攻擊) - 新增
+## <a name="suspicious-communication-over-dns---preview"></a>透過 DNS 的可疑通訊 - 預覽
+
+**描述**
+
+大多數組織中的 DNS 通訊協定通常不會受到監視，而且很少會因惡意活動遭到封鎖。 這讓攻擊者有機會在遭入侵的電腦上濫用 DNS 通訊協定。 透過 DNS 的惡意通訊可能用於資料外洩、命令和控制，及/或規避公司網路限制。
+
+**調查**
+> [!NOTE]
+> 「透過 DNS 的可疑通訊」安全性警訊會列出可疑網域。 新的網域，或是 Azure ATP 未知或無法辨識但您組織已知或屬於其一部分的最近新增網域，都可能被關閉。 
+
+
+1.  某些合法公司會使用 DNS 進行定期通訊。 請檢查已註冊查詢網域是否屬於信任的來源，例如您的防毒提供者。 如果網域已知並受信任，而且允許 DNS 查詢，則可以關閉警示，並在未來警示中[排除](excluding-entities-from-detections.md)該網域。 
+3.   如果已註冊的查詢網域未受信任，請指出在來源電腦上建立要求的程序。 使用 [Process Monitor](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon) 可協助進行這項工作。
+4.  判斷可疑活動何時開始？ 是否已在組織中部署或安裝任何新程式 (AV)？ 同一時間是否有其他警示？
+5.  按一下來源電腦以存取其設定檔頁面。 檢查 DNS 查詢出現前後期間的事件，並搜尋異常活動，例如當時登入的使用者，以及所使用的資源。 如果您已啟用 Windows Defender ATP 整合，請按一下 Windows Defender ATP 徽章 ![[Windows Defender ATP] 徽章](./media/wd-badge.png) 以進一步調查電腦。 使用 Windows Defender ATP，您可以查看在警示期間所發生的處理程序和警示。
+
+**補救**：如果在調查後發現已註冊的查詢網域不受信任，建議封鎖目的地網域以避免未來的所有通訊。 
+
+## <a name="suspicious-domain-controller-promotion-potential-dcshadow-attack"></a>可疑的網域控制站升級 (潛在的 DCShadow 攻擊)
 
 **描述**
 
@@ -492,8 +486,33 @@ DCShadow 使用 RPC 和 LDAP 進行：
 > [!NOTE]
 > 只有 ATP 感應器才支援可疑網域控制站升級 (潛在 DCShadow 攻擊) 偵測。 
 
+## <a name="suspicious-modification-of-sensitive-groups"></a>敏感性群組的可疑修改
 
-## <a name="suspicious-replication-request-potential-dcshadow-attack---new"></a>可疑複寫要求 (潛在 DCShadow 攻擊) - 新增
+**描述**
+
+攻擊者將使用者新增至具有高權限的群組。 如此一來就能存取更多資源並取得永續性。 此偵測需要分析使用者的群組修改活動，並在敏感性群組中出現異常新增時發出警示。 Azure ATP 會持續執行分析。 可觸發警示的最低期限是每個網域控制站一個月。
+
+如需 Azure ATP 中敏感性群組的定義，請參閱[處理敏感性帳戶](sensitive-accounts.md)。
+
+
+此偵測需要[網域控制站上稽核的事件](configure-event-collection.md)。
+以確保您的網域控制站會稽核所需的事件。
+
+**調查**
+
+1. 群組修改是否合法？ </br>合法的群組修改很少發生且經判定並不「正常」，這可能會造成警示，因此會視為良性真肯定。
+
+2. 如果新增的物件是使用者帳戶，請檢查使用者帳戶在新增至系統管理員群組之後採取了哪些動作。 移至 Azure ATP 中的使用者頁面以取得更多內容。 新增前後是否有與帳戶建立關聯的任何其他可疑活動？ 下載**敏感性群組修改**報表，以查看同一時段內有誰做了哪些其他修改。
+
+**補救**
+
+減少授權修改敏感性群組的使用者數目。
+
+如果適用，請設定 [Privileged Access Management for Active Directory](https://docs.microsoft.com/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services)。
+
+
+
+## <a name="suspicious-replication-request-potential-dcshadow-attack"></a>可疑的複寫要求 (潛在的 DCShadow 攻擊) 
 
 **描述** 
 
@@ -547,7 +566,7 @@ DCShadow 使用 RPC 和 LDAP 進行：
 - 在網域電腦上實作具有較低權限的存取，以僅允許特定使用者建立新的服務。
 
 
-## 可疑 VPN 連線 - 新增 <a name="suspicious-vpn-detection"></a>
+## 可疑 VPN 連線 <a name="suspicious-vpn-detection"></a>
 
 **描述**
 
@@ -604,9 +623,9 @@ VPN 行為模型以下列活動為基礎：使用者登入的機器以及使用�
 
 
 > [!NOTE]
-> 若要停用可疑的活動，請連絡支援人員。
+> 若要停用安全性警訊，請連絡支援人員。
 
 
 ## <a name="see-also"></a>另請參閱
 - [處理可疑活動](working-with-suspicious-activities.md)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

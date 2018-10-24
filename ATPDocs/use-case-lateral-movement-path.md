@@ -1,11 +1,11 @@
 ---
-title: 使用 Azure ATP 調查橫向移動路徑攻擊 | Microsoft Docs
-description: 本文說明如何使用 Azure 進階威脅防護 (ATP) 偵測橫向移動路徑攻擊。
+title: 使用 Azure ATP 調查橫向移動攻擊 | Microsoft Docs
+description: 本文描述如何使用 Azure 進階威脅防護 (ATP) 偵測橫向移動攻擊。
 keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/05/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: de15c920-8904-4124-8bdc-03abd9f667cf
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0fcdfdbeaeed7e42aff9d63f4f88300346c73465
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: e6a223405f4aa1e8daa1d393428db43c4e692daa
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44165570"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783486"
 ---
 適用於：Azure 進階威脅防護
 
@@ -32,7 +32,7 @@ ms.locfileid: "44165570"
 
 若要探索網路中有哪些敏感性帳戶因和非敏感性的帳戶、群組與電腦之間具有連線而處於公開的狀態，請遵循這些步驟。 
 
-1. 在 Azure ATP 工作區入口網站功能表列中，按一下 [報表] 圖示 ![[報表] 圖示](./media/atp-report-icon.png)。
+1. 在 Azure ATP 入口網站功能表中，按一下報表圖示 ![[報表] 圖示](./media/atp-report-icon.png)。
 
 2. 在 [針對敏感性帳戶的橫向移動路徑] 底下，若找不到潛在的橫向移動路徑，報表將會呈現灰色。若有潛在的橫向移動路徑，則報表會自動預先選取有相關資料的第一個日期。 橫向移動路徑報表會提供最多 60 天的資料。
 
@@ -47,7 +47,7 @@ ms.locfileid: "44165570"
 
 
 
-1. 在 Azure ATP 工作區入口網站中，在實體位於橫向移動路徑 ![橫向圖示](./media/lateral-movement-icon.png) 或 ![路徑圖示](./media/paths-icon.png)。 請注意，只有在過去 48 小時內有橫向移動時，才會顯示該徽章。 
+1. 在 Azure ATP 入口網站中，搜尋當實體位於橫向移動路徑時，新增至實體設定檔的橫向移動徽章 ![橫向圖示](./media/lateral-movement-icon.png) 或 ![路徑圖示](./media/paths-icon.png)。 請注意，只有在過去 48 小時內有橫向移動時，才會顯示該徽章。 
 
 2. 在隨即開啟的使用者設定檔頁面中，按一下 [橫向移動路徑] 索引標籤。 
 
@@ -73,6 +73,6 @@ ms.locfileid: "44165570"
 
 ## <a name="see-also"></a>另請參閱
 
-- [設定 SAM-R 所需的權限](install-atp-step8-samr.md)
-- [處理可疑活動](working-with-suspicious-activities.md)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [設定 Azure ATP 對 SAM 發出遠端呼叫](install-atp-step8-samr.md)
+- [使用安全性警訊](working-with-suspicious-activities.md)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

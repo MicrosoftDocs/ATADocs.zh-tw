@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/06/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 17458706-79fb-4c23-aa42-66979164a45f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b4353de9d004358ddcdc929271fd96665e1c7322
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: 357973698d9d53936c3fa308bc0021ae1cd98f60
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44165842"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783503"
 ---
 適用於：Azure 進階威脅防護
 
@@ -51,7 +51,7 @@ ms.locfileid: "44165842"
 
  ![使用者設定檔目錄資料](media/user-profile-dir-data.png)
 
-在 [使用者存取控制] 區段中，Azure ATP 會顯示可能需要您注意的安全性設定。 您可以看到有關使用者的重要旗標，例如使用者是否可以按 Enter 略過密碼、使用者是否擁有永不過期的密碼等。 
+在 [使用者存取控制] 區段中，Azure ATP 會顯示可能需要您注意的安全性設定。 您可以看到使用者的相關重要旗標，例如使用者是否可以按 Enter 略過密碼、使用者是否擁有永不過期的密碼等。 
 
 ## <a name="view-lateral-movement-paths"></a>檢視橫向移動路徑
 
@@ -59,7 +59,7 @@ ms.locfileid: "44165842"
 
 該影像地圖所提供的清單可讓您知道攻擊者在電腦和使用者之間必須有多少來回於此使用者的躍點才能入侵機密帳戶，且如果使用者擁有機密帳戶，您可以查看有多少直接連線的資源和帳戶。
 
-若在過去兩天內都沒有偵測到活動，該圖表便不會再出現，不過系統還是會提供[橫向移動路徑報告](reports.md)，以提供您過去 60 天的橫向移動路徑相關資訊。 
+若在過去兩天內都沒有偵測到活動，該圖表即不再出現，不過系統還是會提供[橫向移動路徑報告](reports.md)，以提供您過去 60 天既有的橫向移動路徑資訊。 
 
 如需詳細資訊，請參閱[橫向移動路徑](use-case-lateral-movement-path.md)。 
 
@@ -69,4 +69,4 @@ ms.locfileid: "44165842"
 ## <a name="see-also"></a>另請參閱
 
 - [使用 Azure ATP 調查橫向移動路徑](use-case-lateral-movement-path.md)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

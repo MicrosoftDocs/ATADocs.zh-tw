@@ -2,10 +2,10 @@
 title: Azure ATP 支援 | Microsoft Docs
 description: 說明從 Azure ATP 取得支援說明的流程。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 3/18/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: fa4577377c32562e0441014958e9702cbbb7399b
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: 2c4f82ce7bf4e8ba7bf9e6ae56198ca1f6e4aefb
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44166405"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783231"
 ---
 適用於：Azure 進階威脅防護
 
@@ -66,7 +66,7 @@ Azure 進階威脅防護產品小組會在 [Enterprise Mobility + Security 部�
 
 #### <a name="on-demand-videos"></a>隨選影片
 
-- [Azure 進階威脅防護](https://myignite.microsoft.com/sessions/53476?source=sessions)的 Microsoft Ignite 2017 研討會。
+- [Azure 進階威脅防護](https://myignite.techcommunity.microsoft.com/sessions?t=%257B%2522from%2522%253A%25222018-09-23T08%253A00%253A00-04%253A00%2522%252C%2522to%2522%253A%25222018-09-28T19%253A00%253A00-04%253A00%2522%257D&q=azure%2520advanced%2520threat%2520protection#ignite-html-anchor)的 Microsoft Ignite 2018 研討會。
 
 疑難排解：
 
@@ -76,8 +76,8 @@ Azure 進階威脅防護產品小組會在 [Enterprise Mobility + Security 部�
 
 - 若您在環境中部署了 Windows Defender ATP 且想要將其與 Azure 進階威脅防護整合，請參閱[與 Windows Defender ATP 整合](integrate-wd-atp.md)。
 
-- 如需有關調查可疑活動的資訊，請參閱[可以活動指南](suspicious-activity-guide.md)。
+- 如需安全性警訊的調查資訊，請參閱[安全性警訊指南](suspicious-activity-guide.md)。
 
 ### <a name="community-resources"></a>社群資源
 
-我們建議使用[適用於 Azure 進階威脅防護的 Yammer](https://www.yammer.com/AskIPTeam)。 此一資源提供 Azure 進階威脅防護小組的直接回應，以及和其他系統管理員與顧問分享經驗與知識的優點。
+我們建議使用[適用於 Azure 進階威脅防護的 Yammer 群組](https://www.yammer.com/AskIPTeam)。 此一資源提供 Azure 進階威脅防護小組的直接回應，以及和其他系統管理員與顧問分享經驗與知識的優點。

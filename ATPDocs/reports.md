@@ -2,10 +2,10 @@
 title: 使用 Azure ATP 報表 | Microsoft Docs
 description: 描述如何在 Azure ATP 中產生報表以監視您的網路。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 2/27/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,19 +13,19 @@ ms.technology: ''
 ms.assetid: 2c2d6b1a-fc8c-4ff7-b07d-64ce6159f84d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: eb1a29038d8afb47328970ff7179f0e1ff01614d
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: 367ad07bd1d0be80486bfc10c2b70546d360805c
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44165927"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783180"
 ---
 適用於：Azure 進階威脅防護
 
 
 # <a name="azure-atp-reports"></a>Azure ATP 報表
 
-工作區入口網站中的 Azure ATP 報表區段可讓您產生報表，以提供系統狀態資訊，除了系統健康狀態，還報告您環境中偵測到的可疑活動。
+Azure ATP 入口網站中的 Azure ATP 報表區段可讓您產生報表，以提供系統狀態資訊，除了系統健康狀態，還會回報您環境中偵測到的可疑活動。
 
 
 若要存取報表頁面，請按一下功能表列中的報表圖示：![報表圖示](./media/atp-report-icon.png)。
@@ -43,7 +43,7 @@ ms.locfileid: "44165927"
 
 若要依需求產生報表：
 
-1. 在 Azure ATP 工作區入口網站功能表列中，按一下功能表列中的 [報表] 圖示： ![報表圖示](./media/atp-report-icon.png)。
+1. 在 Azure ATP 入口網站功能表列中，按一下功能表列中的報表圖示： ![報表圖示](./media/atp-report-icon.png)。
 
 2. 在您的已選取報表類型下，設定**開始**與**結束**日期，並按一下 [下載]。 
  ![報表](./media/reports.png)
@@ -67,4 +67,4 @@ ms.locfileid: "44165927"
 - [Azure ATP 容量規劃](atp-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-forwarding.md#configuring-windows-event-forwarding)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

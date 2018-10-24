@@ -1,115 +1,92 @@
 ---
-title: 什麼是 Azure 進階威脅防護 (ATP)？ | Microsoft Docs
-description: 說明何謂 Azure 進階威脅防護 (ATP)，以及它可以偵測到的可疑活動種類
+title: 什麼是 Azure 進階威脅防護 (Azure ATP)？ | Microsoft Docs
+description: 說明何謂 Azure 進階威脅防護 (Azure ATP)，以及它可以偵測到哪些可疑活動種類
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 2/21/2018
-ms.topic: conceptual
+ms.date: 10/04/2018
+ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: 2d14d0e9-1b03-4bcc-ae97-8fd41526ffc5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7e78d5db2babc682de8eae50091193e1ccee8433
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: 80038b04a95d09c25baf1e2b5d216796cb12c9f6
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44166136"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783673"
 ---
 適用於：Azure 進階威脅防護
 
-
 # <a name="what-is-azure-advanced-threat-protection"></a>什麼是 Azure 進階威脅防護？
-Azure 進階威脅防護 (ATP) 為雲端服務，可保護您的企業混合式環境，以防止多種進階目標式網路攻擊及內部威脅。
+Azure 進階威脅防護 (ATP) 是以雲端為基礎的安全性解決方案，其可識別、偵測並協助您調查進階的威脅、遭盜用的身分識別以及由組織內部發起的惡意動作。 Azure ATP 可讓為了偵測出混合式環境中的進階攻擊而心力交瘁的 SecOp 分析師和安全性專業人員完成以下作業：  
+- 透過學習式的分析，監視使用者、實體的行為和活動  
+- 保護儲存在 Active Directory 中的使用者身分識別與認證  
+- 識別及調查整個狙殺鏈中的可疑使用者活動與進階攻擊 
+- 在簡單的時間軸上提供明確的事件資訊，以快速分級 
+ 
+## <a name="monitor-and-profile-user-behavior-and-activities"></a>監視和分析使用者行為和活動  
+Azure ATP 會監視並分析整個網路的使用者活動和資訊，例如權限和群組成員資格，並為每個使用者建立行為基準。 接著，Azure ATP 會使用自適性內建智慧功能識別出異常項目、提供您可疑的活動和事件見解；揭露進階威脅、遭盜用的使用者和組織所面臨的內部威脅。 Azure ATP 專屬感應器可監視組織的網域控制站，並提供每部裝置所有使用者活動的完整檢視。 
+ 
+## <a name="protect-user-identities-and-reduce-the-attack-surface"></a>保護使用者的身分識別，並減少受攻擊面   
+Azure ATP 可提供您身分識別設定的寶貴見解以及安全性最佳實務的建議。 透過安全性報告和使用者設定檔分析，Azure ATP 可協助大幅減少組織的受攻擊面，提高盜用使用者認證與發動攻擊的難度。 Azure ATP 的視覺化橫向移動路徑可協助您對攻擊者如何在組織內部橫向移動以入侵機密帳戶的過程一目了然，並事先防止這些風險。 此外，Azure ATP 安全性報告可協助您找出使用純文字密碼進行驗證的使用者和裝置，並提供額外的見解，以提升組織的安全性狀態與原則。  
+ 
+## <a name="identify-suspicious-activities-and-advanced-attacks-across-the-attack-kill-chain"></a>識別整個攻擊狙殺鏈的可疑活動與進階攻擊 
+一般來說，攻擊者會針對任何可存取的實體 (例如低權限的使用者) 發動攻擊，然後再快速橫向移動直到獲得寶貴資產的存取權為止 – 例如機密帳戶、網域系統管理員和高敏感性資料。 Azure ATP 會從整個攻擊狙殺鏈來源識別這些進階的威脅： 
+### <a name="reconnaissance"></a>探查 
+使用各種方法，找出意圖取得使用者名稱、使用者的群組成員資格、指派給裝置的 IP 位址、資源等資訊的惡意使用者和攻擊者。  
+### <a name="compromised-users"></a>遭盜用的使用者
+識別透過暴力密碼破解攻擊、失敗的驗證、使用者群組成員資格變更等其他方法入侵使用者認證的不良意圖。  
 
-## <a name="how-azure-atp-works"></a>Azure ATP 的運作方式
+### <a name="lateral-movements"></a>橫向移動
+偵測利用傳遞票證、傳遞雜湊、侵犯雜湊等方式在網路內部橫向移動，以進一步控制機密使用者的不良意圖。  
 
-Azure ATP 會利用專用的網路剖析引擎來擷取和剖析多個通訊協定 (例如 Kerberos、DNS、RPC、NTLM 和其他) 的網路流量，以進行驗證、授權和資訊收集。 Azure ATP 會透過下列方式收集此資訊：
+### <a name="domain-dominance"></a>網域支配
+如果有人透過在網域控制站上遠端執行程式碼及 DC Shadow、惡意網域控制站複寫、Golden Ticket 活動等方法達成網域支配，即醒目提示攻擊者的行為。   
 
--   直接在您的網域控制站上部署 Azure ATP 感應器
--   從網域控制站和 DNS 伺服器將連接埠鏡像設定至 Azure ATP 獨立式感應器
+## <a name="investigate-alerts-and-user-activities"></a>調查警示和使用者活動  
+Azure ATP 的設計目的是減少一般警示的干擾，因此在簡單、即時的組織攻擊時間軸中只提供相關與重要的安全性警訊。 Azure ATP 的攻擊時間軸檢視，可讓您運用智慧分析的情報，安心專注於重要工作。 使用 Azure ATP 的安全性專業人員可以快速調查威脅，並深入了解整個組織的使用者、裝置和網路資源。 緊密整合 Windows Defender ATP，透過可抵禦作業系統上進階持續威脅的額外偵測和防護，提供另一道增強的安全性保障。  
 
-Azure ATP 會從多個資料來源 (例如網路中的記錄檔和事件) 取得資訊，以了解組織中使用者和其他實體的行為，並建立其相關行為的設定檔。
-Azure ATP 可以從下列項目接收事件和記錄檔︰
-
--   SIEM 整合
--   Windows 事件轉送 (WEF)
--   直接從 Windows Event Collector (適用於感應器)
--   從 VPN 進行 RADIUS 帳戶處理
-
+## <a name="additional-resources-for-azure-atp"></a>Azure ATP 的其他資源  
+開始免費試用：[https://signup.microsoft.com/Signup?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7&ali=1](https://signup.microsoft.com/Signup?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7&ali=1 "Enterprise Mobility + Security E5")
+ 
+追蹤 Microsoft 技術社群的 Azure ATP 專區  
+[https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection "Microsoft 技術社群的 Azure ATP 專區")
+ 
+加入 Azure ATP Yammer 社群[https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893 ](https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893 "Azure ATP Yammer 社群")
+ 
+瀏覽 Azure ATP 產品頁面  
+[https://azure.microsoft.com/en-us/features/azure-advanced-threat-protection/](https://azure.microsoft.com/en-us/features/azure-advanced-threat-protection/ "Azure ATP 產品頁面")
 
 如需 Azure ATP 架構的詳細資訊，請參閱 [Azure ATP 架構](atp-architecture.md)。
+ 
+## <a name="whats-next"></a>新功能 
 
-## <a name="what-does-azure-atp-do"></a>Azure ATP 有何功能？
+建議您分 3 個階段來部署 Azure ATP：  
 
-Azure ATP 技術可偵測多種可疑的活動，專注於網路攻擊狙殺鏈的數個階段，包括︰
+### <a name="phase-1"></a>階段 1
 
--   「偵查」階段，此時攻擊者會收集有關環境的建構方式、有哪些不同的資產，以及存在何種實體等資訊。 他們通常會著手規劃下一階段的攻擊。
--   橫向移動週期，此時攻擊者會將時間與精力放在在網路內部分散攻擊面。
--   「網域支配 (持續性)」階段，此時攻擊者會擷取資訊，以便使用各種進入點、認證和技術繼續進行攻擊活動。 
-
-無論何種公司受到攻擊，或者何種資訊遭到鎖定，這些網路攻擊階段都非常類似而且可預測。
-Azure ATP 會搜尋三種主要的攻擊︰惡意攻擊、異常行為和安全性問題與風險。
-
-**惡意的攻擊**會藉由確定的條件來偵測，也可透過異常行為分析來偵測。 已知攻擊類型的完整清單包括：
-
--   傳遞票證 (PtT)
--   傳遞雜湊 (PtH)
--   越過雜湊
--   偽造的 PAC (MS14-068)
--   黃金票證
-    -   時間異常
-    -   非現有帳戶 - 新增
--   惡意的複寫
--   目錄服務列舉
--   SMB 工作階段列舉
--   DNS 探查
--   水平暴力密碼破解 
--   垂直暴力密碼破解
--   基本架構金鑰
--   異常通訊協定
--   加密降級
--   遠端執行
--   惡意的服務建立
--   可疑網域控制站升級 (潛在的 DcShadow 攻擊) - 新增
--   可疑複寫要求 (潛在 DCShadow 攻擊) - 新增
--   VPN 
+1. 設定 Azure ATP 以保護您的主要環境。 Azure ATP 的快速部署模型可讓您立即開始保護組織。 [安裝 Azure ATP](install-atp-step1.md)  
+2. 設定[機密帳戶](sensitive-accounts.md)與 [honeytoken 帳戶](install-atp-step7.md)。   
+3. 檢閱報告和[橫向移動路徑](use-case-lateral-movement-path.md)。  
 
 
-Azure ATP 會偵測這些可疑的活動，並且在 Azure ATP 工作區入口網站中呈現各項資訊，包括人員、內容、時間和方式的清楚檢視。 透過監視此簡單且方便使用的儀表板，您就會警覺到 Azure ATP 懷疑網路中的用戶端 1 和用戶端 2 電腦上有傳遞票證攻擊。
+### <a name="phase-2"></a>階段 2
 
- ![傳遞票證 Azure ATP 畫面範例](media/pass-the-ticket-sa.png)
-
-
-Azure ATP 也會偵測**安全性問題與風險**，包括︰
-
--   弱式通訊協定
--   已知的通訊協定弱點
--   [機密帳戶的橫向移動路徑](use-case-lateral-movement-path.md)
-
-# <a name="what-threats-does-azure-atp-look-for"></a>Azure ATP 會尋找哪些威脅？
-
-Azure ATP 提供下列進階攻擊各階段的偵測︰探查、認證入侵、橫向移動、權限提升、網域支配等等。 這些偵測的目標是在造成組織危害之前偵測到進階攻擊和內部威脅。
-
-每個階段的偵測會產生與問題階段相關的數個可疑活動，而每個可疑活動各與不同類別的可能攻擊相互關聯。
-下列影像標示了 Azure ATP 目前可偵測的狙殺鏈階段：
-
-![Azure ATP 著重在攻擊狙殺鏈中的橫向活動](media/attack-kill-chain-small.jpg)
+1. 保護組織中的所有網域控制站和[樹系](atp-multi-forest.md)。  
+2.  監視所有[警示](working-with-suspicious-activities.md) – 調查橫向移動和網域支配的警示。  
+3. 使用[安全性警訊指南](suspicious-activity-guide.md)，以了解威脅並對潛在攻擊進行分級。   
 
 
-如需詳細資訊，請參閱[處理可疑活動](working-with-suspicious-activities.md)和 [Azure ATP 可疑活動指南](suspicious-activity-guide.md)。
+### <a name="phase-3"></a>階段 3
 
-## <a name="whats-next"></a>新功能
-
--   如需 Azure ATP 如何融入網路的詳細資訊︰[Azure ATP 架構](atp-architecture.md)
-
--   開始部署 ATP：[安裝ATP](install-atp-step1.md)
-
+1. 將 Azure ATP 警示整合至您的 SecOp 工作流程中。 
 
 ## <a name="see-also"></a>另請參閱
 - [Azure ATP 常見問題集](atp-technical-faq.md)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [使用安全性警訊](working-with-suspicious-activities.md)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

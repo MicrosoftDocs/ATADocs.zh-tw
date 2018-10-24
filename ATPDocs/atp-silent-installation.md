@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/7/2017
+ms.date: 10/09/2017
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 24eca4c6-c949-42ea-97b9-41ef0fb611f1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 363400531fe2b4e2634fa80ec1f65ad80923606f
-ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
+ms.openlocfilehash: 23d92b207c9bcfeb38afa67bdd5e4911b1a16aa4
+ms.sourcegitcommit: 02a4d7a0d44817da8e40580c5fe97f8839a7941f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125782"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48876574"
 ---
 適用於：Azure 進階威脅防護
 
@@ -46,7 +46,7 @@ Azure ATP 要求您必須安裝 Microsoft .NET Framework 4.7。
 ## <a name="azure-atp-sensor-silent-installation"></a>Azure ATP 感應器無訊息安裝
 
 > [!NOTE]
-> 使用 System Center Configuration Manager 或其他軟體部署系統，以無訊息模式部署 Azure ATP 感應器時，建議建立兩個部署套件：</br>- Net Framework 4.7，包括重新啟動網域控制站</br>- Azure ATP 感應器。 </br>讓 Azure ATP 感應器套件相依於 .Net Framework 套件的部署。 </br>取得 [.Net Framework 4.7 離線部署套件](https://www.microsoft.com/download/details.aspx?id=49982)。 
+> 使用 System Center Configuration Manager 或其他軟體部署系統，以無訊息模式部署 Azure ATP 感應器時，建議建立兩個部署套件：</br>- Net Framework 4.7，包括重新啟動網域控制站</br>- Azure ATP 感應器。 </br>讓 Azure ATP 感應器套件相依於 .Net Framework 套件的部署。 </br>取得 [.Net Framework 4.7 離線部署套件](https://support.microsoft.com/help/3186497/the-net-framework-4-7-offline-installer-for-windows)。 
 
 
 使用下列命令執行 Azure ATP 感應器的完整無訊息解除安裝：
@@ -58,7 +58,7 @@ Azure ATP 要求您必須安裝 Microsoft .NET Framework 4.7。
    
 
 > [!NOTE]
-> 從工作區入口網站下的 [設定] 然後 [感應器]，以複製存取金鑰。
+> 從 Azure ATP 入口網站的 [設定]、[感應器] 下，複製存取金鑰。
 
 
 **安裝選項**：
@@ -131,6 +131,7 @@ Azure ATP 要求您必須安裝 Microsoft .NET Framework 4.7。
 
 ## <a name="see-also"></a>另請參閱
 
-- [設定事件轉寄](configure-event-forwarding.md)
 - [Azure ATP 必要條件](atp-prerequisites.md)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [安裝 Azure ATP 感應器](install-atp-step4.md)
+- [設定 Azure ATP 感應器](install-atp-step5.md)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

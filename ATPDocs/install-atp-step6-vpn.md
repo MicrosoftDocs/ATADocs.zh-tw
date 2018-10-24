@@ -1,37 +1,41 @@
 ---
-title: "安裝 Azure 進階威脅防護 - 步驟 6 | Microsoft Docs"
-description: "在安裝 ATP 的此步驟中，您要整合您的 VPN。"
-keywords: 
-author: rkarlin
-ms.author: rkarlin
+title: 安裝 Azure 進階威脅防護 VPN 整合 | Microsoft Docs
+description: 整合 VPN 以收集 Azure ATP 的計量資訊。
+keywords: ''
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 2/14/2018
-ms.topic: get-started-article
-ms.prod: 
+ms.date: 10/04/2018
+ms.topic: conceptual
+ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0d9d2a1d-6c76-4909-b6f9-58523df16d4f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d29210983f3f9f879b462ef760d0b3fe6e53cd5d
-ms.sourcegitcommit: 03e959b7ce4b6df421297e1872e028793c967302
+ms.openlocfilehash: 382b0f31cbc24dde3905d99bab7ed8be8feb5cb4
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783741"
 ---
 適用於：Azure 進階威脅防護
 
 
 
-# <a name="install-azure-atp---step-6"></a>安裝 Azure ATP - 步驟 6
+# <a name="integrate-vpn"></a>整合 VPN
 
->[!div class="step-by-step"]
-[« 步驟 5](install-atp-step5.md)
-[步驟 7 »](install-atp-step7.md)
+<<<<<<< 標頭 Azure 進階威脅防護 (ATP) 可以從 VPN 解決方案收集計量資訊。 設定了 ATA 之後，使用者的設定檔頁面會包含來自 VPN 連線的資訊，例如 IP 位址與連線的原始位置。 這提供使用者活動的額外資訊以及異常 VPN 連線的新增偵測，使調查程序更完整。 將外部 IP 位址解析為位置的呼叫是匿名的。 不會在此呼叫中傳送個人識別資訊。
+=======
+> [!div class="step-by-step"]
+> [« 步驟 5](install-atp-step5.md)
+> [步驟 7 »](install-atp-step7.md)
 
 ## <a name="step-6-integrate-vpn"></a>步驟 6： 整合 VPN
 
 Azure 進階威脅防護 (ATP) 可以從 VPN 解決方案收集計量資訊。 設定了 ATA 之後，使用者的設定檔頁面會包含來自 VPN 連線的資訊，例如 IP 位址與連線的原始位置。 這提供使用者活動的額外資訊以及異常 VPN 連線的新增偵測，使調查程序更完整。 將外部 IP 位址解析為位置的呼叫是匿名的。 不會在此呼叫中傳送個人識別資訊。
+>>>>>>> 209d7e7162816a4c9e6e0ec0ff8d02f771e12d04
 
 Azure ATP 會透過接聽轉寄到 Azure ATP 感應器的 RADIUS 計量事件來與您的 VPN 解決方案整合。 這項機制依據標準 RADIUS 計量 ([RFC 2866](https://tools.ietf.org/html/rfc2866)) 運作，並且支援下列 VPN 廠商：
 
@@ -44,7 +48,7 @@ Azure ATP 會透過接聽轉寄到 Azure ATP 感應器的 RADIUS 計量事件來
 
 若要啟用 VPN 整合，請確定已設定了下列參數：
 
--   開啟您的 Azure ATP 獨立感應器和 Azure ATP 感應器上的連接埠 UDP 1813。
+-   開啟 Azure ATP 感應器和/或 Azure ATP 獨立感應器上的連接埠 UDP 1813。
 
 
 下列範例會使用 Microsoft 路由及遠端存取伺服器 (RRAS) 來描述 VPN 設定程序。
@@ -67,11 +71,11 @@ Azure ATP 會透過接聽轉寄到 Azure ATP 感應器的 RADIUS 計量事件來
      
 ### <a name="configure-vpn-in-atp"></a>在 ATP 中設定 VPN
 
-Azure ATP 會收集 VPN 資料，這些資料有助於描繪電腦連線到網路的來源位置，因此能夠偵測異常 VPN 連線。
+Azure ATP 會收集 VPN 資料，這些資料有助於分析電腦連線到網路的來源位置，因此能夠偵測可疑的 VPN 連線。
 
 在 ATP 中設定 VPN 資料：
 
-1.  在 Azure ATP 工作區入口網站中，按一下設定齒輪，然後按一下 [VPN]。
+1.  在 Azure ATP 入口網站中，按一下設定齒輪，然後按一下 [VPN]。
  
 
 2.  開啟 [Radius 帳戶處理]，然後輸入先前在 RRAS VPN 伺服器上設定的 [共用祕密]。 然後按一下 [儲存]。
@@ -80,23 +84,20 @@ Azure ATP 會收集 VPN 資料，這些資料有助於描繪電腦連線到網�
   ![設定 Azure ATP VPN](./media/atp-vpn-radius.png)
 
 
-啟用此選項之後，所有 Azure ATP 獨立感應器和感應器都接聽連接埠 1813 上的 RADIUS 計量事件。 
+啟用此選項之後，所有 Azure ATP 感應器和獨立感應器都會接聽連接埠 1813 上的 RADIUS 計量事件，您的安裝即已完成。 
 
-安裝已完成。 
+ Azure ATP 感應器接收 VPN 事件並將它們傳送至 Azure ATP 雲端服務進行處理之後，實體設定檔會指出不同的 VPN 存取的位置，且設定檔中的活動將指出的位置。
 
-Azure ATP 感應器接收 VPN 事件並將它們傳送至 Azure ATP 雲端服務進行處理之後，實體設定檔會指出不同的 VPN 存取的位置，且設定檔中的活動將指出的位置。
-
-
-
-
-
->[!div class="step-by-step"]
-[« 步驟 6](install-atp-step5.md)
-[步驟 7 »](install-atp-step7.md)
+<a name="-head"></a><<<<<<< HEAD
+=======
+> [!div class="step-by-step"]
+> [« 步驟 6](install-atp-step5.md)
+> [步驟 7 »](install-atp-step7.md)
+>>>>>>> 209d7e7162816a4c9e6e0ec0ff8d02f771e12d04
 
 
 ## <a name="see-also"></a>另請參閱
 - [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool) \(英文\)
 - [設定事件收集](configure-event-collection.md)
 - [Azure ATP 必要條件](atp-prerequisites.md)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

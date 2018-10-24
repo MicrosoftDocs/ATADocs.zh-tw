@@ -1,11 +1,11 @@
 ---
-title: 安裝 Azure 進階威脅防護 - 步驟 4 | Microsoft Docs
-description: 安裝 Azure ATP 的步驟四可協助您安裝 Azure ATP 獨立感應器。
+title: 安裝 Azure 進階威脅防護 | Microsoft Docs
+description: 安裝 Azure ATP 的步驟四可協助您安裝 Azure ATP 感應器。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 3/25/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 51911e39-76c7-4dcd-bc0b-ec6235d0403f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 87a2b47261293fffffe9d822d698b551a332a481
-ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
+ms.openlocfilehash: 52ffbac6acd762d4cf2898c170d7a026d2a37826
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47454134"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783724"
 ---
 適用於：Azure 進階威脅防護
 
@@ -32,13 +32,10 @@ ms.locfileid: "47454134"
 
 ## <a name="step-4-install-the-azure-atp-sensor"></a>步驟 4： 安裝 Azure ATP 感應器
 
-在專用伺服器上安裝 Azure ATP 獨立感應器之前，請驗證連接埠鏡像已正確設定，且 Azure ATP 獨立感應器可以查看進出網域控制站的流量。 
-
-
 > [!IMPORTANT]
 >請確定電腦上已安裝 .Net Framework 4.7。 如果尚未安裝 .Net Framework 4.7，Azure ATP 感應器安裝套件便會加以安裝，如此將需要伺服器重新開機。
 
-在 Azure ATP 感應器伺服器或網域控制站上執行下列步驟。
+在網域控制站上執行下列步驟。
 
 1. 檢查機器是否可以連線到相關的 Azure ATP 雲端服務端點：
   - https://triprd1wceuw1sensorapi.atp.azure.com (適用於歐洲)  
@@ -73,7 +70,7 @@ ms.locfileid: "47454134"
 
       - 安裝路徑：這是安裝 Azure ATP 獨立感應器的位置。 根據預設，這是 %programfiles%\Azure Advanced Threat Protection sensor。 保留預設值。
 
-      - 存取金鑰：這是擷取自上一個步驟中的工作區入口網站。
+      - 存取金鑰：這是擷取自上一個步驟中的 Azure ATP 入口網站。
     
 7. 按一下 [安裝]。 安裝 Azure ATP 感應器期間將安裝及設定下列元件︰
 
@@ -86,7 +83,7 @@ ms.locfileid: "47454134"
     -   Azure ATP 感應器服務和 Azure ATP 感應器更新程式服務
     -   Microsoft Visual C++ 2013 可轉散發元件
 
-8.  安裝完成後，請按一下 [啟動] 以開啟瀏覽器，並登入 Azure ATP 工作區入口網站。
+8.  安裝完成後，請按一下 [啟動] 以開啟瀏覽器，並登入 Azure ATP 入口網站。
 
 
 > [!div class="step-by-step"]
@@ -102,4 +99,4 @@ ms.locfileid: "47454134"
 
 - [Azure ATP 必要條件](atp-prerequisites.md)
 
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

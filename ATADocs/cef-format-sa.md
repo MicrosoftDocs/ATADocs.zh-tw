@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/21/2018
-ms.topic: article
-ms.prod: ''
-ms.service: advanced-threat-analytics
+ms.topic: conceptual
+ms.prod: advanced-threat-analytics
+ms.service: ''
 ms.technology: ''
 ms.assetid: 601b48ba-a327-4aff-a1f9-2377a2bb7a42
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 7c6eaba8f80dcc7a8fc767f2bb8168221fbc7207
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: e4dc613ded1234bad931a67af679bb067c2d7719
+ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
-ms.locfileid: "30009865"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46134072"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -80,7 +80,7 @@ May  3 13:39:18 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|RetrieveDataProtec
 ### <a name="smb-session-enumeration"></a>SMB 工作階段列舉
 May  3 11:55:43 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|EnumerateSessionsSuspiciousActivity|使用 SMB 工作階段列舉探查|5|start=2017-05-03T11:52:02.4360718Z app=SrvSvc shost=CLIENT1 msg=有人成功從 CLIENT1 對 DC1 執行 SMB 工作階段列舉嘗試，並公開 user1 (daf::1)。 cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909c53f8ca1ec04d05f1cf1
 ### <a name="samr-enumeration"></a>SAMR 列舉
-May  3 11:44:48 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|SamrReconnaissanceSuspiciousActivity|使用目錄服務列舉探查|5|start=2017-05-03T11:42:46.5911225Z app=Samr shost=CLIENT1 suser=user1 outcome=Success msg=有人嘗試從 CLIENT1 對 DC1 使用 SAMR 通訊協定列舉下列目錄服務：\r\nuser1 成功列舉 domain1.test.local 中所有的群組 cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909c2b08ca1ec04d05f0e19
+May  3 11:44:48 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|SamrReconnaissanceSuspiciousActivity|使用目錄服務列舉的偵察|5|start=2017-05-03T11:42:46.5911225Z app=Samr shost=CLIENT1 suser=user1 outcome=Success msg=有人嘗試從 CLIENT1 對 DC1 使用 SAMR 通訊協定列舉下列目錄服務：\r\nuser1 成功列舉 domain1.test.local 中所有的群組 cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909c2b08ca1ec04d05f0e19
 ### <a name="remote-execution"></a>遠端執行
 May  3 12:36:47 CENTER ATA:CEF:0|Microsoft|ATA|1.8.5942.64854|RemoteExecutionSuspiciousActivity|偵測到遠端執行嘗試|3|start=2017-05-03T12:34:32.3714348Z app=ServiceControl shost=CLIENT1 suser=Administrator outcome=Success msg=有人從 CLIENT1 在 DC1 上執行下列遠端執行嘗試：\r\n系統管理員成功從遠端建立 PSEXESVC。 cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909cedf8ca1ec04d05f5692
 ### <a name="skeleton-key"></a>基本架構金鑰

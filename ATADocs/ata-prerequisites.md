@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/9/2018
+ms.date: 9/27/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.service: ''
@@ -13,19 +13,19 @@ ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 06789ac50d52a9b202eea9fb9fb6ea74aaf7a5f3
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: f5a21b1b84d164542e04d77e3a6a57fe5c944102
+ms.sourcegitcommit: 1b23381ca4551a902f6343428d98f44480077d30
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133937"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403194"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
 
 
 # <a name="ata-prerequisites"></a>ATA 必要條件
-本文描述在您的環境中成功部署 ATA 的條件需求。
+本文描述在環境中成功部署 ATA 的需求。
 
 > [!NOTE]
 > 如需如何規劃資源和容量的資訊，請參閱 [ ATA capacity planning](ata-capacity-planning.md) (ATA 容量規劃)。
@@ -61,7 +61,7 @@ ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003
 
 -    建議︰使用者應該擁有「刪除的物件」容器的唯讀權限。 這可讓 ATA 偵測網域中的大量刪除物件。 如需設定「已刪除物件」容器的唯讀權限相關資訊，請參閱[檢視或設定目錄物件的權限](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx) \(英文\) 文章中的＜變更刪除的物件容器的權限＞。
 
--   選擇性︰沒有任何網路活動之使用者的使用者帳戶。 此帳戶設定為 ATA Honeytoken 使用者。 若要設定 Honeytoken 使用者，您需要使用者帳戶的 SID，而不是使用者名稱。 如需詳細資訊，請參閱[設定 IP 位址排除項目和 Honeytoken 使用者](install-ata-step7.md)。
+-   選擇性︰沒有任何網路活動之使用者的使用者帳戶。 此帳戶可設定為 ATA Honeytoken 使用者。 若要將帳戶設定為 Honeytoken 使用者，只需要使用者名稱。 如需 Honeytoken 設定的資訊，請參閱[設定 IP 位址排除項目和 Honeytoken 使用者](install-ata-step7.md)。
 
 -   選擇性︰除了收集和分析進出網域控制站的網路流量之外，ATA 還會使用 Windows 事件 4776、4732、4733、4728、4729、4756 和 4757 進一步加強 ATA 的傳遞雜湊、暴力密碼破解、修改敏感性群組以及 Honey Token 偵測。 這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 ATA 透過網域控制站網路流量無法取得的額外資訊。
 

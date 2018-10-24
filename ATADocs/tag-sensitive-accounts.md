@@ -5,19 +5,20 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
-ms.topic: article
-ms.prod: ''
-ms.service: advanced-threat-analytics
+ms.date: 6/14/2018
+ms.topic: conceptual
+ms.prod: advanced-threat-analytics
+ms.service: ''
 ms.technology: ''
 ms.assetid: 40a1c5c4-b8d6-477c-8ae5-562b37661624
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d9666c0a4fb3aad027ac1f85719bc533e919d75a
-ms.sourcegitcommit: 49c3e41714a5a46ff2607cbced50a31ec90fc90c
+ms.openlocfilehash: cea6d666d3d969070541fc8dcc4fd59726ac8c38
+ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46134076"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -41,6 +42,28 @@ ms.lasthandoff: 03/22/2018
 
 5. 按一下實體名稱即可前往 [實體設定檔] 頁面。 您在這裡可以看到將實體視為敏感性的原因，原因可能是群組中的成員資格或手動標記為敏感性。
 
+
+## <a name="sensitive-groups"></a>敏感性群組
+
+ATA 將下列群組清單視為敏感性。 屬於這些群組的任何實體都視為具有敏感性：
+
+-   Administrators
+-   Power Users
+-   Account Operators
+-   Server Operators
+-   Print Operators
+-   Backup Operators
+-   Replicators
+-   Remote Desktop Users 
+-   Network Configuration Operators 
+-   Incoming Forest Trust Builders
+-   Domain Admins
+-   網域控制站
+-   Group Policy Creator Owners 
+-   唯讀網域控制站 
+-   企業唯讀網域控制站 
+-   Schema Admins 
+-   Enterprise Admins
      
 ## <a name="see-also"></a>另請參閱
 [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

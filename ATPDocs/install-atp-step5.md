@@ -1,11 +1,11 @@
 ---
-title: 安裝 Azure 進階威脅防護 - 步驟 5 | Microsoft Docs
+title: 安裝 Azure 進階威脅防護 | Microsoft Docs
 description: 安裝 Azure ATP 的步驟 5 可協助您設定 Azure ATP 獨立感應器的設定。
 keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/12/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d7c95f8c-04f8-4946-9bae-c27ed362fcb0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 353845c3fb03d5bd4af18ea467fceea57010f33e
-ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
+ms.openlocfilehash: 6f65b3af56e683a385f7128a989170c8c4073b3e
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126003"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783860"
 ---
 適用於：Azure 進階威脅防護
 
@@ -26,15 +26,15 @@ ms.locfileid: "44126003"
 
 # <a name="install-azure-atp---step-5"></a>安裝 Azure ATP - 步驟 5
 
->[!div class="step-by-step"]
-[«步驟 4](install-atp-step4.md)
-[步驟 6»](install-atp-step6-vpn.md)
+> [!div class="step-by-step"]
+> [« 步驟 4](install-atp-step4.md)
+
 
 
 ## <a name="step-5-configure-the-azure-atp-sensor-settings"></a>步驟 5： 設定 Azure ATP 感應器的設定
-安裝 Azure ATP 感應器之後，請執行下列步驟來設定 Azure ATP 感應器的設定。
+安裝 Azure ATP 感應器之後，請執行下列步驟以設定 Azure ATP 感應器的設定。
 
-1.  在 Azure ATP 工作區入口網站中，移至 [設定]，然後在 [系統] 下，選取 [感應器]。
+1.  在 Azure ATP 入口網站中，移至 [設定]，然後選取 [系統] 下方的 [感應器]。
    
      ![設定感應器設定的影像](media/atp-sensor-config.png)
 
@@ -51,12 +51,15 @@ ms.locfileid: "44126003"
       - 清單中應至少有一個網域控制站是通用類別目錄。 這讓 Azure ATP 能夠解析樹系中其他網域的電腦與使用者物件。
 
   - **擷取網路介面卡** (必填)︰
-     - 針對專用伺服器上的 Azure ATP 獨立感應器，請選取設定為目的地鏡像連接埠的網路介面卡。 這些介面卡會接收鏡像網域控制站的流量。
+   
      - 針對 Azure ATP 感應器，則應該是用來與組織中其他電腦通訊的所有網路介面卡。
+    - 針對專用伺服器上的 Azure ATP 獨立感應器，請選取設定為目的地鏡像連接埠的網路介面卡。 這些介面卡會接收鏡像網域控制站的流量。
 
-    - **網域同步器候選**：任何設為網域同步器候選的 Azure ATP 獨立感應器皆可負責進行 Azure ATP 與 Active Directory 網域之間的同步處理。 根據網域的大小而定，首次同步處理可能需要一些時間，而且會耗用大量資源。 根據預設，只有 Azure ATP 獨立感應器會設定為網域同步器候選。
-   建議不要讓任何遠端站台 Azure ATP 感應器成為網域同步器候選。
-   如果網域控制站是唯讀的，請勿將其設定為網域同步器候選。 如需詳細資訊，請參閱 [Azure ATP 架構](atp-architecture.md#azure-atp-sensor-features)。
+    - **網域同步器候選**：Azure ATP 感應器並非預設為網域同步器候選，但 Azure ATP 獨立感應器則是。 若要手動將 Azure ATP 感應器選取為網域同步器候選，請將 [設定] 畫面中的 [網域同步器候選] 切換選項切換為 [開啟]。 
+    
+        網域同步器是負責進行 Azure ATP 與 Active Directory 網域之間的同步處理。 根據網域的大小而定，首次同步處理可能需要一些時間，而且會耗用大量資源。 
+   建議您不要讓任何遠端站台 Azure ATP 感應器成為網域同步器候選。
+   如果網域控制站是唯讀的，請勿將其設定為網域同步器候選。 如需 Azure ATP 網域同步處理的詳細資訊，請參閱 [Azure ATP 架構](atp-architecture.md#azure-atp-sensor-features)
   
 4. 按一下 **[儲存]**。
 
@@ -69,15 +72,15 @@ ms.locfileid: "44126003"
 2.  如果服務未啟動，請檢閱位於下列預設資料夾 "%programfiles%\Azure Advanced Threat Protection sensor\Version X\Logs" 中的 "Microsoft.Tri.sensor-Errors.log" 檔案。
  
  >[!NOTE]
- > Azure ATP 的版本經常更新，若要檢查是否有最新版本，請在 Azure ATP 工作場所入口網站中，移至 [設定]，然後移至 [關於]。 
+ > Azure ATP 的版本經常更新，若要檢查是否有最新版本，請在 Azure ATP 入口網站中，移至 [設定]，然後移至 [關於]。 
 
-3.  移至您的工作區 URL。 在工作區入口網站中的搜尋列中搜尋某個項目，例如網域中的使用者或群組。
+3.  移至您的工作區 URL。 在 Azure ATP 入口網站的搜尋列中搜尋某個項目，例如網域中的使用者或群組。
 
 
 
->[!div class="step-by-step"]
-[«步驟 4](install-atp-step4.md)
-[步驟 6»](install-atp-step6-vpn.md)
+> [!div class="step-by-step"]
+> [« 步驟 4](install-atp-step4.md)
+
 
 
 ## <a name="see-also"></a>另請參閱
@@ -85,4 +88,4 @@ ms.locfileid: "44126003"
 - [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool) \(英文\)
 - [設定事件收集](configure-event-collection.md)
 - [Azure ATP 必要條件](atp-prerequisites.md)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

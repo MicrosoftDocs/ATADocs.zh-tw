@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/13/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a56845c619e93ed2fae0e10876a4d49a49e23e7d
-ms.sourcegitcommit: 5ad28d7b0607c7ea36d795b72928769c629fb80a
+ms.openlocfilehash: e65133fdd09f821c633a3095ae419df01da98b16
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44166273"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783707"
 ---
 適用於：Azure 進階威脅防護
 
@@ -30,9 +30,9 @@ ms.locfileid: "44166273"
  
 針對安裝產品的使用者，Azure ATP 部署記錄位於 temp 目錄中。 在預設安裝位置中，其位於︰C:\Users\Administrator\AppData\Local\Temp (或 %temp% 上方的一個目錄)。 如需詳細資訊，請參閱[使用記錄檔針對 ATP 進行疑難排解](troubleshooting-atp-using-logs.md)。
 
-## <a name="proxy-authentication-problem-presents-as-licensing-error"></a>Proxy 驗證問題顯示為授權錯誤
+## <a name="proxy-authentication-problem-presents-as-a-licensing-error"></a>Proxy 驗證問題顯示為授權錯誤
 
-感應器安裝期間您會收到下列錯誤：**感應器由於授權問題而無法註冊。**
+如果在感應器安裝期間，您收到下列錯誤：**感應器由於授權問題而無法註冊。**
 
 部署記錄項目：[1C60:1AA8][2018-03-24T23:59:13]i000: 2018-03-25 02:59:13.1237 Info  InteractiveDeploymentManager ValidateCreateSensorAsync returned [\[]validateCreateSensorResult=LicenseInvalid[\]] [1C60:1AA8][2018-03-24T23:59:56]i000: 2018-03-25 02:59:56.4856 Info  InteractiveDeploymentManager ValidateCreateSensorAsync returned [\[]validateCreateSensorResult=LicenseInvalid[\]] [1C60:1AA8][2018-03-25T00:27:56]i000: 2018-03-25 03:27:56.7399 Debug SensorBootstrapperApplication Engine.Quit [\[]deploymentResultStatus=1602 isRestartRequired=False[\]] [1C60:15B8][2018-03-25T00:27:56]i500: Shutting down, exit code: 0x642
 
@@ -52,7 +52,7 @@ ms.locfileid: "44166273"
 
 如果您嘗試在具備 NIC 小組介面卡的電腦上安裝 ATP 感應器，您將會接收到安裝錯誤。 如果您想要在使用 NIC 小組設定的電腦上安裝 ATP 感應器，請遵循這些指示：
 
-如果尚未安裝感應器：
+如果您尚未在電腦上安裝感應器：
 
 1.  從 [https://nmap.org/npcap/](https://nmap.org/npcap/) 下載 Npcap。
 2.  如果您已安裝 WinPcap，請將它解除安裝。
@@ -69,7 +69,7 @@ ms.locfileid: "44166273"
 
 ## <a name="windows-defender-atp-integration-issue"></a>Windows Defender ATP 整合問題
 
-Azure 進階威脅防護可讓您將 Azure ATP 與 Windows Defender ATP 整合。 
+Azure 進階威脅防護可讓您將 Azure ATP 與 Windows Defender ATP 整合。 如需詳細資訊，請參閱[整合 Azure ATP 與 Windows Defender ATP](integrate-wd-atp.md)。 
 
 ## <a name="vmware-virtual-machine-sensor-issue"></a>VMware 虛擬機器感應器問題
 
@@ -88,4 +88,4 @@ Azure 進階威脅防護可讓您將 Azure ATP 與 Windows Defender ATP 整合�
 - [Azure ATP 容量規劃](atp-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-forwarding.md#configuring-windows-event-forwarding)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

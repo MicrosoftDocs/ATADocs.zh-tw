@@ -5,20 +5,20 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 8/06/2018
-ms.topic: get-started-article
+ms.date: 10/04/2018
+ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 35ca436a1da10b1675daed974920c9dc8ccc3da0
-ms.sourcegitcommit: ca6153d046d8ba225ee5bf92cf55d0bd57cf4765
+ms.openlocfilehash: e478fc1a2ae955d66d00b3d87bd5f782354c766d
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39585013"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783758"
 ---
 適用於：Azure 進階威脅防護
 
@@ -28,7 +28,9 @@ ms.locfileid: "39585013"
 
 一個月會使用 Bug 修正、效能改善和新偵測來更新Azure ATP 服務數次。 這些更新偶而需要感應器的對應更新。 
 
-如果您未更新感應器，則感應器可能無法與 Azure ATP 雲端服務通訊，這樣可能會導致服務效能欠佳。
+如果您未更新感應器，則感應器可能無法與 Azure ATP 雲端服務通訊，這樣可能會導致服務效能欠佳。 
+
+系統會使用強式的憑證式相互驗證，來進行感應器和 Azure 雲端服務之間的驗證。 
 
 每個更新都會在所有支援的作業系統上測試和驗證，將對網路和作業的影響降至最低。
 
@@ -58,7 +60,7 @@ Azure ATP 感應器支援兩種更新：
 這可讓您選取自動推出更新的特定感應器，以及延遲更新感應器的其餘部分，但只在您看到初始更新平順進行之後。
 
 > [!NOTE]
-> 如果發生錯誤，而且未更新感應器，則請開啟支援票證。
+> 如果發生錯誤，而且未更新感應器，則請開啟支援票證。 若要進一步強化 Proxy 以僅與您的工作區通訊，請參閱 [Proxy 設定](configure-proxy.md)
 
 將感應器設定為延遲更新：
 
@@ -85,7 +87,7 @@ Azure ATP 感應器每隔幾分鐘都會檢查是否有最新版本。 將 Azure
   7. 感應器收到 Azure 雲端服務的許可。 這可以在 [更新] 頁面中驗證。
   8. 下一個感應器啟動更新程序。 
 
-4. 在更新 Azure ATP 雲端服務後的 24 小時，選取要 [Delayed update] \(延遲更新\) 的感應器會啟動更新程序。
+4. 在更新 Azure ATP 雲端服務後的 24 小時，已選取 [Delayed update] \(延遲更新\) 的感應器會啟動更新程序。
 
 ![感應器更新](./media/sensor-update.png)
 
@@ -99,4 +101,4 @@ Azure ATP 感應器每隔幾分鐘都會檢查是否有最新版本。 將 Azure
 
 - [設定事件轉寄](configure-event-forwarding.md)
 - [Azure ATP 必要條件](atp-prerequisites.md)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

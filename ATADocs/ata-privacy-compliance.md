@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 9/04/2018
+ms.date: 9/27/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.service: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1b2d185c-62cd-45f0-b0dd-687b51317f32
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: 0f4a7546b6231fb263d1734b731f6be3cae7570a
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 08876085e3fe5d86c8219c6b0ad7beb8c44c700a
+ms.sourcegitcommit: 1b23381ca4551a902f6343428d98f44480077d30
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133988"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403228"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -44,7 +44,7 @@ ATA 中有關使用者和實體的個人資料會衍生自您組織 AD 的使用
 
 1. [下載](https://aka.ms/ata-gdpr-script) MongoDB 指令碼 (gdpr.js)。  
 
-2. 將指令碼下載至 ATA 中心電腦，並從 ATA 中心電腦執行以下命令： 
+2. 將指令碼下載至 ATA 資料夾 (位於 `"C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB`)，並從 ATA 中心電腦執行下列命令： 
 
 使用 ATA GDPR 資料庫指令碼來刪除實體與實體活動資料，如下節所述。
 

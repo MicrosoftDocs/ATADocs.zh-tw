@@ -2,10 +2,10 @@
 title: 於部署 Azure 進階威脅防護時設定連接埠鏡像 | Microsoft Docs
 description: 描述連接埠鏡像選項以及如何針對 Azure ATP 設定它們
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 7/4/2018
+ms.date: 10/4/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9ec7eb4c-3cad-4543-bbf0-b951d8fc8ffe
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9ac3c584f5eb73b33415c6c1250eee4c41a12763
-ms.sourcegitcommit: 7f3ded32af35a433d4b407009f87cfa6099f8edf
+ms.openlocfilehash: 5ca24df927bc91383449926bdcd67a1c29585618
+ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125986"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48783571"
 ---
 適用於：Azure 進階威脅防護
 
@@ -26,7 +26,7 @@ ms.locfileid: "44125986"
 
 # <a name="configure-port-mirroring"></a>設定連接埠鏡像
 > [!NOTE] 
-> 本文僅適用於您部署 Azure ATP 獨立感應器 (而非 Azure ATP 感應器) 的情況。 若要判斷是否需要使用 Azure ATP 獨立感應器閘道，請參閱[為您的部署選擇正確感應器](atp-capacity-planning.md#choosing-the-right-sensor-type-for-your-deployment)。
+> 本文僅適用於部署 Azure ATP 獨立感應器 (而非 Azure ATP 感應器) 的情況。 若要判斷是否需要使用 Azure ATP 獨立感應器，請參閱[為您的部署選擇正確感應器](atp-capacity-planning.md#choosing-the-right-sensor-type-for-your-deployment)。
  
 Azure ATP 所使用的主要資料來源，是針對您網域控制站之雙向網路流量的深度封包檢查。 為了讓 Azure ATP 看到網路流量，您必須設定連接埠鏡像或使用網路 TAP。
 
@@ -74,4 +74,4 @@ Azure ATP 所使用的主要資料來源，是針對您網域控制站之雙向�
 
 ## <a name="see-also"></a>另請參閱
 - [設定事件轉寄](configure-event-forwarding.md)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

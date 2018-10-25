@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: ddbcd8877ca36afe9e56e9bc6febee19ff9957ff
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 5069fdda7c27a54705a17da79dbb536d412c4113
+ms.sourcegitcommit: 59ed430fa0cd8ac34a70609026ec5fc2f5972f57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133475"
+ms.lasthandoff: 10/21/2018
+ms.locfileid: "49480628"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -79,7 +79,7 @@ ms.locfileid: "46133475"
 |問題|說明|解決方案|
 |-------------|----------|---------|
 |未從網域控制站收到流量，但觀察到監視警示|    未從透過 ATA 閘道使用連接埠鏡像的網域控制站收到流量|在 ATA 閘道擷取 NIC 上，停用 [進階設定] 中的這些功能：<br></br>接收區段聯合 (IPv4)<br></br>接收區段聯合 (IPv6)|
-|系統會顯示此監視警示：**未分析部分網路流量**|如果您在 VMware 虛擬機器上有 ATA 閘道或輕量型閘道，就可能會收到此監視警示。 當 VMware 中的設定不相符時，就會發生此狀況。|請在 NIC 設定中將以下設定設為 **0** 或 [停用]：TsoEnable、LargeSendOffload、TSO Offload、Giant TSO Offload|ATA 閘道上已停用 TLS 1.0，但是 .Net 設定為使用 TLS 1.2|
+|系統會顯示此監視警示：**未分析部分網路流量**|如果您在 VMware 虛擬機器上有 ATA 閘道或輕量型閘道，就可能會收到此監視警示。 當 VMware 中的設定不相符時，就會發生此狀況。|請在 NIC 設定中將以下設定設為 **0** 或 [停用]：TsoEnable、LargeSendOffload、TSO Offload、Giant TSO Offload|ATA 閘道上已停用 TLS 1.0，但是 .Net 設定為使用 TLS 1.2|<!-- line contains 5 vertical lines -->
 
 
 

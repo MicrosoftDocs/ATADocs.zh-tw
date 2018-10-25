@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d7c95f8c-04f8-4946-9bae-c27ed362fcb0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6f65b3af56e683a385f7128a989170c8c4073b3e
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: b7ddaca0f0c5691c90873cef9af6cef13fa9650a
+ms.sourcegitcommit: e783df4c9d928fedf6dc3c65d58d9b530cdd2ff2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783860"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49800030"
 ---
 適用於：Azure 進階威脅防護
 
@@ -27,7 +27,8 @@ ms.locfileid: "48783860"
 # <a name="install-azure-atp---step-5"></a>安裝 Azure ATP - 步驟 5
 
 > [!div class="step-by-step"]
-> [« 步驟 4](install-atp-step4.md)
+> [«步驟 4](install-atp-step4.md)
+> [步驟 6»](install-atp-step6-vpn.md)
 
 
 
@@ -61,7 +62,7 @@ ms.locfileid: "48783860"
    建議您不要讓任何遠端站台 Azure ATP 感應器成為網域同步器候選。
    如果網域控制站是唯讀的，請勿將其設定為網域同步器候選。 如需 Azure ATP 網域同步處理的詳細資訊，請參閱 [Azure ATP 架構](atp-architecture.md#azure-atp-sensor-features)
   
-4. 按一下 **[儲存]**。
+3. 按一下 **[儲存]**。
 
 
 ## <a name="validate-installations"></a>驗證安裝
@@ -79,7 +80,8 @@ ms.locfileid: "48783860"
 
 
 > [!div class="step-by-step"]
-> [« 步驟 4](install-atp-step4.md)
+> [«步驟 4](install-atp-step4.md)
+> [步驟 6»](install-atp-step6-vpn.md)
 
 
 

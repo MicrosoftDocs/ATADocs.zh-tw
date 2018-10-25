@@ -36,6 +36,7 @@
 ## [Azure ATP 入口網站](workspace-portal.md)
 ## [Azure ATP 報表](reports.md)
 ## [了解實體設定檔](entity-profiles.md)
+## [受監視的活動](monitored-activities.md)
 ## [管理機密帳戶](sensitive-accounts.md)
 ## [從偵測中排除實體](excluding-entities-from-detections.md)
 ## [排除與 Honeytoken 帳戶](install-atp-step7.md)

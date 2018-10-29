@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,29 +13,19 @@ ms.technology: ''
 ms.assetid: 0d9d2a1d-6c76-4909-b6f9-58523df16d4f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 382b0f31cbc24dde3905d99bab7ed8be8feb5cb4
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: 9f5caf3ef7c0c986404cfe90a6f8cc40aa9462b4
+ms.sourcegitcommit: 30d874808cfeafd46ee8fbbf34e0bbcb337f6544
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783741"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49089367"
 ---
 適用於：Azure 進階威脅防護
 
 
-
 # <a name="integrate-vpn"></a>整合 VPN
 
-<<<<<<< 標頭 Azure 進階威脅防護 (ATP) 可以從 VPN 解決方案收集計量資訊。 設定了 ATA 之後，使用者的設定檔頁面會包含來自 VPN 連線的資訊，例如 IP 位址與連線的原始位置。 這提供使用者活動的額外資訊以及異常 VPN 連線的新增偵測，使調查程序更完整。 將外部 IP 位址解析為位置的呼叫是匿名的。 不會在此呼叫中傳送個人識別資訊。
-=======
-> [!div class="step-by-step"]
-> [« 步驟 5](install-atp-step5.md)
-> [步驟 7 »](install-atp-step7.md)
-
-## <a name="step-6-integrate-vpn"></a>步驟 6： 整合 VPN
-
 Azure 進階威脅防護 (ATP) 可以從 VPN 解決方案收集計量資訊。 設定了 ATA 之後，使用者的設定檔頁面會包含來自 VPN 連線的資訊，例如 IP 位址與連線的原始位置。 這提供使用者活動的額外資訊以及異常 VPN 連線的新增偵測，使調查程序更完整。 將外部 IP 位址解析為位置的呼叫是匿名的。 不會在此呼叫中傳送個人識別資訊。
->>>>>>> 209d7e7162816a4c9e6e0ec0ff8d02f771e12d04
 
 Azure ATP 會透過接聽轉寄到 Azure ATP 感應器的 RADIUS 計量事件來與您的 VPN 解決方案整合。 這項機制依據標準 RADIUS 計量 ([RFC 2866](https://tools.ietf.org/html/rfc2866)) 運作，並且支援下列 VPN 廠商：
 
@@ -88,12 +78,6 @@ Azure ATP 會收集 VPN 資料，這些資料有助於分析電腦連線到網�
 
  Azure ATP 感應器接收 VPN 事件並將它們傳送至 Azure ATP 雲端服務進行處理之後，實體設定檔會指出不同的 VPN 存取的位置，且設定檔中的活動將指出的位置。
 
-<a name="-head"></a><<<<<<< HEAD
-=======
-> [!div class="step-by-step"]
-> [« 步驟 6](install-atp-step5.md)
-> [步驟 7 »](install-atp-step7.md)
->>>>>>> 209d7e7162816a4c9e6e0ec0ff8d02f771e12d04
 
 
 ## <a name="see-also"></a>另請參閱

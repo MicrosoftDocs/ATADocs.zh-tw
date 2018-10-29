@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a06004bd-9f77-4e8e-a0e5-4727d6651a0f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 72ed08a941b5927599aa39b196634ffc21ac6395
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: 59bc8cdb995b1f7473efb7c0e601aca50a9ccafe
+ms.sourcegitcommit: 58c75026e5ec4dcab3b0852a41f9f0a0ad6f22eb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783809"
+ms.lasthandoff: 10/14/2018
+ms.locfileid: "49315824"
 ---
 適用於：Azure 進階威脅防護
 
@@ -119,5 +119,5 @@ Azure ATP 研究小組會持續致力於實作新偵測攻擊的新探索。 由
 
 ## <a name="see-also"></a>另請參閱
 
-- [使用 Azure ATP 工作區入口網站](workspace-portal.md)
+- [使用 Azure ATP 入口網站](workspace-portal.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 07c5d67804eb4c74df678e8752a2516af5c52cc7
-ms.sourcegitcommit: bbbe808c08ce703a314c82b46aedaae79ab256a3
+ms.openlocfilehash: 13fbc33c1f6aa525382644a48418dceabbb9b652
+ms.sourcegitcommit: 58c75026e5ec4dcab3b0852a41f9f0a0ad6f22eb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "48848502"
+ms.lasthandoff: 10/14/2018
+ms.locfileid: "49315722"
 ---
 適用於：Azure 進階威脅防護
 
@@ -92,7 +92,7 @@ Microsoft 並不會將您的資料用於廣告用途，或是任何其他與為�
 系統不會將具有加密流量的網路通訊協定 (例如，LDAPS 與 IPSEC) 解密，但感應器會對其進行分析。
 
 ### <a name="does-azure-atp-work-with-kerberos-armoring"></a>Azure ATP 是否能搭配 Kerberos 保護使用？
-ATP 支援啟用 Kerberos 保護 (又稱為彈性驗證安全通道 (FAST))，唯一的例外是過度傳遞雜湊偵測，其無法與 Kerberos 保護搭配使用。
+Azure ATP 支援啟用 Kerberos 保護 (又稱為彈性驗證安全通道 (FAST))，唯一的例外是過度傳遞雜湊偵測，他它無法與 Kerberos 保護搭配使用。
 
 ### <a name="how-do-i-monitor-a-virtual-domain-controller-using-azure-atp"></a>如何使用 Azure ATP 監視虛擬網域控制站？
 Azure ATP 感應器可以涵蓋大多數虛擬網域控制站；如需判斷 Azure ATP 感應器是否適合您的環境，請參閱 [Azure ATP 容量規劃](atp-capacity-planning.md)。

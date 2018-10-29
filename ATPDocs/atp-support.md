@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 10/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2c4f82ce7bf4e8ba7bf9e6ae56198ca1f6e4aefb
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: a5d6693aa44fd82d10654ebd40533100e8834627
+ms.sourcegitcommit: 58c75026e5ec4dcab3b0852a41f9f0a0ad6f22eb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783231"
+ms.lasthandoff: 10/14/2018
+ms.locfileid: "49315756"
 ---
 適用於：Azure 進階威脅防護
 
@@ -62,7 +62,7 @@ Azure 進階威脅防護產品小組會在 [Enterprise Mobility + Security 部�
 
 #### <a name="system-status-page"></a>[系統狀態] 頁面 
 
-若要檢視 Azure ATP 的系統狀態，請前往[**系統狀態**](https://health.atp.azure.com/)頁面。 此頁面可讓您了解工作區管理入口網站是否正常運作、是否偵測到任何問題、感應器是否可將流量傳送至雲端。 您可從 Azure ATP 的功能表列存取 [系統狀態]。
+若要檢視 Azure ATP 的系統狀態，請前往[**系統狀態**](https://health.atp.azure.com/)頁面。 此頁面可讓您了解 Azure ATP 入口網站是否正常運作、是否偵測到任何問題、感應器是否可將流量傳送至雲端。 您可從 Azure ATP 的功能表列存取 [系統狀態]。
 
 #### <a name="on-demand-videos"></a>隨選影片
 

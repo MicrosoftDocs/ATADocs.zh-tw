@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 512e7fa979a6fd5e140d65836b533b720a6dc03b
-ms.sourcegitcommit: 1b23381ca4551a902f6343428d98f44480077d30
+ms.openlocfilehash: 6e15f09ff03402e7aed499e032bac018999ab538
+ms.sourcegitcommit: 2916d6f8d6e6f754d7fb8a5d31b255a46aa35ecd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403211"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50132600"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -63,13 +63,13 @@ ms.locfileid: "47403211"
     1.  選取 [啟用]。
     2.  在 [選項] 下，按一下 [顯示]。
     3.  在 [SubscriptionManagers] 下，輸入下列值，然後按一下 [確定]：*Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* 
-    
-        *(例如：Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)*
- 
-    ![設定目標訂閱影像](media/wef%202%20config%20target%20sub%20manager.png)
-   
-    5.  按一下 [確定]。
-    6.  在提升權限的命令提示字元中，輸入 *gpupdate /force*。 
+      
+         *(例如：Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)*
+      
+         ![設定目標訂閱影像](media/wef%202%20config%20target%20sub%20manager.png)
+      
+    4.  按一下 [確定]。
+    5.  在提升權限的命令提示字元中，輸入 *gpupdate /force*。 
 
 **步驟 3：在 ATA 閘道上執行下列步驟** 
 

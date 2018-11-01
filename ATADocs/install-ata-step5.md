@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f43503bb64ab79280782c1fc81a4821a8b905ff7
-ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
+ms.openlocfilehash: 0fbd15aa61983a62313f0f1ef89f688046474b9d
+ms.sourcegitcommit: 2916d6f8d6e6f754d7fb8a5d31b255a46aa35ecd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47454049"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50132651"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -46,7 +46,7 @@ ms.locfileid: "47454049"
   - **描述**：輸入 ATA 閘道的描述 (選擇性)。
   - **連接埠鏡像的網域控制站 (FQDN)** (如果是 ATA 閘道則必填，無法針對 ATA 輕量型閘道變更)︰輸入您網域控制站的完整 FQDN，然後按一下加號將它新增至清單。 例如，**dc01.contoso.com**
 
-    下列資訊適用於您在**網域控制站**清單中輸入的伺服器：
+下列資訊適用於您在**網域控制站**清單中輸入的伺服器：
     - 所有透過連接埠鏡像受 ATA 閘道監視流量的網域控制站，都必須列在**網域控制站**清單中。 如果網域控制站未列在**網域控制站**清單中，可能無法如預期般偵測可疑的活動。
     - 清單中應至少有一個網域控制站是通用類別目錄。 這會讓 ATA 解析樹系中其他網域的電腦與使用者物件。
 

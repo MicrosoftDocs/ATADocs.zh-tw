@@ -12,12 +12,12 @@ ms.service: ''
 ms.technology: ''
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 80f96966a1ba9e62b23311cc19ed8fc5a8210bba
-ms.sourcegitcommit: 56065ee43dac299203871cd6f025315520750b3b
+ms.openlocfilehash: b1b8b1fb9c1bf5a11c8a05daf3567f4a25c35c3f
+ms.sourcegitcommit: 2916d6f8d6e6f754d7fb8a5d31b255a46aa35ecd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47233859"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50132685"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -54,6 +54,7 @@ ms.locfileid: "47233859"
 3. 等候 ATA 閘道進行同步。現在，這些閘道會有兩個可能的 URL 可存取 ATA 主控台。 只要 ATA 閘道可以使用原始 URL 來連線，就不會嘗試使用新 URL。
 
 4. 在所有 ATA 閘道皆已使用更新的設定同步後，請在 [中心設定] 頁面中按一下 [啟動] 按鈕來啟動新的 URL。 當您啟動新 URL 時，ATA 閘道就會使用新的 URL 來存取 ATA 中心。 ATA 閘道連線到 ATA 中心服務之後，將會提取最新的設定，並將僅有 ATA 主控台的新 URL。 
+
 5. 
  ![啟動憑證](media/center-activation.png)
 

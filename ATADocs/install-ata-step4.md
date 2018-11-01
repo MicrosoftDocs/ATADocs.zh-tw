@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0973554e0fba448bc48526d1499768b2a2c864b1
-ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
+ms.openlocfilehash: 1ce4673b6fa071ebd74bf1d15cbbaa88ec9c0872
+ms.sourcegitcommit: c10a1c5d1e5408b5473a31485346915908688680
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453845"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50208114"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -59,7 +59,7 @@ ms.locfileid: "47453845"
     > [!NOTE] 
     > 如果網域控制站或專用伺服器不符合安裝的最低硬體需求，您會收到一則警告。 但這並不會阻止您按 [下一步] 和繼續進行安裝。 在不需要這麼多資料儲存空間的小型實驗室測試環境中，這可能會是安裝 ATA 的正確選項。 如果是生產環境，強烈建議使用 ATA 的 [容量規劃](ata-capacity-planning.md)指南，確保您的網域控制站或專用伺服器符合必要需求。
 
-4.  在 [Configure the Gateway (設定閘道)] 下，根據您的環境輸入下列資訊：
+5.  在 [Configure the Gateway (設定閘道)] 下，根據您的環境輸入下列資訊：
 
     ![ATA 閘道組態設定影像](media/ata-gw-configure.png)
 
@@ -70,7 +70,7 @@ ms.locfileid: "47453845"
 
    - 安裝路徑：這是安裝 ATA 閘道的位置。 位置預設為 %programfiles%\Microsoft Advanced Threat Analytics\Gateway。 保留預設值。
     
-5. 按一下 [安裝]。 安裝 ATA 閘道期間將安裝及設定下列元件︰
+6. 按一下 [安裝]。 安裝 ATA 閘道期間將安裝及設定下列元件︰
 
     -   KB 3047154 (僅適用於 Windows Server 2012 R2)
 
@@ -82,7 +82,7 @@ ms.locfileid: "47453845"
     -   Microsoft Visual C++ 2013 可轉散發元件
     -   自訂的效能監視資料收集組
 
-6.  安裝完成之後，若是 ATA 閘道，請按一下 [啟動] 開啟瀏覽器，然後登入 ATA 主控台；若是 ATA 輕量型閘道，請按一下 [完成]。
+7.  安裝完成之後，若是 ATA 閘道，請按一下 [啟動] 開啟瀏覽器，然後登入 ATA 主控台；若是 ATA 輕量型閘道，請按一下 [完成]。
 
 
 > [!div class="step-by-step"]

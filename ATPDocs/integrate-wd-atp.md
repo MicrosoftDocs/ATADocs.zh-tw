@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 10/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: f6f3ed75-d6bb-4966-a9a7-5339c4f3ebac
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c0bda95fb789225cf7d05616974f9a333f3c8e4f
-ms.sourcegitcommit: 30d874808cfeafd46ee8fbbf34e0bbcb337f6544
+ms.openlocfilehash: 52445e15a4465f0fa4b399cf99ccf6620db7a572
+ms.sourcegitcommit: 59ed430fa0cd8ac34a70609026ec5fc2f5972f57
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49089350"
+ms.lasthandoff: 10/21/2018
+ms.locfileid: "49480679"
 ---
 適用於：Azure 進階威脅防護
 
@@ -30,15 +30,15 @@ Azure 進階威脅防護可讓您將 Azure ATP 與 Windows Defender ATP 整合�
 
 - Azure ATP 感應器和獨立感應器：可直接放置在網域控制站，或是從您的網域控制站連接埠鏡像至 ATP，來擷取並剖析多個通訊協定 (例如 Kerberos、DNS、RPC、NTLM 和其他通訊協定) 的網路流量，以進行驗證、授權和資訊收集。 
 
--   端點行為感應器：這些感應器內嵌於 Windows 10 中，可收集和處理作業系統的行為訊號 (例如處理程序、登錄、檔案和網路通訊)，並將此感應器資料傳送至您私人獨立的 Windows Defender ATP 雲端執行個體。
+-   端點行為感應器：這些感應器內嵌於 Windows 10 中，可收集和處理作業系統的行為訊號 (例如處理序、登錄、檔案和網路通訊)，並將此感應器資料傳送至您私人獨立的 Windows Defender ATP 雲端執行個體。
 
 - 雲端安全性分析：利用巨量資料、機器學習和整個 Windows 生態系統的獨特 Microsoft 檢視 (例如 [Microsoft 惡意軟體移除工具](https://www.microsoft.com/download/malicious-software-removal-tool-details.aspx))、企業雲端產品 (例如 Office 365) 和線上資產 (例如 Bing 和 SmartScreen URL 評價)，行為訊號會轉譯為針對進階威脅的深入解析、偵測及建議回應。
 
-- 威脅情報：威脅情報是由 Microsoft 的獵人及安全性小組所產生，並由合作夥伴所提供的威脅情報做出進一步的強化，可讓 Windows Defender ATP 識別攻擊者工具、技術和程序，並在收集的感應器資料中觀察到這些行為時產生警示。
+- 威脅情報：威脅情報由 Microsoft 的獵人及安全性小組所產生，再由合作夥伴所提供的威脅情報所強化，可讓 Windows Defender ATP 識別攻擊者工具、技術和程序，並在於收集的感應器資料中觀察到這些活動時產生警示。
 
 Azure ATP 技術可偵測多種可疑的活動，專注於網路攻擊狙殺鏈的數個階段，包括︰
 
-- 「偵查」階段，此時攻擊者會收集有關環境的建構方式、有哪些不同的資產，以及存在何種實體等資訊。 他們通常會著手規劃下一階段的攻擊。
+- 「偵查」階段，此時攻擊者會收集有關環境的建構方式、有哪些不同的資產，以及存在何種實體等資訊。 他們通常會在此著手規劃下一階段的攻擊。
 
 - 橫向移動週期，此時攻擊者會將時間與精力放在在網路內部分散攻擊面。
 
@@ -59,21 +59,19 @@ Azure ATP 技術可偵測多種可疑的活動，專注於網路攻擊狙殺鏈�
 
 ## <a name="how-to-integrate-azure-atp-with-windows-defender-atp"></a>如何將 Azure ATP 與 Windows Defender ATP 整合
 
-1. 按一下 [設定]，然後在 [資料來源] 下方，選取 [Windows Defender ATP]。 然後，按一下 [工作區管理] 的連結。 只有在您有 Windows Defender ATP 授權，並且已執行 Windows Defender ATP 的上線程序時，才能這麼做。 
+1. 在 Azure ATP 入口網站中，開啟 [設定]。 
 
-2. 在您的工作區中，按一下設定齒輪。
+    ![Azure ATP 設定功能表](./media/atp-configuration-wd.png)
+2. 在 [設定] 清單中，選取 [Windows Defender ATP]，然後將整合切換至 [開啟]。 
 
- ![工作區整合](./media/edit-workspace.png)
- 
-3. 將整合設為 [開啟]。 
+    ![啟用 Windows Defender 整合](./media/enable-integration.png)
 
- ![啟用整合](./media/enable-integration.png)
 
-4. 在 [Windows Defender ATP 入口網站](https://securitycenter.windows.com/preferences/advanced)中，移至 [設定]，[進階功能]，然後將 [Azure ATP 整合] 設為 [開啟]。 
+3. 在 [Windows Defender ATP 入口網站](https://securitycenter.windows.com/preferences/advanced)中，移至 [設定]，[進階功能]，然後將 [Azure ATP 整合] 設為 [開啟]。 
 
- ![Windows Defender ATP 啟用整合](./media/wd-atp-enable.png)
+    ![Windows Defender ATP 啟用整合](./media/wd-atp-enable.png)
 
-5. 若要檢查整合狀態，請在 Azure ATP 入口網站中，移至 [設定] 和 [Windows Defender ATP 整合]。 您可以查看整合狀態；若發生問題，您將會看到錯誤。 您也可以看到與 Windows Defender ATP 整合的是哪個工作區。
+4. 若要檢查整合狀態，請在 Azure ATP 入口網站中，前往 [設定] > [Windows Defender ATP 整合]。 您可以查看整合狀態，若發生問題，您將會看到錯誤。 
 
 ## <a name="how-it-works"></a>運作方式
 
@@ -89,7 +87,7 @@ Azure ATP 技術可偵測多種可疑的活動，專注於網路攻擊狙殺鏈�
 
  ![Windows Defender ATP 呈現灰色](./media/wd-grey.png)
 
-在 Windows Defender ATP 入口網站中，當您在端點上按一下時，就可檢視 Azure ATP 警示。 如果您在 Windows Defender ATP 中按一下此實體的警示，該實體的設定檔頁面會在 Azure ATP 中開啟。 
+從 Windows Defender ATP 入口網站，按一下端點以檢視 Azure ATP 警示。 如果您在 Windows Defender ATP 中按一下此實體的警示，該實體的設定檔頁面會在 Azure ATP 中開啟。 
  
  > [!NOTE]
  > 目前，Azure ATP 與 Windows Defender ATP 的整合僅支援來自內部部署 AD 的使用者與電腦。 來自 Azure AD 以及在 Azure 中管理之虛擬機器的使用者不會在整合中出現 

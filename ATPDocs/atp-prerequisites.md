@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/7/2018
+ms.date: 10/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e3cf97c4bd95a1fefc0aef29009f644cd5ef907d
-ms.sourcegitcommit: bbbe808c08ce703a314c82b46aedaae79ab256a3
+ms.openlocfilehash: f959176ddca045f421af416d5ce9dc3a777cc43a
+ms.sourcegitcommit: fdff488c79729035f89897c2ea0771a45b4c3ecf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "48848536"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49401907"
 ---
 適用於：Azure 進階威脅防護
 
@@ -46,7 +46,7 @@ Azure ATP 是由 Azure ATP 雲端服務組成，其包含 Azure ATP 入口網站
 [Azure ATP 獨立感應器](#azure-atp-sensor-requirements)：列出 Azure ATP 獨立感應器的硬體及軟體需求，以及需在 Azure ATP 獨立感應器伺服器上進行的設定。
 
 ## <a name="before-you-start"></a>開始之前
-本節列出在開始 Azure ATP 安裝之前您應該收集的資訊以及您應該具備的帳戶和網路實體。
+本節列出在開始安裝 Azure ATP 前，您應收集的資訊及您應擁有的帳戶與網路實體資訊。
 
 - 直接透過 [Office 365 入口網站](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing)或雲端解決方案提供者 (CSP) 授權模型，取得 Enterprise Mobility + Security 5 (EMS E5) 的授權。  
 
@@ -65,7 +65,7 @@ Azure ATP 是由 Azure ATP 雲端服務組成，其包含 Azure ATP 入口網站
 
 -   選擇性︰沒有任何網路活動之使用者的使用者帳戶。 此帳戶設定為 Azure ATP Honeytoken 使用者。 如需詳細資訊，請參閱[設定排除項目和 Honeytoken 使用者](install-atp-step7.md)。
 
--   選擇性：部署獨立感應器時，您必須將 Windows 事件 4776、4732、4733、4728、4729、4756、4757 與 7045 轉送給 Azure ATP，以進一步強化 Azure ATP 對雜湊傳遞、暴力密碼破解、敏感性群組修改、Honey Token 偵測與惡意服務建立的抵禦能力。 Azure ATP 感應器自動支援這些事件。 在 Azure ATP 獨立感應器中，這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
+-   選擇性：在部署獨立感應器時，必須將 Windows 事件 4776、4732、4733、4728、4729、4756、4757 與 7045 轉送給 Azure ATP，以進一步增強 Azure ATP 對雜湊傳遞、暴力密碼破解、敏感性群組修改、Honey Token 偵測與惡意服務建立的抵禦能力。 Azure ATP 感應器自動支援這些事件。 在 Azure ATP 獨立感應器中，這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
 
 ## <a name="azure-atp-portal-requirements"></a>Azure ATP 入口網站需求
 您可透過瀏覽器來存取 Azure ATP 入口網站，其支援下列瀏覽器和設定︰

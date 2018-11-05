@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/21/2018
+ms.date: 10/28/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,16 +13,37 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: bf620fd9eb3ee750f19a4fe69aa3efea16b9385a
-ms.sourcegitcommit: 59ed430fa0cd8ac34a70609026ec5fc2f5972f57
+ms.openlocfilehash: 21bc112da963fe883f601258ff38062f0243a47d
+ms.sourcegitcommit: 3ab48f180aa0276f4e19cf7cd567581c7b4324cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2018
-ms.locfileid: "49480662"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50202383"
 ---
 適用於：Azure 進階威脅防護
 
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能 
+
+### <a name="azure-atp-release-252"></a>Azure ATP 2.5.2 版
+發行日期：2018 年 10 月 8 日
+
+
+- **安全性警訊增強功能：遠端程式碼執行嘗試**<br>
+Azure ATP 的[遠端程式碼執行嘗試](suspicious-activity-guide.md)現在可以監視在網域控制站上執行遠端 PowerShell 程式碼的可疑嘗試。 遠端 PowerShell 是用於執行有效系統管理命令的常見方式，但常有人惡意用來嘗試在遠端端點上執行指令碼。 
+
+- **增強功能：設定報表排程**
+<br>您現在可以使用[報表](reports.md#)功能，設定某一小時，來為您的 Azure ATP 報表排程。 
+
+- **新增設定：租用戶角色型存取控制 (RBAC)**
+<br>您可從 Azure ATP 入口網站中新的 [管理] 連結，直接在 Azure Active Directory (AAD) 管理中心設定租用戶的安全性角色。 
+
+- **修改文件結構與內容**
+<br>Azure ATP 文件的近期內容變更包括提供 Azure ATP 所有受監視活動完整清單、活動篩選指示的新文章，並重新設計了文件網站結構，以提升可用性：
+  - [Azure ATP 受監視的活動](monitored-activities.md) 
+  - [Azure ATP 活動篩選](atp-activities-search.md) 
+  - [Azure ATP 文件](https://docs.microsoft.com/azure-advanced-threat-protection/)  
+
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-251"></a>Azure ATP 版本 2.5.1
 發行日期：2018 年 10 月 21 日

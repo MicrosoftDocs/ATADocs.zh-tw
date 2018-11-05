@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/4/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,22 +13,22 @@ ms.technology: ''
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 13fbc33c1f6aa525382644a48418dceabbb9b652
-ms.sourcegitcommit: 58c75026e5ec4dcab3b0852a41f9f0a0ad6f22eb
+ms.openlocfilehash: f3336189338b16a58a4e8bf67490948a163e9d56
+ms.sourcegitcommit: c10a1c5d1e5408b5473a31485346915908688680
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2018
-ms.locfileid: "49315722"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50208148"
 ---
 適用於：Azure 進階威脅防護
 
 # <a name="azure-atp-frequently-asked-questions"></a>Azure ATP 常見問題集
 本文提供關於 Azure ATP 的常見問題與解答清單，並分成下列類別： 
-- [什麼是 Azure ATP](#What-is-Azure-ATP)
-- [授權和隱私權](#Licensing-and-privacy)
-- [部署](#Deployment)
-- [作業](#Operations)
-- [疑難排解](#Troubleshooting)
+- [什麼是 Azure ATP](#what-is-azure-atp)
+- [授權和隱私權](#licensing-and-privacy)
+- [部署](#deployment)
+- [作業](#operation)
+- [疑難排解](#troubleshooting)
 
 ## <a name="what-is-azure-atp"></a>什麼是 Azure ATP？
 
@@ -60,7 +60,7 @@ Microsoft 並不會將您的資料用於廣告用途，或是任何其他與為�
 ## <a name="licensing-and-privacy"></a>授權和隱私權 
 ### <a name="where-can-i-get-a-license-for-azure-advanced-threat-protection-atp"></a>哪裡可以取得 Azure 進階威脅防護 (ATP) 的授權？
 
-您可以直接透過 [Office 365 入口網站](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing)或雲端解決方案提供者 (CSP) 授權模型，取得 Enterprise Mobility + Security 5 (EMS E5) 的授權。  
+Azure ATP 隨附於 Enterprise Mobility + Security 5 套件 (EMS E5)，並獨立授權。 您可以直接從 [Office 365 入口網站](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing)，或透過雲端解決方案合作夥伴 (CSP) 授權模型，取得授權。
 
 ### <a name="is-this-going-to-be-a-part-of-azure-active-directory-or-on-premises-active-directory"></a>它會成為 Azure Active Directory 或內部部署 Active Directory 的一部分嗎？
 此解決方案目前為獨立的供應項目。 它不是 Azure Active Directory 或內部部署 Active Directory 的一部分。

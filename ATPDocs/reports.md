@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 10/28/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,19 +13,19 @@ ms.technology: ''
 ms.assetid: 2c2d6b1a-fc8c-4ff7-b07d-64ce6159f84d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 367ad07bd1d0be80486bfc10c2b70546d360805c
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: 9e35761c229e011cc1c48b705daa196e1e61ed58
+ms.sourcegitcommit: 3ab48f180aa0276f4e19cf7cd567581c7b4324cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783180"
+ms.lasthandoff: 10/28/2018
+ms.locfileid: "50202366"
 ---
 適用於：Azure 進階威脅防護
 
 
 # <a name="azure-atp-reports"></a>Azure ATP 報表
 
-Azure ATP 入口網站中的 Azure ATP 報表區段可讓您產生報表，以提供系統狀態資訊，除了系統健康狀態，還會回報您環境中偵測到的可疑活動。
+Azure ATP 入口網站中的 [Azure ATP 報表] 區段可讓您排程或立即產生並下載報表，為您提供系統狀態資訊。 您可從報表功能建立系統健康狀態及在環境中偵測到的可疑活動相關報表。
 
 
 若要存取報表頁面，請按一下功能表列中的報表圖示：![報表圖示](./media/atp-report-icon.png)。
@@ -55,7 +55,7 @@ Azure ATP 入口網站中的 Azure ATP 報表區段可讓您產生報表，以�
    ![排程報表](./media/atp-sched-reports.png)
  
  > [!NOTE]
- > 每日報表是設計為在午夜 (UTC) 過後不久傳送。
+ > 根據預設，每日報表會在午夜 (UTC) 過後不久傳送。 您可以使用時間選取選項來挑選自己的時間。 
 
 2. 按一下已選取報表類型旁的 [排程]，以設定傳送報表的頻率和電子郵件地址，按一下電子郵件地址旁的加號予以新增，然後按一下 [儲存]。
 

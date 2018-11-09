@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 366660a600292490c2f7df13b9d276b6accc4b93
-ms.sourcegitcommit: 2916d6f8d6e6f754d7fb8a5d31b255a46aa35ecd
+ms.openlocfilehash: 3ef2d163ae96e5bf8f893367095eacd9a44c3411
+ms.sourcegitcommit: 1a5880de35422d050fc1bc7a918dedc4180c45ad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50132617"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265674"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -46,6 +46,7 @@ ms.locfileid: "50132617"
 
 > [!NOTE]
 > ATA 只接聽 IPv4，而不會接聽 IPv6。 
+
 -   將您的 SIEM/Syslog 伺服器設定為轉送特定事件至 ATA 閘道。
 
 > [!IMPORTANT]

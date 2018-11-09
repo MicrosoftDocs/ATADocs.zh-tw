@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3547519f-8d9c-40a9-8f0e-c7ba21081203
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 931ea6e4c122ad159e16450546d241c67249b321
-ms.sourcegitcommit: 63ec9181f71edce6a950f5cc0d69428405436c48
+ms.openlocfilehash: d8b1730da0f5ab74dff39b8331fb78c293d57db3
+ms.sourcegitcommit: 1a5880de35422d050fc1bc7a918dedc4180c45ad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49963330"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265708"
 ---
 適用於：Azure 進階威脅防護
 
@@ -87,8 +87,8 @@ ms.locfileid: "49963330"
         1. 按一下 [依記錄]，然後選取 [安全性]。
         2. 在 [Includes/Excludes Event ID (包含/排除事件識別碼)] 欄位中鍵入事件編號，然後按一下 [確定]。 例如，輸入 4776，如下列範例所示：<br/>
         ![查詢篩選影像](media/wef-4-query-filter.png)
-   5. 以滑鼠右鍵按一下建立的訂閱，然後選取 [執行階段狀態]，以查看該狀態是否有任何問題。 
-   6. 幾分鐘後，請檢查您設定要轉寄的事件是否出現在 Azure ATP 上的 [轉送的事件] 中。
+    5. 以滑鼠右鍵按一下建立的訂閱，然後選取 [執行階段狀態]，以查看該狀態是否有任何問題。 
+    6. 幾分鐘後，請檢查您設定要轉寄的事件是否出現在 Azure ATP 上的 [轉送的事件] 中。
 
 
 如需詳細資訊，請參閱[設定電腦以轉送和收集事件](https://technet.microsoft.com/library/cc748890)

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 0d9d2a1d-6c76-4909-b6f9-58523df16d4f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9f5caf3ef7c0c986404cfe90a6f8cc40aa9462b4
-ms.sourcegitcommit: 30d874808cfeafd46ee8fbbf34e0bbcb337f6544
+ms.openlocfilehash: 1ddd369fe51117a120a3f5b8a688f22624d711c0
+ms.sourcegitcommit: 03b1949beaf2f78a3cdf9396356a96488ea2e127
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49089367"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "50983101"
 ---
 適用於：Azure 進階威脅防護
 
@@ -34,7 +34,7 @@ Azure ATP 會透過接聽轉寄到 Azure ATP 感應器的 RADIUS 計量事件來
 -   Check Point
 -   Cisco ASA
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 若要啟用 VPN 整合，請確定已設定了下列參數：
 
@@ -55,7 +55,7 @@ Azure ATP 會透過接聽轉寄到 Azure ATP 感應器的 RADIUS 計量事件來
 
     ![RADIUS 設定](./media/radius-setup.png)
 
-4.  在 [新增 RADIUS 伺服器] 視窗中，輸入最接近的 Azure ATP 獨立感應器或 Azure ATP 感應器的 [伺服器名稱]。 在 [連接埠] 下，確定已設為預設的 1813。 按一下 [變更]，並鍵入您能記住的新共用祕密英數字元字串。 您稍後必須在 Azure ATP 設定中填入它。 選取 [傳送 RADIUS 計量開啟及計量關閉訊息] 方塊，然後在所有已開啟的對話方塊上按一下 [確定]。
+4.  在 [新增 RADIUS 伺服器] 視窗中，輸入最接近之 Azure ATP 感應器 (具有網路連線能力) 的**伺服器名稱**。 如需高可用性，您可以新增額外的 Azure ATP 感應器作為 RADIUS 伺服器。 在 [連接埠] 下，確定已設為預設的 1813。 按一下 [變更]，並輸入您能記住的新共用祕密英數字元字串。 您稍後必須在 Azure ATP 設定中填入它。 選取 [傳送 RADIUS 計量開啟及計量關閉訊息] 方塊，然後在所有已開啟的對話方塊上按一下 [確定]。
  
      ![VPN 設定](./media/vpn-set-accounting.png)
      
@@ -83,5 +83,5 @@ Azure ATP 會收集 VPN 資料，這些資料有助於分析電腦連線到網�
 ## <a name="see-also"></a>另請參閱
 - [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool) \(英文\)
 - [設定事件收集](configure-event-collection.md)
-- [Azure ATP 必要條件](atp-prerequisites.md)
+- [Azure ATP 先決條件](atp-prerequisites.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

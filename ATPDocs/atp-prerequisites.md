@@ -1,5 +1,5 @@
 ---
-title: Azure 進階威脅防護必要條件 | Microsoft Docs
+title: Azure 進階威脅防護先決條件 | Microsoft Docs
 description: 描述在環境中成功部署 Azure ATP 的需求
 keywords: ''
 author: mlottner
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f959176ddca045f421af416d5ce9dc3a777cc43a
-ms.sourcegitcommit: fdff488c79729035f89897c2ea0771a45b4c3ecf
+ms.openlocfilehash: 4b72d112a39b9fd7448ecfe2aa5c1808752d32a8
+ms.sourcegitcommit: 034d5cbd077a0dd18638d27aabbcf7b735993b08
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49401907"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50748998"
 ---
 適用於：Azure 進階威脅防護
 
 
 
-# <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
+# <a name="azure-atp-prerequisites"></a>Azure ATP 先決條件
 本文描述在您的環境中成功部署 Azure ATP 的需求。
 
 >[!NOTE]
@@ -35,7 +35,7 @@ Azure ATP 是由 Azure ATP 雲端服務組成，其包含 Azure ATP 入口網站
 
 若要建立 Azure ATP 執行個體，您必須使用具有至少一位全域/安全性系統管理員的 AAD 租用戶。 每個 Azure ATP 執行個體都支援多 Active Directory 樹系邊界，以及 Windows 2003 和更新版本的樹系功能等級 (FFL)。 
 
-此必要條件指南分成下列各節，以確保您了解成功部署 Azure ATP 所需的一切項目。 
+此先決條件指南分成下列各節，以確保您了解成功部署 Azure ATP 所需的一切項目。 
 
 [開始之前](#before-you-start)︰列出在開始安裝之前應收集的資訊，以及您應具備的帳戶和網路實體。
 
@@ -114,24 +114,24 @@ Azure ATP 感應器可以部署在各種負載和大小的網域控制站上，�
 ### <a name="network-adapters"></a>網路介面卡
 
 Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的本機流量。 <br>
-部署後，如果您想要修改監視的網路介面卡，則可以使用 Azure ATP 工作區入口網站。
+部署後，如果您想要修改監視的網路介面卡，可以使用 Azure ATP 入口網站。
 
 執行 Windows 2008 R2 且啟用 Broadcom 網路介面卡小組的網域控制站不支援感應器。
 
 ### <a name="ports"></a>連接埠
 下表列出 Azure ATP 感應器至少需要的連接埠：
 
-|通訊協定|傳輸|Port|去/從|方向|
+|通訊協定|傳輸|連接埠|去/從|方向|
 |------------|-------------|--------|-----------|-------------|
 |**內部連接埠**|||||
-|SSL (*.atp.azure.com)|TCP|443|Azure ATP 雲端服務|輸出|
+|SSL (*.atp.azure.com)|TCP|443|Azure ATP 雲端服務|連出|
 |**內部連接埠**|||||
-|DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
-|Netlogon (SMB、CIFS、SAM-R)|TCP/UDP|445|網路上的所有裝置|輸出|
+|DNS|TCP 和 UDP|53|DNS 伺服器|連出|
+|Netlogon (SMB、CIFS、SAM-R)|TCP/UDP|445|網路上的所有裝置|連出|
 |透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|兩者|
 |NetBIOS|UDP|137|網路上的所有裝置|兩者|
-|Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|輸入|
-|RADIUS|UDP|1813|RADIUS|輸入|
+|Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|連入|
+|RADIUS|UDP|1813|RADIUS|連入|
 |TLS 至 RDP 連接埠|TCP|3389|網路上的所有裝置|兩者|
 
 > [!NOTE]
@@ -195,23 +195,23 @@ Azure ATP 獨立感應器需要至少一個管理介面卡和至少一個擷取�
 ### <a name="ports"></a>連接埠
 下表列出 Azure ATP 獨立感應器在管理介面卡上至少需要設定的連接埠：
 
-|通訊協定|傳輸|Port|去/從|方向|
+|通訊協定|傳輸|連接埠|去/從|方向|
 |------------|-------------|--------|-----------|-------------|
 |**內部連接埠**|||||
-|SSL (*.atp.azure.com)|TCP|443|Azure ATP 雲端服務|輸出|
+|SSL (*.atp.azure.com)|TCP|443|Azure ATP 雲端服務|連出|
 |**內部連接埠**|||||
-|LDAP|TCP 和 UDP|389|網域控制站|輸出|
-|安全的 LDAP (LDAPS)|TCP|636|網域控制站|輸出|
-|LDAP 至通用類別|TCP|3268|網域控制站|輸出|
-|LDAPS 至通用類別|TCP|3269|網域控制站|輸出|
+|LDAP|TCP 和 UDP|389|網域控制站|連出|
+|安全的 LDAP (LDAPS)|TCP|636|網域控制站|連出|
+|LDAP 至通用類別目錄|TCP|3268|網域控制站|連出|
+|LDAPS 至通用類別目錄|TCP|3269|網域控制站|連出|
 |Kerberos|TCP 和 UDP|88|網域控制站|輸出|
-|Netlogon (SMB、CIFS、SAM-R)|TCP 和 UDP|445|網路上的所有裝置|輸出|
-|Windows Time|UDP|123|網域控制站|輸出|
-|DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
+|Netlogon (SMB、CIFS、SAM-R)|TCP 和 UDP|445|網路上的所有裝置|連出|
+|Windows Time|UDP|123|網域控制站|連出|
+|DNS|TCP 和 UDP|53|DNS 伺服器|連出|
 |透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|兩者|
 |NetBIOS|UDP|137|網路上的所有裝置|兩者|
-|Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|輸入|
-|RADIUS|UDP|1813|RADIUS|輸入|
+|Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|連入|
+|RADIUS|UDP|1813|RADIUS|連入|
 |TLS 至 RDP|TCP|3389|網路上的所有裝置|兩者|
 
 > [!NOTE]

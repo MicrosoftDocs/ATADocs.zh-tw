@@ -1,11 +1,11 @@
 ---
-title: 在 Azure 進階威脅防護中設定電子郵件通知設定 | Microsoft Docs
+title: 在 Azure 進階威脅防護中設定 syslog 設定 | Microsoft Docs
 description: 說明當 Azure ATP 偵測到可疑的活動時，如何通知您 (透過電子郵件或 Azure ATP 事件轉寄)
 keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 11/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a2d29c9c-7ecb-4804-b74b-fde899b28648
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 18f6d38f871539cf0701b697c9d0c5d9d96a27e4
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: ac01e5ae534fc5df5da70a8d1c47c11c1c455c98
+ms.sourcegitcommit: 03b1949beaf2f78a3cdf9396356a96488ea2e127
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783537"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "50983084"
 ---
 適用於：Azure 進階威脅防護
 
@@ -58,6 +58,9 @@ ms.locfileid: "48783537"
  ![Azure ATP Syslog 伺服器設定影像](media/atp-syslog.png)
 
 6. 您可以選取要傳送至 Syslog 伺服器的事件。 在 [Syslog 通知] 下，指定要傳送到 Syslog 伺服器的通知 (新的安全性警示、更新的安全性警示，以及新的健康狀態問題)。
+
+> [!NOTE]
+> 若您計劃為 Azure ATP SIEM 記錄檔建立自動化或指令碼，建議您使用 **externalId** 欄位來識別警示類型，而非使用警示名稱。 警示名稱有時候可能會遭到修改，但每個警示的 **externalId** 永遠不會變。 如需詳細資訊，請參閱 [Azure ATP SIEM 記錄檔參考](cef-format-sa.md)。 
 
 
 ## <a name="see-also"></a>另請參閱

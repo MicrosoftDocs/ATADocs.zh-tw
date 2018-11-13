@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/24/2018
+ms.date: 11/01/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,34 +13,39 @@ ms.technology: ''
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 143002db7b45868e5b78c7da1cdc77c569d3a3dd
-ms.sourcegitcommit: 63ec9181f71edce6a950f5cc0d69428405436c48
+ms.openlocfilehash: 574606cfd172b9885534095be5ebbc266b1c8004
+ms.sourcegitcommit: 034d5cbd077a0dd18638d27aabbcf7b735993b08
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49963313"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50748981"
 ---
 適用於：Azure 進階威脅防護
 
 
 # <a name="azure-atp-siem-log-reference"></a>Azure ATP SIEM 記錄檔參考
 
-Azure ATP 可以將可疑活動和監視警示事件轉寄到您的 SIEM。 可疑活動事件採用 CEF 格式。 本參考文章提供傳送到您 SIEM 的可疑活動記錄檔範例。
+Azure ATP 可以將安全性警示與監視警示事件轉送到您的 SIEM。 警示與事件使用 CEF 格式。 此參考文章提供傳送到您 SIEM 的記錄範例。
 
-## <a name="sample-azure-atp-suspicious-activities-in-cef-format"></a>CEF 格式的 Azure ATP 可疑活動範例
+## <a name="sample-azure-atp-security-alerts-in-cef-format"></a>範例 Azure ATP 安全性警示使用 CEF 格式
 下列欄位及其值會轉送到您的 SIEM：
 
--   start – 警示的開始時間
--   suser – 涉及警示的帳戶 (通常是使用者帳戶)
--   shost – 警示的來源電腦
--   outcome – 若相關，則為警示中可疑活動的成功或失敗結果  
--   msg – 警示的描述
--   cnt – 適用於具有活動發生次數的警示 (例如暴力密碼破解會有猜過密碼的次數)
--   app – 用於此警示的通訊協定
--   externalId – Azure ATP 寫入事件記錄檔的事件類型識別碼，對應到每一種警示類型
--   cs#label & cs# – CEF 允許的客戶字串，其中 cs#label 是新欄位的名稱，cs# 則是值。例如：cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909ae198ca1ec04d05e65fa
+|詳細資料|說明|
+|---------|---------------|
+|start|警示的開始時間|
+|suser|涉及警示的帳戶 (通常是使用者帳戶)|
+|shost|涉及警示的帳戶 (通常是使用者帳戶)|
+|outcome|若相關，則為警示中可疑活動的成功或失敗結果|
+|msg|警示的描述|
+|cnt|適用於具有活動發生次數的警示 (例如暴力密碼破解會有猜過密碼的次數)|
+|app |用於此警示的通訊協定|
+|externalId|Azure ATP 寫入事件記錄檔的事件類型識別碼，對應到每一種警示類型|
+|cs#label|CEF 允許的客戶字串，其中 cs#label 是新欄位的名稱 |
+|cs#|CEF 允許的客戶字串，其中 cs# 是值。|
+|
 
-    在此範例中，cs1 是具有警示 URL 的欄位。
+例如：cs1Label=url cs1=https://192.168.0.220/suspiciousActivity/5909ae198ca1ec04d05e65fa
+<br> 在此範例中，cs1 欄位是警示 URL。 
 
 > [!NOTE]
 > 若您計劃為 Azure ATP SIEM 記錄檔建立自動化或指令碼，建議您使用 **externalId** 欄位來識別警示類型，而非使用警示名稱。 警示名稱有時候可能會遭到修改，但每個警示的 **externalId** 永遠不會變。  
@@ -125,7 +130,7 @@ Azure ATP 可以將可疑活動和監視警示事件轉寄到您的 SIEM。 可�
 
 
 ## <a name="see-also"></a>另請參閱
-- [Azure ATP 必要條件](atp-prerequisites.md)
+- [Azure ATP 先決條件](atp-prerequisites.md)
 - [Azure ATP 容量規劃](atp-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-forwarding.md#configuring-windows-event-forwarding)

@@ -50,6 +50,7 @@
 ## [Azure ATP 健康情況中心](atp-health-center.md)
 ## [管理 Azure ATP 健康狀態警示](monitoring-alerts.md)
 ## [針對已知問題進行疑難排解](troubleshooting-atp-known-issues.md)
-### [使用記錄進行疑難排解](troubleshooting-atp-using-logs.md)
+## [使用記錄進行疑難排解](troubleshooting-atp-using-logs.md)
+## [Azure ATP 已知問題](known-issues.md)
 ## [支援與資訊](atp-support.md)
 ## [Azure ATP 整備藍圖](atp-resources.md)

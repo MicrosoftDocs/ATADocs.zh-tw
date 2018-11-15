@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ab1e8dd9-a6c2-4c68-89d5-343b8ec56142
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d2d7027a53d6bbc26d037ceeef4c5083865bb7e7
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: d812673ed387bcd6a14e6b316cb2224819c503e3
+ms.sourcegitcommit: 46b6a5088ed975bcfb36e7f9a3b5c00ecd5e185a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783095"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645271"
 ---
 適用於：Azure 進階威脅防護
 
@@ -57,7 +57,7 @@ Azure ATP 偵測憑藉特定 Windows 事件記錄檔來取得特定案例的可�
     ![稽核安全性群組管理](media/atp-advanced-audit-policy-check-step-4.png)
 
 > [!NOTE]
-> - 如果您選擇使用本機原則，請務必在本機原則中新增 [帳戶登入] 與 [帳戶管理] 稽核記錄。 如果您要設定進階稽核原則，請務必強制執行[稽核原則子類別](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/audit-force-audit-policy-subcategory-settings-to-override)。
+> 如果您選擇使用本機原則，請務必在本機原則中新增 [帳戶登入] 與 [帳戶管理] 稽核記錄。 如果您要設定進階稽核原則，請務必強制執行[稽核原則子類別](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/audit-force-audit-policy-subcategory-settings-to-override)。
 
 7. 在套用 GPO 後，新的事件會顯示在您的 **Windows 事件記錄檔**下。
 

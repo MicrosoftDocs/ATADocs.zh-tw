@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 11/04/2018
+ms.date: 11/12/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,17 +13,25 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3c453ad2fce37986811903693c27761c5ea79d40
-ms.sourcegitcommit: 03b1949beaf2f78a3cdf9396356a96488ea2e127
+ms.openlocfilehash: 2237834e867aa6bdacbc67fcc1244f07ac88711b
+ms.sourcegitcommit: 2afc1486b40431f442d51a53df06e289796de87e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "50983135"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51560740"
 ---
 適用於：Azure 進階威脅防護
 
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能 
 
+## <a name="azure-atp-release-254"></a>Azure ATP 2.5.4 版
+發行日期：2018 年 11 月 11 日
+
+- **功能強化：將預設網域排除項目新增至透過 DNS 警示的可疑通訊警示**<br>   將三個熱門網域新增至預設網域排除清單。 排除清單仍可完全自訂。 若要深入了解，請參閱[從偵測排除實體](excluding-entities-from-detections.md)。 
+
+- **文件增化：SIEM 記錄檔更新、已知問題指南**<br>    已將 externalId 對應和其他說明，新增至 SIEM 記錄檔描述。 若要深入了解，請參閱 [SIEM 記錄檔參考](cef-format-sa.md)。 <br>已額外新增目前尚未解決之已知問題指南的文章。 若要深入了解，請參閱 [Azure ATP 已知問題](known-issues.md)。  
+
+- 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-253"></a>Azure ATP 2.5.3 版
 發行日期：2018 年 11 月 4 日
@@ -73,18 +81,18 @@ Azure ATP 的[遠端程式碼執行嘗試](suspicious-activity-guide.md)現在�
 發行日期：2018 年 10 月 7 日
 -   **新增偵測：可疑的 DNS 通訊** (預覽)<br>新增可協助防範可疑 DNS 通訊攻擊的偵測：
 
-    -   這項偵測可協助偵測對 DNS 通訊協定的攻擊。 大多數組織中的 DNS 通訊協定都不會受到監視，而且很少會因惡意活動遭到封鎖。 這讓攻擊者有機會在遭入侵的電腦上濫用 DNS 通訊協定。 透過 DNS 的惡意通訊可用來竊取資料、命令和控制攻擊和/或規避公司網路限制。
+    -   這項偵測可協助偵測對 DNS 通訊協定的攻擊。 大多數組織中的 DNS 通訊協定，都不會受到監視，且很少會因惡意活動而遭到封鎖。 讓攻擊者有機會在遭入侵的電腦上濫用 DNS 通訊協定。 透過 DNS 的惡意通訊可用來竊取資料、命令和控制攻擊和/或規避公司網路限制。
 
 - **新功能** <br>Azure ATP **使用者角色**已增強下列功能：
   - 變更安全性警訊的狀態 (重新開啟、關閉、排除、隱藏)
   - 設定已排程報表
-  - 設定實體標記 (敏感性和 honeytoken)
+  - 設定實體標記 (敏感性與 honey token)
   - 排除偵測
   - 變更語言
   - 設定透過電子郵件或 syslog 的通知
 
 
-- 已找出並解決發生在 2018 年 9 月 16 日**使用目錄服務查詢探查**安全性警訊中的暫時增加情況。 
+- 已找出並解決發生在 2018 年 9 月 16 日**使用目錄服務查詢探查**中暫時性增加情況的安全性警訊。 
 
 - 此版本也包含針對多個問題的修正和改善。
 
@@ -122,13 +130,13 @@ Azure 進階威脅防護現在會檢查網域控制站的現有進階稽核原�
 
 ## <a name="azure-atp-release-246"></a>Azure ATP 2.46 版
 
-發行日期：2018 年 8 月 26 日
+發行日期：2018 年 8 月26 日
 
 - 此版本包含針對多個問題的修正和改善。
 
 ## <a name="azure-atp-release-245"></a>Azure ATP 2.45 版
 
-發行日期：2018 年 8 月 19 日
+發行日期：2018 年 8 月19 日
 
 - **Azure ATP 加入 Windows 事件追蹤 (ETW) 做為額外的資料來源**  <br> 除了現有的網路流量與 Windows 事件之外，加入 Windows 事件追蹤 (ETW) 做為額外的事件來源。 ETW 提供額外的可疑活動偵測，包括：可疑網域控制站升級與可疑網域控制站複寫要求 (兩者都是潛在的 DCShadow 攻擊)。 <br>
 只有網域控制站上安裝的 ATP 感應器才支援 ETW 型偵測。 ATP 獨立感應器不支援 ETW 偵測。 <br>  
@@ -261,8 +269,8 @@ Azure 進階威脅防護現在會檢查網域控制站的現有進階稽核原�
     - 俄羅斯
     - 瑞典文
     - 土耳其文
-    - 中文 (中國)
-    - 中文 (台灣)
+    - 簡體中文
+    - 繁體中文 (台灣)
 
 
 
@@ -353,6 +361,6 @@ Azure 進階威脅防護現在會檢查網域控制站的現有進階稽核原�
 ## <a name="see-also"></a>另請參閱
 - [什麼是 Azure 進階威脅防護？](what-is-atp.md)
 - [常見問題集](atp-technical-faq.md)
-- [Azure ATP 先決條件](atp-prerequisites.md)
+- [Azure ATP 必要條件](atp-prerequisites.md)
 - [Azure ATP 容量規劃](atp-capacity-planning.md) (configure-event-forwarding.md#configuring-windows-event-forwarding)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

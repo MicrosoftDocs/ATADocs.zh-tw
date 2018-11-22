@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 377a3c81-5c1d-486f-8942-85249aacf560
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8707d34f22c358936bd6158311a78a45d783483c
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: b3fb06733a2ba1c38aeb682cd6f8cc57a2ba1a3b
+ms.sourcegitcommit: 65885bab8e31dd862a4f2ae9028fb31b288d7229
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133322"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157517"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -41,7 +41,6 @@ ATA 會使用 MongoDB 作為其資料庫。
 |檢查資料庫中的集合。|`show collections`|可讓端對端測試有效查看正在寫入到資料庫的流量，及 ATA 正在接收的事件 4776。|
 |取得使用者/電腦/群組 (UniqueEntity) 的詳細資料，例如使用者識別碼。|`db.UniqueEntity.find({CompleteSearchNames: "<name of entity in lower case>"})`||
 |尋找來自特定日期的特定電腦中的 Kerberos 驗證流量。|`db.KerberosAs_<datetime>.find({SourceComputerId: "<Id of the source computer>"})`|若要取得 &lt;來源電腦的識別碼&gt;，您可以如此範例所示來查詢 UniqueEntity 集合。<br /><br />每個網路活動類型 (例如 Kerberos 驗證) 都有它自己的集合 (每個 UTC 日期)。|
-|尋找源自於特定日期上特定帳戶所相關的特定電腦的 NTLM 流量。|`db.Ntlm_<datetime>.find({SourceComputerId: "<Id of the source computer>", SourceAccountId: "<Id of the account>"})`|若要取得 &lt;來源電腦的識別碼&gt; 和 &lt;帳戶的識別碼&gt;，您可以如此範例所示來查詢 UniqueEntity 集合。<br /><br />每個網路活動類型 (例如 NTLM 驗證) 都有它自己的集合 (每個 UTC 日期)。|
 |進行進階組態變更。 在此範例中，請將所有 ATA 閘道的傳送佇列大小變更為 10,000。|`db.SystemProfile.update( {_t: "GatewaySystemProfile"} ,`<br>`{$set:{"Configuration.EntitySenderConfiguration.EntityBatchBlockMaxSize" : "10000"}})`|`|
 
 下列範例會提供使用先前所提供之語法的範例程式碼。 如果您正在調查 20/10/2015 發生的可疑活動 ，而且想要深入了解「John Doe」在那一天執行的 NTLM 活動︰<br /><br />首先，尋找「John Doe」的識別碼

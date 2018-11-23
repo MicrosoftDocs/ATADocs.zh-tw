@@ -13,16 +13,24 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2237834e867aa6bdacbc67fcc1244f07ac88711b
-ms.sourcegitcommit: 2afc1486b40431f442d51a53df06e289796de87e
+ms.openlocfilehash: ca178eaa1b0ef1b631ebe2ab02f00fd5a9c26de5
+ms.sourcegitcommit: 65885bab8e31dd862a4f2ae9028fb31b288d7229
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51560740"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157585"
 ---
 適用於：Azure 進階威脅防護
 
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能 
+
+## <a name="azure-atp-release-255"></a>Azure ATP 2.5.5 版
+發行日期：2018 年 11 月 18 日
+
+- **安全性警訊：通過 DNS 的可疑通訊 - 一般可用性**<br>
+Azure ATP [通過 DNS 的可疑通訊](suspicious-activity-guide.md#suspicious-communication-over-dns) 安全性警訊現已正式推出。 <br> 通常，大多數組織中的 DNS 通訊協定不會受到監視，而且很少會因惡意活動而遭到封鎖。 這讓攻擊者有機會在遭入侵的電腦上濫用 DNS 通訊協定。 透過 DNS 的惡意通訊可用來竊取資料、命令和控制攻擊和/或規避公司網路限制。
+
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-254"></a>Azure ATP 2.5.4 版
 發行日期：2018 年 11 月 11 日
@@ -270,7 +278,7 @@ Azure 進階威脅防護現在會檢查網域控制站的現有進階稽核原�
     - 瑞典文
     - 土耳其文
     - 簡體中文
-    - 繁體中文 (台灣)
+    - 中文 (台灣)
 
 
 
@@ -362,5 +370,5 @@ Azure 進階威脅防護現在會檢查網域控制站的現有進階稽核原�
 - [什麼是 Azure 進階威脅防護？](what-is-atp.md)
 - [常見問題集](atp-technical-faq.md)
 - [Azure ATP 必要條件](atp-prerequisites.md)
-- [Azure ATP 容量規劃](atp-capacity-planning.md) (configure-event-forwarding.md#configuring-windows-event-forwarding)
+- [Azure ATP 容量規劃](atp-capacity-planning.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

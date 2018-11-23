@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: fcbeb18c3841799aad068c8eedd45af71660925e
-ms.sourcegitcommit: 2afc1486b40431f442d51a53df06e289796de87e
+ms.openlocfilehash: 4d1a4d24e2102a019b9df627f2d00c1df981c3ae
+ms.sourcegitcommit: 4d8e7c690453d9b78e6e597c3f8562250d335ba5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51560757"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52177380"
 ---
 適用於：Azure 進階威脅防護
 
@@ -30,9 +30,9 @@ Azure ATP 可以將安全性警示與監視警示事件轉送到您的 SIEM。 �
 ## <a name="sample-azure-atp-security-alerts-in-cef-format"></a>範例 Azure ATP 安全性警示使用 CEF 格式
 下列欄位及其值會轉送到您的 SIEM：
 
-|Detail|說明|
+|詳細資料|說明|
 |---------|---------------|
-|開始|警示的開始時間|
+|start|警示的開始時間|
 |suser|涉及警示的帳戶 (通常是使用者帳戶)|
 |shost|涉及警示的帳戶 (通常是使用者帳戶)|
 |outcome|若相關，則為警示中可疑活動的成功或失敗結果|
@@ -53,7 +53,9 @@ Azure ATP 可以將安全性警示與監視警示事件轉送到您的 SIEM。 �
 > [!NOTE]
 > 若您計劃為 Azure ATP SIEM 記錄檔建立自動化或指令碼，建議您使用 **externalId** 欄位來識別警示類型，而非使用警示名稱。 警示名稱有時候可能會遭到修改，但每個警示的 **externalId** 永遠不會變。  
 
-|Azure ATP 警示|唯一的 ExternalId|
+## <a name="azure-atp-security-alert-unique-externalids"></a>Azure ATP 安全性警訊唯一的 externalId
+
+|安全性警訊名稱|唯一的 externalId|
 |---------|---------|
 |使用 LDAP 簡單繫結的暴力密碼破解攻擊|2004|
 |加密降級活動 - 萬能金鑰|2011|
@@ -150,8 +152,8 @@ Azure ATP 可以將安全性警示與監視警示事件轉送到您的 SIEM。 �
 ### <a name="suspicious-authentication-failures"></a>可疑的驗證失敗
 02-21-2018  16:19:20    Auth.Warning    192.168.0.220   1 2018-02-21T14:19:15.397995+00:00 CENTER CEF 6076 BruteForceSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|BruteForceSecurityAlert|可疑的驗證失敗|5|start=2018-02-21T14:19:03.3831122Z app=Kerberos shost=CLIENT1 msg=可疑的驗證失敗，表示從 CLIENT1 偵測到潛在的暴力密碼破解攻擊。 externalId=2023 cs1Label=url cs1=https://contoso-corp.atp.azure.com/securityAlert/fea88fc7-4110-454d-816d-349032474fd6 cs2Label=trigger cs2=new
 
-### <a name="suspicious-communication-over-dns--preview"></a>透過 DNS 的可疑通訊 - 預覽
-10-04-2018  14:49:38    Auth.Warning    192.168.0.202   1 2018-10-04T11:49:25.954059+00:00 DC3 CEF 3604 DnsSuspiciousCommunicationSecuri ï»¿0|Microsoft|Azure ATP|2.49.5589.58606|DnsSuspiciousCommunicationSecurityAlert|[預覽] 透過 DNS 的可疑通訊|5|start=2018-10-04T11:49:11.0822077Z app=DnsEvent dhost= suspiciousdomainname msg=CLIENT1 傳送了解析 suspiciousdomainname externalId=2031 cs1Label=url cs1=https://contoso-corp.atp.azure.com/securityAlert/0fc77777-49ca-40b3-a7ba-7644f355539e cs2Label=trigger cs2=new 的可疑 DNS 查詢
+### <a name="suspicious-communication-over-dns"></a>透過 DNS 的可疑通訊
+10-04-2018  14:49:38    Auth.Warning    192.168.0.202   1 2018-10-04T11:49:25.954059+00:00 DC3 CEF 3604 DnsSuspiciousCommunicationSecuri ï»¿0|Microsoft|Azure ATP|2.49.5589.58606|DnsSuspiciousCommunicationSecurityAlert|通過 DNS 的可疑通訊|5|start=2018-10-04T11:49:11.0822077Z app=DnsEvent dhost= suspiciousdomainname msg=CLIENT1 傳送了解析 suspiciousdomainname externalId=2031 cs1Label=url cs1=https://contoso-corp.atp.azure.com/securityAlert/0fc77777-49ca-40b3-a7ba-7644f355539e cs2Label=trigger cs2=new 的可疑 DNS 查詢
 
 ### <a name="suspicious-domain-controller-promotion-potential-dcshadow-attack"></a>可疑的網域控制站升級 (潛在的 DcShadow 攻擊)
 07-12-2018  11:18:07    Auth.Error  192.168.0.200    1 2018-07-12T08:18:06.883880+00:00 DC1 CEF 3868 DirectoryServicesRoguePromotionS ï»¿0|Microsoft|Azure ATP|2.40.0.0|DirectoryServicesRoguePromotionSecurityAlert| **可疑的網域控制站升級 (潛在的 DcShadow 攻擊)**|10|start=2018-07-12T08:17:55.4067092Z app=Ldap shost=CLIENT1 msg=CLIENT1，這是 domain1.test.local 中的電腦，它已註冊為 DC1 上的網域控制站。 externalId=2028 cs1Label=url cs1=https://contoso-corp.atp.azure.com:13000/securityAlert/97c59b43-dc18-44ee-9826-8fd5d03bd53 cs2Label=trigger cs2=update

@@ -44,7 +44,8 @@
 ## [管理安全性警訊](working-with-suspicious-activities.md)
 # Azure ATP 安全性警訊
 ## [安全性警訊指南](suspicious-activity-guide.md)
-## [使用 Azure ATP 調查橫向移動路徑](use-case-lateral-movement-path.md)
+## [橫向移動路徑](use-case-lateral-movement-path.md)
+### [調查橫向移動路徑](investigate-lateral-movement-path.md)
 ## [調查實體](investigate-entity.md)
 # 疑難排解
 ## [Azure ATP 健康情況中心](atp-health-center.md)

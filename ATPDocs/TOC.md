@@ -8,7 +8,7 @@
 ## [Azure ATP 必要條件](atp-prerequisites.md)
 ## [規劃 Azure ATP 容量](atp-capacity-planning.md)
 # 快速入門
-## [在 Azure ATP 入口網站中建立工作區](install-atp-step1.md)
+## [建立您的 Azure ATP 執行個體](install-atp-step1.md)
 ## [連線到 Active Directory](install-atp-step2.md)
 ### [Azure ATP 多樹系支援](atp-multi-forest.md)
 ## [下載 Azure ATP 感應器套件](install-atp-step3.md)

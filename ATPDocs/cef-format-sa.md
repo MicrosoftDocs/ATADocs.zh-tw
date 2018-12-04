@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 11/12/2018
+ms.date: 11/26/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 4d1a4d24e2102a019b9df627f2d00c1df981c3ae
-ms.sourcegitcommit: 4d8e7c690453d9b78e6e597c3f8562250d335ba5
+ms.openlocfilehash: fcad0fd1677a6e34a9d72b0e9660eb2e680ca22e
+ms.sourcegitcommit: e2a89030c31376c6798697a62b484f45ed54e679
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52177380"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52501138"
 ---
 適用於：Azure 進階威脅防護
 
@@ -34,7 +34,7 @@ Azure ATP 可以將安全性警示與監視警示事件轉送到您的 SIEM。 �
 |---------|---------------|
 |start|警示的開始時間|
 |suser|涉及警示的帳戶 (通常是使用者帳戶)|
-|shost|涉及警示的帳戶 (通常是使用者帳戶)|
+|電腦帳戶|涉及警示的帳戶 (通常是使用者帳戶)|
 |outcome|若相關，則為警示中可疑活動的成功或失敗結果|
 |msg|警示的描述|
 |cnt|適用於具有活動發生次數的警示 (例如暴力密碼破解會有猜過密碼的次數)|
@@ -55,38 +55,38 @@ Azure ATP 可以將安全性警示與監視警示事件轉送到您的 SIEM。 �
 
 ## <a name="azure-atp-security-alert-unique-externalids"></a>Azure ATP 安全性警訊唯一的 externalId
 
-|安全性警訊名稱|唯一的 externalId|
-|---------|---------|
-|使用 LDAP 簡單繫結的暴力密碼破解攻擊|2004|
-|加密降級活動 - 萬能金鑰|2011|
-|加密降級活動 (可能為 Overpass-the-Hash 攻擊)|2008|
-|加密降級活動 (可能為黃金票證攻擊)|2009|
-|加密降級活動 (可能為萬能金鑰攻擊)|2010|
-|Honeytoken 活動|2014|
-|使用傳遞雜湊攻擊竊取身分|2017 年|
-|使用傳遞票證攻擊竊取身分|2018 年|
-|Kerberos 黃金票證 - 時間異常|2022|
-|Kerberos 黃金票證 - 不存在的帳戶|2027|
-|惡意的資料保護私人資訊要求|2020|
-|惡意的目錄服務複寫|2006|
-|使用偽造授權資料提升權限|2013|
-|使用帳戶列舉偵查|2003|
-|使用 DNS 探查|2007|
-|使用 SMB 工作階段列舉探查|2012|
-|使用目錄服務查詢探查|2021|
-|遠端程式碼執行嘗試|2019|
-|可疑的驗證失敗|2023|
-|可疑的網域控制站複寫要求 (可能為 DCShadow 攻擊)|2029|
-|可疑的網域控制站升級 (潛在的 DCShadow 攻擊)|2028|
-|透過 DNS 的可疑通訊|2031|
-|敏感性群組的可疑修改|2024|
-|可疑的服務建立|2026|
-|可疑 VPN 連線|2025|
-|不尋常的通訊協定實作 (可能為 WannaCry 勒索軟體攻擊)*|2002|
-|不尋常的通訊協定實作 (可能使用 Hydra 等惡意工具)*|2002|
-|不尋常的通訊協定實作 (可能使用 Metasploit 入侵工具)*|2002|
-|不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)*|2002|
-|*不尋常的通訊協定實作*警示目前正共用 externalId。 各類型警示的 externalId，在未來的版本中將會變更為唯一的 externalId|****|
+> [!div class="mx-tableFixed"] 
+|新安全性警訊名稱|舊安全性警訊名稱|唯一的 ExternalId|
+|---------|----------|---------|
+|可疑的暴力密碼破解攻擊 (LDAP)|使用 LDAP 簡單繫結的暴力密碼破解攻擊|2004|
+|可疑的萬能金鑰攻擊 (加密降級)|加密降級活動 - 萬能金鑰|2011|
+|可疑的 Overpass-the-Hash 攻擊 (加密降級)|加密降級活動 (可能為 Overpass-the-Hash 攻擊)|2008|
+|可疑的黃金票證使用 (加密降級)|加密降級活動 (可能為黃金票證攻擊)|2009|
+|可疑的萬能金鑰攻擊 (加密降級)|加密降級活動 (可能為萬能金鑰攻擊)|2010|
+|Honeytoken 活動|Honeytoken 活動|2014|
+|可疑的身分識別竊取 (雜湊傳遞)|使用傳遞雜湊攻擊竊取身分|2017 年|
+|可疑的身分識別竊取 (票證傳遞)|使用傳遞票證攻擊竊取身分|2018 年|
+|可疑的黃金票證使用 (時間異常) |Kerberos 黃金票證 - 時間異常|2022|
+|可疑的黃金票證使用 (不存在的帳戶)|Kerberos 黃金票證 - 不存在的帳戶|2027|
+|資料保護 API (DPAPI) 主要金鑰的惡意要求|惡意的資料保護私人資訊要求|2020|
+|可疑的 DCSync 攻擊 (目錄服務的複寫)|惡意的目錄服務複寫|2006|
+|可疑的黃金票證使用 (偽造的授權資料) |使用偽造授權資料提升權限|2013|
+|帳戶列舉偵察|使用帳戶列舉偵查|2003|
+|網路對應偵察 (DNS)|使用 DNS 探查|2007|
+|使用者和 IP 位址偵察 (SMB) |使用 SMB 工作階段列舉探查|2012|
+|使用者和群組成員資格偵察 (SAMR)|使用目錄服務查詢探查|2021|
+|遠端程式碼執行嘗試|遠端程式碼執行嘗試|2019|
+|可疑的 DCShadow 攻擊 (DC 複寫要求)|可疑的網域控制站複寫要求 (可能為 DCShadow 攻擊)|2029|
+|可疑的 DCShadow 攻擊 (網域控制站升階)|可疑的網域控制站升級 (潛在的 DCShadow 攻擊)|2028|
+|透過 DNS 的可疑通訊|透過 DNS 的可疑通訊|2031|
+|敏感性群組的可疑修改|敏感性群組的可疑修改|2024|
+|可疑的服務建立|可疑的服務建立|2026|
+|可疑 VPN 連線|可疑 VPN 連線|2025|
+|可疑的 WannaCry 勒索軟體攻擊|不尋常的通訊協定實作 (可能為 WannaCry 勒索軟體攻擊)*|2002|
+|可疑的暴力密碼破解攻擊 (SMB)|不尋常的通訊協定實作 (可能使用 Hydra 等惡意工具)*|2002|
+|可疑的 Metasploit 入侵架構使用|不尋常的通訊協定實作 (可能使用 Metasploit 入侵工具)*|2002|
+|可疑的 Overpass-the-Hash 攻擊 (Kerberos)|不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)*|2002|
+|*不尋常的通訊協定實作*警示目前正共用 externalId。 各類型警示的 externalId，在未來的版本中將會變更為唯一的 externalId||****|
 
 ## <a name="sample-logs"></a>範例記錄檔
 
@@ -176,7 +176,7 @@ Azure ATP 可以將安全性警示與監視警示事件轉送到您的 SIEM。 �
 ### <a name="unusual-protocol-implementation---potential-use-of-malicious-tools-such-a-hydra"></a>不尋常的通訊協定實作 - (可能使用 Hydra 等惡意工具)
 02-21-2018  16:21:22    Auth.Warning    192.168.0.220   1 2018-02-21T14:21:13.916050+00:00 CENTER CEF 6076 AbnormalProtocolSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|AbnormalProtocolSecurityAlert|不尋常的通訊協定實作|5|start=2018-02-21T14:19:03.1981155Z app=Ntlm shost=CLIENT2 outcome=Success msg=從 CLIENT 2 針對 DC1 使用不尋常的通訊協定實作進行驗證嘗試。 可能是用來執行雜湊傳遞和暴力密碼破解等攻擊的惡意工具結果。 externalId=2002 cs1Label=url cs1=https://contoso-corp.atp.azure.com/securityAlert/40fe98dd-aa42-4540-9d73-831486fdd1e4 cs2Label=trigger cs2=new
 
-### <a name="unusual-protocol-implementation--potential-use-of-malicious-tools-such-a-metasploit"></a>不尋常的通訊協定實作 - (可能使用 Metasploit 等惡意工具)
+### <a name="unusual-protocol-implementation---potential-use-of-malicious-tools-such-a-metasploit"></a>不尋常的通訊協定實作 - (可能使用惡意工具，例如 Metasploit)
 10-29-2018  11:22:04    Auth.Warning    192.168.0.202   1 2018-10-29T09:22:00.460233+00:00 DC3 CEF 3908 AbnormalProtocolSecurityAlert ï»¿0|Microsoft|Azure ATP|2.52.5704.46184|AbnormalProtocolSecurityAlert|不尋常的通訊協定實行 (可能使用 Metasploit 入侵工具)|5|start=2018-10-29T09:19:46.6092465Z app=Ntlm shost=CLIENT2 outcome=Success msg=從 CLIENT2 嘗試使用不尋常的通訊協定實作，針對 DC1 進行驗證。 externalId=2002 cs1Label=url cs1=https://contoso-corp.atp.azure.com/securityAlert/573f10a1-6f8a-44b1-a5b1-212d40996363 cs2Label=trigger cs2=new
 
 ## <a name="see-also"></a>另請參閱

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7f96971f3d7d11f49c025ddf88c1ced5e4fc8cb6
-ms.sourcegitcommit: f86dc8ad3d1e75ba64b372d4d0ab5386e28f2e29
+ms.openlocfilehash: 93c49b71ea5fb67e57d505fb0b7c2e69314de4f9
+ms.sourcegitcommit: e2a89030c31376c6798697a62b484f45ed54e679
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609668"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52501128"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -56,19 +56,19 @@ ms.locfileid: "51609668"
 2.  在命令提示字元中輸入 *gpedit.msc*
 3.  展開 [電腦設定] > [系統管理範本] > [Windows 元件] > [事件轉送]
 
-![本機原則群組編輯器影像](media/wef%201%20local%20group%20policy%20editor.png)
+  ![本機原則群組編輯器影像](media/wef%201%20local%20group%20policy%20editor.png)
 
 4.  按兩下 [設定目標訂閱管理員]。
    
-    1.  選取 [已啟用] 。
+    1.  選取 [啟用]。
     2.  在 [選項] 下，按一下 [顯示]。
     3.  在 [SubscriptionManagers] 下，輸入下列值，然後按一下 [確定]：*Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* 
       
-         *(例如：Server=http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)*
+         *(例如: Server=`http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10`)*
       
          ![設定目標訂閱影像](media/wef%202%20config%20target%20sub%20manager.png)
       
-    4.  按一下 [**確定**]。
+    4.  按一下 [確定]。
     5.  在提升權限的命令提示字元中，輸入 *gpupdate /force*。 
 
 **步驟 3：在 ATA 閘道上執行下列步驟** 
@@ -83,7 +83,7 @@ ms.locfileid: "51609668"
         1.  按一下 [加入網域電腦]。
         2.  在 [輸入要選取的物件名稱] 欄位中輸入網域控制站的名稱。 然後按一下 [檢查名稱]，再按一下 [確定]。  
           ![事件檢視器影像](media/wef3%20event%20viewer.png)  
-        3.  按一下 [**確定**]。
+        3.  按一下 [確定]。
     4.  按一下 [選取事件]。
         1. 按一下 [依記錄]，然後選取 [安全性]。
         2. 在 [Includes/Excludes Event ID (包含/排除事件識別碼)] 欄位中鍵入事件編號，然後按一下 [確定]。 例如，鍵入 4776，如下範例所示。

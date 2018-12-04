@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/28/2018
+ms.date: 11/26/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6c2123011f8a9af0db4b04ef1cf6cb139e7e63bb
-ms.sourcegitcommit: 65885bab8e31dd862a4f2ae9028fb31b288d7229
+ms.openlocfilehash: 3c5a184ed1728e7013b7780c46c948a3bdb2fb6e
+ms.sourcegitcommit: 151b39b17cfe813f42fbcdbcd9c9a7f11d2d037a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52157619"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52339768"
 ---
 適用於：Azure 進階威脅防護
 
@@ -35,10 +35,46 @@ ms.locfileid: "52157619"
 
 如需如何使用 Azure ATP 安全性警訊的詳細資訊，請參閱[使用安全性警訊](working-with-suspicious-activities.md)。
 
+## <a name="security-alert-name-mapping-and-unique-externalid"></a>安全性警訊名稱對應和唯一的 externalId
 
+在 2.56 版中，所有現有的 Azure ATP 安全性警訊皆以更容易了解的名稱重新命名。 新舊名稱之間的對應和其相對應的唯一 externalId，皆如下表所列。 Microsoft 建議對指令碼或自動化使用警示 externalId 來取代警示名稱，因為只有安全性警訊 externalId 具有永久性而不會變更。 
 
+> [!div class="mx-tableFixed"] 
+|新安全性警訊名稱|舊安全性警訊名稱|唯一的 externalId|
+|---------|----------|---------|
+|可疑的暴力密碼破解攻擊 (LDAP)|使用 LDAP 簡單繫結的暴力密碼破解攻擊|2004|
+|可疑的萬能金鑰攻擊 (加密降級)|加密降級活動 - 萬能金鑰|2011|
+|可疑的 Overpass-the-Hash 攻擊 (加密降級)|加密降級活動 (可能為 Overpass-the-Hash 攻擊)|2008|
+|可疑的黃金票證使用 (加密降級)|加密降級活動 (可能為黃金票證攻擊)|2009|
+|可疑的萬能金鑰攻擊 (加密降級)|加密降級活動 (可能為萬能金鑰攻擊)|2010|
+|Honeytoken 活動|Honeytoken 活動|2014|
+|可疑的身分識別竊取 (雜湊傳遞)|使用傳遞雜湊攻擊竊取身分|2017 年|
+|可疑的身分識別竊取 (票證傳遞)|使用傳遞票證攻擊竊取身分|2018 年|
+|可疑的黃金票證使用 (時間異常) |Kerberos 黃金票證 - 時間異常|2022|
+|可疑的黃金票證使用 (不存在的帳戶)|Kerberos 黃金票證 - 不存在的帳戶|2027|
+|資料保護 API (DPAPI) 主要金鑰的惡意要求|惡意的資料保護私人資訊要求|2020|
+|可疑的 DCSync 攻擊 (目錄服務的複寫)|惡意的目錄服務複寫|2006|
+|可疑的黃金票證使用 (偽造的授權資料) |使用偽造授權資料提升權限|2013|
+|帳戶列舉偵察|使用帳戶列舉偵查|2003|
+|網路對應偵察 (DNS)|使用 DNS 探查|2007|
+|使用者和 IP 位址偵察 (SMB) |使用 SMB 工作階段列舉探查|2012|
+|使用者和群組成員資格偵察 (SAMR)|使用目錄服務查詢探查|2021|
+|遠端程式碼執行嘗試|遠端程式碼執行嘗試|2019|
+|可疑的 DCShadow 攻擊 (DC 複寫要求)|可疑的網域控制站複寫要求 (可能為 DCShadow 攻擊)|2029|
+|可疑的 DCShadow 攻擊 (網域控制站升階)|可疑的網域控制站升級 (潛在的 DCShadow 攻擊)|2028|
+|透過 DNS 的可疑通訊|透過 DNS 的可疑通訊|2031|
+|敏感性群組的可疑修改|敏感性群組的可疑修改|2024|
+|可疑的服務建立|可疑的服務建立|2026|
+|可疑 VPN 連線|可疑 VPN 連線|2025|
+|可疑的 WannaCry 勒索軟體攻擊|不尋常的通訊協定實作 (可能為 WannaCry 勒索軟體攻擊)*|2002|
+|可疑的暴力密碼破解攻擊 (SMB)|不尋常的通訊協定實作 (可能使用 Hydra 等惡意工具)*|2002|
+|可疑的 Metasploit 入侵架構使用|不尋常的通訊協定實作 (可能使用 Metasploit 入侵工具)*|2002|
+|可疑的 Overpass-the-Hash 攻擊 (Kerberos)|不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)*|2002|
+|*不尋常的通訊協定實作*警示目前正共用 externalId。 各類型警示的 externalId，在未來的版本中將會變更為唯一的 externalId||****|
 
-## <a name="brute-force-attack-using-ldap-simple-bind"></a>使用 LDAP 簡單繫結的暴力密碼破解攻擊
+## <a name="suspected-brute-force-attack-ldap"></a>可疑的暴力密碼破解攻擊 (LDAP) 
+<a name="brute-force-attack-using-ldap-simple-bind"></a>
+舊名稱：使用 LDAP 簡單繫結的暴力密碼破解攻擊
 
 **描述**
 
@@ -61,50 +97,77 @@ ms.locfileid: "52157619"
 
 [複雜且很長的密碼](https://docs.microsoft.com/windows/device-security/security-policy-settings/password-policy)提供必要的第一層安全性，以防止暴力密碼破解攻擊。
 
-## <a name="encryption-downgrade-activity"></a>加密降級活動
+## <a name="suspected-skeleton-key-attack-encryption-downgrade"></a>可疑的萬能金鑰攻擊 (加密降級) 
+<a name="encryption-downgrade-activity-potential-skeleton-key-attack"></a>
 
-**描述**
+舊名稱：加密降級活動
 
-加密降級是一種減弱 Kerberos 的方法，它會針對通訊協定通常會以最高加密層級進行加密的不同欄位，對其加密層級做出降級。 攻擊者將能較為輕鬆地對減弱的加密欄位進行離線暴力密碼破解。 利用弱式 Kerberos 加密 Cypher 的各種攻擊方法。 在此偵測中，Azure ATP 會了解電腦和使用者所使用的 Kerberos 加密類型，並在使用下列較弱的 Cypher 時向您發出警示：(1) 對來源電腦及/或使用者而言不尋常，以及 (2) 符合已知的攻擊手法。
+**說明**加密降級是一種減弱 Kerberos 的方法，它會針對通訊協定以最高加密層級進行加密的不同欄位，對其加密層級降級。 攻擊者將能較為輕鬆地對減弱的加密欄位進行離線暴力密碼破解。 利用弱式 Kerberos 加密 Cypher 的各種攻擊方法。 在此偵測中，Azure ATP 會了解電腦和使用者所使用的 Kerberos 加密類型，並在使用下列較弱的 Cypher 時向您發出警示：(1) 對來源電腦及/或使用者而言不尋常，以及 (2) 符合已知的攻擊手法。 
 
-有三種偵測類型：
+萬能金鑰是在網域控制站上執行的惡意程式碼，並可以在不知道帳戶密碼的情況下，使用任何帳戶向網域進行驗證。 此惡意程式碼通常會使用較弱的加密演算法，來推測出網域控制站上的使用者密碼。 在此偵測中，來自要求票證帳戶之網域控制站的 KRB_ERR 訊息加密方法相較於先前學到的行為已降級。
 
-1.  基本架構金鑰 - 這是在網域控制站上執行的惡意程式碼，允許在不知道帳戶密碼的情況下，使用任何帳戶向網域進行驗證。 此惡意程式碼通常會使用較弱的加密演算法，來推測出網域控制站上的使用者密碼。 在此偵測中，相較於先前學到的行為，從網域控制站向帳戶要求票證的 KRB_ERR 訊息加密方法已降級。
-
-2.  黃金票證 - 在[黃金票證](#golden-ticket)警示中，相較於先前學到的行為，來自來源電腦的 TGS_REQ (服務要求) 訊息的 TGT 欄位加密方法已降級。 這不是依據時間異常偵測 (如同其他黃金票證偵測)。 此外，沒有 Kerberos 驗證要求與先前由 ATP 偵測到的服務要求相關聯。
-
-3.  Overpass-the-Hash - 攻擊者可以透過 Kerberos AS 要求，使用竊取的弱式雜湊建立強式票證。 在此偵測中，相較於先前學到的行為 (亦即電腦使用 AES)，來自來源電腦的 AS_REQ 訊息加密類型已降級。
 
 **調查**
-
-先查看警示的描述，以了解您處理的是上述三種偵測類型的哪一種。 如需詳細資訊，請下載 Excel 試算表。
-
-1.  基本架構金鑰 - 您可以使用 [Azure ATP 小組所撰寫的掃描程式](https://gallery.technet.microsoft.com/Aorato-Skeleton-Key-24e46b73) \(英文\)，來檢查基本架構金鑰是否已影響到您的網域控制站。 如果掃描程式在一或多個網域控制站上找到惡意程式碼，則為真肯定。
-
-2.  黃金票證 - 在 Excel 試算表中，移至 [網路活動] 索引標籤。相關的降級欄位為 [要求票證加密類型]，且 [來源電腦支援的加密類型] 有更強的加密方法。
-
-  1. 檢查那些票證所存取的資源，如果有所有票證都會存取的資源，請驗證該資源以確定它是票證應存取的有效資源。 此外，請驗證目標資源是否支援強式加密方法。 您可以透過在 Active Directory 中檢查資源服務帳戶的 msDS-SupportedEncryptionTypes 屬性來檢查這點。
-  
-  2. 請檢查來源電腦和帳戶，或如果有多個來源電腦和帳戶，檢查它們是否有共通的某些項目。 例如，您所有的行銷人員是否使用可能觸發警示的特定應用程式。 在某些情況下，可能會有很少使用的自訂應用程式，正在使用較低的加密編碼器進行驗證。 檢查來源電腦上是否有任何這類自訂應用程式。 如果是，則可能是良性真肯定，因此可予以隱藏。
-  
+1. 按一下來源電腦或帳戶以移至其設定檔頁面。 <br>檢查接近複寫時間點所發生的事件，並搜尋異常活動，例如登入者及存取的資源。 <br>如果您已啟用 Windows Defender ATP 整合，請按一下 [Windows Defender ATP] 徽章 ![[Windows Defender ATP] 徽章](./media/wd-badge.png) 以進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序與警示。 
+2. 使用 [Azure ATP 小組撰寫的掃描器](https://gallery.technet.microsoft.com/Aorato-Skeleton-Key-24e46b73)，檢查萬能金鑰是否已入侵您的網域控制站。
 
 
-3.  Overpass-the-Hash - 在 Excel 試算表中，移至 [網路活動] 索引標籤。您會看到相關的降級欄位為 [加密時間戳記加密類型]，且 [來源電腦支援的加密類型] 包含更強的加密方法。
+**補救**
+1. 移除惡意程式碼。 如需移除惡意程式碼的詳細資訊，請參閱 [Skeleton Key Malware Analysis](https://www.virusbulletin.com/virusbulletin/2016/01/paper-digital-bian-lian-face-changing-skeleton-key-malware) (萬能金鑰惡意軟體分析)。
 
-  1. 如果最近有變更智慧卡設定，則使用者在使用智慧卡登入時可能會觸發此警示。 檢查相關帳戶是否有類似的變更。 如果是，這可能是良性真肯定，因此可予以隱藏。
-  2. 檢查那些票證所存取的資源，如果有所有票證都會存取的資源，請驗證該資源以確定它是票證應存取的有效資源。 此外，請驗證目標資源是否支援強式加密方法。 您可以透過在 Active Directory 中檢查資源服務帳戶的 msDS-SupportedEncryptionTypes 屬性來檢查這點。
+
+## <a name="suspected-golden-ticket-attack-encryption-downgrade"></a>可疑的黃金票證攻擊 (加密降級)
+<a name="Encryption-downgrade-activity-potential-golden-ticket-attack"></a>
+
+舊名稱：加密降級活動
+
+**說明**加密降級是一種減弱 Kerberos 的方法，它會針對通訊協定以最高加密層級進行加密的不同欄位，對其加密層級降級。 攻擊者將能較為輕鬆地對減弱的加密欄位進行離線暴力密碼破解。 利用弱式 Kerberos 加密 Cypher 的各種攻擊方法。 在此偵測中，Azure ATP 會了解電腦和使用者所使用的 Kerberos 加密類型，並在使用下列較弱的 Cypher 時向您發出警示：(1) 對來源電腦及/或使用者而言不尋常，以及 (2) 符合已知的攻擊手法。 
+
+在黃金票證警示中，相較於先前學到的行為，來自來源電腦 TGS_REQ (服務要求) 訊息的 TGT 欄位加密方法已降級。 這不是依據時間異常偵測 (如同其他黃金票證偵測)。 此外，沒有 Kerberos 驗證要求與先前由 ATP 偵測到的服務要求相關聯。
+
+**調查**
+1. 某些資源不支援強式加密方法，並可能觸發此警示。
+   1. 檢查透過那些票證所存取的資源。 透過檢查資源服務帳戶的 *msDS-SupportedEncryptionTypes* 屬性，以在 Active Directory 中檢查這點。
+   2. 若有正在存取的資源，請予以驗證。 請確保此為他們應存取的有效資源。 
+2. 自訂應用程式可能使用較弱的加密編碼器進行驗證。
+   1. 檢查是否有任何自訂應用程式，在來源電腦上使用較弱的加密編碼器進行驗證。
+   2. 若有多位使用者，請檢查他們是否有某些共通點。 <br>例如，若您所有的行銷人員都在使用特定的應用程式，就可能觸發該警示。
+3. 按一下來源電腦或帳戶以移至其設定檔頁面。 請檢查接近複寫時間點所發生的事件。 請務必搜尋異常活動，像是登入者及存取的資源。 
+
+4. 如果您已啟用 Windows Defender ATP 整合，請按一下 [Windows Defender ATP] 徽章 ![[Windows Defender ATP] 徽章](./media/wd-badge.png) 以進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序與警示。
 
 **補救**
 
-1.  基本架構金鑰 - 移除惡意程式碼。 如需詳細資訊，請參閱[基本架構金鑰惡意程式碼分析](https://www.virusbulletin.com/virusbulletin/2016/01/paper-digital-bian-lian-face-changing-skeleton-key-malware) \(英文\)。
+1. 請為遭入侵的使用者重設密碼。
+2. 根據 [KRBTGT Account Password Reset Scripts now available for customers](https://cloudblogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)，變更 Kerberos 票證授權票證 (KRBTGT) 密碼兩次。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此在重設前請先謹慎規劃。
 
-2.  黃金票證 - 遵循[黃金票證](#golden-ticket)可疑活動的指示。   
-    此外，由於建立黃金票證需要網域管理員權限，因此請實作 [雜湊傳遞建議](https://www.microsoft.com/download/details.aspx?id=36036)。
+## <a name="suspected-over-pass-the-hash-attack-encryption-downgrade"></a>可疑的 Overpass-the-Hash 攻擊 (加密降級) 
+<a name="Encryption-downgrade-activity-potential-over-pass-the-hash"></a>
 
-3.  越過雜湊 - 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 這可防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引。 另請參閱並使用  [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。 由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)的最佳做法。
+舊名稱：加密降級活動
+
+**描述**
+
+加密降級是一種減弱 Kerberos 的方法，它會針對通訊協定以最高加密層級進行加密的不同欄位，對其加密層級降級。 攻擊者將能較為輕鬆地對減弱的加密欄位進行離線暴力密碼破解。 利用弱式 Kerberos 加密 Cypher 的各種攻擊方法。 在此偵測中，Azure ATP 會了解電腦和使用者所使用的 Kerberos 加密類型，並在使用下列較弱的 Cypher 時向您發出警示：(1) 對來源電腦及/或使用者而言不尋常，以及 (2) 符合已知的攻擊手法。 
+
+在 Overpass-the-Hash 攻擊中，攻擊者可以透過 Kerberos AS 要求，使用竊取的弱式雜湊建立強式票證。 在此偵測中，來自來源電腦的 AS_REQ 訊息加密類型相較於先前學到的行為 (亦即電腦使用 AES) 已降級。
+
+**調查**
+
+1. 智慧卡設定最近變更過嗎？ <br>檢查相關帳戶是否有類似的變更。 如果是，這可能是良性真肯定，因此可予以隱藏。
+2. 某些資源不支援強式加密方法。 弱式加密方法可能會觸發此警示。<br>檢查透過那些票證所存取的資源。 透過檢查資源服務帳戶的 *msDS-SupportedEncryptionTypes* 屬性，以在 Active Directory 中檢查這點。<br>若有正在存取的資源，請予以驗證。 請確保此為他們應存取的有效資源。 
+3. 按一下來源電腦或帳戶以移至其設定檔頁面。 檢查接近複寫時間點所發生的事件，並搜尋異常活動，例如登入者及存取的資源。 <br> 如果您已啟用 Windows Defender ATP 整合，請按一下 [Windows Defender ATP] 徽章 ![[Windows Defender ATP] 徽章](./media/wd-badge.png) 以進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序與警示。
+
+
+**補救**
+1. 若遭入侵的是「非敏感性」使用者 - 請重設該帳戶的密碼。 這可防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。 
+2. 若遭入侵的是「敏感性」使用者 - 請考慮重設 KRBTGT 帳戶兩次。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此在重設前請先謹慎規劃。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://cloudblogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引。 另請參閱並使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。
+
 
 ## <a name="honeytoken-activity"></a>Honeytoken 活動
+<a name="honeytoken-activity"></a>
 
+舊名稱：Honeytoken 活動
 
 **描述**
 
@@ -126,7 +189,10 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 請確定 Honeytoken 帳戶只會用於其預期用途，否則可能會產生許多警示。
 
-## <a name="identity-theft-using-pass-the-hash-attack"></a>使用傳遞雜湊攻擊竊取身分
+## <a name="suspected-identity-theft-pass-the-hash"></a>可疑的身分識別竊取 (雜湊傳遞) 
+<a name="identity-theft-using-pass-the-hash-attack"></a>
+
+舊名稱：使用雜湊傳遞攻擊竊取身分識別
 
 **描述**
 
@@ -142,7 +208,10 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 2. 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指導，另請參閱如何使用  [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。 由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)的最佳做法。
 
-## <a name="identity-theft-using-pass-the-ticket-attack"></a>使用傳遞票證攻擊竊取身分
+## <a name="suspected-identity-theft-pass-the-ticket"></a>可疑的身分識別竊取 (票證傳遞) 
+<a name="identity-theft-using-pass-the-ticket-attack"></a>
+
+舊名稱：使用票證傳遞攻擊竊取身分識別
 
 **描述**
 
@@ -160,47 +229,63 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 2. 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，如黃金票證可疑活動中所示。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指導，另請參閱如何使用  [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)。  由於這是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)中的最佳做法。
 
-## Kerberos 黃金票證 (Golden Ticket)<a name="golden-ticket"></a>
+## <a name="suspected-golden-ticket-attack-nonexistant-account"></a>可疑的黃金票證攻擊 (不存在的帳戶)
+<a name="golden-ticket"></a>
+
+舊名稱：Kerberos 黃金票證
 
 **描述**
 
-具有網域系統管理員權限的攻擊者可能會危害 [KRBTGT 帳戶](https://technet.microsoft.com/library/dn745899(v=ws.11).aspx#Sec_KRBTGT)。 他們可以利用 KRBTGT 帳戶建立 Kerberos 票證授權票證 (TGT)，以提供任何資源的授權，並將票證到期日設定為任何時間。 這個假 TGT 稱為「黃金票證」，可讓攻擊者在網路上持續存在。
-
-在此偵測中，當 Kerberos 票證授與的票證使用超過[使用者票證最長存留期](https://technet.microsoft.com/library/jj852169(v=ws.11).aspx)中指定的允許時間時，就會觸發警示。這是**時間異常**黃金票證攻擊，若是透過不存在的帳戶，則是**不存在的帳戶**黃金票證攻擊。
-
+取得網域系統管理員權限的攻擊者可入侵 KRBTGT 帳戶。 攻擊者可使用 KRBTGT 帳戶，建立可提供任何資源授權的 Kerberos 票證授權票證 (TGT)。 因為這類偽造的 TGT 可讓攻擊者獲得持久的網路持續性，所以稱為「黃金票證」。 在此偵測中，使用不存在的帳戶會觸發警示。
 
 **調查**
 
-- **時間異常**
-   1.   群組原則中的 [使用者票證最長存留期] 設定最近 (過去幾小時內) 是否有任何變更？ 檢查該特定值是否低於票證的使用時間。 如果是，請關閉警示 (這是誤判)。
-   2.   涉及此警示的 Azure ATP 感應器是否為虛擬機器？ 如果是，它最近是否從儲存狀態繼續？ 如果是，請關閉此警示。
-   3.   如果上述問題的答案為否，則假設這是惡意的。
+1. 詢問以下問題：
+      - 使用者是否為已知且有效的網域使用者？ 如果是，請關閉警示 (這是誤判)。
+      - 該使用者是否為最近新增？ 如果是，請關閉警示，變更可能尚未同步處理。
+      - 該使用者是否最近從 AD 刪除？ 如果是，請關閉警示。
+2. 如果上述問題的答案為否，則假設這是惡意的。
 
-- **不存在的帳戶 - 新增** 
-   1.   詢問以下問題：
-         - 使用者是否為已知且有效的網域使用者？ 如果是，請關閉警示 (這是誤判)。
-         - 該使用者是否為最近新增？ 如果是，請關閉警示，變更可能尚未同步處理。
-         - 該使用者是否最近從 AD 刪除？ 如果是，請關閉警示。
-   2.   如果上述問題的答案為否，則假設這是惡意的。
+3. 按一下來源電腦以前往其 [設定檔] 頁面。 檢查活動發生的前後期間發生什麼事，並尋找異常活動，包括當時登入的使用者以及被存取的資源。 
 
-1. 對於這兩種類型的黃金票證攻擊，請按一下來源電腦以移至其 [設定檔] 頁面。 檢查活動發生的前後期間發生什麼事，並尋找異常活動，包括當時登入的使用者以及被存取的資源。 
+4. 登入電腦的所有使用者是否都可登入？ 他們的權限為何？ 
 
-2.  登入電腦的所有使用者是否都可登入？ 他們的權限為何？ 
-
-3.  已登入的使用者是否可以存取這些資源？<br>
+5. 已登入的使用者是否可以存取這些資源？<br>
 如果您已啟用 Windows Defender ATP 整合，請按一下 Windows Defender ATP 徽章。
  
- 4. 若要進一步調查電腦，請檢查 Windows Defender ATP 中警示出現的前後期間，有哪些處理程序與警示出現。
+ 1. 若要進一步調查電腦，請檢查 Windows Defender ATP 中警示出現的前後期間，有哪些處理程序與警示出現。
 
 **補救**
 
 
 根據 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)，變更 Kerberos 票證授權票證 (KRBTGT) 密碼兩次。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 此外，由於建立黃金票證需要網域系統管理員權限，因此請實作[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)。
 
+## <a name="suspected-golden-ticket-attack-time-anomaly"></a>可疑的黃金票證攻擊 (時間異常)
+
+舊名稱：Kerberos 黃金票證
+
+**描述**
+
+取得網域系統管理員權限的攻擊者可入侵 [KRBTGT 帳戶](https://technet.microsoft.com/library/dn745899(v=ws.11).aspx#Sec_KRBTGT)。 攻擊者可以利用 KRBTGT 帳戶，建立可提供任何資源授權的 Kerberos 票證授權票證 (TGT)，並將票證到期日設定為任何時間。 因為這類偽造的 TGT 可以讓攻擊者獲得持久的網路持續性，所以稱為「黃金票證」。 在此偵測中，當使用 Kerberos 票證授權票證超過 [Maximum lifetime for user ticket](https://technet.microsoft.com/library/jj852169(v=ws.11).aspx) (使用者票證最長存留期) 中指定的允許時間時，就會觸發警示。
 
 
+**調查**
 
-## <a name="malicious-data-protection-private-information-request"></a>惡意的資料保護私人資訊要求
+1. 群組原則中的 [使用者票證最長存留期] 設定最近 (過去幾小時內) 是否有任何變更？ 檢查該特定值是否低於票證的使用時間。 如果是，請關閉警示 (這是誤判)。
+
+2. 涉及此警示的 Azure ATP 感應器是否為虛擬機器？ 如果是，它最近是否從儲存狀態繼續？ 如果是，請關閉此警示。
+
+3. 如果上述問題的答案為否，則假設這是惡意的。
+
+**補救**
+
+
+根據 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)，變更 Kerberos 票證授權票證 (KRBTGT) 密碼兩次。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 此外，由於建立黃金票證需要網域系統管理員權限，因此請實作[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)。
+
+## <a name="malicious-request-of-data-protection-api-master-key"></a>資料保護 API (DPAPI) 主要金鑰的惡意要求
+<a name="malicious-data-protection-private-information-request"></a>
+
+舊名稱：惡意的資料保護私人資訊要求
 
 **描述**
 
@@ -219,7 +304,10 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 若要使用 DPAPI，攻擊者需要網域系統管理員權限。 實作 [雜湊傳遞建議](https://www.microsoft.com/download/details.aspx?id=36036)。
 
-## <a name="malicious-replication-of-directory-services"></a>惡意的目錄服務複寫
+## <a name="suspected-dcsync-attack-replication-of-directory-services"></a>可疑的 DCSync 攻擊 (目錄服務的複寫)
+<a name="malicious-replication-of-directory-services"></a>
+
+舊名稱：惡意的目錄服務複寫
 
 
 **描述**
@@ -252,11 +340,14 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 您可以利用  [AD ACL 掃描程式](https://blogs.technet.microsoft.com/pfesweplat/2013/05/13/take-control-over-ad-permissions-and-the-ad-acl-scanner-tool/)或建立 Windows PowerShell 指令碼，以判斷誰在網域中具有這些權限。
 
 
-## <a name="privilege-escalation-using-forged-authorization-data"></a>使用偽造授權資料提升權限
+## <a name="suspected-golden-ticket-usage-forged-authorization-data"></a>可疑的黃金票證使用 (偽造的授權資料)
+<a name="privilege-escalation-using-forged-authorization-data"></a>
+
+舊名稱：使用偽造的授權資料提升權限
 
 **描述**
 
-舊版 Windows Server 中的已知弱點可能會被攻擊者用來操縱 Privileged Attribute Certificate (PAC)。 PAC 是 Kerberos 票證中的一個欄位，它包含使用者授權資料 (在 Active Directory 中，這是群組成員資格) 而且會將額外權限授與攻擊者。
+舊版 Windows Server 中的已知弱點可能會被攻擊者用來操縱 Privileged Attribute Certificate (PAC)。 PAC 是 Kerberos 票證中的欄位，包含使用者授權資料 (在 Active Directory 中為群組成員資格)，會授與攻擊者額外權限。
 
 **調查**
 
@@ -272,7 +363,9 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 確定作業系統早於 Windows Server 2012 R2 的所有網域控制站均已安裝  [KB3011780](https://support.microsoft.com/help/2496930/ms11-013-vulnerabilities-in-kerberos-could-allow-elevation-of-privilege)，而且早於 2012 R2 的所有成員伺服器和網域控制站均有 KB2496930，為最新狀態。 如需詳細資訊，請參閱  [Silver PAC](https://technet.microsoft.com/library/security/ms11-013.aspx)  和  [Forged PAC](https://technet.microsoft.com/library/security/ms14-068.aspx)。
 
-## <a name="reconnaissance-using-account-enumeration"></a>使用帳戶列舉偵查
+## <a name="account-enumeration-reconnaissance"></a>帳戶列舉偵察
+<a name="reconnaissance-using-account-enumeration"></a>
+舊名稱：使用帳戶列舉的偵察
 
 **描述**
 
@@ -300,7 +393,10 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 [複雜且很長的密碼](https://docs.microsoft.com/windows/device-security/security-policy-settings/password-policy)提供必要的第一層安全性，以防止暴力密碼破解攻擊。
 
 
-## <a name="reconnaissance-using-directory-services-queries"></a>使用目錄服務查詢探查
+## <a name="user-and-group-membership-reconnaissance-samr"></a>使用者和群組成員資格偵察 (SAMR)
+<a name="reconnaissance-using-directory-services-queries"></a>
+
+使用目錄服務查詢探查
 
 **描述**
 
@@ -334,7 +430,10 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 1. 電腦是否在執行弱點掃描工具？  
 2. 調查在攻擊中被查詢的特定使用者及群組是否為具有特殊權限或高價值的帳戶 (例如執行長、財務長、IT 管理等)。  若是如此，也請查看端點上的其他活動，並監視已查詢帳戶登入的電腦，因為這些可能是橫向移動的目標。
 
-## <a name="reconnaissance-using-dns"></a>使用 DNS 探查
+## <a name="network-mapping-reconnaissance-dns"></a>網路對應偵察 (DNS)
+<a name="reconnaissance-using-dns"></a>
+
+使用 DNS 探查
 
 **描述**
 
@@ -355,7 +454,8 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 您可以停用區域傳輸，或將區域傳輸僅限於指定的 IP 位址，來保護內部 DNS 伺服器，以防止發生使用 DNS 探查。 如需限制區域傳輸的詳細資訊，請參閱 [Restrict Zone Transfers](https://technet.microsoft.com/library/ee649273(v=ws.10).aspx) (限制區域傳輸)。
 修改區域傳輸是檢查清單中的一項工作，應該加以解決才能 [保護 DNS 伺服器免受內部和外部攻擊](https://technet.microsoft.com/library/cc770432(v=ws.11).aspx)。
 
-## <a name="reconnaissance-using-smb-session-enumeration"></a>使用 SMB 工作階段列舉探查
+## <a name="user-and-ip-address-reconnaissance-smb"></a>使用者和 IP 位址偵察 (SMB)
+<a name="reconnaissance-using-smb-session-enumeration"></a> 使用 SMB 工作階段列舉的偵察
 
 
 **描述**
@@ -382,7 +482,9 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 
 使用 [Net Cease 工具](https://gallery.technet.microsoft.com/Net-Cease-Blocking-Net-1e8dcb5b)來強化您的環境，以防止此攻擊。
 
-## <a name="remote-code-execution-attempt---enhanced"></a>遠端程式碼執行嘗試 - 增強
+## <a name="remote-code-execution-attempt"></a>遠端程式碼執行嘗試
+<a name="remote-code-execution-attempt"></a>
+舊名稱：遠端程式碼執行嘗試
 
 **描述**
 
@@ -409,11 +511,14 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 > [!NOTE]
 > 只有 ATP 感應器才支援遠端程式碼執行嘗試的警示。 
 
-## <a name="suspicious-authentication-failures--enhanced"></a>可疑的驗證失敗 - 增強
+## <a name="suspected-brute-force-attack-kerberos-ntlm"></a>可疑的暴力密碼破解攻擊 (Kerberos NTLM)
+<a name="suspicious-authentication-failures"></a>
+
+舊名稱：可疑的驗證失敗
 
 **描述**
 
-在暴力密碼破解攻擊中，攻擊者嘗試使用不同帳戶搭配多個密碼來驗證，直到找到正確的密碼為止，或使用單一密碼進行大規模密碼噴灑，直到至少可使用一個帳戶為止。 找到驗證之後，攻擊者就可使用已驗證的帳戶登入。
+在暴力密碼破解攻擊中，攻擊者會嘗試對不同帳戶使用多個密碼驗證，直到找到正確的密碼為止，或在大規模密碼噴濺中使用同一個密碼，直到至少可用於一個帳戶為止。 找到驗證之後，攻擊者就可使用已驗證的帳戶登入。
 
 在此偵測中，當使用 Kerberos 或 NTLM 發生多次驗證失敗，或偵測到使用密碼噴灑，就會觸發警示。 使用 Kerberos 或 NTLM，這種攻擊通常是在許多使用者之間水平使用少量密碼，或只對一些使用者垂直使用大量密碼，或這兩者的任意組合。 在密碼噴灑中，攻擊者從網域控制站成功列舉有效使用者清單後，便會嘗試針對所有已知的使用者帳戶嘗試使用一個特製密碼 (一個密碼用於多個帳戶)。 如果初始密碼噴灑失敗，他們會利用其他的特製密碼再試一次，在嘗試之間通常會等候 30 分鐘。 等候時間可讓攻擊者避免觸發最常見以時間為基礎的帳戶鎖定閾值。 密碼噴灑已快速成為攻擊者和滲透測試者最愛的技術。 密碼噴灑攻擊已證明是取得組織內初始據點的有效方式，並可進行後續的橫向移動，嘗試提高權限。 
 
@@ -430,13 +535,16 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 
 2.  按一下來源電腦以移至其設定檔頁面。 檢查這些嘗試的期間所發生的事件，並搜尋不尋常的活動，例如當時登入的使用者，以及被存取的資源有哪些。 如果您已啟用 Windows Defender ATP 整合，請按一下 [Windows Defender ATP] 徽章 ![[Windows Defender ATP] 徽章](./media/wd-badge.png) 以進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序與警示。 
 
-3.  如果驗證是使用 NTLM 來執行，而您多次看到該警示，且沒有來源電腦嘗試存取之伺服器的足夠相關資訊，請針對涉及的網域控制站啟用 **NTLM 稽核**。 若要這樣做，請開啟事件 8004。 這是 NTLM 驗證事件，其中包含來源電腦嘗試存取的來源電腦、使用者帳戶及**伺服器**的相關資訊。 知道驗證確認是由哪一部伺服器所傳送之後，您可以透過檢查其事件 (例如 4624) 來調查它，以進一步了解驗證程序。 
+3.  如果使用 NTLM 執行驗證，而您多次看到該警示，而且來源電腦嘗試存取之伺服器的相關資訊不足，請對涉及的網域控制站啟用 **NTLM 稽核**。 若要這樣做，請開啟事件 8004。 這是 NTLM 驗證事件，其中包含來源電腦嘗試存取之來源電腦、使用者帳戶及 **伺服器的相關資訊。 知道驗證確認是由哪一部伺服器所傳送之後，您可以透過檢查其事件 (例如 4624) 來調查它，以進一步了解驗證程序。 
 
 **補救**
 
 [複雜且很長的密碼](https://docs.microsoft.com/windows/device-security/security-policy-settings/password-policy)提供必要的第一層安全性，以防止暴力密碼破解攻擊。
 
-## <a name="suspicious-communication-over-dns"></a>透過 DNS 的可疑通訊 
+## <a name="suspicious-communication-over-dns"></a>透過 DNS 的可疑通訊
+<a name="suspicious-communication-over-dns"></a>
+
+舊名稱：透過 DNS 進行的可疑通訊 
 
 **描述**
 
@@ -452,9 +560,14 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 3.  判斷可疑活動何時開始？ 是否已在組織中部署或安裝任何新程式 (AV)？ 同一時間是否有其他警示？
 4.  按一下來源電腦以存取其設定檔頁面。 檢查 DNS 查詢出現前後期間的事件，並搜尋異常活動，例如當時登入的使用者，以及所使用的資源。 如果您已啟用 Windows Defender ATP 整合，請按一下 Windows Defender ATP 徽章 ![[Windows Defender ATP] 徽章](./media/wd-badge.png) 以進一步調查電腦。 使用 Windows Defender ATP，您可以查看在警示期間所發生的處理程序和警示。
 
-**補救**：如果在調查後發現已註冊的查詢網域不受信任，建議封鎖目的地網域以避免未來的所有通訊。 
+**補救**
 
-## <a name="suspicious-domain-controller-promotion-potential-dcshadow-attack"></a>可疑的網域控制站升級 (潛在的 DCShadow 攻擊)
+若經過調查後，發現註冊的查詢網域不受信任，建議封鎖目的地網域，以避免往後進行的所有通訊。 
+
+## <a name="suspected-dcshadow-attack-dc-promotion"></a>可疑的 DCShadow 攻擊 (DC 升階)
+<a name="suspicious-domain-controller-promotion-potential-dcshadow-attack"></a>
+
+舊名稱：可疑的網域控制站升階 (潛在的 DCShadow 攻擊)
 
 **描述**
 
@@ -493,6 +606,9 @@ DCShadow 使用 RPC 和 LDAP 進行：
 > 只有 ATP 感應器才支援可疑網域控制站升階 (潛在 DCShadow 攻擊) 的警示。 
 
 ## <a name="suspicious-modification-of-sensitive-groups"></a>敏感性群組的可疑修改
+<a name="suspicious-midification-of-sensitive-groups"></a>
+
+舊名稱：敏感性群組的可疑修改
 
 **描述**
 
@@ -518,7 +634,10 @@ DCShadow 使用 RPC 和 LDAP 進行：
 
 
 
-## <a name="suspicious-replication-request-potential-dcshadow-attack"></a>可疑的複寫要求 (潛在的 DCShadow 攻擊) 
+## <a name="suspected-dcshadow-attack-dc-replication-request"></a>可疑的 DCShadow 攻擊 (DC 複寫要求)
+<a name="suspicious-replication-request-potential-dcshadow-attack"></a>
+
+舊名稱：可疑的複寫要求 (潛在的 DCShadow 攻擊) 
 
 **描述** 
 
@@ -550,6 +669,9 @@ DCShadow 使用 RPC 和 LDAP 進行：
 
 
 ## <a name="suspicious-service-creation"></a>可疑的服務建立
+<a name="suspicious-service-creation"></a>
+
+舊名稱：可疑的服務建立
 
 **描述**
 
@@ -572,7 +694,10 @@ DCShadow 使用 RPC 和 LDAP 進行：
 - 在網域電腦上實作具有較低權限的存取，以僅允許特定使用者建立新的服務。
 
 
-## 可疑 VPN 連線 <a name="suspicious-vpn-detection"></a>
+## <a name="suspicious-vpn-connection"></a>可疑 VPN 連線
+<a name="suspicious-vpn-detection"></a>
+
+舊名稱：可疑的 VPN 連線 
 
 **描述**
 
@@ -593,7 +718,9 @@ VPN 行為模型以下列活動為基礎：使用者登入的機器以及使用�
 2.  請考慮禁止此使用者透過 VPN 連線。
 
 ## <a name="unusual-protocol-implementation"></a>不尋常的通訊協定實作
+<a name="unusual-protocol-implementation"></a>
 
+舊名稱：異常的通訊協定實作，在未來的 Azure ATP 版本中，會將此群組的安全性警訊重新命名，並給予新的 externalId
 
 **描述**
 
@@ -601,9 +728,9 @@ VPN 行為模型以下列活動為基礎：使用者登入的機器以及使用�
 
 **調查**
 
-從可疑活動時間軸找出不尋常的通訊協定，按一下可疑活動以移至其詳細資料頁面；下列通訊協定會出現在箭號上方：Kerberos 或 NTLM。
+從可疑活動時間軸識別異常的通訊協定，按一下安全性警訊，以前往其詳細資料頁面；下列通訊協定會出現在箭號上方：Kerberos 或 NTLM。
 
-- **Kerberos**：如果已使用 Mimikatz 等駭客工具 (可能是執行越過雜湊攻擊)，通常會觸發此警示。 檢查來源電腦所執行的應用程式是否實作自己的 Kerberos 堆疊，而不是根據 Kerberos RFC。 如果是這種情況，則為良性真肯定；而且您可以**關閉**警示。 如果持續觸發警示，而且仍是這種情況，您可以**隱藏**警示。
+- **Kerberos**：如果已使用 Mimikatz 等駭客工具 (可能是執行越過雜湊攻擊)，通常會觸發此警示。 檢查來源電腦所執行的應用程式是否實作自己的 Kerberos 堆疊，而不是根據 Kerberos RFC。 如果是這種情況，則為良性真肯定；而且您可以**關閉**警示。 若持續觸發警示，而且您先前的檢查仍為 true，您可以 [隱藏] 警示。
 
 - **NTLM**：可能是 WannaCry，或是 Metasploit、Medusa 和 Hydra 等工具。  
 
@@ -616,7 +743,6 @@ VPN 行為模型以下列活動為基礎：使用者登入的機器以及使用�
 3. 按一下來源電腦以移至其設定檔頁面。 檢查警示出現前後期間的事件，並搜尋異常活動，例如當時登入的使用者，以及被存取的資源。 如果您已啟用 Windows Defender ATP 整合，請按一下 [Windows Defender ATP] 徽章 ![wd 徽章](./media/wd-badge.png) 以進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序與警示。
 
 
-
 **補救**
 
 修補您所有的電腦，特別是套用安全性更新。
@@ -626,6 +752,7 @@ VPN 行為模型以下列活動為基礎：使用者登入的機器以及使用�
 2. [移除 WannaCry](https://support.microsoft.com/help/890830/remove-specific-prevalent-malware-with-windows-malicious-software-remo)
 
 3. WanaKiwi 可以解密受到某種勒索軟體支配的資料，但只適用於使用者尚未重新啟動或關閉電腦的情況。 如需詳細資訊，請參閱 [Wanna Cry Ransomware](https://answers.microsoft.com/en-us/windows/forum/windows_10-security/wanna-cry-ransomware/5afdb045-8f36-4f55-a992-53398d21ed07?auth=1) (Wanna Cry 勒索軟體)
+
 
 
 > [!NOTE]

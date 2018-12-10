@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 12/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: e7f065fa-1ad1-4e87-bd80-99cc695efbf5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a175a23a087b11d481dbcf055bff4fe5577b4f8e
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: a5b0befaa484a94cf307559296c887370228abb4
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783112"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744297"
 ---
 適用於：Azure 進階威脅防護
 
 
 
-# <a name="change-azure-atp-workspace-portal-configuration---domain-connectivity-password"></a>變更 Azure ATP 工作區入口網站設定 - 網域連線密碼
+# <a name="change-azure-atp-portal-configuration---domain-connectivity-password"></a>變更 Azure ATP 入口網站設定 - 網域連線能力密碼
 
 
 
@@ -38,7 +38,7 @@ ms.locfileid: "48783112"
 > [!NOTE]
 > 這是來自 Active Directory 內部部署的使用者名稱與密碼，而不是來自 Azure AD。
 
-1.  存取工作區 URL，以開啟 Azure ATP 入口網站。
+1.  存取入口網站 URL，以開啟 Azure ATP 入口網站。
 
 2.  選取工具列上的 [設定] 選項並選取 [組態]。
 

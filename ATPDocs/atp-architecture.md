@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6853a2a768fabde94c7aa613c9a6c0403f14e066
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: d41eac8700e334989594639880a0f85d5c725578
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783554"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744416"
 ---
 適用於：Azure 進階威脅防護
 
@@ -31,15 +31,15 @@ Azure 進階威脅防護架構：
 
 ![Azure ATP 架構拓撲圖表](media/atp-architecture-topology.png)
 
-本節描述 Azure ATP 的網路與事件擷取流程運作方式，並進一步細分描述下列主要元件的功能：Azure ATP 入口網站、Azure ATP 感應器和 Azure ATP 雲端服務。 
+本節描述 Azure ATP 的網路與事件擷取流程運作方式，並進一步詳細描述下列主要元件的功能：Azure ATP 入口網站、Azure ATP 感應器和 Azure ATP 雲端服務。 
 
-如果 Azure ATP 感應器是直接安裝在網域控制站上，即會直接從網域控制站存取所需的事件記錄檔。 在感應器剖析記錄檔和網路流量之後，Azure ATP 只會將經剖析的資訊傳送給 Azure ATP 雲端服務 (僅傳送某個百分比的記錄檔)。 
+如果 Azure ATP 感應器直接安裝在網域控制站上，即會直接從網域控制站存取所需的事件記錄檔。 在感應器剖析記錄檔和網路流量之後，Azure ATP 只會將經剖析的資訊傳送給 Azure ATP 雲端服務 (僅傳送某個百分比的記錄檔)。 
 
 ## <a name="azure-atp-components"></a>Azure ATP 元件
 Azure ATP 包含下列元件：
 
 -   **Azure ATP 入口網站** <br>
-Azure ATP 入口網站可讓您建立 Azure ATP 執行個體，顯示從 Azure ATP 感應器接收的資料，並讓您監視、管理及調查網路環境中的威脅。  
+Azure ATP 入口網站可讓您建立 Azure ATP 執行個體、顯示從 Azure ATP 感應器接收的資料，並可讓您監視、管理及調查網路環境中的威脅。  
 -   **Azure ATP 感應器**<br>
 Azure ATP 感應器是直接安裝在您的網域控制站上。 感應器可直接監視網域控制站的流量，而不需要專用的伺服器或連接埠鏡像設定。
 
@@ -56,7 +56,7 @@ Azure ATP 雲端服務目前部署於美國、歐洲和亞洲，並會在 Azure 
 - **選擇性**：您也可以將入口網站設定為在偵測到安全性警訊或健康狀態問題時傳送電子郵件和事件
 
 > [!NOTE]
-> - 若工作區在 60 天內未安裝感應器，系統可能會刪除工作區，而必須重新建立。
+> - 若 Azure ATP 執行個體在 60 天內未安裝感應器，系統可能會刪除執行個體且您必須重新建立。
 
 ## <a name="azure-atp-sensor"></a>Azure ATP 感應器
 Azure ATP 感應器具有下列核心功能：
@@ -69,7 +69,7 @@ Azure ATP 感應器具有下列核心功能：
 
  
 ## <a name="azure-atp-sensor-features"></a>Azure ATP 感應器功能
-Azure ATP 感應器可本機讀取事件，而不需要購買及維護額外的硬體或設定。 Azure ATP 感應器也支援 Windows 事件追蹤 (ETW)，以提供多個偵測的記錄資訊。 ETW 型偵測包括「可疑複寫要求」與「可疑網域控制站升級」，這兩者都是潛在的 DCShadow 攻擊。
+Azure ATP 感應器可本機讀取事件，而不需要購買及維護額外的硬體或設定。 Azure ATP 感應器也支援 Windows 事件追蹤 (ETW)，以提供多個偵測的記錄資訊。 ETW 式偵測包含使用網域控制站複寫要求和網域控制站升階嘗試進行的可疑 DCShadow 攻擊。
 - 網域同步器候選
 
     網域同步器候選負責主動同步處理特定 Active Directory 網域中的所有實體 (類似網域控制站進行複寫時所使用的機制)。 系統會從候選清單中隨機選擇一個感應器作為網域同步器。 
@@ -89,7 +89,7 @@ Azure ATP 感應器可本機讀取事件，而不需要購買及維護額外的�
 
 -  Windows 事件
 
-    為了讓 Azure ATP 能夠偵測雜湊傳遞、可疑驗證失敗、機密群組修改、可疑服務建立與 Honeytoken 活動等攻擊類型，Azure ATP 必須分析下列 Windows 事件的記錄：4776、4732、4733、4728、4729、4756、4757 與 7045。 具備適當[進階稽核原則設定](atp-advanced-audit-policy.md)的 Azure ATP 感應器會自動讀取這些事件。 
+    為了增強 Azure ATP 針對可疑身分識別竊取 (雜湊傳遞)、可疑驗證失敗、機密群組修改、可疑服務建立，以及 Honeytoken 活動等攻擊類型的偵測範圍，Azure ATP 需要分析下列 Windows 事件的記錄：4776、4732、4733、4728、4729、4756、4757 與 7045。 具備適當[進階稽核原則設定](atp-advanced-audit-policy.md)的 Azure ATP 感應器會自動讀取這些事件。 
 
 ## <a name="see-also"></a>另請參閱
 - [Azure ATP 必要條件](atp-prerequisites.md)

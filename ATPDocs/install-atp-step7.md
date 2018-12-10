@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/14/2018
+ms.date: 12/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1ad5e923-9bbd-4f56-839a-b11a9f387d4b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9202ba7c2519de0c7cd2eb3103578159dc437e83
-ms.sourcegitcommit: 58c75026e5ec4dcab3b0852a41f9f0a0ad6f22eb
+ms.openlocfilehash: 45858f80efb18060a845da47bfac3353946d18e0
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2018
-ms.locfileid: "49315739"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744399"
 ---
 適用於：Azure 進階威脅防護
 
@@ -44,7 +44,7 @@ Azure ATP 也能讓您設定 honeytoken 帳戶，用來做為針對惡意執行�
    ![Honeytoken](media/honeytoken-sensitive.png)
 
 4. 按一下 [排除]。 針對每個威脅類型，輸入要排除而不予偵測的使用者帳戶或 IP 位址。 
-5. 按一下加號。 [加入實體] \(使用者或電腦\) 欄位是可搜尋的，而且會自動填入您網路中的實體。 如需詳細資訊，請參閱[從偵測中排除實體](excluding-entities-from-detections.md)和[可疑活動指南](suspicious-activity-guide.md)。
+5. 按一下加號。 [加入實體] \(使用者或電腦\) 欄位是可搜尋的，而且會自動填入您網路中的實體。 如需詳細資訊，請參閱[從偵測中排除實體](excluding-entities-from-detections.md)和[安全性警訊指南](suspicious-activity-guide.md)。
 
    ![排除](media/exclusions.png)
 
@@ -53,9 +53,9 @@ Azure ATP 也能讓您設定 honeytoken 帳戶，用來做為針對惡意執行�
 
 恭喜，您已成功部署 Azure 進階威脅防護！
 
-檢查受攻擊的時間線以便檢視偵測到的可疑活動，並搜尋使用者或電腦並檢視其設定檔。
+檢查攻擊時間表以檢視偵測到的安全性警訊，並搜尋使用者或電腦並檢視其設定檔。
 
-Azure ATP 會立即開始掃描是否有可疑的活動。 某些偵測 (例如異常群組修改) 需要學習期間，因此無法在 Azure ATP 部署後立即供使用。
+Azure ATP 掃描會立即開始。 某些偵測 (例如異常群組修改) 需要學習期間，因此無法在 Azure ATP 部署後立即供使用。
 
 
 ## <a name="see-also"></a>另請參閱

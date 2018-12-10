@@ -12,12 +12,12 @@ ms.prod: ''
 ms.assetid: da0ee438-35f8-4097-b3a1-1354ad59eb32
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9f2b8f31f88c14f67c8a03b748ac3d2fb6179a62
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: 9485e3dd70708caf6e3ebbe60d9c006fac0b0163
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783452"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744722"
 ---
 適用於：Azure 進階威脅防護
 
@@ -30,16 +30,16 @@ ms.locfileid: "48783452"
 若要判斷 Azure ATP 部署容量，建議且最容易的方法是使用 [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool)。 執行 Azure ATP 調整大小工具，並從 Excel 檔案結果中，使用下列欄位判斷感應器所使用的記憶體和 CPU︰
 
 > [!NOTE] 
-> 調整大小工具有兩個工作表 - 一個用於 ATA，另一個則用於 Azure ATP。 請確定您使用正確的工作表。
+> 調整大小工具有兩個工作表 - 一個用於 Azure ATP，另一個則用於 ATA。 請確定您使用正確的工作表。
 
-- Azure ATP 感應器：根據[您選擇的感應器類型](#choosing-the-right-sensor-type-for-your-deployment)，將結果檔案內 Azure ATP 感應器表格中的 [Busy Packets/sec] \(每秒忙碌封包數\) 欄位與 [Azure ATP 獨立感應器表格](#azure-atp-sensor-sizing)或 [Azure ATP 感應器表格](#azure-atp-standalone-sensor-sizing)中的 [PACKETS PER SECOND] \(每秒封包數\) 欄位進行比對。
+- Azure ATP 感應器：根據[您選擇的感應器類型](#choosing-the-right-sensor-type-for-your-deployment)，將結果檔案內 Azure ATP 感應器表格中的 [每秒忙碌封包數] 欄位與 [Azure ATP 感應器表格](#azure-atp-standalone-sensor-sizing)或 [Azure ATP 獨立感應器表格](#azure-atp-sensor-sizing)中的 [每秒封包數] 欄位進行比對。
 
 
 ![範例容量規劃工具](media/capacity-tool.png)
 
 
-若基於某些原因而無法使用 Azure ATP 調整大小工具，請以極短的收集間隔 (大約 5 秒) 手動收集所有網域控制站 24 小時內的 packet/sec 計數器資訊。 然後，對於每個網域控制站，您必須計算每日平均和最繁忙期間的 (15 分鐘) 平均。
-下列章節將說明如何從一個網域控制站收集 packets/sec 計數器的指示。
+若基於某些原因而無法使用 Azure ATP 調整大小工具，請以極短的收集間隔 (大約 5 秒) 手動收集所有網域控制站 24 小時內的每秒封包計數器資訊。 然後，針對每個網域控制站，您必須計算每日平均和最繁忙期間的 (15 分鐘) 平均。
+下列各節將說明如何從一個網域控制站收集每秒封包計數器的指示。
 
 ## 為您的部署選擇正確的感應器類型<a name="choosing-the-right-sensor-type-for-your-deployment"></a>
 在 Azure ATP 部署中，支援任何 Azure ATP 感應器類型的組合：
@@ -52,13 +52,14 @@ ms.locfileid: "48783452"
 
 |感應器類型|優點|成本|部署拓撲|網域控制站|
 |----|----|----|----|-----|
-|Azure ATP 獨立感應器|頻外部署會讓攻擊者更難發現 Azure ATP|更高|與網域控制站 (頻外) 一起安裝|支援每秒最多 100,000 個封包|
 |Azure ATP 感應器|不需要專用的伺服器及連接埠鏡像設定|較低|安裝在網域控制站上|支援每秒最多 100,000 個封包|
+|Azure ATP 獨立感應器|頻外部署會讓攻擊者更難發現 Azure ATP|更高|與網域控制站 (頻外) 一起安裝|支援每秒最多 100,000 個封包|
+
 
 決定要部署多少個 Azure ATP 獨立感應器時，請考慮下列問題。
 
 -   **Active Directory 樹系和網域**<br>
-    Azure ATP 可以針對您所建立的每個工作區，監視多個 Active Directory 樹系內多個網域的流量。 
+    Azure ATP 可以針對您所建立的每個執行個體，監視多個 Active Directory 樹系內多個網域的流量。 
 
 -   **連接埠鏡像**<br>
     連接埠鏡像考量可能需要您在每個資料中心或分支網站部署多個 Azure ATP 獨立感應器。

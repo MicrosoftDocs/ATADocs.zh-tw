@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4ba46d60-3a74-480e-8f0f-9a082d62f343
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c4a437055c2fec0d242fe9de62ac9220ed2b66e6
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: 3968973bf4ddbc66dc66789239382ad5c9056aae
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783792"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744875"
 ---
 適用於：Azure 進階威脅防護
 
@@ -40,7 +40,7 @@ Azure ATP 入口網站可讓您依時間順序快速檢視所有可疑的活動�
 
 ## <a name="logging-into-the-azure-atp-portal"></a>登入 Azure ATP 入口網站
 
-1. 您可透過登入入口網站 ([https://portal.atp.azure.com](https://portal.atp.azure.com)) 並選取相關的工作區，或是瀏覽至工作區 URL ([https://<工作區名稱>.atp.azure.com](https://*workspacename*.atp.azure.com))，來進入 Azure ATP 入口網站。
+1. 您可透過登入入口網站 ([https://portal.atp.azure.com](https://portal.atp.azure.com)) 並選取您的執行個體，或是瀏覽至執行個體 URL ([https://執行個體名稱.atp.azure.com](https://*instancename*.atp.azure.com))，來進入 Azure ATP 入口網站。
 
 
 2.  Azure ATP 支援與 Windows 驗證整合的單一登入；如果您已登入電腦，Azure ATP 會使用該權杖將您登入 Azure ATP 入口網站。 您也可以使用智慧卡進行登入。 您在 Azure ATP 中的權限會與您的[系統管理員角色](atp-role-groups.md)對應。
@@ -51,7 +51,7 @@ Azure ATP 入口網站可讓您依時間順序快速檢視所有可疑的活動�
 
 ### <a name="attack-time-line"></a>攻擊時間表
 
-攻擊時間軸：這是您登入 Azure ATP 工作區入口網站時會前往的預設登陸頁面。 根據預設，所有開啟的可疑活動都會顯示在攻擊時間表上。 您可以篩選攻擊時間軸，以顯示 [所有]、[開啟]、[已解除] 或 [已隱藏] 的可疑活動。 您也可以查看指派給每個活動的嚴重性。
+攻擊時間表：這是您登入 Azure ATP 入口網站時會前往的預設登陸頁面。 根據預設，所有開啟的可疑活動都會顯示在攻擊時間表上。 您可以篩選攻擊時間軸，以顯示 [所有]、[開啟]、[已解除] 或 [已隱藏] 的可疑活動。 您也可以查看指派給每個活動的嚴重性。
 
 ![Azure ATP 攻擊時間表影像](media/atp-sa-timeline.png)
 
@@ -77,7 +77,7 @@ Azure ATP 的新版本發行之後，[最新消息] 視窗會出現在右上角�
 
 ### <a name="health-center"></a>健康情況中心
 
-健康情況中心會在 Azure ATP 工作區未正常運作時向您提出警示。
+健全狀況中心會在 Azure ATP 執行個體未正常運作時向您提出警示。
 
 ![Azure ATP 健康情況中心影像](media/atp-health-issue.png)
 
@@ -91,7 +91,7 @@ Azure ATP 的新版本發行之後，[最新消息] 視窗會出現在右上角�
 
 ### <a name="mini-profile"></a>小型設定檔
 
-如果您將滑鼠暫留在工作區入口網站中任何顯示單一實體 (例如使用者或電腦) 之位置的實體上方，螢幕就會自動開啟小型設定檔並顯示下列資訊 (如果有且相關的話)︰
+如果您將滑鼠暫留在 Azure ATP 入口網站中任何顯示單一實體 (例如使用者或電腦) 位置的實體上方，就會自動開啟迷你設定檔並顯示下列資訊 (如果有且相關的話)︰
 
 ![Azure ATP 小型設定檔影像](media/atp-mini-profile.png)
 
@@ -114,5 +114,5 @@ Azure ATP 的新版本發行之後，[最新消息] 視窗會出現在右上角�
 
 ## <a name="see-also"></a>另請參閱
 
-- [建立 Azure ATP 工作區](install-atp-step1.md)
+- [建立 Azure ATP 執行個體](install-atp-step1.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

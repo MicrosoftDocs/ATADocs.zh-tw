@@ -2,33 +2,35 @@
 title: 管理 Advanced Threat Analytics 系統產生記錄 | Microsoft Docs
 description: 描述 ATA 所收集的資料，並提供關閉資料收集的步驟。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 6/26/2018
-ms.topic: conceptual
-ms.prod: advanced-threat-analytics
-ms.service: ''
+ms.date: 8/19/2018
+ms.topic: article
+ms.prod: ''
+ms.service: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0db1054f47d462251577a4d5251c07e8cd6283e8
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: a0b856ced72ad91a046f1116f96648baba7f7cba
+ms.sourcegitcommit: bdf5dc203ecec3e7542f2ed08852afeff4f20dcd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133396"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52950300"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
 
 
-# <a name="manage-system-generated-logs-note"></a>管理系統產生記錄> [!NOTE]
+# <a name="manage-system-generated-logs"></a>管理系統產生的記錄> 
+
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
-Advanced Threat Analytics (ATA) 會收集有關 ATA 的匿名系統產生記錄，並透過 HTTPS 連線將資料傳輸至 Microsoft 伺服器。  Microsoft 將使用此資料以協助改善未來的 ATA 版本。
+ > [!NOTE]
+ > Advanced Threat Analytics (ATA) 會收集有關 ATA 的匿名系統產生記錄，並透過 HTTPS 連線將資料傳輸至 Microsoft 伺服器。 Microsoft 將使用此資料以協助改善未來的 ATA 版本。
 
 ## <a name="data-collected"></a>收集的資料
 收集的匿名資料包含下列參數︰

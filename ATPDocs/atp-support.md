@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/14/2018
+ms.date: 11/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a5d6693aa44fd82d10654ebd40533100e8834627
-ms.sourcegitcommit: 58c75026e5ec4dcab3b0852a41f9f0a0ad6f22eb
+ms.openlocfilehash: 566b7ac598dcdd0d44d30c50c01846c42d0b643f
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2018
-ms.locfileid: "49315756"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744790"
 ---
 適用於：Azure 進階威脅防護
 
@@ -30,13 +30,13 @@ ms.locfileid: "49315756"
 
 |欲執行的動作...|做法：|
 |----|----|
-|查看我們最熱門的文件|閱讀前五個頁面：<br>- [什麼是 Azure 進階威脅防護？](what-is-atp.md)<br>- [Azure ATP 必要條件](atp-prerequisites.md)<br>- [Azure ATP 架構](atp-architecture.md)<br>- [Azure ATP 容量規劃](atp-capacity-planning.md)<br>- [建立工作區](install-atp-step1.md)|
-|與產品小組和您的同事交流|請前往 Azure 進階威脅防護的[技術社群](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection)。|
-|確認訂用帳戶資訊，並取得支援功能的清單|請參閱 Azure 進階威脅防護網站的[訂用帳戶資訊](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)與[功能清單](https://www.microsoft.com/cloud-platform/azure-information-protection-features)。|
+|查看我們最熱門的文件|閱讀前五個頁面：<br>- [什麼是 Azure 進階威脅防護？](what-is-atp.md)<br>- [Azure ATP 必要條件](atp-prerequisites.md)<br>- [Azure ATP 架構](atp-architecture.md)<br>- [Azure ATP 容量規劃](atp-capacity-planning.md)<br>- [建立執行個體](install-atp-step1.md)|
+|與產品小組和您的同事交流|請前往 Azure 進階威脅防護的 [技術社群](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection) 。|
+|確認訂用帳戶資訊，並取得支援功能的清單|請參閱 Azure 進階威脅防護網站的 [訂閱資訊](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 與 [功能清單](https://www.microsoft.com/cloud-platform/azure-information-protection-features) 。|
 
 ## <a name="information-about-new-releases-and-updates"></a>新版本及更新的資訊
 
-Azure 進階威脅防護產品小組會在 [Enterprise Mobility + Security 部落格](https://cloudblogs.microsoft.com/enterprisemobility/author/microsoft-advanced-threat-analytics-team/)張貼新版本及更新的宣告。
+Azure 進階威脅防護產品小組會在  [Enterprise Mobility + Security 部落格](https://cloudblogs.microsoft.com/enterprisemobility/author/microsoft-advanced-threat-analytics-team/)張貼新版本及更新的公告。
 這些部落格貼文補強了產品文件和支援資訊。
 
 若要取得 Azure ATP 中最新推出的功能與變更，請查看 [Azure 進階威脅防護中的新功能](atp-whats-new.md)。
@@ -47,7 +47,7 @@ Azure 進階威脅防護產品小組會在 [Enterprise Mobility + Security 部�
 
 若要連絡 Microsoft 支援服務：
 
-如果您有頂級支援，請前往 [Premier Support 客戶的入口網站](https://premier.microsoft.com/)提交事件、瀏覽解決方案，並取得說明。
+如果您有頂級支援，請前往 [頂級支援客戶的入口網站](https://premier.microsoft.com/) 來提交事件、瀏覽解決方案，並取得說明。
 
 若為其他客戶，請遵循下列指示使用支援通道：
 
@@ -66,7 +66,7 @@ Azure 進階威脅防護產品小組會在 [Enterprise Mobility + Security 部�
 
 #### <a name="on-demand-videos"></a>隨選影片
 
-- [Azure 進階威脅防護](https://myignite.techcommunity.microsoft.com/sessions?t=%257B%2522from%2522%253A%25222018-09-23T08%253A00%253A00-04%253A00%2522%252C%2522to%2522%253A%25222018-09-28T19%253A00%253A00-04%253A00%2522%257D&q=azure%2520advanced%2520threat%2520protection#ignite-html-anchor)的 Microsoft Ignite 2018 研討會。
+-  [Azure 進階威脅防護](https://myignite.techcommunity.microsoft.com/sessions?t=%257B%2522from%2522%253A%25222018-09-23T08%253A00%253A00-04%253A00%2522%252C%2522to%2522%253A%25222018-09-28T19%253A00%253A00-04%253A00%2522%257D&q=azure%2520advanced%2520threat%2520protection#ignite-html-anchor)的 Microsoft Ignite 2018 研討會。
 
 疑難排解：
 
@@ -76,8 +76,8 @@ Azure 進階威脅防護產品小組會在 [Enterprise Mobility + Security 部�
 
 - 若您在環境中部署了 Windows Defender ATP 且想要將其與 Azure 進階威脅防護整合，請參閱[與 Windows Defender ATP 整合](integrate-wd-atp.md)。
 
-- 如需安全性警訊的調查資訊，請參閱[安全性警訊指南](suspicious-activity-guide.md)。
+- 如需安全性警訊的調查資訊，請參閱 [安全性警訊指南](suspicious-activity-guide.md)。
 
 ### <a name="community-resources"></a>社群資源
 
-我們建議使用[適用於 Azure 進階威脅防護的 Yammer 群組](https://www.yammer.com/AskIPTeam)。 此一資源提供 Azure 進階威脅防護小組的直接回應，以及和其他系統管理員與顧問分享經驗與知識的優點。
+我們建議使用 [適用於 Azure 進階威脅防護的 Yammer 群組](https://www.yammer.com/AskIPTeam)。 此一資源提供 Azure 進階威脅防護小組的直接回應，以及和其他系統管理員與顧問分享經驗與知識的優點。

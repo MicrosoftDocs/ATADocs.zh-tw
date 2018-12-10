@@ -1,11 +1,11 @@
 ---
-title: 使用 Azure Advanced Threat Protection 工作區入口網站中的使用者設定檔 | Microsoft Docs
-description: 描述如何在 Azure ATP 工作區入口網站中調查使用者設定檔畫面中的使用者
+title: 使用 Azure 進階威脅防護入口網站中的使用者設定檔 | Microsoft Docs
+description: 描述如何從 Azure ATP 入口網站的使用者設定檔畫面調查使用者
 keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 12/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 17458706-79fb-4c23-aa42-66979164a45f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 357973698d9d53936c3fa308bc0021ae1cd98f60
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: a36afd4997a2f148bc5a31726aee22914a3607b4
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783503"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744365"
 ---
 適用於：Azure 進階威脅防護
 
@@ -26,7 +26,7 @@ ms.locfileid: "48783503"
 
 # <a name="understanding-entity-profiles"></a>了解實體設定檔
 
-實體設定檔提供您專為完整深入調查使用者、電腦、裝置，以及他們有權存取的資源及其歷程記錄所設計的全方位實體頁面。 設定檔頁面會利用新的 Azure ATP 邏輯活動轉譯程式，此轉譯程式可查看一組發生的活動 (彙總最多一分鐘)，並將它們組成單一邏輯活動，以讓您更深入了解您使用者的實際活動。
+實體設定檔提供您專為完整深入調查使用者、電腦、裝置，以及其有權存取資源及其歷程記錄所設計的全方位實體頁面。 設定檔頁面會利用新的 Azure ATP 邏輯活動轉譯程式，此轉譯程式可查看一組發生的活動 (彙總最多一分鐘)，並將它們組成單一邏輯活動，以讓您更深入了解您使用者的實際活動。
 
 若要存取實體設定檔頁面，請按一下可疑活動時間軸中的實體名稱 (例如使用者名稱)。
 
@@ -59,7 +59,7 @@ ms.locfileid: "48783503"
 
 該影像地圖所提供的清單可讓您知道攻擊者在電腦和使用者之間必須有多少來回於此使用者的躍點才能入侵機密帳戶，且如果使用者擁有機密帳戶，您可以查看有多少直接連線的資源和帳戶。
 
-若在過去兩天內都沒有偵測到活動，該圖表即不再出現，不過系統還是會提供[橫向移動路徑報告](reports.md)，以提供您過去 60 天既有的橫向移動路徑資訊。 
+若在過去兩天期間未針對實體偵測到潛在 LMP，便不會顯示圖表。 使用 [檢視不同日期] 選取不同日期，來檢視先前針對此實體所探索到的橫向移動路徑圖表。 [橫向移動路徑報表](reports.md)一律可供您使用，提供所探索到潛在橫向移動路徑的相關資訊，並可隨時間自訂。  
 
 如需詳細資訊，請參閱[橫向移動路徑](use-case-lateral-movement-path.md)。 
 

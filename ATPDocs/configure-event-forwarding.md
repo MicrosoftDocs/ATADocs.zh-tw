@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/07/2018
+ms.date: 11/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3547519f-8d9c-40a9-8f0e-c7ba21081203
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d8b1730da0f5ab74dff39b8331fb78c293d57db3
-ms.sourcegitcommit: 1a5880de35422d050fc1bc7a918dedc4180c45ad
+ms.openlocfilehash: c17fbe10bea696711bd3dc011893bdcd3dbc87f4
+ms.sourcegitcommit: eb144ce1331ec3404fd2f75025cdbe802a73890b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265708"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52620841"
 ---
 適用於：Azure 進階威脅防護
 
@@ -63,7 +63,7 @@ ms.locfileid: "51265708"
    
     1.  選取 [啟用]。
     2.  在 [選項] 下，按一下 [顯示]。
-    3.  在 **SubscriptionManagers** 下方，輸入下列值，然後按一下 [確定]：*Server=`http://<fqdnATPSensor>:5985/wsman/SubscriptionManager/WEC,Refresh=10` (例如：Server=`http://atpsensor9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10`)
+    3.  在 **SubscriptionManagers** 下，輸入下列值，然後按一下 [確定]：Server= http\://\<fqdnATPSensor>:5985/wsman/SubscriptionManager/WEC,Refresh=10` (For example: Server=http\://atpsensor9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
     
     ![設定目標訂閱影像](media/wef%202%20config%20target%20sub%20manager.png)
     

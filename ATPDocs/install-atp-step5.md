@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d7c95f8c-04f8-4946-9bae-c27ed362fcb0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b7ddaca0f0c5691c90873cef9af6cef13fa9650a
-ms.sourcegitcommit: e783df4c9d928fedf6dc3c65d58d9b530cdd2ff2
+ms.openlocfilehash: 2bdfd0fe41ed6dc5f489784c2095cefd2032d135
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49800030"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744347"
 ---
 適用於：Azure 進階威脅防護
 
@@ -75,7 +75,7 @@ ms.locfileid: "49800030"
  >[!NOTE]
  > Azure ATP 的版本經常更新，若要檢查是否有最新版本，請在 Azure ATP 入口網站中，移至 [設定]，然後移至 [關於]。 
 
-3.  移至您的工作區 URL。 在 Azure ATP 入口網站的搜尋列中搜尋某個項目，例如網域中的使用者或群組。
+3.  前往您的 Azure ATP 執行個體 URL。 在 Azure ATP 入口網站的搜尋列中搜尋某個項目，例如網域中的使用者或群組。
 
 
 

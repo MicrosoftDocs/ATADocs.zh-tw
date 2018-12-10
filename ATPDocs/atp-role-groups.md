@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/07/2018
+ms.date: 11/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7ae3f0adca3137664f0a89c15e8feee71d0cd915
-ms.sourcegitcommit: c4978be196e0039c7a5d5887bec4cbc5c01d64f9
+ms.openlocfilehash: 4481f8896791e98f76a6fb6f0b93796337b15ed1
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "48848608"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744326"
 ---
 適用於：Azure 進階威脅防護
 
@@ -38,17 +38,17 @@ Azure ATP 提供角色型安全性，可根據組織的特定安全性和合規�
 
 ## <a name="accessing-the-azure-atp-portal"></a>存取 Azure ATP 入口網站
 
-只有具備全域管理員或安全性系統管理員目錄角色的 Azure AD 使用者，才能存取 Azure ATP 入口網站 (portal.atp.azure.com)。 進入入口網站之後，您可以建立您的工作區。 Azure ATP 服務會在 Azure Active Directory 租用戶中建立三個安全性群組：Administrators、Users、Viewers。 
+只有具備全域管理員或安全性系統管理員目錄角色的 Azure AD 使用者，才能存取 Azure ATP 入口網站 (portal.atp.azure.com)。 在使用必要角色進入入口網站後，您便可以建立 Azure ATP 執行個體。 Azure ATP 服務會在 Azure Active Directory 租用戶中建立三個安全性群組：Administrators、Users、Viewers。 
 
 > [!NOTE]
-> Azure ATP 入口網站的存取權只會授與 Azure Active Directory 中的 Azure ATP 安全性群組使用者，以及租用戶的全域管理員和安全性系統管理員。
+> Azure ATP 入口網站的存取權只會授與 Azure Active Directory 中 Azure ATP 安全性群組內的使用者，以及租用戶的全域系統管理員及安全性系統管理員。
 
 
 ## <a name="types-of-azure-atp-security-groups"></a>Azure ATP 安全性群組的類型 
 
-Azure ATP 提供三種類型的安全性群組：Azure ATP (工作區名稱) 系統管理員，Azure ATP (工作區名稱) 使用者和 Azure ATP (工作區名稱) 檢視者。 下表描述每個角色在 Azure ATP 入口網站中可用的存取類型。 根據您所指派的角色而定，這些使用者將會無法使用 Azure ATP 入口網站中的各種畫面與功能表選項，如下所示：
+Azure ATP 提供三種類型的安全性群組：Azure ATP (「執行個體名稱」) 系統管理員、Azure ATP (「執行個體名稱」) 使用者和 Azure ATP (「執行個體名稱」) 檢視者。 下表描述每個角色在 Azure ATP 入口網站中可用的存取類型。 根據您所指派的角色而定，這些使用者將會無法使用 Azure ATP 入口網站中的各種畫面與功能表選項，如下所示：
 
-|活動 |Azure ATP (工作區名稱) 系統管理員|Azure ATP (工作區名稱) 使用者|Azure ATP (工作區名稱) 檢視者|
+|活動 |Azure ATP (「執行個體名稱」) 系統管理員|Azure ATP (「執行個體名稱」) 使用者|Azure ATP (「執行個體名稱」) 檢視者|
 |----|----|----|----|
 |登入|可用|可用|可用|
 |變更安全性警訊的狀態 (重新開啟、關閉、排除、隱藏)|可用|可用|無法使用|

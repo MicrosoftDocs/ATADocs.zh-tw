@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 12/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a7dc9b6c9243377a613490e166fb7c0294ecde99
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: da38cef088dcd255c264792fd70bfebf1c42a34b
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783316"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744926"
 ---
 適用於：Azure 進階威脅防護
 
@@ -61,7 +61,7 @@ ms.locfileid: "48783316"
 
 ## <a name="enable-access-to-azure-atp-service-urls-in-the-proxy-server"></a>啟用 Proxy 伺服器中的 Azure ATP 服務 URL 存取
 
-如果 Proxy 或防火牆根據預設封鎖了所有流量，並且只允許特定網域通過，或者啟用了 HTTPS 掃描 (SSL 檢查)，請確定下列 URL 已列入白名單，以允許與連接埠 443 中的 Azure ATP 服務進行通訊：
+如果 Proxy 或防火牆根據預設封鎖了所有流量，並且只允許特定網域通過，或者啟用了 HTTPS 掃描 (SSL 檢查)，請確定下列 URL 已列入允許清單，以允許與連接埠 443 中的 Azure ATP 服務進行通訊：
 
 |服務位置|.Atp.Azure.com DNS 記錄|
 |----|----|
@@ -70,9 +70,9 @@ ms.locfileid: "48783316"
 |亞洲|triprd1wcasse1sensorapi.atp.azure.com|
 
 
-您也可以自己建立的特定工作區強化防火牆與 Proxy 規則，方法是為下列 DNS 記錄建立規則：
-- \<your-workspace-name>.atp.azure.com – 針對主控台連線。 例如 "Contoso-corp.atp.azure.com"
-- \<your-workspace-name>sensorapi.atp.azure.com – 針對感應器連線。 例如 "contoso-corpsensorapi.atp.azure.com"
+您也可以為您建立的特定執行個體強化防火牆或 Proxy 規則，方法是為下列 DNS 記錄建立規則：
+- \<your-instance-name>.atp.azure.com – 針對主控台連線能力。 例如 "Contoso-corp.atp.azure.com"
+- \<your-instance-name>sensorapi.atp.azure.com – 針對感應器連線能力。 例如 "contoso-corpsensorapi.atp.azure.com"
 
  
 > [!NOTE]

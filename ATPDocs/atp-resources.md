@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 11/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 34dc152c-6b7f-4128-93fe-aad56c282730
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 029077455f9b2800984065a10c3e221e62d7c606
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: b61e840efc1b2ee14c2d367d1492b57836e2d144
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783146"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744450"
 ---
 適用於：Azure 進階威脅防護
 
@@ -26,7 +26,7 @@ ms.locfileid: "48783146"
 
 # <a name="azure-atp-readiness-guide"></a>Azure ATP 整備指南
 
-此文章為您提供的整備藍圖，其中包含協助您開始使用「Azure 進階威脅防護」的資源清單。 
+本文為您提供整備藍圖，其中包含協助您開始使用 Azure 進階威脅防護的資源清單。 
 
 ## <a name="understanding-azure-atp"></a>了解 Azure ATP
 
@@ -37,7 +37,7 @@ Azure 進階威脅防護 (ATP) 為雲端服務，可識別並保護您的企業�
 
 ## <a name="deployment-decisions"></a>部署決定
 
-Azure ATP 是由位於 Azure 中的雲端服務以及可安裝在網域控制站上的整合式感應器或專用伺服器上的獨立感應器所組成。 在您啟動並執行 Azure ATP 之前，請務必選擇最適合您部署與需求的感應器類型。 相較於 Azure ATP 獨立感應器，Azure ATP 整合式感應器 (Azure ATP 感應器) 提供加強的安全性、較低的營運成本與較簡單的部署方式。 Azure ATP 獨立感應器要求實體硬體、額外的設定步驟與較高的營運成本。 <br>若您使用實體伺服器，容量規劃非常重要。 為您的感應器配置空間時，可從調整大小工具取得協助： 
+Azure ATP 是由位於 Azure 中的雲端服務以及可安裝在網域控制站上的整合式感應器或專用伺服器上的獨立感應器所組成。 在您啟動並執行 Azure ATP 之前，請務必選擇最適合您部署與需求的感應器類型。 相較於 Azure ATP 獨立感應器，Azure ATP 整合式感應器 (Azure ATP 感應器) 提供加強的安全性、較低的營運成本與較簡單的部署方式。 Azure ATP 獨立感應器要求實體硬體、額外的設定步驟與較高的營運成本。 <br>若您使用實體伺服器，容量規劃非常重要。 使用調整大小工具來為您的感應器配置空間： 
 - [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool) - 調整大小的工具會自動收集 Azure ATP 監視器的流量多寡。 其會自動為感應器提供支援能力以及資源建議。 
 - [ATP 容量規劃指南](atp-capacity-planning.md)
 
@@ -50,7 +50,7 @@ Azure ATP 是由位於 Azure 中的雲端服務以及可安裝在網域控制站
 
 ## <a name="azure-atp-settings"></a>Azure ATP 設定
 
-在您建立工作區時，系統即會設定 Azure ATP 中的必要基本設定。 不過，您仍可以在 Azure ATP 中進行一些額外設定，以更正確地在環境中進行偵測，例如 VPN 整合、SAM 的必要權限與進階稽核原則設定。 
+在您建立執行個體時，即會自動設定 Azure ATP 中的必要基本設定。 Azure ATP 中仍然有數種可進行的其他設定來改善您環境的偵測和警示準確度 (例如 VPN 整合、SAM 必要權限，以及進階稽核原則設定)。 
 
 - [VPN 整合](install-atp-step6-vpn.md)
 - [SAM-R 必要權限](install-atp-step8-samr.md)
@@ -58,9 +58,10 @@ Azure ATP 是由位於 Azure 中的雲端服務以及可安裝在網域控制站
 
 ## <a name="work-with-azure-atp"></a>使用 Azure ATP
 
-啟動和執行 Azure ATP 之後，請檢視 Azure ATP 入口網站活動時間軸中的安全性警訊。 活動時間表是登入 Azure ATP 入口網站之後的預設登陸頁面。 根據預設，所有開啟的安全性警訊都會顯示在攻擊時間軸上。 您也可以查看指派給每個警訊的嚴重性。 向下鑽研實體 (電腦、裝置、使用者) 並開啟具有詳細資訊的設定檔頁面，以調查每個警訊。 以下資源有助您處理 Azure ATP 的安全性警訊： 
+啟動和執行 Azure ATP 之後，請檢視 Azure ATP 入口網站活動時間表中的安全性警訊。 活動時間表是登入 Azure ATP 入口網站之後的預設登陸頁面。 根據預設，所有開啟的安全性警訊都會顯示在攻擊時間軸上。 您也可以查看指派給每個警訊的嚴重性。 向下鑽研實體 (電腦、裝置、使用者) 並開啟具有詳細資訊的設定檔頁面，以調查每個警訊。 橫向移動路徑會顯示可在您網路中進行的潛在移動，以及面臨風險的敏感性使用者。 使用橫向移動路徑偵測圖表來調查及補救公開。 以下資源有助您處理 Azure ATP 的安全性警訊： 
 
 - [Azure ATP 安全性警訊指南](suspicious-activity-guide.md)：了解如何使用 Azure ATP 偵測進行分級及採取後續步驟。
+- [Azure ATP 橫向移動路徑](use-case-lateral-movement-path.md)
 - [將群組標記為機密](sensitive-accounts.md)掌握機密安全性群組的認證暴露。
 
 ## <a name="security-best-practices"></a>安全性最佳做法

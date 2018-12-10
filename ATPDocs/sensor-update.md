@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e478fc1a2ae955d66d00b3d87bd5f782354c766d
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: a24210415929b69152377d34aeec1bdc8906d08c
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783758"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744433"
 ---
 適用於：Azure 進階威脅防護
 
@@ -60,11 +60,11 @@ Azure ATP 感應器支援兩種更新：
 這可讓您選取自動推出更新的特定感應器，以及延遲更新感應器的其餘部分，但只在您看到初始更新平順進行之後。
 
 > [!NOTE]
-> 如果發生錯誤，而且未更新感應器，則請開啟支援票證。 若要進一步強化 Proxy 以僅與您的工作區通訊，請參閱 [Proxy 設定](configure-proxy.md)
+> 如果發生錯誤，而且未更新感應器，則請開啟支援票證。 若要進一步強化 Proxy 以僅和您的執行個體通訊，請參閱 [Proxy 設定](configure-proxy.md)
 
 將感應器設定為延遲更新：
 
-1. 從 Azure ATP 工作區入口網站中，按一下設定圖示，然後選取 [設定]。
+1. 從 Azure ATP 入口網站中，按一下設定圖示，然後選取 [設定]。
 2. 按一下 [更新] 索引標籤。
 3. 在您想要延遲之每個感應器旁的資料表資料列中，將 [Delayed update] \(延遲更新\) 滑桿設定為 [開啟]。
 4. 按一下 **[儲存]**。

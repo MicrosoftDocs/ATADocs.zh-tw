@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 12/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: d0551e91-3b21-47d5-ad9d-3362df6d47c0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: eed1509cb31885bccdfcc40505284dbdbdfc4cca
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: 8cff5cbba1c9ed8d04764d9839a5cb2c66093c81
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783877"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744756"
 ---
 適用於：Azure 進階威脅防護
 
 # <a name="understanding-azure-atp-sensor-and-standalone-sensor-monitoring-alerts"></a>了解 Azure ATP 感應器和獨立感應器監視警示
 
-當您的 Azure ATP 工作區發生問題時，Azure ATP 健康狀態中心會發出監視警示以讓您知道情況。 本文描述每個元件的所有監視警示，並列出原因及解決問題所需的步驟。
+當您的 Azure ATP 執行個體發生問題時，Azure ATP 健全狀況中心會發出監視警示以讓您知道。 本文描述每個元件的所有監視警示，並列出原因及解決問題所需的步驟。
 
 ## <a name="read-only-user-password-to-expire-shortly"></a>唯讀使用者密碼即將過期
 

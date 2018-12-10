@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 12/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 72e26d9cdc539da168d1bc7c274971526eec61d1
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: 379feeef63776e71375a789daf4c9608a863e37b
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783299"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744467"
 ---
 適用於：Azure 進階威脅防護
 
@@ -34,7 +34,7 @@ ms.locfileid: "48783299"
 
 若要存取實體設定檔頁面，請按一下安全性警訊時間軸中的實體名稱 (例如使用者名稱)。 您也可以將滑鼠移至實體名稱上，在安全性警訊頁面中查看迷你版本的實體設定檔。
 
-實體設定檔可讓您檢視實體活動、目錄資料以及實體的橫向移動路徑。 如需詳細資訊，請參閱[了解實體設定檔](entity-profiles.md)。
+實體設定檔可讓您檢視實體活動、檢視目錄資料，以及檢視實體的[橫向移動路徑](use-case-lateral-movement-path.md)。 如需實體的詳細資訊，請參閱[了解實體設定檔](entity-profiles.md)。
 
 ## <a name="check-entity-tags"></a>查看實體標籤
 
@@ -111,5 +111,5 @@ Azure ATP 可協助您預防使用橫向移動路徑的攻擊。 橫向移動是
     
 ## <a name="see-also"></a>另請參閱
 
-- [處理可疑活動](working-with-suspicious-activities.md)
+- [使用安全性警訊](working-with-suspicious-activities.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

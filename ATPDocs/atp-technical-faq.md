@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f3336189338b16a58a4e8bf67490948a163e9d56
-ms.sourcegitcommit: c10a1c5d1e5408b5473a31485346915908688680
+ms.openlocfilehash: 0001be015d45809a0ca550287452cfc4c366778d
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50208148"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744773"
 ---
 適用於：Azure 進階威脅防護
 
@@ -34,7 +34,7 @@ ms.locfileid: "50208148"
 
 ### <a name="what-can-azure-atp-detect"></a>Azure ATP 可以偵測什麼？
 
-Azure ATP 可以偵測已知的惡意攻擊和技術、安全性問題和風險。
+Azure ATP 可以偵測對您網路所進行的已知惡意攻擊和技術、安全性問題及風險。
 如需 Azure ATP 偵測的完整清單，請參閱 [Azure ATP 會執行哪些偵測？](suspicious-activity-guide.md)。
 
 ### <a name="what-data-does-azure-atp-collect"></a>Azure ATP 會收集什麼資料？ 
@@ -60,10 +60,10 @@ Microsoft 並不會將您的資料用於廣告用途，或是任何其他與為�
 ## <a name="licensing-and-privacy"></a>授權和隱私權 
 ### <a name="where-can-i-get-a-license-for-azure-advanced-threat-protection-atp"></a>哪裡可以取得 Azure 進階威脅防護 (ATP) 的授權？
 
-Azure ATP 隨附於 Enterprise Mobility + Security 5 套件 (EMS E5)，並獨立授權。 您可以直接從 [Office 365 入口網站](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing)，或透過雲端解決方案合作夥伴 (CSP) 授權模型，取得授權。
+Azure ATP 隨附於 Enterprise Mobility + Security 5 套件 (EMS E5) 中，也可以獨立授權。 您可以直接從 [Office 365 入口網站](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing)，或透過雲端解決方案合作夥伴 (CSP) 授權模型，取得授權。
 
 ### <a name="is-this-going-to-be-a-part-of-azure-active-directory-or-on-premises-active-directory"></a>它會成為 Azure Active Directory 或內部部署 Active Directory 的一部分嗎？
-此解決方案目前為獨立的供應項目。 它不是 Azure Active Directory 或內部部署 Active Directory 的一部分。
+Azure ATP 解決方案目前是獨立的供應項目。 它不是 Azure Active Directory 或內部部署 Active Directory 的一部分。
 
 ### <a name="is-my-data-isolated-from-other-customer-data"></a>我的資料是否會與其他客戶的資料隔離？ 
 
@@ -71,7 +71,7 @@ Azure ATP 隨附於 Enterprise Mobility + Security 5 套件 (EMS E5)，並獨立
 
 ### <a name="do-i-have-the-flexibility-to-select-where-to-store-my-data"></a>我是否能選擇資料的儲存位置？ 
 
-建立 Azure ATP 工作區時，您可以選擇要將資料儲存在位於美國或歐洲的 Microsoft Azure 資料中心。 設定好之後，您便無法變更資料的儲存位置。 Microsoft 將不會把資料從該指定位置傳輸到其他位置。                
+否。 建立您的 Azure ATP 執行個體時，它會自動儲存在與您 AAD 租用戶地理位置最接近的國家/地區資料中心內。 一旦建立您的 Azure ATP 執行個體，便無法將它移動到不同的資料中心。                
 
 ### <a name="how-does-microsoft-prevent-malicious-insider-activities-and-abuse-of-high-privilege-roles"></a>Microsoft 如何防止惡意內部人士活動及針對高權限角色的濫用行為？ 
 
@@ -107,14 +107,14 @@ Azure ATP 感應器可以涵蓋大多數虛擬網域控制站；如需判斷 Azu
 
 若要讓網域控制站與雲端服務通訊，您必須在防火牆/ Proxy 中開啟：*.atp.azure.com 連接埠 443。 如需執行此操作的相關指示，請參閱[設定 Proxy 或防火牆以啟用與 Azure ATP 感應器的通訊](configure-proxy.md)。
 
-### <a name="can-azure-atp-monitor-domain-controllers-be-virtualized-on-your-iaas-solution"></a>Azure ATP 是否可以監視在 IaaS 解決方案上虛擬化的網域控制站？
+### <a name="can-azure-atp-monitored-domain-controllers-be-virtualized-on-your-iaas-solution"></a>受 Azure ATP 監視的網域控制站是否可以在 IaaS 解決方案上虛擬化？
 是，您可以使用 Azure ATP 感應器來監視位於任何 IaaS 解決方案中的網域控制站。
 
 ### <a name="can-azure-atp-support-multi-domain-and-multi-forest"></a>Azure ATP 是否能支援多網域和多樹系？
 Azure 進階威脅防護支援多網域環境與多樹系。 此功能目前處於公開預覽狀態。 如需詳細資訊與已知限制，請參閱[多樹系支援](atp-multi-forest.md)。
 
 ### <a name="can-you-see-the-overall-health-of-the-deployment"></a>可以看到部署的整體健全狀況嗎？
-是，您可以檢視部署的整體健全狀況，以及與設定、連線等相關的特定問題，而且系統會在問題發生時警示您。
+是，您可以檢視部署的整體健全狀況，以及與設定、連線能力等相關的特定問題，而且系統會在問題發生時透過 Azure ATP 健全狀況警示來警示您。
 
 ## <a name="operation"></a>操作
 
@@ -124,10 +124,10 @@ Azure 進階威脅防護支援多網域環境與多樹系。 此功能目前處�
 ### <a name="why-are-certain-accounts-considered-sensitive"></a>為何將某些帳戶視為機密？
 當帳戶為被指定為機密之群組的成員 (例如「網域系統管理員」) 時，便會發生這種情況。
 
-若要了解為何是機密帳戶，您可以檢閱其群組成員資格，以了解它所屬的機密群組 (其所屬的群組也可以是因為另一個群組而機密，因此您應該執行相同的程序，直到找出最高層級的機密群組)。 您也可以[手動將帳戶標記為機密](sensitive-accounts.md)。
+若要了解為何是機密帳戶，您可以檢閱其群組成員資格，以了解它所屬的機密群組 (其所屬的群組也可以是因為另一個群組而機密，因此您應該執行相同的程序，直到找出最高層級的機密群組)。 您也可以手動[將帳戶標記為敏感性](sensitive-accounts.md)。
 
 ### <a name="do-you-have-to-write-your-own-rules-and-create-a-thresholdbaseline"></a>必須撰寫自己的規則，並建立臨界值/基準嗎？
-使用 Azure 進階威脅防護時，將不需要建立規則、臨界值或基準然後再進行調整。 Azure ATP 會分析使用者、裝置、資源的行為 (以及它們之間的關聯性)，並可以快速偵測可疑的活動和已知的攻擊。 在部署三個星期之後，Azure ATP 便會開始偵測行為上的可疑活動。 另外，Azure ATP 會在部署之後立即開始偵測已知的惡意攻擊和安全性問題。
+使用 Azure 進階威脅防護時，將不需要建立規則、臨界值或基準然後再進行調整。 Azure ATP 會分析使用者、裝置、資源的行為 (以及它們之間的關聯性)，並可以快速偵測可疑活動和已知的攻擊。 在部署三個星期之後，Azure ATP 便會開始偵測行為上的可疑活動。 另外，Azure ATP 會在部署之後立即開始偵測已知的惡意攻擊和安全性問題。
 
 ## <a name="troubleshooting"></a>疑難排解
 ### <a name="what-should-i-do-if-the-azure-atp-sensor-or-standalone-sensor-doesnt-start"></a>如果 Azure ATP 感應器或獨立感應器無法啟動該怎麼辦？

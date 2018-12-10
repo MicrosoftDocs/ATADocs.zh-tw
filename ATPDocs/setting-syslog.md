@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 11/04/2018
+ms.date: 12/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a2d29c9c-7ecb-4804-b74b-fde899b28648
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ac01e5ae534fc5df5da70a8d1c47c11c1c455c98
-ms.sourcegitcommit: 03b1949beaf2f78a3cdf9396356a96488ea2e127
+ms.openlocfilehash: 5d3eb4dbc714e7de4d586e686cd26ead83fceda8
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "50983084"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744671"
 ---
 適用於：Azure 進階威脅防護
 
@@ -38,7 +38,7 @@ ms.locfileid: "50983084"
 
     -   要用來傳送資料 RFC 3164 或 5424 的格式
 
-2.  輸入工作區 URL。
+2.  輸入執行個體 URL。
 
 3.  輸入您的 Azure Active Directory 使用者名稱和密碼，然後按一下 [登入]。
 

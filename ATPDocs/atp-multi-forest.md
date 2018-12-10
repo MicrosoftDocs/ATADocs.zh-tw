@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 11/28/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 40bd468226f3c8db17663d02aed561b77cc2a128
-ms.sourcegitcommit: bbbe808c08ce703a314c82b46aedaae79ab256a3
+ms.openlocfilehash: 0628b59457f7932757cde04be5472c5510ff0d9d
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "48848485"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744909"
 ---
 適用於：Azure 進階威脅防護
 
@@ -27,7 +27,7 @@ ms.locfileid: "48848485"
 
 ## <a name="multi-forest-support-set-up"></a>設定多重樹系支援 
 
-Azure ATP 可支援擁有多個樹系的組織，讓您能輕鬆地從單一管理點跨樹系監視活動和分析使用者。 
+Azure ATP 支援擁有多個樹系的組織，讓您可以輕鬆地從單一窗口跨樹系監視活動和分析使用者。 
 
 企業組織通常有數個 Active Directory 樹系，通常用於不同用途，包括來自公司合併和收購、地理分佈和安全性界限的舊版基礎結構 (紅色樹系)。 您可以使用 Azure ATP 保護多個樹系，以便可以透過單一管理點來進行監視和調查。
 
@@ -39,7 +39,7 @@ Azure ATP 可支援擁有多個樹系的組織，讓您能輕鬆地從單一管�
 
 ## <a name="how-azure-atp-detects-activities-across-multiple-forests"></a>Azure ATP 如何跨多個樹系偵測活動 
 
-為了偵測跨樹系活動，Azure ATP 感應器會查詢遠端樹系中的網域控制站，以建立所有相關實體的設定檔，包括來自遠端樹系的使用者和電腦。 
+為了偵測跨樹系活動，Azure ATP 感應器會查詢遠端樹系中的網域控制站，以建立所有相關實體的設定檔 (包括來自遠端樹系的使用者和電腦)。 
 
 > [!NOTE]
 > - Azure ATP 感應器可以安裝在所有樹系上 (如果存在最小的單向信任)。

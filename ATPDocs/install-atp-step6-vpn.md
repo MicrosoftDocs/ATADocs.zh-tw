@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 0d9d2a1d-6c76-4909-b6f9-58523df16d4f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1ddd369fe51117a120a3f5b8a688f22624d711c0
-ms.sourcegitcommit: 03b1949beaf2f78a3cdf9396356a96488ea2e127
+ms.openlocfilehash: 9fe9011f0fbdf29e80e1957c4e1535f497061aa2
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "50983101"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744858"
 ---
 適用於：Azure 進階威脅防護
 
@@ -34,7 +34,7 @@ Azure ATP 會透過接聽轉寄到 Azure ATP 感應器的 RADIUS 計量事件來
 -   Check Point
 -   Cisco ASA
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 若要啟用 VPN 整合，請確定已設定了下列參數：
 
@@ -55,7 +55,7 @@ Azure ATP 會透過接聽轉寄到 Azure ATP 感應器的 RADIUS 計量事件來
 
     ![RADIUS 設定](./media/radius-setup.png)
 
-4.  在 [新增 RADIUS 伺服器] 視窗中，輸入最接近之 Azure ATP 感應器 (具有網路連線能力) 的**伺服器名稱**。 如需高可用性，您可以新增額外的 Azure ATP 感應器作為 RADIUS 伺服器。 在 [連接埠] 下，確定已設為預設的 1813。 按一下 [變更]，並輸入您能記住的新共用祕密英數字元字串。 您稍後必須在 Azure ATP 設定中填入它。 選取 [傳送 RADIUS 計量開啟及計量關閉訊息] 方塊，然後在所有已開啟的對話方塊上按一下 [確定]。
+4.  在 [新增 RADIUS 伺服器] 視窗中，輸入最接近之 Azure ATP 感應器 (具有網路連線能力) 的**伺服器名稱**。 如需高可用性，您可以新增額外的 Azure ATP 感應器作為 RADIUS 伺服器。 在 [連接埠] 下，確定已設為預設的 1813。 按一下 [變更]，並鍵入新的共用祕密英數字元字串。 記下新的共用祕密字串，因為您必須在稍後的 Azure ATP 設定期間填寫它。 選取 [傳送 RADIUS 計量開啟及計量關閉訊息] 方塊，然後在所有已開啟的對話方塊上按一下 [確定]。
  
      ![VPN 設定](./media/vpn-set-accounting.png)
      
@@ -74,7 +74,7 @@ Azure ATP 會收集 VPN 資料，這些資料有助於分析電腦連線到網�
   ![設定 Azure ATP VPN](./media/atp-vpn-radius.png)
 
 
-啟用此選項之後，所有 Azure ATP 感應器和獨立感應器都會接聽連接埠 1813 上的 RADIUS 計量事件，您的安裝即已完成。 
+啟用此選項之後，所有 Azure ATP 感應器都會接聽連接埠 1813 上的 RADIUS 計量事件，您的 VPN 設定即已完成。 
 
  Azure ATP 感應器接收 VPN 事件並將它們傳送至 Azure ATP 雲端服務進行處理之後，實體設定檔會指出不同的 VPN 存取的位置，且設定檔中的活動將指出的位置。
 
@@ -83,5 +83,5 @@ Azure ATP 會收集 VPN 資料，這些資料有助於分析電腦連線到網�
 ## <a name="see-also"></a>另請參閱
 - [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool) \(英文\)
 - [設定事件收集](configure-event-collection.md)
-- [Azure ATP 先決條件](atp-prerequisites.md)
+- [Azure ATP 必要條件](atp-prerequisites.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

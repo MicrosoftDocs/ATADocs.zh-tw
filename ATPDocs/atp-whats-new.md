@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 11/12/2018
+ms.date: 11/26/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,18 +13,53 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ca178eaa1b0ef1b631ebe2ab02f00fd5a9c26de5
-ms.sourcegitcommit: 65885bab8e31dd862a4f2ae9028fb31b288d7229
+ms.openlocfilehash: e960e93470462acaf77c2033153af23725fe5e91
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52157585"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744501"
 ---
 適用於：Azure 進階威脅防護
 
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能 
 
-## <a name="azure-atp-release-255"></a>Azure ATP 2.5.5 版
+## <a name="azure-atp-release-257"></a>Azure ATP 2.57 版
+發行日期：2018 年 12 月 2 日
+
+- **新的安全性警訊：可疑的黃金票證使用 - 票證異常 (預覽功能)**<br>
+Azure ATP 的[可疑黃金票證使用 - 票證異常](suspicious-activity-guide.md)安全性警訊目前處於公開預覽狀態。 <br> 具有網域系統管理員權限的攻擊者可能會危害 KRBTGT 帳戶。 攻擊者可使用 KRBTGT 帳戶，建立可提供任何資源授權的 Kerberos 票證授權票證 (TGT)。 
+<br>因為這種偽造的 TGT 可以讓攻擊者獲得持久的網路持續性，所以稱為「黃金票證」。 這項新偵測特別設計用來識別這類偽造黃金票證所擁有的唯一特性。 
+
+
+- **功能加強：自動化建立 Azure ATP 執行個體 (工作區)** <br>
+即日起，Azure ATP「工作區」已重新命名為 Azure ATP「執行個體」。 Azure ATP 現在支援每個 Azure ATP 帳戶一個 Azure ATP 執行個體。 新客戶的執行個體會使用 [Azure ATP 入口網站](https://portal.atp.azure.com)中的執行個體建立精靈來建立。 現有的 Azure ATP 工作區會自動轉換成具備更新的 Azure ATP 執行個體。  
+
+  - 使用[建立您的 Azure ATP 執行個體](install-atp-step1.md)來簡化執行個體建立，以進行更快速的部署和保護。 
+  - 所有[資料隱私權與合規性](atp-privacy-compliance.md)皆維持不變。 
+
+  請參閱[建立您的 Azure ATP 執行個體](install-atp-step1.md)以深入了解。 
+
+- 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
+
+## <a name="azure-atp-release-256"></a>Azure ATP 2.56 版
+發行日期：2018 年 11 月 25 日
+
+
+- **功能加強：橫向移動路徑 (LMP)** <br>
+已新增兩個其他功能來加強 Azure ATP 橫向移動路徑 (LMP) 功能：
+
+  - 使用 LMP 報表時，現在可以根據每個實體儲存及探索 LMP 歷程記錄。 
+  - 透過活動時間表追蹤 LMP 中的實體，並使用提供的額外辨識項來探索潛在的攻擊路徑。 
+
+  請參閱 [Azure ATP 橫向移動路徑](use-case-lateral-movement-path.md)以深入了解使用及利用增強 LMP 進行調查的方式。 
+
+- **文件加強：橫向移動路徑、安全性警訊名稱**<br> 已對 Azure ATP 文章進行新增與更新，其包括橫向移動路徑的描述及功能說明，並且已為所有舊安全性警訊名稱新增新名稱和 externalId 的名稱對應。 
+  - 請參閱 [Azure ATP 橫向移動路徑](use-case-lateral-movement-path.md)、[調查橫向移動路徑](investigate-lateral-movement-path.md)，以及[安全性警訊指南](suspicious-activity-guide.md)以深入了解。   
+
+- 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
+
+## <a name="azure-atp-release-255"></a>Azure ATP 2.55 版
 發行日期：2018 年 11 月 18 日
 
 - **安全性警訊：通過 DNS 的可疑通訊 - 一般可用性**<br>
@@ -32,7 +67,7 @@ Azure ATP [通過 DNS 的可疑通訊](suspicious-activity-guide.md#suspicious-c
 
 - 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
-## <a name="azure-atp-release-254"></a>Azure ATP 2.5.4 版
+## <a name="azure-atp-release-254"></a>Azure ATP 2.54 版
 發行日期：2018 年 11 月 11 日
 
 - **功能強化：將預設網域排除項目新增至透過 DNS 警示的可疑通訊警示**<br>   將三個熱門網域新增至預設網域排除清單。 排除清單仍可完全自訂。 若要深入了解，請參閱[從偵測排除實體](excluding-entities-from-detections.md)。 
@@ -41,7 +76,7 @@ Azure ATP [通過 DNS 的可疑通訊](suspicious-activity-guide.md#suspicious-c
 
 - 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
-## <a name="azure-atp-release-253"></a>Azure ATP 2.5.3 版
+## <a name="azure-atp-release-253"></a>Azure ATP 2.53 版
 發行日期：2018 年 11 月 4 日
 
 - **安全性警示增強：可疑的驗證失敗**<br>
@@ -52,7 +87,7 @@ Azure ATP 的[可疑的驗證失敗安全性警示](suspicious-activity-guide.md
 
 - 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
-## <a name="azure-atp-release-252"></a>Azure ATP 2.5.2 版
+## <a name="azure-atp-release-252"></a>Azure ATP 2.52 版
 發行日期：2018 年 10 月 28 日
 
 
@@ -73,7 +108,7 @@ Azure ATP 的[遠端程式碼執行嘗試](suspicious-activity-guide.md)現在�
 
 - 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
-## <a name="azure-atp-release-251"></a>Azure ATP 版本 2.5.1
+## <a name="azure-atp-release-251"></a>Azure ATP 2.51 版
 發行日期：2018 年 10 月 21 日
 
 - 您現在可以從 Azure ATP 入口網站[設定](integrate-wd-atp.md#how-to-integrate-azure-atp-with-windows-defender-atp)畫面啟用/停用 **WD-ATP 整合**。 (Azure ATP 使用者必須是 AAD 租用戶的全域或安全性系統管理員，才能使用這項功能)。
@@ -202,7 +237,6 @@ Azure 進階威脅防護現在會檢查網域控制站的現有進階稽核原�
 - 此版本包含針對多個問題的修正和改善。 
 
 
-
 ## <a name="azure-atp-release-240"></a>Azure ATP 2.40 版
 
 發行日期：2018 年 7 月 15 日
@@ -281,7 +315,6 @@ Azure 進階威脅防護現在會檢查網域控制站的現有進階稽核原�
     - 中文 (台灣)
 
 
-
 ## <a name="azure-atp-release-232"></a>Azure ATP 2.32 版
 
 發行日期：2018 年 5 月 13 日
@@ -303,7 +336,6 @@ Azure 進階威脅防護現在會檢查網域控制站的現有進階稽核原�
 -   Azure ATP 現在會針對從 Azure ATP 傳送的所有電子郵件使用 Azure Email Orchestrator，包括可疑活動、監視警示和報表。 您會看到這些電子郵件通知現在遵循一致的格式使其容易使用，而從電子郵件連結到的 Excel 檔案將會從主控台中下載。
  
  
-
 ## <a name="azure-atp-release-229"></a>Azure ATP 2.29 版
 
 發行日期：2018 年 4 月 22 日

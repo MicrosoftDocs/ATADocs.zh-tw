@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/4/2018
+ms.date: 12/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,65 +13,63 @@ ms.technology: ''
 ms.assetid: 15ee7d0b-9a0c-46b9-bc71-98d0b4619ed0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7a7bdd045a0964c4ed4ccc4ebe2315b3c3465be2
-ms.sourcegitcommit: c10a1c5d1e5408b5473a31485346915908688680
+ms.openlocfilehash: 3fb857308d945fcae04e7dc3d501404a2334382e
+ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50208097"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52744688"
 ---
 適用於：Azure 進階威脅防護
 
 
-# <a name="creating-your-azure-atp-instance-in-the-portal---step-1"></a>在入口網站中建立您的 Azure ATP 執行個體 - 步驟 1
+# <a name="creating-your-azure-atp-instance-in-the-azure-atp-portal---step-1"></a>在 Azure ATP 入口網站中建立您的 Azure ATP 執行個體 - 步驟 1
 
 > [!div class="step-by-step"]
 > [步驟 2 »](install-atp-step2.md)
 
-這個安裝程序提供建立及管理 Azure ATP 執行個體或工作區的指示。 如需 Azure ATP 架構的詳細資訊，請參閱 [Azure ATP 架構](atp-architecture.md)。
+此安裝程序提供建立及管理 Azure ATP 執行個體 (先前稱為工作區) 的指示。 如需 Azure ATP 架構的詳細資訊，請參閱 [Azure ATP 架構](atp-architecture.md)。
 
-在 Azure ATP 中，您將有單一執行個體或工作區，以透過單一管理點來管理多個樹系。 
+在 Azure ATP 中，您將擁有單一執行個體，可讓您透過單一窗口來管理多個樹系。 
 
 > [!NOTE]
-> 目前，Azure ATP 資料中心部署在歐洲、北美地區/美國中部/加勒比海和亞洲。
+> 目前，Azure ATP 資料中心部署在歐洲、北美地區/美國中部/加勒比海和亞洲。 您的執行個體會自動在與您 AAD 地理位置最接近的資料中心內建立。 一旦建立後，Azure ATP 執行個體便無法移動。 
 
 ## <a name="step-1-enter-the-azure-atp-portal"></a>步驟 1： 進入 Azure ATP 入口網站
 
-驗證您的網路符合感應器的需求之後，您接著可以建立 Azure ATP 工作區。
+確認您的網路符合感應器的需求後，請繼續建立您的 Azure ATP 執行個體。
 
 > [!NOTE]
->若要存取管理入口網站，您必須是該租用戶上的全域系統管理員或安全性系統管理員。
+>若要存取 Azure ATP 入口網站，您必須是該租用戶上的全域系統管理員或安全性系統管理員。
 
 
 1.  進入 [Azure ATP 入口網站](https://portal.atp.azure.com)。
 
 2.  使用您的 Azure Active Directory 使用者帳戶登入。
 
-## <a name="step-2-create-your-workspace"></a>步驟 2： 建立工作區
+## <a name="step-2-create-your-instance"></a>步驟 2： 建立您的執行個體
 
-1. 按一下 [建立工作區]。
+1. 按一下 [建立執行個體]。 
 
-2. 在 [建立新工作區] 對話方塊中，為工作區命名，並為資料中心選取 [地理位置]。 您的工作區預設為**主要**。 
- > [!NOTE]
- > 選取地理位置之後，就無法再加以修改。
-    ![Azure ATP 工作區](media/create-workspace.png)
+    ![建立 Azure ATP 執行個體](media/create-instance.png)
 
-3. 您可以按一下 [管理 Azure ATP 使用者角色] 連結，以直接存取 [Azure Active Directory 管理中心](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)並管理您的角色群組。
+2. 您的 Azure ATP 執行個體會自動以 AAD 初始網域名稱命名，並會配置到與您 AAD 位置最接近的資料中心建立。 
 
- > [!NOTE]
- > 若要成功登入 Azure ATP，您必須使用已指派適當 Azure ATP 角色的使用者來登入，才能存取 Azure ATP 入口網站。 如需 Azure ATP 中有關角色型存取控制 (RBAC) 的詳細資訊，請參閱[使用 Azure ATP 角色群組](atp-role-groups.md)。
+    ![已建立 Azure 執行個體](media/instance-created.png)
 
-4. 按一下您的工作區名稱，以存取 Azure ATP 入口網站。
+> [!NOTE]
+ > 若要登入 Azure ATP，您必須使用已指派具 Azure ATP 入口網站存取權限的 Azure ATP 角色使用者來登入。 如需 Azure ATP 中有關角色型存取控制 (RBAC) 的詳細資訊，請參閱[使用 Azure ATP 角色群組](atp-role-groups.md)。
+ 
+3. 按一下 [設定]、[管理角色群組]，然後使用 [Azure AD 系統管理中心](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)連結來管理您的角色群組。 。
 
-    ![Azure ATP 工作區](media/atp-workspaces.png)
+    ![管理角色群組](media/creation-manage-role-groups.png)
 
-- 只能編輯主要工作區。 如果您想要刪除主要工作區，則必須先關閉整合，之後才能刪除。
+- 資料保留 – 之前刪除的 Azure ATP 執行個體不會在 UI 中顯示。 如需 Azure ATP 資料保留的詳細資訊，請參閱 [Aure ATP 資料安全性與隱私權](atp-privacy-compliance.md)。
 
-- 資料保留 – 之前刪除的工作區不會在 UI 中顯示。 如需 Azure ATP 資料保留的詳細資訊，請參閱 [Aure ATP 資料安全性與隱私權](atp-privacy-compliance.md)。
 
-> [!div class="step-by-step"]
-> [«前置安裝](atp-prerequisites.md)
-> [步驟 2»](install-atp-step2.md)
+>[!div class="step-by-step"]
+[«前置安裝](atp-prerequisites.md)
+[步驟 2»](install-atp-step2.md)
 
 
 

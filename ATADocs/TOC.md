@@ -3,6 +3,7 @@
 ## [ATA 會偵測哪些威脅？](ata-threats.md)
 ## ATA 的新功能?
 ### [ATA 1.9 版的新功能](whats-new-version-1.9.md)
+#### [更新為 ATA 1.9.1 - 移轉指南](ata-update-1.9.1-migration-guide.md)
 #### [更新為 ATA 1.9 - 移轉指南](ata-update-1.9-migration-guide.md)
 ### [ATA 1.8 版中的新增功能](whats-new-version-1.8.md)
 #### [更新為 ATA 1.8 - 移轉指南](ata-update-1.8-migration-guide.md)

@@ -2,10 +2,10 @@
 title: ATA 事件識別碼參考 | Microsoft Docs
 description: 提供 ATA 事件識別碼的清單及其描述。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.service: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 5d639e84-2e37-43a9-9667-49be6c4fa8b7
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 38610c6b8f94dbe1a31e218e064750bf2bde2c49
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 353395f782d29bb18e95c02ad56407a592d8c20b
+ms.sourcegitcommit: 2b15356612eb720f83235ff8cb08e4a6435206ea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133135"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53022419"
 ---
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -89,7 +89,13 @@ ATA 中心事件檢視器會記錄 ATA 的事件。 這篇文章會提供事件�
 
 2007 – DNS 探察可疑活動 
 
-2008 – 加密降級可疑活動 
+2008 – 加密降級可疑活動 (沒有子類型)
+
+2009 – 加密降級可疑活動 (疑似 GoldenTicket)
+       
+2010 – 加密降級可疑活動 (疑似 Overpass-The-Hash)
+
+2011 – 加密降級可疑活動 (疑似 Skeleton-Key)
 
 2012 – 列舉工作階段可疑活動 
 
@@ -113,7 +119,11 @@ ATA 中心事件檢視器會記錄 ATA 的事件。 這篇文章會提供事件�
 
 2023 – 暴力密碼破解可疑活動 
 
-2024 – 異常敏感性群組成員資格變更可疑活動  
+2024 – 異常成員資格變更為敏感性群組可疑活動 
+
+2025 – 異常 VPN 可疑活動
+
+2026 – 惡意的服務建立可疑活動
 
 ## <a name="ata-auditing-events"></a>ATA 稽核事件
 

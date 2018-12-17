@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 12/02/2018
+ms.date: 12/09/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,23 +13,23 @@ ms.technology: ''
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a32d19e8e130f326859276dde60c794712da5a91
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: 8604e3cfead3b52fd9f0d1ed38bb7d806cf50f46
+ms.sourcegitcommit: d1c9c3e69b196f6086a8f100e527553cf0d95aac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744807"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53125127"
 ---
-適用於：Azure 進階威脅防護
+*適用於：Azure 進階威脅防護*
 
 
 # <a name="azure-advanced-threat-protection-security-alert-guide"></a>Azure 進階威脅防護安全性警訊指南
 
 在適當的調查之後，所有 Azure ATP 安全性警訊可分類為：
 
--   **真肯定**︰由 Azure ATP 所偵測到的惡意動作。
+-   **確判**：由 Azure ATP 所偵測到的惡意動作。
 
--   **良性真肯定**︰由 Azure ATP 所偵測到的真實且非惡意動作，例如滲透測試。
+-   **良性確判**：由 Azure ATP 所偵測到的真實但非惡意動作，例如滲透測試。
 
 -   **誤判**：假警示，表示活動並未發生。
 
@@ -65,18 +65,17 @@ ms.locfileid: "52744807"
 |敏感性群組的可疑修改|敏感性群組的可疑修改|2024|
 |可疑的服務建立|可疑的服務建立|2026|
 |可疑 VPN 連線|可疑 VPN 連線|2025|
-|可疑的 WannaCry 勒索軟體攻擊|不尋常的通訊協定實作 (可能為 WannaCry 勒索軟體攻擊) *|2002|
-|可疑的暴力密碼破解攻擊 (SMB)|不尋常的通訊協定實作 (可能使用 Hydra 等惡意工具) *|2002|
-|可疑的 Metasploit 入侵架構使用|不尋常的通訊協定實作 (可能使用 Metasploit 入侵工具) *|2002|
-|可疑的 Overpass-the-Hash 攻擊 (Kerberos)|不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊) *|2002|
-|* 「不尋常的通訊協定實作」警示目前正在共用 externalId。 各類型警示的 externalId，在未來的版本中將會變更為唯一的 externalId||****|
+|可疑的 WannaCry 勒索軟體攻擊|不尋常的通訊協定實作 (可能為 WannaCry 勒索軟體攻擊)|2002|
+|可疑的暴力密碼破解攻擊 (SMB)|不尋常的通訊協定實作 (可能使用 Hydra 等惡意工具)|2002|
+|可疑的 Metasploit 入侵架構使用|不尋常的通訊協定實作 (可能使用 Metasploit 入侵工具)|2002|
+|可疑的 Overpass-the-Hash 攻擊 (Kerberos)|不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)|2002|
 |使用者和群組成員資格偵察 (SAMR)|使用目錄服務查詢探查|2021|
 |使用者和 IP 位址偵察 (SMB) |使用 SMB 工作階段列舉探查|2012|
 
 
 ## <a name="account-enumeration-reconnaissance"></a>帳戶列舉偵察
 <a name="reconnaissance-using-account-enumeration"></a>
-舊名稱：使用帳戶列舉的偵察
+先前的名稱：使用帳戶列舉偵查
 
 **描述**
 
@@ -106,7 +105,7 @@ ms.locfileid: "52744807"
 ## <a name="honeytoken-activity"></a>Honeytoken 活動
 <a name="honeytoken-activity"></a>
 
-舊名稱：Honeytoken 活動
+先前的名稱：Honeytoken 活動
 
 **描述**
 
@@ -131,7 +130,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 ## <a name="malicious-request-of-data-protection-api-master-key"></a>資料保護 API (DPAPI) 主要金鑰的惡意要求
 <a name="malicious-data-protection-private-information-request"></a>
 
-舊名稱：惡意的資料保護私人資訊要求
+先前的名稱：惡意的資料保護私人資訊要求
 
 **描述**
 
@@ -152,7 +151,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 ## <a name="suspected-brute-force-attack-ldap"></a>可疑的暴力密碼破解攻擊 (LDAP) 
 <a name="brute-force-attack-using-ldap-simple-bind"></a>
-舊名稱：使用 LDAP 簡單繫結的暴力密碼破解攻擊
+先前的名稱：使用 LDAP 簡單繫結的暴力密碼破解攻擊
 
 **描述**
 
@@ -178,7 +177,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 ## <a name="suspected-brute-force-attack-kerberos-ntlm"></a>可疑的暴力密碼破解攻擊 (Kerberos NTLM)
 <a name="suspicious-authentication-failures"></a>
 
-舊名稱：可疑的驗證失敗
+先前的名稱：可疑的驗證失敗
 
 **描述**
 
@@ -208,7 +207,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 ## <a name="suspected-dcshadow-attack-dc-promotion"></a>可疑的 DCShadow 攻擊 (DC 升階)
 <a name="suspicious-domain-controller-promotion-potential-dcshadow-attack"></a>
 
-舊名稱：可疑的網域控制站升階 (潛在的 DCShadow 攻擊)
+先前的名稱：可疑的網域控制站升級 (潛在的 DCShadow 攻擊)
 
 **描述**
 
@@ -249,7 +248,7 @@ DCShadow 使用 RPC 和 LDAP 進行：
 ## <a name="suspected-dcshadow-attack-dc-replication-request"></a>可疑的 DCShadow 攻擊 (DC 複寫要求)
 <a name="suspicious-replication-request-potential-dcshadow-attack"></a>
 
-舊名稱：可疑的複寫要求 (潛在的 DCShadow 攻擊) 
+先前的名稱：可疑的複寫要求 (潛在的 DCShadow 攻擊) 
 
 **描述** 
 
@@ -282,7 +281,7 @@ DCShadow 使用 RPC 和 LDAP 進行：
 ## <a name="suspected-dcsync-attack-replication-of-directory-services"></a>可疑的 DCSync 攻擊 (目錄服務的複寫)
 <a name="malicious-replication-of-directory-services"></a>
 
-舊名稱：惡意的目錄服務複寫
+先前的名稱：惡意的目錄服務複寫
 
 **描述**
 
@@ -316,7 +315,7 @@ DCShadow 使用 RPC 和 LDAP 進行：
 ## <a name="suspected-golden-ticket-usage-encryption-downgrade"></a>可疑的黃金票證使用 (加密降級)
 <a name="Encryption-downgrade-activity-potential-golden-ticket-attack"></a>
 
-舊名稱：加密降級活動
+先前的名稱：加密降級活動
 
 **說明**加密降級是一種減弱 Kerberos 的方法，它會針對通訊協定以最高加密層級進行加密的不同欄位，對其加密層級降級。 攻擊者將能較為輕鬆地對減弱的加密欄位進行離線暴力密碼破解。 利用弱式 Kerberos 加密 Cypher 的各種攻擊方法。 在此偵測中，Azure ATP 會了解電腦和使用者所使用的 Kerberos 加密類型，並在使用下列較弱的 Cypher 時向您發出警示：(1) 對來源電腦及/或使用者而言不尋常，以及 (2) 符合已知的攻擊手法。 
 
@@ -341,7 +340,7 @@ DCShadow 使用 RPC 和 LDAP 進行：
 ## <a name="suspected-golden-ticket-usage-forged-authorization-data"></a>可疑的黃金票證使用 (偽造的授權資料)
 <a name="privilege-escalation-using-forged-authorization-data"></a>
 
-舊名稱：使用偽造的授權資料提升權限
+先前的名稱：使用偽造授權資料提升權限
 
 **描述**
 
@@ -364,7 +363,7 @@ DCShadow 使用 RPC 和 LDAP 進行：
 ## <a name="suspected-golden-ticket-usage-nonexistant-account"></a>可疑的黃金票證使用 (不存在的帳戶)
 <a name="golden-ticket"></a>
 
-舊名稱：Kerberos 黃金票證
+先前的名稱：Kerberos 黃金票證
 
 **描述**
 
@@ -394,7 +393,7 @@ DCShadow 使用 RPC 和 LDAP 進行：
 
 ## <a name="suspected-golden-ticket-usage-time-anomaly"></a>可疑的黃金票證使用 (時間異常)
 
-舊名稱：Kerberos 黃金票證
+先前的名稱：Kerberos 黃金票證
 
 **描述**
 
@@ -420,7 +419,7 @@ DCShadow 使用 RPC 和 LDAP 進行：
 
 **描述**
 
-具有網域系統管理員權限的攻擊者可能會危害 KRBTGT 帳戶。 他們可使用 KRBTGT 帳戶，建立可提供任何資源授權的 Kerberos 票證授權票證 (TGT)。 因為這類偽造的 TGT 可讓攻擊者獲得持久的網路持續性，所以稱為「黃金票證」。 此偵測特別設計用來識別這類偽造黃金票證所擁有的唯一特性。 
+具有網域系統管理員權限的攻擊者可能會危害 KRBTGT 帳戶。 他們可使用 KRBTGT 帳戶，建立可提供任何資源授權的 Kerberos 票證授權票證 (TGT)。 因為這類偽造的 TGT 可讓攻擊者獲得持久的網路持續性，所以稱為「黃金票證」。 此偵測設計用來識別這類偽造黃金票證所擁有的唯一特性。 
 
 **調查**
 1. 同盟服務可能會產生觸發此警示的票證。 來源電腦是否提供這類服務？ 如果是，請關閉安全性警示。
@@ -441,7 +440,7 @@ DCShadow 使用 RPC 和 LDAP 進行：
 ## <a name="suspected-identity-theft-pass-the-hash"></a>可疑的身分識別竊取 (雜湊傳遞) 
 <a name="identity-theft-using-pass-the-hash-attack"></a>
 
-舊名稱：使用雜湊傳遞攻擊竊取身分識別
+先前的名稱：使用傳遞雜湊攻擊竊取身分
 
 **描述**
 
@@ -460,7 +459,7 @@ DCShadow 使用 RPC 和 LDAP 進行：
 ## <a name="suspected-identity-theft-pass-the-ticket"></a>可疑的身分識別竊取 (票證傳遞) 
 <a name="identity-theft-using-pass-the-ticket-attack"></a>
 
-舊名稱：使用票證傳遞攻擊竊取身分識別
+先前的名稱：使用傳遞票證攻擊竊取身分
 
 **描述**
 
@@ -481,7 +480,7 @@ DCShadow 使用 RPC 和 LDAP 進行：
 ## <a name="suspected-over-pass-the-hash-attack-encryption-downgrade"></a>可疑的 Overpass-the-Hash 攻擊 (加密降級) 
 <a name="Encryption-downgrade-activity-potential-over-pass-the-hash"></a>
 
-舊名稱：加密降級活動
+先前的名稱：加密降級活動
 
 **描述**
 
@@ -503,7 +502,7 @@ DCShadow 使用 RPC 和 LDAP 進行：
 ## <a name="suspected-skeleton-key-attack-encryption-downgrade"></a>可疑的萬能金鑰攻擊 (加密降級) 
 <a name="encryption-downgrade-activity-potential-skeleton-key-attack"></a>
 
-舊名稱：加密降級活動
+先前的名稱：加密降級活動
 
 **說明**加密降級是一種減弱 Kerberos 的方法，它會針對通訊協定以最高加密層級進行加密的不同欄位，對其加密層級降級。 攻擊者將能較為輕鬆地對減弱的加密欄位進行離線暴力密碼破解。 利用弱式 Kerberos 加密 Cypher 的各種攻擊方法。 在此偵測中，Azure ATP 會了解電腦和使用者所使用的 Kerberos 加密類型，並在使用下列較弱的 Cypher 時向您發出警示：(1) 對來源電腦及/或使用者而言不尋常，以及 (2) 符合已知的攻擊手法。 
 
@@ -544,7 +543,7 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 
 ## <a name="remote-code-execution-attempt"></a>遠端程式碼執行嘗試
 <a name="remote-code-execution-attempt"></a>
-舊名稱：遠端程式碼執行嘗試
+先前的名稱：遠端程式碼執行嘗試
 
 **描述**
 
@@ -574,7 +573,7 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 ## <a name="suspicious-communication-over-dns"></a>透過 DNS 的可疑通訊
 <a name="suspicious-communication-over-dns"></a>
 
-舊名稱：透過 DNS 進行的可疑通訊 
+先前的名稱：透過 DNS 的可疑通訊 
 
 **描述**
 
@@ -597,7 +596,7 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 ## <a name="suspicious-modification-of-sensitive-groups"></a>敏感性群組的可疑修改
 <a name="suspicious-midification-of-sensitive-groups"></a>
 
-舊名稱：敏感性群組的可疑修改
+先前的名稱：敏感性群組的可疑修改
 
 **描述**
 
@@ -624,7 +623,7 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 ## <a name="suspicious-service-creation"></a>可疑的服務建立
 <a name="suspicious-service-creation"></a>
 
-舊名稱：可疑的服務建立
+先前的名稱：可疑的服務建立
 
 **描述**
 
@@ -650,7 +649,7 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 ## <a name="suspicious-vpn-connection"></a>可疑 VPN 連線
 <a name="suspicious-vpn-detection"></a>
 
-舊名稱：可疑的 VPN 連線 
+先前的名稱：可疑 VPN 連線 
 
 **描述**
 
@@ -671,41 +670,152 @@ VPN 行為模型以下列活動為基礎：使用者登入的機器以及使用�
 2.  請考慮禁止此使用者透過 VPN 連線。
 
 
-## <a name="unusual-protocol-implementation"></a>不尋常的通訊協定實作
+## <a name="suspected-wannacry-ransomware-attack"></a>可疑的 WannaCry 勒索軟體攻擊
 <a name="unusual-protocol-implementation"></a>
 
-舊名稱：異常的通訊協定實作，在未來的 Azure ATP 版本中，會將此群組的安全性警訊重新命名，並給予新的 externalId
+先前的名稱：不尋常的通訊協定實作 (可能為 WannaCry 勒索軟體攻擊)
 
 **描述**
 
-攻擊者會使用以非標準方式實作各種通訊協定 (SMB、Kerberos、NTLM) 的工具。 雖然 Windows 會接受這種類型的網路流量而不發出警告，但 Azure ATP 能夠辨識可能的惡意用途。 此行為可能會以越過雜湊和暴力密碼破解，以及透過進階勒索軟體的惡意探索等攻擊手法來表示。
+攻擊者會使用以非標準方式實作各種通訊協定的工具。 雖然 Windows 會接受這種類型的網路流量而不發出警告，但 Azure ATP 能夠辨識可能的惡意用途。 此行為表示進階勒索軟體所使用的技術，例如 WannaCry。
 
 **調查**
 
-從可疑活動時間軸識別異常的通訊協定，按一下安全性警訊，以前往其詳細資料頁面；下列通訊協定會出現在箭號上方：Kerberos 或 NTLM。
+在活動時間表上檢閱安全性警示中的不尋常活動。 按一下安全性警示以移至其詳細資料頁面，然後檢閱可能受影響的實體和證據清單。 
 
-- **Kerberos**：如果已使用 Mimikatz 等駭客工具 (可能是執行越過雜湊攻擊)，通常會觸發此警示。 檢查來源電腦所執行的應用程式是否實作自己的 Kerberos 堆疊，而不是根據 Kerberos RFC。 如果是這種情況，則為良性真肯定；而且您可以**關閉**警示。 若持續觸發警示，而且您先前的檢查仍為 true，您可以 [隱藏] 警示。
+這是*確判*、*良性確判*或*誤判*？ 
 
-- **NTLM**：可能是 WannaCry，或是 Metasploit、Medusa 和 Hydra 等工具。  
+1. 請檢查來源電腦上是否正在執行 WannaCry。 
 
-若要判斷這是否為 WannaCry 攻擊，請執行下列步驟：
+2. 如果是，則此警示為確判。 若要了解漏洞範圍：
+      - 調查來源電腦
+      - 調查遭到入侵的電腦。 
 
-1. 檢查來源電腦是否執行 Metasploit、Medusa 或 Hydra 等攻擊工具。
+2. 如果來源電腦並未執行攻擊工具，有時是應用程式實作自己的 NTLM 或 SMB 堆疊。 請檢查來源電腦所執行的應用程式是否實作自己的 NTLM 或 SMB 堆疊。
 
-2. 如果找不到任何攻擊工具，請檢查來源電腦所執行的應用程式是否實作自己的 NTLM 或 SMB 堆疊。
+      1. 如果電腦正在執行自己的堆疊，而這不應該發生，請修正應用程式設定。 在這個案例中，這是良性活動，您可以關閉安全性警示。
 
-3. 按一下來源電腦以移至其設定檔頁面。 檢查警示出現前後期間的事件，並搜尋異常活動，例如當時登入的使用者，以及被存取的資源。 如果您已啟用 Windows Defender ATP 整合，請按一下 [Windows Defender ATP] 徽章 ![wd 徽章](./media/wd-badge.png) 以進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序與警示。
+      2. 如果電腦正在執行自己的堆疊，且其設定正確，則可關閉安全性警示並將該電腦排除，因為這可能是良性活動。
+
+3. 按一下來源電腦以移至其設定檔頁面。 檢查警示出現前後期間的事件，並搜尋異常活動，例如當時登入的使用者，以及被存取的資源。 
+
+4. 如果您已啟用 Windows Defender ATP 整合，請按一下 [Windows Defender ATP] 徽章 ![wd 徽章](./media/wd-badge.png) 以進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序與警示。
 
 
 **補救**
 
-修補您所有的電腦，特別是套用安全性更新。
+1. 包含來源電腦。 
+      - [移除 WannaCry](https://support.microsoft.com/help/890830/remove-specific-prevalent-malware-with-windows-malicious-software-remo)
+      - WanaKiwi 可以解密受到某種勒索軟體支配的資料，但只適用於使用者尚未重新啟動或關閉電腦的情況。 如需詳細資訊，請參閱 [Wanna Cry Ransomware](https://answers.microsoft.com/en-us/windows/forum/windows_10-security/wanna-cry-ransomware/5afdb045-8f36-4f55-a992-53398d21ed07?auth=1) (Wanna Cry 勒索軟體)
+      - 尋找在活動期間登入的使用者，因為他們可能也遭到入侵。 將他們的密碼重設，並啟用 MFA 
+2. 修補您所有的電腦，確定已套用安全性更新。 
+      - [停用 SMBv1](https://blogs.technet.microsoft.com/filecab/2016/09/16/stop-using-smb1/)
 
-1. [停用 SMBv1](https://blogs.technet.microsoft.com/filecab/2016/09/16/stop-using-smb1/)
+## <a name="suspected-use-of-metasploit-hacking-framework"></a>可疑的 Metasploit 入侵架構使用
 
-2. [移除 WannaCry](https://support.microsoft.com/help/890830/remove-specific-prevalent-malware-with-windows-malicious-software-remo)
 
-3. WanaKiwi 可以解密受到某種勒索軟體支配的資料，但只適用於使用者尚未重新啟動或關閉電腦的情況。 如需詳細資訊，請參閱 [Wanna Cry Ransomware](https://answers.microsoft.com/en-us/windows/forum/windows_10-security/wanna-cry-ransomware/5afdb045-8f36-4f55-a992-53398d21ed07?auth=1) (Wanna Cry 勒索軟體)
+先前的名稱：不尋常的通訊協定實作 (可能使用 Metasploit 入侵工具)
+
+**描述**
+
+攻擊者會使用以非標準方式實作各種通訊協定 (SMB、Kerberos、NTLM) 的工具。 雖然 Windows 會接受這種類型的網路流量而不發出警告，但 Azure ATP 能夠辨識可能的惡意用途。 此行為表示可能是使用如 Metasploit 入侵架構的技術。 
+
+**調查**
+
+在活動時間表上檢閱安全性警示中的不尋常活動。 按一下安全性警示以移至其詳細資料頁面，然後檢閱可能受影響的實體和證據清單。
+
+這是*確判*、*良性確判*或*誤判*？ 
+
+1. 檢查來源電腦是否執行 Metasploit 或 Medusa 等攻擊工具。 
+
+2. 如果是，則為確判。 若要了解漏洞範圍：
+      - 調查來源電腦
+      - 調查遭到入侵的電腦。 
+
+3. 如果來源電腦並未執行攻擊工具，有時是應用程式實作自己的 NTLM 或 SMB 堆疊。 請檢查來源電腦所執行的應用程式是否實作自己的 NTLM 或 SMB 堆疊。
+
+4. 如果電腦正在執行自己的 NTML 或 SMB 堆疊，而這不應該發生，請修正應用程式設定。
+      1. 在這個案例中，這是良性活動，您可以關閉安全性警示。 
+      2. 如果電腦正在執行自己的堆疊，且其設定正確，則可關閉安全性警示並將該電腦排除，因為這可能是良性活動。
+
+5. 按一下來源電腦以移至其設定檔頁面。 檢查警示出現前後期間的事件，並搜尋異常活動，例如當時登入的使用者，以及被存取的資源。 如果您已啟用 Windows Defender ATP 整合，請按一下 [Windows Defender ATP] 徽章 ![wd 徽章](./media/wd-badge.png) 以進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序與警示。
+
+
+**補救**
+
+1. 重設遭到入侵之使用者的密碼，並啟用多重要素驗證。
+2. 包含來源電腦
+   1. 尋找執行攻擊的工具，並將它移除。
+   2. 搜尋在活動期間登入的使用者，因為他們可能也遭到入侵。
+   3. 重設其密碼，並啟用多重要素驗證。 
+4. 重設來源使用者的密碼，並啟用多重要素驗證。 
+5. [停用 SMBv1](https://blogs.technet.microsoft.com/filecab/2016/09/16/stop-using-smb1/)
+
+
+## <a name="suspected-overpass-the-hash-attack-kerberos"></a>可疑的 Overpass-the-Hash 攻擊 (Kerberos)
+<a name="unusual-protocol-implementation"></a>
+
+先前的名稱：不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊) 
+
+**描述**
+
+攻擊者會使用以非標準方式實作各種通訊協定 (例如 Kerberos 和 SMB) 的工具。 雖然 Windows 會接受這種類型的網路流量而不發出警告，但 Azure ATP 能夠辨識可能的惡意用途。 此行為可能會以越過雜湊和暴力密碼破解，以及透過進階勒索軟體的惡意探索等攻擊手法來表示。
+
+**調查**
+
+在活動時間表上檢閱安全性警示中的不尋常活動。 按一下安全性警示以移至其詳細資料頁面，然後檢閱可能受影響的實體和證據清單。
+
+這是*確判*、*良性確判*或*誤判*？ 
+
+ 1. 有時候應用程式會實作自己的 Kerberos 堆疊，而不是根據 Kerberos RFC。
+   1. 檢查來源電腦是否正在執行自己的 Kerberos 堆疊。 
+   2. 如果電腦正在執行自己的 Kerberos 堆疊，而這不應該發生，請修正應用程式設定。 在這個案例中，這是良性活動，您可以關閉安全性警示。 
+   3. 如果電腦正在執行自己的 Kerberos 堆疊，且其設定正確，則可關閉安全性警示並將該電腦排除，因為這可能是良性活動。
+
+ **補救**
+
+1. 重設遭到入侵之使用者的密碼，並啟用多重要素驗證。
+2. 包含來源電腦。 
+   1. 尋找執行攻擊的工具，並將它移除。
+   2. 搜尋在活動期間登入的使用者，因為他們可能也遭到入侵。 
+   3. 重設其密碼，並啟用多重要素驗證。 
+4. 重設來源使用者的密碼，並啟用多重要素驗證。 
+
+## <a name="suspected-brute-force-attack-smb"></a>可疑的暴力密碼破解攻擊 (SMB)
+<a name="unusual-protocol-implementation-smb"></a>
+
+先前的名稱：不尋常的通訊協定實作 (可能使用 Hydra 等惡意工具)
+
+**描述**
+
+攻擊者會使用以非標準方式實作各種通訊協定 (例如 SMB、Kerberos 和 NTLM) 的工具。 雖然 Windows 會接受這種類型的網路流量而不發出警告，但 Azure ATP 能夠辨識可能的惡意用途。 此行為表示可能是暴力密碼破解技術。 
+
+**調查**
+
+在活動時間表上檢閱安全性警示中的不尋常活動。 按一下安全性警示以移至其詳細資料頁面，然後檢閱可能受影響的實體和證據清單。
+
+這是*確判*、*良性確判或*誤判*？ 
+
+1. 檢查來源電腦是否執行如 Hydra 等攻擊工具。 
+   1. 如果是，則為確判。 若要了解漏洞範圍：
+      - 調查來源電腦
+      - 調查遭到入侵的電腦。 
+
+2. 如果來源電腦並未執行攻擊工具，有時是應用程式實作自己的 NTLM 或 SMB 堆疊。 請檢查來源電腦所執行的應用程式是否實作自己的 NTLM 或 SMB 堆疊。
+
+3. 按一下來源電腦以移至其設定檔頁面。 檢查警示出現前後期間的事件，並搜尋異常活動，例如當時登入的使用者，以及被存取的資源。 如果您已啟用 Windows Defender ATP 整合，請按一下 [Windows Defender ATP] 徽章 ![wd 徽章](./media/wd-badge.png) 以進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序與警示。
+
+**補救**
+
+1. 重設被猜測之使用者的密碼，並啟用多重要素驗證。
+2. 將被猜測的使用者新增至關注清單中。
+3. 包含來源電腦
+   1. 尋找執行攻擊的工具，並將它移除。
+   2. 搜尋在活動期間登入的使用者，因為他們可能也遭到入侵。
+   3. 重設其密碼，並啟用多重要素驗證。 
+4. 在組織中強制執行複雜且很長的密碼。 複雜且很長的密碼提供必要的第一層安全性，以防止暴力密碼破解攻擊。
+5. [停用 SMBv1](https://blogs.technet.microsoft.com/filecab/2016/09/16/stop-using-smb1/)
+
 
 ## <a name="user-and-ip-address-reconnaissance-smb"></a>使用者和 IP 位址偵察 (SMB)
 <a name="reconnaissance-using-smb-session-enumeration"></a> 使用 SMB 工作階段列舉的偵察

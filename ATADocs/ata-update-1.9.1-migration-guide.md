@@ -13,20 +13,19 @@ ms.technology: ''
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: b645522c26f42b4864a68f3793cb9474e98d2149
-ms.sourcegitcommit: ec5dc294d9c6cd5693b13a7c5e7cf1bdd6fb47d7
+ms.openlocfilehash: 80d6b2744c3299bf92d0c4082085dbd872403cc0
+ms.sourcegitcommit: 9acf035f6f2ce32290e00d2e45385ae7993bb63a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53179128"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53334982"
 ---
 # <a name="ata-version-191"></a>ATA 1.9.1 版
 
-## <a name="introduction"></a>簡介
 
 本文說明 Microsoft Advanced Threat Analytics (ATA) 1.9 版更新 1 中所修正的問題。 此更新的組件編號為 1.9.7412。
 
-## <a name="fixed-issues-included-in-this-update"></a>此更新包含的問題修正：
+## <a name="fixed-issues-included-in-this-update"></a>此更新包含的問題修正
 
 - ATA 1.8 版至 1.9 版之間，大型資料庫可能發生的移轉失敗問題。
 - 當使用最新版 Microsoft Edge 瀏覽器並切換使用者時，瀏覽器可能會停止回應。
@@ -37,11 +36,11 @@ ms.locfileid: "53179128"
 - 將可疑活動匯出至 Microsoft Excel 不一致。 偶而會產生錯誤而發生失敗。  
 
 
-## <a name="improvements-included-in-this-update"></a>此更新包含的改善： 
+## <a name="improvements-included-in-this-update"></a>此更新包含的改善
 - 變更需要 Microsoft 協助工具標準 (MAS) 認證。
 - 包含其他的效能和安全性修正。
 
-## <a name="get-this-update"></a>取得此更新：
+## <a name="get-this-update"></a>取得此更新
 
 Microsoft Advanced Threat Analytics 1.9 版的更新可從 Microsoft Update 或手動下載取得。
 

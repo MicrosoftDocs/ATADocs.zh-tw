@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 12/09/2018
+ms.date: 12/17/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 5d2e359db2cd3b0d358ce14a9f662a82c47e23a2
-ms.sourcegitcommit: d1c9c3e69b196f6086a8f100e527553cf0d95aac
+ms.openlocfilehash: 929b0db30632e737e6371d473639f1e22532f75f
+ms.sourcegitcommit: c3ee9495b9d4db985783dcabcc4fa77c7c8eaed4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53125110"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53454541"
 ---
 *適用於：Azure 進階威脅防護*
 
@@ -57,36 +57,37 @@ Azure ATP 可以將安全性警示與監視警示事件轉送到您的 SIEM。 �
 
 > [!div class="mx-tableFixed"] 
 
-|新安全性警訊名稱|舊安全性警訊名稱|唯一的 ExternalId|
+|新安全性警訊名稱|舊安全性警訊名稱|唯一的 externalId|
 |---------|----------|---------|
 |帳戶列舉偵察|使用帳戶列舉偵查|2003|
 |Honeytoken 活動|Honeytoken 活動|2014|
 |資料保護 API (DPAPI) 主要金鑰的惡意要求|惡意的資料保護私人資訊要求|2020|
 |網路對應偵察 (DNS)|使用 DNS 探查|2007|
+|遠端程式碼執行嘗試|遠端程式碼執行嘗試|2019|
 |可疑的暴力密碼破解攻擊 (LDAP)|使用 LDAP 簡單繫結的暴力密碼破解攻擊|2004|
+|可疑的 DCShadow 攻擊 (網域控制站升階)|可疑的網域控制站升級 (潛在的 DCShadow 攻擊)|2028|
+|可疑的 DCShadow 攻擊 (網域控制站複寫要求)|可疑的網域控制站複寫要求 (可能為 DCShadow 攻擊)|2029|
 |可疑的 DCSync 攻擊 (目錄服務的複寫)|惡意的目錄服務複寫|2006|
 |可疑的黃金票證使用 (加密降級)|加密降級活動 (可能為黃金票證攻擊)|2009|
-|可疑的黃金票證使用 (時間異常) |Kerberos 黃金票證 - 時間異常|2022|
-|可疑的黃金票證使用 (不存在的帳戶)|Kerberos 黃金票證 - 不存在的帳戶|2027|
-|可疑的黃金票證使用 (票證異常) - 預覽功能|NA|2032|
 |可疑的黃金票證使用 (偽造的授權資料) |使用偽造授權資料提升權限|2013|
+|可疑的黃金票證使用 (不存在的帳戶)|Kerberos 黃金票證 - 不存在的帳戶|2027|
+|可疑的黃金票證使用 (時間異常) |Kerberos 黃金票證 - 時間異常|2022|
+|可疑的黃金票證使用 (票證異常) - 預覽功能|NA|2032|
 |可疑的身分識別竊取 (雜湊傳遞)|使用傳遞雜湊攻擊竊取身分|2017 年|
 |可疑的身分識別竊取 (票證傳遞)|使用傳遞票證攻擊竊取身分|2018 年|
+|可疑的暴力密碼破解攻擊 (SMB)|不尋常的通訊協定實作 (可能使用 Hydra 等惡意工具)|2033|
+|可疑的暴力密碼破解攻擊 (Kerberos NTLM)|可疑的驗證失敗|2023|
 |可疑的 Overpass-the-Hash 攻擊 (加密降級)|加密降級活動 (可能為 Overpass-the-Hash 攻擊)|2008|
+|可疑的 Overpass-the-Hash 攻擊 (Kerberos)|不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)|2002|
+|可疑的 Metasploit 入侵架構使用|不尋常的通訊協定實作 (可能使用 Metasploit 入侵工具)|2034|
 |可疑的萬能金鑰攻擊 (加密降級)|加密降級活動 (可能為萬能金鑰攻擊)|2010|
-|可疑的 DCShadow 攻擊 (DC 複寫要求)|可疑的網域控制站複寫要求 (可能為 DCShadow 攻擊)|2029|
-|可疑的 DCShadow 攻擊 (網域控制站升階)|可疑的網域控制站升級 (潛在的 DCShadow 攻擊)|2028|
-|遠端程式碼執行嘗試|遠端程式碼執行嘗試|2019|
+|可疑的 WannaCry 勒索軟體攻擊|不尋常的通訊協定實作 (可能為 WannaCry 勒索軟體攻擊)|2035|
 |透過 DNS 的可疑通訊|透過 DNS 的可疑通訊|2031|
 |敏感性群組的可疑修改|敏感性群組的可疑修改|2024|
 |可疑的服務建立|可疑的服務建立|2026|
 |可疑 VPN 連線|可疑 VPN 連線|2025|
-|可疑的 WannaCry 勒索軟體攻擊|不尋常的通訊協定實作 (可能為 WannaCry 勒索軟體攻擊)*|2035|
-|可疑的暴力密碼破解攻擊 (SMB)|不尋常的通訊協定實作 (可能使用 Hydra 等惡意工具)|2033|
-|可疑的 Metasploit 入侵架構使用|不尋常的通訊協定實作 (可能使用 Metasploit 入侵工具)|2034|
-|可疑的 Overpass-the-Hash 攻擊 (Kerberos)|不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)|2002|
-|使用者和 IP 位址偵察 (SMB) |使用 SMB 工作階段列舉探查|2012|
 |使用者和群組成員資格偵察 (SAMR)|使用目錄服務查詢探查|2021|
+|使用者和 IP 位址偵察 (SMB) |使用 SMB 工作階段列舉探查|2012|
 
 ## <a name="sample-logs"></a>範例記錄檔
 
@@ -119,6 +120,9 @@ Azure ATP 可以將安全性警示與監視警示事件轉送到您的 SIEM。 �
 ### <a name="suspected-brute-force-attack-ldap"></a>可疑的暴力密碼破解攻擊 (LDAP)
 02-21-2018  16:20:21    Auth.Warning    192.168.0.220   1 2018-02-21T14:20:06.156238+00:00 CENTER CEF 6076 LdapBruteForceSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|LdapBruteForceSecurityAlert|使用 LDAP 簡單繫結的暴力密碼破解攻擊|5|start=2018-02-21T14:19:41.7422810Z app=Ldap suser=Wofford Thurston shost=CLIENT1 msg=有使用 LDAP 通訊協定對來自 CLIENT1 的 Wofford Thurston (軟體工程師) 進行暴力密碼破解攻擊的嘗試 (100 次猜測嘗試)。 cnt=100 externalId=2004 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/57b8ac96-7907-4971-9b27-ec77ad8c029a cs2Label=trigger cs2=update
 
+### <a name="suspected-brute-force-attack-kerberos-ntlm"></a>可疑的暴力密碼破解攻擊 (Kerberos NTLM)
+10-29-2018  11:20:47    Auth.Warning    192.168.0.202   1 2018-10-29T09:20:44.478827+00:00 DC3 CEF 3908 BruteForceSecurityAlert ï»¿0|Microsoft|Azure ATP|2.52.5704.46184|BruteForceSecurityAlert|可疑的驗證失敗|5|start=2018-10-29T09:19:44.9512286Z app=Kerberos shost=CLIENT1 msg=可疑的驗證失敗，表示從 CLIENT1 偵測到潛在的暴力密碼破解攻擊。 externalId=2023 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/85042c8e-27fa-49b3-8667-dabc1aa31580 cs2Label=trigger cs2=new
+
 ### <a name="suspected-golden-ticket-usage-encryption-downgrade"></a>可疑的黃金票證使用 (加密降級)
 10-29-2018  11:25:07    Auth.Warning    192.168.0.202   1 2018-10-29T09:25:01.007701+00:00 DC3 CEF 3908 GoldenTicketEncryptionDowngradeS ï»¿0|Microsoft|Azure ATP|2.52.5704.46184|GoldenTicketEncryptionDowngradeSecurityAlert|加密降級活動 (可能為黃金票證攻擊)|5|start=2018-10-29T09:37:49.0849130Z app=Kerberos msg=W10-000007-Lap 從 W10-000007-Lap 的 Kerberos 服務要求 (TGS_REQ) 中，使用了較弱的加密方法 (RC4)，存取 host/domain1.test.local。 externalId=2009 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/f01f8403-88b2-437e-b4ad-d72485fe05ac cs2Label=trigger cs2=new
 
@@ -141,10 +145,10 @@ Azure ATP 可以將安全性警示與監視警示事件轉送到您的 SIEM。 �
 02-21-2018  17:04:47    Auth.Error  192.168.0.220   1 2018-02-21T15:04:33.537583+00:00 CENTER CEF 6076 PassTheTicketSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|PassTheTicketSecurityAlert|使用傳遞票證攻擊竊取身分|10|start=2018-02-21T15:02:22.2577465Z app=Kerberos suser=Eugene Jenkins msg=Eugene Jenkins (軟體工程師) 的 Kerberos 票證從 Admin-PC 被竊取至 Victom-PC，並用於存取 krbtgt/DOMAIN1.TEST.LOCAL。 externalId=2018 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/511f1487-2915-477d-be2e-04cfba702ccd cs2Label=trigger cs2=new
 
 ### <a name="suspected-over-pass-the-hash-attack-encryption-downgrade"></a>可疑的 Overpass-the-Hash 攻擊 (加密降級) 
-02-21-2018  16:21:07    Auth.Warning    192.168.0.220   1 2018-02-21T14:20:54.145833+00:00 CENTER CEF 6076 EncryptionDowngradeSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|EncryptionDowngradeSecurityAlert|加密降級活動|5|start=2018-02-21T14:19:41.8737870Z app=Kerberos msg=根據先前學習的行為，來自 CLIENT1 的 AS_REQ 訊息欄位之 Encrypted_Timestamp 的加密方法已遭到降級。 這可能是有人從 CLIENT1 使用過度傳遞雜湊竊取認證的結果。 externalId=2011 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/6354b9ed-6a39-4f5b-b10e-f51bbee879d2 cs2Label=trigger cs2=update
+02-21-2018  16:21:07    Auth.Warning    192.168.0.220   1 2018-02-21T14:20:54.145833+00:00 CENTER CEF 6076 EncryptionDowngradeSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|EncryptionDowngradeSecurityAlert|加密降級活動|5|start=2018-02-21T14:19:41.8737870Z app=Kerberos msg=根據先前學習的行為，來自 CLIENT1 的 AS_REQ 訊息欄位之 Encrypted_Timestamp 的加密方法已遭到降級。 這可能是有人從 CLIENT1 使用過度傳遞雜湊竊取認證的結果。 externalId=2008 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/6354b9ed-6a39-4f5b-b10e-f51bbee879d2 cs2Label=trigger cs2=update
 
 ### <a name="suspected-skeleton-key-attack-encryption-downgrade"></a>可疑的萬能金鑰攻擊 (加密降級) 
-02-21-2018  16:21:07    Auth.Warning    192.168.0.220   1 2018-02-21T14:20:54.145833+00:00 CENTER CEF 6076 EncryptionDowngradeSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|EncryptionDowngradeSecurityAlert|加密降級活動|5|start=2018-02-21T14:19:41.8737870Z app=Kerberos msg=根據先前學習的行為，來自 CLIENT1 的 KRB_ERR 訊息之 ETYPE_INFO2 欄位的加密方法已遭到降級。 這可能是 DC1 上基本架構金鑰的結果。 externalId=2011 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/6354b9ed-6a39-4f5b-b10e-f51bbee879d2 cs2Label=trigger cs2=new
+02-21-2018  16:21:07    Auth.Warning    192.168.0.220   1 2018-02-21T14:20:54.145833+00:00 CENTER CEF 6076 EncryptionDowngradeSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|EncryptionDowngradeSecurityAlert|加密降級活動|5|start=2018-02-21T14:19:41.8737870Z app=Kerberos msg=根據先前學習的行為，來自 CLIENT1 的 KRB_ERR 訊息之 ETYPE_INFO2 欄位的加密方法已遭到降級。 這可能是 DC1 上基本架構金鑰的結果。 externalId=2010 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/6354b9ed-6a39-4f5b-b10e-f51bbee879d2 cs2Label=trigger cs2=new
 
 ### <a name="suspected-dcsync-attack-replication-of-directory-services"></a>可疑的 DCSync 攻擊 (目錄服務的複寫)
 02-21-2018  16:20:06    Auth.Warning    192.168.0.220   1 2018-02-21T14:19:54.254930+00:00 CENTER CEF 6076 MaliciousServiceCreationSecurity ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|MaliciousServiceCreationSecurityAlert|可疑服務建立|5|start=2018-02-21T14:19:41.7897808Z app=ServiceInstalledEvent shost=CLIENT1 msg=user1 在 CLIENT1 上建立 MaliciousService 以執行潛在的惡意命令。 externalId=2026 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/179229b6-b791-4895-b5aa-fdf3747a325c cs2Label=trigger cs2=update

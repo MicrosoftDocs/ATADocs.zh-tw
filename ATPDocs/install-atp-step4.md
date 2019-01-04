@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 11/28/2018
+ms.date: 12/16/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,14 +13,14 @@ ms.technology: ''
 ms.assetid: 51911e39-76c7-4dcd-bc0b-ec6235d0403f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: fd2a2316f63b5324e7869878104bd663e48b2771
-ms.sourcegitcommit: e2a89030c31376c6798697a62b484f45ed54e679
+ms.openlocfilehash: 5b5d588f11bb1c7a665cf4727cb996e5261b7237
+ms.sourcegitcommit: 281d8ea451b6ac726331d0032c344651b1a964b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52501099"
+ms.lasthandoff: 12/16/2018
+ms.locfileid: "53450383"
 ---
-適用於：Azure 進階威脅防護
+適用對象：*Azure 進階威脅防護*
 
 
 
@@ -38,9 +38,9 @@ ms.locfileid: "52501099"
 在網域控制站上執行下列步驟。
 
 1. 檢查機器是否可以連線到相關的 Azure ATP 雲端服務端點：
-  - https://triprd1wceuw1sensorapi.atp.azure.com (適用於歐洲)  
-  - https://triprd1wcuse1sensorapi.atp.azure.com (適用於美國)
-  - https://triprd1wcasse1sensorapi.atp.azure.com (適用於亞洲)
+  - [https://triprd1wceuw1sensorapi.atp.azure.com](https://triprd1wceuw1sensorapi.atp.azure.com) (適用於歐洲)  
+  - [https://triprd1wcuse1sensorapi.atp.azure.com](https://triprd1wcuse1sensorapi.atp.azure.com) (適用於美國)
+  - [https://triprd1wcasse1sensorapi.atp.azure.com](https://triprd1wcasse1sensorapi.atp.azure.com) (適用於亞洲)
 
 2. 將安裝檔案從 zip 檔案解壓縮。 
 > [!NOTE] 

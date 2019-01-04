@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 12/09/2018
+ms.date: 12/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,16 +13,25 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: cde3c56d0b8ad029337e03602c805930002f8ed4
-ms.sourcegitcommit: d1c9c3e69b196f6086a8f100e527553cf0d95aac
+ms.openlocfilehash: af08c371f19288043eba2377ea03d1a90bd2eaab
+ms.sourcegitcommit: 39822aa24bddb72eea55f484d9df290cce2e19d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53125042"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737044"
 ---
 *適用於：Azure 進階威脅防護*
 
-# <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能 
+# <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能
+
+## <a name="azure-atp-release-260"></a>Azure ATP 2.60 版
+目前計劃於 2019 年的第一週發行 Azure ATP 2.60 版。 在這段期間，若發現任何需要暫時更新的重大問題，將會視需要進行更新。
+
+## <a name="azure-atp-release-259"></a>Azure ATP 2.59 版
+發行日期：2018 年 12 月 16 日
+
+- 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
+
 
 ## <a name="azure-atp-release-258"></a>Azure ATP 2.58 版
 
@@ -32,6 +41,7 @@ ms.locfileid: "53125042"
 Azure ATP 一系列不尋常的通訊協定實作安全性警示先前共用 1 個 externalId (2002)，現在分割為 4 個不同警示，每個都含有對應的唯一 externalId。 
 
 ### <a name="new-alert-externalids"></a>新的警示 externalId
+
 > [!div class="mx-tableFixed"] 
 
 |新安全性警訊名稱|舊安全性警訊名稱|唯一的 externalId|

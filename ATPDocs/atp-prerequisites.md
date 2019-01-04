@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 11/28/2018
+ms.date: 12/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,14 +13,14 @@ ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ad2a7e86b2280e1b30a7605bc832ede1e19cb7a2
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: 1fc3930fc4b38b396bda2c3ff50795d835910439
+ms.sourcegitcommit: 1c657f269aaece71b2126df55a37f8c43851539a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52744943"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53335416"
 ---
-適用於：Azure 進階威脅防護
+適用對象：*Azure 進階威脅防護*
 
 
 
@@ -37,13 +37,13 @@ Azure ATP 是由 Azure ATP 雲端服務組成，其包含 Azure ATP 入口網站
 
 此必要條件指南分成下列各節，以確保您了解成功部署 Azure ATP 所需的一切項目。 
 
-[開始之前](#before-you-start)︰列出開始安裝之前應收集的資訊，以及您應具備的帳戶和網路實體。
+[開始之前](#before-you-start)：列出開始安裝之前應收集的資訊，以及您應具備的帳戶和網路實體。
 
 [Azure ATP 入口網站](#azure-atp-workspace-management-portal-and-workspace-portal-requirements)：描述 Azure ATP 入口網站的瀏覽器需求。
 
 [Azure ATP 感應器](#azure-atp-lightweight-sensor-requirements)：列出 Azure ATP 感應器的硬體及軟體需求。
 
-[Azure ATP 獨立感應器](#azure-atp-sensor-requirements)：列出 Azure ATP 獨立感應器的硬體及軟體需求，以及需在 Azure ATP 獨立感應器伺服器上進行的設定。
+[Azure ATP 獨立感應器](#azure-atp-sensor-requirements)：列出 Azure ATP 獨立感應器的硬體和軟體需求，以及必須在 Azure ATP 獨立感應器伺服器上進行的設定。
 
 ## <a name="before-you-start"></a>開始之前
 本節列出在開始安裝 Azure ATP 前，您應收集的資訊及您應擁有的帳戶與網路實體資訊。
@@ -61,11 +61,11 @@ Azure ATP 是由 Azure ATP 雲端服務組成，其包含 Azure ATP 入口網站
 
 - 如果您嘗試在設定了 NIC 小組介面卡的電腦上安裝 Azure ATP 感應器，則會收到安裝錯誤。 如果您想要在已設定 NIC 小組的電腦上安裝 Azure ATP 感應器，請參閱 [Azure ATP 感應器 NIC 小組問題](troubleshooting-atp-known-issues.md#nic-teaming)。
 
--    建議︰使用者應該擁有「刪除的物件」容器的唯讀權限。 這可讓 Azure ATP 偵測到透過 Active Directory 進行的使用者刪除作業。 如需設定「已刪除物件」容器的唯讀權限相關資訊，請參閱[檢視或設定目錄物件的權限](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx) \(英文\) 文章中的＜變更刪除的物件容器的權限＞。
+-    建議：使用者應該擁有「刪除的物件」容器的唯讀權限。 這可讓 Azure ATP 偵測到透過 Active Directory 進行的使用者刪除作業。 如需設定「已刪除物件」容器的唯讀權限相關資訊，請參閱[檢視或設定目錄物件的權限](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx) \(英文\) 文章中的＜變更刪除的物件容器的權限＞。
 
--   選擇性︰沒有任何網路活動之使用者的使用者帳戶。 此帳戶設定為 Azure ATP Honeytoken 使用者。 如需詳細資訊，請參閱[設定排除項目和 Honeytoken 使用者](install-atp-step7.md)。
+-   選擇性：沒有任何網路活動之使用者的使用者帳戶。 此帳戶設定為 Azure ATP Honeytoken 使用者。 如需詳細資訊，請參閱[設定排除項目和 Honeytoken 使用者](install-atp-step7.md)。
 
--   選擇性：在部署獨立感應器時，必須將 Windows 事件 4776、4732、4733、4728、4729、4756、4757 與 7045 轉送給 Azure ATP，以進一步增強 Azure ATP 對雜湊傳遞、暴力密碼破解、敏感性群組修改、Honey Token 偵測與惡意服務建立的抵禦能力。 Azure ATP 感應器自動支援這些事件。 在 Azure ATP 獨立感應器中，這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
+-   選擇性：在部署獨立感應器時，必須將 Windows 事件 4776、4732、4733、4728、4729、4756、4757 與 7045 轉送給 Azure ATP，以進一步增強 Azure ATP 對雜湊傳遞、暴力密碼破解、修改敏感性群組、Honey Token 偵測與建立惡意服務的抵禦能力。 Azure ATP 感應器自動支援這些事件。 在 Azure ATP 獨立感應器中，這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
 
 ## <a name="azure-atp-portal-requirements"></a>Azure ATP 入口網站需求
 您可透過瀏覽器來存取 Azure ATP 入口網站，其支援下列瀏覽器和設定︰
@@ -133,6 +133,10 @@ Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的�
 |Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|輸入|
 |RADIUS|UDP|1813|RADIUS|輸入|
 |TLS 至 RDP 連接埠|TCP|3389|網路上的所有裝置|兩者|
+
+### <a name="windows-event-logs"></a>Windows 事件記錄檔
+Azure ATP 偵測依賴特定的 Windows 事件記錄檔，其可由感應器從網域控制站剖析。 若要稽核正確的事件並將其包含在 Windows 事件記錄檔中，則網域控制站需要精確的進階稽核原則設定。 如需詳細資訊，請參閱[進階稽核原則檢查](atp-advanced-audit-policy.md)。
+
 
 > [!NOTE]
 > - 使用 Directory 服務使用者帳戶，感應器會查詢您組織中的端點以尋找使用 SAM-R (網路登入) 的本機系統管理員，以建置[橫向移動路徑圖表](use-case-lateral-movement-path.md)。 如需詳細資訊，請參閱[設定 SAM-R 必要權限](install-atp-step8-samr.md)。

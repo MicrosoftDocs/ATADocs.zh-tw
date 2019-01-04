@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 12/09/2018
+ms.date: 12/19/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8604e3cfead3b52fd9f0d1ed38bb7d806cf50f46
-ms.sourcegitcommit: d1c9c3e69b196f6086a8f100e527553cf0d95aac
+ms.openlocfilehash: 5e4c8ccc1af72a1951b1437f0d19468b7ca1382f
+ms.sourcegitcommit: d68a44b3230dc4c522d8d895eb3bc93feacae62e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53125127"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53615302"
 ---
 *適用於：Azure 進階威脅防護*
 
@@ -37,7 +37,7 @@ ms.locfileid: "53125127"
 
 ## <a name="security-alert-name-mapping-and-unique-externalid"></a>安全性警訊名稱對應和唯一的 externalId
 
-在 2.56 版中，所有現有的 Azure ATP 安全性警訊皆以更容易了解的名稱重新命名。 新舊名稱之間的對應和其相對應的唯一 externalId，皆如下表所列。 Microsoft 建議對指令碼或自動化使用警示 externalId 來取代警示名稱，因為只有安全性警訊 externalId 具有永久性而不會變更。 
+在 2.56 版中，所有現有的 Azure ATP 安全性警訊皆以更容易了解的名稱重新命名。 新舊名稱之間的對應和其相對應的唯一 externalId，皆如下表所列。 Microsoft 建議對指令碼或自動化使用警示 externalId 來取代警示名稱，因為只有安全性警訊 externalId 具有永久性而不會變更。
 
 > [!div class="mx-tableFixed"] 
 
@@ -55,26 +55,30 @@ ms.locfileid: "53125127"
 |可疑的黃金票證使用 (加密降級)|加密降級活動 (可能為黃金票證攻擊)|2009|
 |可疑的黃金票證使用 (偽造的授權資料) |使用偽造授權資料提升權限|2013|
 |可疑的黃金票證使用 (不存在的帳戶)|Kerberos 黃金票證 - 不存在的帳戶|2027|
-|可疑的黃金票證使用 (票證異常) |Kerberos 黃金票證 - 票證異常|2022|
-|可疑的黃金票證使用 (時間異常) - 預覽功能| NA|2032|
+|可疑的黃金票證使用 (時間異常) |Kerberos 黃金票證 - 時間異常|2022|
+|可疑的黃金票證使用 (票證異常) - 預覽功能|NA|2032|
 |可疑的身分識別竊取 (雜湊傳遞)|使用傳遞雜湊攻擊竊取身分|2017 年|
 |可疑的身分識別竊取 (票證傳遞)|使用傳遞票證攻擊竊取身分|2018 年|
+|可疑的暴力密碼破解攻擊 (SMB)|不尋常的通訊協定實作 (可能使用 Hydra 等惡意工具)|2033|
+|可疑的暴力密碼破解攻擊 (Kerberos NTLM)|可疑的驗證失敗|2023|
 |可疑的 Overpass-the-Hash 攻擊 (加密降級)|加密降級活動 (可能為 Overpass-the-Hash 攻擊)|2008|
+|可疑的 Overpass-the-Hash 攻擊 (Kerberos)|不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)|2002|
+|可疑的 Metasploit 入侵架構使用|不尋常的通訊協定實作 (可能使用 Metasploit 入侵工具)|2034|
 |可疑的萬能金鑰攻擊 (加密降級)|加密降級活動 (可能為萬能金鑰攻擊)|2010|
+|可疑的 WannaCry 勒索軟體攻擊|不尋常的通訊協定實作 (可能為 WannaCry 勒索軟體攻擊)|2035|
 |透過 DNS 的可疑通訊|透過 DNS 的可疑通訊|2031|
 |敏感性群組的可疑修改|敏感性群組的可疑修改|2024|
 |可疑的服務建立|可疑的服務建立|2026|
 |可疑 VPN 連線|可疑 VPN 連線|2025|
-|可疑的 WannaCry 勒索軟體攻擊|不尋常的通訊協定實作 (可能為 WannaCry 勒索軟體攻擊)|2002|
-|可疑的暴力密碼破解攻擊 (SMB)|不尋常的通訊協定實作 (可能使用 Hydra 等惡意工具)|2002|
-|可疑的 Metasploit 入侵架構使用|不尋常的通訊協定實作 (可能使用 Metasploit 入侵工具)|2002|
-|可疑的 Overpass-the-Hash 攻擊 (Kerberos)|不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)|2002|
 |使用者和群組成員資格偵察 (SAMR)|使用目錄服務查詢探查|2021|
 |使用者和 IP 位址偵察 (SMB) |使用 SMB 工作階段列舉探查|2012|
 
 
+
+
 ## <a name="account-enumeration-reconnaissance"></a>帳戶列舉偵察
 <a name="reconnaissance-using-account-enumeration"></a>
+
 先前的名稱：使用帳戶列舉偵查
 
 **描述**
@@ -141,9 +145,9 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 1. 來源電腦是否正在對 Active Directory 執行組織核准的進階安全性掃描程式？
 
-2. 如果是且一律應該這麼做，請**關閉並排除**可疑活動。
+2. 如果是且應一律這麼做，請**關閉並排除**警示。
 
-3. 如果是且不應該這麼做，請**關閉**可疑活動。
+3. 如果是且不應這麼做，請**關閉**警示。
 
 **補救**
 
@@ -189,16 +193,16 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 **調查**
 
-1.  按一下 [下載詳細資料] 以在 Excel 試算表中檢視完整資訊。 以下是可提供的資訊： 
+1. 按一下 [下載詳細資料] 以在 Excel 試算表中檢視完整資訊。 以下是可提供的資訊： 
    -    被攻擊帳戶的清單
    -    登入嘗試成功進行驗證之被猜測帳戶的清單
    -    如果驗證嘗試是使用 NTLM 來執行，您會看到相關的事件活動 
    -    如果驗證嘗試是使用 Kerberos 來執行，您會看到相關的網路活動
    -  如果驗證嘗試是使用密碼噴灑，您會看到相關的網路活動
 
-2.  按一下來源電腦以移至其設定檔頁面。 檢查這些嘗試的期間所發生的事件，並搜尋不尋常的活動，例如當時登入的使用者，以及被存取的資源有哪些。 如果您已啟用 Windows Defender ATP 整合，請按一下 [Windows Defender ATP] 徽章 ![[Windows Defender ATP] 徽章](./media/wd-badge.png) 以進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序與警示。 
+2. 按一下來源電腦以移至其設定檔頁面。 檢查這些嘗試的期間所發生的事件，並搜尋不尋常的活動，例如當時登入的使用者，以及被存取的資源有哪些。 如果您已啟用 Windows Defender ATP 整合，請按一下 [Windows Defender ATP] 徽章 ![[Windows Defender ATP] 徽章](./media/wd-badge.png) 以進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理程序與警示。 
 
-3.  如果使用 NTLM 執行驗證，而您多次看到該警示，而且來源電腦嘗試存取之伺服器的相關資訊不足，請對涉及的網域控制站啟用 **NTLM 稽核**。 若要這樣做，請開啟事件 8004。 這是 NTLM 驗證事件，其中包含來源電腦嘗試存取之來源電腦、使用者帳戶及 **伺服器的相關資訊。 知道驗證確認是由哪一部伺服器所傳送之後，您可以透過檢查其事件 (例如 4624) 來調查它，以進一步了解驗證程序。 
+3. 如果使用 NTLM 執行驗證，而您多次看到該警示，而且來源電腦嘗試存取之伺服器的相關資訊不足，請對涉及的網域控制站啟用 **NTLM 稽核**。 若要這樣做，請開啟事件 8004。 這是 NTLM 驗證事件，其中包含來源電腦嘗試存取之來源電腦、使用者帳戶及 **伺服器的相關資訊。 知道驗證確認是由哪一部伺服器所傳送之後，您可以透過檢查其事件 (例如 4624) 來調查它，以進一步了解驗證程序。 
 
 **補救**
 
@@ -319,7 +323,7 @@ DCShadow 使用 RPC 和 LDAP 進行：
 
 **說明**加密降級是一種減弱 Kerberos 的方法，它會針對通訊協定以最高加密層級進行加密的不同欄位，對其加密層級降級。 攻擊者將能較為輕鬆地對減弱的加密欄位進行離線暴力密碼破解。 利用弱式 Kerberos 加密 Cypher 的各種攻擊方法。 在此偵測中，Azure ATP 會了解電腦和使用者所使用的 Kerberos 加密類型，並在使用下列較弱的 Cypher 時向您發出警示：(1) 對來源電腦及/或使用者而言不尋常，以及 (2) 符合已知的攻擊手法。 
 
-在黃金票證警示中，相較於先前學到的行為，來自來源電腦 TGS_REQ (服務要求) 訊息的 TGT 欄位加密方法已降級。 這不是依據時間異常偵測 (如同其他黃金票證偵測)。 此外，沒有 Kerberos 驗證要求與先前由 ATP 偵測到的服務要求相關聯。
+在黃金票證警示中，相較於先前學到的行為，來自來源電腦 TGS_REQ (服務要求) 訊息的 ticket granting ticket (TGT) 欄位加密方法已降級。 這不是依據時間異常偵測 (如同其他黃金票證偵測)。 此外，沒有 Kerberos 驗證要求與先前由 ATP 偵測到的服務要求相關聯。
 
 **調查**
 1. 某些資源不支援強式加密方法，並可能觸發此警示。
@@ -600,7 +604,7 @@ DNS 通訊協定中有數種查詢類型。 Azure ATP 會偵測源自於非 DNS 
 
 **描述**
 
-攻擊者將使用者新增至具有高權限的群組。 如此一來就能存取更多資源並取得永續性。 此偵測需要分析使用者的群組修改活動，並在敏感性群組中出現異常新增時發出警示。 Azure ATP 會持續執行分析。 可觸發警示的最低期限是每個網域控制站一個月。
+攻擊者通常會將使用者新增至具有高權限的群組。 這麼做能獲得更多資源的存取權，以及持續入侵的管道。 此偵測需要分析使用者的群組修改活動，並在敏感性群組中出現異常新增時發出警示。 Azure ATP 會持續執行分析。 可觸發警示的最低期限是每個網域控制站一個月。
 
 如需 Azure ATP 中敏感性群組的定義，請參閱[處理敏感性帳戶](sensitive-accounts.md)。
 
@@ -706,7 +710,7 @@ VPN 行為模型以下列活動為基礎：使用者登入的機器以及使用�
 
 1. 包含來源電腦。 
       - [移除 WannaCry](https://support.microsoft.com/help/890830/remove-specific-prevalent-malware-with-windows-malicious-software-remo)
-      - WanaKiwi 可以解密受到某種勒索軟體支配的資料，但只適用於使用者尚未重新啟動或關閉電腦的情況。 如需詳細資訊，請參閱 [Wanna Cry Ransomware](https://answers.microsoft.com/en-us/windows/forum/windows_10-security/wanna-cry-ransomware/5afdb045-8f36-4f55-a992-53398d21ed07?auth=1) (Wanna Cry 勒索軟體)
+      - WanaKiwi 可以解密受到某種勒索軟體支配的資料，但只適用於使用者尚未重新啟動或關閉電腦的情況。 如需詳細資訊，請參閱 [Wanna Cry Ransomware](https://answers.microsoft.com/en-us/windows/forum/windows_10-security/wanna-cry-ransomware/5afdb045-8f36-4f55-a992-53398d21ed07?auth=1) (WannaCry 勒索軟體)
       - 尋找在活動期間登入的使用者，因為他們可能也遭到入侵。 將他們的密碼重設，並啟用 MFA 
 2. 修補您所有的電腦，確定已套用安全性更新。 
       - [停用 SMBv1](https://blogs.technet.microsoft.com/filecab/2016/09/16/stop-using-smb1/)
@@ -816,10 +820,70 @@ VPN 行為模型以下列活動為基礎：使用者登入的機器以及使用�
 4. 在組織中強制執行複雜且很長的密碼。 複雜且很長的密碼提供必要的第一層安全性，以防止暴力密碼破解攻擊。
 5. [停用 SMBv1](https://blogs.technet.microsoft.com/filecab/2016/09/16/stop-using-smb1/)
 
+## <a name="suspected-brute-force-attack-kerberos-ntlm"></a>可疑的暴力密碼破解攻擊 (Kerberos NTLM)
+<a name="suspicious-authentication-failures"></a>
+
+先前的名稱：可疑的驗證失敗
+
+**說明**在暴力密碼破解攻擊中，攻擊者會嘗試使用許多不同的密碼對不同的帳戶進行驗證，直到至少找到一個帳戶的正確密碼。 找到後，攻擊者就可以使用該帳戶登入。
+
+在此偵測中，當偵測到使用 Kerberos 或 NTLM 驗證失敗多次時，就會觸發警示。 這可能是在許多使用者之間水平使用少量密碼、只對少數使用者垂直使用大量密碼、或這兩個選項的任意組合。
+
+**時間範圍**可觸發此特定警示前的最小時間間隔，最少為部署感應器後的一週。
+
+**調查**
+
+1. 按一下警示以檢視： 
+   - 被攻擊帳戶的清單
+   - 登入嘗試成功進行驗證之被猜測帳戶的清單
+   - 如果驗證嘗試是使用 NTLM 來執行，您將會看到相關的事件活動
+   - 如果驗證嘗試是使用 Kerberos 來執行，您將會看到相關的網路活動
+2. 按一下來源電腦以移至其設定檔頁面。 檢查進行這些嘗試期間所發生的事件，並搜尋不尋常的活動，例如當時登入的使用者，以及受到存取的資源。 若您啟用了 Windows Defender ATP 整合，請按一下 Windows Defender ATP 徽章以進一步調查電腦。 使用 Windows Defender ATP 查看警示期間發生的處理程序與警示。
+
+3. 若使用 NTLM 執行驗證，而您多次看到該警示，且沒有關於來源電腦嘗試存取伺服器的足夠資訊，則請對涉及的網域控制站啟用 NTLM 稽核。 透過開啟事件 8004 對涉及的網域控制站啟用 NTLM 稽核。 這是 NTLM 驗證事件，其中包含來源電腦嘗試存取之來源電腦、使用者帳戶及伺服器的相關資訊。 得知驗證確認是由哪一部伺服器傳送後，您可以透過檢查事件 (例如 4624) 對伺服器進行調查，以進一步了解驗證程序。
+<br>
+1. 按一下 [下載詳細資料] 以在 Excel 試算表中檢視。 
+
+**補救**
+
+複雜且很長的密碼提供必要的第一層安全性，以防範暴力密碼破解攻擊。
+
+## <a name="user-and-group-membership-reconnaissance-samr"></a>使用者和群組成員資格偵察 (SAMR)
+
+先前的名稱：使用目錄服務查詢的偵察 <a name="reconnaissance-using-directory-service-queries"></a>
+
+**說明**攻擊者會使用使用者及群組成員偵察對應目錄結構，並以權限帳戶為目標，為往後的攻擊鋪路。 安全性帳戶管理員遠端 (SAM-R) 通訊協定是用來查詢目錄，以執行這類對應的其中一種方法。  
+在此偵測中，在部署 Azure ATP 之後的第一個月內不會觸發任何警示 (學習期間)。 在學習期間，Azure ATP 會分析有哪個 SAM-R 查詢是從哪部電腦發出，同時包括敏感性帳戶的列舉和個別查詢。 
+
+**學習期間**每個網域控制站從對特定 DC 的第一個 SAMR 網路活動起 4 週。 
+
+此警示為**確判**、**良性確判**或**誤判**？ 
+
+1. 按一下來源電腦以移至其設定檔頁面。        - 來源電腦會產生此類型的活動嗎？  
+      - 如果會，您便可以關閉安全性警示並排除該電腦，這可能是良性確判活動。 
+2. 檢查執行該作業的使用者。 
+      - 這些使用者是否通常會登入來源電腦，或者是否為應執行這些特定動作的系統管理員？   
+      - 檢查使用者設定檔，以及與他們相關的使用者活動。 使用使用者調查指南，以了解他們的一般行為和搜尋其他可疑活動。 
+      - 如果是，請將安全性警訊當作良性活動關閉。 
+  
+**了解漏洞的範圍**
+
+1. 檢查已執行的查詢 (例如 Enterprise Admins 或 Administrator)，並確認查詢是否成功。 
+2. 使用使用者調查指南調查各暴露的使用者。 
+3. 調查來源電腦。  
+  
+**建議的補救和預防步驟**
+
+1. 包含來源電腦。 
+2. 尋找執行攻擊的工具，並將它移除。 
+3. 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設他們的密碼，並啟用 MFA。 
+4. 重設來源使用者的密碼，並啟用 MFA。 
+5. 套用網路存取：限制允許對 SAM 群組原則發出遠端呼叫的用戶端。
 
 ## <a name="user-and-ip-address-reconnaissance-smb"></a>使用者和 IP 位址偵察 (SMB)
-<a name="reconnaissance-using-smb-session-enumeration"></a> 使用 SMB 工作階段列舉的偵察
+<a name="reconnaissance-using-smb-session-enumeration"></a>
 
+先前的名稱：使用 SMB 工作階段列舉探查
 
 **描述**
 
@@ -835,9 +899,9 @@ VPN 行為模型以下列活動為基礎：使用者登入的機器以及使用�
 
 2. 確認哪些相關使用者已執行此作業。 這些使用者是否通常會登入來源電腦，或者是否會管理應執行這類動作的人員？  
 
-3. 如果是且警示已更新，請**隱藏**可疑活動。  
+3. 如果是，且已更新警示，請**隱藏**安全性警訊。  
 
-4. 如果是且不應該再這麼做，請**關閉**可疑活動。
+4. 如果是，且不應這麼做，請**關閉**安全性警訊。
 
 5. 如果上述所有問題的答案均為否，則假設這是惡意的。
 

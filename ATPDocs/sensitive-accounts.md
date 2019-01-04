@@ -13,14 +13,14 @@ ms.technology: ''
 ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 31871a03795b1c08e4fd8954cac80a00538863db
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: 75a450b9ddea9c47d12f9c14da2ee6c3089775ea
+ms.sourcegitcommit: 8f9d6c517b91b9b389b604cd85f2482593b36fcf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783333"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53654870"
 ---
-適用於：Azure 進階威脅防護
+適用對象：*Azure 進階威脅防護*
 
 
 

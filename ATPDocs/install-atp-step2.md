@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 12/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,14 +13,14 @@ ms.technology: ''
 ms.assetid: ae8a95f0-278c-4a12-ae69-14282364fba1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7e13bf0e3d32fc14cf1f0a91f3e7d18accea067c
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: 6ee7bbe48181b55ba93e24e9ac4dd5c9f7d0b59f
+ms.sourcegitcommit: 1bdaccbddf2896be517885fbcee1c2bc47f4de8d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48782984"
+ms.lasthandoff: 12/30/2018
+ms.locfileid: "53815068"
 ---
-適用於：Azure 進階威脅防護
+適用對象：*Azure 進階威脅防護*
 
 
 
@@ -44,9 +44,9 @@ ms.locfileid: "48782984"
 
     |欄位|註解|
     |---------|------------|
-    |**使用者名稱** (必填)|輸入唯讀 Active Directory 使用者名稱，例如：**ATPuser**。|
+    |**使用者名稱** (必填)|輸入唯讀 Active Directory 使用者名稱，例如：**ATPuser**。 **注意︰****請勿**使用 UPN 作為使用者名稱的格式。|
     |**密碼** (必填)|輸入唯讀使用者的密碼，例如︰**Pencil1**。|
-    |**網域** (必填)|輸入唯讀使用者的網域，例如︰**contoso.com**。 **注意︰** 您務必輸入使用者所在網域的完整 FQDN。 例如，如果使用者的帳戶是在 corp.contoso.com 網域中，您需要輸入 `corp.contoso.com`，而非 contoso.com|
+    |**網域** (必填)|輸入唯讀使用者的網域，例如︰**contoso.com**。 **注意︰** 請務必輸入使用者所在網域的完整 FQDN。 例如，如果使用者的帳戶是在 corp.contoso.com 網域中，您需要輸入 `corp.contoso.com`，而非 contoso.com|
 
 3. 在 Azure ATP 入口網站中，按一下 [下載感應器安裝程式並安裝第一個感應器] 以繼續。
 

@@ -5,30 +5,38 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 12/02/2018
-ms.topic: conceptual
+ms.date: 1/3/2019
+ms.topic: tutorial
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 379feeef63776e71375a789daf4c9608a863e37b
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: 07f688f9afe82d47c5292670b8836d30022a0f97
+ms.sourcegitcommit: 1ba4e327784c6267db5a708592c4d81ca23376ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744467"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53996803"
 ---
-適用於：Azure 進階威脅防護
+適用對象：*Azure 進階威脅防護*
 
 
+# <a name="tutorial-investigate-an-entity"></a>教學課程：調查實體
 
-# <a name="investigate-an-entity-with-azure-atp"></a>利用 Azure ATP 調查實體
+在本教學課程中，您將了解如何針對 Azure 進階威脅防護 (ATP) 偵測到已連線至可疑活動的實體進行調查。 檢視時間軸中的安全性警訊後，您將了解如何向下切入至警訊涉及的實體，並使用下列參數與詳細資料來了解發生的問題，以及降低風險所需採取的動作。
 
-本文說明在以 Azure 進階威脅防護 (ATP) 偵測到可疑活動後，調查實體的程序。 檢視時間軸中的安全性警訊後，您可向下鑽研至警訊涉及的實體，並使用下列參數與詳細資料來了解發生的問題，以及降低風險所需採取的動作。
+> [!div class="checklist"]
+> * 檢查實體設定檔
+> * 查看實體標籤
+> * 檢查使用者帳戶控制旗標
+> * 利用 Windows Defender 進行交叉檢查
+> * 留意敏感性使用者與群組
+> * 檢閱潛在橫向移動路徑
+> * 檢查 honeytoken 狀態
 
-## <a name="look-at-the-entity-profile"></a>查看實體設定檔
+## <a name="check-the-entity-profile"></a>檢查實體設定檔
 
 實體設定檔提供您專為完整深入調查使用者、電腦、裝置，以及他們有權存取的資源及其歷程記錄所設計的全方位實體頁面。 設定檔頁面會利用新的 Azure ATP 邏輯活動轉譯程式，此轉譯程式可查看一組發生的活動 (彙總最多一分鐘)，並將它們組成單一邏輯活動，以讓您更深入了解您使用者的實際活動。
 
@@ -39,15 +47,15 @@ ms.locfileid: "52744467"
 ## <a name="check-entity-tags"></a>查看實體標籤
 
 Azure ATP 會從 Active Directory 中提出標籤，以為您提供可監視 Active Directory 使用者與實體的單一介面。 這些標籤會為您提供 Active Directory 實體的資訊，包含：
-- 部分：此使用者、電腦或群組未從網域同步，且透過全域類別部份解析。 部分屬性無法使用。
-- 未解決：此電腦在 Active Directory 樹系中未解析為有效實體。 沒有任何目錄資訊可用。
+- 部分：這個使用者、電腦或群組未從網域同步，而且透過通用類別目錄進行部份解析。 部分屬性無法使用。
+- 未解決：這部電腦在 Active Directory 樹系中未解析為有效實體。 沒有任何目錄資訊可用。
 - 已刪除：實體已從 Active Directory 刪除。
 - 已停用：實體已在 Active Directory 中停用。
-- 已鎖定：實體輸入密碼錯誤的次數過多，因此已鎖定。
+- 已鎖定：實體輸入錯誤密碼的次數過多，因此已鎖定。
 - 已過期：實體在 Active Directory 中已過期。
 - 新增：實體建立時間不到 30 天。
 
-## <a name="look-at-the-user-account-control-flags"></a>查看使用者帳戶控制旗標
+## <a name="check-user-account-control-flags"></a>檢查使用者帳戶控制旗標
 
 使用者帳戶控制旗標也會從 Active Directory 匯入。 Azure ATP 實體目錄資料包含 10 個有助於調查的旗標： 
 - 密碼永久有效
@@ -94,7 +102,7 @@ Azure ATP 會從 Azure Active Directory 匯入使用者與群組資訊，以便�
 
 此外，您可在 Azure ATP 中**手動標記**實體為具敏感性。 這一點很重要，因為部分 Azure ATP 偵測 (例如敏感性群組修改偵測與橫向移動路徑) 會仰賴於實體的敏感度狀態。 若您將其他使用者或群組手動標記為具敏感性 (例如董事會成員、公司主管、業務總監等)，Azure ATP 會將其視為具敏感性。 如需詳細資訊，請參閱[使用敏感性帳戶](sensitive-accounts.md)。
 
-## <a name="be-aware-of-lateral-movement-paths"></a>注意橫向移動路徑
+## <a name="review-lateral-movement-paths"></a>檢閱橫向移動路徑
 
 Azure ATP 可協助您預防使用橫向移動路徑的攻擊。 橫向移動是攻擊者主動使用非敏感性帳戶來取得敏感性帳戶存取權的方式。
 
@@ -102,13 +110,10 @@ Azure ATP 可協助您預防使用橫向移動路徑的攻擊。 橫向移動是
 
 如需詳細資訊，請參閱[使用 Azure ATP 調查橫向移動路徑](use-case-lateral-movement-path.md)。
 
-
-## <a name="is-it-a-honeytoken-entity"></a>其是否為 honeytoken 實體？
+## <a name="check-honeytoken-status"></a>檢查 honeytoken 狀態
 
 在您開始調查前，必須先了解實體是否為 honeytoken。 您可以將帳戶與實體標示為 Azure ATP 中的 honeytoken。 當您開啟您已標示為 honeytoken 之帳戶或實體的實體設定檔或迷你設定檔時，您會看到 honeytoken 徽章。 調查時，honeytoken 徽章可警示您正在檢閱的活動是由您標示為 honeytoken 的帳戶所執行的。
 
-
-    
 ## <a name="see-also"></a>另請參閱
 
 - [使用安全性警訊](working-with-suspicious-activities.md)

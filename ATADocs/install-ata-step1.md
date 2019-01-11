@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 1/9/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.service: ''
@@ -13,14 +13,14 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 04a25e6f0a73e45b4358566f15f38c20d291a153
-ms.sourcegitcommit: 1b914a85cfa33dc0c5005f9dc68e6ea08a0164ac
+ms.openlocfilehash: b138f533b1ce804af08479a961a791c4069e5a27
+ms.sourcegitcommit: fd6c8a28e6bf3a6031835aebd0b9278e495d3e0b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50411624"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54142432"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
+適用對象：*Advanced Threat Analytics 1.9 版*
 
 
 # <a name="install-ata---step-1"></a>安裝 ATA - 步驟 1
@@ -94,9 +94,16 @@ ms.locfileid: "50411624"
 
 ### <a name="set-anti-virus-exclusions"></a>設定防毒程式排除項目
 
-在安裝 ATA 中心後，您應排除 MongoDB 資料庫目錄，使防毒應用程式不持續對其進行掃描。 在資料庫中的預設路徑為︰**C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data**。
+在安裝 ATA 中心後，您應排除 MongoDB 資料庫目錄，使防毒應用程式不持續對其進行掃描。 資料庫中的預設位置為：**C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data**。
 
+請務必也將這些資料夾從 AV 掃描中排除：
 
+C:\Program Files\Microsoft Advanced Threat Analytics\Center\ParentKerberosAsBloomFilters
+<br>C:\Program Files\Microsoft Advanced Threat Analytics\Center\ParentKerberosTgsBloomFilters
+<br>C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup
+<br>C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs
+
+如果您將 ATA 安裝在不同的目錄，務必要依照您安裝的位置變更資料夾路徑。 
 
 > [!div class="step-by-step"]
 > [«前置安裝](configure-port-mirroring.md)

@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 11/29/2018
+ms.date: 1/7/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,14 +13,14 @@ ms.technology: ''
 ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 566b7ac598dcdd0d44d30c50c01846c42d0b643f
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: 7d7be8cb236a58e6f0576d3b283fb8eff137ac96
+ms.sourcegitcommit: fd6c8a28e6bf3a6031835aebd0b9278e495d3e0b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744790"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54142398"
 ---
-適用於：Azure 進階威脅防護
+適用對象：*Azure 進階威脅防護*
 
 
 # <a name="azure-advanced-threat-protection-information-and-support"></a>Azure 進階威脅防護資訊與支援 
@@ -60,7 +60,7 @@ Azure 進階威脅防護產品小組會在  [Enterprise Mobility + Security 部
 
 ### <a name="self-help"></a>自行解決問題
 
-#### <a name="system-status-page"></a>[系統狀態] 頁面 
+#### <a name="system-status-page"></a>[系統狀態] 頁面
 
 若要檢視 Azure ATP 的系統狀態，請前往[**系統狀態**](https://health.atp.azure.com/)頁面。 此頁面可讓您了解 Azure ATP 入口網站是否正常運作、是否偵測到任何問題、感應器是否可將流量傳送至雲端。 您可從 Azure ATP 的功能表列存取 [系統狀態]。
 
@@ -80,4 +80,4 @@ Azure 進階威脅防護產品小組會在  [Enterprise Mobility + Security 部
 
 ### <a name="community-resources"></a>社群資源
 
-我們建議使用 [適用於 Azure 進階威脅防護的 Yammer 群組](https://www.yammer.com/AskIPTeam)。 此一資源提供 Azure 進階威脅防護小組的直接回應，以及和其他系統管理員與顧問分享經驗與知識的優點。
+我們建議使用 [適用於 Azure 進階威脅防護的技術社群群組](https://aka.ms/azureatpcommunity)。 此一資源提供 Azure 進階威脅防護小組的直接回應，以及和其他系統管理員與顧問分享經驗與知識的優點。

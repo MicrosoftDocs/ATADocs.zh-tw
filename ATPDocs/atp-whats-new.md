@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 12/21/2018
+ms.date: 1/6/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,19 +13,21 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: af08c371f19288043eba2377ea03d1a90bd2eaab
-ms.sourcegitcommit: 39822aa24bddb72eea55f484d9df290cce2e19d9
+ms.openlocfilehash: f5ce0643c502b94bb6a09cc353b8e0eadb0d6737
+ms.sourcegitcommit: b33c1860baa39e9d6d287e33940d579d7a728463
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53737044"
+ms.lasthandoff: 01/06/2019
+ms.locfileid: "54058849"
 ---
 *適用於：Azure 進階威脅防護*
 
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能
 
 ## <a name="azure-atp-release-260"></a>Azure ATP 2.60 版
-目前計劃於 2019 年的第一週發行 Azure ATP 2.60 版。 在這段期間，若發現任何需要暫時更新的重大問題，將會視需要進行更新。
+發行日期：2019 年 1 月 6 日
+
+- 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-259"></a>Azure ATP 2.59 版
 發行日期：2018 年 12 月 16 日
@@ -38,13 +40,13 @@ ms.locfileid: "53737044"
 發行日期：2018 年 12 月 9 日
 
 - **安全性警示增強功能：不尋常的通訊協定實作警示分割**<br>
-Azure ATP 一系列不尋常的通訊協定實作安全性警示先前共用 1 個 externalId (2002)，現在分割為 4 個不同警示，每個都含有對應的唯一 externalId。 
+Azure ATP 一系列不尋常的通訊協定實作安全性警訊先前共用 1 個 externalId (2002)，現在分割為 4 個不同警訊，每個都含有對應的唯一外部識別碼。 
 
 ### <a name="new-alert-externalids"></a>新的警示 externalId
 
 > [!div class="mx-tableFixed"] 
 
-|新安全性警訊名稱|舊安全性警訊名稱|唯一的 externalId|
+|新安全性警訊名稱|舊安全性警訊名稱|唯一外部識別碼|
 |---------|----------|---------|
 |可疑的暴力密碼破解攻擊 (SMB)|不尋常的通訊協定實作 (可能使用 Hydra 等惡意工具)|2033
 |可疑的 Overpass-the-Hash 攻擊 (Kerberos)|不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)|2002|

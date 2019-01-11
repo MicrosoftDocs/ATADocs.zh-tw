@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 51911e39-76c7-4dcd-bc0b-ec6235d0403f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5b5d588f11bb1c7a665cf4727cb996e5261b7237
-ms.sourcegitcommit: 281d8ea451b6ac726331d0032c344651b1a964b7
+ms.openlocfilehash: fa65a796100c23f2b113410fd30f9adf22e79268
+ms.sourcegitcommit: fd6c8a28e6bf3a6031835aebd0b9278e495d3e0b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2018
-ms.locfileid: "53450383"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54142415"
 ---
 適用對象：*Azure 進階威脅防護*
 
@@ -33,20 +33,25 @@ ms.locfileid: "53450383"
 ## <a name="step-4-install-the-azure-atp-sensor"></a>步驟 4： 安裝 Azure ATP 感應器
 
 > [!IMPORTANT]
->請確定電腦上已安裝 .Net Framework 4.7。 若未安裝 .Net Framework 4.7，Azure ATP 感應器安裝套件會予以安裝，這可能需要將伺服器重新開機。
+>請確定電腦上已安裝 Microsoft .Net Framework 4.7。 如果未安裝 .Net Framework 4.7，Azure ATP 感應器安裝套件會予以安裝，這可能需要將伺服器重新開機。
 
 在網域控制站上執行下列步驟。
 
-1. 檢查機器是否可以連線到相關的 Azure ATP 雲端服務端點：
-  - [https://triprd1wceuw1sensorapi.atp.azure.com](https://triprd1wceuw1sensorapi.atp.azure.com) (適用於歐洲)  
-  - [https://triprd1wcuse1sensorapi.atp.azure.com](https://triprd1wcuse1sensorapi.atp.azure.com) (適用於美國)
-  - [https://triprd1wcasse1sensorapi.atp.azure.com](https://triprd1wcasse1sensorapi.atp.azure.com) (適用於亞洲)
+1. 確認機器是否可以連線到相關的 Azure ATP 雲端服務端點：
+  - [https://triprd1wceuw1sensorapi.atp.azure.com](https://triprd1wceuw1sensorapi.atp.azure.com) 
+  - [https://triprd1wceun1sensorapi.atp.azure.com](https://triprd1wceun1sensorapi.atp.azure.com)
+<br>(適用於歐洲)  
+  - [https://triprd1wcuse1sensorapi.atp.azure.com](https://triprd1wcuse1sensorapi.atp.azure.com)
+  - [https://triprd1wcusw1sensorapi.atp.azure.com](https://triprd1wcusw1sensorapi.atp.azure.com)
+  - [https://triprd1wcuswb1sensorapi.atp.azure.com](https://triprd1wcuswb1sensorapi.atp.azure.com)
+<br>(適用於美國)
+  - [https://triprd1wcasse1sensorapi.atp.azure.com](https://triprd1wcasse1sensorapi.atp.azure.com)<br>(適用於亞洲)
 
 2. 將安裝檔案從 zip 檔案解壓縮。 
 > [!NOTE] 
 > 從 ZIP 檔案直接安裝會失敗。
 
-3.  執行 **Azure ATP sensor setup.exe** 並按照安裝精靈的指示操作。
+3. 執行 **Azure ATP sensor setup.exe** 並按照安裝精靈的指示操作。
 
 4.  在 [歡迎] 頁面中，選取您的語言，然後按一下 [下一步]。
 

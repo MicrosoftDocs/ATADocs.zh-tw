@@ -13,15 +13,13 @@ ms.technology: ''
 ms.assetid: 9295dc09-ecdb-44c0-906b-cba4c5c8f17c
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4201ccc187b0f06522cc46aefb1518ff22012c86
-ms.sourcegitcommit: 1ba4e327784c6267db5a708592c4d81ca23376ba
+ms.openlocfilehash: d108974a930aa8aad737e9348dc228f384858eb1
+ms.sourcegitcommit: 6a0ac21f59e72db8615811da2c886f54cf3727f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/03/2019
-ms.locfileid: "53996905"
+ms.lasthandoff: 01/13/2019
+ms.locfileid: "54249907"
 ---
-適用對象：*Azure 進階威脅防護*
-
 # <a name="tutorial-use-lateral-movement-paths-lmps"></a>教學課程：使用橫向移動路徑 (LMP)
 
 橫向移動攻擊通常使用許多不同的技術來達成。 攻擊者最常用的某些方法為[認證竊取](suspicious-activity-guide.md#)和[票證傳遞](suspicious-activity-guide.md)攻擊。 在這兩種方法中，攻擊者會使用非敏感性帳戶，透過入侵帳戶、群組及擁有敏感性帳戶之電腦中，共用已儲存登入認證的非敏感性電腦來進行橫向移動。

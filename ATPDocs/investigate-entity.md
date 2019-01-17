@@ -13,16 +13,13 @@ ms.technology: ''
 ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 07f688f9afe82d47c5292670b8836d30022a0f97
-ms.sourcegitcommit: 1ba4e327784c6267db5a708592c4d81ca23376ba
+ms.openlocfilehash: d892b22e46efee6ab8315a20e39bd7b47a4c824b
+ms.sourcegitcommit: 6a0ac21f59e72db8615811da2c886f54cf3727f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/03/2019
-ms.locfileid: "53996803"
+ms.lasthandoff: 01/13/2019
+ms.locfileid: "54249941"
 ---
-適用對象：*Azure 進階威脅防護*
-
-
 # <a name="tutorial-investigate-an-entity"></a>教學課程：調查實體
 
 在本教學課程中，您將了解如何針對 Azure 進階威脅防護 (ATP) 偵測到已連線至可疑活動的實體進行調查。 檢視時間軸中的安全性警訊後，您將了解如何向下切入至警訊涉及的實體，並使用下列參數與詳細資料來了解發生的問題，以及降低風險所需採取的動作。

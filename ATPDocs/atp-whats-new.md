@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 1/6/2019
+ms.date: 1/13/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,16 +13,46 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f5ce0643c502b94bb6a09cc353b8e0eadb0d6737
-ms.sourcegitcommit: b33c1860baa39e9d6d287e33940d579d7a728463
+ms.openlocfilehash: 5248ab54c8fd8d03035e1f6451597c5e8cfc63b2
+ms.sourcegitcommit: 6a0ac21f59e72db8615811da2c886f54cf3727f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2019
-ms.locfileid: "54058849"
+ms.lasthandoff: 01/13/2019
+ms.locfileid: "54250026"
 ---
 *適用於：Azure 進階威脅防護*
 
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能
+
+## <a name="azure-atp-release-261"></a>Azure ATP 2.61 版
+發行日期：2019 年 1 月 13 日
+
+- **新的安全性警示：SMB 上的資料外洩 - (預覽)**<br>
+Azure ATP 的 [SMB上的數據洩露](atp-exfiltration-alerts.md)安全性警訊現為公開預覽狀態。 <br> 具有網域系統管理員權限的攻擊者可能會危害 KRBTGT 帳戶。 攻擊者可使用 KRBTGT 帳戶，建立可提供任何資源授權的 Kerberos 票證授權票證 (TGT)。 
+
+
+- **功能增強：遠端程式碼執行嘗試**安全性警訊 <br> 新增警訊描述及其他辨識項，讓您能更容易了解警訊，且提供了更好的調查工作流程。 
+
+
+- **功能增強：DNS 查詢邏輯活動** <br>將其他查詢類型新增到 [Azure ATP 受監視的活動](monitored-activities.md)，其中包含：**TXT**、**MX**、**NS**、**SRV**、**ANY**、**DNSKEY**。 
+
+- **功能增強：可疑的黃金票證使用方式 (票證異常) 及可疑的黃金票證使用方式 (不存在的帳戶)** <br>
+改善的偵測邏輯皆已套用到兩個警訊中，以降低 FP 警訊的數目，進而傳遞更準確的結果。
+
+- **功能增強：Azure ATP 安全性警訊文件** <br>
+Azure ATP 安全性警訊文件已增強並擴充，現在其中包含更優異的警訊描述、更準確的警訊分級，以及辨識項、修復和防護的解說。 使用以下連結熟悉全新安全性警訊文件的設計： 
+    - [Azure ATP 安全性警訊](suspicious-activity-guide.md)
+    - [了解安全性警訊](understanding-security-alerts.md)
+        - [偵察階段警訊](atp-reconnaissance-alerts.md)
+        - [遭入侵的認證階段警訊](atp-compromised-credentials-alerts.md)
+        - [橫向移動階段警訊](atp-lateral-movement-alerts.md)
+        - [網域支配階段警訊](atp-domain-dominance-alerts.md)
+        - [外洩階段警訊](atp-exfiltration-alerts.md)
+    - [調查電腦](investigate-a-computer.md)
+    - [調查使用者](investigate-a-user.md)
+
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
+
 
 ## <a name="azure-atp-release-260"></a>Azure ATP 2.60 版
 發行日期：2019 年 1 月 6 日
@@ -40,7 +70,7 @@ ms.locfileid: "54058849"
 發行日期：2018 年 12 月 9 日
 
 - **安全性警示增強功能：不尋常的通訊協定實作警示分割**<br>
-Azure ATP 一系列不尋常的通訊協定實作安全性警訊先前共用 1 個 externalId (2002)，現在分割為 4 個不同警訊，每個都含有對應的唯一外部識別碼。 
+「不尋常通訊協定實作」安全性警訊的 Azure ATP 系列先前共用 1 個 externalId (2002)，現在則分割為四個不同的警訊，且每個都含有對應的唯一外部識別碼。 
 
 ### <a name="new-alert-externalids"></a>新的警示 externalId
 
@@ -67,7 +97,7 @@ Azure ATP 一系列不尋常的通訊協定實作安全性警訊先前共用 1 �
 
 - **新的安全性警示：可疑的黃金票證使用 - 票證異常 (預覽)**<br>
 Azure ATP 的[可疑黃金票證使用 - 票證異常](suspicious-activity-guide.md)安全性警示目前處於公開預覽狀態。 <br> 具有網域系統管理員權限的攻擊者可能會危害 KRBTGT 帳戶。 攻擊者可使用 KRBTGT 帳戶，建立可提供任何資源授權的 Kerberos 票證授權票證 (TGT)。 
-<br>因為這種偽造的 TGT 可以讓攻擊者獲得持久的網路持續性，所以稱為「黃金票證」。 這項新偵測特別設計用來識別這類偽造黃金票證所擁有的唯一特性。 
+<br>因為這種偽造的 TGT 可以讓攻擊者獲得持久的網路持續性，所以稱為「黃金票證」。 此全新偵測設計用來識別這類偽造黃金票證擁有的唯一特性。 
 
 
 - **功能增強：自動化建立 Azure ATP 執行個體 (工作區)** <br>
@@ -76,7 +106,7 @@ Azure ATP 的[可疑黃金票證使用 - 票證異常](suspicious-activity-guide
   - 使用[建立您的 Azure ATP 執行個體](install-atp-step1.md)來簡化執行個體建立，以進行更快速的部署和保護。 
   - 所有[資料隱私權與合規性](atp-privacy-compliance.md)皆維持不變。 
 
-  請參閱[建立您的 Azure ATP 執行個體](install-atp-step1.md)以深入了解。 
+  若要深入了解 Azure ATP 執行個體，請參閱[建立您的 Azure ATP 執行個體](install-atp-step1.md)。 
 
 - 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
@@ -101,7 +131,7 @@ Azure ATP 的[可疑黃金票證使用 - 票證異常](suspicious-activity-guide
 發行日期：2018 年 11 月 18 日
 
 - **安全性警示：通過 DNS 的可疑通訊 - 一般可用性**<br>
-Azure ATP [通過 DNS 的可疑通訊](suspicious-activity-guide.md#suspicious-communication-over-dns) 安全性警訊現已正式推出。 <br> 通常，大多數組織中的 DNS 通訊協定不會受到監視，而且很少會因惡意活動而遭到封鎖。 這讓攻擊者有機會在遭入侵的電腦上濫用 DNS 通訊協定。 透過 DNS 的惡意通訊可用來竊取資料、命令和控制攻擊和/或規避公司網路限制。
+Azure ATP [通過 DNS 的可疑通訊](suspicious-activity-guide.md) 安全性警訊現已正式推出。 <br> 通常，大多數組織中的 DNS 通訊協定不會受到監視，而且很少會因惡意活動而遭到封鎖。 這讓攻擊者有機會在遭入侵的電腦上濫用 DNS 通訊協定。 透過 DNS 的惡意通訊可用來竊取資料、命令和控制攻擊和/或規避公司網路限制。
 
 - 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
@@ -286,7 +316,7 @@ Azure 進階威脅防護現在會檢查網域控制站的現有進階稽核原�
 ## <a name="azure-atp-release-239"></a>Azure ATP 2.39 版
 
 發行日期：2018 年 7 月 5 日
--   **新增新的偵測：Kerberos 黃金票證 - 不存在的帳戶** (預覽)<br>這個新偵測所能防禦針對網域中不存在帳戶所建立黃金票證的攻擊，因此得以協助保護您的組織。 如需詳細資訊，請參閱 [Azure 進階威脅防護可疑活動指南](suspicious-activity-guide.md#golden-ticket)
+-   **新增新的偵測：Kerberos 黃金票證 - 不存在的帳戶** (預覽)<br>這個新偵測所能防禦針對網域中不存在帳戶所建立黃金票證的攻擊，因此得以協助保護您的組織。 如需詳細資訊，請參閱 [Azure 進階威脅防護可疑活動指南](suspicious-activity-guide.md)
 
 - 此版本包含針對多個問題的修正和改善。 
 
@@ -316,7 +346,7 @@ Azure 進階威脅防護現在會檢查網域控制站的現有進階稽核原�
  
 - **新預覽偵測**<br></br>從現在起，Azure ATP 將利用它是雲端服務的事實 (即以更快的週期提供新功能)，並盡快提供新偵測。 這些新偵測在第一次發行時會標示為「預覽」。 新偵測通常會在數週內從預覽移至正式運作。 您預設會看到預覽偵測。 如需退出的資訊，請參閱[預覽偵測](working-with-suspicious-activities.md#preview-detections)。
  
-- **可疑 VPN 偵測**<br></br>此版本介紹可疑 VPN 偵測的預覽版本。 Azure ATP 會學習使用者 VPN 行為 (包括使用者登入的電腦以及使用者從中連線的位置)，並在與預期行為有所偏差時對您發出警示。 如需詳細資訊，請參閱[可疑 VPN 偵測](suspicious-activity-guide.md#suspicious-vpn-detection)。
+- **可疑 VPN 偵測**<br></br>此版本介紹可疑 VPN 偵測的預覽版本。 Azure ATP 會學習使用者 VPN 行為 (包括使用者登入的電腦以及使用者從中連線的位置)，並在與預期行為有所偏差時對您發出警示。 如需詳細資訊，請參閱[可疑 VPN 偵測](suspicious-activity-guide.md)。
 
 - [Delayed update] \(延遲更新\)<br></br>每次 Azure ATP 更新時，您現在都可以選擇設定 Azure ATP 感應器稍後更新。 您現在可以將每個 Azure ATP 感應器設定為 [Delayed update] \(延遲更新\)，以在 Azure ATP 雲端服務更新後的 24 小時更新。 此功能可讓您在特定測試感應器上測試更新，而且只有在稍後才會更新生產感應器。 如果您在第一個更新週期期間發現問題，請開啟支援票證。 如需詳細資訊，請參閱[更新 Azure ATP 感應器](sensor-update.md)。
 

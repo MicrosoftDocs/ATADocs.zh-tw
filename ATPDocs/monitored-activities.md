@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 12/02/2018
+ms.date: 1/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 37d1a032-65e7-4a89-be0b-c3f9cc2bacdb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f8bc815c3ffad4f75d84a69f2e6c30cc0707d8e3
-ms.sourcegitcommit: d1c9c3e69b196f6086a8f100e527553cf0d95aac
+ms.openlocfilehash: 16951313f18be44a3c42a0f6b2281963d867c7b4
+ms.sourcegitcommit: 6a0ac21f59e72db8615811da2c886f54cf3727f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53125025"
+ms.lasthandoff: 01/13/2019
+ms.locfileid: "54249890"
 ---
 *適用於：Azure 進階威脅防護*
 
@@ -76,7 +76,7 @@ Azure 進階威脅防護會監視您組織 Active Directory 產生的資訊、�
 |受監視的活動|說明|
 |---------------------|------------------|
 |目錄服務複寫  |使用者嘗試複寫目錄服務。|
-|DNS 查詢  |使用者對網域控制站執行了 AXFR 查詢。|
+|DNS 查詢  |對網域控制站執行的查詢使用者類型 (**AXFR**、**TXT**、**MX**、**NS**、**SRV**、**ANY**、**DNSKEY**)。|
 |私人資料擷取  |使用者嘗試/成功使用 LSARPC 通訊協定查詢私人資料。|
 |服務建立   |使用者嘗試在遠端對遠端電腦建立特定服務。|
 |SMB 工作階段列舉   |使用者嘗試列舉網域控制站上已開啟 SMB 工作階段的所有使用者。|

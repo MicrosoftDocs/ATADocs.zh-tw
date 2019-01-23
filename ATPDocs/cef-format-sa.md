@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 12/17/2018
+ms.date: 1/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 929b0db30632e737e6371d473639f1e22532f75f
-ms.sourcegitcommit: c3ee9495b9d4db985783dcabcc4fa77c7c8eaed4
+ms.openlocfilehash: 2cc450a50b35101b768d521d867850946e207dc5
+ms.sourcegitcommit: 6a0ac21f59e72db8615811da2c886f54cf3727f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53454541"
+ms.lasthandoff: 01/13/2019
+ms.locfileid: "54249992"
 ---
 *適用於：Azure 進階威脅防護*
 
@@ -57,14 +57,17 @@ Azure ATP 可以將安全性警示與監視警示事件轉送到您的 SIEM。 �
 
 > [!div class="mx-tableFixed"] 
 
-|新安全性警訊名稱|舊安全性警訊名稱|唯一的 externalId|
+|新安全性警訊名稱|舊安全性警訊名稱|唯一外部識別碼|
 |---------|----------|---------|
 |帳戶列舉偵察|使用帳戶列舉偵查|2003|
+|SMB 上的資料外流| NA| 2030|
 |Honeytoken 活動|Honeytoken 活動|2014|
 |資料保護 API (DPAPI) 主要金鑰的惡意要求|惡意的資料保護私人資訊要求|2020|
 |網路對應偵察 (DNS)|使用 DNS 探查|2007|
 |遠端程式碼執行嘗試|遠端程式碼執行嘗試|2019|
 |可疑的暴力密碼破解攻擊 (LDAP)|使用 LDAP 簡單繫結的暴力密碼破解攻擊|2004|
+|可疑的暴力密碼破解攻擊 (Kerberos NTLM)|可疑的驗證失敗|2023|
+|可疑的暴力密碼破解攻擊 (SMB)|不尋常的通訊協定實作 (可能使用 Hydra 等惡意工具)|2033|
 |可疑的 DCShadow 攻擊 (網域控制站升階)|可疑的網域控制站升級 (潛在的 DCShadow 攻擊)|2028|
 |可疑的 DCShadow 攻擊 (網域控制站複寫要求)|可疑的網域控制站複寫要求 (可能為 DCShadow 攻擊)|2029|
 |可疑的 DCSync 攻擊 (目錄服務的複寫)|惡意的目錄服務複寫|2006|
@@ -75,8 +78,6 @@ Azure ATP 可以將安全性警示與監視警示事件轉送到您的 SIEM。 �
 |可疑的黃金票證使用 (票證異常) - 預覽功能|NA|2032|
 |可疑的身分識別竊取 (雜湊傳遞)|使用傳遞雜湊攻擊竊取身分|2017 年|
 |可疑的身分識別竊取 (票證傳遞)|使用傳遞票證攻擊竊取身分|2018 年|
-|可疑的暴力密碼破解攻擊 (SMB)|不尋常的通訊協定實作 (可能使用 Hydra 等惡意工具)|2033|
-|可疑的暴力密碼破解攻擊 (Kerberos NTLM)|可疑的驗證失敗|2023|
 |可疑的 Overpass-the-Hash 攻擊 (加密降級)|加密降級活動 (可能為 Overpass-the-Hash 攻擊)|2008|
 |可疑的 Overpass-the-Hash 攻擊 (Kerberos)|不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)|2002|
 |可疑的 Metasploit 入侵架構使用|不尋常的通訊協定實作 (可能使用 Metasploit 入侵工具)|2034|
@@ -101,6 +102,9 @@ Azure ATP 可以將安全性警示與監視警示事件轉送到您的 SIEM。 �
 
 ### <a name="account-enumeration-reconnaissance"></a>帳戶列舉偵察 
 02-21-2018  16:19:35    Auth.Warning    192.168.0.220   1 2018-02-21T14:19:27.540731+00:00 CENTER CEF 6076 AccountEnumerationSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|AccountEnumerationSecurityAlert|使用帳戶列舉探查|5|start=2018-02-21T14:19:02.6045416Z app=Kerberos shost=CLIENT1 suser=LMaldonado msg=觀察到來自 CLIENT1 使用 Kerberos 通訊協定的可疑帳戶列舉活動，且成功猜中 Lamon Maldonado (軟體工程師)。 externalId=2003 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/eb6a35da-ff7f-4ab5-a1b5-a07529a89e6d cs2Label=trigger cs2=new
+
+### <a name="data-exfiltration-over-smb"></a>SMB 上的資料外流
+12-19-2018  14:17:46    Auth.Error     127.0.0.1      1 2018-12-19T12:17:34.645993+00:00 DC1 CEF 3288 SmbDataExfiltrationSecurityAlert ï»¿0|Microsoft|Azure ATP|2.60.0.0|SmbDataExfiltrationSecurityAlert|[PREVIEW] Data exfiltration over SMB|10|start=2018-12-19T12:14:12.4932821Z app=Smb shost=CLIENT1 msg=Eugene Jenkins (Software Engineer) on DC2 copied suspicious files to CLIENT1. externalId=2030 cs1Label=url cs1=https\://contoso-corp.atp.azure.com:13000/securityAlert/3ca2ec9d-2c67-44cc-a2d6-391716611bb6 cs2Label=trigger cs2=new
 
 ### <a name="honeytoken-activity"></a>Honeytoken 活動
 02-21-2018  16:20:36    Auth.Warning  192.168.0.220 1 2018-02-21T14:20:34.106162+00:00 CENTER CEF 6076 HoneytokenActivitySecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|HoneytokenActivitySecurityAlert|Honeytoken 活動|5|start=2018-02-21T14:20:26.6705617Z app=Kerberos suser=honey msg=下列活動的執行者為 honey:\r\n透過 DC1 登入至 CLIENT2。 externalId=2014 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/9249fe9a-c883-46dd-a4da-2a1fca5f211c cs2Label=trigger cs2=new

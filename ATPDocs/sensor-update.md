@@ -1,11 +1,11 @@
 ---
 title: 更新 Azure ATP 感應器 | Microsoft Docs
-description: 此描述如何在 Azure ATP 中更新感應器。
+description: 描述如何更新和延遲更新 Azure ATP 感應器。
 keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 1/14/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,14 +13,14 @@ ms.technology: ''
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a24210415929b69152377d34aeec1bdc8906d08c
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: f2df8f8f59edff7ebda3f86aae26b899913d57f8
+ms.sourcegitcommit: e2daa0f93d97d552cfbf1577fbd05a547b63e95b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744433"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54314324"
 ---
-適用於：Azure 進階威脅防護
+適用對象：*Azure 進階威脅防護*
 
 
 # <a name="update-azure-atp-sensors"></a>更新 Azure ATP 感應器
@@ -60,7 +60,7 @@ Azure ATP 感應器支援兩種更新：
 這可讓您選取自動推出更新的特定感應器，以及延遲更新感應器的其餘部分，但只在您看到初始更新平順進行之後。
 
 > [!NOTE]
-> 如果發生錯誤，而且未更新感應器，則請開啟支援票證。 若要進一步強化 Proxy 以僅和您的執行個體通訊，請參閱 [Proxy 設定](configure-proxy.md)
+> 如果發生錯誤，而且未更新感應器，則請開啟支援票證。 若要進一步強化 Proxy 以僅和您的執行個體通訊，請參閱 [Proxy 設定](configure-proxy.md)。
 
 將感應器設定為延遲更新：
 
@@ -92,7 +92,7 @@ Azure ATP 感應器每隔幾分鐘都會檢查是否有最新版本。 將 Azure
 ![感應器更新](./media/sensor-update.png)
 
 
-失敗時，如果感應器未完成更新程序，則會觸發相關的監視警示，並將其傳送為通知。
+更新失敗時，如果感應器未完成更新程序，則會觸發相關的監視警示，並將其傳送為通知。
 
 ![感應器過期](./media/sensor-outdated.png)
 

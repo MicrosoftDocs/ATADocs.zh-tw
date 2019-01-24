@@ -13,15 +13,13 @@ ms.technology: ''
 ms.assetid: de15c920-8904-4124-8bdc-03abd9f667cf
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 40faae88e209b8b737dbc7ef364f17a8b82a4d52
-ms.sourcegitcommit: eac0aa855270b550dfb4b8c61b9cf0953f1e5204
+ms.openlocfilehash: 88a7d5e23cc6b3f1202f522e40060e71f676397f
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52298107"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54459068"
 ---
-適用於：Azure 進階威脅防護
-
 # <a name="azure-atp-lateral-movement-paths-lmps"></a>Azure ATP 橫向移動路徑 (LMP) 
 
 橫向移動是攻擊者使用非敏感性帳戶存取您整個網路中的敏感性帳戶。 攻擊者使用橫向移動來識別並存取您網路中共用帳戶、群組與電腦內已儲存登入認證的敏感性帳戶和電腦。 一旦攻擊者成功橫向移動到您的關鍵目標，攻擊者也可以利用和存取您的網域控制站。 橫向移動攻擊使用[可疑活動指南](suspicious-activity-guide.md)中說明的許多方法來達成。

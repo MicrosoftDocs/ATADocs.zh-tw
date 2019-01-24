@@ -13,15 +13,13 @@ ms.technology: ''
 ms.assetid: d0551e91-3b21-47d5-ad9d-3362df6d47c0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8cff5cbba1c9ed8d04764d9839a5cb2c66093c81
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: 084e3752953077b4be8678e6c98a73cb99bc9587
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744756"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54459102"
 ---
-適用於：Azure 進階威脅防護
-
 # <a name="understanding-azure-atp-sensor-and-standalone-sensor-monitoring-alerts"></a>了解 Azure ATP 感應器和獨立感應器監視警示
 
 當您的 Azure ATP 執行個體發生問題時，Azure ATP 健全狀況中心會發出監視警示以讓您知道。 本文描述每個元件的所有監視警示，並列出原因及解決問題所需的步驟。
@@ -109,5 +107,5 @@ ms.locfileid: "52744756"
 - [Azure ATP 必要條件](atp-prerequisites.md)
 - [Azure ATP 容量規劃](atp-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
-- [設定 Windows 事件轉送](configure-event-forwarding.md#configuring-windows-event-forwarding)
+- [設定 Windows 事件轉送](configure-event-forwarding.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

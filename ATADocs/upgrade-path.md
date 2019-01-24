@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 88720401-1fb2-4353-ad39-32bc0088f0de
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 38600b4e537f583c106462bce26690c7bc14bfe8
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 318e14a4313b80aec92516829b70314008acb8c5
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133535"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840153"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
 # <a name="recommended-upgrade-path-for-ata"></a>ATA 的建議升級路徑
+
+適用對象：*Advanced Threat Analytics 1.9 版*
+
 本文提供可用 Advanced Threat Analytics 版本及如何根據所執行版本來升級 ATA 的相關資訊。
 
 
@@ -50,6 +51,6 @@ ms.locfileid: "46133535"
 - [ATA 必要條件](ata-prerequisites.md)
 - [ATA 容量規劃](ata-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
-- [設定 Windows 事件轉送](configure-event-collection.md#configuring-windows-event-forwarding)
+- [設定 Windows 事件轉送](configure-event-collection.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 

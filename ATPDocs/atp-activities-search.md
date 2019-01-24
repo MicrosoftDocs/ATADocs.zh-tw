@@ -13,16 +13,13 @@ ms.technology: ''
 ms.assetid: a546703b-d5a9-404d-9e87-125523bb8421
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: fb3839d5348f11b13176375be84ecd46d44fa365
-ms.sourcegitcommit: 3ab48f180aa0276f4e19cf7cd567581c7b4324cc
+ms.openlocfilehash: 4f065b299f499b28368fd43fe03d2e7c38741f67
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2018
-ms.locfileid: "50202472"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54458422"
 ---
-適用於：Azure 進階威脅防護
-
-
 # <a name="azure-atp-monitored-activities-search-and-filter"></a>Azure ATP 受監視活動的搜尋與篩選 
 
 Azure ATP 在您網路上偵測到的活動，可以經過搜尋與篩選，讓您在研究與調查安全性警訊時，能夠輕鬆向下鑽研及整理這些活動。  

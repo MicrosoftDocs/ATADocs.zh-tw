@@ -13,18 +13,17 @@ ms.technology: ''
 ms.assetid: 581a3257-32dc-453f-b84e-b9f99186f5d3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a34d25e59183e496350216f5d3043430cd65bca6
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: bc5eda18d9b126fbde8e79c0b65aa04bdc42e90c
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133443"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54839810"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
-
-
 # <a name="investigating-entity-profiles"></a>調查實體設定檔
+
+
+適用對象：*Advanced Threat Analytics 1.9 版*
 
 實體設定檔提供您專為完整深入調查使用者、電腦、裝置，以及上述項目有權存取的資源及其歷程記錄所設計的儀表板。 設定檔頁面會利用新的 Azure ATA 邏輯活動轉譯程式，此轉譯程式可查看一組發生的活動 (彙總最多一分鐘)，並將其組成單一邏輯活動，以讓您更深入了解使用者的實際活動。
 

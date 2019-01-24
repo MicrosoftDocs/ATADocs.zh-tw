@@ -13,16 +13,13 @@ ms.technology: ''
 ms.assetid: ab1e8dd9-a6c2-4c68-89d5-343b8ec56142
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9d9294a22d1e3fd1847d42bd376e65fd114b04bf
-ms.sourcegitcommit: a2f6b52f66c89b9f2ca7410426b759a0b0de8d31
+ms.openlocfilehash: 8d7d8bc8ce6c1aefb95b5770a103859fed74efe1
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52981933"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54458626"
 ---
-*適用於：Azure 進階威脅防護*
-
-
 # <a name="azure-atp-advanced-audit-policy-check"></a>Azure ATP 進階稽核原則檢查
 
 Azure ATP 偵測憑藉特定 Windows 事件記錄檔來取得特定案例的可見度，例如 NTLM 登入、安全性群組修改及類似事件。 若要正確稽核事件並將其包含在 Windows 事件記錄檔中，則網域控制站需要正確的進階稽核原則設定。 不正確的進階稽核原則設定會讓記錄檔遺漏重要事件，並導致 Azure ATP 涵蓋範圍不完整。
@@ -64,5 +61,5 @@ Azure ATP 偵測憑藉特定 Windows 事件記錄檔來取得特定案例的可�
 ## <a name="see-also"></a>另請參閱
 - [Azure ATP 必要條件](atp-prerequisites.md)
 - [設定事件收集](configure-event-collection.md)
-- [設定 Windows 事件轉送](configure-event-forwarding.md#configuring-windows-event-forwarding)
+- [設定 Windows 事件轉送](configure-event-forwarding.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

@@ -13,17 +13,13 @@ ms.technology: ''
 ms.assetid: 37d1a032-65e7-4a89-be0b-c3f9cc2bacdb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 16951313f18be44a3c42a0f6b2281963d867c7b4
-ms.sourcegitcommit: 6a0ac21f59e72db8615811da2c886f54cf3727f5
+ms.openlocfilehash: 0b12e2d40e8a2f5f1ed15adf357093035485e96c
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2019
-ms.locfileid: "54249890"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54459121"
 ---
-*適用於：Azure 進階威脅防護*
-
-
-
 # <a name="azure-atp-monitored-activities"></a>受 Azure ATP 監視的活動
 
 Azure 進階威脅防護會監視您組織 Active Directory 產生的資訊、網路活動及事件活動，來偵測可疑活動。 受監視的活動資訊可讓 Azure ATP 協助您判斷每個潛在威脅的有效性，並正確分與回應。 

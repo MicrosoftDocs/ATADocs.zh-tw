@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: 601b48ba-a327-4aff-a1f9-2377a2bb7a42
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: f96bd9222a803a21efee5def935ecbe3244e0611
-ms.sourcegitcommit: c390d36d75f13607698c2a8d7ac757ecef4c748e
+ms.openlocfilehash: 357f3517a864114c0aaa83a074c0b061d21259c2
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53709926"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840927"
 ---
-適用對象：*Advanced Threat Analytics 1.9 版*
-
-
 # <a name="ata-siem-log-reference"></a>ATA SIEM 記錄檔參考
+
+
+適用對象：*Advanced Threat Analytics 1.9 版*
 
 ATA 可以將安全性警訊與監視警示事件轉送到您的 SIEM。 警示會以 CEF 格式轉送。 以下為會傳送至您 SIEM 的各類型安全性警訊記錄檔。
 
@@ -155,5 +155,5 @@ ATA 可以將安全性警訊與監視警示事件轉送到您的 SIEM。 警示�
 - [ATA 必要條件](ata-prerequisites.md)
 - [ATA 容量規劃](ata-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
-- [設定 Windows 事件轉送](configure-event-collection.md#configuring-windows-event-forwarding)
+- [設定 Windows 事件轉送](configure-event-collection.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

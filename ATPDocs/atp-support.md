@@ -13,16 +13,13 @@ ms.technology: ''
 ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7d7be8cb236a58e6f0576d3b283fb8eff137ac96
-ms.sourcegitcommit: fd6c8a28e6bf3a6031835aebd0b9278e495d3e0b
+ms.openlocfilehash: 6e9ffb02c515c34dfa2847c9b93f55c3fa38fa44
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54142398"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54459204"
 ---
-適用對象：*Azure 進階威脅防護*
-
-
 # <a name="azure-advanced-threat-protection-information-and-support"></a>Azure 進階威脅防護資訊與支援 
 
 

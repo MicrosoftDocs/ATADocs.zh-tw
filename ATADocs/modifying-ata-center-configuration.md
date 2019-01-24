@@ -12,19 +12,18 @@ ms.service: ''
 ms.technology: ''
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7875c6b0f6be62277f80881edbefe36b910bb4c9
-ms.sourcegitcommit: eac0aa855270b550dfb4b8c61b9cf0953f1e5204
+ms.openlocfilehash: ffc46e3d74928cc071215da9bafd5989e4448a65
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52298131"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840551"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
-
-
 # <a name="modifying-the-ata-center-configuration"></a>修改 ATA 中心設定
 
+
+
+適用對象：*Advanced Threat Analytics 1.9 版*
 
 初始部署後，請小心修改 ATA Center。 更新主控台 URL 和憑證時，請使用下列程序。
 
@@ -46,16 +45,16 @@ ms.locfileid: "52298131"
 
 2. 在 ATA 設定中，於 [中心] 下輸入新的 URL。 此時 ATA 中心服務仍然使用原始 URL。 
 
- ![變更 ATA 組態](media/change-center-config.png)
+   ![變更 ATA 組態](media/change-center-config.png)
 
-  > [!NOTE]
-  > 如果輸入了自訂的 IP 位址，除非在 ATA 中心上安裝此 IP 位址，否則將無法按一下 [啟動]。
+   > [!NOTE]
+   > 如果輸入了自訂的 IP 位址，除非在 ATA 中心上安裝此 IP 位址，否則將無法按一下 [啟動]。
     
 3. 等候 ATA 閘道進行同步。現在，這些閘道會有兩個可能的 URL 可存取 ATA 主控台。 只要 ATA 閘道可以使用原始 URL 來連線，就不會嘗試使用新 URL。
 
 4. 在所有 ATA 閘道皆已使用更新的設定同步後，請在 [中心設定] 頁面中按一下 [啟動] 按鈕來啟動新的 URL。 當您啟動新 URL 時，ATA 閘道就會使用新的 URL 來存取 ATA 中心。 ATA 閘道連線到 ATA 中心服務之後，將會提取最新的設定，並將僅有 ATA 主控台的新 URL。 
 
- ![啟動憑證](media/center-activation.png)
+   ![啟動憑證](media/center-activation.png)
 
 > [!NOTE]
 > -   在啟動新的 URL 時，如果 ATA 閘道離線，且從未取得更新的設定，請在 ATA 閘道上手動更新設定 JSON 檔案。
@@ -74,7 +73,7 @@ ms.locfileid: "52298131"
 
 2. 在 ATA 設定中，於 [中心] 下選取新建立的憑證。 此時 ATA 中心服務仍然繫結至原始憑證。 
 
- ![變更 ATA 組態](media/change-center-config.png)
+   ![變更 ATA 組態](media/change-center-config.png)
 
 3. 等候 ATA 閘道進行同步。現在，這些閘道會有兩個可能的憑證，可進行相互驗證。 只要 ATA 閘道可以使用原始憑證來連線，就不會嘗試使用新憑證。
 

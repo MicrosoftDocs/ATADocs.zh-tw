@@ -13,15 +13,13 @@ ms.technology: ''
 ms.assetid: 224e629a-0e82-458c-bb03-b67070a9241d
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: e05424c8a29d3dc77f7e7bbfe2351bb97d65160f
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: d796acae64d6c6081eb9d55306b9c3b5fe901857
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48782942"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54458506"
 ---
-適用於：Azure 進階威脅防護
-
 # <a name="azure-atp-data-security-and-privacy"></a>Azure ATP 資料安全性和隱私權
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]

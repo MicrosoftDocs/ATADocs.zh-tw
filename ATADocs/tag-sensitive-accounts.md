@@ -13,18 +13,17 @@ ms.technology: ''
 ms.assetid: 40a1c5c4-b8d6-477c-8ae5-562b37661624
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: cea6d666d3d969070541fc8dcc4fd59726ac8c38
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 8a7c5120f72a341fd4784b68fedb0231de6e98c4
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46134076"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840193"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
-
-
 # <a name="tag-sensitive-accounts"></a>標記敏感性帳戶
+
+
+適用對象：*Advanced Threat Analytics 1.9 版*
 
 您可以手動將群組或帳戶標記為敏感性，以增強偵測。 確實更新此項目對部分 ATA 偵測很重要，例如敏感性群組修改偵測與橫向移動路徑，這將取決於那些群組與帳戶視為具敏感性而定。 在此之前，若實體是特定群組清單的成員，則 ATA 會自動將其標記為敏感性。 您現在可以手動將其他使用者或群組標記為敏感性，例如董事會成員、公司主管、業務總監等，而 ATA 會將其視為敏感性。
 
@@ -65,5 +64,5 @@ ATA 將下列群組清單視為敏感性。 屬於這些群組的任何實體都
 -   Schema Admins 
 -   Enterprise Admins
      
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

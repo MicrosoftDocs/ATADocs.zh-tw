@@ -13,17 +13,13 @@ ms.technology: ''
 ms.assetid: ae8a95f0-278c-4a12-ae69-14282364fba1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6ee7bbe48181b55ba93e24e9ac4dd5c9f7d0b59f
-ms.sourcegitcommit: 1bdaccbddf2896be517885fbcee1c2bc47f4de8d
+ms.openlocfilehash: 7ff0324da5cff1ac9ff6aa73fd32d0328279c12b
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/30/2018
-ms.locfileid: "53815068"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54458677"
 ---
-適用對象：*Azure 進階威脅防護*
-
-
-
 # <a name="install-azure-atp---step-2"></a>安裝 Azure ATP - 步驟 2
 
 > [!div class="step-by-step"]

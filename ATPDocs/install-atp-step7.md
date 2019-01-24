@@ -13,16 +13,13 @@ ms.technology: ''
 ms.assetid: 1ad5e923-9bbd-4f56-839a-b11a9f387d4b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 45858f80efb18060a845da47bfac3353946d18e0
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: 197d2e4a815c94d970f386e3b2bd15a1d407d945
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744399"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54458405"
 ---
-適用於：Azure 進階威脅防護
-
-
 # <a name="configure-detection-exclusions-and-honeytoken-accounts"></a>設定偵測排除範圍和 Honeytoken 帳戶
 
 Azure ATP 可從一些偵測排除特定 IP 位址或使用者。 

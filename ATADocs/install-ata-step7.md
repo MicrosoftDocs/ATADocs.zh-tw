@@ -13,24 +13,23 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b45012f82a2457d09a616c2bd9e7e8866d0f5cdc
-ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
+ms.openlocfilehash: 76c149c351400c57d8d70274d152d23ca6f729df
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453930"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54839889"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
-
-
 # <a name="install-ata---step-8"></a>安裝 ATA - 步驟 8
+
+適用對象：*Advanced Threat Analytics 1.9 版*
 
 > [!div class="step-by-step"]
 > [« 步驟 7](vpn-integration-install-step.md)
 > [步驟 9 »](install-ata-step9-samr.md)
 
 ## <a name="step-8-configure-ip-address-exclusions-and-honeytoken-user"></a>步驟 8： 設定 IP 位址排除項目和 Honeytoken 使用者
+
 ATA 可從一些偵測排除特定 IP 位址或使用者。 
 
 例如，**DNS 探查排除項目**可以是一個使用 DNS 做為掃描機制的安全性掃描程式。 排除項目可協助 ATA 忽略這類掃描器。 「傳遞票證」排除項目的一個範例是 NAT 裝置。    

@@ -13,18 +13,17 @@ ms.technology: ''
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 072abaef05432184653d260c43470e86a38d29db
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 09d471710a987db332a84f0e38a761a3b1e4ed16
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133552"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54839952"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
-
-
 # <a name="ata-disaster-recovery"></a>ATA 災害復原
+
+適用對象：*Advanced Threat Analytics 1.9 版*
+
 本文描述如何在失去 ATA 中心功能，但 ATA 閘道仍可運作的情況下，快速復原 ATA 中心並還原 ATA 功能。 
 
 >[!NOTE]
@@ -40,8 +39,8 @@ ms.locfileid: "46133552"
     3. 依照指示匯出憑證，也請務必匯出私密金鑰。
     4. 將匯出的憑證檔案備份到另一部電腦上。
 
-  > [!NOTE] 
-  > 如果您無法匯出私密金鑰，您必須建立新憑證並將它部署至 ATA (如[變更 ATA 中心憑證](modifying-ata-center-configuration.md)中所述)，然後將它匯出。 
+   > [!NOTE] 
+   > 如果您無法匯出私密金鑰，您必須建立新憑證並將它部署至 ATA (如[變更 ATA 中心憑證](modifying-ata-center-configuration.md)中所述)，然後將它匯出。 
 
 ## <a name="recover-your-ata-center"></a>復原您的 ATA 中心
 

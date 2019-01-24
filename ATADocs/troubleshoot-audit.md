@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 1d186a96-ef70-4787-aa64-c03d1db94ce0
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 55712dfcb74e8779c2e06137ac3ea08f132a4f0f
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 630045525ce344920032ef0245692ed9ca5e5ef1
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133424"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54839517"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
 # <a name="working-with-ata-audit-logs"></a>使用 ATA 稽核記錄檔
+
+
+適用對象：*Advanced Threat Analytics 1.9 版*
 
 ATA 稽核記錄檔會先保留在 [應用程式及服務] 下的 Windows 事件記錄檔，然後再放在 ATA 中心和 ATA 閘道電腦的 **Microsoft ATA**。
 

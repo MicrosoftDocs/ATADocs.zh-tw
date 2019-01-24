@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e5a9718c-b22e-41f7-a614-f00fc4997682
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c0dd00f3d4aa2cbbfe7d4e830bc66901c60b5f52
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 2287fb0a71fc7c11ae271ce7236fb7c86e3d1a4f
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133373"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840260"
 ---
 # <a name="updating-ata-to-version-18"></a>將 ATA 更新至 1.8 版
 
@@ -42,36 +42,36 @@ ms.locfileid: "46133373"
     > [!IMPORTANT]
     > 更新所有 ATA 閘道以確保 ATA 正常運作。
 
-### <a name="step-1-update-the-ata-center"></a>步驟 1︰更新 ATA 中心
+### <a name="step-1-update-the-ata-center"></a>步驟 1：更新 ATA 中心
 
-1.  備份您的資料庫：(選擇性)
+1. 備份您的資料庫：(選擇性)
 
-    -   如果 ATA 中心是作為虛擬機器執行，而您想要取得一個檢查點，請先關閉虛擬機器。
+   -   如果 ATA 中心是作為虛擬機器執行，而您想要取得一個檢查點，請先關閉虛擬機器。
 
-    -   如果 ATA 中心正在實體伺服器上執行，請參閱[災害復原](disaster-recovery.md)一文以取得備份資料庫的相關資訊。
+   -   如果 ATA 中心正在實體伺服器上執行，請參閱[災害復原](disaster-recovery.md)一文以取得備份資料庫的相關資訊。
 
-2.  執行安裝檔案 **Microsoft ATA Center Setup.exe**，並依照螢幕上的指示安裝更新。
+2. 執行安裝檔案 **Microsoft ATA Center Setup.exe**，並依照螢幕上的指示安裝更新。
 
-    -  在 [歡迎] 頁面中，選擇您的語言，然後按一下 [下一步]。
+   - 在 [歡迎] 頁面中，選擇您的語言，然後按一下 [下一步]。
 
-    -  如果您未在 1.7 版中啟用自動更新，系統會提示您設定 ATA，以使用 Microsoft Update 讓 ATA 保持最新狀態。  在 [Microsoft Update] 頁面中，選取 **[當我檢查更新時使用 Microsoft Update (建議選項)]**。
-    ![保持 ATA 最新狀態影像](media/ata_ms_update.png)
+   - 如果您未在 1.7 版中啟用自動更新，系統會提示您設定 ATA，以使用 Microsoft Update 讓 ATA 保持最新狀態。  在 [Microsoft Update] 頁面中，選取 **[當我檢查更新時使用 Microsoft Update (建議選項)]**。
+     ![保持 ATA 最新狀態影像](media/ata_ms_update.png)
      
      這會調整 Windows 設定，以針對 ATA 啟用更新。 
     
-    -  在 [資料移轉] 畫面中，選取您要移轉所有或部分資料。 如果您選擇只移轉部分資料，除了異常行為偵測以外 (其需要三週的時間以建置完整的設定檔)，所有偵測都會立即運作。  
+   - 在 [資料移轉] 畫面中，選取您要移轉所有或部分資料。 如果您選擇只移轉部分資料，除了異常行為偵測以外 (其需要三週的時間以建置完整的設定檔)，所有偵測都會立即運作。  
     
-    **部分**資料移轉花費的時間比安裝還短得多。 如果您選取 [完整] 資料移轉，可能需要很長一段時間才能完成安裝。 請務必觀察 [資料移轉] 畫面中列出的預估時間和所需磁碟空間。 這些數字取決於您之前在舊版 ATA 儲存的擷取網路流量。 例如，在下面的畫面中，您可以看到來自大型資料庫的資料移轉：
+   **部分**資料移轉花費的時間比安裝還短得多。 如果您選取 [完整] 資料移轉，可能需要很長一段時間才能完成安裝。 請務必觀察 [資料移轉] 畫面中列出的預估時間和所需磁碟空間。 這些數字取決於您之前在舊版 ATA 儲存的擷取網路流量。 例如，在下面的畫面中，您可以看到來自大型資料庫的資料移轉：
          
-    ![ATA 資料移轉](media/migration-data-migration.png)
+   ![ATA 資料移轉](media/migration-data-migration.png)
 
-    -  按一下 [更新]。 按一下 [更新] 之後，ATA 會離線直到更新程序完成。
+   -  按一下 [更新]。 按一下 [更新] 之後，ATA 會離線直到更新程序完成。
 
-4.  ATA 中心更新順利完成之後，按一下 [啟動] 開啟 ATA 閘道之 ATA 主控台中的 [更新] 畫面。
+3. ATA 中心更新順利完成之後，按一下 [啟動] 開啟 ATA 閘道之 ATA 主控台中的 [更新] 畫面。
 
-    ![更新成功畫面](media/migration-center-success.png)
+   ![更新成功畫面](media/migration-center-success.png)
 
-5.  在 [更新] 畫面中，如果您已經設定 ATA 閘道自動更新，它們就會現在更新。如果未設定自動更新，請按一下每個 ATA 閘道旁邊的 [更新]。
+4. 在 [更新] 畫面中，如果您已經設定 ATA 閘道自動更新，它們就會現在更新。如果未設定自動更新，請按一下每個 ATA 閘道旁邊的 [更新]。
   
 ![更新閘道影像](media/migration-update-gw.png)
 

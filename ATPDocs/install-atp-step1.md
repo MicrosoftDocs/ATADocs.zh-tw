@@ -13,16 +13,13 @@ ms.technology: ''
 ms.assetid: 15ee7d0b-9a0c-46b9-bc71-98d0b4619ed0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e027e57e3f23be61139217b532b3b4a721dc9cdd
-ms.sourcegitcommit: d1c9c3e69b196f6086a8f100e527553cf0d95aac
+ms.openlocfilehash: 4c178d4ed874ae3d826e97a154ae2e17bd52f48c
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53125144"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840364"
 ---
-*適用於：Azure 進階威脅防護*
-
-
 # <a name="creating-your-azure-atp-instance-in-the-azure-atp-portal---step-1"></a>在 Azure ATP 入口網站中建立您的 Azure ATP 執行個體 - 步驟 1
 
 > [!div class="step-by-step"]
@@ -67,9 +64,9 @@ ms.locfileid: "53125144"
 - 資料保留 – 之前刪除的 Azure ATP 執行個體不會在 UI 中顯示。 如需 Azure ATP 資料保留的詳細資訊，請參閱 [Aure ATP 資料安全性與隱私權](atp-privacy-compliance.md)。
 
 
->[!div class="step-by-step"]
-[«前置安裝](atp-prerequisites.md)
-[步驟 2»](install-atp-step2.md)
+> [!div class="step-by-step"]
+> [«前置安裝](atp-prerequisites.md)
+> [步驟 2»](install-atp-step2.md)
 
 
 

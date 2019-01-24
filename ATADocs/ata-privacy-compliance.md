@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: 1b2d185c-62cd-45f0-b0dd-687b51317f32
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: 08876085e3fe5d86c8219c6b0ad7beb8c44c700a
-ms.sourcegitcommit: 1b23381ca4551a902f6343428d98f44480077d30
+ms.openlocfilehash: 174c3fdace1fcb1d188e3157ae5c6d2a894f1b77
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403228"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54839872"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
 # <a name="ata-data-security-and-privacy"></a>ATA 資料安全性和隱私權
+
+適用對象：*Advanced Threat Analytics 1.9 版*
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 

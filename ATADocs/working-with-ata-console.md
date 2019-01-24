@@ -13,18 +13,17 @@ ms.technology: ''
 ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 08cf7ea6b2d1c32c952a973e9781a24fc9e87230
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: f25cdcf03be079f17adaf16b43be62b29c904bc2
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133849"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54841061"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
-
-
 # <a name="working-with-the-ata-console"></a>使用 ATA 主控台
+
+
+適用對象：*Advanced Threat Analytics 1.9 版*
 
 使用 ATA 主控台監視及回應 ATA 偵測到的可疑活動。
 
@@ -42,13 +41,13 @@ ms.locfileid: "46133849"
 
     ![ATA 伺服器圖示](media/ata-server-icon.png)
 
- >[!NOTE]
- > 您也可以從 ATA 中心或 ATA 閘道開啟瀏覽器，然後瀏覽到您在為 ATA 主控台安裝 ATA 中心時設定的 IP 位址。    
+   >[!NOTE]
+   > 您也可以從 ATA 中心或 ATA 閘道開啟瀏覽器，然後瀏覽到您在為 ATA 主控台安裝 ATA 中心時設定的 IP 位址。    
 
-2.  如果安裝 ATA 中心的電腦與您嘗試存取 ATA 主控台的電腦都已加入網域，則 ATA 會支援與 Windows 驗證整合的單一登入 (如果您已登入電腦，ATA 會使用該權杖將您登入 ATA 主控台)。 您也可以使用智慧卡進行登入。 您在 ATA 中的權限會與您的[系統管理員角色](ata-role-groups.md)對應。
+2. 如果安裝 ATA 中心的電腦與您嘗試存取 ATA 主控台的電腦都已加入網域，則 ATA 會支援與 Windows 驗證整合的單一登入 (如果您已登入電腦，ATA 會使用該權杖將您登入 ATA 主控台)。 您也可以使用智慧卡進行登入。 您在 ATA 中的權限會與您的[系統管理員角色](ata-role-groups.md)對應。
 
- > [!NOTE]
- > 請務必使用您的 ATA 系統管理員使用者名稱和密碼，以登入您要存取 ATA 主控台的電腦。 或者，您可以使用不同的使用者身分執行瀏覽器，或登出 Windows 並使用 ATA 系統管理員使用者身分登入。 若要提示 ATA 主控台要求認證，請使用 IP 位址存取主控台，系統便會提示您輸入認證。
+   > [!NOTE]
+   > 請務必使用您的 ATA 系統管理員使用者名稱和密碼，以登入您要存取 ATA 主控台的電腦。 或者，您可以使用不同的使用者身分執行瀏覽器，或登出 Windows 並使用 ATA 系統管理員使用者身分登入。 若要提示 ATA 主控台要求認證，請使用 IP 位址存取主控台，系統便會提示您輸入認證。
 
 3. 若要使用 SSO 進行登入，請確定 ATA 主控台網站已在您的瀏覽器中定義為近端內部網路網站，而且您使用簡短名稱或 localhost 進行存取。
 

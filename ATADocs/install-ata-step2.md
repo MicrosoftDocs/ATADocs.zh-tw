@@ -13,18 +13,16 @@ ms.technology: ''
 ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c02b495903a30acb47d86c8245e67377adebd14d
-ms.sourcegitcommit: 1bdaccbddf2896be517885fbcee1c2bc47f4de8d
+ms.openlocfilehash: 867d5b9e7fd5f1f316ad7a5aefa00a7e53b34c87
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/30/2018
-ms.locfileid: "53815051"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54839632"
 ---
-適用對象：*Advanced Threat Analytics 1.9 版*
-
-
-
 # <a name="install-ata---step-2"></a>安裝 ATA - 步驟 2
+
+適用對象：*Advanced Threat Analytics 1.9 版*
 
 > [!div class="step-by-step"]
 > [« 步驟 1](install-ata-step1.md)

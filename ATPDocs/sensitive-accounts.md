@@ -13,42 +13,38 @@ ms.technology: ''
 ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 75a450b9ddea9c47d12f9c14da2ee6c3089775ea
-ms.sourcegitcommit: 8f9d6c517b91b9b389b604cd85f2482593b36fcf
+ms.openlocfilehash: 0e95caae500effb8bd5c34c3da44a713088c7585
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53654870"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840277"
 ---
-適用對象：*Azure 進階威脅防護*
-
-
-
 # <a name="working-with-sensitive-accounts"></a>使用機密帳戶
 
 ## <a name="sensitive-groups"></a>敏感性群組
 
 Azure ATP 將下列群組清單視為「機密」。 屬於這些群組的任何實體都視為具有敏感性：
 
--   Administrators
--   Power Users
--   Account Operators
--   Server Operators
--   Print Operators
--   Backup Operators
--   Replicators
--   Network Configuration Operators 
--   Incoming Forest Trust Builders
--   Domain Admins
--   網域控制站
--   Group Policy Creator Owners 
--   唯讀網域控制站 
--   企業唯讀網域控制站 
--   Schema Admins 
--   Enterprise Admins
+- Administrators
+- Power Users
+- Account Operators
+- Server Operators
+- Print Operators
+- Backup Operators
+- Replicators
+- Network Configuration Operators 
+- Incoming Forest Trust Builders
+- Domain Admins
+- 網域控制站
+- Group Policy Creator Owners 
+- 唯讀網域控制站 
+- 企業唯讀網域控制站 
+- Schema Admins 
+- Enterprise Admins
 
- > [!NOTE]
- > 在 2018 年 9 月之前，Azure ATP 也會自動將遠端桌面使用者視為機密。 在此日期之後新增的遠端桌面實體或群組即不會再自動標示為機密，但此日期之前新增的遠端桌面實體或群組，可能仍會維持機密標示。 您現在可以手動變更這項機密設定。  
+  > [!NOTE]
+  > 在 2018 年 9 月之前，Azure ATP 也會自動將遠端桌面使用者視為機密。 在此日期之後新增的遠端桌面實體或群組即不會再自動標示為機密，但此日期之前新增的遠端桌面實體或群組，可能仍會維持機密標示。 您現在可以手動變更這項機密設定。  
 
 ## <a name="tagging-sensitive-accounts"></a>標記機密帳戶
 
@@ -67,7 +63,7 @@ Azure ATP 將下列群組清單視為「機密」。 屬於這些群組的任何
 4. 按一下 **[儲存]**。
 
     
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [處理可疑活動](working-with-suspicious-activities.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

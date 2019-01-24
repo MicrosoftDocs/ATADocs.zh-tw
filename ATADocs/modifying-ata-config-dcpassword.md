@@ -13,22 +13,19 @@ ms.technology: ''
 ms.assetid: 4a25561b-a5ed-44aa-9b72-366976b3c72a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 5c84806dd12e516d1d7b61064906ed57bfd6db72
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 8dfee189f0be42e2d488506a0eaf950107061357
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133271"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54839906"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
-
-
 # <a name="change-ata-configuration---domain-connectivity-password"></a>變更 ATA 設定 - 網域連線密碼
 
-
+適用對象：*Advanced Threat Analytics 1.9 版*
 
 ## <a name="change-the-domain-connectivity-password"></a>變更網域連線密碼
+
 如果您修改網域連線密碼，請確定輸入的密碼正確。 否則 ATA 閘道服務會停止在 ATA 閘道上執行。
 
 如果您懷疑此情況已發生，請於 ATA 閘道上的 Microsoft.Tri.Gateway Errors.log 檔案查看下列錯誤︰`The supplied credential is invalid.`

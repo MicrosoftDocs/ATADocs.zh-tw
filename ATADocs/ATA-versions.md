@@ -12,16 +12,17 @@ ms.technology: ''
 ms.assetid: a8afbd91-c888-4dfc-94ab-72e38745163e
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0265f986c342f424075ecae1ea7a175260067ca1
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: b79cbeab25c0e75714bb69e8b0f3081a210a789e
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133798"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840738"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
 # <a name="support-for-microsoft-advanced-threat-analytics-ata-versions"></a>Microsoft Advanced Threat Analytics (ATA) 各版本的支援
+
+
+適用對象：*Advanced Threat Analytics 1.9 版*
 
 Microsoft 計劃每年發行數次 ATA 更新，而每個更新版本從其公開上市 (GA) 發行日算起支援 12 個月。 將提供完整 12 個月的技術支援。 不過，我們的支援結構現在是動態的，進化成根據最新版本可用性的兩個不同維護階段。
 

@@ -13,19 +13,19 @@ ms.technology: ''
 ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 12d1a3f10cc3b9d99a20a2562ae4f81425ec9578
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 9d043ac8c780505f6e3443c354e02b89d3040b4c
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133489"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54839969"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
-
 # <a name="working-with-ata-system-health-and-events"></a>使用 ATA 系統健康狀態和事件
 
+適用對象：*Advanced Threat Analytics 1.9 版*
+
 ## <a name="ata-health-center"></a>ATA 健全狀況中心
+
 ATA 健全狀況中心可讓您知道 ATA 服務的運作情況，並向您警示問題。
 
 ## <a name="working-with-the-ata-health-center"></a>使用 ATA 健全狀況中心
@@ -38,16 +38,16 @@ ATA 健全狀況中心可讓您知道 ATA 服務的運作情況，並向您警�
 
 -   將開啟的警示設定為 [關閉]、[隱藏] 或 [刪除]，或是按一下警示角落的三個點並選擇所要的選項，便能管理所有開啟的警示。
 
--   **開啟**：所有新的可疑活動都出現在此清單中。
+-   **開啟**：所有新的可疑活動都會出現在此清單中。
 
--   **關閉**：用於追蹤您已識別、研究與修正以緩解的可疑活動。
+-   **關閉**：用於追蹤您已識別、研究與修正以降低風險的可疑活動。
 
     > [!NOTE]
     > 如果在短時間內偵測到相同的活動，ATA 可能會重新開啟已經關閉的活動。
 
--   **隱藏**：隱藏活動表示您想要暫時將它忽略，只有出現新的執行個體時才會再次收到警示。 如果有類似的警示，ATA 不會將它重新開啟。 但如果此警示在停止七天後再次出現，您便會再次收到警示。
+-   **隱藏**：隱藏活動表示您想要暫時將它忽略，只有出現新的執行個體時，才會再次收到警示。 如果有類似的警示，ATA 不會將它重新開啟。 但如果此警示在停止七天後再次出現，您便會再次收到警示。
 
-- **刪除**：如果您刪除警示，則會將它從系統和資料庫中刪除，而且您將「無法」予以還原。 按一下 [刪除] 之後，您將可以刪除相同類型的所有可疑活動。
+- **刪除**：如果您刪除警示，即會將其從系統和資料庫中刪除，且您將「無法」予以還原。 按一下 [刪除] 之後，您將可以刪除相同類型的所有可疑活動。
 
 
 

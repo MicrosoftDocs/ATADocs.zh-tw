@@ -13,18 +13,16 @@ ms.technology: ''
 ms.assetid: e0aed853-ba52-46e1-9c55-b336271a68e7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8a651e177d37361ccbca178075fb2ac33a434a90
-ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
+ms.openlocfilehash: c45436c78af1f6d44073f88fb042ab9c9f1acfb0
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453913"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840891"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
-
-
 # <a name="install-ata---step-7"></a>安裝 ATA - 步驟 7
+
+適用對象：*Advanced Threat Analytics 1.9 版*
 
 > [!div class="step-by-step"]
 > [« 步驟 5](install-ata-step5.md)
@@ -72,11 +70,11 @@ ATA 會收集 VPN 資料，並找出經由 VPN 使用認證的時間與位置，
 
 在 ATA 中設定 VPN 資料：
 
-1.  在 ATA 主控台中，開啟 [ATA 設定] 頁面，並前往 [VPN]。
+1. 在 ATA 主控台中，開啟 [ATA 設定] 頁面，並前往 [VPN]。
  
-  ![ATA 設定功能表](./media/config-menu.png)
+   ![ATA 設定功能表](./media/config-menu.png)
 
-2.  開啟 [Radius 帳戶處理]，然後輸入先前在 RRAS VPN 伺服器上設定的 [共用祕密]。 然後按一下 [儲存]。
+2. 開啟 [Radius 帳戶處理]，然後輸入先前在 RRAS VPN 伺服器上設定的 [共用祕密]。 然後按一下 [儲存]。
  
 
   ![設定 ATA VPN](./media/vpn.png)

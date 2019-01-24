@@ -13,18 +13,17 @@ ms.technology: ''
 ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 00601746ffabc8f0d8c798b09a6c2d989630f736
-ms.sourcegitcommit: 2916d6f8d6e6f754d7fb8a5d31b255a46aa35ecd
+ms.openlocfilehash: 1b932d85321e11d85284ef325268ae57b98173b3
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50132634"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840015"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
-
-
 # <a name="set-ata-notifications"></a>設定 ATA 通知
+
+適用對象：*Advanced Threat Analytics 1.9 版*
+
 ATA 可在偵測到可疑的活動時通知您，方法是透過電子郵件或使用 ATA 事件轉寄，並將事件轉寄到您的 SIEM/syslog 伺服器。 您必須先[設定電子郵件伺服器和 Syslog 伺服器](setting-syslog-email-server-settings.md)，才能選取要接收的通知。
 
 > [!NOTE]

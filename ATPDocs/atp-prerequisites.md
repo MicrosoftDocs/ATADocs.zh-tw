@@ -13,17 +13,13 @@ ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1fc3930fc4b38b396bda2c3ff50795d835910439
-ms.sourcegitcommit: 1c657f269aaece71b2126df55a37f8c43851539a
+ms.openlocfilehash: 06e31d44afba18cb44d2df6cde167c9a8babc92b
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53335416"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840721"
 ---
-適用對象：*Azure 進階威脅防護*
-
-
-
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 本文描述在您的環境中成功部署 Azure ATP 的需求。
 
@@ -69,13 +65,13 @@ Azure ATP 是由 Azure ATP 雲端服務組成，其包含 Azure ATP 入口網站
 
 ## <a name="azure-atp-portal-requirements"></a>Azure ATP 入口網站需求
 您可透過瀏覽器來存取 Azure ATP 入口網站，其支援下列瀏覽器和設定︰
--   Microsoft Edge
--   Internet Explorer 第 10 版及更新版本
--   Google Chrome 4.0 和更新版本
--   螢幕解析度最低需求為 1700 像素
--   防火牆/Proxy 開啟 - 若要與 Azure ATP 雲端服務通訊，您必須在防火牆/Proxy 中針對 *.atp.azure.com 開啟連接埠 443。
+- Microsoft Edge
+- Internet Explorer 第 10 版及更新版本
+- Google Chrome 4.0 和更新版本
+- 螢幕解析度最低需求為 1700 像素
+- 防火牆/Proxy 開啟 - 若要與 Azure ATP 雲端服務通訊，您必須在防火牆/Proxy 中針對 *.atp.azure.com 開啟連接埠 443。
 
- ![Azure ATP 架構圖表](media/ATP-architecture-topology.png)
+  ![Azure ATP 架構圖表](media/ATP-architecture-topology.png)
 
 
 > [!NOTE]

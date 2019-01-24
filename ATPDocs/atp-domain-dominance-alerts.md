@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 1/15/2019
+ms.date: 1/20/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,22 +13,22 @@ ms.technology: ''
 ms.assetid: 0b3a1db5-0d43-49af-b356-7094cc85f0a5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e2a8eb9ada18e14bbe88cdd6c0081c86e5733648
-ms.sourcegitcommit: e2daa0f93d97d552cfbf1577fbd05a547b63e95b
+ms.openlocfilehash: 929dfae084bbce8f831c55d042f7765ddfd64019
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54314409"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840840"
 ---
 # <a name="tutorial-domain-dominance-alerts"></a>教學課程：控制網域警訊  
 
-網路攻擊通常會針對任何可存取的實體進行，例如低權限的使用者，然後快速橫向移動，直到攻擊者得以存取有價值的資產。 有價值的資產可能是敏感性帳戶、網域系統管理員，或高度敏感性資料。 Azure ATP 會從整個攻擊狙殺鏈來源識別進階威脅，並予以分類為下列階段：
+網路攻擊通常會針對任何可存取的實體進行，例如低權限的使用者，然後快速橫向移動，直到攻擊者得以存取有價值的資產。 敏感性帳戶、網域系統管理員或高度敏感性資料均為重要資產。 Azure ATP 會從整個攻擊狙殺鏈來源識別進階威脅，並將其分成下列幾個階段：
 
 1. [偵察](atp-reconnaissance-alerts.md)
 2. [遭入侵的認證](atp-compromised-credentials-alerts.md)
 3. [橫向移動](atp-lateral-movement-alerts.md)
 4. **網域支配**
-5. [外流](atp-exfiltration-alerts.md)
+5. [Exfiltration](atp-exfiltration-alerts.md)
 
 若要深入了解如何了解所有 Azure ATP 安全性警示的結構和通用元件，請參閱[了解安全性警示](understanding-security-alerts.md)。
 
@@ -299,22 +299,23 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 **TP、B-TP 或 FP**
 <br>某些合法資源不支援強式加密方法，並可能觸發此警示。 
 
-2. 所有的來源使用者是否共用某些共通項目？ 
-    1. 例如，您所有的行銷人員是否都能存取特定資源，並有可能觸發警示？
-    2. 檢查透過那些票證所存取的資源。 
-        - 透過檢查資源服務帳戶的 *msDS-SupportedEncryptionTypes* 屬性，以在 Active Directory 中檢查這點。
-    3. 若只存取一項資源，請檢查其是否為這些使用者應該存取的有效資源。  
 
-    如果以上其中一個問題的答案為**是**，則可能為 **T-BP** 活動。 檢查資源是否可以支援強式加密方法；如有可能，請實作更強的加密方法，並**關閉**安全性警示。
+1. 所有的來源使用者是否共用某些共通項目？ 
+   1. 例如，您所有的行銷人員是否都能存取特定資源，並有可能觸發警示？
+   2. 檢查透過那些票證所存取的資源。 
+       - 透過檢查資源服務帳戶的 *msDS-SupportedEncryptionTypes* 屬性，以在 Active Directory 中檢查這點。
+   3. 若只存取一項資源，請檢查其是否為這些使用者應該存取的有效資源。  
+
+      如果以上其中一個問題的答案為**是**，則可能為 **T-BP** 活動。 檢查資源是否可以支援強式加密方法；如有可能，請實作更強的加密方法，並**關閉**安全性警示。
 
 應用程式可能使用較低的加密方法進行驗證。 某些應用程式會代替使用者進行驗證，例如 IIS 伺服器和 SQL Server。 
 
 1. 檢查來源使用者是否有某些共通項目。         
-    - 例如，您所有的銷售人員是否使用可能觸發警示的特定應用程式？
-    - 檢查來源電腦上是否有此類型的應用程式。 
-    - 檢查電腦角色。 <br>它們是否針對該工作提供這些應用程式類型？ 
+   - 例如，您所有的銷售人員是否使用可能觸發警示的特定應用程式？
+   - 檢查來源電腦上是否有此類型的應用程式。 
+   - 檢查電腦角色。 <br>它們是否針對該工作提供這些應用程式類型？ 
 
-    如果以上其中一個問題的答案為**是**，則可能為 **T-BP** 活動。 檢查資源是否可以支援強式加密方法；如有可能，請實作更強的加密方法，並**關閉**安全性警示。
+     如果以上其中一個問題的答案為**是**，則可能為 **T-BP** 活動。 檢查資源是否可以支援強式加密方法；如有可能，請實作更強的加密方法，並**關閉**安全性警示。
 
 
 **了解漏洞的範圍**
@@ -420,9 +421,9 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
     - 如果您已安裝 Windows Defender ATP - 請利用 **klist.exe 清除**來刪除與特定登入工作階段有關的所有票證，並防止相關票證在未來遭到誤用。
 2. 包含此票證所存取的資源。
 3. 根據 [KRBTGT Account Password Reset Scripts now available for customers](https://cloudblogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)，變更 Kerberos 票證授權票證 (KRBTGT) 密碼兩次。 
-    - 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效。 使此網域中的所有 Kerberos 票證失效，代表**所有**服務將會中斷，且在這些票證更新之前都不會運作，或在某些情況下重新啟動服務。 
+   - 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效。 使此網域中的所有 Kerberos 票證失效，代表**所有**服務將會中斷，且在這些票證更新之前都不會運作，或在某些情況下重新啟動服務。 
 
-    **請在對 KRBTGT 進行兩次重設之前，先做好謹慎規劃。重設會影響環境中所有的電腦、伺服器及使用者。**
+     **請在對 KRBTGT 進行兩次重設之前，先做好謹慎規劃。重設會影響環境中所有的電腦、伺服器及使用者。**
 
 ## <a name="suspected-golden-ticket-usage-time-anomaly-external-id-2022"></a>可疑的黃金票證使用 (時間異常) (外部識別碼 2022) 
 
@@ -448,11 +449,11 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
     - 尋找執行攻擊的工具，並將它移除。
     - 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設他們的密碼，並啟用 MFA。
     - 如果您已安裝 Windows Defender ATP - 請利用 **klist.exe 清除**來刪除與特定登入工作階段有關的所有票證，並防止相關票證在未來遭到誤用。
-3. 包含此票證所存取的資源。
-4. 根據 [KRBTGT Account Password Reset Scripts now available for customers](https://cloudblogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)，變更 Kerberos 票證授權票證 (KRBTGT) 密碼兩次。 
-    - 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效。 使此網域中的所有 Kerberos 票證失效，代表**所有**服務將會中斷，且在這些票證更新之前都不會運作，或在某些情況下重新啟動服務。 
+2. 包含此票證所存取的資源。
+3. 根據 [KRBTGT Account Password Reset Scripts now available for customers](https://cloudblogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)，變更 Kerberos 票證授權票證 (KRBTGT) 密碼兩次。 
+   - 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效。 使此網域中的所有 Kerberos 票證失效，代表**所有**服務將會中斷，且在這些票證更新之前都不會運作，或在某些情況下重新啟動服務。 
 
-    **請在對 KRBTGT 進行兩次重設之前，先做好謹慎規劃。重設會影響環境中所有的電腦、伺服器及使用者。**
+     **請在對 KRBTGT 進行兩次重設之前，先做好謹慎規劃。重設會影響環境中所有的電腦、伺服器及使用者。**
 
 ## <a name="suspected-skeleton-key-attack-encryption-downgrade-external-id-2010"></a>可疑的萬能金鑰攻擊 (加密降級) (外部識別碼 2010) 
 

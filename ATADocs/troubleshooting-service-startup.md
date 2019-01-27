@@ -13,18 +13,16 @@ ms.technology: ''
 ms.assetid: 5a65285c-d1de-4025-9bb4-ef9c20b13cfa
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e3f59bc7c6873407d8764dc5ab64bfd7a52fdebe
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 21afd487fbf15b3fc1f5d618e0e6b98d50d07cae
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133339"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54839558"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
-
-
 # <a name="troubleshooting-service-startup"></a>為服務啟動進行疑難排解
+
+適用對象：*Advanced Threat Analytics 1.9 版*
 
 ## <a name="troubleshooting-ata-center-service-startup"></a>針對 ATA 中心服務啟動進行疑難排解
 
@@ -51,7 +49,7 @@ ms.locfileid: "46133339"
 **徵兆**
 
 您的 ATA 閘道未啟動且您收到此錯誤：<br></br>
-System.Net.Http.HttpRequestException: 回應狀態碼未指出成功: 500 (內部伺服器錯誤)
+*System.Net.Http.HttpRequestException:回應狀態碼未指出成功：500 (內部伺服器錯誤)*
 
 **描述**
 
@@ -69,5 +67,5 @@ System.Net.Http.HttpRequestException: 回應狀態碼未指出成功: 500 (內�
 - [ATA 必要條件](ata-prerequisites.md)
 - [ATA 容量規劃](ata-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
-- [設定 Windows 事件轉送](configure-event-collection.md#configuring-windows-event-forwarding)
+- [設定 Windows 事件轉送](configure-event-collection.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

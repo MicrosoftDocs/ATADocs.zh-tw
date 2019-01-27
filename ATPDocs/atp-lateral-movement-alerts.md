@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 1/15/2019
+ms.date: 1/20/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2257eb00-8614-4577-b6a1-5c65085371f2
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7816dba02c2fea07afc080c7aed5ede073c88fac
-ms.sourcegitcommit: e2daa0f93d97d552cfbf1577fbd05a547b63e95b
+ms.openlocfilehash: e564307a62361cd8b1c872818225a2e1e63585fb
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54314307"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840772"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>教學課程：橫向移動警訊  
 
@@ -35,10 +35,48 @@ ms.locfileid: "54314307"
 下列安全性警訊可協助您找出並補救 Azure ATP 在您網路中偵測到的**橫向移動**階段可疑活動。 在本教學課程中，您將了解如何了解、分類、補救和防範以下各類攻擊：
 
 > [!div class="checklist"]
+> * 透過 DNS 執行遠端程式碼 - 預覽 (外部識別碼 2036)
 > * 可疑的身分識別竊取 (雜湊傳遞) (外部識別碼 2017)
 > * 可疑的身分識別竊取 (票證傳遞) (外部識別碼 2018)
 > * 可疑的 Overpass-the-Hash 攻擊 (加密降級) (外部識別碼 2008)
 > * 可疑的 Overpass-the-Hash 攻擊 (Kerberos) (外部識別碼 2002)
+
+## <a name="remote-code-execution-over-dns-external-id-2036---preview"></a>透過 DNS 執行遠端程式碼 (外部識別碼 2036) - 預覽
+
+**描述**
+
+2018/12/11 Microsoft 發佈了 [CVE-2018-8626](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8626)，宣布新發現在 Windows 網域名稱系統 (DNS) 伺服器中存在遠端程式碼執行弱點。 在這個弱點中，伺服器無法適當地處理要求。 成功攻擊該弱點的攻擊者，可在本機系統帳戶的環境中執行任意程式碼。 目前設定為 DNS 伺服器的 Windows 伺服器具有此弱點的風險。
+
+在此偵測中，當懷疑針對網路中的網域控制站利用 CVE-2018-8626 安全性漏洞的 DNS 查詢時，便會觸發 Azure ATP 安全性警示。
+
+**TP、B-TP 或 FP**
+
+1. 目的電腦是否為最新，且已針對 CVE-2018-8626 進行修補？ 
+    - 如果電腦為最新且已修補，請視為 **FP** 並**關閉**安全性警示。
+2. 在攻擊發生前是否建立了服務或執行了不熟悉的程序
+    - 如果沒有發現任何新的服務或不熟悉的服務，請視為 **FP** 並**關閉**安全性警示。 
+3. 此攻擊類型可能使 DNS 服務當機，然後成功地執行程式碼。
+    - 檢查 DNS 服務在攻擊發生前是否曾重新啟動過幾次。
+    - 如果 DNS 已重新啟動，則有可能是嘗試惡意探索 CVE-2018-8626。 請將此警告視為 **TP**，並遵循**了解缺口的範圍**中的指示。 
+
+**了解漏洞的範圍**
+
+- 調查[來源和目的電腦](investigate-a-computer.md)。
+
+**建議的補救和預防步驟**
+
+**補救**
+
+1. 包含網域控制站。 
+    1. 修復遠端程式碼執行嘗試。
+    2. 另外請尋找在可疑活動期間登入的使用者，因為他們可能也遭到入侵。 重設他們的密碼，並啟用 MFA。 
+2. 包含來源電腦。
+    1. 尋找執行攻擊的工具，並將它移除。
+    2. 另外請尋找在可疑活動期間登入的使用者，因為他們可能也遭到入侵。 重設他們的密碼，並啟用 MFA。
+
+**防範**
+
+- 確定環境中的所有 DNS 伺服器都是最新狀態，並已針對 [CVE-2018-8626](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8626) 進行修補。 
 
 ## <a name="suspected-identity-theft-pass-the-hash-external-id-2017"></a>可疑的身分識別竊取 (雜湊傳遞) (外部識別碼 2017)
 
@@ -114,19 +152,19 @@ ms.locfileid: "54314307"
 
 **TP、B-TP、或 FP？**
 1. 判斷智慧卡設定最近是否變更過。 
-    - 有關帳戶的智慧卡設定最近是否變更過？  
+   - 有關帳戶的智慧卡設定最近是否變更過？  
     
-    如果答案為是，則為 **T-BP** 活動，並請**關閉**安全性警訊。 
+     如果答案為是，則為 **T-BP** 活動，並請**關閉**安全性警訊。 
 
 某些合法資源不支援強式加密，並可能觸發此警訊。 
 
 2. 所有來源使用者都共用某些項目嗎？ 
-    1. 比方說，您所有的行銷人員是否都能存取可能會觸發警訊的特定資源？
-    2. 檢查透過那些票證所存取的資源。 
-        - 透過檢查資源服務帳戶的 *msDS-SupportedEncryptionTypes* 屬性，以在 Active Directory 中檢查這點。
-    3. 若只存取了一項資源，請檢查其是否為這些使用者可存取的有效資源。   
+   1. 比方說，您所有的行銷人員是否都能存取可能會觸發警訊的特定資源？
+   2. 檢查透過那些票證所存取的資源。 
+       - 透過檢查資源服務帳戶的 *msDS-SupportedEncryptionTypes* 屬性，以在 Active Directory 中檢查這點。
+   3. 若只存取了一項資源，請檢查其是否為這些使用者可存取的有效資源。   
 
-    若上述任一問題的答案為**是**，則很可能是 **T-BP** 活動。 檢查該資源是否可支援強式加密，並盡量實作強式加密，然後**關閉**安全性警訊。
+      若上述任一問題的答案為**是**，則很可能是 **T-BP** 活動。 檢查該資源是否可支援強式加密，並盡量實作強式加密，然後**關閉**安全性警訊。
 
 **了解漏洞的範圍**
 

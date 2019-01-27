@@ -13,18 +13,17 @@ ms.technology: ''
 ms.assetid: ebd41719-c91a-4fdd-bcab-2affa2a2cace
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d37fade3dd287be77bda16ebcd2cda204de265f6
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: d40c21dc761b624eea2412bdfc0778774f2840ca
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133781"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54839615"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
-
-
 # <a name="validate-port-mirroring"></a>驗證連接埠鏡像
+
+適用對象：*Advanced Threat Analytics 1.9 版*
+
 > [!NOTE] 
 > 本文只有在部署 ATA 閘道 (而非 ATA 輕量型閘道) 時才適用。 若要判斷是否需要使用 ATA 閘道，請參閱[為您的部署選擇正確閘道](ata-capacity-planning.md#choosing-the-right-gateway-type-for-your-deployment)。
  
@@ -208,7 +207,7 @@ ms.locfileid: "46133781"
 
         ![建立新的擷取索引標籤影像](media/ATA-Port-Mirroring-Capture.jpg)
 
-3.  在 [顯示篩選] 視窗中，輸入下列篩選︰**KerberosV5 或 LDAP**，然後按一下 [套用]。
+3.  在 [顯示篩選器] 視窗中，輸入下列篩選：**KerberosV5 OR LDAP**，然後按一下 [套用]。
 
     ![套用 KerberosV5 或 LDAP 篩選影像](media/ATA-Port-Mirroring-filter-settings.jpg)
 

@@ -13,18 +13,16 @@ ms.technology: ''
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: dbc89fc060fb10408edc5137ae0179d8711e7517
-ms.sourcegitcommit: f86dc8ad3d1e75ba64b372d4d0ab5386e28f2e29
+ms.openlocfilehash: 75f75173fd8776b89781698bb5f64d7186f938f7
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609651"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840449"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
-
-
 # <a name="install-ata---step-5"></a>安裝 ATA - 步驟 5
+
+適用對象：*Advanced Threat Analytics 1.9 版*
 
 > [!div class="step-by-step"]
 > [«步驟 4](install-ata-step4.md)
@@ -32,41 +30,42 @@ ms.locfileid: "51609651"
 
 
 ## <a name="step-5-configure-the-ata-gateway-settings"></a>步驟 5： 設定 ATA 閘道設定
+
 安裝 ATA 閘道後，執行下列步驟來設定 ATA 閘道的設定。
 
-1.  在 ATA 主控台中，移至 [設定]，在 [系統] 下選取 [閘道]。
+1. 在 ATA 主控台中，移至 [設定]，在 [系統] 下選取 [閘道]。
    
-     ![設定閘道設定影像](media/ata-gw-config-1.png)
+    ![設定閘道設定影像](media/ata-gw-config-1.png)
 
 
-2.  按一下您想要設定的閘道，然後輸入下列資訊：
+2. 按一下您想要設定的閘道，然後輸入下列資訊：
 
-    ![設定閘道設定影像](media/ATA-Gateways-config-2.png)
+   ![設定閘道設定影像](media/ATA-Gateways-config-2.png)
 
-  - **描述**：輸入 ATA 閘道的描述 (選擇性)。
-  - **連接埠鏡像的網域控制站 (FQDN)** (如果是 ATA 閘道則必填，無法針對 ATA 輕量型閘道變更)︰輸入您網域控制站的完整 FQDN，然後按一下加號將它新增至清單。 例如，**dc01.contoso.com**
+   - **描述**：輸入 ATA 閘道的描述 (選擇性)。
+   - **連接埠鏡像網域控制站 (FQDN)** (ATA 閘道的必要項，無法針對 ATA 輕量型閘道進行變更)︰輸入您網域控制站的完整 FQDN，然後按一下加號將它新增至清單。 例如，**dc01.contoso.com**
 
-  下列資訊適用於您在**網域控制站**清單中輸入的伺服器：  
+   下列資訊適用於您在**網域控制站**清單中輸入的伺服器：  
 
-  - 所有透過連接埠鏡像受 ATA 閘道監視流量的網域控制站，都必須列在**網域控制站**清單中。 如果網域控制站未列在**網域控制站**清單中，可能無法如預期般偵測可疑的活動。  
+   - 所有透過連接埠鏡像受 ATA 閘道監視流量的網域控制站，都必須列在**網域控制站**清單中。 如果網域控制站未列在**網域控制站**清單中，可能無法如預期般偵測可疑的活動。  
    - 清單中應至少有一個網域控制站是通用類別目錄。 這會讓 ATA 解析樹系中其他網域的電腦與使用者物件。
 
-  - **擷取網路介面卡** (必填)︰
-    - 針對專用伺服器上的 ATA 閘道，請選取設定為目的地鏡像連接埠的網路介面卡。 這些介面卡會接收鏡像網域控制站的流量。
-    - 針對 ATA 輕量型閘道，則應該是用來與組織中其他電腦通訊的所有網路介面卡。
+   - **擷取網路介面卡** (必填)︰
+   - 針對專用伺服器上的 ATA 閘道，請選取設定為目的地鏡像連接埠的網路介面卡。 這些介面卡會接收鏡像網域控制站的流量。
+   - 針對 ATA 輕量型閘道，則應該是用來與組織中其他電腦通訊的所有網路介面卡。
   
-  - **網域同步器候選**：任何設為網域同步器候選的 ATA 閘道皆可負責進行 ATA 與 Active Directory 網域之間的同步處理。 根據網域的大小而定，首次同步處理可能需要一些時間，而且會耗用大量資源。 根據預設，只有 ATA 閘道會設為網域同步器候選。
+   - **網域同步器候選**：任何設為網域同步器候選的 ATA 閘道皆可負責進行 ATA 與 Active Directory 網域之間的同步處理。 根據網域的大小而定，首次同步處理可能需要一些時間，而且會耗用大量資源。 根據預設，只有 ATA 閘道會設為網域同步器候選。
    建議停用所有遠端站台 ATA 閘道，使它們不會成為網域同步器候選。
    如果網域控制站是唯讀的，請勿將其設定為網域同步器候選。 如需詳細資訊，請參閱 [ATA 架構](ata-architecture.md#ata-lightweight-gateway-features)。
 
-  > [!NOTE] 
-  > 安裝後第一次啟動 ATA 閘道服務時會花幾分鐘時間，因為它要建立網路擷取剖析器的快取。
-  > 在 ATA 閘道與 ATA 中心進行下一次的排程同步時，設定的變更便會套用至 ATA 閘道。
+   > [!NOTE] 
+   > 安裝後第一次啟動 ATA 閘道服務時會花幾分鐘時間，因為它要建立網路擷取剖析器的快取。
+   > 在 ATA 閘道與 ATA 中心進行下一次的排程同步時，設定的變更便會套用至 ATA 閘道。
 
 3. 您也可以選擇設定 [Syslog 接聽程式和 Windows 事件轉寄集合](configure-event-collection.md)。 
 4. 啟用 [自動更新 ATA 閘道]，使您於未來將 ATA 中心更新為新的版本時，此 ATA 閘道也會自動更新。
 
-5. 按一下 [儲存]。
+5. 按一下 **[儲存]**。
 
 
 ## <a name="validate-installations"></a>驗證安裝
@@ -101,5 +100,5 @@ ms.locfileid: "51609651"
 - [ATA 調整大小工具](http://aka.ms/atasizingtool)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)
-- [ATA 必要條件](ata-prerequisites.md)
+- [ATA 先決條件](ata-prerequisites.md)
 

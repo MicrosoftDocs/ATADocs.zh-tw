@@ -12,17 +12,13 @@ ms.prod: ''
 ms.assetid: da0ee438-35f8-4097-b3a1-1354ad59eb32
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9485e3dd70708caf6e3ebbe60d9c006fac0b0163
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: 51ce0ca62d29c58475f8f426ee715515cf106193
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744722"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54459085"
 ---
-適用於：Azure 進階威脅防護
-
-
-
 # <a name="azure-atp-capacity-planning"></a>Azure ATP 容量規劃
 此文章可協助您判斷您需要多少 Azure ATP 感應器和獨立感應器。
 

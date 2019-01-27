@@ -13,19 +13,16 @@ ms.technology: ''
 ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a0b856ced72ad91a046f1116f96648baba7f7cba
-ms.sourcegitcommit: bdf5dc203ecec3e7542f2ed08852afeff4f20dcd
+ms.openlocfilehash: 36ba5f6e79743065ba3579fa72aa752ad8a63534
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52950300"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54839595"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
+# <a name="manage-system-generated-logs"></a>管理系統產生的記錄
 
-
-
-# <a name="manage-system-generated-logs"></a>管理系統產生的記錄> 
-
+適用對象：*Advanced Threat Analytics 1.9 版*
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
@@ -33,6 +30,7 @@ ms.locfileid: "52950300"
  > Advanced Threat Analytics (ATA) 會收集有關 ATA 的匿名系統產生記錄，並透過 HTTPS 連線將資料傳輸至 Microsoft 伺服器。 Microsoft 將使用此資料以協助改善未來的 ATA 版本。
 
 ## <a name="data-collected"></a>收集的資料
+
 收集的匿名資料包含下列參數︰
 
 -   來自 ATA 中心和 ATA 閘道的效能計數器

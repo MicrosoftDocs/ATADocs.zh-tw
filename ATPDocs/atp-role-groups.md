@@ -13,18 +13,13 @@ ms.technology: ''
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4481f8896791e98f76a6fb6f0b93796337b15ed1
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: bb577283303437db1e524f1e1f5a112be2bb8bcf
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744326"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54458694"
 ---
-適用於：Azure 進階威脅防護
-
-
-
-
 # <a name="azure-atp-role-groups"></a>Azure ATP 角色群組
 
 Azure ATP 提供角色型安全性，可根據組織的特定安全性和合規性需求來保護資料。 Azure ATP 支援三種不同的角色：系統管理員、使用者和檢視者。 

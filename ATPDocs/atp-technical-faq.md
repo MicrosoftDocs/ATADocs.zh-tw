@@ -13,15 +13,13 @@ ms.technology: ''
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0001be015d45809a0ca550287452cfc4c366778d
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: 4f551e27d6417f0fa1a65427998e8d1cb33dcf7c
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744773"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840568"
 ---
-適用於：Azure 進階威脅防護
-
 # <a name="azure-atp-frequently-asked-questions"></a>Azure ATP 常見問題集
 本文提供關於 Azure ATP 的常見問題與解答清單，並分成下列類別： 
 - [什麼是 Azure ATP](#what-is-azure-atp)
@@ -122,7 +120,7 @@ Azure 進階威脅防護支援多網域環境與多樹系。 此功能目前處�
 您可以將 Azure ATP 設定為針對健康狀態警示和偵測到可疑活動時，使用 CEF 格式傳送 Syslog 警示至任何 SIEM 伺服器。 如需詳細資訊，請參閱 [SIEM 記錄檔參考](cef-format-sa.md)。
 
 ### <a name="why-are-certain-accounts-considered-sensitive"></a>為何將某些帳戶視為機密？
-當帳戶為被指定為機密之群組的成員 (例如「網域系統管理員」) 時，便會發生這種情況。
+當帳戶為被指定為機密之群組的成員時，便會發生這種情況 (例如「網域系統管理員」)。
 
 若要了解為何是機密帳戶，您可以檢閱其群組成員資格，以了解它所屬的機密群組 (其所屬的群組也可以是因為另一個群組而機密，因此您應該執行相同的程序，直到找出最高層級的機密群組)。 您也可以手動[將帳戶標記為敏感性](sensitive-accounts.md)。
 
@@ -136,18 +134,18 @@ Azure 進階威脅防護支援多網域環境與多樹系。 此功能目前處�
 ### <a name="how-can-i-test-azure-atp"></a>如何測試 Azure ATP？
 您能以端對端測試的方式模擬可疑的活動。 在下列案例中，我們模擬了 DNS 偵察：
 
-1.  確認已安裝 Azure ATP 感應器並已在網域控制站上設定 (或已安裝並設定獨立感應器與相關的連接埠鏡像)
-2.  開啟 CMD
-3.  執行下列命令：nslookup -<DC iP address>
-    -   按 Enter
-    -   輸入：Is -d <FQDN>
-    -   視您的環境設定而定，從「拒絕查詢」到您的 DNS 記錄清單等都可能會不一樣。 
+1. 確認已安裝 Azure ATP 感應器並已在網域控制站上設定 (或已安裝並設定獨立感應器與相關的連接埠鏡像)
+2. 開啟 CMD
+3. 執行下列命令：nslookup -<DC iP address>
+   - 按 Enter
+   - 輸入：Is -d <FQDN>
+   - 視您的環境設定而定，從「拒絕查詢」到您的 DNS 記錄清單等都可能會不一樣。 
 4. 在 Azure ATP 入口網站中，檢視模擬 DNS 偵察的相關警示。 
 
 ## <a name="see-also"></a>另請參閱
-- [Azure ATP 必要條件](atp-prerequisites.md)
+- [Azure ATP 先決條件](atp-prerequisites.md)
 - [Azure ATP 容量規劃](atp-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
-- [設定 Windows 事件轉送](configure-event-forwarding.md#configuring-windows-event-forwarding)
+- [設定 Windows 事件轉送](configure-event-forwarding.md)
 - [疑難排解](troubleshooting-atp-known-issues.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

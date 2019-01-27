@@ -13,21 +13,20 @@ ms.technology: ''
 ms.assetid: cdaddca3-e26e-4137-b553-8ed3f389c460
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b8b9f3b1eeb36e3a4af949d7165ce0a46225b858
-ms.sourcegitcommit: 59ed430fa0cd8ac34a70609026ec5fc2f5972f57
+ms.openlocfilehash: 31bb8affe271ec51f922cf67632988dfc1265ba3
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2018
-ms.locfileid: "49480645"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840232"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
-
-
 # <a name="configure-port-mirroring"></a>設定連接埠鏡像
+
+適用對象：*Advanced Threat Analytics 1.9 版*
+
 > [!NOTE] 
 > 本文只有在部署 ATA 閘道 (而非 ATA 輕量型閘道) 時才適用。 若要判斷是否需要使用 ATA 閘道，請參閱[為您的部署選擇正確閘道](ata-capacity-planning.md#choosing-the-right-gateway-type-for-your-deployment)。
- 
+
 ATA 使用的主要資料來源是對進出網域控制站的網路流量的深度封包檢查。 為了讓 ATA 看到網路流量，您必須設定連接埠鏡像或使用網路 TAP。
 
 若是連接埠鏡像，請為每個要監視的網域控制站設定**連接埠鏡像**，做為網路流量的**來源**。 一般而言，設定通訊埠鏡像必須與網路或虛擬化團隊合作。

@@ -13,17 +13,13 @@ ms.technology: ''
 ms.assetid: 9ec7eb4c-3cad-4543-bbf0-b951d8fc8ffe
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5ca24df927bc91383449926bdcd67a1c29585618
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: a9b69db461dc322010fcb8aa446a95151b7a276f
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783571"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840534"
 ---
-適用於：Azure 進階威脅防護
-
-
-
 # <a name="configure-port-mirroring"></a>設定連接埠鏡像
 > [!NOTE] 
 > 本文僅適用於部署 Azure ATP 獨立感應器 (而非 Azure ATP 感應器) 的情況。 若要判斷是否需要使用 Azure ATP 獨立感應器，請參閱[為您的部署選擇正確感應器](atp-capacity-planning.md#choosing-the-right-sensor-type-for-your-deployment)。
@@ -63,12 +59,12 @@ Azure ATP 所使用的主要資料來源，是針對您網域控制站之雙向�
 
 **如果您正在使用虛擬化叢集︰**
 
--   針對在具有 Azure ATP 獨立感應器之虛擬機器中的虛擬化叢集上執行的每個網域控制站，設定網域控制站與 Azure ATP 獨立感應器之間的親和性。 如此一來，當網域控制站移至叢集中的另一部主機時，Azure ATP 獨立感應器便會跟隨它。 只有幾個網域控制站時，這可以運作的很好。
+- 針對在具有 Azure ATP 獨立感應器之虛擬機器中的虛擬化叢集上執行的每個網域控制站，設定網域控制站與 Azure ATP 獨立感應器之間的親和性。 如此一來，當網域控制站移至叢集中的另一部主機時，Azure ATP 獨立感應器便會跟隨它。 只有幾個網域控制站時，這可以運作的很好。
 
- > [!NOTE]
- > 如果您的環境支援在不同主機上進行虛擬對虛擬 (RSPAN)，就不需要擔心親和性。
+  > [!NOTE]
+  > 如果您的環境支援在不同主機上進行虛擬對虛擬 (RSPAN)，就不需要擔心親和性。
  
--   為了確保 Azure ATP 獨立感應器具有適當大小可以自己處理所有 DC 的監視，請嘗試此選項︰在每個虛擬化主機上安裝虛擬機器，並在每個主機上安裝 Azure ATP 獨立感應器。 將每個 Azure ATP 獨立感應器設定為監視叢集上執行的所有網域控制站。 如此一來，執行網域控制站的任何主機都會被監視。
+- 為了確保 Azure ATP 獨立感應器具有適當大小可以自己處理所有 DC 的監視，請嘗試此選項︰在每個虛擬化主機上安裝虛擬機器，並在每個主機上安裝 Azure ATP 獨立感應器。 將每個 Azure ATP 獨立感應器設定為監視叢集上執行的所有網域控制站。 如此一來，執行網域控制站的任何主機都會被監視。
 
 設定連接埠鏡像之後，請先驗證連接埠鏡像運作正常，再安裝 Azure ATP 獨立感應器。
 

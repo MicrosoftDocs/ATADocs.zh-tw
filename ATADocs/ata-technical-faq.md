@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e31f7552bed4d794ee24131557342105eb2ced43
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 2806bdd4c457628d9202e494ac1a064365cf61db
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133815"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54839998"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
 # <a name="ata-frequently-asked-questions"></a>ATA 常見問題集
+
+適用對象：*Advanced Threat Analytics 1.9 版*
+
 本文章提供關於 ATA 的常見問題清單，並提供見解和解答。
 
 
@@ -86,7 +87,7 @@ ATA 閘道數目取決於您的網路配置、封包的數量和 ATA 所擷取�
 
 
 ## <a name="why-are-certain-accounts-considered-sensitive"></a>為何將某些帳戶視為機密？
-當帳戶屬於我們指定為機密的特定群組時 (例如，「網域系統管理員」)，會發生這種情況。
+當帳戶屬於我們指定為機密的特定群組時 (例如：「網域系統管理員」)，會發生這種情況。
 
 若要了解為何是機密帳戶，您可以檢閱其群組成員資格，以了解它所屬的機密群組 (其所屬的群組也可以是因為另一個群組而機密，因此您應該執行相同的程序，直到找出最高層級的機密群組)。 
 
@@ -162,6 +163,6 @@ Microsoft Advanced Threat Analytics 支援在相同樹系邊界內的多網域�
 - [ATA 必要條件](ata-prerequisites.md)
 - [ATA 容量規劃](ata-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
-- [設定 Windows 事件轉送](configure-event-collection.md#configuring-windows-event-forwarding)
+- [設定 Windows 事件轉送](configure-event-collection.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 

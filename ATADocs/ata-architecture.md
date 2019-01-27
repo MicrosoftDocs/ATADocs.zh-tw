@@ -13,19 +13,17 @@ ms.technology: ''
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a71491fc717aca3f9b418750b78657e83ac65ecf
-ms.sourcegitcommit: 1b914a85cfa33dc0c5005f9dc68e6ea08a0164ac
+ms.openlocfilehash: 8b158f9656e2c47583cfcc8218a78091cf158221
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50411641"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840687"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
-
-
-
 # <a name="ata-architecture"></a>ATA 架構
+
+適用對象：*Advanced Threat Analytics 1.9 版*
+
 此圖表中詳細說明 Advanced Threat Analytics 架構︰
 
 ![ATA 架構拓撲圖表](media/ATA-architecture-topology.jpg)
@@ -53,9 +51,9 @@ ATA 部署的組成可以是連接至所有 ATA 閘道的單一 ATA 中心、所
 您可以使用下列閘道組合部署 ATA︰
 
 -   **只使用 ATA 閘道** <br>
-ATA 部署可以只包含 ATA 閘道，不含任何 ATA 輕量型閘道：所有網域控制站必須設定為啟用 ATA 閘道的連接埠鏡像，或者必須先準備好網路 TAP。
+您的 ATA 部署可以只包含 ATA 閘道，不含任何 ATA 輕量型閘道：必須將所有網域控制站設定為啟用 ATA 閘道的連接埠鏡像，或者網路 TAP 必須先準備就緒。
 -   **只使用 ATA 輕量型閘道**<br>
-ATA 部署可以只包含 ATA 輕量型閘道：ATA 輕量型閘道部署在每個網域控制站，不需要設定任何其他伺服器或連接埠鏡像。
+您的 ATA 部署可以只包含 ATA 輕量型閘道：ATA 輕量型閘道部署在每個網域控制站，不需要設定任何其他伺服器或連接埠鏡像。
 -   **同時使用 ATA 閘道和 ATA 輕量型閘道**<br>
 ATA 部署包括 ATA 閘道和 ATA 輕量型閘道。 ATA 輕量型閘道是安裝在一些網域控制站上 (例如，分支網站的所有網域控制站)。 同時，其他網域控制站是由 ATA 閘道監視 (例如，主要資料中心的較大網域控制站)。
 
@@ -79,7 +77,7 @@ ATA 部署包括 ATA 閘道和 ATA 輕量型閘道。 ATA 輕量型閘道是安�
 
 -   執行 ATA 主控台。
 
--   選擇性︰ATA 中心可以設定為偵測到可疑活動時傳送電子郵件和事件。
+-   選擇性：ATA 中心可以設定為偵測到可疑活動時傳送電子郵件和事件。
 
 ATA 中心會從 ATA 閘道和 ATA 輕量型閘道接收剖析過的流量。 然後執行分析、執行決定性偵測，並執行機器學習和行為演算法，以了解您的網路，啟用異常偵測並警告您可疑的活動。
 
@@ -173,11 +171,11 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 
 
 ### <a name="events"></a>事件
-若要增強傳遞雜湊、暴力密碼破解、修改敏感性群組以及 Honey Token 的 ATA 偵測，ATA 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757。 這些事件可透過 ATA 輕量型閘道自動讀取；如果未部署 ATA 輕量型閘道，則可以透過下列兩個方式之一轉送至 ATA 閘道：藉由將 ATA 閘道設定為接聽 SIEM 事件，或藉由[設定 Windows 事件轉送](#configuring-windows-event-forwarding)。
+若要增強傳遞雜湊、暴力密碼破解、修改敏感性群組以及 Honey Token 的 ATA 偵測，ATA 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757。 這些事件可透過 ATA 輕量型閘道自動讀取；如果未部署 ATA 輕量型閘道，則可以透過下列兩個方式之一轉送至 ATA 閘道：藉由將 ATA 閘道設定為接聽 SIEM 事件，或藉由[設定 Windows 事件轉送](configure-event-collection.md)。
 
 -   將 ATA 閘道設定為接聽 SIEM 事件 <br>將您的 SIEM 設定為轉送特定 Windows 事件至 ATA。 ATA 支援許多 SIEM 廠商。 如需詳細資訊，請參閱[設定事件收集](configure-event-collection.md)。
 
--   設定 Windows 事件轉送<br>讓 ATA 取得事件的另一個方法，是將網域控制站設定為將 Windows 事件 4776、4732、4733、4728、4729、4756 和 4757 轉送至 ATA 閘道。 如果您沒有 SIEM，或者 ATA 目前不支援您的 SIEM，這個方法特別有用。 若要完成您在 ATA 中的 Windows 事件轉送設定，請參閱[設定 Windows 事件轉送](configure-event-collection.md#configuring-windows-event-forwarding)。 這只適用於實體的 ATA 閘道，ATA 輕量型閘道不適用。
+-   設定 Windows 事件轉送<br>讓 ATA 取得事件的另一個方法，是將網域控制站設定為將 Windows 事件 4776、4732、4733、4728、4729、4756 和 4757 轉送至 ATA 閘道。 如果您沒有 SIEM，或者 ATA 目前不支援您的 SIEM，這個方法特別有用。 若要完成您在 ATA 中的 Windows 事件轉送設定，請參閱[設定 Windows 事件轉送](configure-event-collection.md)。 這只適用於實體的 ATA 閘道，ATA 輕量型閘道不適用。
 
 ## <a name="related-videos"></a>相關影片
 - [選擇正確的 ATA 閘道類型](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
@@ -188,6 +186,6 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 - [ATA 調整大小工具](http://aka.ms/atasizingtool)
 - [ATA 容量規劃](ata-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
-- [設定 Windows 事件轉送](configure-event-collection.md#configuring-windows-event-forwarding)
+- [設定 Windows 事件轉送](configure-event-collection.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 

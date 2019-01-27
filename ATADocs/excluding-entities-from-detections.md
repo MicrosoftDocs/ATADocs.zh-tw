@@ -13,18 +13,17 @@ ms.technology: ''
 ms.assetid: 344c0f33-45e1-42e2-a051-f722a4504531
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3b731593e08cfb1b52e01b83f52b0403dd74aadc
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: ad8a33701938ed846bcdf1d435f25c50d91e27ab
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133033"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54841078"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
-
-
 # <a name="excluding-entities-from-detections"></a>從偵測中排除實體
+
+適用對象：*Advanced Threat Analytics 1.9 版*
+
 本文說明如何排除實體以免觸發警示，以盡量減少良性的真肯定判斷，但能同時確保可攔截到真肯定判斷。 為了避免 ATA 針對來自特定使用者，屬於您平常企業營運一部份的活動發出不必要的警示，您可以將特定實體設為靜音或排除，以避免引發警示。
 
 例如，如果您有執行 DNS 偵察的安全性掃描程式，或是在網域控制站遠端執行指令碼的系統管理員，而這些都是屬於組織中正常 IT 作業之一的許可活動。
@@ -33,7 +32,7 @@ ms.locfileid: "46133033"
 
 您可以透過兩種方式排除實體，一是從可疑的活動本身，或從 [設定] 頁面上的 [排除項目] 索引標籤。
 
-- **從可疑活動**：在可疑活動時間表中，當您收到有關允許執行特定活動 (且可能很頻繁) 之使用者、電腦或 IP 位址的活動警示，請以滑鼠右鍵按一下該實體上代表可疑活動之資料列結尾的三個點，並選取 [關閉並排除]。 <br></br>這會將該使用者、電腦或 IP 位址加入該可疑活動的排除清單中。 它也會關閉可疑活動，讓它不會再列於 [可疑的活動時間表] 中的 [開啟] 事件清單中。
+- **從可疑活動**：在可疑活動時間表中，當您收到有關允許執行特定活動 (且可能很頻繁) 之使用者、電腦或 IP 位址的活動警示時，請以滑鼠右鍵按一下該實體上代表可疑活動之資料列結尾的三個點，並選取 [關閉並排除]。 <br></br>這會將該使用者、電腦或 IP 位址加入該可疑活動的排除清單中。 它也會關閉可疑活動，讓它不會再列於 [可疑的活動時間表] 中的 [開啟] 事件清單中。
 
     ![排除實體](./media/exclude-in-sa.png)
 

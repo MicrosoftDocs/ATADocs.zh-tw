@@ -13,17 +13,13 @@ ms.technology: ''
 ms.assetid: 3547519f-8d9c-40a9-8f0e-c7ba21081203
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c17fbe10bea696711bd3dc011893bdcd3dbc87f4
-ms.sourcegitcommit: eb144ce1331ec3404fd2f75025cdbe802a73890b
+ms.openlocfilehash: cad1cff6b9e46676a2f92b3304dbc55440bfa1d9
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52620841"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840432"
 ---
-適用於：Azure 進階威脅防護
-
-
-
 # <a name="configuring-windows-event-forwarding"></a>設定 Windows 事件轉送
 
 > [!NOTE]
@@ -39,7 +35,7 @@ ms.locfileid: "52620841"
 
 設定從網域控制站到 Azure ATP 獨立感應器之間的連接埠鏡像之後，請依照下列指示以使用來源起始設定來設定 Windows 事件轉寄。 這是一個設定 Windows 事件轉送的方法。 
 
-**步驟 1︰新增網路服務帳戶到網域 Event Log Readers 群組。** 
+**步驟 1：新增網路服務帳戶到網域 Event Log Readers 群組。** 
 
 在此案例中，假設 Azure ATP 獨立感應器是網域的成員。
 
@@ -49,26 +45,26 @@ ms.locfileid: "52620841"
 
 在將 [網路服務] 新增到 [Event Log Readers] 群組後，請重新啟動網域控制站，變更才會生效。
 
-**步驟 2︰在網域控制站上建立原則以設定 [設定目標訂閱管理員] 設定。** 
+**步驟 2：在網域控制站上建立原則以設定 [設定目標訂閱管理員] 設定。** 
 > [!Note] 
 > 您可以建立這些設定的群組原則，並將群組原則套用到 Azure ATP 獨立感應器監視的每個網域控制站。 下列步驟修改網域控制站的本機原則。     
 
-1.  在每個網域控制站上執行下列命令︰*winrm quickconfig*
-2.  在命令提示字元中輸入 *gpedit.msc*
-3.  展開 [電腦設定] > [系統管理範本] > [Windows 元件] > [事件轉送]
+1. 在每個網域控制站上執行下列命令︰*winrm quickconfig*
+2. 在命令提示字元中輸入 *gpedit.msc*
+3. 展開 [電腦設定] > [系統管理範本] > [Windows 元件] > [事件轉送]
 
- ![本機原則群組編輯器影像](media/wef%201%20local%20group%20policy%20editor.png)
+   ![本機原則群組編輯器影像](media/wef%201%20local%20group%20policy%20editor.png)
 
-4.  按兩下 [設定目標訂閱管理員]。
+4. 按兩下 [設定目標訂閱管理員]。
    
-    1.  選取 [啟用]。
-    2.  在 [選項] 下，按一下 [顯示]。
-    3.  在 **SubscriptionManagers** 下，輸入下列值，然後按一下 [確定]：Server= http\://\<fqdnATPSensor>:5985/wsman/SubscriptionManager/WEC,Refresh=10` (For example: Server=http\://atpsensor9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
+   1.  選取 [啟用]。
+   2.  在 [選項] 下，按一下 [顯示]。
+   3.  在 [SubscriptionManagers] 下方，輸入下列值，然後按一下 [確定]：Server= http\://\<fqdnATPSensor>:5985/wsman/SubscriptionManager/WEC,Refresh=10` (例如：Server=http\://atpsensor9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10)
     
-    ![設定目標訂閱影像](media/wef%202%20config%20target%20sub%20manager.png)
+   ![設定目標訂閱影像](media/wef%202%20config%20target%20sub%20manager.png)
     
-5.  按一下 [確定]。
-6.  在提升權限的命令提示字元中，輸入 *gpupdate /force*。 
+5. 按一下 [確定]。
+6. 在提升權限的命令提示字元中，輸入 *gpupdate /force*。 
 
 **步驟 3：在 Azure ATP 獨立感應器上執行下列步驟** 
 
@@ -91,7 +87,7 @@ ms.locfileid: "52620841"
     6. 幾分鐘後，請檢查您設定要轉寄的事件是否出現在 Azure ATP 上的 [轉送的事件] 中。
 
 
-如需詳細資訊，請參閱[設定電腦以轉送和收集事件](https://technet.microsoft.com/library/cc748890)
+如需詳細資訊，請參閱：[設定電腦以轉送和收集事件](https://technet.microsoft.com/library/cc748890) \(英文\)
 
 ## <a name="see-also"></a>另請參閱
 

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: be9ee613-4eb3-40f1-8973-e7f0a707ff57
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 1eb61e35998fd5caaa49d2149cef91e839cd7286
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: e89933143121355a13ee5d84984bffb822bc2968
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133679"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840755"
 ---
 # <a name="whats-new-in-ata-version-17"></a>ATA 1.7 版的新功能
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。
@@ -64,12 +64,12 @@ ATA 1.7 的更新提供下列各方面的改良︰
 下列已知問題存在於此版本中。
 
 ### <a name="gateway-automatic-update-may-fail"></a>閘道自動更新可能會失敗
-**徵兆︰** 在 WAN 連結慢速的環境中，ATA 閘道更新可能會達到更新的逾時 (100 秒) 而無法順利完成。
+**徵兆：** 在 WAN 連結慢速的環境中，ATA 閘道更新可能會達到更新的逾時 (100 秒) 而無法順利完成。
 在 ATA 主控台中，ATA 閘道將會有很長一段時間處於「正在更新 (正在下載套件)」狀態，然後最後失敗。
-**因應措施︰** 若要解決此問題，請從 ATA 主控台下載最新的 ATA 閘道套件，以手動方式更新 ATA 閘道。
+**因應措施：** 若要解決此問題，請從 ATA 主控台下載最新的 ATA 閘道套件，以手動方式更新 ATA 閘道。
 
- > [!IMPORTANT]
- 不支援為 ATA 所使用的憑證自動更新憑證。 使用這些憑證可能會在自動更新憑證時導致 ATA 停止運作。 
+> [!IMPORTANT]
+>  不支援為 ATA 所使用的憑證自動更新憑證。 使用這些憑證可能會在自動更新憑證時導致 ATA 停止運作。 
 
 ### <a name="no-browser-support-for-jis-encoding"></a>針對 JIS 編碼無瀏覽器支援
 **徵兆：** ATA 主控台在使用 JIS 編碼的瀏覽器上可能不會如預期般運作 **因應措施：** 將瀏覽器的編碼變更為 Unicode UTF-8。
@@ -90,7 +90,7 @@ ATA 1.7 的更新提供下列各方面的改良︰
 
 從 ATA 1.7 更新為 ATA 1.7 update 1 時，自動 ATA 閘道更新處理序和使用閘道套件的閘道手動更新可能都沒有如預期運作。
 如果 ATA 中心使用的憑證在更新 ATA 前經過變更，即可能發生此問題。
-若要驗證此問題，請檢閱 ATA 閘道的 **Microsoft.Tri.Gateway.Updater.log**，並尋找下列例外狀況：**System.Net.Http.HttpRequestException: 傳送要求時發生錯誤。---> System.Net.WebException: 基礎連線已關閉: 傳送時發生未預期的錯誤。---> System.IdentityModel.Tokens.SecurityTokenValidationException: 無法驗證憑證指紋**
+若要確認此問題，請檢閱 ATA 閘道上的 **Microsoft.Tri.Gateway.Updater.log**，並尋找下列例外狀況：**System.Net.Http.HttpRequestException:傳送要求時發生錯誤。---> System.Net.WebException:已關閉基礎連線：傳送時發生未預期的錯誤。---> System.IdentityModel.Tokens.SecurityTokenValidationException:無法驗證憑證指紋**
 
 ![ATA 更新閘道錯誤](media/17update_gatewaybug.png)
 
@@ -103,7 +103,7 @@ ATA 1.7 的更新提供下列各方面的改良︰
 3. db.SystemProfile.update({_t:"ServiceSystemProfile"},{$set:{"Configuration.ManagementClientConfiguration.ServerCertificateThumbprint":CenterThumbprint}}, {multi: true})
 
 ### <a name="export-suspicious-activity-details-to-excel-may-fail"></a>將可疑活動詳細資料匯出至 Excel 可能失敗
-嘗試將可疑活動詳細資料匯出至 Excel 檔案時，作業可能會因下列錯誤而失敗：*Error [BsonClassMapSerializer`1] System.FormatException: 將類別 Microsoft.Tri.Common.Data.NetworkActivities.SuspiciousActivityActivity 的 Activity 屬性還原序列化時發生錯誤: Element 'ResourceIdentifier' 不符合類別 Microsoft.Tri.Common.Data.EventActivities.NtlmEvent 的任何欄位或屬性。---> System.FormatException: 項目 'ResourceIdentifier' 不符合類別 Microsoft.Tri.Common.Data.EventActivities.NtlmEvent 的任何欄位或屬性。*
+嘗試將可疑活動詳細資料匯出到 Excel 檔案時，作業可能會失敗，並顯示下列錯誤：*錯誤 [BsonClassMapSerializer`1] System.FormatException:還原序列化類別 Microsoft.Tri.Common.Data.NetworkActivities.SuspiciousActivityActivity 的 Activity 屬性時發生錯誤:元素 'ResourceIdentifier' 不符合任何欄位或類別 Microsoft.Tri.Common.Data.EventActivities.NtlmEvent 的屬性。 ---> System.FormatException:項目 'ResourceIdentifier' 不符合任何欄位或類別 Microsoft.Tri.Common.Data.EventActivities.NtlmEvent 的屬性。*
 
 若要解決此問題，請從提升權限的命令提示字元瀏覽至下列位置：**%ProgramFiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**，然後執行以下命令：
 1.  `Mongo.exe ATA` (ATA 必須是大寫)

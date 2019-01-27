@@ -1,0 +1,80 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: d0918371ccba8c23b92117d74e95286517b8c74c
+ms.sourcegitcommit: b11433f7d454231a62f64c9d9bfa1355ecf91075
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54403977"
+documentType: LandingData
+title: Advanced Threat Analytics 文件
+metadata:
+  title: Advanced Threat Analytics 文件
+  description: 透過使用網路中多個資料來源的資訊來保護您的企業，以了解組織中使用者和其他實體的行為
+  services: advanced-threat-analytics
+  author: msmbaldwin
+  manager: mbaldwin
+  ms.prod: advanced-threat-analytics
+  ms.tgt_pltfrm: na
+  ms.devlang: na
+  ms.topic: landing-page
+  ms.date: 01/07/2019
+  ms.author: mbaldwin
+  layout: LandingPage
+abstract:
+  description: 透過使用網路中多個資料來源的資訊來保護您的企業，以了解組織中使用者和其他實體的行為
+sections:
+- title: 深入了解
+  items:
+  - type: list
+    style: cards
+    className: cardsFTitle
+    items:
+    - title: 什麼是 Advanced Threat Analytics？
+      href: what-is-ata.md
+      image:
+        src: https://docs.microsoft.com/media/common/i_learn-about.svg
+        href: what-is-ata.md
+    - title: ATA 的最新消息
+      href: whats-new-version-1.9.md
+      image:
+        src: https://docs.microsoft.com/media/common/i_quick-start.svg
+        href: whats-new-version-1.9.md
+    - title: 常見問題集
+      href: ata-technical-faq.md
+      image:
+        src: https://docs.microsoft.com/media/common/i_support.svg
+        href: ata-technical-faq.md
+- title: 開始使用
+  items:
+  - type: paragraph
+    text: 規劃、設計並開始使用 ATA
+  - type: list
+    style: icon48
+    items:
+    - image:
+        src: https://docs.microsoft.com/media/common/i_architecture.svg
+      text: Advanced Threat Analytics 架構
+      href: ata-architecture.md
+    - image:
+        src: https://docs.microsoft.com/media/common/i_setup.svg
+      text: ATA 容量規劃
+      href: ata-capacity-planning.md
+    - image:
+        src: https://docs.microsoft.com/media/common/i_download-install.svg
+      text: 下載和安裝
+      href: install-ata-step1.md
+- title: 立即試用
+  items:
+  - type: paragraph
+    text: 規劃、設計並開始使用 ATA
+  - type: list
+    style: icon48
+    items:
+    - image:
+        src: https://docs.microsoft.com/media/common/i_test.svg
+      text: 評估
+      href: https://www.microsoft.com/en-us/evalcenter/evaluate-microsoft-advanced-threat-analytics
+    - image:
+        src: https://docs.microsoft.com/media/common/i_road-map.svg
+      text: 查看 ATA 攻擊模擬腳本
+      href: https://gallery.technet.microsoft.com/ATA-Playbook-ef0a8e38

@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: 7597ed25-87f5-472c-a496-d5f205c9c391
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7fae5fa320aab6a2ad6db4695b0087eab72344e8
-ms.sourcegitcommit: b283bf66e63d76e6dba4564a229e804792794c6d
+ms.openlocfilehash: 39d1e03eda182b797412e94ff5427bc74956113a
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453947"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54841010"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
 # <a name="install-ata---step-9"></a>安裝 ATA - 步驟 9
+
+適用對象：*Advanced Threat Analytics 1.9 版*
 
 > [!div class="step-by-step"]
 > [« 步驟 8](install-ata-step7.md)
@@ -35,21 +35,21 @@ ms.locfileid: "47453947"
 
 1. 找出原則：
 
- - 原則名稱：網路存取 - 限制允許對 SAM 發出遠端呼叫的用戶端
- - 位置：電腦設定、Windows 設定、安全性設定、本機原則、安全性選項
+   - 原則名稱：網路存取 - 限制允許對 SAM 發出遠端呼叫的用戶端
+   - 位置:電腦設定、Windows 設定、安全性設定、本機原則、安全性選項
   
-  ![找出原則](./media/samr-policy-location.png)
+   ![找出原則](./media/samr-policy-location.png)
 
 2. 將 ATA 服務新增至能夠在新式 Windows 系統上執行此動作的核准帳戶清單。
  
-  ![新增服務](./media/samr-add-service.png)
+   ![新增服務](./media/samr-add-service.png)
 
 3. **ATA 服務** (在安裝期間建立的 ATA 服務) 現在具備在環境中執行 SAM-R 的適當權限。
 
 > [!NOTE]
 > 強制執行新原則之前，請確定您的環境仍然是安全的，不要透過在稽核模式中啟用及驗證您建議的變更而影響應用程式相容性。 
 
- 如需有關 SAM-R 與群組原則的詳細資訊，請參閱[網路存取：限制允許對 SAM 發出遠端呼叫的用戶端](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls) \(機器翻譯\)。
+ 如需 SAM-R 和此群組原則的詳細資訊，請參閱[網路存取：限制允許對 SAM 發出遠端呼叫的用戶端](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls)。
 
 
 > [!div class="step-by-step"]
@@ -60,4 +60,4 @@ ms.locfileid: "47453947"
 - [ATA 調整大小工具](http://aka.ms/atasizingtool)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)
-- [ATA 必要條件](ata-prerequisites.md)
+- [ATA 先決條件](ata-prerequisites.md)

@@ -13,16 +13,13 @@ ms.technology: ''
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d41eac8700e334989594639880a0f85d5c725578
-ms.sourcegitcommit: f4f2a1b2c674c4dba7a46ece0624f5ea10c4865e
+ms.openlocfilehash: 10cbb1fcb30f40a41d17a9995e4e132c4afbf332
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52744416"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54459000"
 ---
-適用於：Azure 進階威脅防護
-
-
 # <a name="azure-atp-architecture"></a>Azure ATP 架構
 
 Azure ATP 可直接從您的網域控制站擷取和剖析網路流量並運用 Windows 事件，以監視您的網域控制站，然後分析攻擊和威脅資料。 Azure ATP 會利用分析、確定性偵測、機器學習和行為演算法，來了解您的網路、啟用異常偵測並警告您可疑的活動。
@@ -89,10 +86,10 @@ Azure ATP 感應器可本機讀取事件，而不需要購買及維護額外的�
 
 -  Windows 事件
 
-    為了增強 Azure ATP 針對可疑身分識別竊取 (雜湊傳遞)、可疑驗證失敗、機密群組修改、可疑服務建立，以及 Honeytoken 活動等攻擊類型的偵測範圍，Azure ATP 需要分析下列 Windows 事件的記錄：4776、4732、4733、4728、4729、4756、4757 與 7045。 具備適當[進階稽核原則設定](atp-advanced-audit-policy.md)的 Azure ATP 感應器會自動讀取這些事件。 
+    為了增強 Azure ATP 針對可疑身分識別竊取 (雜湊傳遞)、可疑驗證失敗、敏感性群組修改、可疑服務建立，以及 Honeytoken 活動等攻擊類型的偵測範圍，Azure ATP 需要分析下列 Windows 事件的記錄：4776、4732、4733、4728、4729、4756、4757 與 7045。 具備適當[進階稽核原則設定](atp-advanced-audit-policy.md)的 Azure ATP 感應器會自動讀取這些事件。 
 
 ## <a name="see-also"></a>另請參閱
-- [Azure ATP 必要條件](atp-prerequisites.md)
+- [Azure ATP 先決條件](atp-prerequisites.md)
 - [Azure ATP 調整大小工具](http://aka.ms/trisizingtool) \(英文\)
 - [Azure ATP 容量規劃](atp-capacity-planning.md)
 - [設定事件轉寄](configure-event-forwarding.md)

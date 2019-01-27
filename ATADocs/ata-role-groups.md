@@ -13,19 +13,17 @@ ms.technology: ''
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ed4d112cda614053aa20a6a486cb29baa1fed58a
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 1e5818e4e37b7d22669721341f3f31a94cd78baa
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133628"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54841027"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
-
-
-
 # <a name="ata-role-groups"></a>ATA 角色群組
+
+
+適用對象：*Advanced Threat Analytics 1.9 版*
 
 角色群組可針對 ATA 啟用存取管理。 使用角色群組可以隔離安全性小組內的責任，並授與使用者執行工作所需的存取權。 本文說明存取管理和 ATA 角色授權，以及協助您在 ATA 中準備和執行角色群組。
 
@@ -34,7 +32,7 @@ ms.locfileid: "46133628"
 
 ## <a name="types-of-ata-role-groups"></a>ATA 角色群組的類型 
 
-ATA 引進了三種類型的角色群組︰ATA 系統管理員、ATA 使用者以及 ATA 檢視者。 下表描述 ATA 中每個角色可用的存取類型。 根據您所指派的角色而定，ATA 中的某些畫面與功能表選項將會無法使用，如下所示︰
+ATA 引進三種類型的角色群組：ATA 系統管理員、ATA 使用者，以及 ATA 檢視者。 下表描述 ATA 中每個角色可用的存取類型。 根據您所指派的角色而定，ATA 中的某些畫面與功能表選項將會無法使用，如下所示︰
 
 |活動 |Microsoft Advanced Threat Analytics 管理員|Microsoft Advanced Threat Analytics 使用者|Microsoft Advanced Threat Analytics 檢視者|
 |----|----|----|----|

@@ -13,18 +13,16 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3ef2d163ae96e5bf8f893367095eacd9a44c3411
-ms.sourcegitcommit: 1a5880de35422d050fc1bc7a918dedc4180c45ad
+ms.openlocfilehash: d7c1a2cb171caf732ba4b49ddf50b7eaa2daaa1a
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265674"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840192"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
-
-
 # <a name="install-ata---step-6"></a>安裝 ATA - 步驟 6
+
+適用對象：*Advanced Threat Analytics 1.9 版*
 
 > [!div class="step-by-step"]
 > [« 步驟 5](install-ata-step5.md)
@@ -32,7 +30,8 @@ ms.locfileid: "51265674"
 
 ## <a name="step-6-configure-event-collection"></a>步驟 6： 設定事件收集
 ### <a name="configure-event-collection"></a>設定事件收集
-為增強偵測功能，ATA 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757 及 7045。 這些事件可透過 ATA 輕量型閘道自動讀取；如果未部署 ATA 輕量型閘道，則可以透過下列兩個方式之一轉送至 ATA 閘道：藉由將 ATA 閘道設定為接聽 SIEM 事件，或藉由[設定 Windows 事件轉送](configure-event-collection.md)。 
+
+為增強偵測功能，ATA 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757 和 7045。 這些事件可透過 ATA 輕量型閘道自動讀取；如果未部署 ATA 輕量型閘道，則可以透過下列兩個方式之一轉送至 ATA 閘道：藉由將 ATA 閘道設定為接聽 SIEM 事件，或藉由[設定 Windows 事件轉送](configure-event-collection.md)。 
 
 > [!NOTE]
 > 針對 ATA 1.8 版及更新版本，ATA 輕量型閘道不再需要事件收集設定。 ATA 輕量型閘道現在可以在本機讀取事件，而不需要設定事件轉送。
@@ -46,9 +45,8 @@ ms.locfileid: "51265674"
 
 > [!NOTE]
 > ATA 只接聽 IPv4，而不會接聽 IPv6。 
-
--   將您的 SIEM/Syslog 伺服器設定為轉送特定事件至 ATA 閘道。
-
+> -   將您的 SIEM/Syslog 伺服器設定為轉送特定事件至 ATA 閘道。
+> 
 > [!IMPORTANT]
 > -   請勿將所有 Syslog 資料都轉送給 ATA 閘道。
 > -   ATA 支援來自 SIEM/Syslog 伺服器的 UDP 流量。
@@ -133,21 +131,21 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
 電腦會嘗試驗證帳戶的認證。
 
-驗證封裝：              MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
+驗證套件：            MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
 
-登入帳戶：Administrator
+登入帳戶：系統管理員
 
-來源工作站：       SIEM
+來源工作站：     SIEM
 
-錯誤碼：         0x0
+錯誤碼：       0x0
 
 -   Syslog Header 是選擇性參數。
 
 -   所有欄位之間需以 “\r\n” 字元分隔。
 
--   欄位格式是「索引鍵=值」。
+-   欄位格式是「機碼=值」。
 
--   下列索引鍵必須存在且具有值︰
+-   下列機碼必須存在且具有值︰
 
     -   EventCode = Windows 事件識別碼
 
@@ -163,7 +161,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
 -   Message 索引鍵和值必須是最後一個。
 
--   「索引鍵=值」對的順序不重要。
+-   「機碼=值」對的順序不重要。
 
 #### <a name="qradar"></a>QRadar
 QRadar 可讓您透過代理程式收集事件。 如果使用代理程式收集資料，則會收集不含毫秒資料的時間格式。 因為 ATA 需要毫秒資料，所以必須將 QRadar 設定為使用無代理程式 Windows 事件收集。 如需詳細資訊，請參閱 [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar：使用 MSRPC 通訊協定的無代理程式 Windows 事件集合")。

@@ -1,0 +1,75 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: eeac332beebbcd4bce7d8f96b649a292080baec1
+ms.sourcegitcommit: 25e9d94afdfb63032de55eda0ffd7b7e8dda0f6c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54443871"
+documentType: LandingData
+title: Azure 進階威脅防護文件
+metadata:
+  title: Azure 進階威脅防護文件
+  description: 保護您的企業混合式環境，避開多種進階目標式網路攻擊與內部攻擊。
+  services: azure-advanced-threat-protection
+  author: msmbaldwin
+  manager: mbaldwin
+  ms.prod: azure-advanced-threat-protection
+  ms.tgt_pltfrm: na
+  ms.devlang: na
+  ms.topic: landing-page
+  ms.date: 01/18/2019
+  ms.author: mbaldwin
+  layout: LandingPage
+abstract:
+  description: Azure 進階威脅防護 (ATP) 為雲端服務，可保護您的企業混合式環境，以防止多種進階目標式網路攻擊及內部威脅。
+sections:
+- title: 深入了解
+  items:
+  - type: list
+    style: cards
+    className: cardsFTitle
+    items:
+    - title: 深入了解 Azure 進階威脅防護
+      href: what-is-atp.md
+      image:
+        src: https://docs.microsoft.com/media/common/i_learn-about.svg
+        href: what-is-atp.md
+    - title: Azure ATP 架構
+      href: atp-architecture.md
+      image:
+        src: https://docs.microsoft.com/media/common/i_architecture.svg
+        href: atp-architecture.md
+    - title: Azure ATP 的新功能
+      href: atp-whats-new.md
+      image:
+        src: https://docs.microsoft.com/media/common/i_whats-new.svg
+        href: atp-whats-new.md
+- title: 5 分鐘快速入門
+  items:
+  - type: paragraph
+    text: 透過這些快速入門來了解 Azure 進階威脅防護的基本概念。
+  - type: list
+    style: icon48
+    items:
+    - image:
+        src: https://docs.microsoft.com/media/common/i_design.svg
+      text: 規劃容量
+      href: atp-capacity-planning.md
+    - image:
+        src: https://docs.microsoft.com/media/common/i_event.svg
+      text: 建立 Azure ATP 執行個體
+      href: install-atp-step1.md
+    - image:
+        src: https://docs.microsoft.com/media/common/i_config-tools.svg
+      text: 連線到 Active Directory
+      href: install-atp-step2
+- title: 逐步教學課程
+  items:
+  - type: paragraph
+    text: 透過這些教學課程學習如何了解警示並進行調查。
+  - type: list
+    style: unordered
+    items:
+    - html: <a href="/azure-advanced-threat-protection/understanding-security-alerts">安全性警訊</a>
+    - html: <a href="/azure-advanced-threat-protection/investigate-a-user">調查使用者</a>
+    - html: <a href="/azure-advanced-threat-protection/investigate-a-computer">調查電腦</a>

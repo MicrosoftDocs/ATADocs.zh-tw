@@ -12,17 +12,13 @@ ms.technology: ''
 ms.assetid: 0a56cf27-9eaa-4ad0-ae6c-9d0484c69094
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0d9e2bcbbe2635765f1bcce9ee1367c1d3895080
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: f11a80edae80eb12c8973965ee9f55fcad6d3da6
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783435"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54458388"
 ---
-適用於：Azure 進階威脅防護
-
-
-
 # <a name="validate-port-mirroring"></a>驗證連接埠鏡像
 > [!NOTE] 
 > 本文僅適用於您部署 Azure ATP 獨立感應器 (而非 Azure ATP 感應器) 的情況。 若要判斷是否需要使用 Azure ATP 感應器，請參閱[為您的部署選擇正確感應器](atp-capacity-planning.md#choosing-the-right-sensor-type-for-your-deployment)。
@@ -45,7 +41,7 @@ ms.locfileid: "48783435"
 
         ![建立新的擷取索引標籤影像](media/atp-port-mirroring-capture.png)
 
-3.  在 [顯示篩選] 視窗中，輸入下列篩選︰**KerberosV5 或 LDAP**，然後按一下 [套用]。
+3.  在 [顯示篩選器] 視窗中，輸入下列篩選：**KerberosV5 OR LDAP**，然後按一下 [套用]。
 
     ![套用 KerberosV5 或 LDAP 篩選影像](media/atp-port-mirroring-filter-settings.png)
 

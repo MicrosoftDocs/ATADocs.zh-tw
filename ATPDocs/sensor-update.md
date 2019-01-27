@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 1/14/2019
+ms.date: 1/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,92 +13,94 @@ ms.technology: ''
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f2df8f8f59edff7ebda3f86aae26b899913d57f8
-ms.sourcegitcommit: e2daa0f93d97d552cfbf1577fbd05a547b63e95b
+ms.openlocfilehash: c7b131bffdca092d6355a7f8cb4d280c2388b8eb
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54314324"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840806"
 ---
-適用對象：*Azure 進階威脅防護*
-
-
 # <a name="update-azure-atp-sensors"></a>更新 Azure ATP 感應器
-請務必保持最新的 Azure 進階威脅防護，以啟用組織的最佳可能保護。
 
-一個月會使用 Bug 修正、效能改善和新偵測來更新Azure ATP 服務數次。 這些更新偶而需要感應器的對應更新。 
+將您的 Azure 進階威脅防護感應器維持在最新狀態，為您的組織提供盡可能完善的保護。
 
-如果您未更新感應器，則感應器可能無法與 Azure ATP 雲端服務通訊，這樣可能會導致服務效能欠佳。 
-
-系統會使用強式的憑證式相互驗證，來進行感應器和 Azure 雲端服務之間的驗證。 
-
-每個更新都會在所有支援的作業系統上測試和驗證，將對網路和作業的影響降至最低。
+Azure ATP 服務一個月通常會更新幾次，包含新偵測、功能和效能改進。 這些更新通常包括與感應器對應的次要更新。 Azure ATP 感應器與對應的更新永遠不會有網域控制站的寫入權限。 感應器更新套件只會控制 Azure ATP 感應器和感應器偵測功能。 
 
 ### <a name="azure-atp-sensor-update-types"></a>Azure ATP 感應器更新類型   
 
 Azure ATP 感應器支援兩種更新：
 - 次要版本更新： 
-  - 經常 
-  - 不需要 MSI 安裝，而且登錄未變更
-  - Azure ATP 服務服務重新啟動
-  - 不需要重新啟動網域控制站和伺服器
+    - 經常 
+    - 不需要 MSI 安裝，而且不會變更登錄
+    - 已重新啟動：Azure ATP 感應器服務 
+    - 未重新啟動：網域控制站服務與伺服器 OS
 
 - 主要版本更新：
- - 罕見
- - 可能需要重新啟動網域控制站和伺服器
- - 包含重大變更 
+    - 罕見
+    - 包含重大變更 
+    - 已重新啟動：Azure ATP 感應器服務
+    - 可能需要重新啟動：網域控制站服務與伺服器 OS
 
 > [!NOTE]
->- 您可以在設定頁面中控制感應器的自動重新啟動 (在主要更新中)。 
-> - Azure ATP 感應器一律會保留至少 15% 可用的記憶體和 CPU。 如果服務使用太多記憶體，則 Azure ATP 感應器更新程式服務會自動重新啟動它。
+>- 在 Azure ATP 入口網站設定頁面中，控制自動感應器重新啟動 (適用於**主要**更新)。 
+> - Azure ATP 感應器在所安裝的網域控制站上一律會保留至少 15% 的可用記憶體和可用 CPU。 如果 Azure ATP 服務耗用太多記憶體，服務會自動停止並由 Azure ATP 感應器更新程式服務重新啟動。
+
+### <a name="update-requirement"></a>更新需求
+
+如果您的感應器有超過一個版本更新無法更新，表示您的感應器不再與 Azure ATP 雲端服務通訊，並可能導致無法取得 Azure ATP 服務且您的組織將未受保護。  
 
 ## <a name="delayed-sensor-update"></a>延遲感應器更新
-若要允許更逐步的更新程序，Azure ATP 可讓您將感應器設定為 [Delayed update] \(延遲更新\) 候選項目。 
 
-更新 Azure ATP 雲端服務時，通常會自動更新感應器。 設定為 [Delayed update] \(延遲更新\) 的感應器，將會在初始雲端服務更新後的 24 小時更新。
+由於目前 Azure ATP 開發和推出更新都很快，您可以定義感應器的子群組當作延遲更新通道，以提供漸進式的感應器更新程序。 Azure ATP 可讓您選擇更新感應器的方式，並將每個感應器設定為**延遲更新**候選項目。  
 
-這可讓您選取自動推出更新的特定感應器，以及延遲更新感應器的其餘部分，但只在您看到初始更新平順進行之後。
+每當 Azure ATP 服務更新時，沒有選擇為要延遲更新的感應器就會自動更新。 設定為**延遲更新**的感應器會在每個服務更新正式推出後，延遲 72 小時進行更新。 
+
+**延遲更新**選項可讓您選取特定感應器作為自動更新通道，它們會在更新推出時自動更新，而您的其他感應器可以設定成延遲更新，讓您有時間確認自動更新的感應器都更新成功。
 
 > [!NOTE]
-> 如果發生錯誤，而且未更新感應器，則請開啟支援票證。 若要進一步強化 Proxy 以僅和您的執行個體通訊，請參閱 [Proxy 設定](configure-proxy.md)。
+> 如果發生錯誤，而且未更新感應器，則請建立支援票證。 若要進一步強化 Proxy 以僅和您的執行個體通訊，請參閱 [Proxy 設定](configure-proxy.md)。
+系統會使用強式的憑證式相互驗證，來進行感應器和 Azure 雲端服務之間的驗證。 
+
+每個更新都會在所有支援的作業系統上測試和驗證，將對網路和作業的影響降至最低。
+
 
 將感應器設定為延遲更新：
 
 1. 從 Azure ATP 入口網站中，按一下設定圖示，然後選取 [設定]。
 2. 按一下 [更新] 索引標籤。
 3. 在您想要延遲之每個感應器旁的資料表資料列中，將 [Delayed update] \(延遲更新\) 滑桿設定為 [開啟]。
-4. 按一下 **[儲存]**。
+4. 按一下 [儲存]。
  
 ## <a name="sensor-update-process"></a>感應器更新程序
 
-Azure ATP 感應器每隔幾分鐘都會檢查是否有最新版本。 將 Azure ATP 雲端服務更新為較新版本之後，Azure ATP 感應器服務會啟動更新程序：
+Azure ATP 感應器每隔幾分鐘都會檢查是否有最新版本。 將 Azure ATP 雲端服務更新為較新版本之後，Azure ATP 感應器服務會開始進行 更新程序：
 
 1. Azure ATP 雲端服務更新為最新版本。
 2. Azure ATP 感應器更新程式服務會知道有已更新的版本。
-3. 未設定為 [Delayed update] \(延遲更新\) 的感應器啟動更新程序：
-  1. Azure ATP 感應器更新程式服務從雲端服務提取更新版本 (cab 檔案格式)。
-  2. Azure ATP 感應器更新程式驗證檔案簽章。
-  3. Azure ATP 感應器更新程式服務將 cab 檔案擷取至感應器安裝資料夾中的新資料夾。 預設會將它擷取至 *C:\Program Files\Azure Advanced Threat Protection Sensor\<版本號碼>*
-  4. Azure ATP 感應器更新程式服務啟動 Azure ATP 感應器服務。
-  5. Azure ATP 感應器服務指向從 cab 檔案擷取的新檔案。
-  > [!NOTE]
-  >感應器的次要更新不會安裝 MSI 或是變更任何登錄值或任何系統檔案。 即使是擱置重新啟動也不會影響感應器的更新。 
-  6. 感應器會根據新更新的版本執行。
-  7. 感應器收到 Azure 雲端服務的許可。 這可以在 [更新] 頁面中驗證。
-  8. 下一個感應器啟動更新程序。 
+3. 不是設定成**延遲更新**的感應器會逐一更新：
+   1. Azure ATP 感應器更新程式服務從雲端服務提取已更新的版本 (cab 檔案格式)。
+   2. Azure ATP 感應器更新程式驗證檔案簽章。
+   3. Azure ATP 感應器更新程式服務將 cab 檔案解縮至感應器安裝資料夾中的新資料夾。 預設會將它解壓縮至 *C:\Program Files\Azure Advanced Threat Protection Sensor\<版本號碼>*
+   4. Azure ATP 感應器服務指向從 cab 檔案解壓縮的新檔案。    
+   5. Azure ATP 感應器更新程式服務啟動 Azure ATP 感應器服務。
+       > [!NOTE]
+      >次要感應器更新不會安裝 MSI，也不會變更登錄值或任何系統檔案。 即使有擱置的重新啟動也不影響感應器更新。 
+   6. 感應器會根據新的已更新版本執行。
+   7. 感應器收到 Azure 雲端服務的許可。 您可以在 [更新] 頁面中確認感應器狀態。
+   8. 下一個感應器啟動更新程序。 
 
-4. 在更新 Azure ATP 雲端服務後的 24 小時，已選取 [Delayed update] \(延遲更新\) 的感應器會啟動更新程序。
+4. Azure ATP 雲端服務更新過後 72 小時，選取為**延遲更新**的感應器會按照自動更新之感應器的相同更新程序來更新。
 
 ![感應器更新](./media/sensor-update.png)
 
 
-更新失敗時，如果感應器未完成更新程序，則會觸發相關的監視警示，並將其傳送為通知。
+針對任何無法完成更新程序的感應器，會觸發相關監視警示並傳送為通知。
 
-![感應器過期](./media/sensor-outdated.png)
+![感應器更新失敗](./media/sensor-outdated.png)
 
 
 ## <a name="see-also"></a>另請參閱
 
-- [設定事件轉寄](configure-event-forwarding.md)
-- [Azure ATP 必要條件](atp-prerequisites.md)
+- [設定事件轉送](configure-event-forwarding.md)
+- [Azure ATP 先決條件](atp-prerequisites.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

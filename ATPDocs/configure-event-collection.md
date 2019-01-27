@@ -13,17 +13,13 @@ ms.technology: ''
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: eaf798149c828b641ba037ffbb6854ca07c6732a
-ms.sourcegitcommit: 27cf312b8ebb04995e4d06d3a63bc75d8ad7dacb
+ms.openlocfilehash: 640ea2ab75d4388381f9789dcac5399fa1327d05
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48783588"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840636"
 ---
-適用於：Azure 進階威脅防護
-
-
-
 # <a name="configure-event-collection"></a>設定事件收集
 
 為增強偵測功能，Azure ATP 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757 和 7045。 Azure ATP 感應器可以直接讀取這些事件。如果沒有部署 Azure ATP 感應器，則有兩種方法可以將之轉寄到 Azure ATP 獨立感應器：一種是將 Azure ATP 獨立感應器設定為接聽 SIEM 事件，另一種是[設定 Windows 事件轉寄](configure-event-forwarding.md)。
@@ -36,12 +32,12 @@ ms.locfileid: "48783588"
 ## <a name="siemsyslog"></a>SIEM/Syslog
 為了讓 Azure ATP 可以取用 Syslog 伺服器上的資料，您需要執行下列步驟︰
 
--   將您的 Azure ATP 感應器伺服器設定為接聽及接受從 SIEM/Syslog 伺服器轉寄的事件。
+- 將您的 Azure ATP 感應器伺服器設定為接聽及接受從 SIEM/Syslog 伺服器轉寄的事件。
 
- > [!NOTE]
- > Azure ATP 只接聽 IPv4，而不會接聽 IPv6。 
+  > [!NOTE]
+  > Azure ATP 只接聽 IPv4，而不會接聽 IPv6。 
 
--   將您的 SIEM/Syslog 伺服器設定為轉寄特定事件至 Azure ATP 感應器。
+- 將您的 SIEM/Syslog 伺服器設定為轉寄特定事件至 Azure ATP 感應器。
 
 > [!IMPORTANT]
 > -   請勿將所有 Syslog 資料轉寄至 Azure ATP 感應器。
@@ -127,13 +123,13 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
 電腦會嘗試驗證帳戶的認證。
 
-驗證封裝：              MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
+驗證封裝：            MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
 
-登入帳戶：Administrator
+登入帳戶：系統管理員
 
-來源工作站：       SIEM
+來源工作站：     SIEM
 
-錯誤碼：         0x0
+錯誤碼：       0x0
 
 -   Syslog Header 是選擇性參數。
 
@@ -160,7 +156,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 -   「索引鍵=值」對的順序不重要。
 
 ## <a name="qradar"></a>QRadar
-QRadar 可讓您透過代理程式收集事件。 如果使用代理程式收集資料，則會收集不含毫秒資料的時間格式。 因為 Azure ATP 需要毫秒資料，所以必須將 QRadar 設定為使用無代理程式 Windows 事件收集。 如需詳細資訊，請參閱 [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar：使用 MSRPC 通訊協定的無代理程式 Windows 事件集合")。
+QRadar 可讓您透過代理程式收集事件。 如果使用代理程式收集資料，則會收集不含毫秒資料的時間格式。 因為 Azure ATP 需要毫秒資料，所以必須將 QRadar 設定為使用無代理程式 Windows 事件收集。 如需詳細資訊，請參閱 [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar：使用 MSRPC 通訊協定的無代理程式 Windows 事件集合") \(英文\)。
 
     <13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0
 

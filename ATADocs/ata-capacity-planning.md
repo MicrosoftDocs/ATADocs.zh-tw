@@ -11,18 +11,17 @@ ms.service: ''
 ms.prod: advanced-threat-analytics
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7fd0ea627807b89a604ac32276bb43aa00262dd2
-ms.sourcegitcommit: 1b23381ca4551a902f6343428d98f44480077d30
+ms.openlocfilehash: 330d3cbc59c211eaa44ce3273c49bb7994c6bcec
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403177"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840381"
 ---
-*適用於：Advanced Threat Analytics 1.9 版*
-
-
-
 # <a name="ata-capacity-planning"></a>ATA 容量規劃
+
+適用對象：*Advanced Threat Analytics 1.9 版*
+
 本文將協助您決定監視您的網路需要多少部 ATA 伺服器。 文章的內容可協助您了解需要多少 ATA 閘道及/或 ATA 輕量型閘道，以及 ATA 中心和 ATA 閘道的伺服器容量。
 
 > [!NOTE] 
@@ -34,7 +33,7 @@ ms.locfileid: "47403177"
 - ATA 中心 CPU 及記憶體：比對 ATA 中心資料表結果檔案中的 [Busy Packets/sec] 欄位與 [ATA 中心資料表](#ata-center-sizing)中的 [每秒封包數] 欄位。
 
 - ATA 中心儲存體：比對 ATA 中心資料表結果檔案中的 [Avg Packets/sec] 欄位與 [ATA 中心資料表](#ata-center-sizing)中的 [每秒封包數] 欄位。
-- ATA 閘道︰比對結果檔案中 ATA 閘道資料表的 **Busy Packets/sec** 欄位與 [ATA 閘道資料表](#ata-gateway-sizing)或 [ATA 輕量型閘道資料表](#ata-lightweight-gateway-sizing)中的**每秒封包數**欄位，依據[您所選擇的閘道類型](#choosing-the-right-gateway-type-for-your-deployment)而定。
+- ATA 閘道：比對結果檔案中 ATA 閘道資料表的 [Busy Packets/sec] 欄位與 [ATA 閘道資料表](#ata-gateway-sizing)或 [ATA 輕量型閘道資料表](#ata-lightweight-gateway-sizing)中的 [每秒封包數]欄位，依據[您所選擇的閘道類型](#choosing-the-right-gateway-type-for-your-deployment)而定。
 
 
 ![範例容量規劃工具](media/capacity tool.png)
@@ -69,14 +68,14 @@ ATA 中心建議最少需要 30 天的資料來進行使用者行為分析。
 
 &#42;&#42;平均數目 (尖峰數目)
 > [!NOTE]
-> -   針對來自所有受監視的網域控制站，ATA 中心每秒彙總最多可以處理 1 百萬個封包。 在某些環境中，相同的 ATA 中心可以處理超過 1M 的整體流量。 請連絡 askcesec@microsoft.com 以取得這類環境的協助。
-> -   如果您的可用空間達到最小值 (20% 或 200 GB)，則會刪除最舊的資料集合。 如果無法成功地將資料集合減少至此等級，將會記錄警示。  ATA 會繼續運作，直到達到 5% 或 50 GB 可用空間的閾值。  此時，ATA 將會停止填入資料庫，並會發出其他警示。
+> - 針對來自所有受監視的網域控制站，ATA 中心每秒彙總最多可以處理 1 百萬個封包。 在某些環境中，相同的 ATA 中心可以處理超過 1M 的整體流量。 請連絡 askcesec@microsoft.com 以取得這類環境的協助。
+> - 如果您的可用空間達到最小值 (20% 或 200 GB)，則會刪除最舊的資料集合。 如果無法成功地將資料集合減少至此等級，將會記錄警示。  ATA 會繼續運作，直到達到 5% 或 50 GB 可用空間的閾值。  此時，ATA 將會停止填入資料庫，並會發出其他警示。
 > - 所有效能需求符合本文所述條件的 IaaS 廠商，都能部署 ATA 中心。
-> -   讀取和寫入活動的儲存體延遲應少於 10 毫秒。
-> -   讀取和寫入活動之間的比率在每秒 100,000 個封包以下時大約為 1:3，在每秒 100,000 個封包以上時大約為 1:6。
-> -   作為虛擬機器執行時不支援動態記憶體或任何其他記憶體佔用功能。
-> -   為了達到最佳效能，將 ATA 中心的 [電源選項] 設定為 [高效能]。<br>
-> -   當於實體伺服器上執行工作時，ATA 資料庫需要您**停用** BIOS 中的非統一記憶體存取 (NUMA)。 您的系統可能會將 NUMA 作為節點交錯參考，在此情況下您必須**啟用**節點交錯以停用 NUMA。 如需詳細資訊，請參閱您的 BIOS 文件。 當 ATA 中心在虛擬伺服器上執行時，這並不相關。
+> - 讀取和寫入活動的儲存體延遲應少於 10 毫秒。
+> - 讀取和寫入活動之間的比率在每秒 100,000 個封包以下時大約為 1:3，在每秒 100,000 個封包以上時大約為 1:6。
+> - 作為虛擬機器執行時不支援動態記憶體或任何其他記憶體佔用功能。
+> - 為了達到最佳效能，將 ATA 中心的 [電源選項] 設定為 [高效能]。<br>
+> - 當於實體伺服器上執行工作時，ATA 資料庫需要您**停用** BIOS 中的非統一記憶體存取 (NUMA)。 您的系統可能會將 NUMA 作為節點交錯參考，在此情況下您必須**啟用**節點交錯以停用 NUMA。 如需詳細資訊，請參閱您的 BIOS 文件。 當 ATA 中心在虛擬伺服器上執行時，這並不相關。
 
 
 ## <a name="choosing-the-right-gateway-type-for-your-deployment"></a>為您的部署選擇正確的閘道類型

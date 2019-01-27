@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 671747d5-faed-4352-a871-17b58fdc6574
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d8cbbba3f034dac7679d77a645545374bfad643c
-ms.sourcegitcommit: 6a0ac21f59e72db8615811da2c886f54cf3727f5
+ms.openlocfilehash: b40cdeb52f26e3fae32185c3168c5e3073bf5929
+ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2019
-ms.locfileid: "54250081"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54840847"
 ---
 # <a name="tutorial-understanding-security-alerts"></a>教學課程：了解安全性警訊
 
@@ -119,7 +119,7 @@ Azure ATP 安全性警訊分為下列類別或階段，如同在典型網路攻�
  
 **唯一的實體 JSON**
  
-包含 Azure ATP 從 Active Directory 帳戶相關部分了解到的資料。 其中有 *Distinguished Name*、*SID*、*LockoutTime 及 *PasswordExpiryTime* 等所有屬性。 若為使用者帳戶，其中會包含 *Department*、*Mail* 及 *PhoneNumber* 等資料。 若為電腦帳戶，其中會包含 *OperatingSystem*、*IsDomainController 及 *DnsName* 等資料。
+包含 Azure ATP 從 Active Directory 帳戶相關部分了解到的資料。 其中有 *Distinguished Name*、*SID*、<em>LockoutTime 與 *PasswordExpiryTime</em> 等所有屬性。 針對使用者帳戶，其中會包含 *Department*、*Mail* 及 *PhoneNumber* 等資料。 針對電腦帳戶，其中會包含 *OperatingSystem*、<em>IsDomainController 與 *DnsName</em> 等資料。
 
 **唯一的實體設定檔 JSON**
 

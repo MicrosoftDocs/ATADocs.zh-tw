@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 1/13/2019
+ms.date: 1/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,22 +13,31 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5248ab54c8fd8d03035e1f6451597c5e8cfc63b2
-ms.sourcegitcommit: 6a0ac21f59e72db8615811da2c886f54cf3727f5
+ms.openlocfilehash: 7bf903b1fde595e41c3b57d8163ed0f06f8e8ac8
+ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2019
-ms.locfileid: "54250026"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54459170"
 ---
-*適用於：Azure 進階威脅防護*
-
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能
+
+## <a name="azure-atp-release-262"></a>Azure ATP 2.62 版
+發行日期：2019 年 1 月 20 日
+
+- **新的安全性警示：透過 DNS 執行遠端程式碼 - (預覽)**<br>
+Azure ATP 的[透過 DNS 執行遠端程式碼](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036---preview)安全性警示目前處於公開預覽狀態。 <br> 在此偵測中，當 DNS 查詢可能利用安全性弱點 [CVE-2018-8626](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8626) 對網路中的網域控制站發動攻擊時，會觸發 Azure ATP 安全性警示。
+
+- **功能增強：感應器更新延遲 72 小時** <br> 變更選項使所選感應器的感應器更新，於每次 Azure ATP 更新推出之後延遲 72 小時 (而不是先前延遲 24 小時)。 如需設定指示，請參閱 [Azure ATP 感應器更新](sensor-update.md)。 
+
+
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-261"></a>Azure ATP 2.61 版
 發行日期：2019 年 1 月 13 日
 
 - **新的安全性警示：SMB 上的資料外洩 - (預覽)**<br>
-Azure ATP 的 [SMB上的數據洩露](atp-exfiltration-alerts.md)安全性警訊現為公開預覽狀態。 <br> 具有網域系統管理員權限的攻擊者可能會危害 KRBTGT 帳戶。 攻擊者可使用 KRBTGT 帳戶，建立可提供任何資源授權的 Kerberos 票證授權票證 (TGT)。 
+Azure ATP 的 [SMB 上的資料外洩](atp-exfiltration-alerts.md)安全性警訊現為公開預覽狀態。 <br> 具有網域系統管理員權限的攻擊者可能會危害 KRBTGT 帳戶。 攻擊者可使用 KRBTGT 帳戶，建立可提供任何資源授權的 Kerberos 票證授權票證 (TGT)。 
 
 
 - **功能增強：遠端程式碼執行嘗試**安全性警訊 <br> 新增警訊描述及其他辨識項，讓您能更容易了解警訊，且提供了更好的調查工作流程。 
@@ -44,9 +53,9 @@ Azure ATP 安全性警訊文件已增強並擴充，現在其中包含更優異�
     - [Azure ATP 安全性警訊](suspicious-activity-guide.md)
     - [了解安全性警訊](understanding-security-alerts.md)
         - [偵察階段警訊](atp-reconnaissance-alerts.md)
-        - [遭入侵的認證階段警訊](atp-compromised-credentials-alerts.md)
-        - [橫向移動階段警訊](atp-lateral-movement-alerts.md)
-        - [網域支配階段警訊](atp-domain-dominance-alerts.md)
+        - [遭入侵的認證階段警示](atp-compromised-credentials-alerts.md)
+        - [橫向移動階段警示](atp-lateral-movement-alerts.md)
+        - [網域支配階段警示](atp-domain-dominance-alerts.md)
         - [外洩階段警訊](atp-exfiltration-alerts.md)
     - [調查電腦](investigate-a-computer.md)
     - [調查使用者](investigate-a-user.md)

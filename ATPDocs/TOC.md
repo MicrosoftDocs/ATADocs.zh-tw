@@ -44,6 +44,7 @@
 ## [管理敏感性帳戶](sensitive-accounts.md)
 ## [搜尋及篩選受監視的活動](atp-activities-search.md)
 ## [使用排除與 Honeytoken 帳戶](install-atp-step7.md)
+## [監視器網域控制站](atp-sensor-monitoring.md)
 ## [變更網域連線密碼](modifying-atp-config-dcpassword.md)
 ## [設定 Azure ATP 通知](notifications.md)
 ## [使用 Azure ATP 健康情況中心](atp-health-center.md)

@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 1/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 10cbb1fcb30f40a41d17a9995e4e132c4afbf332
-ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
+ms.openlocfilehash: 6988b41b64dc3d8afef5f7af614f78b41501e2af
+ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54459000"
+ms.lasthandoff: 01/27/2019
+ms.locfileid: "55085311"
 ---
 # <a name="azure-atp-architecture"></a>Azure ATP 架構
 
@@ -67,29 +67,31 @@ Azure ATP 感應器具有下列核心功能：
  
 ## <a name="azure-atp-sensor-features"></a>Azure ATP 感應器功能
 Azure ATP 感應器可本機讀取事件，而不需要購買及維護額外的硬體或設定。 Azure ATP 感應器也支援 Windows 事件追蹤 (ETW)，以提供多個偵測的記錄資訊。 ETW 式偵測包含使用網域控制站複寫要求和網域控制站升階嘗試進行的可疑 DCShadow 攻擊。
-- 網域同步器候選
 
-    網域同步器候選負責主動同步處理特定 Active Directory 網域中的所有實體 (類似網域控制站進行複寫時所使用的機制)。 系統會從候選清單中隨機選擇一個感應器作為網域同步器。 
+### <a name="domain-synchronizer-candidate"></a>網域同步器候選
 
-    如果同步器離線超過 30 分鐘，就會選擇其他的候選。 如果特定的網域沒有任何網域同步器可供使用，則 Azure ATP 會主動同步處理實體和其變更；不過，當在受監視的流量中偵測到新的實體時，Azure ATP 就會擷取新的實體。 
+    The domain synchronizer candidate is responsible for synchronizing all entities from a specific Active Directory domain proactively (similar to the mechanism used by the domain controllers themselves for replication). One sensor is chosen randomly, from the list of candidates, to serve as the domain synchronizer. 
+
+    If the synchronizer is offline for more than 30 minutes, another candidate is chosen instead. If there is no domain synchronizer available for a specific domain, Azure ATP proactively synchronizes entities and their changes, however Azure ATP retrieves new entities as they are detected in the monitored traffic. 
     
-    如無任何網域同步器可用，而您搜尋的實體又沒有任何相關流量，就不會顯示任何搜尋結果。
+    If there is no domain synchronizer available, and you search for an entity that did not have any traffic related to it, no search results are displayed.
 
-    Azure ATP 感應器未預設為同步器候選。 若要將 Azure ATP 感應器手動設定為網域同步器候選，請遵循 [Azure ATP 安裝工作流程](install-atp-step5.md#step-5-configure-the-azure-atp-sensor-settings)中的步驟。
-- 資源限制
+    By default, Azure ATP sensors are not synchronizer candidates. To manually set an Azure ATP sensor as a domain synchronizer candidate, follow the steps in the [Azure ATP installation workflow](install-atp-step5.md#configure-azure-atp-sensor-settings).
 
-    Azure ATP 感應器包含的監視元件，會評估其執行所在網域控制站上的可用運算和記憶體容量。 監視處理序每 10 秒會執行一次，且會動態更新 Azure ATP 感應器程序的 CPU 和記憶體使用量配額。 監視處理序可確保網域控制站一定會有至少 15% 的可用運算和記憶體資源。
+### <a name="resource-limitations"></a>資源限制
 
-    無論網域控制站發生什麼事，監視處理序會持續釋出資源以確保網域控制站的核心功能絕不受影響。
+    The Azure ATP sensor includes a monitoring component that evaluates the available compute and memory capacity on the domain controller on which it is running. The monitoring process runs every 10 seconds and dynamically updates the CPU and memory utilization quota on the Azure ATP sensor process. The monitoring process makes sure the domain controller always has at least 15% of free compute and memory resources available.
 
-    如果監視處理序導致 Azure ATP 感應器用盡資源，則系統只會監視部分流量，並在 Azure ATP 入口網站的 [健康狀態] 頁面中顯示監視警示：「已捨棄連接埠鏡像網路流量」。
+    No matter what occurs on the domain controller, the monitoring process continually frees up resources to make sure the domain controller's core functionality is never affected.
 
--  Windows 事件
+    If the monitoring process causes the Azure ATP sensor to run out of resources, only partial traffic is monitored and the monitoring alert "Dropped port mirrored network traffic" appears in the Azure ATP portal Health page.
 
-    為了增強 Azure ATP 針對可疑身分識別竊取 (雜湊傳遞)、可疑驗證失敗、敏感性群組修改、可疑服務建立，以及 Honeytoken 活動等攻擊類型的偵測範圍，Azure ATP 需要分析下列 Windows 事件的記錄：4776、4732、4733、4728、4729、4756、4757 與 7045。 具備適當[進階稽核原則設定](atp-advanced-audit-policy.md)的 Azure ATP 感應器會自動讀取這些事件。 
+### <a name="windows-events"></a>Windows 事件
+
+    To enhance Azure ATP detection coverage of suspected identity theft (pass-the-hash), suspicious authentication failures,modifications to sensitive groups, creation of suspicious services, and Honeytoken activity types of attack, Azure ATP needs to analyze the logs of the following Windows events: 4776,4732,4733,4728,4729,4756,4757, and 7045. These events are read automatically by Azure ATP sensors with correct [advanced audit policy settings](atp-advanced-audit-policy.md). 
 
 ## <a name="see-also"></a>另請參閱
-- [Azure ATP 先決條件](atp-prerequisites.md)
+- [Azure ATP 必要條件](atp-prerequisites.md)
 - [Azure ATP 調整大小工具](http://aka.ms/trisizingtool) \(英文\)
 - [Azure ATP 容量規劃](atp-capacity-planning.md)
 - [設定事件轉寄](configure-event-forwarding.md)

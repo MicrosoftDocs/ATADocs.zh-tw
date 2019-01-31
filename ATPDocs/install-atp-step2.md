@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ae8a95f0-278c-4a12-ae69-14282364fba1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7ff0324da5cff1ac9ff6aa73fd32d0328279c12b
-ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
+ms.openlocfilehash: ada659d86088cb9f93eba4aca54dd2553e8fb69a
+ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54458677"
+ms.lasthandoff: 01/27/2019
+ms.locfileid: "55085447"
 ---
 # <a name="install-azure-atp---step-2"></a>安裝 Azure ATP - 步驟 2
 
@@ -26,7 +26,7 @@ ms.locfileid: "54458677"
 > [« 步驟 1](install-atp-step1.md)
 > [步驟 3 »](install-atp-step3.md)
 
-## <a name="step-2-provide-a-username-and-password-to-connect-to-your-active-directory-forest"></a>步驟 2： 提供使用者名稱和密碼來連線到您的 Active Directory 樹系
+## <a name="provide-a-username-and-password-to-connect-to-your-active-directory-forest"></a>提供使用者名稱和密碼來連線到您的 Active Directory 樹系
 
 當您第一次開啟 Azure ATP 入口網站時，會出現下列畫面：
 
@@ -44,7 +44,7 @@ ms.locfileid: "54458677"
     |**密碼** (必填)|輸入唯讀使用者的密碼，例如︰**Pencil1**。|
     |**網域** (必填)|輸入唯讀使用者的網域，例如︰**contoso.com**。 **注意︰** 請務必輸入使用者所在網域的完整 FQDN。 例如，如果使用者的帳戶是在 corp.contoso.com 網域中，您需要輸入 `corp.contoso.com`，而非 contoso.com|
 
-3. 在 Azure ATP 入口網站中，按一下 [下載感應器安裝程式並安裝第一個感應器] 以繼續。
+2. 在 Azure ATP 入口網站中，按一下 [下載感應器安裝程式並安裝第一個感應器] 以繼續。
 
 
 > [!div class="step-by-step"]

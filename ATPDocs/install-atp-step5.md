@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d7c95f8c-04f8-4946-9bae-c27ed362fcb0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c296dbe566676342c6b67be5adb1f54df7897675
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: cb9987645ffd1546b50117c984a138e8d3169657
+ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840959"
+ms.lasthandoff: 01/27/2019
+ms.locfileid: "55085260"
 ---
 # <a name="install-azure-atp---step-5"></a>安裝 Azure ATP - 步驟 5
 
@@ -28,10 +28,10 @@ ms.locfileid: "54840959"
 
 
 
-## <a name="step-5-configure-the-azure-atp-sensor-settings"></a>步驟 5： 設定 Azure ATP 感應器的設定
+## <a name="configure-azure-atp-sensor-settings"></a>進行 Azure ATP 感應器設定
 安裝 Azure ATP 感應器之後，請執行下列步驟以設定 Azure ATP 感應器的設定。
 
-1. 在 Azure ATP 入口網站中，移至 [設定]，然後選取 [系統] 下方的 [感應器]。
+1.  在 Azure ATP 入口網站中，移至 [設定]，然後選取 [系統] 下方的 [感應器]。
    
     ![設定感應器設定的影像](media/atp-sensor-config.png)
 
@@ -49,14 +49,18 @@ ms.locfileid: "54840959"
 
    - **擷取網路介面卡** (必填)︰
    
-     - 針對 Azure ATP 感應器，則應該是用來與組織中其他電腦通訊的所有網路介面卡。
-   - 針對專用伺服器上的 Azure ATP 獨立感應器，請選取設定為目的地鏡像連接埠的網路介面卡。 這些介面卡會接收鏡像網域控制站的流量。
+    - 如果為 Azure ATP 感應器，應是用來與組織中其他電腦通訊的所有網路介面卡。
+    - 如果為專用伺服器上的 Azure ATP 獨立感應器，請選取設定為目的地鏡像連接埠的網路介面卡。 這些介面卡會接收鏡像網域控制站的流量。
 
-   - **網域同步器候選項目**：根據預設，Azure ATP 感應器不是網域同步器候選項目，但 Azure ATP 獨立感應器則是。 若要手動將 Azure ATP 感應器選取為網域同步器候選，請將 [設定] 畫面中的 [網域同步器候選] 切換選項切換為 [開啟]。 
+  - **網域同步器候選項目**： 
     
-       網域同步器是負責進行 Azure ATP 與 Active Directory 網域之間的同步處理。 根據網域的大小而定，首次同步處理可能需要一些時間，而且會耗用大量資源。 
-     建議您不要讓任何遠端站台 Azure ATP 感應器成為網域同步器候選。
-     如果網域控制站是唯讀的，請勿將其設定為網域同步器候選。 如需 Azure ATP 網域同步處理的詳細資訊，請參閱 [Azure ATP 架構](atp-architecture.md#azure-atp-sensor-features)
+    - 網域同步器是負責進行 Azure ATP 與 Active Directory 網域之間的同步處理。 根據網域的大小而定，首次同步處理可能需要很多時間，而且會耗用大量資源。 Azure ATP 建議至少為每一網域設定一個網域控制站，作為網域同步器候選。 如果無法選取至少一個網域控制站作為網域同步器候選，則代表 Azure ATP 只會被動地掃描您的網路，且無法收集到所有 Active Directory 變更和實體詳細資料。 為每一網域至少提供一個指定的**網域同步器候補**，能夠確保 Azure ATP 隨時都會主動掃描您的網路，以及能夠收集所有 Active Directory 變更和實體值。
+  
+    - 根據預設，Azure ATP 感應器不是網域同步器候選項目，但 Azure ATP 獨立感應器則是。 若要手動將 Azure ATP 感應器設定為網域同步器候選，請將 [設定] 畫面中的 [網域同步器候選] 切換選項切換為 [開啟]。   
+        
+    - 建議您不要讓任何遠端站台 Azure ATP 感應器成為網域同步器候選。
+   
+    - 請勿將唯讀網域控制站設為網域同步器候補。 如需 Azure ATP 網域同步處理的詳細資訊，請參閱 [Azure ATP 架構](atp-architecture.md#azure-atp-sensor-features)。
   
 3. 按一下 **[儲存]**。
 

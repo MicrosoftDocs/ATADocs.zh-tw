@@ -1,11 +1,11 @@
 ---
-title: Azure ATP 的新功能 | Microsoft Docs
+title: Azure 進階威脅防護中的新功能 (Azure ATP) | Microsoft Docs
 description: 描述 Azure ATP 最新版本並提供各版本新功能的詳細資訊。
 keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 1/20/2019
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,14 +13,38 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7bf903b1fde595e41c3b57d8163ed0f06f8e8ac8
-ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
+ms.openlocfilehash: 9d1a0f992bcb0d21ed31d5cdc5ed3e034c6bee8d
+ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54459170"
+ms.lasthandoff: 01/27/2019
+ms.locfileid: "55085430"
 ---
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能
+
+### <a name="azure-atp-release-263"></a>Azure ATP 2.63 版
+發行日期：2019 年 1 月 27 日
+
+- **新功能：不信任的樹系支援 - (預覽)**<br>
+Azure ATP 對非信任樹系內的感應器支援現已開放預覽。 從 Azure ATP 入口網站 [目錄服務] 頁面設定額外一組認證，讓 Azure ATP 感應器能連線至不同 Active Directory 樹系，以及回報給 Azure ATP 服務。 如果要深入了解，請參閱 [Azure ATP 多重樹系](atp-multi-forest.md)。 
+
+- **新功能：網域控制站涵蓋範圍**<br>
+Azure ATP 現在會提供 Azure ATP 監視網域控制站的涵蓋範圍資訊。  
+從 Azure ATP 入口網站 [感應器] 頁面，檢視 Azure ATP 在您環境中偵測到的受監視與未受監視網域控制站數。 下載受監視網域控制站清單以利進一步分析，以及建置行動計劃。 如果要深入了解，請參閱[網域控制站監視](atp-sensor-monitoring.md)操作指南。 
+
+- **功能增強：帳戶列舉偵察**<br>
+Azure ATP 帳戶列舉偵察偵測現在會偵測使用 Kerberos 和 NTLM 的列舉嘗試，並據此發出警示。 偵測在之前僅適用於使用 Kerberos 的嘗試。 如果要深入了解，請參閱 [Azure ATP 偵查警示](atp-reconnaissance-alerts.md#account-enumeration-reconnaissance-external-id-2003)。 
+
+- **功能增強：遠端程式碼執行嘗試警示**<br>
+    - 服務建立、WMI 執行和新的 **PowerShell** 執行等所有遠端執行活動，均已新增至目的地電腦的設定檔時間軸。 目的地電腦是命令執行所在的網域控制站。 
+    - **PowerShell** 執行已新增至遠端程式碼執行活動的清單中，該清單列在實體設定檔警示時間軸內。
+    - 如果要深入了解，請參閱[修復遠端程式碼執行嘗試](atp-domain-dominance-alerts.md#remote-code-execution-attempt-external-id-2019)。  
+
+- **Windows Server 2019 LSASS 問題和 Azure ATP**<br>
+為了回應客戶對於搭配執行 Windows Server 2019 之網域控制站使用 Azure ATP 所提出的意見反應，此更新包含了額外的邏輯，可避免在 Windows Server 2019 電腦上觸發回報的行為。 雖然我們規劃在之後的 Azure ATP 更新中為 Windows Server 2019 推出完整的 Azure ATP 感應器支援，但目前並**不**支援在 Windows Servers 2019 上安裝和執行 Azure ATP。 如果要深入了解，請參閱 [Azure ATP 感應器需求](atp-prerequisites.md#azure-atp-sensor-requirements)。 
+
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
+
 
 ## <a name="azure-atp-release-262"></a>Azure ATP 2.62 版
 發行日期：2019 年 1 月 20 日
@@ -37,7 +61,7 @@ Azure ATP 的[透過 DNS 執行遠端程式碼](atp-lateral-movement-alerts.md#r
 發行日期：2019 年 1 月 13 日
 
 - **新的安全性警示：SMB 上的資料外洩 - (預覽)**<br>
-Azure ATP 的 [SMB 上的資料外洩](atp-exfiltration-alerts.md)安全性警訊現為公開預覽狀態。 <br> 具有網域系統管理員權限的攻擊者可能會危害 KRBTGT 帳戶。 攻擊者可使用 KRBTGT 帳戶，建立可提供任何資源授權的 Kerberos 票證授權票證 (TGT)。 
+Azure ATP 的 [SMB 上的資料外流](atp-exfiltration-alerts.md)安全性警訊現為公開預覽狀態。 <br> 具有網域系統管理員權限的攻擊者可能會危害 KRBTGT 帳戶。 攻擊者可使用 KRBTGT 帳戶，建立可提供任何資源授權的 Kerberos 票證授權票證 (TGT)。 
 
 
 - **功能增強：遠端程式碼執行嘗試**安全性警訊 <br> 新增警訊描述及其他辨識項，讓您能更容易了解警訊，且提供了更好的調查工作流程。 

@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 1/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ab1e8dd9-a6c2-4c68-89d5-343b8ec56142
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8d7d8bc8ce6c1aefb95b5770a103859fed74efe1
-ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
+ms.openlocfilehash: 86d8583600edc642d177ff327d602a9bc61cf3de
+ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54458626"
+ms.lasthandoff: 01/27/2019
+ms.locfileid: "55085175"
 ---
 # <a name="azure-atp-advanced-audit-policy-check"></a>Azure ATP 進階稽核原則檢查
 
@@ -31,9 +31,9 @@ Azure ATP 偵測憑藉特定 Windows 事件記錄檔來取得特定案例的可�
 
 您可透過 [預設網域控制站原則] GPO 來啟用進階安全性稽核原則。 這些稽核事件會記錄在網域控制站的 Windows 事件上。 
 
+## <a name="modify-audit-policies"></a>修改稽核原則 
 
-
-<br>請使用下列指示修改網域控制站的進階稽核原則：
+請使用下列指示修改網域控制站的進階稽核原則：
 
 1. 以 [網域系統管理員] 身分登入伺服器。
 2. 從 [伺服器管理員] > [工具] > [群組原則管理] 載入 [群組原則管理編輯器]。 

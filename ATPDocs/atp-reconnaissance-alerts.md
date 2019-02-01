@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: caf64977da89c88f3640430bf4aa68a76a51026e
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 016388807b2e5d027e3fc113c7e34ebaa546e9d5
+ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54841146"
+ms.lasthandoff: 01/27/2019
+ms.locfileid: "55085345"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>教學課程：偵察警訊  
 
@@ -49,9 +49,13 @@ ms.locfileid: "54841146"
 
 **描述**
 
-在帳戶列舉偵察中，攻擊者會使用含有上千筆使用者名稱的目錄或 KrbGuess 這類工具，嘗試猜測網域中的使用者名稱。 攻擊者利用這些名字提出 Kerberos 要求，試著在網域中找到有效的使用者名稱。 如果成功猜到使用者名稱，攻擊者會收到 Kerberos 錯誤「需要預先驗證」，而不是「未知的安全性主體」。
+在帳戶列舉偵察中，攻擊者會使用含有上千筆使用者名稱的目錄或 KrbGuess 這類工具，嘗試猜測網域中的使用者名稱。
 
-在此偵測中，Azure ATP 會偵測帳戶列舉攻擊來源、猜測嘗試總次數及嘗試相符次數。 如果有太多未知的使用者，Azure ATP 會將其偵測為可疑的活動。
+**Kerberos**：攻擊者利用這些名稱提出 Kerberos 要求，試著在網域中找到有效的使用者名稱。 如果成功猜到使用者名稱，攻擊者會收到「需要預先驗證」，而不是「未知的安全性主體」Kerberos 錯誤。
+
+**NTLM**：攻擊者利用名稱字典來提出 NTLM 驗證要求，試著在網域中找到有效的使用者名稱。 如果成功猜到使用者名稱，攻擊者會收到 **WrongPassword (0xc000006a)** 而不是 **NoSuchUser (0xc0000064)** NTLM 錯誤。
+
+在此警示偵測中，Azure ATP 會偵測帳戶列舉攻擊來源、猜測嘗試總次數及嘗試相符次數。 如果有太多未知的使用者，Azure ATP 會將其偵測為可疑的活動。
 
 **TP、B-TP 或 FP**
 

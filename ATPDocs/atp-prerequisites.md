@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 06e31d44afba18cb44d2df6cde167c9a8babc92b
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 829c3685d06ec49182895b4786c89b8281e2de2f
+ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840721"
+ms.lasthandoff: 01/27/2019
+ms.locfileid: "55085379"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 本文描述在您的環境中成功部署 Azure ATP 的需求。
@@ -110,7 +110,7 @@ Azure ATP 感應器可以部署在各種負載和大小的網域控制站上，�
 ### <a name="network-adapters"></a>網路介面卡
 
 Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的本機流量。 <br>
-部署後，如果您想要修改監視的網路介面卡，可以使用 Azure ATP 入口網站。
+部署後，可以使用 Azure ATP 入口網站來修改監視的網路介面卡。
 
 執行 Windows 2008 R2 且啟用 Broadcom 網路介面卡小組的網域控制站不支援感應器。
 

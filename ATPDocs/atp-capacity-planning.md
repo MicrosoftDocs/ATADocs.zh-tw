@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 1/24/2019
 ms.topic: conceptual
 ms.service: azure-advanced-threat-protection
 ms.prod: ''
 ms.assetid: da0ee438-35f8-4097-b3a1-1354ad59eb32
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 51ce0ca62d29c58475f8f426ee715515cf106193
-ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
+ms.openlocfilehash: c53fb85570a053fa6414855b2ababa0b8e75cdee
+ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54459085"
+ms.lasthandoff: 01/27/2019
+ms.locfileid: "55085192"
 ---
 # <a name="azure-atp-capacity-planning"></a>Azure ATP 容量規劃
 此文章可協助您判斷您需要多少 Azure ATP 感應器和獨立感應器。
@@ -55,7 +55,7 @@ ms.locfileid: "54459085"
 決定要部署多少個 Azure ATP 獨立感應器時，請考慮下列問題。
 
 -   **Active Directory 樹系和網域**<br>
-    Azure ATP 可以針對您所建立的每個執行個體，監視多個 Active Directory 樹系內多個網域的流量。 
+    Azure ATP 可以針對您所建立的每個 Azure ATP 執行個體，監視多個 Active Directory 樹系內多個網域的流量。 
 
 -   **連接埠鏡像**<br>
     連接埠鏡像考量可能需要您在每個資料中心或分支網站部署多個 Azure ATP 獨立感應器。

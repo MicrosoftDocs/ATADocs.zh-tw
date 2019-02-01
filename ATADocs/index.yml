@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: d0918371ccba8c23b92117d74e95286517b8c74c
-ms.sourcegitcommit: b11433f7d454231a62f64c9d9bfa1355ecf91075
+ms.openlocfilehash: 4e80667b81e8350acd9820ab59a4de8ac33b8fcc
+ms.sourcegitcommit: d1b2c44e8455100015bfc1ec9e51a6f1cfab12af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54403977"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55479485"
 documentType: LandingData
 title: Advanced Threat Analytics 文件
 metadata:
@@ -17,7 +17,7 @@ metadata:
   ms.tgt_pltfrm: na
   ms.devlang: na
   ms.topic: landing-page
-  ms.date: 01/07/2019
+  ms.date: 01/30/2019
   ms.author: mbaldwin
   layout: LandingPage
 abstract:
@@ -44,6 +44,11 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_support.svg
         href: ata-technical-faq.md
+    - title: 探索 Microsoft 365 這套包含 Advanced Threat Analytics 的完整解決方案
+      href: https://docs.microsoft.com/microsoft-365/
+      image:
+        src: /office/media/icons/caret-right-blue.svg
+        href: https://docs.microsoft.com/microsoft-365/
 - title: 開始使用
   items:
   - type: paragraph

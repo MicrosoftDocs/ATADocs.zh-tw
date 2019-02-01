@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 1/7/2019
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6e9ffb02c515c34dfa2847c9b93f55c3fa38fa44
-ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
+ms.openlocfilehash: 8c294c20efeac4fae17df84c6a3d6d8d656c9554
+ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54459204"
+ms.lasthandoff: 01/27/2019
+ms.locfileid: "55085464"
 ---
 # <a name="azure-advanced-threat-protection-information-and-support"></a>Azure 進階威脅防護資訊與支援 
 
@@ -27,7 +27,7 @@ ms.locfileid: "54459204"
 
 |欲執行的動作...|做法：|
 |----|----|
-|查看我們最熱門的文件|閱讀前五個頁面：<br>- [什麼是 Azure 進階威脅防護？](what-is-atp.md)<br>- [Azure ATP 必要條件](atp-prerequisites.md)<br>- [Azure ATP 架構](atp-architecture.md)<br>- [Azure ATP 容量規劃](atp-capacity-planning.md)<br>- [建立執行個體](install-atp-step1.md)|
+|查看我們最熱門的文件|閱讀前十個頁面：<br>- [什麼是 Azure 進階威脅防護？](what-is-atp.md)<br>- [Azure ATP 必要條件](atp-prerequisites.md)<br>- [Azure ATP 架構](atp-architecture.md)<br>- [Azure ATP 容量規劃](atp-capacity-planning.md)<br>-[建立執行個體](install-atp-step1.md)<br>-[了解安全性警訊](understanding-security-alerts.md)<br>-[Azure ATP 安全性警訊](suspicious-activity-guide.md)<br>-[調查電腦](investigate-a-computer.md)<br>-[調查使用者](investigate-a-user.md)<br>-[調查橫向移動路徑](investigate-lateral-movement-path.md)
 |與產品小組和您的同事交流|請前往 Azure 進階威脅防護的 [技術社群](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection) 。|
 |確認訂用帳戶資訊，並取得支援功能的清單|請參閱 Azure 進階威脅防護網站的 [訂閱資訊](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 與 [功能清單](https://www.microsoft.com/cloud-platform/azure-information-protection-features) 。|
 

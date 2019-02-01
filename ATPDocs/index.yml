@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: eeac332beebbcd4bce7d8f96b649a292080baec1
-ms.sourcegitcommit: 25e9d94afdfb63032de55eda0ffd7b7e8dda0f6c
+ms.openlocfilehash: 7a88095aff4c60038768edfd87f734d6cd4ec8e0
+ms.sourcegitcommit: d1b2c44e8455100015bfc1ec9e51a6f1cfab12af
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2019
-ms.locfileid: "54443871"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55479468"
 documentType: LandingData
 title: Azure 進階威脅防護文件
 metadata:
@@ -17,7 +17,7 @@ metadata:
   ms.tgt_pltfrm: na
   ms.devlang: na
   ms.topic: landing-page
-  ms.date: 01/18/2019
+  ms.date: 01/30/2019
   ms.author: mbaldwin
   layout: LandingPage
 abstract:
@@ -44,6 +44,11 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_whats-new.svg
         href: atp-whats-new.md
+    - title: 探索 Microsoft 365 這套包含 Azure 進階威脅防護的完整解決方案
+      href: https://docs.microsoft.com/microsoft-365/
+      image:
+        src: /office/media/icons/caret-right-blue.svg
+        href: https://docs.microsoft.com/microsoft-365/
 - title: 5 分鐘快速入門
   items:
   - type: paragraph

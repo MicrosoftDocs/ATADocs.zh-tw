@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 12/16/2018
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 51911e39-76c7-4dcd-bc0b-ec6235d0403f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e5e1ee510ba52f541fb224754f82ebfddf553365
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 5c357ea537c9fe9a23fc426670d47bf85d53f316
+ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840503"
+ms.lasthandoff: 01/27/2019
+ms.locfileid: "55085243"
 ---
 # <a name="install-azure-atp---step-4"></a>安裝 Azure ATP - 步驟 4
 
@@ -26,7 +26,7 @@ ms.locfileid: "54840503"
 > [« 步驟 3](install-atp-step3.md)
 > [步驟 5 »](install-atp-step5.md)
 
-## <a name="step-4-install-the-azure-atp-sensor"></a>步驟 4： 安裝 Azure ATP 感應器
+## <a name="install-the-azure-atp-sensor"></a>安裝 Azure ATP 感應器
 
 > [!IMPORTANT]
 >請確定電腦上已安裝 Microsoft .Net Framework 4.7。 如果未安裝 .Net Framework 4.7，Azure ATP 感應器安裝套件會予以安裝，這可能需要將伺服器重新開機。
@@ -56,20 +56,20 @@ ms.locfileid: "54840503"
 
 5. 安裝精靈會自動檢查伺服器為網域控制站或專用伺服器。 如果是網域控制站，則其中已安裝 Azure ATP 感應器。如果是專用伺服器，則其中已安裝 Azure ATP 獨立感應器。 
     
-   例如，針對 Azure ATP 獨立感應器，會顯示下列畫面，讓您知道您的專用伺服器上已安裝 Azure ATP 獨立感應器：
+    例如，針對 Azure ATP 感應器，會顯示下列畫面，讓您知道您的專用伺服器上已安裝 Azure ATP 感應器：
     
-   ![Azure ATP 獨立感應器安裝](media/sensor-install-deployment-type.png)
+    ![Azure ATP 感應器安裝](media/sensor-install-deployment-type.png)
 
    按一下 [下一步] 。
 
-   > [!NOTE] 
-   > 如果網域控制站或專用伺服器不符合安裝的最低硬體需求，您會收到一則警告。 但這並不會阻止您按 [下一步] 和繼續進行安裝。 在不需要這麼多資料儲存空間的小型實驗室測試環境中，這可能會是安裝 Azure ATP 的正確選項。 針對生產環境，強烈建議使用 Azure ATP 的 [容量規劃](atp-capacity-planning.md)指南，確保您的網域控制站或專用伺服器符合必要需求。
+    > [!NOTE] 
+    > 如果網域控制站或專用伺服器不符合安裝的最低硬體需求，就會發出警告。 該警告並不會使您無法按一下 [下一步] 和繼續進行安裝。 在不需要這麼多資料儲存空間的小型實驗室測試環境中，這可能仍是安裝 Azure ATP 的最佳選擇。 針對生產環境，強烈建議使用 Azure ATP 的 [容量規劃](atp-capacity-planning.md)指南，確保您的網域控制站或專用伺服器符合必要需求。
 
 6. 在 [設定感應器] 下，輸入從上一個步驟複製的安裝路徑和存取金鑰 (視您的環境而定)：
 
-   ![Azure ATP 獨立感應器設定的影像](media/sensor-install-config.png)
+    ![Azure ATP 感應器設定影像](media/sensor-install-config.png)
 
-     - 安裝路徑：這是安裝 Azure ATP 獨立感應器的位置。 根據預設，這是 %programfiles%\Azure Advanced Threat Protection sensor。 保留預設值。
+      - 安裝路徑：這是安裝 Azure ATP 感應器的位置。 根據預設，這是 %programfiles%\Azure Advanced Threat Protection sensor。 保留預設值。
 
      - 存取金鑰：這是擷取自上一個步驟中的 Azure ATP 入口網站。
     

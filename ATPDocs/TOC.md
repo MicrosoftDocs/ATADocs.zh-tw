@@ -1,9 +1,8 @@
 
+# [Azure 進階威脅防護文件](index.yml)
 # 概觀
 ## [什麼是 Azure 進階威脅防護？](what-is-atp.md)
-## [Azure ATP 架構](atp-architecture.md)
 ## [Azure ATP 的新功能](atp-whats-new.md)
-## [Azure ATP 必要條件](atp-prerequisites.md)
 # 快速入門
 ## [規劃 Azure ATP 容量](atp-capacity-planning.md)
 ## [建立您的 Azure ATP 執行個體](install-atp-step1.md)
@@ -31,6 +30,8 @@
 ## [調查橫向移動路徑](investigate-lateral-movement-path.md)
 ## [調查實體](investigate-entity.md)
 # 概念
+## [Azure ATP 架構](atp-architecture.md)
+## [Azure ATP 必要條件](atp-prerequisites.md)
 ## [Azure ATP 入口網站](workspace-portal.md)
 ## [Azure ATP 安全性警訊](suspicious-activity-guide.md)
 ## [受監視的活動](monitored-activities.md)

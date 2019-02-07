@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 11/29/2018
+ms.date: 02/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4f551e27d6417f0fa1a65427998e8d1cb33dcf7c
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 2e8405f46e404ef6d08ac2ce2517259ad20828b1
+ms.sourcegitcommit: 9236d279f5e01424b498ce23e9d84c407ebfcdf3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840568"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55689314"
 ---
 # <a name="azure-atp-frequently-asked-questions"></a>Azure ATP 常見問題集
 本文提供關於 Azure ATP 的常見問題與解答清單，並分成下列類別： 
@@ -131,19 +131,9 @@ Azure 進階威脅防護支援多網域環境與多樹系。 此功能目前處�
 ### <a name="what-should-i-do-if-the-azure-atp-sensor-or-standalone-sensor-doesnt-start"></a>如果 Azure ATP 感應器或獨立感應器無法啟動該怎麼辦？
 在目前的錯誤[記錄檔](troubleshooting-atp-using-logs.md)中尋找最新的錯誤 (在 Azure ATP 安裝位置的 "Logs" 資料夾下)。
 
-### <a name="how-can-i-test-azure-atp"></a>如何測試 Azure ATP？
-您能以端對端測試的方式模擬可疑的活動。 在下列案例中，我們模擬了 DNS 偵察：
-
-1. 確認已安裝 Azure ATP 感應器並已在網域控制站上設定 (或已安裝並設定獨立感應器與相關的連接埠鏡像)
-2. 開啟 CMD
-3. 執行下列命令：nslookup -<DC iP address>
-   - 按 Enter
-   - 輸入：Is -d <FQDN>
-   - 視您的環境設定而定，從「拒絕查詢」到您的 DNS 記錄清單等都可能會不一樣。 
-4. 在 Azure ATP 入口網站中，檢視模擬 DNS 偵察的相關警示。 
 
 ## <a name="see-also"></a>另請參閱
-- [Azure ATP 先決條件](atp-prerequisites.md)
+- [Azure ATP 必要條件](atp-prerequisites.md)
 - [Azure ATP 容量規劃](atp-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-forwarding.md)

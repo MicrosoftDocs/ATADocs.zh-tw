@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 1/20/2019
+ms.date: 02/03/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 0b3a1db5-0d43-49af-b356-7094cc85f0a5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 929dfae084bbce8f831c55d042f7765ddfd64019
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: ae0d59748a4caaecd7c9f4e3cc1276c042a875c1
+ms.sourcegitcommit: 9236d279f5e01424b498ce23e9d84c407ebfcdf3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840840"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55689433"
 ---
 # <a name="tutorial-domain-dominance-alerts"></a>教學課程：控制網域警訊  
 
@@ -43,7 +43,7 @@ ms.locfileid: "54840840"
 > * 可疑的黃金票證使用 (加密降級) (外部識別碼 2009)
 > * 可疑的黃金票證使用 (偽造的授權資料) (外部識別碼 2013)
 > * 可疑的黃金票證使用 (不存在的帳戶) (外部識別碼 2027)
-> * 可疑的黃金票證使用 (票證異常) - 預覽 (外部識別碼 2032)
+> * 可疑的黃金票證使用 (票證異常) (外部識別碼 2032)
 > * 可疑的黃金票證使用 (時間異常) (外部識別碼 2022)
 > * 可疑的萬能金鑰攻擊 (加密降級) (外部識別碼 )
 > * 敏感性群組的可疑修改 (外部識別碼 2024)
@@ -286,7 +286,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 1. 複寫目錄變更。
 2. 複寫所有目錄變更。
-3. 如需詳細資訊，請參閱[在 SharePoint Server 2013 中授與 Active Directory 網域服務權限，以進行設定檔同步處理](https://technet.microsoft.com/library/hh296982.aspx)。 您可以使用 [AD ACL 掃描程式](https://blogs.technet.microsoft.com/pfesweplat/2013/05/13/take-control-over-ad-permissions-and-the-ad-acl-scanner-tool/)或建立 Windows PowerShell 指令碼，來判斷誰在網域中具有這些權限。
+3. 如需詳細資訊，請參閱[在 SharePoint Server 2013 中授與 Active Directory 網域服務權限，以進行設定檔同步處理](https://technet.microsoft.com/library/hh296982.aspx)。 您可以使用 [AD ACL 掃描程式](https://blogs.technet.microsoft.com/pfesweplat/2013/05/13/take-control-over-ad-permissions-and-the-ad-acl-scanner-tool/)或建立 Windows PowerShell 指令碼，以判斷誰在網域中具有這些權限。
 
 ## <a name="suspected-golden-ticket-usage-encryption-downgrade-external-id-2009"></a>可疑的黃金票證使用 (加密降級) (外部識別碼 2009) 
 
@@ -399,7 +399,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
     - 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效。 使此網域中的所有 Kerberos 票證失效，代表**所有**服務將會中斷，且在這些票證更新之前都不會運作，或在某些情況下重新啟動服務。 請在對 KRBTGT 進行兩次重設之前，先做好謹慎規劃，因為這會影響環境中所有的電腦、伺服器及使用者。
 
  
-## <a name="suspected-golden-ticket-usage-ticket-anomaly-external-id-2032--preview"></a>可疑的黃金票證使用 (票證異常) (外部識別碼 2032) - 預覽 
+## <a name="suspected-golden-ticket-usage-ticket-anomaly-external-id-2032"></a>可疑的黃金票證使用 (票證異常) (外部識別碼 2032) 
 
 **描述**：具有網域系統管理員權限的攻擊者可能會危害 KRBTGT 帳戶。 他們可以利用 KRBTGT 帳戶建立 Kerberos 票證授權票證 (TGT)，以提供任何資源的授權，並將票證到期日設定為任何時間。 這個假 TGT 稱為「黃金票證」，可讓攻擊者取得網路持續性。 此偵測特別設計用來識別這類偽造黃金票證所擁有的唯一特性。  
  

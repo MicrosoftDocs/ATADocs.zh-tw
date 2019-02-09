@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 12/13/2018
+ms.date: 02/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,13 +13,17 @@ ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 829c3685d06ec49182895b4786c89b8281e2de2f
-ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
+ms.openlocfilehash: 20281444e969cce2adb9e3458e040dd4c9d36fd3
+ms.sourcegitcommit: 9236d279f5e01424b498ce23e9d84c407ebfcdf3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2019
-ms.locfileid: "55085379"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55689365"
 ---
+適用對象：*Azure 進階威脅防護*
+
+
+
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 本文描述在您的環境中成功部署 Azure ATP 的需求。
 
@@ -53,7 +57,7 @@ Azure ATP 是由 Azure ATP 雲端服務組成，其包含 Azure ATP 入口網站
     > [!NOTE]
     > 如果您已經在網域中設定不同組織單位 (OU) 的自訂 ACL，請確定選取的使用者具有讀取這些 OU 的權限。
 
--   如果您在 Azure ATP 獨立感應器上執行 Wireshark，在停止 Wireshark 擷取後，將需要重新啟動 Azure 進階威脅防護感應器服務。 否則，感應器會停止擷取流量。
+-   如果您在 Azure ATP 獨立感應器上執行 Wireshark，在停止 Wireshark 擷取後，重新啟動 Azure 進階威脅防護感應器服務。 如果您未重新啟動感應器服務，感應器會停止擷取流量。
 
 - 如果您嘗試在設定了 NIC 小組介面卡的電腦上安裝 Azure ATP 感應器，則會收到安裝錯誤。 如果您想要在已設定 NIC 小組的電腦上安裝 Azure ATP 感應器，請參閱 [Azure ATP 感應器 NIC 小組問題](troubleshooting-atp-known-issues.md#nic-teaming)。
 
@@ -65,13 +69,13 @@ Azure ATP 是由 Azure ATP 雲端服務組成，其包含 Azure ATP 入口網站
 
 ## <a name="azure-atp-portal-requirements"></a>Azure ATP 入口網站需求
 您可透過瀏覽器來存取 Azure ATP 入口網站，其支援下列瀏覽器和設定︰
-- Microsoft Edge
-- Internet Explorer 第 10 版及更新版本
-- Google Chrome 4.0 和更新版本
-- 螢幕解析度最低需求為 1700 像素
-- 防火牆/Proxy 開啟 - 若要與 Azure ATP 雲端服務通訊，您必須在防火牆/Proxy 中針對 *.atp.azure.com 開啟連接埠 443。
+-   Microsoft Edge
+-   Internet Explorer 第 10 版及更新版本
+-   Google Chrome 4.0 和更新版本
+-   螢幕解析度最低需求為 1700 像素
+-   防火牆/Proxy 開啟 - 若要與 Azure ATP 雲端服務通訊，您必須在防火牆/Proxy 中針對 *.atp.azure.com 開啟連接埠 443。
 
-  ![Azure ATP 架構圖表](media/ATP-architecture-topology.png)
+ ![Azure ATP 架構圖表](media/ATP-architecture-topology.png)
 
 
 > [!NOTE]
@@ -79,6 +83,7 @@ Azure ATP 是由 Azure ATP 雲端服務組成，其包含 Azure ATP 入口網站
 
 ## <a name="azure-atp-sensor-requirements"></a>Azure ATP 感應器需求
 本節列出 Azure ATP 感應器的需求。
+
 ### <a name="general"></a>一般
 Azure ATP 感應器可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 (包含 Core 但不含 Nano) 的網域控制站上安裝。
 
@@ -94,9 +99,9 @@ Azure ATP 感應器可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)�
 
 ### <a name="server-specifications"></a>伺服器規格
 
-Azure ATP 感應器在網域控制站上需要安裝至少兩個核心和 6 GB 的 RAM。
+Azure ATP 感應器在網域控制站上需要安裝至少 2 個核心和 6 GB 的 RAM。
 為了達到最佳效能，請將 Azure ATP 感應器的 [電源選項] 設定為 [高效能]。
-Azure ATP 感應器可以部署在各種負載和大小的網域控制站上，依進出網域控制站的網路流量，以及安裝在該網域控制站上的資源數量而定。
+Azure ATP 感應器可以部署在各種負載和大小的網域控制站上，依進出網域控制站的網路流量，以及安裝的資源數量而定。
 
 >[!NOTE] 
 > 作為虛擬機器執行時，將不支援動態記憶體或任何其他記憶體佔用功能。
@@ -143,6 +148,7 @@ Azure ATP 偵測依賴特定的 Windows 事件記錄檔，其可由感應器從�
 
 ## <a name="azure-atp-standalone-sensor-requirements"></a>Azure ATP 獨立感應器需求
 本節列出 Azure ATP 獨立感應器的需求。
+
 ### <a name="general"></a>一般
 Azure ATP 獨立感應器可安裝在執行 Windows Server 2012 R2 或 Windows Server 2016 (包括 Server Core) 的伺服器上。
 Azure ATP 獨立感應器可以安裝在屬於網域或工作群組之成員的伺服器上。

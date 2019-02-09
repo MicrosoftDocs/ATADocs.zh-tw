@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 1/27/2019
+ms.date: 02/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,16 +13,39 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9d1a0f992bcb0d21ed31d5cdc5ed3e034c6bee8d
-ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
+ms.openlocfilehash: ef2aa85c8695b86ba47d0c42c0a82208b188b893
+ms.sourcegitcommit: 9236d279f5e01424b498ce23e9d84c407ebfcdf3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2019
-ms.locfileid: "55085430"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55689416"
 ---
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能
 
-### <a name="azure-atp-release-263"></a>Azure ATP 2.63 版
+## <a name="azure-atp-release-264"></a>Azure ATP 2.64 版
+2019 年 2 月 4 日發行
+
+
+- **正式運作：可疑的黃金票證使用 (票證異常)**<br>
+此警示現在已 GA (正式運作)。 如需詳細資訊和警示功能，請參閱[可疑的黃金票證使用 (票證異常) 警示描述頁面](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-external-id-2032)。 
+
+- **功能增強：網路對應偵察 (DNS)**<br>
+改善針對此警示部署的警示偵測邏輯，將誤判和警示干擾降至最低。 此警示在第一次可能觸發之前，有 8 天的學習期間。 如需此警示的詳細資訊，請參閱[網路對應偵察 (DNS) 警示描述頁面](atp-reconnaissance-alerts.md#network-mapping-reconnaissance-dns-external-id-2007)。 
+
+    **由於此警示的增強功能，所以 nslookup 方法不應再用來於初始設定期間測試 Azure ATP 連線。** 
+
+- **功能增強：**<br>
+此版本包含重新設計的警示頁面以及新的辨識項，提供更佳的警示調查。 
+    - [可疑的暴力密碼破解攻擊 (SMB)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-smb-external-id-2033)
+    - [可疑的黃金票證使用 (時間異常) 警示描述頁面](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)
+    - [可疑的 Overpass-the-Hash 攻擊 (Kerberos)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-kerberos-external-id-2002)
+    - [可疑的 Metasploit 入侵架構使用](atp-compromised-credentials-alerts.md#suspected-use-of-metasploit-hacking-framework-external-id-2034)
+    - [可疑的 WannaCry 勒索軟體攻擊](atp-compromised-credentials-alerts.md#suspected-wannacry-ransomware-attack-external-id-2035)
+
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
+
+
+## <a name="azure-atp-release-263"></a>Azure ATP 2.63 版
 發行日期：2019 年 1 月 27 日
 
 - **新功能：不信任的樹系支援 - (預覽)**<br>
@@ -76,11 +99,11 @@ Azure ATP 的 [SMB 上的資料外流](atp-exfiltration-alerts.md)安全性警�
 Azure ATP 安全性警訊文件已增強並擴充，現在其中包含更優異的警訊描述、更準確的警訊分級，以及辨識項、修復和防護的解說。 使用以下連結熟悉全新安全性警訊文件的設計： 
     - [Azure ATP 安全性警訊](suspicious-activity-guide.md)
     - [了解安全性警訊](understanding-security-alerts.md)
-        - [偵察階段警訊](atp-reconnaissance-alerts.md)
+        - [偵察階段警示](atp-reconnaissance-alerts.md)
         - [遭入侵的認證階段警示](atp-compromised-credentials-alerts.md)
         - [橫向移動階段警示](atp-lateral-movement-alerts.md)
         - [網域支配階段警示](atp-domain-dominance-alerts.md)
-        - [外洩階段警訊](atp-exfiltration-alerts.md)
+        - [外洩階段警示](atp-exfiltration-alerts.md)
     - [調查電腦](investigate-a-computer.md)
     - [調查使用者](investigate-a-user.md)
 

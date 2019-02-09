@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 1/15/2019
+ms.date: 02/04/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 016388807b2e5d027e3fc113c7e34ebaa546e9d5
-ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
+ms.openlocfilehash: c8e4d9fbc094e5bd1b58253b771cb5d693b7361c
+ms.sourcegitcommit: 9236d279f5e01424b498ce23e9d84c407ebfcdf3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2019
-ms.locfileid: "55085345"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55689297"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>教學課程：偵察警訊  
 
@@ -115,7 +115,11 @@ ms.locfileid: "55085345"
 
 您的 DNS 伺服器包含您網路中所有電腦、IP 位址和服務的對應。 攻擊者會使用這項資訊來對應您的網路結構，並鎖定感興趣的電腦以在稍後用於攻擊步驟。 
  
-DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵測源自於非 DNS 伺服器的 AXFR (傳輸) 要求。
+DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵測源自於非 DNS 伺服器的可疑 AXFR (傳輸) 要求。
+
+**學習期間**
+
+此警示從網域控制站監視開始有 8 天的學習期間。 
 
 **TP、B-TP 或 FP**
 

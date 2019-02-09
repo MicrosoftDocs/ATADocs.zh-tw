@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: mbaldwin
-ms.date: 1/20/2019
+ms.date: 02/03/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 974a67fbc105714acc73c4b489fe5b5a2ee6e74d
-ms.sourcegitcommit: 443e6c07788938960555046def389a1503c259a4
+ms.openlocfilehash: f84e49846a0c144da0674b8a4594eab2ee33efba
+ms.sourcegitcommit: 9236d279f5e01424b498ce23e9d84c407ebfcdf3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2019
-ms.locfileid: "54417196"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55689348"
 ---
 # <a name="azure-atp-security-alerts"></a>Azure ATP 安全性警示
 
@@ -57,7 +57,7 @@ Azure ATP 安全性警訊分為下列類別或階段，如同在典型網路攻�
 |[可疑的黃金票證使用 (加密降級)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-encryption-downgrade-external-id-2009)|加密降級活動 (可能為黃金票證攻擊)|2009|
 |[可疑的黃金票證使用 (偽造的授權資料)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-forged-authorization-data-external-id-2013) |使用偽造授權資料提升權限|2013|
 |[可疑的黃金票證使用 (不存在的帳戶)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-nonexistent-account-external-id-2027)|Kerberos 黃金票證 - 不存在的帳戶|2027|
-|[可疑的黃金票證使用 (票證異常) - 預覽](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-external-id-2032--preview)|NA|2032|
+|[可疑的黃金票證使用 (票證異常)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-external-id-2032)|NA|2032|
 |[可疑的黃金票證使用 (時間異常)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|Kerberos 黃金票證 - 時間異常|2022|
 |[可疑的身分識別竊取 (雜湊傳遞)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-hash-external-id-2017)|使用傳遞雜湊攻擊竊取身分|2017 年|
 |[可疑的身分識別竊取 (票證傳遞)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018)|使用傳遞票證攻擊竊取身分|2018 年|

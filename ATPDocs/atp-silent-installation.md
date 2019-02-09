@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 24eca4c6-c949-42ea-97b9-41ef0fb611f1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9bd886f4c8929af85a3f77e25052ff0fbc7a4c56
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 1710b5f2f96814f2dbe3229473b06c8a963fd380
+ms.sourcegitcommit: cc5017770583042ef8bf90c9c0ece020a0166b91
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840670"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55480976"
 ---
 # <a name="azure-atp-switches-and-silent-installation"></a>Azure ATP 切換參數與無訊息安裝
 此文章提供 Azure ATP 切換參數與無訊息安裝的指導方針與指示。
@@ -50,11 +50,10 @@ Azure ATP 要求您必須安裝 Microsoft .NET Framework 4.7。
 
 **語法**：
 
-    Azure ATP sensor Setup.exe /AccessKey=<Access Key> /quiet NetFrameworkCommandLineArguments ="/q" 
-
+    "Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
 
 > [!NOTE]
-> 從 Azure ATP 入口網站的 [設定]、[感應器] 下，複製存取金鑰。
+> 從 Azure ATP 入口網站的 [設定] 區段、[感應器] 頁面，複製存取金鑰。
 
 
 **安裝選項**：
@@ -77,8 +76,7 @@ Azure ATP 要求您必須安裝 Microsoft .NET Framework 4.7。
 
 **範例**：使用下列命令以無訊息模式安裝 Azure ATP 感應器：
 
-    "Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" 
-    AccessKey="3WlO0uKW7lY6Lk0+dfkfkJQ0qZV6aSq5WxLf71+fuBhggCl/BMs9JxfAwi7oy9vYGviazUS1EPpzte7z8s4grw==" 
+    "Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="mmAOkLYCzfH8L/zUIsH24BIJBevlAWu7wUcSfIkRJufpuEojaDHYdjrNs0P3zpD+/bObKfLS0puD7biT5KDf3g=="
 
 
 ## <a name="update-the-azure-atp-sensor"></a>更新 Azure ATP 感應器

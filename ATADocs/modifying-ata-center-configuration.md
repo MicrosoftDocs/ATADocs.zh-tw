@@ -4,7 +4,7 @@ description: 描述如何變更您 ATA 中心的 IP 位址、連接埠、主控�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.service: ''
 ms.technology: ''
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ffc46e3d74928cc071215da9bafd5989e4448a65
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 0303a49119bcc05c5b3be20b13e098e6a4bc5015
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840551"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56078216"
 ---
 # <a name="modifying-the-ata-center-configuration"></a>修改 ATA 中心設定
 

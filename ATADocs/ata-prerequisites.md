@@ -4,7 +4,7 @@ description: 描述在環境中成功部署 ATA 的需求
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 9/27/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0abf415dd896d62e0308f4b236d92bcb327a0a5d
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 008af6edacf27f5cc49f1a3e518f619a4829aae5
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840874"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56078080"
 ---
 # <a name="ata-prerequisites"></a>ATA 必要條件
 
@@ -278,7 +278,7 @@ ATA 輕量型閘道可為所有網域控制站的網路介面卡監視其上的�
 ### <a name="ports"></a>連接埠
 下表列出 ATA 輕量型閘道至少需要的連接埠：
 
-|通訊協定|傳輸|連接埠|去/從|方向|
+|通訊協定|傳輸|Port|去/從|方向|
 |------------|-------------|--------|-----------|-------------|
 |DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
 |透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|兩者|

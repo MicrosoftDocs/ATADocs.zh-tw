@@ -4,7 +4,7 @@ description: 說明如何停止 ATA 將特定實體活動視為可疑的活動
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 344c0f33-45e1-42e2-a051-f722a4504531
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ad8a33701938ed846bcdf1d435f25c50d91e27ab
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 9718a3541d36049043d72906b55c5c0d9ec2f280
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54841078"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077961"
 ---
 # <a name="excluding-entities-from-detections"></a>從偵測中排除實體
 

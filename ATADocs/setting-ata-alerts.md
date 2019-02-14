@@ -4,7 +4,7 @@ description: 描述如何設定 ATA 警示，所以偵測到可疑的活動時�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1b932d85321e11d85284ef325268ae57b98173b3
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: e88477f8ea7293a1927f6195b5540a6d0a1f7a81
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840015"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076159"
 ---
 # <a name="set-ata-notifications"></a>設定 ATA 通知
 

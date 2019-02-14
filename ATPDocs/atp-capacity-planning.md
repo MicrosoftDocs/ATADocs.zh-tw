@@ -1,22 +1,17 @@
 ---
 title: 規劃 Azure 進階威脅防護部署快速入門 | Microsoft Docs
 description: 協助您規劃部署並決定支援您的網路需要多少 Azure ATP 伺服器
-keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
 ms.date: 1/24/2019
 ms.topic: quickstart
 ms.service: azure-advanced-threat-protection
-ms.prod: ''
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: c9930cff1341b0c721b4aaecae50ce00e99cb80f
-ms.sourcegitcommit: c16aab563149bbdfd99ae5b46e168cec700d3ae3
+ms.openlocfilehash: d161b9655a5be09567fb50a837f7d2063d11ee11
+ms.sourcegitcommit: 96752da28f43896e7b8e5945947b32c4810bdff6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55703328"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55831509"
 ---
 # <a name="quickstart-plan-capacity-for-azure-atp"></a>快速入門：規劃 Azure ATP 容量
 
@@ -154,7 +149,7 @@ Azure ATP 感應器可以支援監視一個網域控制站，依網域控制站�
 此文章可協助您判斷您需要多少 Azure ATP 感應器和獨立感應器。 您也會判斷感應器的大小。 繼續到下一個快速入門建立 Azure ATP 執行個體。
 
 > [!div class="nextstepaction"]
-> [Azure Windows 虛擬機器教學課程](install-atp-step1.md)
+> [建立您的 Azure ATP 執行個體](install-atp-step1.md)
 
 
 ## <a name="join-the-community"></a>加入社群

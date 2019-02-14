@@ -4,7 +4,7 @@ description: 描述如何針對 Advanced Threat Analytics 中的已知問題進�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 7/25/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: a63c6800f41654981597dbe3e695b1a64679fd2a
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: bf014e43711d45b74d5bb5efa7a93d7c3e1532d7
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840976"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077723"
 ---
 # <a name="troubleshooting-ata-known-issues"></a>針對 ATA 已知問題進行疑難排解
 
@@ -31,7 +31,7 @@ ms.locfileid: "54840976"
 
 > [!div class="mx-tableFixed"]
 > 
-> |錯誤|說明|解決方式|
+> |錯誤|說明|解決方案|
 > |-------------|----------|---------|
 > |System.DirectoryServices.Protocols.LdapException：發生本機錯誤|ATA 閘道無法對網域控制站進行驗證。|1.確認網域控制站的 DNS 記錄在 DNS 伺服器中正確設定。 <br>2.驗證 ATA 閘道的時間與網域控制站的時間同步。|
 > |System.IdentityModel.Tokens.SecurityTokenValidationException：無法驗證憑證鏈結|ATA 閘道無法驗證 ATA 中心的憑證。|1.驗證已將根 CA 憑證安裝在 ATA 閘道上受信任的憑證授權單位憑證存放區中。 <br>2.驗證憑證撤銷清單 (CRL) 可供使用，而且可以執行憑證撤銷驗證。|
@@ -40,7 +40,7 @@ ms.locfileid: "54840976"
 > |System.ServiceModel.EndpointNotFoundException：無法連線到 net.tcp://center.ip.addr:443/IEntityReceiver|ATA 閘道無法建立與 ATA 中心的連線。|確定網路設定正確，而且 ATA 閘道 ATA 中心之間的網路連線使用中。|
 > |System.DirectoryServices.Protocols.LdapException：LDAP 伺服器無法使用。|ATA 閘道無法使用 LDAP 通訊協定查詢網域控制站。|1. 驗證 ATA 用來連線到 Active Directory 網域的使用者帳戶，具有 Active Directory 樹狀目錄中所有物件的讀取存取。 <br>2. 確定網域控制站未經強化，不會防止 ATA 使用的使用者帳戶進行 LDAP 查詢。|
 > |Microsoft.Tri.Infrastructure.ContractException：合約例外狀況|ATA 閘道無法同步處理 ATA 中心的設定。|請在 ATA 主控台中完成 ATA 閘道的設定。|
-> |System.Reflection.ReflectionTypeLoadException：無法載入一或多個要求型別。 請擷取 LoaderExceptions 屬性以取得詳細資訊。|郵件分析器已安裝於 ATA 閘道。| 請將郵件分析器解除安裝。|
+> |System.Reflection.ReflectionTypeLoadException：無法載入一或多個要求型別。 如需詳細資訊，請擷取 LoaderExceptions 屬性。|郵件分析器已安裝於 ATA 閘道。| 請將郵件分析器解除安裝。|
 > |Error [配置] System.OutOfMemoryException：擲回 'System.OutOfMemoryException' 類型的例外狀況。|ATA 閘道的記憶體不足。|請增加網域控制站上的記憶體數量。|
 > |無法啟動即時消費者 ---> Microsoft.Opn.Runtime.Monitoring.MessageSessionException:PEFNDIS 事件提供者尚未就緒|未正確安裝 PEF (郵件分析器)。|若是使用 HYPER-V，請嘗試升級 Hyper-V 整合服務，否則請連絡支援人員詢問其因應措施。|
 > |安裝失敗，錯誤:0x80070652|電腦上有其他擱置的安裝。|請等候其他安裝完成，如有必要，請重新啟動電腦。|
@@ -58,9 +58,9 @@ ms.locfileid: "54840976"
 ## <a name="deployment-errors"></a>部署錯誤
 > [!div class="mx-tableFixed"]
 > 
-> |錯誤|說明|解決方式|
+> |錯誤|說明|解決方案|
 > |-------------|----------|---------|
-> |.Net Framework 4.6.1 安裝失敗，並發生錯誤 0x800713ec|.Net Framework 4.6.1 的先決條件尚未安裝在伺服器上。 |安裝 ATA 之前，請驗證伺服器上已安裝 Windows Update [KB2919442](https://www.microsoft.com/download/details.aspx?id=42135) 和 [KB2919355](https://support.microsoft.com/kb/2919355)。|
+> |.Net Framework 4.6.1 安裝失敗，並發生錯誤 0x800713ec|.Net Framework 4.6.1 的必要條件尚未安裝於伺服器。 |安裝 ATA 之前，請驗證伺服器上已安裝 Windows Update [KB2919442](https://www.microsoft.com/download/details.aspx?id=42135) 和 [KB2919355](https://support.microsoft.com/kb/2919355)。|
 > |System.Threading.Tasks.TaskCanceledException：工作已取消|因為無法連線到 ATA 中心，所以部署程序已逾時。|1.  藉由使用 ATA 中心的 IP 位址瀏覽至 ATA 中心，來檢查與其的網路連線。 <br></br>2.  檢查 Proxy 或防火牆設定。|
 > |System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> System.Net.WebException：遠端伺服器傳回一個錯誤：(407) 需要 Proxy 驗證。|因為 Proxy 設定錯誤而無法連線到 ATA 中心，所以部署程序已逾時。|請先停用 Proxy 設定再進行部署，然後再次啟用 Proxy 設定。 或者，您可以在 Proxy 中設定例外狀況。|
 > |System.Net.Sockets.SocketException：遠端主機已強制關閉現有連接||使用下列其中一個選項： </br>在 ATA 閘道上啟用 TLS 1.0 </br>將登錄機碼設定為使用 SSL 和 TLS 的作業系統預設，以在 .Net 上啟用 TLS 1.2，方式如下：</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
@@ -70,7 +70,7 @@ ms.locfileid: "54840976"
 ## <a name="ata-center-errors"></a>ATA 中心錯誤
 > [!div class="mx-tableFixed"]
 > 
-> |錯誤|說明|解決方式|
+> |錯誤|說明|解決方案|
 > |-------------|----------|---------|
 > |System.Security.Cryptography.CryptographicException：拒絕存取。|ATA 中心無法使用發行的憑證來解密。 這很有可能發生在使用將 KeySpec (KeyNumber) 設定為不支援解密的 Signature (AT\_SIGNATURE)，而非支援解密的 KeyExchange (AT\_KEYEXCHANGE) 的憑證上。|1.  停止 ATA 中心服務。 <br></br>2.   從中心的憑證存放區刪除 ATA 中心憑證 (在刪除之前，請確定您已連同私密金鑰將憑證備份在 PFX 檔案中)。 <br></br>3.  開啟提升權限的命令提示字元並執行 certutil -importpfx "CenterCertificate.pfx" AT\_KEYEXCHANGE <br></br>4.   啟動 ATA 中心服務。 <br></br>5.   確認所有項目現在都如預期般運作。|
 
@@ -79,7 +79,7 @@ ms.locfileid: "54840976"
 
 > [!div class="mx-tableFixed"]
 > 
-> |問題|說明|解決方式|
+> |問題|說明|解決方案|
 > |-------------|----------|---------|
 > |未從網域控制站收到流量，但觀察到監視警示|    未從透過 ATA 閘道使用連接埠鏡像的網域控制站收到流量|在 ATA 閘道擷取 NIC 上，停用 [進階設定] 中的這些功能：<br></br>接收區段聯合 (IPv4)<br></br>接收區段聯合 (IPv6)|
 > |系統會顯示此監視警示：某些網路流量不會被分析|如果您在 VMware 虛擬機器上有 ATA 閘道或輕量型閘道，就可能會收到此監視警示。 當 VMware 中的設定不相符時，就會發生此狀況。|在虛擬機器的 NIC 設定中，將下列設定設為 0 或 [停用]：TsoEnable、LargeSendOffload、TSO Offload、Giant TSO Offload TLS 1.0 差 ATA 閘道上已停用，但.Net 是設定為使用 TLS 1.2|
@@ -89,7 +89,7 @@ ms.locfileid: "54840976"
 
 
 ## <a name="see-also"></a>另請參閱
-- [ATA 先決條件](ata-prerequisites.md)
+- [ATA 必要條件](ata-prerequisites.md)
 - [ATA 容量規劃](ata-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-collection.md)

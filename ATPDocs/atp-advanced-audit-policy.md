@@ -4,7 +4,7 @@ description: 本文提供 Azure ATP 進階稽核原則檢查的概觀。
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/24/2019
 ms.topic: conceptual
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ab1e8dd9-a6c2-4c68-89d5-343b8ec56142
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 86d8583600edc642d177ff327d602a9bc61cf3de
-ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
+ms.openlocfilehash: 8052959beaaa57b1138668fa1fd02e91f89c4aa1
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2019
-ms.locfileid: "55085175"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076907"
 ---
 # <a name="azure-atp-advanced-audit-policy-check"></a>Azure ATP 進階稽核原則檢查
 

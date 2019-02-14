@@ -4,7 +4,7 @@ description: 使用 Azure ATP 健康情況中心來查看 Azure ATP 服務的運
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/3/2019
 ms.topic: conceptual
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1b7e72c3-a538-443f-981c-398ffafa5ab8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5900f9450fe74292bd03f29d5e51bcf16300ee6a
-ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
+ms.openlocfilehash: be907aa307a0ac8f7d8b7a971e1c891bfa318bad
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54458439"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076329"
 ---
 # <a name="work-with-azure-atp-health-and-events"></a>使用 Azure ATP 健康情況和事件
 

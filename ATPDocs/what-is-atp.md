@@ -4,7 +4,7 @@ description: 說明何謂 Azure 進階威脅防護 (Azure ATP)，以及它可以
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/3/2019
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2d14d0e9-1b03-4bcc-ae97-8fd41526ffc5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 345b6285dbef34d0a72e789fc3d884214be4b79d
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 1f54e020026c57768124844ba34ee9fae4b026c8
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840928"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077604"
 ---
 # <a name="what-is-azure-advanced-threat-protection"></a>什麼是 Azure 進階威脅防護？
 Azure 進階威脅防護 (ATP) 是以雲端為基礎的安全性解決方案，其可識別、偵測並協助您調查進階的威脅、遭盜用的身分識別以及由組織內部發起的惡意動作。 Azure ATP 可讓為了偵測出混合式環境中的進階攻擊而心力交瘁的 SecOp 分析師和安全性專業人員完成以下作業：  

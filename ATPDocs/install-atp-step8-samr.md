@@ -4,7 +4,7 @@ description: 說明如何設定 Azure ATP 對 SAM 發出遠端呼叫
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/02/2018
 ms.topic: conceptual
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b09adce3-0fbc-40e3-a53f-31f57fe79ca3
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4b0cdf2bd9294a2acb70bb8c3ce5e2e55e480f23
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: db00eab0102a144c0cbf58fee10fbd1e672d1cbd
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54839667"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56078165"
 ---
 # <a name="configure-azure-atp-to-make-remote-calls-to-sam"></a>設定 Azure ATP 對 SAM 發出遠端呼叫
 Azure ATP [橫向移動路徑](use-case-lateral-movement-path.md)偵測有賴於識別特定電腦上本機系統管理員的查詢。 這些查詢是在 Azure ATP 安裝期間透過[步驟 2.連線到 AD](install-atp-step2.md) 中建立的 Azure ATP 服務帳戶，使用 SAM-R 通訊協定來執行。
@@ -29,7 +29,7 @@ Azure ATP [橫向移動路徑](use-case-lateral-movement-path.md)偵測有賴於
 1. 找出原則：
 
    - 原則名稱：網路存取 - 限制允許對 SAM 發出遠端呼叫的用戶端
-   - 位置：電腦設定、Windows 設定、安全性設定、本機原則、安全性選項
+   - 位置:電腦設定、Windows 設定、安全性設定、本機原則、安全性選項
   
    ![找出原則](./media/samr-policy-location.png)
 

@@ -4,7 +4,7 @@ description: 描述如何在 ATA 中產生報表以監視您的網路。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 3/27/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 38ea49b5-cd5e-43e5-bc39-5071f759633b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ea63b6966cc933fcb0a4c748e5b4de511895c483
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 2f25df9545fb4c7b0c269679d92b1a08d2330666
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840330"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076210"
 ---
 # <a name="ata-reports"></a>ATA 報表
 
@@ -66,7 +66,7 @@ ms.locfileid: "54840330"
 
 
 ## <a name="see-also"></a>另請參閱
-- [ATA 先決條件](ata-prerequisites.md)
+- [ATA 必要條件](ata-prerequisites.md)
 - [ATA 容量規劃](ata-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-collection.md)

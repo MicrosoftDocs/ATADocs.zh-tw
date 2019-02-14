@@ -4,7 +4,7 @@ description: 描述如何於災害發生後快速復原 ATA 功能
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 9/05/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 09d471710a987db332a84f0e38a761a3b1e4ed16
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: b8eb23f5641486c37aab7cadba7de770b1d7e862
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54839952"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076873"
 ---
 # <a name="ata-disaster-recovery"></a>ATA 災害復原
 

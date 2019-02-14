@@ -4,7 +4,7 @@ description: 描述如何設定 SAM-R 以在 Advanced Threat Analytics (ATA) 中
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 7/30/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 7597ed25-87f5-472c-a496-d5f205c9c391
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 39d1e03eda182b797412e94ff5427bc74956113a
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 3d3ba40433321d57524c1e7de300230d87197e99
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54841010"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076771"
 ---
 # <a name="install-ata---step-9"></a>安裝 ATA - 步驟 9
 
@@ -60,4 +60,4 @@ ms.locfileid: "54841010"
 - [ATA 調整大小工具](http://aka.ms/atasizingtool)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)
-- [ATA 先決條件](ata-prerequisites.md)
+- [ATA 必要條件](ata-prerequisites.md)

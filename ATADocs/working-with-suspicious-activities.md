@@ -4,7 +4,7 @@ description: 描述如何檢閱 ATA 所識別的可疑活動
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 4/29/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 44d7c899-816c-4f7f-91d3-84a09d291a24
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 17f01c13fc42888bc76b57f26fc90a8d36c13218
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: b6ace439075324140decf8e0a3ea416f31913f78
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54841095"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077179"
 ---
 # <a name="working-with-suspicious-activities"></a>處理可疑活動
 

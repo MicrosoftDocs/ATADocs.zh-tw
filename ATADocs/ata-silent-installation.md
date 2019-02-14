@@ -4,7 +4,7 @@ description: 說明如何以無訊息方式安裝 ATA。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 35577c9001d522f1c227731ab0953a0c8425724d
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 6d28648734fed44aa8f18811740bbb60c01fd112
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54841163"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077570"
 ---
 # <a name="ata-silent-installation"></a>ATA 無訊息安裝
 
@@ -55,7 +55,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 > |名稱|語法|對無訊息安裝而言是否為必要？|說明|
 > |-------------|----------|---------|---------|
 > |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
-> |說明|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
+> |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 > |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|是|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
 > |LicenseAccepted|--LicenseAccepted|是|指出已閱讀並核准授權。 無訊息安裝時必須設定。|
 
@@ -96,10 +96,10 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 > [!div class="mx-tableFixed"]
 > 
-> |名稱|語法|對無訊息安裝而言是否為必要？|描述|
+> |名稱|語法|對無訊息安裝而言是否為必要？|說明|
 > |-------------|----------|---------|---------|
 > |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
-> |說明|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
+> |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 > |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|是|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
 
 
@@ -198,7 +198,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 > |名稱|語法|對無訊息安裝而言是否為必要？|說明|
 > |-------------|----------|---------|---------|
 > |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
-> |說明|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
+> |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 > |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|是|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
 
 
@@ -216,11 +216,11 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 > [!div class="mx-tableFixed"]
 > 
-> |名稱|語法|對無訊息解除安裝而言是否為必要？|描述|
+> |名稱|語法|對無訊息解除安裝而言是否為必要？|說明|
 > |-------------|----------|---------|---------|
 > |Quiet|/quiet|是|執行解除安裝程式，但不顯示任何 UI 和提示。|
 > |解除安裝|/uninstall|是|從伺服器執行 ATA 閘道的無訊息解除安裝。|
-> |說明|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
+> |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 
 **範例**：若要從伺服器以無訊息方式將 ATA 閘道解除安裝：
 

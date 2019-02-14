@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 7a88095aff4c60038768edfd87f734d6cd4ec8e0
-ms.sourcegitcommit: d1b2c44e8455100015bfc1ec9e51a6f1cfab12af
+ms.openlocfilehash: 135fc9fb96bb71ebb7025de9b3353a247f61ee0f
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55479468"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077230"
 documentType: LandingData
 title: Azure 進階威脅防護文件
 metadata:
@@ -12,7 +12,7 @@ metadata:
   description: 保護您的企業混合式環境，避開多種進階目標式網路攻擊與內部攻擊。
   services: azure-advanced-threat-protection
   author: msmbaldwin
-  manager: mbaldwin
+  manager: barbkess
   ms.prod: azure-advanced-threat-protection
   ms.tgt_pltfrm: na
   ms.devlang: na

@@ -4,7 +4,7 @@ description: 說明 Azure ATP 目前已知問題
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/17/2018
 ms.topic: conceptual
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: feea1982-ba23-48be-a468-98d2586cf840
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 03312ad3c1b5cd31e4823080af644ad9826d6996
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: f34ed8ed8312aec1d5a9d0d435b419e77529bd7b
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840347"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56078284"
 ---
 # <a name="azure-atp-known-issues"></a>Azure ATP 已知問題
 

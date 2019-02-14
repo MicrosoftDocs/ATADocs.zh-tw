@@ -4,7 +4,7 @@ description: 安裝 ATA 的步驟 4 協助您安裝 ATA 閘道。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8c0139842094d42c2f7273e9f669267ca4fb092f
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 3cd5f8dd7334d93277d29a63817a061fc6fdf820
+ms.sourcegitcommit: 143ee5c3bf381eaba7d0530c88722e959bc47a18
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54839368"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227925"
 ---
 # <a name="install-ata---step-4"></a>安裝 ATA - 步驟 4
 
@@ -63,11 +63,11 @@ ms.locfileid: "54839368"
     
    > [!NOTE]
    > 當您部署 ATA 閘道時，您不必提供認證。 如果 ATA 閘道安裝無法使用單一登入擷取您的認證 (例如，如果 ATA 中心或 ATA 閘道不在網域中，或是您沒有 ATA 系統管理員認證，就會發生此情況)，系統會提示您提供認證，如下列畫面所示： 
-    
-   ![提供 ATA 閘道認證](media/ata-install-credentials.png)
-    
-   - 安裝路徑：這是安裝 ATA 閘道的位置。 位置預設為 %programfiles%\Microsoft Advanced Threat Analytics\Gateway。 保留預設值。
-    
+   
+    ![提供 ATA 閘道認證](media/ata-install-credentials.png)
+   
+    - 安裝路徑：這是安裝 ATA 閘道的位置。 位置預設為 %programfiles%\Microsoft Advanced Threat Analytics\Gateway。 保留預設值。
+   
 6. 按一下 [安裝]。 安裝 ATA 閘道期間將安裝及設定下列元件︰
     
     -   KB 3047154 (僅適用於 Windows Server 2012 R2)

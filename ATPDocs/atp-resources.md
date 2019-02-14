@@ -4,7 +4,7 @@ description: 本文提供 Azure ATP 實用資源清單
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/24/2019
 ms.topic: conceptual
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 34dc152c-6b7f-4128-93fe-aad56c282730
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: cdcba87d16c357205becdeb5683e655f6ca801a0
-ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
+ms.openlocfilehash: 68ea9227259ded58e6d75848ea27feab2607ec2b
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2019
-ms.locfileid: "55085277"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077944"
 ---
 # <a name="azure-atp-readiness-guide"></a>Azure ATP 整備指南
 

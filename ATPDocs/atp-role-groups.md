@@ -4,7 +4,7 @@ description: 逐步引導您使用 Azure ATP 角色群組。
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 11/29/2018
 ms.topic: conceptual
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: bb577283303437db1e524f1e1f5a112be2bb8bcf
-ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
+ms.openlocfilehash: 25901bada4175cf019f886b5739aa1b5ab0e3fe1
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54458694"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077264"
 ---
 # <a name="azure-atp-role-groups"></a>Azure ATP 角色群組
 

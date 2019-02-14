@@ -4,7 +4,7 @@ description: 逐步引導您使用 ATA 角色群組。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1e5818e4e37b7d22669721341f3f31a94cd78baa
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 99b047305ee0638123f0ef22d9752ca10a6b7a96
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54841027"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076669"
 ---
 # <a name="ata-role-groups"></a>ATA 角色群組
 

@@ -4,7 +4,7 @@ description: 描述 Microsoft Advanced Threat Analytics 的架構 (ATA)
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 8/26/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8b158f9656e2c47583cfcc8218a78091cf158221
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: f4ab67f48eded7a612dfea4cefefdfe8529800d0
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840687"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077808"
 ---
 # <a name="ata-architecture"></a>ATA 架構
 

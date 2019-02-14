@@ -4,7 +4,7 @@ description: 這些程序可協助您移動、備份或還原 ATA 資料庫。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 05e49e23-6e0a-4ec0-9a63-a2093173c8a1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3dde0df4c0ddcf69a17b103d0a60bbb04ffe0d67
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: ac54a9e1a02cef5a6cccde6a4e32b1d080e43f16
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840415"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56078267"
 ---
 # <a name="ata-database-management"></a>ATA 資料庫管理
 

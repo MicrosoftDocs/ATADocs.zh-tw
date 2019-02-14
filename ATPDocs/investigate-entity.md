@@ -4,7 +4,7 @@ description: 描述如何使用 Azure 進階威脅防護 (ATP) 來調查使用�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/3/2019
 ms.topic: tutorial
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d892b22e46efee6ab8315a20e39bd7b47a4c824b
-ms.sourcegitcommit: 6a0ac21f59e72db8615811da2c886f54cf3727f5
+ms.openlocfilehash: 9f5767c058656d7121f8e51f42b8ef09a8340807
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2019
-ms.locfileid: "54249941"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56078301"
 ---
 # <a name="tutorial-investigate-an-entity"></a>教學課程：調查實體
 

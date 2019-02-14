@@ -4,7 +4,7 @@ description: 列出 Advanced Threat Analytics 偵測的威脅
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1cbb690fd65a4d8f2b721527b501b47646a66f4f
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: c82a9846a6af014cf6ad7150319a116888eccb9f
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54839850"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076839"
 ---
 # <a name="what-threats-does-ata-look-for"></a>ATA 會尋找哪些威脅？
 

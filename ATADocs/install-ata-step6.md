@@ -4,7 +4,7 @@ description: 在安裝 ATA 的這個步驟中，您要設定資料來源。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d7c1a2cb171caf732ba4b49ddf50b7eaa2daaa1a
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 8326d74c7255f946d05a04b6f6e973287434c24c
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840192"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077417"
 ---
 # <a name="install-ata---step-6"></a>安裝 ATA - 步驟 6
 
@@ -143,9 +143,9 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
 -   所有欄位之間需以 “\r\n” 字元分隔。
 
--   欄位格式是「機碼=值」。
+-   欄位格式是「索引鍵=值」。
 
--   下列機碼必須存在且具有值︰
+-   下列索引鍵必須存在且具有值︰
 
     -   EventCode = Windows 事件識別碼
 
@@ -161,7 +161,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
 -   Message 索引鍵和值必須是最後一個。
 
--   「機碼=值」對的順序不重要。
+-   「索引鍵=值」對的順序不重要。
 
 #### <a name="qradar"></a>QRadar
 QRadar 可讓您透過代理程式收集事件。 如果使用代理程式收集資料，則會收集不含毫秒資料的時間格式。 因為 ATA 需要毫秒資料，所以必須將 QRadar 設定為使用無代理程式 Windows 事件收集。 如需詳細資訊，請參閱 [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar：使用 MSRPC 通訊協定的無代理程式 Windows 事件集合")。

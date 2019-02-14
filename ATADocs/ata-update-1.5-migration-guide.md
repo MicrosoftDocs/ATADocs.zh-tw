@@ -4,7 +4,7 @@ description: 更新 ATA 至 1.5 版的程序
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 01/23/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: cdf7966b9e3cfc68a9cb593cb12ef76aecddb1d9
-ms.sourcegitcommit: 59ed430fa0cd8ac34a70609026ec5fc2f5972f57
+ms.openlocfilehash: dee659bb3940a177084eae93411a4cf2c65f6aae
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2018
-ms.locfileid: "49480713"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076849"
 ---
 # <a name="ata-update-to-15-migration-guide"></a>ATA 更新至 1.5 移轉指南
 更新至 ATA 1.5 提供下列各方面的改良︰
@@ -59,7 +59,7 @@ ms.locfileid: "49480713"
     > [!IMPORTANT]
     > 更新所有 ATA 閘道以確保 ATA 正常運作。
 
-### <a name="step-1-update-the-ata-center"></a>步驟 1︰更新 ATA 中心
+### <a name="step-1-update-the-ata-center"></a>步驟 1：更新 ATA 中心
 
 1.  備份您的資料庫：(選擇性)
 

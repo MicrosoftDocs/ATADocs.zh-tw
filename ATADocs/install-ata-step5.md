@@ -4,7 +4,7 @@ description: 安裝 ATA 的步驟 5 協助您設定 ATA 閘道的設定。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 75f75173fd8776b89781698bb5f64d7186f938f7
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 8555604f10dffb7a180ceb547c337c795388a5d7
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840449"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077145"
 ---
 # <a name="install-ata---step-5"></a>安裝 ATA - 步驟 5
 
@@ -100,5 +100,5 @@ ms.locfileid: "54840449"
 - [ATA 調整大小工具](http://aka.ms/atasizingtool)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)
-- [ATA 先決條件](ata-prerequisites.md)
+- [ATA 必要條件](ata-prerequisites.md)
 

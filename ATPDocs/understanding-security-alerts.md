@@ -4,7 +4,7 @@ d|Description: This article explains how to use and understand Azure ATP securit
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/13/2019
 ms.topic: tutorial
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 671747d5-faed-4352-a871-17b58fdc6574
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b40cdeb52f26e3fae32185c3168c5e3073bf5929
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 1633361f68367dbc82e82e0b18da09227f82206a
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840847"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077825"
 ---
 # <a name="tutorial-understanding-security-alerts"></a>教學課程：了解安全性警訊
 
@@ -119,7 +119,7 @@ Azure ATP 安全性警訊分為下列類別或階段，如同在典型網路攻�
  
 **唯一的實體 JSON**
  
-包含 Azure ATP 從 Active Directory 帳戶相關部分了解到的資料。 其中有 *Distinguished Name*、*SID*、<em>LockoutTime 與 *PasswordExpiryTime</em> 等所有屬性。 針對使用者帳戶，其中會包含 *Department*、*Mail* 及 *PhoneNumber* 等資料。 針對電腦帳戶，其中會包含 *OperatingSystem*、<em>IsDomainController 與 *DnsName</em> 等資料。
+包含 Azure ATP 從 Active Directory 帳戶相關部分了解到的資料。 其中有 *Distinguished Name*、*SID*、<em>LockoutTime 與 *PasswordExpiryTime</em> 等所有屬性。 若為使用者帳戶，其中會包含 *Department*、*Mail* 及 *PhoneNumber* 等資料。 針對電腦帳戶，其中會包含 *OperatingSystem*、<em>IsDomainController 與 *DnsName</em> 等資料。
 
 **唯一的實體設定檔 JSON**
 

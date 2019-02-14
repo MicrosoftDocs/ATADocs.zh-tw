@@ -4,7 +4,7 @@ description: 描述 ATA 所收集的資料，並提供關閉資料收集的步�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 8/19/2018
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 36ba5f6e79743065ba3579fa72aa752ad8a63534
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 4c28a1aa668d7ada952ca263cf65f167aba6046c
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54839595"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076720"
 ---
 # <a name="manage-system-generated-logs"></a>管理系統產生的記錄
 

@@ -4,7 +4,7 @@ description: 描述連接埠鏡像選項以及如何設定它們以進行 ATA
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cdaddca3-e26e-4137-b553-8ed3f389c460
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 31bb8affe271ec51f922cf67632988dfc1265ba3
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 37ce0480015e3b241b0253a80692beca3e12c0a7
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840232"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077553"
 ---
 # <a name="configure-port-mirroring"></a>設定連接埠鏡像
 

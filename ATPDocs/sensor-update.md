@@ -4,7 +4,7 @@ description: 描述如何更新和延遲更新 Azure ATP 感應器。
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/20/2019
 ms.topic: conceptual
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c7b131bffdca092d6355a7f8cb4d280c2388b8eb
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 80715cbacea342cfe40b876eb517116d10184d1d
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840806"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56078352"
 ---
 # <a name="update-azure-atp-sensors"></a>更新 Azure ATP 感應器
 
@@ -58,7 +58,7 @@ Azure ATP 感應器支援兩種更新：
 **延遲更新**選項可讓您選取特定感應器作為自動更新通道，它們會在更新推出時自動更新，而您的其他感應器可以設定成延遲更新，讓您有時間確認自動更新的感應器都更新成功。
 
 > [!NOTE]
-> 如果發生錯誤，而且未更新感應器，則請建立支援票證。 若要進一步強化 Proxy 以僅和您的執行個體通訊，請參閱 [Proxy 設定](configure-proxy.md)。
+> 如果發生錯誤，而且未更新感應器，則請開啟支援票證。 若要進一步強化 Proxy 以僅和您的執行個體通訊，請參閱 [Proxy 設定](configure-proxy.md)。
 系統會使用強式的憑證式相互驗證，來進行感應器和 Azure 雲端服務之間的驗證。 
 
 每個更新都會在所有支援的作業系統上測試和驗證，將對網路和作業的影響降至最低。
@@ -69,11 +69,11 @@ Azure ATP 感應器支援兩種更新：
 1. 從 Azure ATP 入口網站中，按一下設定圖示，然後選取 [設定]。
 2. 按一下 [更新] 索引標籤。
 3. 在您想要延遲之每個感應器旁的資料表資料列中，將 [Delayed update] \(延遲更新\) 滑桿設定為 [開啟]。
-4. 按一下 [儲存]。
+4. 按一下 **[儲存]**。
  
 ## <a name="sensor-update-process"></a>感應器更新程序
 
-Azure ATP 感應器每隔幾分鐘都會檢查是否有最新版本。 將 Azure ATP 雲端服務更新為較新版本之後，Azure ATP 感應器服務會開始進行 更新程序：
+Azure ATP 感應器每隔幾分鐘都會檢查是否有最新版本。 將 Azure ATP 雲端服務更新為較新版本之後，Azure ATP 感應器服務會啟動更新程序：
 
 1. Azure ATP 雲端服務更新為最新版本。
 2. Azure ATP 感應器更新程式服務會知道有已更新的版本。
@@ -101,6 +101,6 @@ Azure ATP 感應器每隔幾分鐘都會檢查是否有最新版本。 將 Azure
 
 ## <a name="see-also"></a>另請參閱
 
-- [設定事件轉送](configure-event-forwarding.md)
-- [Azure ATP 先決條件](atp-prerequisites.md)
+- [設定事件轉寄](configure-event-forwarding.md)
+- [Azure ATP 必要條件](atp-prerequisites.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

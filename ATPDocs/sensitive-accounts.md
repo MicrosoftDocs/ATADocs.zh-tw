@@ -4,7 +4,7 @@ description: 描述如何使用 Azure 進階威脅防護 (ATP) 標記機密帳�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0e95caae500effb8bd5c34c3da44a713088c7585
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: d5d7cc89303adf1113811d525f6f0f0a4711ffde
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840277"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56075615"
 ---
 # <a name="working-with-sensitive-accounts"></a>使用機密帳戶
 

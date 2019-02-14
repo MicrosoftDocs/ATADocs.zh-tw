@@ -4,7 +4,7 @@ description: 描述如何使用 Azure ATP 記錄檔對問題進行疑難排解
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 10/04/2018
 ms.topic: conceptual
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: de796346-647d-48e1-970a-8f072e990f1e
 ms.reviewer: ''
 ms.suite: ''
-ms.openlocfilehash: cc8008f79758f314321c59f170e9099610824e54
-ms.sourcegitcommit: a0ebb0b6f140d4abf091ebd9d756b975b3d96b9d
+ms.openlocfilehash: 5834571eba16cf0d51f4236256ffe2d68faaf460
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54458493"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56075904"
 ---
 # <a name="troubleshooting-azure-advanced-threat-protection-atp-sensor-using-the-atp-logs"></a>使用 ATP 記錄疑難排解 Azure 進階威脅防護 (ATP) 感應器的問題
 ATP 記錄提供每個 Azure ATP 感應器元件在指定時點所執行之動作的見解。
@@ -55,7 +55,7 @@ Azure ATP 感應器部署記錄：
 
 
 ## <a name="see-also"></a>另請參閱
-- [Azure ATP 先決條件](atp-prerequisites.md)
+- [Azure ATP 必要條件](atp-prerequisites.md)
 - [Azure ATP 容量規劃](atp-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-forwarding.md)

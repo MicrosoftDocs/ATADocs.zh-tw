@@ -4,7 +4,7 @@ description: 將 ATA 更新至 1.9 版的程序
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 03/25/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8afee7eb6c96407f562443b4bfc353630de4825b
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 85e3e3962c22d1af6fc86a062e73f970d0f9bfbc
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840466"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076312"
 ---
 # <a name="updating-ata-to-version-19"></a>將 ATA 更新至 1.9 版
 

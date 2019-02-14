@@ -4,7 +4,7 @@ description: 提供關於 ATA 的常見問題清單以及相關解答
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 5/6/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 2806bdd4c457628d9202e494ac1a064365cf61db
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: b69d78bc5af42b8775c30f49838ba8c7754fe313
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54839998"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077859"
 ---
 # <a name="ata-frequently-asked-questions"></a>ATA 常見問題集
 

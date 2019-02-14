@@ -4,7 +4,7 @@ description: 描述如何在 Azure ATP 中產生報表以監視您的網路。
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
+manager: barbkess
 ms.date: 11/26/2018
 ms.topic: conceptual
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2c2d6b1a-fc8c-4ff7-b07d-64ce6159f84d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 41f66dce4b7aea6654b28f9d82a167439f29eabb
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: a375fa29b455d8b84a741b62fecc65c98b357c72
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840823"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076295"
 ---
 # <a name="azure-atp-reports"></a>Azure ATP 報表
 
@@ -60,7 +60,7 @@ Azure ATP 入口網站中的 [Azure ATP 報告] 區段可讓您排程或立即�
 
 
 ## <a name="see-also"></a>另請參閱
-- [Azure ATP 先決條件](atp-prerequisites.md)
+- [Azure ATP 必要條件](atp-prerequisites.md)
 - [Azure ATP 容量規劃](atp-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-forwarding.md)

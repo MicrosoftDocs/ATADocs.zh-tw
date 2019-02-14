@@ -4,7 +4,7 @@ description: 在這個安裝 ATA 的步驟中，您要整合您的 VPN。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e0aed853-ba52-46e1-9c55-b336271a68e7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c45436c78af1f6d44073f88fb042ab9c9f1acfb0
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: eedc97dff6cd197e2f69fa420b4824325014cbde
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840891"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56077332"
 ---
 # <a name="install-ata---step-7"></a>安裝 ATA - 步驟 7
 

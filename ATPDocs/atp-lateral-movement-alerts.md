@@ -4,8 +4,8 @@ d|Description: This article explains the Azure ATP alerts issued when attacks ty
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
-ms.date: 1/20/2019
+manager: barbkess
+ms.date: 02/11/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2257eb00-8614-4577-b6a1-5c65085371f2
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e564307a62361cd8b1c872818225a2e1e63585fb
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: f3a8766a87070c460ca73fa73aad74643f27fb07
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54840772"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56078386"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>教學課程：橫向移動警訊  
 
@@ -35,13 +35,14 @@ ms.locfileid: "54840772"
 下列安全性警訊可協助您找出並補救 Azure ATP 在您網路中偵測到的**橫向移動**階段可疑活動。 在本教學課程中，您將了解如何了解、分類、補救和防範以下各類攻擊：
 
 > [!div class="checklist"]
-> * 透過 DNS 執行遠端程式碼 - 預覽 (外部識別碼 2036)
+> * 透過 DNS 執行遠端程式碼 (外部識別碼 2036)
 > * 可疑的身分識別竊取 (雜湊傳遞) (外部識別碼 2017)
 > * 可疑的身分識別竊取 (票證傳遞) (外部識別碼 2018)
+> * 可疑的 NTLM 轉送攻擊 (Exchange 帳戶) (外部識別碼 2037) - 預覽
 > * 可疑的 Overpass-the-Hash 攻擊 (加密降級) (外部識別碼 2008)
 > * 可疑的 Overpass-the-Hash 攻擊 (Kerberos) (外部識別碼 2002)
 
-## <a name="remote-code-execution-over-dns-external-id-2036---preview"></a>透過 DNS 執行遠端程式碼 (外部識別碼 2036) - 預覽
+## <a name="remote-code-execution-over-dns-external-id-2036"></a>透過 DNS 執行遠端程式碼 (外部識別碼 2036)
 
 **描述**
 
@@ -139,6 +140,34 @@ ms.locfileid: "54840772"
 3. 尋找執行攻擊的工具，並將它移除。
 4. 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設他們的密碼，並啟用 MFA。
 5. 如果您已安裝 Windows Defender ATP – 請使用 **klist.exe 清除**刪除指定登入工作階段的所有票證，並防止日後再使用該票證。
+
+## <a name="suspected-ntlm-relay-attack-exchange-account-external-id-2037---preview"></a>可疑的 NTLM 轉送攻擊 (Exchange 帳戶) (外部識別碼 2037) - 預覽
+
+**描述**
+
+Exchange Server 可設為使用 Exchange Server 帳戶向攻擊者所執行的遠端 HTTP 伺服器觸發 NTLM 驗證。 此伺服器會等候 Exchange Server 通訊將其自身的敏感性驗證轉送到任何其他的伺服器，或是以更有趣的方式透過 LDAP 轉送到 Active Directory，然後捕捉驗證資訊。
+
+轉送伺服器接收到 NTLM 驗證後，即會提供原先由目標伺服器建立的挑戰。 用戶端會回應挑戰，防止攻擊者接收回應，並使用它來繼續與目標網域控制站進行 NTLM 交涉。 
+
+在此偵測中，當 Azure ATP 識別到可疑來源使用 Exchange 帳戶認證時，便會觸發警訊。
+
+**TP、B-TP、或 FP？**
+
+1. 請檢查 IP 位址後方的來源電腦。 
+    1. 若來源電腦是 Exchange Server，請將其視為 **FP** 活動並**關閉**安全性警訊。
+    2. 判斷來源帳戶是否應從這些電腦使用 NTLM 進行驗證？ 若它們應進行驗證，請**關閉**安全性警訊，並將這些電腦視為 **B-TP** 活動而予以排除。
+
+**了解漏洞的範圍**
+
+1. 繼續[調查所涉及 IP 位址後方的來源電腦](investigate-a-computer.md)。  
+2. 調查[來源帳戶](investigate-a-user.md)。
+
+**建議的補救和預防步驟**
+
+1. 包含來源電腦
+    1. 尋找執行攻擊的工具，並將它移除。
+    2. 因為使用者可能也遭入侵，所以請搜尋在活動發生期間登入的使用者。 重設他們的密碼，並啟用 MFA。
+2. 在網域中強制使用密封 NTLMv2，並使用**網路安全性：LAN Manager 驗證層級**群組原則。 如需詳細資訊，請參閱 [LAN Manager 驗證層級指示](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-security-lan-manager-authentication-level)，以設定網域控制站的群組原則。 
 
 ## <a name="suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008"></a>可疑的 Overpass-the-Hash 攻擊 (加密降級) (外部識別碼 2008) 
 

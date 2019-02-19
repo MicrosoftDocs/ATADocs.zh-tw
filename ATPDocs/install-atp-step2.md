@@ -1,30 +1,27 @@
 ---
-title: 安裝 Azure 進階威脅防護 | Microsoft Docs
+title: 將 Azure ATP 連線到 Active Directory 快速入門 | Microsoft Docs
 description: 安裝 Azure ATP 的步驟 2 可協助您設定 Azure ATP 雲端服務上的網域連線設定
-keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
-ms.date: 12/30/2018
+ms.date: 02/05/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
-ms.assetid: ae8a95f0-278c-4a12-ae69-14282364fba1
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: ada659d86088cb9f93eba4aca54dd2553e8fb69a
-ms.sourcegitcommit: 19ff0ed88e450506b5725bbcbb0d0bd2f0c5e4bb
+ms.openlocfilehash: 404252e7fb9d71a067def9b28870d68736a493dd
+ms.sourcegitcommit: 96752da28f43896e7b8e5945947b32c4810bdff6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2019
-ms.locfileid: "55085447"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55831407"
 ---
-# <a name="install-azure-atp---step-2"></a>安裝 Azure ATP - 步驟 2
+# <a name="quickstart-connect-to-your-active-directory-forest"></a>快速入門：連線到您的 Active Directory 樹系
 
-> [!div class="step-by-step"]
-> [« 步驟 1](install-atp-step1.md)
-> [步驟 3 »](install-atp-step3.md)
+在此快速入門中，您會將 Azure ATP 連線到 Active Directory (AD)，來擷取使用者和電腦的相關資料。 若您要連線多個樹系，請參閱[多樹系支援](atp-multi-forest.md)一文。
+
+## <a name="prerequisites"></a>必要條件
+
+- [Azure ATP 執行個體](install-atp-step1.md)。
+- 檢閱 [Azure ATP 必要條件](atp-prerequisites.md)文章。
+- 針對監視網域中的所有物件具有讀取存取權的**內部部署** AD 使用者帳戶和密碼。
 
 ## <a name="provide-a-username-and-password-to-connect-to-your-active-directory-forest"></a>提供使用者名稱和密碼來連線到您的 Active Directory 樹系
 
@@ -32,28 +29,24 @@ ms.locfileid: "55085447"
 
 ![Azure ATP 歡迎使用階段 1](media/directory-services.png)
 
-> [!IMPORTANT]
-> 這裡的使用者認證必須是在內部部署 Active Directory 中的使用者帳戶。 
 
-
-1.  輸入下列資訊，然後按一下 [儲存]：
+1. 輸入下列資訊，然後按一下 [儲存]：
 
     |欄位|註解|
     |---------|------------|
-    |**使用者名稱** (必填)|輸入唯讀 Active Directory 使用者名稱，例如：**ATPuser**。 **注意︰** **請勿**使用 UPN 作為使用者名稱的格式。|
-    |**密碼** (必填)|輸入唯讀使用者的密碼，例如︰**Pencil1**。|
-    |**網域** (必填)|輸入唯讀使用者的網域，例如︰**contoso.com**。 **注意︰** 請務必輸入使用者所在網域的完整 FQDN。 例如，如果使用者的帳戶是在 corp.contoso.com 網域中，您需要輸入 `corp.contoso.com`，而非 contoso.com|
+    |**使用者名稱** (必填)|輸入唯讀 Active Directory 使用者名稱。 例如：**ATPuser**。  您必須使用**內部部署** AD 使用者帳戶。 **請勿**使用您使用者名稱的 UPN 格式。|
+    |**密碼** (必填)|輸入唯讀使用者的密碼。 例如：**Pencil1**。|
+    |**網域** (必填)|輸入唯讀使用者的網域。 例如：**contoso.com**。 請務必輸入使用者所在網域的完整 FQDN。 例如，如果使用者的帳戶是在 corp.contoso.com 網域中，您需要輸入 `corp.contoso.com`，而非 contoso.com|
 
 2. 在 Azure ATP 入口網站中，按一下 [下載感應器安裝程式並安裝第一個感應器] 以繼續。
 
 
+## <a name="next-steps"></a>後續步驟
+
 > [!div class="step-by-step"]
-> [« 步驟 1](install-atp-step1.md)
-> [步驟 3 »](install-atp-step3.md)
+> [« 步驟 1 - 建立 Azure ATP 執行個體](install-atp-step1.md)
+> [步驟 3 - 下載感應器安裝程式 »](install-atp-step3.md)
 
+## <a name="join-the-community"></a>加入社群
 
-## <a name="see-also"></a>另請參閱
-- [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool) \(英文\)
-- [設定事件收集](configure-event-collection.md)
-- [Azure ATP 必要條件](atp-prerequisites.md)
-- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
+有更多問題嗎，或是想與其他人討論 Azure ATP 與相關的安全性？ 現在就加入 [Azure ATP 社群](https://aka.ms/azureatpcommunity)！

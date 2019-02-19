@@ -4,25 +4,27 @@ d|Description: This article explains how to user Azure ATP security alerts to in
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
-ms.date: 1/14/2019
+ms.date: 02/07/2019
 ms.topic: tutorial
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
-ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 126653dd2831e0e3dbd9c777d84d32b1c2e74bd9
-ms.sourcegitcommit: 1ee052c4c6b04b290e2d5384c24b65a108b1f1f3
+ms.openlocfilehash: 99ebcfeb4220e547be06e8161636b12c843f292c
+ms.sourcegitcommit: 1da2f5414d27d58ac01ad43cafdb6bed242ce7c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54253396"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55889868"
 ---
 # <a name="tutorial-investigate-a-user"></a>教學課程：調查使用者
 
-Azure ATP 警示辨識項和橫向移動路徑清楚指出使用者何時執行可疑活動，或何時存在其帳戶已遭入侵的跡象。 您可以使用調查建議來協助判斷組織的風險、決定如何進行修復，並判斷防止類似未來攻擊的最佳方式。  
+Azure ATP 警示辨識項和橫向移動路徑清楚指出使用者何時執行可疑活動，或何時存在其帳戶已遭入侵的跡象。 在此教學課程中，您將使用調查建議來協助判斷組織的風險、決定如何進行補救，並判斷最能防止日後遭受類似攻擊的方式。  
+
+> [!div class="checklist"]
+> * 收集使用者的相關資訊。
+> * 調查使用者執行的活動。
+> * 調查使用者存取的資源。
+> * 調查橫向移動路徑。
 
 ## <a name="recommended-investigation-steps-for-suspicious-users"></a>針對可疑使用者的建議調查步驟
 

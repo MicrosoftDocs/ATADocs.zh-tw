@@ -4,25 +4,28 @@ d|Description: This article explains how to use Azure ATP security alerts to inv
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
-ms.date: 1/14/2019
+ms.date: 02/07/2019
 ms.topic: tutorial
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
-ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3c707376635facd0fe9ba8e3c3f32f36f5a71c25
-ms.sourcegitcommit: f37127601166216e57e56611f85dd783c291114c
+ms.openlocfilehash: 92364369e26356f514927d9dafc9a31c9468d663
+ms.sourcegitcommit: 1da2f5414d27d58ac01ad43cafdb6bed242ce7c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54839541"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55889885"
 ---
 # <a name="tutorial-investigate-a-computer"></a>教學課程：調查電腦
 
-Azure ATP 警示辨識項清楚指出電腦何時涉及可疑活動，或何時存在電腦已遭入侵的跡象。 您可以使用調查建議來協助判斷組織的風險、決定如何進行修復，並判斷防止類似未來攻擊的最佳方式。  
+Azure ATP 警示辨識項清楚指出電腦何時涉及可疑活動，或何時存在電腦已遭入侵的跡象。 在此教學課程中，您將使用調查建議來協助判斷組織的風險、決定如何進行補救，並判斷最能防止日後遭受類似攻擊的方式。  
+
+> [!div class="checklist"]
+> * 檢查已登入使用者的電腦。
+> * 驗證使用者是否是以正常方式存取電腦。
+> * 調查電腦的可疑活動。
+> * 同一時間是否有其他警訊？
+
 
 ## <a name="investigation-steps-for-suspicious-computers"></a>針對可疑電腦的調查步驟
 
@@ -46,7 +49,7 @@ Azure ATP 警示辨識項清楚指出電腦何時涉及可疑活動，或何時�
 - 如果已啟用 Windows Defender ATP 整合，請按一下 Windows Defender ATP 徽章進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理序與警示。
     1. 是否已部署或安裝任何新程式？
 
-## <a name="see-also"></a>另請參閱
+## <a name="next-steps"></a>後續步驟
 
 - [調查使用者](investigate-a-user.md)
 - [使用安全性警訊](working-with-suspicious-activities.md)

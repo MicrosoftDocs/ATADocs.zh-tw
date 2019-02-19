@@ -4,8 +4,8 @@ d|Description: This article explains the Azure ATP alerts issued when attacks ty
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: mbaldwin
-ms.date: 1/15/2019
+manager: barbkess
+ms.date: 02/11/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 452d951c-5f49-4a21-ae10-9fb38c3de302
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 67ba3c285577b683bc820ab272a498443b02c493
-ms.sourcegitcommit: e2daa0f93d97d552cfbf1577fbd05a547b63e95b
+ms.openlocfilehash: 214e3e10979f3508fad5f2b674d5d39b08a5715f
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54314290"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56075836"
 ---
 # <a name="tutorial-exfiltration-alerts"></a>教學課程：外流警訊  
 
@@ -36,7 +36,7 @@ ms.locfileid: "54314290"
 
 > [!div class="checklist"]
 > * DNS 上的可疑通訊 (外部識別碼 2031)
-> * SMB 上的資料外洩 - 預覽 (外部識別碼 2030)
+> * SMB 上的資料外流 (外部識別碼 2030)
 
 ## <a name="suspicious-communication-over-dns-external-id-2031"></a>DNS 上的可疑通訊 (外部識別碼 2031) 
 
@@ -72,7 +72,7 @@ ms.locfileid: "54314290"
 > [!NOTE]
 > 「透過 DNS 的可疑通訊」安全性警訊會列出可疑網域。 新的網域，或是 Azure ATP 未知或無法辨識但您組織已知或屬於其一部分的最近新增網域，都可能被關閉。
 
-## <a name="data-exfiltration-over-smb---preview-external-id-2030"></a>SMB 上的資料外洩 - 預覽 (外部識別碼 2030)
+## <a name="data-exfiltration-over-smb-external-id-2030"></a>SMB 上的資料外流 (外部識別碼 2030)
 
 **描述** 網域控制站會保留最敏感的組織資料。 以大部分的攻擊者來說，他們的優先要務之一是取得網域控制站的存取權，進而竊取您最敏感的資料。 例如，如果儲存在 DC 上的 Ntds.dit 檔案外洩，攻擊者就得以偽造 Kerberos 票證授權票證 (TGT)，進而取得所有資源的授權。 偽造的 Kerberos TGT 讓攻擊者得以任意設定票證的到期時間。 當從您受監視的網域控制站上發現可疑的資料傳輸時，就會觸發 Azure ATP **SMB 上的資料外洩**警訊。
 

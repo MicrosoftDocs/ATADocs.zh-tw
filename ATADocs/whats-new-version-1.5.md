@@ -4,7 +4,7 @@ description: 列出 ATA 1.5 版的新功能以及已知問題
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 01/23/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 800d5d0ebf7eb044982c35e1f348b6c2faf14b07
-ms.sourcegitcommit: 959b1f7753b9a8ad94870d2014376d55296fbbd4
+ms.openlocfilehash: 987d73a4ad3fc970d6e4f03a19f9ef5f9a8fd59e
+ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46133237"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56076652"
 ---
 # <a name="whats-new-in-ata-version-15"></a>ATA 1.5 版的新功能
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。
@@ -48,7 +48,7 @@ ms.locfileid: "46133237"
 
 ![ATA GW 錯誤](media/ata-install-error.png)
 
-<b>因應措施︰</b>傳送電子郵件給 <ataeval@microsoft.com> 以要求因應措施步驟。
+<b>因應措施：</b>傳送電子郵件給 <ataeval@microsoft.com> 以要求因應措施步驟。
 ### <a name="deployment"></a>部署
 指定給「資料庫資料路徑」和「資料庫日誌路徑」的資料夾必須是空的 (沒有檔案或子資料夾)。
 如果不是空的，則不會進行部署。

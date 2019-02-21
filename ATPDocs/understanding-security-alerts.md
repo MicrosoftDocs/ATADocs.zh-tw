@@ -7,18 +7,19 @@ ms.author: mlottner
 manager: barbkess
 ms.date: 1/13/2019
 ms.topic: tutorial
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: 671747d5-faed-4352-a871-17b58fdc6574
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1633361f68367dbc82e82e0b18da09227f82206a
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 89cece7c0ab11537e7b08f57e5c899e86977fce1
+ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077825"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56263590"
 ---
 # <a name="tutorial-understanding-security-alerts"></a>教學課程：了解安全性警訊
 

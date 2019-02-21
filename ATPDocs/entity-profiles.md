@@ -7,18 +7,19 @@ ms.author: mlottner
 manager: barbkess
 ms.date: 12/02/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: 17458706-79fb-4c23-aa42-66979164a45f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 22c2ac0ebc75a620083aaa872cd43d9bb5fa9cd5
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 0aae81a4663eae58a8fff64eec9487d5967557e3
+ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56076091"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56263653"
 ---
 # <a name="understanding-entity-profiles"></a>了解實體設定檔
 

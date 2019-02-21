@@ -7,18 +7,19 @@ ms.author: mlottner
 manager: barbkess
 ms.date: 11/29/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 25901bada4175cf019f886b5739aa1b5ab0e3fe1
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: ca68f2991d692a2eb5c3e9a257ae77ea80acb538
+ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077264"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56263483"
 ---
 # <a name="azure-atp-role-groups"></a>Azure ATP 角色群組
 

@@ -5,13 +5,14 @@ author: mlottner
 ms.author: mlottner
 ms.date: 1/24/2019
 ms.topic: quickstart
+ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.openlocfilehash: d161b9655a5be09567fb50a837f7d2063d11ee11
-ms.sourcegitcommit: 96752da28f43896e7b8e5945947b32c4810bdff6
+ms.openlocfilehash: 66f30b3657cc78b8ad209703746115eb75593709
+ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55831509"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56263772"
 ---
 # <a name="quickstart-plan-capacity-for-azure-atp"></a>快速入門：規劃 Azure ATP 容量
 

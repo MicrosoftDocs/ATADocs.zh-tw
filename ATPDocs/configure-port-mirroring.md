@@ -7,18 +7,19 @@ ms.author: mlottner
 manager: barbkess
 ms.date: 10/4/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: 9ec7eb4c-3cad-4543-bbf0-b951d8fc8ffe
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b65074fa18fd134bd07820b684a4b43e95c2db0c
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: e8ae465094c6b3413b266b26cf4790339362ebac
+ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56076976"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56263908"
 ---
 # <a name="configure-port-mirroring"></a>設定連接埠鏡像
 > [!NOTE] 

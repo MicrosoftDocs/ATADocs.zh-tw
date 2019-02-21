@@ -7,18 +7,19 @@ ms.author: mlottner
 manager: barbkess
 ms.date: 10/04/2018
 ms.topic: get-started-article
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1480e9ba1a441153a92400dd931cbe9de307d7b5
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: cea4825734294d01516fd5a8f3fddf986605cb57
+ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077485"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56263606"
 ---
 # <a name="configure-event-collection"></a>設定事件收集
 

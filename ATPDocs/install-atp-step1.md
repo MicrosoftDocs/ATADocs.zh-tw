@@ -6,15 +6,16 @@ author: mlottner
 ms.author: mlottner
 ms.date: 02/05/2019
 ms.topic: quickstart
+ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6a8c8458274243d254198914cb7339893a8d890b
-ms.sourcegitcommit: 96752da28f43896e7b8e5945947b32c4810bdff6
+ms.openlocfilehash: 8d1850a6b15366ab441f6a8528bf7b75dabb97aa
+ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55831492"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56263945"
 ---
 # <a name="quickstart-create-your-azure-atp-instance"></a>快速入門：建立您的 Azure ATP 執行個體
 

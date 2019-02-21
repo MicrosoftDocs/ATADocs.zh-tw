@@ -6,15 +6,16 @@ author: mlottner
 ms.author: mlottner
 ms.date: 02/07/2019
 ms.topic: tutorial
+ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 92364369e26356f514927d9dafc9a31c9468d663
-ms.sourcegitcommit: 1da2f5414d27d58ac01ad43cafdb6bed242ce7c0
+ms.openlocfilehash: 547fcb9173d8e51687124bac3f555a4eedc3634d
+ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55889885"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56263500"
 ---
 # <a name="tutorial-investigate-a-computer"></a>教學課程：調查電腦
 

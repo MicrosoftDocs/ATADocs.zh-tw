@@ -6,16 +6,17 @@ author: mlottner
 ms.author: mlottner
 ms.date: 02/05/2019
 ms.topic: get-started-article
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: 95bb4ec1-841f-41b7-92fe-fbd144085724
-ms.openlocfilehash: 8648e3bacadaa64570e127ce3728c33f87d3393c
-ms.sourcegitcommit: 96752da28f43896e7b8e5945947b32c4810bdff6
+ms.openlocfilehash: 24aab8277d412bf245db3e260412e085f049e082
+ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55831424"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56263745"
 ---
 # <a name="quickstart-download-the-azure-atp-sensor-setup-package"></a>快速入門：下載 Azure ATP 感應器安裝套件
 

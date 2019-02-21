@@ -7,17 +7,18 @@ ms.author: mlottner
 manager: barbkess
 ms.date: 10/04/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.service: ''
 ms.technology: ''
 ms.assetid: 0a56cf27-9eaa-4ad0-ae6c-9d0484c69094
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 21c77e01d58dfcf072d47dc6f183ae50e276e366
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 353edd1be2a61de4b5bd9061b0e2f2b3bde70c52
+ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56076278"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56263296"
 ---
 # <a name="validate-port-mirroring"></a>驗證連接埠鏡像
 > [!NOTE] 

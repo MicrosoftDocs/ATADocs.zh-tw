@@ -7,18 +7,19 @@ ms.author: mlottner
 manager: barbkess
 ms.date: 1/24/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a8dfd4852b5a6bf5414876547212a3c5b0a07034
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: e35cb4cc277253543bf24eaccfe67d9808b64af4
+ms.sourcegitcommit: 5d3607b3a2c9d1a35dd36287f4a5fc68fca67eb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077298"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56334437"
 ---
 # <a name="azure-advanced-threat-protection-multi-forest-support"></a>Azure 進階威脅防護多重樹系支援
 
@@ -43,6 +44,7 @@ Azure ATP 支援擁有多個樹系的組織，讓您可以輕鬆地監視活動�
 - 在目錄服務頁面上為您環境中的所有樹系新增認證。 
     - 每個使用雙向信任的樹系都需要一個認證。 
     - 每個具有非 Kerberos 信任或不具信任的樹系，都需要其他認證。 
+    - 每個 Azure ATP 執行個體都有 10 個樹系的限制。 若您的組織的樹系數目超過 10 個，請連絡客戶支援。 
 
 ![Azure ATP 歡迎使用階段 1](media/directory-services-add-no-trust-forests.png)
 

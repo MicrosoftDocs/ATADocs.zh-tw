@@ -5,26 +5,27 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 1/27/2019
+ms.date: 02/13/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: azure-advanced-threat-protection
 ms.technology: ''
 ms.assetid: 92decce8-b3ae-4d32-8407-a95314a66863
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e4e33e79a5ed4dbb80214e50dbccee0f067670fd
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: b371cb5f2bfeef9ddc14ee11623b609c3f49dbfb
+ms.sourcegitcommit: 5d3607b3a2c9d1a35dd36287f4a5fc68fca67eb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077910"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56334420"
 ---
 # <a name="monitoring-your-domain-controller-coverage"></a>監視您的網域控制站涵蓋範圍
 
-當您的第一個 Azure ATP 感應器安裝到您網路的任何網域控制站且經過設定後，Azure ATP 就會開始監視您網域控制站的環境。 
+當第一個 Azure ATP 感應器安裝到您網路的任何網域控制站且經過設定後，Azure ATP 就會開始監視您網域控制站的環境。 
 
-設定期間，建議至少為每一網域選取一個 Azure ATP 感應器網域控制站，作為網域同步器候選。 網域同步器感應器的其中一項作業，是確保特定感應器會主動搜尋網域控制站。 起始設定結束後，可在網域控制站與網域同步器候補狀態間進行切換。 如需設定 Azure 感應器，以及將其設定為**網域同步器候補**的詳細資訊，請參閱 [Azure ATP 感應器設定](install-atp-step5.md)。 
+設定期間，建議至少為每一網域選取一個 Azure ATP 感應器網域控制站，作為網域同步器候選。 網域同步器感應器的其中一個作業，是確保特定感應器會主動搜尋網域控制站。 起始設定結束後，可在網域控制站與網域同步器候補狀態間進行切換。 當沒有選取任何網域控制站做為候選網域同步器時，只有您的網域控制站上只會發生被動監視網路活動的情況。 如需設定 Azure 感應器，以及將其設定為**網域同步器候補**的詳細資訊，請參閱 [Azure ATP 感應器設定](install-atp-step5.md)。 
 
 當 Azure ATP 感應器已安裝到您網路的網域控制站，並經過設定後，感應器會持續和 Azure ATP 服務通訊，傳送感應器狀態、健全狀況和版本資訊，以及收集到的 Active Directory 事件及變更。  
 
@@ -40,7 +41,7 @@ Azure ATP 會持續監視您的環境，尋找是否有導入您環境但未受�
 
 網域控制站涵蓋範圍 Excel 下載會為您組織中偵測到的所有控制站提供以下資訊：
 
-|標題|說明|
+|標題|描述|
 |----|----|
 |Hostname|電腦名稱|
 |網域名稱|網域名稱|

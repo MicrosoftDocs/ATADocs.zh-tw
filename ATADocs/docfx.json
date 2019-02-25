@@ -1,10 +1,10 @@
 {
   "build": {
-    "markdownEngineName": "markdig",
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -17,15 +17,15 @@
       }
     ],
     "resource": [
-        {
-          "files": [
-          "**/images/**", 
+      {
+        "files": [
+          "**/images/**",
           "**/*.png",
           "**/*.jpg",
           "**/*.gif",
           "**/*.bmp",
           "**/*.html"
-          ],
+        ],
         "exclude": [
           "**/obj/**",
           "_themes/**",
@@ -39,17 +39,12 @@
     "dest": "ATADocs",
     "template": "docs.html",
     "globalMetadata": {
-           "feedback_system": "GitHub",
+      "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/atadocs.zh-tw",
-"feedback_product_url": "https://microsoftsecurity.uservoice.com/forums/905158-advanced-threat-analytics", 
+      "feedback_product_url": "https://microsoftsecurity.uservoice.com/forums/905158-advanced-threat-analytics",
       "layout": "Conceptual",
-      "breadcrumb_path": "/enterprise-mobility/toc.json"
-    }
-  },
-  "render": {
-    "theme": "hyde",
-    "dest": "_output"
-  },
-  "basepath": "/advanced-threat-analytics"
+      "breadcrumb_path": "/advanced-threat-analytics/bread/toc.json"
+    },
+    "markdownEngineName": "markdig"
+  }
 }
-

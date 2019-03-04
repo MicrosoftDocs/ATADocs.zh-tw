@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 02/04/2019
+ms.date: 02/24/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 09649f57041ca53ae7cdd183e60584ff37be9c9f
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 36f7d273273e11d57c681e75cc762e853a127616
+ms.sourcegitcommit: 5e954f2f0cc14e42d68d2575dd1c2ed9eaabe891
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56264027"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56754407"
 ---
-# <a name="tutorial-reconnaissance-alerts"></a>教學課程：偵察警訊  
+# <a name="tutorial-reconnaissance-alerts"></a>教學課程：偵察警示  
 
 網路攻擊通常會針對任何可存取的實體進行，例如低權限的使用者，然後快速橫向移動，直到攻擊者得以存取有價值的資產。 敏感性帳戶、網域系統管理員或高度敏感性資料均為重要資產。 Azure ATP 會從整個攻擊狙殺鏈來源識別進階威脅，並將其分成下列幾個階段：
 
@@ -40,8 +40,10 @@ ms.locfileid: "56264027"
 > [!div class="checklist"]
 > * 帳戶列舉偵察 (外部識別碼 2003)
 > * 網路對應偵察 (DNS) (外部識別碼 2007)
+> * 安全性主體偵察 (LDAP) (外部識別碼 2038) - 預覽
 > * 使用者和 IP 位址偵察 (SMB) (外部識別碼 2012)
 > * 使用者和群組成員資格偵察 (SAMR) (外部識別碼 2021)
+> * 
 
 ## <a name="account-enumeration-reconnaissance-external-id-2003"></a>帳戶列舉偵察 (外部識別碼 2003) 
 
@@ -109,14 +111,13 @@ ms.locfileid: "56264027"
 
 ## <a name="network-mapping-reconnaissance-dns-external-id-2007"></a>網路對應偵察 (DNS) (外部識別碼 2007) 
 
-
-先前的名稱：使用 DNS 探查
+先前的名稱：使用 DNS 偵察
 
 **描述**
 
 您的 DNS 伺服器包含您網路中所有電腦、IP 位址和服務的對應。 攻擊者會使用這項資訊來對應您的網路結構，並鎖定感興趣的電腦以在稍後用於攻擊步驟。 
  
-DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵測源自於非 DNS 伺服器的可疑 AXFR (傳輸) 要求。
+DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵測可疑要求，不論是使用源自於非 DNS 伺服器的 AXFR (傳輸) 要求，或使用過量要求的那些要求。
 
 **學習期間**
 
@@ -142,18 +143,45 @@ DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵�
 **建議的補救和預防步驟**
 
 **補救：**
-1. 包含來源電腦。 
+- 包含來源電腦。 
     - 尋找執行攻擊的工具，並將它移除。
     - 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。 重設他們的密碼，並啟用 MFA。
 
-**預防：** 請務必保護您的內部 DNS 伺服器，以防止發生使用 AXFR 查詢的未來攻擊。
+**預防：**<br>
+請務必保護您的內部 DNS 伺服器，以防止發生使用 AXFR 查詢的未來攻擊。
 
-1. 您可以停用區域傳輸，或[限制區域傳輸](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee649273(v=ws.10))僅針對指定的 IP 位址，來保護您的內部 DNS 伺服器，以防止發生使用 DNS 的偵察。 「修改區域傳輸」是檢查清單中的一項工作，應該加以解決才能[保護 DNS 伺服器免受內部和外部攻擊](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee649273(v=ws.10))。
+- 您可以停用區域傳輸，或[限制區域傳輸](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee649273(v=ws.10))僅針對指定的 IP 位址，來保護您的內部 DNS 伺服器，以防止發生使用 DNS 的偵察。 「修改區域傳輸」是檢查清單中的一項工作，應該加以解決才能[保護 DNS 伺服器免受內部和外部攻擊](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee649273(v=ws.10))。
+
+## <a name="security-principal-reconnaissance-ldap-external-id-2038---preview"></a>安全性主體偵察 (LDAP) (外部識別碼 2038) - 預覽
+
+**描述** 攻擊者會使用安全性主體偵察來取得有關網域環境的重要資訊。 可協助攻擊者對應網域結構以及識別具特殊權限帳戶以便在其攻擊擊殺鏈中的後續步驟中使用的資訊。 輕量型目錄存取通訊協定 (LDAP) 是同時用於合法與惡意目的來查詢 Active Directory 的最熱門的方法之一。  專注在 LDAP 的安全性主體偵察通常用於 Kerberoasting 攻擊的第一個階段。 Kerberoasting 攻擊是用於取得目標安全性主體名稱 (SPN) 清單，接著攻擊者會嘗試為其取得票證授權伺服器 (TGS) 憑證。
+
+為了讓 Azure ATP 精確地分析及學習合法使用者，在 Azure ATP 部署前 10 天將不會觸發此類型的警示。 一旦 Azure ATP 初始學習階段完成，會在執行可疑 LDAP 列舉查詢或目標為敏感性群組且使用先前未觀察過方法的查詢的電腦上產生警示。  
+
+**學習期間** 每部電腦 10 天，從在機器上觀察到的第一個事件開始。 
+
+**TP、B-TP 或 FP**
+1.  按一下來源電腦並移至其設定檔頁面。 
+    1. 此來源電腦預期是否會產生此活動？ 
+    2. 如果電腦與活動都是預期中的項目，請**關閉**有關 **B-TP** 活動的安全性警示並排除該電腦。 
+
+**了解漏洞的範圍**
+
+1.  檢查已執行的查詢 (例如網域系統管理員或網域中的所有使用者)，並判斷查詢是否成功。 調查每個公開的群組搜尋，以尋找在群組上執行的可疑活動，或由群組的成員使用者執行的活動。
+2. 調查[來源電腦](investigate-a-computer.md)。 
+    - 使用 LDAP 查詢，檢查是否有任何資源存取活動發生在任何公開的 SPN 上。
+
+**建議的補救和預防步驟**
+
+1.  包含來源電腦
+    1. 尋找執行攻擊的工具，並將它移除。
+    2. 電腦是否執行會執行各種 LDAP 查詢的掃描工具？
+    3. 因為使用者可能也遭入侵，所以請搜尋在活動發生期間登入的使用者。 重設他們的密碼，並啟用 MFA。
+2.  若 SPN 資源存取發生在使用者帳戶 (而非機器帳戶) 下，請重設密碼。
 
 ## <a name="user-and-ip-address-reconnaissance-smb-external-id-2012"></a>使用者和 IP 位址偵察 (SMB) (外部識別碼 2012) 
 
-
-先前的名稱：使用 SMB 工作階段列舉探查
+先前的名稱：使用 SMB 工作階段列舉偵察
 
 ### <a name="description"></a>說明
 
@@ -184,7 +212,7 @@ DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵�
 ## <a name="user-and-group-membership-reconnaissance-samr-external-id-2021"></a>使用者和群組成員資格偵察 (SAMR) (外部識別碼 2021) 
 
 
-先前的名稱：使用目錄服務查詢探查 
+先前的名稱：使用目錄服務查詢偵察 
 
 **描述**：攻擊者會使用使用者及群組成員資格偵察來對應目錄結構，並以權限帳戶為目標，為其往後的攻擊鋪路。 安全性帳戶管理員遠端 (SAM-R) 通訊協定是用來查詢目錄，以執行這類對應的其中一種方法。  
 在此偵測中，在部署 Azure ATP 之後的第一個月內不會觸發任何警示 (學習期間)。 在學習期間，Azure ATP 會分析有哪個 SAM-R 查詢是從哪部電腦發出，同時包括敏感性帳戶的列舉和個別查詢。 
@@ -228,11 +256,11 @@ DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵�
 
 - [調查電腦](investigate-a-computer.md)
 - [調查使用者](investigate-a-user.md)
-- [使用安全性警訊](working-with-suspicious-activities.md)
-- [遭入侵的認證警訊](atp-compromised-credentials-alerts.md)
-- [橫向移動警訊](atp-lateral-movement-alerts.md)
-- [網域支配警訊](atp-domain-dominance-alerts.md)
-- [外流警訊](atp-exfiltration-alerts.md)
+- [使用安全性警示](working-with-suspicious-activities.md)
+- [遭入侵的認證警示](atp-compromised-credentials-alerts.md)
+- [橫向移動警示](atp-lateral-movement-alerts.md)
+- [網域支配警示](atp-domain-dominance-alerts.md)
+- [外流警示](atp-exfiltration-alerts.md)
 - [Azure ATP SIEM 記錄檔參考](cef-format-sa.md)
 - [使用橫向移動路徑](use-case-lateral-movement-path.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

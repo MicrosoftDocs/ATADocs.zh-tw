@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 12/17/2018
+ms.date: 02/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: feea1982-ba23-48be-a468-98d2586cf840
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1689d2d2bd4becd42812010dc8fd6e13f0483ef5
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 916a7a2b8f9782b66867860cdb7575e0069a30d4
+ms.sourcegitcommit: 5e954f2f0cc14e42d68d2575dd1c2ed9eaabe891
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263925"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56754356"
 ---
 # <a name="azure-atp-known-issues"></a>Azure ATP 已知問題
 
@@ -27,12 +27,19 @@ Azure ATP 偶爾會有工程或功能上的限制，可能會限制或變更您�
 
 如需了解有已知因應措施的 Azure ATP 已知問題，請參閱[針對 Azure ATP 已知問題進行疑難排解](troubleshooting-atp-known-issues.md)。 若要查看您 Azure ATP 租用戶的狀態，請前往 [Azure ATP 健全狀況中心](atp-health-center.md)。 
 
-## <a name="suspected-brute-force-attack-ldap-security-alert-display"></a>顯示可疑的暴力密碼破解攻擊 (LDAP) 安全性警訊
+## <a name="dns-reconnaissance-alert"></a>DNS 偵察警示
 > [!div class="mx-tableFixed"] 
 
 |問題|狀態|
 |----|----|
-可疑的暴力密碼破解攻擊 (LDAP) 安全性警訊並不會總是如預期般顯示。 在某些情況下，警示描述會以錯誤的方式顯示。| 工程小組正在努力處理此問題。| 
+*DNS 偵察*安全性警示問題會影響客戶，因為它會從單一機器發出重複的假警報 **DNS 偵察問題警示**。 若觀察到產生自單一機器的大量 **DNS 偵察警示**，在部署 2.67 並解決此問題之前關閉或刪除這些警示。 | 更新 2.67 可解決此問題。|
+
+## <a name="suspected-brute-force-attack-ldap-security-alert-display"></a>顯示可疑的暴力密碼破解攻擊 (LDAP) 安全性警示
+> [!div class="mx-tableFixed"] 
+
+|問題|狀態|
+|----|----|
+可疑的暴力密碼破解攻擊 (LDAP) 安全性警示並不會總是如預期般顯示。 在某些情況下，警示描述會以錯誤的方式顯示。| 工程小組正在努力處理此問題。| 
 
 ## <a name="ad-groups-with-more-than-1000-members-have-limited-detail-sync"></a>超過 1000 名成員的 AD 群組，其詳細資料同步有限
 > [!div class="mx-tableFixed"]  

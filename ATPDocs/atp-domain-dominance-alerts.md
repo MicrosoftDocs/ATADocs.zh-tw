@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 0b3a1db5-0d43-49af-b356-7094cc85f0a5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4360441bc078fa9d0cc09a9be8874d3d9999fab7
-ms.sourcegitcommit: 5d3607b3a2c9d1a35dd36287f4a5fc68fca67eb0
+ms.openlocfilehash: 1c3e4fbf435c22ec57a90653d7a1e8133d9acbf3
+ms.sourcegitcommit: 478878e685d1e4d52b5cd0429b9bf7304e5d8552
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56334505"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56852692"
 ---
 # <a name="tutorial-domain-dominance-alerts"></a>教學課程：控制網域警示  
 
@@ -305,7 +305,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
    1. 例如，您所有的行銷人員是否都能存取特定資源，並有可能觸發警示？
    2. 檢查透過那些票證所存取的資源。 
        - 透過檢查資源服務帳戶的 *msDS-SupportedEncryptionTypes* 屬性，以在 Active Directory 中檢查這點。
-   3. 若只存取一個資源，請檢查其是否為這些使用者應該存取的有效資源。  
+   3. 若只存取一項資源，請檢查其是否為這些使用者應該存取的有效資源。  
 
       如果以上其中一個問題的答案為**是**，則可能為 **T-BP** 活動。 檢查資源是否可以支援強式加密方法；如有可能，請實作更強的加密方法，並**關閉**安全性警示。
 
@@ -433,11 +433,11 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 **描述**：具有網域系統管理員權限的攻擊者可能會危害 KRBTGT 帳戶。 他們可以利用 KRBTGT 帳戶建立 Kerberos 票證授權票證 (TGT)，以提供任何資源的授權，並將票證到期日設定為任何時間。 這個假 TGT 稱為「黃金票證」，可讓攻擊者取得網路持續性。 當使用 Kerberos 票證授權票證超過 [使用者票證最長存留期] 中指定的允許時間時，就會觸發此警示。 
  
 **TP、B-TP 或 FP**
-1. 在過去幾小時內，群組原則中的 [使用者票證最長存留期] **** 設定是否有任何變更，而可能影響警示？  
+1. 在過去幾小時內，群組原則中的 [使用者票證最長存留期] 設定是否有任何變更，而可能影響警示？  
 2. 涉及此警示的 Azure ATP 獨立感應器是否為虛擬機器？ 
     - 如果涉及 Azure ATP 獨立感應器，它最近是否從儲存狀態繼續？  
 3. 網路中是否有時間同步化問題，其中並未同步所有電腦？ 
-    - 按一下 [下載詳細資料] **** 按鈕，以檢視安全性警示報告 Excel 檔案、檢視相關網路活動，並檢查 "StartTime" 與 "DomainControllerStartTime" 之間是否有差異。
+    - 按一下 [下載詳細資料] 按鈕，以檢視安全性警示報告 Excel 檔案、檢視相關網路活動，並檢查 "StartTime" 與 "DomainControllerStartTime" 之間是否有差異。
 
 如果以上問題的答案為**是**，請**關閉**有關 **B-TP** 活動的安全性警示。 
  

@@ -13,7 +13,6 @@
 ## [安裝 Azure ATP 感應器](install-atp-step4.md)
 ## [設定 Azure ATP 感應器](install-atp-step5.md)
 # 教學課程
-## [了解安全性警訊](understanding-security-alerts.md)
 ## [偵察警訊](atp-reconnaissance-alerts.md)
 ## [遭入侵的認證警訊](atp-compromised-credentials-alerts.md)
 ## [橫向移動警訊](atp-lateral-movement-alerts.md)
@@ -59,6 +58,13 @@
 ### [驗證連接埠鏡像](validate-port-mirroring.md)
 ### [設定事件收集](configure-event-collection.md)
 ### [設定 Windows 事件轉送](configure-event-forwarding.md)
+## [了解安全性警訊](understanding-security-alerts.md)
+## 安全性警示實驗室
+### [實驗室概觀](atp-playbook-lab-overview.md)
+### [1 - 實驗室設定](atp-playbook-setup-lab.md)
+### [2 -偵察劇本](atp-playbook-reconnaissance.md)
+### [3 -橫向移動劇本](atp-playbook-lateral-movement.md)
+### [4 - 網域支配劇本](atp-playbook-domain-dominance.md)
 # 參考
 ## [SIEM 記錄檔參考](cef-format-sa.md)
 ## [Azure ATP 已知問題](known-issues.md)

@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 02/25/2019
+ms.date: 03/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,19 +14,33 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 27c0513a5a70e09b7c890eda42b14f5b7265e663
-ms.sourcegitcommit: 5e954f2f0cc14e42d68d2575dd1c2ed9eaabe891
+ms.openlocfilehash: 1edc9d7848721426e47cb82730b6de1db87e1874
+ms.sourcegitcommit: 929f28783110c7e114ab36d4cccd50563f4030df
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56754441"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57253992"
 ---
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能
+
+## <a name="azure-atp-release-268"></a>Azure ATP 2.68 版
+發行日期：2019 年 3 月 3 日
+
+- **功能增強：可疑的暴力密碼破解攻擊 (LDAP) 警示**<br>
+針對此安全性警示，已進行大幅的可用性改進，包括已修訂的描述、額外來源資訊的佈建，以及可加速進行補救的猜測嘗試詳細資料。 深入了解[可疑的暴力密碼破解攻擊 (LDAP)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-ldap-external-id-2004) 安全性警示。 
+
+- **新文件功能：安全性警示實驗室**<br>
+
+    為了說明 Azure ATP 對您工作環境之真實威脅的強大偵測能力，我們已為此文件新增了新的**安全性警示實驗室**。 **安全性警示實驗室**可協助您快速設定實驗室或測試環境，並說明可抵禦常見、真實世界威脅和攻擊的最佳防禦姿態。  
+
+    [逐步執行實驗室](atp-playbook-lab-overview.md)的設計目的是要確保您花費最少的時間進行建置，而將較多時間用在了解您的威脅局勢，以及可用的 Azure ATP 警示和防護。 我們很樂意收到您的意見反應。
+
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-267"></a>Azure ATP 2.67 版
 發行日期：2019 年 2 月 24 日
 
-- **新的安全性警示：安全性主體偵察 (LMP) - (預覽)**<br>
+- **新的安全性警訊：安全性主體偵察 (LDAP) - (預覽)**<br>
 
     Azure ATP 的[安全性主體偵察 (LDAP) - 預覽](atp-reconnaissance-alerts.md#security-principal-reconnaissance-ldap-external-id-2038---preview)安全性警示現在處於公開預覽階段。 <br> 在此偵測中，當攻擊者使用安全性主體偵察來取得有關網域環境的重要資訊時，會觸發 Azure ATP 安全性警示。 此資訊可協助攻擊者對應網域結構以及識別具特殊權限帳戶以便在其攻擊擊殺鏈中的後續步驟中使用。 
 
@@ -36,7 +50,7 @@ ms.locfileid: "56754441"
     改進的**帳戶列舉偵察 (NTLM)** 警示 (使用額外分析)，以及改進的偵測邏輯以減少 **B-TP** 與 **FP** 警示結果。 
  
 - **功能增強：網路對應偵察 (DNS) 警示** <br>
-    新的偵測類型已新增到網路對應偵察 (DNS) 警示。 除了偵測可疑 AXFR 要求之外，Azure ATP 現在也會偵測源自非 DNS 伺服器且使用過量要求的可疑要求類型。
+    新的偵測類型已新增到網路對應偵察 (DNS) 警示。 除了偵測可疑的 AXFR 要求之外，Azure ATP 現在也會偵測源自非 DNS 伺服器且使用過量要求的可疑要求類型。
 
  - 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
@@ -51,8 +65,8 @@ ms.locfileid: "56754441"
 ## <a name="azure-atp-release-265"></a>Azure ATP 2.65 版
 發行日期：2019 年 2 月 10 日
 
-- **新的安全性警示：可疑的 NTLM 轉送攻擊 (Exchange 帳戶) – (預覽)**<br>
-Azure ATP [可疑的 NTLM 轉送攻擊 (Exchange 帳戶) - 預覽](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037---preview)安全性警示現已在公開預覽階段。 <br> 在此偵測中，當識別到可疑來源使用 Exchange 帳戶認證時，便會觸發 Azure ATP 安全性警示。 這些攻擊類型會嘗試利用 NTLM 轉送技術來取得網域控制站交換權限，又稱為 **ExchangePriv**。 若要深入了解 **ExchangePriv** 技術，請參閱最早於 2019 年 1 月 31 日發佈的 [ADV190007 公告](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV190007)，以及 [Azure ATP 警示回應](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/How-to-win-the-latest-security-race-over-NTLM-relay/ba-p/334511) \(英文\)。  
+- **新的安全性警訊：可疑的 NTLM 轉送攻擊 (Exchange 帳戶) – (預覽)**<br>
+Azure ATP [可疑的 NTLM 轉送攻擊 (Exchange 帳戶) - 預覽](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037---preview)安全性警訊現已在公開預覽階段。 <br> 在此偵測中，當識別到可疑來源使用 Exchange 帳戶認證時，便會觸發 Azure ATP 安全性警訊。 這些攻擊類型會嘗試利用 NTLM 轉送技術來取得網域控制站交換權限，又稱為 **ExchangePriv**。 若要深入了解 **ExchangePriv** 技術，請參閱最早於 2019 年 1 月 31 日發佈的 [ADV190007 公告](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV190007)，以及 [Azure ATP 警示回應](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/How-to-win-the-latest-security-race-over-NTLM-relay/ba-p/334511) \(英文\)。  
 
 - **正式運作：透過 DNS 執行遠端程式碼**<br>
 此警示現在已 GA (正式運作)。 如需詳細資訊與警示功能，請參閱[透過 DNS 執行遠端程式碼警示描述頁面](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036)。 
@@ -112,7 +126,7 @@ Azure ATP 帳戶列舉偵察偵測現在會偵測使用 Kerberos 和 NTLM 的列
 ## <a name="azure-atp-release-262"></a>Azure ATP 2.62 版
 發行日期：2019 年 1 月 20 日
 
-- **新的安全性警示：透過 DNS 執行遠端程式碼 - (預覽)**<br>
+- **新的安全性警訊：透過 DNS 執行遠端程式碼 - (預覽)**<br>
 Azure ATP 的[透過 DNS 執行遠端程式碼](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036)安全性警示目前處於公開預覽狀態。 <br> 在此偵測中，當 DNS 查詢可能利用安全性弱點 [CVE-2018-8626](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8626) 對網路中的網域控制站發動攻擊時，會觸發 Azure ATP 安全性警示。
 
 - **功能增強：感應器更新延遲 72 小時** <br> 變更選項使所選感應器的感應器更新，於每次 Azure ATP 更新推出之後延遲 72 小時 (而不是先前延遲 24 小時)。 如需設定指示，請參閱 [Azure ATP 感應器更新](sensor-update.md)。 
@@ -124,26 +138,26 @@ Azure ATP 的[透過 DNS 執行遠端程式碼](atp-lateral-movement-alerts.md#r
 發行日期：2019 年 1 月 13 日
 
 - **新的安全性警示：SMB 上的資料外洩 - (預覽)**<br>
-Azure ATP 的 [SMB 上的資料外流](atp-exfiltration-alerts.md)安全性警示現為公開預覽狀態。 <br> 具有網域系統管理員權限的攻擊者可能會危害 KRBTGT 帳戶。 攻擊者可使用 KRBTGT 帳戶，建立可提供任何資源授權的 Kerberos 票證授權票證 (TGT)。 
+Azure ATP 的 [SMB 上的資料外流](atp-exfiltration-alerts.md)安全性警訊現為公開預覽狀態。 <br> 具有網域系統管理員權限的攻擊者可能會危害 KRBTGT 帳戶。 攻擊者可使用 KRBTGT 帳戶，建立可提供任何資源授權的 Kerberos 票證授權票證 (TGT)。 
 
 
-- **功能增強：遠端程式碼執行嘗試**安全性警示 <br> 新增警示描述及其他辨識項，讓您能更容易了解警示，且提供了更好的調查工作流程。 
+- **功能增強：遠端程式碼執行嘗試**安全性警訊 <br> 新增警訊描述及其他辨識項，讓您能更容易了解警訊，且提供了更好的調查工作流程。 
 
 
 - **功能增強：DNS 查詢邏輯活動** <br>將其他查詢類型新增到 [Azure ATP 受監視的活動](monitored-activities.md)，其中包含：**TXT**、**MX**、**NS**、**SRV**、**ANY**、**DNSKEY**。 
 
 - **功能增強：可疑的黃金票證使用方式 (票證異常) 及可疑的黃金票證使用方式 (不存在的帳戶)** <br>
-改善的偵測邏輯皆已套用到兩個警示中，以降低 FP 警示的數目，進而傳遞更準確的結果。
+改善的偵測邏輯皆已套用到兩個警訊中，以降低 FP 警訊的數目，進而傳遞更準確的結果。
 
-- **功能增強：Azure ATP 安全性警示文件** <br>
-Azure ATP 安全性警示文件已增強並擴充，現在其中包含更優異的警示描述、更準確的警示分級，以及辨識項、修復和防護的解說。 使用以下連結熟悉全新安全性警示文件的設計： 
-    - [Azure ATP 安全性警示](suspicious-activity-guide.md)
-    - [了解安全性警示](understanding-security-alerts.md)
-        - [偵察階段警示](atp-reconnaissance-alerts.md)
+- **功能增強：Azure ATP 安全性警訊文件** <br>
+Azure ATP 安全性警訊文件已增強並擴充，現在其中包含更優異的警訊描述、更準確的警訊分級，以及辨識項、修復和防護的解說。 使用以下連結熟悉全新安全性警訊文件的設計： 
+    - [Azure ATP 安全性警訊](suspicious-activity-guide.md)
+    - [了解安全性警訊](understanding-security-alerts.md)
+        - [偵察階段警訊](atp-reconnaissance-alerts.md)
         - [遭入侵的認證階段警示](atp-compromised-credentials-alerts.md)
         - [橫向移動階段警示](atp-lateral-movement-alerts.md)
         - [網域支配階段警示](atp-domain-dominance-alerts.md)
-        - [外洩階段警示](atp-exfiltration-alerts.md)
+        - [外洩階段警訊](atp-exfiltration-alerts.md)
     - [調查電腦](investigate-a-computer.md)
     - [調查使用者](investigate-a-user.md)
 
@@ -166,13 +180,13 @@ Azure ATP 安全性警示文件已增強並擴充，現在其中包含更優異�
 發行日期：2018 年 12 月 9 日
 
 - **安全性警示增強功能：不尋常的通訊協定實作警示分割**<br>
-「不尋常通訊協定實作」安全性警示的 Azure ATP 系列先前共用 1 個 externalId (2002)，現在則分割為四個不同的警示，且每個都含有對應的唯一外部識別碼。 
+「不尋常通訊協定實作」安全性警訊的 Azure ATP 系列先前共用 1 個 externalId (2002)，現在則分割為四個不同的警訊，且每個都含有對應的唯一外部識別碼。 
 
 ### <a name="new-alert-externalids"></a>新的警示 externalId
 
 > [!div class="mx-tableFixed"] 
 
-|新安全性警示名稱|舊安全性警示名稱|唯一外部識別碼|
+|新安全性警訊名稱|舊安全性警訊名稱|唯一外部識別碼|
 |---------|----------|---------|
 |可疑的暴力密碼破解攻擊 (SMB)|不尋常的通訊協定實作 (可能使用 Hydra 等惡意工具)|2033
 |可疑的 Overpass-the-Hash 攻擊 (Kerberos)|不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)|2002|
@@ -218,8 +232,8 @@ Azure ATP 的[可疑黃金票證使用 - 票證異常](suspicious-activity-guide
 
   請參閱 [Azure ATP 橫向移動路徑](use-case-lateral-movement-path.md)以深入了解使用及利用增強 LMP 進行調查的方式。 
 
-- **文件增強：橫向移動路徑、安全性警示名稱**<br> 已對 Azure ATP 文章進行新增與更新，其包括橫向移動路徑的描述及功能說明，並且已為所有舊安全性警示名稱新增新名稱和 externalId 的名稱對應。 
-  - 請參閱 [Azure ATP 橫向移動路徑](use-case-lateral-movement-path.md)、[調查橫向移動路徑](investigate-lateral-movement-path.md)，以及[安全性警示指南](suspicious-activity-guide.md)以深入了解。   
+- **文件增強：橫向移動路徑、安全性警示名稱**<br> 已對 Azure ATP 文章進行新增與更新，其包括橫向移動路徑的描述及功能說明，並且已為所有舊安全性警訊名稱新增新名稱和 externalId 的名稱對應。 
+  - 請參閱 [Azure ATP 橫向移動路徑](use-case-lateral-movement-path.md)、[調查橫向移動路徑](investigate-lateral-movement-path.md)，以及[安全性警訊指南](suspicious-activity-guide.md)以深入了解。   
 
 - 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
@@ -227,7 +241,7 @@ Azure ATP 的[可疑黃金票證使用 - 票證異常](suspicious-activity-guide
 發行日期：2018 年 11 月 18 日
 
 - **安全性警示：通過 DNS 的可疑通訊 - 一般可用性**<br>
-Azure ATP [通過 DNS 的可疑通訊](suspicious-activity-guide.md) 安全性警示現已正式推出。 <br> 通常，大多數組織中的 DNS 通訊協定不會受到監視，而且很少會因惡意活動而遭到封鎖。 這讓攻擊者有機會在遭入侵的電腦上濫用 DNS 通訊協定。 透過 DNS 的惡意通訊可用來竊取資料、命令和控制攻擊和/或規避公司網路限制。
+Azure ATP [通過 DNS 的可疑通訊](suspicious-activity-guide.md) 安全性警訊現已正式推出。 <br> 通常，大多數組織中的 DNS 通訊協定不會受到監視，而且很少會因惡意活動而遭到封鎖。 這讓攻擊者有機會在遭入侵的電腦上濫用 DNS 通訊協定。 透過 DNS 的惡意通訊可用來竊取資料、命令和控制攻擊和/或規避公司網路限制。
 
 - 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
@@ -291,7 +305,7 @@ Azure ATP 的[遠端程式碼執行嘗試](suspicious-activity-guide.md)現在�
     -   這項偵測可協助偵測對 DNS 通訊協定的攻擊。 大多數組織中的 DNS 通訊協定，都不會受到監視，且很少會因惡意活動而遭到封鎖。 讓攻擊者有機會在遭入侵的電腦上濫用 DNS 通訊協定。 透過 DNS 的惡意通訊可用來竊取資料、命令和控制攻擊和/或規避公司網路限制。
 
 - **新功能** <br>Azure ATP **使用者角色**已增強下列功能：
-  - 變更安全性警示的狀態 (重新開啟、關閉、排除、隱藏)
+  - 變更安全性警訊的狀態 (重新開啟、關閉、排除、隱藏)
   - 設定已排程報表
   - 設定實體標記 (敏感性與 honey token)
   - 排除偵測
@@ -299,16 +313,16 @@ Azure ATP 的[遠端程式碼執行嘗試](suspicious-activity-guide.md)現在�
   - 設定透過電子郵件或 syslog 的通知
 
 
-- 已找出並解決發生在 2018 年 9 月 16 日**使用目錄服務查詢偵察**中暫時性增加情況的安全性警示。 
+- 已找出並解決發生在 2018 年 9 月 16 日**使用目錄服務查詢探查**中暫時性增加情況的安全性警訊。 
 
 - 此版本也包含針對多個問題的修正和改善。
 
 
 ## <a name="azure-atp-release-248"></a>Azure ATP 2.48 版
 發行日期：2018 年 9 月 16 日
-- **安全性警示：** 使用目錄服務查詢偵察
+- **安全性警示：** 使用目錄服務查詢探查
 
-  現在已改善此安全性警示的資訊圖表和辨識項。 
+  現在已改善此安全性警訊的資訊圖表和辨識項。 
 
 - **從偵測中排除實體** 
 

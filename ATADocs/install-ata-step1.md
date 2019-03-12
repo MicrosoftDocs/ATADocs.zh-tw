@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 1/17/2019
+ms.date: 02/28/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.service: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a2f880c4e0df1647f99b0847a8eec71c6b8428bc
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: dc1ee8c4c0610f1d6289319fadf92e2b7aae6072
+ms.sourcegitcommit: 8681c4ed6ede58ace737f31eeff9a680b8e4256d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077995"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007478"
 ---
 # <a name="install-ata---step-1"></a>安裝 ATA - 步驟 1
 
@@ -71,6 +71,9 @@ ms.locfileid: "56077995"
    |中心服務 SSL 憑證|這是 ATA 主控台與 ATA 中心服務所使用的憑證。|按一下鑰匙圖示以選取已安裝的憑證，或使用核取方塊來建立自我簽署憑證。|
         
    ![ATA 中心設定映像](media/ATA-Center-Configuration.png)
+
+> [!NOTE]   
+> 請務必注意監視有關中心服務 SSL 憑證狀態和到期警告的警示。 如果憑證過期，您必須完全重新部署 ATA。 
 
 10. 按一下 [安裝] 來安裝 ATA 中心及其元件。
    安裝 ATA 中心時將安裝及設定下列元件︰

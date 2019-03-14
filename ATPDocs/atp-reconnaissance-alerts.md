@@ -14,14 +14,14 @@ ms.technology: ''
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 36f7d273273e11d57c681e75cc762e853a127616
-ms.sourcegitcommit: 5e954f2f0cc14e42d68d2575dd1c2ed9eaabe891
+ms.openlocfilehash: ee5daa580b37db15fde0e4b276e49f4688c7189b
+ms.sourcegitcommit: aad7a417addae3f21f81ea2b7336c3d83659f592
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56754407"
+ms.lasthandoff: 03/10/2019
+ms.locfileid: "57725584"
 ---
-# <a name="tutorial-reconnaissance-alerts"></a>教學課程：偵察警示  
+# <a name="tutorial-reconnaissance-alerts"></a>教學課程：偵察警訊  
 
 網路攻擊通常會針對任何可存取的實體進行，例如低權限的使用者，然後快速橫向移動，直到攻擊者得以存取有價值的資產。 敏感性帳戶、網域系統管理員或高度敏感性資料均為重要資產。 Azure ATP 會從整個攻擊狙殺鏈來源識別進階威脅，並將其分成下列幾個階段：
 
@@ -43,7 +43,7 @@ ms.locfileid: "56754407"
 > * 安全性主體偵察 (LDAP) (外部識別碼 2038) - 預覽
 > * 使用者和 IP 位址偵察 (SMB) (外部識別碼 2012)
 > * 使用者和群組成員資格偵察 (SAMR) (外部識別碼 2021)
-> * 
+ 
 
 ## <a name="account-enumeration-reconnaissance-external-id-2003"></a>帳戶列舉偵察 (外部識別碼 2003) 
 
@@ -111,7 +111,7 @@ ms.locfileid: "56754407"
 
 ## <a name="network-mapping-reconnaissance-dns-external-id-2007"></a>網路對應偵察 (DNS) (外部識別碼 2007) 
 
-先前的名稱：使用 DNS 偵察
+先前的名稱：使用 DNS 探查
 
 **描述**
 
@@ -181,7 +181,7 @@ DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵�
 
 ## <a name="user-and-ip-address-reconnaissance-smb-external-id-2012"></a>使用者和 IP 位址偵察 (SMB) (外部識別碼 2012) 
 
-先前的名稱：使用 SMB 工作階段列舉偵察
+先前的名稱：使用 SMB 工作階段列舉探查
 
 ### <a name="description"></a>說明
 
@@ -212,7 +212,7 @@ DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵�
 ## <a name="user-and-group-membership-reconnaissance-samr-external-id-2021"></a>使用者和群組成員資格偵察 (SAMR) (外部識別碼 2021) 
 
 
-先前的名稱：使用目錄服務查詢偵察 
+先前的名稱：使用目錄服務查詢探查 
 
 **描述**：攻擊者會使用使用者及群組成員資格偵察來對應目錄結構，並以權限帳戶為目標，為其往後的攻擊鋪路。 安全性帳戶管理員遠端 (SAM-R) 通訊協定是用來查詢目錄，以執行這類對應的其中一種方法。  
 在此偵測中，在部署 Azure ATP 之後的第一個月內不會觸發任何警示 (學習期間)。 在學習期間，Azure ATP 會分析有哪個 SAM-R 查詢是從哪部電腦發出，同時包括敏感性帳戶的列舉和個別查詢。 
@@ -256,11 +256,11 @@ DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵�
 
 - [調查電腦](investigate-a-computer.md)
 - [調查使用者](investigate-a-user.md)
-- [使用安全性警示](working-with-suspicious-activities.md)
-- [遭入侵的認證警示](atp-compromised-credentials-alerts.md)
-- [橫向移動警示](atp-lateral-movement-alerts.md)
-- [網域支配警示](atp-domain-dominance-alerts.md)
-- [外流警示](atp-exfiltration-alerts.md)
+- [使用安全性警訊](working-with-suspicious-activities.md)
+- [遭入侵的認證警訊](atp-compromised-credentials-alerts.md)
+- [橫向移動警訊](atp-lateral-movement-alerts.md)
+- [網域支配警訊](atp-domain-dominance-alerts.md)
+- [外流警訊](atp-exfiltration-alerts.md)
 - [Azure ATP SIEM 記錄檔參考](cef-format-sa.md)
 - [使用橫向移動路徑](use-case-lateral-movement-path.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

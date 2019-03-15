@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 02/13/2019
+ms.date: 03/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: db9792192c1f56d13327d57747622e79c72a1c3e
-ms.sourcegitcommit: 5d3607b3a2c9d1a35dd36287f4a5fc68fca67eb0
+ms.openlocfilehash: 10db395065b7d5038aee662d52a5f6350f845a1a
+ms.sourcegitcommit: 76b818e4a95842e2175e0efb4db142704b66daa2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56334454"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57562222"
 ---
 # <a name="azure-atp-frequently-asked-questions"></a>Azure ATP 常見問題集
 本文提供關於 Azure ATP 的常見問題與解答清單，並分成下列類別： 
@@ -59,7 +59,7 @@ Microsoft 並不會將您的資料用於廣告用途，或是任何其他與為�
 ## <a name="licensing-and-privacy"></a>授權和隱私權 
 ### <a name="where-can-i-get-a-license-for-azure-advanced-threat-protection-atp"></a>哪裡可以取得 Azure 進階威脅防護 (ATP) 的授權？
 
-Azure ATP 隨附於 Enterprise Mobility + Security 5 套件 (EMS E5) 中，也可以獨立授權。 您可以直接從 [Office 365 入口網站](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing)，或透過雲端解決方案合作夥伴 (CSP) 授權模型，取得授權。
+Azure ATP 隨附於 Enterprise Mobility + Security 5 套件 (EMS E5) 中，也可以獨立授權。 您可以直接透過 [Microsoft 365 入口網站](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing)，或雲端解決方案合作夥伴 (CSP) 授權模型取得授權。
 
 ### <a name="is-this-going-to-be-a-part-of-azure-active-directory-or-on-premises-active-directory"></a>它會成為 Azure Active Directory 或內部部署 Active Directory 的一部分嗎？
 Azure ATP 解決方案目前是獨立的供應項目。 它不是 Azure Active Directory 或內部部署 Active Directory 的一部分。
@@ -96,7 +96,7 @@ Azure ATP 支援啟用 Kerberos 保護 (又稱為彈性驗證安全通道 (FAST)
 ### <a name="how-do-i-monitor-a-virtual-domain-controller-using-azure-atp"></a>如何使用 Azure ATP 監視虛擬網域控制站？
 Azure ATP 感應器可以涵蓋大多數虛擬網域控制站；如需判斷 Azure ATP 感應器是否適合您的環境，請參閱 [Azure ATP 容量規劃](atp-capacity-planning.md)。
 
-如果 Azure ATP 感應器無法涵蓋某個虛擬網域控制站，您可以取得虛擬或實體的 Azure ATP 獨立感應器，如[設定連接埠鏡像](configure-port-mirroring.md)中所述。  <br />最簡單的方式是在每一個存在虛擬網域控制站的主機上有一個虛擬 Azure ATP 獨立感應器。<br />如果您的虛擬網域控制站要在主機之間移動，您需要執行下列其中一個步驟︰
+如果 Azure ATP 感應器無法涵蓋某個虛擬網域控制站，您可以取得虛擬或實體的 Azure ATP 獨立感應器，如[設定連接埠鏡像](configure-port-mirroring.md)中所述。  <br />最簡單的方式是在每一個存在虛擬網域控制站的主機上有一個虛擬 Azure ATP 獨立感應器。<br />如果您的虛擬網域控制站要在主機之間移動，您需要執行下列其中一項步驟︰
 
 -   當虛擬網域控制站移至另一部主機時，請預先設定該主機中的 Azure ATP 獨立感應器，以從最近移動的虛擬網域控制站接收流量。
 -   請務必將虛擬 Azure ATP 獨立感應器與虛擬網域控制站緊密聯結，這樣當它移動時，Azure ATP 獨立感應器才會隨之移動。

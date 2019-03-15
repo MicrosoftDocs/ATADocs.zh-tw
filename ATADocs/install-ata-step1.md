@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 02/28/2019
+ms.date: 03/07/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.service: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: dc1ee8c4c0610f1d6289319fadf92e2b7aae6072
-ms.sourcegitcommit: 8681c4ed6ede58ace737f31eeff9a680b8e4256d
+ms.openlocfilehash: 81029f1f651f3138688b6952d47bba05a32e7efd
+ms.sourcegitcommit: 76b818e4a95842e2175e0efb4db142704b66daa2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007478"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57562256"
 ---
 # <a name="install-ata---step-1"></a>安裝 ATA - 步驟 1
 
@@ -37,7 +37,7 @@ ms.locfileid: "57007478"
 確認伺服器符合需求之後，您可以繼續 ATA 中心的安裝。
     
 > [!NOTE]
->如果您直接透過 Office 365 入口網站或透過雲端解決方案提供者 (CSP) 授權模型取得 Enterprise Mobility + Security (EMS) 的授權，而且無法透過 Microsoft 大量授權服務中心 (VLSC) 存取 ATA，請連絡 Microsoft 客戶支援服務以取得啟動 Advanced Threat Analytics (ATA) 的程序。
+>如果您直接透過 Microsoft 365 入口網站或雲端解決方案合作夥伴 (CSP) 授權模型取得 Enterprise Mobility + Security (EMS) 的授權，而且無法透過 Microsoft 大量授權服務中心 (VLSC) 存取 ATA，請連絡 Microsoft 客戶支援服務，以取得啟用 Advanced Threat Analytics (ATA) 的程序。
 
 在 ATA 中心伺服器上執行下列步驟。
 

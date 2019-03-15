@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 1/1/2019
+ms.date: 03/10/2019
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a06004bd-9f77-4e8e-a0e5-4727d6651a0f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f6782a5096349974a5810b5fe9f816f6762f5c4d
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: e37bc18c93d8dad04d0e51c1bdb07b2147bcd2bc
+ms.sourcegitcommit: aad7a417addae3f21f81ea2b7336c3d83659f592
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56264075"
+ms.lasthandoff: 03/10/2019
+ms.locfileid: "57725585"
 ---
 # <a name="working-with-security-alerts"></a>使用安全性警訊
 
@@ -46,8 +46,8 @@ ms.locfileid: "56264075"
     - 以 Excel 格式下載安全性警訊。
 
 > [!NOTE]
-> - 當您將滑鼠停留在使用者或電腦上方時，會顯示實體的小型設定檔，其提供實體的額外資訊，並包含實體連結的安全性警訊數目。
-> - 如果您按一下實體，就會帶您到使用者或電腦的實體設定檔。
+> - 當您將滑鼠暫留在使用者或電腦上時，就會顯示迷你實體設定檔。 迷你設定檔可提供實體的額外資訊，並包含與實體連結的安全性警訊數目。
+> - 按一下實體，您便會前往使用者或電腦的實體設定檔。
 
 ![Azure ATP 安全性警訊時間軸影像](media/atp-sa-timeline.png)
 
@@ -55,11 +55,11 @@ ms.locfileid: "56264075"
 
 Azure ATP 安全性警訊分為下列類別或階段，如同在典型網路攻擊終止鏈結中會看到的階段。 
 
-- 偵察警訊
-- 認證遭入侵警訊
-- 橫向移動警訊
-- 控制網域警訊
-- 外流警訊
+- [偵察警訊](atp-reconnaissance-alerts.md)
+- [遭入侵的認證警訊](atp-compromised-credentials-alerts.md)
+- [橫向移動警訊](atp-lateral-movement-alerts.md)
+- [網域支配警訊](atp-domain-dominance-alerts.md)
+- [外流警訊](atp-exfiltration-alerts.md)
 
 ## 預覽偵測 <a name="preview-detections"></a>
 

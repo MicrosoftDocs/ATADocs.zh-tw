@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 02/04/2019
+ms.date: 03/10/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c8a62ab09451deaeb6ffbf82052c047bb3cc007b
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 073a7e6c6d0257e4dddcae726b939109884f8b6d
+ms.sourcegitcommit: aad7a417addae3f21f81ea2b7336c3d83659f592
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56264053"
+ms.lasthandoff: 03/10/2019
+ms.locfileid: "57725594"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -46,7 +46,7 @@ Azure ATP 是由 Azure ATP 雲端服務組成，其包含 Azure ATP 入口網站
 ## <a name="before-you-start"></a>開始之前
 本節列出在開始安裝 Azure ATP 前，您應收集的資訊及您應擁有的帳戶與網路實體資訊。
 
-- 直接透過 [Office 365 入口網站](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing)或雲端解決方案提供者 (CSP) 授權模型，取得 Enterprise Mobility + Security 5 (EMS E5) 的授權。  
+- 直接透過 [Microsoft 365 入口網站](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing)或雲端解決方案合作夥伴 (CSP) 授權模型，取得 Enterprise Mobility + Security 5 (EMS E5) 的授權。  
 
 - 驗證您要在其中安裝 Azure ATP 感應器的網域控制站可網際網路連線至 Azure ATP 雲端服務。 Azure ATP 感應器支援使用 Proxy。 如需 Proxy 設定的詳細資訊，請參閱[為 Azure ATP 設定 Proxy](configure-proxy.md)。  
 
@@ -83,7 +83,7 @@ Azure ATP 是由 Azure ATP 雲端服務組成，其包含 Azure ATP 入口網站
 本節列出 Azure ATP 感應器的需求。
 
 ### <a name="general"></a>一般
-Azure ATP 感應器可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 (包含 Core 但不含 Nano) 的網域控制站上安裝。
+Azure ATP 感應器可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 (包含 Core 但不含 Nano) 的網域控制站上安裝。 目前不支援 Windows Server 2019。 
 
 網域控制站可以是唯讀網域控制站 (RODC)。
 

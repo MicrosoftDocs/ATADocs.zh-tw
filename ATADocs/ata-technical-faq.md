@@ -2,10 +2,10 @@
 title: Advanced Threat Analytics 常見問題集 | Microsoft Docs
 description: 提供關於 ATA 的常見問題清單以及相關解答
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: barbkess
-ms.date: 5/6/2018
+ms.date: 03/07/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.service: ''
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b69d78bc5af42b8775c30f49838ba8c7754fe313
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 3db8a52c87e45635d632ad5b2d2f1ba7a82d2706
+ms.sourcegitcommit: 76b818e4a95842e2175e0efb4db142704b66daa2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077859"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57562273"
 ---
 # <a name="ata-frequently-asked-questions"></a>ATA 常見問題集
 
@@ -31,7 +31,7 @@ ms.locfileid: "56077859"
 
 如果您有使用中的 Enterprise 合約，您可以從 Microsoft 大量授權服務中心 (VLSC) 下載軟體。
 
-如果您直接透過 Office 365 入口網站或透過雲端解決方案提供者 (CSP) 授權模型取得 Enterprise Mobility + Security (EMS) 的授權，而且無法透過 Microsoft 大量授權服務中心 (VLSC) 存取 ATA，請連絡 Microsoft 客戶支援服務以取得啟動 Advanced Threat Analytics (ATA) 的程序。
+如果您直接透過 Microsoft 365 入口網站或雲端解決方案合作夥伴 (CSP) 授權模型取得 Enterprise Mobility + Security (EMS) 的授權，而且無法透過 Microsoft 大量授權服務中心 (VLSC) 存取 ATA，請連絡 Microsoft 客戶支援服務，以取得啟用 Advanced Threat Analytics (ATA) 的程序。
 
 ## <a name="what-should-i-do-if-the-ata-gateway-wont-start"></a>如果 ATA 閘道無法啟動，該怎麼辦？
 在目前的錯誤記錄檔中尋找最新的錯誤 (ATA 安裝在 Logs 資料夾下)。

@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 03/03/2019
+ms.date: 03/10/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,14 +14,27 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1edc9d7848721426e47cb82730b6de1db87e1874
-ms.sourcegitcommit: 929f28783110c7e114ab36d4cccd50563f4030df
+ms.openlocfilehash: 804f8855ae11b36c01ac52f30590dc36aa4160e1
+ms.sourcegitcommit: aad7a417addae3f21f81ea2b7336c3d83659f592
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57253992"
+ms.lasthandoff: 03/10/2019
+ms.locfileid: "57725666"
 ---
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能
+
+## <a name="azure-atp-release-269"></a>Azure ATP 2.69 版
+發行日期：2019 年 3 月 10 日
+
+- **功能增強：可疑的身分識別竊取 (票證傳遞) 警訊**<br> 此警訊現可提供新的辨識項，來顯示使用遠端桌面通訊協定 (RDP) 所進行之連線的詳細資料。 新增的辨識項可供您輕鬆補救因透過 RDP 連線使用 Remote Credential Guard 而造成的已知良性確判 (B-TP) 警訊問題。 
+
+- **功能增強：透過 DNS 執行遠端程式碼警訊**<br> 此警訊現可提供新的辨識項，來顯示您網域控制站安全性更新的狀態，及通知您何時需要更新。   
+
+- **新文件功能：Azure ATP 安全性警訊 MITRE ATT&CK Matrix™**<br>
+
+    為了說明及讓您更輕鬆地對應 Azure ATP 安全性警訊及所熟悉 MITRE ATT&CK Matrix 之間的關聯性，我們將相關的 MITRE 技術新增到了 Azure ATP 安全性警訊清單。 這項新增的參考可供您更輕鬆地了解觸發 Azure ATP 安全性警訊時，可能使用的可疑攻擊技術。 深入了解 [Azure ATP 安全性警訊指南](suspicious-activity-guide.md)。  
+
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-268"></a>Azure ATP 2.68 版
 發行日期：2019 年 3 月 3 日

@@ -14,11 +14,11 @@ ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 81029f1f651f3138688b6952d47bba05a32e7efd
-ms.sourcegitcommit: 76b818e4a95842e2175e0efb4db142704b66daa2
+ms.sourcegitcommit: 9252c74620abb99d8fa2b8d2cc2169018078bec9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57562256"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57828204"
 ---
 # <a name="install-ata---step-1"></a>安裝 ATA - 步驟 1
 

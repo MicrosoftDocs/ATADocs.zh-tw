@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 02/11/2019
+ms.date: 03/18/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 2257eb00-8614-4577-b6a1-5c65085371f2
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 58c8445fc47a7dfb45730c96b4c438f32d539ee5
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 3e2dffff3d9c2c784709c323877ec74601781a05
+ms.sourcegitcommit: 9252c74620abb99d8fa2b8d2cc2169018078bec9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263194"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58136855"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>教學課程：橫向移動警訊  
 
@@ -121,6 +121,12 @@ ms.locfileid: "56263194"
 3. 感應器未解析一或多個目的地 IP 位址嗎？ 如果未解析目的地 IP 位址，可能表示感應器與裝置之間的正確連接埠未正確開啟。 
 
     如果任何上述問題的答案為**是**，請檢查來源和目的電腦是否相同。 如果相同，則為 **FP**，而且沒有任何實際的**票證傳遞**嘗試。 
+
+當透過 Windows Server 2016 及更新版本上的 Windows 10 使用 RDP 連線的 [Remote Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/remote-credential-guard) 功能時，就會出現 **B-TP** 警示。 使用警示辨識項，檢查使用者是否使用了遠端桌面連線，從來源電腦連線至目的地電腦。
+
+1. 檢查相互關聯的辨識項。
+2. 若發現相互關聯的辨識項，請檢查是否使用 Remote Credential Guard 進行 RDP 連線。 
+3. 如果答案為是，則為 **T-BP** 活動，並請**關閉**安全性警訊。 
 
 有些自訂應用程式可代表使用者轉送票證。 這些應用程式具有使用者票證的委派權限。
 

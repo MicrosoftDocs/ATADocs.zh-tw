@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 12/02/2018
+ms.date: 03/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: bc4e207a636d6c6641ccb8c6ac4e1695d82ec0d6
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 5490688653edddae020a8b63191a1c9a7b6e9f8a
+ms.sourcegitcommit: 9252c74620abb99d8fa2b8d2cc2169018078bec9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263742"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58136802"
 ---
 # <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-azure-atp-sensor"></a>設定 Azure ATP 感應器的端點 Proxy 和網際網路連線設定
 
@@ -58,18 +58,19 @@ ms.locfileid: "56263742"
 
 ## <a name="enable-access-to-azure-atp-service-urls-in-the-proxy-server"></a>啟用 Proxy 伺服器中的 Azure ATP 服務 URL 存取
 
-如果 Proxy 或防火牆根據預設封鎖了所有流量，並且只允許特定網域通過，或者啟用了 HTTPS 掃描 (SSL 檢查)，請確定下列 URL 已列入允許清單，以允許與連接埠 443 中的 Azure ATP 服務進行通訊：
+若要允許存取 Azure ATP，請允許下列 URL 的流量：
 
-|服務位置|.Atp.Azure.com DNS 記錄|
+- \<your-instance-name>.atp.azure.com – 針對主控台連線能力。 例如 "Contoso-corp.atp.azure.com"
+
+- \<your-instance-name>sensorapi.atp.azure.com – 針對感應器連線能力。 例如 "contoso-corpsensorapi.atp.azure.com"
+
+上述 URL 會自動對應至 Azure ATP 執行個體的正確服務位置。 若您需要更細微的控制，可考慮允許下表相關端點的流量：
+
+|服務位置|*.atp.azure.com DNS 記錄|
 |----|----|
 |美國 |triprd1wcusw1sensorapi.atp.azure.com<br>triprd1wcuswb1sensorapi.atp.azure.com<br>triprd1wcuse1sensorapi.atp.azure.com|
 |歐洲|triprd1wceun1sensorapi.atp.azure.com<br>triprd1wceuw1sensorapi.atp.azure.com|
 |亞洲|triprd1wcasse1sensorapi.atp.azure.com|
-
-
-您也可以為您建立的特定執行個體強化防火牆或 Proxy 規則，方法是為下列 DNS 記錄建立規則：
-- \<your-instance-name>.atp.azure.com – 針對主控台連線能力。 例如 "Contoso-corp.atp.azure.com"
-- \<your-instance-name>sensorapi.atp.azure.com – 針對感應器連線能力。 例如 "contoso-corpsensorapi.atp.azure.com"
 
  
 > [!NOTE]

@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 02/24/2019
+ms.date: 03/17/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ee5daa580b37db15fde0e4b276e49f4688c7189b
-ms.sourcegitcommit: aad7a417addae3f21f81ea2b7336c3d83659f592
+ms.openlocfilehash: 8d61fb120179ee8e53aa42e50d2a0841197b8032
+ms.sourcegitcommit: 9252c74620abb99d8fa2b8d2cc2169018078bec9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2019
-ms.locfileid: "57725584"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58136856"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>教學課程：偵察警訊  
 
@@ -143,24 +143,31 @@ DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵�
 **建議的補救和預防步驟**
 
 **補救：**
+
 - 包含來源電腦。 
     - 尋找執行攻擊的工具，並將它移除。
     - 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。 重設他們的密碼，並啟用 MFA。
 
 **預防：**<br>
+
 請務必保護您的內部 DNS 伺服器，以防止發生使用 AXFR 查詢的未來攻擊。
 
 - 您可以停用區域傳輸，或[限制區域傳輸](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee649273(v=ws.10))僅針對指定的 IP 位址，來保護您的內部 DNS 伺服器，以防止發生使用 DNS 的偵察。 「修改區域傳輸」是檢查清單中的一項工作，應該加以解決才能[保護 DNS 伺服器免受內部和外部攻擊](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee649273(v=ws.10))。
 
 ## <a name="security-principal-reconnaissance-ldap-external-id-2038---preview"></a>安全性主體偵察 (LDAP) (外部識別碼 2038) - 預覽
 
-**描述** 攻擊者會使用安全性主體偵察來取得有關網域環境的重要資訊。 可協助攻擊者對應網域結構以及識別具特殊權限帳戶以便在其攻擊擊殺鏈中的後續步驟中使用的資訊。 輕量型目錄存取通訊協定 (LDAP) 是同時用於合法與惡意目的來查詢 Active Directory 的最熱門的方法之一。  專注在 LDAP 的安全性主體偵察通常用於 Kerberoasting 攻擊的第一個階段。 Kerberoasting 攻擊是用於取得目標安全性主體名稱 (SPN) 清單，接著攻擊者會嘗試為其取得票證授權伺服器 (TGS) 憑證。
+**描述**
+
+攻擊者會使用安全性主體偵察，取得有關網域環境的重要資訊。 可協助攻擊者對應網域結構以及識別具特殊權限帳戶以便在其攻擊擊殺鏈中的後續步驟中使用的資訊。 輕量型目錄存取通訊協定 (LDAP) 是同時用於合法與惡意目的來查詢 Active Directory 的最熱門的方法之一。  專注在 LDAP 的安全性主體偵察通常用於 Kerberoasting 攻擊的第一個階段。 Kerberoasting 攻擊是用於取得目標安全性主體名稱 (SPN) 清單，接著攻擊者會嘗試為其取得票證授權伺服器 (TGS) 憑證。
 
 為了讓 Azure ATP 精確地分析及學習合法使用者，在 Azure ATP 部署前 10 天將不會觸發此類型的警示。 一旦 Azure ATP 初始學習階段完成，會在執行可疑 LDAP 列舉查詢或目標為敏感性群組且使用先前未觀察過方法的查詢的電腦上產生警示。  
 
-**學習期間** 每部電腦 10 天，從在機器上觀察到的第一個事件開始。 
+**學習期間**
+
+每部電腦 10 天，從在電腦上觀察到第一個事件那天起。 
 
 **TP、B-TP 或 FP**
+
 1.  按一下來源電腦並移至其設定檔頁面。 
     1. 此來源電腦預期是否會產生此活動？ 
     2. 如果電腦與活動都是預期中的項目，請**關閉**有關 **B-TP** 活動的安全性警示並排除該電腦。 
@@ -214,7 +221,9 @@ DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵�
 
 先前的名稱：使用目錄服務查詢探查 
 
-**描述**：攻擊者會使用使用者及群組成員資格偵察來對應目錄結構，並以權限帳戶為目標，為其往後的攻擊鋪路。 安全性帳戶管理員遠端 (SAM-R) 通訊協定是用來查詢目錄，以執行這類對應的其中一種方法。  
+**描述**
+ 
+攻擊者會使用使用者及群組成員資格偵察來對應目錄結構，並以權限帳戶為目標，為其往後的攻擊鋪路。 安全性帳戶管理員遠端 (SAM-R) 通訊協定是用來查詢目錄，以執行這類對應的其中一種方法。  
 在此偵測中，在部署 Azure ATP 之後的第一個月內不會觸發任何警示 (學習期間)。 在學習期間，Azure ATP 會分析有哪個 SAM-R 查詢是從哪部電腦發出，同時包括敏感性帳戶的列舉和個別查詢。 
 
 **學習期間**

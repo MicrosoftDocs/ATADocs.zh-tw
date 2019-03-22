@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d20359547696f7fe3cafd75a638563d400f0ed82
-ms.sourcegitcommit: 0e77ed44ee73ac84923fa7379e555f5ed9602aca
+ms.openlocfilehash: de426a06fb7d0893d56b82fcaa9599f523054774
+ms.sourcegitcommit: 9252c74620abb99d8fa2b8d2cc2169018078bec9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57017297"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57981199"
 ---
 # <a name="tutorial-compromised-credential-alerts"></a>教學課程：認證遭入侵警訊  
 
@@ -33,7 +33,7 @@ ms.locfileid: "57017297"
 
 若要深入了解如何了解所有 Azure ATP 安全性警示的結構和通用元件，請參閱[了解安全性警示](understanding-security-alerts.md)。
 
-下列安全性警示有助於您找出並修復 Azure ATP 在網路中偵測到之**遭入侵的認證**階段可疑活動。 在此教學課程中，您將了解如何了解、分類、修復和避免下列各類攻擊：
+下列安全性警示有助於您找出並修復 Azure ATP 在網路中偵測到之**遭入侵的認證**階段可疑活動。 在本教學課程中，您將了解如何了解、分類、修復和避免下列各類攻擊：
 
 > [!div class="checklist"]
 > * Honeytoken 活動 (外部識別碼 2014)
@@ -90,7 +90,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 請務必檢查是否有任何登入嘗試已結束且成功驗證。
 
-1. 如果有任何登入嘗試已成功結束，請檢查平常是否從該來源電腦使用任何 **猜對的帳戶** 。
+1. 如果有任何登入嘗試已成功結束，請檢查平常是否從該來源電腦使用任何**猜對的帳戶**。
    - 這些帳戶失敗是否有可能是因為使用了錯誤的密碼？  
    - 與使用者確認他們是否已產生活動 (無法登入幾次後成功)。 
 

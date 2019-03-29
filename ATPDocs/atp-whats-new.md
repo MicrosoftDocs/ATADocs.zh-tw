@@ -5,7 +5,7 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 03/17/2019
+ms.date: 03/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,14 +14,30 @@ ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0da5dd11c8d342b6342c06631a73e8c5f119c42c
-ms.sourcegitcommit: 9252c74620abb99d8fa2b8d2cc2169018078bec9
+ms.openlocfilehash: b39c51d725a652fe1e936437ad3d0bf0c7d86db7
+ms.sourcegitcommit: 6975497acaf298af393f96573e1790ab617fa5b4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57981216"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58406632"
 ---
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能
+
+## <a name="azure-atp-release-271"></a>Azure ATP 2.71 版
+發行日期：2019 年 3 月 24 日
+
+- **功能增強：網路名稱解析 (NNR) 監視警示**<br>
+已根據 NNR 針對與 Azure ATP 安全性警訊關聯的信賴等級新增監視警示。 每個監視警示都包括可採取的動作與詳細建議，可協助解決低 NNR 成功率問題。 
+
+    請參閱[什麼是網路名稱解析](atp-nnr-policy.md)以深入了解 Azure ATP 如何使用 NNR 以及它對警示精確度而言為何很重要。 
+
+- **Server 支援：我們透過 KB4487044 新對 Server 2019 的支援**<br>
+我們透過 KB4487044 的修補層級新增對使用 Windows Server 2019 的支援。 不支援在不安裝該補充程式的情況下使用 Server 2019，而且也無法安裝此更新。 
+
+- **功能增強：以使用者為基礎的警示排除**<br>
+延伸警示排除選項現在允許將特定使用者從特定警示排除。 排除有助於避免使用或設定特定內部軟體類型重複觸發良性安全性警訊的情況。
+
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-270"></a>Azure ATP 2.70 版
 發行日期：2019 年 3 月 17 日
@@ -31,12 +47,10 @@ ms.locfileid: "57981216"
     已將 NNR 信賴等級辨識項新增至下列警示：
   - [網路對應偵察 (DNS)](atp-reconnaissance-alerts.md#network-mapping-reconnaissance-dns-external-id-2007)
   - [可疑的身分識別竊取 (票證傳遞)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018) 
-
   - [可疑的 NTLM 轉送攻擊 (Exchange 帳戶) - 預覽](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037---preview)
   - [可疑的 DCSync 攻擊 (目錄服務的複寫)](atp-domain-dominance-alerts.md#suspected-dcsync-attack-replication-of-directory-services-external-id-2006)
 
 - **其他健全狀況警示案例：Azure ATP 感應器服務無法啟動**<br>目前假如因為網路擷取驅動程式發生問題，導致 Azure ATP 感應器無法啟動，便會觸發感應器健全狀況警示。 如需關於 Azure ATP 記錄及如何使用的詳細資訊，請參閱[使用 Azure ATP 記錄針對 Azure ATP 進行疑難排解](troubleshooting-atp-using-logs.md)。 
-
   
 - 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 

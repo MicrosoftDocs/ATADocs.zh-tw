@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: eeb158ed3da07b57a3071b5fa9f60b8ec9d20db7
-ms.sourcegitcommit: 9252c74620abb99d8fa2b8d2cc2169018078bec9
+ms.openlocfilehash: b057fdc6362e8b5199b1323f09e3c81a09291e5d
+ms.sourcegitcommit: 6975497acaf298af393f96573e1790ab617fa5b4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58136887"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58406615"
 ---
 # <a name="azure-atp-siem-log-reference"></a>Azure ATP SIEM 記錄檔參考
 
@@ -51,7 +51,7 @@ Azure ATP 可以將安全性警示與監視警示事件轉送到您的 SIEM。 �
 > [!NOTE]
 > 若您計劃為 Azure ATP SIEM 記錄檔建立自動化或指令碼，建議您使用 **externalId** 欄位來識別警示類型，而非使用警示名稱。 警示名稱有時候可能會遭到修改，但每個警示的 **externalId** 永遠不會變。  
 
-## <a name="azure-atp-security-alert-unique-externalids"></a>Azure ATP 安全性警訊唯一的 externalId
+## <a name="azure-atp-security-alert-unique-external-ids"></a>Azure ATP 安全性警訊唯一外部識別碼
 
 > [!div class="mx-tableFixed"] 
 
@@ -59,7 +59,7 @@ Azure ATP 可以將安全性警示與監視警示事件轉送到您的 SIEM。 �
 |---------|----------|---------|---------|
 |[帳戶列舉偵察](atp-reconnaissance-alerts.md#account-enumeration-reconnaissance-external-id-2003)|使用帳戶列舉偵查|2003|探索|
 |[透過 SMB 的資料外流](atp-exfiltration-alerts.md#data-exfiltration-over-smb-external-id-2030)| NA| 2030|外流，<br>橫向移動，<br>命令與控制|
-|[Honeytoken 活動](atp-compromised-credentials-alerts.md#honeytoken-activity-external-id-2014)|Honeytoken 活動|2014||
+|[Honeytoken 活動](atp-compromised-credentials-alerts.md#honeytoken-activity-external-id-2014)|Honeytoken 活動|2014|認證存取，<br> 探索|
 |[資料保護 API 主要金鑰的惡意要求](atp-domain-dominance-alerts.md#malicious-request-of-data-protection-api-master-key-external-id-2020)|惡意的資料保護私人資訊要求|2020|認證存取|
 |[網路對應偵察 (DNS)](atp-reconnaissance-alerts.md#network-mapping-reconnaissance-dns-external-id-2007)|使用 DNS 探查|2007|探索|
 |[遠端程式碼執行嘗試](atp-domain-dominance-alerts.md#remote-code-execution-attempt-external-id-2019)|遠端程式碼執行嘗試|2019|執行，<br> 持續性，<br> 權限提升，<br> 防禦躲避，<br> 橫向移動|
@@ -70,20 +70,20 @@ Azure ATP 可以將安全性警示與監視警示事件轉送到您的 SIEM。 �
 |[可疑的暴力密碼破解攻擊 (SMB)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-smb-external-id-2033)|不尋常的通訊協定實作 (可能使用 Hydra 等惡意工具)|2033|橫向移動|
 |[可疑的 DCShadow 攻擊 (網域控制站升階)](atp-domain-dominance-alerts.md#suspected-dcshadow-attack-domain-controller-promotion-external-id-2028)|可疑的網域控制站升級 (潛在的 DCShadow 攻擊)|2028|防禦躲避|
 |[可疑的 DCShadow 攻擊 (網域控制站複寫要求)](atp-domain-dominance-alerts.md#suspected-dcshadow-attack-domain-controller-replication-request-external-id-2029)|可疑的網域控制站複寫要求 (可能為 DCShadow 攻擊)|2029|防禦躲避|
-|[可疑的 DCSync 攻擊 (目錄服務的複寫)](atp-domain-dominance-alerts.md#suspected-dcsync-attack-replication-of-directory-services-external-id-2006)|惡意的目錄服務複寫|2006||
-|[可疑的黃金票證使用 (加密降級)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-encryption-downgrade-external-id-2009)|加密降級活動 (可能為黃金票證攻擊)|2009|
-|[可疑的黃金票證使用 (偽造的授權資料)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-forged-authorization-data-external-id-2013) |使用偽造授權資料提升權限|2013|權限提升，<br>橫向移動||
-|[可疑的黃金票證使用 (不存在的帳戶)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-nonexistent-account-external-id-2027)|Kerberos 黃金票證 - 不存在的帳戶|2027||
-|[可疑的黃金票證使用 (票證異常)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-external-id-2032)|NA|2032||
-|[可疑的黃金票證使用 (時間異常)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|Kerberos 黃金票證 - 時間異常|2022||
+|[可疑的 DCSync 攻擊 (目錄服務的複寫)](atp-domain-dominance-alerts.md#suspected-dcsync-attack-replication-of-directory-services-external-id-2006)|惡意的目錄服務複寫|2006|持續性，<br> 認證存取|
+|[可疑的黃金票證使用 (加密降級)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-encryption-downgrade-external-id-2009)|加密降級活動 (可能為黃金票證攻擊)|2009|權限提升，<br> 橫向移動，<br>持續性|
+|[可疑的黃金票證使用 (偽造的授權資料)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-forged-authorization-data-external-id-2013)|使用偽造授權資料提升權限|2013|權限提升，<br>橫向移動，<br>持續性|
+|[可疑的黃金票證使用 (不存在的帳戶)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-nonexistent-account-external-id-2027)|Kerberos 黃金票證 - 不存在的帳戶|2027|權限提升，<br> 橫向移動，<br>持續性|
+|[可疑的黃金票證使用 (票證異常)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-external-id-2032)|NA|2032|權限提升，<br> 橫向移動，<br>持續性|
+|[可疑的黃金票證使用 (時間異常)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|Kerberos 黃金票證 - 時間異常|2022|權限提升，<br> 橫向移動，<br>持續性|
 |[可疑的身分識別竊取 (雜湊傳遞)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-hash-external-id-2017)|使用傳遞雜湊攻擊竊取身分|2017 年|橫向移動|
 |[可疑的身分識別竊取 (票證傳遞)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018)|使用傳遞票證攻擊竊取身分|2018 年|橫向移動|
-|[可疑的 Overpass-the-Hash 攻擊 (加密降級)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|加密降級活動 (可能為 Overpass-the-Hash 攻擊)|2008||
+|[可疑的 Overpass-the-Hash 攻擊 (加密降級)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|加密降級活動 (可能為 Overpass-the-Hash 攻擊)|2008|橫向移動|
 |[可疑的 Overpass-the-Hash 攻擊 (Kerberos)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-kerberos-external-id-2002)|不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)|2002|橫向移動|
-|[可疑的萬能金鑰攻擊 (加密降級)](atp-domain-dominance-alerts.md#suspected-skeleton-key-attack-encryption-downgrade-external-id-2010)|加密降級活動 (可能為萬能金鑰攻擊)|2010||
+|[可疑的萬能金鑰攻擊 (加密降級)](atp-domain-dominance-alerts.md#suspected-skeleton-key-attack-encryption-downgrade-external-id-2010)|加密降級活動 (可能為萬能金鑰攻擊)|2010|橫向移動，<br> 持續性|
 |[可疑的 Metasploit 入侵架構使用](atp-compromised-credentials-alerts.md#suspected-use-of-metasploit-hacking-framework-external-id-2034)|不尋常的通訊協定實作 (可能使用 Metasploit 入侵工具)|2034|橫向移動|
-|[可疑的 WannaCry 勒索軟體攻擊](atp-compromised-credentials-alerts.md#suspected-wannacry-ransomware-attack-external-id-2035)|不尋常的通訊協定實作 (可能為 WannaCry 勒索軟體攻擊)|2035||
-|[可疑的 NTLM 轉送攻擊 (Exchange 帳戶) - 預覽](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037---preview)|NA|2037||
+|[可疑的 NTLM 轉送攻擊 (Exchange 帳戶) - 預覽](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037---preview)|NA|2037|權限提升， <br> 橫向移動|
+|[可疑的 WannaCry 勒索軟體攻擊](atp-compromised-credentials-alerts.md#suspected-wannacry-ransomware-attack-external-id-2035)|不尋常的通訊協定實作 (可能為 WannaCry 勒索軟體攻擊)|2035|橫向移動|
 |[透過 DNS 的可疑通訊](atp-exfiltration-alerts.md#suspicious-communication-over-dns-external-id-2031)|透過 DNS 的可疑通訊|2031|外流|
 |[敏感性群組的可疑修改](atp-domain-dominance-alerts.md#suspicious-modification-of-sensitive-groups-external-id-2024)|敏感性群組的可疑修改|2024|認證存取，<br>持續性|
 |[可疑的服務建立](atp-domain-dominance-alerts.md#suspicious-service-creation-external-id-2026)|可疑的服務建立|2026|執行，<br> 持續性，<br> 權限提升，<br> 防禦躲避，<br>橫向移動|

@@ -60,6 +60,8 @@ items:
     href: entity-profiles.md
   - name: 橫向移動路徑
     href: use-case-lateral-movement-path.md
+  - name: 了解網路名稱解析 (NNR)
+    href: atp-nnr-policy.md
   - name: 報告
     href: reports.md
   - name: 使用者角色
@@ -148,9 +150,9 @@ items:
     href: atp-resources.md
   - name: Azure ATP 資料安全性和隱私權
     href: atp-privacy-compliance.md
-ms.openlocfilehash: bdf00229e59fda2490ee75aa19f466a6c0c5a789
-ms.sourcegitcommit: 5f45f48aa9047bb60c74f4cae899d90d5f7b891c
+ms.openlocfilehash: c78dcb52783d3f63184f3f16b1f0719731908c37
+ms.sourcegitcommit: 6975497acaf298af393f96573e1790ab617fa5b4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58073711"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58406581"

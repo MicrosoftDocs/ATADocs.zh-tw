@@ -8,16 +8,15 @@ manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0303a49119bcc05c5b3be20b13e098e6a4bc5015
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: fe6f282fd0ee83da0d6ce0f3be3f376c7006f64a
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56078216"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674411"
 ---
 # <a name="modifying-the-ata-center-configuration"></a>修改 ATA 中心設定
 

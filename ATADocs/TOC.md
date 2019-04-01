@@ -3,6 +3,7 @@
 ## [ATA 會偵測哪些威脅？](ata-threats.md)
 ## ATA 的新功能?
 ### [ATA 1.9 版的新功能](whats-new-version-1.9.md)
+#### [更新為 ATA 1.9.2 - 移轉指南](ata-update-1.9.2-migration-guide.md)
 #### [更新為 ATA 1.9.1 - 移轉指南](ata-update-1.9.1-migration-guide.md)
 #### [更新為 ATA 1.9 - 移轉指南](ata-update-1.9-migration-guide.md)
 ### [ATA 1.8 版中的新增功能](whats-new-version-1.8.md)
@@ -52,7 +53,7 @@
 ## [處理可疑活動](working-with-suspicious-activities.md)
 ## [使用 ATA 主控台](working-with-ata-console.md)
 ### [實體設定檔](entity-profiles.md)
-##[防止橫向移動路徑](use-case-lateral-movement-path.md)
+## [防止橫向移動路徑](use-case-lateral-movement-path.md)
 ## ATA 參考資訊
 ### [SIEM 記錄檔參考](cef-format-sa.md)
 ### [事件識別碼參考](event-id-reference.md)

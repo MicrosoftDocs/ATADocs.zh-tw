@@ -8,20 +8,18 @@ manager: barbkess
 ms.date: 02/03/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 0b3a1db5-0d43-49af-b356-7094cc85f0a5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1c3e4fbf435c22ec57a90653d7a1e8133d9acbf3
-ms.sourcegitcommit: 478878e685d1e4d52b5cd0429b9bf7304e5d8552
+ms.openlocfilehash: 40d74431d4175512bce15dcfdec8bb3b80973e30
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56852692"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675280"
 ---
-# <a name="tutorial-domain-dominance-alerts"></a>教學課程：控制網域警示  
+# <a name="tutorial-domain-dominance-alerts"></a>教學課程：控制網域警訊  
 
 網路攻擊通常會針對任何可存取的實體進行，例如低權限的使用者，然後快速橫向移動，直到攻擊者得以存取有價值的資產。 敏感性帳戶、網域系統管理員或高度敏感性資料均為重要資產。 Azure ATP 會從整個攻擊狙殺鏈來源識別進階威脅，並將其分成下列幾個階段：
 
@@ -551,10 +549,10 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 ## <a name="see-also"></a>另請參閱
 
 - [調查電腦](investigate-a-computer.md)
-- [使用安全性警示](working-with-suspicious-activities.md)
+- [使用安全性警訊](working-with-suspicious-activities.md)
 - [使用橫向移動路徑](use-case-lateral-movement-path.md)
-- [偵察警示](atp-reconnaissance-alerts.md)
-- [遭入侵的認證警示](atp-compromised-credentials-alerts.md)
-- [橫向移動警示](atp-lateral-movement-alerts.md)
-- [外流警示](atp-exfiltration-alerts.md)
+- [偵察警訊](atp-reconnaissance-alerts.md)
+- [遭入侵的認證警訊](atp-compromised-credentials-alerts.md)
+- [橫向移動警訊](atp-lateral-movement-alerts.md)
+- [外流警訊](atp-exfiltration-alerts.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

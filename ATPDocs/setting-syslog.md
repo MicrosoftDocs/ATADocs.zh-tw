@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 12/02/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: a2d29c9c-7ecb-4804-b74b-fde899b28648
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ff48d8ba388b59d487cdd45da4efd5b2d0c61d00
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: b3df102272b045f34eb64b11d97077b9ce1951ad
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263262"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674226"
 ---
 # <a name="integrate-with-syslog"></a>與 Syslog 整合
 

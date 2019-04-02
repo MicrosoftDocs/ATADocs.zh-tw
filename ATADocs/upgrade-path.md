@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 8/20/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: 88720401-1fb2-4353-ad39-32bc0088f0de
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 681ece5b5e52f7198ce806f24a30c89495aec32a
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: d1d684425f5106a18d873df0dfbf3c3788ff10fd
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56076737"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674464"
 ---
 # <a name="recommended-upgrade-path-for-ata"></a>ATA 的建議升級路徑
 

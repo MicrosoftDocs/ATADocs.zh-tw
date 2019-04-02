@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 9/27/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 008af6edacf27f5cc49f1a3e518f619a4829aae5
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 8d1db39dfe29b1641d2eb94ebf7afd5cea55535f
+ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56078080"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58639148"
 ---
 # <a name="ata-prerequisites"></a>ATA 必要條件
 

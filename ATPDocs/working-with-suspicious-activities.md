@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 03/10/2019
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: a06004bd-9f77-4e8e-a0e5-4727d6651a0f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e37bc18c93d8dad04d0e51c1bdb07b2147bcd2bc
-ms.sourcegitcommit: aad7a417addae3f21f81ea2b7336c3d83659f592
+ms.openlocfilehash: ed24f4663bbe450aaa9cca368b71c24feb46b605
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2019
-ms.locfileid: "57725585"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674532"
 ---
 # <a name="working-with-security-alerts"></a>使用安全性警訊
 

@@ -7,12 +7,12 @@ author: mlottner
 ms.author: mlottner
 ms.date: 02/28/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 2bfbbc994ea4ec9aea57541f8f5a35590c397f84
-ms.sourcegitcommit: 8681c4ed6ede58ace737f31eeff9a680b8e4256d
+ms.openlocfilehash: b3ea5b1d2f33f9647fb9dea8927a80aeae76ee03
+ms.sourcegitcommit: 38b68d96fbf04fe40e1f9a62a1af3d1d00e63614
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007461"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58808252"
 ---
 # <a name="tutorial-domain-dominance-playbook"></a>教學課程：網域支配劇本
 
@@ -194,7 +194,7 @@ Azure ATP 成功偵測到用於此使用者的可疑預先驗證加密方法。
 
 ### <a name="golden-ticket---existing-user"></a>黃金票證 - 現有的使用者
 
-竊取「黃金票證」([這裡透過惡意的複寫](#Malicious-Replication)所述的 "krbtgt" 帳戶) 之後，攻擊者可登入票證，*如同它們是網域控制站*。 **Mimikatz**、網域 SID，以及遭竊的 "krbtgt" 帳戶全部都是完成這種攻擊所必需。 我們不僅可以為使用者產生票證，還可以為甚至不存在的使用者產生票證。
+竊取「黃金票證」([這裡透過惡意的複寫](#malicious-replication)所述的 "krbtgt" 帳戶) 之後，攻擊者可登入票證，*如同它們是網域控制站*。 **Mimikatz**、網域 SID，以及遭竊的 "krbtgt" 帳戶全部都是完成這種攻擊所必需。 我們不僅可以為使用者產生票證，還可以為甚至不存在的使用者產生票證。
 
 1. 以 JeffL 的身分，在 **VictimPC** 上執行下列命令，以取得網域 SID：
 

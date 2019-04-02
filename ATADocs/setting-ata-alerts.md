@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e88477f8ea7293a1927f6195b5540a6d0a1f7a81
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 82ff51678a2ab9bc59fab0cc22d118112e2b6b3b
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56076159"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674277"
 ---
 # <a name="set-ata-notifications"></a>設定 ATA 通知
 

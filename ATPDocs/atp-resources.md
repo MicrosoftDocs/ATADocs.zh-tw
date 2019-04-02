@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 1/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 34dc152c-6b7f-4128-93fe-aad56c282730
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f38df420da66da468b87289bca71276b7bb5b4ff
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: e4392a98cc2de824697bf1a44e5fc76d02a90428
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263534"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674583"
 ---
 # <a name="azure-atp-readiness-guide"></a>Azure ATP 整備指南
 

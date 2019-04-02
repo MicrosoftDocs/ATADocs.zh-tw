@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 01/23/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: 0756ef64-3aef-4a69-8981-24fa8f285c6a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1d3e0cd545a932daae71fa4242abb43b4dc15bae
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 7142c944ab0eacd299d4db720a08cc6705f564dc
+ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077689"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58638944"
 ---
 # <a name="ata-update-to-16-migration-guide"></a>將 ATA 更新至 1.6 移轉指南
 ATA 1.6 的更新提供下列各方面的改良︰

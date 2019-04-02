@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 12/20/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: 601b48ba-a327-4aff-a1f9-2377a2bb7a42
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: a72126b7938115c897c96f1939b38ac9cba58d0f
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 79cdc8ae60f274a79f24e98c5cd2ed6d2e5ad8af
+ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56078335"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58639097"
 ---
 # <a name="ata-siem-log-reference"></a>ATA SIEM 記錄檔參考
 

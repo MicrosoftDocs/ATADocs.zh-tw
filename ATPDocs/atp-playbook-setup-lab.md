@@ -7,12 +7,12 @@ author: mlottner
 ms.author: mlottner
 ms.date: 02/28/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 30b0fcb47ae735d4e9090a38f14f9658c64864f5
-ms.sourcegitcommit: 4711f0ff4331e0bcc84663f46054216b7db9f98e
+ms.openlocfilehash: 9ae630711b6ee7b7f84a233998d188e498af0a9e
+ms.sourcegitcommit: 38b68d96fbf04fe40e1f9a62a1af3d1d00e63614
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56988660"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58808269"
 ---
 # <a name="tutorial-setup-an-atp-security-alert-lab"></a>教學課程：設定 ATP 安全性警示實驗室 
 
@@ -30,7 +30,7 @@ ms.locfileid: "56988660"
 
 ## <a name="prerequisites"></a>必要條件
 
-1. [一個實驗室網域控制站和兩個實驗室工作站](#Server-and-Computers)。
+1. [一個實驗室網域控制站和兩個實驗室工作站](#servers-and-computers)。
    - 繼續並[藉由使用者將 Active Directory (AD) 序列化](#bkmk_hydrate)。
 1. 一個[已連線至 AD](install-atp-step2.md) 的 [Azure ATP 執行個體](install-atp-step1.md)。
 1. 在您實驗室的網域控制站上[下載](install-atp-step3.md)並[安裝最新版的 Azure ATP 感應器](install-atp-step4.md)。

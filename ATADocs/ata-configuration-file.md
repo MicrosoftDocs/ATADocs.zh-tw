@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 9/04/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: 1d27dba8-fb30-4cce-a68a-f0b1df02b977
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b1b0c23547783b9cdb671dda35acf7cb8689f64b
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: cc62b556cc27e363a0d37260d80fda4a7bfdd105
+ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56076380"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58638791"
 ---
 # <a name="export-and-import-the-ata-configuration"></a>匯出和匯入 ATA 組態
 

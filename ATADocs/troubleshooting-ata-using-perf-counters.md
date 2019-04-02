@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 9/25/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: df162a62-f273-4465-9887-94271f5000d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f5eac97c2c3da5294f5fa42b00792cafe456b35e
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: dbff8de84cd960ccd849a8b582cee0d81d1ce94a
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56078012"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675042"
 ---
 # <a name="troubleshooting-ata-using-the-performance-counters"></a>使用效能計數器疑難排解 ATA
 

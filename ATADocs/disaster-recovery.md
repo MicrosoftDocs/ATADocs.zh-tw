@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 9/05/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: b8eb23f5641486c37aab7cadba7de770b1d7e862
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 0bcbd23b045f6d261026a914f37f3429513837ff
+ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56076873"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58638876"
 ---
 # <a name="ata-disaster-recovery"></a>ATA 災害復原
 

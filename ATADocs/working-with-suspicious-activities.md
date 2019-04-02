@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 4/29/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: 44d7c899-816c-4f7f-91d3-84a09d291a24
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b6ace439075324140decf8e0a3ea416f31913f78
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: de57091d98b3061cc79acbb1fadc0f9f32de94a4
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077179"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674029"
 ---
 # <a name="working-with-suspicious-activities"></a>處理可疑活動
 

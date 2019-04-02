@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 10/04/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 4308f03e-b2a7-4e38-a750-540ff94faa81
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1379c98b2c003ce0f799b7e1f978f9c2600d91ef
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 6e939afc489e3414e5da207c2d5bd9a724eefec4
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263177"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674362"
 ---
 # <a name="set-azure-atp-notifications"></a>設定 Azure ATP 通知
 

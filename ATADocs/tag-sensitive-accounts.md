@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 6/14/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: 40a1c5c4-b8d6-477c-8ae5-562b37661624
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d0e6d2136c65c9c523740e380f8d9ffd360103d8
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: dda09a744017904d9a9c5e292c76359741419744
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56076142"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674141"
 ---
 # <a name="tag-sensitive-accounts"></a>標記敏感性帳戶
 

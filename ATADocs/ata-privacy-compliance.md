@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 9/27/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: 1b2d185c-62cd-45f0-b0dd-687b51317f32
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: 72ff3f0a5f1328f395d9af33c4f4e18fff89120d
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 46f38285f2822e80744d3aa89b6eb820dd660367
+ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077128"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58638978"
 ---
 # <a name="ata-data-security-and-privacy"></a>ATA 資料安全性和隱私權
 

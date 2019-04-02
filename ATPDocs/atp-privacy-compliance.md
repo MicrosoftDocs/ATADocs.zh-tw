@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 10/04/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 224e629a-0e82-458c-bb03-b67070a9241d
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: aa47931d79aad64664fdbe4b1e33d9f7f269d7c3
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 915bf9f03b716ca3d5cad17bc78c2b5c30084acf
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263687"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674910"
 ---
 # <a name="azure-atp-data-security-and-privacy"></a>Azure ATP 資料安全性和隱私權
 

@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 1/13/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 37d1a032-65e7-4a89-be0b-c3f9cc2bacdb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c6941b1d80c5fce8945a713d9b4b545485d47d1b
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: f62957b947ee0f2b5607379440add745aa9d571a
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56264045"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674957"
 ---
 # <a name="azure-atp-monitored-activities"></a>受 Azure ATP 監視的活動
 

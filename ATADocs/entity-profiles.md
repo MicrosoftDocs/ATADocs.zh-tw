@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 3/25/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: 581a3257-32dc-453f-b84e-b9f99186f5d3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 61f086a3a35a172ec9e884046a427da018c67184
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 014bf17948c1a0fe342cf01d98932d876df914e8
+ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077197"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58638903"
 ---
 # <a name="investigating-entity-profiles"></a>調查實體設定檔
 

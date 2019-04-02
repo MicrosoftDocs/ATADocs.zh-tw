@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 1/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8df384f00c79c6a3c3864b9e6539b311a2ebc958
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 458ccac394ab762b2f46d5a7554829cc1fd79d0f
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56264197"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674872"
 ---
 # <a name="azure-advanced-threat-protection-information-and-support"></a>Azure 進階威脅防護資訊與支援 
 

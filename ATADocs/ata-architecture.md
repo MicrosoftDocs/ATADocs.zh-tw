@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 8/26/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f4ab67f48eded7a612dfea4cefefdfe8529800d0
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: cd5cf059ecca7f0c1eecf24145655a904321a0d3
+ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077808"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58639182"
 ---
 # <a name="ata-architecture"></a>ATA 架構
 

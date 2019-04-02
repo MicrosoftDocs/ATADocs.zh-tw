@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 03/07/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3db8a52c87e45635d632ad5b2d2f1ba7a82d2706
-ms.sourcegitcommit: 76b818e4a95842e2175e0efb4db142704b66daa2
+ms.openlocfilehash: 611b9bd4a79ffc88b7867e8425e7b980a7fe192f
+ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57562273"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58639029"
 ---
 # <a name="ata-frequently-asked-questions"></a>ATA 常見問題集
 

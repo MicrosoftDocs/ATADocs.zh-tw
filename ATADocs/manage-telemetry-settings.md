@@ -7,18 +7,16 @@ ms.author: mlottner
 manager: barbkess
 ms.date: 8/19/2018
 ms.topic: article
-ms.prod: ''
-ms.service: advanced-threat-analytics
-ms.technology: ''
+ms.prod: advanced-threat-analytics
 ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 4c28a1aa668d7ada952ca263cf65f167aba6046c
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: e5766e409a1e2bb3f463e10459045f5a233c1fe1
+ms.sourcegitcommit: 38b68d96fbf04fe40e1f9a62a1af3d1d00e63614
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56076720"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58808133"
 ---
 # <a name="manage-system-generated-logs"></a>管理系統產生的記錄
 

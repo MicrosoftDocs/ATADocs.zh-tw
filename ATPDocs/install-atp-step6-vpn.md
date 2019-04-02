@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 11/04/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 0d9d2a1d-6c76-4909-b6f9-58523df16d4f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ff859bdaffa9d976827b028df1db33483cbd0b65
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 455452767fe543c905f7ff29342b20e98c583bbc
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263874"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674184"
 ---
 # <a name="integrate-vpn"></a>整合 VPN
 

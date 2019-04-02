@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 12/20/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: 5d639e84-2e37-43a9-9667-49be6c4fa8b7
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 2b4a60248edec013d7a8a9ecb82829f302d12b84
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 09ba4967cdb7b4b142c3102ca2e9f708cefe9dd5
+ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077468"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58639131"
 ---
 # <a name="ata-event-id-reference"></a>ATA 事件識別碼參考
 

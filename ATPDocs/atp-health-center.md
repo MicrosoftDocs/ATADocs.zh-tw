@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 1/3/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 1b7e72c3-a538-443f-981c-398ffafa5ab8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e4e40a3f9c53c93ab3a72f3af33b4737788902da
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 60f7de5fe85e0706bee9067dabf356c9c6fa73be
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263965"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675382"
 ---
 # <a name="work-with-azure-atp-health-and-events"></a>使用 Azure ATP 健康情況和事件
 

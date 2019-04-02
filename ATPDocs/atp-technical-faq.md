@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 03/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 10db395065b7d5038aee662d52a5f6350f845a1a
-ms.sourcegitcommit: 76b818e4a95842e2175e0efb4db142704b66daa2
+ms.openlocfilehash: 0e35654a5fdfd09a4b2fe7849f58bd1c26253a7e
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57562222"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675059"
 ---
 # <a name="azure-atp-frequently-asked-questions"></a>Azure ATP 常見問題集
 本文提供關於 Azure ATP 的常見問題與解答清單，並分成下列類別： 

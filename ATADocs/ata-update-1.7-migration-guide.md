@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 01/23/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: 8eefcd45-7a4b-4074-ac5b-1ffc48e6654a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c2da8e5b842a9b5497a5810c1a7897e4dba59d74
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 81b97c8b9aacf3dc86e2b78f6074129ff29588a1
+ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56078097"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58638825"
 ---
 # <a name="ata-update-to-17-migration-guide"></a>ATA 更新至 1.7 移轉指南
 ATA 1.7 的更新提供下列各方面的改良︰

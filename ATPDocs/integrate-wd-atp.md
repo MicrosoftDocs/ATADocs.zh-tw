@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 10/18/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: f6f3ed75-d6bb-4966-a9a7-5339c4f3ebac
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a16a5e0422c4396b7239d5385e907374c3b14d35
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 9c0cb92ca45c1d70c30f13fbe9821537f03e1062
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263575"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58673872"
 ---
 # <a name="integrate-azure-atp-with-windows-defender-atp"></a>整合 Azure ATP 與 Windows Defender ATP
 

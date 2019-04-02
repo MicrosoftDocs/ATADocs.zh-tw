@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 11/29/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 3547519f-8d9c-40a9-8f0e-c7ba21081203
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 44224d5e3e39251ac1d61978289cf5e7de66351b
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 839c1533f884e49c7603be4942c1c3be231cb974
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56264180"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674911"
 ---
 # <a name="configuring-windows-event-forwarding"></a>設定 Windows 事件轉送
 

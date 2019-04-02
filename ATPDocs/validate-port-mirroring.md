@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 10/04/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.service: ''
-ms.technology: ''
+ms.service: azure-advanced-threat-protection
 ms.assetid: 0a56cf27-9eaa-4ad0-ae6c-9d0484c69094
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 353edd1be2a61de4b5bd9061b0e2f2b3bde70c52
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 9a7acdd2fcd90a4121ce37dd80209af468e120be
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263296"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674209"
 ---
 # <a name="validate-port-mirroring"></a>驗證連接埠鏡像
 > [!NOTE] 

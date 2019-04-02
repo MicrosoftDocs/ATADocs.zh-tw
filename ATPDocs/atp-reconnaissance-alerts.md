@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 03/17/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8d61fb120179ee8e53aa42e50d2a0841197b8032
-ms.sourcegitcommit: 9252c74620abb99d8fa2b8d2cc2169018078bec9
+ms.openlocfilehash: 72c5a0de163e53ed60fb3871e3a70cb691513806
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58136856"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675195"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>教學課程：偵察警訊  
 

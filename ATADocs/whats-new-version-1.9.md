@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 3/25/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: 51de491c-49ba-4aff-aded-cc133a8ccf0b
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 4a21dbf96ae7897c6ab45feb306f43986f84c5f2
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 86be699ab8dab1d7be728ccc6190d086f154a9a0
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077349"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674400"
 ---
 # <a name="whats-new-in-ata-version-19"></a>ATA 1.9 版的新功能
 

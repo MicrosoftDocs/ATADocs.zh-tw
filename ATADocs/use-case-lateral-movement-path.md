@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 6/14/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: 710f01bd-c878-4406-a7b2-ce13f98736ea
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ec01c5b4a5a824df6959461271b763e7fe3d7cd7
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 28661912916dfc4838584c00758244f15eda0b89
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56076788"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674770"
 ---
 # <a name="investigating-lateral-movement-paths-with-ata"></a>使用 ATA 調查橫向移動路徑
 

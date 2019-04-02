@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 01/23/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: cbea47f9-34c1-42b6-ae9e-6a472b49e1a5
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 207d3b16ae217fc4f032461736631a6e8b2b1768
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 380ad2bcc5327f2157db6396921ac638dbbab091
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56076363"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674090"
 ---
 # <a name="what39s-new-in-ata-version-14"></a>ATA 1.4 版的新功能
 這些版本資訊提供 Advanced Threat Analytics 1.4 版中已知問題的相關資訊。

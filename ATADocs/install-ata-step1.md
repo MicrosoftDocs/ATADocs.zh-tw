@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 03/07/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 81029f1f651f3138688b6952d47bba05a32e7efd
-ms.sourcegitcommit: 9252c74620abb99d8fa2b8d2cc2169018078bec9
+ms.openlocfilehash: 7ff9f08ca231f64076e29250ae8d09f192d8cf4e
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57828204"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674566"
 ---
 # <a name="install-ata---step-1"></a>安裝 ATA - 步驟 1
 

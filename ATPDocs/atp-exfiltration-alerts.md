@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 02/11/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 452d951c-5f49-4a21-ae10-9fb38c3de302
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 94e73ecb2980c851aec6ff391c49fff88e4961c8
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 54e2e6df751dab47772c20d2c3cbe30665d4840b
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263636"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674804"
 ---
 # <a name="tutorial-exfiltration-alerts"></a>教學課程：外流警訊  
 

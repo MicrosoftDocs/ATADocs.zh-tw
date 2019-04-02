@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 1/27/2019
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ac10508d7120f6c643c4f8cd0ad59b32ed09bcb0
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 34717315eb1c2d705679210c1114287cfc5a389b
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56264214"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674991"
 ---
 # <a name="azure-atp-architecture"></a>Azure ATP 架構
 

@@ -8,17 +8,16 @@ manager: barbkess
 ms.date: 7/15/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: 42a1a34f-ed6b-4538-befb-452168a30e8c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b8fdc8fd65c2ada0f116ff67150939a06ab46fd2
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 65d1e9070ff049bf2062e2dbeb2c5ec97b19e178
+ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56076686"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58638961"
 ---
 # <a name="ata-readiness-roadmap"></a>ATA 整備藍圖 
 

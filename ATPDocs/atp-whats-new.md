@@ -5,23 +5,31 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 03/24/2019
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b39c51d725a652fe1e936437ad3d0bf0c7d86db7
-ms.sourcegitcommit: 6975497acaf298af393f96573e1790ab617fa5b4
+ms.openlocfilehash: ec0a64b0b4467ae27642dd59281b150fc6953f64
+ms.sourcegitcommit: db60935a92fe43fe149f6a4d3114fe0edaa1d331
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58406632"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58764064"
 ---
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能
+
+## <a name="azure-atp-release-272"></a>Azure ATP 2.72 版
+發行日期：2019 年 3 月 31 日
+
+- **功能增強：橫向移動路徑 (LMP) 限域深度**<br>
+橫向移動路徑 (LMP) 為 Azure ATP 探索威脅和風險的重要方法。 為了讓您可以專注在針對您最敏感使用者的重大風險上，此更新能限制所顯示之每個圖表的範圍和深度，使您能以更輕鬆且快速的方式分析並補救每個 LMP 上之敏感性使用者的風險。   
+
+    請參閱[橫向移動路徑](use-case-lateral-movement-path.md)以深入了解 Azure ATP 如何使用 LMP 來呈現針對您環境中每個實體的存取風險。   
+
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-271"></a>Azure ATP 2.71 版
 發行日期：2019 年 3 月 24 日

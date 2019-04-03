@@ -5,21 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 03/24/2019
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7619c0bf7f1e8a6cf90956124c683400bc5c686d
-ms.sourcegitcommit: 6975497acaf298af393f96573e1790ab617fa5b4
+ms.openlocfilehash: 63d9c5c565c2f241ad7387f1cb64824ee825b025
+ms.sourcegitcommit: db60935a92fe43fe149f6a4d3114fe0edaa1d331
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58406598"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58764030"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -30,6 +28,8 @@ ms.locfileid: "58406598"
 
 
 Azure ATP 是由 Azure ATP 雲端服務組成，其包含 Azure ATP 入口網站、Azure ATP 感應器和/或 Azure ATP 獨立感應器。 如需每種 Azure ATP 元件的詳細資訊，請參閱 [Azure ATP 架構](atp-architecture.md)。
+
+Azure ATP 能保護您的內部部署 Active Directory 使用者和/或同步至您 Azure Active Directory 的使用者。 若要保護僅包含 AAD 使用者的環境，請參閱 [AAD Identity Protection] (https://docs.microsoft.com/azure/active-directory/identity-protection/overview) \(機器翻譯\)。 
 
 若要建立 Azure ATP 執行個體，您必須使用具有至少一位全域/安全性系統管理員的 AAD 租用戶。 每個 Azure ATP 執行個體都支援多 Active Directory 樹系邊界，以及 Windows 2003 和更新版本的樹系功能等級 (FFL)。 
 
@@ -77,7 +77,7 @@ Azure ATP 是由 Azure ATP 雲端服務組成，其包含 Azure ATP 入口網站
 
 
 > [!NOTE]
-> 根據預設值，Azure ATP 最多支援 100 個感應器。 如果您想要安裝更多，請連絡 Azure ATP 支援。
+> 根據預設值，Azure ATP 最多支援 200 個感應器。 如果您想要安裝更多，請連絡 Azure ATP 支援。
 
 ## <a name="azure-atp-sensor-requirements"></a>Azure ATP 感應器需求
 本節列出 Azure ATP 感應器的需求。
@@ -85,9 +85,9 @@ Azure ATP 是由 Azure ATP 雲端服務組成，其包含 Azure ATP 入口網站
 ### <a name="general"></a>一般
 
 > [!NOTE]
-> 使用 Server 2019 時，確定 KB4487044 已安裝。 將自動停止安裝在未安裝 KB4487044 之 2019 伺服器上的「Azure ATP 感應器」。
+> 使用 Server 2019 或包含 KB4487044 的 KB (例如 [KB4489899](https://support.microsoft.com/help/4489899/windows-10-update-kb4489899)) 時，請確定您已經安裝 [KB4487044](https://support.microsoft.com/help/4487044/windows-10-update-kb4487044)。 系統將會自動停止安裝在未安裝此更新之 2019 伺服器上的 Azure ATP 感應器。
  
-Azure ATP 感應器可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 (包含 Core 但不含 Nano)、Windows Server 2019 (包含 Core 但不含 Nano) 的網域控制站上安裝。
+Azure ATP 感應器可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 (包含 Windows Server Core 但不含 Windows Nano 伺服器)、Windows Server 2019 (包含 Windows Core 但不含 Windows Nano 伺服器) 的網域控制站上安裝。
 
 網域控制站可以是唯讀網域控制站 (RODC)。
 

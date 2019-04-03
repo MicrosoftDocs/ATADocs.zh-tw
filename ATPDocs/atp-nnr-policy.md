@@ -5,34 +5,25 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 03/24/2019
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 1ac873fc-b763-41d7-878e-7c08da421cb5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d3f6b3fda2dbfca0250069ba08d027b1b16d5659
-ms.sourcegitcommit: 6975497acaf298af393f96573e1790ab617fa5b4
+ms.openlocfilehash: 7dd41fea1a2a7f8c4a2e122ec75d8735fb49c37d
+ms.sourcegitcommit: db60935a92fe43fe149f6a4d3114fe0edaa1d331
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58406650"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58763945"
 ---
 # <a name="what-is-network-name-resolution"></a>什麼是網路名稱解析？
 
 網路名稱解析 (NNR) 是 Azure ATP 功能的主要元件。 Azure ATP 會以網路流量、Windows 事件與 ETW 來擷取活動 - 這些活動通常包含 IP 資料。  
 
 使用 NNR，Azure ATP 就能在未經處理的活動 (包含 IP 位址)，以及涉及各活動的相關電腦間建立相互關聯。 根據未經處理的活動，Azure ATP 會分析電腦等實體，並針對可疑活動產生安全性警訊。
-
-如果要偵測下列威脅，NNR 資料可說是不可或缺：
-
-- 可疑的身分識別竊取 (票證傳遞)
-- 可疑的 DCSync 攻擊 (目錄服務的複寫)
-- 網路對應偵察 (DNS)
-- 可疑的 NTLM 轉送攻擊 (Exchange 帳戶)
 
 若要將 IP 位址解析為電腦名稱，ATP 感應器會使用下列其中一種方法查詢 IP 後方之電腦名稱的 IP 位址：
 
@@ -45,6 +36,25 @@ ms.locfileid: "58406650"
 >不會在任何連接埠上執行任何驗證。
 
 在擷取電腦名稱之後，Azure ATP 感應器會在 Active Directory 中檢查，以尋找具有該相同電腦名稱的相關電腦物件。 若感應器找到該相互關聯，感應器會將此 IP 與該電腦物件關聯。
+
+如果要偵測下列威脅，NNR 資料可說是不可或缺：
+
+- 可疑的身分識別竊取 (票證傳遞)
+- 可疑的 DCSync 攻擊 (目錄服務的複寫)
+- 網路對應偵察 (DNS)
+
+為了協助您判斷警示為**確判 (TP)** 或**誤判 (FP)**，Azure ATP 會包含解析至每個安全性警示之辨識項的電腦命名確定度。 
+ 
+例如，當電腦名稱被解析為**高確定度**時，將能提升安全性警示結果為**確判** (**TP**) 的信賴度。 
+
+辨識項會包含時間、IP，以及 IP 所解析至的電腦名稱。 當解析確定度為**低**時，請使用此資訊來調查並確認哪一個裝置是目前 IP 的真正來源。 在確認裝置之後，您便可以判斷該警示是否為**誤判** (**FP**)，類似下列範例：
+
+- 可疑的身分識別竊取 (票證傳遞)：警示是針對相同的電腦觸發。
+- 可疑的 DCSync 攻擊 (目錄服務的複寫)：警示是從網域控制站觸發。
+- 網路對應偵察 (DNS)：警示是從 DNS 伺服器觸發。
+
+    ![辨識項確定度](media/nnr-high-certainty.png)
+
 
 ### <a name="prerequisites"></a>必要條件
 |通訊協定|  傳輸|  Port|   Device| 方向|
@@ -70,7 +80,7 @@ ms.locfileid: "58406650"
     - 檢查是否已在環境中的所有電腦上針對來自 Azure ATP 感應器的連入通訊開放連接埠 135。
     - 檢查所有網路設定 (防火牆)，因為這可能會導致無法與相關通訊埠通訊。
 
--NetBIOS：
+- NetBIOS：
     - 檢查是否已在環境中的所有電腦上針對來自 Azure ATP 感應器的連入通訊開放連接埠 137。
     - 檢查所有網路設定 (防火牆)，因為這可能會導致無法與相關通訊埠通訊。
 - 反向 DNS：

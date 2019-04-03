@@ -1,30 +1,29 @@
 ---
 title: Advanced Threat Analytics 版本 | Microsoft Docs
 description: 說明 Microsoft Advanced Threat Analytics (ATA) 各版本的不同支援選項。
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: barbkess
-ms.date: 7/15/2018
+ms.date: 03/28/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: a8afbd91-c888-4dfc-94ab-72e38745163e
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7aa52107302dc3fafe568d020fa618007491302a
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: 5ac40a7a6d170dab23630283d31704eb18507e45
+ms.sourcegitcommit: a0d1ae7e221fd8bbaf81bf8ae4833ae77fb80ae8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56076754"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "58752246"
 ---
 # <a name="support-for-microsoft-advanced-threat-analytics-ata-versions"></a>Microsoft Advanced Threat Analytics (ATA) 各版本的支援
 
 
 適用對象：*Advanced Threat Analytics 1.9 版*
 
-Microsoft 計劃每年發行數次 ATA 更新，而每個更新版本從其公開上市 (GA) 發行日算起支援 12 個月。 將提供完整 12 個月的技術支援。 不過，我們的支援結構現在是動態的，進化成根據最新版本可用性的兩個不同維護階段。
+Microsoft ATA 每年會更新數次，且每個更新版本都會從其公開上市 (GA) 發行日算起取得 12 個月的支援。 將提供完整 12 個月的技術支援。 不過，我們的支援結構現在是動態的，進化成根據最新版本可用性的兩個不同維護階段。
 
 -   安全性和重大更新維護階段 - 執行 ATA 的最新版本時，您會同時收到安全性更新和重大更新。
 
@@ -48,6 +47,7 @@ Microsoft 計劃每年發行數次 ATA 更新，而每個更新版本從其公�
 |1.8.1|1.8.6765|02-AUG-2017|02-AUG-2018|
 |1.9|1.9.7312|21-MAR-2018|21-MAR-2019|
 |1.9.1|1.9.7412|2018-07-01|2019-07-01|
+|1.9.2|1.9.7475|28-MAR-2019|28-MAR-2020|
 
 
 

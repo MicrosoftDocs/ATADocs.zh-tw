@@ -1,25 +1,23 @@
 ---
-title: Azure ATP 橫向移動路徑的簡介 | Microsoft Docs
+title: 了解及使用搭配 Azure ATP 的橫向移動路徑 | Microsoft Docs
 description: 本文說明 Azure 進階威脅防護 (ATP) 的潛在橫向移動路徑 (LMP)。
 keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 11/25/2018
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: de15c920-8904-4124-8bdc-03abd9f667cf
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c115584dd4898e7453325125888667a1bb9a53d6
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 4a24f542576a716ff7a9ffdcde542e6317d394c0
+ms.sourcegitcommit: db60935a92fe43fe149f6a4d3114fe0edaa1d331
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263398"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58764013"
 ---
 # <a name="azure-atp-lateral-movement-paths-lmps"></a>Azure ATP 橫向移動路徑 (LMP) 
 
@@ -53,7 +51,6 @@ Azure ATP 探索到位於 LMP 中的每個電腦或使用者設定檔都有 [橫
 - 敏感性使用者 - 當識別到通往敏感性使用者的新路徑時
 
 ![Azure ATP 橫向移動路徑 (LMP) 識別到通往敏感性使用者的路徑](./media/atp-lmp-activities.png)
-
 
 - 非敏感性使用者和電腦 - 當在通往敏感性使用者的潛在 LMP 中識別到此實體時。
 

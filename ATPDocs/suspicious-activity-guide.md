@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 03/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 663e4d7ca8f1ffce2dab46dc0c79dc1b7be3230c
-ms.sourcegitcommit: 9252c74620abb99d8fa2b8d2cc2169018078bec9
+ms.openlocfilehash: 2abede37a29d95b8859316098adccc6882c67cba
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58136819"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675076"
 ---
 # <a name="azure-atp-security-alerts"></a>Azure ATP 安全性警示
 

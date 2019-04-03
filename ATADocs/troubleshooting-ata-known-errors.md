@@ -5,20 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 7/25/2018
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
-ms.service: ''
 ms.technology: ''
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: bf014e43711d45b74d5bb5efa7a93d7c3e1532d7
-ms.sourcegitcommit: 78748bfd75ae68230d72ad11010ead37d96b0c58
+ms.openlocfilehash: edac28031e9faa3e5c23bbbd82ef4ce023f1f249
+ms.sourcegitcommit: db60935a92fe43fe149f6a4d3114fe0edaa1d331
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56077723"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58763996"
 ---
 # <a name="troubleshooting-ata-known-issues"></a>針對 ATA 已知問題進行疑難排解
 
@@ -50,7 +49,7 @@ ms.locfileid: "56077723"
 > |System.IO.IOException：驗證失敗，因為遠端群體已經關閉傳輸資料流。|ATA 閘道上已停用 TLS 1.0，但是 .Net 設定為使用 TLS 1.2|使用下列其中一個選項： </br> 在 ATA 閘道上啟用 TLS 1.0 </br>將登錄機碼設定為使用 SSL 和 TLS 的作業系統預設，以在 .Net 上啟用 TLS 1.2，方式如下： </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001 `</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
 > |System.TypeLoadException：無法從組件 'Microsoft.Opn.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' 載入類型 'Microsoft.Opn.Runtime.Values.BinaryValueBufferManager'|ATA 閘道無法載入必要的剖析檔案。|請檢查目前是否已安裝 Microsoft 郵件分析器。 不支援郵件分析器與 ATA 閘道/輕量型閘道一起安裝。 請解除安裝郵件分析器，然後重新啟動閘道服務。|
 > |System.Net.WebException：遠端伺服器傳回一個錯誤：(407) 需要 Proxy 驗證|Proxy 伺服器中斷 ATA 閘道與 ATA 中心的通訊。|停用 ATA 閘道機器上的 Proxy。 <br></br>請注意，Proxy 設定可能依各帳戶為依據。|
-> |System.IO.DirectoryNotFoundException:系統找不到所指定的路徑。 (發生例外狀況於 HRESULT:0x80070003)|一或多個操作 ATA 所需的服務未啟動。|啟動下列服務： <br></br>效能記錄檔及警示 (PLA)、工作排程器 (排程)。|
+> |System.IO.DirectoryNotFoundException：系統找不到所指定的路徑。 (發生例外狀況於 HRESULT:0x80070003)|一或多個操作 ATA 所需的服務未啟動。|啟動下列服務： <br></br>效能記錄檔及警示 (PLA)、工作排程器 (排程)。|
 > |System.Net.WebException：遠端伺服器傳回一個錯誤：(403) 禁止|ATA 閘道或輕量型閘道可能會因為 ATA 中心未受信任，而遭禁止建立 HTTP 連線。|將 ATA 中心的 NetBIOS 名稱和 FQDN 新增到受信任的網站清單，並清除 Interne Explorer 上的快取 (或者，如果不是設定 NetBIOS/FQDN，則是以設定中指定的 ATA 中心名稱)。|
 > |System.Net.Http.HttpRequestException：PostAsync 失敗 [requestTypeName=StopNetEventSessionRequest]|由於 WMI 的問題，ATA 閘道或 ATA 輕量型閘道無法停止並啟動收集網路流量的 ETW 工作階段|請依照 [WMI：重建 WMI 存放庫](https://blogs.technet.microsoft.com/askperf/2009/04/13/wmi-rebuilding-the-wmi-repository/) \(英文\) 中的指示修正 WMI 問題|
 > |System.Net.Sockets.SocketException：嘗試以存取權限所禁止的方式存取通訊端|另一個應用程式正於 ATA 閘道上使用連接埠 514|使用 `netstat -o` 建立哪個處理序正在使用該連接埠。|
@@ -65,6 +64,8 @@ ms.locfileid: "56077723"
 > |System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> System.Net.WebException：遠端伺服器傳回一個錯誤：(407) 需要 Proxy 驗證。|因為 Proxy 設定錯誤而無法連線到 ATA 中心，所以部署程序已逾時。|請先停用 Proxy 設定再進行部署，然後再次啟用 Proxy 設定。 或者，您可以在 Proxy 中設定例外狀況。|
 > |System.Net.Sockets.SocketException：遠端主機已強制關閉現有連接||使用下列其中一個選項： </br>在 ATA 閘道上啟用 TLS 1.0 </br>將登錄機碼設定為使用 SSL 和 TLS 的作業系統預設，以在 .Net 上啟用 TLS 1.2，方式如下：</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
 > |錯誤 [\[]DeploymentModel[\]] 失敗的管理驗證 [\[]CurrentlyLoggedOnUser=<domain>\<username>Status=FailedAuthentication Exception=[\]]|ATA 閘道或 ATA 輕量型閘道的部署程序無法順利向 ATA 中心驗證|請從部署程序失敗所在的電腦開啟瀏覽器，並試試看能否連線到 ATA 主控台。 </br>若無法連線，請開始進行疑難排解，以了解瀏覽器為何無法向 ATA 中心驗證。 </br>可以檢查的事項： </br>Proxy 組態</br>網路問題</br>電腦上驗證的群組原則設定不同於 ATA 中心的設定。|
+> | 錯誤 [\[]DeploymentModel[\]] 失敗的管理驗證|中心憑證驗證失敗|中心憑證需要網際網路連線以進行驗證。 請確定您的閘道服務具有適當的 Proxy 設定以啟用連線和驗證。|
+
 
 
 ## <a name="ata-center-errors"></a>ATA 中心錯誤

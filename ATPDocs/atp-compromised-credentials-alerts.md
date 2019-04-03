@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 1/15/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: de426a06fb7d0893d56b82fcaa9599f523054774
-ms.sourcegitcommit: 9252c74620abb99d8fa2b8d2cc2169018078bec9
+ms.openlocfilehash: 23de55308ffe48f73b7db06a1a15790c14ecc8a0
+ms.sourcegitcommit: 38b68d96fbf04fe40e1f9a62a1af3d1d00e63614
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57981199"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58808235"
 ---
 # <a name="tutorial-compromised-credential-alerts"></a>教學課程：認證遭入侵警訊  
 
@@ -169,7 +167,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 **TP、B-TP 或 FP**
 
 1. 檢查來源電腦是否執行如 Hydra 等攻擊工具。
-   1. 如果來源電腦正在執行攻擊工具，則此警示為 **TP**。 請遵循[了解缺口的範圍](#understand-the-scope-of-the-breach)中的指示。
+   1. 如果來源電腦正在執行攻擊工具，則此警示為 **TP**。 請遵循上述＜了解缺口的範圍＞中的指示執行。
 
 有時是應用程式實作自己的 NTLM 或 SMB 堆疊。
 
@@ -204,7 +202,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 1. 請檢查來源電腦上是否正在執行 WannaCry。 
 
-    - 如果正在執行 WannaCry，則此警示為 **TP**。 請遵循[了解缺口的範圍](#understand-the-scope-of-the-breach)中的指示。
+    - 如果正在執行 WannaCry，則此警示為 **TP**。 請遵循上述＜了解缺口的範圍＞中的指示執行。
 
 有時是應用程式實作自己的 NTLM 或 SMB 堆疊。
 
@@ -238,7 +236,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 1. 檢查來源電腦是否執行 Metasploit 或 Medusa 等攻擊工具。
 
-2. 如果是，則為確判。 請遵循[了解缺口的範圍](#understand-the-scope-of-the-breach)中的指示。
+2. 如果是，則為確判。 請遵循上述＜了解缺口的範圍＞中的指示執行。
 
 有時是應用程式實作自己的 NTLM 或 SMB 堆疊。
 

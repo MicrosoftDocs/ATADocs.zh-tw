@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 03/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: b057fdc6362e8b5199b1323f09e3c81a09291e5d
-ms.sourcegitcommit: 6975497acaf298af393f96573e1790ab617fa5b4
+ms.openlocfilehash: 176ef6a45ba262e0242a1cd31f3aa1268f4ce28e
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58406615"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675144"
 ---
 # <a name="azure-atp-siem-log-reference"></a>Azure ATP SIEM 記錄檔參考
 

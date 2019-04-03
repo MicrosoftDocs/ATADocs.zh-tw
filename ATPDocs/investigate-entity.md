@@ -8,18 +8,16 @@ manager: barbkess
 ms.date: 1/3/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
-ms.prod: ''
 ms.service: azure-advanced-threat-protection
-ms.technology: ''
 ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 432545b628cac4fa0a296874a9c4ec6bffbdccf7
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.openlocfilehash: 96b5d42d27fc0e78ac9cf0a23028c57a12def047
+ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56263449"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58674345"
 ---
 # <a name="tutorial-investigate-an-entity"></a>教學課程：調查實體
 

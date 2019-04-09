@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 1ac873fc-b763-41d7-878e-7c08da421cb5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7dd41fea1a2a7f8c4a2e122ec75d8735fb49c37d
-ms.sourcegitcommit: db60935a92fe43fe149f6a4d3114fe0edaa1d331
+ms.openlocfilehash: c985dfc4a7d847113838befb3040931434603a7f
+ms.sourcegitcommit: 4072bb8accd439590412f1380694f19aeaaa7a28
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58763945"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59233168"
 ---
 # <a name="what-is-network-name-resolution"></a>什麼是網路名稱解析？
 
@@ -71,7 +71,7 @@ ms.locfileid: "58763945"
 
 每個監視警示都提供方法、感應器、有問題支援則與設定建議的特定詳細資料。
 
-![低成功率網路名稱解析 (NNR) 警示](media/atp-health-alert-audit-policy.png)
+![低成功率網路名稱解析 (NNR) 警示](media/atp-nnr-success-rate.png)
 
 
 ### <a name="configuration-recommendations"></a>設定建議

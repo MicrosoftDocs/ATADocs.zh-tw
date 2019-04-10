@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 63d9c5c565c2f241ad7387f1cb64824ee825b025
-ms.sourcegitcommit: db60935a92fe43fe149f6a4d3114fe0edaa1d331
+ms.openlocfilehash: b4a5f7c74329d846caaa25a8b1181e0e516d2b08
+ms.sourcegitcommit: c4a0b3eff3e9c4de37e3ca53405ba47992c22b46
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58764030"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872880"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -85,7 +85,7 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者和/或同步至
 ### <a name="general"></a>一般
 
 > [!NOTE]
-> 使用 Server 2019 或包含 KB4487044 的 KB (例如 [KB4489899](https://support.microsoft.com/help/4489899/windows-10-update-kb4489899)) 時，請確定您已經安裝 [KB4487044](https://support.microsoft.com/help/4487044/windows-10-update-kb4487044)。 系統將會自動停止安裝在未安裝此更新之 2019 伺服器上的 Azure ATP 感應器。
+> 使用 Server 2019 時，請確定已安裝 [KB4487044](https://support.microsoft.com/help/4487044/windows-10-update-kb4487044)。 系統將會自動停止安裝在未安裝此更新之 2019 伺服器上的 Azure ATP 感應器。
  
 Azure ATP 感應器可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 (包含 Windows Server Core 但不含 Windows Nano 伺服器)、Windows Server 2019 (包含 Windows Core 但不含 Windows Nano 伺服器) 的網域控制站上安裝。
 
@@ -176,7 +176,6 @@ Azure ATP 獨立感應器可以支援監視多個網域控制站，依進出網�
 ### <a name="time-synchronization"></a>時間同步
 
 安裝感應器之伺服器和網域控制站的時間，必須同步到相差五分鐘內。
-
 
 ### <a name="network-adapters"></a>網路介面卡
 Azure ATP 獨立感應器需要至少一個管理介面卡和至少一個擷取介面卡︰

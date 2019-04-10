@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 10/14/2018
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: 1fe5fd6f-1b79-4a25-8051-2f94ff6c71c1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1ffdeb9e50b7b92fef140b59cb105ac8bd17432a
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: abbb382514807741403447ca69343134dae1b21e
+ms.sourcegitcommit: 4072bb8accd439590412f1380694f19aeaaa7a28
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675348"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59233253"
 ---
 # <a name="advanced-threat-analytics-suspicious-activity-guide"></a>Advanced Threat Analytics 可疑活動指南
 
@@ -169,13 +169,13 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 **調查**
 
-檢查所使用的雜湊是來自目標使用者所擁有或定期使用的電腦？ 如果是，則警示為誤判；否則，可能是真的有問題。
+所使用的雜湊是來自目標使用者所擁有還是定期使用的電腦？ 如果是，則警示為誤判；否則，可能是真的有問題。
 
 **補救**
 
 1. 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 重設密碼可防止攻擊者從密碼雜湊建立新的 Kerberos 票證。 現有的票證在到期之前仍可使用。 
 
-2. 如果涉及的帳戶是敏感性帳戶，請考慮重設 KRBTGT 帳戶兩次，如在黃金票證可疑活動中一樣。 重設 KRBTGT 兩次可使所有網域 Kerberos 票證失效，因此在這樣做之前請務必先做好規劃。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指導，以及 [重設 KRBTGT 帳戶密碼/金鑰工具](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51)的使用方式。 由於這通常是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)的最佳做法。
+2. 如果涉及的帳戶是敏感性帳戶，請考慮重設 KRBTGT 帳戶兩次，如在黃金票證可疑活動中一樣。 重設 KRBTGT 兩次可使所有網域 Kerberos 票證失效，因此在這樣做之前請務必先做好規劃。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指導方針，以及 [重設 KRBTGT 帳戶密碼/金鑰工具](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51)的使用方式。 由於這通常是橫向移動攻擊手法，因此請遵循[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)的最佳做法。
 
 ## <a name="identity-theft-using-pass-the-ticket-attack"></a>使用傳遞票證攻擊竊取身分
 

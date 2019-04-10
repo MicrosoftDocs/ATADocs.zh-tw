@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 1/24/2019
+ms.date: 04/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: ab1e8dd9-a6c2-4c68-89d5-343b8ec56142
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d2dbd84cf771e86a5615a081b6e8500247ee2026
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 4d3bac024e94f0aec2fb01f827fb5456527c5356
+ms.sourcegitcommit: 4072bb8accd439590412f1380694f19aeaaa7a28
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674668"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59233321"
 ---
 # <a name="azure-atp-advanced-audit-policy-check"></a>Azure ATP 進階稽核原則檢查
 
@@ -25,7 +25,7 @@ Azure ATP 偵測憑藉特定 Windows 事件記錄檔來取得特定案例的可�
 
 為讓您更輕鬆地確認每個網域控制站進階稽核原則目前的狀態，Azure ATP 會自動檢查現有的進階稽核原則，並針對需要修改的原則設定發出健全狀況警示。 每個健全狀況警示各會提供網域控制站、問題原則及補救建議的具體詳細資料。
 
-![進階稽核原則健全狀況警示](media/atp-health-alert-audit-policy.png)
+![進階稽核原則健全狀況警示](media/atp-health-alert-audit.png)
 
 
 您可透過 [預設網域控制站原則] GPO 來啟用進階安全性稽核原則。 這些稽核事件會記錄在網域控制站的 Windows 事件上。 
@@ -54,6 +54,9 @@ Azure ATP 偵測憑藉特定 Windows 事件記錄檔來取得特定案例的可�
 
     > [!NOTE]
     > 如果您選擇使用本機原則，請務必在本機原則中新增 [帳戶登入] 與 [帳戶管理] 稽核記錄。 如果您要設定進階稽核原則，請務必強制執行[稽核原則子類別](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/audit-force-audit-policy-subcategory-settings-to-override)。
+    
+    > [!NOTE] 
+    > 如果您使用預設網域控制站原則之外的原則套用進階稽核原則設定，則可以忽略所產生的 Azure ATP 健康情況警示。 
 
 7. 在套用 GPO 後，新的事件會顯示在您的 **Windows 事件記錄檔**下。
 

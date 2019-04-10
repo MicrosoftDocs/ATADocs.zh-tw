@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 03/07/2019
+ms.date: 04/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0e35654a5fdfd09a4b2fe7849f58bd1c26253a7e
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 677dec4468fa272b55d5f9c20c3163fea5770f20
+ms.sourcegitcommit: 4072bb8accd439590412f1380694f19aeaaa7a28
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675059"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59233338"
 ---
 # <a name="azure-atp-frequently-asked-questions"></a>Azure ATP 常見問題集
 本文提供關於 Azure ATP 的常見問題與解答清單，並分成下列類別： 
@@ -35,6 +35,7 @@ Azure ATP 可以偵測對您網路所進行的已知惡意攻擊和技術、安�
 如需 Azure ATP 偵測的完整清單，請參閱 [Azure ATP 會執行哪些偵測？](suspicious-activity-guide.md)。
 
 ### <a name="what-data-does-azure-atp-collect"></a>Azure ATP 會收集什麼資料？ 
+
 Azure ATP 會將來自您已設定伺服器 (網域控制站、成員伺服器等) 的資訊，收集並儲存至特別針對系統管理、追蹤及報告用途的資料庫中。 收集的資訊包括針對網域控制站的雙向網路流量 (例如 Kerberos 驗證、NTLM 驗證、DNS 查詢)、安全性記錄 (例如 Windows 安全性事件)、Active Directory 資訊 (結構、子網路、網站)，以及實體資訊 (例如名稱、電子郵件地址及電話號碼)。 
 
 Microsoft 會使用這份資料： 
@@ -46,6 +47,7 @@ Microsoft 會使用這份資料：
 Microsoft 並不會將您的資料用於廣告用途，或是任何其他與為您提供服務無關的用途之上。 
 
 ### <a name="does-azure-atp-only-leverage-traffic-from-active-directory"></a>Azure ATP 只會利用 Active Directory 的流量嗎？
+
 除了使用深度封包檢查技術來分析 Active Directory 流量之外，Azure ATP 也可以從您的網域控制站收集相關的 Windows 事件，並根據 Active Directory 網域服務的資訊建立實體設定檔。 Azure ATP 也支援接收來自不同廠商 (Microsoft、Cisco、F5 及 Checkpoint) 之 VPN 記錄的 RADIUS 帳戶處理。
 
 ### <a name="does-azure-atp-monitor-only-domain-joined-devices"></a>Azure ATP 是否只會監視已加入網域的裝置？
@@ -55,6 +57,7 @@ Microsoft 並不會將您的資料用於廣告用途，或是任何其他與為�
 是。 因為電腦帳戶 (以及任何其他實體) 可以用來執行惡意活動，所以 Azure ATP 會監視所有電腦帳戶的行為，以及環境中的所有其他實體。
 
 ## <a name="licensing-and-privacy"></a>授權和隱私權 
+
 ### <a name="where-can-i-get-a-license-for-azure-advanced-threat-protection-atp"></a>哪裡可以取得 Azure 進階威脅防護 (ATP) 的授權？
 
 Azure ATP 隨附於 Enterprise Mobility + Security 5 套件 (EMS E5) 中，也可以獨立授權。 您可以直接透過 [Microsoft 365 入口網站](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing)，或雲端解決方案合作夥伴 (CSP) 授權模型取得授權。
@@ -81,6 +84,7 @@ Azure ATP 解決方案目前是獨立的供應項目。 它不是 Azure Active D
 除此之外，Microsoft 會針對特定作業人員進行背景驗證檢查，並根據背景驗證的層級，在對應用程式、系統及網路基礎結構的存取上實施相對應的限制。 當作業人員因自身業務而需要存取客戶的帳戶或相關資訊時，將需要遵循正式的程序。 
 
 ## <a name="deployment"></a>部署
+
 ### <a name="how-many-azure-atp-sensors-do-i-need"></a>我需要多少 Azure ATP 感應器？
 
 環境中的每個網域控制站都應該由一個 ATP 感應器或獨立感應器所涵蓋。 如需詳細資訊，請參閱 [Azure ATP 感應器調整大小](atp-capacity-planning.md#sizing)。 
@@ -126,7 +130,39 @@ Azure 進階威脅防護支援多網域環境與多樹系。 如需詳細資訊�
 ### <a name="do-you-have-to-write-your-own-rules-and-create-a-thresholdbaseline"></a>必須撰寫自己的規則，並建立臨界值/基準嗎？
 使用 Azure 進階威脅防護時，將不需要建立規則、臨界值或基準然後再進行調整。 Azure ATP 會分析使用者、裝置、資源的行為 (以及它們之間的關聯性)，並可以快速偵測可疑活動和已知的攻擊。 在部署三個星期之後，Azure ATP 便會開始偵測行為上的可疑活動。 另外，Azure ATP 會在部署之後立即開始偵測已知的惡意攻擊和安全性問題。
 
+### <a name="which-traffic-does-azure-atp-generate-in-the-network-from-domain-controllers-and-why"></a>在網路中，Azure ATP 會從網域控制站產生哪些流量？為什麼？ 
+
+Azure ATP 會在下列其中一個案例中，產生網域控制站到組織中電腦的流量：
+1. **網路名稱解析**<br>
+   Azure ATP 會擷取流量和事件，進而了解並分析網路中的使用者和電腦活動。 為根據組織中的電腦了解並分析活動，Azure ATP 需要將 IP 解析為電腦帳戶。 為將 IP 解析為電腦名稱，Azure ATP 感應器會要求 IP 位址*後方*之電腦名稱的 IP 位址。 <br>
+ 
+   要求是使用下列其中一種方法提出的： 
+    - 透過 RPC 的 NTLM (TCP 連接埠 135)
+    - NetBIOS (UDP 連接埠 137)
+    - RDP (TCP 連接埠 3389)
+    - 使用 IP 位址的反向 DNS 查閱來查詢 DNS 伺服器 (UDP 53)
+    
+    收到電腦名稱之後，Azure ATP 感應器會在 Active Directory 中交互檢查詳細資料，以了解是否有與該相同電腦名稱相關的電腦物件。 如果找到相符項目，則會在 IP 位址和比對的電腦物件之間建立關聯。
+2. **橫向移動路徑 (LMP)**<br>
+    若要為敏感性使用者建置潛在的 LMP，Azure ATP 會需要電腦上的本機系統管理員相關資訊。 在此案例中，Azure ATP 感應器會使用 SAM-R (TCP 445) 查詢網路流量中識別到的 IP 位址，以確定電腦的本機系統管理員。 若要深入了解 Azure ATP 與 SAM-R，請參閱[設定 SAM-R 所需的權限](install-atp-step8-samr.md)。 
+
+3. 針對實體資料**使用 LDAP 查詢 Active Directory**<br>
+    Azure ATP 感應器會從實體所屬的網域查詢網域控制站。 它可以是相同的感應器，或是來自該網域的其他網域控制站。 
+
+|通訊協定|服務|連接埠|來源| 方向|
+|---------|---------|---------|---------|--------|
+|LDAP|TCP 和 UDP|389|網域控制站|連出|
+|安全的 LDAP (LDAPS)|TCP|636|網域控制站|連出|
+|LDAP 至通用類別|TCP|3268|網域控制站|連出|
+|LDAPS 至通用類別|TCP|3269|網域控制站|連出|
+|
+
+### <a name="why-dont-activities-always-show-both-the-source-user-and-computer"></a>為什麼活動不會一律顯示來源使用者與電腦？
+
+Azure ATP 會透過許多不同的通訊協定擷取活動。 在某些情況下，Azure ATP 不會收到量中來源使用者的資料。 Azure ATP 會嘗試將使用者的工作階段與活動相互關聯，並在嘗試成功時，顯示活動的來源使用者。 當使用者相互關聯嘗試失敗時，則只會顯示來源電腦。 
+
 ## <a name="troubleshooting"></a>疑難排解
+
 ### <a name="what-should-i-do-if-the-azure-atp-sensor-or-standalone-sensor-doesnt-start"></a>如果 Azure ATP 感應器或獨立感應器無法啟動該怎麼辦？
 在目前的錯誤[記錄檔](troubleshooting-atp-using-logs.md)中尋找最新的錯誤 (在 Azure ATP 安裝位置的 "Logs" 資料夾下)。
 

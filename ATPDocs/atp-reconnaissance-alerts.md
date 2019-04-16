@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 72c5a0de163e53ed60fb3871e3a70cb691513806
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 2b2d78f7f9f6191f13a9a187ce7e1e7f60dfcaf7
+ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675195"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59577257"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>教學課程：偵察警訊  
 
@@ -150,7 +150,7 @@ DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵�
 
 請務必保護您的內部 DNS 伺服器，以防止發生使用 AXFR 查詢的未來攻擊。
 
-- 您可以停用區域傳輸，或[限制區域傳輸](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee649273(v=ws.10))僅針對指定的 IP 位址，來保護您的內部 DNS 伺服器，以防止發生使用 DNS 的偵察。 「修改區域傳輸」是檢查清單中的一項工作，應該加以解決才能[保護 DNS 伺服器免受內部和外部攻擊](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee649273(v=ws.10))。
+- 您可以停用區域傳輸，或[限制區域傳輸](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee649273(v=ws.10))僅針對指定的 IP 位址，來保護您的內部 DNS 伺服器，以防止發生使用 DNS 的偵察。 「修改區域傳輸」是檢查清單中的一個工作，應該加以解決才能[保護 DNS 伺服器免受內部和外部攻擊](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee649273(v=ws.10))。
 
 ## <a name="security-principal-reconnaissance-ldap-external-id-2038---preview"></a>安全性主體偵察 (LDAP) (外部識別碼 2038) - 預覽
 
@@ -178,11 +178,18 @@ DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵�
 
 **建議的補救和預防步驟**
 
-1.  包含來源電腦
+1. 包含來源電腦
     1. 尋找執行攻擊的工具，並將它移除。
     2. 電腦是否執行會執行各種 LDAP 查詢的掃描工具？
     3. 因為使用者可能也遭入侵，所以請搜尋在活動發生期間登入的使用者。 重設他們的密碼，並啟用 MFA。
-2.  若 SPN 資源存取發生在使用者帳戶 (而非機器帳戶) 下，請重設密碼。
+2. 若 SPN 資源存取發生在使用者帳戶 (而非機器帳戶) 下，請重設密碼。
+
+**針對預防與補救為特定建議步驟進行 Kerberoast 處理**
+
+1. 強制在遭入侵的帳戶上執行密碼重設  
+2. 需要[針對具有服務主體帳戶的使用者使用複雜的長密碼](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/minimum-password-length)。  
+3. [使用群組受控服務帳戶 (gMSA) 取代使用者帳戶](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview)。 
+
 
 ## <a name="user-and-ip-address-reconnaissance-smb-external-id-2012"></a>使用者和 IP 位址偵察 (SMB) (外部識別碼 2012) 
 

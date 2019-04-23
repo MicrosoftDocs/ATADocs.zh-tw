@@ -12,11 +12,11 @@ ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
 ms.openlocfilehash: 65a3b7c07b421a141fd61aa1c1e93160aae6a46f
-ms.sourcegitcommit: c4a0b3eff3e9c4de37e3ca53405ba47992c22b46
+ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58872846"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59745378"
 ---
 # <a name="ata-version-192"></a>ATA 1.9.2 版
 

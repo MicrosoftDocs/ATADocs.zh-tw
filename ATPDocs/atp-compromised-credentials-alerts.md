@@ -13,11 +13,11 @@ ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 23de55308ffe48f73b7db06a1a15790c14ecc8a0
-ms.sourcegitcommit: 38b68d96fbf04fe40e1f9a62a1af3d1d00e63614
+ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58808235"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59745750"
 ---
 # <a name="tutorial-compromised-credential-alerts"></a>教學課程：認證遭入侵警訊  
 

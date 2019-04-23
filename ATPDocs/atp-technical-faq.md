@@ -13,11 +13,11 @@ ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 677dec4468fa272b55d5f9c20c3163fea5770f20
-ms.sourcegitcommit: 4072bb8accd439590412f1380694f19aeaaa7a28
+ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59233338"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59745801"
 ---
 # <a name="azure-atp-frequently-asked-questions"></a>Azure ATP 常見問題集
 本文提供關於 Azure ATP 的常見問題與解答清單，並分成下列類別： 
@@ -149,12 +149,12 @@ Azure ATP 會在下列其中一個案例中，產生網域控制站到組織中�
 3. 針對實體資料**使用 LDAP 查詢 Active Directory**<br>
     Azure ATP 感應器會從實體所屬的網域查詢網域控制站。 它可以是相同的感應器，或是來自該網域的其他網域控制站。 
 
-|通訊協定|服務|連接埠|來源| 方向|
+|通訊協定|Service|Port|來源| 方向|
 |---------|---------|---------|---------|--------|
-|LDAP|TCP 和 UDP|389|網域控制站|連出|
-|安全的 LDAP (LDAPS)|TCP|636|網域控制站|連出|
-|LDAP 至通用類別|TCP|3268|網域控制站|連出|
-|LDAPS 至通用類別|TCP|3269|網域控制站|連出|
+|LDAP|TCP 和 UDP|389|網域控制站|輸出|
+|安全的 LDAP (LDAPS)|TCP|636|網域控制站|輸出|
+|LDAP 至通用類別|TCP|3268|網域控制站|輸出|
+|LDAPS 至通用類別|TCP|3269|網域控制站|輸出|
 |
 
 ### <a name="why-dont-activities-always-show-both-the-source-user-and-computer"></a>為什麼活動不會一律顯示來源使用者與電腦？

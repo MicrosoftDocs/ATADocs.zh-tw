@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: barbkess
-ms.date: 03/31/2019
+ms.date: 04/18/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: edac28031e9faa3e5c23bbbd82ef4ce023f1f249
-ms.sourcegitcommit: db60935a92fe43fe149f6a4d3114fe0edaa1d331
+ms.openlocfilehash: b7769c953a27e3739db32c6db0bcbc0ef82679d4
+ms.sourcegitcommit: 8fa812fb4e898e40239febc6dc0fb0bdfcae3e55
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58763996"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59902102"
 ---
 # <a name="troubleshooting-ata-known-issues"></a>針對 ATA 已知問題進行疑難排解
 
@@ -63,9 +63,8 @@ ms.locfileid: "58763996"
 > |System.Threading.Tasks.TaskCanceledException：工作已取消|因為無法連線到 ATA 中心，所以部署程序已逾時。|1.  藉由使用 ATA 中心的 IP 位址瀏覽至 ATA 中心，來檢查與其的網路連線。 <br></br>2.  檢查 Proxy 或防火牆設定。|
 > |System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> System.Net.WebException：遠端伺服器傳回一個錯誤：(407) 需要 Proxy 驗證。|因為 Proxy 設定錯誤而無法連線到 ATA 中心，所以部署程序已逾時。|請先停用 Proxy 設定再進行部署，然後再次啟用 Proxy 設定。 或者，您可以在 Proxy 中設定例外狀況。|
 > |System.Net.Sockets.SocketException：遠端主機已強制關閉現有連接||使用下列其中一個選項： </br>在 ATA 閘道上啟用 TLS 1.0 </br>將登錄機碼設定為使用 SSL 和 TLS 的作業系統預設，以在 .Net 上啟用 TLS 1.2，方式如下：</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
-> |錯誤 [\[]DeploymentModel[\]] 失敗的管理驗證 [\[]CurrentlyLoggedOnUser=<domain>\<username>Status=FailedAuthentication Exception=[\]]|ATA 閘道或 ATA 輕量型閘道的部署程序無法順利向 ATA 中心驗證|請從部署程序失敗所在的電腦開啟瀏覽器，並試試看能否連線到 ATA 主控台。 </br>若無法連線，請開始進行疑難排解，以了解瀏覽器為何無法向 ATA 中心驗證。 </br>可以檢查的事項： </br>Proxy 組態</br>網路問題</br>電腦上驗證的群組原則設定不同於 ATA 中心的設定。|
-> | 錯誤 [\[]DeploymentModel[\]] 失敗的管理驗證|中心憑證驗證失敗|中心憑證需要網際網路連線以進行驗證。 請確定您的閘道服務具有適當的 Proxy 設定以啟用連線和驗證。|
-
+> |錯誤 [\\[]DeploymentModel[\\]] 失敗的管理驗證     [\\[]CurrentlyLoggedOnUser=<domain>\\<username>Status=FailedAuthentication Exception=[\\]]|ATA 閘道或 ATA 輕量型閘道的部署程序無法順利向 ATA 中心驗證|請從部署程序失敗所在的電腦開啟瀏覽器，並試試看能否連線到 ATA 主控台。 </br>若無法連線，請開始進行疑難排解，以了解瀏覽器為何無法向 ATA 中心驗證。 </br>可以檢查的事項： </br>Proxy 組態</br>網路問題</br>電腦上驗證的群組原則設定不同於 ATA 中心的設定。|
+> | 錯誤 [\\[]DeploymentModel[\\]] 失敗的管理驗證|中心憑證驗證失敗|中心憑證可能需要網際網路連線以進行驗證。 請確定您的閘道服務具有適當的 Proxy 設定以啟用連線和驗證。|
 
 
 ## <a name="ata-center-errors"></a>ATA 中心錯誤
@@ -73,7 +72,7 @@ ms.locfileid: "58763996"
 > 
 > |錯誤|說明|解決方案|
 > |-------------|----------|---------|
-> |System.Security.Cryptography.CryptographicException：拒絕存取。|ATA 中心無法使用發行的憑證來解密。 這很有可能發生在使用將 KeySpec (KeyNumber) 設定為不支援解密的 Signature (AT\_SIGNATURE)，而非支援解密的 KeyExchange (AT\_KEYEXCHANGE) 的憑證上。|1.  停止 ATA 中心服務。 <br></br>2.   從中心的憑證存放區刪除 ATA 中心憑證 (在刪除之前，請確定您已連同私密金鑰將憑證備份在 PFX 檔案中)。 <br></br>3.  開啟提升權限的命令提示字元並執行 certutil -importpfx "CenterCertificate.pfx" AT\_KEYEXCHANGE <br></br>4.   啟動 ATA 中心服務。 <br></br>5.   確認所有項目現在都如預期般運作。|
+> |System.Security.Cryptography.CryptographicException：拒絕存取。|ATA 中心無法使用發行的憑證來解密。 這很有可能發生在使用將 KeySpec (KeyNumber) 設定為不支援解密的 Signature (AT\\_SIGNATURE)，而非 KeyExchange (AT\\_KEYEXCHANGE) 的憑證上。|1.  停止 ATA 中心服務。 <br></br>2.   從中心的憑證存放區刪除 ATA 中心憑證 (在刪除之前，請確定您已連同私密金鑰將憑證備份在 PFX 檔案中)。 <br></br>3.  開啟提升權限的命令提示字元並執行      certutil -importpfx "CenterCertificate.pfx" AT\\_KEYEXCHANGE <br></br>4.   啟動 ATA 中心服務。 <br></br>5.   確認所有項目現在都如預期般運作。|
 
 
 ## <a name="ata-gateway-and-lightweight-gateway-issues"></a>ATA 閘道和輕量型閘道問題
@@ -84,6 +83,7 @@ ms.locfileid: "58763996"
 > |-------------|----------|---------|
 > |未從網域控制站收到流量，但觀察到監視警示|    未從透過 ATA 閘道使用連接埠鏡像的網域控制站收到流量|在 ATA 閘道擷取 NIC 上，停用 [進階設定] 中的這些功能：<br></br>接收區段聯合 (IPv4)<br></br>接收區段聯合 (IPv6)|
 > |系統會顯示此監視警示：某些網路流量不會被分析|如果您在 VMware 虛擬機器上有 ATA 閘道或輕量型閘道，就可能會收到此監視警示。 當 VMware 中的設定不相符時，就會發生此狀況。|在虛擬機器的 NIC 設定中，將下列設定設為 0 或 [停用]：TsoEnable、LargeSendOffload、TSO Offload、Giant TSO Offload TLS 1.0 差 ATA 閘道上已停用，但.Net 是設定為使用 TLS 1.2|
+
 
 
 

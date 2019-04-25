@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b4a5f7c74329d846caaa25a8b1181e0e516d2b08
-ms.sourcegitcommit: c4a0b3eff3e9c4de37e3ca53405ba47992c22b46
+ms.openlocfilehash: 40caca1ff6ac2648b3f7c3d4921cfb35a5f5ba39
+ms.sourcegitcommit: 279884f436bf0d10d906f4fac950d28f0ada8a45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58872880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60164707"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -29,7 +29,7 @@ ms.locfileid: "58872880"
 
 Azure ATP 是由 Azure ATP 雲端服務組成，其包含 Azure ATP 入口網站、Azure ATP 感應器和/或 Azure ATP 獨立感應器。 如需每種 Azure ATP 元件的詳細資訊，請參閱 [Azure ATP 架構](atp-architecture.md)。
 
-Azure ATP 能保護您的內部部署 Active Directory 使用者和/或同步至您 Azure Active Directory 的使用者。 若要保護僅包含 AAD 使用者的環境，請參閱 [AAD Identity Protection] (https://docs.microsoft.com/azure/active-directory/identity-protection/overview) \(機器翻譯\)。 
+Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步至您 Azure Active Directory 的使用者。 若要保護僅包含 AAD 使用者的環境，請參閱 [AAD Identity Protection] (https://docs.microsoft.com/azure/active-directory/identity-protection/overview) \(機器翻譯\)。 
 
 若要建立 Azure ATP 執行個體，您必須使用具有至少一位全域/安全性系統管理員的 AAD 租用戶。 每個 Azure ATP 執行個體都支援多 Active Directory 樹系邊界，以及 Windows 2003 和更新版本的樹系功能等級 (FFL)。 
 

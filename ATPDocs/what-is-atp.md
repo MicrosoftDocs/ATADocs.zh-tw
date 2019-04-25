@@ -12,15 +12,15 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2d14d0e9-1b03-4bcc-ae97-8fd41526ffc5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 309e77b9595f425470194778f946e0f707b1a72e
-ms.sourcegitcommit: 4072bb8accd439590412f1380694f19aeaaa7a28
+ms.openlocfilehash: 2afa9c293271d04eb7c61883dcbb5777e4c0d510
+ms.sourcegitcommit: 279884f436bf0d10d906f4fac950d28f0ada8a45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59233134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60164690"
 ---
 # <a name="what-is-azure-advanced-threat-protection"></a>什麼是 Azure 進階威脅防護？
-Azure 進階威脅防護 (ATP) 是以雲端為基礎的安全性解決方案，其可運用您的內部部署 Active Directory 訊號來識別、偵測及調查針對您組織的進階威脅、身分識別盜用，以及惡意的內部人員動作。 Azure ATP 可讓為了偵測出混合式環境中的進階攻擊而心力交瘁的 SecOp 分析師和安全性專業人員完成以下作業：  
+Azure 進階威脅防護 (ATP) 是雲端式安全性解決方案，其可運用您的內部部署 Active Directory 訊號來識別、偵測及調查針對您組織的進階威脅、身分識別盜用，以及惡意的內部人員動作。 Azure ATP 可讓為了偵測出混合式環境中的進階攻擊而心力交瘁的 SecOp 分析師和安全性專業人員完成以下作業：  
 - 透過學習式分析，監視使用者、實體行為及活動  
 - 保護儲存在 Active Directory 中的使用者身分識別與認證  
 - 識別及調查整個狙殺鏈中的可疑使用者活動與進階攻擊 

@@ -4,7 +4,7 @@ description: 說明當 Azure ATP 偵測到可疑的活動時，如何通知您 (
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 12/02/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: a2d29c9c-7ecb-4804-b74b-fde899b28648
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b3df102272b045f34eb64b11d97077b9ce1951ad
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 7a17f5156f7060028e10a66907776f23a9709442
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674226"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196439"
 ---
 # <a name="integrate-with-syslog"></a>與 Syslog 整合
 

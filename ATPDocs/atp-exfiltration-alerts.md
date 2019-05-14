@@ -4,7 +4,7 @@ d|Description: This article explains the Azure ATP alerts issued when attacks ty
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 02/11/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 452d951c-5f49-4a21-ae10-9fb38c3de302
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 54e2e6df751dab47772c20d2c3cbe30665d4840b
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 704e372952d1b02fdcf6564bad26ebc4c7d184f2
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674804"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196865"
 ---
 # <a name="tutorial-exfiltration-alerts"></a>教學課程：外流警訊  
 

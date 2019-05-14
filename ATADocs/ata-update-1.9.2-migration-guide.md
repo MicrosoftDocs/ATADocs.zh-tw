@@ -4,19 +4,19 @@ description: 將 ATA 更新至 1.9.2 版的程序
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 04/02/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 65a3b7c07b421a141fd61aa1c1e93160aae6a46f
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.openlocfilehash: 22420ea90bc922684a4e99ad303bba831f3a45e7
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59745378"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196069"
 ---
 # <a name="ata-version-192"></a>ATA 1.9.2 版
 

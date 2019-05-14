@@ -4,7 +4,7 @@ description: 列出 ATA 1.5 版的新功能以及已知問題
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 01/23/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ada65d1726b2ba4c7cd0fe1ea287944a349b11db
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: c0658b0d9320116bf8a752ce360994946300947a
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58673971"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195740"
 ---
 # <a name="whats-new-in-ata-version-15"></a>ATA 1.5 版的新功能
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。

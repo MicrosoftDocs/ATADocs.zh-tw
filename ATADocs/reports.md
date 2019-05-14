@@ -4,7 +4,7 @@ description: 描述如何在 ATA 中產生報表以監視您的網路。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/27/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 38ea49b5-cd5e-43e5-bc39-5071f759633b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ab3f165409a6893e0b3fa080b94c5241d5c9b70e
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 279c8cc8f44e0c2803966709511d3089bce5d3a8
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674107"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65197100"
 ---
 # <a name="ata-reports"></a>ATA 報表
 

@@ -4,7 +4,7 @@ description: 提供如何從 Azure ATP 刪除私人資訊和個人資料的相�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 10/04/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 224e629a-0e82-458c-bb03-b67070a9241d
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: 915bf9f03b716ca3d5cad17bc78c2b5c30084acf
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 6758527b61e2b1ab440898ed23aa7d507d8f3b3c
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674910"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196803"
 ---
 # <a name="azure-atp-data-security-and-privacy"></a>Azure ATP 資料安全性和隱私權
 

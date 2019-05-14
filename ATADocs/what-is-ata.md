@@ -4,7 +4,7 @@ description: 說明何謂 Microsoft Advanced Threat Analytics (ATA)，以及它�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 7/24/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ac94a91f31e350eb644f31f5d40c8e4e8288acfc
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 67e265c4785e5b2b3cc6fe267e72953e8817020f
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58673836"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195992"
 ---
 # <a name="what-is-advanced-threat-analytics"></a>什麼是 Advanced Threat Analytics？
 

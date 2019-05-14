@@ -4,7 +4,7 @@ d|Description: This article explains the Azure ATP alerts issued when attacks ty
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 1/15/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 23de55308ffe48f73b7db06a1a15790c14ecc8a0
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.openlocfilehash: aa4f9c18e0695092ddbaa9ef8505b403e206cb8c
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59745750"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196852"
 ---
 # <a name="tutorial-compromised-credential-alerts"></a>教學課程：認證遭入侵警訊  
 

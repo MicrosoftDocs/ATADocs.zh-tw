@@ -4,7 +4,7 @@ description: 描述如何驗證已正確設定連接埠鏡像
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: ebd41719-c91a-4fdd-bcab-2affa2a2cace
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 215b84ff667d417b96177f738fb54d1bd12de29d
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 233fe317294be1e407995cdd48fe9eda2157d08c
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58673879"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195669"
 ---
 # <a name="validate-port-mirroring"></a>驗證連接埠鏡像
 

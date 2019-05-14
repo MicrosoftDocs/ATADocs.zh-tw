@@ -4,7 +4,7 @@ description: 本文提供 Azure ATP 進階稽核原則檢查的概觀。
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 04/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: ab1e8dd9-a6c2-4c68-89d5-343b8ec56142
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4d3bac024e94f0aec2fb01f827fb5456527c5356
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.openlocfilehash: cae5f5687c205c2128b652e674dce1531c57588b
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59745648"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195554"
 ---
 # <a name="azure-atp-advanced-audit-policy-check"></a>Azure ATP 進階稽核原則檢查
 

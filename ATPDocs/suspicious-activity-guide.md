@@ -4,7 +4,7 @@ d|Description: This article provides a list of the security alerts issued by Azu
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 04/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,18 +12,19 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0dcdd37bdad7c52325c527b3fa768f851000ff3a
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.openlocfilehash: 0dd8d987472ef88108f2cb3541bd590d1a816726
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59745818"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196645"
 ---
 # <a name="azure-atp-security-alerts"></a>Azure ATP 安全性警示
 
 Azure ATP 安全性警示會說明 Azure ATP 感應器在您網路上偵測到的可疑活動，以及涉及每項威脅的動作項目和電腦。   包含涉及使用者和電腦直接連結的警示辨識項清單，可協助您輕易且直接地進行調查。
 
 Azure ATP 安全性警訊分為下列類別或階段，如同在典型網路攻擊終止鏈結中會看到的階段。 使用下列連結，深入了解設計來偵測每個攻擊的各階段警示，以及如何使用這些警示來協助保護您的網路：
+
   1. [偵察階段警示](atp-reconnaissance-alerts.md)
   2. [遭入侵的認證階段警示](atp-compromised-credentials-alerts.md)
   3. [橫向移動階段警示](atp-lateral-movement-alerts.md)

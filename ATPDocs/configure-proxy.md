@@ -4,7 +4,7 @@ description: 描述如何設定防火牆或 Proxy，以允許 Azure ATP 雲端�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 03/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4bb2c2941cc0571b066f2fa4806217a67ebc7849
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 7598c10724295312b19a2ccb0fbdd57328edd9a4
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58673783"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196732"
 ---
 # <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-azure-atp-sensor"></a>設定 Azure ATP 感應器的端點 Proxy 和網際網路連線設定
 

@@ -4,7 +4,7 @@ description: 說明如何以無訊息方式安裝 ATA。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 60067b87a23e154be2b993ab8afe7137852b862e
-ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
+ms.openlocfilehash: b94c6812038399420deaea96f2427897ebff384a
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58639114"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196237"
 ---
 # <a name="ata-silent-installation"></a>ATA 無訊息安裝
 

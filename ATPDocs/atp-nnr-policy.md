@@ -4,7 +4,7 @@ description: 此文章提供 Azure ATP 進階網路名稱解析功能與用法�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 03/31/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 1ac873fc-b763-41d7-878e-7c08da421cb5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c985dfc4a7d847113838befb3040931434603a7f
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.openlocfilehash: 1489f1b24065a153734bdd46975576d469b57f24
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59745468"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196933"
 ---
 # <a name="what-is-network-name-resolution"></a>什麼是網路名稱解析？
 

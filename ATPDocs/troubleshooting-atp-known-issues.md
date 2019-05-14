@@ -4,7 +4,7 @@ description: 描述如何針對 Azure ATP 的問題進行疑難排解。
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 10/04/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: dd654182fff5ed60fe02da56572e79dac13ff761
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 639dc38eeb9f4944cdd011074463953a13a49966
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674889"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196646"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>針對 Azure ATP 已知問題進行疑難排解 
 

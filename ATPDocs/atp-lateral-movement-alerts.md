@@ -4,7 +4,7 @@ d|Description: This article explains the Azure ATP alerts issued when attacks ty
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 03/18/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2257eb00-8614-4577-b6a1-5c65085371f2
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7d6ace87ba8f27b70ecb81de2ac8f07ab5bc214a
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 3b58433239fb2f7f3d2f55c87ddf73ea38840176
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674787"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196841"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>教學課程：橫向移動警訊  
 

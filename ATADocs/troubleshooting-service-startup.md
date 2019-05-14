@@ -4,7 +4,7 @@ description: 本文描述如何為 ATA 啟動問題進行疑難排解
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 5a65285c-d1de-4025-9bb4-ef9c20b13cfa
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d265835ded3c2cd923ceb688e86aa2da801ea67b
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 6669e23e2948997c452a44bfbe4fc08d659b3e8b
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58673819"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65197177"
 ---
 # <a name="troubleshooting-service-startup"></a>為服務啟動進行疑難排解
 

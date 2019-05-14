@@ -4,7 +4,7 @@ description: 描述如何使用 Azure ATP 來監視 Azure ATP 感應器和感應
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 02/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 92decce8-b3ae-4d32-8407-a95314a66863
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4bab4db1735d84a568e300bdeb57436f230edbb5
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 6b3c8e978f16893d70c44c0fd3d04ce381c1bb5d
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674294"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196774"
 ---
 # <a name="monitoring-your-domain-controller-coverage"></a>監視您的網域控制站涵蓋範圍
 

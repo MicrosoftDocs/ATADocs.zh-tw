@@ -2,20 +2,21 @@
 title: 規劃 Advanced Threat Analytics 部署 | Microsoft Docs
 description: 協助您規劃部署並決定支援您的網路需要多少 ATA 伺服器
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: barbkess
-ms.date: 3/21/2018
+author: mlottner
+ms.author: mlottner
+manager: rkarlin
+ms.date: 05/12/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
+ms.assetid: 1b5b24ff-0df8-4660-b4f8-64d68cc72f65
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3679dfd71653c607fbb16bec6545640dcd015e95
-ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
+ms.openlocfilehash: 069f6b179ab48b2c19b06e1bbcc64f4336954574
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58639080"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195851"
 ---
 # <a name="ata-capacity-planning"></a>ATA 容量規劃
 
@@ -35,7 +36,7 @@ ms.locfileid: "58639080"
 - ATA 閘道：比對結果檔案中 ATA 閘道資料表的 [Busy Packets/sec] 欄位與 [ATA 閘道資料表](#ata-gateway-sizing)或 [ATA 輕量型閘道資料表](#ata-lightweight-gateway-sizing)中的 [每秒封包數]欄位，依據[您所選擇的閘道類型](#choosing-the-right-gateway-type-for-your-deployment)而定。
 
 
-![範例容量規劃工具](media/capacity tool.png)
+![範例容量規劃工具](media/capacity-tool.png)
 
 
 > [!NOTE]

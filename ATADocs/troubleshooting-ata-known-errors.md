@@ -4,7 +4,7 @@ description: 描述如何針對 Advanced Threat Analytics 中的已知問題進�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 04/18/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: b7769c953a27e3739db32c6db0bcbc0ef82679d4
-ms.sourcegitcommit: 8fa812fb4e898e40239febc6dc0fb0bdfcae3e55
+ms.openlocfilehash: 9a788e76c4cc7d15d43d90b023927d9e76c422b9
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59902102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195760"
 ---
 # <a name="troubleshooting-ata-known-issues"></a>針對 ATA 已知問題進行疑難排解
 

@@ -4,7 +4,7 @@ description: 安裝 ATA 的步驟 3 協助您下載 ATA 閘道安裝套件。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 7fb024e6-297a-4ad9-b962-481bb75a0ba3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 59c384bda5aefe303a51ccdc1fb60d75d8818234
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 15d1ea65e18f8557c4d36363a381d05c0f9421a7
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58673690"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195875"
 ---
 # <a name="install-ata---step-3"></a>安裝 ATA - 步驟 3
 

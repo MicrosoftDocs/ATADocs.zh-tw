@@ -4,7 +4,7 @@ description: 如何匯出和匯入 ATA 組態。
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 9/04/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 1d27dba8-fb30-4cce-a68a-f0b1df02b977
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: cc62b556cc27e363a0d37260d80fda4a7bfdd105
-ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
+ms.openlocfilehash: 06c225b26c43d48aeba6c032434af08231106dad
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58638791"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196466"
 ---
 # <a name="export-and-import-the-ata-configuration"></a>匯出和匯入 ATA 組態
 

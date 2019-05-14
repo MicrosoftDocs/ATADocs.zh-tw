@@ -4,7 +4,7 @@ description: 描述如何從 Azure ATP 入口網站的使用者設定檔畫面�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 12/02/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 17458706-79fb-4c23-aa42-66979164a45f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 76333f50bd911e17ba97a11e65a761ff88b31b4e
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 437339467e76cb60edd49bee179392eb152fe458
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675178"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195193"
 ---
 # <a name="understanding-entity-profiles"></a>了解實體設定檔
 

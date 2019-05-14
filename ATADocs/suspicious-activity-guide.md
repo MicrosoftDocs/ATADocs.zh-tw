@@ -4,7 +4,7 @@ d|Description: This article provides a list of the suspicious activities ATA can
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 1fe5fd6f-1b79-4a25-8051-2f94ff6c71c1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: abbb382514807741403447ca69343134dae1b21e
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.openlocfilehash: b5e5e8c5f42f786ca869ed2a29572e4512faf26f
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59745835"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65197223"
 ---
 # <a name="advanced-threat-analytics-suspicious-activity-guide"></a>Advanced Threat Analytics 可疑活動指南
 

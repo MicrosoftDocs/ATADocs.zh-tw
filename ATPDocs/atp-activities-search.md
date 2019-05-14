@@ -4,7 +4,7 @@ description: 本文提供如何使用 Azure ATP 篩選及搜尋受監視活動�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 10/28/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: a546703b-d5a9-404d-9e87-125523bb8421
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4fa739207ce37f37a4bbcf3c093c82abc39c9cf7
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 3dd62357e9d86422facd8423654dfaf915214bba
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674124"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65197168"
 ---
 # <a name="azure-atp-monitored-activities-search-and-filter"></a>Azure ATP 受監視活動的搜尋與篩選 
 

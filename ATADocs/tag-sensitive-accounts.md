@@ -4,7 +4,7 @@ description: 說明如何使用 Advanced Threat Analytics (ATA) 標記敏感性�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 6/14/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 40a1c5c4-b8d6-477c-8ae5-562b37661624
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: dda09a744017904d9a9c5e292c76359741419744
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 39ad944d4517cbfe73cc7ac95f0cf7ceb6a3f213
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674141"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196037"
 ---
 # <a name="tag-sensitive-accounts"></a>標記敏感性帳戶
 

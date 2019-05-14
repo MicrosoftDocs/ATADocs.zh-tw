@@ -4,7 +4,7 @@ description: 將 ATA 更新至 1.8 版的程序
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 07/20/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: e5a9718c-b22e-41f7-a614-f00fc4997682
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 639063c9322a7c26b0a5bdaf144bcf8086c34a30
-ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
+ms.openlocfilehash: d35961d0ec70402fe27d0d418fd583d60b960464
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58639012"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196124"
 ---
 # <a name="updating-ata-to-version-18"></a>將 ATA 更新至 1.8 版
 

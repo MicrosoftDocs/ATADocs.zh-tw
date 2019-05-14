@@ -4,7 +4,7 @@ description: 列出 ATA 1.4 版的新功能以及已知問題
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 01/23/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: cbea47f9-34c1-42b6-ae9e-6a472b49e1a5
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 380ad2bcc5327f2157db6396921ac638dbbab091
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: e35ab552dfbe8adf17e408cda8c94178d08c1f93
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674090"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196995"
 ---
 # <a name="what39s-new-in-ata-version-14"></a>ATA 1.4 版的新功能
 這些版本資訊提供 Advanced Threat Analytics 1.4 版中已知問題的相關資訊。

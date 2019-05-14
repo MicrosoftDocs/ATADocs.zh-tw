@@ -4,7 +4,7 @@ description: 說明從 Azure ATP 取得支援說明的流程。
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 1/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 458ccac394ab762b2f46d5a7554829cc1fd79d0f
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 2c4ffed61b490099f6d041c333e318c8d3286fb1
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674872"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196930"
 ---
 # <a name="azure-advanced-threat-protection-information-and-support"></a>Azure 進階威脅防護資訊與支援 
 

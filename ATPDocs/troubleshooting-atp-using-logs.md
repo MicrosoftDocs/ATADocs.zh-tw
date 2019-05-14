@@ -4,7 +4,7 @@ description: 描述如何使用 Azure ATP 記錄檔對問題進行疑難排解
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 10/04/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: de796346-647d-48e1-970a-8f072e990f1e
 ms.reviewer: ''
 ms.suite: ''
-ms.openlocfilehash: 3db046f28e61c7462d84d1116162874eba103b29
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 2590e877ba39fda2fee41d8e617690a2b8d4a892
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674481"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196566"
 ---
 # <a name="troubleshooting-azure-advanced-threat-protection-atp-sensor-using-the-atp-logs"></a>使用 ATP 記錄疑難排解 Azure 進階威脅防護 (ATP) 感應器的問題
 ATP 記錄提供每個 Azure ATP 感應器元件在指定時點所執行之動作的見解。

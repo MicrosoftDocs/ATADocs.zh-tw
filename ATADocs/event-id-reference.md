@@ -4,7 +4,7 @@ description: 提供 ATA 事件識別碼的清單及其描述。
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 12/20/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 5d639e84-2e37-43a9-9667-49be6c4fa8b7
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 09ba4967cdb7b4b142c3102ca2e9f708cefe9dd5
-ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
+ms.openlocfilehash: a54c68f333cfc3eb47d47c66f1ded701fb855a80
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58639131"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196274"
 ---
 # <a name="ata-event-id-reference"></a>ATA 事件識別碼參考
 

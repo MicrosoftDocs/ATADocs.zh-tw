@@ -4,7 +4,7 @@ description: 提供從 ATA 傳送到您 SIEM 的安全性警訊記錄檔樣本�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 12/20/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 601b48ba-a327-4aff-a1f9-2377a2bb7a42
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 79cdc8ae60f274a79f24e98c5cd2ed6d2e5ad8af
-ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
+ms.openlocfilehash: 4630e1df24c370bc15bc2872ca8b1087f5cf42fa
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58639097"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65197001"
 ---
 # <a name="ata-siem-log-reference"></a>ATA SIEM 記錄檔參考
 

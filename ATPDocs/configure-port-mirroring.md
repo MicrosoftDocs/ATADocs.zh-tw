@@ -4,7 +4,7 @@ description: 描述連接埠鏡像選項以及如何針對 Azure ATP 設定它�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 10/4/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 9ec7eb4c-3cad-4543-bbf0-b951d8fc8ffe
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b32f86f433f981938c400746e6b27d543ab39b9a
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 4571e1d44c7b497fd3ed19264643ec4b436191f5
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675331"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195437"
 ---
 # <a name="configure-port-mirroring"></a>設定連接埠鏡像
 > [!NOTE] 

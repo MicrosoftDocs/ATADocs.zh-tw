@@ -4,7 +4,7 @@ description: 提供如何從 ATA 刪除私人資訊和個人資料的相關資�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 9/27/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 1b2d185c-62cd-45f0-b0dd-687b51317f32
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: 46f38285f2822e80744d3aa89b6eb820dd660367
-ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
+ms.openlocfilehash: 27f51d2b649f1a2bc3e1b6f2a36498fd73c0d77a
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58638978"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196185"
 ---
 # <a name="ata-data-security-and-privacy"></a>ATA 資料安全性和隱私權
 

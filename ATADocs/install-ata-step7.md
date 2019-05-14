@@ -4,7 +4,7 @@ description: 在安裝 ATA 的最後一個步驟裡，您可以設定 Honeytoken
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 6/14/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a9f90ef2568430014b69feeced5404a92edb8433
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: e4bd466a387906e6cedbee036f1123bfbbea3467
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674244"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195656"
 ---
 # <a name="install-ata---step-8"></a>安裝 ATA - 步驟 8
 

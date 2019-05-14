@@ -4,7 +4,7 @@ description: 描述如何設定 Azure ATP 安全性警訊，以在偵測到可�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 10/04/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 4308f03e-b2a7-4e38-a750-540ff94faa81
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6e939afc489e3414e5da207c2d5bd9a724eefec4
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 5aaf4ad892944b81944639c1f401c0ea9e127bf6
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674362"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196682"
 ---
 # <a name="set-azure-atp-notifications"></a>設定 Azure ATP 通知
 

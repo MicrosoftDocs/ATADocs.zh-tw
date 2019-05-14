@@ -4,7 +4,7 @@ description: 描述如何驗證已在 Azure ATP 中正確設定連接埠鏡像
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 10/04/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 0a56cf27-9eaa-4ad0-ae6c-9d0484c69094
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 9a7acdd2fcd90a4121ce37dd80209af468e120be
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: d3eb36b75e9500920bdaea70864839a5de7e3de1
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674209"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196422"
 ---
 # <a name="validate-port-mirroring"></a>驗證連接埠鏡像
 > [!NOTE] 

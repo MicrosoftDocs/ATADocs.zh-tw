@@ -4,7 +4,7 @@ description: 本文提供 Azure ATP 實用資源清單
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 1/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 34dc152c-6b7f-4128-93fe-aad56c282730
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e4392a98cc2de824697bf1a44e5fc76d02a90428
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 205fb58cbb06e6a219aa39b92275761ad9d1304d
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674583"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196793"
 ---
 # <a name="azure-atp-readiness-guide"></a>Azure ATP 整備指南
 

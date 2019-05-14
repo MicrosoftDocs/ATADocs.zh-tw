@@ -4,7 +4,7 @@ description: 描述 Azure 進階威脅防護監視的每一種活動類型
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 1/13/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 37d1a032-65e7-4a89-be0b-c3f9cc2bacdb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f62957b947ee0f2b5607379440add745aa9d571a
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: ea50c7f490b2bca757a8da80006cebd7d6d1cd46
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674957"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196350"
 ---
 # <a name="azure-atp-monitored-activities"></a>受 Azure ATP 監視的活動
 

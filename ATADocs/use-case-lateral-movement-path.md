@@ -4,7 +4,7 @@ description: 本文說明如何使用 Advanced Threat Analytics (ATA) 偵測橫�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 6/14/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 710f01bd-c878-4406-a7b2-ce13f98736ea
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 28661912916dfc4838584c00758244f15eda0b89
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: e985d4bdb95c244faa9c8d5e6ebd5a1f8c8d7107
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674770"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65197051"
 ---
 # <a name="investigating-lateral-movement-paths-with-ata"></a>使用 ATA 調查橫向移動路徑
 

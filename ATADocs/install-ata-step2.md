@@ -4,7 +4,7 @@ description: 安裝 ATA 的步驟 2 協助您設定 ATA 中心伺服器網域連
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 12/30/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a98181e80179de017dac803888be3e501e37c8bb
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 313e0ceb9a0d49a708930dd020481262e7471404
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674175"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195943"
 ---
 # <a name="install-ata---step-2"></a>安裝 ATA - 步驟 2
 

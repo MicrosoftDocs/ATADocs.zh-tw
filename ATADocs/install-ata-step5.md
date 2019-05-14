@@ -4,7 +4,7 @@ description: 安裝 ATA 的步驟 5 協助您設定 ATA 閘道的設定。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7543b3512b6fb5e512dd7d6c1fab9874c444aa7e
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: c0f15942dd3888d092d8236b78261de1645e5dc0
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674328"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195730"
 ---
 # <a name="install-ata---step-5"></a>安裝 ATA - 步驟 5
 

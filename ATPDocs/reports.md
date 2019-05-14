@@ -4,7 +4,7 @@ description: 描述如何在 Azure ATP 中產生報表以監視您的網路。
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 11/26/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2c2d6b1a-fc8c-4ff7-b07d-64ce6159f84d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2cee80ba0806882aa61dd0eab413c97039840cfe
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: d51447eafcd6e267fef65798ff25e2f75fb71ec2
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674549"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196485"
 ---
 # <a name="azure-atp-reports"></a>Azure ATP 報表
 

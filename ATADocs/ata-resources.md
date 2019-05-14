@@ -4,7 +4,7 @@ description: 提供 ATA 資源、影片、使用者入門、部署和整備藍�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 7/15/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 42a1a34f-ed6b-4538-befb-452168a30e8c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 65d1e9070ff049bf2062e2dbeb2c5ec97b19e178
-ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
+ms.openlocfilehash: f83b0e7576a1edbf3e973889cf06d5bc325ae519
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58638961"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196214"
 ---
 # <a name="ata-readiness-roadmap"></a>ATA 整備藍圖 
 

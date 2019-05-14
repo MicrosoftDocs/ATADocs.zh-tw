@@ -4,7 +4,7 @@ description: 提供從 Azure ATP 傳送到您 SIEM 的可疑活動記錄檔範�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 04/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: aff4bd1173b0fedbd1ff597a246ec6e4ad00e0a8
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.openlocfilehash: e7ad6563005d978637038592de6acf53240c5927
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59745716"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196884"
 ---
 # <a name="azure-atp-siem-log-reference"></a>Azure ATP SIEM 記錄檔參考
 

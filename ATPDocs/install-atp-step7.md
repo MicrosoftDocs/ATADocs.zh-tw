@@ -4,7 +4,7 @@ description: 設定偵測排除範圍和 Honeytoken 使用者。
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 12/02/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 1ad5e923-9bbd-4f56-839a-b11a9f387d4b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8ad35213c63b5b17166dc93336bc68889865fe53
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 0fdf6b312c51949a1a104336518cc55f924020aa
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58673598"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65197138"
 ---
 # <a name="configure-detection-exclusions-and-honeytoken-accounts"></a>設定偵測排除範圍和 Honeytoken 帳戶
 

@@ -4,7 +4,7 @@ description: 描述使用 ATA 設定 Windows 事件轉送的選項
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8366a8cf451cd44eab535a3e1e3c608ea43bee12
-ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
+ms.openlocfilehash: 825185a2aaf792e6b9c1fe58e022174c2f98bb0c
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58638995"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196821"
 ---
 # <a name="configuring-windows-event-forwarding"></a>設定 Windows 事件轉送
 

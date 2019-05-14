@@ -4,7 +4,7 @@ description: 描述在環境中成功部署 ATA 的需求
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 9/27/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8d1db39dfe29b1641d2eb94ebf7afd5cea55535f
-ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
+ms.openlocfilehash: ec1e15804aed63209b1cd675c902fc91dab376bd
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58639148"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196696"
 ---
 # <a name="ata-prerequisites"></a>ATA 必要條件
 

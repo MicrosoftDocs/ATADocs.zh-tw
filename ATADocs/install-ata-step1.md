@@ -4,7 +4,7 @@ description: 安裝 ATA 的第一步驟是下載並安裝 ATA 中心到您所選
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 03/07/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7ff9f08ca231f64076e29250ae8d09f192d8cf4e
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 25ccbe5c1cd37a46e88335fc1e293b0e426ced4e
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674566"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196090"
 ---
 # <a name="install-ata---step-1"></a>安裝 ATA - 步驟 1
 

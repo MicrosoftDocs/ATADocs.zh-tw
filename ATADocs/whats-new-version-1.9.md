@@ -4,7 +4,7 @@ description: 列出 ATA 1.9 版的新功能以及已知問題
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/25/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 51de491c-49ba-4aff-aded-cc133a8ccf0b
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 86be699ab8dab1d7be728ccc6190d086f154a9a0
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: b10c2814fcac064d50bce292e86397ea5a0da21e
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674400"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196053"
 ---
 # <a name="whats-new-in-ata-version-19"></a>ATA 1.9 版的新功能
 

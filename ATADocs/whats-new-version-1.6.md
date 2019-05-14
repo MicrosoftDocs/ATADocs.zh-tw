@@ -4,7 +4,7 @@ description: 列出 ATA 1.6 版的新功能以及已知問題
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 01/23/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 27b139e5-12b9-4953-8f53-eb58e8ce0038
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: fbb9f413c23eaec0157672c32eeafca758ce7736
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 3ef4f8061970c1d69b9f25479d762bb4c423a4fd
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675365"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196968"
 ---
 # <a name="whats-new-in-ata-version-16"></a>ATA 1.6 版的新功能
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。

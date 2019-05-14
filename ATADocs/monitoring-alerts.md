@@ -4,7 +4,7 @@ description: 描述如何使用 ATA 記錄檔來疑難排解問題
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
+manager: rkarlin
 ms.date: 02/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b04fb8a4-b366-4b55-9d4c-6f054fa58a90
 ms.reviewer: elofek
 ms.suite: ems
-ms.openlocfilehash: abf42792620035e0427c3cc517094fa859aae5a5
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 319d6d4eb24a6d3b373c6c4cb5c534ee98e9bd55
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675093"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195802"
 ---
 # <a name="understanding-ata-monitoring-alerts"></a>了解 ATA 監視警示
 

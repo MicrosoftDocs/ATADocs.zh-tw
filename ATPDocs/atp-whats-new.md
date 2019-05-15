@@ -4,34 +4,50 @@ description: 描述 Azure ATP 最新版本並提供各版本新功能的詳細�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
-ms.date: 04/14/2019
+manager: rkarlin
+ms.date: 05/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 426f89a61d2cdcd5b52d12e8c7a9c2cfede69940
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.openlocfilehash: 86c76a14403e7539156c7f882a30d022842a5771
+ms.sourcegitcommit: fa9b880e52d4b615409cc247fc73993407df0ae5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59577275"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226792"
 ---
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能
+
+## <a name="azure-atp-release-276"></a>Azure ATP 2.76 版
+
+發行日期：2019 年 5 月 6 日
+
+- 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
+
+## <a name="azure-atp-release-275"></a>Azure ATP 2.75 版
+
+發行日期：2019 年 4 月 28 日
+
+- **功能增強：機密實體**<br> 從此版本 (2.75) 開始，由 Azure ATP 識別為 Exchange Server 的機器現在會被自動標示為**機密**。  
+
+    因為運作方式如 Exchange Server 的清單而被自動標示為**機密**的實體原會列出此分類作為其被標示的原因。 
+
+- 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-274"></a>Azure ATP 2.74 版
 
 將於 2019 年 4 月 14 日發佈
 
-- 此版本包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-273"></a>Azure ATP 2.73 版
 
 將於 2019 年 4 月 10 日發佈
 
-- 此版本包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-272"></a>Azure ATP 2.72 版
 
@@ -42,7 +58,7 @@ ms.locfileid: "59577275"
 
     請參閱[橫向移動路徑](use-case-lateral-movement-path.md)以深入了解 Azure ATP 如何使用 LMP 來呈現針對您環境中每個實體的存取風險。   
 
-- 此版本還包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-271"></a>Azure ATP 2.71 版
 
@@ -59,7 +75,7 @@ ms.locfileid: "59577275"
 - **功能增強：以使用者為基礎的警示排除**<br>
 延伸警示排除選項現在允許將特定使用者從特定警示排除。 排除有助於避免使用或設定特定內部軟體類型重複觸發良性安全性警訊的情況。
 
-- 此版本還包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-270"></a>Azure ATP 2.70 版
 發行日期：2019 年 3 月 17 日
@@ -74,7 +90,7 @@ ms.locfileid: "59577275"
 
 - **其他健全狀況警示案例：Azure ATP 感應器服務無法啟動**<br>目前假如因為網路擷取驅動程式發生問題，導致 Azure ATP 感應器無法啟動，便會觸發感應器健全狀況警示。 如需關於 Azure ATP 記錄及如何使用的詳細資訊，請參閱[使用 Azure ATP 記錄針對 Azure ATP 進行疑難排解](troubleshooting-atp-using-logs.md)。 
   
-- 此版本還包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-269"></a>Azure ATP 2.69 版
 發行日期：2019 年 3 月 10 日
@@ -87,7 +103,7 @@ ms.locfileid: "59577275"
 
     為了說明及讓您更輕鬆地對應 Azure ATP 安全性警訊及所熟悉 MITRE ATT&CK Matrix 之間的關聯性，我們將相關的 MITRE 技術新增到了 Azure ATP 安全性警訊清單。 這項新增的參考可供您更輕鬆地了解觸發 Azure ATP 安全性警訊時，可能使用的可疑攻擊技術。 深入了解 [Azure ATP 安全性警訊指南](suspicious-activity-guide.md)。  
 
-- 此版本還包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-268"></a>Azure ATP 2.68 版
 發行日期：2019 年 3 月 3 日
@@ -101,7 +117,7 @@ ms.locfileid: "59577275"
 
     [逐步執行實驗室](atp-playbook-lab-overview.md)的設計目的是要確保您花費最少的時間進行建置，而將較多時間用在了解您的威脅局勢，以及可用的 Azure ATP 警示和防護。 我們很樂意收到您的意見反應。
 
-- 此版本還包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-267"></a>Azure ATP 2.67 版
 發行日期：2019 年 2 月 24 日
@@ -118,7 +134,7 @@ ms.locfileid: "59577275"
 - **功能增強：網路對應偵察 (DNS) 警示** <br>
     新的偵測類型已新增到網路對應偵察 (DNS) 警示。 除了偵測可疑的 AXFR 要求之外，Azure ATP 現在也會偵測源自非 DNS 伺服器且使用過量要求的可疑要求類型。
 
- - 此版本還包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+ - 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-266"></a>Azure ATP 2.66 版
 發行日期：2019 年 2 月 17 日
@@ -126,7 +142,7 @@ ms.locfileid: "59577275"
 - **功能增強：可疑的 DCSync 攻擊 (目錄服務的複寫) 警示**<br>
 已針對此安全性警示進行使用方面性的改進，包括已修正的描述、佈建額外的來源資訊、新資訊圖表與更多辨識項。 深入了解[可疑 DCSync 攻擊 (目錄服務的複寫)](atp-domain-dominance-alerts.md#suspected-dcsync-attack-replication-of-directory-services-external-id-2006) 安全性警示。 
 
-- 此版本還包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-265"></a>Azure ATP 2.65 版
 發行日期：2019 年 2 月 10 日
@@ -141,7 +157,7 @@ Azure ATP [可疑的 NTLM 轉送攻擊 (Exchange 帳戶) - 預覽](atp-lateral-m
 此警示現在已 GA (正式運作)。 如需詳細資訊與警示功能，請參閱[透過 SMB 的資料外流警示頁面](atp-exfiltration-alerts.md#data-exfiltration-over-smb-external-id-2030)。
 
 
-- 此版本還包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-264"></a>Azure ATP 2.64 版
 2019 年 2 月 4 日發行
@@ -162,7 +178,7 @@ Azure ATP [可疑的 NTLM 轉送攻擊 (Exchange 帳戶) - 預覽](atp-lateral-m
     - [可疑的 Metasploit 入侵架構使用](atp-compromised-credentials-alerts.md#suspected-use-of-metasploit-hacking-framework-external-id-2034)
     - [可疑的 WannaCry 勒索軟體攻擊](atp-compromised-credentials-alerts.md#suspected-wannacry-ransomware-attack-external-id-2035)
 
-- 此版本還包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 
 ## <a name="azure-atp-release-263"></a>Azure ATP 2.63 版
@@ -186,7 +202,7 @@ Azure ATP 帳戶列舉偵察偵測現在會偵測使用 Kerberos 和 NTLM 的列
 - **Windows Server 2019 LSASS 問題和 Azure ATP**<br>
 為了回應客戶對於搭配執行 Windows Server 2019 之網域控制站使用 Azure ATP 所提出的意見反應，此更新包含了額外的邏輯，可避免在 Windows Server 2019 電腦上觸發回報的行為。 雖然我們規劃在之後的 Azure ATP 更新中為 Windows Server 2019 推出完整的 Azure ATP 感應器支援，但目前並**不**支援在 Windows Servers 2019 上安裝和執行 Azure ATP。 如果要深入了解，請參閱 [Azure ATP 感應器需求](atp-prerequisites.md#azure-atp-sensor-requirements)。 
 
-- 此版本還包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 
 ## <a name="azure-atp-release-262"></a>Azure ATP 2.62 版
@@ -198,7 +214,7 @@ Azure ATP 的[透過 DNS 執行遠端程式碼](atp-lateral-movement-alerts.md#r
 - **功能增強：感應器更新延遲 72 小時** <br> 變更選項使所選感應器的感應器更新，於每次 Azure ATP 更新推出之後延遲 72 小時 (而不是先前延遲 24 小時)。 如需設定指示，請參閱 [Azure ATP 感應器更新](sensor-update.md)。 
 
 
-- 此版本還包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-261"></a>Azure ATP 2.61 版
 發行日期：2019 年 1 月 13 日
@@ -227,18 +243,18 @@ Azure ATP 安全性警訊文件已增強並擴充，現在其中包含更優異�
     - [調查電腦](investigate-a-computer.md)
     - [調查使用者](investigate-a-user.md)
 
-- 此版本還包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 
 ## <a name="azure-atp-release-260"></a>Azure ATP 2.60 版
 發行日期：2019 年 1 月 6 日
 
-- 此版本包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-259"></a>Azure ATP 2.59 版
 發行日期：2018 年 12 月 16 日
 
-- 此版本包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 
 ## <a name="azure-atp-release-258"></a>Azure ATP 2.58 版
@@ -266,7 +282,7 @@ Azure ATP 安全性警訊文件已增強並擴充，現在其中包含更優異�
 - **大型橫向移動路徑映像增強功能**<br>
 在檢視大型橫向移動路徑時，Azure ATP 現在只會將連線到選取之實體的節點醒目提示，而不會將其他節點模糊處理。 這項變更可大幅提升大型 LMP 轉譯的速度。 
 
-- 此版本包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-257"></a>Azure ATP 2.57 版
 發行日期：2018 年 12 月 2 日
@@ -284,7 +300,7 @@ Azure ATP 的[可疑黃金票證使用 - 票證異常](suspicious-activity-guide
 
   若要深入了解 Azure ATP 執行個體，請參閱[建立您的 Azure ATP 執行個體](install-atp-step1.md)。 
 
-- 此版本包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-256"></a>Azure ATP 2.56 版
 發行日期：2018 年 11 月 25 日
@@ -301,7 +317,7 @@ Azure ATP 的[可疑黃金票證使用 - 票證異常](suspicious-activity-guide
 - **文件增強：橫向移動路徑、安全性警示名稱**<br> 已對 Azure ATP 文章進行新增與更新，其包括橫向移動路徑的描述及功能說明，並且已為所有舊安全性警訊名稱新增新名稱和 externalId 的名稱對應。 
   - 請參閱 [Azure ATP 橫向移動路徑](use-case-lateral-movement-path.md)、[調查橫向移動路徑](investigate-lateral-movement-path.md)，以及[安全性警訊指南](suspicious-activity-guide.md)以深入了解。   
 
-- 此版本包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-255"></a>Azure ATP 2.55 版
 發行日期：2018 年 11 月 18 日
@@ -309,7 +325,7 @@ Azure ATP 的[可疑黃金票證使用 - 票證異常](suspicious-activity-guide
 - **安全性警示：通過 DNS 的可疑通訊 - 一般可用性**<br>
 Azure ATP [通過 DNS 的可疑通訊](suspicious-activity-guide.md) 安全性警訊現已正式推出。 <br> 通常，大多數組織中的 DNS 通訊協定不會受到監視，而且很少會因惡意活動而遭到封鎖。 這讓攻擊者有機會在遭入侵的電腦上濫用 DNS 通訊協定。 透過 DNS 的惡意通訊可用來竊取資料、命令和控制攻擊和/或規避公司網路限制。
 
-- 此版本還包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-254"></a>Azure ATP 2.54 版
 發行日期：2018 年 11 月 11 日
@@ -318,7 +334,7 @@ Azure ATP [通過 DNS 的可疑通訊](suspicious-activity-guide.md) 安全性�
 
 - **文件增強：SIEM 記錄檔更新、已知問題的指引**<br>    已將 externalId 對應和其他說明，新增至 SIEM 記錄檔描述。 若要深入了解，請參閱 [SIEM 記錄檔參考](cef-format-sa.md)。 <br>已額外新增目前尚未解決之已知問題指南的文章。 若要深入了解，請參閱 [Azure ATP 已知問題](known-issues.md)。  
 
-- 此版本包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-253"></a>Azure ATP 2.53 版
 發行日期：2018 年 11 月 4 日
@@ -329,7 +345,7 @@ Azure ATP 的[可疑的驗證失敗安全性警示](suspicious-activity-guide.md
 
 - **功能增強：傳送測試 Syslog 訊息**<br>   在 SIEM 設定程序期間可傳送測試 Syslog 訊息的新功能。 若要深入了解，請參閱[與 Syslog 整合](setting-syslog.md)。 
 
-- 此版本還包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-252"></a>Azure ATP 2.52 版
 發行日期：2018 年 10 月 28 日
@@ -350,14 +366,14 @@ Azure ATP 的[遠端程式碼執行嘗試](suspicious-activity-guide.md)現在�
   - [Azure ATP 活動篩選](atp-activities-search.md) 
   - [Azure ATP 文件](https://docs.microsoft.com/azure-advanced-threat-protection/)  
 
-- 此版本還包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-251"></a>Azure ATP 2.51 版
 發行日期：2018 年 10 月 21 日
 
 - 您現在可以從 Azure ATP 入口網站[設定](integrate-wd-atp.md#how-to-integrate-azure-atp-with-windows-defender-atp)畫面啟用/停用 **WD-ATP 整合**。 (Azure ATP 使用者必須是 AAD 租用戶的全域或安全性系統管理員，才能使用這項功能)。
 
-- 此版本還包括內部感應器基礎結構的數個功能改進與 Bug 修正。
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-250"></a>Azure ATP 2.50 版
 發行日期：2018 年 10 月 14 日

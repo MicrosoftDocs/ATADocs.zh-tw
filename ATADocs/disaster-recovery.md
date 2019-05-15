@@ -4,20 +4,20 @@ description: 描述如何於災害發生後快速復原 ATA 功能
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
-ms.date: 9/05/2018
+manager: rkarlin
+ms.date: 05/02/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 0bcbd23b045f6d261026a914f37f3429513837ff
-ms.sourcegitcommit: 62b631f64a639f5df04bf805755f26c69b40e8e4
+ms.openlocfilehash: e42811432fe01e0eddcfe0acf5dc1c47a3f34379
+ms.sourcegitcommit: 4fdee32cea25e126db91ba89f09c40a3bbbc7b3b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58638876"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65044047"
 ---
 # <a name="ata-disaster-recovery"></a>ATA 災害復原
 
@@ -53,6 +53,7 @@ ms.locfileid: "58638876"
         1. 移至 **C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**。 
         2. 執行 `mongo.exe ATA` 
         3. 執行此命令以移除預設系統設定檔：`db.SystemProfile.remove({})`
+        4. 輸入下列命令以離開 Mongo 殼層並返回命令提示：`exit`
     2. 使用步驟 1 中的備份檔案執行命令：`mongoimport.exe --db ATA --collection SystemProfile --file "<SystemProfile.json backup file>" --upsert`。</br>
     如需尋找並匯入備份檔案的完整解釋，請參閱[匯出和匯入 ATA 組態](ata-configuration-file.md)。 
     3. 啟動 ATA 中心服務。

@@ -4,26 +4,26 @@ description: 描述如何使用 Azure 進階威脅防護 (ATP) 標記機密帳�
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
-ms.date: 10/04/2018
+manager: rkarlin
+ms.date: 04/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d7f0d0d677692aeb7406824f5bd18e493934a195
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 2342a10f932664568065d2ef906d863a875c8096
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58673702"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65196452"
 ---
 # <a name="working-with-sensitive-accounts"></a>使用機密帳戶
 
-## <a name="sensitive-groups"></a>敏感性群組
+## <a name="sensitive-entites"></a>機密實體
 
-Azure ATP 將下列群組清單視為「機密」。 屬於這些群組的任何實體都視為具有敏感性：
+Azure ATP 將下列群組清單視為**機密**。 屬於任一這些群組的任何實體都會被視為機密：
 
 - Administrators
 - Power Users
@@ -41,13 +41,14 @@ Azure ATP 將下列群組清單視為「機密」。 屬於這些群組的任何
 - 企業唯讀網域控制站 
 - Schema Admins 
 - Enterprise Admins
+- Microsoft Exchange Servers
 
   > [!NOTE]
   > 在 2018 年 9 月之前，Azure ATP 也會自動將遠端桌面使用者視為機密。 在此日期之後新增的遠端桌面實體或群組即不會再自動標示為機密，但此日期之前新增的遠端桌面實體或群組，可能仍會維持機密標示。 您現在可以手動變更這項機密設定。  
 
 ## <a name="tagging-sensitive-accounts"></a>標記機密帳戶
 
-除了這些群組，您可以手動將群組或帳戶標記為機密，以增強偵測。 這一點很重要，因為部分 Azure ATP 偵測 (例如機密群組修改偵測和橫向移動路徑) 會仰賴於哪些群組和帳戶被視為機密。 您可以手動將其他使用者或群組標記為機密，例如董事會成員、公司主管、業務總監等，而 Azure ATP 會將他們視為機密。
+除了這些群組，您可以手動將群組或帳戶標記為機密，以增強偵測。 這一點很重要，因為部分 Azure ATP 偵測 (例如機密群組修改偵測和橫向移動路徑) 仰賴於哪些群組和帳戶被視為機密。 您可以手動將其他使用者或群組標記為機密，例如董事會成員、公司主管、業務總監等，而 Azure ATP 會將他們視為機密。
 
 1.  在 Azure ATP 入口網站中，按一下功能表列的 [設定] 齒輪。
 

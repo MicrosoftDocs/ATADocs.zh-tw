@@ -4,7 +4,7 @@ description: 列出 ATA 1.7 版的新功能以及已知問題
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/23/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: be9ee613-4eb3-40f1-8973-e7f0a707ff57
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 34c96fd2a9f517749655d27aba553b5aa6d94e25
-ms.sourcegitcommit: b468d9060eb784c16b64a9cc46dbe2d246046cdd
+ms.openlocfilehash: 0570ac2574dfca2fbc22a332228d52fcd429652d
+ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58674821"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65195963"
 ---
 # <a name="whats-new-in-ata-version-17"></a>ATA 1.7 版的新功能
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。
@@ -89,7 +89,7 @@ ATA 1.7 的更新提供下列各方面的改良︰
 
 從 ATA 1.7 更新為 ATA 1.7 update 1 時，自動 ATA 閘道更新處理序和使用閘道套件的閘道手動更新可能都沒有如預期運作。
 如果 ATA 中心使用的憑證在更新 ATA 前經過變更，即可能發生此問題。
-若要確認此問題，請檢閱 ATA 閘道上的 **Microsoft.Tri.Gateway.Updater.log**，並尋找下列例外狀況：**System.Net.Http.HttpRequestException:傳送要求時發生錯誤。---> System.Net.WebException:已關閉基礎連線：傳送時發生未預期的錯誤。---> System.IdentityModel.Tokens.SecurityTokenValidationException:無法驗證憑證指紋**
+若要確認此問題，請檢閱 ATA 閘道上的 **Microsoft.Tri.Gateway.Updater.log**，並尋找下列例外狀況：**System.Net.Http.HttpRequestException:傳送要求時發生錯誤。---> System.Net.WebException:底層連線已關閉：傳送時發生未預期的錯誤。---> System.IdentityModel.Tokens.SecurityTokenValidationException:無法驗證憑證指紋**
 
 ![ATA 更新閘道錯誤](media/17update_gatewaybug.png)
 

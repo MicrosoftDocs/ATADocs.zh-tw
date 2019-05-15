@@ -4,20 +4,20 @@ d|Description: This article explains the Azure ATP alerts issued when attacks ty
 keywords: ''
 author: mlottner
 ms.author: mlottner
-manager: barbkess
-ms.date: 03/17/2019
+manager: rkarlin
+ms.date: 05/01/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2b2d78f7f9f6191f13a9a187ce7e1e7f60dfcaf7
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.openlocfilehash: 8e2b07c8fa0f52bcb3c5fd9faa62672c033cf803
+ms.sourcegitcommit: 1676cc7178cafcdd9a8e013c4c2e1f7902713a27
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59577257"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "64993737"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>教學課程：偵察警訊  
 
@@ -150,7 +150,7 @@ DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵�
 
 請務必保護您的內部 DNS 伺服器，以防止發生使用 AXFR 查詢的未來攻擊。
 
-- 您可以停用區域傳輸，或[限制區域傳輸](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee649273(v=ws.10))僅針對指定的 IP 位址，來保護您的內部 DNS 伺服器，以防止發生使用 DNS 的偵察。 「修改區域傳輸」是檢查清單中的一個工作，應該加以解決才能[保護 DNS 伺服器免受內部和外部攻擊](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee649273(v=ws.10))。
+- 您可以停用區域傳輸，或[限制區域傳輸](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee649273(v=ws.10))僅針對指定的 IP 位址，來保護您的內部 DNS 伺服器，以防止發生使用 DNS 的偵察。 「修改區域傳輸」是檢查清單中的一項工作，應該加以解決才能[保護 DNS 伺服器免受內部和外部攻擊](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee649273(v=ws.10))。
 
 ## <a name="security-principal-reconnaissance-ldap-external-id-2038---preview"></a>安全性主體偵察 (LDAP) (外部識別碼 2038) - 預覽
 
@@ -162,7 +162,7 @@ DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵�
 
 **學習期間**
 
-每部電腦 10 天，從在電腦上觀察到第一個事件那天起。 
+每部電腦 15 天，從在電腦上觀察到第一個事件那天起。 
 
 **TP、B-TP 或 FP**
 

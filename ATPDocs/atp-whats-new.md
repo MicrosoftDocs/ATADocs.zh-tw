@@ -5,21 +5,44 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 05/07/2019
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
-ms.reviewer: itargoet
+ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 86c76a14403e7539156c7f882a30d022842a5771
-ms.sourcegitcommit: fa9b880e52d4b615409cc247fc73993407df0ae5
+ms.openlocfilehash: 8f9426a51f0bd709685c365a39d2f4aad1dbf8cb
+ms.sourcegitcommit: 122974e5bec49a1d613a38debc37d91ff838b05f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226792"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65933673"
 ---
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能
+
+## <a name="azure-atp-release-278"></a>Azure ATP 2.78 版
+
+發行日期：2019 年 5 月 19 日
+
+- **功能增強：機密實體**<br> Exchange 伺服器的手動機密標記
+
+    您現在可以在設定期間手動將實體標記為 Exchange Server伺服器。
+
+    若要手動將實體標記為 Exchange 伺服器：
+    1. 在 Azure ATP 入口網站中，存取 [設定]功能表。
+    2. 在 [偵測] 下，選取 [實體標記]，然後選取 [機密]。
+    3. 選取 [Exchange 伺服器]，然後新增您要標記的實體。
+
+    將某部電腦標記為 Exchange 伺服器之後，系統會將它標記為機密，並顯示它已被標記為 Exchange 伺服器。  「機密」標記將會出現在該電腦的實體設定檔中，而且該電腦在所有偵測中都會被視為以「機密」帳戶與「橫向移動路徑」為基礎。
+
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
+
+## <a name="azure-atp-release-277"></a>Azure ATP 2.77 版
+
+發行日期：2019 年 5 月 12 日
+
+- 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-276"></a>Azure ATP 2.76 版
 

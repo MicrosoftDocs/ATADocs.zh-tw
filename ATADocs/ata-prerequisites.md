@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 9/27/2018
+ms.date: 05/12/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ec1e15804aed63209b1cd675c902fc91dab376bd
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: 153f53715bc33b735bb7cf2796dcb1f983d67915
+ms.sourcegitcommit: 5d93b0e59080c2d872672bf77a1a40c548c1016d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65196696"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65760322"
 ---
 # <a name="ata-prerequisites"></a>ATA 必要條件
 
@@ -34,7 +34,7 @@ ATA 是由 ATA 中心、ATA 閘道及 (或) ATA 輕量型閘道所組成。 如�
 ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003 和更新版本的樹系功能等級 (FFL)。
 
 
-[開始之前](#before-you-start)：本節列出在開始 ATA 安裝之前您應該收集的資訊以及您應該具備的帳戶和網路實體。
+[開始之前](#before-you-start)：此節列出在開始 ATA 安裝之前您應該收集的資訊以及您應該擁有的帳戶和網路實體。
 
 [ATA 中心](#ata-center-requirements)：此節列出 ATA 中心的硬體與軟體需求，以及您需要在 ATA 中心伺服器上做的設定。
 
@@ -47,7 +47,7 @@ ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003
 ![ATA 架構圖](media/ATA-architecture-topology.jpg)
 
 ## <a name="before-you-start"></a>開始之前
-本節列出在開始 ATA 安裝之前您應該收集的資訊以及您應該擁有的帳戶與網路實體。
+此節列出在開始 ATA 安裝之前您應該收集的資訊以及您應該擁有的帳戶與網路實體。
 
 
 -   在監視的網域中，具有所有物件讀取存取權的使用者帳戶和密碼。
@@ -65,9 +65,9 @@ ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003
 
 
 ## <a name="ata-center-requirements"></a>ATA 中心需求
-本節列出 ATA 中心的需求。
+此節列出 ATA 中心的需求。
 ### <a name="general"></a>一般
-ATA 中心可安裝在執行 Windows Server 2012 R2 或 Windows Server 2016 的伺服器上。 
+ATA 中心可安裝在執行 Windows Server 2012 R2、Windows Server 2016 或 Windows Server 2019 的伺服器上。 
 
  > [!NOTE]
  > ATA 中心不支援 Windows Server Core。
@@ -150,9 +150,9 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 > - 開始使用 ATA 1.8 版。ATA 閘道與輕量型閘道會管理自己的憑證，且不需要系統管理員互動來管理。
 
 ## <a name="ata-gateway-requirements"></a>ATA 閘道需求
-本節列出 ATA 閘道的需求。
+此節列出 ATA 閘道的需求。
 ### <a name="general"></a>一般
-ATA 閘道可安裝在執行 Windows Server 2012 R2 或 Windows Server 2016 (包括 Server Core) 的伺服器上。
+ATA 閘道可安裝在執行 Windows Server 2012 R2、Windows Server 2016 或 Windows Server 2019 (包括 Server Core) 的伺服器上。
 ATA 閘道可以安裝在屬於網域或工作群組的成員伺服器上。
 ATA 閘道可以用來監視具 Windows Server 2003 或更新版本之網域功能等級的網域控制站。
 
@@ -230,9 +230,9 @@ ATA 閘道需要至少一個管理介面卡和至少一個擷取介面卡︰
 >   -   NetBIOS (UDP 連接埠 137) (針對解析目的)
 
 ## <a name="ata-lightweight-gateway-requirements"></a>ATA 輕量型閘道需求
-本節列出 ATA 輕量型閘道的需求。
+此節列出 ATA 輕量型閘道的需求。
 ### <a name="general"></a>一般
-ATA 輕量型閘道可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 (包含 Core 但不含 Nano) 的網域控制站上安裝。
+ATA 輕量型閘道可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 或 Windows Server 2019 (包含 Core 但不含 Nano) 的網域控制站上安裝。
 
 網域控制站可以是唯讀網域控制站 (RODC)。
 

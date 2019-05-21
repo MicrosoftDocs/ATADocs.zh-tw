@@ -5,25 +5,25 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 03/17/2019
+ms.date: 05/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: b09adce3-0fbc-40e3-a53f-31f57fe79ca3
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: cc560bb061be672bb5db66076de8212be40f34d3
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: 95579a90534a04449edd08968948498c4d33bb64
+ms.sourcegitcommit: 5d93b0e59080c2d872672bf77a1a40c548c1016d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65193583"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65760313"
 ---
 # <a name="configure-azure-atp-to-make-remote-calls-to-sam"></a>設定 Azure ATP 對 SAM 發出遠端呼叫
 Azure ATP [橫向移動路徑](use-case-lateral-movement-path.md)偵測有賴於識別特定電腦上本機系統管理員的查詢。 這些查詢是在 Azure ATP 安裝期間透過[步驟 2.連線到 AD](install-atp-step2.md) 中建立的 Azure ATP 服務帳戶，使用 SAM-R 通訊協定來執行。
 
 ## <a name="configure-sam-r-required-permissions"></a>設定 SAM-R 所需的權限
-若要確保 Windows 用戶端和伺服器允許 Azure ATP 帳戶執行 SAM-R，您必須修改 [群組原則]，在 [網路存取] 原則列出的已設定帳戶之外新增 Azure ATP 服務帳戶。
+若要確保 Windows 用戶端和伺服器允許 Azure ATP 帳戶執行 SAM-R，您必須修改 [群組原則]，在 [網路存取] 原則列出的已設定帳戶之外新增 Azure ATP 服務帳戶。 務必將群組原則套用到所有電腦。 
 
 > [!Note]
 > 在施行此類新原則之前，請務必確認您環境的安全，以及任何變更都不會影響應用程式的相容性。 如果要這麼做，請先予以啟用，然後以稽核模式驗證所提出變更的相容性，再對您的生產環境進行變更。

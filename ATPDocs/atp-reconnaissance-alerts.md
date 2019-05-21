@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 05/01/2019
+ms.date: 05/20/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8e2b07c8fa0f52bcb3c5fd9faa62672c033cf803
-ms.sourcegitcommit: 1676cc7178cafcdd9a8e013c4c2e1f7902713a27
+ms.openlocfilehash: 95b34c65c0f13c58034e29acb662c77d65253c70
+ms.sourcegitcommit: 122974e5bec49a1d613a38debc37d91ff838b05f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/02/2019
-ms.locfileid: "64993737"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65933676"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>教學課程：偵察警訊  
 
@@ -97,7 +97,16 @@ ms.locfileid: "64993737"
 ### <a name="understand-the-scope-of-the-breach"></a>了解缺口的範圍
 
 1. 調查來源電腦
-2. 若任何猜測意圖符合現有的帳戶名稱，攻擊者即可得知帳戶存在於您的環境中，且可以使用暴力密碼破解，嘗試使用所探索使用者名稱來存取您的網域。 使用[使用者調查指南](investigate-a-user.md)調查現有的帳戶。 
+1. 若任何猜測意圖符合現有的帳戶名稱，攻擊者即可得知帳戶存在於您的環境中，且可以使用暴力密碼破解，嘗試使用所探索使用者名稱來存取您的網域。 使用[使用者調查指南](investigate-a-user.md)調查現有的帳戶。
+1. 若驗證是使用 NTLM 進行的，在某些情況下，可能沒有來源電腦嘗試存取之伺服器的足夠資訊可用。 Azure ATP 會根據 Windows 事件 4776 擷取來源電腦資料，此事件包含來源電腦名稱。
+
+    若要取得來源電腦名稱，請務必在相關網域控制站上啟用 NTLM 稽核。
+
+    若要啟用 NTLM 稽核，請開啟 Windows 事件 8004 (這是 NTLM 驗證事件，其中包含來源電腦及其嘗試存取的使用者帳戶和伺服器相關資訊)。
+
+    當您了解驗證確認是由哪一部伺服器傳送時，您可以透過檢查事件 (例如 Windows 事件 4624) 對伺服器進行調查，以進一步了解驗證程序。 
+
+    檢查伺服器是否使用任何開放的連接埠向網際網路公開。 例如，伺服器是否使用 RDP 向網際網路開放？ 
 
 ### <a name="suggested-remediation-and-steps-for-prevention"></a>建議的補救和預防步驟
 

@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/15/2019
+ms.date: 05/20/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: aa4f9c18e0695092ddbaa9ef8505b403e206cb8c
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: a977ff49c385ababfd753d05caf3518825e9def9
+ms.sourcegitcommit: 122974e5bec49a1d613a38debc37d91ff838b05f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65196852"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65933640"
 ---
 # <a name="tutorial-compromised-credential-alerts"></a>教學課程：認證遭入侵警訊  
 
@@ -103,10 +103,13 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 1. 調查來源電腦。  
 2. 在警示頁面上，檢查是否已成功猜對任何使用者。
     - 針對成功猜對的每位使用者，請[檢查其設定檔](investigate-a-user.md)來進一步調查。
-3. 如果警示出現多次，且使用 NTLM 執行驗證，有時來源電腦嘗試存取的伺服器相關資訊會不足。
-    1. 若要取得這項資訊，請務必對涉及的網域控制站啟用 NTLM 稽核。  
-    2. 若要啟用 NTLM 稽核，請開啟事件 8004 (這是 NTLM 驗證事件，其中包含來源電腦及其嘗試存取的使用者帳戶和伺服器相關資訊)。
-    3. 當您了解驗證確認是由哪一部伺服器傳送時，您可以透過檢查事件 (例如事件 4624) 對伺服器進行調查，以進一步了解驗證程序。
+1. 若驗證是使用 NTLM 進行的，在某些情況下，可能沒有來源電腦嘗試存取之伺服器的足夠資訊可用。 Azure ATP 會根據 Windows 事件 4776 擷取來源電腦資料，此事件包含來源電腦名稱。
+
+    若要取得來源電腦名稱，請務必在相關網域控制站上啟用 NTLM 稽核。
+    
+    若要啟用 NTLM 稽核，請開啟 Windows 事件 8004 (這是 NTLM 驗證事件，其中包含來源電腦及其嘗試存取的使用者帳戶和伺服器相關資訊)。
+    
+    當您了解驗證確認是由哪一部伺服器傳送時，您可以透過檢查事件 (例如 Windows 事件 4624) 對伺服器進行調查，以進一步了解驗證程序。 檢查伺服器是否使用任何開放的連接埠向網際網路公開。 例如，伺服器是否使用 RDP 向網際網路開放？
 
 **建議的補救和預防步驟**
 
@@ -124,6 +127,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 **描述**
 
 在暴力密碼破解攻擊中，攻擊者會嘗試使用許多不同密碼對不同帳戶進行驗證，直到找到至少一個帳戶的正確密碼。 找到後，攻擊者就可以使用該帳戶登入。  
+
 在此偵測中，當 Azure ATP 偵測到大量的簡單繫結驗證時，便會觸發警示。 此警示會偵測以下列方式執行的暴力密碼破解攻擊：在許多使用者之間「水平」使用少量密碼、只對一些使用者「垂直」使用大量密碼，或這兩個選項的任意組合。
 
 **TP、B-TP 或 FP**

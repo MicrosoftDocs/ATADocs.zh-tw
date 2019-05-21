@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 03/31/2019
+ms.date: 05/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 1ac873fc-b763-41d7-878e-7c08da421cb5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1489f1b24065a153734bdd46975576d469b57f24
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: 0c497d55142eb13867e904917aca890bc157ad63
+ms.sourcegitcommit: 122974e5bec49a1d613a38debc37d91ff838b05f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65196933"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65933698"
 ---
 # <a name="what-is-network-name-resolution"></a>什麼是網路名稱解析？
 
@@ -25,7 +25,7 @@ ms.locfileid: "65196933"
 
 使用 NNR，Azure ATP 就能在未經處理的活動 (包含 IP 位址)，以及涉及各活動的相關電腦間建立相互關聯。 根據未經處理的活動，Azure ATP 會分析電腦等實體，並針對可疑活動產生安全性警訊。
 
-若要將 IP 位址解析為電腦名稱，ATP 感應器會使用下列其中一種方法查詢 IP 後方之電腦名稱的 IP 位址：
+若要將 IP 位址解析為電腦名稱，Azure ATP 感應器會使用下列其中一種方法查詢 IP 後方之電腦名稱的 IP 位址：
 
 1. 透過 RPC 的 NTLM (TCP 連接埠 135)
 2. NetBIOS (UDP 連接埠 137)
@@ -77,11 +77,11 @@ ms.locfileid: "65196933"
 ### <a name="configuration-recommendations"></a>設定建議
 
 - NTLM 上的 RPC：
-    - 檢查是否已在環境中的所有電腦上針對來自 Azure ATP 感應器的連入通訊開放連接埠 135。
+    - 檢查是否已在環境中的所有電腦上針對來自 Azure ATP 感應器的連入通訊開放連接埠 TCP 135。
     - 檢查所有網路設定 (防火牆)，因為這可能會導致無法與相關通訊埠通訊。
 
 - NetBIOS：
-    - 檢查是否已在環境中的所有電腦上針對來自 Azure ATP 感應器的連入通訊開放連接埠 137。
+    - 檢查是否已在環境中的所有電腦上針對來自 Azure ATP 感應器的連入通訊開放連接埠 UDP 137。
     - 檢查所有網路設定 (防火牆)，因為這可能會導致無法與相關通訊埠通訊。
 - 反向 DNS：
     - 檢查感應器是否可以連線到 DNS 伺服器，以及是否已啟用反向查閱區域。

@@ -11,12 +11,12 @@ ms.technology: ''
 ms.assetid: a8afbd91-c888-4dfc-94ab-72e38745163e
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 03a7ab3be33d012aac49b4559af3e4baeaadbf79
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: 7ff497426d55dd9610082198257d3b393676385f
+ms.sourcegitcommit: ef6d041d5ecde7ec909fd0f90848ce422c0c4774
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65195704"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65613428"
 ---
 # <a name="support-for-microsoft-advanced-threat-analytics-ata-versions"></a>Microsoft Advanced Threat Analytics (ATA) 各版本的支援
 

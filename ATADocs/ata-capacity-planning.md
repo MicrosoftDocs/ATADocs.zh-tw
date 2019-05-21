@@ -11,12 +11,12 @@ ms.prod: advanced-threat-analytics
 ms.assetid: 1b5b24ff-0df8-4660-b4f8-64d68cc72f65
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 069f6b179ab48b2c19b06e1bbcc64f4336954574
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: cd6dbac4fec45b4e3bc3e4ee6818ac0a5e9d18a4
+ms.sourcegitcommit: ef6d041d5ecde7ec909fd0f90848ce422c0c4774
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65195851"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65613477"
 ---
 # <a name="ata-capacity-planning"></a>ATA 容量規劃
 

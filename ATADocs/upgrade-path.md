@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 04/29/2019
+ms.date: 05/14/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: 88720401-1fb2-4353-ad39-32bc0088f0de
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 44c9a8aedcda9964bd55fc637d8077e9caf49fe1
-ms.sourcegitcommit: 65f4bcd439ae3adb00522f54006f481b60da5373
+ms.openlocfilehash: 76ffdf048fd59fecba08b14083dca1e6b98236c5
+ms.sourcegitcommit: ef6d041d5ecde7ec909fd0f90848ce422c0c4774
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64909743"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65613416"
 ---
 # <a name="recommended-upgrade-path-for-ata"></a>ATA 的建議升級路徑
 
@@ -40,11 +40,6 @@ ms.locfileid: "64909743"
 |1.9|1.9.7312|
 |1.9 Update 1|1.9.7412|
 |1.9 Update 2|1.9.7478|
-
-## <a name="ata-version-upgrade-matrix"></a>ATA 版本升級矩陣
-
-![ATA 版本升級矩陣](./media/upgrade-path.png)
-
 
 
 ## <a name="see-also"></a>另請參閱

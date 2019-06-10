@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 03/31/2019
+ms.date: 05/22/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: de15c920-8904-4124-8bdc-03abd9f667cf
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 13bf3d9fb517c5ba20a6ec07f1cdf7e7e42ccb23
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: ad82a095d62de0c1d48abfa9d36fcf909dd68cd9
+ms.sourcegitcommit: 07abbd941d91299475df2af469ee5a9a99e07e0f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65196677"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264988"
 ---
 # <a name="azure-atp-lateral-movement-paths-lmps"></a>Azure ATP 橫向移動路徑 (LMP) 
 
@@ -31,7 +31,7 @@ Azure ATP 安全性見解的主要要素為橫向移動路徑或 LMP。 Azure AT
 
 ## <a name="where-can-i-find-azure-atp-lmps"></a>哪裡可以找到 Azure ATP LMP？
 
-Azure ATP 探索到位於 LMP 中的每個電腦或使用者設定檔都有 [橫向移動路徑] 索引標籤。在潛在 LMP 中永遠不會探索到沒有索引標籤的電腦及設定檔。 
+Azure ATP 探索到位於 LMP 中的每個電腦或使用者設定檔都有 [橫向移動路徑]  索引標籤。在潛在 LMP 中永遠不會探索到沒有索引標籤的電腦及設定檔。 
 
 ![[Azure ATP 橫向移動路徑 (LMP)] 索引標籤](./media/lateral-movement-path-tab.png)
 
@@ -39,7 +39,7 @@ Azure ATP 探索到位於 LMP 中的每個電腦或使用者設定檔都有 [橫
 - 敏感性使用者 - 顯示通往此使用者的潛在 LMP。
 - 非敏感性使用者及電腦 - 顯示與實體相關的潛在 LMP。 <br>
 
-每次按一下索引標籤時，Azure ATP 都會顯示最近探索到的 LMP。 每個潛在 LMP 都會在探索到之後儲存 48 小時。 並有 LMP 歷程記錄。 按一下 [檢視其他日期]，即可檢視過去探索到的較舊 LMP。 
+每次按一下索引標籤時，Azure ATP 都會顯示最近探索到的 LMP。 每個潛在 LMP 都會在探索到之後儲存 48 小時。 並有 LMP 歷程記錄。 按一下 [檢視其他日期]  ，即可檢視過去探索到的較舊 LMP。 
 
 ![Azure ATP 橫向移動路徑 (LMP) 顯示](./media/atp-lmp-complete.png)
 
@@ -71,7 +71,7 @@ LMP 現在可直接協助您進行調查流程。 Azure ATP 安全性警訊辨�
 
 - 確保人員只擁有必要資源的存取權。 在範例中，Ron Harper 大幅提高了 Nick Cowley 暴露度。 Ron Harper 需要包含在群組中嗎？ 可建立子群組來降低受橫向移動攻擊的風險嗎？
 
-**提示** - 若過去 48 小時內針對實體未偵測出潛在橫向移動路徑活動，請選擇 [檢視其他日期]，並檢查先前的潛在橫向移動路徑。 當探索到 LMP 時，永遠可使用 [通往敏感性使用者的 LMP 報告]，並會為您提供偵測到通往敏感性使用者的潛在橫向移動路徑相關資訊。 
+**提示** - 若過去 48 小時內針對實體未偵測出潛在橫向移動路徑活動，請選擇 [檢視其他日期]  ，並檢查先前的潛在橫向移動路徑。 當探索到 LMP 時，[通往敏感性使用者的 LMP 報告]  將會一律可用，並會為您提供偵測到通往敏感性使用者的潛在橫向移動路徑相關資訊。 
 
 **祕訣**：如需設定用戶端與伺服器以允許 Azure ATP 執行橫向移動路徑偵測所需之 SAM-R 作業的指示，請參閱[設定 SAM-R](install-atp-step8-samr.md)。
 

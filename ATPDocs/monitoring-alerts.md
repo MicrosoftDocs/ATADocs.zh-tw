@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 04/07/2019
+ms.date: 05/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: d0551e91-3b21-47d5-ad9d-3362df6d47c0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: bee49565645f463496c82f01d46e0aded6502b55
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: 46778e0dcafca7fcff8b7f7611a50ca0e23140d8
+ms.sourcegitcommit: b021f8dfc54e59de429f93cc5fc0d733d92b00b8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65196506"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66403566"
 ---
 # <a name="understanding-azure-atp-sensor-and-standalone-sensor-monitoring-alerts"></a>了解 Azure ATP 感應器和獨立感應器監視警示
 
@@ -33,7 +33,7 @@ ms.locfileid: "65196506"
 
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|由於所有已設定之網域控制站的連線問題，Azure ATP 感應器目前離線。|這會影響 Azure ATP 偵測由此 Azure ATP 感應器所監視之網域控制站相關可疑活動的能力。| 請確定網域控制站已啟動且正在執行，而且此 Azure ATP 感應器可以針對對它們開啟 LDAP 連線。|中型|
+|由於所有已設定之網域控制站的連線問題，Azure ATP 感應器目前離線。|這會影響 Azure ATP 偵測由此 Azure ATP 感應器所監視之網域控制站相關可疑活動的能力。| 請確定網域控制站已啟動且正在執行，而且此 Azure ATP 感應器可以針對對它們開啟 LDAP 連線。 此外，請務必在 [設定]  中針對每個部署的樹系設定目錄服務帳戶。|中型|
 
 ## <a name="allsome-of-the-capture-network-adapters-on-a-sensor-are-not-available"></a>感應器上的所有/部分擷取網路介面卡無法使用
 

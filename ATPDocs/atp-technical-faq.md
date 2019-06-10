@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 04/07/2019
+ms.date: 05/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c844aa445378643200997d4389a3bee1aae45099
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: 297df34b92ebbe1be93667d54eedd51a605e5bf1
+ms.sourcegitcommit: b021f8dfc54e59de429f93cc5fc0d733d92b00b8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65195509"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66403510"
 ---
 # <a name="azure-atp-frequently-asked-questions"></a>Azure ATP 常見問題集
 本文提供關於 Azure ATP 的常見問題與解答清單，並分成下列類別： 
@@ -90,7 +90,7 @@ Azure ATP 解決方案目前是獨立的供應項目。 它不是 Azure Active D
 環境中的每個網域控制站都應該由一個 ATP 感應器或獨立感應器所涵蓋。 如需詳細資訊，請參閱 [Azure ATP 感應器調整大小](atp-capacity-planning.md#sizing)。 
 
 ### <a name="does-azure-atp-work-with-encrypted-traffic"></a>Azure ATP 是否能搭配加密的流量使用？
-系統不會將具有加密流量的網路通訊協定 (例如，LDAPS 與 IPSEC) 解密，但感應器會對其進行分析。
+系統不會將具有加密流量的網路通訊協定 (例如 AtSvc 和 WMI) 解密，但感應器會對其進行分析。
 
 ### <a name="does-azure-atp-work-with-kerberos-armoring"></a>Azure ATP 是否能搭配 Kerberos 保護使用？
 Azure ATP 支援啟用 Kerberos 保護 (又稱為彈性驗證安全通道 (FAST))，唯一的例外是過度傳遞雜湊偵測，他它無法與 Kerberos 保護搭配使用。
@@ -142,7 +142,7 @@ Azure ATP 會在下列其中一個案例中，產生網域控制站到組織中�
     - RDP (TCP 連接埠 3389)
     - 使用 IP 位址的反向 DNS 查閱來查詢 DNS 伺服器 (UDP 53)
     
-    收到電腦名稱之後，Azure ATP 感應器會在 Active Directory 中交互檢查詳細資料，以了解是否有與該相同電腦名稱相關的電腦物件。 如果找到相符項目，則會在 IP 位址和比對的電腦物件之間建立關聯。
+    取得電腦名稱之後，Azure ATP 感應器會在 Active Directory 中交互檢查詳細資料，以了解是否有與該相同電腦名稱相關的電腦物件。 如果找到相符項目，則會在 IP 位址和比對的電腦物件之間建立關聯。
 2. **橫向移動路徑 (LMP)**<br>
     若要為敏感性使用者建置潛在的 LMP，Azure ATP 會需要電腦上的本機系統管理員相關資訊。 在此案例中，Azure ATP 感應器會使用 SAM-R (TCP 445) 查詢網路流量中識別到的 IP 位址，以確定電腦的本機系統管理員。 若要深入了解 Azure ATP 與 SAM-R，請參閱[設定 SAM-R 所需的權限](install-atp-step8-samr.md)。 
 

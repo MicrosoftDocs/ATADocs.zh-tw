@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 04/07/2019
+ms.date: 05/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0dd8d987472ef88108f2cb3541bd590d1a816726
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: e72e3e03d52f41eae1fe9823feae6dffd181b31f
+ms.sourcegitcommit: 07abbd941d91299475df2af469ee5a9a99e07e0f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65196645"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264947"
 ---
 # <a name="azure-atp-security-alerts"></a>Azure ATP 安全性警示
 
@@ -48,7 +48,7 @@ Azure ATP 安全性警訊分為下列類別或階段，如同在典型網路攻�
 |[網路對應偵察 (DNS)](atp-reconnaissance-alerts.md#network-mapping-reconnaissance-dns-external-id-2007)|使用 DNS 探查|2007|中型|探索|
 |[遠端程式碼執行嘗試](atp-domain-dominance-alerts.md#remote-code-execution-attempt-external-id-2019)|遠端程式碼執行嘗試|2019|中型|執行，<br> 持續性，<br> 權限提升，<br> 防禦躲避，<br> 橫向移動|
 |[透過 DNS 執行遠端程式碼](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036)|NA|2036|中型|權限提升，<br> 橫向移動|
-|[安全性主體偵察 (LDAP) - 預覽](atp-reconnaissance-alerts.md#security-principal-reconnaissance-ldap-external-id-2038---preview)|NA|2038|中型|認證存取|
+|[安全性主體偵察 (LDAP)](atp-reconnaissance-alerts.md#security-principal-reconnaissance-ldap-external-id-2038)|NA|2038|中型|認證存取|
 |[可疑的暴力密碼破解攻擊 (Kerberos、NTLM)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-kerberos-ntlm-external-id-2023)|可疑的驗證失敗|2023|中型|認證存取|
 |[可疑的暴力密碼破解攻擊 (LDAP)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-ldap-external-id-2004)|使用 LDAP 簡單繫結的暴力密碼破解攻擊|2004|中型|認證存取|
 |[可疑的暴力密碼破解攻擊 (SMB)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-smb-external-id-2033)|不尋常的通訊協定實作 (可能使用 Hydra 等惡意工具)|2033|中型|橫向移動|

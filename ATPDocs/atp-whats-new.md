@@ -5,21 +5,30 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 05/27/2019
+ms.date: 06/02/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 63a1dfa60d96e7f34cb406b0ccbc5a3584fbbb5b
-ms.sourcegitcommit: 07abbd941d91299475df2af469ee5a9a99e07e0f
+ms.openlocfilehash: b781b91196dad4556462d425cb5778bd0f3da26c
+ms.sourcegitcommit: 37b572e0e9e4bb874c7965f66de0ee8b6fbe5416
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264916"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500682"
 ---
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能
+
+## <a name="azure-atp-release-280"></a>Azure ATP 2.80 版
+
+發行日期：2019 年 6 月 2 日
+
+- **功能增強：可疑 VPN 連線警示**<br>
+   此警示現在包含增強的辨識項和文字，以提供更好的使用性。 如需該警示功能，以及建議的補救步驟和預防措施的詳細資訊，請參閱[可疑 VPN 連線警示描述](atp-compromised-credentials-alerts.md#suspicious-vpn-connection-external-id-2025)。
+
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-279"></a>Azure ATP 2.79 版
 發行日期：2019 年 5 月 26 日

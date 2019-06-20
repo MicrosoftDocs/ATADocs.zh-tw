@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 05/19/2019
+ms.date: 06/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 1ac873fc-b763-41d7-878e-7c08da421cb5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0c497d55142eb13867e904917aca890bc157ad63
-ms.sourcegitcommit: 122974e5bec49a1d613a38debc37d91ff838b05f
+ms.openlocfilehash: 0bf34a64f1140b0d2e3358196d23589de629588d
+ms.sourcegitcommit: 139e8dd63c06a5d9c9a3c348958e4f7fd74041b8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65933698"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67155867"
 ---
 # <a name="what-is-network-name-resolution"></a>什麼是網路名稱解析？
 
@@ -35,7 +35,11 @@ ms.locfileid: "65933698"
 > [!NOTE]
 >不會在任何連接埠上執行任何驗證。
 
-在擷取電腦名稱之後，Azure ATP 感應器會在 Active Directory 中檢查，以尋找具有該相同電腦名稱的相關電腦物件。 若感應器找到該相互關聯，感應器會將此 IP 與該電腦物件關聯。
+在沒有擷取到名稱的情況下，會使用 IP 和偵測到的相關活動建立**無法解析的電腦設定檔 (依 IP)** 。
+
+在擷取電腦名稱之後，Azure ATP 感應器會在 Active Directory 中檢查，以尋找具有該相同電腦名稱的相關電腦物件。 若感應器找到該相互關聯，感應器會將此 IP 與該電腦物件關聯。 在找不到具有此名稱之電腦物件的情況下，會使用此名稱和偵測到的相關活動建立**無法解析的電腦設定檔 (依名稱)** 。 
+
+![無法解析的電腦設定檔](media/unresolved-computer-profile.png)
 
 如果要偵測下列威脅，NNR 資料可說是不可或缺：
 
@@ -43,7 +47,7 @@ ms.locfileid: "65933698"
 - 可疑的 DCSync 攻擊 (目錄服務的複寫)
 - 網路對應偵察 (DNS)
 
-為了協助您判斷警示為**確判 (TP)** 或**誤判 (FP)**，Azure ATP 會包含解析至每個安全性警示之辨識項的電腦命名確定度。 
+為了協助您判斷警示為**確判 (TP)** 或**誤判 (FP)** ，Azure ATP 會包含解析至每個安全性警示之辨識項的電腦命名確定度。 
  
 例如，當電腦名稱被解析為**高確定度**時，將能提升安全性警示結果為**確判** (**TP**) 的信賴度。 
 
@@ -57,7 +61,7 @@ ms.locfileid: "65933698"
 
 
 ### <a name="prerequisites"></a>必要條件
-|通訊協定|  傳輸|  Port|   Device| 方向|
+|通訊協定|  傳輸|  連接埠|   裝置| 方向|
 |--------|--------|------|-------|------|
 |透過 RPC 的 NTLM| TCP |135|   網路上的所有裝置| 輸入|
 |NetBIOS|   UDP|    137|    網路上的所有裝置| 輸入|

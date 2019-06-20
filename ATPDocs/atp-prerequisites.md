@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 05/01/2019
+ms.date: 06/11/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 420c162e3dc5b7869b46453e3eeda67e1fdc692c
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: 515ab93de375f6ac286cb11e6394e868e095cf48
+ms.sourcegitcommit: 3e0a19e496bc7713bb227c501ca4dd7da223aac8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65195572"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66830394"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -29,7 +29,7 @@ ms.locfileid: "65195572"
 
 Azure ATP 是由 Azure ATP 雲端服務組成，其包含 Azure ATP 入口網站、Azure ATP 感應器和/或 Azure ATP 獨立感應器。 如需每種 Azure ATP 元件的詳細資訊，請參閱 [Azure ATP 架構](atp-architecture.md)。
 
-Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步至您 Azure Active Directory 的使用者。 若要保護僅包含 AAD 使用者的環境，請參閱 [AAD Identity Protection] (https://docs.microsoft.com/azure/active-directory/identity-protection/overview) \(機器翻譯\)。 
+Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步至您 Azure Active Directory 的使用者。 若要保護僅包含 AAD 使用者的環境，請參閱 [AAD 身分識別保護](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) \(部分機器翻譯\)。 
 
 若要建立 Azure ATP 執行個體，您必須使用具有至少一位全域/安全性系統管理員的 AAD 租用戶。 每個 Azure ATP 執行個體都支援多 Active Directory 樹系邊界，以及 Windows 2003 和更新版本的樹系功能等級 (FFL)。 
 
@@ -59,7 +59,7 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 
 - 如果您嘗試在設定了 NIC 小組介面卡的電腦上安裝 Azure ATP 感應器，則會收到安裝錯誤。 如果您想要在已設定 NIC 小組的電腦上安裝 Azure ATP 感應器，請參閱 [Azure ATP 感應器 NIC 小組問題](troubleshooting-atp-known-issues.md#nic-teaming)。
 
-- 建議：使用者應該擁有「刪除的物件」容器的唯讀權限。 這可讓 Azure ATP 偵測到透過 Active Directory 進行的使用者刪除作業。 如需設定「已刪除物件」容器的唯讀權限相關資訊，請參閱[檢視或設定目錄物件的權限](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx) \(英文\) 文章中的＜變更刪除的物件容器的權限＞。
+- 建議：使用者應該擁有「刪除的物件」容器的唯讀權限。 這可讓 Azure ATP 偵測到透過 Active Directory 進行的使用者刪除作業。 如需設定「已刪除物件」容器的唯讀權限相關資訊，請參閱[檢視或設定目錄物件的權限](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx) \(英文\) 文章中的＜變更刪除的物件容器的權限＞  。
 
 - 選擇性：沒有任何網路活動之使用者的使用者帳戶。 此帳戶設定為 Azure ATP Honeytoken 使用者。 如需詳細資訊，請參閱[設定排除項目和 Honeytoken 使用者](install-atp-step7.md)。
 
@@ -102,7 +102,7 @@ Azure ATP 感應器可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)�
 ### <a name="server-specifications"></a>伺服器規格
 
 Azure ATP 感應器在網域控制站上需要安裝至少 2 個核心和 6 GB 的 RAM。
-為了達到最佳效能，請將 Azure ATP 感應器的 [電源選項] 設定為 [高效能]。
+為了達到最佳效能，請將 Azure ATP 感應器的 [電源選項]  設定為 [高效能]  。
 Azure ATP 感應器可以部署在各種負載和大小的網域控制站上，依進出網域控制站的網路流量，以及安裝的資源數量而定。
 
 >[!NOTE] 
@@ -124,7 +124,7 @@ Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的�
 ### <a name="ports"></a>連接埠
 下表列出 Azure ATP 感應器至少需要的連接埠：
 
-|通訊協定|傳輸|Port|去/從|方向|
+|通訊協定|傳輸|連接埠|去/從|方向|
 |------------|-------------|--------|-----------|-------------|
 |**內部連接埠**|||||
 |SSL (*.atp.azure.com)|TCP|443|Azure ATP 雲端服務|輸出|
@@ -165,7 +165,7 @@ Azure ATP 獨立感應器可以用來監視具 Windows Server 2003 或更新版�
 > 至少需要 5 GB 的磁碟空間，建議要有 10 GB。 這包括 Azure ATP 二進位檔、Azure ATP 記錄檔和效能記錄檔所需的空間。
 
 ### <a name="server-specifications"></a>伺服器規格
-為了達到最佳效能，將 Azure ATP 獨立感應器的 [電源選項] 設定為 [高效能]。<br>
+為了達到最佳效能，將 Azure ATP 獨立感應器的 [電源選項]  設定為 [高效能]  。<br>
 Azure ATP 獨立感應器可以支援監視多個網域控制站，依進出網域控制站的網路傳輸量而定。
 
 >[!NOTE] 
@@ -202,7 +202,7 @@ Azure ATP 獨立感應器需要至少一個管理介面卡和至少一個擷取�
 ### <a name="ports"></a>連接埠
 下表列出 Azure ATP 獨立感應器在管理介面卡上至少需要設定的連接埠：
 
-|通訊協定|傳輸|Port|去/從|方向|
+|通訊協定|傳輸|連接埠|去/從|方向|
 |------------|-------------|--------|-----------|-------------|
 |**內部連接埠**|||||
 |SSL (*.atp.azure.com)|TCP|443|Azure ATP 雲端服務|輸出|

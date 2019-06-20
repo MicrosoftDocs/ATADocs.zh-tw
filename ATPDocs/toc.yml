@@ -47,8 +47,6 @@
       href: investigate-entity.md
 - name: 概念
   items:
-    - name: Azure ATP 多樹系支援
-      href: atp-multi-forest.md
     - name: Azure ATP 入口網站
       href: workspace-portal.md
     - name: Azure ATP 安全性警訊
@@ -65,8 +63,16 @@
       href: reports.md
     - name: 使用者角色
       href: atp-role-groups.md
+    - name: Azure ATP 多樹系支援
+      href: atp-multi-forest.md
 - name: 操作指南
   items:
+    - name: 使用 Microsoft Cloud App Security 的 Azure ATP
+      items:
+        - name: 搭配使用 Azure ATP 和 Cloud App Security
+          href: atp-mcas-integration.md
+        - name: 刪除活動並設定原則
+          href: atp-activities-filtering-mcas.md
     - name: 安全性警示實驗室
       items:
         - name: 實驗室概觀

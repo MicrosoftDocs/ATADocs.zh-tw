@@ -5,21 +5,33 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 06/10/2019
+ms.date: 06/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: faf89ddb152e002a818d79a83b5447c65a143b32
-ms.sourcegitcommit: 3e0a19e496bc7713bb227c501ca4dd7da223aac8
+ms.openlocfilehash: 1fed88a774b1ffa88b52879a44de6697b1b615f6
+ms.sourcegitcommit: 87756e27894570997b7039d128f223de0664639f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66830386"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67192792"
 ---
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能
+
+## <a name="azure-atp-release-282"></a>Azure ATP 2.82 版
+
+發行日期：2019 年 6 月 18 日
+
+- **新的公開預覽**<br>
+Azure ATP 的身分識別威脅調查體驗目前處於**公開預覽**狀態，適用於所有受保護的 Azure ATP 租用戶。 如需深入了解，請參閱 [Azure ATP Microsoft Cloud App Security 調查體驗](atp-mcas-integration.md)。 
+
+- **正式版本**<br>
+Azure ATP 現已在正式版本中支援未受信任的樹系。 如果要深入了解，請參閱 [Azure ATP 多重樹系](atp-multi-forest.md)。 
+
+- 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-281"></a>Azure ATP 2.81 版
 

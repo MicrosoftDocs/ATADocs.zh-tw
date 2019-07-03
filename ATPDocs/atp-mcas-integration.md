@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 06/18/2019
+ms.date: 06/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 5169dffc-75c4-4eb0-b997-b5359cecda97
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1e64ccfd3f559f59b0091e49a51e2016ef3f8745
-ms.sourcegitcommit: 87756e27894570997b7039d128f223de0664639f
+ms.openlocfilehash: edce75d46470c007a05c61d5ea1e0ea52033b8b2
+ms.sourcegitcommit: 0bb9a524508cc6bfd3d9f579fc51b33309fc66b8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67193493"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67396613"
 ---
 # <a name="using-azure-atp-with-microsoft-cloud-app-security"></a>搭配 Microsoft Cloud App Security 使用 Azure ATP 
 
@@ -43,7 +43,7 @@ Cloud App Security 入口網站會與 Azure ATP 整合，以提供來自下列�
 
 ## <a name="access-azure-atp"></a>存取 Azure ATP
 
-選擇繼續在 Azure ATP 入口網站中使用 Azure ATP，或者，您現在可以使用 Microsoft Cloud App Security 入口網站來存取 Azure ATP 警示和識別評分。 在任一個工作流程中，Azure ATP 設定和組態工作會繼續在 Azure ATP 入口網站中進行處理。 
+選擇繼續在 Azure ATP 入口網站中使用 Azure ATP，或者，您可以使用 Microsoft Cloud App Security 入口網站來存取 Azure ATP 警示與身分識別評分。 在任一個工作流程中，Azure ATP 設定和組態工作會繼續在 Azure ATP 入口網站中進行處理。 
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -54,7 +54,7 @@ Cloud App Security 入口網站會與 Azure ATP 整合，以提供來自下列�
 >[!NOTE]
 >如果您沒有 Cloud App Security 的訂用帳戶，您仍能使用 Cloud App Security 入口網站來調查 Azure ATP 警示，並深入了解使用者及其內部部署的受控活動，但您將不會收到來自您雲端應用程式的相關深入解析。
 
-請參閱 [Azure ATP 整合](https://docs.microsoft.com/cloud-app-security/aatp-integration/enable-azure-advanced-threat-protection) \(部分機器翻譯\)，以了解如何快速啟用 Cloud App Security 中的 Azure ATP。  
+請參閱 [Azure ATP 整合](https://docs.microsoft.com/cloud-app-security/aatp-integration) \(部分機器翻譯\)，以了解如何快速啟用 Cloud App Security 中的 Azure ATP。  
  
 ## <a name="azure-atp-in-cloud-app-security"></a>Cloud App Security 中的 Azure ATP 
 

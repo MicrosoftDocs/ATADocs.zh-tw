@@ -141,6 +141,10 @@
           href: configure-event-collection.md
         - name: 設定 Windows 事件轉寄
           href: configure-event-forwarding.md
+    - name: 從 ATA 移至 Azure ATP
+      items:
+        - name: Advanced Threat Analytics (ATA) 移至 Azure ATP
+          href: ata-atp-move-overview.md
 - name: 參考
   items:
     - name: SIEM 記錄檔參考

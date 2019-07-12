@@ -5,21 +5,49 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 06/18/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 1fed88a774b1ffa88b52879a44de6697b1b615f6
-ms.sourcegitcommit: 87756e27894570997b7039d128f223de0664639f
+ms.openlocfilehash: d6fb2a51a47c97c52a3665c55522094fd5a856f1
+ms.sourcegitcommit: 52bc20dfa1f64ff3e8c16eb5edea2813d54ba308
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67192792"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67562183"
 ---
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能
+
+## <a name="azure-atp-release-284"></a>Azure ATP 2.84 版
+
+發行日期：2019 年 7 月 1 日
+
+- **新增位置支援：Azure 英國資料中心**<br>
+    Azure 英國資料中心現在支援 Azure ATP 執行個體。 若要了解如何建立 Azure ATP 執行個體和其對應的資料中心位置，請參閱 [Azure ATP 安裝的步驟 1](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step10)。
+
+- **功能增強：敏感性群組的可疑新增項目警示 (外部識別碼 2024) 新名稱和功能**<br> 
+    **敏感性群組的可疑新增項目**警示先前命名為**敏感性群的可疑修改**警示。 警示 (識別碼 2024) 的外部識別碼保持不變。 描述性名稱變更可更精確地反映針對**敏感性**群組新增項目發出警示的目的。 增強型警示也強調新辨識項和改善的描述。 如需詳細資訊，請參閱[敏感性群組的可疑新增項目](https://docs.microsoft.com/azure-advanced-threat-protection/atp-domain-dominance-alerts#suspicious-additions-to-sensitive-groups-external-id-2024)。  
+
+- **新文件功能：從 Advanced Threat Analytics 移至 Azure ATP 的指南**<br>
+    這篇新文章包含必要條件、規劃指引，以及從 ATA 移至 Azure ATP 服務的設定和驗證步驟。 如需詳細資訊，請參閱[從 ATA 移至 Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/ata-atp-move-overview)。   
+
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
+
+## <a name="azure-atp-release-283"></a>Azure ATP 2.83 版
+
+2019 年 6 月 23 日發行
+
+- **功能增強：可疑的服務建立警示 (外部識別碼 2026)**<br> 
+    此警示現在會強調改善的警示頁面，其中含有額外的辨識項和新說明。 如需詳細資訊，請參閱[可疑的服務建立安全性警示](https://docs.microsoft.com/azure-advanced-threat-protection/atp-domain-dominance-alerts#suspicious-service-creation-external-id-2026)。
+
+-  **執行個體命名支援：新增支援僅限數字的網域前置詞**<br>
+    新增支援使用只包含數字的初始網域前置詞來建立 Azure ATP 執行個體。 例如，現在支援使用 123456.contoso.com 等僅限數字的初始網域前置詞。 
+
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
+
 
 ## <a name="azure-atp-release-282"></a>Azure ATP 2.82 版
 

@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 06/18/2019
+ms.date: 07/01/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 397e5a77-2bc7-454c-9fe5-649ebaab16b3
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2ad66219c1eb6dcfcec99d0bf995b71bb2d81577
-ms.sourcegitcommit: 87756e27894570997b7039d128f223de0664639f
+ms.openlocfilehash: 1508cb558f16adf54f80cec0c13631059dbf45bf
+ms.sourcegitcommit: f60835d655e68ffaa8ed8c43bd9fa20233d7e495
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67193483"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67506539"
 ---
 # <a name="use-activity-filters-and-create-action-policies-with-azure-atp-in-microsoft-cloud-app-security"></a>在 Microsoft Cloud App Security 中使用活動篩選以及使用 Azure ATP 建立動作原則 
 
@@ -51,19 +51,21 @@ ms.locfileid: "67193483"
 
 ## <a name="create-activity-policies-in-cloud-app-security"></a>在 Cloud App Security 中建立活動原則
 
-篩選活動並識別您想要在組織內實作或不符合規範的活動原則之後，使用 [篩選] 功能表的 [建立活動原則]  選項，立即為每個使用者、裝置或租用戶建立新的自訂原則。 
+篩選活動並識別組織內您想要實作或不符合規範的活動原則之後，使用 [篩選] 功能表的 [建立新的活動原則]  選項，立即為每個使用者、裝置或租用戶建立新的自訂原則。 
 
 建立新的活動原則：
 
-1. 從任意 [活動記錄] 頁面中，按一下 [從搜尋新增原則]  按鈕。  
-    ![建立新的活動原則](media/atp-mcas-activity-log.png)
+1. 從任何 [活動記錄]  頁面中，套用篩選 (例如應用程式、使用者名稱、活動類型) 等。 
+    - 若要針對 Azure ATP 中的活動進行篩選，請在 [應用程式] 篩選中選取 [Active Directory]  選項。 
+    ![建立新的活動原則](media/atp-mcas-create-new-policy.png)
+1. 按一下 [從搜尋新增原則]  按鈕。    
 1. 新增**原則名稱**。 
     ![建立新的活動原則 - 步驟 2](media/atp-mcas-create-policy.png)
 1. 新增原則**描述**。  
-1. 指派原則的嚴重性。
-1. 選取原則的類別。
-1. 選擇要針對原則建立的篩選。
-1. 精簡或新增篩選。 
+1. 指派原則的 [嚴重性]  。
+1. 選取原則的 [類別]  。
+1. 選擇或修改要針對原則建立並指派的篩選。
+1. 精簡或新增更多篩選。 
 1. 儲存並套用新的原則。  
 
 

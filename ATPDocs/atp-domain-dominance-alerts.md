@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 0b3a1db5-0d43-49af-b356-7094cc85f0a5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ec1d2bc0de905a32181749e435d0f88afe5a80fc
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: a415e880f669d4f02cd2cd319f49137ba26da1d7
+ms.sourcegitcommit: 52bc20dfa1f64ff3e8c16eb5edea2813d54ba308
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65195523"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67562147"
 ---
 # <a name="tutorial-domain-dominance-alerts"></a>教學課程：控制網域警訊  
 
@@ -45,12 +45,12 @@ ms.locfileid: "65195523"
 > * 可疑的黃金票證使用 (票證異常) (外部識別碼 2032)
 > * 可疑的黃金票證使用 (時間異常) (外部識別碼 2022)
 > * 可疑的萬能金鑰攻擊 (加密降級) (外部識別碼 2010)
-> * 敏感性群組的可疑修改 (外部識別碼 2024)
+> * 敏感性群組的可疑新增項目 (外部識別碼 2024)
 > * 可疑的服務建立 (外部識別碼 2026)
 
 ## <a name="malicious-request-of-data-protection-api-master-key-external-id-2020"></a>資料保護 API 主要金鑰的惡意要求 (外部識別碼 2020) 
 
-先前的名稱：惡意的資料保護私人資訊要求
+先前的名稱：  惡意的資料保護私人資訊要求
 
 **描述**
 
@@ -82,7 +82,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 ## <a name="remote-code-execution-attempt-external-id-2019"></a>遠端程式碼執行嘗試 (外部識別碼 2019) 
 
-先前的名稱：遠端程式碼執行嘗試
+先前的名稱：  遠端程式碼執行嘗試
 
 **描述**
 
@@ -125,7 +125,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 ## <a name="suspected-dcshadow-attack-domain-controller-promotion-external-id-2028"></a>可疑的 DCShadow 攻擊 (網域控制站升階) (外部識別碼 2028) 
 
-先前的名稱：可疑的網域控制站升級 (潛在的 DCShadow 攻擊)
+先前的名稱：  可疑的網域控制站升級 (潛在的 DCShadow 攻擊)
 
 **描述**
 
@@ -183,7 +183,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 ## <a name="suspected-dcshadow-attack-domain-controller-replication-request-external-id-2029"></a>可疑的 DCShadow 攻擊 (網域控制站複寫要求) (外部識別碼 2029) 
 
-先前的名稱：可疑的複寫要求 (潛在的 DCShadow 攻擊)
+先前的名稱：  可疑的複寫要求 (潛在的 DCShadow 攻擊)
 
 **描述**
 
@@ -236,7 +236,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 ## <a name="suspected-dcsync-attack-replication-of-directory-services-external-id-2006"></a>可疑的 DCSync 攻擊 (目錄服務的複寫) (外部識別碼 2006) 
 
-先前的名稱：惡意的目錄服務複寫
+先前的名稱：  惡意的目錄服務複寫
 
 **描述**
 
@@ -289,7 +289,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 ## <a name="suspected-golden-ticket-usage-encryption-downgrade-external-id-2009"></a>可疑的黃金票證使用 (加密降級) (外部識別碼 2009) 
 
-先前的名稱：加密降級活動
+先前的名稱：  加密降級活動
 
 **描述**：加密降級是一種減弱 Kerberos 的方法，它會針對通常有最高加密層級的不同通訊協定欄位，降級其加密層級。 攻擊者將能較為輕鬆地對減弱的加密欄位進行離線暴力密碼破解。 利用弱式 Kerberos 加密 Cypher 的各種攻擊方法。 在此偵測中，Azure ATP 會了解電腦和使用者使用的 Kerberos 加密類型，並在使用較弱的加密且符合以下條件時向您發出警示：(1) 對來源電腦及/或使用者而言不尋常，以及 (2) 符合已知的攻擊手法。  
 
@@ -339,7 +339,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 ## <a name="suspected-golden-ticket-usage-forged-authorization-data-external-id-2013"></a>可疑的黃金票證使用 (偽造的授權資料) (外部識別碼 2013)
 
-先前的名稱：使用偽造授權資料提升權限
+先前的名稱：  使用偽造授權資料提升權限
 
 描述：舊版 Windows Server 中的已知弱點可讓攻擊者操作專用權屬性憑證 (PAC)，這是 Kerberos 票證中包含使用者授權資料 (在 Active Directory 中為群組成員資格) 的欄位，會授與攻擊者更多權限。 
  
@@ -431,11 +431,11 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 **描述**：具有網域系統管理員權限的攻擊者可能會危害 KRBTGT 帳戶。 他們可以利用 KRBTGT 帳戶建立 Kerberos 票證授權票證 (TGT)，以提供任何資源的授權，並將票證到期日設定為任何時間。 這個假 TGT 稱為「黃金票證」，可讓攻擊者取得網路持續性。 當使用 Kerberos 票證授權票證超過 [使用者票證最長存留期] 中指定的允許時間時，就會觸發此警示。 
  
 **TP、B-TP 或 FP**
-1. 在過去幾小時內，群組原則中的 [使用者票證最長存留期] 設定是否有任何變更，而可能影響警示？  
+1. 在過去幾小時內，群組原則中的 [使用者票證最長存留期]  設定是否有任何變更，而可能影響警示？  
 2. 涉及此警示的 Azure ATP 獨立感應器是否為虛擬機器？ 
     - 如果涉及 Azure ATP 獨立感應器，它最近是否從儲存狀態繼續？  
 3. 網路中是否有時間同步化問題，其中並未同步所有電腦？ 
-    - 按一下 [下載詳細資料] 按鈕，以檢視安全性警示報告 Excel 檔案、檢視相關網路活動，並檢查 "StartTime" 與 "DomainControllerStartTime" 之間是否有差異。
+    - 按一下 [下載詳細資料]  按鈕，以檢視安全性警示報告 Excel 檔案、檢視相關網路活動，並檢查 "StartTime" 與 "DomainControllerStartTime" 之間是否有差異。
 
 如果以上問題的答案為**是**，請**關閉**有關 **B-TP** 活動的安全性警示。 
  
@@ -456,7 +456,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 ## <a name="suspected-skeleton-key-attack-encryption-downgrade-external-id-2010"></a>可疑的萬能金鑰攻擊 (加密降級) (外部識別碼 2010) 
 
-先前的名稱：加密降級活動
+先前的名稱：  加密降級活動
 
 **描述**：加密降級是一種減弱 Kerberos 的方法，它會針對通常有最高加密層級的不同通訊協定欄位，使用降級的加密層級。 攻擊者將能較為輕鬆地對減弱的加密欄位進行離線暴力密碼破解。 利用弱式 Kerberos 加密 Cypher 的各種攻擊方法。 在此偵測中，Azure ATP 會了解電腦和使用者所使用的 Kerberos 加密類型。 當使用下列較弱的加密時會發出警示：(1) 對來源電腦及/或使用者而言不尋常，以及 (2) 符合已知的攻擊手法。  
  
@@ -474,7 +474,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
     - 移除惡意程式碼。 如需詳細資訊，請參閱[基本架構金鑰惡意程式碼分析](https://www.virusbulletin.com/virusbulletin/2016/01/paper-digital-bian-lian-face-changing-skeleton-key-malware) \(英文\)。
     - 尋找在發生活動期間登入的使用者，因為他們可能也遭到入侵。 重設他們的密碼，並啟用 MFA。
 
-## <a name="suspicious-modification-of-sensitive-groups-external-id-2024"></a>敏感性群組的可疑修改 (外部識別碼 2024)
+## <a name="suspicious-additions-to-sensitive-groups-external-id-2024"></a>敏感性群組的可疑新增項目 (外部識別碼 2024)
 
 **描述**：攻擊者將使用者新增至具有高權限的群組。 新增使用者是為了取得更多資源的存取權，並取得持續入侵管道。 此偵測需要分析使用者的群組修改活動，並在敏感性群組中出現異常新增時發出警示。 Azure ATP 會持續執行分析。  
  
@@ -513,7 +513,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
  
 ## <a name="suspicious-service-creation-external-id-2026"></a>可疑的服務建立 (外部識別碼 2026)
 
-先前的名稱：可疑的服務建立
+先前的名稱：  可疑的服務建立
 
 **描述**：可疑的服務已在您組織中網域控制站上建立。 此警示需要事件 7045 來識別此可疑活動。  
  

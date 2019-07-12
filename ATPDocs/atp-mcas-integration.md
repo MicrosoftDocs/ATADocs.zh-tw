@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 06/25/2019
+ms.date: 07/01/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 5169dffc-75c4-4eb0-b997-b5359cecda97
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: edce75d46470c007a05c61d5ea1e0ea52033b8b2
-ms.sourcegitcommit: 0bb9a524508cc6bfd3d9f579fc51b33309fc66b8
+ms.openlocfilehash: b66b2f0a087bbaacc09eda54958824da693209b3
+ms.sourcegitcommit: f60835d655e68ffaa8ed8c43bd9fa20233d7e495
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67396613"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67506502"
 ---
 # <a name="using-azure-atp-with-microsoft-cloud-app-security"></a>搭配 Microsoft Cloud App Security 使用 Azure ATP 
 
@@ -45,6 +45,8 @@ Cloud App Security 入口網站會與 Azure ATP 整合，以提供來自下列�
 
 選擇繼續在 Azure ATP 入口網站中使用 Azure ATP，或者，您可以使用 Microsoft Cloud App Security 入口網站來存取 Azure ATP 警示與身分識別評分。 在任一個工作流程中，Azure ATP 設定和組態工作會繼續在 Azure ATP 入口網站中進行處理。 
 
+ 
+
 ## <a name="prerequisites"></a>必要條件
 
 如需跨混合式環境的完整使用者調查功能，您必須具備：
@@ -64,8 +66,14 @@ Cloud App Security 入口網站會與 Azure ATP 整合，以提供來自下列�
 
 ## <a name="alerts"></a>警示
 
-Azure ATP 警示會顯示於 Cloud App Security 的 [警示]  佇列內。 只有在使用 Cloud App Security 檢視警示時，才能使用其他警示篩選選項。 針對 Azure ATP 使用應用程式篩選來篩選 Azure ATP 警示。 
+Azure ATP 警示會顯示於 Cloud App Security 的 [警示]  佇列內。 只有在使用 Cloud App Security 檢視警示時，才能使用其他警示篩選選項。 針對 **Active Directory** 使用應用程式篩選來篩選 Azure ATP 警示。 
 
+## <a name="alert-management"></a>警示管理
+搭配 Cloud App Security 使用 Azure ATP 時，關閉一個服務中的警示不會自動關閉其他服務中的警示。 決定在何處管理和補救警示，以避免執行重複的作業。 
+
+## <a name="siem-notification"></a>SIEM 通知
+
+如果這兩個服務 (Azure ATP 與 Cloud App Security) 目前都設定為傳送警示通知到 SIEM，在啟用 Cloud App Security 中的 Azure ATP 整合之後，您將開始接收到相同警示的重複 SIEM 通知。 每個服務都會發出一個警示，且每個警示會有不同的警示識別碼。 若要避免重複和混淆，請決定您想要執行警示管理的位置，然後停止從其他服務傳送 SIEM 通知。  
 
 ## <a name="activities"></a>活動
 

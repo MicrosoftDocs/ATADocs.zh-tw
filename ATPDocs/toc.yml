@@ -73,20 +73,22 @@
           href: atp-mcas-integration.md
         - name: 刪除活動並設定原則
           href: atp-activities-filtering-mcas.md
-        - name: Azure ATP 身分識別安全性狀態評估
-          href: atp-ispm-overview.md
-        - name: 防止純文字認證暴露評估
-          href: atp-mcas-ispm-clear-text.md
-        - name: 從敏感性群組中移除休眠實體評估
-          href: atp-mcas-ispm-dormant-entities.md
-        - name: 防止舊版通訊協定進行通訊評估
-          href: atp-mcas-ispm-legacy-protocols.md
-        - name: 停用網域控制站上的列印多工緩衝處理器服務評估
-          href: atp-mcas-ispm-print-spooler.md
-        - name: 防止弱式加密使用方式評估
-          href: atp-mcas-ispm-weak-cipher.md
-        - name: 防止 unconstained Kerberos 委派評估
-          href: atp-mcas-ispm-unconstrained-kerberos.md
+        - name: 身分識別安全性狀態評估
+          items:
+            - name: 了解身分識別安全性狀態評估
+              href: atp-isp-overview.md
+            - name: 防止純文字認證暴露評估
+              href: atp-cas-isp-clear-text.md
+            - name: 從敏感性群組中移除休眠實體評估
+              href: atp-cas-isp-dormant-entities.md
+            - name: 防止舊版通訊協定進行通訊評估
+              href: atp-cas-isp-legacy-protocols.md
+            - name: 停用網域控制站上的列印多工緩衝處理器服務評估
+              href: atp-cas-isp-print-spooler.md
+            - name: 防止弱式加密使用方式評估
+              href: atp-cas-isp-weak-cipher.md
+            - name: 防止 unconstained Kerberos 委派評估
+              href: atp-cas-isp-unconstrained-kerberos.md
     - name: 安全性警示實驗室
       items:
         - name: 實驗室概觀

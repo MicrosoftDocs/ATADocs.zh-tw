@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 07/10/2019
+ms.date: 07/14/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 84443d57cb1333e870c33cf01879188eb52bd707
-ms.sourcegitcommit: 09275d3400534200fa6ea572e89e440b3cc58360
+ms.openlocfilehash: 5315d7778413b9da0f642fb2c34db8fbe0a52ab4
+ms.sourcegitcommit: 68118b00d039db56f69ed7c0b96cf85f9b7a8065
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67786418"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67880454"
 ---
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能
 
@@ -25,16 +25,7 @@ ms.locfileid: "67786418"
 
 發行日期：2019 年 7 月 7 日
 
-- **新的公開預覽功能：Azure ATP 身分識別安全性狀態評估**<br>
-    使用 Microsoft Cloud App Security 入口網站的 Azure ATP 對**公開預覽**導入了六個全新評估報表，可供評估、調查、補救和改善您的組織安全性狀態。 深入了解如何在 Cloud App Security 中[啟用](https://docs.microsoft.com/cloud-app-security/aatp-integration)並[開始使用](atp-mcas-integration.md) Azure ATP 身分識別安全性狀態評估，以及[使用](atp-ispm-overview.md)每個新評估的方式：
-    - [休眠實體](atp-mcas-ispm-dormant-entities.md)
-    - [清除文字](atp-mcas-ispm-clear-text.md)
-    - [弱式加密使用方式](atp-mcas-ispm-weak-cipher.md)
-    - [不受限制的 Kerberos 委派](atp-mcas-ispm-unconstrained-kerberos.md)
-    - [列印多工緩衝處理器](atp-mcas-ispm-print-spooler.md)
-    - [舊版通訊協定](atp-mcas-ispm-legacy-protocols.md)
-
-- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
+- 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-284"></a>Azure ATP 2.84 版
 
@@ -44,7 +35,7 @@ ms.locfileid: "67786418"
     Azure 英國資料中心現在支援 Azure ATP 執行個體。 若要了解如何建立 Azure ATP 執行個體和其對應的資料中心位置，請參閱 [Azure ATP 安裝的步驟 1](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step10)。
 
 - **功能增強：敏感性群組的可疑新增項目警示 (外部識別碼 2024) 新名稱和功能**<br> 
-    敏感性群組的可疑新增項目警示先前命名為**敏感性群組的可疑修改警示**。 警示 (識別碼 2024) 的外部識別碼保持不變。 描述性名稱變更可更精確地反映針對**敏感性**群組新增項目發出警示的目的。 增強型警示也強調新辨識項和改善的描述。 如需詳細資訊，請參閱[敏感性群組的可疑新增項目](https://docs.microsoft.com/azure-advanced-threat-protection/atp-domain-dominance-alerts#suspicious-additions-to-sensitive-groups-external-id-2024)。  
+    **敏感性群組的可疑新增項目**警示先前命名為**敏感性群的可疑修改**警示。 警示 (識別碼 2024) 的外部識別碼保持不變。 描述性名稱變更可更精確地反映針對**敏感性**群組新增項目發出警示的目的。 增強型警示也強調新辨識項和改善的描述。 如需詳細資訊，請參閱[敏感性群組的可疑新增項目](https://docs.microsoft.com/azure-advanced-threat-protection/atp-domain-dominance-alerts#suspicious-additions-to-sensitive-groups-external-id-2024)。  
 
 - **新文件功能：從 Advanced Threat Analytics 移至 Azure ATP 的指南**<br>
     這篇新文章包含必要條件、規劃指引，以及從 ATA 移至 Azure ATP 服務的設定和驗證步驟。 如需詳細資訊，請參閱[從 ATA 移至 Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/ata-atp-move-overview)。   

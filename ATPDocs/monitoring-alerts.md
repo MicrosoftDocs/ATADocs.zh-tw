@@ -5,29 +5,23 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 05/29/2019
+ms.date: 07/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: d0551e91-3b21-47d5-ad9d-3362df6d47c0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 46778e0dcafca7fcff8b7f7611a50ca0e23140d8
-ms.sourcegitcommit: b021f8dfc54e59de429f93cc5fc0d733d92b00b8
+ms.openlocfilehash: 65279895689e230a3a28871a61f4cffe36d6042c
+ms.sourcegitcommit: b7b3d4a401faaa3edb4bd669a1a003a6d21a4322
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66403566"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68298762"
 ---
 # <a name="understanding-azure-atp-sensor-and-standalone-sensor-monitoring-alerts"></a>了解 Azure ATP 感應器和獨立感應器監視警示
 
 當您的 Azure ATP 執行個體發生問題時，Azure ATP 健全狀況中心會發出監視警示以讓您知道。 本文描述每個元件的所有監視警示，並列出原因及解決問題所需的步驟。
-
-## <a name="domain-synchronizer-not-assigned"></a>未指派網域同步器
-
-|警示|說明|解決方案|嚴重性|
-|----|----|----|----|
-|沒有將網域同步器指派至任何 Azure ATP 感應器。 如果沒有設定為網域同步器候選的 Azure ATP 感應器，就可能會發生此情況。|當網域未同步處理時，實體的變更可能會造成 Azure ATP 中的實體資訊變成過期或遺失，但不影響任何偵測。|請務必將至少一個 Azure ATP 感應器設定為[網域同步器](install-atp-step5.md)。|低|
 
 ## <a name="all-domain-controllers-are-unreachable-by-a-sensor"></a>感應器無法連線到所有網域控制站
 

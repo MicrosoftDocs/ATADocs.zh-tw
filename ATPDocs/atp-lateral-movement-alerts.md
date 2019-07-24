@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 03/18/2019
+ms.date: 07/17/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 2257eb00-8614-4577-b6a1-5c65085371f2
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3b58433239fb2f7f3d2f55c87ddf73ea38840176
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: 7e791dafcd8c3e05a7e05d5d50e82fae05aa5c89
+ms.sourcegitcommit: c1368baac1fa4e54eb9eb4e34a7b471e56b22ac2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65196841"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68299363"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>教學課程：橫向移動警訊  
 
@@ -37,6 +37,7 @@ ms.locfileid: "65196841"
 > * 透過 DNS 執行遠端程式碼 (外部識別碼 2036)
 > * 可疑的身分識別竊取 (雜湊傳遞) (外部識別碼 2017)
 > * 可疑的身分識別竊取 (票證傳遞) (外部識別碼 2018)
+> * 可疑的 NTLM 驗證竄改 (外部識別碼 2039) - 預覽
 > * 可疑的 NTLM 轉送攻擊 (Exchange 帳戶) (外部識別碼 2037) - 預覽
 > * 可疑的 Overpass-the-Hash 攻擊 (加密降級) (外部識別碼 2008)
 > * 可疑的 Overpass-the-Hash 攻擊 (Kerberos) (外部識別碼 2002)
@@ -80,7 +81,7 @@ ms.locfileid: "65196841"
 
 ## <a name="suspected-identity-theft-pass-the-hash-external-id-2017"></a>可疑的身分識別竊取 (雜湊傳遞) (外部識別碼 2017)
 
-先前的名稱：使用傳遞雜湊攻擊竊取身分
+先前的名稱：  使用傳遞雜湊攻擊竊取身分
 
 **描述**
 
@@ -104,7 +105,7 @@ ms.locfileid: "65196841"
 
 ## <a name="suspected-identity-theft-pass-the-ticket-external-id-2018"></a>可疑的身分識別竊取 (票證傳遞) (外部識別碼 2018)
 
-先前的名稱：使用傳遞票證攻擊竊取身分
+先前的名稱：  使用傳遞票證攻擊竊取身分
 
 **描述**
 
@@ -146,6 +147,32 @@ ms.locfileid: "65196841"
 4. 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設他們的密碼，並啟用 MFA。
 5. 如果您已安裝 Windows Defender ATP – 請使用 **klist.exe 清除**刪除指定登入工作階段的所有票證，並防止日後再使用該票證。
 
+## <a name="suspected-ntlm-authentication-tampering-external-id-2039---preview"></a>可疑的 NTLM 驗證竄改 (外部識別碼 2039) - 預覽
+
+2019 年 6 月，Microsoft 發佈了[資訊安全漏洞 CVE-2019-1040](https://portal.msrc.microsoft.com/security-guidance/advisory/CVE-2019-1040)，宣佈在 Microsoft Windows 中探索到新的竄改漏洞，會在「中間人」攻擊能夠成功略過 NTLM MIC (訊息完整性檢查) 保護時出現。
+
+成功惡意探索這個漏洞的惡意執行者，能夠使 NTLM 安全性功能降級，並可能成功代表其他帳戶建立已驗證的工作階段。 未修補的 Windows 伺服器有可能遇到這個漏洞。
+ 
+在此偵測中，當有人對網路中的網域控制站提出 [CVE-2019-1040](https://portal.msrc.microsoft.com/security-guidance/advisory/CVE-2019-1040) 中認為可能惡意探索資訊安全漏洞的 NTLM 驗證要求時，會觸發 Azure ATP 安全性警訊。
+
+**TP、B-TP、或 FP？**
+
+1.  相關的電腦 (包括網域控制站) 是否處於最新狀態，並已根據 [CVE-2019-1040](https://portal.msrc.microsoft.com/security-guidance/advisory/CVE-2019-1040) 進行修補？如果電腦狀態為最新且已修補，驗證應會失敗。 如果驗證失敗了，安全性警訊即代表失敗的嘗試，您可予以 [關閉]  。
+ 
+**了解漏洞的範圍**
+1.  調查[來源電腦](investigate-a-computer.md)。
+2.  調查[來源帳戶](investigate-a-user.md)。
+
+**建議的補救和預防步驟**
+
+**補救**
+1.  包含來源電腦
+2.  尋找執行攻擊的工具，並將它移除。
+3.  因為使用者可能也遭入侵，所以請搜尋在活動發生期間登入的使用者。 重設他們的密碼，並啟用 MFA。
+4.  在網域中強制使用密封 NTLMv2，並使用**網路安全性：LAN Manager 驗證層級**群組原則。 如需詳細資訊，請參閱 [LAN Manager 驗證層級指示](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-security-lan-manager-authentication-level)，以設定網域控制站的群組原則。
+ 
+**預防措施** •   確定環境中的所有裝置都在最新狀態，並已根據 [CVE-2019-1040](https://portal.msrc.microsoft.com/security-guidance/advisory/CVE-2019-1040) 進行修補。
+
 ## <a name="suspected-ntlm-relay-attack-exchange-account-external-id-2037---preview"></a>可疑的 NTLM 轉送攻擊 (Exchange 帳戶) (外部識別碼 2037) - 預覽
 
 **描述**
@@ -176,7 +203,7 @@ Exchange Server 可設為使用 Exchange Server 帳戶向攻擊者所執行的�
 
 ## <a name="suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008"></a>可疑的 Overpass-the-Hash 攻擊 (加密降級) (外部識別碼 2008) 
 
-先前的名稱：加密降級活動
+先前的名稱：  加密降級活動
 
 **描述**
 
@@ -215,13 +242,13 @@ Exchange Server 可設為使用 Exchange Server 帳戶向攻擊者所執行的�
 
 **防範**
  
-1. 將您的網域設定為支援強式加密，並移除「使用 Kerberos DES 加密類型」。 深入了解 [encryption types and Kerberos](https://blogs.msdn.microsoft.com/openspecification/2011/05/30/windows-configurations-for-kerberos-supported-encryption-type/) (加密類型和 Kerberos)。 
+1. 將您的網域設定為支援強式加密，並移除「使用 Kerberos DES 加密類型」  。 深入了解 [encryption types and Kerberos](https://blogs.msdn.microsoft.com/openspecification/2011/05/30/windows-configurations-for-kerberos-supported-encryption-type/) (加密類型和 Kerberos)。 
 2. 請務必將網域功能層級設定為支援強式加密。  
 3. 請優先使用支援強式加密的應用程式。
 
 ## <a name="suspected-overpass-the-hash-attack-kerberos-external-id-2002"></a>可疑的 Overpass-the-Hash 攻擊 (Kerberos) (外部識別碼 2002) 
 
-先前的名稱：不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)
+先前的名稱：  不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)
 
 **描述**
 

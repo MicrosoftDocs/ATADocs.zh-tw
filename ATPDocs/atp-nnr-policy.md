@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 06/17/2019
+ms.date: 07/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 1ac873fc-b763-41d7-878e-7c08da421cb5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0bf34a64f1140b0d2e3358196d23589de629588d
-ms.sourcegitcommit: 139e8dd63c06a5d9c9a3c348958e4f7fd74041b8
+ms.openlocfilehash: 0161c0f63e652bd62ee8ccf4a6677f2ec0d90f4d
+ms.sourcegitcommit: b7b3d4a401faaa3edb4bd669a1a003a6d21a4322
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67155867"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68298937"
 ---
 # <a name="what-is-network-name-resolution"></a>什麼是網路名稱解析？
 
@@ -35,11 +35,12 @@ ms.locfileid: "67155867"
 > [!NOTE]
 >不會在任何連接埠上執行任何驗證。
 
+Azure ATP 會根據網路流量評估及判斷裝置作業系統。 在擷取電腦名稱之後，Azure ATP 感應器會檢查 Active Directory 並使用 TCP 指紋，以尋找具有該相同電腦名稱的相關電腦物件。 使用 TCP 指紋有助於識別未註冊和非 Windows 的裝置，在您的調查過程中提供協助。 當 Azure ATP 感應器找到相互關聯時，感應器會在 IP 與電腦物件之間建立關聯。 
+
 在沒有擷取到名稱的情況下，會使用 IP 和偵測到的相關活動建立**無法解析的電腦設定檔 (依 IP)** 。
 
-在擷取電腦名稱之後，Azure ATP 感應器會在 Active Directory 中檢查，以尋找具有該相同電腦名稱的相關電腦物件。 若感應器找到該相互關聯，感應器會將此 IP 與該電腦物件關聯。 在找不到具有此名稱之電腦物件的情況下，會使用此名稱和偵測到的相關活動建立**無法解析的電腦設定檔 (依名稱)** 。 
-
 ![無法解析的電腦設定檔](media/unresolved-computer-profile.png)
+
 
 如果要偵測下列威脅，NNR 資料可說是不可或缺：
 
@@ -61,7 +62,7 @@ ms.locfileid: "67155867"
 
 
 ### <a name="prerequisites"></a>必要條件
-|通訊協定|  傳輸|  連接埠|   裝置| 方向|
+|通訊協定|  傳輸|  Port|   Device| 方向|
 |--------|--------|------|-------|------|
 |透過 RPC 的 NTLM| TCP |135|   網路上的所有裝置| 輸入|
 |NetBIOS|   UDP|    137|    網路上的所有裝置| 輸入|

@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/27/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c80fe761b9e54b2031e6385bcc32d845ccf52872
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: 38a1790194d739ac31c66df60cf0d9c2911344c7
+ms.sourcegitcommit: b7b3d4a401faaa3edb4bd669a1a003a6d21a4322
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65197203"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68298898"
 ---
 # <a name="azure-atp-architecture"></a>Azure ATP 架構
 
@@ -68,16 +68,12 @@ Azure ATP 感應器具有下列核心功能：
 
 Azure ATP 感應器可本機讀取事件，而不需要購買及維護額外的硬體或設定。 Azure ATP 感應器也支援 Windows 事件追蹤 (ETW)，以提供多個偵測的記錄資訊。 ETW 式偵測包含使用網域控制站複寫要求和網域控制站升階嘗試進行的可疑 DCShadow 攻擊。
 
-### <a name="domain-synchronizer-candidate"></a>網域同步器候選
+### <a name="domain-synchronizer-process"></a>自動網域同步器流程
 
-網域同步器候選負責主動同步處理特定 Active Directory 網域中的所有實體 (類似網域控制站進行複寫時所使用的機制)。 系統會從候選清單中隨機選擇一個感應器作為網域同步器。 
+網域同步器流程負責主動同步處理特定 Active Directory 網域中的所有實體 (類似網域控制站自行複寫時所使用的機制)。 系統會自動從您所有合格的感應器當中隨機選擇一個感應器，當作網域同步器。 
 
-如果同步器離線超過 30 分鐘，就會選擇其他的候選。 如果特定的網域沒有任何網域同步器可供使用，則 Azure ATP 會主動同步實體和其變更；不過，當在受監視的流量中偵測到新的實體時，Azure ATP 就會擷取新的實體。
+如果網域同步器離線超過 30 分鐘，則會自動選擇另一個感應器。 
     
-如無任何網域同步器可供使用，而您搜尋的實體又沒有任何相關流量，就不會顯示任何搜尋結果。
-
-根據預設，Azure ATP 感應器並非同步器的候選。 若要將 Azure ATP 感應器手動設定為網域同步器候選，請遵循 [Azure ATP 安裝工作流程](install-atp-step5.md)中的步驟。
-
 ### <a name="resource-limitations"></a>資源限制
 
 Azure ATP 感應器包含的監視元件，會評估其執行所在網域控制站上的可用運算和記憶體容量。 監視處理序每 10 秒會執行一次，且會動態更新 Azure ATP 感應器程序的 CPU 和記憶體使用量配額。 監視處理序可確保網域控制站一定會有至少 15% 的可用運算和記憶體資源。

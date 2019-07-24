@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 6904572852598e9151a6857961c079f7cd3da953
-ms.sourcegitcommit: 52bc20dfa1f64ff3e8c16eb5edea2813d54ba308
+ms.openlocfilehash: 112cc5225ea845ccee6a37da7a419689110c67a4
+ms.sourcegitcommit: b7b3d4a401faaa3edb4bd669a1a003a6d21a4322
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67562208"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68298833"
 ---
 # <a name="azure-atp-siem-log-reference"></a>Azure ATP SIEM 記錄檔參考
 
@@ -76,6 +76,8 @@ Azure ATP 可以將安全性警示與監視警示事件轉送到您的 SIEM。 �
 |[可疑的黃金票證使用 (時間異常)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|Kerberos 黃金票證 - 時間異常|2022|高|權限提升，<br> 橫向移動，<br>持續性|
 |[可疑的身分識別竊取 (雜湊傳遞)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-hash-external-id-2017)|使用傳遞雜湊攻擊竊取身分|2017 年|高|橫向移動|
 |[可疑的身分識別竊取 (票證傳遞)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018)|使用傳遞票證攻擊竊取身分|2018 年|高或中|橫向移動|
+|[可疑的 NTLM 驗證竄改 - 預覽](atp-lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039---preview)|NA|2039|中型|橫向移動|
+|[可疑的 NTLM 轉送攻擊 - 預覽](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037---preview)|NA|2037|中或低 (如果觀察到使用簽署的 NTLM v2 通訊協定)|權限提升， <br> 橫向移動|
 |[可疑的 Overpass-the-Hash 攻擊 (加密降級)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|加密降級活動 (可能為 Overpass-the-Hash 攻擊)|2008|中型|橫向移動|
 |[可疑的 Overpass-the-Hash 攻擊 (Kerberos)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-kerberos-external-id-2002)|不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)|2002|中型|橫向移動|
 |[可疑的萬能金鑰攻擊 (加密降級)](atp-domain-dominance-alerts.md#suspected-skeleton-key-attack-encryption-downgrade-external-id-2010)|加密降級活動 (可能為萬能金鑰攻擊)|2010|中型|橫向移動，<br> 持續性|
@@ -133,6 +135,9 @@ Azure ATP 可以將安全性警示與監視警示事件轉送到您的 SIEM。 �
 ### <a name="suspected-brute-force-attack-kerberos-ntlm"></a>可疑的暴力密碼破解攻擊 (Kerberos NTLM)
 10-29-2018  11:20:47    Auth.Warning    192.168.0.202   1 2018-10-29T09:20:44.478827+00:00 DC3 CEF 3908 BruteForceSecurityAlert ï»¿0|Microsoft|Azure ATP|2.52.5704.46184|BruteForceSecurityAlert|可疑的驗證失敗|5|start=2018-10-29T09:19:44.9512286Z app=Kerberos shost=CLIENT1 msg=可疑的驗證失敗，表示從 CLIENT1 偵測到潛在的暴力密碼破解攻擊。 externalId=2023 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/85042c8e-27fa-49b3-8667-dabc1aa31580 cs2Label=trigger cs2=new
 
+### <a name="suspected-dcsync-attack-replication-of-directory-services"></a>可疑的 DCSync 攻擊 (目錄服務的複寫)
+02-21-2018  16:20:06    Auth.Warning    192.168.0.220   1 2018-02-21T14:19:54.254930+00:00 CENTER CEF 6076 MaliciousServiceCreationSecurity ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|MaliciousServiceCreationSecurityAlert|可疑服務建立|5|start=2018-02-21T14:19:41.7897808Z app=ServiceInstalledEvent shost=CLIENT1 msg=user1 在 CLIENT1 上建立 MaliciousService 以執行潛在的惡意命令。 externalId=2026 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/179229b6-b791-4895-b5aa-fdf3747a325c cs2Label=trigger cs2=update
+
 ### <a name="suspected-golden-ticket-usage-encryption-downgrade"></a>可疑的黃金票證使用 (加密降級)
 10-29-2018  11:25:07    Auth.Warning    192.168.0.202   1 2018-10-29T09:25:01.007701+00:00 DC3 CEF 3908 GoldenTicketEncryptionDowngradeS ï»¿0|Microsoft|Azure ATP|2.52.5704.46184|GoldenTicketEncryptionDowngradeSecurityAlert|加密降級活動 (可能為黃金票證攻擊)|5|start=2018-10-29T09:37:49.0849130Z app=Kerberos msg=W10-000007-Lap 從 W10-000007-Lap 的 Kerberos 服務要求 (TGS_REQ) 中，使用了較弱的加密方法 (RC4)，存取 host/domain1.test.local。 externalId=2009 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/f01f8403-88b2-437e-b4ad-d72485fe05ac cs2Label=trigger cs2=new
 
@@ -154,14 +159,14 @@ Azure ATP 可以將安全性警示與監視警示事件轉送到您的 SIEM。 �
 ### <a name="suspected-identity-theft-pass-the-ticket"></a>可疑的身分識別竊取 (票證傳遞) 
 02-21-2018  17:04:47    Auth.Error  192.168.0.220   1 2018-02-21T15:04:33.537583+00:00 CENTER CEF 6076 PassTheTicketSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|PassTheTicketSecurityAlert|使用傳遞票證攻擊竊取身分|10|start=2018-02-21T15:02:22.2577465Z app=Kerberos suser=Eugene Jenkins msg=Eugene Jenkins (軟體工程師) 的 Kerberos 票證從 Admin-PC 被竊取至 Victom-PC，並用於存取 krbtgt/DOMAIN1.TEST.LOCAL。 externalId=2018 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/511f1487-2915-477d-be2e-04cfba702ccd cs2Label=trigger cs2=new
 
+### <a name="suspected-ntlm-authentication-tampering-preview"></a>可疑的 NTLM 驗證竄改 (預覽)
+07-17-2019  18:18:44    Auth.Warning   192.168.0.77       1 2019-07-09T15:18:30.967118+00:00 CENTER CEF 7144 AbnormalNtlmSigningSecurityAlert ï»¿0|Microsoft|Azure ATP|2.86.0.0|AbnormalNtlmSigningSecurityAlert|[預覽] 可疑的 NTLM 驗證竄改|5|start=2019-07-09T15:14:57.5280720Z app=Ntlm shost=CLIENT1 msg=CLIENT1 上有 2 個可疑的帳戶嘗試透過 NTLM 對 2 台電腦進行驗證。 externalId=2039 cs1Label=url cs1=https\://contoso-corp.atp.azure.com:13000/securityAlert/d4ce6252-2c0f-47f6-a534-47ee8ad983be cs2Label=trigger cs2=new
+
 ### <a name="suspected-over-pass-the-hash-attack-encryption-downgrade"></a>可疑的 Overpass-the-Hash 攻擊 (加密降級) 
 02-21-2018  16:21:07    Auth.Warning    192.168.0.220   1 2018-02-21T14:20:54.145833+00:00 CENTER CEF 6076 EncryptionDowngradeSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|EncryptionDowngradeSecurityAlert|加密降級活動|5|start=2018-02-21T14:19:41.8737870Z app=Kerberos msg=根據先前學習的行為，來自 CLIENT1 的 AS_REQ 訊息欄位之 Encrypted_Timestamp 的加密方法已遭到降級。 這可能是有人從 CLIENT1 使用過度傳遞雜湊竊取認證的結果。 externalId=2008 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/6354b9ed-6a39-4f5b-b10e-f51bbee879d2 cs2Label=trigger cs2=update
 
 ### <a name="suspected-skeleton-key-attack-encryption-downgrade"></a>可疑的萬能金鑰攻擊 (加密降級) 
 02-21-2018  16:21:07    Auth.Warning    192.168.0.220   1 2018-02-21T14:20:54.145833+00:00 CENTER CEF 6076 EncryptionDowngradeSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|EncryptionDowngradeSecurityAlert|加密降級活動|5|start=2018-02-21T14:19:41.8737870Z app=Kerberos msg=根據先前學習的行為，來自 CLIENT1 的 KRB_ERR 訊息之 ETYPE_INFO2 欄位的加密方法已遭到降級。 這可能是 DC1 上基本架構金鑰的結果。 externalId=2010 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/6354b9ed-6a39-4f5b-b10e-f51bbee879d2 cs2Label=trigger cs2=new
-
-### <a name="suspected-dcsync-attack-replication-of-directory-services"></a>可疑的 DCSync 攻擊 (目錄服務的複寫)
-02-21-2018  16:20:06    Auth.Warning    192.168.0.220   1 2018-02-21T14:19:54.254930+00:00 CENTER CEF 6076 MaliciousServiceCreationSecurity ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|MaliciousServiceCreationSecurityAlert|可疑服務建立|5|start=2018-02-21T14:19:41.7897808Z app=ServiceInstalledEvent shost=CLIENT1 msg=user1 在 CLIENT1 上建立 MaliciousService 以執行潛在的惡意命令。 externalId=2026 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/179229b6-b791-4895-b5aa-fdf3747a325c cs2Label=trigger cs2=update
 
 ### <a name="suspicious-authentication-failures"></a>可疑的驗證失敗
 02-21-2018  16:19:20    Auth.Warning    192.168.0.220   1 2018-02-21T14:19:15.397995+00:00 CENTER CEF 6076 BruteForceSecurityAlert ï»¿0|Microsoft|Azure ATP|2.22.4228.22540|BruteForceSecurityAlert|可疑的驗證失敗|5|start=2018-02-21T14:19:03.3831122Z app=Kerberos shost=CLIENT1 msg=可疑的驗證失敗，表示從 CLIENT1 偵測到潛在的暴力密碼破解攻擊。 externalId=2023 cs1Label=url cs1=https\://contoso-corp.atp.azure.com/securityAlert/fea88fc7-4110-454d-816d-349032474fd6 cs2Label=trigger cs2=new

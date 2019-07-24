@@ -12,14 +12,31 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 5315d7778413b9da0f642fb2c34db8fbe0a52ab4
-ms.sourcegitcommit: 68118b00d039db56f69ed7c0b96cf85f9b7a8065
+ms.openlocfilehash: b445d44aa64e2b4d0811029d4eed7e87046c52d0
+ms.sourcegitcommit: b7b3d4a401faaa3edb4bd669a1a003a6d21a4322
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67880454"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68298885"
 ---
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能
+
+## <a name="azure-atp-release-286"></a>Azure ATP 2.86 版 
+
+2019 年 7 月 14 日發行
+
+- **新的安全性警訊：可疑的 NTLM 驗證竄改 (外部識別碼 2039) - 預覽**<br>
+Azure ATP [可疑的 NTLM 驗證竄改](atp-lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039---preview)新安全性警示目前處於公開預覽狀態。 <br> 在此偵測中，當系統懷疑有人使用「中間人」攻擊成功繞過 NTLM 訊息完整性檢查 (MIC) (Microsoft [CVE-2019-040](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1040) 中詳述的安全性弱點) 時，會觸發 Azure ATP 安全性警訊。 這些類型的攻擊會嘗試使 NTLM 安全性功能降級並成功驗證，最終目標是要進行成功的橫向移動。 
+
+- **功能增強：TCP 指紋**<br> 到目前為止，Azure ATP 根據 Active Directory 中的可用屬性來提供實體裝置作業系統資訊。 先前，如果 Active Directory 未提供作業系統資訊，Azure ATP 實體頁面就也無法使用該資訊。 從這個版本開始，若遇到 Active Directory 沒有資訊的裝置，或未在 Active Directory 中註冊的裝置，Azure ATP 會使用 TCP 指紋提供這項資訊。 
+ 
+    新增 TCP 指紋資料有助於識別未註冊和非 Windows 的裝置，同時在您的調查過程中提供協助。 若要深入了解 Azure ATP 中的網路名稱解析，請參閱[了解網路名稱解析 (NNR)](atp-nnr-policy.md)。  
+
+- **新功能：已驗證的 Proxy - 預覽**<br> Azure ATP 現在支援已驗證的 Proxy。 請使用感應器命令列指定 Proxy URL，並指定使用者名稱/密碼，以使用需要驗證的 Proxy。 如需如何使用已驗證 Proxy 的詳細資訊，請參閱 [Azure ATP 無訊息安裝](https://docs.microsoft.com/azure-advanced-threat-protection/atp-silent-installation#proxy-authetication)。
+
+- **功能增強：自動網域同步器流程**<br> 在安裝期間將網域控制站指定及標記為候選網域同步器的流程，現在已完全自動化。 手動將網域控制站選取為候選網域同步器的切換選項已經移除。 
+
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-285"></a>Azure ATP 2.85 版
 

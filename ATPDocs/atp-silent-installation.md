@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 12/05/2018
+ms.date: 07/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 24eca4c6-c949-42ea-97b9-41ef0fb611f1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a15129852315fa958b8f5bed810c9f69e185e73e
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: d60a2ecf2302e6db39baccbc394bf8db14fa87f6
+ms.sourcegitcommit: b7b3d4a401faaa3edb4bd669a1a003a6d21a4322
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65195472"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68298805"
 ---
 # <a name="azure-atp-switches-and-silent-installation"></a>Azure ATP 切換參數與無訊息安裝
 此文章提供 Azure ATP 切換參數與無訊息安裝的指導方針與指示。
@@ -52,7 +52,7 @@ Azure ATP 要求您必須安裝 Microsoft .NET Framework 4.7。
     "Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
 
 > [!NOTE]
-> 從 Azure ATP 入口網站的 [設定] 區段、[感應器] 頁面，複製存取金鑰。
+> 從 Azure ATP 入口網站的 [設定]  區段、[感應器]  頁面，複製存取金鑰。
 
 
 **安裝選項**：
@@ -77,6 +77,20 @@ Azure ATP 要求您必須安裝 Microsoft .NET Framework 4.7。
 
     "Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="mmAOkLYCzfH8L/zUIsH24BIJBevlAWu7wUcSfIkRJufpuEojaDHYdjrNs0P3zpD+/bObKfLS0puD7biT5KDf3g=="
 
+## <a name="proxy-authentication"></a>Proxy 驗證
+
+請使用下列命令來完成 Proxy 驗證：
+
+**語法**：
+
+
+> [!div class="mx-tableFixed"]
+> 
+> |名稱|語法|對無訊息安裝而言是否為必要？|說明|
+> |-------------|----------|---------|---------|
+> |ProxyUrl|/quiet|是|指定 Azure ATP 感應器的 ProxyUrl 和連接埠號碼。|
+> |ProxyUserName|/help|否|如果您的 Proxy 服務需要驗證，請以 DOMAIN\user 格式提供使用者名稱。|
+> |ProxyUserPassword|NetFrameworkCommandLineArguments="/q"|是|指定 Proxy 使用者名稱的密碼。 \* 認證會經過加密，並由 Azure ATP 感應器儲存在本機。|
 
 ## <a name="update-the-azure-atp-sensor"></a>更新 Azure ATP 感應器
 

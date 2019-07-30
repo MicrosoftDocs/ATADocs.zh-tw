@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2d14d0e9-1b03-4bcc-ae97-8fd41526ffc5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: fe56aac6dae4b5f54134a3542c18495dbb44aacf
-ms.sourcegitcommit: fa9b880e52d4b615409cc247fc73993407df0ae5
+ms.openlocfilehash: 1148e4644ac49da31f2ba62e7bb972f3f9cfbbdf
+ms.sourcegitcommit: 4662ad41addf92727367874d909937fa331fb866
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226779"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68484952"
 ---
 # <a name="what-is-azure-advanced-threat-protection"></a>什麼是 Azure 進階威脅防護？
 Azure 進階威脅防護 (ATP) 是雲端式安全性解決方案，其可運用您的內部部署 Active Directory 訊號來識別、偵測及調查針對您組織的進階威脅、身分識別盜用，以及惡意的內部人員動作。 Azure ATP 可讓為了偵測出混合式環境中的進階攻擊而心力交瘁的 SecOp 分析師和安全性專業人員完成以下作業：  
@@ -94,7 +94,7 @@ Microsoft Ignite 2018 會舉辦多場會議，著重探討 [Azure 進階威脅�
 ### <a name="phase-2"></a>階段 2
 
 1. 保護組織中的所有網域控制站和[樹系](atp-multi-forest.md)。  
-2.  監視所有[警示](working-with-suspicious-activities.md) – 調查橫向移動和網域支配的警示。  
+2. 監視所有[警示](working-with-suspicious-activities.md) – 調查橫向移動和網域支配的警示。  
 3. 使用[安全性警訊指南](suspicious-activity-guide.md)，以了解威脅並對潛在攻擊進行分級。
 
 

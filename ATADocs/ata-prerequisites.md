@@ -5,23 +5,23 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 05/12/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 153f53715bc33b735bb7cf2796dcb1f983d67915
-ms.sourcegitcommit: 5d93b0e59080c2d872672bf77a1a40c548c1016d
-ms.translationtype: HT
+ms.openlocfilehash: 9d1dfcf20a45dde213db7db2d43ff973ebfcbe11
+ms.sourcegitcommit: dd8c94db68e85752c20bba3446b678cd1edcd932
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65760322"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604375"
 ---
 # <a name="ata-prerequisites"></a>ATA 必要條件
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+適用於：Advanced Threat Analytics 1.9 版*
 
 本文描述在環境中成功部署 ATA 的需求。
 
@@ -34,7 +34,7 @@ ATA 是由 ATA 中心、ATA 閘道及 (或) ATA 輕量型閘道所組成。 如�
 ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003 和更新版本的樹系功能等級 (FFL)。
 
 
-[開始之前](#before-you-start)：此節列出在開始 ATA 安裝之前您應該收集的資訊以及您應該擁有的帳戶和網路實體。
+[開始之前](#before-you-start):此節列出在開始 ATA 安裝之前您應該收集的資訊以及您應該擁有的帳戶和網路實體。
 
 [ATA 中心](#ata-center-requirements)：此節列出 ATA 中心的硬體與軟體需求，以及您需要在 ATA 中心伺服器上做的設定。
 
@@ -47,7 +47,7 @@ ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003
 ![ATA 架構圖](media/ATA-architecture-topology.jpg)
 
 ## <a name="before-you-start"></a>開始之前
-此節列出在開始 ATA 安裝之前您應該收集的資訊以及您應該擁有的帳戶與網路實體。
+本節列出在開始 ATA 安裝之前您應該收集的資訊以及您應該擁有的帳戶與網路實體。
 
 
 -   在監視的網域中，具有所有物件讀取存取權的使用者帳戶和密碼。
@@ -65,7 +65,7 @@ ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003
 
 
 ## <a name="ata-center-requirements"></a>ATA 中心需求
-此節列出 ATA 中心的需求。
+本節列出 ATA 中心的需求。
 ### <a name="general"></a>一般
 ATA 中心可安裝在執行 Windows Server 2012 R2、Windows Server 2016 或 Windows Server 2019 的伺服器上。 
 
@@ -81,7 +81,14 @@ ATA 中心可以安裝在屬於網域或工作群組的成員伺服器上。
 也可將 ATA 中心安裝為虛擬機器。 
 
 > [!NOTE] 
-> 作為虛擬機器執行時不支援動態記憶體或任何其他記憶體佔用功能。
+> 以虛擬機器 (VM) 的形式執行中心時, 必須隨時將所有記憶體配置給 VM。 
+
+|VM 執行于|說明|
+|------------|-------------|
+|Hyper-V|確定 VM 未啟用 [**啟用動態記憶體**]。|
+|VMWare|請確定已設定的記憶體數量和保留的記憶體相同, 或在 VM 設定中選取下列選項: [**保留所有的來賓記憶體 (全部鎖定**)]。|
+|其他虛擬化主機|請參閱廠商提供的檔, 以瞭解如何確保所有時間都會將記憶體完全配置給 VM。 |
+|
 
 如果將 ATA 中心當做虛擬機器執行，請在建立新檢查點之前先關閉伺服器，以避免潛在的資料庫損毀。
 
@@ -108,7 +115,7 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 ### <a name="ports"></a>連接埠
 下表列出 ATA 中心正常運作最少要開啟的連接埠。
 
-|通訊協定|傳輸|Port|去/從|方向|
+|Protocol|傳輸|Port|去/從|方向|
 |------------|-------------|--------|-----------|-------------|
 |**SSL** (ATA 通訊)|TCP|443|ATA 閘道|輸入|
 |**HTTP** (選擇性)|TCP|80|公司網路|輸入|
@@ -150,7 +157,7 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 > - 開始使用 ATA 1.8 版。ATA 閘道與輕量型閘道會管理自己的憑證，且不需要系統管理員互動來管理。
 
 ## <a name="ata-gateway-requirements"></a>ATA 閘道需求
-此節列出 ATA 閘道的需求。
+本節列出 ATA 閘道的需求。
 ### <a name="general"></a>一般
 ATA 閘道可安裝在執行 Windows Server 2012 R2、Windows Server 2016 或 Windows Server 2019 (包括 Server Core) 的伺服器上。
 ATA 閘道可以安裝在屬於網域或工作群組的成員伺服器上。
@@ -203,7 +210,7 @@ ATA 閘道需要至少一個管理介面卡和至少一個擷取介面卡︰
 ### <a name="ports"></a>連接埠
 下表列出在管理介面卡上設定 ATA 閘道至少需要的連接埠：
 
-|通訊協定|傳輸|Port|去/從|方向|
+|Protocol|傳輸|Port|去/從|Direction|
 |------------|-------------|--------|-----------|-------------|
 |LDAP|TCP 和 UDP|389|網域控制站|輸出|
 |安全的 LDAP (LDAPS)|TCP|636|網域控制站|輸出|
@@ -230,7 +237,7 @@ ATA 閘道需要至少一個管理介面卡和至少一個擷取介面卡︰
 >   -   NetBIOS (UDP 連接埠 137) (針對解析目的)
 
 ## <a name="ata-lightweight-gateway-requirements"></a>ATA 輕量型閘道需求
-此節列出 ATA 輕量型閘道的需求。
+本節列出 ATA 輕量型閘道的需求。
 ### <a name="general"></a>一般
 ATA 輕量型閘道可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 或 Windows Server 2019 (包含 Core 但不含 Nano) 的網域控制站上安裝。
 
@@ -277,7 +284,7 @@ ATA 輕量型閘道可為所有網域控制站的網路介面卡監視其上的�
 ### <a name="ports"></a>連接埠
 下表列出 ATA 輕量型閘道至少需要的連接埠：
 
-|通訊協定|傳輸|Port|去/從|方向|
+|Protocol|傳輸|Port|去/從|Direction|
 |------------|-------------|--------|-----------|-------------|
 |DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
 |透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|兩者|

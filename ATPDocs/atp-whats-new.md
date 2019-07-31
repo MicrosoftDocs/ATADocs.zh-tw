@@ -5,21 +5,36 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 07/14/2019
+ms.date: 07/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: b445d44aa64e2b4d0811029d4eed7e87046c52d0
-ms.sourcegitcommit: b7b3d4a401faaa3edb4bd669a1a003a6d21a4322
+ms.openlocfilehash: 6f96afa04a3f9179246caddb82dfca1115e20164
+ms.sourcegitcommit: dd8c94db68e85752c20bba3446b678cd1edcd932
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68298885"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604423"
 ---
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能
+
+
+2019 年 7 月 28 日發佈
+
+## <a name="azure-atp-release-288"></a>Azure ATP 2.88 版 
+
+- 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
+
+2019 年 7 月 21 日發佈
+
+## <a name="azure-atp-release-287"></a>Azure ATP 2.87 版 
+
+- **功能增強：Azure ATP 獨立感應器的自動化 Syslog 事件收集**<br> Azure ATP 獨立感應器的連入 Syslog 連線現在已完全自動化，同時從設定畫面中移除切換選項。 這些變更不會影響連出 Syslog 連線。 
+
+- 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
 ## <a name="azure-atp-release-286"></a>Azure ATP 2.86 版 
 
@@ -28,11 +43,11 @@ ms.locfileid: "68298885"
 - **新的安全性警訊：可疑的 NTLM 驗證竄改 (外部識別碼 2039) - 預覽**<br>
 Azure ATP [可疑的 NTLM 驗證竄改](atp-lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039---preview)新安全性警示目前處於公開預覽狀態。 <br> 在此偵測中，當系統懷疑有人使用「中間人」攻擊成功繞過 NTLM 訊息完整性檢查 (MIC) (Microsoft [CVE-2019-040](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1040) 中詳述的安全性弱點) 時，會觸發 Azure ATP 安全性警訊。 這些類型的攻擊會嘗試使 NTLM 安全性功能降級並成功驗證，最終目標是要進行成功的橫向移動。 
 
-- **功能增強：TCP 指紋**<br> 到目前為止，Azure ATP 根據 Active Directory 中的可用屬性來提供實體裝置作業系統資訊。 先前，如果 Active Directory 未提供作業系統資訊，Azure ATP 實體頁面就也無法使用該資訊。 從這個版本開始，若遇到 Active Directory 沒有資訊的裝置，或未在 Active Directory 中註冊的裝置，Azure ATP 會使用 TCP 指紋提供這項資訊。 
+- **功能增強：擴充的裝置作業系統身分識別**<br> 到目前為止，Azure ATP 根據 Active Directory 中的可用屬性來提供實體裝置作業系統資訊。 先前，如果 Active Directory 未提供作業系統資訊，Azure ATP 實體頁面就也無法使用該資訊。 從這個版本開始，若遇到 Active Directory 沒有資訊的裝置，或未在 Active Directory 中註冊的裝置，Azure ATP 會使用擴充的裝置作業系統身分識別方法 TCP 指紋提供此資訊。 
  
-    新增 TCP 指紋資料有助於識別未註冊和非 Windows 的裝置，同時在您的調查過程中提供協助。 若要深入了解 Azure ATP 中的網路名稱解析，請參閱[了解網路名稱解析 (NNR)](atp-nnr-policy.md)。  
+    新增擴充裝置作業系統身分識別資料有助於識別未註冊和非 Windows 的裝置，同時在您的調查程序中提供協助。 若要深入了解 Azure ATP 中的網路名稱解析，請參閱[了解網路名稱解析 (NNR)](atp-nnr-policy.md)。  
 
-- **新功能：已驗證的 Proxy - 預覽**<br> Azure ATP 現在支援已驗證的 Proxy。 請使用感應器命令列指定 Proxy URL，並指定使用者名稱/密碼，以使用需要驗證的 Proxy。 如需如何使用已驗證 Proxy 的詳細資訊，請參閱 [Azure ATP 無訊息安裝](https://docs.microsoft.com/azure-advanced-threat-protection/atp-silent-installation#proxy-authetication)。
+- **新功能：已驗證的 Proxy - 預覽**<br> Azure ATP 現在支援已驗證的 Proxy。 請使用感應器命令列指定 Proxy URL，並指定使用者名稱/密碼，以使用需要驗證的 Proxy。 如需如何使用已驗證 Proxy 的詳細資訊，請參閱[設定 Proxy](https://docs.microsoft.com/azure-advanced-threat-protection/configure-proxy#configure-the-proxy)。
 
 - **功能增強：自動網域同步器流程**<br> 在安裝期間將網域控制站指定及標記為候選網域同步器的流程，現在已完全自動化。 手動將網域控制站選取為候選網域同步器的切換選項已經移除。 
 
@@ -195,7 +210,7 @@ Azure ATP 現已在正式版本中支援未受信任的樹系。 如果要深入
     已將 NNR 信賴等級辨識項新增至下列警示：
   - [網路對應偵察 (DNS)](atp-reconnaissance-alerts.md#network-mapping-reconnaissance-dns-external-id-2007)
   - [可疑的身分識別竊取 (票證傳遞)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018) 
-  - [可疑的 NTLM 轉送攻擊 (Exchange 帳戶) - 預覽](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037---preview)
+  - [可疑的 NTLM 轉送攻擊 (Exchange 帳戶) - 預覽](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037)
   - [可疑的 DCSync 攻擊 (目錄服務的複寫)](atp-domain-dominance-alerts.md#suspected-dcsync-attack-replication-of-directory-services-external-id-2006)
 
 - **其他健全狀況警示案例：Azure ATP 感應器服務無法啟動**<br>目前假如因為網路擷取驅動程式發生問題，導致 Azure ATP 感應器無法啟動，便會觸發感應器健全狀況警示。 如需關於 Azure ATP 記錄及如何使用的詳細資訊，請參閱[使用 Azure ATP 記錄針對 Azure ATP 進行疑難排解](troubleshooting-atp-using-logs.md)。 
@@ -258,7 +273,7 @@ Azure ATP 現已在正式版本中支援未受信任的樹系。 如果要深入
 發行日期：2019 年 2 月 10 日
 
 - **新的安全性警訊：可疑的 NTLM 轉送攻擊 (Exchange 帳戶) – (預覽)**<br>
-Azure ATP [可疑的 NTLM 轉送攻擊 (Exchange 帳戶) - 預覽](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037---preview)安全性警訊現已在公開預覽階段。 <br> 在此偵測中，當識別到可疑來源使用 Exchange 帳戶認證時，便會觸發 Azure ATP 安全性警訊。 這些攻擊類型會嘗試利用 NTLM 轉送技術來取得網域控制站交換權限，又稱為 **ExchangePriv**。 若要深入了解 **ExchangePriv** 技術，請參閱最早於 2019 年 1 月 31 日發佈的 [ADV190007 公告](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV190007)，以及 [Azure ATP 警示回應](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/How-to-win-the-latest-security-race-over-NTLM-relay/ba-p/334511) \(英文\)。  
+Azure ATP [可疑的 NTLM 轉送攻擊 (Exchange 帳戶) - 預覽](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037)安全性警訊現已在公開預覽階段。 <br> 在此偵測中，當識別到可疑來源使用 Exchange 帳戶認證時，便會觸發 Azure ATP 安全性警訊。 這些攻擊類型會嘗試利用 NTLM 轉送技術來取得網域控制站交換權限，又稱為 **ExchangePriv**。 若要深入了解 **ExchangePriv** 技術，請參閱最早於 2019 年 1 月 31 日發佈的 [ADV190007 公告](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV190007)，以及 [Azure ATP 警示回應](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/How-to-win-the-latest-security-race-over-NTLM-relay/ba-p/334511) \(英文\)。  
 
 - **正式運作：透過 DNS 執行遠端程式碼**<br>
 此警示現在已 GA (正式運作)。 如需詳細資訊與警示功能，請參閱[透過 DNS 執行遠端程式碼警示描述頁面](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036)。 

@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 07/17/2019
+ms.date: 07/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6260f40a9113aa3deda21da226aeb4b3d146353c
-ms.sourcegitcommit: b7b3d4a401faaa3edb4bd669a1a003a6d21a4322
+ms.openlocfilehash: 2ac458831e47db99c0b61d56cd390c5d01ed8ca1
+ms.sourcegitcommit: dd8c94db68e85752c20bba3446b678cd1edcd932
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68298830"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604342"
 ---
 # <a name="azure-atp-security-alerts"></a>Azure ATP 安全性警示
 
@@ -62,8 +62,8 @@ Azure ATP 安全性警訊分為下列類別或階段，如同在典型網路攻�
 |[可疑的黃金票證使用 (時間異常)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|Kerberos 黃金票證 - 時間異常|2022|高|權限提升，<br> 橫向移動，<br>持續性|
 |[可疑的身分識別竊取 (雜湊傳遞)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-hash-external-id-2017)|使用傳遞雜湊攻擊竊取身分|2017 年|高|橫向移動|
 |[可疑的身分識別竊取 (票證傳遞)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018)|使用傳遞票證攻擊竊取身分|2018 年|高或中|橫向移動|
-|[可疑的 NTLM 驗證竄改 - 預覽](atp-lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039---preview)|NA|2039|中型|橫向移動|
-|[可疑的 NTLM 轉送攻擊 - 預覽](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037---preview)|NA|2037|中或低 (如果觀察到使用簽署的 NTLM v2 通訊協定)|權限提升， <br> 橫向移動|
+|[可疑的 NTLM 驗證竄改 - 預覽](atp-lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039---preview)|NA|2039|中型|權限提升， <br>橫向移動|
+|[可疑的 NTLM 轉送攻擊](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037)|NA|2037|中或低 (如果觀察到使用簽署的 NTLM v2 通訊協定)|權限提升， <br> 橫向移動|
 |[可疑的 Overpass-the-Hash 攻擊 (加密降級)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|加密降級活動 (可能為 Overpass-the-Hash 攻擊)|2008|中型|橫向移動|
 |[可疑的 Overpass-the-Hash 攻擊 (Kerberos)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-kerberos-external-id-2002)|不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)|2002|中型|橫向移動|
 |[可疑的萬能金鑰攻擊 (加密降級)](atp-domain-dominance-alerts.md#suspected-skeleton-key-attack-encryption-downgrade-external-id-2010)|加密降級活動 (可能為萬能金鑰攻擊)|2010|中型|橫向移動，<br> 持續性|

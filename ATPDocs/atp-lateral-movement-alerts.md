@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 07/17/2019
+ms.date: 07/25/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 2257eb00-8614-4577-b6a1-5c65085371f2
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7e791dafcd8c3e05a7e05d5d50e82fae05aa5c89
-ms.sourcegitcommit: c1368baac1fa4e54eb9eb4e34a7b471e56b22ac2
+ms.openlocfilehash: cf6d57113fc3457d7aeb097e77b7668fa012b546
+ms.sourcegitcommit: 4662ad41addf92727367874d909937fa331fb866
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68299363"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68485012"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>教學課程：橫向移動警訊  
 
@@ -38,7 +38,7 @@ ms.locfileid: "68299363"
 > * 可疑的身分識別竊取 (雜湊傳遞) (外部識別碼 2017)
 > * 可疑的身分識別竊取 (票證傳遞) (外部識別碼 2018)
 > * 可疑的 NTLM 驗證竄改 (外部識別碼 2039) - 預覽
-> * 可疑的 NTLM 轉送攻擊 (Exchange 帳戶) (外部識別碼 2037) - 預覽
+> * 可疑的 NTLM 轉送攻擊 (Exchange 帳戶) (外部識別碼 2037)
 > * 可疑的 Overpass-the-Hash 攻擊 (加密降級) (外部識別碼 2008)
 > * 可疑的 Overpass-the-Hash 攻擊 (Kerberos) (外部識別碼 2002)
 
@@ -173,7 +173,7 @@ ms.locfileid: "68299363"
  
 **預防措施** •   確定環境中的所有裝置都在最新狀態，並已根據 [CVE-2019-1040](https://portal.msrc.microsoft.com/security-guidance/advisory/CVE-2019-1040) 進行修補。
 
-## <a name="suspected-ntlm-relay-attack-exchange-account-external-id-2037---preview"></a>可疑的 NTLM 轉送攻擊 (Exchange 帳戶) (外部識別碼 2037) - 預覽
+## <a name="suspected-ntlm-relay-attack-exchange-account-external-id-2037"></a>可疑的 NTLM 轉送攻擊 (Exchange 帳戶) (外部識別碼 2037)
 
 **描述**
 

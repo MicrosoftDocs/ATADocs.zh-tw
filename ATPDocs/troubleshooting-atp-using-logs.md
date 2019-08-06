@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 10/04/2018
+ms.date: 08/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: de796346-647d-48e1-970a-8f072e990f1e
 ms.reviewer: ''
 ms.suite: ''
-ms.openlocfilehash: e461aa7302ee515f33e2ad69f0f2c0c9f83ceaf8
-ms.sourcegitcommit: 139e8dd63c06a5d9c9a3c348958e4f7fd74041b8
+ms.openlocfilehash: 0105630931c6cbebfe2b919946f305ba031bb755
+ms.sourcegitcommit: 8df26fb312472b8df1da70e581517223d26de8c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67155894"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68781919"
 ---
 # <a name="troubleshooting-azure-advanced-threat-protection-atp-sensor-using-the-atp-logs"></a>使用 ATP 記錄疑難排解 Azure 進階威脅防護 (ATP) 感應器的問題
 ATP 記錄提供每個 Azure ATP 感應器元件在指定時點所執行之動作的見解。
@@ -28,8 +28,6 @@ Azure ATP 記錄檔位於安裝 ATP、稱為 **Logs** 的子資料夾中，預�
 Azure ATP 感應器的記錄包括：
 
 -   **Microsoft.Tri.Sensor.log** - 此記錄包含 Azure ATP 感應器中所發生的一切 (包括解決方法與錯誤)。 其主要用途是按發生時間順序，取得所有作業的整體狀態。
-
--   **Microsoft.Tri.Gateway-Resolution.log** - 此記錄包含 ATP 感應器解析流量中所見實體的詳細資料。 其主要用途是調查實體的解析問題。
 
 -   **Microsoft.Tri.Center-Errors.log** - 此記錄檔只包含 ATP 感應器攔截到的錯誤。 其主要用途是執行健康情況檢查，並調查需要與特定時間相互關聯的問題。
 

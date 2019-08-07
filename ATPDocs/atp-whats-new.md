@@ -5,21 +5,33 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 07/28/2019
+ms.date: 08/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 6f96afa04a3f9179246caddb82dfca1115e20164
-ms.sourcegitcommit: dd8c94db68e85752c20bba3446b678cd1edcd932
+ms.openlocfilehash: 23feedf3b48c3b21f594d764321f0e241e8408cb
+ms.sourcegitcommit: 8df26fb312472b8df1da70e581517223d26de8c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604423"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68781907"
 ---
 # <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能
+
+發行日期：2019 年 8 月 4 日
+
+## <a name="azure-atp-release-289"></a>Azure ATP 2.89 版
+
+- **偵測方法改善**<br>為了避免在建立精確的橫向移動路徑 (LMP) 評量時產生過多 NTLM 流量，已改善 Azure ATP 感應器邏輯，以降低 NTLM 使用， 並更有效地使用 Kerberos。  
+
+- **警示增強：可疑的黃金票證使用 (不存在的帳戶)**<br>SAM 名稱變更已新增至此類型警示中所列的支援辨識項類型。 若要深入了解警示，包括如何預防此類型的活動與補救措施，請參閱[可疑的黃金票證使用 (不存在的帳戶)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-nonexistent-account-external-id-2027)。
+
+- **正式運作：可疑的 NTLM 驗證竄改**<br> [可疑的 NTLM 驗證竄改](atp-lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039)警示已不再處於預覽模式，現在已公開推出。 
+
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
 
 2019 年 7 月 28 日發佈
@@ -40,8 +52,8 @@ ms.locfileid: "68604423"
 
 2019 年 7 月 14 日發行
 
-- **新的安全性警訊：可疑的 NTLM 驗證竄改 (外部識別碼 2039) - 預覽**<br>
-Azure ATP [可疑的 NTLM 驗證竄改](atp-lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039---preview)新安全性警示目前處於公開預覽狀態。 <br> 在此偵測中，當系統懷疑有人使用「中間人」攻擊成功繞過 NTLM 訊息完整性檢查 (MIC) (Microsoft [CVE-2019-040](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1040) 中詳述的安全性弱點) 時，會觸發 Azure ATP 安全性警訊。 這些類型的攻擊會嘗試使 NTLM 安全性功能降級並成功驗證，最終目標是要進行成功的橫向移動。 
+- **新的安全性警訊：可疑的 NTLM 驗證竄改 (外部識別碼 2039)**<br>
+Azure ATP [可疑的 NTLM 驗證竄改](atp-lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039)新安全性警示目前處於公開預覽狀態。 <br> 在此偵測中，當系統懷疑有人使用「中間人」攻擊成功繞過 NTLM 訊息完整性檢查 (MIC) (Microsoft [CVE-2019-040](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1040) 中詳述的安全性弱點) 時，會觸發 Azure ATP 安全性警訊。 這些類型的攻擊會嘗試使 NTLM 安全性功能降級並成功驗證，最終目標是要進行成功的橫向移動。 
 
 - **功能增強：擴充的裝置作業系統身分識別**<br> 到目前為止，Azure ATP 根據 Active Directory 中的可用屬性來提供實體裝置作業系統資訊。 先前，如果 Active Directory 未提供作業系統資訊，Azure ATP 實體頁面就也無法使用該資訊。 從這個版本開始，若遇到 Active Directory 沒有資訊的裝置，或未在 Active Directory 中註冊的裝置，Azure ATP 會使用擴充的裝置作業系統身分識別方法 TCP 指紋提供此資訊。 
  

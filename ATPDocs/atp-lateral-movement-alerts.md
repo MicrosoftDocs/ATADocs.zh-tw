@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 07/25/2019
+ms.date: 08/05/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 2257eb00-8614-4577-b6a1-5c65085371f2
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: cf6d57113fc3457d7aeb097e77b7668fa012b546
-ms.sourcegitcommit: 4662ad41addf92727367874d909937fa331fb866
+ms.openlocfilehash: dd78f2d18010b043dc58bfb6fac24429a36ba2f1
+ms.sourcegitcommit: 8df26fb312472b8df1da70e581517223d26de8c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68485012"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68781832"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>教學課程：橫向移動警訊  
 
@@ -37,7 +37,7 @@ ms.locfileid: "68485012"
 > * 透過 DNS 執行遠端程式碼 (外部識別碼 2036)
 > * 可疑的身分識別竊取 (雜湊傳遞) (外部識別碼 2017)
 > * 可疑的身分識別竊取 (票證傳遞) (外部識別碼 2018)
-> * 可疑的 NTLM 驗證竄改 (外部識別碼 2039) - 預覽
+> * 可疑的 NTLM 驗證竄改 (外部識別碼 2039) 
 > * 可疑的 NTLM 轉送攻擊 (Exchange 帳戶) (外部識別碼 2037)
 > * 可疑的 Overpass-the-Hash 攻擊 (加密降級) (外部識別碼 2008)
 > * 可疑的 Overpass-the-Hash 攻擊 (Kerberos) (外部識別碼 2002)
@@ -147,7 +147,7 @@ ms.locfileid: "68485012"
 4. 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設他們的密碼，並啟用 MFA。
 5. 如果您已安裝 Windows Defender ATP – 請使用 **klist.exe 清除**刪除指定登入工作階段的所有票證，並防止日後再使用該票證。
 
-## <a name="suspected-ntlm-authentication-tampering-external-id-2039---preview"></a>可疑的 NTLM 驗證竄改 (外部識別碼 2039) - 預覽
+## <a name="suspected-ntlm-authentication-tampering-external-id-2039"></a>可疑的 NTLM 驗證竄改 (外部識別碼 2039)
 
 2019 年 6 月，Microsoft 發佈了[資訊安全漏洞 CVE-2019-1040](https://portal.msrc.microsoft.com/security-guidance/advisory/CVE-2019-1040)，宣佈在 Microsoft Windows 中探索到新的竄改漏洞，會在「中間人」攻擊能夠成功略過 NTLM MIC (訊息完整性檢查) 保護時出現。
 

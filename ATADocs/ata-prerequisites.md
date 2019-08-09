@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 08/05/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3f0076091ced915776ea54578a58ea3a3fa5856f
-ms.sourcegitcommit: 8df26fb312472b8df1da70e581517223d26de8c2
+ms.openlocfilehash: 139ea7e4eaecadeaf3fd57fb8ed7afe1dd8ea096
+ms.sourcegitcommit: db35bae8354fa35644e9334bfc37b9ffbafdaacc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68781856"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862576"
 ---
 # <a name="ata-prerequisites"></a>ATA 必要條件
 
@@ -89,7 +89,7 @@ ATA 中心可以安裝在屬於網域或工作群組的成員伺服器上。
 |VM 執行于|描述|
 |------------|-------------|
 |Hyper-V|確定 VM 未啟用 [**啟用動態記憶體**]。|
-|VMWare|請確定已設定的記憶體數量和保留的記憶體相同, 或在 VM 設定中選取下列選項: [**保留所有的來賓記憶體 (全部鎖定**)]。|
+|VMWare|請確定已設定的記憶體數量和保留的記憶體相同, 或選取 VM 設定中的下列選項–**保留所有的來賓記憶體 (全部鎖定)** 。|
 |其他虛擬化主機|請參閱廠商提供的檔, 以瞭解如何確保所有時間都會將記憶體完全配置給 VM。 |
 |
 
@@ -180,7 +180,7 @@ ATA 閘道可以用來監視具 Windows Server 2003 或更新版本之網域功�
 為了達到最佳效能，將 ATA 閘道的 [電源選項] 設定為 [高效能]。<br>
 ATA 閘道可以支援監視多個網域控制站，依進出網域控制站的網路傳輸量而定。
 
-若要深入瞭解動態記憶體或任何其他記憶體佔用功能, 請參閱易失[儲存體](#dynamic-memory)。
+若要深入瞭解動態記憶體或任何其他虛擬機器記憶體管理功能, 請參閱易失[儲存體](#dynamic-memory)。
 
 如需 ATA 閘道硬體需求的詳細資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。
 
@@ -266,7 +266,7 @@ ATA 輕量型閘道至少需要在網域控制站上安裝 2 個核心和 6 GB �
 為了達到最佳效能，將 ATA 輕量型閘道的 **[電源選項]** 設定為 [高效能]。
 ATA 輕量型閘道可以部署在各種負載和大小的網域控制站上，依進出網域控制站的網路流量，以及安裝在該網域控制站上的資源數量而定。
 
-若要深入瞭解動態記憶體或任何其他記憶體佔用功能, 請參閱易失[儲存體](#dynamic-memory)。
+若要深入瞭解動態記憶體或任何其他虛擬機器記憶體管理功能, 請參閱易失[儲存體](#dynamic-memory)。
 
 如需 ATA 輕量型閘道硬體需求的詳細資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。
 

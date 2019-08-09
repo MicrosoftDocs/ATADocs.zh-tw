@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 7/30/2018
+ms.date: 08/08/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: 7597ed25-87f5-472c-a496-d5f205c9c391
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 623e5b3623238ec8a1e12c1154a76e0aeb6b57bb
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.openlocfilehash: bd47ebbe059014015b180ad568e4c519ba1b95b7
+ms.sourcegitcommit: db35bae8354fa35644e9334bfc37b9ffbafdaacc
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65195880"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862588"
 ---
 # <a name="install-ata---step-9"></a>安裝 ATA - 步驟 9
 
@@ -25,6 +25,9 @@ ms.locfileid: "65195880"
 
 > [!div class="step-by-step"]
 > [« 步驟 8](install-ata-step7.md)
+
+> [!NOTE]
+> 強制執行任何新原則之前, 請務必先確定您的環境是安全的, 而不會影響應用程式相容性, 方法是先啟用並確認您在 audit 模式中的建議變更。 
 
 ## <a name="step-9-configure-sam-r-required-permissions"></a>步驟 9： 設定 SAM-R 所需的權限
 
@@ -44,9 +47,6 @@ ms.locfileid: "65195880"
    ![新增服務](./media/samr-add-service.png)
 
 3. **ATA 服務** (在安裝期間建立的 ATA 服務) 現在具備在環境中執行 SAM-R 的適當權限。
-
-> [!NOTE]
-> 強制執行新原則之前，請確定您的環境仍然是安全的，不要透過在稽核模式中啟用及驗證您建議的變更而影響應用程式相容性。 
 
  如需 SAM-R 和此群組原則的詳細資訊，請參閱[網路存取：限制允許對 SAM 發出遠端呼叫的用戶端](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls)。
 

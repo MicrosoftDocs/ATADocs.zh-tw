@@ -1,31 +1,41 @@
 ---
 title: Azure 進階威脅防護中的新功能 (Azure ATP) | Microsoft Docs
-description: 描述 Azure ATP 最新版本並提供各版本新功能的詳細資訊。
+description: 本文會經常更新，讓您知道最新版 Azure 進階威脅防護 (Azure ATP) 的新功能。
 keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 08/05/2019
+ms.date: 08/11/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 23feedf3b48c3b21f594d764321f0e241e8408cb
-ms.sourcegitcommit: 8df26fb312472b8df1da70e581517223d26de8c2
+ms.openlocfilehash: b190258096e7e3ea0d42c52931f02c148a725f21
+ms.sourcegitcommit: e185d6cf13ef0c40206a5d1980e3953ef8834a48
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68781907"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68951240"
 ---
-# <a name="whats-new-in-azure-atp"></a>Azure ATP 的新功能
+# <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
+
+本文會經常更新，讓您知道最新版 Azure ATP 的新功能。
+
+RSS 摘要：複製以下 URL 並在您的摘要讀取程式中貼上，以在此頁面更新時接收通知：`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
+
+發行日期：2019 年 8 月 11 日
+
+## <a name="azure-atp-release-290"></a>Azure ATP 2.90 版
+
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
 發行日期：2019 年 8 月 4 日
 
 ## <a name="azure-atp-release-289"></a>Azure ATP 2.89 版
 
-- **偵測方法改善**<br>為了避免在建立精確的橫向移動路徑 (LMP) 評量時產生過多 NTLM 流量，已改善 Azure ATP 感應器邏輯，以降低 NTLM 使用， 並更有效地使用 Kerberos。  
+- **感應器方法改善**<br>為了避免在建立精確的橫向移動路徑 (LMP) 評定時產生過多 NTLM 流量，而改善了 Azure ATP 感應器方法，以降低依賴使用 NTLM 的程度，並提升 Kerberos 的使用率。  
 
 - **警示增強：可疑的黃金票證使用 (不存在的帳戶)**<br>SAM 名稱變更已新增至此類型警示中所列的支援辨識項類型。 若要深入了解警示，包括如何預防此類型的活動與補救措施，請參閱[可疑的黃金票證使用 (不存在的帳戶)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-nonexistent-account-external-id-2027)。
 

@@ -13,10 +13,10 @@ ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 639dc38eeb9f4944cdd011074463953a13a49966
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: e185d6cf13ef0c40206a5d1980e3953ef8834a48
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 08/12/2019
 ms.locfileid: "65196646"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>針對 Azure ATP 已知問題進行疑難排解 
@@ -69,13 +69,13 @@ Azure 進階威脅防護可讓您將 Azure ATP 與 Windows Defender ATP 整合�
 
 ## <a name="vmware-virtual-machine-sensor-issue"></a>VMware 虛擬機器感應器問題
 
-如果您在 VMware 虛擬機器上有 Azure ATP 感應器，則可能會收到監視警示「某些網路流量不會被分析」。 當 VMware 中的設定不相符時，就會發生此狀況。
+如果您在 VMware 虛擬機器上有 Azure ATP 感應器，則可能會收到監視警示「某些網路流量不會被分析」  。 當 VMware 中的設定不相符時，就會發生此狀況。
 
 若要解決此問題：
 
-在虛擬機器的 NIC 設定中，將下列設定設為 [0] 或 [停用]：TsoEnable、LargeSendOffload、TSO Offload、Giant TSO Offload。
+在虛擬機器的 NIC 設定中，將下列設定設為 [0]  或 [停用]  ：TsoEnable、LargeSendOffload、TSO Offload、Giant TSO Offload。
 > [!NOTE]
-> 針對 Azure ATP 感應器，您只需要停用 NIC 設定底下的 [IPv4 TSO Offload]。
+> 針對 Azure ATP 感應器，您只需要停用 NIC 設定底下的 [IPv4 TSO Offload]  。
 
  ![VMware 感應器問題](./media/vm-sensor-issue.png)
 

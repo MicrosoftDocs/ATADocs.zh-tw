@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 08/07/2019
+ms.date: 08/20/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 139ea7e4eaecadeaf3fd57fb8ed7afe1dd8ea096
-ms.sourcegitcommit: db35bae8354fa35644e9334bfc37b9ffbafdaacc
+ms.openlocfilehash: e08668199056c59093caa202123cf01a4ed303cc
+ms.sourcegitcommit: 2aab3c4244db694616ec02a9b8ae2e266d6fdddc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68862576"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69629332"
 ---
 # <a name="ata-prerequisites"></a>ATA 必要條件
 
@@ -102,6 +102,7 @@ ATA 中心可以安裝在屬於網域或工作群組的成員伺服器上。
 為了達到最佳效能，將 ATA 中心的 [電源選項] 設定為 [高效能]。<br>
 您要監視的網域控制站數目以及每個網域控制站的負載，決定了所需的伺服器規格。 如需詳細資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。
 
+對於 Windows 作業系統2008R2 和 2012,[多處理器群組](https://docs.microsoft.com/windows/win32/procthread/processor-groups)模式不支援閘道。 如需多處理器群組模式的詳細資訊, 請參閱[疑難排解](troubleshooting-ata-known-errors.md##multi-processor-group-mode)。 
 
 ### <a name="time-synchronization"></a>時間同步
 

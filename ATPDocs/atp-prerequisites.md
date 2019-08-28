@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b4e9b7af867693dd41740fcf54dd0cdb47b06e34
-ms.sourcegitcommit: e185d6cf13ef0c40206a5d1980e3953ef8834a48
+ms.openlocfilehash: ad130b0956020696c30709627e9671ff1e46b1cc
+ms.sourcegitcommit: 2aab3c4244db694616ec02a9b8ae2e266d6fdddc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68951264"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69629324"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -103,7 +103,10 @@ Azure ATP 感應器可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)�
 
 Azure ATP 感應器在網域控制站上需要安裝至少 2 個核心和 6 GB 的 RAM。
 為了達到最佳效能，請將 Azure ATP 感應器的 [電源選項]  設定為 [高效能]  。
+
 Azure ATP 感應器可以部署在各種負載和大小的網域控制站上，依進出網域控制站的網路流量，以及安裝的資源數量而定。
+
+針對 Windows 作業系統 2008 R2 與 2012，[多處理器群組](https://docs.microsoft.com/windows/win32/procthread/processor-groups)模式中不支援 Azure ATP 感應器。 如需有關多處理器群組模式的詳細資訊，請參閱[疑難排解](troubleshooting-atp-known-issues.md##multi-processor-group-mode)。 
 
 >[!NOTE] 
 > 作為虛擬機器執行時，將不支援動態記憶體或任何其他記憶體佔用功能。

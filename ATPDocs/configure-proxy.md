@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 07/25/2019
+ms.date: 08/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 347f46b51267762760783fdc44b689e213ba29d8
-ms.sourcegitcommit: 4662ad41addf92727367874d909937fa331fb866
+ms.openlocfilehash: ba1c8ac59dcf762103cd4d0e7a5a54c2b02e1e9a
+ms.sourcegitcommit: 2aab3c4244db694616ec02a9b8ae2e266d6fdddc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68485049"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69629289"
 ---
 # <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-azure-atp-sensor"></a>設定 Azure ATP 感應器的端點 Proxy 和網際網路連線設定
 
@@ -73,7 +73,8 @@ ms.locfileid: "68485049"
 
  
 > [!NOTE]
-> 針對 Azure ATP 網路流量 (感應器和 Azure ATP 服務之間) 執行 SSL 檢查時，SSL 檢查必須支援相互檢查。
+> 為確保最大的安全性與資料隱私權，Azure ATP 會在每個 Azure ATP 感應器與 Azure ATP 雲端後端之間使用以憑證為基礎的相互驗證。 如果您的環境中使用 SSL 檢查，請確定已針對相互驗證設定檢查，使其不會干擾驗證程序。
+
 
 
 ## <a name="see-also"></a>另請參閱

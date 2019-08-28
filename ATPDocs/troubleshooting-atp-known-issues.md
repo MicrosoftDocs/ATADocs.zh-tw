@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 639dc38eeb9f4944cdd011074463953a13a49966
-ms.sourcegitcommit: e185d6cf13ef0c40206a5d1980e3953ef8834a48
+ms.openlocfilehash: b78b7f39b7d5c94e2709e080677344919dd422cf
+ms.sourcegitcommit: 2aab3c4244db694616ec02a9b8ae2e266d6fdddc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "65196646"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69629316"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>針對 Azure ATP 已知問題進行疑難排解 
 
@@ -62,6 +62,14 @@ ms.locfileid: "65196646"
 3.  將 WinPcap 解除安裝。
 4.  使用下列選項安裝 Npcap：loopback_support=no & winpcap_mode=yes
 5.  重新安裝感應器套件。
+
+## <a name="multi-processor-group-mode"></a>多處理器群組模式 
+針對 Windows 作業系統 2008 R2 與 2012，多處理器群組模式中不支援 Azure ATP 感應器。
+
+建議的可能因應措施：
+- 如果超執行緒已開啟，請將它關閉。 這可能會減少足夠的邏輯核心數目，以避免需要在**多處理器群組**模式中執行。 
+
+- 如果您的電腦具有少於 64 個邏輯核心，而且是在 HP 主機上執行，您可以將 [NUMA 群組大小最佳化]  BIOS 設定從預設的[叢集]  變更為 [一般]  。 
 
 ## <a name="windows-defender-atp-integration-issue"></a>Windows Defender ATP 整合問題
 

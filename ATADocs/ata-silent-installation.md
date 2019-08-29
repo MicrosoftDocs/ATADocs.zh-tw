@@ -5,19 +5,19 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: rkarlin
-ms.date: 3/21/2018
+ms.date: 08/28/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b94c6812038399420deaea96f2427897ebff384a
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.openlocfilehash: 9778cfa171ca6f5bc9b7597af935d15456504c62
+ms.sourcegitcommit: bb33e24591acf11688955318b5938bc3d662a398
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65196237"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70076674"
 ---
 # <a name="ata-silent-installation"></a>ATA 無訊息安裝
 
@@ -62,7 +62,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 > [!div class="mx-tableFixed"]
 > 
-> |             名稱             |                      語法                      | 對無訊息安裝而言是否為必要？ |                                                                                                        說明                                                                                                         |
+> |             名稱             |                      語法                      | 對無訊息安裝而言是否為必要？ |                                                                                                        描述                                                                                                         |
 > |------------------------------|--------------------------------------------------|------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 > |       InstallationPath       |         InstallationPath="<InstallPath>"         |                 否                 |                                               設定 ATA 二進位檔案的安裝路徑。 預設路徑：C:\Program Files\Microsoft Advanced Threat Analytics\Center                                                |
 > |       DatabaseDataPath       |           DatabaseDataPath= "<DBPath>"           |                 否                 |                                         設定 ATA 資料庫的資料夾路徑。 預設路徑：C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data                                         |
@@ -123,13 +123,13 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 > |-------------|----------|---------|---------|
 > |Quiet|/quiet|是|執行解除安裝程式，但不顯示任何 UI 和提示。|
 > |解除安裝|/uninstall|是|從伺服器執行 ATA 中心的無訊息解除安裝。|
-> |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
+> |Help|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 
 **安裝參數**：
 
 > [!div class="mx-tableFixed"]
 > 
-> |名稱|語法|對無訊息解除安裝而言是否為必要？|說明|
+> |名稱|語法|對無訊息解除安裝而言是否為必要？|描述|
 > |-------------|----------|---------|---------|
 > |DeleteExistingDatabaseData|DeleteExistingDatabaseData|否|刪除現有資料庫中的所有檔案。|
 
@@ -148,7 +148,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 **語法**：
 
-    Microsoft ATA Gateway Setup.exe [/quiet] [/Help] [NetFrameworkCommandLineArguments ="/q"] 
+    Microsoft ATA Gateway Setup.exe [/quiet] [/Help] [NetFrameworkCommandLineArguments="/q"] 
     [ConsoleAccountName="<AccountName>"] 
     [ConsoleAccountPassword="<AccountPassword>"]
 
@@ -170,7 +170,7 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 > [!div class="mx-tableFixed"]
 > 
-> |          名稱          |                   語法                   | 對無訊息安裝而言是否為必要？ |                                                      說明                                                       |
+> |          名稱          |                   語法                   | 對無訊息安裝而言是否為必要？ |                                                      描述                                                       |
 > |------------------------|--------------------------------------------|------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 > |   ConsoleAccountName   |     ConsoleAccountName="<AccountName>"     |                是                 |   為用來向 ATA 中心註冊 ATA 閘道的使用者帳戶 (user@domain.com) 設定名稱。    |
 > | ConsoleAccountPassword | ConsoleAccountPassword="<AccountPassword>" |                是                 | 為用來向 ATA 中心註冊 ATA 閘道的使用者帳戶 (user@domain.com) 設定密碼。 |

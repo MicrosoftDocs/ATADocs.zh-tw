@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 07/07/2019
+ms.date: 08/26/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 0b3a1db5-0d43-49af-b356-7094cc85f0a5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f53d4930ed6fc4492f6360b3aab12e9c3655b390
-ms.sourcegitcommit: 09275d3400534200fa6ea572e89e440b3cc58360
+ms.openlocfilehash: 1bfed94e29200a52eba6de8758e1241b14084264
+ms.sourcegitcommit: 033ac9277effa00c4423caf6f2a3febd796ca3db
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67786406"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70052399"
 ---
 # <a name="tutorial-domain-dominance-alerts"></a>教學課程：控制網域警訊  
 
@@ -339,9 +339,9 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 ## <a name="suspected-golden-ticket-usage-forged-authorization-data-external-id-2013"></a>可疑的黃金票證使用 (偽造的授權資料) (外部識別碼 2013)
 
-先前的名稱：  使用偽造授權資料提升權限
+先前的名稱：使用偽造授權資料提升權限
 
-描述：舊版 Windows Server 中的已知弱點可讓攻擊者操作專用權屬性憑證 (PAC)，這是 Kerberos 票證中包含使用者授權資料 (在 Active Directory 中為群組成員資格) 的欄位，會授與攻擊者更多權限。 
+**描述** 舊版 Windows Server 中的已知弱點可讓攻擊者操作專用權屬性憑證 (PAC)，這是 Kerberos 票證中包含使用者授權資料 (在 Active Directory 中為群組成員資格) 的欄位，會授與攻擊者更多權限。 
  
 **TP、B-TP 或 FP**
 <br>針對已透過 MS14-068 (網域控制站) 或 MS11-013 (伺服器) 修補的電腦，嘗試的攻擊不會成功，並會產生 Kerberos 錯誤。 

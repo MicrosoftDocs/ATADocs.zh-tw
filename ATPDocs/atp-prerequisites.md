@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 08/11/2019
+ms.date: 09/01/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ad130b0956020696c30709627e9671ff1e46b1cc
-ms.sourcegitcommit: 2aab3c4244db694616ec02a9b8ae2e266d6fdddc
+ms.openlocfilehash: d4b54dfc9f64f296925889147c72db6c23819c20
+ms.sourcegitcommit: 298a0ce02c2f22faa5b03acf909aa0dd73f38993
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69629324"
+ms.lasthandoff: 09/02/2019
+ms.locfileid: "70210923"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -73,11 +73,20 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 -   螢幕解析度最低需求為 1700 像素
 -   防火牆/Proxy 開啟 - 若要與 Azure ATP 雲端服務通訊，您必須在防火牆/Proxy 中針對 *.atp.azure.com 開啟連接埠 443。
 
- ![Azure ATP 架構圖表](media/ATP-architecture-topology.png)
-
+ ![Azure ATP 架構圖表](media/azure-atp-architecture.png)
 
 > [!NOTE]
-> 根據預設值，Azure ATP 最多支援 200 個感應器。 如果您想要安裝更多，請連絡 Azure ATP 支援。
+> 根據預設值，Azure ATP 最多支援 200 個感應器。 如果您想要安裝更多感應器，請連絡 Azure ATP 支援。
+
+
+## <a name="azure-atp-network-name-resolution-nnr-requirements"></a>Azure ATP 網路名稱解析 (NNR) 需求
+網路名稱解析 (NNR) 是 Azure ATP 功能的主要元件。 若要讓 Azure ATP 服務正常運作，Azure ATP 感應器必須至少能存取下列其中一個 NNR 方法：
+1. **透過 RPC 的 NTLM** (TCP 連接埠 135)
+2. **NetBIOS** (UDP 連接埠 137)
+3. **RDP** (TCP 連接埠 3389) - 只有 Client hello 的第一個封包
+4. **使用 IP 位址的反向 DNS 查閱來查詢 DNS 伺服器** (UDP 53)
+
+若要讓方法 1、2 與 3 正常運作，必須開啟從從 Azure ATP 感應器到網路上裝置的相關連入連接埠。 若要深入了解 Azure ATP 與 NNR，請參閱 [Azure ATP NNR 原則](atp-nnr-policy.md)。 
 
 ## <a name="azure-atp-sensor-requirements"></a>Azure ATP 感應器需求
 本節列出 Azure ATP 感應器的需求。
@@ -134,8 +143,6 @@ Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的�
 |**內部連接埠**|||||
 |DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
 |Netlogon (SMB、CIFS、SAM-R)|TCP/UDP|445|網路上的所有裝置|輸出|
-|透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|兩者|
-|NetBIOS|UDP|137|網路上的所有裝置|兩者|
 |Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|輸入|
 |RADIUS|UDP|1813|RADIUS|輸入|
 |
@@ -146,10 +153,6 @@ Azure ATP 偵測依賴特定的 Windows 事件記錄檔，其可由感應器從�
 
 > [!NOTE]
 > - 使用 Directory 服務使用者帳戶，感應器會查詢您組織中的端點以尋找使用 SAM-R (網路登入) 的本機系統管理員，以建置[橫向移動路徑圖表](use-case-lateral-movement-path.md)。 如需詳細資訊，請參閱[設定 SAM-R 必要權限](install-atp-step8-samr.md)。
-> - 下列連接埠需要為 Azure ATP 感應器在網路上的裝置上針對傳入開啟：
->   -   透過 RPC 的 NTLM (TCP 連接埠 135) (針對解析目的)
->   -   NetBIOS (UDP 連接埠 137) (針對解析目的)
-<br> 請注意，不會在任何連接埠上執行任何驗證。
 
 ## <a name="azure-atp-standalone-sensor-requirements"></a>Azure ATP 獨立感應器需求
 本節列出 Azure ATP 獨立感應器的需求。
@@ -218,24 +221,19 @@ Azure ATP 獨立感應器需要至少一個管理介面卡和至少一個擷取�
 |Netlogon (SMB、CIFS、SAM-R)|TCP 和 UDP|445|網路上的所有裝置|輸出|
 |Windows Time|UDP|123|網域控制站|輸出|
 |DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
-|透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|兩者|
-|NetBIOS|UDP|137|網路上的所有裝置|兩者|
 |Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|輸入|
 |RADIUS|UDP|1813|RADIUS|輸入|
 |
 
 > [!NOTE]
 > - 使用 Directory 服務使用者帳戶，感應器會查詢您組織中的端點以尋找使用 SAM-R (網路登入) 的本機系統管理員，以建置[橫向移動路徑圖表](use-case-lateral-movement-path.md)。 如需詳細資訊，請參閱[設定 SAM-R 必要權限](install-atp-step8-samr.md)。
-> - 下列連接埠需要為 Azure ATP 獨立感應器在網路上的裝置上針對傳入開啟：
->   -   透過 RPC 的 NTLM (TCP 連接埠 135) (針對解析目的)
->   -   NetBIOS (UDP 連接埠 137) (針對解析目的)
-<br> 請注意，不會在任何連接埠上執行任何驗證。
-
 
 
 ## <a name="see-also"></a>另請參閱
 - [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool) \(英文\)
 - [Azure ATP 架構](atp-architecture.md)
 - [安裝 Azure ATP](install-atp-step1.md)
+- [網路名稱解析 (NNR)](atp-nnr-policy.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
+
 

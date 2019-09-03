@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 08/05/2019
+ms.date: 08/26/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 2257eb00-8614-4577-b6a1-5c65085371f2
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: dd78f2d18010b043dc58bfb6fac24429a36ba2f1
-ms.sourcegitcommit: 8df26fb312472b8df1da70e581517223d26de8c2
+ms.openlocfilehash: a20c26d45f8cc0ddda05b103e03fa16f9de569b8
+ms.sourcegitcommit: 033ac9277effa00c4423caf6f2a3febd796ca3db
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68781832"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70052439"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>教學課程：橫向移動警訊  
 
@@ -177,7 +177,7 @@ ms.locfileid: "68781832"
 
 **描述**
 
-Exchange Server 可設為使用 Exchange Server 帳戶向攻擊者所執行的遠端 HTTP 伺服器觸發 NTLM 驗證。 此伺服器會等候 Exchange Server 通訊將其自身的敏感性驗證轉送到任何其他的伺服器，或是以更有趣的方式透過 LDAP 轉送到 Active Directory，然後捕捉驗證資訊。
+Exchange Server 可設為使用 Exchange Server 帳戶向攻擊者所執行的遠端 HTTP 伺服器觸發 NTLM 驗證。 伺服器會等候 Exchange Server 通訊將其自身的敏感性驗證轉送到任何其他伺服器，或是以更有趣的方式透過 LDAP 轉送到 Active Directory，然後捕捉驗證資訊。
 
 轉送伺服器接收到 NTLM 驗證後，即會提供原先由目標伺服器建立的挑戰。 用戶端會回應挑戰，防止攻擊者接收回應，並使用它來繼續與目標網域控制站進行 NTLM 交涉。 
 

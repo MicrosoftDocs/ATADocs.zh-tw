@@ -5,18 +5,18 @@ ms.service: azure-advanced-threat-protection
 ms.topic: tutorial
 author: mlottner
 ms.author: mlottner
-ms.date: 03/03/2019
+ms.date: 09/01/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 20e91bc710dc184fa710cf7fd59cb9bd9d625d20
-ms.sourcegitcommit: 929f28783110c7e114ab36d4cccd50563f4030df
+ms.openlocfilehash: 11312f033261dd74f13dc0b3b9c093617e2c281c
+ms.sourcegitcommit: f7c75bc5715c5bda0b3110364e2aebddddce8a13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57253958"
+ms.lasthandoff: 09/01/2019
+ms.locfileid: "70209238"
 ---
 # <a name="tutorial-reconnaissance-playbook"></a>教學課程：偵察劇本
 
-這個 Azure ATP 安全性警示四部分系列中的第二個教學課程是一個偵察劇本。 Azure ATP 安全性警示實驗室的目的是要說明 **Azure ATP** 對網路可疑活動及潛在攻擊的識別和偵測功能。 此劇本說明如何針對 Azure ATP 的一些「離散」偵測進行測試，並將焦點放在 Azure ATP 的「簽章」型功能上。 此劇本並不包括以進階機器學習為基礎的警示或偵測，或是使用者/實體型的行為偵測，因為它們需要一個最多有 30 天真實網路流量的學習期間。 如需有關本系列每個教學課程的詳細資訊，請參閱 [ATP 安全性警示實驗室概觀](atp-playbook-lab-overview.md)。
+這個 Azure ATP 安全性警示四部分系列中的第二個教學課程是一個偵察劇本。 Azure ATP 安全性警示實驗室的目的是要說明 **Azure ATP** 對網路可疑活動及潛在攻擊的識別和偵測功能。 此劇本說明如何針對 Azure ATP 的一些「離散」  偵測進行測試，並將焦點放在 Azure ATP 的「簽章」  型功能上。 此劇本並不包括以進階機器學習為基礎的警示或偵測，或是使用者/實體型的行為偵測，因為它們需要一個最多有 30 天真實網路流量的學習期間。 如需有關本系列每個教學課程的詳細資訊，請參閱 [ATP 安全性警示實驗室概觀](atp-playbook-lab-overview.md)。
 
 此劇本會說明針對來自常見、真實世界、可公開取得之入侵和攻擊工具的模擬威脅，Azure ATP 可提供的威脅偵測和安全性警示服務。
 
@@ -45,6 +45,8 @@ ms.locfileid: "57253958"
 ## <a name="network-mapping-reconnaissance-dns"></a>網路對應偵察 (DNS)
 
 攻擊者會優先嘗試的動作之一，就是嘗試取得所有 DNS 資訊的複本。 當成功時，攻擊者會取得有關您環境的大量資訊，其中可能包括有關您其他環境或網路的類似資訊。
+
+Azure ATP 會抑制來自您**可疑活動時間表**的網路對應偵察活動，直到完成八天的學習期間。 在學習期間，Azure ATP 會了解對您的網路來說，何謂正常及何謂異常。 在八天的學習期間過後，異常網路對應偵察事件會叫用相關安全性警示。 
 
 ### <a name="run-nslookup-from-victimpc"></a>從 VictimPC 執行 nslookup
 
@@ -76,18 +78,18 @@ ls -d contoso.azure
 
 ### <a name="network-mapping-reconnaissance-dns-detected-in-azure-atp"></a>Azure ATP 中偵測到的網路對應偵察 (DNS)
 
-能夠檢視這類嘗試 (失敗或成功) 對網域威脅防護來說至關重要。 由於我們剛安裝好環境，因此將必須前往「邏輯活動」時間軸來查看活動。 
+能夠檢視這類嘗試 (失敗或成功) 對網域威脅防護來說至關重要。 在最近安裝環境之後，您將必須移至 [邏輯活動]  時間表以查看偵測到的活動。 
 
 在 Azure ATP 的 [搜尋] 中，輸入 **VictimPC**，然後按一下它來檢視時間軸。
 
 ![AATP 偵測到的 DNS 偵察 (概要檢視)](media/playbook-recon-nslookupdetection1.png)
 
 尋找 [AXFR 查詢] 活動。 Azure ATP 會偵測對您 DNS 進行的這類偵察活動。 
-  - 如果您有大量活動，請按一下 [篩選依據]，然後將 [DNS 查詢] 以外的所有類型取消選取。
+  - 如果您有大量活動，請按一下 [篩選依據]  ，然後取消選取 [DNS 查詢]  以外的所有類型。
 
 ![AATP 中 DNS 偵察偵測的詳細檢視](media/playbook-recon-nslookupdetection2.png)
 
-如果您的安全性分析師判斷此活動源自安全性掃描程式，則可以將特定裝置從進一步的偵測警示中排除。 在警示的右上方區域中，按一下三個點。 接著，選取 [Close and exclude MySecurityScanner] \(關閉並排除 MySecurityScanner\)。 確保從 "MySecurityScanner" 偵測到時，不會再顯示此警示。
+如果您的安全性分析師判斷此活動源自安全性掃描程式，則可以將特定裝置從進一步的偵測警示中排除。 在警示的右上方區域中，按一下三個點。 接著，選取 [Close and exclude MySecurityScanner] \(關閉並排除 MySecurityScanner\)  。 確保從 "MySecurityScanner" 偵測到時，不會再顯示此警示。
 
 偵測失敗與偵測對環境進行的成功攻擊一樣可提供深入解析。 Azure ATP 入口網站可讓我們查看可能的攻擊者所執行動作的確切結果。 在我們的模擬 DNS 偵察攻擊案例中，我們扮演的攻擊者角色被阻止傾印網域的 DNS 記錄。 您的 SecOps 小組從 Azure ATP 安全性警示中開始察覺了我們的攻擊嘗試，以及我們在嘗試中所使用的機器。
 
@@ -145,7 +147,7 @@ ls -d contoso.azure
 
 ### <a name="directory-service-enumeration-detected-in-azure-atp"></a>Azure ATP 中偵測到的目錄服務列舉
 
-如果我們的實驗室「在已安裝 Azure ATP 的情況下有 30 天真實的即時活動」，則我們剛才以 JeffL 身分執行的活動將可能被歸類為異常活動。 異常活動會顯示在「可疑的活動」時間軸中。 不過，由於我們剛安裝好環境，因此將必須前往「邏輯活動」時間軸來查看活動。
+如果我們的實驗室「在已安裝 Azure ATP 的情況下有 30 天真實的即時活動」  ，則我們剛才以 JeffL 身分執行的活動將可能被歸類為異常活動。 異常活動會顯示在「可疑的活動」時間軸中。 不過，由於我們剛安裝好環境，因此將必須前往「邏輯活動」時間軸來查看活動。
 
 在 Azure ATP 的 [搜尋] 中，讓我們看看 JeffL 的「邏輯活動」時間軸看起來像怎樣：
 
@@ -169,9 +171,9 @@ ls -d contoso.azure
 
 ## <a name="user-and-ip-address-reconnaissance-smb"></a>使用者和 IP 位址偵察 (SMB)
 
-Active Directory 的 [sysvol] 資料夾如果不是環境中「最」重要的網路共用，也是其中之一。 每個電腦和使用者都必須能夠存取此特定網路共用，才能提取「群組原則」。 攻擊者可以從列舉與 [sysvol] 資料夾具有作用中工作階段的使用者取得資訊寶庫。
+Active Directory 的 [sysvol] 資料夾如果不是環境中「最」  重要的網路共用，也是其中之一。 每個電腦和使用者都必須能夠存取此特定網路共用，才能提取「群組原則」。 攻擊者可以從列舉與 [sysvol] 資料夾具有作用中工作階段的使用者取得資訊寶庫。
 
-我們的下一步是對 ContosoDC 資源進行「SMB 工作階段列舉」。 我們想要了解有哪些其他人與 SMB 共用具有工作階段，以及是「來自哪個 IP」。
+我們的下一步是對 ContosoDC 資源進行「SMB 工作階段列舉」。 我們想要了解有哪些其他人與 SMB 共用具有工作階段，以及是「來自哪個 IP」  。
 
 ### <a name="use-joewares-netsessexe-from-victimpc"></a>從 VictimPC 使用 JoeWare 的 NetSess.exe
 
@@ -191,7 +193,7 @@ NetSess.exe ContosoDC
 
 ![偵測 SMB 偵察的 AATP](media/playbook-recon-smbrecon-detection1.png)
 
-我們不僅接獲此活動的警示，也接獲「在該時間點」已暴露之帳戶及其個別 IP 位址的警示。 作為「安全性作業中心」(SOC)，我們不僅掌握該嘗試及其狀態，也掌握了傳回給攻擊者的資訊。 此資訊可輔助我們的調查。
+我們不僅接獲此活動的警示，也接獲「在該時間點」  已暴露之帳戶及其個別 IP 位址的警示。 作為「安全性作業中心」(SOC)，我們不僅掌握該嘗試及其狀態，也掌握了傳回給攻擊者的資訊。 此資訊可輔助我們的調查。
 
 
 ## <a name="next-steps"></a>後續步驟

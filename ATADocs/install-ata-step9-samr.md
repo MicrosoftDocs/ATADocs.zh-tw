@@ -5,35 +5,35 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 08/08/2019
+ms.date: 09/08/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: 7597ed25-87f5-472c-a496-d5f205c9c391
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: bd47ebbe059014015b180ad568e4c519ba1b95b7
-ms.sourcegitcommit: db35bae8354fa35644e9334bfc37b9ffbafdaacc
+ms.openlocfilehash: 5d266de0344a699ed3c3934246311f21b1b00c09
+ms.sourcegitcommit: e4f108aec3cbfd88562217e36195b5d1250a1bbd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68862588"
+ms.lasthandoff: 09/08/2019
+ms.locfileid: "70803192"
 ---
 # <a name="install-ata---step-9"></a>安裝 ATA - 步驟 9
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 > [!div class="step-by-step"]
 > [« 步驟 8](install-ata-step7.md)
 
 > [!NOTE]
-> 強制執行任何新原則之前, 請務必先確定您的環境是安全的, 而不會影響應用程式相容性, 方法是先啟用並確認您在 audit 模式中的建議變更。 
+> 強制執行任何新原則之前，請務必先確定您的環境是安全的，而不會影響應用程式相容性，方法是先啟用並確認您在 audit 模式中的建議變更。 
 
 ## <a name="step-9-configure-sam-r-required-permissions"></a>步驟 9： 設定 SAM-R 所需的權限
 
 [橫向移動路徑](use-case-lateral-movement-path.md)偵測有賴於識別特定電腦上本機系統管理員的查詢。 這些查詢會透過[步驟 2.連線到 AD](install-ata-step2.md) 中建立的 Azure ATP 服務帳戶，使用 SAM-R 通訊協定來執行。
  
-若要確保 Windows 用戶端和伺服器允許 ATA 服務帳戶執行這項 SAM R 作業，您必須修改 [群組原則]，在 [網路存取] 原則列出的已設定帳戶之外新增 ATA 服務帳戶。
+若要確保 Windows 用戶端和伺服器允許 ATA 服務帳戶執行這項 SAM R 作業，您必須修改 [群組原則]，在 [網路存取] 原則列出的已設定帳戶之外新增 ATA 服務帳戶。 此群組原則應套用至您組織中的每個裝置。 
 
 1. 找出原則：
 

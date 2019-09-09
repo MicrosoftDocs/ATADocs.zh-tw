@@ -2,26 +2,26 @@
 title: 安裝 Advanced Threat Analytics - 步驟 6 | Microsoft Docs
 description: 在安裝 ATA 的這個步驟中，您要設定資料來源。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: rkarlin
-ms.date: 3/21/2018
+ms.date: 09/08/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: bd6cc7021a024755a931fd9a56db27c0825d10a4
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.openlocfilehash: ccea2b41e99e4d3ab19efc703f337115740c2e0d
+ms.sourcegitcommit: e4f108aec3cbfd88562217e36195b5d1250a1bbd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65195923"
+ms.lasthandoff: 09/08/2019
+ms.locfileid: "70803181"
 ---
 # <a name="install-ata---step-6"></a>安裝 ATA - 步驟 6
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 > [!div class="step-by-step"]
 > [« 步驟 5](install-ata-step5.md)
@@ -30,10 +30,10 @@ ms.locfileid: "65195923"
 ## <a name="step-6-configure-event-collection"></a>步驟 6： 設定事件收集
 ### <a name="configure-event-collection"></a>設定事件收集
 
-為增強偵測功能，ATA 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757 和 7045。 這些事件可透過 ATA 輕量型閘道自動讀取；如果未部署 ATA 輕量型閘道，則可以透過下列兩個方式之一轉送至 ATA 閘道：藉由將 ATA 閘道設定為接聽 SIEM 事件，或藉由[設定 Windows 事件轉送](configure-event-collection.md)。 
+為增強偵測功能，ATA 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757 和 7045。 ATA 輕量閘道會自動讀取這些 Windows 事件，或者如果未部署 ATA 輕量閘道，則可以透過下列兩種方式之一轉送至 ATA 閘道，方法是設定 ATA 閘道接聽 SIEM 事件，或[正在設定 Windows 事件轉送](configure-event-collection.md)。  
 
 > [!NOTE]
-> 針對 ATA 1.8 版及更新版本，ATA 輕量型閘道不再需要事件收集設定。 ATA 輕量型閘道現在可以在本機讀取事件，而不需要設定事件轉送。
+> 針對 ATA 版本1.8 和更新版本，ATA 羽量級閘道不再需要 Windows 事件收集設定。 ATA 輕量型閘道現在會本機讀取事件，而不需要設定事件轉送。
 
 除了收集和分析進出網域控制站的網路流量，ATA 可以使用 Windows 事件進一步加強偵測。 它會針對 NTLM 使用能增強各種偵測的事件 4776，並使用事件 4732、4733、4728、4729、4756 和 4757 以增強偵測機密群組修改。 這可從您的 SIEM 接收，或藉由在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 ATA 透過網域控制站網路流量無法取得的額外資訊。
 

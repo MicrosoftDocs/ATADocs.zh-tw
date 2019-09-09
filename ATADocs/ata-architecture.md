@@ -5,23 +5,23 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 8/26/2018
+ms.date: 09/08/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e774ad3775fa01ae79c2eb1a82e3111cd2cb214f
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.openlocfilehash: 9579108bd0bb2fa91e2e196ab90284f396025db1
+ms.sourcegitcommit: e4f108aec3cbfd88562217e36195b5d1250a1bbd
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65196605"
+ms.lasthandoff: 09/08/2019
+ms.locfileid: "70803118"
 ---
 # <a name="ata-architecture"></a>ATA 架構
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 此圖表中詳細說明 Advanced Threat Analytics 架構︰
 
@@ -57,8 +57,6 @@ ATA 部署的組成可以是連接至所有 ATA 閘道的單一 ATA 中心、所
 ATA 部署包括 ATA 閘道和 ATA 輕量型閘道。 ATA 輕量型閘道是安裝在一些網域控制站上 (例如，分支網站的所有網域控制站)。 同時，其他網域控制站是由 ATA 閘道監視 (例如，主要資料中心的較大網域控制站)。
 
 在所有這些案例中，所有的閘道都會將資料傳送至 ATA 中心。
-
-
 
 
 ## <a name="ata-center"></a>ATA 中心
@@ -132,10 +130,10 @@ ATA 閘道會從您的網路接收網路流量和 Windows 事件，並在下列�
 
 -   **網域同步器候選**<br>
 網域同步器閘道負責主動同步處理特定 Active Directory 網域中的所有實體 (類似網域控制站自行複寫時所使用的機制)。 從候選清單中隨機選擇一個閘道，當成網域同步器。 <br><br>
-如果同步器離線超過 30 分鐘，就會選擇其他的候選。 如果特定的網域沒有任何網域同步器可用，ATA 就會主動同步處理實體和其變更。不過，當受監視的流量中偵測到新的實體時，ATA 會被動地擷取新的實體。 
-<br>如無任何網域同步器可用，而您搜尋的實體又沒有任何相關流量，就不會顯示任何搜尋結果。<br><br>
-根據預設，所有的 ATA 閘道都是同步器候選。<br><br>
-因為所有的 ATA 輕量型閘道皆較可能部署在分公司站台和小型的網域控制站上，所以它們預設不是同步器候選。
+如果同步器離線超過 30 分鐘，就會選擇其他的候選。 如果特定網域沒有可用的網域同步器候選項目，ATA 會主動同步處理實體和其變更，不過 ATA 會被動在監視的流量中偵測到新的實體。 
+<br>當沒有可用的網域同步器時，搜尋沒有相關流量的實體就不會顯示任何結果。<br><br>
+根據預設，所有 ATA 閘道都是網域同步器候選。<br><br>
+因為所有的 ATA 輕量型閘道皆較可能部署在分公司站台和小型的網域控制站上，所以它們預設不是同步器候選。 <br><br>在只有輕量閘道的環境中，建議您將兩個閘道指派為同步器候選，其中一個輕量閘道是預設的同步器候選項目，而另一個是備份，以防預設為離線超過30個細節. 
 
 
 -   **資源限制**<br>

@@ -13,8 +13,6 @@
 - name: 快速入門
   expanded: true
   items:
-    - name: 規劃 Azure ATP 容量
-      href: atp-capacity-planning.md
     - name: 建立您的 Azure ATP 執行個體
       href: install-atp-step1.md
     - name: 連線到 Active Directory
@@ -23,8 +21,6 @@
       href: install-atp-step3.md
     - name: 安裝 Azure ATP 感應器
       href: install-atp-step4.md
-    - name: 設定 Azure ATP 感應器
-      href: install-atp-step5.md
 - name: 教學課程
   items:
     - name: 偵察警訊
@@ -87,7 +83,7 @@
               href: atp-cas-isp-print-spooler.md
             - name: 防止弱式加密使用方式評估
               href: atp-cas-isp-weak-cipher.md
-            - name: 防止 unconstained Kerberos 委派評估
+            - name: 防止未保全的 Kerberos 委派評估
               href: atp-cas-isp-unconstrained-kerberos.md
     - name: 安全性警示實驗室
       items:
@@ -103,6 +99,8 @@
           href: atp-playbook-domain-dominance.md
     - name: 了解安全性警訊
       href: understanding-security-alerts.md
+    - name: 規劃 Azure ATP 容量
+      href: atp-capacity-planning.md
     - name: 管理安全性警示
       href: working-with-suspicious-activities.md
     - name: 從偵測中排除實體
@@ -141,6 +139,8 @@
       href: ATP-silent-installation.md
     - name: 設定 Azure ATP 感應器
       items:
+        - name: 設定 Azure ATP 感應器
+          href: install-atp-step5.md
         - name: Proxy 組態
           href: configure-proxy.md
         - name: 進階稽核原則檢查

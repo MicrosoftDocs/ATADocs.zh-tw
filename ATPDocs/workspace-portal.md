@@ -5,21 +5,24 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 12/02/2018
+ms.date: 09/15/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 4ba46d60-3a74-480e-8f0f-9a082d62f343
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 130d60b31e97a16fbd1ff372d124d0411ce7b25a
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: 08bab9d934b38859221f7f89df1580b21a8b22a2
+ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65196535"
+ms.lasthandoff: 09/15/2019
+ms.locfileid: "71004899"
 ---
 # <a name="working-with-the-azure-atp-portal"></a>使用 Azure ATP 入口網站
+
+> [!NOTE]
+> 此頁面所述的 Azure ATP 功能也可使用新的[入口網站](https://portal.cloudappsecurity.com)來存取。
 
 使用 Azure ATP 入口網站來監視及回應由 ATP 偵測到的可疑活動。
 
@@ -35,7 +38,7 @@ Azure ATP 入口網站可讓您依時間順序快速檢視所有可疑的活動�
 
 ## <a name="logging-into-the-azure-atp-portal"></a>登入 Azure ATP 入口網站
 
-1. 您可透過登入入口網站 ([https://portal.atp.azure.com](https://portal.atp.azure.com)) 並選取您的執行個體，或是瀏覽至執行個體 URL ([https://執行個體名稱.atp.azure.com](https://*instancename*.atp.azure.com))，來進入 Azure ATP 入口網站。
+1. 您可透過登入入口網站 ([https://portal.atp.azure.com](https://portal.atp.azure.com)) 並選取您的執行個體，或是瀏覽至執行個體 URL ([https://執行個體名稱  .atp.azure.com](https://*instancename*.atp.azure.com))，來進入 Azure ATP 入口網站。
 
 
 2. Azure ATP 支援與 Windows 驗證整合的單一登入；如果您已登入電腦，Azure ATP 會使用該權杖將您登入 Azure ATP 入口網站。 您也可以使用智慧卡進行登入。 您在 Azure ATP 中的權限會與您的[系統管理員角色](atp-role-groups.md)對應。
@@ -50,11 +53,11 @@ Azure ATP 入口網站可讓您依時間順序快速檢視所有可疑的活動�
 
 ![Azure ATP 攻擊時間表影像](media/atp-sa-timeline.png)
 
-如需詳細資訊，請參閱[處理可疑活動](working-with-suspicious-activities.md)。
+如需詳細資訊，請參閱[使用安全性警訊](working-with-suspicious-activities.md)。
 
 ### <a name="whats-new"></a>新功能
 
-Azure ATP 的新版本發行之後，[最新消息] 視窗會出現在右上角，讓您知道最新版本中新增了哪些功能。 它也會提供您可下載該版本的連結。
+Azure ATP 的新版本發行之後，[最新消息]  視窗會出現在右上角，讓您知道最新版本中新增了哪些功能。 它也會提供您可下載該版本的連結。
 
 ### <a name="filtering-panel"></a>篩選窗格
 

@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 99045c4d8982c34d3defa681417a3b3963c563ac
-ms.sourcegitcommit: 929f28783110c7e114ab36d4cccd50563f4030df
+ms.openlocfilehash: f3af1034b73d1fc058a966c5d90eaf24dd282140
+ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57253924"
+ms.lasthandoff: 09/15/2019
+ms.locfileid: "71004884"
 ---
 # <a name="quickstart-install-the-azure-atp-sensor"></a>快速入門：安裝 Azure ATP 感應器
 
@@ -45,7 +45,7 @@ ms.locfileid: "57253924"
 
 3. 執行 **Azure ATP sensor setup.exe** 並按照安裝精靈的指示操作。
 
-4. 在 [歡迎] 頁面中，選取您的語言，然後按一下 [下一步]。
+4. 在 [歡迎]  頁面中，選取您的語言，然後按一下 [下一步]  。
 
     ![Azure ATP 獨立感應器安裝語言](media/sensor-install-language.png)
 
@@ -56,12 +56,12 @@ ms.locfileid: "57253924"
     
     ![Azure ATP 感應器安裝](media/sensor-install-deployment-type.png)
 
-   按一下 [下一步] 。
+   按一下 [下一步]  。
 
     > [!NOTE] 
-    > 如果網域控制站或專用伺服器不符合安裝的最低硬體需求，就會發出警告。 該警告並不會使您無法按一下 [下一步] 和繼續進行安裝。 在不需要這麼多資料儲存空間的小型實驗室測試環境中，這可能仍是安裝 Azure ATP 的最佳選擇。 針對生產環境，強烈建議使用 Azure ATP 的 [容量規劃](atp-capacity-planning.md)指南，確保您的網域控制站或專用伺服器符合必要需求。
+    > 如果網域控制站或專用伺服器不符合安裝的最低硬體需求，就會發出警告。 該警告並不會使您無法按一下 [下一步]  和繼續進行安裝。 在不需要這麼多資料儲存空間的小型實驗室測試環境中，這可能仍是安裝 Azure ATP 的最佳選擇。 針對生產環境，強烈建議使用 Azure ATP 的 [容量規劃](atp-capacity-planning.md)指南，確保您的網域控制站或專用伺服器符合必要需求。
 
-6. 在 [設定感應器] 下，輸入從上一個步驟複製的安裝路徑和存取金鑰 (視您的環境而定)：
+6. 在 [設定感應器]  下，輸入從上一個步驟複製的安裝路徑和存取金鑰 (視您的環境而定)：
 
     ![Azure ATP 感應器設定影像](media/sensor-install-config.png)
 
@@ -69,7 +69,7 @@ ms.locfileid: "57253924"
 
      - 存取金鑰：從上一個步驟中的 Azure ATP 入口網站擷取。
     
-7. 按一下 [安裝]。 安裝 Azure ATP 感應器期間將安裝及設定下列元件︰
+7. 按一下 [安裝]  。 安裝 Azure ATP 感應器期間將安裝及設定下列元件︰
 
     - KB 3047154 (僅適用於 Windows Server 2012 R2)
 
@@ -83,9 +83,8 @@ ms.locfileid: "57253924"
 
 ## <a name="next-steps"></a>後續步驟
 
-> [!div class="step-by-step"]
-> [« 步驟 3 - 下載感應器安裝程式](install-atp-step3.md)
-> [步驟 5 - 進行感應器設定 »](install-atp-step5.md)
+Azure ATP 感應器的設計是讓對您網域控制站資源和網路活動的影響減到最小。 若要建立效能評定，請參閱 [Azure ATP 解決方案的方案容量](install-atp-step5.md)。
+
 
 ## <a name="join-the-community"></a>加入社群
 

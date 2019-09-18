@@ -5,21 +5,24 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 03/10/2019
+ms.date: 09/15/2019
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: a06004bd-9f77-4e8e-a0e5-4727d6651a0f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b9313f0a44916895948ed4896b2cb3896ded68fc
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: d8070102bf5136ef8918f6fca2e7571e969148a5
+ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65196301"
+ms.lasthandoff: 09/15/2019
+ms.locfileid: "71004859"
 ---
 # <a name="working-with-security-alerts"></a>使用安全性警訊
+
+> [!NOTE]
+> 此頁面所述的 Azure ATP 功能也可使用新的[入口網站](https://portal.cloudappsecurity.com)來存取。
 
 本文說明使用 Azure ATP 安全性警訊的基本概念。
 
@@ -72,7 +75,7 @@ Azure ATP 研究小組會持續致力於實作新偵測攻擊的新探索。 由
 停用預覽偵測：
 
 1. 在 Azure ATP 主控台中，按一下設定 cog。
-2. 在左功能表中，按一下 [偵測]。
+2. 在左功能表中，按一下 [偵測]  。
 3. 使用滑桿開啟和關閉預覽偵測。
  
 ![預覽偵測](./media/preview-detections.png) 
@@ -81,9 +84,9 @@ Azure ATP 研究小組會持續致力於實作新偵測攻擊的新探索。 由
 ## <a name="filter-security-alerts-list"></a>篩選安全性警訊清單
 若要篩選安全性警訊清單：
 
-1. 在畫面左側的 [篩選依據] 窗格中，選取以下其中一個選項︰[所有]、[開啟]、[已關閉] 或 [已隱藏]。
+1. 在畫面左側的 [篩選依據]  窗格中，選取以下其中一個選項︰[所有]  、[開啟]  、[已關閉]  或 [已隱藏]  。
 
-2. 若要進一步篩選清單，請選取 [高]、[中] 或 [低]。
+2. 若要進一步篩選清單，請選取 [高]  、[中]  或 [低]  。
 
 **可疑活動嚴重性**
 
@@ -102,7 +105,7 @@ Azure ATP 研究小組會持續致力於實作新偵測攻擊的新探索。 由
 
 ## <a name="managing-security-alerts"></a>管理安全性警訊
 
-您可以按一下安全性警訊的目前狀態，然後選取下列其中一項來變更安全性警訊的狀態：[開啟]、[已隱藏]、[已關閉] 或 [已刪除]。
+您可以按一下安全性警訊的目前狀態，然後選取下列其中一項來變更安全性警訊的狀態：[開啟]  、[已隱藏]  、[已關閉]  或 [已刪除]  。
 若要這樣做，請按一下特定警訊右上角的三個點，以顯示可用的動作清單。
 
 ![Azure ATP 的安全性警訊動作](./media/atp-sa-actions.png)
@@ -120,7 +123,7 @@ Azure ATP 研究小組會持續致力於實作新偵測攻擊的新探索。 由
 
 - **刪除**：如果您刪除警示，即會將其從系統和資料庫中刪除，且您將「無法」予以還原。 按一下 [刪除] 之後，您即可刪除相同類型的所有安全性警訊。
 
-- **排除**：排除實體使其不會引發更多特定類型警示的功能。 例如，您可以將 Azure ATP 設定為排除特定實體 (使用者或電腦)，使其不會再引發特定類型的活動警訊，例如執行遠端程式碼的特定系統管理員，或執行 DNS 探查的安全性掃描程式。 除了能夠直接在安全性警訊上新增排除項目之外 (因為已在時間軸中偵測到此警訊)，您也可以移至 [設定] 頁面，再移至 [排除]，並針對每個安全性警訊，手動新增及移除排除的實體或子網路 (例如針對傳遞票證的情況)。
+- **排除**：排除實體使其不會引發更多特定類型警示的功能。 例如，您可以將 Azure ATP 設定為排除特定實體 (使用者或電腦)，使其不會再引發特定類型的活動警訊，例如執行遠端程式碼的特定系統管理員，或執行 DNS 探查的安全性掃描程式。 除了能夠直接在安全性警訊上新增排除項目之外 (因為已在時間軸中偵測到此警訊)，您也可以移至 [設定] 頁面，再移至 [排除]  ，並針對每個安全性警訊，手動新增及移除排除的實體或子網路 (例如針對傳遞票證的情況)。
 
 > [!NOTE]
 > 只有 Azure ATP 系統管理員才能修改設定頁面。

@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 946cfdeafd6f2ef0cba5c16d290ac922ccf68f4b
-ms.sourcegitcommit: e4f108aec3cbfd88562217e36195b5d1250a1bbd
+ms.openlocfilehash: 56c517930f4001e9a6e8f4476210fe89b380aa3f
+ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2019
-ms.locfileid: "70803153"
+ms.lasthandoff: 09/15/2019
+ms.locfileid: "71004697"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
 
@@ -25,9 +25,15 @@ ms.locfileid: "70803153"
 
 RSS 摘要：複製以下 URL 並在您的摘要讀取程式中貼上，以在此頁面更新時接收通知：`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
 
+發行日期：2019 年 9 月 15 日
+## <a name="azure-atp-release-295"></a>Azure ATP 2.95 版
+
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
+
+
 發行日期：2019 年 9 月 8 日
 
-# <a name="azure-atp-release-294"></a>Azure ATP 2.94 版
+## <a name="azure-atp-release-294"></a>Azure ATP 2.94 版
 
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 

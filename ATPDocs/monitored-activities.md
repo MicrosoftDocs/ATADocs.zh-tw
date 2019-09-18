@@ -5,21 +5,24 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/13/2018
+ms.date: 09/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 37d1a032-65e7-4a89-be0b-c3f9cc2bacdb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ea50c7f490b2bca757a8da80006cebd7d6d1cd46
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: b8000ff54b6be0dc6cb7079302e006193dcfcab9
+ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65196350"
+ms.lasthandoff: 09/15/2019
+ms.locfileid: "71004837"
 ---
 # <a name="azure-atp-monitored-activities"></a>受 Azure ATP 監視的活動
+
+> [!NOTE]
+> 此頁面所述的 Azure ATP 功能也可使用新的[入口網站](https://portal.cloudappsecurity.com)來存取。
 
 Azure 進階威脅防護會監視您組織 Active Directory 產生的資訊、網路活動及事件活動，來偵測可疑活動。 受監視的活動資訊可讓 Azure ATP 協助您判斷每個潛在威脅的有效性，並正確分與回應。 
 

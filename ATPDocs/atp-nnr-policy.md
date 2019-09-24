@@ -12,16 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 1ac873fc-b763-41d7-878e-7c08da421cb5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0161c0f63e652bd62ee8ccf4a6677f2ec0d90f4d
-ms.sourcegitcommit: b7b3d4a401faaa3edb4bd669a1a003a6d21a4322
+ms.openlocfilehash: 9cef9a1eb7035f1db61ab6c3c0b90d4e73278d36
+ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68298937"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185653"
 ---
 # <a name="what-is-network-name-resolution"></a>什麼是網路名稱解析？
 
-網路名稱解析 (NNR) 是 Azure ATP 功能的主要元件。 Azure ATP 會以網路流量、Windows 事件與 ETW 來擷取活動 - 這些活動通常包含 IP 資料。  
+網路名稱解析 (NNR) 是 Azure ATP 功能的主要元件。 Azure ATP 會以網路流量、Windows 事件與 ETW 來擷取活動 - 這些活動通常包含 IP 資料。 
 
 使用 NNR，Azure ATP 就能在未經處理的活動 (包含 IP 位址)，以及涉及各活動的相關電腦間建立相互關聯。 根據未經處理的活動，Azure ATP 會分析電腦等實體，並針對可疑活動產生安全性警訊。
 

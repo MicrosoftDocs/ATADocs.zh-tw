@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 08/20/2019
+ms.date: 09/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ba1c8ac59dcf762103cd4d0e7a5a54c2b02e1e9a
-ms.sourcegitcommit: 2aab3c4244db694616ec02a9b8ae2e266d6fdddc
+ms.openlocfilehash: 27630e93db4e103454e6d0fec7756824988ec4a2
+ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69629289"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185497"
 ---
 # <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-azure-atp-sensor"></a>設定 Azure ATP 感應器的端點 Proxy 和網際網路連線設定
 
@@ -31,6 +31,21 @@ ms.locfileid: "69629289"
 ## <a name="configure-the-proxy"></a>設定 Proxy 
 
 您可以使用[無訊息安裝，Proxy 驗證設定](https://docs.microsoft.com/azure-advanced-threat-protection/atp-silent-installation#proxy-authentication)，在感應器安裝期間設定您的 Proxy 設定。
+
+### <a name="proxy-authentication"></a>Proxy 驗證
+
+請使用下列命令來完成 Proxy 驗證：
+
+**語法**：
+
+
+> [!div class="mx-tableFixed"]
+> 
+> |名稱|語法|對無訊息安裝而言是否為必要？|說明|
+> |-------------|----------|---------|---------|
+> |ProxyUrl|ProxyUrl="https\://proxy.contoso.com:8080"|否|指定 Azure ATP 感應器的 ProxyUrl 和連接埠號碼。|
+> |ProxyUserName|ProxyUserName="Contoso\ProxyUser"|否|如果您的 Proxy 服務需要驗證，請以 DOMAIN\user 格式提供使用者名稱。|
+> |ProxyUserPassword|ProxyUserPassword="P@ssw0rd"|否|指定 Proxy 使用者名稱的密碼。 \* 認證會經過加密，並由 Azure ATP 感應器儲存在本機。|
 
 您也可以使用以登錄為基礎的靜態 Proxy 手動設定您的 Proxy 伺服器，讓 Azure ATP 感應器在不允許電腦連線到網際網路時回報診斷資料，並與 Azure ATP 雲端服務進行通訊。
 

@@ -12,19 +12,19 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: cc82212b-7d25-4ec7-828d-2475ff40d685
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 784f381ef8209bef885bb2e8944a60a23d21ec8c
-ms.sourcegitcommit: 475df3e87d8476ff13e48ebc7a722f46f29dab70
+ms.openlocfilehash: 97ea6d080d2aae84bcf0675da853f503fd10b314
+ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71007428"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185512"
 ---
 # <a name="security-assessment-weak-cipher-usage---preview"></a>安全性評估：使用弱式加密 - 預覽
 
 
 ## <a name="what-are-weak-ciphers"></a>什麼是弱式加密？ 
 
-密碼編譯會依賴加密來加密我們的資料。 例如 RC4 (Rivest Cipher 4，亦稱為 ARC4 或 ARCFOUR，代表有意義的 RC4) 就是其中一種。   雖然 RC4 的以其簡單性和速度聞名，但自從 RC4 的原始版本推出，就有人發現了許多弱點，因此並不安全。 當輸出金鑰資料流程的開頭不會被捨棄，或使用非隨機或相關的索引鍵時，RC4 特別容易受到攻擊。 
+密碼編譯會依賴加密來加密我們的資料。 例如 RC4 (Rivest Cipher 4，亦稱為 ARC4 或 ARCFOUR，代表有意義的 RC4) 就是其中一種。 雖然 RC4 的以其簡單性和速度聞名，但自從 RC4 的原始版本推出，就有人發現了許多弱點，因此並不安全。 當輸出金鑰資料流程的開頭不會被捨棄，或使用非隨機或相關的索引鍵時，RC4 特別容易受到攻擊。 
 
 ## <a name="how-do-i-use-this-security-assessment-to-improve-my-organizational-security-posture"></a>如何使用此安全性評估來改善我的組織安全性狀態？ 
 

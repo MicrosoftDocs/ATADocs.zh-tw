@@ -73,17 +73,17 @@
           items:
             - name: 了解身分識別安全性狀態評估
               href: atp-isp-overview.md
-            - name: 防止純文字認證暴露評估
+            - name: 以純文字公開認證的實體評估
               href: atp-cas-isp-clear-text.md
-            - name: 從敏感性群組中移除休眠實體評估
+            - name: 敏感性群組中的休眠實體評估
               href: atp-cas-isp-dormant-entities.md
-            - name: 防止舊版通訊協定進行通訊評估
+            - name: 使用舊版通訊協定評估
               href: atp-cas-isp-legacy-protocols.md
-            - name: 停用網域控制站上的列印多工緩衝處理器服務評估
+            - name: 具有列印多工緩衝處理器服務可用的網域控制站評估
               href: atp-cas-isp-print-spooler.md
-            - name: 防止弱式加密使用方式評估
+            - name: 使用弱式密評估
               href: atp-cas-isp-weak-cipher.md
-            - name: 防止未保全的 Kerberos 委派評估
+            - name: 委派不安全的 Kerberos 評估
               href: atp-cas-isp-unconstrained-kerberos.md
     - name: 安全性警示實驗室
       items:

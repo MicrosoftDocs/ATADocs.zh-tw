@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 1a7d9525-8923-4dae-af51-02a68aa61644
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: fd2b795d7bb7973e24a5457237ff98a4bd1315f5
-ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
+ms.openlocfilehash: da5a9429e802f3597942abc5e21e6c5ae6fed0fb
+ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2019
-ms.locfileid: "71005013"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185557"
 ---
 # <a name="security-assessment-domain-controllers-with-print-spooler-service-available---preview"></a>安全性評估：有可用列印多工緩衝處理器服務的網域控制站 - 預覽
 
@@ -25,7 +25,7 @@ ms.locfileid: "71005013"
  
 ## <a name="what-is-the-print-spooler-service"></a>什麼是**列印多工緩衝處理器**服務？ 
 
-列印多工緩衝處理器是管理列印程序的軟體服務。 多工緩衝處理器會接受電腦的列印工作，並確定印表機資源可供使用。 多工緩衝處理器也會排定列印工作傳送到列印佇列以進行列印的順序。 在個人電腦的早期，使用者必須等到檔案列印完成，才能執行其他動作。 多虧出現了新式的列印多工緩衝處理器，列印現在不會再對使用者的產能造成太大影響。
+列印多工緩衝處理器是管理列印程序的軟體服務。 多工緩衝處理器會接受電腦的列印工作，並確定印表機資源可供使用。 多工緩衝處理器也會排定列印工作傳送到列印佇列以進行列印的順序。 在個人電腦的早期，使用者必須等到檔案列印完成，才能執行其他動作。 多虧出現了新式的列印多工緩衝處理器，列印現在不會再對使用者的整體生產力造成太大影響。
 
 ## <a name="what-risks-does-the-print-spooler-service-on-domain-controllers-introduce"></a>網域控制站上的**列印多工緩衝處理器**服務會帶來哪些風險？ 
 
@@ -35,6 +35,9 @@ ms.locfileid: "71005013"
 
 雖然此安全性評估著重於網域控制站，但任何伺服器都可能有這類攻擊的風險。
 
+   > [!NOTE]
+   > 停用此服務並防止主動列印工作流程之前，請務必先調查您的**列印多工緩衝處理器**設定、組態與相依性。
+
 ## <a name="how-do-i-use-this-security-assessment"></a>我該如何使用這項安全性評估？ 
 1. 使用報告資料表來探索有哪些網域控制站已啟用**列印多工緩衝處理器**服務。   
     <br>![停用列印多工緩衝處理器服務安全性評估](media/atp-cas-isp-print-spooler-2.png)
@@ -42,7 +45,7 @@ ms.locfileid: "71005013"
 
 ## <a name="remediation"></a>修復
 
-在所有不需要列印多工緩衝處理器服務的伺服器上予以停用，來確保沒有任何帳戶設有不受限制的委派，以修正此特定問題。
+透過在不需要「列印多工緩衝處理器」的所有伺服器上將它停用以修正此特定問題。
   
 
 ## <a name="next-steps"></a>後續步驟

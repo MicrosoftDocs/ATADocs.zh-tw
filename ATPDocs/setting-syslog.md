@@ -12,19 +12,19 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: a2d29c9c-7ecb-4804-b74b-fde899b28648
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e36388fadd11df8a1e4b138481cb40c18b8990a5
-ms.sourcegitcommit: 475df3e87d8476ff13e48ebc7a722f46f29dab70
+ms.openlocfilehash: ab96c0a17344d93c00f25ca5ca97a1fb2c0a22b7
+ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71007568"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185745"
 ---
 # <a name="integrate-with-syslog"></a>與 Syslog 整合
 
 > [!NOTE]
 > 此頁面所述的 Azure ATP 功能也可使用新的[入口網站](https://portal.cloudappsecurity.com)來存取。
 
-Azure ATP 可以在偵測到可疑的活動時通知您，以及發出安全性警訊和健康狀態警訊，方式是傳送通知到您的 Syslog 伺服器。 警示會從偵測到活動的感應器直接傳送到 Syslog 伺服器。 
+Azure ATP 可以在偵測到可疑的活動時通知您，以及發出安全性警訊和健康狀態警訊，方式是傳送通知到您的 Syslog 伺服器。 警示會從偵測到活動的 Azure ATP 感應器直接傳送到 Syslog 伺服器。 
 
 
 當您啟用 Syslog 通知後，即可進行下列設定：

@@ -5,28 +5,39 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 07/25/2019
+ms.date: 09/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3ac34f82800b2d09243169d99812b27eef41b2b5
-ms.sourcegitcommit: dd8c94db68e85752c20bba3446b678cd1edcd932
+ms.openlocfilehash: 8416c2d6e3b12d15f52a0f27381d845fdb268cdd
+ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604403"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185538"
 ---
 # <a name="configure-event-collection"></a>設定事件收集
 
-為增強偵測功能，Azure ATP 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757 和 7045。 Azure ATP 感應器可以直接讀取這些事件。如果沒有部署 Azure ATP 感應器，則有兩種方法可以將之轉寄到 Azure ATP 獨立感應器：一種是將 Azure ATP 獨立感應器設定為接聽 SIEM 事件，另一種是[設定 Windows 事件轉寄](configure-event-forwarding.md)。
+為增強偵測功能，Azure ATP 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757、7045 與 8004。 Azure ATP 感應器可以自動讀取這些事件。如果沒有部署 Azure ATP 感應器，則有兩種方法可以將它轉寄到 Azure ATP 獨立感應器：一種是將 Azure ATP 獨立感應器設定為接聽 SIEM 事件，另一種是[設定 Windows 事件轉送](configure-event-forwarding.md)。
 
 > [!NOTE]
 > 在設定事件收集之前，請務必執行 Azure ATP 稽核指令碼，以確保網域控制站已正確設定為可記錄必要的事件。 
 
-除了收集和分析進出網域控制站的網路流量之外，Azure ATP 可以使用 Windows 事件來進一步加強偵測。 它會針對 NTLM 使用能增強各種偵測的事件 4776，並使用事件 4732、4733、4728、4729、4756、4757 和 7045 以增強偵測機密群組修改與服務建立。 這可從您的 SIEM 接收，或藉由在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
+除了收集和分析進出網域控制站的網路流量之外，Azure ATP 可以使用 Windows 事件來進一步加強偵測。 Azure ATP 會針對 NTLM 使用能增強各種偵測的 Windows 事件 4776 與 8004，並使用事件 4732、4733、4728、4729、4756、4757 與 7045 以增強機密群組修改與服務建立的偵測。 這些可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
+
+## <a name="ntlm-authentication-using-windows-event-8004"></a>使用 Windows 事件 8004 的 NTLM 驗證
+
+設定 Windows 事件 8004 收集：
+1. 瀏覽至：電腦設定\原則\Windows 設定\安全性設定\本機原則\安全性選項
+2. 設定**網域群組原則**，如下所示：
+   - 網路安全性：限制 NTLM:限制 NTLM: 送往遠端伺服器的連出 NTLM 流量 = **全部稽核**
+   - 網路安全性:限制 NTLM:限制 NTLM: 稽核這個網域的 NTLM 驗證 = **全部啟用**
+   - 網路安全性:限制 NTLM:限制 NTLM: 稽核連入 NTLM 流量 = **啟用所有帳戶的稽核**
+
+當 Windows 事件 8004 由 Azure ATP 感應器剖析時，會使用伺服器存取的資料加強 Azure ATP NTLM 驗證活動。
 
 ## <a name="siemsyslog"></a>SIEM/Syslog
 為了讓 Azure ATP 可以取用 Syslog 伺服器上的資料，您需要執行下列步驟︰

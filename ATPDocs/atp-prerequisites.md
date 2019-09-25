@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 09/01/2019
+ms.date: 09/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d4b54dfc9f64f296925889147c72db6c23819c20
-ms.sourcegitcommit: 298a0ce02c2f22faa5b03acf909aa0dd73f38993
+ms.openlocfilehash: edc59ab0d8ec813b4f957e6391e37da18ba4dbb0
+ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2019
-ms.locfileid: "70210923"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185642"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -63,7 +63,7 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 
 - 選擇性的 **Honeytoken**：沒有任何網路活動之使用者的使用者帳戶。 此帳戶設定為 Azure ATP Honeytoken 使用者。 如需使用 Honeytoken 的詳細資訊，請參閱[設定排除專案和 Honeytoken 使用者](install-atp-step7.md)。
 
-- 選擇性：在部署獨立感應器時，必須將 Windows 事件 4776、4732、4733、4728、4729、4756、4757 與 7045 轉送給 Azure ATP，以進一步增強 Azure ATP 對雜湊傳遞、暴力密碼破解、修改敏感性群組、Honeytoken 偵測與建立惡意服務的抵禦能力。 Azure ATP 感應器自動支援這些事件。 在 Azure ATP 獨立感應器中，這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
+- 選擇性：在部署獨立感應器時，必須將 Windows 事件 4776、4732、4733、4728、4729、4756、4757 與 7045 和 8004 轉送給 Azure ATP，以在對敏感性群組與可疑服務建立偵測能力之外進一步增強 Azure ATP 驗證型偵測能力。  Azure ATP 感應器自動支援這些事件。 在 Azure ATP 獨立感應器中，這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
 
 ## <a name="azure-atp-portal-requirements"></a>Azure ATP 入口網站需求
 您可透過瀏覽器來存取 Azure ATP 入口網站，其支援下列瀏覽器和設定︰
@@ -148,7 +148,7 @@ Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的�
 |
 
 ### <a name="windows-event-logs"></a>Windows 事件記錄檔
-Azure ATP 偵測依賴特定的 Windows 事件記錄檔，其可由感應器從網域控制站剖析。 若要稽核正確的事件並將其包含在 Windows 事件記錄檔中，則網域控制站需要精確的進階稽核原則設定。 如需詳細資訊，請參閱[進階稽核原則檢查](atp-advanced-audit-policy.md)。
+Azure ATP 偵測仰賴下列特定 Windows 事件記錄檔，這些記錄檔可由感應器從您的網域控制站剖析。4776、4732、4733、4728、4729、4756、4757、7045 與 8004。 若要正確稽核事件並將其包含在 Windows 事件記錄檔中，網域控制站需要精確的進階稽核原則設定。 如需有關設定正確原則的詳細資訊，請參閱[進階稽核原則檢查](atp-advanced-audit-policy.md)。 若要確定已依服務所需[稽核 Windows 事件 8004](configure-event-collection.md##ntlm-authentication-using-windows-event-8004)，請檢閱您的 [NTLM 稽核設定](https://blogs.technet.microsoft.com/askds/2009/10/08/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7/) \(英文\)。  
 
 
 > [!NOTE]

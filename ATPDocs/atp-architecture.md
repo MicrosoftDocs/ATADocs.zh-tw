@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 07/17/2019
+ms.date: 09/23/2019
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 38a1790194d739ac31c66df60cf0d9c2911344c7
-ms.sourcegitcommit: b7b3d4a401faaa3edb4bd669a1a003a6d21a4322
+ms.openlocfilehash: d1b0d9a5db7fe94170cedf274a36ec036c4910c4
+ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68298898"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185671"
 ---
 # <a name="azure-atp-architecture"></a>Azure ATP 架構
 
@@ -84,7 +84,7 @@ Azure ATP 感應器包含的監視元件，會評估其執行所在網域控制�
 
 ### <a name="windows-events"></a>Windows 事件
 
-為了增強 Azure ATP 針對可疑身分識別竊取 (雜湊傳遞)、可疑驗證失敗、敏感性群組修改、可疑服務建立，以及 Honeytoken 活動等攻擊類型的偵測範圍，Azure ATP 需要分析下列 Windows 事件的記錄：4776、4732、4733、4728、4729、4756、4757 與 7045。 具備適當[進階稽核原則設定](atp-advanced-audit-policy.md)的 Azure ATP 感應器會自動讀取這些事件。 
+為了加強與 NTLM 驗證、敏感性群組修改與可疑服務建立相關的 Azure ATP 偵測涵蓋範圍，Azure ATP 必須分析下列 Windows 事件的記錄檔：4776、4732、4733、4728、4729、4756、4757、7045 與 8004。 具備適當[進階稽核原則設定](atp-advanced-audit-policy.md)的 Azure ATP 感應器會自動讀取這些事件。 若要確定已依服務所需[稽核 Windows 事件 8004](configure-event-collection.md##ntlm-authentication-using-windows-event-8004)，請檢閱您的 [NTLM 稽核設定](https://blogs.technet.microsoft.com/askds/2009/10/08/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7/) \(英文\)。
 
 ## <a name="next-steps"></a>後續步驟
 

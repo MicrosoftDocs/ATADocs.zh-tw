@@ -5,25 +5,37 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 09/08/2019
+ms.date: 09/22/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 56c517930f4001e9a6e8f4476210fe89b380aa3f
-ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
+ms.openlocfilehash: 77d33b429cc728ef24341b53bb20974368a35235
+ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2019
-ms.locfileid: "71004697"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185591"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
 
 本文會經常更新，讓您知道最新版 Azure ATP 的新功能。
 
 RSS 摘要：複製以下 URL 並在您的摘要讀取程式中貼上，以在此頁面更新時接收通知：`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
+
+發行日期：2019 年 9 月 22 日
+## <a name="azure-atp-release-296"></a>Azure ATP 2.96 版
+
+- **使用 Windows 事件 8004 加強的 NTLM 驗證**<br>
+
+當啟用 NTLM 稽核並開啟 Windows 事件 8004 之後，Azure ATP 感應器現在可以使用您存取的伺服器資料自動讀取及加強 NTLM 驗證活動。 Azure ATP 會依序針對 NTLM 驗證剖析 Windows 事件 8004，以加強用於 Azure ATP 威脅分析與警示的 NTLM 驗證資料。 這個加強的功能提供 NTLM 資料的資源存取活動，以及加強的失敗登入活動，包括使用者嘗試存取但失敗的目的地電腦。
+
+[使用 Windows 事件 8004](configure-event-collection.md##ntlm-authentication-using-windows-event-8004)深入了解 NTLM 驗證活動。
+
+- 版本也包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
+
 
 發行日期：2019 年 9 月 15 日
 ## <a name="azure-atp-release-295"></a>Azure ATP 2.95 版

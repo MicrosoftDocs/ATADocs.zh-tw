@@ -141,10 +141,12 @@
       items:
         - name: 設定 Azure ATP 感應器
           href: install-atp-step5.md
-        - name: Proxy 組態
-          href: configure-proxy.md
         - name: 進階稽核原則檢查
           href: atp-advanced-audit-policy.md
+        - name: 設定 Windows 事件集合
+          href: configure-windows-event-collection.md
+        - name: Proxy 組態
+          href: configure-proxy.md
         - name: 設定 Azure ATP 對 SAM 發出遠端呼叫
           href: install-atp-step8-samr.md
     - name: Azure ATP 獨立感應器設定

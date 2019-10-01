@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: edc59ab0d8ec813b4f957e6391e37da18ba4dbb0
-ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
+ms.openlocfilehash: 763f27e9fb3e134f97b716306c747ecce7edf411
+ms.sourcegitcommit: 0a98c0c151be2a81a3bb9ff1301d35a3091079ea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185642"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71217676"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -148,7 +148,7 @@ Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的�
 |
 
 ### <a name="windows-event-logs"></a>Windows 事件記錄檔
-Azure ATP 偵測仰賴下列特定 Windows 事件記錄檔，這些記錄檔可由感應器從您的網域控制站剖析。4776、4732、4733、4728、4729、4756、4757、7045 與 8004。 若要正確稽核事件並將其包含在 Windows 事件記錄檔中，網域控制站需要精確的進階稽核原則設定。 如需有關設定正確原則的詳細資訊，請參閱[進階稽核原則檢查](atp-advanced-audit-policy.md)。 若要確定已依服務所需[稽核 Windows 事件 8004](configure-event-collection.md##ntlm-authentication-using-windows-event-8004)，請檢閱您的 [NTLM 稽核設定](https://blogs.technet.microsoft.com/askds/2009/10/08/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7/) \(英文\)。  
+Azure ATP 偵測仰賴下列特定 Windows 事件記錄檔，這些記錄檔可由感應器從您的網域控制站剖析。4776、4732、4733、4728、4729、4756、4757、7045 與 8004。 若要正確稽核事件並將其包含在 Windows 事件記錄檔中，網域控制站需要精確的進階稽核原則設定。 如需有關設定正確原則的詳細資訊，請參閱[進階稽核原則檢查](atp-advanced-audit-policy.md)。 若要確定已依服務所需[稽核 Windows 事件 8004](configure-windows-event-collection.md##ntlm-authentication-using-windows-event-8004)，請檢閱您的 [NTLM 稽核設定](https://blogs.technet.microsoft.com/askds/2009/10/08/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7/) \(英文\)。  
 
 
 > [!NOTE]

@@ -1,79 +1,71 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Advanced Threat Analytics 文件
+### YamlMime:Landing
+title: Advanced 威脅分析檔
+summary: 使用來自多個網路資料來源的資訊來保護您的企業，以瞭解組織中使用者和實體的行為。
 metadata:
-  title: Advanced Threat Analytics 文件
-  description: 透過使用網路中多個資料來源的資訊來保護您的企業，以了解組織中使用者和其他實體的行為
-  services: advanced-threat-analytics
-  author: msmbaldwin
-  manager: rkarlin
-  ms.prod: advanced-threat-analytics
-  ms.tgt_pltfrm: na
-  ms.devlang: na
+  title: Advanced 威脅分析檔
+  description: 使用來自多個網路資料來源的資訊來保護您的企業，以瞭解組織中使用者和實體的行為。
+  services: service
+  ms.service: advanced-threat-analytics
+  ms.subservice: ms.subservice
   ms.topic: landing-page
-  ms.date: 01/30/2019
-  ms.author: mbaldwin
-  layout: LandingPage
-abstract:
-  description: 透過使用網路中多個資料來源的資訊來保護您的企業，以了解組織中使用者和其他實體的行為
-sections:
-  - title: 深入了解
-    items:
-      - type: list
-        style: cards
-        className: cardsFTitle
-        items:
-          - title: 什麼是 Advanced Threat Analytics？
-            href: what-is-ata.md
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
-              href: what-is-ata.md
-          - title: ATA 的最新消息
-            href: whats-new-version-1.9.md
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_quick-start.svg'
-              href: whats-new-version-1.9.md
-          - title: 常見問題集
-            href: ata-technical-faq.md
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_support.svg'
-              href: ata-technical-faq.md
-          - title: 探索 Microsoft 365 這套包含 Advanced Threat Analytics 的完整解決方案
-            href: 'https://docs.microsoft.com/microsoft-365/'
-            image:
-              src: /office/media/icons/caret-right-blue.svg
-              href: 'https://docs.microsoft.com/microsoft-365/'
-  - title: 開始使用
-    items:
-      - type: paragraph
-        text: 規劃、設計並開始使用 ATA
-      - type: list
-        style: icon48
-        items:
-          - image:
-              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-            text: Advanced Threat Analytics 架構
-            href: ata-architecture.md
-          - image:
-              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
-            text: ATA 容量規劃
-            href: ata-capacity-planning.md
-          - image:
-              src: 'https://docs.microsoft.com/media/common/i_download-install.svg'
-            text: 下載和安裝
-            href: install-ata-step1.md
-  - title: 立即試用
-    items:
-      - type: paragraph
-        text: 規劃、設計並開始使用 ATA
-      - type: list
-        style: icon48
-        items:
-          - image:
-              src: 'https://docs.microsoft.com/media/common/i_test.svg'
-            text: 評估
-            href: 'https://www.microsoft.com/en-us/evalcenter/evaluate-microsoft-advanced-threat-analytics'
-          - image:
-              src: 'https://docs.microsoft.com/media/common/i_road-map.svg'
-            text: 查看 ATA 攻擊模擬腳本
-            href: 'https://gallery.technet.microsoft.com/ATA-Playbook-ef0a8e38'
+  ms.collection: M365-security-compliance
+  author: mlottner
+  ms.author: mlottner
+  ms.date: 10/01/2019
+  ms.openlocfilehash: 85fdb8c87afd48ce651983e4b52f3849b64d4454
+  ms.sourcegitcommit: 8f085179ea099a8000c982fbac39ca3f570520fb
+  ms.translationtype: MT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71721085"
+landingContent:
+- title: 關於先進的威脅分析
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 什麼是 Advanced 威脅分析（ATA）？
+      url: what-is-ata.md
+  - linkListType: architecture
+    links:
+    - text: Advanced Threat Analytics 架構
+      url: ata-architecture.md
+    - text: 規劃您的解決方案容量
+      url: ata-capacity-planning.md
+- title: 查看 ATA 警示
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 安全性警示
+      url: working-with-suspicious-activities.md
+    - text: 健康狀態警示
+      url: ata-health-center.md
+    - text: 監視您的警示
+      url: monitoring-alerts.md
+- title: 管理和自訂 ATA
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 設定 ATA 警示
+      url: setting-ata-alerts.md
+    - text: 標記敏感性帳戶
+      url: tag-sensitive-accounts.md
+    - text: 橫向移動路徑 (Lmp)
+      url: use-case-lateral-movement-path.md
+    - text: 管理遙測設定
+      url: manage-telemetry-settings.md
+- title: 調查威脅
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 可疑活動指南
+      url: suspicious-activity-guide.md
+    - text: ATA 攻擊模擬腳本
+      url: https://gallery.technet.microsoft.com/ATA-Playbook-ef0a8e38
+- title: 深入瞭解 ATA
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: ATA 的新功能?
+      url: whats-new-version-1.9.md
+    - text: 常見問題集
+      url: ata-technical-faq.md

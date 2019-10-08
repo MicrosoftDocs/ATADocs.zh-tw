@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 09/23/2019
+ms.date: 10/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0478ab7dea7a8476faf61175654e6c50b10e9418
-ms.sourcegitcommit: 0a98c0c151be2a81a3bb9ff1301d35a3091079ea
+ms.openlocfilehash: 34d75bfd53f9c119e685390bd933b6e642c45b6c
+ms.sourcegitcommit: 4b89831dc3f17e594c0c824f94f6d2debb07c516
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71217734"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71997458"
 ---
 # <a name="configure-windows-event-collection"></a>設定 Windows 事件集合
 
@@ -28,16 +28,20 @@ ms.locfileid: "71217734"
 
 除了收集和分析進出網域控制站的網路流量之外，Azure ATP 可以使用 Windows 事件來進一步加強偵測。 Azure ATP 會針對 NTLM 使用能增強各種偵測的 Windows 事件 4776 與 8004，並使用事件 4732、4733、4728、4729、4756、4757、7045 與 8004 以增強機密群組修改與服務建立的偵測。 這些可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
 
+> [!NOTE]
+>  要 收集 Windows 事件 8004 的網域群組原則應該**只**套用到網域控制站。  
+
 ## <a name="ntlm-authentication-using-windows-event-8004"></a>使用 Windows 事件 8004 的 NTLM 驗證
 
 設定 Windows 事件 8004 收集：
 1. 瀏覽至：電腦設定\原則\Windows 設定\安全性設定\本機原則\安全性選項
-2. 設定**網域群組原則**，如下所示：
-   - 網路安全性：限制 NTLM:限制 NTLM: 送往遠端伺服器的連出 NTLM 流量 = **全部稽核**
+2. 設定或建立**網域群組原則**，以套用到每個網域中的網域控制站，如下所示：
+   - 網路安全性:限制 NTLM:限制 NTLM: 送往遠端伺服器的連出 NTLM 流量 = **全部稽核**
    - 網路安全性:限制 NTLM:限制 NTLM: 稽核這個網域的 NTLM 驗證 = **全部啟用**
    - 網路安全性:限制 NTLM:限制 NTLM: 稽核連入 NTLM 流量 = **啟用所有帳戶的稽核**
 
 當 Windows 事件 8004 由 Azure ATP 感應器剖析時，會使用伺服器存取的資料加強 Azure ATP NTLM 驗證活動。
+
 
 ## <a name="see-also"></a>另請參閱
 - [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool) \(英文\)

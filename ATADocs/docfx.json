@@ -44,7 +44,8 @@
       "feedback_product_url": "https://microsoftsecurity.uservoice.com/forums/905158-advanced-threat-analytics",
       "layout": "Conceptual",
       "breadcrumb_path": "/advanced-threat-analytics/bread/toc.json",
-      "disable_contribution_on_translation_quality": ["MT"]
+      "disable_contribution_on_translation_quality": ["MT"],
+      "searchScope": ["ATA"]
     },
     "markdownEngineName": "markdig"
   }

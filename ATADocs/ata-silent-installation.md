@@ -1,33 +1,33 @@
 ---
-title: 以無訊息方式安裝 Advanced Threat Analytics | Microsoft Docs
-description: 說明如何以無訊息方式安裝 ATA。
+title: 以無訊息方式安裝 Advanced 威脅分析 |Microsoft Docs
+description: 本文說明如何以無訊息方式安裝 ATA。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: mlottner
+ms.author: mlottner
 manager: rkarlin
-ms.date: 08/28/2019
+ms.date: 10/15/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 9778cfa171ca6f5bc9b7597af935d15456504c62
-ms.sourcegitcommit: bb33e24591acf11688955318b5938bc3d662a398
+ms.openlocfilehash: 51234265f30cb71c0421a9aa80a9288fe7a77b2e
+ms.sourcegitcommit: 91ab82b0813a5e7c6ec94f1766f909ef9a524d32
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70076674"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72442150"
 ---
 # <a name="ata-silent-installation"></a>ATA 無訊息安裝
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 本文提供以無訊息方式安裝 ATA 的指示。
 
 ## <a name="prerequisites"></a>必要條件
 
-ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。 
+ATA 版本1.9 需要安裝 Microsoft .NET Framework 4.6.1。 
 
 當您安裝或更新 ATA 時，.Net Framework 4.6.1 會隨著 Microsoft ATA 部署自動安裝。
 
@@ -51,25 +51,25 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 > [!div class="mx-tableFixed"]
 > 
-> |名稱|語法|對無訊息安裝而言是否為必要？|說明|
+> |Name|語法|對無訊息安裝而言是否為必要？|Description|
 > |-------------|----------|---------|---------|
-> |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
+> |Quiet|/quiet|[是]|執行安裝程式，但不顯示任何 UI 和提示。|
 > |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
-> |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|是|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
-> |LicenseAccepted|--LicenseAccepted|是|指出已閱讀並核准授權。 無訊息安裝時必須設定。|
+> |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|[是]|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
+> |LicenseAccepted|--LicenseAccepted|[是]|指出已閱讀並核准授權。 無訊息安裝時必須設定。|
 
 **安裝參數**：
 
 > [!div class="mx-tableFixed"]
 > 
-> |             名稱             |                      語法                      | 對無訊息安裝而言是否為必要？ |                                                                                                        描述                                                                                                         |
+> |             Name             |                      語法                      | 對無訊息安裝而言是否為必要？ |                                                                                                        Description                                                                                                         |
 > |------------------------------|--------------------------------------------------|------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-> |       InstallationPath       |         InstallationPath="<InstallPath>"         |                 否                 |                                               設定 ATA 二進位檔案的安裝路徑。 預設路徑：C:\Program Files\Microsoft Advanced Threat Analytics\Center                                                |
-> |       DatabaseDataPath       |           DatabaseDataPath= "<DBPath>"           |                 否                 |                                         設定 ATA 資料庫的資料夾路徑。 預設路徑：C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data                                         |
-> |       CenterIpAddress        |        CenterIpAddress=<CenterIPAddress>         |                是                 |                                                                                       設定 ATA 中心服務的 IP 位址                                                                                        |
-> |          CenterPort          |             CenterPort=<CenterPort>              |                是                 |                                                                                      設定 ATA 中心服務的網路連接埠                                                                                       |
+> |       InstallationPath       |         InstallationPath="<InstallPath>"         |                 否                 |                                               設定 ATA 二進位檔案的安裝路徑。 預設路徑︰C:\Program Files\Microsoft Advanced Threat Analytics\Center                                                |
+> |       DatabaseDataPath       |           DatabaseDataPath= "<DBPath>"           |                 否                 |                                         設定 ATA 資料庫的資料夾路徑。 預設路徑︰C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data                                         |
+> |       CenterIpAddress        |        CenterIpAddress=<CenterIPAddress>         |                [是]                 |                                                                                       設定 ATA 中心服務的 IP 位址                                                                                        |
+> |          CenterPort          |             CenterPort=<CenterPort>              |                [是]                 |                                                                                      設定 ATA 中心服務的網路連接埠                                                                                       |
 > | CenterCertificateThumbprint  |  CenterCertificateThumbprint="<CertThumbprint>"  |                 否                 | 設定 ATA 中心服務的憑證指紋。 此憑證可用來保護 ATA 中心和 ATA 閘道之間的通訊。 如果未設定，安裝會產生自我簽署憑證。 |
-> |       ConsoleIpAddress       |       ConsoleIpAddress=<ConsoleIPAddress>        |                是                 |                                                                                           設定 ATA 主控台的 IP 位址                                                                                           |
+> |       ConsoleIpAddress       |       ConsoleIpAddress=<ConsoleIPAddress>        |                [是]                 |                                                                                           設定 ATA 主控台的 IP 位址                                                                                           |
 > | ConsoleCertificateThumbprint | ConsoleCertificateThumbprint="<CertThumbprint >" |                 否                 |       指定 ATA 主控台的憑證指紋。 此憑證會用來驗證 ATA 主控台網站的身分識別。 如果未指定，安裝會產生自我簽署憑證       |
 
 **範例**：若要使用預設安裝路徑和單一 IP 位址安裝 ATA 中心︰
@@ -95,11 +95,11 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 > [!div class="mx-tableFixed"]
 > 
-> |名稱|語法|對無訊息安裝而言是否為必要？|說明|
+> |Name|語法|對無訊息安裝而言是否為必要？|Description|
 > |-------------|----------|---------|---------|
-> |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
+> |Quiet|/quiet|[是]|執行安裝程式，但不顯示任何 UI 和提示。|
 > |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
-> |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|是|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
+> |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|[是]|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
 
 
 更新 ATA 時，安裝程式會自動偵測 ATA 是否已安裝在伺服器上，而不需要使用更新安裝選項。
@@ -119,21 +119,21 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 > [!div class="mx-tableFixed"]
 > 
-> |名稱|語法|對無訊息解除安裝而言是否為必要？|說明|
+> |Name|語法|對無訊息解除安裝而言是否為必要？|Description|
 > |-------------|----------|---------|---------|
-> |Quiet|/quiet|是|執行解除安裝程式，但不顯示任何 UI 和提示。|
-> |解除安裝|/uninstall|是|從伺服器執行 ATA 中心的無訊息解除安裝。|
-> |Help|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
+> |Quiet|/quiet|[是]|執行解除安裝程式，但不顯示任何 UI 和提示。|
+> |解除安裝|/uninstall|[是]|從伺服器執行 ATA 中心的無訊息解除安裝。|
+> |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 
 **安裝參數**：
 
 > [!div class="mx-tableFixed"]
 > 
-> |名稱|語法|對無訊息解除安裝而言是否為必要？|描述|
+> |Name|語法|對無訊息解除安裝而言是否為必要？|Description|
 > |-------------|----------|---------|---------|
 > |DeleteExistingDatabaseData|DeleteExistingDatabaseData|否|刪除現有資料庫中的所有檔案。|
 
-**範例**：若要從伺服器以無訊息方式解除安裝 ATA 中心，並移除所有現有的資料庫資料：
+**範例**：若要從伺服器以無訊息方式解除安裝 ATA 中心，並移除所有現存的資料庫資料：
 
 
     "Microsoft ATA Center Setup.exe" /quiet /uninstall --DeleteExistingDatabaseData
@@ -160,22 +160,23 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 > [!div class="mx-tableFixed"]
 > 
-> |名稱|語法|對無訊息安裝而言是否為必要？|說明|
+> |Name|語法|對無訊息安裝而言是否為必要？|Description|
 > |-------------|----------|---------|---------|
-> |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
+> |Quiet|/quiet|[是]|執行安裝程式，但不顯示任何 UI 和提示。|
 > |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
-> |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|是|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
+> |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|[是]|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
 
 **安裝參數**：
 
 > [!div class="mx-tableFixed"]
 > 
-> |          名稱          |                   語法                   | 對無訊息安裝而言是否為必要？ |                                                      描述                                                       |
+> |          Name          |                   語法                   | 對無訊息安裝而言是否為必要？ |                                                      Description                                                       |
 > |------------------------|--------------------------------------------|------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-> |   ConsoleAccountName   |     ConsoleAccountName="<AccountName>"     |                是                 |   為用來向 ATA 中心註冊 ATA 閘道的使用者帳戶 (user@domain.com) 設定名稱。    |
-> | ConsoleAccountPassword | ConsoleAccountPassword="<AccountPassword>" |                是                 | 為用來向 ATA 中心註冊 ATA 閘道的使用者帳戶 (user@domain.com) 設定密碼。 |
+> |       InstallationPath       |         InstallationPath="<InstallPath>"         |                 否                 |                                               設定 ATA 二進位檔案的安裝路徑。 預設路徑︰C:\Program Files\Microsoft Advanced Threat Analytics\Center
+> |   ConsoleAccountName   |     ConsoleAccountName="<AccountName>"     |                [是]                 |   為用來向 ATA 中心註冊 ATA 閘道的使用者帳戶 (user@domain.com) 設定名稱。    |
+> | ConsoleAccountPassword | ConsoleAccountPassword="<AccountPassword>" |                [是]                 | 為用來向 ATA 中心註冊 ATA 閘道的使用者帳戶 (user@domain.com) 設定密碼。 |
 
-**範例**：若要以無訊息方式安裝 ATA 閘道，請使用您的 ATA 系統管理員認證登入已加入網域的電腦，以便您不需要在安裝期間指定認證。 否則，請使用指定的認證向 ATA 中心註冊：
+**範例**：若要以無訊息方式安裝 ATA 閘道，請使用您的 ATA 系統管理員認證登入已加入網域的電腦，使您不需要在安裝期間指定認證。 否則，請使用指定的認證向 ATA 中心註冊：
 
     "Microsoft ATA Gateway Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" 
     ConsoleAccountName="user@contoso.com" ConsoleAccountPassword="userpwd"
@@ -194,11 +195,11 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 > [!div class="mx-tableFixed"]
 > 
-> |名稱|語法|對無訊息安裝而言是否為必要？|說明|
+> |Name|語法|對無訊息安裝而言是否為必要？|Description|
 > |-------------|----------|---------|---------|
-> |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
+> |Quiet|/quiet|[是]|執行安裝程式，但不顯示任何 UI 和提示。|
 > |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
-> |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|是|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
+> |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|[是]|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
 
 
 **範例**：若要以無訊息方式更新 ATA 閘道：
@@ -207,7 +208,10 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 ## <a name="uninstall-the-ata-gateway-silently"></a>以無訊息方式將 ATA 閘道解除安裝
 
-使用下列命令執行 ATA 閘道的無訊息解除安裝：**語法**：
+使用下列命令執行 ATA 閘道的無訊息解除安裝：
+
+
+**語法**：
 
     Microsoft ATA Gateway Setup.exe [/quiet] [/Uninstall] [/Help]
 
@@ -215,13 +219,13 @@ ATA 1.8 版需要安裝 Microsoft .NET Framework 4.6.1。
 
 > [!div class="mx-tableFixed"]
 > 
-> |名稱|語法|對無訊息解除安裝而言是否為必要？|說明|
+> |Name|語法|對無訊息解除安裝而言是否為必要？|Description|
 > |-------------|----------|---------|---------|
-> |Quiet|/quiet|是|執行解除安裝程式，但不顯示任何 UI 和提示。|
-> |解除安裝|/uninstall|是|從伺服器執行 ATA 閘道的無訊息解除安裝。|
+> |Quiet|/quiet|[是]|執行解除安裝程式，但不顯示任何 UI 和提示。|
+> |解除安裝|/uninstall|[是]|從伺服器執行 ATA 閘道的無訊息解除安裝。|
 > |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 
-**範例**：若要從伺服器以無訊息方式將 ATA 閘道解除安裝：
+**範例**：若要從伺服器以無訊息方式解除安裝 ATA 閘道：
 
 
     Microsoft ATA Gateway Setup.exe /quiet /uninstall

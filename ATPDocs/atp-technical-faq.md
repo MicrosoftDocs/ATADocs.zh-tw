@@ -5,22 +5,22 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 05/30/2019
+ms.date: 10/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 297df34b92ebbe1be93667d54eedd51a605e5bf1
-ms.sourcegitcommit: b021f8dfc54e59de429f93cc5fc0d733d92b00b8
+ms.openlocfilehash: 2ad5ff4ad50e9b1afb5db3df0ce3928bb090986b
+ms.sourcegitcommit: dd8db49bc54acc5483a3fa889379230d144b0623
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66403510"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72690214"
 ---
 # <a name="azure-atp-frequently-asked-questions"></a>Azure ATP 常見問題集
-本文提供關於 Azure ATP 的常見問題與解答清單，並分成下列類別： 
+此文章提供關於 Azure ATP 的常見問題與解答清單，並分成下列類別： 
 - [什麼是 Azure ATP](#what-is-azure-atp)
 - [授權和隱私權](#licensing-and-privacy)
 - [部署](#deployment)
@@ -55,6 +55,24 @@ Microsoft 並不會將您的資料用於廣告用途，或是任何其他與為�
 
 ### <a name="does-azure-atp-monitor-computer-accounts-as-well-as-user-accounts"></a>Azure ATP 是否會監視電腦帳戶及使用者帳戶？
 是。 因為電腦帳戶 (以及任何其他實體) 可以用來執行惡意活動，所以 Azure ATP 會監視所有電腦帳戶的行為，以及環境中的所有其他實體。
+
+### <a name="what-is-the-difference-between-advanced-threat-analytics-ata-and-azure-atp"></a>Advanced Threat Analytics (ATA) 與 Azure ATP 之間的差異為何？
+ATA 是安裝在內部部署的獨立解決方案。 具有雲端連線能力的 Azure ATP 包括持續的功能更新，包括新的偵測、UEBA 功能、安全性評定，以及跨 Microsoft 365 安全性解決方案的調查體驗。
+
+
+Azure ATP 的其他功能： 
+- Azure ATP 可偵測到比 ATA 更多的內部部署可疑行為和先進的攻擊，並提供**身分識別安全性評量**報告。
+- 使用其他資料來源重新設計感應器 (例如 **Windows 事件追蹤**)。 
+- Azure ATP 可保護多樹系環境。 
+
+Azure ATP 是 Microsoft 365 安全性的一部分，可保護混合式組織：
+- Azure ATP，連同 Microsoft Cloud App Security (MCAS) 與 Azure AD Identity Protection，為使用者活動、內部部署與雲端提供統一的調查體驗，並提供增強的使用者與實體行為分析 (UEBA) 偵測。
+- ATA 未與其他 Microsoft 線上安全性解決方案整合 
+  
+可調整規模且安全，運用雲端的強大功能： 
+- Azure ATP 可讓客戶享有雲端解決方案的優點，而不會有任何規模調整限制和持續更新。 
+- ATA 是以內部部署的中央管理伺服器為基礎，需要在內部部署環境中部署中央管理中心的專用硬體，而且每年通常會接收一或兩次版本更新。
+
 
 ## <a name="licensing-and-privacy"></a>授權和隱私權 
 

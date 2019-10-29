@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 12/02/2018
+ms.date: 10/22/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 1ad5e923-9bbd-4f56-839a-b11a9f387d4b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0fdf6b312c51949a1a104336518cc55f924020aa
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.openlocfilehash: 2177a4c5e7281bd87f87009307b675b9d649c295
+ms.sourcegitcommit: 17bea648092fedaad08384442d237e766c472a70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65197138"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776622"
 ---
 # <a name="configure-detection-exclusions-and-honeytoken-accounts"></a>設定偵測排除範圍和 Honeytoken 帳戶
 
@@ -29,29 +29,29 @@ Azure ATP 也能讓您設定 honeytoken 帳戶，用來做為針對惡意執行�
 
 若要設定，請依照下列步驟執行︰
 
-1.  從 Azure ATP 入口網站中，按一下設定圖示，然後選取 [設定]。
+1.  從 Azure ATP 入口網站中，按一下設定圖示，然後選取 [設定]  。
 
     ![Azure ATP 組態設定](media/atp-config-menu.png)
 
-2.  在 [偵測] 下，按一下 [實體標記]。
+2.  在 [偵測]  下，按一下 [實體標記]  。
 
-3. 在 [Honeytoken 帳戶] 下，輸入 Honeytoken 帳戶名稱並按一下 [+] 符號。 [Honeytoken 帳戶] 欄位是可搜尋的，而且會自動顯示您網路中的實體。 按一下 **[儲存]**。
+3. 在 [Honeytoken 帳戶]  下，輸入 Honeytoken 帳戶名稱並按一下 [+]  符號。 [Honeytoken 帳戶] 欄位是可搜尋的，而且會自動顯示您網路中的實體。 按一下 **[儲存]** 。
 
    ![Honeytoken](media/honeytoken-sensitive.png)
 
-4. 按一下 [排除]。 針對每個威脅類型，輸入要排除而不予偵測的使用者帳戶或 IP 位址。 
-5. 按一下加號。 [加入實體] \(使用者或電腦\) 欄位是可搜尋的，而且會自動填入您網路中的實體。 如需詳細資訊，請參閱[從偵測中排除實體](excluding-entities-from-detections.md)和[安全性警訊指南](suspicious-activity-guide.md)。
+4. 按一下 [排除]  。 針對每個威脅類型，輸入要排除而不予偵測的使用者帳戶或 IP 位址。 
+5. 按一下加號  。 [加入實體]  \(使用者或電腦\) 欄位是可搜尋的，而且會自動填入您網路中的實體。 如需詳細資訊，請參閱[從偵測中排除實體](excluding-entities-from-detections.md)和[安全性警訊指南](suspicious-activity-guide.md)。
 
    ![排除](media/exclusions.png)
 
-6.  按一下 **[儲存]**。
+6.  按一下 **[儲存]** 。
 
 
 恭喜，您已成功部署 Azure 進階威脅防護！
 
-檢查攻擊時間表以檢視偵測到的安全性警訊，並搜尋使用者或電腦並檢視其設定檔。
+檢查攻擊時間表以檢視從所偵測到之活動產生的安全性警示，並搜尋使用者或電腦並檢視其設定檔。
 
-Azure ATP 掃描會立即開始。 某些偵測 (例如異常群組修改) 需要學習期間，因此無法在 Azure ATP 部署後立即供使用。
+Azure ATP 掃描會立即開始。 某些偵測 (例如[敏感性群組的可疑新增項目](atp-domain-dominance-alerts.md#suspicious-additions-to-sensitive-groups-external-id-2024)) 需要學習期間，而且在 Azure ATP 部署之後不會立即可用。每個警示的學習期間列在詳細的[安全性警示指南](suspicious-activity-guide.md)中。 
 
 
 ## <a name="see-also"></a>另請參閱

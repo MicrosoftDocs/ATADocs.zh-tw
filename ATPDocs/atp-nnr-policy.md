@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 07/17/2019
+ms.date: 10/22/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 1ac873fc-b763-41d7-878e-7c08da421cb5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9cef9a1eb7035f1db61ab6c3c0b90d4e73278d36
-ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
+ms.openlocfilehash: cb9275c90afda7a5ec98cf238205232b2bcfb66f
+ms.sourcegitcommit: 17bea648092fedaad08384442d237e766c472a70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185653"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776618"
 ---
 # <a name="what-is-network-name-resolution"></a>什麼是網路名稱解析？
 
@@ -27,13 +27,13 @@ ms.locfileid: "71185653"
 
 若要將 IP 位址解析為電腦名稱，Azure ATP 感應器會使用下列其中一種方法查詢 IP 後方之電腦名稱的 IP 位址：
 
-1. 透過 RPC 的 NTLM (TCP 連接埠 135)
-2. NetBIOS (UDP 連接埠 137)
-3. RDP (TCP 連接埠 3389) - 只有 **Client hello** 的第一個封包
-4. 使用 IP 位址的反向 DNS 查閱來查詢 DNS 伺服器 (UDP 53)
+- 透過 RPC 的 NTLM (TCP 連接埠 135)
+- NetBIOS (UDP 連接埠 137)
+- RDP (TCP 連接埠 3389) - 只有 **Client hello** 的第一個封包
+- 使用 IP 位址的反向 DNS 查閱來查詢 DNS 伺服器 (UDP 53)
 
 > [!NOTE]
->不會在任何連接埠上執行任何驗證。
+> 不會在任何連接埠上執行任何驗證。
 
 Azure ATP 會根據網路流量評估及判斷裝置作業系統。 在擷取電腦名稱之後，Azure ATP 感應器會檢查 Active Directory 並使用 TCP 指紋，以尋找具有該相同電腦名稱的相關電腦物件。 使用 TCP 指紋有助於識別未註冊和非 Windows 的裝置，在您的調查過程中提供協助。 當 Azure ATP 感應器找到相互關聯時，感應器會在 IP 與電腦物件之間建立關聯。 
 
@@ -61,6 +61,7 @@ Azure ATP 會根據網路流量評估及判斷裝置作業系統。 在擷取電
     ![辨識項確定度](media/nnr-high-certainty.png)
 
 
+
 ### <a name="prerequisites"></a>必要條件
 |通訊協定|  傳輸|  Port|   Device| 方向|
 |--------|--------|------|-------|------|
@@ -74,9 +75,13 @@ Azure ATP 會根據網路流量評估及判斷裝置作業系統。 在擷取電
 
 若要確定 Azure ATP 在理想情況下運作且環境已正確設定，Azure ATP 會檢查每個感應器的解析狀態並針對每個方法發出監視警示，提供使用每個方法進行主動式名稱解析成功率低的 Azure ATP 感應器清單。
 
+> [!NOTE]
+> 若要停用 Azure ATP 中的選擇性 NNR 方法以符合您的環境需求，請開啟支援通話。 
+
 每個監視警示都提供方法、感應器、有問題支援則與設定建議的特定詳細資料。
 
 ![低成功率網路名稱解析 (NNR) 警示](media/atp-nnr-success-rate.png)
+
 
 
 ### <a name="configuration-recommendations"></a>設定建議

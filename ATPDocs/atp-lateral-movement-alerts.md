@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 08/26/2019
+ms.date: 10/29/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 2257eb00-8614-4577-b6a1-5c65085371f2
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a20c26d45f8cc0ddda05b103e03fa16f9de569b8
-ms.sourcegitcommit: 033ac9277effa00c4423caf6f2a3febd796ca3db
+ms.openlocfilehash: 7c74e43bffb810041049e9fc7fccf2f069535759
+ms.sourcegitcommit: 65f9249e3e49d80d872c82bf663389d04945e534
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70052439"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "73462352"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>教學課程：橫向移動警訊  
 

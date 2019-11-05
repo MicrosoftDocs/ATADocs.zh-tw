@@ -8,6 +8,8 @@
       href: atp-architecture.md
     - name: Azure ATP 必要條件
       href: atp-prerequisites.md
+    - name: 適用於美國政府的 Azure ATP
+      href: atp-us-govt-gcc-high.md
     - name: Azure ATP 的新功能
       href: atp-whats-new.md
 - name: 快速入門

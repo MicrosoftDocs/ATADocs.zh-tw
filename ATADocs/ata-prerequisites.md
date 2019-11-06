@@ -5,23 +5,23 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 08/20/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e08668199056c59093caa202123cf01a4ed303cc
-ms.sourcegitcommit: 2aab3c4244db694616ec02a9b8ae2e266d6fdddc
+ms.openlocfilehash: 213f098fe878afda763eebce6080909b63c3cf91
+ms.sourcegitcommit: ef68a774d2756719bce8747e65f8bde2b9afdd5d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69629332"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73618450"
 ---
 # <a name="ata-prerequisites"></a>ATA 必要條件
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 本文描述在環境中成功部署 ATA 的需求。
 
@@ -34,15 +34,15 @@ ATA 是由 ATA 中心、ATA 閘道及 (或) ATA 輕量型閘道所組成。 如�
 ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003 和更新版本的樹系功能等級 (FFL)。
 
 
-[開始之前](#before-you-start):此節列出在開始 ATA 安裝之前您應該收集的資訊以及您應該擁有的帳戶和網路實體。
+[開始之前](#before-you-start)：本節列出在開始 ATA 安裝之前，您應該收集的資訊，以及您應該具備的帳戶和網路實體。
 
-[ATA 中心](#ata-center-requirements)：此節列出 ATA 中心的硬體與軟體需求，以及您需要在 ATA 中心伺服器上做的設定。
+[Ata 中心](#ata-center-requirements). 本節列出 ata 中心的硬體、軟體需求，以及在 ATA 中心伺服器上設定所需的設定。
 
-[ATA 閘道](#ata-gateway-requirements)：此節列出 ATA 閘道的硬體軟體需求，以及您需要在 ATA 閘道伺服器上做的設定。
+[ATA 閘道](#ata-gateway-requirements)︰本節列出 ATA 閘道的硬體軟體需求，以及您需要在 ATA 閘道伺服器上做的設定。
 
-[ATA 輕量型閘道](#ata-lightweight-gateway-requirements)：此節列出 ATA 輕量型閘道的硬體與軟體需求。
+[ATA 輕量型閘道](#ata-lightweight-gateway-requirements)︰本節列出 ATA 輕量型閘道的硬體及軟體需求。
 
-[ATA 主控台](#ata-console)︰此節列出執行 ATA 主控台的瀏覽器需求。
+[ATA 主控台](#ata-console)︰本節列出執行 ATA 主控台的瀏覽器需求。
 
 ![ATA 架構圖](media/ATA-architecture-topology.jpg)
 
@@ -57,11 +57,11 @@ ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003
 
 -   請勿在 ATA 閘道或輕量型閘道上安裝 Microsoft 郵件分析器。 郵件分析器驅動程式與 ATA 閘道和輕量型閘道驅動程式衝突。 如果您在 ATA 閘道上執行 Wireshark，在停止 Wireshark 擷取後，需要重新啟動 Microsoft Advanced Threat Analytics 閘道服務。 否則，閘道會停止擷取流量。 在 ATA 輕量型閘道上執行 Wireshark 不會干擾 ATA 輕量型閘道。
 
--    建議：使用者應該擁有「刪除的物件」容器的唯讀權限。 這可讓 ATA 偵測網域中的大量刪除物件。 如需設定「已刪除物件」容器的唯讀權限相關資訊，請參閱[檢視或設定目錄物件的權限](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx) \(英文\) 文章中的＜變更刪除的物件容器的權限＞。
+-    建議︰使用者應該擁有「刪除的物件」容器的唯讀權限。 這可讓 ATA 偵測網域中的大量刪除物件。 如需設定「已刪除物件」容器的唯讀權限相關資訊，請參閱[檢視或設定目錄物件的權限](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx) \(英文\) 文章中的＜變更刪除的物件容器的權限＞。
 
--   選擇性：沒有任何網路活動之使用者的使用者帳戶。 此帳戶可設定為 ATA Honeytoken 使用者。 若要將帳戶設定為 Honeytoken 使用者，只需要使用者名稱。 如需 Honeytoken 設定的資訊，請參閱[設定 IP 位址排除項目和 Honeytoken 使用者](install-ata-step7.md)。
+-   選擇性︰沒有任何網路活動之使用者的使用者帳戶。 此帳戶可設定為 ATA Honeytoken 使用者。 若要將帳戶設定為 Honeytoken 使用者，只需要使用者名稱。 如需 Honeytoken 設定的資訊，請參閱[設定 IP 位址排除項目和 Honeytoken 使用者](install-ata-step7.md)。
 
--   選擇性：除了收集和分析進出網域控制站的網路流量之外，ATA 還會使用 Windows 事件 4776、4732、4733、4728、4729、4756 與 4757 進一步加強 ATA 的傳遞雜湊、暴力密碼破解、修改敏感性群組以及 Honey Token 偵測。 這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 ATA 透過網域控制站網路流量無法取得的額外資訊。
+-   選擇性︰除了收集和分析進出網域控制站的網路流量之外，ATA 還會使用 Windows 事件 4776、4732、4733、4728、4729、4756 和 4757 進一步加強 ATA 的傳遞雜湊、暴力密碼破解、修改敏感性群組以及 Honey Token 偵測。 這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 ATA 透過網域控制站網路流量無法取得的額外資訊。
 
 
 ## <a name="ata-center-requirements"></a>ATA 中心需求
@@ -84,13 +84,13 @@ ATA 中心可以安裝在屬於網域或工作群組的成員伺服器上。
 ### <a name="dynamic-memory"></a>動態記憶體
 
 > [!NOTE] 
-> 以虛擬機器 (VM) 的形式執行中心時, 必須隨時將所有記憶體配置給 VM。
+> 以虛擬機器（VM）的形式執行中心時，必須隨時將所有記憶體配置給 VM。
 
-|VM 執行于|描述|
+|VM 執行于|Description|
 |------------|-------------|
 |Hyper-V|確定 VM 未啟用 [**啟用動態記憶體**]。|
-|VMWare|請確定已設定的記憶體數量和保留的記憶體相同, 或選取 VM 設定中的下列選項–**保留所有的來賓記憶體 (全部鎖定)** 。|
-|其他虛擬化主機|請參閱廠商提供的檔, 以瞭解如何確保所有時間都會將記憶體完全配置給 VM。 |
+|VMWare|請確定已設定的記憶體數量和保留的記憶體相同，或選取 VM 設定中的下列選項–**保留所有的來賓記憶體（全部鎖定）** 。|
+|其他虛擬化主機|請參閱廠商提供的檔，以瞭解如何確保所有時間都會將記憶體完全配置給 VM。 |
 |
 
 如果將 ATA 中心當做虛擬機器執行，請在建立新檢查點之前先關閉伺服器，以避免潛在的資料庫損毀。
@@ -102,7 +102,7 @@ ATA 中心可以安裝在屬於網域或工作群組的成員伺服器上。
 為了達到最佳效能，將 ATA 中心的 [電源選項] 設定為 [高效能]。<br>
 您要監視的網域控制站數目以及每個網域控制站的負載，決定了所需的伺服器規格。 如需詳細資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。
 
-對於 Windows 作業系統2008R2 和 2012,[多處理器群組](https://docs.microsoft.com/windows/win32/procthread/processor-groups)模式不支援閘道。 如需多處理器群組模式的詳細資訊, 請參閱[疑難排解](troubleshooting-ata-known-errors.md##multi-processor-group-mode)。 
+對於 Windows 作業系統2008R2 和2012，[多處理器群組](https://docs.microsoft.com/windows/win32/procthread/processor-groups)模式不支援閘道。 如需有關多處理器群組模式的詳細資訊，請參閱[疑難排解](troubleshooting-ata-known-errors.md##multi-processor-group-mode)。 
 
 ### <a name="time-synchronization"></a>時間同步
 
@@ -119,7 +119,7 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 ### <a name="ports"></a>連接埠
 下表列出 ATA 中心正常運作最少要開啟的連接埠。
 
-|Protocol|傳輸|Port|去/從|方向|
+|通訊協定|傳輸|連接埠|去/從|方向|
 |------------|-------------|--------|-----------|-------------|
 |**SSL** (ATA 通訊)|TCP|443|ATA 閘道|輸入|
 |**HTTP** (選擇性)|TCP|80|公司網路|輸入|
@@ -148,7 +148,9 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 -   密碼編譯服務提供者 (CSP) 或金鑰儲存提供者 (KSP) 的提供者類型
 -   2048 位元的公用金鑰長度
 -   針對 KeyEncipherment 和 ServerAuthentication 使用方式旗標所設定的值
--   "KeyExchange" (AT\_KEYEXCHANGE) 的 KeySpec (KeyNumber) 值。 請注意，不支援 "Signature" (AT\_SIGNATURE) 值。 
+-   "KeyExchange" (AT\_KEYEXCHANGE) 的 KeySpec (KeyNumber) 值。
+    *不*支援值為 "signature" （在\_簽章）。 
+-   所有閘道機器都必須能夠完全驗證及信任選取的中心憑證。
 
 例如，您可以使用標準**網頁伺服器**或**電腦**範本。
 
@@ -181,7 +183,7 @@ ATA 閘道可以用來監視具 Windows Server 2003 或更新版本之網域功�
 為了達到最佳效能，將 ATA 閘道的 [電源選項] 設定為 [高效能]。<br>
 ATA 閘道可以支援監視多個網域控制站，依進出網域控制站的網路傳輸量而定。
 
-若要深入瞭解動態記憶體或任何其他虛擬機器記憶體管理功能, 請參閱易失[儲存體](#dynamic-memory)。
+若要深入瞭解動態記憶體或任何其他虛擬機器記憶體管理功能，請參閱易失[儲存體](#dynamic-memory)。
 
 如需 ATA 閘道硬體需求的詳細資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。
 
@@ -213,7 +215,7 @@ ATA 閘道需要至少一個管理介面卡和至少一個擷取介面卡︰
 ### <a name="ports"></a>連接埠
 下表列出在管理介面卡上設定 ATA 閘道至少需要的連接埠：
 
-|Protocol|傳輸|Port|去/從|Direction|
+|通訊協定|傳輸|連接埠|去/從|方向|
 |------------|-------------|--------|-----------|-------------|
 |LDAP|TCP 和 UDP|389|網域控制站|輸出|
 |安全的 LDAP (LDAPS)|TCP|636|網域控制站|輸出|
@@ -223,8 +225,8 @@ ATA 閘道需要至少一個管理介面卡和至少一個擷取介面卡︰
 |Netlogon (SMB、CIFS、SAM-R)|TCP 和 UDP|445|網路上的所有裝置|輸出|
 |Windows Time|UDP|123|網域控制站|輸出|
 |DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
-|透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|兩者|
-|NetBIOS|UDP|137|網路上的所有裝置|兩者|
+|透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|雙向|
+|NetBIOS|UDP|137|網路上的所有裝置|雙向|
 |SSL|TCP|443|ATA 中心|輸出|
 |Syslog (選擇性)|UDP|514|SIEM 伺服器|輸入|
 
@@ -267,7 +269,7 @@ ATA 輕量型閘道至少需要在網域控制站上安裝 2 個核心和 6 GB �
 為了達到最佳效能，將 ATA 輕量型閘道的 **[電源選項]** 設定為 [高效能]。
 ATA 輕量型閘道可以部署在各種負載和大小的網域控制站上，依進出網域控制站的網路流量，以及安裝在該網域控制站上的資源數量而定。
 
-若要深入瞭解動態記憶體或任何其他虛擬機器記憶體管理功能, 請參閱易失[儲存體](#dynamic-memory)。
+若要深入瞭解動態記憶體或任何其他虛擬機器記憶體管理功能，請參閱易失[儲存體](#dynamic-memory)。
 
 如需 ATA 輕量型閘道硬體需求的詳細資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。
 
@@ -286,11 +288,11 @@ ATA 輕量型閘道可為所有網域控制站的網路介面卡監視其上的�
 ### <a name="ports"></a>連接埠
 下表列出 ATA 輕量型閘道至少需要的連接埠：
 
-|Protocol|傳輸|Port|去/從|Direction|
+|通訊協定|傳輸|連接埠|去/從|方向|
 |------------|-------------|--------|-----------|-------------|
 |DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
-|透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|兩者|
-|NetBIOS|UDP|137|網路上的所有裝置|兩者|
+|透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|雙向|
+|NetBIOS|UDP|137|網路上的所有裝置|雙向|
 |SSL|TCP|443|ATA 中心|輸出|
 |Syslog (選擇性)|UDP|514|SIEM 伺服器|輸入|
 |Netlogon (SMB、CIFS、SAM-R)|TCP 和 UDP|445|網路上的所有裝置|輸出|
@@ -321,7 +323,7 @@ ATA 輕量型閘道可為所有網域控制站的網路介面卡監視其上的�
 
 
 ## <a name="see-also"></a>另請參閱
-- [ATA 調整大小工具](http://aka.ms/atasizingtool)
+- [ATA 調整大小工具](https://aka.ms/atasizingtool)
 - [ATA 架構](ata-architecture.md)
 - [安裝 ATA](install-ata-step1.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

@@ -5,25 +5,44 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 09/22/2019
+ms.date: 10/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: d322c9b0352319e8511414e042d340acbbccd371
-ms.sourcegitcommit: 4b89831dc3f17e594c0c824f94f6d2debb07c516
+ms.openlocfilehash: 049f01e0cb4de7a2b308d293a4d36e0891a8e815
+ms.sourcegitcommit: 65f9249e3e49d80d872c82bf663389d04945e534
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71997562"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "73462344"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
 
 本文會經常更新，讓您知道最新版 Azure ATP 的新功能。
 
-RSS 摘要：複製以下 URL 並在您的摘要讀取程式中貼上，以在此頁面更新時接收通知：`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
+RSS 摘要：將下列 URL 複製並貼至您的摘要讀取器中，就能在此頁面有所更新時收到通知： <br>`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
+
+
+發行日期：2019 年 11 月 3 日
+## <a name="azure-atp-release-299"></a>Azure ATP 2.99 版
+
+- **功能增強：為 Azure ATP 入口網站**新增 Cloud App Security 入口網站可用性的使用者介面通知 <br> 
+    確保所有使用 Cloud App Security 入口網站的使用者，都能得知增強功能的發行。為入口網站新增的通知，會以現有的 Azure ATP 警示時間軸為準。 
+
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
+
+
+發行日期：2019 年 10 月 27 日
+## <a name="azure-atp-release-298"></a>Azure ATP 2.98 版
+
+- **功能增強：可疑的暴力密碼破解攻擊警示** <br> 
+    使用其他分析，改善[可疑的暴力密碼破解攻擊 (SMB)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-smb-external-id-2033) 警示，並且改善偵測邏輯，減少**良性確判 (B-TP)** 與**誤判 (FP)** 警示結果。 
+
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
+
 
 發行日期：2019 年 10 月 6 日
 ## <a name="azure-atp-release-297"></a>Azure ATP 2.97 版
@@ -203,9 +222,9 @@ Azure ATP 現已在正式版本中支援未受信任的樹系。 如果要深入
     您現在可以在設定期間手動將實體標記為 Exchange Server伺服器。
 
     若要手動將實體標記為 Exchange 伺服器：
-    1. 在 Azure ATP 入口網站中，存取 [設定]  功能表。
-    2. 在 [偵測]  下，選取 [實體標記]  ，然後選取 [機密]  。
-    3. 選取 [Exchange 伺服器]  ，然後新增您要標記的實體。
+    1. 在 Azure ATP 入口網站中，存取 [設定]功能表。
+    2. 在 [偵測] 下，選取 [實體標記]，然後選取 [機密]。
+    3. 選取 [Exchange 伺服器]，然後新增您要標記的實體。
 
     將某部電腦標記為 Exchange 伺服器之後，系統會將它標記為機密，並顯示它已被標記為 Exchange 伺服器。  「機密」標記將會出現在該電腦的實體設定檔中，而且該電腦在所有偵測中都會被視為以「機密」帳戶與「橫向移動路徑」為基礎。
 
@@ -381,11 +400,11 @@ Azure ATP [可疑的 NTLM 轉送攻擊 (Exchange 帳戶) - 預覽](atp-lateral-m
 發行日期：2019 年 1 月 27 日
 
 - **新功能：不信任的樹系支援 - (預覽)**<br>
-Azure ATP 對非信任樹系內的感應器支援現已開放預覽。 從 Azure ATP 入口網站 [目錄服務]  頁面設定額外一組認證，讓 Azure ATP 感應器能連線至不同 Active Directory 樹系，以及回報給 Azure ATP 服務。 如果要深入了解，請參閱 [Azure ATP 多重樹系](atp-multi-forest.md)。 
+Azure ATP 對非信任樹系內的感應器支援現已開放預覽。 從 Azure ATP 入口網站 [目錄服務] 頁面設定額外一組認證，讓 Azure ATP 感應器能連線至不同 Active Directory 樹系，以及回報給 Azure ATP 服務。 如果要深入了解，請參閱 [Azure ATP 多重樹系](atp-multi-forest.md)。 
 
 - **新功能：網域控制站涵蓋範圍**<br>
 Azure ATP 現在會提供 Azure ATP 監視網域控制站的涵蓋範圍資訊。  
-從 Azure ATP 入口網站 [感應器]  頁面，檢視 Azure ATP 在您環境中偵測到的受監視與未受監視網域控制站數。 下載受監視網域控制站清單以利進一步分析，以及建置行動計劃。 如果要深入了解，請參閱[網域控制站監視](atp-sensor-monitoring.md)操作指南。 
+從 Azure ATP 入口網站 [感應器] 頁面，檢視 Azure ATP 在您環境中偵測到的受監視與未受監視網域控制站數。 下載受監視網域控制站清單以利進一步分析，以及建置行動計劃。 如果要深入了解，請參閱[網域控制站監視](atp-sensor-monitoring.md)操作指南。 
 
 - **功能增強：帳戶列舉偵察**<br>
 Azure ATP 帳戶列舉偵察偵測現在會偵測使用 Kerberos 和 NTLM 的列舉嘗試，並據此發出警示。 偵測在之前僅適用於使用 Kerberos 的嘗試。 如果要深入了解，請參閱 [Azure ATP 偵查警示](atp-reconnaissance-alerts.md#account-enumeration-reconnaissance-external-id-2003)。 
@@ -489,7 +508,7 @@ Azure ATP 的[可疑黃金票證使用 - 票證異常](suspicious-activity-guide
 
 
 - **功能增強：自動化建立 Azure ATP 執行個體 (工作區)** <br>
-即日起，Azure ATP「工作區」  已重新命名為 Azure ATP「執行個體」  。 Azure ATP 現在支援每個 Azure ATP 帳戶一個 Azure ATP 執行個體。 新客戶的執行個體會使用 [Azure ATP 入口網站](https://portal.atp.azure.com)中的執行個體建立精靈來建立。 現有的 Azure ATP 工作區會自動轉換成具備更新的 Azure ATP 執行個體。  
+即日起，Azure ATP「工作區」已重新命名為 Azure ATP「執行個體」。 Azure ATP 現在支援每個 Azure ATP 帳戶一個 Azure ATP 執行個體。 新客戶的執行個體會使用 [Azure ATP 入口網站](https://portal.atp.azure.com)中的執行個體建立精靈來建立。 現有的 Azure ATP 工作區會自動轉換成具備更新的 Azure ATP 執行個體。  
 
   - 使用[建立您的 Azure ATP 執行個體](install-atp-step1.md)來簡化執行個體建立，以進行更快速的部署和保護。 
   - 所有[資料隱私權與合規性](atp-privacy-compliance.md)皆維持不變。 
@@ -736,7 +755,7 @@ Azure 進階威脅防護現在會檢查網域控制站的現有進階稽核原�
  
 - **可疑 VPN 偵測**<br></br>此版本介紹可疑 VPN 偵測的預覽版本。 Azure ATP 會學習使用者 VPN 行為 (包括使用者登入的電腦以及使用者從中連線的位置)，並在與預期行為有所偏差時對您發出警示。 如需詳細資訊，請參閱[可疑 VPN 偵測](suspicious-activity-guide.md)。
 
-- [Delayed update] \(延遲更新\) <br></br>每次 Azure ATP 更新時，您現在都可以選擇設定 Azure ATP 感應器稍後更新。 您現在可以將每個 Azure ATP 感應器設定為 [Delayed update] \(延遲更新\)  ，以在 Azure ATP 雲端服務更新後的 24 小時更新。 此功能可讓您在特定測試感應器上測試更新，而且只有在稍後才會更新生產感應器。 如果您在第一個更新週期期間發現問題，請開啟支援票證。 如需詳細資訊，請參閱[更新 Azure ATP 感應器](sensor-update.md)。
+- [Delayed update] \(延遲更新\)<br></br>每次 Azure ATP 更新時，您現在都可以選擇設定 Azure ATP 感應器稍後更新。 您現在可以將每個 Azure ATP 感應器設定為 [Delayed update] \(延遲更新\)，以在 Azure ATP 雲端服務更新後的 24 小時更新。 此功能可讓您在特定測試感應器上測試更新，而且只有在稍後才會更新生產感應器。 如果您在第一個更新週期期間發現問題，請開啟支援票證。 如需詳細資訊，請參閱[更新 Azure ATP 感應器](sensor-update.md)。
 
 - **更新異常通訊協定實作偵測**<br></br>異常通訊協定實作偵測現在會提供相關資訊。 您現在可以看到 Azure ATP 懷疑哪個潛在攻擊工具在您的網路上工作。 如需詳細資訊，請參閱[可疑活動指南](suspicious-activity-guide.md)。
  
@@ -830,7 +849,7 @@ Azure 進階威脅防護現在會檢查網域控制站的現有進階稽核原�
 發行日期：2018 年 3 月 18 日
 
 - Azure ATP 現已支援多重要素驗證 (MFA)。 使用 MFA 的租用戶現在能夠進入 Azure ATP 入口網站。
-- Azure ATP 現在具有[**系統狀態**](https://health.atp.azure.com/)頁面，可讓您了解工作區管理入口網站是否正常運作、是否偵測到任何問題、感應器是否可將流量傳送至雲端。 您可從 Azure ATP 的功能表列存取 [系統狀態]  。
+- Azure ATP 現在具有[**系統狀態**](https://health.atp.azure.com/)頁面，可讓您了解工作區管理入口網站是否正常運作、是否偵測到任何問題、感應器是否可將流量傳送至雲端。 您可從 Azure ATP 的功能表列存取 [系統狀態]。
 
 
 ## <a name="azure-atp-release-224"></a>Azure ATP 2.24 版

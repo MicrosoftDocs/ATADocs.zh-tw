@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 08/11/2019
+ms.date: 10/31/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 224e629a-0e82-458c-bb03-b67070a9241d
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: af8481be19535903ca1e992a62a813acb473fcf0
-ms.sourcegitcommit: e185d6cf13ef0c40206a5d1980e3953ef8834a48
+ms.openlocfilehash: 67a6525645cf04e4bd14f0a398d1ac9dd224d558
+ms.sourcegitcommit: 65f9249e3e49d80d872c82bf663389d04945e534
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68951262"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "73462373"
 ---
 # <a name="azure-atp-data-security-and-privacy"></a>Azure ATP 資料安全性和隱私權
 
@@ -53,3 +53,6 @@ Azure ATP 有實作個人資料變更的稽核，包括個人資料的刪除和�
 ## <a name="additional-resources"></a>其他資源
 
 - 如需 Azure ATP 信任與合規性的相關資訊，請參閱[服務信任入口網站](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) \(英文\) 與 [Microsoft 365 企業版 GDPR 合規性網站](https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview)。
+
+## <a name="security-and-privacy-for-azure-atp-us-government-gcc-high-customers"></a>Azure ATP 美國政府 GCC High 客戶的安全性及隱私權 
+如需 Azure ATP 合規性標準的其他資訊，以及美國政府 GCC High 客戶之客戶資料位置的其他資訊，請參閱[適用於美國政府的 Enterprise Mobility + Security 服務描述](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-govt-service-description)。 

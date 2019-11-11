@@ -3,18 +3,18 @@ title: 安裝 Azure ATP 感應器快速入門 |Microsoft Docs
 description: 安裝 Azure ATP 的步驟四可協助您安裝 Azure ATP 感應器。
 author: mlottner
 ms.author: mlottner
-ms.date: 03/03/2019
+ms.date: 10/31/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f3af1034b73d1fc058a966c5d90eaf24dd282140
-ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
+ms.openlocfilehash: 7e2aed8b53f44ab2326e70cea02e9af384648500
+ms.sourcegitcommit: 65f9249e3e49d80d872c82bf663389d04945e534
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2019
-ms.locfileid: "71004884"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "73462311"
 ---
 # <a name="quickstart-install-the-azure-atp-sensor"></a>快速入門：安裝 Azure ATP 感應器
 
@@ -38,6 +38,8 @@ ms.locfileid: "71004884"
       - [https://triprd1wcuse1sensorapi.atp.azure.com](https://triprd1wcuse1sensorapi.atp.azure.com)
       - [https://triprd1wcusw1sensorapi.atp.azure.com](https://triprd1wcusw1sensorapi.atp.azure.com)
       - [https://triprd1wcuswb1sensorapi.atp.azure.com](https://triprd1wcuswb1sensorapi.atp.azure.com)
+   - 美國 GCC High
+      - [https://triff1wcva1sensorapi.atp.azure.us](https://triff1wcva1sensorapi.atp.azure.us)
    - 亞洲
       - [https://triprd1wcasse1sensorapi.atp.azure.com](https://triprd1wcasse1sensorapi.atp.azure.com)
 
@@ -45,7 +47,7 @@ ms.locfileid: "71004884"
 
 3. 執行 **Azure ATP sensor setup.exe** 並按照安裝精靈的指示操作。
 
-4. 在 [歡迎]  頁面中，選取您的語言，然後按一下 [下一步]  。
+4. 在 [歡迎] 頁面中，選取您的語言，然後按一下 [下一步]。
 
     ![Azure ATP 獨立感應器安裝語言](media/sensor-install-language.png)
 
@@ -56,12 +58,12 @@ ms.locfileid: "71004884"
     
     ![Azure ATP 感應器安裝](media/sensor-install-deployment-type.png)
 
-   按一下 [下一步]  。
+   按一下 [下一步] 。
 
     > [!NOTE] 
-    > 如果網域控制站或專用伺服器不符合安裝的最低硬體需求，就會發出警告。 該警告並不會使您無法按一下 [下一步]  和繼續進行安裝。 在不需要這麼多資料儲存空間的小型實驗室測試環境中，這可能仍是安裝 Azure ATP 的最佳選擇。 針對生產環境，強烈建議使用 Azure ATP 的 [容量規劃](atp-capacity-planning.md)指南，確保您的網域控制站或專用伺服器符合必要需求。
+    > 如果網域控制站或專用伺服器不符合安裝的最低硬體需求，就會發出警告。 該警告並不會使您無法按一下 [下一步] 和繼續進行安裝。 在不需要這麼多資料儲存空間的小型實驗室測試環境中，這可能仍是安裝 Azure ATP 的最佳選擇。 針對生產環境，強烈建議使用 Azure ATP 的 [容量規劃](atp-capacity-planning.md)指南，確保您的網域控制站或專用伺服器符合必要需求。
 
-6. 在 [設定感應器]  下，輸入從上一個步驟複製的安裝路徑和存取金鑰 (視您的環境而定)：
+6. 在 [設定感應器] 下，輸入從上一個步驟複製的安裝路徑和存取金鑰 (視您的環境而定)：
 
     ![Azure ATP 感應器設定影像](media/sensor-install-config.png)
 
@@ -69,7 +71,7 @@ ms.locfileid: "71004884"
 
      - 存取金鑰：從上一個步驟中的 Azure ATP 入口網站擷取。
     
-7. 按一下 [安裝]  。 安裝 Azure ATP 感應器期間將安裝及設定下列元件︰
+7. 按一下 [安裝]。 安裝 Azure ATP 感應器期間將安裝及設定下列元件︰
 
     - KB 3047154 (僅適用於 Windows Server 2012 R2)
 

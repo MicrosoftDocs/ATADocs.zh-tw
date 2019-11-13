@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 09/23/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 763f27e9fb3e134f97b716306c747ecce7edf411
-ms.sourcegitcommit: 0a98c0c151be2a81a3bb9ff1301d35a3091079ea
+ms.openlocfilehash: 7c1dfa8cfda0bb6fb39770a58a7cc1b54dbc2298
+ms.sourcegitcommit: ef68a774d2756719bce8747e65f8bde2b9afdd5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71217676"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73618438"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -140,6 +140,7 @@ Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的�
 |------------|-------------|--------|-----------|-------------|
 |**內部連接埠**|||||
 |SSL (*.atp.azure.com)|TCP|443|Azure ATP 雲端服務|輸出|
+|SSL (本機主機)|TCP|444|本機主機|兩者|
 |**內部連接埠**|||||
 |DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
 |Netlogon (SMB、CIFS、SAM-R)|TCP/UDP|445|網路上的所有裝置|輸出|
@@ -230,7 +231,7 @@ Azure ATP 獨立感應器需要至少一個管理介面卡和至少一個擷取�
 
 
 ## <a name="see-also"></a>另請參閱
-- [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool) \(英文\)
+- [Azure ATP 調整大小工具](https://aka.ms/aatpsizingtool) \(英文\)
 - [Azure ATP 架構](atp-architecture.md)
 - [安裝 Azure ATP](install-atp-step1.md)
 - [網路名稱解析 (NNR)](atp-nnr-policy.md)

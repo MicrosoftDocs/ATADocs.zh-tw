@@ -5,22 +5,31 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 10/07/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 049d125e8d9cd458f2116c61770893d4b2d596e8
-ms.sourcegitcommit: 4b89831dc3f17e594c0c824f94f6d2debb07c516
+ms.openlocfilehash: d764d466e0981c673874386d7b28019f48d79827
+ms.sourcegitcommit: ef68a774d2756719bce8747e65f8bde2b9afdd5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71997568"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73618427"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>針對 Azure ATP 已知問題進行疑難排解 
 
+
+## <a name="sensor-failure-communication-error"></a>感應器失敗通訊錯誤
+如果您收到以下感應器失敗錯誤： 
+
+System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> System.Net.WebException：無法連線至遠端伺服器 ---> System.Net.Sockets.SocketException：因為連線對象有一段時間並未正確回應，所以連線嘗試失敗；或是因為連線的主機無法回應，所以連線建立失敗...
+
+**解決方法：**
+
+請確保本機主機和 TCP 通訊埠 444 的通訊未受到封鎖。 若要深入了解 Azure ATP 必要條件，請參閱[連接埠](atp-prerequisites.md#ports)。
 
 ## <a name="deployment-log-location"></a>部署記錄位置
  

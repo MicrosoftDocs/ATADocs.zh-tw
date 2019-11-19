@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.openlocfilehash: 0d149b74724ecddcce88bc932626d6bd395d4202
-ms.sourcegitcommit: ef68a774d2756719bce8747e65f8bde2b9afdd5d
+ms.openlocfilehash: b9fa681e61d7e723ca3c942e406ed61c837cfe44
+ms.sourcegitcommit: 814af2addf833d40d10f7594275a132f888eea9b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73618499"
+ms.lasthandoff: 11/17/2019
+ms.locfileid: "74153124"
 ---
 # <a name="quickstart-plan-capacity-for-azure-atp"></a>快速入門：規劃 Azure ATP 容量
 
@@ -77,8 +77,9 @@ Azure ATP 感應器可以支援監視一個網域控制站，依網域控制站�
 |10k-20k|2.00|9.00|
 |20k-50k|3.50|9.50|
 |50k-75k |3.50|9.50|
-|75k-100k|3.50 |9.50|
+|75k-100k|3.50|9.50|
 |
+
 這包括實體核心，不包括超執行緒核心。 
 
 在決定調整大小，請注意下列項目： 

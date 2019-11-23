@@ -40,7 +40,7 @@ ATA 會透過接聽轉送到 ATA 閘道的 RADIUS 計量事件，與您的 VPN �
 > [!IMPORTANT]
 > 自2019年9月起，負責偵測 VPN 位置的先進威脅分析 VPN 地理位置服務，現在僅支援 TLS 1.2。 請確定您的 ATA 中心已設定為支援 TLS 1.2，因為版本1.1 和1.0 不再受到支援。   
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 若要啟用 VPN 整合，請確定已設定了下列參數：
 

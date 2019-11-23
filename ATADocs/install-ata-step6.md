@@ -27,10 +27,10 @@ ms.locfileid: "70803181"
 > [« 步驟 5](install-ata-step5.md)
 > [步驟 7 »](vpn-integration-install-step.md)
 
-## <a name="step-6-configure-event-collection"></a>步驟 6： 設定事件收集
+## <a name="step-6-configure-event-collection"></a>步驟 6. 設定事件收集
 ### <a name="configure-event-collection"></a>設定事件收集
 
-為增強偵測功能，ATA 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757 和 7045。 ATA 輕量閘道會自動讀取這些 Windows 事件，或者如果未部署 ATA 輕量閘道，則可以透過下列兩種方式之一轉送至 ATA 閘道，方法是設定 ATA 閘道接聽 SIEM 事件，或[正在設定 Windows 事件轉送](configure-event-collection.md)。  
+為增強偵測功能，ATA 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757 及 7045。 ATA 輕量閘道會自動讀取這些 Windows 事件，或如果未部署 ATA 輕量閘道，則可以透過下列兩種方式之一轉送至 ATA 閘道：將 ATA 閘道設定為接聽 SIEM 事件，或設定[Windows 事件轉送](configure-event-collection.md)。  
 
 > [!NOTE]
 > 針對 ATA 版本1.8 和更新版本，ATA 羽量級閘道不再需要 Windows 事件收集設定。 ATA 輕量型閘道現在會本機讀取事件，而不需要設定事件轉送。
@@ -130,13 +130,13 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
 電腦會嘗試驗證帳戶的認證。
 
-驗證套件：            MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
+驗證封裝：              MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
 
-登入帳戶：系統管理員
+登入帳戶：Administrator
 
-來源工作站：     SIEM
+來源工作站：       SIEM
 
-錯誤碼：       0x0
+錯誤碼：         0x0
 
 -   Syslog Header 是選擇性參數。
 

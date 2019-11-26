@@ -12,14 +12,14 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 190cdecd8ec0835c84329157f2e3a7c76b8b9ebe
-ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
+ms.openlocfilehash: 158f714602f3add5e23b12a2f3713e9feb4a4bc3
+ms.sourcegitcommit: be4525a93601d9356a4e487398262a2ffaf8c202
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2019
-ms.locfileid: "71005003"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74206204"
 ---
-# <a name="security-assessment-dormant-entities-in-sensitive-groups---preview"></a>安全性評估：**敏感性**群組中的休眠實體 - 預覽
+# <a name="security-assessment-dormant-entities-in-sensitive-groups"></a>安全性評估：**從敏感性群組中移除休眠實體** 
 
 ## <a name="what-are-sensitive-dormant-entities"></a>什麼是**敏感性**休眠實體？ 
 Azure ATP 會探索特定使用者是否具**敏感性**，以及提供會呈現為非使用中、已停用或已過期的屬性。 

@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 05/30/2019
+ms.date: 11/19/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6e55ebfaeac540d15a8539ee2c5b1450ee0c3f10
-ms.sourcegitcommit: b021f8dfc54e59de429f93cc5fc0d733d92b00b8
+ms.openlocfilehash: e45be0e076f326910bf70becb4a109a020edf6a4
+ms.sourcegitcommit: be4525a93601d9356a4e487398262a2ffaf8c202
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66403544"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74206283"
 ---
 # <a name="tutorial-compromised-credential-alerts"></a>教學課程：認證遭入侵警訊  
 
@@ -63,9 +63,9 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 1. 調查[來源使用者](investigate-a-user.md)。
 2. 調查[來源電腦](investigate-a-computer.md)。
 
-> [!NOTE]
-    > 若驗證是使用 NTLM 進行的，在某些情況下，可能沒有來源電腦嘗試存取之伺服器的足夠資訊可用。 Azure ATP 會根據 Windows 事件 4776 擷取來源電腦資料，此資料包含電腦所定義的來源電腦名稱。
-    > 使用 Windows 事件 4776 來擷取此資訊時，此資訊的來源欄位有時候會被裝置或軟體覆寫，以僅顯示工作站或 MSTSC。 如果您經常有會顯示為工作站或 MSTSC 的裝置，請務必在相關的網域控制站上啟用 NTLM 稽核，以取得真實的來源電腦名稱。    
+    > [!NOTE]
+    > 若驗證是使用 NTLM 進行的，在某些情況下，可能沒有來源電腦嘗試存取之伺服器的足夠資訊可用。 Azure ATP 會根據 Windows 事件 4776 擷取來源電腦資料，此資料包含電腦所定義的來源電腦名稱。 <br>
+    > 使用 Windows 事件 4776 來擷取此資訊時，此資訊的來源欄位有時候會被裝置或軟體覆寫，以僅顯示工作站或 MSTSC。 如果您經常有會顯示為工作站或 MSTSC 的裝置，請務必在相關的網域控制站上啟用 NTLM 稽核，以取得真實的來源電腦名稱。<br>  
     > 若要啟用 NTLM 稽核，請開啟 Windows 事件 8004 (這是 NTLM 驗證事件，其中包含來源電腦及其嘗試存取的使用者帳戶和伺服器相關資訊)。
 
 **建議的補救和預防步驟**
@@ -110,9 +110,8 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
     - 針對成功猜對的每位使用者，請[檢查其設定檔](investigate-a-user.md)來進一步調查。
 
     > [!NOTE]
-    > 若驗證是使用 NTLM 進行的，在某些情況下，可能沒有來源電腦嘗試存取之伺服器的足夠資訊可用。 Azure ATP 會根據 Windows 事件 4776 擷取來源電腦資料，此資料包含電腦所定義的來源電腦名稱。
-    > 使用 Windows 事件 4776 來擷取此資訊時，此資訊的來源欄位有時候會被裝置或軟體覆寫，以僅顯示工作站或 MSTSC。 如果您經常有會顯示為工作站或 MSTSC 的裝置，請務必在相關的網域控制站上啟用 NTLM 稽核，以取得真實的來源電腦名稱。    
-    > 若要啟用 NTLM 稽核，請開啟 Windows 事件 8004 (這是 NTLM 驗證事件，其中包含來源電腦及其嘗試存取的使用者帳戶和伺服器相關資訊)。
+    > 檢查證據以了解使用的驗證通訊協定。 若使用 NTLM 驗證，請在網域控制站上啟用 Windows 事件 8004 的 NTLM 稽核，以判斷使用者嘗試存取的資源伺服器。 Windows 事件 8004 是 NTLM 驗證事件，其中包含來源電腦、使用者帳戶以及來原始用者帳戶嘗試存取之伺服器的相關資訊。 <br>
+    > Azure ATP 會根據 Windows 事件 4776 擷取來源電腦資料，此資料包含電腦所定義的來源電腦名稱。 使用 Windows 事件 4776 來擷取此資訊，資訊來源欄位偶爾會由裝置或軟體覆寫，而且只會顯示工作站或 MSTSC 作為資訊來源。 此外，來源電腦實際上可能不存在於您的網路上。 這是可能的，因為惡意使用者通常會以可透過網際網路從網路外部存取的開放式伺服器為目標，然後使用那些伺服器來列舉您的使用者。 如果您經常有會顯示為工作站或 MSTSC 的裝置，請務必在網域控制站上啟用 NTLM 稽核，以取得存取的資源伺服器名稱。 您也應該調查此伺服器，檢查它是否對網際網路開放，如果是，請將它關閉。
     
 1. 當您了解驗證確認是由哪一部伺服器傳送時，您可以透過檢查事件 (例如 Windows 事件 4624) 對伺服器進行調查，以進一步了解驗證程序。 
 1. 檢查伺服器是否使用任何開放的連接埠向網際網路公開。 

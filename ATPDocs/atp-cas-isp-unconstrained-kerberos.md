@@ -12,14 +12,14 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 7eea354b-7a50-40d9-bfa7-dcccaef23179
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1343d0359750744890fdb3e15b5f49adfd2459d1
-ms.sourcegitcommit: 475df3e87d8476ff13e48ebc7a722f46f29dab70
+ms.openlocfilehash: 949f99c2ab19a5765a69c21121a274257c20efb6
+ms.sourcegitcommit: be4525a93601d9356a4e487398262a2ffaf8c202
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71007432"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74206322"
 ---
-# <a name="security-assessment-unsecure-kerberos-delegation---preview"></a>安全性評估：不安全的 Kerberos 委派 - 預覽
+# <a name="security-assessment-unsecure-kerberos-delegation"></a>安全性評估：不安全的 Kerberos 委派
 
 
 ## <a name="what-is-kerberos-delegation"></a>什麼是 Kerberos 委派？ 

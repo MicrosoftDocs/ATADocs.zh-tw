@@ -12,14 +12,14 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 124957bb-5882-4fcf-bab2-b74b0c69571d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8e99ab22e65538aba6f645d6bb7929330244cafc
-ms.sourcegitcommit: 475df3e87d8476ff13e48ebc7a722f46f29dab70
+ms.openlocfilehash: e683a7de6eae2a379e0dd802947ff4c10ca22e4b
+ms.sourcegitcommit: be4525a93601d9356a4e487398262a2ffaf8c202
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71007567"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74206328"
 ---
-# <a name="security-assessment-entities-exposing-credentials-in-clear-text-----preview"></a>安全性評估：實體以純文字公開認證 - 預覽
+# <a name="security-assessment-entities-exposing-credentials-in-clear-text"></a>安全性評估：實體以純文字公開認證 
 
 ![防止純文字認證暴露](media/atp-cas-isp-clear-text-1.png)
 

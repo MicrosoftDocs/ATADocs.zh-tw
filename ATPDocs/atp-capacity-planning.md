@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.openlocfilehash: b9fa681e61d7e723ca3c942e406ed61c837cfe44
-ms.sourcegitcommit: 814af2addf833d40d10f7594275a132f888eea9b
+ms.openlocfilehash: b07800cfc3b2df6fdb290fff27a9e807be15056f
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2019
-ms.locfileid: "74153124"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540895"
 ---
 # <a name="quickstart-plan-capacity-for-azure-atp"></a>快速入門：規劃 Azure ATP 容量
 
@@ -31,7 +31,7 @@ ms.locfileid: "74153124"
 
 1. 從您下載的 zip 檔案執行 Azure ATP 調整大小工具 **TriSizingTool.exe**。 
 2. 當此工具完成執行時，開啟 Excel 檔案結果。
-3. 在 Excel 檔案中，找出然後按一下 **Azure ATP 摘要**工作表。 因為是用於 Azure ATA 規劃，所以不需要其他工作表。
+3. 在 Excel 檔案中，找出然後按一下 **Azure ATP 摘要**工作表。 因為是用於 ATA 規劃，所以不需要其他工作表。
    ![範例容量規劃工具](media/capacity-tool.png)
 
 4. 在結果 Excel 檔案的 Azure ATP 感應器表格中找出 **Busy Packets/sec** 欄位，並且記下它。

@@ -11,10 +11,10 @@ ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 91fc13a9d85e8d3653965530a9f0f35debaa728f
-ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71004773"
 ---
 # <a name="tutorial-investigate-a-computer"></a>教學課程：調查電腦

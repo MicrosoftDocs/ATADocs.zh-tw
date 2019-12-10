@@ -13,10 +13,10 @@ ms.assetid: 9295dc09-ecdb-44c0-906b-cba4c5c8f17c
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 3428a95fd77252bf7384c8e733842134bc8141d2
-ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71004720"
 ---
 # <a name="tutorial-use-lateral-movement-paths-lmps"></a>教學課程：使用橫向移動路徑 (LMP)

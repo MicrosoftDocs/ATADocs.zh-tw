@@ -13,10 +13,10 @@ ms.assetid: e7f065fa-1ad1-4e87-bd80-99cc695efbf5
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: d8c0a38b1a02f8d9eee1f9955cf2c950c501be15
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196582"
 ---
 # <a name="change-azure-atp-portal-configuration---domain-connectivity-password"></a>變更 Azure ATP 入口網站設定 - 網域連線能力密碼
@@ -35,24 +35,24 @@ ms.locfileid: "65196582"
 
 1. 存取入口網站 URL，以開啟 Azure ATP 入口網站。
 
-2. 選取工具列上的 [設定] 選項並選取 [組態]。
+2. 選取工具列上的 [設定] 選項並選取 [組態]  。
 
    ![Azure ATP 組態設定圖示](media/atp-config-menu.png)
 
-3. 選取 [目錄服務]。
+3. 選取 [目錄服務]  。
 
    ![Azure ATP 獨立式感應器變更密碼影像](media/directory-services.png)
 
-4. 在 [密碼] 下，變更密碼。
+4. 在 [密碼]  下，變更密碼。
 
    > [!NOTE]
    > 在此處輸入 Active Directory 使用者和密碼，而非 Azure Active Directory。
 
-5. 按一下 **[儲存]**。
+5. 按一下 **[儲存]** 。
 
 6. 變更密碼之後，手動檢查 Azure ATP 獨立式感應器服務已在 Azure ATP 獨立式感應器伺服器上執行。
 
-7. 在 Azure ATP 入口網站中，移至 [設定] 下方的 [感應器] 頁面，並檢查感應器狀態。
+7. 在 Azure ATP 入口網站中，移至 [設定]  下方的 [感應器]  頁面，並檢查感應器狀態。
 
 ## <a name="see-also"></a>另請參閱
 

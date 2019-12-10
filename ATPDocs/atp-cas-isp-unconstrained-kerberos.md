@@ -13,10 +13,10 @@ ms.assetid: 7eea354b-7a50-40d9-bfa7-dcccaef23179
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 949f99c2ab19a5765a69c21121a274257c20efb6
-ms.sourcegitcommit: be4525a93601d9356a4e487398262a2ffaf8c202
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74206322"
 ---
 # <a name="security-assessment-unsecure-kerberos-delegation"></a>安全性評估：不安全的 Kerberos 委派

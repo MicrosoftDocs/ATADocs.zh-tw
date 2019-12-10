@@ -13,10 +13,10 @@ ms.assetid: e734e382-c4b1-43ca-9a8d-96c91daf2578
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: f54c60f97c9489934f0ac0a40b3b27780e6a60d9
-ms.sourcegitcommit: dd8db49bc54acc5483a3fa889379230d144b0623
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72690241"
 ---
 # <a name="advanced-threat-analytics-ata-to-azure-advanced-threat-protection-azure-atp"></a>Advanced Threat Analytics (ATA) 移至 Azure 進階威脅防護 (Azure ATP) 

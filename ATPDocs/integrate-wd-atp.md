@@ -13,10 +13,10 @@ ms.assetid: f6f3ed75-d6bb-4966-a9a7-5339c4f3ebac
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 87995b9162f787a05b82507e34cf3dbdaf4a3f07
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196712"
 ---
 # <a name="integrate-azure-atp-with-windows-defender-atp"></a>整合 Azure ATP 與 Windows Defender ATP
@@ -56,19 +56,19 @@ Azure ATP 技術可偵測多種可疑的活動，專注於網路攻擊狙殺鏈�
 
 ## <a name="how-to-integrate-azure-atp-with-windows-defender-atp"></a>如何將 Azure ATP 與 Windows Defender ATP 整合
 
-1. 在 Azure ATP 入口網站中，開啟 [設定]。 
+1. 在 Azure ATP 入口網站中，開啟 [設定]  。 
 
     ![Azure ATP 設定功能表](./media/atp-configuration-wd.png)
-2. 在 [設定] 清單中，選取 [Windows Defender ATP]，然後將整合切換至 [開啟]。 
+2. 在 [設定] 清單中，選取 [Windows Defender ATP]  ，然後將整合切換至 [開啟]  。 
 
     ![啟用 Windows Defender 整合](./media/enable-integration.png)
 
 
-3. 在 [Windows Defender ATP 入口網站](https://securitycenter.windows.com/preferences/advanced)中，移至 [設定]，[進階功能]，然後將 [Azure ATP 整合] 設為 [開啟]。 
+3. 在 [Windows Defender ATP 入口網站](https://securitycenter.windows.com/preferences/advanced)中，移至 [設定]  ，[進階功能]  ，然後將 [Azure ATP 整合]  設為 [開啟]  。 
 
     ![Windows Defender ATP 啟用整合](./media/wd-atp-enable.png)
 
-4. 若要檢查整合狀態，請在 Azure ATP 入口網站中，前往 [設定] > [Windows Defender ATP 整合]。 您可以查看整合狀態，若發生問題，您將會看到錯誤。 
+4. 若要檢查整合狀態，請在 Azure ATP 入口網站中，前往 [設定]   > [Windows Defender ATP 整合]  。 您可以查看整合狀態，若發生問題，您將會看到錯誤。 
 
 ## <a name="how-it-works"></a>運作方式
 

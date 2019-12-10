@@ -12,10 +12,10 @@ ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
 ms.openlocfilehash: 12e05c54b4237aa04d285d342c960e536a248cdc
-ms.sourcegitcommit: 814af2addf833d40d10f7594275a132f888eea9b
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74153138"
 ---
 # <a name="release-reference-of-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護 (Azure ATP) 的版本參考 

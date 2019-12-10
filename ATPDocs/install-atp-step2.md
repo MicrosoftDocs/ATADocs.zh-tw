@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.openlocfilehash: 3e39bcdd5b3ffbe7a1d39064d28851fba7058d94
-ms.sourcegitcommit: c48db18274edb2284e281960c6262d97f96e01d2
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "56263944"
 ---
 # <a name="quickstart-connect-to-your-active-directory-forest"></a>快速入門：連線到您的 Active Directory 樹系
@@ -31,7 +31,7 @@ ms.locfileid: "56263944"
 ![Azure ATP 歡迎使用階段 1](media/directory-services.png)
 
 
-1. 輸入下列資訊，然後按一下 [儲存]：
+1. 輸入下列資訊，然後按一下 [儲存]  ：
 
     |欄位|註解|
     |---------|------------|
@@ -39,7 +39,7 @@ ms.locfileid: "56263944"
     |**密碼** (必填)|輸入唯讀使用者的密碼。 例如：**Pencil1**。|
     |**網域** (必填)|輸入唯讀使用者的網域。 例如：**contoso.com**。 請務必輸入使用者所在網域的完整 FQDN。 例如，如果使用者的帳戶是在 corp.contoso.com 網域中，您需要輸入 `corp.contoso.com`，而非 contoso.com|
 
-2. 在 Azure ATP 入口網站中，按一下 [下載感應器安裝程式並安裝第一個感應器] 以繼續。
+2. 在 Azure ATP 入口網站中，按一下 [下載感應器安裝程式並安裝第一個感應器]  以繼續。
 
 
 ## <a name="next-steps"></a>後續步驟

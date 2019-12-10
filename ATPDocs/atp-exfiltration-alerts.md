@@ -13,10 +13,10 @@ ms.assetid: 452d951c-5f49-4a21-ae10-9fb38c3de302
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 704e372952d1b02fdcf6564bad26ebc4c7d184f2
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196865"
 ---
 # <a name="tutorial-exfiltration-alerts"></a>教學課程：外流警訊  
@@ -39,7 +39,7 @@ ms.locfileid: "65196865"
 
 ## <a name="suspicious-communication-over-dns-external-id-2031"></a>DNS 上的可疑通訊 (外部識別碼 2031) 
 
-上一個名稱：透過 DNS 的可疑通訊
+上一個名稱  ：透過 DNS 的可疑通訊
 
 **描述**
 
@@ -50,7 +50,7 @@ ms.locfileid: "65196865"
 某些公司會合法地使用 DNS 進行定期通訊。 若要判斷安全性警訊的狀態：
 
 1. 請檢查已註冊查詢網域是否屬於信任的來源，例如您的防毒提供者。  
-    - 若該網域為已知且受信任的，且已允許 DNS 查詢，請將其視為 **B-TP** 活動。 關閉安全性警訊，然後將該網域從往後的警訊排除。  
+    - 若該網域為已知且受信任的，且已允許 DNS 查詢，請將其視為 **B-TP** 活動。 關閉  安全性警訊，然後將該網域從往後的警訊排除。  
     - 若已註冊的查詢網域未受信任，請指出在來源電腦上建立要求的程序。 使用 [Process Monitor](https://docs.microsoft.com/sysinternals/downloads/procmon) 可協助進行這項工作。
 
 **了解漏洞的範圍**
@@ -69,7 +69,7 @@ ms.locfileid: "65196865"
 2. 若經過調查後，發現註冊的查詢網域仍不受信任，建議封鎖目的地網域，以避免往後出現任何通訊。
 
 > [!NOTE]
-> 「透過 DNS 的可疑通訊」安全性警訊會列出可疑網域。 新的網域，或是 Azure ATP 未知或無法辨識但您組織已知或屬於其一部分的最近新增網域，都可能被關閉。
+> 「透過 DNS 的可疑通訊」  安全性警訊會列出可疑網域。 新的網域，或是 Azure ATP 未知或無法辨識但您組織已知或屬於其一部分的最近新增網域，都可能被關閉。
 
 ## <a name="data-exfiltration-over-smb-external-id-2030"></a>SMB 上的資料外流 (外部識別碼 2030)
 

@@ -13,10 +13,10 @@ ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 2ad5ff4ad50e9b1afb5db3df0ce3928bb090986b
-ms.sourcegitcommit: dd8db49bc54acc5483a3fa889379230d144b0623
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72690214"
 ---
 # <a name="azure-atp-frequently-asked-questions"></a>Azure ATP 常見問題集

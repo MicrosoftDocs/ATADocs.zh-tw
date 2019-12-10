@@ -13,10 +13,10 @@ ms.assetid: 34dc152c-6b7f-4128-93fe-aad56c282730
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 205fb58cbb06e6a219aa39b92275761ad9d1304d
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196793"
 ---
 # <a name="azure-atp-readiness-guide"></a>Azure ATP 整備指南

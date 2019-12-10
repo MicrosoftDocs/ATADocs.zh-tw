@@ -13,10 +13,10 @@ ms.assetid: 124957bb-5882-4fcf-bab2-b74b0c69571d
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: e683a7de6eae2a379e0dd802947ff4c10ca22e4b
-ms.sourcegitcommit: be4525a93601d9356a4e487398262a2ffaf8c202
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74206328"
 ---
 # <a name="security-assessment-entities-exposing-credentials-in-clear-text"></a>安全性評估：實體以純文字公開認證 

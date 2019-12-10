@@ -13,10 +13,10 @@ ms.assetid: feea1982-ba23-48be-a468-98d2586cf840
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: a2bfa219334960300901ac47129800d52a80a69a
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65193526"
 ---
 # <a name="azure-atp-known-issues"></a>Azure ATP 已知問題
@@ -37,7 +37,7 @@ Azure ATP 偶爾會有工程或功能上的限制，可能會限制或變更您�
 
 |問題|狀態|
 |----|----|
-可疑的暴力密碼破解攻擊 (LDAP) 安全性警訊並不會總是如預期般顯示。 在某些情況下，警示描述會以錯誤的方式顯示。| 工程小組正在努力處理此問題。| 
+可疑的暴力密碼破解攻擊 (LDAP)  安全性警訊並不會總是如預期般顯示。 在某些情況下，警示描述會以錯誤的方式顯示。| 工程小組正在努力處理此問題。| 
 
 ## <a name="ad-groups-with-more-than-1000-members-have-limited-detail-sync"></a>超過 1000 名成員的 AD 群組，其詳細資料同步有限
 > [!div class="mx-tableFixed"]  

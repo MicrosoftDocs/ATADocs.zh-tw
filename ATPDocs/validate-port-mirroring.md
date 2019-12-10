@@ -13,10 +13,10 @@ ms.assetid: 0a56cf27-9eaa-4ad0-ae6c-9d0484c69094
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: d3eb36b75e9500920bdaea70864839a5de7e3de1
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196422"
 ---
 # <a name="validate-port-mirroring"></a>驗證連接埠鏡像
@@ -33,19 +33,19 @@ ms.locfileid: "65196422"
 
 2.  開啟網路監視器並建立新的 [擷取] 索引標籤。
 
-    1.  只選取 [擷取] 網路介面卡或連接到設定為連接埠鏡像目的地的交換器連接埠之網路介面卡。
+    1.  只選取 [擷取]  網路介面卡或連接到設定為連接埠鏡像目的地的交換器連接埠之網路介面卡。
 
     2.  確定已啟用 P-Mode
 
-    3.  按一下 [新增擷取]。
+    3.  按一下 [新增擷取]  。
 
         ![建立新的擷取索引標籤影像](media/atp-port-mirroring-capture.png)
 
-3.  在 [顯示篩選器] 視窗中，輸入下列篩選：**KerberosV5 OR LDAP**，然後按一下 [套用]。
+3.  在 [顯示篩選器] 視窗中，輸入下列篩選：**KerberosV5 OR LDAP**，然後按一下 [套用]  。
 
     ![套用 KerberosV5 或 LDAP 篩選影像](media/atp-port-mirroring-filter-settings.png)
 
-4.  按一下 [啟動]，啟動擷取工作階段。 如果您看不到網域控制站之間的流量，請檢閱您的連接埠鏡像組態。
+4.  按一下 [啟動]  ，啟動擷取工作階段。 如果您看不到網域控制站之間的流量，請檢閱您的連接埠鏡像組態。
 
     ![啟動擷取工作階段影像](media/atp-port-mirroring-capture-traffic.png)
 

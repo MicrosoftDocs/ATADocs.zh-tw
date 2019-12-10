@@ -13,10 +13,10 @@ ms.assetid: 71b15bd9-3183-4e24-b18a-705023ccc313
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: cb562e8d9dc21d8fa5fcce70ea2020be22796621
-ms.sourcegitcommit: 475df3e87d8476ff13e48ebc7a722f46f29dab70
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71007524"
 ---
 # <a name="azure-atps-identity-security-posture-assessments"></a>Azure ATP 身分識別安全性狀態評估

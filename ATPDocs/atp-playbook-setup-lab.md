@@ -8,15 +8,15 @@ ms.author: mlottner
 ms.date: 02/28/2019
 ms.reviewer: itargoet
 ms.openlocfilehash: 9ae630711b6ee7b7f84a233998d188e498af0a9e
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "59745582"
 ---
 # <a name="tutorial-setup-an-atp-security-alert-lab"></a>教學課程：設定 ATP 安全性警示實驗室 
 
- Azure ATP 安全性警示實驗室的目的是要說明 **Azure ATP** 對網路可疑活動及潛在攻擊的識別和偵測功能。 這個四部分系列中的第一個教學課程會逐步引導您建立一個實驗室環境，以針對 Azure ATP 的「離散」偵測進行測試。 安全性警示實驗室的焦點是放在 Azure ATP 的「簽章型」功能上。 此實驗室並不包括進階機器學習、使用者或實體型的行為偵測，因為這些偵測需要一個最多有 30 天真實網路流量的學習期間。 如需有關本系列每個教學課程的詳細資訊，請參閱 [ATP 安全性警示實驗室概觀](atp-playbook-lab-overview.md)。 
+ Azure ATP 安全性警示實驗室的目的是要說明 **Azure ATP** 對網路可疑活動及潛在攻擊的識別和偵測功能。 這個四部分系列中的第一個教學課程會逐步引導您建立一個實驗室環境，以針對 Azure ATP 的「離散」  偵測進行測試。 安全性警示實驗室的焦點是放在 Azure ATP 的「簽章型」  功能上。 此實驗室並不包括進階機器學習、使用者或實體型的行為偵測，因為這些偵測需要一個最多有 30 天真實網路流量的學習期間。 如需有關本系列每個教學課程的詳細資訊，請參閱 [ATP 安全性警示實驗室概觀](atp-playbook-lab-overview.md)。 
 
 
 在此教學課程中，您將： 
@@ -110,7 +110,7 @@ New-ADUser -Name AatpService -DisplayName "Azure ATP/ATA Service" -PasswordNever
 
 為了允許 Azure ATP 服務正確地執行 SAM-R 列舉並建置「橫向移動」路徑，您將必須編輯 SAM 原則。
 
-1. 在以下位置底下尋找您的 SAM 原則：[原則] \> [Windows 設定] \> [安全性設定] \> [本機原則] \> [安全性選項] \> [網路存取:限制允許對 SAM 發出遠端呼叫的用戶端]_
+1. 在以下位置底下尋找您的 SAM 原則：[原則] \> [Windows 設定] \> [安全性設定] \> [本機原則] \> [安全性選項] \> [網路存取:  限制允許對 SAM 發出遠端呼叫的用戶端]_
 
     ![修改「群組原則」以允許 Azure ATP 使用「橫向移動」路徑功能。](media/playbook-labsetup-localgrouppolicies3.png)
 
@@ -122,17 +122,17 @@ New-ADUser -Name AatpService -DisplayName "Azure ATP/ATA Service" -PasswordNever
 
 將 "Helpdesk" 安全性群組新增為**敏感性群組**將可讓您使用 Azure ATP 的「橫向移動圖表」功能。 標記不一定是「網域系統管理員」但確實具有眾多資源權限的高敏感性使用者和群組，是最佳做法。
 
-1. 在 Azure ATP 入口網站中，按一下功能表列的 [設定] 齒輪。
+1. 在 Azure ATP 入口網站中，按一下功能表列的 [設定]  齒輪。
 
-2. 在 [偵測] 下，按一下 [實體標記]。
+2. 在 [偵測]  下，按一下 [實體標記]  。
 
     ![Azure ATP 實體標記](media/entity-tags.png)
 
-3. 在 [敏感性] 區段中，針對 [敏感性群組] 輸入名稱 "Helpdesk"，然後按一下 [+] 符號來新增它們。
+3. 在 [敏感性]  區段中，針對 [敏感性群組]  輸入名稱 "Helpdesk"，然後按一下 [+]  符號來新增它們。
 
     ![將 "Helpdesk" 標記為 Azure ATP 敏感性群組，來為此特殊權限群組啟用「橫向移動圖表」和報告功能](media/playbook-labsetup-helpdesksensitivegroup.png)
 
-4. 按一下 **[儲存]**。
+4. 按一下 **[儲存]** 。
 
 ### <a name="azure-atp-lab-base-setup-checklist"></a>Azure ATP 實驗室基礎設定檢查清單
 
@@ -208,7 +208,7 @@ Add-LocalGroupMember -Group "Administrators" -Member "Contoso\Helpdesk"
 
 **AdminPC** 需要 **Helpdesk** 被新增至本機 Administrators 群組。 接著，請從本機 Administrators 群組中移除 'Domain Admins'。 此步驟可確保 Samira (一個網域系統管理員) 不是 AdminPC 的系統管理員。 這是認證檢疫的最佳做法。 請手動或使用所提供的 PowerShell 指令碼來執行此步驟。
 
-1. 透過執行下列 PowerShell 指令碼，將 **Helpdesk** 新增至 **AdminPC**，並將 'Domain Admins' 從「本機系統管理員群組」中「移除」：
+1. 透過執行下列 PowerShell 指令碼，將 **Helpdesk** 新增至 **AdminPC**，並將 'Domain Admins' 從「本機系統管理員群組」中「移除」  ：
 
     ``` PowerShell
    # Add Helpdesk to local Administrators group
@@ -218,7 +218,7 @@ Add-LocalGroupMember -Group "Administrators" -Member "Contoso\Helpdesk"
 
    ```
 
-2. 執行此指令碼之後，**Helpdesk** 就會位於 **AdminPC** 的本機 [Administrators] > [成員] 清單中。
+2. 執行此指令碼之後，**Helpdesk** 就會位於 **AdminPC** 的本機 [Administrators]   > [成員]  清單中。
 ![AdminPC 之「本機系統管理員群組」中的 Helpdesk](media/playbook-labsetup-localgrouppolicies1.png)
 
 ### <a name="simulate-domain-activities-from-adminpc"></a>模擬來自 AdminPC 的網域活動
@@ -252,7 +252,7 @@ while ($true)
 
 ## <a name="mission-accomplished"></a>任務完成！
 
-您的 Azure ATP 實驗室現在已可供使用。 此設定中使用的方法是在已知資源必須受到管理 (由「某個東西」或「某個人」) 且管理需要本機系統管理員權限的情況下所選擇的。 還有其他可在實驗室中模擬管理工作流程的方法，例如：
+您的 Azure ATP 實驗室現在已可供使用。 此設定中使用的方法是在已知資源必須受到管理 (由「某個東西」  或「某個人」  ) 且管理需要本機系統管理員權限的情況下所選擇的。 還有其他可在實驗室中模擬管理工作流程的方法，例如：
 
 - 使用 RonHD 的帳戶來登入和登出 VictimPC
 - 新增另一個版本的「排定的工作」

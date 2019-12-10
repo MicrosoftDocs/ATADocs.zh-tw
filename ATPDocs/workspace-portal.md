@@ -13,10 +13,10 @@ ms.assetid: 4ba46d60-3a74-480e-8f0f-9a082d62f343
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 8cc8dccbaedbe0b87d60c041eb8001ef82cf2904
-ms.sourcegitcommit: ef68a774d2756719bce8747e65f8bde2b9afdd5d
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73618470"
 ---
 # <a name="working-with-the-azure-atp-portal"></a>使用 Azure ATP 入口網站

@@ -13,10 +13,10 @@ ms.assetid: 671747d5-faed-4352-a871-17b58fdc6574
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: f215639ea72d0c767f32bd9628e1c404da23aaa0
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196405"
 ---
 # <a name="tutorial-understanding-security-alerts"></a>教學課程：了解安全性警訊
@@ -49,11 +49,11 @@ Azure ATP 安全性警訊會以清晰的語言及圖片進行說明，內容包�
 
 在適當的調查之後，所有 Azure ATP 安全性警訊可分類為以下活動類型的其中一類：
 
-- **確判 (TP)**：由 Azure ATP 所偵測到的惡意動作。
+- **確判 (TP)** ：由 Azure ATP 所偵測到的惡意動作。
 
-- **良性確判 (B-TP)**：Azure ATP 偵測到實際存在但不具惡意的動作，例如滲透測試，或由已核准應用程式產生的已知活動。
+- **良性確判 (B-TP)** ：Azure ATP 偵測到實際存在但不具惡意的動作，例如滲透測試，或由已核准應用程式產生的已知活動。
 
-- **誤判 (FP)**：假警示，表示活動並未發生。
+- **誤判 (FP)** ：假警示，表示活動並未發生。
 
 ### <a name="is-the-security-alert-a-tp-b-tp-or-fp"></a>安全性警訊為 TP、B-TP 或 FP
 
@@ -79,7 +79,7 @@ Azure ATP 安全性警訊分為下列類別或階段，如同在典型網路攻�
 
 若要取得更多安全性警訊的詳細資料，請下載詳細的 Excel 警訊報表。
 
-1. 按一下任何警訊右上角的三個點，然後選取 [下載詳細資料]。
+1. 按一下任何警訊右上角的三個點，然後選取 [下載詳細資料]  。
  
 每個 Azure ATP 警訊 Excel 下載項目都會提供以下資訊：   
 - 摘要 - 包含警訊重點的第一個索引標籤 
@@ -143,14 +143,14 @@ Azure ATP 偵測功能需要有效的網路名稱解析，才能對您組織中�
 - 可疑的 DCSync 攻擊 (目錄服務的複寫)
 - 網路對應偵察 (DNS)
 
-使用警訊下載報表中 [網路活動] 索引標籤中提供的 NNR 資訊，來判斷警訊是否為 **FP**。 一旦出現 **FP** 警訊，獲得的 NNR 確定性結果通常會具有低可信度。
+使用警訊下載報表中 [網路活動]  索引標籤中提供的 NNR 資訊，來判斷警訊是否為 **FP**。 一旦出現 **FP** 警訊，獲得的 NNR 確定性結果通常會具有低可信度。
 
 下載兩個資料行中出現的報表資料： 
 - **來源/目的地電腦** 
 
-    - 確定性 - 低解析確定性可能代表名稱解析有誤。
+    - 確定性  - 低解析確定性可能代表名稱解析有誤。
 - **來源/目的地電腦**
-    - 解決方法 - 可提供用以解析組織中電腦 IP 的 NNR 方法。
+    - 解決方法  - 可提供用以解析組織中電腦 IP 的 NNR 方法。
 
 ![網路活動](media/network-activities.png)
 

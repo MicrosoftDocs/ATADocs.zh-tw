@@ -13,10 +13,10 @@ ms.assetid: 6597b8c7-f83e-43c6-8149-fb4a914a845b
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 1cf8a66b80c43570e018a4d09dcfd81657934f98
-ms.sourcegitcommit: be4525a93601d9356a4e487398262a2ffaf8c202
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74206304"
 ---
 # <a name="security-assessment-legacy-protocols-usage"></a>安全性評估：使用舊版通訊協定 

@@ -13,10 +13,10 @@ ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: e2e3b35373bdfaaa0d13c1c175deea12bf24a34d
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65195466"
 ---
 # <a name="azure-atp-role-groups"></a>Azure ATP 角色群組
@@ -40,9 +40,9 @@ Azure ATP 提供角色型安全性，可根據組織的特定安全性和合規�
 
 ## <a name="types-of-azure-atp-security-groups"></a>Azure ATP 安全性群組的類型 
 
-Azure ATP 提供三種類型的安全性群組：Azure ATP (「執行個體名稱」) 系統管理員、Azure ATP (「執行個體名稱」) 使用者和 Azure ATP (「執行個體名稱」) 檢視者。 下表描述每個角色在 Azure ATP 入口網站中可用的存取類型。 根據您所指派的角色而定，這些使用者將會無法使用 Azure ATP 入口網站中的各種畫面與功能表選項，如下所示：
+Azure ATP 提供三種類型的安全性群組：Azure ATP (「執行個體名稱」)  系統管理員、Azure ATP (「執行個體名稱」)  使用者和 Azure ATP (「執行個體名稱」)  檢視者。 下表描述每個角色在 Azure ATP 入口網站中可用的存取類型。 根據您所指派的角色而定，這些使用者將會無法使用 Azure ATP 入口網站中的各種畫面與功能表選項，如下所示：
 
-|活動 |Azure ATP (「執行個體名稱」) 系統管理員|Azure ATP (「執行個體名稱」) 使用者|Azure ATP (「執行個體名稱」) 檢視者|
+|活動 |Azure ATP (「執行個體名稱」)  系統管理員|Azure ATP (「執行個體名稱」)  使用者|Azure ATP (「執行個體名稱」)  檢視者|
 |----|----|----|----|
 |登入|可用|可用|可用|
 |變更安全性警訊的狀態 (重新開啟、關閉、排除、隱藏)|可用|可用|無法使用|

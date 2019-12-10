@@ -13,10 +13,10 @@ ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 0ad92d350d64da918bb5914ad36a884e9e4c7efe
-ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71004820"
 ---
 # <a name="azure-atp-security-alerts"></a>Azure ATP 安全性警示

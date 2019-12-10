@@ -8,10 +8,10 @@ ms.author: mlottner
 ms.date: 03/03/2019
 ms.reviewer: itargoet
 ms.openlocfilehash: d7243b74c14a1782b8902473cc6f098d0e12832f
-ms.sourcegitcommit: 984d7b91b81457832aed5f23cdec698770fd92c9
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "57318048"
 ---
 # <a name="tutorial-lateral-movement-playbook"></a>教學課程：橫向移動劇本

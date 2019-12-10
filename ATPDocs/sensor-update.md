@@ -13,10 +13,10 @@ ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 408c46d620f7b7f5da21d9dcfaf17097660dcc4c
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196384"
 ---
 # <a name="update-azure-atp-sensors"></a>更新 Azure ATP 感應器
@@ -65,10 +65,10 @@ Azure ATP 感應器支援兩種更新：
 
 將感應器設定為延遲更新：
 
-1. 從 Azure ATP 入口網站中，按一下設定圖示，然後選取 [設定]。
-2. 按一下 [更新] 索引標籤。
-3. 在您想要延遲之每個感應器旁的資料表資料列中，將 [Delayed update] \(延遲更新\) 滑桿設定為 [開啟]。
-4. 按一下 **[儲存]**。
+1. 從 Azure ATP 入口網站中，按一下設定圖示，然後選取 [設定]  。
+2. 按一下 [更新]  索引標籤。
+3. 在您想要延遲之每個感應器旁的資料表資料列中，將 [Delayed update] \(延遲更新\)  滑桿設定為 [開啟]  。
+4. 按一下 **[儲存]** 。
  
 ## <a name="sensor-update-process"></a>感應器更新程序
 
@@ -85,7 +85,7 @@ Azure ATP 感應器每隔幾分鐘都會檢查是否有最新版本。 將 Azure
        > [!NOTE]
       >次要感應器更新不會安裝 MSI，也不會變更登錄值或任何系統檔案。 即使有擱置的重新啟動也不影響感應器更新。 
    6. 感應器會根據新的已更新版本執行。
-   7. 感應器收到 Azure 雲端服務的許可。 您可以在 [更新] 頁面中確認感應器狀態。
+   7. 感應器收到 Azure 雲端服務的許可。 您可以在 [更新]  頁面中確認感應器狀態。
    8. 下一個感應器啟動更新程序。 
 
 4. Azure ATP 雲端服務更新過後 72 小時，選取為**延遲更新**的感應器會按照自動更新之感應器的相同更新程序來更新。

@@ -13,10 +13,10 @@ ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: f7ab5a51fc599280a9a21181efc72684230d3c3a
-ms.sourcegitcommit: ecf2d5e83f550a73dabed135d27b34edc15d57db
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71682230"
 ---
 # <a name="configure-event-collection"></a>設定事件收集
@@ -60,7 +60,7 @@ ms.locfileid: "71682230"
 
 ## <a name="configuring-the-azure-atp-sensor-to-listen-for-siem-events"></a>設定 Azure ATP 感應器以接聽 SIEM 事件
 
-1.  在 Azure ATP 設定中，按一下 [資料來源] 下的 [SIEM]，開啟 [Syslog]，然後按一下 [儲存]。
+1.  在 Azure ATP 設定中，按一下 [資料來源]  下的 [SIEM]  ，開啟 [Syslog]  ，然後按一下 [儲存]  。
 
     ![啟用 Syslog 接聽程式 UDP 映像](media/atp-siem-config.png)
 

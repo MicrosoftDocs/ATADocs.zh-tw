@@ -13,10 +13,10 @@ ms.assetid: a546703b-d5a9-404d-9e87-125523bb8421
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 975aa8562b1ae7e8a830d31da7905c428f08f31e
-ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71004717"
 ---
 # <a name="azure-atp-monitored-activities-search-and-filter"></a>Azure ATP 受監視活動的搜尋與篩選 

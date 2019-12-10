@@ -8,10 +8,10 @@ ms.author: mlottner
 ms.date: 09/01/2019
 ms.reviewer: itargoet
 ms.openlocfilehash: 11312f033261dd74f13dc0b3b9c093617e2c281c
-ms.sourcegitcommit: f7c75bc5715c5bda0b3110364e2aebddddce8a13
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70209238"
 ---
 # <a name="tutorial-reconnaissance-playbook"></a>教學課程：偵察劇本

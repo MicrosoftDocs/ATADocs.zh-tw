@@ -13,10 +13,10 @@ ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 6144f9f35e8ee3b7cec4b7522fe03a6a3e8673b0
-ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71004736"
 ---
 # <a name="tutorial-investigate-an-entity"></a>教學課程：調查實體

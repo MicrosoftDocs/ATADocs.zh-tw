@@ -13,10 +13,10 @@ ms.assetid: 0d9d2a1d-6c76-4909-b6f9-58523df16d4f
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: ba750ca2984d3060f2bef3d2816f5d86fd8f1c2e
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65193541"
 ---
 # <a name="integrate-vpn"></a>整合 VPN
@@ -46,12 +46,12 @@ Azure ATP 會透過接聽轉寄到 Azure ATP 感應器的 RADIUS 計量事件來
 請在 RRAS 伺服器上執行下列步驟。
  
 1.  開啟路由及遠端存取主控台。
-2.  在伺服器名稱上按一下滑鼠右鍵，然後按一下 [屬性]。
-3.  在 [安全性] 索引標籤的 [計量提供者] 下，選取 [RADIUS 計量]，然後按一下 [設定]。
+2.  在伺服器名稱上按一下滑鼠右鍵，然後按一下 [屬性]  。
+3.  在 [安全性]  索引標籤的 [計量提供者]  下，選取 [RADIUS 計量]  ，然後按一下 [設定]  。
 
     ![RADIUS 設定](./media/radius-setup.png)
 
-4.  在 [新增 RADIUS 伺服器] 視窗中，輸入最接近之 Azure ATP 感應器 (具有網路連線能力) 的**伺服器名稱**。 如需高可用性，您可以新增額外的 Azure ATP 感應器作為 RADIUS 伺服器。 在 [連接埠] 下，確定已設為預設的 1813。 按一下 [變更]，並鍵入新的共用祕密英數字元字串。 記下新的共用祕密字串，因為您必須在稍後的 Azure ATP 設定期間填寫它。 選取 [傳送 RADIUS 計量開啟及計量關閉訊息] 方塊，然後在所有已開啟的對話方塊上按一下 [確定]。
+4.  在 [新增 RADIUS 伺服器]  視窗中，輸入最接近之 Azure ATP 感應器 (具有網路連線能力) 的**伺服器名稱**。 如需高可用性，您可以新增額外的 Azure ATP 感應器作為 RADIUS 伺服器。 在 [連接埠]  下，確定已設為預設的 1813。 按一下 [變更]  ，並鍵入新的共用祕密英數字元字串。 記下新的共用祕密字串，因為您必須在稍後的 Azure ATP 設定期間填寫它。 選取 [傳送 RADIUS 計量開啟及計量關閉訊息]  方塊，然後在所有已開啟的對話方塊上按一下 [確定]  。
  
      ![VPN 設定](./media/vpn-set-accounting.png)
      
@@ -61,10 +61,10 @@ Azure ATP 會收集 VPN 資料，這些資料有助於分析電腦連線到網�
 
 在 ATP 中設定 VPN 資料：
 
-1.  在 Azure ATP 入口網站中，按一下設定齒輪，然後按一下 [VPN]。
+1.  在 Azure ATP 入口網站中，按一下設定齒輪，然後按一下 [VPN]  。
  
 
-2.  開啟 [Radius 帳戶處理]，然後輸入先前在 RRAS VPN 伺服器上設定的 [共用祕密]。 然後按一下 [儲存]。
+2.  開啟 [Radius 帳戶處理]  ，然後輸入先前在 RRAS VPN 伺服器上設定的 [共用祕密]  。 然後按一下 [儲存]  。
  
 
   ![設定 Azure ATP VPN](./media/atp-vpn-radius.png)

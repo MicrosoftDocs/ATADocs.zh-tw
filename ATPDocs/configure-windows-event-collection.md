@@ -13,10 +13,10 @@ ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 34d75bfd53f9c119e685390bd933b6e642c45b6c
-ms.sourcegitcommit: 4b89831dc3f17e594c0c824f94f6d2debb07c516
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71997458"
 ---
 # <a name="configure-windows-event-collection"></a>設定 Windows 事件集合

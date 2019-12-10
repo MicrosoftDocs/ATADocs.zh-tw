@@ -13,10 +13,10 @@ ms.assetid: de15c920-8904-4124-8bdc-03abd9f667cf
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: f7823fee5828df51b336428d810905e2672cc5a4
-ms.sourcegitcommit: 939c098dd02a1f4191c528d10d69d059a62042b2
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71004921"
 ---
 # <a name="azure-atp-lateral-movement-paths-lmps"></a>Azure ATP 橫向移動路徑 (LMP) 

@@ -13,10 +13,10 @@ ms.assetid: 5169dffc-75c4-4eb0-b997-b5359cecda97
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: b66b2f0a087bbaacc09eda54958824da693209b3
-ms.sourcegitcommit: f60835d655e68ffaa8ed8c43bd9fa20233d7e495
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67506502"
 ---
 # <a name="using-azure-atp-with-microsoft-cloud-app-security"></a>搭配 Microsoft Cloud App Security 使用 Azure ATP 

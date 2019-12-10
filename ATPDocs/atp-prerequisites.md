@@ -13,10 +13,10 @@ ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 7c1dfa8cfda0bb6fb39770a58a7cc1b54dbc2298
-ms.sourcegitcommit: ef68a774d2756719bce8747e65f8bde2b9afdd5d
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73618438"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
@@ -43,7 +43,7 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 
 [Azure ATP 獨立感應器](#azure-atp-standalone-sensor-requirements)：列出 Azure ATP 獨立感應器的硬體和軟體需求，以及必須在 Azure ATP 獨立感應器伺服器上進行的設定。
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 本節列出在開始安裝 Azure ATP 前，您應收集的資訊及您應擁有的帳戶與網路實體資訊。
 
 - 直接透過 [Microsoft 365 入口網站](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing)取得 Enterprise Mobility + Security 5 (EMS E5) 的授權，或使用雲端解決方案合作夥伴 (CSP) 授權模型。 另外也提供獨立 Azure ATP 授權。  

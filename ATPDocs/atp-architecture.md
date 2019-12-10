@@ -13,10 +13,10 @@ ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 90edd77a40b6d87e37c6635ced246ae2c5540e93
-ms.sourcegitcommit: 4b89831dc3f17e594c0c824f94f6d2debb07c516
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71997518"
 ---
 # <a name="azure-atp-architecture"></a>Azure ATP 架構

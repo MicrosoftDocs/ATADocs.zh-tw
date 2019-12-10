@@ -13,10 +13,10 @@ ms.assetid: 2c2d6b1a-fc8c-4ff7-b07d-64ce6159f84d
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: d51447eafcd6e267fef65798ff25e2f75fb71ec2
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196485"
 ---
 # <a name="azure-atp-reports"></a>Azure ATP 報表
@@ -27,7 +27,7 @@ Azure ATP 入口網站中的 [Azure ATP 報告] 區段可讓您排程或立即�
 若要存取報表頁面，請按一下功能表列中的報表圖示：![報表圖示](./media/atp-report-icon.png)。
 可用的報表包括： 
 
-- **摘要報表**：摘要報表提供系統中的狀態儀表板。 您可以檢視三個索引標籤：[摘要] 列出您網路上偵測到的問題，[Open suspicious activities (開啟可疑活動)] 列出您應該處理的可疑活動，而 [Open health issues (開啟健康狀態問題)] 列出您應該處理的 Azure ATP 系統健康狀態問題。 列出的可疑活動和健康狀態問題會依類型細分。 
+- **摘要報表**：摘要報表提供系統中的狀態儀表板。 您可以檢視三個索引標籤：[摘要]  列出您網路上偵測到的問題，[Open suspicious activities (開啟可疑活動)]  列出您應該處理的可疑活動，而 [Open health issues (開啟健康狀態問題)]  列出您應該處理的 Azure ATP 系統健康狀態問題。 列出的可疑活動和健康狀態問題會依類型細分。 
 
 - **敏感性群組的修改**：此報表會列出對敏感性群組 (例如系統管理員，或手動標記的帳戶或群組) 所做的每次修改。 若您使用 Azure ATP 獨立感應器接收有關您敏感性群組的完整報告，必須先確定[事件會從您的網域控制站轉送至獨立感應器](configure-event-forwarding.md)。 
 
@@ -41,19 +41,19 @@ Azure ATP 入口網站中的 [Azure ATP 報告] 區段可讓您排程或立即�
 
 1. 在 Azure ATP 入口網站功能表列中，按一下功能表列中的報表圖示： ![報表圖示](./media/atp-report-icon.png)。
 
-2. 在您選取的報告類型下，設定 [開始] 與 [結束] 日期，然後按一下 [下載]。 
+2. 在您選取的報告類型下，設定 [開始]  與 [結束]  日期，然後按一下 [下載]  。 
  ![報表](./media/reports.png)
 
 若要設定排程的報表：
  
-1. 在 [報告] 頁面中，按一下 [設定排程報告]，或在 Azure ATP 入口網站設定頁面中，按一下 [通知與報告] 下的 [排程報告]。
+1. 在 [報告]  頁面中，按一下 [設定排程報告]  ，或在 Azure ATP 入口網站設定頁面中，按一下 [通知與報告] 下的 [排程報告]  。
 
    ![排程報表](./media/atp-sched-reports.png)
  
    > [!NOTE]
    > 根據預設，每日報表會在午夜 (UTC) 過後不久傳送。 透過使用時間選取範圍選項，挑選您自己的時間。 
 
-2. 按一下您所選報告類型旁的 [排程]，以設定報告的傳遞頻率及電子郵件地址。 您選取的報告頻率會決定包含在報告中的資訊。 若要新增電子郵件地址，請按一下電子郵件地址欄位旁的加號，然後輸入地址並按一下 [儲存]。
+2. 按一下您所選報告類型旁的 [排程]  ，以設定報告的傳遞頻率及電子郵件地址。 您選取的報告頻率會決定包含在報告中的資訊。 若要新增電子郵件地址，請按一下電子郵件地址欄位旁的加號，然後輸入地址並按一下 [儲存]  。
 
    ![排程報表頻率和電子郵件](./media/sched-report1.png)
 

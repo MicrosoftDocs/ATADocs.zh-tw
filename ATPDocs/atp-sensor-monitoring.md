@@ -13,10 +13,10 @@ ms.assetid: 92decce8-b3ae-4d32-8407-a95314a66863
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 6970908b95fe31ecd24b4cdc1005180e39495913
-ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71185594"
 ---
 # <a name="monitoring-your-domain-controller-coverage"></a>監視您的網域控制站涵蓋範圍

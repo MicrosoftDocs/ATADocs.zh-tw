@@ -12,10 +12,10 @@ ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 663be1fb9b58e7631e16d08592daedfbf9a8dccc
-ms.sourcegitcommit: 65f9249e3e49d80d872c82bf663389d04945e534
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73462591"
 ---
 # <a name="azure-atp-for-us-government-gcc-high"></a>適用於美國政府 GCC High 的 Azure ATP

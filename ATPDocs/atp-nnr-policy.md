@@ -13,10 +13,10 @@ ms.assetid: 1ac873fc-b763-41d7-878e-7c08da421cb5
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: cb9275c90afda7a5ec98cf238205232b2bcfb66f
-ms.sourcegitcommit: 17bea648092fedaad08384442d237e766c472a70
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72776618"
 ---
 # <a name="what-is-network-name-resolution"></a>什麼是網路名稱解析？

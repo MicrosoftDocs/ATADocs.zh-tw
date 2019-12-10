@@ -8,10 +8,10 @@ ms.author: mlottner
 ms.date: 02/28/2019
 ms.reviewer: itargoet
 ms.openlocfilehash: b3ea5b1d2f33f9647fb9dea8927a80aeae76ee03
-ms.sourcegitcommit: 7a32dcb65edc38fb9b3d340763045b21ea92feee
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "59745583"
 ---
 # <a name="tutorial-domain-dominance-playbook"></a>教學課程：網域支配劇本
@@ -65,9 +65,9 @@ ms.locfileid: "59745583"
 
    ![使用遠端程式碼執行 (PsExec)，將新的使用者加入至網域控制站上的系統管理員群組](media/playbook-dominance-psexec_addtoadmins.png)
 
-3. 移至 **ContosoDC** 上的 [Active Directory 使用者和電腦 (ADUC)]，並尋找 **InsertedUser**。 
+3. 移至 **ContosoDC** 上的 [Active Directory 使用者和電腦 (ADUC)]  ，並尋找 **InsertedUser**。 
 
-4. 以滑鼠右鍵按一下 [內容]，然後檢查成員資格。
+4. 以滑鼠右鍵按一下 [內容]  ，然後檢查成員資格。
 
    ![檢視 "InsertedUser" 的內容](media/playbook-dominance-inserteduser_properties.png)
 
@@ -87,7 +87,7 @@ VictimPC 電腦應該永遠不會對網域控制站執行遠端程式碼。
 
 當 Azure ATP 經過一段時間之後是誰插入哪些安全性群組時，就會將類似的可疑活動視為該時間範圍內的異常活動。 因為這個實驗室是最近建置的，且仍在學習期間內，所以此活動不會顯示為警示。 Azure ATP 偵測到的安全性群組修改可以藉由檢查活動時間範圍進行驗證。 Azure ATP 也可讓您針對所有的安全性群組修改產生報表，這可以透過電子郵件主動傳送給您。
 
-在 Azure ATP 入口網站中使用「搜尋」工具，存取 [系統管理員] 頁面。 Azure ATP 偵測到的使用者插入會顯示在系統管理員群組活動時間軸。
+在 Azure ATP 入口網站中使用「搜尋」工具，存取 [系統管理員]  頁面。 Azure ATP 偵測到的使用者插入會顯示在系統管理員群組活動時間軸。
 
 ![檢視新增至機密安全性群組的使用者](media/playbook-dominance-admininserteduser.png)
 

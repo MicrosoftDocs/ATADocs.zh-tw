@@ -13,10 +13,10 @@ ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 2342a10f932664568065d2ef906d863a875c8096
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196452"
 ---
 # <a name="working-with-sensitive-accounts"></a>使用機密帳戶
@@ -50,17 +50,17 @@ Azure ATP 將下列群組清單視為**機密**。 屬於任一這些群組的�
 
 除了這些群組，您可以手動將群組或帳戶標記為機密，以增強偵測。 這一點很重要，因為部分 Azure ATP 偵測 (例如機密群組修改偵測和橫向移動路徑) 仰賴於哪些群組和帳戶被視為機密。 您可以手動將其他使用者或群組標記為機密，例如董事會成員、公司主管、業務總監等，而 Azure ATP 會將他們視為機密。
 
-1.  在 Azure ATP 入口網站中，按一下功能表列的 [設定] 齒輪。
+1.  在 Azure ATP 入口網站中，按一下功能表列的 [設定]  齒輪。
 
-2.  在 [偵測] 下，按一下 [實體標記]。
+2.  在 [偵測]  下，按一下 [實體標記]  。
 
     ![Azure ATP 實體標記](media/entity-tags.png)
 
-3.  在 [機密] 區段中，輸入 [機密帳戶] 和 [機密群組] 的名稱，然後按一下 **+** 符號將它們加入。
+3.  在 [機密]  區段中，輸入 [機密帳戶]  和 [機密群組]  的名稱，然後按一下 **+** 符號將它們加入。
 
     ![Azure ATP 機密帳戶範例](media/sensitive-account-sample.png)
 
-4. 按一下 **[儲存]**。
+4. 按一下 **[儲存]** 。
 
     
 ## <a name="see-also"></a>請參閱

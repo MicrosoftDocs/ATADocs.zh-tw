@@ -13,10 +13,10 @@ ms.assetid: 397e5a77-2bc7-454c-9fe5-649ebaab16b3
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 1508cb558f16adf54f80cec0c13631059dbf45bf
-ms.sourcegitcommit: f60835d655e68ffaa8ed8c43bd9fa20233d7e495
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67506539"
 ---
 # <a name="use-activity-filters-and-create-action-policies-with-azure-atp-in-microsoft-cloud-app-security"></a>在 Microsoft Cloud App Security 中使用活動篩選以及使用 Azure ATP 建立動作原則 

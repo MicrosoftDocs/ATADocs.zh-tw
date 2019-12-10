@@ -13,10 +13,10 @@ ms.assetid: a2d29c9c-7ecb-4804-b74b-fde899b28648
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: ab96c0a17344d93c00f25ca5ca97a1fb2c0a22b7
-ms.sourcegitcommit: 15f882cf45776877fdaca8367a7a0fe7f06a7917
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71185745"
 ---
 # <a name="integrate-with-syslog"></a>與 Syslog 整合

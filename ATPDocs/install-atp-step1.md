@@ -11,10 +11,10 @@ ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 18a9feba8344ce88c4afb2ed3911b51aea0b9e07
-ms.sourcegitcommit: 65f9249e3e49d80d872c82bf663389d04945e534
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73462322"
 ---
 # <a name="quickstart-create-your-azure-atp-instance"></a>快速入門：建立您的 Azure ATP 執行個體
@@ -43,7 +43,7 @@ ms.locfileid: "73462322"
 
 ## <a name="create-your-instance"></a>建立您的執行個體
 
-1. 按一下 [建立執行個體]。 
+1. 按一下 [建立執行個體]  。 
 
     ![建立 Azure ATP 執行個體](media/create-instance.png)
 
@@ -54,7 +54,7 @@ ms.locfileid: "73462322"
     > [!NOTE]
     > 若要登入 Azure ATP，您必須使用已獲得 Azure ATP 角色指派，有權存取 Azure ATP 入口網站的使用者來登入。 如需 Azure ATP 中有關角色型存取控制 (RBAC) 的詳細資訊，請參閱[使用 Azure ATP 角色群組](atp-role-groups.md)。
  
-3. 按一下 [設定]、[管理角色群組]，然後使用 [Azure AD 系統管理中心](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)連結來管理您的角色群組。
+3. 按一下 [設定]  、[管理角色群組]  ，然後使用 [Azure AD 系統管理中心](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)連結來管理您的角色群組。
 
     ![管理角色群組](media/creation-manage-role-groups.png)
 

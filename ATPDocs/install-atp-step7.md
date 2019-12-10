@@ -13,10 +13,10 @@ ms.assetid: 1ad5e923-9bbd-4f56-839a-b11a9f387d4b
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 2177a4c5e7281bd87f87009307b675b9d649c295
-ms.sourcegitcommit: 17bea648092fedaad08384442d237e766c472a70
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72776622"
 ---
 # <a name="configure-detection-exclusions-and-honeytoken-accounts"></a>設定偵測排除範圍和 Honeytoken 帳戶

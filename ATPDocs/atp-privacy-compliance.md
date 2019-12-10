@@ -13,10 +13,10 @@ ms.assetid: 224e629a-0e82-458c-bb03-b67070a9241d
 ms.reviewer: ophirp
 ms.suite: ems
 ms.openlocfilehash: 67a6525645cf04e4bd14f0a398d1ac9dd224d558
-ms.sourcegitcommit: 65f9249e3e49d80d872c82bf663389d04945e534
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73462373"
 ---
 # <a name="azure-atp-data-security-and-privacy"></a>Azure ATP 資料安全性和隱私權

@@ -13,10 +13,10 @@ ms.assetid: 2d14d0e9-1b03-4bcc-ae97-8fd41526ffc5
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 1148e4644ac49da31f2ba62e7bb972f3f9cfbbdf
-ms.sourcegitcommit: 4662ad41addf92727367874d909937fa331fb866
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68484952"
 ---
 # <a name="what-is-azure-advanced-threat-protection"></a>什麼是 Azure 進階威脅防護？
@@ -56,13 +56,13 @@ Azure ATP 的設計目的是減少一般警示干擾，只在簡單的即時組�
 [https://signup.microsoft.com/Signup?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7&ali=1](https://signup.microsoft.com/Signup?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7&ali=1 "Enterprise Mobility + Security E5")
  
 ### <a name="follow-azure-atp-on-microsoft-tech-community"></a>追蹤 Microsoft 技術社群的 Azure ATP 專區  
-[https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection "Microsoft 技術社群的 Azure ATP 專區")
+[https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection "Azure ATP on Microsoft Tech Community")
  
 ### <a name="join-the-azure-atp-yammer-community"></a>加入 Azure ATP Yammer 社群 
-[https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893](https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893 "Azure ATP Yammer 社群")
+[https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893](https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893 "Azure ATP Yammer community")
  
 ### <a name="visit-the-azure-atp-product-page"></a>瀏覽 Azure ATP 產品頁面  
-[https://azure.microsoft.com/features/azure-advanced-threat-protection/](https://azure.microsoft.com/features/azure-advanced-threat-protection/ "Azure ATP 產品頁面")
+[https://azure.microsoft.com/features/azure-advanced-threat-protection/](https://azure.microsoft.com/features/azure-advanced-threat-protection/ "Azure ATP product page")
 
 ### <a name="learn-more-about-azure-atp-architecture"></a>深入了解 Azure ATP 架構
  [Azure ATP 架構](atp-architecture.md)

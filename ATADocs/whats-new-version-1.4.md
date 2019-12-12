@@ -13,10 +13,10 @@ ms.assetid: cbea47f9-34c1-42b6-ae9e-6a472b49e1a5
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: e35ab552dfbe8adf17e408cda8c94178d08c1f93
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196995"
 ---
 # <a name="what39s-new-in-ata-version-14"></a>ATA 1.4 版的新功能
@@ -58,7 +58,7 @@ ms.locfileid: "65196995"
 下列已知問題存在於此版本中。
 
 ### <a name="network-capture-software"></a>網路擷取軟體
-在 ATA 閘道上，您可以安裝的唯一支援網路擷取軟體是 [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865) (Microsoft 網路監視器 3.4)。 請勿安裝 Microsoft Message Analyzer 或其他任何網路擷取軟體。 安裝其他軟體會造成 ATA 閘道停止正常運作。
+在 ATA 閘道上，您可以安裝的唯一支援網路擷取軟體是 [Microsoft 網路監視器 3.4](http://www.microsoft.com/download/details.aspx?id=4865)。 請勿安裝 Microsoft Message Analyzer 或其他任何網路擷取軟體。 安裝其他軟體會造成 ATA 閘道停止正常運作。
 
 ### <a name="installation-from-zip-file"></a>從 Zip 檔案安裝
 安裝 ATA 閘道時，請務必從 zip 檔案解壓縮檔案至本機目錄，並從該處安裝。 請勿直接從 ZIP 檔案內部安裝 ATA 閘道，否則安裝會失敗。

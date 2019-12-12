@@ -13,15 +13,15 @@ ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
 ms.openlocfilehash: e42811432fe01e0eddcfe0acf5dc1c47a3f34379
-ms.sourcegitcommit: 4fdee32cea25e126db91ba89f09c40a3bbbc7b3b
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65044047"
 ---
 # <a name="ata-disaster-recovery"></a>ATA 災害復原
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 本文描述如何在失去 ATA 中心功能，但 ATA 閘道仍可運作的情況下，快速復原 ATA 中心並還原 ATA 功能。 
 

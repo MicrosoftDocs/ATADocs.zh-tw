@@ -13,16 +13,16 @@ ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: f656ab40b55ab0abb226cac9f3a6818e5cadee89
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196516"
 ---
 # <a name="what-threats-does-ata-look-for"></a>ATA 會尋找哪些威脅？
 
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 ATA 提供下列各進階攻擊階段的偵測︰探察、認證入侵、橫向移動、權限提升、網域支配等等。 這些偵測的目標是在造成組織危害之前偵測到進階攻擊和內部威脅。
 每個階段的偵測會產生與問題階段相關的數個可疑活動，而每個可疑活動各與不同類別的可能攻擊相互關聯。
@@ -36,7 +36,7 @@ ATA 提供下列各進階攻擊階段的偵測︰探察、認證入侵、橫向�
 
 ## <a name="whats-next"></a>新功能
 
--   如需 ATA 如何融入網路的詳細資訊︰[ATA 架構](ata-architecture.md)
+-   如需有關 ATA 如何融入網路的詳細資訊︰[ATA 架構](ata-architecture.md)
 
 -   若要開始部署 ATA：[安裝 ATA](install-ata-step1.md)
 

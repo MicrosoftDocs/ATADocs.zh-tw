@@ -13,15 +13,15 @@ ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 25ccbe5c1cd37a46e88335fc1e293b0e426ced4e
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196090"
 ---
 # <a name="install-ata---step-1"></a>安裝 ATA - 步驟 1
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 > [!div class="step-by-step"]
 > [步驟 2 »](install-ata-step2.md)
@@ -32,7 +32,7 @@ ms.locfileid: "65196090"
 > [!IMPORTANT] 
 > 如果使用 Windows 2012 R2，開始安裝之前，您可以先在 ATA 中心伺服器和 ATA 閘道伺服器上安裝 KB2934520；若沒有這麼做，ATA 安裝會安裝此更新，並需要在 ATA 安裝期間重新啟動。
 
-## <a name="step-1-download-and-install-the-ata-center"></a>步驟 1： 下載並安裝 ATA 中心
+## <a name="step-1-download-and-install-the-ata-center"></a>步驟 1。 下載並安裝 ATA 中心
 確認伺服器符合需求之後，您可以繼續 ATA 中心的安裝。
     
 > [!NOTE]
@@ -50,7 +50,7 @@ ms.locfileid: "65196090"
 > 請務必從本機磁碟機執行安裝檔案，而不是從掛接的 ISO 檔案執行，以避免安裝過程中必須重新開機的問題。   
 
 4. 當您開始安裝時，如果未安裝 Microsoft .Net Framework，系統會提示您安裝它。 安裝 .NET Framework 之後，可能會出現重新開機的提示。
-5. 在**歡迎**頁面上選取要用於 ATA 安裝畫面的語言，然後按 **[下一步]**。
+5. 在**歡迎**頁面上選取要用於 ATA 安裝畫面的語言，然後按 **[下一步]** 。
 
 6. 閱讀 Microsoft 軟體授權條款。在您接受條款之後，請按一下接受核取方塊，然後按一下 [下一步]。
 
@@ -63,10 +63,10 @@ ms.locfileid: "65196090"
 
 9. 在 [Configure the Center (設定中心)] 頁面中，根據您的環境輸入下列資訊：
 
-   |欄位|說明|註解|
+   |欄位|Description|評價|
    |---------|---------------|------------|
    |安裝路徑|這是要安裝 ATA 中心的位置。 位置預設為 %programfiles%\Microsoft Advanced Threat Analytics\Center|保留預設值|
-   |資料庫資料路徑|這是 MongoDB 資料庫檔案的所在位置。 位置預設為 %programfiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data|變更位置至有空間可隨著您的規模成長的位置。 **注意︰**  <ul><li>在生產環境中，您應該根據容量規劃使用具有足夠空間的磁碟機。</li><li>大規模部署的資料庫應該放在個別的實體磁碟上。</li></ul>如需大小資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。|
+   |資料庫資料路徑|這是 MongoDB 資料庫檔案的所在位置。 位置預設為 %programfiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data|變更位置至有空間可隨著您的規模成長的位置。 **注意︰** <ul><li>在生產環境中，您應該根據容量規劃使用具有足夠空間的磁碟機。</li><li>大規模部署的資料庫應該放在個別的實體磁碟上。</li></ul>如需大小資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。|
    |中心服務 SSL 憑證|這是 ATA 主控台與 ATA 中心服務所使用的憑證。|按一下鑰匙圖示以選取已安裝的憑證，或使用核取方塊來建立自我簽署憑證。|
         
    ![ATA 中心設定映像](media/ATA-Center-Configuration.png)
@@ -96,7 +96,7 @@ ms.locfileid: "65196090"
 
 ### <a name="set-anti-virus-exclusions"></a>設定防毒程式排除項目
 
-在安裝 ATA 中心後，請排除 MongoDB 資料庫目錄，使防毒應用程式不持續對其進行掃描。 資料庫中的預設位置為：**C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data**。
+在安裝 ATA 中心後，請排除 MongoDB 資料庫目錄，使防毒應用程式不持續對其進行掃描。 在資料庫中的預設路徑為︰**C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data**。
 
 請確定您也將下列資料夾和處理序排除在 AV 掃描之外：
 

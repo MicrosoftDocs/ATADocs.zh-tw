@@ -13,15 +13,15 @@ ms.assetid: 4a25561b-a5ed-44aa-9b72-366976b3c72a
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 345d888047b10777239efaf96b789c477a62a81b
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65197108"
 ---
 # <a name="change-ata-configuration---domain-connectivity-password"></a>變更 ATA 設定 - 網域連線密碼
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 ## <a name="change-the-domain-connectivity-password"></a>變更網域連線密碼
 
@@ -45,7 +45,7 @@ ms.locfileid: "65197108"
 
     如果 ATA 中心有連線到網域，請使用 [測試連線] 按鈕來驗證認證
 
-5.  按一下 **[儲存]**。
+5.  按一下 **[儲存]** 。
 
 6.  變更密碼後，手動檢查 ATA 閘道服務是否正在 ATA 閘道伺服器上執行。
 

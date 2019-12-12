@@ -13,15 +13,15 @@ ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 96087f0124825f1b6feb641085317ee89ac3e6ee
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196611"
 ---
 # <a name="ata-frequently-asked-questions"></a>ATA 常見問題集
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 本文章提供關於 ATA 的常見問題清單，並提供見解和解答。
 
@@ -86,7 +86,7 @@ ATA 閘道數目取決於您的網路配置、封包的數量和 ATA 所擷取�
 
 
 ## <a name="why-are-certain-accounts-considered-sensitive"></a>為何將某些帳戶視為機密？
-當帳戶屬於我們指定為機密的特定群組時 (例如：「網域系統管理員」)，會發生這種情況。
+當帳戶屬於我們指定為機密的特定群組時 (例如，「網域系統管理員」)，會發生這種情況。
 
 若要了解為何是機密帳戶，您可以檢閱其群組成員資格，以了解它所屬的機密群組 (其所屬的群組也可以是因為另一個群組而機密，因此您應該執行相同的程序，直到找出最高層級的機密群組)。 
 
@@ -116,7 +116,7 @@ ATA 可以偵測已知的惡意攻擊和技術、安全性問題和風險。
 建議使用具有低延遲磁碟存取 (不到 10 毫秒) 的快速存放裝置 (不建議使用 7200-RPM 磁碟)。 RAID 設定應該能夠支援大量寫入負載 (不建議使用 RAID 5/6 及其衍生項目)。
 
 ## <a name="how-many-nics-does-the-ata-gateway-require"></a>ATA 閘道需要多少 NIC？
-ATA 閘道需要至少兩張網路介面卡︰<br>1.一個 NIC 連線到內部網路和 ATA 中心。<br>2.用來透過連接埠鏡像擷取網域控制站網路流量的 NIC。<br>* 這不適用於 ATA 輕量型閘道，該閘道原本就會使用網域控制站所使用的所有網路介面卡。
+ATA 閘道需要至少兩張網路介面卡︰<br>1. 用來連線到內部網路和 ATA 中心的 NIC<br>2. 用來透過埠鏡像來捕獲網域控制站網路流量的 NIC。<br>* 這不適用於 ATA 輕量型閘道，該閘道原本就會使用網域控制站所使用的所有網路介面卡。
 
 ## <a name="what-kind-of-integration-does-ata-have-with-siems"></a>ATA 與 SIEM 有何種整合？
 ATA 與 SIEM 已經雙向整合，如下所示︰
@@ -146,10 +146,10 @@ Microsoft Advanced Threat Analytics 是內部部署的產品。
 連接埠鏡像又稱為「交換器連接埠分析器」(SPAN)，是監視網路流量的方法。 啟用連接埠鏡像，交換器會將一個連接埠 (或整個 VLAN) 上的所有網路封包的複本，傳送至另一個可分析封包的連接埠。
 
 ## <a name="does-ata-monitor-only-domain-joined-devices"></a>ATA 是否只監視加入網域的裝置？
-否。 ATA 會監視對 Active Directory 執行驗證和授權要求的網路中的所有裝置，包括非 Windows 和行動裝置。
+不可以。 ATA 會監視對 Active Directory 執行驗證和授權要求的網路中的所有裝置，包括非 Windows 和行動裝置。
 
 ## <a name="does-ata-monitor-computer-accounts-as-well-as-user-accounts"></a>ATA 會監視電腦帳戶以及使用者帳戶嗎？
-是。 因為電腦帳戶 (以及任何其他實體) 可以用來執行惡意活動，ATA 會監視所有電腦帳戶的行為，以及環境中的所有其他實體。
+可以。 因為電腦帳戶 (以及任何其他實體) 可以用來執行惡意活動，ATA 會監視所有電腦帳戶的行為，以及環境中的所有其他實體。
 
 ## <a name="can-ata-support-multi-domain-and-multi-forest"></a>ATA 支援多網域和多樹系嗎？
 Microsoft Advanced Threat Analytics 支援在相同樹系邊界內的多網域環境。 多樹系則需要為每個樹系部署 ATA。

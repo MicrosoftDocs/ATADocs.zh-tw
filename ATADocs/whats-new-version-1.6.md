@@ -13,10 +13,10 @@ ms.assetid: 27b139e5-12b9-4953-8f53-eb58e8ce0038
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 3ef4f8061970c1d69b9f25479d762bb4c423a4fd
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196968"
 ---
 # <a name="whats-new-in-ata-version-16"></a>ATA 1.6 版的新功能
@@ -99,11 +99,11 @@ ATA 1.6 執行 ATA 資料庫所需的儲存空間大幅減少，現在只需要�
 ### <a name="migration-failure-when-updating-from-ata-15"></a>從 ATA 1.5 更新時的移轉失敗
 更新至 ATA 1.6 時，更新程序可能會失敗，並出現下列錯誤碼：
 
-![將 ATA 更新至 1.6 時發生錯誤](http://i.imgur.com/QrLSApr.png)若您看到此錯誤，請檢閱位於此位置的部署記錄：**C:\Users\<User>\AppData\Local\Temp**，並尋找以下例外狀況：
+![將 ATA 更新至 1.6 錯誤](http://i.imgur.com/QrLSApr.png) 如果您看到此錯誤，請檢閱 **C:\Users\<使用者>\AppData\Local\Temp** 中的部署記錄，並尋找下列例外狀況︰
 
     System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> MongoDB.Driver.MongoWriteException: A write operation resulted in an error. E11000 duplicate key error index: ATA.UniqueEntityProfile.$_id_ dup key: { : "<guid>" } ---> MongoDB.Driver.MongoBulkWriteException`1: A bulk write operation resulted in one or more errors.  E11000 duplicate key error index: ATA.UniqueEntityProfile.$_id_ dup key: { : " <guid> " }
 
-您可能也會看到此錯誤：System.ArgumentNullException:值不可以是 Null。
+您也可能會看到此錯誤︰System.ArgumentNullException: 不能是 Null。
     
 如果您看到上述任一錯誤，請執行下列因應措施：
 
@@ -121,9 +121,9 @@ ATA 1.6 執行 ATA 資料庫所需的儲存空間大幅減少，現在只需要�
     1.  MongoDB
     2.  Microsoft Advanced Threat Analytics 中心
 7.  檢閱記錄以驗證產品正在執行，而且未發生錯誤。
-8.  [下載](http://aka.ms/ataremoveduplicateprofiles "下載") "RemoveDuplicateProfiles.exe" 工具，然後將其複製到主要安裝路徑 (%ProgramFiles%\Microsoft Advanced Threat Analytics\Center)
+8.  [下載](http://aka.ms/ataremoveduplicateprofiles "下載")"removeduplicateprofiles.exe" 工具，並將它複製到主要安裝路徑（%ProgramFiles%\Microsoft Advanced 威脅 Analytics\Center）
 9.  從提升權限的命令提示字元執行 `RemoveDuplicateProfiles.exe`，並等候其成功完成。
-10. 從此位置：…\Microsoft Advanced Threat Analytics\Center\MongoDB\bin 目錄：**Mongo ATA**，鍵入以下命令：
+10. 從這裡：…\Microsoft Advanced Threat Analytics\Center\MongoDB\bin 目錄：**Mongo ATA**，輸入下列命令：
 
           db.SuspiciousActivities.remove({ "_t" : "RemoteExecutionSuspiciousActivity", "DetailsRecords" : { "$elemMatch" : { "ReturnCode" : null } } }, { "_id" : 1 });
 

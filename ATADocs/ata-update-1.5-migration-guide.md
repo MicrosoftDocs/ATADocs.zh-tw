@@ -13,10 +13,10 @@ ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: d71cfd283d89f6b1d1413f4d9832fb4302504622
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196179"
 ---
 # <a name="ata-update-to-15-migration-guide"></a>ATA 更新至 1.5 移轉指南
@@ -58,7 +58,7 @@ ms.locfileid: "65196179"
     > [!IMPORTANT]
     > 更新所有 ATA 閘道以確保 ATA 正常運作。
 
-### <a name="step-1-update-the-ata-center"></a>步驟 1：更新 ATA 中心
+### <a name="step-1-update-the-ata-center"></a>步驟 1︰更新 ATA 中心
 
 1.  備份您的資料庫：(選擇性)
 
@@ -89,7 +89,7 @@ ms.locfileid: "65196179"
 > [!IMPORTANT]
 > - 更新所有 ATA 閘道以確保 ATA 正常運作。
 
-### <a name="step-2-download-the-ata-gateway-setup-package"></a>步驟 2： 下載 ATA 閘道安裝套件
+### <a name="step-2-download-the-ata-gateway-setup-package"></a>步驟 2。 下載 ATA 閘道安裝套件
 設定網域連線設定後，您可以下載 ATA 閘道安裝套件。
 
 若要下載 ATA 閘道安裝套件：
@@ -100,7 +100,7 @@ ms.locfileid: "65196179"
 
     ![組態設定圖示](media/ATA-config-icon.png)
 
-3.  在 [ATA 閘道] 索引標籤上，按一下 [下載 ATA 閘道安裝程式]。
+3.  在 [ATA 閘道]索引標籤上，按一下 [下載 ATA 閘道安裝程式]。
 
 4.  將封裝儲存在本機。
 

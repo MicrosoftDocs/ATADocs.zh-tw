@@ -12,10 +12,10 @@ ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
 ms.openlocfilehash: 22420ea90bc922684a4e99ad303bba831f3a45e7
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196069"
 ---
 # <a name="ata-version-192"></a>ATA 1.9.2 版
@@ -45,7 +45,7 @@ ms.locfileid: "65196069"
 
 ## <a name="get-this-update"></a>取得此更新
 
-若要取得此更新的獨立套件，請移至 Microsoft 下載中心網站：[立即下載 ATA 1.9.2 套件](https://www.microsoft.com/en-us/download/details.aspx?id=56725) \(英文\)。
+若要取得此更新的獨立套件，請移至 Microsoft 下載中心網站：[立即下載 ATA 1.9.2 套件](https://www.microsoft.com/en-us/download/details.aspx?id=56725)。
 
 ### <a name="prerequisites"></a>必要條件
 

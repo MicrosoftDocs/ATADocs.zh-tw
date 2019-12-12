@@ -13,10 +13,10 @@ ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: ccea2b41e99e4d3ab19efc703f337115740c2e0d
-ms.sourcegitcommit: e4f108aec3cbfd88562217e36195b5d1250a1bbd
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70803181"
 ---
 # <a name="install-ata---step-6"></a>安裝 ATA - 步驟 6
@@ -27,7 +27,7 @@ ms.locfileid: "70803181"
 > [« 步驟 5](install-ata-step5.md)
 > [步驟 7 »](vpn-integration-install-step.md)
 
-## <a name="step-6-configure-event-collection"></a>步驟 6. 設定事件收集
+## <a name="step-6-configure-event-collection"></a>步驟 6： 設定事件收集
 ### <a name="configure-event-collection"></a>設定事件收集
 
 為增強偵測功能，ATA 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757 及 7045。 ATA 輕量閘道會自動讀取這些 Windows 事件，或如果未部署 ATA 輕量閘道，則可以透過下列兩種方式之一轉送至 ATA 閘道：將 ATA 閘道設定為接聽 SIEM 事件，或設定[Windows 事件轉送](configure-event-collection.md)。  
@@ -163,7 +163,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 -   「索引鍵=值」對的順序不重要。
 
 #### <a name="qradar"></a>QRadar
-QRadar 可讓您透過代理程式收集事件。 如果使用代理程式收集資料，則會收集不含毫秒資料的時間格式。 因為 ATA 需要毫秒資料，所以必須將 QRadar 設定為使用無代理程式 Windows 事件收集。 如需詳細資訊，請參閱 [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar：使用 MSRPC 通訊協定的無代理程式 Windows 事件集合")。
+QRadar 可讓您透過代理程式收集事件。 如果使用代理程式收集資料，則會收集不含毫秒資料的時間格式。 因為 ATA 需要毫秒資料，所以必須將 QRadar 設定為使用無代理程式 Windows 事件收集。 如需詳細資訊，請參閱 [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar：使用 MSRPC 通訊協定的無代理程式 Windows 事件集合") \(英文\)。
 
     <13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0
 

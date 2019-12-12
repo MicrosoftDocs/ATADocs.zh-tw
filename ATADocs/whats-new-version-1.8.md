@@ -13,10 +13,10 @@ ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: ''
 ms.suite: ems
 ms.openlocfilehash: 1f623642813c0474ddf3c7d050a91aebbd1b40b7
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196899"
 ---
 # <a name="whats-new-in-ata-version-18"></a>ATA 1.8 版的新功能
@@ -85,7 +85,7 @@ ms.locfileid: "65196899"
 
 ### <a name="ata-gateway-on-windows-server-core"></a>Windows Server Core 上的 ATA 閘道
 
-**徵兆**：在具備 .Net Framework 4.7 的 Windows Server 2012R2 Core 上將 ATA 閘道升級至 1.8 時，可能會失敗，發生此錯誤：Microsoft Advanced Threat Analytics 閘道已停止運作。 
+**徵兆**：在具有 .Net Framework 4.7 的 Windows Server 2012R2 Core 上將 ATA 閘道版本升級至 1.8 可能失敗，並出現錯誤：Microsoft Advanced Threat Analytics 閘道已停止運作。 
 
 ![閘道核心錯誤](./media/gateway-core-error.png)
 
@@ -93,15 +93,15 @@ ms.locfileid: "65196899"
 
 **描述**：.NET Framework 4.7 發生問題，導致使用 WPF 技術 (例如 ATA) 的應用程式無法載入。 如需詳細資訊，[請參閱 KB 4034015](https://support.microsoft.com/help/4034015/wpf-window-can-t-be-loaded-after-you-install-the-net-framework-4-7-on)。 
 
-**因應措施**：將 .Net 4.7 解除安裝。請參閱 [KB 3186497](https://support.microsoft.com/help/3186497/the-net-framework-4-7-offline-installer-for-windows) 以將 .NET 版本還原為 .NET 4.6.2，然後將 ATA 閘道更新至 1.8 版。 ATA 升級完成之後，您就可以重新安裝 .NET 4.7。  未來版本將會有更新以修正此問題。
+**因應措施**：將 .Net 4.7 解除安裝。[請參閱 KB 3186497](https://support.microsoft.com/help/3186497/the-net-framework-4-7-offline-installer-for-windows) 以將 .NET 版本還原為 .NET 4.6.2，然後將 ATA 閘道版本更新至 1.8。 ATA 升級完成之後，您就可以重新安裝 .NET 4.7。  未來版本將會有更新以修正此問題。
 
 ### <a name="lightweight-gateway-event-log-permissions"></a>輕量型閘道事件記錄檔權限
 
-**徵兆**：當您將 ATA 升級至 1.8 版後，先前獲得安全性事件記錄檔存取權限的應用程式或服務可能會喪失權限。 
+**徵兆**：升級至 ATA 1.8 後，先前已授與權限以存取安全性事件記錄檔的應用程式或服務可能會喪失權限。 
 
-**描述**：為了讓 ATA 的部署更加輕鬆，ATA 1.8 不需要 Windows 事件轉送設定，即可直接存取安全性事件記錄檔。 同時，ATA 會作為低權限的本機服務執行，以維護更嚴格的安全性。 為了提供 ATA 讀取事件的存取權，ATA 服務會對自己授與安全性事件記錄檔的權限。 當發生這種情況時，可能會停用先前為其他服務設定的權限。
+**描述**：為了讓您更輕鬆地部署 ATA，ATA 1.8 不需要 Windows 事件轉送設定就可直接存取安全性事件記錄檔。 同時，ATA 會作為低權限的本機服務執行，以維護更嚴格的安全性。 為了提供 ATA 讀取事件的存取權，ATA 服務會對自己授與安全性事件記錄檔的權限。 當發生這種情況時，可能會停用先前為其他服務設定的權限。
 
-**因應措施**：執行以下 Windows PowerShell 指令碼。 這會從 ATA 移除登錄中未正確新增的權限，並透過其他 API 加以新增。 這可能會還原其他應用程式的權限。 如果未還原，則必須將其手動還原。 未來版本將會有更新以修正此問題。 
+**因應措施**：執行下列 Windows PowerShell 指令碼。 這會從 ATA 移除登錄中未正確新增的權限，並透過其他 API 加以新增。 這可能會還原其他應用程式的權限。 如果未還原，則必須將其手動還原。 未來版本將會有更新以修正此問題。 
 
        $ATADaclEntry = "(A;;0x1;;;S-1-5-80-1717699148-1527177629-2874996750-2971184233-2178472682)"
         try {
@@ -121,7 +121,7 @@ ms.locfileid: "65196899"
 
 ### <a name="proxy-interference"></a>Proxy 干擾
 
-**徵兆**：升級至 ATA 1.8 後，ATA 閘道服務可能會無法啟動。 在 ATA 錯誤記錄檔中，您可能會看到以下例外狀況：*System.Net.Http.HttpRequestException:傳送要求時發生錯誤。---> System.Net.WebException:遠端伺服器傳回一個錯誤：(407) 需要 Proxy 驗證。*
+**徵兆**：升級至 ATA 1.8 後，ATA 閘道服務可能會無法啟動。 在 ATA 錯誤記錄檔中，您可能會看到下列例外狀況：System.Net.Http.HttpRequestException: 傳送要求時發生錯誤。---> System.Net.WebException: 遠端伺服器傳回錯誤: (407) 要求 Proxy 驗證。
 
 **描述**：從 ATA 1.8 開始，ATA 閘道使用 HTTP 通訊協定與 ATA 中心進行通訊。 如果安裝了 ATA 閘道的電腦使用 Proxy 伺服器來連線到 ATA 中心，可能會中斷此通訊。 
 

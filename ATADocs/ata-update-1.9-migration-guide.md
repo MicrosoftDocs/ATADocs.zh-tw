@@ -13,10 +13,10 @@ ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 82a801785c85258da936bcaee55c4bedc83fb37d
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196376"
 ---
 # <a name="updating-ata-to-version-19"></a>將 ATA 更新至 1.9 版
@@ -41,7 +41,7 @@ ms.locfileid: "65196376"
     > [!IMPORTANT]
     > 更新所有 ATA 閘道以確保 ATA 正常運作。
 
-### <a name="step-1-update-the-ata-center"></a>步驟 1：更新 ATA 中心
+### <a name="step-1-update-the-ata-center"></a>步驟 1︰更新 ATA 中心
 
 1. 備份您的資料庫：(選擇性)
 
@@ -53,7 +53,7 @@ ms.locfileid: "65196376"
 
    - 在 [歡迎] 頁面中，選擇您的語言，然後按一下 [下一步]。
 
-   - 如果您未在 1.8 版中啟用自動更新，系統會提示您設定 ATA，以使用 Microsoft Update 讓 ATA 保持最新狀態。  在 [Microsoft Update] 頁面中，選取 **[當我檢查更新時使用 Microsoft Update (建議選項)]**。
+   - 如果您未在 1.8 版中啟用自動更新，系統會提示您設定 ATA，以使用 Microsoft Update 讓 ATA 保持最新狀態。  在 [Microsoft Update] 頁面中，選取 **[當我檢查更新時使用 Microsoft Update (建議選項)]** 。
      ![保持 ATA 最新狀態影像](media/ata_ms_update.png)
      
      這會調整 Windows 設定，以針對 ATA 啟用更新。 
@@ -77,7 +77,7 @@ ms.locfileid: "65196376"
 > 更新所有 ATA 閘道以確保 ATA 正常運作。
  
 > [!NOTE] 
-> 若要安裝新的 ATA 閘道，請移至 [閘道] 畫面，然後按一下 [下載閘道安裝程式] 取得 ATA 1.9 閘道安裝套件，並遵循[步驟 4。安裝 ATA 閘道](install-ata-step4.md)中所述的新閘道安裝指示。
+> 若要安裝新的 ATA 閘道，請移至 [**網**關] 畫面，然後按一下 [**下載閘道安裝程式**] 以取得 ATA 1.9 閘道安裝套件，並遵循步驟4中所述的新閘道安裝指示[。安裝 ATA 閘道](install-ata-step4.md)。
 
 
 ## <a name="see-also"></a>另請參閱

@@ -13,21 +13,21 @@ ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 55279f066b093e975d33d9d392530dc1a3238112
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65195723"
 ---
 # <a name="install-ata---step-4"></a>安裝 ATA - 步驟 4
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 > [!div class="step-by-step"]
 > [« 步驟 3](install-ata-step3.md)
 > [步驟 5 »](install-ata-step5.md)
 
-## <a name="step-4-install-the-ata-gateway"></a>步驟 4： 安裝 ATA 閘道
+## <a name="step-4-install-the-ata-gateway"></a>步驟 4。 安裝 ATA 閘道
 
 在專用伺服器上安裝 ATA 閘道之前，請先驗證連接埠鏡像都已正確設定，而且 ATA 閘道可以查看往來網域控制站的流量。 如需詳細資訊，請參閱[驗證連接埠鏡像](validate-port-mirroring.md)。
 

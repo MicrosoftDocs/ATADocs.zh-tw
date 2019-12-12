@@ -13,15 +13,15 @@ ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: e4bd466a387906e6cedbee036f1123bfbbea3467
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65195656"
 ---
 # <a name="install-ata---step-8"></a>安裝 ATA - 步驟 8
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 > [!div class="step-by-step"]
 > [« 步驟 7](vpn-integration-install-step.md)
@@ -51,7 +51,7 @@ ATA 也能讓您設定 Honeytoken 使用者，用來作為針對惡意執行者�
 
    ![排除](media/exclusions.png)
 
-4.  按一下 **[儲存]**。
+4.  按一下 **[儲存]** 。
 
 
 恭喜，您已成功部署 Microsoft Advanced Threat Analytics！

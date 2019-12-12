@@ -13,10 +13,10 @@ ms.assetid: 88720401-1fb2-4353-ad39-32bc0088f0de
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 7168e8a073473bacd659e662d71ac7984ac2a45c
-ms.sourcegitcommit: 07abbd941d91299475df2af469ee5a9a99e07e0f
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "66264950"
 ---
 # <a name="recommended-upgrade-path-for-ata"></a>ATA 的建議升級路徑
@@ -28,7 +28,7 @@ ms.locfileid: "66264950"
 
 ## <a name="ata-versions"></a>ATA 版本
 
-|Version|組建編號|
+|版本|組建編號|
 |----|----|
 |1.6|1.6.4103|
 |1.6 Update 1|1.6.4317|
@@ -43,7 +43,7 @@ ms.locfileid: "66264950"
 
 ## <a name="upgrade-paths"></a>升級路徑
 
-請參閱升級路徑圖表，以判斷您目前的安裝正確的升級路徑。 
+請參閱升級路徑圖表，以判斷您目前安裝的正確升級路徑。 
 
 ![ATA 版本升級路徑](./media/upgrade-path-ata.png)
 

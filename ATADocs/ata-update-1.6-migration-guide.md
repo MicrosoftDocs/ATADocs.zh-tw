@@ -13,10 +13,10 @@ ms.assetid: 0756ef64-3aef-4a69-8981-24fa8f285c6a
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 17bc38ad4af1e0e185b1607a5d0002d5bfa613ea
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196111"
 ---
 # <a name="ata-update-to-16-migration-guide"></a>將 ATA 更新至 1.6 移轉指南
@@ -61,7 +61,7 @@ ATA 1.6 的更新提供下列各方面的改良︰
     > [!IMPORTANT]
     > 更新所有 ATA 閘道以確保 ATA 正常運作。
 
-### <a name="step-1-update-the-ata-center"></a>步驟 1：更新 ATA 中心
+### <a name="step-1-update-the-ata-center"></a>步驟 1︰更新 ATA 中心
 
 1.  備份您的資料庫：(選擇性)
 
@@ -80,7 +80,7 @@ ATA 1.6 的更新提供下列各方面的改良︰
 
     3.  閱讀使用者授權合約，如果您接受條款，請按一下 [下一步]。
 
-    4.  您現在可以使用 Microsoft Update 讓 ATA 保持最新狀態。  在 [Microsoft Update] 頁面中，選取 **[當我檢查更新時使用 Microsoft Update (建議選項)]**。
+    4.  您現在可以使用 Microsoft Update 讓 ATA 保持最新狀態。  在 [Microsoft Update] 頁面中，選取 **[當我檢查更新時使用 Microsoft Update (建議選項)]** 。
     ![保持 ATA 最新狀態影像](media/ata_ms_update.png) 如下所示，如此可調整 Windows 設定，以允許其他 Microsoft 產品 (包括 ATA) 的更新。 
      ![Windows 自動更新影像](media/ata_installupdatesautomatically.png)
 
@@ -96,7 +96,7 @@ ATA 1.6 的更新提供下列各方面的改良︰
 > [!IMPORTANT] 
 > 更新所有 ATA 閘道以確保 ATA 正常運作。
 
-### <a name="step-2-download-the-ata-gateway-setup-package"></a>步驟 2： 下載 ATA 閘道安裝套件
+### <a name="step-2-download-the-ata-gateway-setup-package"></a>步驟 2。 下載 ATA 閘道安裝套件
 設定網域連線設定後，您可以下載 ATA 閘道安裝套件。
 
 若要下載 ATA 閘道安裝套件：
@@ -107,7 +107,7 @@ ATA 1.6 的更新提供下列各方面的改良︰
 
     ![組態設定圖示](media/ATA-config-icon.png)
 
-3.  在 [ATA 閘道] 索引標籤上，按一下 [下載 ATA 閘道安裝程式]。
+3.  在 [ATA 閘道]索引標籤上，按一下 [下載 ATA 閘道安裝程式]。
 
 4.  將封裝儲存在本機。
 

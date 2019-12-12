@@ -13,22 +13,22 @@ ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: cd4af40af83b060093b0b5822d0e9110a4ada4f0
-ms.sourcegitcommit: bb33e24591acf11688955318b5938bc3d662a398
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70076647"
 ---
 # <a name="troubleshooting-ata-using-the-ata-logs"></a>使用 ATA 記錄檔來疑難排解 ATA
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 ATA 記錄提供深入解析，說明 ATA 的每個元件在任何指定時間點執行的動作。
 
 ## <a name="ata-gateway-logs"></a>ATA 閘道記錄檔
 在本節中，對 ATA 閘道的每個參考也都適用於 ATA 輕量型閘道。 
 
-ATA 閘道記錄檔位於安裝 ATA、稱為 **Logs** 的子資料夾中，預設位置為：**C:\Program Files\Microsoft Advanced Threat Analytics\\** 。 在預設安裝位置中，它位於：**C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**。
+ATA 閘道記錄位於 ATA 安裝所在，名為 **Logs** 的子資料夾；預設位置為：**C:\Program Files\Microsoft Advanced Threat Analytics\\** 。 在預設安裝位置中，其位於︰**C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs**。
 
 ATA 閘道有下列記錄檔︰
 
@@ -47,7 +47,7 @@ ATA 閘道有下列記錄檔︰
 > 前三個記錄檔有大小上限 50 MB。 到達該大小時，會開啟新的記錄檔，並將上一個記錄檔重新命名為「&lt;原始檔案名稱&gt;-Archived-00000」，該數字隨每次重新命名遞增。 根據預設，如果已經有超過 10 個相同類型的檔案，就會刪除最舊的檔案。
 
 ## <a name="ata-center-logs"></a>ATA 中心記錄檔
-ATA 中心記錄位於名為 **Logs** 的子資料夾中。 在預設安裝位置中，它位於：**C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs**"。
+ATA 中心記錄位於名為 **Logs** 的子資料夾中。 在預設安裝位置中，其位於︰**C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs**。
 > [!Note]
 > ATA 主控台記錄檔先前位於 IIS 記錄檔之下，現在則位於 ATA 中心記錄檔之下。
 
@@ -67,7 +67,7 @@ ATA 中心有下列記錄檔︰
 
 
 ## <a name="ata-deployment-logs"></a>ATA 部署記錄檔
-對於安裝產品的使用者，ATA 部署記錄位於暫存記錄中。 在預設安裝位置中，它位於： **C:\Users\<登入使用者 > \AppData\Local\Temp** (或% Temp% 上方的一個目錄)。
+對於安裝產品的使用者，ATA 部署記錄位於暫存記錄中。 在預設安裝位置中，它位於： **C:\Users\<登入使用者 > \AppData\Local\Temp** （或% Temp% 上方的一個目錄）。
 
 ATA Center 部署記錄檔︰
 

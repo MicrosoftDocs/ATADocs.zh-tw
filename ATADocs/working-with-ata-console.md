@@ -13,16 +13,16 @@ ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 3908cc6ad907111fc7f6e32fd562ce0d6298dea7
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65197136"
 ---
 # <a name="working-with-the-ata-console"></a>使用 ATA 主控台
 
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 使用 ATA 主控台監視及回應 ATA 偵測到的可疑活動。
 
@@ -128,7 +128,7 @@ ATA 將下列群組清單視為**敏感性**。 屬於這些群組的任何實�
 
 ![ATA 小型設定檔影像](media/ATA-mini-profile.jpg)
 
--   名稱
+-   Name
 
 -   圖片
 

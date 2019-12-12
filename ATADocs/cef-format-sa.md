@@ -13,16 +13,16 @@ ms.assetid: 601b48ba-a327-4aff-a1f9-2377a2bb7a42
 ms.reviewer: ort
 ms.suite: ems
 ms.openlocfilehash: 4630e1df24c370bc15bc2872ca8b1087f5cf42fa
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65197001"
 ---
 # <a name="ata-siem-log-reference"></a>ATA SIEM 記錄檔參考
 
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 ATA 可以將安全性警訊與監視警示事件轉送到您的 SIEM。 警示會以 CEF 格式轉送。 以下為會傳送至您 SIEM 的各類型安全性警訊記錄檔。
 
@@ -73,7 +73,7 @@ ATA 可以將安全性警訊與監視警示事件轉送到您的 SIEM。 警示�
 
 ## <a name="sample-logs"></a>範例記錄檔
 
-優先順序：3 = 低 5 = 中 10 = 高
+優先順序：3 = 低，5 = 中，10 = 高
 
 ### <a name="abnormal-modification-of-sensitive-groups"></a>敏感性群組的異常修改
 1 2018-12-12T16:53:22.925757+00:00 CENTER ATA 4688 AbnormalSensitiveGroupMembership CEF:0|Microsoft|ATA|1.9.0.0|AbnormalSensitiveGroupMembershipChangeSuspiciousActivity|敏感性群組的異常修改|5|start=2018-12-12T18:52:58.0000000Z app=GroupMembershipChangeEvent suser=krbtgt msg=krbtgt 具有非典型修改的敏感性群組成員。 externalId=2024 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c113d028ca1ec1250ca0491

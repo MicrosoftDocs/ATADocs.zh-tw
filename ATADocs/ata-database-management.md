@@ -13,15 +13,15 @@ ms.assetid: 05e49e23-6e0a-4ec0-9a63-a2093173c8a1
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: e2e57f5816ff1f250ba04cddb65848b31673a71e
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196329"
 ---
 # <a name="ata-database-management"></a>ATA 資料庫管理
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 如果您要移動、備份或還原 ATA 資料庫，請使用這些程序以使用 MongoDB。
 
@@ -39,7 +39,7 @@ ms.locfileid: "65196329"
 
 2. 停止 **MongoDB** 服務。
 
-3. 開啟 Mongo 設定檔，其預設位置為：C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongod.cfg。
+3. 開啟 Mongo 組態檔，其預設位置為︰C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\mongod.cfg。
 
    找出參數 `storage: dbPath`
 

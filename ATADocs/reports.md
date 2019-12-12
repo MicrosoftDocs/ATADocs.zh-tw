@@ -13,16 +13,16 @@ ms.assetid: 38ea49b5-cd5e-43e5-bc39-5071f759633b
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 279c8cc8f44e0c2803966709511d3089bce5d3a8
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65197100"
 ---
 # <a name="ata-reports"></a>ATA 報表
 
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 主控台中的 ATA 報表區段可讓您產生報表，以提供系統狀態資訊，除了系統健康狀態，還報告您環境中偵測到的可疑活動。
 
@@ -35,13 +35,13 @@ ms.locfileid: "65197100"
 
 - **密碼以純文字格式公開**：部分服務使用不安全的 LDAP 通訊協定，以純文字傳送帳戶認證。 即使是敏感性帳戶也可能會發生此情況。 監視網路流量的攻擊者可能會惡意攔截並重複使用這些認證。 此報表會列出所有來源電腦，以及 ATA 所偵測到以純文字傳送的帳戶密碼。 
 
-- **敏感性帳戶的橫向移動路徑**：此報告會列出透過橫向移動路徑公開的敏感性帳戶。 如需詳細資訊，請參閱[橫向移動路徑](use-case-lateral-movement-path.md)
+- **機密帳戶的橫向移動路徑**：此報表會列出透過橫向移動路徑公開的機密帳戶。 如需詳細資訊，請參閱[橫向移動路徑](use-case-lateral-movement-path.md)
 
 產生報表的方式有兩種：依需求，或排程報表定期傳送到您的電子郵件。
 
 若要依需求產生報表：
 
-1. 在 ATA 主控台功能表列中，按一下功能表列中的報表圖示： ![報表圖示](./media/ata-report-icon.png)。
+1. 在 ATA 主控台功能表列中，按一下功能表列中的報表圖示： ![報表圖示](./media/ata-report-icon.png).
 
 2. 在您的已選取報表類型下，設定**開始**與**結束**日期，並按一下 [下載]。 
  ![報表](./media/reports.png)

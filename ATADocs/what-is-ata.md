@@ -13,15 +13,15 @@ ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 67e265c4785e5b2b3cc6fe267e72953e8817020f
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65195992"
 ---
 # <a name="what-is-advanced-threat-analytics"></a>什麼是 Advanced Threat Analytics？
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 Advanced Threat Analytics (ATA) 是內部部署平台，可協助保護您的企業免於受到多種進階鎖定目標類型的網路攻擊和內部威脅。
 
@@ -51,7 +51,7 @@ ATA 技術會偵測多個可疑的活動，將焦點放在網路攻擊狙殺鏈�
 -   「網域支配 (持續性)」階段，此時攻擊者會擷取資訊，以便能使用各種進入點、認證和技術來繼續進行攻擊活動。 
 
 無論何種公司受到攻擊，或者何種資訊遭到鎖定，這些網路攻擊階段都非常類似而且可預測。
-ATA 會搜尋三種主要的攻擊：惡意攻擊、異常行為以及安全性問題和風險。
+ATA 會搜尋三種主要的攻擊︰惡意攻擊、異常行為和安全性問題與風險。
 
 **惡意攻擊**可以透過尋找已知攻擊類型的完整清單很容易偵測到，包括︰
 
@@ -104,7 +104,7 @@ ATA 也會偵測**安全性問題與風險**，包括︰
 
 ## <a name="whats-next"></a>新功能
 
--   如需 ATA 如何融入網路的詳細資訊︰[ATA 架構](ata-architecture.md)
+-   如需有關 ATA 如何融入網路的詳細資訊︰[ATA 架構](ata-architecture.md)
 
 -   若要開始部署 ATA：[安裝 ATA](install-ata-step1.md)
 

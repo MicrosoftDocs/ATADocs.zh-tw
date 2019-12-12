@@ -13,10 +13,10 @@ ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 51234265f30cb71c0421a9aa80a9288fe7a77b2e
-ms.sourcegitcommit: 91ab82b0813a5e7c6ec94f1766f909ef9a524d32
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72442150"
 ---
 # <a name="ata-silent-installation"></a>ATA 無訊息安裝

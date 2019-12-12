@@ -13,10 +13,10 @@ ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: c0658b0d9320116bf8a752ce360994946300947a
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65195740"
 ---
 # <a name="whats-new-in-ata-version-15"></a>ATA 1.5 版的新功能
@@ -47,7 +47,7 @@ ms.locfileid: "65195740"
 
 ![ATA GW 錯誤](media/ata-install-error.png)
 
-<b>因應措施：</b>傳送電子郵件給 <ataeval@microsoft.com> 以要求因應措施步驟。
+<b>因應措施︰</b>傳送電子郵件給 <ataeval@microsoft.com> 以要求因應措施步驟。
 ### <a name="deployment"></a>部署
 指定給「資料庫資料路徑」和「資料庫日誌路徑」的資料夾必須是空的 (沒有檔案或子資料夾)。
 如果不是空的，則不會進行部署。
@@ -59,7 +59,7 @@ ms.locfileid: "65195740"
 設定 ATA 閘道組態之後，當 ATA 閘道第一次啟動時，會顯示「未同步處理」標籤，直到服務完全啟動為止，在服務第一次啟動時，這可能需要多達 10 分鐘。
 
 ### <a name="network-capture-software"></a>網路擷取軟體
-在 ATA 閘道上，您可以安裝的唯一支援網路擷取軟體是 [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865) (Microsoft 網路監視器 3.4)。 請勿安裝 Microsoft Message Analyzer 或其他任何網路擷取軟體。 安裝其他軟體將會造成 ATA 閘道停止正常運作。
+在 ATA 閘道上，您可以安裝的唯一支援網路擷取軟體是 [Microsoft 網路監視器 3.4](http://www.microsoft.com/download/details.aspx?id=4865)。 請勿安裝 Microsoft Message Analyzer 或其他任何網路擷取軟體。 安裝其他軟體將會造成 ATA 閘道停止正常運作。
 
 ### <a name="kb-on-virtualization-host"></a>虛擬化主機上的 KB
 請勿在虛擬化主機上安裝 KB 3047154。 這可能會導致連接埠鏡像無法正常運作。

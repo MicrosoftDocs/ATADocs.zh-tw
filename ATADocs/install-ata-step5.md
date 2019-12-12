@@ -13,22 +13,22 @@ ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: c0f15942dd3888d092d8236b78261de1645e5dc0
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65195730"
 ---
 # <a name="install-ata---step-5"></a>安裝 ATA - 步驟 5
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 > [!div class="step-by-step"]
 > [«步驟 4](install-ata-step4.md)
 > [步驟 6»](install-ata-step6.md)
 
 
-## <a name="step-5-configure-the-ata-gateway-settings"></a>步驟 5： 設定 ATA 閘道設定
+## <a name="step-5-configure-the-ata-gateway-settings"></a>步驟 5. 設定 ATA 閘道設定
 
 安裝 ATA 閘道後，執行下列步驟來設定 ATA 閘道的設定。
 
@@ -42,7 +42,7 @@ ms.locfileid: "65195730"
    ![設定閘道設定影像](media/ATA-Gateways-config-2.png)
 
    - **描述**：輸入 ATA 閘道的描述 (選擇性)。
-   - **連接埠鏡像網域控制站 (FQDN)** (ATA 閘道的必要項，無法針對 ATA 輕量型閘道進行變更)︰輸入您網域控制站的完整 FQDN，然後按一下加號將它新增至清單。 例如，**dc01.contoso.com**
+   - **連接埠鏡像的網域控制站 (FQDN)** (如果是 ATA 閘道則必填，無法針對 ATA 輕量型閘道變更)︰輸入您網域控制站的完整 FQDN，然後按一下加號將它新增至清單。 例如，**dc01.contoso.com**
 
    下列資訊適用於您在**網域控制站**清單中輸入的伺服器：  
 
@@ -64,7 +64,7 @@ ms.locfileid: "65195730"
 3. 您也可以選擇設定 [Syslog 接聽程式和 Windows 事件轉寄集合](configure-event-collection.md)。 
 4. 啟用 [自動更新 ATA 閘道]，使您於未來將 ATA 中心更新為新的版本時，此 ATA 閘道也會自動更新。
 
-5. 按一下 **[儲存]**。
+5. 按一下 **[儲存]** 。
 
 
 ## <a name="validate-installations"></a>驗證安裝

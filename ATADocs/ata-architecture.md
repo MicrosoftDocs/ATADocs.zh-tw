@@ -13,10 +13,10 @@ ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 9579108bd0bb2fa91e2e196ab90284f396025db1
-ms.sourcegitcommit: e4f108aec3cbfd88562217e36195b5d1250a1bbd
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "70803118"
 ---
 # <a name="ata-architecture"></a>ATA 架構
@@ -50,9 +50,9 @@ ATA 部署的組成可以是連接至所有 ATA 閘道的單一 ATA 中心、所
 您可以使用下列閘道組合部署 ATA︰
 
 -   **只使用 ATA 閘道** <br>
-您的 ATA 部署可以只包含 ATA 閘道，不含任何 ATA 輕量型閘道：必須將所有網域控制站設定為啟用 ATA 閘道的連接埠鏡像，或者網路 TAP 必須先準備就緒。
+ATA 部署可以只包含 ATA 閘道，不含任何 ATA 輕量型閘道：所有網域控制站必須設定為啟用 ATA 閘道的連接埠鏡像，或者必須先準備好網路 TAP。
 -   **只使用 ATA 輕量型閘道**<br>
-您的 ATA 部署可以只包含 ATA 輕量型閘道：ATA 輕量型閘道部署在每個網域控制站，不需要設定任何其他伺服器或連接埠鏡像。
+ATA 部署可以只包含 ATA 輕量型閘道：ATA 輕量型閘道部署在每個網域控制站，不需要設定任何其他伺服器或連接埠鏡像。
 -   **同時使用 ATA 閘道和 ATA 輕量型閘道**<br>
 ATA 部署包括 ATA 閘道和 ATA 輕量型閘道。 ATA 輕量型閘道是安裝在一些網域控制站上 (例如，分支網站的所有網域控制站)。 同時，其他網域控制站是由 ATA 閘道監視 (例如，主要資料中心的較大網域控制站)。
 
@@ -74,7 +74,7 @@ ATA 部署包括 ATA 閘道和 ATA 輕量型閘道。 ATA 輕量型閘道是安�
 
 -   執行 ATA 主控台。
 
--   選擇性：ATA 中心可以設定為偵測到可疑活動時傳送電子郵件和事件。
+-   選擇性︰ATA 中心可以設定為偵測到可疑活動時傳送電子郵件和事件。
 
 ATA 中心會從 ATA 閘道和 ATA 輕量型閘道接收剖析過的流量。 然後執行分析、執行決定性偵測，並執行機器學習和行為演算法，以了解您的網路，啟用異常偵測並警告您可疑的活動。
 
@@ -153,7 +153,7 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 ||||||
 |-|-|-|-|-|
 |Active Directory (Lsass.exe)|ATA 輕量型閘道 (Microsoft.Tri.Gateway.exe)|其他 (其他處理程序) |ATA 輕量型閘道配額|為閘道卸除中|
-|60%|15%|10%|15%|是|
+|60%|15%|10%|15%|[是]|
 
 
 ## <a name="your-network-components"></a>您的網路元件
@@ -164,7 +164,7 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 
 雖然連接埠鏡像會將所有網域控制站的網路流量都鏡像處理到 ATA 閘道，但是有少部分的流量會傳送與壓縮至 ATA 中心進行分析。
 
-您的網域控制站和 ATA 閘道可以為實體或虛擬，如需詳細資訊，請參閱 [Configure port mirroring](configure-port-mirroring.md) (設定連接埠鏡像)。
+您的網域控制站和 ATA 閘道可以是實體或虛擬的，如需詳細資訊，請參閱[設定連接埠鏡像](configure-port-mirroring.md)。
 
 
 ### <a name="events"></a>事件

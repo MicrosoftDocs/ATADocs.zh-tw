@@ -13,10 +13,10 @@ ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 213f098fe878afda763eebce6080909b63c3cf91
-ms.sourcegitcommit: ef68a774d2756719bce8747e65f8bde2b9afdd5d
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73618450"
 ---
 # <a name="ata-prerequisites"></a>ATA 必要條件
@@ -46,7 +46,7 @@ ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003
 
 ![ATA 架構圖](media/ATA-architecture-topology.jpg)
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 本節列出在開始 ATA 安裝之前您應該收集的資訊以及您應該擁有的帳戶與網路實體。
 
 
@@ -86,11 +86,11 @@ ATA 中心可以安裝在屬於網域或工作群組的成員伺服器上。
 > [!NOTE] 
 > 以虛擬機器（VM）的形式執行中心時，必須隨時將所有記憶體配置給 VM。
 
-|VM 執行于|Description|
+|VM 執行位置|Description|
 |------------|-------------|
-|Hyper-V|確定 VM 未啟用 [**啟用動態記憶體**]。|
-|VMWare|請確定已設定的記憶體數量和保留的記憶體相同，或選取 VM 設定中的下列選項–**保留所有的來賓記憶體（全部鎖定）** 。|
-|其他虛擬化主機|請參閱廠商提供的檔，以瞭解如何確保所有時間都會將記憶體完全配置給 VM。 |
+|Hyper-V|確保未為 VM **啟用動態記憶體**。|
+|VMWare|確保設定的記憶體量和保留的記憶體量相同，或是在 VM 設定中選取以下選項 - **保留所有客體記憶體 (全部鎖定)** 。|
+|其他虛擬化主機|請參閱廠商提供的文件，以了解如何確保記憶體能在任何時候均向 VM 配置。 |
 |
 
 如果將 ATA 中心當做虛擬機器執行，請在建立新檢查點之前先關閉伺服器，以避免潛在的資料庫損毀。

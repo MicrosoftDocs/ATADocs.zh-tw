@@ -13,16 +13,16 @@ ms.assetid: 5d639e84-2e37-43a9-9667-49be6c4fa8b7
 ms.reviewer: arzinger
 ms.suite: ems
 ms.openlocfilehash: a54c68f333cfc3eb47d47c66f1ded701fb855a80
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196274"
 ---
 # <a name="ata-event-id-reference"></a>ATA 事件識別碼參考
 
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 ATA 中心事件檢視器會記錄 ATA 的事件。 這篇文章會提供事件識別碼的清單以及每個識別碼的描述。
 

@@ -13,15 +13,15 @@ ms.assetid: 42a1a34f-ed6b-4538-befb-452168a30e8c
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: f83b0e7576a1edbf3e973889cf06d5bc325ae519
-ms.sourcegitcommit: ae9db212f268f067b217d33b0c3f991b6531c975
-ms.translationtype: HT
+ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "65196214"
 ---
 # <a name="ata-readiness-roadmap"></a>ATA 整備藍圖 
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 本文提供整備藍圖，協助您開始使用 Advanced Threat Analytics。
 
@@ -77,7 +77,7 @@ ATA 中的基本必要設定，會一併於安裝精靈作業中進行。 但您
 
 ATA 開始運作之後，您便可以檢視在攻擊時間軸中偵測到的可疑活動。 這是您登入 ATA 主控台時會前往的預設登陸頁面。 根據預設，所有開啟的可疑活動都會顯示在攻擊時間表上。 您也可以查看指派給每個活動的嚴重性。 透過向下切入實體 (電腦、裝置、使用者) 來開啟其提供詳細資訊的設定檔頁面，以調查每項可疑活動。 以下資源有助於您處理 ATA 的可疑活動：
 
-[ATA 可疑活動劇本](http://aka.ms/ataplaybook) - 本文會運用網際網路上現成的研究工具，逐步說明認證竊取攻擊技巧。 您可了解 ATA 如何協助您掌握每個攻擊面所帶來的威脅。
+[ATA 可疑活動劇本](http://aka.ms/ataplaybook) - 本文會運用網際網路上現成的研究工具，逐步說明認證竊取攻擊技巧。 在每個攻擊點，您都可以看到 ATA 如何協助您瞭解這些威脅。
 
 [ATA 可疑活動指南](suspicious-activity-guide.md)
 

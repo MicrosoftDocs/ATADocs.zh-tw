@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 11/26/2019
+ms.date: 12/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 20587f66df9e4d21e5f0860b322acaab84491d22
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 000ece8a9963af12b1de7f2a3b68641bf6640876
+ms.sourcegitcommit: 44ce78c9d7f156dd0c0798823bba53e092f5abdf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540862"
+ms.lasthandoff: 12/16/2019
+ms.locfileid: "75034096"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
 
@@ -27,7 +27,17 @@ ms.locfileid: "74540862"
 
 RSS 摘要：將下列 URL 複製並貼至您的摘要讀取器中，就能在此頁面有所更新時收到通知： <br>`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
 
-2019 年 11 月 22 日發佈
+發行日期：2019 年 12 月 15 日
+## <a name="azure-atp-release-2103"></a>Azure ATP 2.103 版
+
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
+
+發行日期：2019 年 12 月 8 日
+## <a name="azure-atp-release-2102"></a>Azure ATP 2.102 版
+
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
+
+發行日期：2019 年 11 月 24 日
 ## <a name="azure-atp-release-2101"></a>Azure ATP 2.101 版
 
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。

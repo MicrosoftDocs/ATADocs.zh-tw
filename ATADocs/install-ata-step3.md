@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 7fb024e6-297a-4ad9-b962-481bb75a0ba3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 15d1ea65e18f8557c4d36363a381d05c0f9421a7
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 5d9ebf49493ec474ec1093aef66786d38db0cd57
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65195875"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543852"
 ---
 # <a name="install-ata---step-3"></a>安裝 ATA - 步驟 3
 
@@ -27,7 +27,7 @@ ms.locfileid: "65195875"
 > [« 步驟 2](install-ata-step2.md)
 > [步驟 4 »](install-ata-step4.md)
 
-## <a name="step-3-download-the-ata-gateway-setup-package"></a>步驟 3。 下載 ATA 閘道安裝套件
+## <a name="step-3-download-the-ata-gateway-setup-package"></a>步驟 3. 下載 ATA 閘道安裝套件
 
 設定網域連線設定後，您可以下載 ATA 閘道安裝套件。 ATA 閘道可以安裝在專用伺服器或網域控制站上。 如果您將其安裝在網域控制站上，它會作為 ATA 輕量型閘道安裝。 如需 ATA 輕量型閘道的詳細資訊，請參閱 [ATA 架構](ata-architecture.md)。 
 
@@ -60,8 +60,8 @@ ZIP 檔案包含下列檔案：
 - [選擇正確的 ATA 閘道類型](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
 ## <a name="see-also"></a>另請參閱
-- [ATA POC 部署指南](http://aka.ms/atapoc)
-- [ATA 調整大小工具](http://aka.ms/atasizingtool)
+- [ATA POC 部署指南](https://aka.ms/atapoc)
+- [ATA 調整大小工具](https://aka.ms/atasizingtool)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)
 - [ATA 必要條件](ata-prerequisites.md)

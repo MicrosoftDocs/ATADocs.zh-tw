@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 67e265c4785e5b2b3cc6fe267e72953e8817020f
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: a17b6e5788f4250b824519ebd9b979936a46b999
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65195992"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544225"
 ---
 # <a name="what-is-advanced-threat-analytics"></a>什麼是 Advanced Threat Analytics？
 
@@ -104,7 +104,7 @@ ATA 也會偵測**安全性問題與風險**，包括︰
 
 ## <a name="whats-next"></a>新功能
 
--   如需有關 ATA 如何融入網路的詳細資訊︰[ATA 架構](ata-architecture.md)
+-   如需 ATA 如何融入網路的詳細資訊︰[ATA 架構](ata-architecture.md)
 
 -   若要開始部署 ATA：[安裝 ATA](install-ata-step1.md)
 
@@ -114,5 +114,5 @@ ATA 也會偵測**安全性問題與風險**，包括︰
 
 
 ## <a name="see-also"></a>另請參閱
-[ATA 可疑活動腳本](http://aka.ms/ataplaybook)
+[ATA 可疑活動腳本](https://aka.ms/ataplaybook)
 [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

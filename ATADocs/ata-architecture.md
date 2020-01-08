@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 9579108bd0bb2fa91e2e196ab90284f396025db1
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: f953a163be460184c7b585e71cd973bbdcc71e6f
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70803118"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543018"
 ---
 # <a name="ata-architecture"></a>ATA 架構
 
@@ -164,7 +164,7 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 
 雖然連接埠鏡像會將所有網域控制站的網路流量都鏡像處理到 ATA 閘道，但是有少部分的流量會傳送與壓縮至 ATA 中心進行分析。
 
-您的網域控制站和 ATA 閘道可以是實體或虛擬的，如需詳細資訊，請參閱[設定連接埠鏡像](configure-port-mirroring.md)。
+您的網域控制站和 ATA 閘道可以為實體或虛擬，如需詳細資訊，請參閱 [Configure port mirroring](configure-port-mirroring.md) (設定連接埠鏡像)。
 
 
 ### <a name="events"></a>事件
@@ -180,7 +180,7 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 
 ## <a name="see-also"></a>另請參閱
 - [ATA 必要條件](ata-prerequisites.md)
-- [ATA 調整大小工具](http://aka.ms/atasizingtool)
+- [ATA 調整大小工具](https://aka.ms/atasizingtool)
 - [ATA 容量規劃](ata-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-collection.md)

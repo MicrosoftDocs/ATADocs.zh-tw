@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 55279f066b093e975d33d9d392530dc1a3238112
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 83234808b39c8c2e92ca4268c2ad64474f3462be
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65195723"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543894"
 ---
 # <a name="install-ata---step-4"></a>安裝 ATA - 步驟 4
 
@@ -33,7 +33,7 @@ ms.locfileid: "65195723"
 
 
 > [!IMPORTANT]
-> 請確定 [KB2919355](http://support.microsoft.com/kb/2919355/) 已安裝。  執行以下 PowerShell Cmdlet 來檢查是否已安裝 hotfix：
+> 請確定 [KB2919355](https://support.microsoft.com/kb/2919355/) 已安裝。  執行以下 PowerShell Cmdlet 來檢查是否已安裝 hotfix：
 >
 > `Get-HotFix -Id kb2919355`
 
@@ -92,8 +92,8 @@ ms.locfileid: "65195723"
 - [選擇正確的 ATA 閘道類型](https://channel9.msdn.com/Shows/Microsoft-Security/ATA-Deployment-Choose-the-Right-Gateway-Type)
 
 ## <a name="see-also"></a>另請參閱
-- [ATA POC 部署指南](http://aka.ms/atapoc)
-- [ATA 調整大小工具](http://aka.ms/atasizingtool)
+- [ATA POC 部署指南](https://aka.ms/atapoc)
+- [ATA 調整大小工具](https://aka.ms/atasizingtool)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)
 - [ATA 必要條件](ata-prerequisites.md)

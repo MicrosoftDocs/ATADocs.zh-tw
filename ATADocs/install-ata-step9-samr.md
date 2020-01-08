@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 7597ed25-87f5-472c-a496-d5f205c9c391
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5d266de0344a699ed3c3934246311f21b1b00c09
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 0d46ad26af75f56a2f85de863c4689307cda6493
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70803192"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543799"
 ---
 # <a name="install-ata---step-9"></a>安裝 ATA - 步驟 9
 
@@ -55,8 +55,8 @@ ms.locfileid: "70803192"
 > [« 步驟 8](install-ata-step7.md)
 
 ## <a name="see-also"></a>另請參閱
-- [ATA POC 部署指南](http://aka.ms/atapoc)
-- [ATA 調整大小工具](http://aka.ms/atasizingtool)
+- [ATA POC 部署指南](https://aka.ms/atapoc)
+- [ATA 調整大小工具](https://aka.ms/atasizingtool)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)
 - [ATA 必要條件](ata-prerequisites.md)

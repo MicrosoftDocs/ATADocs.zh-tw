@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 82a801785c85258da936bcaee55c4bedc83fb37d
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: b970f5e8472c58fa87a078d8b8612a4dbc86e388
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196376"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543790"
 ---
 # <a name="updating-ata-to-version-19"></a>將 ATA 更新至 1.9 版
 
@@ -31,7 +31,7 @@ ms.locfileid: "65196376"
 
 請遵循下列步驟將 ATA 更新至 1.9 版：
 
-1.  [從下載中心下載 ATA 1.9 版的更新](https://www.microsoft.com/download/details.aspx?id=56725)，或從 [評估中心](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)下載完整版本。<br>
+1.  [從下載中心下載 ATA 1.9 版的更新](https://www.microsoft.com/download/details.aspx?id=56725)，或從 [評估中心](https://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)下載完整版本。<br>
 在移轉版本中，檔案只能用於從 ATA 1.8 版更新。 在評估中心的版本中，會使用相同的安裝檔案 (Microsoft ATA Center Setup.exe) 來安裝新的 ATA 部署及升級現有的部署。
 
 2.  更新 ATA 中心

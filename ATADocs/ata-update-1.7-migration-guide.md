@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 8eefcd45-7a4b-4074-ac5b-1ffc48e6654a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 10c2cc0858ba2403fc16721437f39cdd6dd2cc7c
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 8ef9bda4c3b1c3922744a4b292ee135b913e9306
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196167"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543225"
 ---
 # <a name="ata-update-to-17-migration-guide"></a>ATA 更新至 1.7 移轉指南
 ATA 1.7 的更新提供下列各方面的改良︰
@@ -39,7 +39,7 @@ ATA 1.7 的更新提供下列各方面的改良︰
 
 依照下列步驟將 ATA 更新至 1.7 版：
 
-1.  [下載更新 1.7](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)<br>
+1.  [下載更新 1.7](https://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)<br>
 在此版本中，會使用相同的安裝檔案 (Microsoft ATA Center Setup.exe) 來安裝新的 ATA 部署及升級現有的部署。
 
 2.  更新 ATA 中心

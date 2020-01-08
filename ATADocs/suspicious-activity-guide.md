@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 1fe5fd6f-1b79-4a25-8051-2f94ff6c71c1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b5e5e8c5f42f786ca869ed2a29572e4512faf26f
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 59fe86e50a583278880d977aa7282003de39faac
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65197223"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543775"
 ---
 # <a name="advanced-threat-analytics-suspicious-activity-guide"></a>Advanced Threat Analytics 可疑活動指南
 
@@ -39,7 +39,7 @@ ms.locfileid: "65197223"
 ## <a name="abnormal-modification-of-sensitive-groups"></a>敏感性群組的異常修改
 
 
-**說明**
+**描述**
 
 攻擊者將使用者新增至具有高權限的群組。 他們這樣做以取得更多資源的存取權並取得持續入侵管道。 此偵測需要分析使用者群組修改活動，並在敏感性群組中出現異常新增時發出警示。 ATA 會持續執行分析。 可觸發警示的最短期限是每個網域控制站一個月。
 
@@ -66,7 +66,7 @@ ms.locfileid: "65197223"
 > [!NOTE]
 > 電腦與網域之間的信任中斷警示已過時，而且只會出現在 ATA 1.9 版之前。
 
-**說明**
+**描述**
 
 信任中斷表示 Active Directory 安全性需求對那些有問題的電腦可能無效。 這會被視為基準安全性與合規性失敗，而且是攻擊者容易攻擊的目標。 在此偵測中，如果在 24 小時內從電腦帳戶看到超過五次 Kerberos 驗證失敗，就會觸發警示。
 
@@ -82,7 +82,7 @@ ms.locfileid: "65197223"
 
 ## <a name="brute-force-attack-using-ldap-simple-bind"></a>使用 LDAP 簡單繫結的暴力密碼破解攻擊
 
-**說明**
+**描述**
 
 >[!NOTE]
 > **可疑的驗證失敗**與此偵測的主要差異，是在此偵測中，ATA 可判斷不同的密碼是否已在使用中。
@@ -105,7 +105,7 @@ ms.locfileid: "65197223"
 
 ## <a name="encryption-downgrade-activity"></a>加密降級活動
 
-**說明**
+**描述**
 
 加密降級是一種減弱 Kerberos 的方法，它會針對通訊協定一般會以最高加密層級進行加密的不同欄位，對其加密層級做出降級。 攻擊者將能較為輕鬆地對減弱的加密欄位進行離線暴力密碼破解。 利用弱式 Kerberos 加密 Cypher 的各種攻擊方法。 在此偵測中，ATA 會了解電腦和使用者所使用的 Kerberos 加密類型，並在使用下列較弱的 Cypher 時向您發出警示：(1) 對來源電腦及/或使用者而言不尋常，以及 (2) 符合已知的攻擊手法。
 
@@ -141,7 +141,7 @@ ms.locfileid: "65197223"
 ## <a name="honeytoken-activity"></a>Honeytoken 活動
 
 
-**說明**
+**描述**
 
 Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關的惡意活動。 Honeytoken 帳戶應保留未使用，同時擁有具吸引力的名稱來引誘攻擊者 (例如 SQL-Admin)。 任何來自這些帳戶的活動可能表示惡意行為。
 
@@ -163,7 +163,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 ## <a name="identity-theft-using-pass-the-hash-attack"></a>使用傳遞雜湊攻擊竊取身分
 
-**說明**
+**描述**
 
 傳遞票證是一種橫向移動攻擊手法，在此攻擊中，攻擊者從一部電腦竊取使用者的 NTLM 雜湊，然後使用它來存取另一部電腦。 
 
@@ -179,7 +179,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 ## <a name="identity-theft-using-pass-the-ticket-attack"></a>使用傳遞票證攻擊竊取身分
 
-**說明**
+**描述**
 
 傳遞票證是一種橫向移動攻擊手法，在此攻擊中，攻擊者從一部電腦竊取 Kerberos 票證，並重複使用竊取的票證來存取另一部電腦。 在此偵測中，會看到 Kerberos 票證用於兩部 (或多部) 不同的電腦。
 
@@ -197,7 +197,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 ## Kerberos 黃金票證活動<a name="golden-ticket"></a>
 
-**說明**
+**描述**
 
 具有網域系統管理員權限的攻擊者可能會危害您的 [KRBTGT 帳戶](https://technet.microsoft.com/library/dn745899(v=ws.11).aspx#Sec_KRBTGT)。 攻擊者可以使用 KRBTGT 帳戶來建立 Kerberos 票證授權票證 (TGT) ，提供對您任何資源的授權。 票證到期日可設定為任意時間。 這個假 TGT 稱為「黃金票證」，可讓攻擊者在您的網路中取得並維持永續性。
 
@@ -219,7 +219,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 ## <a name="malicious-data-protection-private-information-request"></a>惡意的資料保護私人資訊要求
 
-**說明**
+**描述**
 
 Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的密碼、加密檔案和其他敏感性資料。 網域控制站會保留備份的主要金鑰，該金鑰可用來解密已加入網域的 Windows 電腦上使用 DPAPI 加密的所有密碼。 攻擊者可以使用主要金鑰，來解密所有已加入網域之電腦上由 DPAPI 保護的所有密碼。
 在此偵測中，當使用 DPAPI 來擷取備份的主要金鑰時，就會觸發警示。
@@ -239,7 +239,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 ## <a name="malicious-replication-of-directory-services"></a>惡意的目錄服務複寫
 
 
-**說明**
+**描述**
 
 在 Active Directory 複寫程序中，某個網域控制站上所做的變更，會與所有其他網域控制站同步處理。 若具有必要權限，攻擊者就可以起始複寫要求，讓他們擷取儲存在 Active Directory 中的資料，包括密碼雜湊。
 
@@ -265,7 +265,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 ## <a name="massive-object-deletion"></a>大量物件刪除
 
-**說明**
+**描述**
 
 在某些情況下，攻擊者會執行阻斷服務攻擊 (DoS)，而不是只竊取資訊。 刪除大量帳戶是一種嘗試進行 DoS 攻擊的手法。 
 
@@ -282,7 +282,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 ## <a name="privilege-escalation-using-forged-authorization-data"></a>使用偽造授權資料提升權限
 
-**說明**
+**描述**
 
 舊版 Windows Server 中的已知弱點可能會被攻擊者用來操縱 Privileged Attribute Certificate (PAC)。 PAC 是 Kerberos 票證中的一個領域，它具有使用者授權資料 (在 Active Directory 中，這是群組成員資格) 而且會將額外權限授與攻擊者。
 
@@ -302,7 +302,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 ## <a name="reconnaissance-using-account-enumeration"></a>使用帳戶列舉偵查
 
-**說明**
+**描述**
 
 在帳戶列舉探查中，攻擊者會使用含有上千筆使用者名稱的目錄或 KrbGuess 這類工具，嘗試猜測網域中的使用者名稱。 攻擊者利用這些名字提出 Kerberos 要求，試著在您的網域中找到有效的使用者名稱。 如果成功猜到使用者名稱，攻擊者將會收到 Kerberos 錯誤**需要預先驗證**，而不是**未知的安全性主體**。 
 
@@ -330,7 +330,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 ## <a name="reconnaissance-using-directory-services-queries"></a>使用目錄服務查詢的偵察
 
-**說明**
+**描述**
 
 攻擊者可利用目錄服務探查來對應目錄結構，並鎖定特殊權限帳戶以在稍後用於攻擊步驟。 安全性帳戶管理員遠端 (SAM-R) 通訊協定是用來查詢目錄以執行這類對應的其中一種方法。
 
@@ -365,7 +365,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 ## <a name="reconnaissance-using-dns"></a>使用 DNS 探查
 
-**說明**
+**描述**
 
 您的 DNS 伺服器包含您網路中所有電腦、IP 位址和服務的對應。 攻擊者會使用這項資訊來對應您的網路結構，並鎖定感興趣的電腦以在稍後用於攻擊步驟。
 
@@ -386,7 +386,7 @@ DNS 通訊協定中有數種查詢類型。 ATA 會偵測源自於非 DNS 伺服
 ## <a name="reconnaissance-using-smb-session-enumeration"></a>使用 SMB 工作階段列舉的偵察
 
 
-**說明**
+**描述**
 
 伺服器訊息區 (SMB) 列舉可讓攻擊者取得使用者最近登入位置的相關資訊。 一旦攻擊者擁有這項資訊，他們就可以在網路中橫向移動來到達特定敏感性帳戶。
 
@@ -412,7 +412,7 @@ DNS 通訊協定中有數種查詢類型。 ATA 會偵測源自於非 DNS 伺服
 
 ## <a name="remote-execution-attempt-detected"></a>偵測到遠端執行嘗試
 
-**說明**
+**描述**
 
 盜用系統管理認證或使用零時差惡意探索的攻擊者可能會在您的網域控制站上執行遠端命令。 這可用於取得持續性、收集資訊、發動拒絕服務 (DOS) 的攻擊或任何其他原因。 ATA 會偵測 PSexec 和遠端 WMI 連線。
 
@@ -436,7 +436,7 @@ DNS 通訊協定中有數種查詢類型。 ATA 會偵測源自於非 DNS 伺服
 > [!NOTE]
 > 這項可疑的活動已淘汰，只會顯示在 1.9 版以前的 ATA。 若為 ATA 1.9 或更新版本，請參閱[報表](reports.md)。
 
-**說明**
+**描述**
 
 某些服務會以純文字傳送帳戶認證。 即使是敏感性帳戶也可能會發生此情況。 監視網路流量的攻擊者可能會惡意攔截並重複使用這些認證。 敏感性帳戶的任何純文字密碼都會觸發警示。若為非敏感性帳戶，如果有五個以上不同的帳戶從相同的來源電腦傳送純文字密碼，則會觸發警示。 
 
@@ -452,7 +452,7 @@ DNS 通訊協定中有數種查詢類型。 ATA 會偵測源自於非 DNS 伺服
 
 ## <a name="suspicious-authentication-failures"></a>可疑的驗證失敗
 
-**說明**
+**描述**
 
 在暴力密碼破解攻擊中，攻擊者會嘗試使用許多不同的密碼對不同的帳戶進行驗證，直到找到至少一個帳戶的正確密碼。 找到後，攻擊者就可以使用該帳戶登入。
 
@@ -475,7 +475,7 @@ DNS 通訊協定中有數種查詢類型。 ATA 會偵測源自於非 DNS 伺服
 
 ## 可疑的服務建立 <a name="suspicious-service-creation"></a>
 
-**說明**
+**描述**
 
 攻擊者嘗試在您的網路上執行可疑的服務。 當看似可疑的新服務在網域控制站上建立時，ATA 會發出警示。 這項警示依賴事件 7045，並且會受 ATA 閘道或輕量型閘道所涵蓋的每個網域控制站偵測。
 
@@ -498,7 +498,7 @@ DNS 通訊協定中有數種查詢類型。 ATA 會偵測源自於非 DNS 伺服
 
 ## <a name="suspicion-of-identity-theft-based-on-abnormal-behavior"></a>基於異常行為懷疑身分遭竊
 
-**說明**
+**描述**
 
 ATA 會持續三週學習使用者、電腦和資源的實體行為。 此行為模型是以下列活動為依據：實體已登入的電腦、實體已要求存取的資源，以及這些作業發生的時間。 當實體的行為根據機器學習演算法發現有所偏差時，ATA 就會傳送警示。 
 
@@ -516,7 +516,7 @@ ATA 會持續三週學習使用者、電腦和資源的實體行為。 此行為
 ## <a name="unusual-protocol-implementation"></a>不尋常的通訊協定實作
 
 
-**說明**
+**描述**
 
 攻擊者會使用以非標準方式實作各種通訊協定 (SMB、Kerberos、NTLM) 的工具。 雖然 Windows 會接受這種類型的網路流量而不發出警告，但 ATA 能夠辨識可能的惡意用途。 此行為表示越過雜湊，以及進階勒索軟體所使用的惡意探索等技術，例如 WannaCry。
 
@@ -557,6 +557,6 @@ ATA 會持續三週學習使用者、電腦和資源的實體行為。 此行為
 
 
 ## <a name="see-also"></a>另請參閱
-- [ATA 可疑活動腳本](http://aka.ms/ataplaybook)
+- [ATA 可疑活動腳本](https://aka.ms/ataplaybook)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [處理可疑活動](working-with-suspicious-activities.md)

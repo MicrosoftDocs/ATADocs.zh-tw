@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 0756ef64-3aef-4a69-8981-24fa8f285c6a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 17bc38ad4af1e0e185b1607a5d0002d5bfa613ea
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: ea37da339e5c78e4fbcb4cdd3351403cf0d4d49c
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196111"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543242"
 ---
 # <a name="ata-update-to-16-migration-guide"></a>將 ATA 更新至 1.6 移轉指南
 ATA 1.6 的更新提供下列各方面的改良︰
@@ -49,7 +49,7 @@ ATA 1.6 的更新提供下列各方面的改良︰
 
 1. 若要避免升級問題，請確定您遵循 [ATA 1.6 版新功能](whats-new-version-1.6.md)中所述之**將 ATA 更新 1.6 版時移轉失敗**的步驟 8 到 10。
 2. 確定您有需要的可用空間可完成升級。 您可以執行安裝到整備檢查的步驟，以估計所需的可用空間，然後在配置所需的磁碟空間之後重新開始升級。
-1.  [下載更新 1.6](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)<br>
+1.  [下載更新 1.6](https://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)<br>
 在此版本中，會使用相同的安裝檔案 (Microsoft ATA Center Setup.exe) 來安裝新的 ATA 部署及升級現有的部署。
 
 2.  更新 ATA 中心

@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 213f098fe878afda763eebce6080909b63c3cf91
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: e84bbb84859d316d4900d0f09e71142627df1ae8
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73618450"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543178"
 ---
 # <a name="ata-prerequisites"></a>ATA 必要條件
 
@@ -29,7 +29,7 @@ ms.locfileid: "73618450"
 > 如需如何規劃資源和容量的資訊，請參閱 [ ATA capacity planning](ata-capacity-planning.md) (ATA 容量規劃)。
 
 
-ATA 是由 ATA 中心、ATA 閘道及 (或) ATA 輕量型閘道所組成。 如需 ATA 元件的詳細資訊，請參閱 [ATA architecture](ata-architecture.md) (ATA 架構)。
+ATA 是由 ATA 中心、ATA 閘道及 (或) ATA 輕量型閘道所組成。 如需 ATA 元件的詳細資訊，請參閱 [ATA 架構](ata-architecture.md)。
 
 ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003 和更新版本的樹系功能等級 (FFL)。
 
@@ -102,7 +102,7 @@ ATA 中心可以安裝在屬於網域或工作群組的成員伺服器上。
 為了達到最佳效能，將 ATA 中心的 [電源選項] 設定為 [高效能]。<br>
 您要監視的網域控制站數目以及每個網域控制站的負載，決定了所需的伺服器規格。 如需詳細資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。
 
-對於 Windows 作業系統2008R2 和2012，[多處理器群組](https://docs.microsoft.com/windows/win32/procthread/processor-groups)模式不支援閘道。 如需有關多處理器群組模式的詳細資訊，請參閱[疑難排解](troubleshooting-ata-known-errors.md##multi-processor-group-mode)。 
+對於 Windows 作業系統2008R2 和2012，[多處理器群組](https://docs.microsoft.com/windows/win32/procthread/processor-groups)模式不支援閘道。 如需有關多處理器群組模式的詳細資訊，請參閱[疑難排解](troubleshooting-ata-known-errors.md#multi-processor-group-mode)。 
 
 ### <a name="time-synchronization"></a>時間同步
 
@@ -119,7 +119,7 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 ### <a name="ports"></a>連接埠
 下表列出 ATA 中心正常運作最少要開啟的連接埠。
 
-|通訊協定|傳輸|連接埠|去/從|方向|
+|通訊協定|傳輸|Port|去/從|Direction|
 |------------|-------------|--------|-----------|-------------|
 |**SSL** (ATA 通訊)|TCP|443|ATA 閘道|輸入|
 |**HTTP** (選擇性)|TCP|80|公司網路|輸入|
@@ -215,7 +215,7 @@ ATA 閘道需要至少一個管理介面卡和至少一個擷取介面卡︰
 ### <a name="ports"></a>連接埠
 下表列出在管理介面卡上設定 ATA 閘道至少需要的連接埠：
 
-|通訊協定|傳輸|連接埠|去/從|方向|
+|通訊協定|傳輸|Port|去/從|Direction|
 |------------|-------------|--------|-----------|-------------|
 |LDAP|TCP 和 UDP|389|網域控制站|輸出|
 |安全的 LDAP (LDAPS)|TCP|636|網域控制站|輸出|
@@ -288,7 +288,7 @@ ATA 輕量型閘道可為所有網域控制站的網路介面卡監視其上的�
 ### <a name="ports"></a>連接埠
 下表列出 ATA 輕量型閘道至少需要的連接埠：
 
-|通訊協定|傳輸|連接埠|去/從|方向|
+|通訊協定|傳輸|Port|去/從|Direction|
 |------------|-------------|--------|-----------|-------------|
 |DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
 |透過 RPC 的 NTLM|TCP|135|網路上的所有裝置|雙向|

@@ -11,12 +11,12 @@ ms.prod: advanced-threat-analytics
 ms.assetid: 1b5b24ff-0df8-4660-b4f8-64d68cc72f65
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 99d02aeb30cac449c4e9ac19c3824e8ebd97d0d5
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 4725be4c0254225d6ca92e11d62c283948ccfc46
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72690232"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543059"
 ---
 # <a name="ata-capacity-planning"></a>ATA 容量規劃
 
@@ -28,7 +28,7 @@ ms.locfileid: "72690232"
 > 所有效能需求符合本文所述條件的 IaaS 廠商，都能部署 ATA 中心。
 
 ## <a name="using-the-sizing-tool"></a>使用調整大小工具
-若要判斷 ATA 部署容量，建議且最容易的方法是使用 [ATA 調整大小工具](http://aka.ms/atasizingtool)。 執行 ATA 調整大小工具，並從 Excel 檔案結果中，使用下列欄位判斷您需要的 ATA 容量︰
+若要判斷 ATA 部署容量，建議且最容易的方法是使用 [ATA 調整大小工具](https://aka.ms/atasizingtool)。 執行 ATA 調整大小工具，並從 Excel 檔案結果中，使用下列欄位判斷您需要的 ATA 容量︰
 
 - ATA 中心 CPU 及記憶體：比對 ATA 中心資料表結果檔案中的 [Busy Packets/sec] 欄位與 [ATA 中心資料表](#ata-center-sizing)中的 [每秒封包數] 欄位。
 
@@ -173,7 +173,7 @@ ATA 輕量型閘道可以支援監視一個網域控制站，依網域控制站�
 
 
 ## <a name="see-also"></a>另請參閱
-- [ATA 調整大小工具](http://aka.ms/atasizingtool)
+- [ATA 調整大小工具](https://aka.ms/atasizingtool)
 - [ATA 必要條件](ata-prerequisites.md)
 - [ATA 架構](ata-architecture.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

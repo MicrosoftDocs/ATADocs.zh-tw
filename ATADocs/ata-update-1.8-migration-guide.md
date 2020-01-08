@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: e5a9718c-b22e-41f7-a614-f00fc4997682
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d35961d0ec70402fe27d0d418fd583d60b960464
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: b30527feafc7ee74f17f9f9600bbbc1e28a3dfa6
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196124"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543595"
 ---
 # <a name="updating-ata-to-version-18"></a>將 ATA 更新至 1.8 版
 
@@ -31,7 +31,7 @@ ms.locfileid: "65196124"
 
 遵循下列步驟將 ATA 更新至 1.8 版：
 
-1.  [從下載中心下載 ATA 1.8 版的更新](https://www.microsoft.com/download/details.aspx?id=55536)，或從 [TechNet Evaluation Center](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics) (TechNet 評估中心) 下載完整版本。<br>
+1.  [從下載中心下載 ATA 1.8 版的更新](https://www.microsoft.com/download/details.aspx?id=55536)，或從 [TechNet Evaluation Center](https://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics) (TechNet 評估中心) 下載完整版本。<br>
 在移轉版本中，檔案只能用於從 ATA 1.7 版更新。 在評估中心的版本中，會使用相同的安裝檔案 (Microsoft ATA Center Setup.exe) 來安裝新的 ATA 部署及升級現有的部署。
 
 2.  更新 ATA 中心

@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 25ccbe5c1cd37a46e88335fc1e293b0e426ced4e
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 2a665450d68dd814931a3153a1b3cde4411cf20b
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196090"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543187"
 ---
 # <a name="install-ata---step-1"></a>安裝 ATA - 步驟 1
 
@@ -40,7 +40,7 @@ ms.locfileid: "65196090"
 
 在 ATA 中心伺服器上執行下列步驟。
 
-1.  從 [Microsoft 大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx)、[TechNet Evaluation Center](http://www.microsoft.com/evalcenter/) 或 [MSDN](https://msdn.microsoft.com/subscriptions/downloads) 下載 ATA。
+1.  從 [Microsoft 大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx)、[TechNet Evaluation Center](https://www.microsoft.com/evalcenter/) 或 [MSDN](https://msdn.microsoft.com/subscriptions/downloads) 下載 ATA。
 
 2.  請以本機系統管理員群組成員的使用者身分，登入要安裝 ATA 中心的電腦。
 
@@ -66,7 +66,7 @@ ms.locfileid: "65196090"
    |欄位|Description|評價|
    |---------|---------------|------------|
    |安裝路徑|這是要安裝 ATA 中心的位置。 位置預設為 %programfiles%\Microsoft Advanced Threat Analytics\Center|保留預設值|
-   |資料庫資料路徑|這是 MongoDB 資料庫檔案的所在位置。 位置預設為 %programfiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data|變更位置至有空間可隨著您的規模成長的位置。 **注意︰** <ul><li>在生產環境中，您應該根據容量規劃使用具有足夠空間的磁碟機。</li><li>大規模部署的資料庫應該放在個別的實體磁碟上。</li></ul>如需大小資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。|
+   |資料庫資料路徑|這是 MongoDB 資料庫檔案的所在位置。 位置預設為 %programfiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data|變更位置至有空間可隨著您的規模成長的位置。 **請注意：** <ul><li>在生產環境中，您應該根據容量規劃使用具有足夠空間的磁碟機。</li><li>大規模部署的資料庫應該放在個別的實體磁碟上。</li></ul>如需大小資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。|
    |中心服務 SSL 憑證|這是 ATA 主控台與 ATA 中心服務所使用的憑證。|按一下鑰匙圖示以選取已安裝的憑證，或使用核取方塊來建立自我簽署憑證。|
         
    ![ATA 中心設定映像](media/ATA-Center-Configuration.png)
@@ -122,8 +122,8 @@ ms.locfileid: "65196090"
 
 
 ## <a name="see-also"></a>另請參閱
-- [ATA POC 部署指南](http://aka.ms/atapoc)
-- [ATA 調整大小工具](http://aka.ms/atasizingtool)
+- [ATA POC 部署指南](https://aka.ms/atapoc)
+- [ATA 調整大小工具](https://aka.ms/atasizingtool)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)
 - [ATA 必要條件](ata-prerequisites.md)

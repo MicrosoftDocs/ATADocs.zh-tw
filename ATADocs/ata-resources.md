@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 42a1a34f-ed6b-4538-befb-452168a30e8c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f83b0e7576a1edbf3e973889cf06d5bc325ae519
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: e3b83699fdafd8fd34cea3a4407422e27118d9a0
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196214"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543015"
 ---
 # <a name="ata-readiness-roadmap"></a>ATA 整備藍圖 
 
@@ -59,9 +59,9 @@ ATA 由 ATA 中心和 ATA 閘道構成，您可將前者安裝在伺服器上，
 
 這些資源可協助您下載並安裝 ATA 中心；連線至 Active Directory；下載 ATA 閘道套件；設定事件收集，也可選擇性地與您的 VPN 整合，及設定 honeytoken 帳戶和排除項目。
 
-[下載 ATA](http://aka.ms/ataeval) - 在部署 ATA 前，若尚未決定是否要購買 ATA，可下載評估版。 
+[下載 ATA](https://aka.ms/ataeval) - 在部署 ATA 前，若尚未決定是否要購買 ATA，可下載評估版。 
 
-[ATA POC 實戰手冊](http://aka.ms/atapoc) - 成功進行 ATA POC 部署的指南，內含所需的所有步驟。
+[ATA POC 實戰手冊](https://aka.ms/atapoc) - 成功進行 ATA POC 部署的指南，內含所需的所有步驟。
 
 [ATA 部署影片](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes) - 這段影片簡介 ATA 部署步驟，總長在 10 分鐘內。
 
@@ -77,7 +77,7 @@ ATA 中的基本必要設定，會一併於安裝精靈作業中進行。 但您
 
 ATA 開始運作之後，您便可以檢視在攻擊時間軸中偵測到的可疑活動。 這是您登入 ATA 主控台時會前往的預設登陸頁面。 根據預設，所有開啟的可疑活動都會顯示在攻擊時間表上。 您也可以查看指派給每個活動的嚴重性。 透過向下切入實體 (電腦、裝置、使用者) 來開啟其提供詳細資訊的設定檔頁面，以調查每項可疑活動。 以下資源有助於您處理 ATA 的可疑活動：
 
-[ATA 可疑活動劇本](http://aka.ms/ataplaybook) - 本文會運用網際網路上現成的研究工具，逐步說明認證竊取攻擊技巧。 在每個攻擊點，您都可以看到 ATA 如何協助您瞭解這些威脅。
+[ATA 可疑活動劇本](https://aka.ms/ataplaybook) - 本文會運用網際網路上現成的研究工具，逐步說明認證竊取攻擊技巧。 在每個攻擊點，您都可以看到 ATA 如何協助您瞭解這些威脅。
 
 [ATA 可疑活動指南](suspicious-activity-guide.md)
 

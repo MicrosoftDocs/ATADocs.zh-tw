@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: f6f3ed75-d6bb-4966-a9a7-5339c4f3ebac
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 87995b9162f787a05b82507e34cf3dbdaf4a3f07
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 221ace13505bd9eab33422358abb764e7a7485ff
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196712"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544380"
 ---
 # <a name="integrate-azure-atp-with-windows-defender-atp"></a>整合 Azure ATP 與 Windows Defender ATP
 
@@ -49,7 +49,7 @@ Azure ATP 技術可偵測多種可疑的活動，專注於網路攻擊狙殺鏈�
 
 - 內建獨一無二的威脅情報知識庫<br></br>絕佳的威脅視野能結合第一方和第三方情報來源，針對每個威脅情報偵測提供執行者詳細資料和意圖內容。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 若要啟用這項功能，您需要同時有 Azure ATP 和 Windows Defender ATP 的授權。 
 
@@ -95,7 +95,7 @@ Azure ATP 技術可偵測多種可疑的活動，專注於網路攻擊狙殺鏈�
 ## <a name="see-also"></a>另請參閱
 
 - [使用 Azure ATP 調查橫向移動路徑](use-case-lateral-movement-path.md)
-- [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool) \(英文\)
+- [Azure ATP 調整大小工具](https://aka.ms/aatpsizingtool) \(英文\)
 - [Azure ATP 架構](atp-architecture.md)
 - [安裝 ATP](install-atp-step1.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

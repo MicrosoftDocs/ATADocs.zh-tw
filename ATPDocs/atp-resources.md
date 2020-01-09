@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 34dc152c-6b7f-4128-93fe-aad56c282730
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 205fb58cbb06e6a219aa39b92275761ad9d1304d
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 2249505a80eca230e9b5b54689414c445f169afc
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196793"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544342"
 ---
 # <a name="azure-atp-readiness-guide"></a>Azure ATP 整備指南
 
@@ -35,13 +35,13 @@ Azure 進階威脅防護 (ATP) 為雲端服務，可識別並保護您的企業�
 ## <a name="deployment-decisions"></a>部署決定
 
 Azure ATP 由位於 Azure 中的雲端服務以及可安裝在網域控制站上的整合式感應器或專用伺服器上的獨立感應器所組成。 在您啟動並執行 Azure ATP 之前，請務必選擇最適合您部署與需求的感應器類型。 相較於 Azure ATP 獨立感應器，Azure ATP 整合式感應器 (Azure ATP 感應器) 提供加強的安全性、較低的營運成本與較簡單的部署方式。 Azure ATP 獨立感應器需要實體硬體、額外的設定步驟與較高的營運成本。 <br>若您使用實體伺服器，容量規劃非常重要。 使用調整大小工具來為您的感應器配置空間： 
-- [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool) - 調整大小的工具會自動收集 Azure ATP 監視器的流量多寡。 其會自動為感應器提供支援能力以及資源建議。 
+- [Azure ATP 調整大小工具](https://aka.ms/aatpsizingtool) - 調整大小的工具會自動收集 Azure ATP 監視器的流量多寡。 其會自動為感應器提供支援能力以及資源建議。 
 - [ATP 容量規劃指南](atp-capacity-planning.md)
 
 ## <a name="deploy-azure-atp"></a>部署 Azure ATP
 
 請使用這些資源來協助您設定 Azure ATP、連線至 Active Directory、下載感應器套件、設定事件收集，也可與您的 VPN 整合，及設定 honeytoken 帳戶和排除項目。 
-- [Azure ATP (屬於 EMS E5)](http://aka.ms/aatptrial) 有效試用期為 90 天。
+- [Azure ATP (屬於 EMS E5)](https://aka.ms/aatptrial) 有效試用期為 90 天。
 - [Azure ATP 設定](install-atp-step1.md)遵循下列步驟在您的環境中部署 Azure ATP。
 - [整合 Azure ATP 與 Windows Defender ATP](integrate-wd-atp.md)
 

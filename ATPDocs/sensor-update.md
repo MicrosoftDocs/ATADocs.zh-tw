@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/20/2019
+ms.date: 12/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 408c46d620f7b7f5da21d9dcfaf17097660dcc4c
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 6c8edd2b48fbc10347bd77df06ae1f7c4ecacb52
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196384"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544002"
 ---
 # <a name="update-azure-atp-sensors"></a>更新 Azure ATP 感應器
 
@@ -43,10 +43,6 @@ Azure ATP 感應器支援兩種更新：
 > [!NOTE]
 >- 在 Azure ATP 入口網站設定頁面中，控制自動感應器重新啟動 (適用於**主要**更新)。 
 > - Azure ATP 感應器在所安裝的網域控制站上一律會保留至少 15% 的可用記憶體和可用 CPU。 如果 Azure ATP 服務耗用太多記憶體，服務會自動停止並由 Azure ATP 感應器更新程式服務重新啟動。
-
-### <a name="update-requirement"></a>更新需求
-
-如果您的感應器有超過一個版本更新無法更新，表示您的感應器不再與 Azure ATP 雲端服務通訊，並可能導致無法取得 Azure ATP 服務且您的組織將未受保護。  
 
 ## <a name="delayed-sensor-update"></a>延遲感應器更新
 

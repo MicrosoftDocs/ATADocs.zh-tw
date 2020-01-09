@@ -12,19 +12,19 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e734e382-c4b1-43ca-9a8d-96c91daf2578
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f54c60f97c9489934f0ac0a40b3b27780e6a60d9
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 0a5c01f665b167bb9eabc5a9e0a67b99bb6d56fa
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72690241"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543119"
 ---
 # <a name="advanced-threat-analytics-ata-to-azure-advanced-threat-protection-azure-atp"></a>Advanced Threat Analytics (ATA) 移至 Azure 進階威脅防護 (Azure ATP) 
 
 
 您可以使用本指南將現有的 ATA 安裝移至 Azure 進階威脅防護 (Azure ATP) 服務。 本指南會說明 Azure ATP 必要條件和需求，並詳細說明如何規劃和完成移動。 其中還包含一些驗證步驟和祕訣，可在安裝後利用運用 Azure ATP 的最新威脅保護與安全性解決方案。 
 
-若要深入了解 ATA 與 Azure ATP 之間的差異，請參閱 [Azure ATP 常見問題集] (https://docs.microsoft.com/en-us/azure-advanced-threat-protection/atp-technical-faq#what-is-azure-atp) 。
+若要深入了解 ATA 與 Azure ATP 之間的差異，請參閱 [Azure ATP 常見問題集] (https://docs.microsoft.com/azure-advanced-threat-protection/atp-technical-faq#what-is-azure-atp) 。
 
 在本指南中，您將會： 
 
@@ -39,7 +39,7 @@ ms.locfileid: "72690241"
 >[!NOTE]
 > 任何 ATA 版本都可以從 ATA 移至 Azure ATP。 不過，由於資料無法從 ATA 移至 Azure ATP，因此建議您要保留進行中調查所需的 ATA 中心資料與警示，直到所有的 ATA 警示皆已關閉或已補救為止。 
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 - 至少需要含有一個全域管理員/安全性系統管理員的 Azure Active Directory 租用戶，才能建立 Azure ATP 執行個體。 每個 Azure ATP 執行個體都支援多 Active Directory 樹系邊界，以及 Windows 2003 和更新版本的樹系功能等級 (FFL)。
 

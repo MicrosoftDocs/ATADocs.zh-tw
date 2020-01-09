@@ -12,12 +12,12 @@ metadata:
   author: mlottner
   ms.author: mlottner
   ms.date: 09/23/2019
-  ms.openlocfilehash: a379e4880203b1fc41d7a9b8dcda6cf020324513
-  ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+  ms.openlocfilehash: daa1a4525e598b5d1ac5f9fd220eca4b249e30df
+  ms.sourcegitcommit: a7e3fdd7bf0f1d8f269cdbfe3931c937a436392b
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "71721079"
+  ms.lasthandoff: 01/05/2020
+  ms.locfileid: "75663897"
 landingContent:
 - title: 關於 Azure 進階威脅防護 (Azure ATP)
   linkLists:

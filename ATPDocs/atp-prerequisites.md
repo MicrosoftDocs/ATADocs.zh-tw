@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7c1dfa8cfda0bb6fb39770a58a7cc1b54dbc2298
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: ffafa24c4c20f52947b4f2d0317ea81f51789010
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73618438"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544369"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -63,7 +63,7 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 
 - 選擇性的 **Honeytoken**：沒有任何網路活動之使用者的使用者帳戶。 此帳戶設定為 Azure ATP Honeytoken 使用者。 如需使用 Honeytoken 的詳細資訊，請參閱[設定排除專案和 Honeytoken 使用者](install-atp-step7.md)。
 
-- 選擇性：在部署獨立感應器時，必須將 Windows 事件 4776、4732、4733、4728、4729、4756、4757 與 7045 和 8004 轉送給 Azure ATP，以在對敏感性群組與可疑服務建立偵測能力之外進一步增強 Azure ATP 驗證型偵測能力。  Azure ATP 感應器自動支援這些事件。 在 Azure ATP 獨立感應器中，這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
+- 選用：在部署獨立感應器時，必須將 Windows 事件 4776、4732、4733、4728、4729、4756、4757 與 7045 和 8004 轉送給 Azure ATP，以在對敏感性群組與可疑服務建立偵測能力之外進一步增強 Azure ATP 驗證型偵測能力。  Azure ATP 感應器自動支援這些事件。 在 Azure ATP 獨立感應器中，這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
 
 ## <a name="azure-atp-portal-requirements"></a>Azure ATP 入口網站需求
 您可透過瀏覽器來存取 Azure ATP 入口網站，其支援下列瀏覽器和設定︰
@@ -115,7 +115,7 @@ Azure ATP 感應器在網域控制站上需要安裝至少 2 個核心和 6 GB �
 
 Azure ATP 感應器可以部署在各種負載和大小的網域控制站上，依進出網域控制站的網路流量，以及安裝的資源數量而定。
 
-針對 Windows 作業系統 2008 R2 與 2012，[多處理器群組](https://docs.microsoft.com/windows/win32/procthread/processor-groups)模式中不支援 Azure ATP 感應器。 如需有關多處理器群組模式的詳細資訊，請參閱[疑難排解](troubleshooting-atp-known-issues.md##multi-processor-group-mode)。 
+針對 Windows 作業系統 2008 R2 與 2012，[多處理器群組](https://docs.microsoft.com/windows/win32/procthread/processor-groups)模式中不支援 Azure ATP 感應器。 如需有關多處理器群組模式的詳細資訊，請參閱[疑難排解](troubleshooting-atp-known-issues.md#multi-processor-group-mode)。 
 
 >[!NOTE] 
 > 作為虛擬機器執行時，將不支援動態記憶體或任何其他記憶體佔用功能。
@@ -149,7 +149,7 @@ Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的�
 |
 
 ### <a name="windows-event-logs"></a>Windows 事件記錄檔
-Azure ATP 偵測仰賴下列特定 Windows 事件記錄檔，這些記錄檔可由感應器從您的網域控制站剖析。4776、4732、4733、4728、4729、4756、4757、7045 與 8004。 若要正確稽核事件並將其包含在 Windows 事件記錄檔中，網域控制站需要精確的進階稽核原則設定。 如需有關設定正確原則的詳細資訊，請參閱[進階稽核原則檢查](atp-advanced-audit-policy.md)。 若要確定已依服務所需[稽核 Windows 事件 8004](configure-windows-event-collection.md##ntlm-authentication-using-windows-event-8004)，請檢閱您的 [NTLM 稽核設定](https://blogs.technet.microsoft.com/askds/2009/10/08/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7/) \(英文\)。  
+Azure ATP 偵測仰賴下列特定 Windows 事件記錄檔，這些記錄檔可由感應器從您的網域控制站剖析。4776、4732、4733、4728、4729、4756、4757、7045 與 8004。 若要正確稽核事件並將其包含在 Windows 事件記錄檔中，網域控制站需要精確的進階稽核原則設定。 如需有關設定正確原則的詳細資訊，請參閱[進階稽核原則檢查](atp-advanced-audit-policy.md)。 若要確定已依服務所需[稽核 Windows 事件 8004](configure-windows-event-collection.md#ntlm-authentication-using-windows-event-8004)，請檢閱您的 [NTLM 稽核設定](https://blogs.technet.microsoft.com/askds/2009/10/08/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7/) \(英文\)。  
 
 
 > [!NOTE]

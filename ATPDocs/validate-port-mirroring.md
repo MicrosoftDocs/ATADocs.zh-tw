@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 0a56cf27-9eaa-4ad0-ae6c-9d0484c69094
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d3eb36b75e9500920bdaea70864839a5de7e3de1
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 7dd8b77a3952c3de35ff8c1f2b2eebf4cc4219db
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196422"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543917"
 ---
 # <a name="validate-port-mirroring"></a>驗證連接埠鏡像
 > [!NOTE] 
@@ -26,7 +26,8 @@ ms.locfileid: "65196422"
 下列步驟會引導您逐步完成驗證已正確設定連接埠鏡像的程序。 若要讓 Azure ATP 正常運作，Azure ATP 獨立感應器必須能夠看到網域控制站之間的流量。 Azure ATP 所使用的主要資料來源，是針對您網域控制站之雙向網路流量的深度封包檢查。 若要讓 Azure ATP 查看網路流量，必須設定連接埠鏡像。 連接埠鏡像會將流量從一個連接埠 (來源連接埠) 複製到另一個連接埠 (目的地連接埠)。
 
 ## <a name="validate-port-mirroring-using-net-mon"></a>使用 Net Mon 驗證連接埠鏡像
-1.  在您想要驗證的 ATP 獨立感應器上安裝 [Microsoft 網路監視器 3.4](http://www.microsoft.com/download/details.aspx?id=4865) \(英文\)。
+
+1.  在您想要驗證的 ATP 獨立感應器上安裝 [Microsoft 網路監視器 3.4](https://www.microsoft.com/download/details.aspx?id=4865) \(英文\)。
 
     > [!IMPORTANT]
     > 如果您選擇安裝 Wireshark 以驗證連接埠鏡像，請在驗證之後重新啟動 Azure ATP 獨立感應器服務。

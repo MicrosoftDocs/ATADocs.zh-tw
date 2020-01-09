@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 27b139e5-12b9-4953-8f53-eb58e8ce0038
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3ef4f8061970c1d69b9f25479d762bb4c423a4fd
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 21b7fda6747fdb2c2590afe148a5f883e22410a5
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196968"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544292"
 ---
 # <a name="whats-new-in-ata-version-16"></a>ATA 1.6 版的新功能
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。
@@ -121,7 +121,7 @@ ATA 1.6 執行 ATA 資料庫所需的儲存空間大幅減少，現在只需要�
     1.  MongoDB
     2.  Microsoft Advanced Threat Analytics 中心
 7.  檢閱記錄以驗證產品正在執行，而且未發生錯誤。
-8.  [下載](http://aka.ms/ataremoveduplicateprofiles "下載")"removeduplicateprofiles.exe" 工具，並將它複製到主要安裝路徑（%ProgramFiles%\Microsoft Advanced 威脅 Analytics\Center）
+8.  [下載](https://aka.ms/ataremoveduplicateprofiles "下載")"removeduplicateprofiles.exe" 工具，並將它複製到主要安裝路徑（%ProgramFiles%\Microsoft Advanced 威脅 Analytics\Center）
 9.  從提升權限的命令提示字元執行 `RemoveDuplicateProfiles.exe`，並等候其成功完成。
 10. 從這裡：…\Microsoft Advanced Threat Analytics\Center\MongoDB\bin 目錄：**Mongo ATA**，輸入下列命令：
 

@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e2e3b35373bdfaaa0d13c1c175deea12bf24a34d
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: a615574ba0f74af8a01806bfffa44f343bba1151
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65195466"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543566"
 ---
 # <a name="azure-atp-role-groups"></a>Azure ATP 角色群組
 
@@ -69,7 +69,7 @@ Azure ATP 提供三種類型的安全性群組：Azure ATP (「執行個體名�
 Azure ATP 使用 Azure AD 安全性群組作為角色群組的基礎。 您可以從 [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/All%20groups](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/All%20groups) 管理角色群組。 只可以將 Azure AD 使用者加入或移除自安全性群組。 
 
 ## <a name="see-also"></a>另請參閱
-- [ATP 調整大小工具](http://aka.ms/aatpsizingtool)
+- [ATP 調整大小工具](https://aka.ms/aatpsizingtool)
 - [ATP 架構](atp-architecture.md)
 - [安裝 Azure ATP](install-atp-step1.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

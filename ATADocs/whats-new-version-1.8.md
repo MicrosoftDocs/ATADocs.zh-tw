@@ -12,16 +12,16 @@ ms.technology: ''
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 1f623642813c0474ddf3c7d050a91aebbd1b40b7
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: deb170191a649c72eaae3d26ba34bea6358b27b0
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196899"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544279"
 ---
 # <a name="whats-new-in-ata-version-18"></a>ATA 1.8 版的新功能
 
-[從下載中心下載](https://www.microsoft.com/download/details.aspx?id=55536) \(英文\) 最新的 ATA 更新版本，或者從[評估中心](http://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)下載完整版本。
+[從下載中心下載](https://www.microsoft.com/download/details.aspx?id=55536) \(英文\) 最新的 ATA 更新版本，或者從[評估中心](https://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)下載完整版本。
 
 這些版本資訊提供此版 Advanced Threat Analytics 中更新、新功能、錯誤修正和已知問題的相關資訊。
 

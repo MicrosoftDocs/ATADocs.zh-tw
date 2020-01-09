@@ -7,12 +7,12 @@ author: mlottner
 ms.author: mlottner
 ms.date: 02/28/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: b3ea5b1d2f33f9647fb9dea8927a80aeae76ee03
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 800b72e0bb06a95e10a0c52885d78ebe276e00b7
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "59745583"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543817"
 ---
 # <a name="tutorial-domain-dominance-playbook"></a>教學課程：網域支配劇本
 
@@ -31,7 +31,7 @@ ms.locfileid: "59745583"
 > * 黃金票證
 
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 1. [一個已完成的 ATP 安全性警示實驗室](atp-playbook-setup-lab.md) 
      - 建議您儘可能完全依照實驗室設定指示進行操作。 您的實驗室與建議的實驗室設定越相似，就越容易依照 Azure ATP 測試程序進行操作。
@@ -239,7 +239,7 @@ Azure ATP 會使用多種方法偵測這種類型的可疑攻擊。 在這個確
 ![偵測到的黃金票證](media/playbook-dominance-golden_detected.png)
 
 > [!Important]
->提醒。 只要攻擊者收集到的 KRBTGT 在環境中仍然有效，使用它產生的票證也會維持有效。 在此情況下，攻擊者可達到持續性的網域支配，直到 [KRBTGT 重設兩次](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/ad-forest-recovery-resetting-the-krbtgt-password)為止。
+>提醒。 只要攻擊者收集到的 KRBTGT 在環境中仍然有效，使用它產生的票證也會維持有效。 在此情況下，攻擊者可達到持續性的網域支配，直到 [KRBTGT 重設兩次](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/ad-forest-recovery-resetting-the-krbtgt-password)為止。
 
 ## <a name="next-steps"></a>後續步驟
 

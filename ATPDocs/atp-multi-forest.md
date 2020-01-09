@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 00718998299590f658f8cdd6c7e2fc21c553210c
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 590977f36cae014d60ada6abe160b012bc7ebc35
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65195574"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543871"
 ---
 # <a name="azure-advanced-threat-protection-multi-forest-support"></a>Azure 進階威脅防護多重樹系支援
 
@@ -79,7 +79,7 @@ Azure ATP 支援擁有多個樹系的組織，讓您可以輕鬆地監視活動�
 
 
 ## <a name="see-also"></a>另請參閱
-- [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool) \(英文\)
+- [Azure ATP 調整大小工具](https://aka.ms/aatpsizingtool) \(英文\)
 - [Azure ATP 架構](atp-architecture.md)
 - [安裝 Azure ATP](install-atp-step1.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

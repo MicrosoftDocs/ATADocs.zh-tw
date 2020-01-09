@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 34d75bfd53f9c119e685390bd933b6e642c45b6c
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 5ef3edfd830e7a88808dbb8ab895fde7206e9f55
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71997458"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544143"
 ---
 # <a name="configure-windows-event-collection"></a>設定 Windows 事件集合
 
@@ -44,7 +44,7 @@ ms.locfileid: "71997458"
 
 
 ## <a name="see-also"></a>另請參閱
-- [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool) \(英文\)
+- [Azure ATP 調整大小工具](https://aka.ms/aatpsizingtool) \(英文\)
 - [Azure ATP SIEM 記錄檔參考](cef-format-sa.md)
 - [Azure ATP 必要條件](atp-prerequisites.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

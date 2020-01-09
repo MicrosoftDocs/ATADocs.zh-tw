@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 1ad5e923-9bbd-4f56-839a-b11a9f387d4b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2177a4c5e7281bd87f87009307b675b9d649c295
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: eeb9886c572d7c87038ce537b7e280d189255641
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72776622"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544082"
 ---
 # <a name="configure-detection-exclusions-and-honeytoken-accounts"></a>設定偵測排除範圍和 Honeytoken 帳戶
 
@@ -55,7 +55,7 @@ Azure ATP 掃描會立即開始。 某些偵測 (例如[敏感性群組的可疑
 
 
 ## <a name="see-also"></a>另請參閱
-- [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool) \(英文\)
+- [Azure ATP 調整大小工具](https://aka.ms/aatpsizingtool) \(英文\)
 - [設定事件收集](configure-event-collection.md)
 - [Azure ATP 必要條件](atp-prerequisites.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

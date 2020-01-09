@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 0d9d2a1d-6c76-4909-b6f9-58523df16d4f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ba750ca2984d3060f2bef3d2816f5d86fd8f1c2e
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 21566ec63865dc233229a0dabecbe83ce75104df
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65193541"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544088"
 ---
 # <a name="integrate-vpn"></a>整合 VPN
 
@@ -30,7 +30,7 @@ Azure ATP 會透過接聽轉寄到 Azure ATP 感應器的 RADIUS 計量事件來
 -   Check Point
 -   Cisco ASA
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 若要啟用 VPN 整合，請確定已設定了下列參數：
 
@@ -77,7 +77,7 @@ Azure ATP 會收集 VPN 資料，這些資料有助於分析電腦連線到網�
 
 
 ## <a name="see-also"></a>另請參閱
-- [Azure ATP 調整大小工具](http://aka.ms/aatpsizingtool) \(英文\)
+- [Azure ATP 調整大小工具](https://aka.ms/aatpsizingtool) \(英文\)
 - [設定事件收集](configure-event-collection.md)
 - [Azure ATP 必要條件](atp-prerequisites.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

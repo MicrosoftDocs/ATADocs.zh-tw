@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 44d7c899-816c-4f7f-91d3-84a09d291a24
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 11d7ace698d7f2f1df376af0e26afeb6b9e1f960
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 2ee7687feac6e8b703a2e17b3b60418e96dcee71
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65195777"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544340"
 ---
 # <a name="working-with-suspicious-activities"></a>處理可疑活動
 
@@ -100,6 +100,6 @@ ms.locfileid: "65195777"
 
 
 ## <a name="see-also"></a>另請參閱
-- [ATA 可疑活動腳本](http://aka.ms/ataplaybook)
+- [ATA 可疑活動腳本](https://aka.ms/ataplaybook)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [修改 ATA 組態](modifying-ata-center-configuration.md)

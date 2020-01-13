@@ -2,8 +2,8 @@
 title: 規劃 Advanced Threat Analytics 部署 | Microsoft Docs
 description: 協助您規劃部署並決定支援您的網路需要多少 ATA 伺服器
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 10/16/2019
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.prod: advanced-threat-analytics
 ms.assetid: 1b5b24ff-0df8-4660-b4f8-64d68cc72f65
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 4725be4c0254225d6ca92e11d62c283948ccfc46
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 0ec953c4311c12a44686cbbf4f4394492f74dd7f
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543059"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75905496"
 ---
 # <a name="ata-capacity-planning"></a>ATA 容量規劃
 

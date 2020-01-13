@@ -9,15 +9,15 @@ metadata:
   ms.subservice: ms.subservice
   ms.topic: landing-page
   ms.collection: M365-security-compliance
-  author: mlottner
-  ms.author: mlottner
+  author: shsagir
+  ms.author: shsagir
   ms.date: 10/01/2019
-  ms.openlocfilehash: 85fdb8c87afd48ce651983e4b52f3849b64d4454
-  ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+  ms.openlocfilehash: 6a56f5a1c908c050f1628ce0bfd76f95ad23ca5a
+  ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "71721085"
+  ms.lasthandoff: 01/12/2020
+  ms.locfileid: "75905396"
 landingContent:
 - title: 關於先進的威脅分析
   linkLists:

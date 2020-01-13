@@ -2,8 +2,8 @@
 title: 匯出和匯入 Advanced Threat Analytics 組態 | Microsoft Docs
 description: 如何匯出和匯入 ATA 組態。
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 9/04/2018
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 1d27dba8-fb30-4cce-a68a-f0b1df02b977
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 06c225b26c43d48aeba6c032434af08231106dad
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 522c4e197a52c6ccbd40d7ab1e8dea1764bce275
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196466"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75905412"
 ---
 # <a name="export-and-import-the-ata-configuration"></a>匯出和匯入 ATA 組態
 

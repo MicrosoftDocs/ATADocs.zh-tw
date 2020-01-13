@@ -2,8 +2,8 @@
 title: 以無訊息方式安裝 Advanced 威脅分析 |Microsoft Docs
 description: 本文說明如何以無訊息方式安裝 ATA。
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 10/15/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 51234265f30cb71c0421a9aa80a9288fe7a77b2e
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: a757371dd23dd7692b6ce09fd27c8711d43ce306
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72442150"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75905645"
 ---
 # <a name="ata-silent-installation"></a>ATA 無訊息安裝
 
@@ -25,7 +25,7 @@ ms.locfileid: "72442150"
 
 本文提供以無訊息方式安裝 ATA 的指示。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 ATA 版本1.9 需要安裝 Microsoft .NET Framework 4.6.1。 
 

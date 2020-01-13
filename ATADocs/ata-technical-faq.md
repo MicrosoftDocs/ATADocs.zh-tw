@@ -2,8 +2,8 @@
 title: Advanced Threat Analytics 常見問題集 | Microsoft Docs
 description: 提供關於 ATA 的常見問題清單以及相關解答
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 03/07/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 96087f0124825f1b6feb641085317ee89ac3e6ee
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 9c8a16cbd49f653425b27fe50d18d7de155dab12
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196611"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75905701"
 ---
 # <a name="ata-frequently-asked-questions"></a>ATA 常見問題集
 

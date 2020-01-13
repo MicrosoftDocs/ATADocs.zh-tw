@@ -2,8 +2,8 @@
 title: 管理 Advanced Threat Analytics 系統產生記錄 | Microsoft Docs
 description: 描述 ATA 所收集的資料，並提供關閉資料收集的步驟。
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 8/19/2018
 ms.topic: article
@@ -11,12 +11,12 @@ ms.prod: advanced-threat-analytics
 ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d39fef746d27871a5c45877edb33d64c2a3e4f19
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: ea4dcdeaedf4ba0a8b907acdc727a428a72aaa02
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65195911"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908006"
 ---
 # <a name="manage-system-generated-logs"></a>管理系統產生的記錄
 
@@ -63,7 +63,7 @@ ms.locfileid: "65195911"
 
     -   可疑的活動識別碼
 
-    -   狀態
+    -   Status
 
     -   開始與結束時間
 
@@ -77,7 +77,7 @@ ms.locfileid: "65195911"
 
     -   健全狀況問題識別碼
 
-    -   狀態
+    -   Status
 
     -   開始與結束時間
 

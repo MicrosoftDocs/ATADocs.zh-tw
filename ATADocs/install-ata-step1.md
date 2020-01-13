@@ -2,8 +2,8 @@
 title: 安裝 Advanced Threat Analytics - 步驟 1 | Microsoft Docs
 description: 安裝 ATA 的第一步驟是下載並安裝 ATA 中心到您所選的伺服器。
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 03/07/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 2a665450d68dd814931a3153a1b3cde4411cf20b
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 61f210562cb1af4ed6a28d1f0ee0bf61f49bedc4
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543187"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907893"
 ---
 # <a name="install-ata---step-1"></a>安裝 ATA - 步驟 1
 

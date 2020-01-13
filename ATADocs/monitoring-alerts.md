@@ -2,8 +2,8 @@
 title: 了解 ATA 監視警示 | Microsoft Docs
 description: 描述如何使用 ATA 記錄檔來疑難排解問題
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 02/20/2019
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b04fb8a4-b366-4b55-9d4c-6f054fa58a90
 ms.reviewer: elofek
 ms.suite: ems
-ms.openlocfilehash: 319d6d4eb24a6d3b373c6c4cb5c534ee98e9bd55
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 2185c5e01631a33b8dcc0848c97f9f9ed7bf7878
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65195802"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908030"
 ---
 # <a name="understanding-ata-monitoring-alerts"></a>了解 ATA 監視警示
 
@@ -48,7 +48,7 @@ ATA 健康狀態中心會在 ATA 部署發生問題時，引發監視警示來�
 ### <a name="center-certificate-is-about-to-expire"></a>中心憑證即將過期
 |警示|Description|解決方法|嚴重性|
 |----|----|----|----|
-|ATA 中心憑證將會在不到 3 週內過期。|憑證過期後：從 ATA 閘道連線到 ATA 中心將會失敗。 ATA 中心處理序將會損毀，而且所有 ATA 功能將會停止。|[更換 ATA 中心憑證](modifying-ata-center-configuration.md)|中|
+|ATA 中心憑證將會在不到 3 週內過期。|憑證過期後：從 ATA 閘道連線到 ATA 中心將會失敗。 ATA 中心處理序將會損毀，而且所有 ATA 功能將會停止。|[更換 ATA 中心憑證](modifying-ata-center-configuration.md)|Medium|
 ### <a name="ata-center-certificate-expired"></a>ATA 中心憑證已過期
 |警示|Description|解決方法|嚴重性|
 |----|----|----|----|
@@ -57,7 +57,7 @@ ATA 健康狀態中心會在 ATA 部署發生問題時，引發監視警示來�
 ### <a name="read-only-user-password-to-expire-shortly"></a>唯讀使用者密碼即將過期
 |警示|Description|解決方法|嚴重性|
 |----|----|----|----|
-|用來對 Active Directory 執行實體解析的唯讀使用者密碼即將在不到 30 天內過期。|如果此使用者的密碼過期，所有 ATA 閘道停止執行，而且不會收集任何新資料。|[變更網域連線密碼](modifying-ata-config-dcpassword.md)，然後更新 ATA 主控台中的密碼。|中|
+|用來對 Active Directory 執行實體解析的唯讀使用者密碼即將在不到 30 天內過期。|如果此使用者的密碼過期，所有 ATA 閘道停止執行，而且不會收集任何新資料。|[變更網域連線密碼](modifying-ata-config-dcpassword.md)，然後更新 ATA 主控台中的密碼。|Medium|
 ### <a name="read-only-user-password-expired"></a>唯讀使用者密碼已過期
 |警示|Description|解決方法|嚴重性|
 |----|----|----|----|
@@ -65,7 +65,7 @@ ATA 健康狀態中心會在 ATA 部署發生問題時，引發監視警示來�
 ### <a name="gateway-certificate-about-to-expire"></a>閘道憑證即將過期
 |警示|Description|解決方法|嚴重性|
 |----|----|----|----|
-|ATA 閘道憑證將會在不到 3 週內過期。|從特定 ATA 閘道連線到 ATA 中心會失敗。 不會從該 ATA 閘道傳送任何資料。|ATA 閘道憑證應該會自動更新。 閱讀 ATA 閘道和 ATA 中心記錄檔，以了解為何該憑證未自動更新。|中|
+|ATA 閘道憑證將會在不到 3 週內過期。|從特定 ATA 閘道連線到 ATA 中心會失敗。 不會從該 ATA 閘道傳送任何資料。|ATA 閘道憑證應該會自動更新。 閱讀 ATA 閘道和 ATA 中心記錄檔，以了解為何該憑證未自動更新。|Medium|
 
 ### <a name="gateway-certificate-expired"></a>閘道憑證已過期
 |警示|Description|解決方法|嚴重性|
@@ -78,31 +78,31 @@ ATA 健康狀態中心會在 ATA 部署發生問題時，引發監視警示來�
 ### <a name="allsome-of-the-capture-network-adapters-on-a-gateway-are-not-available"></a>閘道上的所有/部分擷取網路介面卡無法使用
 |警示|Description|解決方法|嚴重性|
 |----|----|----|----|
-|ATA 閘道上所有/部分選取的擷取網路介面卡已停用或中斷連線。|ATA 閘道不會再擷取部分/所有網域控制站的網路流量。 這會影響偵測與這些網域控制站相關之可疑活動的能力。|確定啟用並連線到 ATA 閘道上選取的擷取網路介面卡。|中|
+|ATA 閘道上所有/部分選取的擷取網路介面卡已停用或中斷連線。|ATA 閘道不會再擷取部分/所有網域控制站的網路流量。 這會影響偵測與這些網域控制站相關之可疑活動的能力。|確定啟用並連線到 ATA 閘道上選取的擷取網路介面卡。|Medium|
 ### <a name="some-domain-controllers-are-unreachable-by-a-gateway"></a>閘道無法連線到部分網域控制站
 |警示|Description|解決方法|嚴重性|
 |----|----|----|----|
-|由於設定之部分網域控制站的連線問題，ATA 閘道的功能有限。|當 ATA 閘道無法查詢部分網域控制站時，傳遞雜湊偵測可能較不正確。|確定網域控制站啟動並執行，而且此 ATA 閘道可以開啟其 LDAP 連線。|中|
+|由於設定之部分網域控制站的連線問題，ATA 閘道的功能有限。|當 ATA 閘道無法查詢部分網域控制站時，傳遞雜湊偵測可能較不正確。|確定網域控制站啟動並執行，而且此 ATA 閘道可以開啟其 LDAP 連線。|Medium|
 ### <a name="all-domain-controllers-are-unreachable-by-a-gateway"></a>閘道無法連線到任何網域控制站
 |警示|Description|解決方法|嚴重性|
 |----|----|----|----|
-|由於設定之所有網域控制站的連線問題，ATA 閘道目前離線。|這會影響 ATA 偵測與此 ATA 閘道所監視的網域控制站相關之可疑活動的能力。| 確定網域控制站啟動並執行，而且此 ATA 閘道可以開啟其 LDAP 連線。|中|
+|由於設定之所有網域控制站的連線問題，ATA 閘道目前離線。|這會影響 ATA 偵測與此 ATA 閘道所監視的網域控制站相關之可疑活動的能力。| 確定網域控制站啟動並執行，而且此 ATA 閘道可以開啟其 LDAP 連線。|Medium|
 ### <a name="gateway-stopped-communicating"></a>閘道已停止通訊
 |警示|Description|解決方法|嚴重性|
 |----|----|----|----|
-|沒有來自 ATA 閘道的通訊。 此警示的預設時間範圍為 5 分鐘。|ATA 閘道上的網路介面卡不會再擷取網路流量。 由於網路流量無法到達 ATA 中心，因此這會影響 ATA 偵測可疑活動的能力。|檢查用於 ATA 閘道與 ATA 中心服務間通訊的連接埠未遭到任何路由器或防火牆封鎖。|中|
+|沒有來自 ATA 閘道的通訊。 此警示的預設時間範圍為 5 分鐘。|ATA 閘道上的網路介面卡不會再擷取網路流量。 由於網路流量無法到達 ATA 中心，因此這會影響 ATA 偵測可疑活動的能力。|檢查用於 ATA 閘道與 ATA 中心服務間通訊的連接埠未遭到任何路由器或防火牆封鎖。|Medium|
 ### <a name="no-traffic-received-from-domain-controller"></a>未從網域控制站收到任何流量
 |警示|Description|解決方法|嚴重性|
 |----|----|----|----|
-|未從網域控制站收到任何經由此 ATA 閘道的流量。|這可能表示從網域控制站到 ATA 閘道的連接埠鏡像尚未設定或無法運作。|確認[您網路裝置上的連接埠鏡像已正確設定](configure-port-mirroring.md)。<br></br>在 ATA 閘道擷取 NIC 上，停用 [進階設定] 中的這些功能：<br></br>接收區段聯合 (IPv4)<br></br>接收區段聯合 (IPv6)|中|
+|未從網域控制站收到任何經由此 ATA 閘道的流量。|這可能表示從網域控制站到 ATA 閘道的連接埠鏡像尚未設定或無法運作。|確認[您網路裝置上的連接埠鏡像已正確設定](configure-port-mirroring.md)。<br></br>在 ATA 閘道擷取 NIC 上，停用 [進階設定] 中的這些功能：<br></br>接收區段聯合 (IPv4)<br></br>接收區段聯合 (IPv6)|Medium|
 ### <a name="some-forwarded-events-are-not-being-analyzed"></a>某些轉送的事件不會被分析
 |警示|Description|解決方法|嚴重性|
 |----|----|----|----|
-|ATA 閘道正在接收的事件超出其處理能力。|某些轉送的事件不會被分析，這可能會影響偵測來自此 ATA 閘道所監視的網域控制站之可疑活動的能力。|確認只將必要的事件轉送到 ATA 閘道，或嘗試將某些事件轉送到另一個 ATA 閘道。|中|
+|ATA 閘道正在接收的事件超出其處理能力。|某些轉送的事件不會被分析，這可能會影響偵測來自此 ATA 閘道所監視的網域控制站之可疑活動的能力。|確認只將必要的事件轉送到 ATA 閘道，或嘗試將某些事件轉送到另一個 ATA 閘道。|Medium|
 ### <a name="some-network-traffic-is-not-being-analyzed"></a>某些網路流量不會被分析
 |警示|Description|解決方法|嚴重性|
 |----|----|----|----|
-|ATA 閘道正在接收的網路流量超出其處理能力。|某些網路流量不會被分析，這可能會影響偵測來自此 ATA 閘道所監視的網域控制站之可疑活動的能力。|視需要考慮[新增額外的處理器和記憶體](ata-capacity-planning.md)。 如果這是獨立 ATA 閘道，請減少受監視的網域控制站數目。<br></br>如果在 VMware 虛擬機器上使用網域控制站，可能也會發生此情況。 若要避免這些警示，可檢查是否已將虛擬機器中的下列設定設為 [0] 或 [已停用]：<br></br>- TsoEnable<br></br>- LargeSendOffload(IPv4)<br></br>- IPv4 TSO Offload<br></br>此外也請考慮停用 [IPv4 Giant TSO Offload]。 如需詳細資訊，請參閱 VMware 文件。|中|
+|ATA 閘道正在接收的網路流量超出其處理能力。|某些網路流量不會被分析，這可能會影響偵測來自此 ATA 閘道所監視的網域控制站之可疑活動的能力。|視需要考慮[新增額外的處理器和記憶體](ata-capacity-planning.md)。 如果這是獨立 ATA 閘道，請減少受監視的網域控制站數目。<br></br>如果在 VMware 虛擬機器上使用網域控制站，可能也會發生此情況。 若要避免這些警示，可檢查是否已將虛擬機器中的下列設定設為 [0] 或 [已停用]：<br></br>- TsoEnable<br></br>- LargeSendOffload(IPv4)<br></br>- IPv4 TSO Offload<br></br>此外也請考慮停用 [IPv4 Giant TSO Offload]。 如需詳細資訊，請參閱 VMware 文件。|Medium|
 
 ### <a name="gateway-version-outdated"></a>閘道版本已過期
 |警示|Description|解決方法|嚴重性|
@@ -116,7 +116,7 @@ ATA 健康狀態中心會在 ATA 部署發生問題時，引發監視警示來�
 ### <a name="lightweight--gateway-reached-a-memory-resource-limit"></a>輕量型閘道已達到記憶體資源限制
 |警示|Description|解決方法|嚴重性|
 |----|----|----|----|
-|ATA 輕量型閘道已自行停止並將自動重新啟動，以在記憶體不足的情況下保護網域控制站。|ATA 輕量型閘道會對其本身強制執行記憶體限制，以防止網域控制站遇到資源限制。 當網域控制站上的記憶體使用量偏高時，就會發生此情況。 來自此網域控制站的資料只會受到部分監視。|增加網域控制站上的記憶體數量 (RAM)，或在此網站上新增更多網域控制站，以更佳分散此網域控制站的負載。|中|
+|ATA 輕量型閘道已自行停止並將自動重新啟動，以在記憶體不足的情況下保護網域控制站。|ATA 輕量型閘道會對其本身強制執行記憶體限制，以防止網域控制站遇到資源限制。 當網域控制站上的記憶體使用量偏高時，就會發生此情況。 來自此網域控制站的資料只會受到部分監視。|增加網域控制站上的記憶體數量 (RAM)，或在此網站上新增更多網域控制站，以更佳分散此網域控制站的負載。|Medium|
 
 
 ## <a name="see-also"></a>另請參閱

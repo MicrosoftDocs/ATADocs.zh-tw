@@ -2,8 +2,8 @@
 title: 以效能計數器針對 Advanced Threat Analytics 進行疑難排解 | Microsoft Docs
 description: 描述如何使用效能計數器疑難排解 ATA 相關問題
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 9/25/2018
 ms.topic: conceptual
@@ -12,19 +12,19 @@ ms.technology: ''
 ms.assetid: df162a62-f273-4465-9887-94271f5000d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7d7dedf5e6f24c322cd81ed8a3ecb23f96bdc43c
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 495813678b18b71af45240e18c40fdab5a5154a3
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65195965"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908229"
 ---
 # <a name="troubleshooting-ata-using-the-performance-counters"></a>使用效能計數器疑難排解 ATA
 
 *適用於：Advanced Threat Analytics 1.9 版*
 
 ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元件會循序處理資料，因此當發生問題時，會導致元件中某處的流量部分中斷。 若要修正此問題，您必須找出發生問題的元件，並在連鎖的源頭修正問題。 使用在效能計數器中找到的資料，來了解每個元件的運作情況。
-請參閱 [ATA 架構](ata-architecture.md)以了解內部 ATA 元件的流程。
+請參閱 [ATA 架構](ata-architecture.md)以瞭解內部 ATA 元件的流程。
 
 **ATA 元件程序**：
 

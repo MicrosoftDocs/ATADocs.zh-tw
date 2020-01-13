@@ -2,8 +2,8 @@
 title: Advanced Threat Analytics 架構 | Microsoft Docs
 description: 描述 Microsoft Advanced Threat Analytics 的架構 (ATA)
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 09/08/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f953a163be460184c7b585e71cd973bbdcc71e6f
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 179cf31a6f9c8c62670ea96d671f209712325f56
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543018"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75905197"
 ---
 # <a name="ata-architecture"></a>ATA 架構
 
@@ -164,7 +164,7 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 
 雖然連接埠鏡像會將所有網域控制站的網路流量都鏡像處理到 ATA 閘道，但是有少部分的流量會傳送與壓縮至 ATA 中心進行分析。
 
-您的網域控制站和 ATA 閘道可以為實體或虛擬，如需詳細資訊，請參閱 [Configure port mirroring](configure-port-mirroring.md) (設定連接埠鏡像)。
+您的網域控制站和 ATA 閘道可以是實體或虛擬的，如需詳細資訊，請參閱[設定連接埠鏡像](configure-port-mirroring.md)。
 
 
 ### <a name="events"></a>事件

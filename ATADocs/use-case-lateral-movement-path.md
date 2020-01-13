@@ -2,8 +2,8 @@
 title: 使用 ATA 調查橫向移動路徑攻擊 |Microsoft Docs
 description: 本文說明如何使用 Advanced Threat Analytics (ATA) 偵測橫向移動路徑攻擊。
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 06/14/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 710f01bd-c878-4406-a7b2-ce13f98736ea
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 2f020838d182b99b1f5f42455330b2b0ce5aa88f
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 53c81575202bbccc9eacf5bb26c5fa624fb7e667
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "66500649"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908245"
 ---
 # <a name="investigate-lateral-movement-paths-with-ata"></a>使用 ATA 調查橫向移動路徑
 
@@ -51,7 +51,7 @@ ATA 可讓您在網路上採取防範動作，以防止攻擊者成功進行橫�
 
 現在您已知道有哪些敏感性帳戶處於風險中，便可以深入鑽研 ATA 以了解更多資訊並採取預防性措施。
 
-1. 若實體位於橫向移動路徑，請在 ATA 主控台中，搜尋新增至實體設定檔的橫向移動徽章 ![橫向圖示](./media/lateral-movement-icon.png) 或 ![路徑圖示](./media/paths-icon.png). 這會在過去兩天內有出現橫向移動路徑的情況下提供。
+1. 若實體位於橫向移動路徑，請在 ATA 主控台中，搜尋新增至實體設定檔的橫向移動徽章 ![橫向圖示](./media/lateral-movement-icon.png) 對話方塊中的 [動作] ![路徑圖示](./media/paths-icon.png). 這會在過去兩天內有出現橫向移動路徑的情況下提供。
 
 2. 在隨即開啟的使用者設定檔頁面中，按一下 [橫向移動路徑] 索引標籤。
 

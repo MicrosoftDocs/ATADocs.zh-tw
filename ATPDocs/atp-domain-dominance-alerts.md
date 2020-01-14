@@ -2,8 +2,8 @@
 title: Azure ATP 網域支配安全性警示 | Microsoft Docs
 d|Description: This article explains the Azure ATP alerts issued when attacks typically part of domain dominance phase efforts are detected against your organization.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 08/26/2019
 ms.topic: tutorial
@@ -12,16 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 0b3a1db5-0d43-49af-b356-7094cc85f0a5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1bfed94e29200a52eba6de8758e1241b14084264
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 6d8ebe9c02da763a3e84c8c8fd0730987f871eba
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70052399"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908488"
 ---
 # <a name="tutorial-domain-dominance-alerts"></a>教學課程：控制網域警訊  
 
-網路攻擊通常會針對任何可存取的實體進行，例如低權限的使用者，然後快速橫向移動，直到攻擊者得以存取有價值的資產。 敏感性帳戶、網域系統管理員或高度敏感性資料均為重要資產。 Azure ATP 會從整個攻擊狙殺鏈來源識別進階威脅，並將其分成下列幾個階段：
+網路攻擊通常會針對低權限使用者等所有可存取的實體啟動，然後快速橫向移動，直到攻擊者得以存取有價值的資產。 敏感性帳戶、網域系統管理員或高度敏感性資料均為重要資產。 Azure ATP 會從整個攻擊狙殺鏈來源識別進階威脅，並將其分成下列幾個階段：
 
 1. [偵察](atp-reconnaissance-alerts.md)
 2. [遭入侵的認證](atp-compromised-credentials-alerts.md)
@@ -29,7 +29,7 @@ ms.locfileid: "70052399"
 4. **網域支配**
 5. [Exfiltration](atp-exfiltration-alerts.md)
 
-若要深入了解如何了解所有 Azure ATP 安全性警示的結構和通用元件，請參閱[了解安全性警示](understanding-security-alerts.md)。
+若要深入了解如何了解結構和所有 Azure ATP 安全性警訊的一般元件，請參閱 [Understanding security alerts](understanding-security-alerts.md) (了解安全性警訊)。
 
 下列安全性警示有助於您找出並修復 Azure ATP 在網路中偵測到的**網域支配**階段可疑活動。 在本教學課程中，您將了解如何了解、分類、避免和修復下列攻擊：
 
@@ -314,7 +314,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
    - 檢查來源電腦上是否有此類型的應用程式。 
    - 檢查電腦角色。 <br>它們是否針對該工作提供這些應用程式類型？ 
 
-     如果以上其中一個問題的答案為**是**，則可能為 **T-BP** 活動。 檢查資源是否可以支援強式加密方法；如有可能，請實作更強的加密方法，並**關閉**安全性警示。
+     若上述任一問題的答案為**是**，則很可能是 **T-BP** 活動。 檢查資源是否可以支援強式加密方法；如有可能，請實作更強的加密方法，並**關閉**安全性警示。
 
 
 **了解漏洞的範圍**
@@ -447,7 +447,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 1. 包含來源電腦。 
     - 尋找執行攻擊的工具，並將它移除。
     - 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設他們的密碼，並啟用 MFA。
-    - 如果您已安裝 Windows Defender ATP - 請利用 **klist.exe 清除**來刪除與特定登入工作階段有關的所有票證，並防止相關票證在未來遭到誤用。
+    - 如果您已安裝 Windows Defender ATP – 請使用 **klist.exe 清除**刪除指定登入工作階段的所有票證，並防止日後再使用該票證。
 2. 包含此票證所存取的資源。
 3. 根據 [KRBTGT Account Password Reset Scripts now available for customers](https://cloudblogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)，變更 Kerberos 票證授權票證 (KRBTGT) 密碼兩次。 
    - 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效。 使此網域中的所有 Kerberos 票證失效，代表**所有**服務將會中斷，且在這些票證更新之前都不會運作，或在某些情況下重新啟動服務。 

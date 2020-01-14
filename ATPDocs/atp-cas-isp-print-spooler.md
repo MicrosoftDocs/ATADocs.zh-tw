@@ -2,8 +2,8 @@
 title: Azure 進階威脅防護列印多工緩衝處理器身分識別安全性狀態評估 | Microsoft Docs
 description: 本文提供 Azure ATP 列印多工緩衝處理器身分識別安全性狀態評估報告的總覽。
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 07/08/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 1a7d9525-8923-4dae-af51-02a68aa61644
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 73f876a047ed48526e26cd9b3758077331dca05d
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 24077c21a6709d357a0b5b570f0d083fcd21dea8
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74206251"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907912"
 ---
 # <a name="security-assessment-domain-controllers-with-print-spooler-service-available"></a>安全性評估：有可用列印多工緩衝處理器服務的網域控制站 
 

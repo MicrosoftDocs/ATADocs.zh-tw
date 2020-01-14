@@ -2,8 +2,8 @@
 title: 如何利用 Azure ATP 來調查使用者與電腦 | Microsoft Docs
 description: 描述如何使用 Azure 進階威脅防護 (ATP) 來調查使用者、實體、電腦或裝置執行的可疑活動
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 09/15/2019
 ms.topic: tutorial
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6144f9f35e8ee3b7cec4b7522fe03a6a3e8673b0
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: e4102f40c2440357798fa3d079d51380da0b2cde
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71004736"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75906303"
 ---
 # <a name="tutorial-investigate-an-entity"></a>教學課程：調查實體
 

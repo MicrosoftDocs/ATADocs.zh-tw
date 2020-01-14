@@ -2,8 +2,8 @@
 title: 使用 Azure 進階威脅防護入口網站中的使用者設定檔 | Microsoft Docs
 description: 描述如何從 Azure ATP 入口網站的使用者設定檔畫面調查使用者
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 09/15/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 17458706-79fb-4c23-aa42-66979164a45f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0bff9c9081951c234d2d0076d154a984898a0a31
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 789e185638bef59847c7ba78b3fbbf3c7f962850
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71004490"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75906711"
 ---
 # <a name="understanding-entity-profiles"></a>了解實體設定檔
 

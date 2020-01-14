@@ -2,20 +2,20 @@
 title: Azure ATP 使用者調查教學課程 | Microsoft Docs
 d|Description: This article explains how to user Azure ATP security alerts to investigate a suspicious user.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 ms.date: 09/15/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: fdf0c4cc32137b23f7c2170a2c8dd0132b3b6462
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 404bb50fdf56351335f0083201b5cb538c50cc64
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71004768"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75906330"
 ---
 # <a name="tutorial-investigate-a-user"></a>教學課程：調查使用者
 

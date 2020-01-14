@@ -2,8 +2,8 @@
 title: Azure 進階威脅防護網路名稱解析 | Microsoft Docs
 description: 此文章提供 Azure ATP 進階網路名稱解析功能與用法的概觀。
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 10/22/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 1ac873fc-b763-41d7-878e-7c08da421cb5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: cb9275c90afda7a5ec98cf238205232b2bcfb66f
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 260100f37e32067e20a224046e1efa200e0284d3
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72776618"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908376"
 ---
 # <a name="what-is-network-name-resolution"></a>什麼是網路名稱解析？
 
@@ -62,8 +62,8 @@ Azure ATP 會根據網路流量評估及判斷裝置作業系統。 在擷取電
 
 
 
-### <a name="prerequisites"></a>必要條件
-|通訊協定|  傳輸|  Port|   Device| 方向|
+### <a name="prerequisites"></a>先決條件
+|通訊協定|  傳輸|  Port|   裝置| 方向|
 |--------|--------|------|-------|------|
 |透過 RPC 的 NTLM| TCP |135|   網路上的所有裝置| 輸入|
 |NetBIOS|   UDP|    137|    網路上的所有裝置| 輸入|

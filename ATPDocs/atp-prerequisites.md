@@ -2,8 +2,8 @@
 title: Azure 進階威脅防護必要條件 | Microsoft Docs
 description: 描述在環境中成功部署 Azure ATP 的需求
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 11/05/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ffafa24c4c20f52947b4f2d0317ea81f51789010
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 21102ec9bef33e37e3ae992155320eba32e66a5b
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75544369"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907960"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 

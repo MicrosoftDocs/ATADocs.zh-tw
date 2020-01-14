@@ -2,8 +2,8 @@
 title: Azure ATP 外洩警訊教學課程 | Microsoft Docs
 d|Description: This article explains the Azure ATP alerts issued when attacks typically part of exfiltration phase efforts are detected against your organization.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 02/11/2019
 ms.topic: tutorial
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 452d951c-5f49-4a21-ae10-9fb38c3de302
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 704e372952d1b02fdcf6564bad26ebc4c7d184f2
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 377d0c86b37488b4c7545ca6d812bc44bba8af7b
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196865"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907986"
 ---
 # <a name="tutorial-exfiltration-alerts"></a>教學課程：外流警訊  
 
@@ -45,7 +45,7 @@ ms.locfileid: "65196865"
 
 大多數組織中的 DNS 通訊協定通常不會受到監視，而且很少會因惡意活動遭到封鎖。 這使攻擊者得以在遭入侵的電腦上濫用 DNS 通訊協定。 透過 DNS 的惡意通訊可用來竊取資料、命令和控制攻擊和/或規避公司網路限制。
 
-**TP、B-TP 或FP？**
+**TP、B-TP、或 FP？**
  
 某些公司會合法地使用 DNS 進行定期通訊。 若要判斷安全性警訊的狀態：
 

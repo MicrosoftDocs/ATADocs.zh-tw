@@ -2,8 +2,8 @@
 title: Azure ATP 橫向移動的安全性警訊 |Microsoft Docs
 d|Description: This article explains the Azure ATP alerts issued when attacks typically part of lateral movement phase efforts are detected against your organization.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 10/29/2019
 ms.topic: tutorial
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2257eb00-8614-4577-b6a1-5c65085371f2
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7c74e43bffb810041049e9fc7fccf2f069535759
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 635f015326a1e72db8fa405b616acbf0e74f8344
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73462352"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908169"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>教學課程：橫向移動警訊  
 

@@ -2,8 +2,8 @@
 title: 在 Azure 進階威脅防護中驗證連接埠鏡像 | Microsoft Docs
 description: 描述如何驗證已在 Azure ATP 中正確設定連接埠鏡像
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 10/04/2018
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 0a56cf27-9eaa-4ad0-ae6c-9d0484c69094
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7dd8b77a3952c3de35ff8c1f2b2eebf4cc4219db
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 875262885aae39cc34dcf3fc62332cbbe0d3ccb9
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543917"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907305"
 ---
 # <a name="validate-port-mirroring"></a>驗證連接埠鏡像
 > [!NOTE] 

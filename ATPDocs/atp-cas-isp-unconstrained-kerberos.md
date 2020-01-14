@@ -2,8 +2,8 @@
 title: Azure 進階威脅防護不受限制的 Kerberos 身分識別安全性狀態評估 | Microsoft Docs
 description: 本文提供 Azure ATP 不受限制的 Kerberos 身分識別安全性狀態評估報告總覽。
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 09/15/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 7eea354b-7a50-40d9-bfa7-dcccaef23179
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 949f99c2ab19a5765a69c21121a274257c20efb6
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 7249c8a5c320720bad7e8f90ab49fbdaaabcf279
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74206322"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75905563"
 ---
 # <a name="security-assessment-unsecure-kerberos-delegation"></a>安全性評估：不安全的 Kerberos 委派
 

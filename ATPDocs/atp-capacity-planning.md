@@ -1,18 +1,18 @@
 ---
 title: 規劃 Azure 進階威脅防護部署快速入門 | Microsoft Docs
 description: 協助您規劃部署並決定支援您的網路需要多少 Azure ATP 伺服器
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 ms.date: 12/26/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.openlocfilehash: 5edb88ebc9db10abec7e8064be4af37f66111afc
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 894f25b7a3d3757bf27a130d84b159fe0d5b1219
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543900"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907350"
 ---
 # <a name="quickstart-plan-capacity-for-azure-atp"></a>快速入門：規劃 Azure ATP 容量
 

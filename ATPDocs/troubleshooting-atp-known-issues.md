@@ -2,8 +2,8 @@
 title: 針對 Azure ATP 已知問題進行疑難排解 | Microsoft Docs
 description: 描述如何針對 Azure ATP 的問題進行疑難排解。
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 12/26/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9ff42bce05809c442d519871f90ae911fb400670
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: ae8953e02b86d1e8e6b6c31122e971f866178f9d
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543978"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907601"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>針對 Azure ATP 已知問題進行疑難排解 
 

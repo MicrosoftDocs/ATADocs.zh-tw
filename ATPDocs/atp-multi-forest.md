@@ -2,8 +2,8 @@
 title: Azure 進階威脅防護多重樹系支援 | Microsoft Docs
 description: 對 Azure ATP 中多個 Active Directory 樹系的支援。
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 1/24/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 590977f36cae014d60ada6abe160b012bc7ebc35
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 039fd549d11796755e78a120801c81e909937637
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543871"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908324"
 ---
 # <a name="azure-advanced-threat-protection-multi-forest-support"></a>Azure 進階威脅防護多重樹系支援
 

@@ -2,8 +2,8 @@
 title: Azure 進階威脅防護實用資源清單 | Microsoft Docs
 description: 本文提供 Azure ATP 實用資源清單
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 1/24/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 34dc152c-6b7f-4128-93fe-aad56c282730
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2249505a80eca230e9b5b54689414c445f169afc
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 98349210cd8f742df96e1b7168e0947ab7860b61
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75544342"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907556"
 ---
 # <a name="azure-atp-readiness-guide"></a>Azure ATP 整備指南
 

@@ -2,8 +2,8 @@
 title: Azure 進階威脅防護受監視活動的篩選與搜尋 | Microsoft Docs
 description: 本文提供如何使用 Azure ATP 篩選及搜尋受監視活動的概觀。
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 09/15/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: a546703b-d5a9-404d-9e87-125523bb8421
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 975aa8562b1ae7e8a830d31da7905c428f08f31e
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 51da2bb933d1130fd6769d152b55bac5ff77ffc9
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71004717"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908415"
 ---
 # <a name="azure-atp-monitored-activities-search-and-filter"></a>Azure ATP 受監視活動的搜尋與篩選 
 

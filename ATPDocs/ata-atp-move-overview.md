@@ -2,8 +2,8 @@
 title: 從 Advanced Threat Analytics 移至 Azure 進階威脅防護 | Microsoft Docs
 description: 了解如何將現有的 Advanced Threat Analytics 安裝移至 Azure ATP。
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 10/16/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e734e382-c4b1-43ca-9a8d-96c91daf2578
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0a5c01f665b167bb9eabc5a9e0a67b99bb6d56fa
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 5c784226b8cf9ee19797103d3e0b9cfe23a629bd
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543119"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908351"
 ---
 # <a name="advanced-threat-analytics-ata-to-azure-advanced-threat-protection-azure-atp"></a>Advanced Threat Analytics (ATA) 移至 Azure 進階威脅防護 (Azure ATP) 
 

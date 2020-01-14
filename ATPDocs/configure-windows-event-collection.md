@@ -2,8 +2,8 @@
 title: 在 Azure 進階威脅防護中設定 Windows 事件收集 | Microsoft Docs
 description: 在安裝 ATP 的這個步驟中，您要設定 Windows 事件收集。
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 10/07/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5ef3edfd830e7a88808dbb8ab895fde7206e9f55
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 037b5419a5d5542972a310a646ca2ba45da9caeb
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75544143"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75906787"
 ---
 # <a name="configure-windows-event-collection"></a>設定 Windows 事件集合
 

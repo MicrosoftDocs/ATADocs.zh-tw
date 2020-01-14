@@ -1,26 +1,26 @@
 ---
 title: 安裝 Azure ATP 感應器快速入門 |Microsoft Docs
 description: 安裝 Azure ATP 的步驟四可協助您安裝 Azure ATP 感應器。
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 ms.date: 10/31/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 124bc127242d97197239cb37fddda154c1bcb445
-ms.sourcegitcommit: 44ce78c9d7f156dd0c0798823bba53e092f5abdf
+ms.openlocfilehash: 56c74fbacac2bb0bc9affa5b3443be7c7900316e
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2019
-ms.locfileid: "75034079"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908570"
 ---
 # <a name="quickstart-install-the-azure-atp-sensor"></a>快速入門：安裝 Azure ATP 感應器
 
 在此快速入門中，您會在網域控制站上安裝 Azure ATP 感應器。 若您想要使用無訊息安裝，請參閱[無訊息安裝](atp-silent-installation.md)一文。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 - [連線到 Active Directory](install-atp-step2.md) 的 [Azure ATP 執行個體](install-atp-step1.md)。
 - 您 [ATP 感應器安裝套件](install-atp-step3.md)的已下載複本，以及存取金鑰。

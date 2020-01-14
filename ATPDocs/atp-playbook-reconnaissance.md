@@ -3,16 +3,16 @@ title: Azure ATP 偵察劇本教學課程 | Microsoft Docs
 description: Azure ATP 偵察劇本教學課程說明如何模擬偵察威脅以供 Azure ATP 偵測。
 ms.service: azure-advanced-threat-protection
 ms.topic: tutorial
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 ms.date: 09/01/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 11312f033261dd74f13dc0b3b9c093617e2c281c
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 53ff08105d688275dad6b2283e3d30e0db8df002
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70209238"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908196"
 ---
 # <a name="tutorial-reconnaissance-playbook"></a>教學課程：偵察劇本
 
@@ -27,7 +27,7 @@ ms.locfileid: "70209238"
 > * 模擬使用者和 IP 位址 (SMB) 偵察
 > * 在 Azure ATP 中檢閱來自模擬偵察的安全性警示
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 [一個已完成的 ATP 安全性警示實驗室](atp-playbook-setup-lab.md)
   - 建議您儘可能完全依照實驗室設定指示進行操作。 您的實驗室與建議的實驗室設定越相似，就越容易依照 Azure ATP 測試程序進行操作。
@@ -123,7 +123,7 @@ ls -d contoso.azure
 
    ![列舉網域中的所有群組](media/playbook-recon-dsenumeration-netgroups.png)
 
-3. 現在，讓我們嘗試只列舉 Domain Admins 群組。 請執行下列命令：
+3. 現在，讓我們嘗試只列舉 Domain Admins 群組。 執行下列命令：
 
     ``` cmd
     net group "Domain Admins" /domain

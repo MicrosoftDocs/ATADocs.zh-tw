@@ -2,8 +2,8 @@
 title: 適用於美國政府 GCC High 的 Azure 進階威脅防護 | Microsoft Docs
 description: 本文概述 Azure ATP 所提供適用於美國政府 GCC High 的供應項目。
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 10/31/2019
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 663be1fb9b58e7631e16d08592daedfbf9a8dccc
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: a78527a99d95727daa67e8d5967d7b67c0374efc
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73462591"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907125"
 ---
 # <a name="azure-atp-for-us-government-gcc-high"></a>適用於美國政府 GCC High 的 Azure ATP
 

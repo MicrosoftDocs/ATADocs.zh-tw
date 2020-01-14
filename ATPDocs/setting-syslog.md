@@ -2,8 +2,8 @@
 title: 在 Azure 進階威脅防護中設定 Syslog 設定 | Microsoft Docs
 description: 說明當 Azure ATP 偵測到可疑的活動時，如何通知您 (透過電子郵件或 Azure ATP 事件轉寄)
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 09/16/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: a2d29c9c-7ecb-4804-b74b-fde899b28648
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ab96c0a17344d93c00f25ca5ca97a1fb2c0a22b7
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 8e67b1c0c7b645982f6d8afc1ac0abdae51d4a43
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71185745"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75906056"
 ---
 # <a name="integrate-with-syslog"></a>與 Syslog 整合
 

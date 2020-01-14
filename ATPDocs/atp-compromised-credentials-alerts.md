@@ -2,8 +2,8 @@
 title: Azure ATP 遭入侵的認證階段安全性警示 | Microsoft Docs
 d|Description: This article explains the Azure ATP alerts issued when attacks typical of the compromised credentials phase are detected against your organization.
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 11/19/2019
 ms.topic: tutorial
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e45be0e076f326910bf70becb4a109a020edf6a4
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: cc3f8ba536a251d07647e13ba776123eb7366bf5
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74206283"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75905638"
 ---
 # <a name="tutorial-compromised-credential-alerts"></a>教學課程：認證遭入侵警訊  
 
@@ -29,7 +29,7 @@ ms.locfileid: "74206283"
 4. [網域支配](atp-domain-dominance-alerts.md)
 5. [Exfiltration](atp-exfiltration-alerts.md) 
 
-若要深入了解如何了解所有 Azure ATP 安全性警示的結構和通用元件，請參閱[了解安全性警示](understanding-security-alerts.md)。
+若要深入了解如何了解結構和所有 Azure ATP 安全性警訊的一般元件，請參閱 [Understanding security alerts](understanding-security-alerts.md) (了解安全性警訊)。
 
 下列安全性警示有助於您找出並修復 Azure ATP 在網路中偵測到之**遭入侵的認證**階段可疑活動。 在本教學課程中，您將了解如何了解、分類、修復和避免下列各類攻擊：
 

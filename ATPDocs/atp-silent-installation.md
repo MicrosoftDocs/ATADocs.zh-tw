@@ -2,8 +2,8 @@
 title: 以無訊息模式安裝 Azure 進階威脅防護 | Microsoft Docs
 description: 說明如何以無訊息模式安裝 Azure ATP。
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 11/26/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 24eca4c6-c949-42ea-97b9-41ef0fb611f1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5ade84a193e198a88f3cb41411746146595a4203
-ms.sourcegitcommit: a7e3fdd7bf0f1d8f269cdbfe3931c937a436392b
+ms.openlocfilehash: 5e7ea2d8f33cbd1c262c52f39e17c9d686344dff
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2020
-ms.locfileid: "75663932"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908014"
 ---
 # <a name="azure-atp-switches-and-silent-installation"></a>Azure ATP 切換參數與無訊息安裝
 此文章提供 Azure ATP 切換參數與無訊息安裝的指導方針與指示。

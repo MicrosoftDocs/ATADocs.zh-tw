@@ -2,20 +2,20 @@
 title: 建立您自己的 Azure ATP 執行個體快速入門 | Microsoft Docs
 description: 建立您 Azure ATP 部署執行個體的快速入門，這是安裝 Azure ATP 的第一步。
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 ms.date: 10/31/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 18a9feba8344ce88c4afb2ed3911b51aea0b9e07
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: d50774470dba20f523959da04f370ff34bcd87bb
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73462322"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75905158"
 ---
 # <a name="quickstart-create-your-azure-atp-instance"></a>快速入門：建立您的 Azure ATP 執行個體
 
@@ -24,7 +24,7 @@ ms.locfileid: "73462322"
 > [!IMPORTANT]
 > 目前，Azure ATP 資料中心部署在歐洲、北美地區/美國中部/加勒比海和亞洲。 您的執行個體會自動建立在與您 Azure Active Directory (Azure AD) 地理位置最接近的資料中心內。 建立後，Azure ATP 執行個體即無法移動。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 - [Azure ATP 授權](atp-technical-faq.md#licensing-and-privacy)。
 - 您必須是[租用戶上的全域管理員或安全性系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)，才能存取 Azure ATP 入口網站。

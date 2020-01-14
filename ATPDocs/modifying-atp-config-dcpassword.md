@@ -2,8 +2,8 @@
 title: 變更 Azure 進階威脅防護設定 - 網域連線密碼 | Microsoft Docs
 description: 描述如何變更 Azure ATP 獨立式感應器上的「網域連線密碼」。
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 12/02/2018
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e7f065fa-1ad1-4e87-bd80-99cc695efbf5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d8c0a38b1a02f8d9eee1f9955cf2c950c501be15
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: c482ce154817418ad3843e6329a8660cc75f1b98
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196582"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907864"
 ---
 # <a name="change-azure-atp-portal-configuration---domain-connectivity-password"></a>變更 Azure ATP 入口網站設定 - 網域連線能力密碼
 

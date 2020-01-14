@@ -2,8 +2,8 @@
 title: 適用於存取管理的 Azure 進階威脅防護角色群組 | Microsoft Docs
 description: 逐步引導您使用 Azure ATP 角色群組。
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 11/29/2018
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a615574ba0f74af8a01806bfffa44f343bba1151
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 37ed6677bffb4dc01f1da75cc41080ad107534cb
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543566"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908255"
 ---
 # <a name="azure-atp-role-groups"></a>Azure ATP 角色群組
 

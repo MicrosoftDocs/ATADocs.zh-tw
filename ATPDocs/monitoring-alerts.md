@@ -2,8 +2,8 @@
 title: 了解 Azure ATP 監視警示 | Microsoft Docs
 description: 描述如何使用 Azure ATP 記錄檔對問題進行疑難排解
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 12/24/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: d0551e91-3b21-47d5-ad9d-3362df6d47c0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4d6c54378f88422a419f1f67850b302087eb3195
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 22380f67b4a3f913bd80ded72f06db9ce57e0a11
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75544404"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907827"
 ---
 # <a name="understanding-azure-atp-sensor-and-standalone-sensor-monitoring-alerts"></a>了解 Azure ATP 感應器和獨立感應器監視警示
 

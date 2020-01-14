@@ -1,24 +1,24 @@
 ---
 title: 將 Azure ATP 連線到 Active Directory 快速入門 | Microsoft Docs
 description: 安裝 Azure ATP 的步驟 2 可協助您設定 Azure ATP 雲端服務上的網域連線設定
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 ms.date: 02/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.openlocfilehash: 3e39bcdd5b3ffbe7a1d39064d28851fba7058d94
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 76096f506714d8a876cac49fee04b7451da392e9
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "56263944"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75906618"
 ---
 # <a name="quickstart-connect-to-your-active-directory-forest"></a>快速入門：連線到您的 Active Directory 樹系
 
 在此快速入門中，您會將 Azure ATP 連線到 Active Directory (AD)，來擷取使用者和電腦的相關資料。 若您要連線多個樹系，請參閱[多樹系支援](atp-multi-forest.md)一文。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 - [Azure ATP 執行個體](install-atp-step1.md)。
 - 檢閱 [Azure ATP 必要條件](atp-prerequisites.md)文章。

@@ -7,12 +7,12 @@ author: mlottner
 ms.author: mlottner
 ms.date: 02/28/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 9ae630711b6ee7b7f84a233998d188e498af0a9e
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 8a968e290cd031d837b4edadab78c307e7fe0796
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "59745582"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544068"
 ---
 # <a name="tutorial-setup-an-atp-security-alert-lab"></a>教學課程：設定 ATP 安全性警示實驗室 
 
@@ -28,7 +28,7 @@ ms.locfileid: "59745582"
 > * 為您的伺服器和電腦設定本機原則
 > * 使用排定的工作來模擬服務台管理案例
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 1. [一個實驗室網域控制站和兩個實驗室工作站](#servers-and-computers)。
    - 繼續並[藉由使用者將 Active Directory (AD) 序列化](#bkmk_hydrate)。
@@ -199,8 +199,8 @@ Add-LocalGroupMember -Group "Administrators" -Member "Contoso\Helpdesk"
 |----|-----|
 | Mimikatz | [GitHub - Mimikatz](https://github.com/gentilkiwi/mimikatz) |
 | PowerSploit | [GitHub - PowerSploit](https://github.com/PowerShellMafia/PowerSploit) |
-| PsExec | [Microsoft Docs](https://docs.microsoft.com/en-us/sysinternals/downloads/psexec) |
-| NetSess | [JoeWare 工具](http://www.joeware.net/freetools) |
+| PsExec | [Microsoft Docs](https://docs.microsoft.com/sysinternals/downloads/psexec) |
+| NetSess | [JoeWare 工具](https://www.joeware.net/freetools) |
 
 我們感謝這些研究工具的作者，讓社群能夠更深入了解網路風險和影響。
 

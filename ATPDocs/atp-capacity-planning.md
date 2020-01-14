@@ -3,22 +3,22 @@ title: 規劃 Azure 進階威脅防護部署快速入門 | Microsoft Docs
 description: 協助您規劃部署並決定支援您的網路需要多少 Azure ATP 伺服器
 author: mlottner
 ms.author: mlottner
-ms.date: 11/05/2019
+ms.date: 12/26/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.openlocfilehash: b07800cfc3b2df6fdb290fff27a9e807be15056f
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 5edb88ebc9db10abec7e8064be4af37f66111afc
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540895"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543900"
 ---
 # <a name="quickstart-plan-capacity-for-azure-atp"></a>快速入門：規劃 Azure ATP 容量
 
 在本快速入門中，您判斷您需要多少 Azure ATP 感應器和獨立感應器。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 - 下載 [Azure ATP 調整大小工具](https://aka.ms/aatpsizingtool)。
 - 檢閱 [Azure ATP 架構](atp-architecture.md)文章。
@@ -103,8 +103,6 @@ Azure ATP 感應器可以支援監視一個網域控制站，依網域控制站�
 |其他虛擬化主機|請參閱廠商提供的文件，以了解如何確保記憶體能在任何時候均向 VM 配置。 |
 |
 
-執行虛擬機器時，請在建立新檢查點之前先關閉伺服器，以避免潛在的資料庫損毀。
-
 ## <a name="manual-sizing"></a>網域控制站流量估計
 
 若基於某些原因而無法使用 Azure ATP 調整大小工具，請以極短的收集間隔 (大約 5 秒)， 手動收集所有網域控制站 24 小時內的每秒封包計數器資訊。 然後，針對每個網域控制站，計算每日平均和最繁忙期間的 (15 分鐘) 平均。 下列各節將說明如何從一個網域控制站收集每秒封包計數器的指示。
@@ -121,7 +119,7 @@ Azure ATP 感應器可以支援監視一個網域控制站，依網域控制站�
 
     ![資料收集器集合工具影像](media/atp-traffic-estimation-2.png)
 
-3.  以滑鼠右鍵按一下 [使用者定義]  ，然後選取 [新增]  &gt;[資料收集器集合工具]  。
+3.  以滑鼠右鍵按一下 [使用者定義]  ，然後選取 [新增]  &gt; [資料收集器集合工具]  。
 
     ![新資料收集器集合工具影像](media/atp-traffic-estimation-3.png)
 

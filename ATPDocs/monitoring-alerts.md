@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 07/17/2019
+ms.date: 12/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: d0551e91-3b21-47d5-ad9d-3362df6d47c0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 65279895689e230a3a28871a61f4cffe36d6042c
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 4d6c54378f88422a419f1f67850b302087eb3195
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68298762"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544404"
 ---
 # <a name="understanding-azure-atp-sensor-and-standalone-sensor-monitoring-alerts"></a>了解 Azure ATP 感應器和獨立感應器監視警示
 
@@ -57,7 +57,7 @@ ms.locfileid: "68298762"
 
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|Azure ATP 感應器已過期。|Azure ATP 感應器執行的版本已過期至少三個版本。|手動更新並檢查感應器，以查看感應器無法自動更新的原因。 如果仍然失敗，請下載最新的感應器安裝套件，然後解除安裝感應器再重新安裝。 如需詳細資訊，請參閱[安裝 Azure ATP 感應器](install-atp-step4.md)。|中型|
+|Azure ATP 感應器已過期。|Azure ATP 感應器正在執行無法與 Azure ATP 雲端基礎結構通訊的版本。|手動更新並檢查感應器，以查看感應器無法自動更新的原因。 如果仍然失敗，請下載最新的感應器安裝套件，然後解除安裝感應器再重新安裝。 如需詳細資訊，請參閱[安裝 Azure ATP 感應器](install-atp-step4.md)。|中型|
 
 ## <a name="sensor-reached-a-memory-resource-limit"></a>感應器已達到記憶體資源限制
 

@@ -5,24 +5,24 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 08/28/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 24eca4c6-c949-42ea-97b9-41ef0fb611f1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d45d08cc2a059fa231194f7aa334d4f557996ba4
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 5ade84a193e198a88f3cb41411746146595a4203
+ms.sourcegitcommit: a7e3fdd7bf0f1d8f269cdbfe3931c937a436392b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70209193"
+ms.lasthandoff: 01/05/2020
+ms.locfileid: "75663932"
 ---
 # <a name="azure-atp-switches-and-silent-installation"></a>Azure ATP 切換參數與無訊息安裝
 此文章提供 Azure ATP 切換參數與無訊息安裝的指導方針與指示。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 Azure ATP 要求您必須安裝 Microsoft .NET Framework 4.7。 
 
@@ -65,7 +65,7 @@ Azure ATP 要求您必須安裝 Microsoft .NET Framework 4.7。
 
 > [!div class="mx-tableFixed"]
 > 
-> |名稱|語法|對無訊息安裝而言是否為必要？|說明|
+> |Name|語法|對無訊息安裝而言是否為必要？|說明|
 > |-------------|----------|---------|---------|
 > |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
 > |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
@@ -75,8 +75,9 @@ Azure ATP 要求您必須安裝 Microsoft .NET Framework 4.7。
 
 > [!div class="mx-tableFixed"]
 > 
-> |名稱|語法|對無訊息安裝而言是否為必要？|說明|
+> |Name|語法|對無訊息安裝而言是否為必要？|說明|
 > |-------------|----------|---------|---------|
+> |InstallationPath|InstallationPath=""|否|設定 AATP 感應器二進位檔案的安裝路徑。 預設路徑：%programfiles%\Azure Advanced Threat Protection sensor
 > |AccessKey|AccessKey="\*\*"|是|設定用來向 Azure ATP 執行個體註冊 Azure ATP 感應器的存取金鑰。|
 
 **範例**：使用下列命令以無訊息模式安裝 Azure ATP 感應器：
@@ -92,7 +93,7 @@ Azure ATP 要求您必須安裝 Microsoft .NET Framework 4.7。
 
 > [!div class="mx-tableFixed"]
 > 
-> |名稱|語法|對無訊息安裝而言是否為必要？|說明|
+> |Name|語法|對無訊息安裝而言是否為必要？|說明|
 > |-------------|----------|---------|---------|
 > |ProxyUrl|ProxyUrl="https\://proxy.contoso.com:8080"|否|指定 Azure ATP 感應器的 ProxyUrl 和連接埠號碼。|
 > |ProxyUserName|ProxyUserName="Contoso\ProxyUser"|否|如果您的 Proxy 服務需要驗證，請以 DOMAIN\user 格式提供使用者名稱。|
@@ -111,7 +112,7 @@ Azure ATP 要求您必須安裝 Microsoft .NET Framework 4.7。
 
 > [!div class="mx-tableFixed"]
 > 
-> |名稱|語法|對無訊息安裝而言是否為必要？|說明|
+> |Name|語法|對無訊息安裝而言是否為必要？|說明|
 > |-------------|----------|---------|---------|
 > |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
 > |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
@@ -132,7 +133,7 @@ Azure ATP 要求您必須安裝 Microsoft .NET Framework 4.7。
 
 > [!div class="mx-tableFixed"]
 > 
-> |名稱|語法|對無訊息解除安裝而言是否為必要？|說明|
+> |Name|語法|對無訊息解除安裝而言是否為必要？|說明|
 > |-------------|----------|---------|---------|
 > |Quiet|/quiet|是|執行解除安裝程式，但不顯示任何 UI 和提示。|
 > |解除安裝|/uninstall|是|從伺服器中執行 Azure ATP 感應器的無訊息解除安裝。|

@@ -5,24 +5,25 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 11/05/2019
+ms.date: 12/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d764d466e0981c673874386d7b28019f48d79827
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 9ff42bce05809c442d519871f90ae911fb400670
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73618427"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75543978"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>針對 Azure ATP 已知問題進行疑難排解 
 
 
 ## <a name="sensor-failure-communication-error"></a>感應器失敗通訊錯誤
+
 如果您收到以下感應器失敗錯誤： 
 
 System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> System.Net.WebException：無法連線至遠端伺服器 ---> System.Net.Sockets.SocketException：因為連線對象有一段時間並未正確回應，所以連線嘗試失敗；或是因為連線的主機無法回應，所以連線建立失敗...
@@ -67,20 +68,24 @@ System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> Syste
 
 如果您嘗試在具備 NIC 小組介面卡的電腦上安裝 ATP 感應器，您將會接收到安裝錯誤。 如果您想要在使用 NIC 小組設定的電腦上安裝 ATP 感應器，請遵循這些指示：
 
+1.  下載最新的 Npcap 安裝程式版本 [https://nmap.org/npcap/](https://nmap.org/npcap/) \(英文\)。
+    - 或者，向支援小組要求 Npcap 驅動程式 (支援無訊息安裝) 的 OEM 版本。
+    - 如果 Npcap 的複本僅搭配 Azure ATP 安裝及使用，它們並不會計入五個複本、五部電腦或五個使用者授權的限制。 如需詳細資訊，請參閱 [NPCAP 授權](https://github.com/nmap/npcap/blob/master/LICENSE) \(英文\)。 
+
 如果您尚未在電腦上安裝感應器：
 
-1.  從 [https://nmap.org/npcap/](https://nmap.org/npcap/) 下載 Npcap。
-2.  如果您已安裝 WinPcap，請將它解除安裝。
-3.  使用下列選項安裝 Npcap：loopback_support=no & winpcap_mode=yes
-4.  安裝感應器套件。
+1.  如果您已安裝 WinPcap，請將它解除安裝。
+1.  使用下列選項安裝 Npcap：loopback_support=no & winpcap_mode=yes。
+    - 如果是使用 GUI 安裝程式，請取消選取 [回送支援]  並選取 [WinPcap]  模式。
+1.  安裝感應器套件。
 
 如果您已安裝感應器：
 
-1.  從 [https://nmap.org/npcap/](https://nmap.org/npcap/) 下載 Npcap。
-2.  將感應器解除安裝。
-3.  將 WinPcap 解除安裝。
-4.  使用下列選項安裝 Npcap：loopback_support=no & winpcap_mode=yes
-5.  重新安裝感應器套件。
+1.  將感應器解除安裝。
+1.  將 WinPcap 解除安裝。
+1.  使用下列選項安裝 Npcap：loopback_support=no & winpcap_mode=yes
+    - 如果是使用 GUI 安裝程式，請取消選取 [回送支援]  並選取 [WinPcap]  模式。
+1.  重新安裝感應器套件。
 
 ## <a name="multi-processor-group-mode"></a>多處理器群組模式 
 針對 Windows 作業系統 2008 R2 與 2012，多處理器群組模式中不支援 Azure ATP 感應器。
@@ -96,13 +101,26 @@ Azure 進階威脅防護可讓您將 Azure ATP 與 Windows Defender ATP 整合�
 
 ## <a name="vmware-virtual-machine-sensor-issue"></a>VMware 虛擬機器感應器問題
 
-如果您在 VMware 虛擬機器上有 Azure ATP 感應器，則可能會收到監視警示「某些網路流量不會被分析」  。 當 VMware 中的設定不相符時，就會發生此狀況。
+如果您在 VMware 虛擬機器上有 Azure ATP 感應器，則可能會收到監視警示「某些網路流量不會被分析」  。 當 VMware 中的設定不相符時，就可能會發生此狀況。
 
-若要解決此問題：
+若要解決問題：
 
 在虛擬機器的 NIC 設定中，將下列項目設定為 [已停用]  ：**IPv4 TSO 卸載**。
 
  ![VMware 感應器問題](./media/vm-sensor-issue.png)
+
+使用下列命令來檢查已啟用或停用大型傳送卸載 (LSO)：
+
+`Get-NetAdapterAdvancedProperty | Where-Object DisplayName -Match "^Large*"`
+
+![檢查 LSO 狀態](./media/missing-network-traffic-health-alert.png)
+
+若已啟用 LSO，請使用下列命令來停用它：
+
+`Disable-NetAdapterLso -Name {name of adapter}` 
+
+![停用 LSO 狀態](./media/disable-lso-vmware.png)
+
 
 ## <a name="see-also"></a>另請參閱
 - [Azure ATP 必要條件](atp-prerequisites.md)

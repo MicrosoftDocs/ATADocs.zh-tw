@@ -12,18 +12,18 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 27630e93db4e103454e6d0fec7756824988ec4a2
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: f0c38f179411565685f3bc2e35d23ac21ce0ef47
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71185497"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544160"
 ---
 # <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-azure-atp-sensor"></a>設定 Azure ATP 感應器的端點 Proxy 和網際網路連線設定
 
 每個 Azure 進階威脅防護 (ATP) 感應器都需要 Azure ATP 雲端服務的網際網路連線，才能成功運作。 在某些組織中，網域控制站不會直接連線到網際網路，而是透過 Web Proxy 連線來連線。 每個 Azure ATP 感應器都要求您使用 Microsoft Windows Internet (WinINET) Proxy 設定來回報感應器資料，並與 Azure ATP 服務進行通訊。 如果您使用 WinHTTP 進行 Proxy 設定，則仍需要為感應器和 ATP Azure 雲端服務之間的通訊設定 Windows Internet (WinINet) 瀏覽器 Proxy 設定。
 
-設定 Proxy 時，請注意，內嵌 Azure ATP 感應器服務是使用 **LocalService** 帳戶在系統內容中執行，而 Azure ATP 感應器更新程式服務則是使用 **LocalSystem** 帳戶在系統內容中執行。 
+設定 Proxy 時，請記住內嵌 Azure ATP 感應器服務是使用 **LocalService** 帳戶在系統內容中執行，而 Azure ATP 感應器更新程式服務則是使用 **LocalSystem** 帳戶在系統內容中執行。 
 
 > [!NOTE]
 > 如果您在網路拓撲中使用 Transparent Proxy 或 WPAD，則不需要針對您的 Proxy 設定 WinINET。
@@ -41,7 +41,7 @@ ms.locfileid: "71185497"
 
 > [!div class="mx-tableFixed"]
 > 
-> |名稱|語法|對無訊息安裝而言是否為必要？|說明|
+> |Name|語法|對無訊息安裝而言是否為必要？|說明|
 > |-------------|----------|---------|---------|
 > |ProxyUrl|ProxyUrl="https\://proxy.contoso.com:8080"|否|指定 Azure ATP 感應器的 ProxyUrl 和連接埠號碼。|
 > |ProxyUserName|ProxyUserName="Contoso\ProxyUser"|否|如果您的 Proxy 服務需要驗證，請以 DOMAIN\user 格式提供使用者名稱。|

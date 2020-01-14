@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2ad5ff4ad50e9b1afb5db3df0ce3928bb090986b
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 72f831c3e9ee3978c8fcb0ea7ece4ad93b08f120
+ms.sourcegitcommit: 0221d5296616023ed96a5a64516ae810bfa156c8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72690214"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75190544"
 ---
 # <a name="azure-atp-frequently-asked-questions"></a>Azure ATP 常見問題集
 此文章提供關於 Azure ATP 的常見問題與解答清單，並分成下列類別： 
@@ -51,12 +51,15 @@ Microsoft 並不會將您的資料用於廣告用途，或是任何其他與為�
 除了使用深度封包檢查技術來分析 Active Directory 流量之外，Azure ATP 也可以從您的網域控制站收集相關的 Windows 事件，並根據 Active Directory 網域服務的資訊建立實體設定檔。 Azure ATP 也支援接收來自不同廠商 (Microsoft、Cisco、F5 及 Checkpoint) 之 VPN 記錄的 RADIUS 帳戶處理。
 
 ### <a name="does-azure-atp-monitor-only-domain-joined-devices"></a>Azure ATP 是否只會監視已加入網域的裝置？
+
 否。 Azure ATP 會監視網路中針對 Active Directory 執行驗證和授權要求的所有裝置，包括非 Windows 的裝置和行動裝置。
 
 ### <a name="does-azure-atp-monitor-computer-accounts-as-well-as-user-accounts"></a>Azure ATP 是否會監視電腦帳戶及使用者帳戶？
+
 是。 因為電腦帳戶 (以及任何其他實體) 可以用來執行惡意活動，所以 Azure ATP 會監視所有電腦帳戶的行為，以及環境中的所有其他實體。
 
 ### <a name="what-is-the-difference-between-advanced-threat-analytics-ata-and-azure-atp"></a>Advanced Threat Analytics (ATA) 與 Azure ATP 之間的差異為何？
+
 ATA 是安裝在內部部署的獨立解決方案。 具有雲端連線能力的 Azure ATP 包括持續的功能更新，包括新的偵測、UEBA 功能、安全性評定，以及跨 Microsoft 365 安全性解決方案的調查體驗。
 
 
@@ -80,7 +83,12 @@ Azure ATP 是 Microsoft 365 安全性的一部分，可保護混合式組織：
 
 Azure ATP 隨附於 Enterprise Mobility + Security 5 套件 (EMS E5) 中，也可以獨立授權。 您可以直接透過 [Microsoft 365 入口網站](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing)，或雲端解決方案合作夥伴 (CSP) 授權模型取得授權。
 
+### <a name="does-azure-atp-need-only-a-single-license-or-does-it-require-a-license-for-every-user-i-want-to-protect"></a>Azure ATP 是否僅需要單一授權，還是針對我想要保護的每個使用者都需要授權？
+
+Azure ATP 針對每個使用者都需要授權。 
+
 ### <a name="is-this-going-to-be-a-part-of-azure-active-directory-or-on-premises-active-directory"></a>它會成為 Azure Active Directory 或內部部署 Active Directory 的一部分嗎？
+
 Azure ATP 解決方案目前是獨立的供應項目。 它不是 Azure Active Directory 或內部部署 Active Directory 的一部分。
 
 ### <a name="is-my-data-isolated-from-other-customer-data"></a>我的資料是否會與其他客戶的資料隔離？ 

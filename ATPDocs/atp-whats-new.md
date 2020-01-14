@@ -5,19 +5,19 @@ keywords: ''
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 12/15/2019
+ms.date: 12/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7d0f33db-2513-4146-a395-290e001f4199
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 000ece8a9963af12b1de7f2a3b68641bf6640876
-ms.sourcegitcommit: 44ce78c9d7f156dd0c0798823bba53e092f5abdf
+ms.openlocfilehash: 744c11a0887716cccc7f999a660340a3595977f9
+ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2019
-ms.locfileid: "75034096"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75544241"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
 
@@ -27,14 +27,29 @@ ms.locfileid: "75034096"
 
 RSS 摘要：將下列 URL 複製並貼至您的摘要讀取器中，就能在此頁面有所更新時收到通知： <br>`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
 
+發行日期：2019 年 12 月 23 日
+## <a name="azure-atp-release-2104"></a>Azure ATP 2.104 版
+
+
+- **已消除感應器版本到期**<br>
+    Azure ATP 感應器部署及感應器安裝套件在數個版本之後已不再會到期，且現在只會自行更新一次。 此功能的結果是已可安裝先前所下載的感應器安裝套件，即使它們的版本號碼比已過期版本的最大號碼還舊。
+
+- **確認入侵**<br>
+    您現在可以確認特定 Office 365 使用者的入侵，並將他們的風險層級設定為 [高]  。 此工作流程可為您的安全性作業小組提供另一個回應功能，以降低其安全性事件解決時間閾值。 深入了解如何使用 Azure ATP 和 Cloud App Security 來[確認入侵](https://docs.microsoft.com/cloud-app-security/tutorial-ueba?branch=pr-en-us-1204#phase-4-protect-your-organization)。 
+
+- **新體驗橫幅**<br>
+    在於 Cloud App Security 入口網站中有新體驗可供使用的 Azure ATP 入口網站頁面上，會顯示描述可用內容及存取連結的新橫幅。
+
+- 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
+
 發行日期：2019 年 12 月 15 日
 ## <a name="azure-atp-release-2103"></a>Azure ATP 2.103 版
 
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
 發行日期：2019 年 12 月 8 日
-## <a name="azure-atp-release-2102"></a>Azure ATP 2.102 版
 
+## <a name="azure-atp-release-2102"></a>Azure ATP 2.102 版
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
 發行日期：2019 年 11 月 24 日
@@ -79,7 +94,7 @@ RSS 摘要：將下列 URL 複製並貼至您的摘要讀取器中，就能在�
 
 當啟用 NTLM 稽核並開啟 Windows 事件 8004 之後，Azure ATP 感應器現在可以使用您存取的伺服器資料自動讀取及加強 NTLM 驗證活動。 Azure ATP 會依序針對 NTLM 驗證剖析 Windows 事件 8004，以加強用於 Azure ATP 威脅分析與警示的 NTLM 驗證資料。 這個加強的功能提供 NTLM 資料的資源存取活動，以及加強的失敗登入活動，包括使用者嘗試存取但失敗的目的地電腦。
 
-[使用 Windows 事件 8004](configure-windows-event-collection.md##ntlm-authentication-using-windows-event-8004)深入了解 NTLM 驗證活動。
+[使用 Windows 事件 8004](configure-windows-event-collection.md#ntlm-authentication-using-windows-event-8004)深入了解 NTLM 驗證活動。
 
 - 版本也包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 

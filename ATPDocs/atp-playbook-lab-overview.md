@@ -3,16 +3,16 @@ title: Azure ATP 安全性警示實驗室教學課程概觀 | Microsoft Docs
 description: 此教學課程概觀說明用來模擬威脅以供 Azure ATP 偵測之 Azure ATP 安全性警示實驗室的四個部分。
 ms.service: azure-advanced-threat-protection
 ms.topic: tutorial
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 ms.date: 02/28/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 116f4648026d8f291a1576bb0cbd4bf392ff8a9a
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 644b934622c20fa1be640120fe9c04ea6a89e08c
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "57007444"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908499"
 ---
 # <a name="tutorial-overview-atp-security-alert-lab"></a>教學課程概觀：ATP 安全性警示實驗室
 

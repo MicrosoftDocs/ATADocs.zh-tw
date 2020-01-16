@@ -1,26 +1,26 @@
 ---
 title: 進行 Azure ATP 感應器設定的概念 |Microsoft Docs
 description: 安裝 Azure ATP 的步驟 5 可協助您設定 Azure ATP 獨立感應器的設定。
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 ms.date: 09/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8e39e37aa42aea40de024f53dd892da398984f5b
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: b50dc7247e17831c3b083090787b85c228c13a77
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71004845"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907760"
 ---
 # <a name="configure-azure-atp-sensor-settings"></a>進行 Azure ATP 感應器設定
 
 在本文中，您將了解如何正確進行 Azure ATP 感應器設定，以開始查看資料。 您需要進行額外的設定及整合，才能利用 Azure ATP 的完整功能。  
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 - [連線到 Active Directory](install-atp-step2.md) 的 [Azure ATP 執行個體](install-atp-step1.md)。
 - 您 [ATP 感應器安裝套件](install-atp-step3.md)的已下載複本，以及存取金鑰。
@@ -70,10 +70,10 @@ ms.locfileid: "71004845"
 
 1. 使用下列步驟來確認任何網域裝置上的 ATP 連線能力：
     1. 開啟命令提示字元
-    1. Type ```nslookup```
+    1. 輸入 ```nslookup```
     1. 輸入 **server**，然後輸入已安裝 ATP 感應器之網域控制站的 FQDN 或 IP 位址。 例如， ```server contosodc.contoso.azure```
         - 請務必將 contosodc.contoso.azure 和 contoso.azure 分別取代成您 Azure ATP 感應器的 FQDN 和網域。
-    1. Type ```ls -d contoso.azure```
+    1. 輸入 ```ls -d contoso.azure```
     1. 針對您想要測試的每個感應器重複步驟 3 和 4。  
     1. 從 Azure ATP 主控台中，開啟您執行連線能力測試之來源電腦的實體設定檔。 
     1. 檢查相關的邏輯活動並確認連線能力。 

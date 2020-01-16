@@ -3,16 +3,16 @@ title: Azure ATP 安全性警示橫向移動劇本 | Microsoft Docs
 description: Azure ATP 劇本描述如何模擬 Azure ATP 所偵測的橫向移動威脅。
 ms.service: azure-advanced-threat-protection
 ms.topic: tutorial
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 ms.date: 03/03/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: d7243b74c14a1782b8902473cc6f098d0e12832f
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 1ac1a5652305d17f65fee7a4e5c7e0b73b0b1473
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "57318048"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908075"
 ---
 # <a name="tutorial-lateral-movement-playbook"></a>教學課程：橫向移動劇本
 
@@ -27,7 +27,7 @@ ms.locfileid: "57318048"
 > * 模擬傳遞票證攻擊來取得網域控制站的存取權。
 > * 從 Azure ATP 中的橫向移動檢閱安全性警示。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 1. [一個已完成的 ATP 安全性警示實驗室](atp-playbook-setup-lab.md) 
      - 建議您儘可能完全依照實驗室設定指示進行操作。 您的實驗室與建議的實驗室設定越相似，就越容易依照 Azure ATP 測試程序進行操作。
@@ -96,7 +96,7 @@ Azure ATP 不會偵測到在本機資源上傳遞的雜湊。 Azure ATP 會偵�
 ### <a name="additional-lateral-move"></a>其他橫向移動
 
 現在，使用 RonHD 的認證是否可以讓我們擁有我們先前使用 JeffL 的認證時沒有的存取權？
-我們將使用 **PowerSploit** ```Get-NetLocalGroup``` 回答這個問題。
+我們將使用 **PowerSploit** ```Get-NetLocalGroup``` 回答該問題。
 
 1. 在因為我們先前的攻擊而開啟的命令主控台中，以 RonHD 身分執行下列項目：
 

@@ -2,25 +2,25 @@
 title: 下載 Azure ATP 感應器安裝套件快速入門 | Microsoft Docs
 description: 安裝 Azure ATP 的步驟三可協助您下載 Azure ATP 感應器安裝套件。
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 ms.date: 02/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 95bb4ec1-841f-41b7-92fe-fbd144085724
-ms.openlocfilehash: 538053c1033c1e6fc04fd80a6d6a009a6fe5347f
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 758fd23c1f6300305fad7e209909810977f81627
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "59745774"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75907780"
 ---
 # <a name="quickstart-download-the-azure-atp-sensor-setup-package"></a>快速入門：下載 Azure ATP 感應器安裝套件
 
 在此快速入門中，您將會從入口網站下載 Azure ATP 感應器安裝套件。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 - [連線到 Active Directory](install-atp-step2.md) 的 [Azure ATP 執行個體](install-atp-step1.md)。
 
@@ -36,7 +36,7 @@ ms.locfileid: "59745774"
 
 1. 按一下 [感應器]  。
 2. 將封裝儲存在本機。
-3. 複製  存取**金鑰**。 Azure ATP 感應器連線到您的 Azure ATP 執行個體需要存取金鑰。 存取金鑰是部署感應器的單次密碼，其後所有的通訊都是使用驗證的憑證和 TLS 加密來執行。 如果需要重新產生新的存取金鑰，您可以使用 [重新產生]  按鈕，而且它不會對先前部署的感應器有任何影響，因為它只會用於感應器的初始註冊。
+3. 複製**存取** **金鑰**。 Azure ATP 感應器連線到您的 Azure ATP 執行個體需要存取金鑰。 存取金鑰是部署感應器的單次密碼，其後所有的通訊都是使用驗證的憑證和 TLS 加密來執行。 如果需要重新產生新的存取金鑰，您可以使用 [重新產生]  按鈕，而且它不會對先前部署的感應器有任何影響，因為它只會用於感應器的初始註冊。
 4. 將套件複製到您要安裝 Azure ATP 感應器的專用伺服器或網域控制站。 或者，您也可以從專用伺服器或網域控制站開啟 Azure ATP 入口網站並跳過此步驟。
 
 ZIP 檔案包含下列檔案：

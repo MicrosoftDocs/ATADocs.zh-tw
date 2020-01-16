@@ -2,8 +2,8 @@
 title: Microsoft Cloud App Security 中的 Azure 進階威脅防護活動篩選與原則 | Microsoft Docs
 description: 使用 Microsoft Cloud App Security 進行的 Azure ATP 活動篩選和原則概觀。
 keywords: ''
-author: mlottner
-ms.author: mlottner
+author: shsagir
+ms.author: shsagir
 manager: rkarlin
 ms.date: 07/01/2019
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 397e5a77-2bc7-454c-9fe5-649ebaab16b3
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1508cb558f16adf54f80cec0c13631059dbf45bf
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 97d13dc5780e9cf24955644a9e0493a8434f62cd
+ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67506539"
+ms.lasthandoff: 01/12/2020
+ms.locfileid: "75908053"
 ---
 # <a name="use-activity-filters-and-create-action-policies-with-azure-atp-in-microsoft-cloud-app-security"></a>在 Microsoft Cloud App Security 中使用活動篩選以及使用 Azure ATP 建立動作原則 
 
@@ -27,10 +27,10 @@ ms.locfileid: "67506539"
 
 搭配 Microsoft Cloud App Security 使用 Azure ATP 可根據使用者與實體行為分析 (UEBA) 來提供活動分析和警示，以識別貴企業中風險最高的行為、提供完整的調查優先順序分數，以及活動篩選和可自訂的活動原則。 
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 如需跨混合式環境的完整使用者調查功能，您必須具備：
-- 適用於 Microsoft Cloud App Security 的有效授權
+- Microsoft Cloud App Security 的有效授權
 - 有 Azure ATP 的有效授權連線到您的 Active Directory 執行個體
 
 >[!NOTE]

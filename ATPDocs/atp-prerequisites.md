@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 21102ec9bef33e37e3ae992155320eba32e66a5b
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 50a14aeb6b91fc94c71f6be69bf66db13528c9f1
+ms.sourcegitcommit: 1a0cc214568bf12041d11e037dfe56a8d9e707c2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907960"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76706234"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -26,14 +26,13 @@ ms.locfileid: "75907960"
 >[!NOTE]
 > 如需如何規劃資源和容量的相關資訊，請參閱 [Azure ATP 容量規劃](atp-capacity-planning.md)。
 
-
 Azure ATP 是由 Azure ATP 雲端服務組成，其包含 Azure ATP 入口網站、Azure ATP 感應器和/或 Azure ATP 獨立感應器。 如需每種 Azure ATP 元件的詳細資訊，請參閱 [Azure ATP 架構](atp-architecture.md)。
 
-Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步至您 Azure Active Directory 的使用者。 若要保護僅包含 AAD 使用者的環境，請參閱 [AAD 身分識別保護](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) \(部分機器翻譯\)。 
+Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步至您 Azure Active Directory 的使用者。 若要保護僅包含 AAD 使用者的環境，請參閱 [AAD 身分識別保護](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) \(部分機器翻譯\)。
 
-若要建立 Azure ATP 執行個體，您必須使用具有至少一位全域/安全性系統管理員的 AAD 租用戶。 每個 Azure ATP 執行個體都支援多 Active Directory 樹系邊界，以及 Windows 2003 和更新版本的樹系功能等級 (FFL)。 
+若要建立 Azure ATP 執行個體，您必須使用具有至少一位全域/安全性系統管理員的 AAD 租用戶。 每個 Azure ATP 執行個體都支援多 Active Directory 樹系邊界，以及 Windows 2003 和更新版本的樹系功能等級 (FFL)。
 
-此必要條件指南分成下列各節，以確保您了解成功部署 Azure ATP 所需的一切項目。 
+此必要條件指南分成下列各節，以確保您了解成功部署 Azure ATP 所需的一切項目。
 
 [開始之前](#before-you-start)：列出開始安裝之前應收集的資訊，以及您應具備的帳戶和網路實體。
 
@@ -44,18 +43,19 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 [Azure ATP 獨立感應器](#azure-atp-standalone-sensor-requirements)：列出 Azure ATP 獨立感應器的硬體和軟體需求，以及必須在 Azure ATP 獨立感應器伺服器上進行的設定。
 
 ## <a name="before-you-start"></a>在您開始使用 Intune 之前
+
 本節列出在開始安裝 Azure ATP 前，您應收集的資訊及您應擁有的帳戶與網路實體資訊。
 
-- 直接透過 [Microsoft 365 入口網站](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing)取得 Enterprise Mobility + Security 5 (EMS E5) 的授權，或使用雲端解決方案合作夥伴 (CSP) 授權模型。 另外也提供獨立 Azure ATP 授權。  
+- 直接透過 [Microsoft 365 入口網站](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing)取得 Enterprise Mobility + Security 5 (EMS E5) 的授權，或使用雲端解決方案合作夥伴 (CSP) 授權模型。 另外也提供獨立 Azure ATP 授權。
 
-- 驗證您要在其中安裝 Azure ATP 感應器的網域控制站可網際網路連線至 Azure ATP 雲端服務。 Azure ATP 感應器支援使用 Proxy。 如需 Proxy 設定的詳細資訊，請參閱[為 Azure ATP 設定 Proxy](configure-proxy.md)。  
+- 驗證您要在其中安裝 Azure ATP 感應器的網域控制站可網際網路連線至 Azure ATP 雲端服務。 Azure ATP 感應器支援使用 Proxy。 如需 Proxy 設定的詳細資訊，請參閱[為 Azure ATP 設定 Proxy](configure-proxy.md)。
 
--   針對監視網域中的所有物件具有讀取存取權的**內部部署** AD 使用者帳戶和密碼。
+- 針對監視網域中的所有物件具有讀取存取權的**內部部署** AD 使用者帳戶和密碼。
 
     > [!NOTE]
     > 如果您已經在網域中設定不同組織單位 (OU) 的自訂 ACL，請確定選取的使用者具有讀取這些 OU 的權限。
 
--   如果您在 Azure ATP 獨立感應器上執行 Wireshark，在停止 Wireshark 擷取後，重新啟動 Azure 進階威脅防護感應器服務。 如果您未重新啟動感應器服務，感應器會停止擷取流量。
+- 如果您在 Azure ATP 獨立感應器上執行 Wireshark，在停止 Wireshark 擷取後，重新啟動 Azure 進階威脅防護感應器服務。 如果您未重新啟動感應器服務，感應器會停止擷取流量。
 
 - 如果您嘗試在設定了 NIC 小組介面卡的電腦上安裝 Azure ATP 感應器，則會收到安裝錯誤。 如果您想要在已設定 NIC 小組的電腦上安裝 Azure ATP 感應器，請參閱 [Azure ATP 感應器 NIC 小組問題](troubleshooting-atp-known-issues.md#nic-teaming)。
 
@@ -66,36 +66,43 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 - 選用：在部署獨立感應器時，必須將 Windows 事件 4776、4732、4733、4728、4729、4756、4757 與 7045 和 8004 轉送給 Azure ATP，以在對敏感性群組與可疑服務建立偵測能力之外進一步增強 Azure ATP 驗證型偵測能力。  Azure ATP 感應器自動支援這些事件。 在 Azure ATP 獨立感應器中，這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
 
 ## <a name="azure-atp-portal-requirements"></a>Azure ATP 入口網站需求
+
 您可透過瀏覽器來存取 Azure ATP 入口網站，其支援下列瀏覽器和設定︰
--   Microsoft Edge
--   Internet Explorer 第 10 版及更新版本
--   Google Chrome 4.0 和更新版本
--   螢幕解析度最低需求為 1700 像素
--   防火牆/Proxy 開啟 - 若要與 Azure ATP 雲端服務通訊，您必須在防火牆/Proxy 中針對 *.atp.azure.com 開啟連接埠 443。
+
+- Microsoft Edge
+- Internet Explorer 第 10 版及更新版本
+- Google Chrome 4.0 和更新版本
+- 螢幕解析度最低需求為 1700 像素
+- 防火牆/Proxy 開啟 - 若要與 Azure ATP 雲端服務通訊，您必須在防火牆/Proxy 中開啟 *.atp.azure.com 連接埠 443。
+
+    > [!NOTE]
+    > 您也可以使用 Azure 服務標籤 (**AzureAdvancedThreatProtection**) 來啟用對 Azure ATP 的存取權。 如需服務標籤的詳細資訊，請參閱[虛擬網路服務標籤](https://docs.microsoft.com/azure/virtual-network/service-tags-overview)或[下載服務標籤](https://www.microsoft.com/download/details.aspx?id=56519)檔案。
 
  ![Azure ATP 架構圖表](media/azure-atp-architecture.png)
 
 > [!NOTE]
 > 根據預設值，Azure ATP 最多支援 200 個感應器。 如果您想要安裝更多感應器，請連絡 Azure ATP 支援。
 
-
 ## <a name="azure-atp-network-name-resolution-nnr-requirements"></a>Azure ATP 網路名稱解析 (NNR) 需求
+
 網路名稱解析 (NNR) 是 Azure ATP 功能的主要元件。 若要讓 Azure ATP 服務正常運作，Azure ATP 感應器必須至少能存取下列其中一個 NNR 方法：
+
 1. **透過 RPC 的 NTLM** (TCP 連接埠 135)
 2. **NetBIOS** (UDP 連接埠 137)
 3. **RDP** (TCP 連接埠 3389) - 只有 Client hello 的第一個封包
 4. **使用 IP 位址的反向 DNS 查閱來查詢 DNS 伺服器** (UDP 53)
 
-若要讓方法 1、2 與 3 正常運作，必須開啟從從 Azure ATP 感應器到網路上裝置的相關連入連接埠。 若要深入了解 Azure ATP 與 NNR，請參閱 [Azure ATP NNR 原則](atp-nnr-policy.md)。 
+若要讓方法 1、2 與 3 正常運作，必須開啟從從 Azure ATP 感應器到網路上裝置的相關連入連接埠。 若要深入了解 Azure ATP 與 NNR，請參閱 [Azure ATP NNR 原則](atp-nnr-policy.md)。
 
 ## <a name="azure-atp-sensor-requirements"></a>Azure ATP 感應器需求
+
 本節列出 Azure ATP 感應器的需求。
 
 ### <a name="general"></a>一般
 
 > [!NOTE]
 > 使用 Server 2019 時，請確定已安裝 [KB4487044](https://support.microsoft.com/help/4487044/windows-10-update-kb4487044)。 系統將會自動停止安裝在未安裝此更新之 2019 伺服器上的 Azure ATP 感應器。
- 
+
 Azure ATP 感應器可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 (包含 Windows Server Core 但不含 Windows Nano 伺服器)、Windows Server 2019 (包含 Windows Core 但不含 Windows Nano 伺服器) 的網域控制站上安裝。
 
 網域控制站可以是唯讀網域控制站 (RODC)。
@@ -103,7 +110,6 @@ Azure ATP 感應器可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)�
 若要讓網域控制站與雲端服務通訊，您必須在防火牆和 Proxy 中針對 *.atp.azure.com 開啟連接埠 443。
 
 安裝期間會安裝 .Net Framework 4.7，並可能會要求網域控制站重新開機 (如果重新啟動已暫止)。
-
 
 > [!NOTE]
 > 至少需要 5 GB 的磁碟空間，建議要有 10 GB。 這包括 Azure ATP 二進位檔、Azure ATP 記錄檔和效能記錄檔所需的空間。
@@ -115,9 +121,9 @@ Azure ATP 感應器在網域控制站上需要安裝至少 2 個核心和 6 GB �
 
 Azure ATP 感應器可以部署在各種負載和大小的網域控制站上，依進出網域控制站的網路流量，以及安裝的資源數量而定。
 
-針對 Windows 作業系統 2008 R2 與 2012，[多處理器群組](https://docs.microsoft.com/windows/win32/procthread/processor-groups)模式中不支援 Azure ATP 感應器。 如需有關多處理器群組模式的詳細資訊，請參閱[疑難排解](troubleshooting-atp-known-issues.md#multi-processor-group-mode)。 
+針對 Windows 作業系統 2008 R2 與 2012，[多處理器群組](https://docs.microsoft.com/windows/win32/procthread/processor-groups)模式中不支援 Azure ATP 感應器。 如需有關多處理器群組模式的詳細資訊，請參閱[疑難排解](troubleshooting-atp-known-issues.md#multi-processor-group-mode)。
 
->[!NOTE] 
+>[!NOTE]
 > 作為虛擬機器執行時，將不支援動態記憶體或任何其他記憶體佔用功能。
 
 如需 Azure ATP 感應器硬體需求的詳細資訊，請參閱 [Azure ATP 容量規劃](atp-capacity-planning.md)。
@@ -128,12 +134,13 @@ Azure ATP 感應器可以部署在各種負載和大小的網域控制站上，�
 
 ### <a name="network-adapters"></a>網路介面卡
 
-Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的本機流量。 <br>
+Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的本機流量。  
 部署後，可以使用 Azure ATP 入口網站來修改監視的網路介面卡。
 
 執行 Windows 2008 R2 且啟用 Broadcom 網路介面卡小組的網域控制站不支援感應器。
 
 ### <a name="ports"></a>連接埠
+
 下表列出 Azure ATP 感應器至少需要的連接埠：
 
 |通訊協定|傳輸|Port|去/從|方向|
@@ -146,25 +153,26 @@ Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的�
 |Netlogon (SMB、CIFS、SAM-R)|TCP/UDP|445|網路上的所有裝置|輸出|
 |Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|輸入|
 |RADIUS|UDP|1813|RADIUS|輸入|
-|
 
 ### <a name="windows-event-logs"></a>Windows 事件記錄檔
-Azure ATP 偵測仰賴下列特定 Windows 事件記錄檔，這些記錄檔可由感應器從您的網域控制站剖析。4776、4732、4733、4728、4729、4756、4757、7045 與 8004。 若要正確稽核事件並將其包含在 Windows 事件記錄檔中，網域控制站需要精確的進階稽核原則設定。 如需有關設定正確原則的詳細資訊，請參閱[進階稽核原則檢查](atp-advanced-audit-policy.md)。 若要確定已依服務所需[稽核 Windows 事件 8004](configure-windows-event-collection.md#ntlm-authentication-using-windows-event-8004)，請檢閱您的 [NTLM 稽核設定](https://blogs.technet.microsoft.com/askds/2009/10/08/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7/) \(英文\)。  
 
+Azure ATP 偵測仰賴下列特定 Windows 事件記錄檔，這些記錄檔可由感應器從您的網域控制站剖析。4776、4732、4733、4728、4729、4756、4757、7045 與 8004。 若要正確稽核事件並將其包含在 Windows 事件記錄檔中，網域控制站需要精確的進階稽核原則設定。 如需有關設定正確原則的詳細資訊，請參閱[進階稽核原則檢查](atp-advanced-audit-policy.md)。 若要確定已依服務所需[稽核 Windows 事件 8004](configure-windows-event-collection.md#ntlm-authentication-using-windows-event-8004)，請檢閱您的 [NTLM 稽核設定](https://blogs.technet.microsoft.com/askds/2009/10/08/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7/) \(英文\)。
 
 > [!NOTE]
+>
 > - 使用 Directory 服務使用者帳戶，感應器會查詢您組織中的端點以尋找使用 SAM-R (網路登入) 的本機系統管理員，以建置[橫向移動路徑圖表](use-case-lateral-movement-path.md)。 如需詳細資訊，請參閱[設定 SAM-R 必要權限](install-atp-step8-samr.md)。
 
 ## <a name="azure-atp-standalone-sensor-requirements"></a>Azure ATP 獨立感應器需求
+
 本節列出 Azure ATP 獨立感應器的需求。
 
 ### <a name="general"></a>一般
+
 Azure ATP 獨立感應器可安裝在執行 Windows Server 2012 R2 或 Windows Server 2016 (包括 Server Core) 的伺服器上。
 Azure ATP 獨立感應器可以安裝在屬於網域或工作群組之成員的伺服器上。
 Azure ATP 獨立感應器可以用來監視具 Windows Server 2003 或更新版本之網域功能等級的網域控制站。
 
 若要讓獨立感應器與雲端服務通訊，您必須在防火牆和 Proxy 中針對 *.atp.azure.com 開啟連接埠 443。
-
 
 如需使用虛擬機器與 Azure ATP 獨立感應器的相關資訊，請參閱[設定連接埠鏡像](configure-port-mirroring.md)。
 
@@ -172,10 +180,11 @@ Azure ATP 獨立感應器可以用來監視具 Windows Server 2003 或更新版�
 > 至少需要 5 GB 的磁碟空間，建議要有 10 GB。 這包括 Azure ATP 二進位檔、Azure ATP 記錄檔和效能記錄檔所需的空間。
 
 ### <a name="server-specifications"></a>伺服器規格
+
 為了達到最佳效能，將 Azure ATP 獨立感應器的 [電源選項]  設定為 [高效能]  。<br>
 Azure ATP 獨立感應器可以支援監視多個網域控制站，依進出網域控制站的網路傳輸量而定。
 
->[!NOTE] 
+>[!NOTE]
 > 作為虛擬機器執行時，將不支援動態記憶體或任何其他記憶體佔用功能。
 
 如需 Azure ATP 獨立感應器硬體需求的詳細資訊，請參閱 [Azure ATP 容量規劃](atp-capacity-planning.md)。
@@ -185,28 +194,31 @@ Azure ATP 獨立感應器可以支援監視多個網域控制站，依進出網�
 安裝感應器之伺服器和網域控制站的時間，必須同步到相差五分鐘內。
 
 ### <a name="network-adapters"></a>網路介面卡
+
 Azure ATP 獨立感應器需要至少一個管理介面卡和至少一個擷取介面卡︰
 
--   **管理介面卡** - 用於您公司網路上的通訊。 感應器會使用此配接器來查詢它正在保護的 DC，並對電腦帳戶執行解析。 <br>此介面卡應進行下列設定：
+- **管理介面卡** - 用於您公司網路上的通訊。 感應器會使用此配接器來查詢它正在保護的 DC，並對電腦帳戶執行解析。 <br>此介面卡應進行下列設定：
 
-    -   靜態 IP 位址，包含預設閘道
+    - 靜態 IP 位址，包含預設閘道
 
-    -   慣用和替代的 DNS 伺服器
+    - 慣用和替代的 DNS 伺服器
 
-    -   **此連線的 DNS 尾碼**應該是受監視之每個網域的網域 DNS 名稱。
+    - **此連線的 DNS 尾碼**應該是受監視之每個網域的網域 DNS 名稱。
 
         ![在進階 TCP/IP 設定中設定 DNS 尾碼](media/ATP-DNS-Suffix.png)
 
         > [!NOTE]
         > 如果 Azure ATP 獨立感應器是網域的成員，這可能會自動設定。
 
--   **擷取介面卡** - 用來擷取進出網域控制站的流量。
+- **擷取介面卡** - 用來擷取進出網域控制站的流量。
 
     > [!IMPORTANT]
-    > -   設定擷取介面卡的連接埠鏡像做為網域控制站網路流量的目的地。 如需詳細資訊，請參閱[設定連接埠鏡像](configure-port-mirroring.md)。 一般而言，設定通訊埠鏡像必須與網路或虛擬化團隊合作。
-    > -   為您的環境設定靜態、無法路由傳送的 IP 位址 (使用 /32 遮罩)，沒有預設感應器閘道也沒有 DNS 伺服器位址。 例如，10.10.0.10/32。 這會確保擷取網路介面卡可以擷取最大的流量，而且管理網路介面卡會用於傳送和接收必要的網路流量。
+    >
+    > - 設定擷取介面卡的連接埠鏡像做為網域控制站網路流量的目的地。 如需詳細資訊，請參閱[設定連接埠鏡像](configure-port-mirroring.md)。 一般而言，設定通訊埠鏡像必須與網路或虛擬化團隊合作。
+    > - 為您的環境設定靜態、無法路由傳送的 IP 位址 (使用 /32 遮罩)，沒有預設感應器閘道也沒有 DNS 伺服器位址。 例如，10.10.0.10/32。 這會確保擷取網路介面卡可以擷取最大的流量，而且管理網路介面卡會用於傳送和接收必要的網路流量。
 
 ### <a name="ports"></a>連接埠
+
 下表列出 Azure ATP 獨立感應器在管理介面卡上至少需要設定的連接埠：
 
 |通訊協定|傳輸|Port|去/從|方向|
@@ -224,17 +236,15 @@ Azure ATP 獨立感應器需要至少一個管理介面卡和至少一個擷取�
 |DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
 |Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|輸入|
 |RADIUS|UDP|1813|RADIUS|輸入|
-|
 
 > [!NOTE]
+>
 > - 使用 Directory 服務使用者帳戶，感應器會查詢您組織中的端點以尋找使用 SAM-R (網路登入) 的本機系統管理員，以建置[橫向移動路徑圖表](use-case-lateral-movement-path.md)。 如需詳細資訊，請參閱[設定 SAM-R 必要權限](install-atp-step8-samr.md)。
 
-
 ## <a name="see-also"></a>另請參閱
+
 - [Azure ATP 調整大小工具](https://aka.ms/aatpsizingtool) \(英文\)
 - [Azure ATP 架構](atp-architecture.md)
 - [安裝 Azure ATP](install-atp-step1.md)
 - [網路名稱解析 (NNR)](atp-nnr-policy.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
-
-

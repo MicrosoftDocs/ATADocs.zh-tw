@@ -1,23 +1,23 @@
 ---
-title: Azure ATP 安全性警訊指南 | Microsoft Docs
+title: Azure ATP 安全性警示指南
 d|Description: This article provides a list of the security alerts issued by Azure ATP.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 09/15/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d889c92d29b8c578c5af9596bc6a9946bc9d87f9
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 39fbd3f42cfccd60a007b8640421a8af1c178243
+ms.sourcegitcommit: 8bb80eaef3c2a1085834b98839564c5d37334f56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907798"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76515675"
 ---
 # <a name="azure-atp-security-alerts"></a>Azure ATP 安全性警示
 
@@ -38,53 +38,93 @@ Azure ATP 安全性警訊分為下列類別或階段，如同在典型網路攻�
 
 ## <a name="security-alert-name-mapping-and-unique-external-ids"></a>安全性警示名稱對應和唯一的外部識別碼
 
-在 2.56 版中，所有現有的 Azure ATP 安全性警訊皆以更容易了解的名稱重新命名。 新舊名稱之間的對應和其相對應的唯一 externalId，皆如下表所列。 搭配指令碼或自動化使用時，Microsoft 建議使用警示外部識別碼來取代警示名稱，因為只有安全性警示外部識別碼具有永久性且不會變更。
+下表列出警示名稱，以及其對應的唯一外部識別碼與其 Microsoft Cloud App Security 警示識別碼。 搭配指令碼或自動化使用時，Microsoft 建議使用警示外部識別碼來取代警示名稱，因為只有安全性警示外部識別碼具有永久性且不會變更。
 
-> [!div class="mx-tableFixed"] 
+# <a name="external-idstabexternal"></a>[外部識別碼](#tab/external)
 
-|新安全性警訊名稱|舊安全性警訊名稱|唯一外部識別碼|嚴重性|MITRE ATT&CK Matrix™ |
-|---------|----------|---------|---------|---------|
-|[帳戶列舉偵察](atp-reconnaissance-alerts.md#account-enumeration-reconnaissance-external-id-2003)|使用帳戶列舉偵查|2003|中型|探索|
-|[透過 SMB 的資料外流](atp-exfiltration-alerts.md#data-exfiltration-over-smb-external-id-2030)| NA| 2030|高|外流，<br>橫向移動，<br>命令與控制|
-|[Honeytoken 活動](atp-compromised-credentials-alerts.md#honeytoken-activity-external-id-2014)|Honeytoken 活動|2014|中型|認證存取，<br> 探索|
-|[資料保護 API 主要金鑰的惡意要求](atp-domain-dominance-alerts.md#malicious-request-of-data-protection-api-master-key-external-id-2020)|惡意的資料保護私人資訊要求|2020|高|認證存取|
-|[網路對應偵察 (DNS)](atp-reconnaissance-alerts.md#network-mapping-reconnaissance-dns-external-id-2007)|使用 DNS 探查|2007|中型|探索|
-|[遠端程式碼執行嘗試](atp-domain-dominance-alerts.md#remote-code-execution-attempt-external-id-2019)|遠端程式碼執行嘗試|2019|中型|執行，<br> 持續性，<br> 權限提升，<br> 防禦躲避，<br> 橫向移動|
-|[透過 DNS 執行遠端程式碼](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036)|NA|2036|中型|權限提升，<br> 橫向移動|
-|[安全性主體偵察 (LDAP)](atp-reconnaissance-alerts.md#security-principal-reconnaissance-ldap-external-id-2038)|NA|2038|中型|認證存取|
-|[可疑的暴力密碼破解攻擊 (Kerberos、NTLM)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-kerberos-ntlm-external-id-2023)|可疑的驗證失敗|2023|中型|認證存取|
-|[可疑的暴力密碼破解攻擊 (LDAP)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-ldap-external-id-2004)|使用 LDAP 簡單繫結的暴力密碼破解攻擊|2004|中型|認證存取|
-|[可疑的暴力密碼破解攻擊 (SMB)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-smb-external-id-2033)|不尋常的通訊協定實作 (可能使用 Hydra 等惡意工具)|2033|中型|橫向移動|
-|[可疑的 DCShadow 攻擊 (網域控制站升階)](atp-domain-dominance-alerts.md#suspected-dcshadow-attack-domain-controller-promotion-external-id-2028)|可疑的網域控制站升級 (潛在的 DCShadow 攻擊)|2028|高|防禦躲避|
-|[可疑的 DCShadow 攻擊 (網域控制站複寫要求)](atp-domain-dominance-alerts.md#suspected-dcshadow-attack-domain-controller-replication-request-external-id-2029)|可疑的網域控制站複寫要求 (可能為 DCShadow 攻擊)|2029|高|防禦躲避|
-|[可疑的 DCSync 攻擊 (目錄服務的複寫)](atp-domain-dominance-alerts.md#suspected-dcsync-attack-replication-of-directory-services-external-id-2006)|惡意的目錄服務複寫|2006|高|持續性，<br> 認證存取|
-|[可疑的黃金票證使用 (加密降級)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-encryption-downgrade-external-id-2009)|加密降級活動 (可能為黃金票證攻擊)|2009|中型|權限提升，<br> 橫向移動，<br>持續性|
-|[可疑的黃金票證使用 (偽造的授權資料)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-forged-authorization-data-external-id-2013)|使用偽造授權資料提升權限|2013|高|權限提升，<br>橫向移動，<br>持續性|
-|[可疑的黃金票證使用 (不存在的帳戶)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-nonexistent-account-external-id-2027)|Kerberos 黃金票證 - 不存在的帳戶|2027|高|權限提升，<br> 橫向移動，<br>持續性|
-|[可疑的黃金票證使用 (票證異常)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-external-id-2032)|NA|2032|高|權限提升，<br> 橫向移動，<br>持續性|
-|[可疑的黃金票證使用 (時間異常)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|Kerberos 黃金票證 - 時間異常|2022|高|權限提升，<br> 橫向移動，<br>持續性|
-|[可疑的身分識別竊取 (雜湊傳遞)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-hash-external-id-2017)|使用傳遞雜湊攻擊竊取身分|2017|高|橫向移動|
-|[可疑的身分識別竊取 (票證傳遞)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018)|使用傳遞票證攻擊竊取身分|2018|高或中|橫向移動|
-|[可疑的 NTLM 驗證竄改](atp-lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039)|NA|2039|中型|權限提升， <br>橫向移動|
-|[可疑的 NTLM 轉送攻擊](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037)|NA|2037|中或低 (如果觀察到使用簽署的 NTLM v2 通訊協定)|權限提升， <br> 橫向移動|
-|[可疑的 Overpass-the-Hash 攻擊 (加密降級)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|加密降級活動 (可能為 Overpass-the-Hash 攻擊)|2008|中型|橫向移動|
-|[可疑的 Overpass-the-Hash 攻擊 (Kerberos)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-kerberos-external-id-2002)|不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)|2002|中型|橫向移動|
-|[可疑的萬能金鑰攻擊 (加密降級)](atp-domain-dominance-alerts.md#suspected-skeleton-key-attack-encryption-downgrade-external-id-2010)|加密降級活動 (可能為萬能金鑰攻擊)|2010|中型|橫向移動，<br> 持續性|
-|[可疑的 Metasploit 入侵架構使用](atp-compromised-credentials-alerts.md#suspected-use-of-metasploit-hacking-framework-external-id-2034)|不尋常的通訊協定實作 (可能使用 Metasploit 入侵工具)|2034|中型|橫向移動|
-|[可疑的 WannaCry 勒索軟體攻擊](atp-compromised-credentials-alerts.md#suspected-wannacry-ransomware-attack-external-id-2035)|不尋常的通訊協定實作 (可能為 WannaCry 勒索軟體攻擊)|2035|中型|橫向移動|
-|[透過 DNS 的可疑通訊](atp-exfiltration-alerts.md#suspicious-communication-over-dns-external-id-2031)|透過 DNS 的可疑通訊|2031|中型|外流|
-|[敏感性群組的可疑新增項目](atp-domain-dominance-alerts.md#suspicious-additions-to-sensitive-groups-external-id-2024)|敏感性群組的可疑新增項目|2024|中型|認證存取，<br>持續性|
-|[可疑的服務建立](atp-domain-dominance-alerts.md#suspicious-service-creation-external-id-2026)|可疑的服務建立|2026|中型|執行，<br> 持續性，<br> 權限提升，<br> 防禦躲避，<br>橫向移動|
-|[可疑的 VPN 連線](atp-compromised-credentials-alerts.md#suspicious-vpn-connection-external-id-2025)|可疑 VPN 連線|2025|中型|持續性，<br>防禦躲避|
-|[使用者和群組成員資格偵察 (SAMR)](atp-reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|使用目錄服務查詢探查|2021|中型|探索|
-|[使用者和 IP 位址偵察 (SMB)](atp-reconnaissance-alerts.md#user-and-ip-address-reconnaissance-smb-external-id-2012)|使用 SMB 工作階段列舉探查|2012|中型|探索|
-|
+> [!div class="mx-tdBreakAll"]
+> |新安全性警示名稱|唯一外部識別碼|嚴重性|MITRE ATT&CK Matrix™|
+> |---|---|---|---|
+> |[帳戶列舉偵察](atp-reconnaissance-alerts.md#account-enumeration-reconnaissance-external-id-2003)|2003|中型|探索|
+> |[透過 SMB 的資料外流](atp-exfiltration-alerts.md#data-exfiltration-over-smb-external-id-2030)|2030|高|外流，<br>橫向移動，<br>命令與控制|
+> |[Honeytoken 活動](atp-compromised-credentials-alerts.md#honeytoken-activity-external-id-2014)|2014|中型|認證存取，<br>探索|
+> |[資料保護 API 主要金鑰的惡意要求](atp-domain-dominance-alerts.md#malicious-request-of-data-protection-api-master-key-external-id-2020)|2020|高|認證存取|
+> |[網路對應偵察 (DNS)](atp-reconnaissance-alerts.md#network-mapping-reconnaissance-dns-external-id-2007)|2007|中型|探索|
+> |[遠端程式碼執行嘗試](atp-domain-dominance-alerts.md#remote-code-execution-attempt-external-id-2019)|2019|中型|執行，<br>持續性，<br>權限提升，<br>防禦躲避，<br>橫向移動|
+> |[透過 DNS 執行遠端程式碼](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036)|2036|中型|權限提升，<br>橫向移動|
+> |[安全性主體偵察 (LDAP)](atp-reconnaissance-alerts.md#security-principal-reconnaissance-ldap-external-id-2038)|2038|中型|認證存取|
+> |[可疑的暴力密碼破解攻擊 (Kerberos、NTLM)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-kerberos-ntlm-external-id-2023)|2023|中型|認證存取|
+> |[可疑的暴力密碼破解攻擊 (LDAP)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-ldap-external-id-2004)|2004|中型|認證存取|
+> |[可疑的暴力密碼破解攻擊 (SMB)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-smb-external-id-2033)|2033|中型|橫向移動|
+> |[可疑的 DCShadow 攻擊 (網域控制站升級)](atp-domain-dominance-alerts.md#suspected-dcshadow-attack-domain-controller-promotion-external-id-2028)|2028|高|防禦躲避|
+> |[可疑的 DCShadow 攻擊 (網域控制站複寫要求)](atp-domain-dominance-alerts.md#suspected-dcshadow-attack-domain-controller-replication-request-external-id-2029)|2029|高|防禦躲避|
+> |[可疑的 DCSync 攻擊 (目錄服務的複寫)](atp-domain-dominance-alerts.md#suspected-dcsync-attack-replication-of-directory-services-external-id-2006)|2006|高|持續性，<br>認證存取|
+> |[可疑的黃金票證使用 (加密降級)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-encryption-downgrade-external-id-2009)|2009|中型|權限提升，<br>橫向移動，<br>持續性|
+> |[可疑的黃金票證使用 (偽造的授權資料)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-forged-authorization-data-external-id-2013)|2013|高|權限提升，<br>橫向移動，<br>持續性|
+> |[可疑的黃金票證使用 (不存在的帳戶)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-nonexistent-account-external-id-2027)|2027|高|權限提升，<br>橫向移動，<br>持續性|
+> |[可疑的黃金票證使用 (票證異常)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-external-id-2032)|2032|高|權限提升，<br>橫向移動，<br>持續性|
+> |[可疑的黃金票證使用 (時間異常)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|2022|高|權限提升，<br>橫向移動，<br>持續性|
+> |[可疑的身分識別竊取 (雜湊傳遞)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-hash-external-id-2017)|2017|高|橫向移動|
+> |[可疑的身分識別竊取 (票證傳遞)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018)|2018|高或中|橫向移動|
+> |[可疑的 NTLM 驗證竄改](atp-lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039)|2039|中型|權限提升， <br>橫向移動|
+> |[可疑的 NTLM 轉送攻擊](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037)|2037|中或低 (如果觀察到使用簽署的 NTLM v2 通訊協定)|權限提升， <br>橫向移動|
+> |[可疑的 Overpass-the-Hash 攻擊 (加密降級)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|2008|中型|橫向移動|
+> |[可疑的 Overpass-the-Hash 攻擊 (Kerberos)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-kerberos-external-id-2002)|2002|中型|橫向移動|
+> |[可疑的萬能金鑰攻擊 (加密降級)](atp-domain-dominance-alerts.md#suspected-skeleton-key-attack-encryption-downgrade-external-id-2010)|2010|中型|橫向移動，<br>持續性|
+> |[可疑的 Metasploit 入侵架構使用](atp-compromised-credentials-alerts.md#suspected-use-of-metasploit-hacking-framework-external-id-2034)|2034|中型|橫向移動|
+> |[可疑的 WannaCry 勒索軟體攻擊](atp-compromised-credentials-alerts.md#suspected-wannacry-ransomware-attack-external-id-2035)|2035|中型|橫向移動|
+> |[敏感性群組的可疑新增項目](atp-domain-dominance-alerts.md#suspicious-additions-to-sensitive-groups-external-id-2024)|2024|中型|認證存取，<br>持續性|
+> |[透過 DNS 的可疑通訊](atp-exfiltration-alerts.md#suspicious-communication-over-dns-external-id-2031)|2031|中型|外流|
+> |[可疑的服務建立](atp-domain-dominance-alerts.md#suspicious-service-creation-external-id-2026)|2026|中型|執行，<br>持續性，<br>權限提升，<br>防禦躲避，<br>橫向移動|
+> |[可疑的 VPN 連線](atp-compromised-credentials-alerts.md#suspicious-vpn-connection-external-id-2025)|2025|中型|持續性，<br>防禦躲避|
+> |[使用者和群組成員資格偵察 (SAMR)](atp-reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|2021|中型|探索|
+> |[使用者和 IP 位址偵察 (SMB)](atp-reconnaissance-alerts.md#user-and-ip-address-reconnaissance-smb-external-id-2012)|2012|中型|探索|
+
+# <a name="cloud-app-security-idstabcloud-app-security"></a>[Cloud App Security 識別碼](#tab/cloud-app-security)
+
+> [!div class="mx-tdBreakAll"]
+> |新安全性警示名稱|Cloud App Security 警示識別碼|
+> |---|---|
+> |[帳戶列舉偵察](atp-reconnaissance-alerts.md#account-enumeration-reconnaissance-external-id-2003)|ALERT_EXTERNAL_AATP_ACCOUNT_ENUMERATION_SECURITY_ALERT|
+> |[透過 SMB 的資料外流](atp-exfiltration-alerts.md#data-exfiltration-over-smb-external-id-2030)|ALERT_EXTERNAL_AATP_SMB_DATA_EXFILTRATION_SECURITY_ALERT|
+> |[Honeytoken 活動](atp-compromised-credentials-alerts.md#honeytoken-activity-external-id-2014)|ALERT_EXTERNAL_AATP_HONEYTOKEN_ACTIVITY_SECURITY_ALERT|
+> |[資料保護 API 主要金鑰的惡意要求](atp-domain-dominance-alerts.md#malicious-request-of-data-protection-api-master-key-external-id-2020)|ALERT_EXTERNAL_AATP_RETRIEVE_DATA_PROTECTION_BACKUP_KEY_SECURITY_ALERT|
+> |[網路對應偵察 (DNS)](atp-reconnaissance-alerts.md#network-mapping-reconnaissance-dns-external-id-2007)|ALERT_EXTERNAL_AATP_DNS_RECONNAISSANCE_SECURITY_ALERT|
+> |[遠端程式碼執行嘗試](atp-domain-dominance-alerts.md#remote-code-execution-attempt-external-id-2019)|ALERT_EXTERNAL_AATP_REMOTE_EXECUTION_SECURITY_ALERT|
+> |[透過 DNS 執行遠端程式碼](atp-lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036)|ALERT_EXTERNAL_AATP_DNS_REMOTE_CODE_EXECUTION_SECURITY_ALERT|
+> |[安全性主體偵察 (LDAP)](atp-reconnaissance-alerts.md#security-principal-reconnaissance-ldap-external-id-2038)|ALERT_EXTERNAL_AATP_LDAP_SEARCH_RECONNAISSANCE_SECURITY_ALERT|
+> |[可疑的暴力密碼破解攻擊 (Kerberos、NTLM)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-kerberos-ntlm-external-id-2023)|ALERT_EXTERNAL_AATP_BRUTE_FORCE_SECURITY_ALERT|
+> |[可疑的暴力密碼破解攻擊 (LDAP)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-ldap-external-id-2004)|ALERT_EXTERNAL_AATP_LDAP_BRUTE_FORCE_SECURITY_ALERT|
+> |[可疑的暴力密碼破解攻擊 (SMB)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-smb-external-id-2033)|ALERT_EXTERNAL_AATP_ABNORMAL_SMB_BRUTE_FORCE_SECURITY_ALERT|
+> |[可疑的 DCShadow 攻擊 (網域控制站升級)](atp-domain-dominance-alerts.md#suspected-dcshadow-attack-domain-controller-promotion-external-id-2028)|ALERT_EXTERNAL_AATP_DIRECTORY_SERVICES_ROGUE_PROMOTION_SECURITY_ALERT|
+> |[可疑的 DCShadow 攻擊 (網域控制站複寫要求)](atp-domain-dominance-alerts.md#suspected-dcshadow-attack-domain-controller-replication-request-external-id-2029)|ALERT_EXTERNAL_AATP_DIRECTORY_SERVICES_ROGUE_REPLICATION_SECURITY_ALERT|
+> |[可疑的 DCSync 攻擊 (目錄服務的複寫)](atp-domain-dominance-alerts.md#suspected-dcsync-attack-replication-of-directory-services-external-id-2006)|ALERT_EXTERNAL_AATP_DIRECTORY_SERVICES_REPLICATION_SECURITY_ALERT|
+> |[可疑的黃金票證使用 (加密降級)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-encryption-downgrade-external-id-2009)|ALERT_EXTERNAL_AATP_GOLDEN_TICKET_ENCRYPTION_DOWNGRADE_SECURITY_ALERT|
+> |[可疑的黃金票證使用 (偽造的授權資料)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-forged-authorization-data-external-id-2013)|ALERT_EXTERNAL_AATP_FORGED_PAC_SECURITY_ALERT|
+> |[可疑的黃金票證使用 (不存在的帳戶)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-nonexistent-account-external-id-2027)|ALERT_EXTERNAL_AATP_FORGED_PRINCIPAL_SECURITY_ALERT|
+> |[可疑的黃金票證使用 (票證異常)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-external-id-2032)|ALERT_EXTERNAL_AATP_GOLDEN_TICKET_SIZE_ANOMALY_SECURITY_ALERT|
+> |[可疑的黃金票證使用 (時間異常)](atp-domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|ALERT_EXTERNAL_AATP_GOLDEN_TICKET_SECURITY_ALERT|
+> |[可疑的身分識別竊取 (雜湊傳遞)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-hash-external-id-2017)|ALERT_EXTERNAL_AATP_PASS_THE_HASH_SECURITY_ALERT|
+> |[可疑的身分識別竊取 (票證傳遞)](atp-lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018)|ALERT_EXTERNAL_AATP_PASS_THE_TICKET_SECURITY_ALERT|
+> |[可疑的 NTLM 驗證竄改](atp-lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039)|ALERT_EXTERNAL_AATP_ABNORMAL_NTLM_SIGNING_SECURITY_ALERT|
+> |[可疑的 NTLM 轉送攻擊](atp-lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037)|ALERT_EXTERNAL_AATP_NTLM_RELAY_SECURITY_ALERT|
+> |[可疑的 Overpass-the-Hash 攻擊 (加密降級)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|ALERT_EXTERNAL_AATP_OVERPASS_THE_HASH_ENCRYPTION_DOWNGRADE_SECURITY_ALERT|
+> |[可疑的 Overpass-the-Hash 攻擊 (Kerberos)](atp-lateral-movement-alerts.md#suspected-overpass-the-hash-attack-kerberos-external-id-2002)|ALERT_EXTERNAL_AATP_ABNORMAL_KERBEROS_OVERPASS_THE_HASH_SECURITY_ALERT|
+> |[可疑的萬能金鑰攻擊 (加密降級)](atp-domain-dominance-alerts.md#suspected-skeleton-key-attack-encryption-downgrade-external-id-2010)|ALERT_EXTERNAL_AATP_SKELETON_KEY_ENCRYPTION_DOWNGRADE_SECURITY_ALERT|
+> |[可疑的 Metasploit 入侵架構使用](atp-compromised-credentials-alerts.md#suspected-use-of-metasploit-hacking-framework-external-id-2034)|ALERT_EXTERNAL_AATP_ABNORMAL_SMB_METASPLOIT_SECURITY_ALERT|
+> |[可疑的 WannaCry 勒索軟體攻擊](atp-compromised-credentials-alerts.md#suspected-wannacry-ransomware-attack-external-id-2035)|ALERT_EXTERNAL_AATP_ABNORMAL_SMB_WANNA_CRY_SECURITY_ALERT|
+> |[敏感性群組的可疑新增項目](atp-domain-dominance-alerts.md#suspicious-additions-to-sensitive-groups-external-id-2024)|ALERT_EXTERNAL_AATP_ABNORMAL_SENSITIVE_GROUP_MEMBERSHIP_CHANGE_SECURITY_ALERT|
+> |[透過 DNS 的可疑通訊](atp-exfiltration-alerts.md#suspicious-communication-over-dns-external-id-2031)|ALERT_EXTERNAL_AATP_DNS_SUSPICIOUS_COMMUNICATION_SECURITY_ALERT|
+> |[可疑的服務建立](atp-domain-dominance-alerts.md#suspicious-service-creation-external-id-2026)|ALERT_EXTERNAL_AATP_MALICIOUS_SERVICE_CREATION_SECURITY_ALERT|
+> |[可疑的 VPN 連線](atp-compromised-credentials-alerts.md#suspicious-vpn-connection-external-id-2025)|ALERT_EXTERNAL_AATP_ABNORMAL_VPN_SECURITY_ALERT|
+> |[使用者和群組成員資格偵察 (SAMR)](atp-reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|ALERT_EXTERNAL_AATP_SAMR_RECONNAISSANCE_SECURITY_ALERT|
+> |[使用者和 IP 位址偵察 (SMB)](atp-reconnaissance-alerts.md#user-and-ip-address-reconnaissance-smb-external-id-2012)|ALERT_EXTERNAL_AATP_ENUMERATE_SESSIONS_SECURITY_ALERT|
 
 > [!NOTE]
 > 若要停用任何安全性警示，請連絡支援人員。
 
-
 ## <a name="see-also"></a>另請參閱
+
 - [使用安全性警訊](working-with-suspicious-activities.md)
 - [了解安全性警訊](understanding-security-alerts.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

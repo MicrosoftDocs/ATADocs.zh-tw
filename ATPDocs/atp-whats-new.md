@@ -5,18 +5,18 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 01/19/2020
+ms.date: 01/26/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 1019591a3ad775a2cd3e54df99aa84ae55ac7e53
-ms.sourcegitcommit: 450295f4ee87db835c9921d2595ae9d291f727c5
+ms.openlocfilehash: ef493165f939bd037e12361d7eec403ad397b0fc
+ms.sourcegitcommit: 409680586343ab7fdd46da96f343305d22eb8936
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2020
-ms.locfileid: "76281758"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76818221"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
 
@@ -26,14 +26,15 @@ ms.locfileid: "76281758"
 
 RSS 摘要：將下列 URL 複製並貼至您的摘要讀取程式中，就能在此頁面有所更新時收到通知：`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
 
-<!-- Rollback
-## Azure ATP release 2.107
+## <a name="azure-atp-release-2107"></a>Azure ATP 2.107 版
 
-Released Jan 26, 2020
+發行日期：2020 年 1 月 26 日
 
-- **New monitored activity: SID history change**  
-SID history change is now a monitored and filterable activity. Learn more about which [activities Azure ATP monitors](monitored-activities.md), and how to [filter and search monitored activities](atp-activities-search.md) in the portal.
--->
+- **新的受監視的活動：SID 歷程記錄變更**  
+    SID 歷程記錄變更現在是受監視且可篩選的活動。 深入了解 [Azure ATP 監視器](monitored-activities.md)會監視哪些活動，以及如何在入口網站中[篩選和搜尋受監視的活動](atp-activities-search.md)。
+
+- **功能增強：不再重新開啟已關閉或隱藏的警示**  
+    在 Azure ATP 入口網站中關閉或隱藏警示後，如果在短時間內再次偵測到相同的活動，就會開啟新的警示。 而先前在相同的情況下，則是會重新開啟該警示。
 
 ## <a name="azure-atp-release-2106"></a>Azure ATP 2.106 版
 

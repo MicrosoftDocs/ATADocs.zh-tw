@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 09/15/2019
+ms.date: 01/26/2020
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: a06004bd-9f77-4e8e-a0e5-4727d6651a0f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a1463d3aa397c42069ada0e540fd6e0eb9f846c9
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 6d8a18b7e2268945dcfd254afb5580a180ad0204
+ms.sourcegitcommit: 409680586343ab7fdd46da96f343305d22eb8936
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907332"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76818238"
 ---
 # <a name="working-with-security-alerts"></a>使用安全性警訊
 
@@ -47,6 +47,7 @@ ms.locfileid: "75907332"
     - 以 Excel 格式下載安全性警訊。
 
 > [!NOTE]
+>
 > - 當您將滑鼠暫留在使用者或電腦上時，就會顯示迷你實體設定檔。 迷你設定檔可提供實體的額外資訊，並包含與實體連結的安全性警訊數目。
 > - 按一下實體，您便會前往使用者或電腦的實體設定檔。
 
@@ -54,7 +55,7 @@ ms.locfileid: "75907332"
 
 ## <a name="security-alert-categories"></a>安全性警訊類別
 
-Azure ATP 安全性警訊分為下列類別或階段，如同在典型網路攻擊終止鏈結中會看到的階段。 
+Azure ATP 安全性警訊分為下列類別或階段，如同在典型網路攻擊終止鏈結中會看到的階段。
 
 - [偵察警訊](atp-reconnaissance-alerts.md)
 - [遭入侵的認證警訊](atp-compromised-credentials-alerts.md)
@@ -70,18 +71,18 @@ Azure ATP 研究小組會持續致力於實作新偵測攻擊的新探索。 由
 
 ![預覽偵測 VPN](./media/preview-detection-vpn.png)
 
-預設會在 Azure ATP 中啟用預覽偵測。 
+預設會在 Azure ATP 中啟用預覽偵測。
 
 停用預覽偵測：
 
 1. 在 Azure ATP 主控台中，按一下設定 cog。
 2. 在左功能表中，按一下 [偵測]  。
 3. 使用滑桿開啟和關閉預覽偵測。
- 
-![預覽偵測](./media/preview-detections.png) 
 
+![預覽偵測](./media/preview-detections.png)
 
 ## <a name="filter-security-alerts-list"></a>篩選安全性警訊清單
+
 若要篩選安全性警訊清單：
 
 1. 在畫面左側的 [篩選依據]  窗格中，選取以下其中一個選項︰[所有]  、[開啟]  、[已關閉]  或 [已隱藏]  。
@@ -102,7 +103,6 @@ Azure ATP 研究小組會持續致力於實作新偵測攻擊的新探索。 由
 
     表示可能會導致身分識別盜用、權限提升或其他重大影響攻擊的活動
 
-
 ## <a name="managing-security-alerts"></a>管理安全性警訊
 
 您可以按一下安全性警訊的目前狀態，然後選取下列其中一項來變更安全性警訊的狀態：[開啟]  、[已隱藏]  、[已關閉]  或 [已刪除]  。
@@ -116,10 +116,7 @@ Azure ATP 研究小組會持續致力於實作新偵測攻擊的新探索。 由
 
 - **關閉**：用於追蹤您已識別、研究並修正以緩解的安全性警訊。
 
-    > [!NOTE]
-    > 如果在短時間內偵測到相同的活動，Azure ATP 可能會重新開啟已經關閉的警訊。
-
-- **隱藏**：隱藏警訊表示您想要暫時忽略它，只有出現新的執行個體時，才會再次收到通知。 這表示如果有類似的警示，Azure ATP 將不會重新開啟它。 但如果此警示在停止七天後再次出現，您便會再次收到警示。
+- **隱藏**：隱藏警訊表示您想要暫時忽略它，只有出現新的執行個體時，才會再次收到通知。 這表示如果有類似的警示，Azure ATP 將不會重新開啟它。 但如果此警示在停止七天後再次出現，便會開啟新的警示。
 
 - **刪除**：如果您刪除警示，即會將其從系統和資料庫中刪除，且您將「無法」予以還原。 按一下 [刪除] 之後，您即可刪除相同類型的所有安全性警訊。
 
@@ -127,7 +124,6 @@ Azure ATP 研究小組會持續致力於實作新偵測攻擊的新探索。 由
 
 > [!NOTE]
 > 只有 Azure ATP 系統管理員才能修改設定頁面。
-
 
 ## <a name="see-also"></a>另請參閱
 

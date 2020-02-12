@@ -5,26 +5,25 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 12/26/2019
+ms.date: 02/06/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ae8953e02b86d1e8e6b6c31122e971f866178f9d
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: d84102528e3423ed149cdc64c010a7f190a40f68
+ms.sourcegitcommit: 20cf564885aa01985524c9c995ae5ba282606fac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907601"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77045124"
 ---
-# <a name="troubleshooting-azure-atp-known-issues"></a>針對 Azure ATP 已知問題進行疑難排解 
-
+# <a name="troubleshooting-azure-atp-known-issues"></a>針對 Azure ATP 已知問題進行疑難排解
 
 ## <a name="sensor-failure-communication-error"></a>感應器失敗通訊錯誤
 
-如果您收到以下感應器失敗錯誤： 
+如果您收到以下感應器失敗錯誤：
 
 System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> System.Net.WebException：無法連線至遠端伺服器 ---> System.Net.Sockets.SocketException：因為連線對象有一段時間並未正確回應，所以連線嘗試失敗；或是因為連線的主機無法回應，所以連線建立失敗...
 
@@ -33,7 +32,7 @@ System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> Syste
 請確保本機主機和 TCP 通訊埠 444 的通訊未受到封鎖。 若要深入了解 Azure ATP 必要條件，請參閱[連接埠](atp-prerequisites.md#ports)。
 
 ## <a name="deployment-log-location"></a>部署記錄位置
- 
+
 針對安裝產品的使用者，Azure ATP 部署記錄位於 temp 目錄中。 在預設安裝位置中，其位於：C:\Users\Administrator\AppData\Local\Temp (或 %temp% 的上一層目錄)。 如需詳細資訊，請參閱[使用記錄檔針對 ATP 進行疑難排解](troubleshooting-atp-using-logs.md)。
 
 ## <a name="proxy-authentication-problem-presents-as-a-licensing-error"></a>Proxy 驗證問題顯示為授權錯誤
@@ -45,22 +44,21 @@ System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> Syste
 
 **原因：**
 
-在某些情況下，透過 Proxy 進行通訊時，可能會在驗證期間以錯誤 401 或 403 回應 Azure ATP 感應器，而不是錯誤 407。 Azure ATP 感應器將錯誤 401 或 403 解譯為授權問題，而不是 Proxy 驗證問題。 
+在某些情況下，透過 Proxy 進行通訊時，可能會在驗證期間以錯誤 401 或 403 回應 Azure ATP 感應器，而不是錯誤 407。 Azure ATP 感應器將錯誤 401 或 403 解譯為授權問題，而不是 Proxy 驗證問題。
 
 **解決方法：**
 
 請確定感應器可透過設定的 Proxy 瀏覽至 *.atp.azure.com，而無需進行驗證。 如需詳細資訊，請參閱[設定 Proxy 以進行通訊](configure-proxy.md)。
 
-## <a name="silent-installation-error-when-attempting-to-use-powershell"></a>嘗試使用 Powershell 時發生的無訊息安裝錯誤  
+## <a name="silent-installation-error-when-attempting-to-use-powershell"></a>嘗試使用 Powershell 時發生的無訊息安裝錯誤
 
-若您嘗試在無訊息感應器安裝期間使用 Powershell 並收到下列錯誤： 
-
+若您嘗試在無訊息感應器安裝期間使用 Powershell 並收到下列錯誤：
 
     "Azure ATP sensor Setup.exe" "/quiet" NetFrameworkCommandLineArguments="/q" Acce ...           Unexpected token '"/quiet"' in expression or statement."
 
-**原因：** 使用 Powershell 時無法包括安裝所需的 ./ 前置詞會導致此錯誤。 
+**原因：** 使用 Powershell 時無法包括安裝所需的 ./ 前置詞會導致此錯誤。
 
-**解決方法：** 使用完整命令來成功安裝。 
+**解決方法：** 使用完整命令來成功安裝。
 
     ./"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
 
@@ -68,36 +66,36 @@ System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> Syste
 
 如果您嘗試在具備 NIC 小組介面卡的電腦上安裝 ATP 感應器，您將會接收到安裝錯誤。 如果您想要在使用 NIC 小組設定的電腦上安裝 ATP 感應器，請遵循這些指示：
 
-1.  下載最新的 Npcap 安裝程式版本 [https://nmap.org/npcap/](https://nmap.org/npcap/) \(英文\)。
+1. 從 [https://nmap.org/npcap/](https://nmap.org/npcap/dist/npcap-0.9984.exe) 下載  Npcap 0.9984 版安裝程式。
     - 或者，向支援小組要求 Npcap 驅動程式 (支援無訊息安裝) 的 OEM 版本。
-    - 如果 Npcap 的複本僅搭配 Azure ATP 安裝及使用，它們並不會計入五個複本、五部電腦或五個使用者授權的限制。 如需詳細資訊，請參閱 [NPCAP 授權](https://github.com/nmap/npcap/blob/master/LICENSE) \(英文\)。 
+    - 如果 Npcap 的複本僅搭配 Azure ATP 安裝及使用，它們並不會計入五個複本、五部電腦或五個使用者授權的限制。 如需詳細資訊，請參閱 [NPCAP 授權](https://github.com/nmap/npcap/blob/master/LICENSE) \(英文\)。
 
 如果您尚未在電腦上安裝感應器：
 
-1.  如果您已安裝 WinPcap，請將它解除安裝。
-1.  使用下列選項安裝 Npcap：loopback_support=no & winpcap_mode=yes。
+1. 如果您已安裝 WinPcap，請將它解除安裝。
+1. 使用下列選項安裝 Npcap：loopback_support=no & winpcap_mode=yes。
     - 如果是使用 GUI 安裝程式，請取消選取 [回送支援]  並選取 [WinPcap]  模式。
-1.  安裝感應器套件。
+1. 安裝感應器套件。
 
 如果您已安裝感應器：
 
-1.  將感應器解除安裝。
-1.  將 WinPcap 解除安裝。
-1.  使用下列選項安裝 Npcap：loopback_support=no & winpcap_mode=yes
+1. 將感應器解除安裝。
+1. 將 WinPcap 解除安裝。
+1. 使用下列選項安裝 Npcap：loopback_support=no & winpcap_mode=yes
     - 如果是使用 GUI 安裝程式，請取消選取 [回送支援]  並選取 [WinPcap]  模式。
-1.  重新安裝感應器套件。
+1. 重新安裝感應器套件。
 
-## <a name="multi-processor-group-mode"></a>多處理器群組模式 
+## <a name="multi-processor-group-mode"></a>多處理器群組模式
 針對 Windows 作業系統 2008 R2 與 2012，多處理器群組模式中不支援 Azure ATP 感應器。
 
 建議的可能因應措施：
-- 如果超執行緒已開啟，請將它關閉。 這可能會減少足夠的邏輯核心數目，以避免需要在**多處理器群組**模式中執行。 
+- 如果超執行緒已開啟，請將它關閉。 這可能會減少足夠的邏輯核心數目，以避免需要在**多處理器群組**模式中執行。
 
-- 如果您的電腦具有少於 64 個邏輯核心，而且是在 HP 主機上執行，您可以將 [NUMA 群組大小最佳化]  BIOS 設定從預設的[叢集]  變更為 [一般]  。 
+- 如果您的電腦具有少於 64 個邏輯核心，而且是在 HP 主機上執行，您可以將 [NUMA 群組大小最佳化]  BIOS 設定從預設的[叢集]  變更為 [一般]  。
 
 ## <a name="windows-defender-atp-integration-issue"></a>Windows Defender ATP 整合問題
 
-Azure 進階威脅防護可讓您將 Azure ATP 與 Windows Defender ATP 整合。 如需詳細資訊，請參閱[整合 Azure ATP 與 Windows Defender ATP](integrate-wd-atp.md)。 
+Azure 進階威脅防護可讓您將 Azure ATP 與 Windows Defender ATP 整合。 如需詳細資訊，請參閱[整合 Azure ATP 與 Windows Defender ATP](integrate-wd-atp.md)。
 
 ## <a name="vmware-virtual-machine-sensor-issue"></a>VMware 虛擬機器感應器問題
 
@@ -117,7 +115,7 @@ Azure 進階威脅防護可讓您將 Azure ATP 與 Windows Defender ATP 整合�
 
 若已啟用 LSO，請使用下列命令來停用它：
 
-`Disable-NetAdapterLso -Name {name of adapter}` 
+`Disable-NetAdapterLso -Name {name of adapter}`
 
 ![停用 LSO 狀態](./media/disable-lso-vmware.png)
 

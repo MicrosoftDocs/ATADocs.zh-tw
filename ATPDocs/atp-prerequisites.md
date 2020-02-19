@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 50a14aeb6b91fc94c71f6be69bf66db13528c9f1
-ms.sourcegitcommit: 1a0cc214568bf12041d11e037dfe56a8d9e707c2
+ms.openlocfilehash: eb6484eeaa9bd5ed4e04f90a5a8dc1ed4327b8b5
+ms.sourcegitcommit: e281d63e3406e02325645234ad0a4880056b2351
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76706234"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77259446"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -50,10 +50,24 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 
 - 驗證您要在其中安裝 Azure ATP 感應器的網域控制站可網際網路連線至 Azure ATP 雲端服務。 Azure ATP 感應器支援使用 Proxy。 如需 Proxy 設定的詳細資訊，請參閱[為 Azure ATP 設定 Proxy](configure-proxy.md)。
 
-- 針對監視網域中的所有物件具有讀取存取權的**內部部署** AD 使用者帳戶和密碼。
+- 至少下列其中一個目錄服務帳戶，該帳戶必須有所提及網域中所有物件的讀取權限：
+  - **標準** AD 使用者帳戶與密碼。 為執行 Windows Server 2008 R2 SP1 的感應器所需要。
+  - **群組受管理的服務帳戶** (gMSA)。 需要 Windows Server 2012 或更新版本。  
+  所有感應器都必須有可擷取 gMSA 帳戶密碼的權限。  
+  若要了解 gMSA 帳戶，請參閱[開始使用群組受管理的服務帳戶](/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts#BKMK_CreateGMSA)。
+
+    下表顯示哪些 AD 使用者帳戶可以搭配哪些伺服器版本使用：
+
+    |帳戶類型|Windows Server 2008 R2 SP1|Windows Server 2012 或更新版本|
+    |---|---|---|
+    |**標準** AD 使用者帳戶|是|是|
+    |**gMSA** 帳戶|否|是|
 
     > [!NOTE]
-    > 如果您已經在網域中設定不同組織單位 (OU) 的自訂 ACL，請確定選取的使用者具有讀取這些 OU 的權限。
+    >
+    > - 針對執行 Windows Server 2012 與更新版本的感應器電腦，我們建議使用 **gMSA** 帳戶，以獲得改善的安全性與自動密碼管理。
+    > - 若您有多個感應器，其中有些執行 Windows Server 2008，而其他執行 Windows Server 2012 或更新版本，則除了使用 **gMSA** 帳戶的建議之外，您也必須使用至少一個**標準** AD 使用者帳戶。
+    > - 如果您已經在網域中設定不同組織單位 (OU) 的自訂 ACL，請確定選取的使用者具有讀取這些 OU 的權限。
 
 - 如果您在 Azure ATP 獨立感應器上執行 Wireshark，在停止 Wireshark 擷取後，重新啟動 Azure 進階威脅防護感應器服務。 如果您未重新啟動感應器服務，感應器會停止擷取流量。
 
@@ -69,9 +83,10 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 
 您可透過瀏覽器來存取 Azure ATP 入口網站，其支援下列瀏覽器和設定︰
 
-- Microsoft Edge
-- Internet Explorer 第 10 版及更新版本
-- Google Chrome 4.0 和更新版本
+- 支援 TLS 1.2 的瀏覽器，例如：
+  - Microsoft Edge
+  - Internet Explorer 11 版與更新版本
+  - Google Chrome 30.0 與更新版本
 - 螢幕解析度最低需求為 1700 像素
 - 防火牆/Proxy 開啟 - 若要與 Azure ATP 雲端服務通訊，您必須在防火牆/Proxy 中開啟 *.atp.azure.com 連接埠 443。
 

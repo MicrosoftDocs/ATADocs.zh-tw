@@ -5,18 +5,18 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 01/26/2020
+ms.date: 02/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: ef493165f939bd037e12361d7eec403ad397b0fc
-ms.sourcegitcommit: 409680586343ab7fdd46da96f343305d22eb8936
+ms.openlocfilehash: 50bbf3fda8b0e91a94cd917b4bf4174ccd31e9ca
+ms.sourcegitcommit: 173b9fc26592efec2113c6ee585b04311ddfdbf1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76818221"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77421991"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
 
@@ -26,15 +26,38 @@ ms.locfileid: "76818221"
 
 RSS 摘要：將下列 URL 複製並貼至您的摘要讀取程式中，就能在此頁面有所更新時收到通知：`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
 
+## <a name="azure-atp-release-2109"></a>Azure ATP 2.109 版
+
+發行日期：2020 年 2 月 16 日
+
+- **功能增強：機密實體**  
+從此版本 (2.109) 開始，由 Azure ATP 識別為憑證授權單位、DHCP 或 DNS 伺服器的機器現在會自動標記為**機密**。
+
+## <a name="azure-atp-release-2108"></a>Azure ATP 2.108 版
+
+發行日期：2020 年 2 月 9 日
+
+- **新功能：支援群組受管理的服務帳戶**  
+Azure ATP 現在支援使用群組受管理的服務帳戶 (gMSA)，以在將 Azure ATP 感應器連線到您的 Azure Active Directory (AD) 樹系時獲得更好的安全性。 如需有關搭配 Azure ATP 感應器使用 gMSA 的詳細資訊，請參閱[連線到您的 Active Directory 樹系](install-atp-step2.md#prerequisites)。
+
+- **功能增強：具有太多資料的已排程報表**  
+當已排程的報表具有太多資料時，電子郵件現在會透過顯示下列文字來通知您事實：指定期間內的資料太多，無法產生報告。 這會取代先前在電子郵件中按一下 [報告] 連結之後才探索事實的行為。
+
+- **功能增強：已更新的網域控制站涵蓋範圍邏輯**  
+我們已更新網域控制站涵蓋範圍報告邏輯，以包含來自 Azure AD 的其他資訊，使得可呈現更精確的網域控制站檢視 (不含感應器)。 這個新邏輯對對應的 Microsoft 安全分數也應該有正面的影響。
+
 ## <a name="azure-atp-release-2107"></a>Azure ATP 2.107 版
 
-發行日期：2020 年 1 月 26 日
+發行日期：2020 年 2 月 3 日
 
 - **新的受監視的活動：SID 歷程記錄變更**  
-    SID 歷程記錄變更現在是受監視且可篩選的活動。 深入了解 [Azure ATP 監視器](monitored-activities.md)會監視哪些活動，以及如何在入口網站中[篩選和搜尋受監視的活動](atp-activities-search.md)。
+SID 歷程記錄變更現在是受監視且可篩選的活動。 深入了解 [Azure ATP 監視器](monitored-activities.md)會監視哪些活動，以及如何在入口網站中[篩選和搜尋受監視的活動](atp-activities-search.md)。
 
 - **功能增強：不再重新開啟已關閉或隱藏的警示**  
-    在 Azure ATP 入口網站中關閉或隱藏警示後，如果在短時間內再次偵測到相同的活動，就會開啟新的警示。 而先前在相同的情況下，則是會重新開啟該警示。
+在 Azure ATP 入口網站中關閉或隱藏警示後，如果在短時間內再次偵測到相同的活動，就會開啟新的警示。 而先前在相同的情況下，則是會重新開啟該警示。
+
+- **入口網站存取與感應器需要 TLS 1.2**  
+現在需要 TLS 1.2，才能使用 Azure ATP 感應器與雲端服務。 使用不支援 TLS 1.2 的瀏覽器標將無法再存取 Azure ATP 入口網站。
 
 ## <a name="azure-atp-release-2106"></a>Azure ATP 2.106 版
 
@@ -53,13 +76,13 @@ RSS 摘要：將下列 URL 複製並貼至您的摘要讀取程式中，就能�
 發行日期：2019 年 12 月 23 日
 
 - **已消除感應器版本到期**  
-    Azure ATP 感應器部署及感應器安裝套件在數個版本之後已不再會到期，且現在只會自行更新一次。 此功能的結果是已可安裝先前所下載的感應器安裝套件，即使它們的版本號碼比已過期版本的最大號碼還舊。
+Azure ATP 感應器部署及感應器安裝套件在數個版本之後已不再會到期，且現在只會自行更新一次。 此功能的結果是已可安裝先前所下載的感應器安裝套件，即使它們的版本號碼比已過期版本的最大號碼還舊。
 
 - **確認入侵**  
-    您現在可以確認特定 Office 365 使用者的入侵，並將他們的風險層級設定為 [高]  。 此工作流程可為您的安全性作業小組提供另一個回應功能，以降低其安全性事件解決時間閾值。 深入了解如何使用 Azure ATP 和 Cloud App Security 來[確認入侵](https://docs.microsoft.com/cloud-app-security/tutorial-ueba?branch=pr-en-us-1204#phase-4-protect-your-organization)。
+您現在可以確認特定 Office 365 使用者的入侵，並將他們的風險層級設定為 [高]  。 此工作流程可為您的安全性作業小組提供另一個回應功能，以降低其安全性事件解決時間閾值。 深入了解如何使用 Azure ATP 和 Cloud App Security 來[確認入侵](https://docs.microsoft.com/cloud-app-security/tutorial-ueba?branch=pr-en-us-1204#phase-4-protect-your-organization)。
 
 - **新體驗橫幅**  
-    在於 Cloud App Security 入口網站中有新體驗可供使用的 Azure ATP 入口網站頁面上，會顯示描述可用內容及存取連結的新橫幅。
+在於 Cloud App Security 入口網站中有新體驗可供使用的 Azure ATP 入口網站頁面上，會顯示描述可用內容及存取連結的新橫幅。
 
 - 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
@@ -92,7 +115,7 @@ RSS 摘要：將下列 URL 複製並貼至您的摘要讀取程式中，就能�
 發行日期：2019 年 11 月 3 日
 
 - **功能增強：為 Azure ATP 入口網站**新增 Cloud App Security 入口網站可用性的使用者介面通知  
-    確保所有使用 Cloud App Security 入口網站的使用者，都能得知增強功能的發行。為入口網站新增的通知，會以現有的 Azure ATP 警示時間軸為準。
+確保所有使用 Cloud App Security 入口網站的使用者，都能得知增強功能的發行。為入口網站新增的通知，會以現有的 Azure ATP 警示時間軸為準。
 
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
@@ -101,7 +124,7 @@ RSS 摘要：將下列 URL 複製並貼至您的摘要讀取程式中，就能�
 發行日期：2019 年 10 月 27 日
 
 - **功能增強：可疑的暴力密碼破解攻擊警示**  
-    使用其他分析，改善[可疑的暴力密碼破解攻擊 (SMB)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-smb-external-id-2033) 警示，並且改善偵測邏輯，減少**良性確判 (B-TP)** 與**誤判 (FP)** 警示結果。
+使用其他分析，改善[可疑的暴力密碼破解攻擊 (SMB)](atp-compromised-credentials-alerts.md#suspected-brute-force-attack-smb-external-id-2033) 警示，並且改善偵測邏輯，減少**良性確判 (B-TP)** 與**誤判 (FP)** 警示結果。
 
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 

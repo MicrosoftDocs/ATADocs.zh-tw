@@ -1,27 +1,27 @@
 ---
-title: 了解 Azure ATP 監視警示 | Microsoft Docs
+title: 了解 Azure ATP Azure 健康情況警示
 description: 描述如何使用 Azure ATP 記錄檔對問題進行疑難排解
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 12/24/2019
+ms.date: 02/13/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: d0551e91-3b21-47d5-ad9d-3362df6d47c0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 22380f67b4a3f913bd80ded72f06db9ce57e0a11
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 9f800d1ec6003b5d69ba9ee1cc7482fb6511300d
+ms.sourcegitcommit: e281d63e3406e02325645234ad0a4880056b2351
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907827"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77259390"
 ---
-# <a name="understanding-azure-atp-sensor-and-standalone-sensor-monitoring-alerts"></a>了解 Azure ATP 感應器和獨立感應器監視警示
+# <a name="understanding-azure-atp-sensor-and-standalone-sensor-health-alerts"></a>了解 Azure ATP 感應器與獨立感應器健康情況警示
 
-當您的 Azure ATP 執行個體發生問題時，Azure ATP 健全狀況中心會發出監視警示以讓您知道。 本文描述每個元件的所有監視警示，並列出原因及解決問題所需的步驟。
+當您的 Azure ATP 執行個體發生問題時，Azure ATP 健康情況中心會透過發出健康情況警示來讓您知道。 此文章描述每個元件的所有健康情況警示，並列出原因與解決問題所需的步驟。
 
 ## <a name="all-domain-controllers-are-unreachable-by-a-sensor"></a>感應器無法連線到所有網域控制站
 
@@ -34,6 +34,12 @@ ms.locfileid: "75907827"
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
 |Azure ATP 感應器上所有/部分的擷取網路介面卡已停用或中斷連線。|Azure ATP 感應器不會再擷取部分/所有網域控制站的網路流量。 這會影響偵測與這些網域控制站相關之可疑活動的能力。|請確定 Azure ATP 感應器上這些選取的擷取網路介面卡已啟用並連線。|中型|
+
+## <a name="directory-services-user-credentials-are-incorrect"></a>目錄服務使用者認證不正確
+
+|警示|說明|解決方案|嚴重性|
+|----|----|----|----|
+|目錄服務使用者帳戶的認證不正確。|這會影響感應器使用 LDAP 查詢對網域控制站偵測活動的能力。|- 針對**標準** AD 帳戶：確認 [目錄服務]  設定頁面中的使用者名稱、密碼與網域是正確的。<br>- 針對**群組受管理的服務帳戶**：確認 [目錄服務]  設定頁面中的使用者名稱與網域是正確的。 此外，請檢查[連線到您的 Active Directory 樹系](install-atp-step2.md#prerequisites)頁面上所述的所有其他 **gMSA 帳戶**先決條件。|中型|
 
 ## <a name="no-traffic-received-from-domain-controller"></a>未從網域控制站收到任何流量
 

@@ -77,16 +77,18 @@
               href: atp-isp-overview.md
             - name: 以純文字公開認證的實體評估
               href: atp-cas-isp-clear-text.md
-            - name: 敏感性群組中的休眠實體評估
-              href: atp-cas-isp-dormant-entities.md
             - name: 使用舊版通訊協定評估
               href: atp-cas-isp-legacy-protocols.md
-            - name: 具有列印多工緩衝處理器服務可用的網域控制站評估
-              href: atp-cas-isp-print-spooler.md
             - name: 使用弱式密評估
               href: atp-cas-isp-weak-cipher.md
             - name: 委派不安全的 Kerberos 評估
               href: atp-cas-isp-unconstrained-kerberos.md
+            - name: 具有列印多工緩衝處理器服務可用的網域控制站評估
+              href: atp-cas-isp-print-spooler.md
+            - name: 敏感性群組中的休眠實體評估
+              href: atp-cas-isp-dormant-entities.md
+            - name: 未受監視的網域控制站
+              href: atp-cas-isp-unmonitored-domain-controller.md
     - name: 安全性警示實驗室
       items:
         - name: 實驗室概觀

@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 50bbf3fda8b0e91a94cd917b4bf4174ccd31e9ca
-ms.sourcegitcommit: 173b9fc26592efec2113c6ee585b04311ddfdbf1
+ms.openlocfilehash: 3787274ba5fc75ffebdf670f3fdb58b7497a4485
+ms.sourcegitcommit: 55adde8edff43f3df2402149335c16d43f45e1a9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77421991"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567912"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
 
@@ -25,6 +25,13 @@ ms.locfileid: "77421991"
 如需舊版 Azure ATP 的詳細資料，直到 (並包含) 2.55 版，請參閱 [Azure ATP 版本參考](atp-release-reference.md)。
 
 RSS 摘要：將下列 URL 複製並貼至您的摘要讀取程式中，就能在此頁面有所更新時收到通知：`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
+
+## <a name="azure-atp-release-2110"></a>Azure ATP 2.110 版
+
+發行日期：2020 年 2 月 23 日
+
+- **新增安全性評量：未受監視的網域控制站**  
+Azure ATP 安全性評量現在包括未受監視的網域控制站 (不含感應器的伺服器) 報告，可協助您管理環境的各層面。 如需詳細資訊，請參閱[未受監視的網域控制站](atp-cas-isp-unmonitored-domain-controller.md)。
 
 ## <a name="azure-atp-release-2109"></a>Azure ATP 2.109 版
 
@@ -536,7 +543,8 @@ Azure ATP 的[透過 DNS 執行遠端程式碼](atp-lateral-movement-alerts.md#r
 - **新的安全性警示：SMB 上的資料外洩 - (預覽)**  
 Azure ATP 的 [SMB 上的資料外流](atp-exfiltration-alerts.md)安全性警訊現為公開預覽狀態。 具有網域系統管理員權限的攻擊者可能會危害 KRBTGT 帳戶。 攻擊者可使用 KRBTGT 帳戶，建立可提供任何資源授權的 Kerberos 票證授權票證 (TGT)。
 
-- **功能增強：遠端程式碼執行嘗試安全性警示**    新增警示描述與其他辨識項，讓您能更容易了解警示，且提供了更好的調查工作流程。
+- **功能增強：遠端程式碼執行嘗試**安全性警訊  
+新增警訊描述及其他辨識項，讓您能更容易了解警訊，且提供了更好的調查工作流程。
 
 - **功能增強：DNS 查詢邏輯活動**  
 將其他查詢類型新增到 [Azure ATP 受監視的活動](monitored-activities.md)，其中包含：**TXT**、**MX**、**NS**、**SRV**、**ANY**、**DNSKEY**。

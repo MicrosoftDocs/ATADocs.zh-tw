@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 02/06/2020
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d84102528e3423ed149cdc64c010a7f190a40f68
-ms.sourcegitcommit: 20cf564885aa01985524c9c995ae5ba282606fac
+ms.openlocfilehash: 671920475245e99c788a733e2d445947649c7def
+ms.sourcegitcommit: d9abce00e781d47009e317767698d1729f70dc35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77045124"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77478570"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>針對 Azure ATP 已知問題進行疑難排解
 
@@ -39,8 +39,12 @@ System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> Syste
 
 若您在感應器安裝期間收到下列錯誤：**感應器因授權問題而無法註冊**。
 
-部署記錄項目: [1C60:1AA8][2018-03-24T23:59:13]i000:2018-03-25 02:59:13.1237 已傳回 InteractiveDeploymentManager ValidateCreateSensorAsync 資訊 [\[]validateCreateSensorResult=LicenseInvalid[\]] [1C60:1AA8][2018-03-24T23:59:56]i000:2018-03-25 02:59:56.4856 已傳回 InteractiveDeploymentManager ValidateCreateSensorAsync 資訊 [\[]validateCreateSensorResult=LicenseInvalid[\]] [1C60:1AA8][2018-03-25T00:27:56]i000:2018-03-25 03:27:56.7399 針對 SensorBootstrapperApplication Engine.Quit 進行偵錯 [\[]deploymentResultStatus=1602 isRestartRequired=False[\]] [1C60:15B8][2018-03-25T00:27:56]i500:正在關機，結束代碼:0x642
+**部署記錄項目：**
 
+[1C60:1AA8][2018-03-24T23:59:13]i000:2018-03-25 02:59:13.1237 已傳回資訊  InteractiveDeploymentManager ValidateCreateSensorAsync [validateCreateSensorResult=LicenseInvalid]]  
+[1C60:1AA8][2018-03-24T23:59:56]i000:2018-03-25 02:59:56.4856 已傳回資訊  InteractiveDeploymentManager ValidateCreateSensorAsync [validateCreateSensorResult=LicenseInvalid]]  
+[1C60:1AA8][2018-03-25T00:27:56]i000:2018-03-25 03:27:56.7399 針對 SensorBootstrapperApplication Engine.Quit 進行偵錯 [deploymentResultStatus=1602 isRestartRequired=False]]  
+[1C60:15B8][2018-03-25T00:27:56]i500:正在關機，結束代碼:0x642
 
 **原因：**
 
@@ -54,13 +58,15 @@ System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> Syste
 
 若您嘗試在無訊息感應器安裝期間使用 Powershell 並收到下列錯誤：
 
-    "Azure ATP sensor Setup.exe" "/quiet" NetFrameworkCommandLineArguments="/q" Acce ...           Unexpected token '"/quiet"' in expression or statement."
+    "Azure ATP sensor Setup.exe" "/quiet" NetFrameworkCommandLineArguments="/q" Acce ... Unexpected token '"/quiet"' in expression or statement."
 
 **原因：** 使用 Powershell 時無法包括安裝所需的 ./ 前置詞會導致此錯誤。
 
 **解決方法：** 使用完整命令來成功安裝。
 
-    ./"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
+```powershell
+./"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
+```
 
 ## Azure ATP 感應器 NIC 小組問題 <a name="nic-teaming"></a>
 
@@ -68,7 +74,7 @@ System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> Syste
 
 1. 從 [https://nmap.org/npcap/](https://nmap.org/npcap/dist/npcap-0.9984.exe) 下載  Npcap 0.9984 版安裝程式。
     - 或者，向支援小組要求 Npcap 驅動程式 (支援無訊息安裝) 的 OEM 版本。
-    - 如果 Npcap 的複本僅搭配 Azure ATP 安裝及使用，它們並不會計入五個複本、五部電腦或五個使用者授權的限制。 如需詳細資訊，請參閱 [NPCAP 授權](https://github.com/nmap/npcap/blob/master/LICENSE) \(英文\)。
+    - 如果 Npcap 的複本僅搭配 Azure ATP 安裝並使用，則不會計入五個複本、五部電腦或五個使用者授權的限制。 如需詳細資訊，請參閱 [NPCAP 授權](https://github.com/nmap/npcap/blob/master/LICENSE) \(英文\)。
 
 如果您尚未在電腦上安裝感應器：
 
@@ -86,9 +92,11 @@ System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> Syste
 1. 重新安裝感應器套件。
 
 ## <a name="multi-processor-group-mode"></a>多處理器群組模式
+
 針對 Windows 作業系統 2008 R2 與 2012，多處理器群組模式中不支援 Azure ATP 感應器。
 
 建議的可能因應措施：
+
 - 如果超執行緒已開啟，請將它關閉。 這可能會減少足夠的邏輯核心數目，以避免需要在**多處理器群組**模式中執行。
 
 - 如果您的電腦具有少於 64 個邏輯核心，而且是在 HP 主機上執行，您可以將 [NUMA 群組大小最佳化]  BIOS 設定從預設的[叢集]  變更為 [一般]  。
@@ -119,8 +127,29 @@ Azure 進階威脅防護可讓您將 Azure ATP 與 Windows Defender ATP 整合�
 
 ![停用 LSO 狀態](./media/disable-lso-vmware.png)
 
+## <a name="sensor-failed-to-retrieve-group-managed-service-account-gmsa-credentials"></a>感應器無法擷取群組受管理的服務帳戶 (gMSA) 認證
+
+如果您收到下列監視警示：**目錄服務使用者認證不正確**
+
+**感應器記錄項目：**
+
+2020-02-17 14:01:36.5315 資訊 ImpersonationManager CreateImpersonatorAsync 已啟動 [UserName=account_name Domain=domain1.test.local IsGroupManagedServiceAccount=True]  
+2020-02-17 14:01:36.5750 資訊 ImpersonationManager CreateImpersonatorAsync 已完成 [UserName=account_name Domain=domain1.test.local IsSuccess=False]
+
+**感應器更新程式記錄項目：**
+
+2020-02-17 14:02:19.6258 警告 無法擷取 GroupManagedServiceAccountImpersonationHelper GetGroupManagedServiceAccountAccessTokenAsync failed GMSA 密碼 [errorCode=AccessDenied AccountName=account_name DomainDnsName=domain1.test.local]
+
+**原因：**
+
+感應器無法從 Azure ATP 入口網站擷取指定的 gMSA 帳戶。
+
+**解決方法：**
+
+請確定 gMSA 帳戶的認證正確，且感應器已獲授權可擷取帳戶的認證。
 
 ## <a name="see-also"></a>另請參閱
+
 - [Azure ATP 必要條件](atp-prerequisites.md)
 - [Azure ATP 容量規劃](atp-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)

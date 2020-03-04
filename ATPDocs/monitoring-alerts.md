@@ -5,21 +5,21 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 02/13/2020
+ms.date: 02/19/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: d0551e91-3b21-47d5-ad9d-3362df6d47c0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9f800d1ec6003b5d69ba9ee1cc7482fb6511300d
-ms.sourcegitcommit: e281d63e3406e02325645234ad0a4880056b2351
+ms.openlocfilehash: 48dad2ec51850e67a69c5dec4dfb14abec5c8237
+ms.sourcegitcommit: 4381148c0487b473e23fe9b425b133c42acde881
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77259390"
+ms.lasthandoff: 03/01/2020
+ms.locfileid: "78208092"
 ---
-# <a name="understanding-azure-atp-sensor-and-standalone-sensor-health-alerts"></a>了解 Azure ATP 感應器與獨立感應器健康情況警示
+# <a name="understanding-azure-atp-sensor-health-alerts"></a>了解 Azure ATP 感應器健康情況警示
 
 當您的 Azure ATP 執行個體發生問題時，Azure ATP 健康情況中心會透過發出健康情況警示來讓您知道。 此文章描述每個元件的所有健康情況警示，並列出原因與解決問題所需的步驟。
 
@@ -40,6 +40,12 @@ ms.locfileid: "77259390"
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
 |目錄服務使用者帳戶的認證不正確。|這會影響感應器使用 LDAP 查詢對網域控制站偵測活動的能力。|- 針對**標準** AD 帳戶：確認 [目錄服務]  設定頁面中的使用者名稱、密碼與網域是正確的。<br>- 針對**群組受管理的服務帳戶**：確認 [目錄服務]  設定頁面中的使用者名稱與網域是正確的。 此外，請檢查[連線到您的 Active Directory 樹系](install-atp-step2.md#prerequisites)頁面上所述的所有其他 **gMSA 帳戶**先決條件。|中型|
+
+## <a name="low-success-rate-of-active-name-resolution"></a>低成功率的主動名稱解析
+
+|警示|說明|解決方案|嚴重性|
+|----|----|----|----|
+|列出的 Azure ATP 感應器在使用下列方法時有超過 90% 的時間無法將 IP 位址解析為裝置名稱：<br />- 透過 RPC 的 NTLM<br />- NetBios<br />- 反向 DNS|這會影響 Azure ATP 的偵測功能，而且可能會增加誤判為真的警示數量。|- 針對透過 RPC 的 NTLM：檢查是否已在環境中的所有電腦上針對來自 Azure ATP 感應器的連入通訊開放連接埠 135。<br />- 針對反向 DNS：檢查感應器是否可以連線到 DNS 伺服器，以及是否已啟用反向對應區域。<br />- 針對 NetBIOS：檢查是否已在環境中的所有電腦上針對來自 Azure ATP 感應器的連入通訊開放連接埠 137。<br />此外，請確定網路設定 (例如防火牆) 並未阻止與相關連接埠的通訊。|低|
 
 ## <a name="no-traffic-received-from-domain-controller"></a>未從網域控制站收到任何流量
 
@@ -102,11 +108,10 @@ ms.locfileid: "77259390"
 |Azure ATP 感應器所接收到的網路流量比它能處理的還要多。|某些網路流量不會被分析，這可能會影響偵測來自由此 Azure ATP 感應器所監視之網域控制站可疑活動的能力。|視需要考慮[新增額外的處理器和記憶體](atp-capacity-planning.md)。 如果這是獨立 Azure ATP 感應器，請減少被監視的網域控制站數目。<br></br>如果在 VMware 虛擬機器上使用網域控制站，可能也會發生此情況。 若要避免這些警示，可檢查是否已將虛擬機器中的下列設定設為 [0] 或 [已停用]：<br></br>- TsoEnable<br></br>- LargeSendOffload(IPv4)<br></br>- IPv4 TSO Offload<br></br>此外也請考慮停用 [IPv4 Giant TSO Offload]。 如需詳細資訊，請參閱 VMware 文件。|中型|
 
 ## <a name="windows-events-missing-from-domain-controller-audit-policy"></a>網域控制站稽核原則中缺少 Windows 事件
+
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
 | 網域控制站稽核原則中缺少 Windows 事件|若要正確稽核事件並將其包含在 Windows 事件記錄檔中，則網域控制站需要正確的進階稽核原則設定。 不正確的進階稽核原則設定會讓記錄檔遺漏重要事件，並導致 Azure ATP 涵蓋範圍不完整。|檢閱您的[進階稽核原則](atp-advanced-audit-policy.md)，並視需要修改。 | 中型|
-
-
 
 ## <a name="see-also"></a>另請參閱
 

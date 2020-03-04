@@ -5,28 +5,27 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 12/02/2018
+ms.date: 02/19/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: e7f065fa-1ad1-4e87-bd80-99cc695efbf5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c482ce154817418ad3843e6329a8660cc75f1b98
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: f18a2a1a4a3cd7b9e5dec5dacdce3c88ffe296a8
+ms.sourcegitcommit: c625acd3e44a3ba9619638f84264b3b271383e3a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907864"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77590585"
 ---
 # <a name="change-azure-atp-portal-configuration---domain-connectivity-password"></a>變更 Azure ATP 入口網站設定 - 網域連線能力密碼
 
-
-
 ## <a name="change-the-domain-connectivity-password"></a>變更網域連線密碼
+
 如果您需要修改網域連線密碼，請確定輸入的密碼正確。 如果密碼不正確，所有已部署的感應器都會停止 Azure ATP 感應器服務。
 
-如果您懷疑此情況已發生，請於 Azure ATP 獨立式感應器上的 Microsoft.Tri.sensor-Errors.log 檔案查看下列錯誤︰`The supplied credential is invalid.`
+如果您懷疑此情況已發生，請於 Microsoft.Tri.sensor-Errors.log 檔案中尋找下列錯誤︰`The supplied credential is invalid.`
 
 請遵循此程序來更新 Azure ATP 入口網站上的網域連線密碼︰
 
@@ -35,24 +34,22 @@ ms.locfileid: "75907864"
 
 1. 存取入口網站 URL，以開啟 Azure ATP 入口網站。
 
-2. 選取工具列上的 [設定] 選項並選取 [組態]  。
+1. 選取工具列上的 [設定] 選項並選取 [組態]  。
 
-   ![Azure ATP 組態設定圖示](media/atp-config-menu.png)
+    ![Azure ATP 組態設定圖示](media/atp-config-menu.png)
 
-3. 選取 [目錄服務]  。
+1. 選取 [目錄服務]  。
 
-   ![Azure ATP 獨立式感應器變更密碼影像](media/directory-services.png)
+    ![Azure ATP 獨立式感應器變更密碼影像](media/directory-services.png)
 
-4. 在 [密碼]  下，變更密碼。
+1. 在 [密碼]  下，變更密碼。
 
-   > [!NOTE]
-   > 在此處輸入 Active Directory 使用者和密碼，而非 Azure Active Directory。
+    > [!NOTE]
+    > 在此處輸入 Active Directory 使用者和密碼，而非 Azure Active Directory。
 
-5. 按一下 **[儲存]** 。
+1. 按一下 **[儲存]** 。
 
-6. 變更密碼之後，手動檢查 Azure ATP 獨立式感應器服務已在 Azure ATP 獨立式感應器伺服器上執行。
-
-7. 在 Azure ATP 入口網站中，移至 [設定]  下方的 [感應器]  頁面，並檢查感應器狀態。
+1. 在 Azure ATP 入口網站中，移至 [設定]  下方的 [感應器]  頁面，並檢查感應器狀態。
 
 ## <a name="see-also"></a>另請參閱
 

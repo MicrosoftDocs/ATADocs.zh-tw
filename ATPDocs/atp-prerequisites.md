@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 11/05/2019
+ms.date: 02/19/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: eb6484eeaa9bd5ed4e04f90a5a8dc1ed4327b8b5
-ms.sourcegitcommit: e281d63e3406e02325645234ad0a4880056b2351
+ms.openlocfilehash: 176f71af622a9a19f38888273def7362d4c4364b
+ms.sourcegitcommit: c625acd3e44a3ba9619638f84264b3b271383e3a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77259446"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77590602"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -26,7 +26,7 @@ ms.locfileid: "77259446"
 >[!NOTE]
 > 如需如何規劃資源和容量的相關資訊，請參閱 [Azure ATP 容量規劃](atp-capacity-planning.md)。
 
-Azure ATP 是由 Azure ATP 雲端服務組成，其包含 Azure ATP 入口網站、Azure ATP 感應器和/或 Azure ATP 獨立感應器。 如需每種 Azure ATP 元件的詳細資訊，請參閱 [Azure ATP 架構](atp-architecture.md)。
+Azure ATP 是由 Azure ATP 雲端服務組成，其包含 Azure ATP 入口網站與 Azure ATP 感應器。 如需每種 Azure ATP 元件的詳細資訊，請參閱 [Azure ATP 架構](atp-architecture.md)。
 
 Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步至您 Azure Active Directory 的使用者。 若要保護僅包含 AAD 使用者的環境，請參閱 [AAD 身分識別保護](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) \(部分機器翻譯\)。
 
@@ -40,7 +40,10 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 
 [Azure ATP 感應器](#azure-atp-sensor-requirements)：列出 Azure ATP 感應器的硬體及軟體需求。
 
-[Azure ATP 獨立感應器](#azure-atp-standalone-sensor-requirements)：列出 Azure ATP 獨立感應器的硬體和軟體需求，以及必須在 Azure ATP 獨立感應器伺服器上進行的設定。
+[Azure ATP 獨立感應器](#azure-atp-standalone-sensor-requirements)：Azure ATP 獨立感應器會安裝在專用伺服器上，而且要求必須在網域控制站上設定連接埠鏡像以接收網路流量。
+
+> [!NOTE]
+> Azure ATP 獨立感應器無法支援所有資料來源類型，因而會導致遺漏偵測。 若要完整涵蓋您的環境，建議您部署 Azure ATP 感應器。
 
 ## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
@@ -51,7 +54,7 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 - 驗證您要在其中安裝 Azure ATP 感應器的網域控制站可網際網路連線至 Azure ATP 雲端服務。 Azure ATP 感應器支援使用 Proxy。 如需 Proxy 設定的詳細資訊，請參閱[為 Azure ATP 設定 Proxy](configure-proxy.md)。
 
 - 至少下列其中一個目錄服務帳戶，該帳戶必須有所提及網域中所有物件的讀取權限：
-  - **標準** AD 使用者帳戶與密碼。 為執行 Windows Server 2008 R2 SP1 的感應器所需要。
+  - **標準** AD 使用者帳戶與密碼。 為執行 Windows Server 2008 R2 SP1 的感應器所需。
   - **群組受管理的服務帳戶** (gMSA)。 需要 Windows Server 2012 或更新版本。  
   所有感應器都必須有可擷取 gMSA 帳戶密碼的權限。  
   若要了解 gMSA 帳戶，請參閱[開始使用群組受管理的服務帳戶](/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts#BKMK_CreateGMSA)。
@@ -77,7 +80,10 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 
 - 選擇性的 **Honeytoken**：沒有任何網路活動之使用者的使用者帳戶。 此帳戶設定為 Azure ATP Honeytoken 使用者。 如需使用 Honeytoken 的詳細資訊，請參閱[設定排除專案和 Honeytoken 使用者](install-atp-step7.md)。
 
-- 選用：在部署獨立感應器時，必須將 Windows 事件 4776、4732、4733、4728、4729、4756、4757 與 7045 和 8004 轉送給 Azure ATP，以在對敏感性群組與可疑服務建立偵測能力之外進一步增強 Azure ATP 驗證型偵測能力。  Azure ATP 感應器自動支援這些事件。 在 Azure ATP 獨立感應器中，這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
+- 選用：在部署獨立感應器時，必須將 Windows 事件 4776、4732、4733、4728、4729、4756、4757 與 7045 和 8004 轉送給 Azure ATP，以在對敏感性群組與可疑服務建立偵測能力之外進一步增強 Azure ATP 驗證型偵測能力。  Azure ATP 感應器自動支援這些事件。 在 Azure ATP 獨立感應器中，這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。
+
+> [!NOTE]
+> Azure ATP 獨立感應器無法支援所有資料來源類型，因而會導致遺漏偵測。 若要完整涵蓋您的環境，建議您部署 Azure ATP 感應器。
 
 ## <a name="azure-atp-portal-requirements"></a>Azure ATP 入口網站需求
 
@@ -180,6 +186,9 @@ Azure ATP 偵測仰賴下列特定 Windows 事件記錄檔，這些記錄檔可�
 ## <a name="azure-atp-standalone-sensor-requirements"></a>Azure ATP 獨立感應器需求
 
 本節列出 Azure ATP 獨立感應器的需求。
+
+> [!NOTE]
+> Azure ATP 獨立感應器無法支援所有資料來源類型，因而會導致遺漏偵測。 若要完整涵蓋您的環境，建議您部署 Azure ATP 感應器。
 
 ### <a name="general"></a>一般
 

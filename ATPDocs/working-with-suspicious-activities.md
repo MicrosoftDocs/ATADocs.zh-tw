@@ -13,11 +13,11 @@ ms.assetid: a06004bd-9f77-4e8e-a0e5-4727d6651a0f
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 6d8a18b7e2268945dcfd254afb5580a180ad0204
-ms.sourcegitcommit: 409680586343ab7fdd46da96f343305d22eb8936
+ms.sourcegitcommit: c8b1e584ef42559a40afd62dac1b5ca9056c5602
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76818238"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "78926536"
 ---
 # <a name="working-with-security-alerts"></a>使用安全性警訊
 

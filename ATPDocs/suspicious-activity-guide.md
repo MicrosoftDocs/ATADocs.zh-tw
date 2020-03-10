@@ -13,11 +13,11 @@ ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 39fbd3f42cfccd60a007b8640421a8af1c178243
-ms.sourcegitcommit: 8bb80eaef3c2a1085834b98839564c5d37334f56
+ms.sourcegitcommit: c8b1e584ef42559a40afd62dac1b5ca9056c5602
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76515675"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "78926522"
 ---
 # <a name="azure-atp-security-alerts"></a>Azure ATP 安全性警示
 
@@ -40,7 +40,7 @@ Azure ATP 安全性警訊分為下列類別或階段，如同在典型網路攻�
 
 下表列出警示名稱，以及其對應的唯一外部識別碼與其 Microsoft Cloud App Security 警示識別碼。 搭配指令碼或自動化使用時，Microsoft 建議使用警示外部識別碼來取代警示名稱，因為只有安全性警示外部識別碼具有永久性且不會變更。
 
-# <a name="external-idstabexternal"></a>[外部識別碼](#tab/external)
+# <a name="external-ids"></a>[外部識別碼](#tab/external)
 
 > [!div class="mx-tdBreakAll"]
 > |新安全性警示名稱|唯一外部識別碼|嚴重性|MITRE ATT&CK Matrix™|
@@ -80,7 +80,7 @@ Azure ATP 安全性警訊分為下列類別或階段，如同在典型網路攻�
 > |[使用者和群組成員資格偵察 (SAMR)](atp-reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|2021|中型|探索|
 > |[使用者和 IP 位址偵察 (SMB)](atp-reconnaissance-alerts.md#user-and-ip-address-reconnaissance-smb-external-id-2012)|2012|中型|探索|
 
-# <a name="cloud-app-security-idstabcloud-app-security"></a>[Cloud App Security 識別碼](#tab/cloud-app-security)
+# <a name="cloud-app-security-ids"></a>[Cloud App Security 識別碼](#tab/cloud-app-security)
 
 > [!div class="mx-tdBreakAll"]
 > |新安全性警示名稱|Cloud App Security 警示識別碼|

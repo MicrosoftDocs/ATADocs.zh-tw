@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 01/22/2020
+ms.date: 03/05/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: e27505cfb801ebda0376d716d4156364b1af1a74
-ms.sourcegitcommit: 8bb80eaef3c2a1085834b98839564c5d37334f56
+ms.openlocfilehash: b53e7f63949896908834a55985988c9a7dffaca5
+ms.sourcegitcommit: 594cba9674559beebd82e0c0eb08792000f97e87
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76515692"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78332059"
 ---
 # <a name="azure-atp-siem-log-reference"></a>Azure ATP SIEM 記錄檔參考
 
@@ -51,7 +51,7 @@ cs2 欄位可識別警示為新的或是已更新。
 
 ## <a name="sample-logs"></a>範例記錄檔
 
-記錄檔範例符合 RFC 5242 的規範，但 Azure ATP 也支援 RFC 3164。
+此記錄範例符合 RFC 5424 的規範，但 Azure ATP 也支援 RFC 3164。
 
 優先順序：
 

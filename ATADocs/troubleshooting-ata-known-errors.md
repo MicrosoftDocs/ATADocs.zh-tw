@@ -13,11 +13,11 @@ ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
 ms.openlocfilehash: e7b0a5c83926c1d730d8de6467fa692a27f4d50d
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.sourcegitcommit: 05f23a0add8d24ae92176e13c2a4ae8ada1844da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908121"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79319211"
 ---
 # <a name="troubleshooting-ata-known-issues"></a>針對 ATA 已知問題進行疑難排解
 
@@ -30,7 +30,7 @@ ms.locfileid: "75908121"
 
 > [!div class="mx-tableFixed"]
 > 
-> |錯誤|Description|解決方法|
+> |錯誤|描述|解析度|
 > |-------------|----------|---------|
 > |System.DirectoryServices.Protocols.LdapException：發生本機錯誤|ATA 閘道無法對網域控制站進行驗證。|1. 確認已在 DNS 伺服器中正確設定網域控制站的 DNS 記錄。 <br>2. 確認 ATA 閘道的時間與網域控制站的時間同步。|
 > |System.IdentityModel.Tokens.SecurityTokenValidationException︰無法驗證憑證鏈結|ATA 閘道無法驗證 ATA 中心的憑證。|1. 確認根 CA 憑證已安裝在 ATA 閘道上的「受信任的憑證授權單位單位」憑證存放區中。 <br>2. 驗證憑證撤銷清單（CRL）是否可用，以及是否可以執行憑證撤銷驗證。|
@@ -57,7 +57,7 @@ ms.locfileid: "75908121"
 ## <a name="deployment-errors"></a>部署錯誤
 > [!div class="mx-tableFixed"]
 > 
-> |錯誤|Description|解決方法|
+> |錯誤|描述|解析度|
 > |-------------|----------|---------|
 > |.Net Framework 4.6.1 安裝失敗，並發生錯誤 0x800713ec|.Net Framework 4.6.1 的必要條件尚未安裝於伺服器。 |安裝 ATA 之前，請驗證伺服器上已安裝 Windows Update [KB2919442](https://www.microsoft.com/download/details.aspx?id=42135) 和 [KB2919355](https://support.microsoft.com/kb/2919355)。|
 > |System.Threading.Tasks.TaskCanceledException：工作已取消|因為無法連線到 ATA 中心，所以部署程序已逾時。|1. 使用 IP 位址流覽至 ATA 中心，檢查其網路連線能力。 <br></br>2. 檢查 proxy 或防火牆設定。|
@@ -70,7 +70,7 @@ ms.locfileid: "75908121"
 ## <a name="ata-center-errors"></a>ATA 中心錯誤
 > [!div class="mx-tableFixed"]
 > 
-> |錯誤|Description|解決方法|
+> |錯誤|描述|解析度|
 > |-------------|----------|---------|
 > |System.Security.Cryptography.CryptographicException: 拒絕存取。|ATA 中心無法使用發行的憑證來解密。 這很有可能發生在使用將 KeySpec (KeyNumber) 設定為不支援解密的 Signature (AT\\_SIGNATURE)，而非 KeyExchange (AT\\_KEYEXCHANGE) 的憑證上。|1. 停止 ATA 中心服務。 <br></br>2. 從中心的憑證存放區刪除 ATA 中心憑證。 (在刪除之前，請確定您已連同私密金鑰將憑證備份在 PFX 檔案中)。 <br></br>3. 開啟提升許可權的命令提示字元，並在\\_KEYEXCHANGE 執行 certutil-importpfx "Centercertificate.pfx at" <br></br>4. 啟動 ATA 中心服務。 <br></br>5. 確認所有專案現在都能如預期般運作。|
 
@@ -79,7 +79,7 @@ ms.locfileid: "75908121"
 
 > [!div class="mx-tableFixed"]
 > 
-> |問題|Description|解決方法|
+> |問題|描述|解析度|
 > |-------------|----------|---------|
 > |未從網域控制站收到流量，但觀察到監視警示|    未從透過 ATA 閘道使用連接埠鏡像的網域控制站收到流量|在 ATA 閘道擷取 NIC 上，停用 [進階設定] 中的這些功能：<br></br>接收區段聯合 (IPv4)<br></br>接收區段聯合 (IPv6)|
 > |系統會顯示此監視警示：未分析部分網路流量|如果您在 VMware 虛擬機器上有 ATA 閘道或輕量型閘道，就可能會收到此監視警示。 當 VMware 中的設定不相符時，就會發生此狀況。|請在 NIC 設定中將以下設定設為 0 或 [停用]：TsoEnable、LargeSendOffload、TSO Offload，Giant TSO Offload ATA 閘道上已停用 TLS 1.0，但是 .Net 設定為使用 TLS 1.2|

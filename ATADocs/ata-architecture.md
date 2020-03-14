@@ -13,11 +13,11 @@ ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 179cf31a6f9c8c62670ea96d671f209712325f56
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.sourcegitcommit: 05f23a0add8d24ae92176e13c2a4ae8ada1844da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75905197"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79319201"
 ---
 # <a name="ata-architecture"></a>ATA 架構
 
@@ -153,7 +153,7 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 ||||||
 |-|-|-|-|-|
 |Active Directory (Lsass.exe)|ATA 輕量型閘道 (Microsoft.Tri.Gateway.exe)|其他 (其他處理程序) |ATA 輕量型閘道配額|為閘道卸除中|
-|60%|15%|10%|15%|[是]|
+|60%|15%|10%|15%|是|
 
 
 ## <a name="your-network-components"></a>您的網路元件

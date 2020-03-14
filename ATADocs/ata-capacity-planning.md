@@ -12,15 +12,15 @@ ms.assetid: 1b5b24ff-0df8-4660-b4f8-64d68cc72f65
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 0ec953c4311c12a44686cbbf4f4394492f74dd7f
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.sourcegitcommit: 05f23a0add8d24ae92176e13c2a4ae8ada1844da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75905496"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79319151"
 ---
 # <a name="ata-capacity-planning"></a>ATA 容量規劃
 
-*適用於：Advanced Threat Analytics 1.9 版*
+*適用對象：Advanced Threat Analytics 1.9 版*
 
 本文將協助您決定監視您的網路需要多少部 ATA 伺服器。 它可協助您估計您需要多少 ATA 閘道及/或 ATA 輕量閘道，以及 ATA 中心和 ATA 閘道的伺服器容量。
 
@@ -33,7 +33,7 @@ ms.locfileid: "75905496"
 - ATA 中心 CPU 及記憶體：比對 ATA 中心資料表結果檔案中的 [Busy Packets/sec] 欄位與 [ATA 中心資料表](#ata-center-sizing)中的 [每秒封包數] 欄位。
 
 - ATA 中心儲存體：比對 ATA 中心資料表結果檔案中的 [Avg Packets/sec] 欄位與 [ATA 中心資料表](#ata-center-sizing)中的 [每秒封包數] 欄位。
-- ATA 閘道︰比對結果檔案中 ATA 閘道資料表的 **Busy Packets/sec** 欄位與 [ATA 閘道資料表](#ata-gateway-sizing)或 [ATA 輕量型閘道資料表](#ata-lightweight-gateway-sizing)中的**每秒封包數**欄位，依據[您所選擇的閘道類型](#choosing-the-right-gateway-type-for-your-deployment)而定。
+- ATA 閘道：比對結果檔案中 ATA 閘道資料表的 [Busy Packets/sec] 欄位與 [ATA 閘道資料表](#ata-gateway-sizing)或 [ATA 輕量型閘道資料表](#ata-lightweight-gateway-sizing)中的 [每秒封包數]欄位，依據[您所選擇的閘道類型](#choosing-the-right-gateway-type-for-your-deployment)而定。
 
 
 ![範例容量規劃工具](media/capacity-tool.png)
@@ -90,7 +90,7 @@ ATA 部署中能夠支援任何 ATA 閘道類型的組合︰
 
 |閘道類型|優點|成本|部署拓撲|網域控制站|
 |----|----|----|----|-----|
-|ATA 閘道|頻外部署會讓攻擊者更難發現 ATA|更高|與網域控制站 (頻外) 一起安裝|每秒支援最多 50,000 個封包|
+|ATA 閘道|頻外部署會讓攻擊者更難發現 ATA|較高|與網域控制站 (頻外) 一起安裝|每秒支援最多 50,000 個封包|
 |ATA 輕量型閘道|不需要專用的伺服器及連接埠鏡像設定|較低|安裝在網域控制站上|每秒支援最多 10,000 個封包|
 
 在下列案例範例中，ATA 輕量型閘道應該涵蓋下列網域控制站︰

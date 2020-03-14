@@ -13,11 +13,11 @@ ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ms.reviewer: bennyl
 ms.suite: ems
 ms.openlocfilehash: 3908cc6ad907111fc7f6e32fd562ce0d6298dea7
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.sourcegitcommit: 05f23a0add8d24ae92176e13c2a4ae8ada1844da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65197136"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79319191"
 ---
 # <a name="working-with-the-ata-console"></a>使用 ATA 主控台
 
@@ -109,7 +109,7 @@ ATA 將下列群組清單視為**敏感性**。 屬於這些群組的任何實�
 - Enterprise Admins 
 - Group Policy Creator Owners 
 - Read-Only Domain Controllers 
-- Administrators  
+- 系統管理員  
 - Power Users  
 - Account Operators  
 - Server Operators   
@@ -124,15 +124,15 @@ ATA 將下列群組清單視為**敏感性**。 屬於這些群組的任何實�
 
 ### <a name="mini-profile"></a>小型設定檔
 
-如果您將滑鼠停留在主控台中出現單一實體的任何位置上 (例如使用者或電腦)，就會自動開啟小型設定檔並顯示下列資訊 (如果有的話):
+如果您將滑鼠停留在主控台中出現單一實體的任何位置上 (例如使用者或電腦)，就會自動開啟小型設定檔並顯示下列資訊 (如果有的話)︰
 
 ![ATA 小型設定檔影像](media/ATA-mini-profile.jpg)
 
--   Name
+-   名稱
 
 -   圖片
 
--   電子郵件
+-   Email
 
 -   電話
 

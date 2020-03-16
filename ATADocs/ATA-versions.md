@@ -1,5 +1,5 @@
 ---
-title: Advanced Threat Analytics 版本 | Microsoft Docs
+title: Advanced 威脅分析版本
 description: 說明 Microsoft Advanced Threat Analytics (ATA) 各版本的不同支援選項。
 author: shsagir
 ms.author: shsagir
@@ -11,12 +11,12 @@ ms.technology: ''
 ms.assetid: a8afbd91-c888-4dfc-94ab-72e38745163e
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d72e42512026049f5cd88c82f81b27eb0f4f7bdb
-ms.sourcegitcommit: f1a11982e2ee806d2a29420901f9ddac64d7dd51
+ms.openlocfilehash: a961f0831c659dc0e2db9584b4bac4c3162da496
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76762940"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79411236"
 ---
 # <a name="support-for-microsoft-advanced-threat-analytics-ata-versions"></a>Microsoft Advanced Threat Analytics (ATA) 各版本的支援
 

@@ -1,5 +1,5 @@
 ---
-title: 針對存取管理的 Advanced Threat Analytics 角色群組 |Microsoft Docs
+title: 適用于存取管理的 Advanced 威脅分析角色群組
 description: 逐步引導您使用 ATA 角色群組。
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3f4a3bed481fcd9ca789057f0b45fc25a30d01ad
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 050260b65b14ca425f536fdfc0c936c0fce885df
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196230"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79412290"
 ---
 # <a name="ata-role-groups"></a>ATA 角色群組
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Advanced Threat Analytics 中驗證連接埠鏡像 | Microsoft Docs
+title: 在 Advanced 威脅分析中驗證埠鏡像
 description: 描述如何驗證已正確設定連接埠鏡像
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: ebd41719-c91a-4fdd-bcab-2affa2a2cace
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 576dd0d74a279f566b7755faff7d5ad49e3ca0e6
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 635c6b82dd983eb33a6238a3a9d14f63ffc9dacd
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75544204"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414330"
 ---
 # <a name="validate-port-mirroring"></a>驗證連接埠鏡像
 

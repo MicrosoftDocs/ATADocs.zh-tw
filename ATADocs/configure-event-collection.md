@@ -1,5 +1,5 @@
 ---
-title: 在 Advanced Threat Analytics 中設定 Windows 事件轉送 | Microsoft Docs
+title: 在 Advanced 威脅分析中設定 Windows 事件轉送
 description: 描述使用 ATA 設定 Windows 事件轉送的選項
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 825185a2aaf792e6b9c1fe58e022174c2f98bb0c
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 84ce1bed4203ff7344d1e28dc4765ba5cfe79843
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196821"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79411848"
 ---
 # <a name="configuring-windows-event-forwarding"></a>設定 Windows 事件轉送
 
@@ -66,7 +66,7 @@ ms.locfileid: "65196821"
       
         ![設定目標訂閱影像](media/wef%202%20config%20target%20sub%20manager.png)
       
-   4.  按一下 [ **確定**]。
+   4.  按一下 [確定]。
    5.  在提升權限的命令提示字元中，輸入 *gpupdate /force*。 
 
 **步驟 3：在 ATA 閘道上執行下列步驟** 
@@ -81,7 +81,7 @@ ms.locfileid: "65196821"
         1.  按一下 [加入網域電腦]。
         2.  在 [輸入要選取的物件名稱] 欄位中輸入網域控制站的名稱。 然後按一下 [檢查名稱]，再按一下 [確定]。  
           ![事件檢視器影像](media/wef3%20event%20viewer.png)  
-        3.  按一下 [ **確定**]。
+        3.  按一下 [確定]。
     4.  按一下 [選取事件]。
         1. 按一下 [依記錄]，然後選取 [安全性]。
         2. 在 [Includes/Excludes Event ID (包含/排除事件識別碼)] 欄位中鍵入事件編號，然後按一下 [確定]。 例如，鍵入 4776，如下範例所示。

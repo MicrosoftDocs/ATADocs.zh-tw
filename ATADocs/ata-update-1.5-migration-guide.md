@@ -1,5 +1,5 @@
 ---
-title: Advanced Threat Analytics 更新至 1.5 移轉指南 | Microsoft Docs
+title: Advanced 威脅分析更新至1.5 的遷移指南
 description: 更新 ATA 至 1.5 版的程序
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d71cfd283d89f6b1d1413f4d9832fb4302504622
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: a008a345eb2c3a214f0f4f2352328ad60472e3ec
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196179"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79412715"
 ---
 # <a name="ata-update-to-15-migration-guide"></a>ATA 更新至 1.5 移轉指南
 更新至 ATA 1.5 提供下列各方面的改良︰
@@ -89,7 +89,7 @@ ms.locfileid: "65196179"
 > [!IMPORTANT]
 > - 更新所有 ATA 閘道以確保 ATA 正常運作。
 
-### <a name="step-2-download-the-ata-gateway-setup-package"></a>步驟 2。 下載 ATA 閘道安裝套件
+### <a name="step-2-download-the-ata-gateway-setup-package"></a>步驟 2： 下載 ATA 閘道安裝套件
 設定網域連線設定後，您可以下載 ATA 閘道安裝套件。
 
 若要下載 ATA 閘道安裝套件：

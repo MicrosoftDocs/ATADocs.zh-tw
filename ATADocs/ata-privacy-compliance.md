@@ -1,5 +1,5 @@
 ---
-title: 進階威脅分析個人資料原則 | Microsoft Docs
+title: Advanced 威脅分析個人資料原則
 description: 提供如何從 ATA 刪除私人資訊和個人資料的相關資訊連結。
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 1b2d185c-62cd-45f0-b0dd-687b51317f32
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: f6280764ca16ef3c29f22f7f91767aa6c3637a4f
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: da4b81d0a812a9fe8c1f86982445ce017f5e290f
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75905544"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79412103"
 ---
 # <a name="ata-data-security-and-privacy"></a>ATA 資料安全性和隱私權
 

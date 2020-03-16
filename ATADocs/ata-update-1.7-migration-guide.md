@@ -1,5 +1,5 @@
 ---
-title: Advanced Threat Analytics 更新至 1.7 移轉指南 | Microsoft Docs
+title: Advanced 威脅分析更新至1.7 的遷移指南
 description: 將 ATA 更新至 1.7 版的程序
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 8eefcd45-7a4b-4074-ac5b-1ffc48e6654a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8ef9bda4c3b1c3922744a4b292ee135b913e9306
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: a317af53040b13d212364b8114fdde64be6abf10
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543225"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79412698"
 ---
 # <a name="ata-update-to-17-migration-guide"></a>ATA 更新至 1.7 移轉指南
 ATA 1.7 的更新提供下列各方面的改良︰

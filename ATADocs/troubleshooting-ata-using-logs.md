@@ -1,5 +1,5 @@
 ---
-title: 使用記錄檔針對 Advanced Threat Analytics 進行疑難排解 | Microsoft Docs
+title: 使用記錄進行 Advanced 威脅分析的疑難排解
 description: 描述如何使用 ATA 記錄檔來疑難排解問題
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: cd4af40af83b060093b0b5822d0e9110a4ada4f0
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 01b13916f3cdcba1d1aa166c8998d7d91bbd2bfb
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "70076647"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414245"
 ---
 # <a name="troubleshooting-ata-using-the-ata-logs"></a>使用 ATA 記錄檔來疑難排解 ATA
 

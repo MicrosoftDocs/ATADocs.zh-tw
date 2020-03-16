@@ -1,5 +1,5 @@
 ---
-title: 安裝 Advanced Threat Analytics - 步驟 5 | Microsoft Docs
+title: 安裝 Advanced 威脅分析-步驟5
 description: 安裝 ATA 的步驟 5 協助您設定 ATA 閘道的設定。
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0be6430a82752f51ed2660bb4053bb396b90e8b5
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 2b784d34e505e39b9333bb0642de8a7bd061f6a1
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75544024"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413939"
 ---
 # <a name="install-ata---step-5"></a>安裝 ATA - 步驟 5
 
@@ -28,7 +28,7 @@ ms.locfileid: "75544024"
 > [步驟 6»](install-ata-step6.md)
 
 
-## <a name="step-5-configure-the-ata-gateway-settings"></a>步驟 5. 設定 ATA 閘道設定
+## <a name="step-5-configure-the-ata-gateway-settings"></a>步驟 5： 設定 ATA 閘道設定
 
 安裝 ATA 閘道後，執行下列步驟來設定 ATA 閘道的設定。
 
@@ -64,7 +64,7 @@ ms.locfileid: "75544024"
 3. 您也可以選擇設定 [Syslog 接聽程式和 Windows 事件轉寄集合](configure-event-collection.md)。 
 4. 啟用 [自動更新 ATA 閘道]，使您於未來將 ATA 中心更新為新的版本時，此 ATA 閘道也會自動更新。
 
-5. 按一下 **[儲存]** 。
+5. 按一下 [儲存]。
 
 
 ## <a name="validate-installations"></a>驗證安裝
@@ -74,7 +74,7 @@ ms.locfileid: "75544024"
 
 2.  如果服務未啟動，請檢閱位於預設資料夾 “%programfiles%\Microsoft Advanced Threat Analytics\Gateway\Logs” 中的 “Microsoft.Tri.Gateway-Errors.log” 檔案，然後查看 [ATA 疑難排解](troubleshooting-ata-known-errors.md) 取得協助。
 
-3.  如果這是第一個安裝的 ATA 閘道，請於幾分鐘後登入 ATA 主控台，然後將開啟的螢幕向右撥動，以開啟 [通知] 窗格。 您應該會在主控台右邊的通知列中看到**最近已了解的實體**清單。
+3.  如果這是第一個安裝的 ATA 閘道器，請於幾分鐘後登入 ATA 主控台，然後將開啟的螢幕向右撥動，以開啟 [通知] 窗格。 您應該會在主控台右邊的通知列中看到**最近已了解的實體**清單。
 
 4.  按一下桌面上的 [Microsoft Advanced Threat Analytics] 捷徑以連線到 ATA 主控台。 以您安裝 ATA 中心的相同使用者認證登入。
 5.  主控台的 [搜尋] 列中搜尋項目，例如您網域中的使用者或群組。

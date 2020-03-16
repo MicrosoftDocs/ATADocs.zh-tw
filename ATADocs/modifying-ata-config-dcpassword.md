@@ -1,5 +1,5 @@
 ---
-title: 變更 Advanced Threat Analytics 設定 - 網域連線密碼 | Microsoft Docs
+title: 變更 Advanced 威脅分析設定-網域連線密碼
 description: 描述如何變更 ATA 閘道上的網域連線密碼。
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 4a25561b-a5ed-44aa-9b72-366976b3c72a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 345d888047b10777239efaf96b789c477a62a81b
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: fa89acd842632c4a23d34f73aa6fe21abbc7878f
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65197108"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414092"
 ---
 # <a name="change-ata-configuration---domain-connectivity-password"></a>變更 ATA 設定 - 網域連線密碼
 
@@ -45,7 +45,7 @@ ms.locfileid: "65197108"
 
     如果 ATA 中心有連線到網域，請使用 [測試連線] 按鈕來驗證認證
 
-5.  按一下 **[儲存]** 。
+5.  按一下 [儲存]。
 
 6.  變更密碼後，手動檢查 ATA 閘道服務是否正在 ATA 閘道伺服器上執行。
 

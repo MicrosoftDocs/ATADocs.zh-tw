@@ -1,5 +1,5 @@
 ---
-title: 安裝 Advanced Threat Analytics - 步驟 3 | Microsoft Docs
+title: 安裝 Advanced 威脅分析-步驟3
 description: 安裝 ATA 的步驟 3 協助您下載 ATA 閘道安裝套件。
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 7fb024e6-297a-4ad9-b962-481bb75a0ba3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 5d9ebf49493ec474ec1093aef66786d38db0cd57
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: eebbac33dbc339ec3558ab7458197cf8bdf92b3a
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543852"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79410492"
 ---
 # <a name="install-ata---step-3"></a>安裝 ATA - 步驟 3
 
@@ -27,7 +27,7 @@ ms.locfileid: "75543852"
 > [« 步驟 2](install-ata-step2.md)
 > [步驟 4 »](install-ata-step4.md)
 
-## <a name="step-3-download-the-ata-gateway-setup-package"></a>步驟 3. 下載 ATA 閘道安裝套件
+## <a name="step-3-download-the-ata-gateway-setup-package"></a>步驟 3： 下載 ATA 閘道安裝套件
 
 設定網域連線設定後，您可以下載 ATA 閘道安裝套件。 ATA 閘道可以安裝在專用伺服器或網域控制站上。 如果您將其安裝在網域控制站上，它會作為 ATA 輕量型閘道安裝。 如需 ATA 輕量型閘道的詳細資訊，請參閱 [ATA 架構](ata-architecture.md)。 
 

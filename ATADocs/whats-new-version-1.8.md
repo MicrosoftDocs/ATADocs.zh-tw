@@ -1,5 +1,5 @@
 ---
-title: ATA 1.8 版的新功能 | Microsoft Docs
+title: ATA 1.8 版的新功能
 description: 列出 ATA 1.8 版的新功能以及已知問題
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: deb170191a649c72eaae3d26ba34bea6358b27b0
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: f13c603b25a58b81b8786734b0c11bf3f8da8f9c
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75544279"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414279"
 ---
 # <a name="whats-new-in-ata-version-18"></a>ATA 1.8 版的新功能
 

@@ -1,5 +1,5 @@
 ---
-title: 使用 ATA 標記敏感性帳戶 | Microsoft Docs
+title: 使用 ATA 標記敏感性帳戶
 description: 說明如何使用 Advanced Threat Analytics (ATA) 標記敏感性帳戶
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 40a1c5c4-b8d6-477c-8ae5-562b37661624
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 39ad944d4517cbfe73cc7ac95f0cf7ceb6a3f213
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 4897bee445099b21dabac7ffbbbf3e607254b237
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196037"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414160"
 ---
 # <a name="tag-sensitive-accounts"></a>標記敏感性帳戶
 
@@ -36,7 +36,7 @@ ms.locfileid: "65196037"
 
     ![ATA 敏感性帳戶範例](media/sensitive-account-sample.png)
 
-4. 按一下 **[儲存]** 。
+4. 按一下 [儲存]。
 
 5. 按一下實體名稱即可前往 [實體設定檔] 頁面。 您在這裡可以看到將實體視為敏感性的原因，原因可能是群組中的成員資格或手動標記為敏感性。
 

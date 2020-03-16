@@ -1,5 +1,5 @@
 ---
-title: 設定 SAM-R 以在 Advanced Threat Analytics 中啟用橫向移動路徑偵測 | Microsoft Docs
+title: 設定 SAM-R 以在 Advanced 威脅分析中啟用橫向移動路徑偵測
 description: 描述如何設定 SAM-R 以在 Advanced Threat Analytics (ATA) 中啟用橫向移動路徑偵測
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 7597ed25-87f5-472c-a496-d5f205c9c391
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1b8e8924fe0cd00985252c04edfb92ec51759b48
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: fa47a151ae8131039a5f7822acc5b541deb5c621
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907975"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413973"
 ---
 # <a name="install-ata---step-9"></a>安裝 ATA - 步驟 9
 

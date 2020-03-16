@@ -1,5 +1,5 @@
 ---
-title: 監視 Advanced Threat Analytics 系統健康狀態和事件 | Microsoft Docs
+title: 監視 Advanced 威脅分析系統健全狀況和事件
 description: 使用 ATA 健康狀態中心來查看 ATA 服務的運作情況、收看潛在問題的警示，以及在事件檢視器中檢視系統事件。
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b425e4cbd923cfe75269eb22e47da3128fbf4d78
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 1951fd66dd2af52f62dd48fb9c67831adf78dbd8
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196255"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79411491"
 ---
 # <a name="working-with-ata-system-health-and-events"></a>使用 ATA 系統健康狀態和事件
 

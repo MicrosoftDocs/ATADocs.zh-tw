@@ -1,5 +1,5 @@
 ---
-title: ATA 1.7 版的新功能 | Microsoft Docs
+title: ATA 1.7 版的新功能
 description: 列出 ATA 1.7 版的新功能以及已知問題
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: be9ee613-4eb3-40f1-8973-e7f0a707ff57
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 0570ac2574dfca2fbc22a332228d52fcd429652d
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: db393df81a922cf7362e5705376c9d72fe13e363
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65195963"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414381"
 ---
 # <a name="whats-new-in-ata-version-17"></a>ATA 1.7 版的新功能
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。

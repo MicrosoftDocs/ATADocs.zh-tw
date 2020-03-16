@@ -1,5 +1,5 @@
 ---
-title: ATA 可疑活動指南 | Microsoft Docs
+title: ATA 可疑活動指南
 d|Description: This article provides a list of the suspicious activities ATA can detect and steps for remediation.
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 1fe5fd6f-1b79-4a25-8051-2f94ff6c71c1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: bc0dafbb95fb8ea2328d2b005802aff003b9ec97
-ms.sourcegitcommit: 05f23a0add8d24ae92176e13c2a4ae8ada1844da
+ms.openlocfilehash: b9518a895dc4f9ed74cc183f14c1149f1fd7f14f
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79319171"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79411338"
 ---
 # <a name="advanced-threat-analytics-suspicious-activity-guide"></a>Advanced Threat Analytics 可疑活動指南
 

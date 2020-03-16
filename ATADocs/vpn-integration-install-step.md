@@ -1,5 +1,5 @@
 ---
-title: 安裝 Advanced Threat Analytics - 步驟 7 | Microsoft Docs
+title: 安裝 Advanced 威脅分析-步驟7
 description: 在這個安裝 ATA 的步驟中，您要整合您的 VPN。
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: e0aed853-ba52-46e1-9c55-b336271a68e7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d582d45007cc288844c26c03d90195e4b741025a
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: d8ebc54fc2c82bbe99b79f1c736f17e15629fc6a
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74153108"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79410420"
 ---
 # <a name="install-ata---step-7"></a>安裝 ATA - 步驟 7
 
@@ -40,7 +40,7 @@ ATA 會透過接聽轉送到 ATA 閘道的 RADIUS 計量事件，與您的 VPN �
 > [!IMPORTANT]
 > 自2019年9月起，負責偵測 VPN 位置的先進威脅分析 VPN 地理位置服務，現在僅支援 TLS 1.2。 請確定您的 ATA 中心已設定為支援 TLS 1.2，因為版本1.1 和1.0 不再受到支援。   
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 若要啟用 VPN 整合，請確定已設定了下列參數：
 

@@ -1,5 +1,5 @@
 ---
-title: 於部署 Advanced Threat Analytics 時設定連接埠鏡像 | Microsoft Docs
+title: 在部署 Advanced 威脅分析時設定埠鏡像
 description: 描述連接埠鏡像選項以及如何設定它們以進行 ATA
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: cdaddca3-e26e-4137-b553-8ed3f389c460
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 632724dd1df84e1764b5a382fce556c9d6baf43a
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 1070bdf8415211c72c1be05960a39d2c05c67de5
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196320"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79411168"
 ---
 # <a name="configure-port-mirroring"></a>設定連接埠鏡像
 

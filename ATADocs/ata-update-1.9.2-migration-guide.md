@@ -1,5 +1,5 @@
 ---
-title: Advanced Threat Analytics 更新至 1.9.2 移轉指南 | Microsoft Docs
+title: Advanced 威脅分析更新至1.9.2 遷移指南
 description: 將 ATA 更新至 1.9.2 版的程序
 keywords: ''
 author: shsagir
@@ -11,12 +11,12 @@ ms.prod: advanced-threat-analytics
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: d7149197933800697d26b42196dcc4c9121ea593
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 07c193422140eb2b9a19c587ff93103be70e0edc
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907548"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79411406"
 ---
 # <a name="ata-version-192"></a>ATA 1.9.2 版
 
@@ -55,7 +55,7 @@ ms.locfileid: "75907548"
 - 適用於 ATA 1.8 的更新 1 (1.8.6765 版)
 - ATA 1.8 (1.8.6645 版)
 
-### <a name="restart-requirement"></a>重新啟動需求
+### <a name="restart-requirement"></a>重新開機需求
 
 套用此更新後，您的電腦可能需要重新啟動。
 

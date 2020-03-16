@@ -1,5 +1,5 @@
 ---
-title: 使用 Advanced Threat Analytics 主控台中的實體設定檔 | Microsoft Docs
+title: 使用 Advanced 威脅分析主控台中的實體設定檔
 description: 說明如何從 ATA 主控台的使用者設定檔畫面調查實體
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 581a3257-32dc-453f-b84e-b9f99186f5d3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1f8f2c507ea45ddb422868f8b86a973c8454509e
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: de4916e94593dd823c7cf754874c7d5c3eed7135
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65195829"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79412341"
 ---
 # <a name="investigating-entity-profiles"></a>調查實體設定檔
 
@@ -49,11 +49,11 @@ ms.locfileid: "65195829"
 
 對於電腦，您可以看到：
 - 電腦有多少開啟的可疑活動
-- 登入電腦的使用者數
+-  登入電腦的使用者數
 - 電腦存取的資源數
-- 從電腦存取 VPN 的位置數
+-  從電腦存取 VPN 的位置數
 - 電腦所使用的 IP 位址清單
-
+  
   ![實體功能表電腦](media/entity-computer.png)
 
 使用活動時間軸上的 [篩選依據] 按鈕，您可以依活動類型篩選活動。 您也可以篩選掉特定的 (雜訊) 活動類型。 當您想要了解實體在網路中之行為的基本概念時，這對調查相當實用。 您也可以移至特定日期，並將篩選的活動匯出到 Excel。 匯出的檔案提供目錄服務變更 (針對帳戶在 Active Directory 中變更的項目) 的頁面，以及適用於活動的個別頁面。 
@@ -77,3 +77,4 @@ ms.locfileid: "65195829"
 
 ## <a name="see-also"></a>另請參閱
 [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+      

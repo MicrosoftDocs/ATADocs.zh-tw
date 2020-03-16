@@ -1,5 +1,5 @@
 ---
-title: 為 Advanced Threat Analytics 服務啟動進行疑難排解 | Microsoft Docs
+title: 針對 Advanced 威脅分析服務啟動進行疑難排解
 description: 本文描述如何為 ATA 啟動問題進行疑難排解
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 5a65285c-d1de-4025-9bb4-ef9c20b13cfa
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 6669e23e2948997c452a44bfbe4fc08d659b3e8b
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 97450fd93a8c881d5722365deab8b237df489091
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65197177"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413854"
 ---
 # <a name="troubleshooting-service-startup"></a>為服務啟動進行疑難排解
 
@@ -50,7 +50,7 @@ ms.locfileid: "65197177"
 您的 ATA 閘道未啟動且您收到此錯誤：<br></br>
 System.Net.Http.HttpRequestException: 回應狀態碼未指出成功: 500 (內部伺服器錯誤)
 
-**說明**
+**描述**
 
 在輕量型閘道安裝程序中，ATA 會配置 CPU 閾值，使輕量型閘道能夠以 15% 的緩衝區來利用 CPU，從而導致此問題發生。 若您使用了登錄機碼個別設定閾值：這項衝突會造成輕量型閘道無法啟動。 
 

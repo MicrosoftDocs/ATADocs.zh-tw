@@ -1,5 +1,5 @@
 ---
-title: 安裝 Advanced Threat Analytics - 步驟 8 | Microsoft Docs
+title: 安裝 Advanced 威脅分析-步驟8
 description: 在安裝 ATA 的最後一個步驟裡，您可以設定 Honeytoken 使用者。
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ef51590c3d4e2bf07f839e4dc6a60e2f84d19a50
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 367d40e57590ace725700de947f3c1fd31b9db5e
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543033"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79411202"
 ---
 # <a name="install-ata---step-8"></a>安裝 ATA - 步驟 8
 
@@ -51,7 +51,7 @@ ATA 也能讓您設定 Honeytoken 使用者，用來作為針對惡意執行者�
 
    ![排除](media/exclusions.png)
 
-4.  按一下 **[儲存]** 。
+4.  按一下 [儲存]。
 
 
 恭喜，您已成功部署 Microsoft Advanced Threat Analytics！

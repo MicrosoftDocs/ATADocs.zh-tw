@@ -1,5 +1,5 @@
 ---
-title: Advanced Threat Analytics 的災害復原 | Microsoft Docs
+title: Advanced 威脅分析的嚴重損壞修復
 description: 描述如何於災害發生後快速復原 ATA 功能
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 69efa57478c6534d96ae4ce1e347cddc0c46896e
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 5bf0654f951466f6cb33e9c71c522fbf582179c9
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907701"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413293"
 ---
 # <a name="ata-disaster-recovery"></a>ATA 災害復原
 
@@ -35,7 +35,7 @@ ms.locfileid: "75907701"
     1. 在 [憑證管理員] 中，瀏覽到 [憑證 (本機電腦)] ->  [個人] -> [憑證]，然後選取 [ATA 中心]。
     2. 以滑鼠右鍵按一下 [ATA 中心]，然後選取 [所有工作]，並選取 [匯出]。 
      ![ATA 中心憑證](media/ata-center-cert.png)
-    3. 依照指示匯出憑證，也請務必匯出私密金鑰。
+    3. 遵循指示以匯出憑證，也請務必匯出私密金鑰。
     4. 將匯出的憑證檔案備份到另一部電腦上。
 
    > [!NOTE] 
@@ -43,9 +43,9 @@ ms.locfileid: "75907701"
 
 ## <a name="recover-your-ata-center"></a>復原您的 ATA 中心
 
-1. 使用和先前的 ATA 中心電腦相同的 IP 位址和電腦名稱，建立新的 Windows Server 電腦。
+1. 使用和先前的 ATA 中心電腦相同的 IP 位址與電腦名稱，建立新的 Windows Server 電腦。
 2. 將您於先前所備份的憑證匯入到新的伺服器。
-3. 遵循指示以[將 ATA 中心部署到](install-ata-step1.md)新建立的 Windows Server 上。 您不需要再次部署 ATA 閘道。 當系統提示您提供憑證時，請提供您在備份 ATA 中心設定時匯出的憑證。 
+3. 依照指示[將 ATA 中心部署到](install-ata-step1.md)新建立的 Windows Server 上。 您不需要再次部署 ATA 閘道。 當系統提示您提供憑證時，請提供您在備份 ATA 中心設定時匯出的憑證。 
 ![ATA 中心還原](media/disaster-recovery-deploymentss.png)
 4. 停止 ATA 中心服務。
 5. 匯入已備份的 ATA 中心設定：

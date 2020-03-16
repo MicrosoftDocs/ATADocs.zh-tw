@@ -1,5 +1,5 @@
 ---
-title: Advanced Threat Analytics 更新至 1.8 移轉指南 | Microsoft Docs
+title: Advanced 威脅分析更新至1.8 的遷移指南
 description: 將 ATA 更新至 1.8 版的程序
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: e5a9718c-b22e-41f7-a614-f00fc4997682
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b30527feafc7ee74f17f9f9600bbbc1e28a3dfa6
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 51f9be6f5c2073070bbddb6669c0dda084c0e150
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543595"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79412987"
 ---
 # <a name="updating-ata-to-version-18"></a>將 ATA 更新至 1.8 版
 

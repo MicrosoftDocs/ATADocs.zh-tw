@@ -1,5 +1,5 @@
 ---
-title: Advanced Threat Analytics 常見問題集 | Microsoft Docs
+title: Advanced 威脅分析的常見問題
 description: 提供關於 ATA 的常見問題清單以及相關解答
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 9c8a16cbd49f653425b27fe50d18d7de155dab12
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 06b0aa757e2c5a85da276964faacfdf8090ccd74
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75905701"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79412460"
 ---
 # <a name="ata-frequently-asked-questions"></a>ATA 常見問題集
 
@@ -146,10 +146,10 @@ Microsoft Advanced Threat Analytics 是內部部署的產品。
 連接埠鏡像又稱為「交換器連接埠分析器」(SPAN)，是監視網路流量的方法。 啟用連接埠鏡像，交換器會將一個連接埠 (或整個 VLAN) 上的所有網路封包的複本，傳送至另一個可分析封包的連接埠。
 
 ## <a name="does-ata-monitor-only-domain-joined-devices"></a>ATA 是否只監視加入網域的裝置？
-不可以。 ATA 會監視對 Active Directory 執行驗證和授權要求的網路中的所有裝置，包括非 Windows 和行動裝置。
+否。 ATA 會監視對 Active Directory 執行驗證和授權要求的網路中的所有裝置，包括非 Windows 和行動裝置。
 
 ## <a name="does-ata-monitor-computer-accounts-as-well-as-user-accounts"></a>ATA 會監視電腦帳戶以及使用者帳戶嗎？
-可以。 因為電腦帳戶 (以及任何其他實體) 可以用來執行惡意活動，ATA 會監視所有電腦帳戶的行為，以及環境中的所有其他實體。
+是。 因為電腦帳戶 (以及任何其他實體) 可以用來執行惡意活動，ATA 會監視所有電腦帳戶的行為，以及環境中的所有其他實體。
 
 ## <a name="can-ata-support-multi-domain-and-multi-forest"></a>ATA 支援多網域和多樹系嗎？
 Microsoft Advanced Threat Analytics 支援在相同樹系邊界內的多網域環境。 多樹系則需要為每個樹系部署 ATA。

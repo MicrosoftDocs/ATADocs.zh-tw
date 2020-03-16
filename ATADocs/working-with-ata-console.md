@@ -1,5 +1,5 @@
 ---
-title: 了解 Advanced Threat Analytics 主控台 | Microsoft Docs
+title: 瞭解 Advanced 威脅分析主控台
 description: 描述如何登入 ATA 主控台和主控台的元件
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3908cc6ad907111fc7f6e32fd562ce0d6298dea7
-ms.sourcegitcommit: 05f23a0add8d24ae92176e13c2a4ae8ada1844da
+ms.openlocfilehash: a1db61a38cf87e6c1d8989e5ee591a0741f25f4e
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79319191"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414364"
 ---
 # <a name="working-with-the-ata-console"></a>使用 ATA 主控台
 
@@ -109,7 +109,7 @@ ATA 將下列群組清單視為**敏感性**。 屬於這些群組的任何實�
 - Enterprise Admins 
 - Group Policy Creator Owners 
 - Read-Only Domain Controllers 
-- 系統管理員  
+- Administrators  
 - Power Users  
 - Account Operators  
 - Server Operators   
@@ -128,11 +128,11 @@ ATA 將下列群組清單視為**敏感性**。 屬於這些群組的任何實�
 
 ![ATA 小型設定檔影像](media/ATA-mini-profile.jpg)
 
--   名稱
+-   Name
 
 -   圖片
 
--   Email
+-   電子郵件
 
 -   電話
 

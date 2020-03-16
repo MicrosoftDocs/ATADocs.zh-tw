@@ -1,5 +1,5 @@
 ---
-title: 匯出和匯入 Advanced Threat Analytics 組態 | Microsoft Docs
+title: 匯出和匯入 Advanced 威脅分析設定
 description: 如何匯出和匯入 ATA 組態。
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 1d27dba8-fb30-4cce-a68a-f0b1df02b977
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 522c4e197a52c6ccbd40d7ab1e8dea1764bce275
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: f9e6c68fa0adcfa44707a42f7cd798ad7d3d8345
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75905412"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79411474"
 ---
 # <a name="export-and-import-the-ata-configuration"></a>匯出和匯入 ATA 組態
 
@@ -25,7 +25,7 @@ ms.locfileid: "75905412"
 
 ATA 組態會儲存在資料庫的「SystemProfile 」集合中。
 ATA 中心服務每 4 小時會將此集合備份至名為 **SystemProfile_*timestamp*.json** 的檔案。 並會儲存 300 個最新版本。
-這個檔案位於名為**Backup**的子資料夾中。 在預設的 ATA 安裝位置中，可以在這裡找到︰<em>C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup\SystemProfile_</em>timestamp<em>.json</em>。 
+此檔案位於名為 **Backup** 的子資料夾中。 在預設的 ATA 安裝位置中，可以在這裡找到︰<em>C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup\SystemProfile_</em>timestamp<em>.json</em>。 
 
 **注意**：建議在針對 ATA 進行重大變更時，在某處備份此檔案。
 

@@ -1,5 +1,5 @@
 ---
-title: Advanced Threat Analytics 1.5 版的新功能 | Microsoft Docs
+title: Advanced 威脅分析1.5 版的新功能
 description: 列出 ATA 1.5 版的新功能以及已知問題
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c3cbce98ef0b0fa75dcc0df813582d4d46dac4fb
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: f7e65f1da222de3b7a4cb05541bd2359e3046901
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75544267"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414228"
 ---
 # <a name="whats-new-in-ata-version-15"></a>ATA 1.5 版的新功能
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。

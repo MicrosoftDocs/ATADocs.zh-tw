@@ -1,5 +1,5 @@
 ---
-title: 使用 ATA 調查橫向移動路徑攻擊 |Microsoft Docs
+title: 使用 ATA 調查橫向移動路徑攻擊
 description: 本文說明如何使用 Advanced Threat Analytics (ATA) 偵測橫向移動路徑攻擊。
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 710f01bd-c878-4406-a7b2-ce13f98736ea
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 53c81575202bbccc9eacf5bb26c5fa624fb7e667
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 4c937a99da6bd26d58fc112eb1c154b59d8d53a1
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908245"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79412035"
 ---
 # <a name="investigate-lateral-movement-paths-with-ata"></a>使用 ATA 調查橫向移動路徑
 
@@ -36,7 +36,7 @@ ATA 可讓您在網路上採取防範動作，以防止攻擊者成功進行橫�
 
 若要探索網路中有哪些敏感性帳戶因其與非敏感性帳戶或資源的連線而受到影響，請在特定時間範圍內執行下列步驟： 
 
-1. 在 ATA 主控台功能表中，按一下報表圖示 ![[報表] 圖示](./media/ata-report-icon.png).
+1. 在 ATA 主控台功能表中，按一下報表圖示 ![[報表] 圖示](./media/ata-report-icon.png)。
 
 2. 在 [**對敏感性帳戶的橫向移動路徑**] 下，如果找不到橫向移動路徑，報表就會呈現灰色。如果有橫向移動路徑，則報表的日期會自動選取具有相關資料的第一個日期。 
 
@@ -51,7 +51,7 @@ ATA 可讓您在網路上採取防範動作，以防止攻擊者成功進行橫�
 
 現在您已知道有哪些敏感性帳戶處於風險中，便可以深入鑽研 ATA 以了解更多資訊並採取預防性措施。
 
-1. 若實體位於橫向移動路徑，請在 ATA 主控台中，搜尋新增至實體設定檔的橫向移動徽章 ![橫向圖示](./media/lateral-movement-icon.png) 對話方塊中的 [動作] ![路徑圖示](./media/paths-icon.png). 這會在過去兩天內有出現橫向移動路徑的情況下提供。
+1. 若實體位於橫向移動路徑，請在 ATA 主控台中，搜尋新增至實體設定檔的橫向移動徽章 ![橫向圖示](./media/lateral-movement-icon.png) 或 ![路徑圖示](./media/paths-icon.png)。 這會在過去兩天內有出現橫向移動路徑的情況下提供。
 
 2. 在隨即開啟的使用者設定檔頁面中，按一下 [橫向移動路徑] 索引標籤。
 

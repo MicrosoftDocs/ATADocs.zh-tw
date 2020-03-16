@@ -1,5 +1,5 @@
 ---
-title: 安裝 Advanced Threat Analytics - 步驟 1 | Microsoft Docs
+title: 安裝 Advanced 威脅分析-步驟1
 description: 安裝 ATA 的第一步驟是下載並安裝 ATA 中心到您所選的伺服器。
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 61f210562cb1af4ed6a28d1f0ee0bf61f49bedc4
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 8a6841b3999938300217ae4d859e94853aed7bca
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907893"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413871"
 ---
 # <a name="install-ata---step-1"></a>安裝 ATA - 步驟 1
 
@@ -32,7 +32,7 @@ ms.locfileid: "75907893"
 > [!IMPORTANT] 
 > 如果使用 Windows 2012 R2，開始安裝之前，您可以先在 ATA 中心伺服器和 ATA 閘道伺服器上安裝 KB2934520；若沒有這麼做，ATA 安裝會安裝此更新，並需要在 ATA 安裝期間重新啟動。
 
-## <a name="step-1-download-and-install-the-ata-center"></a>步驟 1。 下載並安裝 ATA 中心
+## <a name="step-1-download-and-install-the-ata-center"></a>步驟 1： 下載並安裝 ATA 中心
 確認伺服器符合需求之後，您可以繼續 ATA 中心的安裝。
     
 > [!NOTE]
@@ -63,10 +63,10 @@ ms.locfileid: "75907893"
 
 9. 在 [Configure the Center (設定中心)] 頁面中，根據您的環境輸入下列資訊：
 
-   |欄位|Description|評價|
+   |欄位|說明|註解|
    |---------|---------------|------------|
    |安裝路徑|這是要安裝 ATA 中心的位置。 位置預設為 %programfiles%\Microsoft Advanced Threat Analytics\Center|保留預設值|
-   |資料庫資料路徑|這是 MongoDB 資料庫檔案的所在位置。 位置預設為 %programfiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data|變更位置至有空間可隨著您的規模成長的位置。 **請注意：** <ul><li>在生產環境中，您應該根據容量規劃使用具有足夠空間的磁碟機。</li><li>大規模部署的資料庫應該放在個別的實體磁碟上。</li></ul>如需大小資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。|
+   |資料庫資料路徑|這是 MongoDB 資料庫檔案的所在位置。 位置預設為 %programfiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data|變更位置至有空間可隨著您的規模成長的位置。 **注意︰** <ul><li>在生產環境中，您應該根據容量規劃使用具有足夠空間的磁碟機。</li><li>大規模部署的資料庫應該放在個別的實體磁碟上。</li></ul>如需規模大小的詳細資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。|
    |中心服務 SSL 憑證|這是 ATA 主控台與 ATA 中心服務所使用的憑證。|按一下鑰匙圖示以選取已安裝的憑證，或使用核取方塊來建立自我簽署憑證。|
         
    ![ATA 中心設定映像](media/ATA-Center-Configuration.png)

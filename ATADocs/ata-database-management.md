@@ -1,5 +1,5 @@
 ---
-title: Advanced Threat Analytics 資料庫管理 |Microsoft Docs
+title: 先進的威脅分析資料庫管理
 description: 這些程序可協助您移動、備份或還原 ATA 資料庫。
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 05e49e23-6e0a-4ec0-9a63-a2093173c8a1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e2e57f5816ff1f250ba04cddb65848b31673a71e
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 868e946587b61fb3a571281944cca2a09225aa47
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196329"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79411950"
 ---
 # <a name="ata-database-management"></a>ATA 資料庫管理
 

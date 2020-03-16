@@ -1,5 +1,5 @@
 ---
-title: 什麼是 Microsoft Advanced Threat Analytics (ATA)？ | Microsoft Docs
+title: 什麼是 Microsoft Advanced Threat Analytics (ATA)？
 description: 說明何謂 Microsoft Advanced Threat Analytics (ATA)，以及它可以偵測到的可疑活動種類
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: bb6af26ba5e77ab66009ae3330f36a30e9d9d880
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: b88ca23b2d01d08357b3decb1e8e91c07848f5d8
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908318"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79410591"
 ---
 # <a name="what-is-advanced-threat-analytics"></a>什麼是 Advanced Threat Analytics？
 
@@ -109,7 +109,7 @@ ATA 也會偵測**安全性問題與風險**，包括︰
 -   若要開始部署 ATA：[安裝 ATA](install-ata-step1.md)
 
 ## <a name="related-videos"></a>相關影片
-- [加入安全性社群](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)
+- [加入安全性團體](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)
 - [ATA 部署概觀](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 
 

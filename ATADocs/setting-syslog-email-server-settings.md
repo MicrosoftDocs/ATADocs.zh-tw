@@ -1,5 +1,5 @@
 ---
-title: 在 Advanced Threat Analytics 中設定電子郵件通知設定 | Microsoft Docs
+title: 在 Advanced 威脅分析中設定電子郵件通知設定
 description: 說明當 ATA 偵測到可疑的活動時，如何通知您 (透過電子郵件或 ATA 事件轉寄)
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: bff20bf7-8b53-49da-81e5-b818a1c3b24e
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 2f60b7450c430793c9c14139f9cf268908a5dbc4
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: a8769213bbc130299da99c852112af20ecad3267
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65195688"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79412205"
 ---
 # <a name="provide-ata-with-your-email-server-settings"></a>使用電子郵件伺服器設定提供 ATA
 
@@ -36,11 +36,11 @@ ms.locfileid: "65195688"
 4. 在 [通知] 區段中的 [郵件伺服器] 下，輸入下列資訊︰
 
 
-   |              欄位              |                                                                                                 Description                                                                                                  |               值                |
+   |              欄位              |                                                                                                 說明                                                                                                  |               值                |
    |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
    | SMTP 伺服器的端點 (必要) |                                                            輸入您 SMTP 伺服器的 FQDN，並選擇性地變更連接埠號碼 (預設值 25)。                                                            | 例如：<br />smtp.contoso.com |
    |               SSL               |                                              如果 SMTP 伺服器需要 SSL，請切換 SSL。 **注意︰** 如果啟用 SSL，您也需要變更連接埠號碼。                                               |        預設會停用         |
-   |         Authentication          | 如果您的 SMTP 伺服器需要驗證，請啟用。 **注意︰** 如果啟用驗證，您必須提供有權連線到 SMTP 伺服器的電子郵件帳戶使用者名稱和密碼。 |        預設會停用         |
+   |         驗證          | 如果您的 SMTP 伺服器需要驗證，請啟用。 **注意︰** 如果啟用驗證，您必須提供有權連線到 SMTP 伺服器的電子郵件帳戶使用者名稱和密碼。 |        預設會停用         |
    |      傳送來源 (必要)       |                                                                        輸入電子郵件傳送者的電子郵件地址。                                                                         | 例如：<br />ATA@contoso.com  |
 
    ![ATA 電子郵件伺服器設定影像](media/ata-email-server.png)
@@ -68,11 +68,11 @@ ms.locfileid: "65195688"
 
 5. 在 [通知] 區段下，選取 [Syslog 伺服器]，然後輸入下列資訊：
 
-   |欄位|Description|
+   |欄位|說明|
    |---------|---------------|
    |Syslog 伺服器端點|Syslog 伺服器的 FQDN，選擇性地變更連接埠號碼 (預設值 514)|
    |傳輸|可以是 UDP、TCP 或 TLS (安全 Syslog)|
-   |格式化|這是 ATA 用來將事件傳送至 SIEM 伺服器 - RFC 5424 或 RFC 3164 的格式。|
+   |格式|這是 ATA 用來將事件傳送至 SIEM 伺服器 - RFC 5424 或 RFC 3164 的格式。|
 
    ![ATA Syslog 伺服器設定影像](media/ata-syslog-server-settings.png)
 

@@ -1,5 +1,5 @@
 ---
-title: 安裝 Advanced Threat Analytics - 步驟 4 | Microsoft Docs
+title: 安裝 Advanced 威脅分析-步驟4
 description: 安裝 ATA 的步驟 4 協助您安裝 ATA 閘道。
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 83234808b39c8c2e92ca4268c2ad64474f3462be
-ms.sourcegitcommit: 0f3ee3241895359d5cecd845827cfba1fdca9317
+ms.openlocfilehash: 6c36bc1778c267e01ea98a916d17370a62d905d2
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2019
-ms.locfileid: "75543894"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79410624"
 ---
 # <a name="install-ata---step-4"></a>安裝 ATA - 步驟 4
 
@@ -27,7 +27,7 @@ ms.locfileid: "75543894"
 > [« 步驟 3](install-ata-step3.md)
 > [步驟 5 »](install-ata-step5.md)
 
-## <a name="step-4-install-the-ata-gateway"></a>步驟 4。 安裝 ATA 閘道
+## <a name="step-4-install-the-ata-gateway"></a>步驟 4： 安裝 ATA 閘道
 
 在專用伺服器上安裝 ATA 閘道之前，請先驗證連接埠鏡像都已正確設定，而且 ATA 閘道可以查看往來網域控制站的流量。 如需詳細資訊，請參閱[驗證連接埠鏡像](validate-port-mirroring.md)。
 

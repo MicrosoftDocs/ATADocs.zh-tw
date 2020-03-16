@@ -1,5 +1,5 @@
 ---
-title: 設定 Advanced Threat Analytics 通知 | Microsoft Docs
+title: 設定 Advanced 威脅分析通知
 description: 描述如何設定 ATA 警示，所以偵測到可疑的活動時，您會收到通知。
 keywords: ''
 author: rkarlin
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7dbc98d61319c40a3d3691ace28e1300bce72b73
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 2c1ae942edbd904715b1ebb76f3b3ecd0720bc05
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65197082"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79412868"
 ---
 # <a name="set-ata-notifications"></a>設定 ATA 通知
 
@@ -44,7 +44,7 @@ ATA 可在偵測到可疑的活動時通知您，方法是透過電子郵件或�
     > 只有在建立可疑活動時，才會傳送可疑活動的電子郵件警示。
 
 1. 在 [Syslog 通知] 下，指定要傳送到 Syslog 伺服器的通知 (新的可疑活動、更新的可疑活動，以及新的健康狀態問題)。
-1. 按一下 **[儲存]** 。
+1. 按一下 [儲存]。
     
     ![ATA 郵件通知設定影像](media/ata-mail-notification-settings.png)
 

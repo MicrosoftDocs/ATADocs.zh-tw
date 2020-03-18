@@ -1,5 +1,5 @@
 ---
-title: Azure 進階威脅防護中的新功能 (Azure ATP) | Microsoft Docs
+title: Azure 進階威脅防護中的新功能 (Azure ATP)
 description: 本文會經常更新，讓您知道最新版 Azure 進階威脅防護 (Azure ATP) 的新功能。
 keywords: ''
 author: shsagir
@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: de73b8e121b185b01be8ad83fc7c8606c03cb2c6
-ms.sourcegitcommit: 40179a7206773a40de96caffe6c5f3fbcb4a1c27
+ms.openlocfilehash: 0b0805a634466d1ef8e53c187ef674edc529eda4
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "78938885"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79412681"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
 

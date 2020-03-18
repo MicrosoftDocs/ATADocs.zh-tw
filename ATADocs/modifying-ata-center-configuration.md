@@ -1,5 +1,5 @@
 ---
-title: 變更 Advanced Threat Analytics ATA 中心設定 | Microsoft Docs
+title: 變更 Advanced Threat Analytics ATA 中心設定
 description: 描述如何變更您 ATA 中心的 IP 位址、連接埠、主控台 URL 或憑證。
 keywords: ''
 author: rkarlin
@@ -11,18 +11,18 @@ ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8a228463c422ac7f62d3fc18395aa0b61df0a731
-ms.sourcegitcommit: 6dd002b5a34f230aaada55a6f6178c2f9e1584d9
+ms.openlocfilehash: 498eea7cfe1393bd0b616fc5cfbb11bd18334f8f
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "65196023"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414007"
 ---
 # <a name="modifying-the-ata-center-configuration"></a>修改 ATA 中心設定
 
 
 
-適用對象：*Advanced Threat Analytics 1.9 版*
+適用於：*Advanced Threat Analytics 1.9 版*
 
 初始部署後，請小心修改 ATA Center。 更新主控台 URL 和憑證時，請使用下列程序。
 

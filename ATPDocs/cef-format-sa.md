@@ -1,5 +1,5 @@
 ---
-title: Azure ATP SIEM 記錄檔參考 | Microsoft Docs
+title: Azure ATP SIEM 記錄檔參考
 description: 提供從 Azure ATP 傳送到您 SIEM 的可疑活動記錄檔範例。
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: b53e7f63949896908834a55985988c9a7dffaca5
-ms.sourcegitcommit: 594cba9674559beebd82e0c0eb08792000f97e87
+ms.openlocfilehash: d07077c9a78d3707f04ecc4cce16f6dd7e35f91b
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78332059"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79411547"
 ---
 # <a name="azure-atp-siem-log-reference"></a>Azure ATP SIEM 記錄檔參考
 

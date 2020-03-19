@@ -1,5 +1,5 @@
 ---
-title: Azure 進階威脅防護個人資料原則 | Microsoft Docs
+title: Azure 進階威脅防護個人資料原則
 description: 提供如何從 Azure ATP 刪除私人資訊和個人資料的相關資訊連結。
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 224e629a-0e82-458c-bb03-b67070a9241d
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: 13035874f4d40376c93dbc39020277716fe37d1d
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 159cc41bf31697c6da8ac3f1f307eda4f8d11ea3
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908112"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414058"
 ---
 # <a name="azure-atp-data-security-and-privacy"></a>Azure ATP 資料安全性和隱私權
 

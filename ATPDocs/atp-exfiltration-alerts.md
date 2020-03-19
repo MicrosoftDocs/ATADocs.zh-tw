@@ -1,5 +1,5 @@
 ---
-title: Azure ATP 外洩警訊教學課程 | Microsoft Docs
+title: Azure ATP 外洩警示教學課程
 d|Description: This article explains the Azure ATP alerts issued when attacks typically part of exfiltration phase efforts are detected against your organization.
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 452d951c-5f49-4a21-ae10-9fb38c3de302
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 16f0db3ba854f8ab6db2f1b38c6c2cedc7f56ee7
-ms.sourcegitcommit: 4381148c0487b473e23fe9b425b133c42acde881
+ms.openlocfilehash: 5cdba13f9bf49c4f7b78e8e9edcf4cccaecdd832
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/01/2020
-ms.locfileid: "78208124"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414432"
 ---
 # <a name="tutorial-exfiltration-alerts"></a>教學課程：外流警訊
 

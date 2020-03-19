@@ -1,5 +1,5 @@
 ---
-title: 設定 SAM-R 以在 Azure ATP 中啟用橫向移動路徑偵測 | Microsoft Docs
+title: 設定 SAM-R 以在 Azure ATP 中啟用橫向移動路徑偵測
 description: 說明如何設定 Azure ATP 對 SAM 發出遠端呼叫
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: b09adce3-0fbc-40e3-a53f-31f57fe79ca3
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7084db2072351c071802a40a80871721a7923a27
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: ddfc7b738ddf31be12ae1357b2024df1bc468251
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75906586"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413633"
 ---
 # <a name="configure-azure-atp-to-make-remote-calls-to-sam"></a>設定 Azure ATP 對 SAM 發出遠端呼叫
 Azure ATP [橫向移動路徑](use-case-lateral-movement-path.md)偵測有賴於識別特定電腦上本機系統管理員的查詢。 這些查詢是在 Azure ATP 安裝期間透過[步驟 2.連線到 AD](install-atp-step2.md) 中建立的 Azure ATP 服務帳戶，使用 SAM-R 通訊協定來執行。

@@ -1,5 +1,5 @@
 ---
-title: Azure ATP 偵察劇本教學課程 | Microsoft Docs
+title: Azure ATP 偵察劇本教學課程
 description: Azure ATP 偵察劇本教學課程說明如何模擬偵察威脅以供 Azure ATP 偵測。
 ms.service: azure-advanced-threat-protection
 ms.topic: tutorial
@@ -7,12 +7,12 @@ author: shsagir
 ms.author: shsagir
 ms.date: 09/01/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 53ff08105d688275dad6b2283e3d30e0db8df002
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 50aeef3f54285b24de308269f41be54aeb379067
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908196"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79411916"
 ---
 # <a name="tutorial-reconnaissance-playbook"></a>教學課程：偵察劇本
 

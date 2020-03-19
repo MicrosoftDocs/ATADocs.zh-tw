@@ -1,5 +1,5 @@
 ---
-title: Azure 進階威脅防護舊版通訊協定安全性狀態評估 | Microsoft Docs
+title: Azure 進階威脅防護舊版通訊協定身分識別安全性狀態評量
 description: 本文提供 Azure ATP 的舊版通訊協定識別安全性狀態評估報告的總覽。
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 6597b8c7-f83e-43c6-8149-fb4a914a845b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7a5f3b92114b27c7c2df11d5c2aa629317415a8c
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: e1cd5eef793a801944f61c1fe2484bfc9a02b900
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908086"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414500"
 ---
 # <a name="security-assessment-legacy-protocols-usage"></a>安全性評估：使用舊版通訊協定 
  

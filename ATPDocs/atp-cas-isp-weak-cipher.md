@@ -1,5 +1,5 @@
 ---
-title: Azure 進階威脅防護弱式加密身分識別安全性狀態評估報告 | Microsoft Docs
+title: Azure 進階威脅防護弱式加密身分識別安全性狀態評量報告
 description: 本文提供 Azure ATP 的弱式加密身分識別安全性狀態評估報告的總覽。
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: cc82212b-7d25-4ec7-828d-2475ff40d685
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d755668f3460e5dd3213f601d74ecf88e37df7d6
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: f73edb6278d4b6ddebe13e1ed01f78d66988f392
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908401"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413140"
 ---
 # <a name="security-assessment-weak-cipher-usage"></a>安全性評估：弱式加密使用方式
 

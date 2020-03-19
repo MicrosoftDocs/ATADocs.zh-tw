@@ -1,5 +1,5 @@
 ---
-title: 安裝 Azure 進階威脅防護 VPN 整合 | Microsoft Docs
+title: 安裝 Azure 進階威脅防護 VPN 整合
 description: 整合 VPN 以收集 Azure ATP 的計量資訊。
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 0d9d2a1d-6c76-4909-b6f9-58523df16d4f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a7af39b227f3bd79fb667b87602e3ac5154d6491
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: c12678dcab848e04469f5fe494349f68814fb2c1
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907753"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413650"
 ---
 # <a name="integrate-vpn"></a>整合 VPN
 

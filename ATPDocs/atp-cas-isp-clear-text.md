@@ -1,5 +1,5 @@
 ---
-title: Azure 進階威脅防護純文字暴露評估 | Microsoft Docs
+title: Azure 進階威脅防護純文字暴露評估
 description: 本文提供 Azure ATP 的「純文字公開身分識別」安全性狀態評估報告的總覽。
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 124957bb-5882-4fcf-bab2-b74b0c69571d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6b4663f71c0d30acd0fdc696650d359ec33b1227
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 6993c0caf30c1ea783cf47304219f1203648e3c5
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908471"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79411321"
 ---
 # <a name="security-assessment-entities-exposing-credentials-in-clear-text"></a>安全性評估：實體以純文字公開認證 
 

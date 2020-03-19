@@ -1,5 +1,5 @@
 ---
-title: Microsoft Cloud App Security 中的 Azure 進階威脅防護活動篩選與原則 | Microsoft Docs
+title: Microsoft Cloud App Security 中的 Azure 進階威脅防護活動篩選與原則
 description: 使用 Microsoft Cloud App Security 進行的 Azure ATP 活動篩選和原則概觀。
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 397e5a77-2bc7-454c-9fe5-649ebaab16b3
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 97d13dc5780e9cf24955644a9e0493a8434f62cd
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: bffad5454cbc1f9216333f44af9a7cfd39ce5433
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908053"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414466"
 ---
 # <a name="use-activity-filters-and-create-action-policies-with-azure-atp-in-microsoft-cloud-app-security"></a>在 Microsoft Cloud App Security 中使用活動篩選以及使用 Azure ATP 建立動作原則 
 

@@ -1,5 +1,5 @@
 ---
-title: Azure ATP 安全性警示橫向移動劇本 | Microsoft Docs
+title: Azure ATP 安全性警示橫向移動劇本
 description: Azure ATP 劇本描述如何模擬 Azure ATP 所偵測的橫向移動威脅。
 ms.service: azure-advanced-threat-protection
 ms.topic: tutorial
@@ -7,12 +7,12 @@ author: shsagir
 ms.author: shsagir
 ms.date: 03/03/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 1ac1a5652305d17f65fee7a4e5c7e0b73b0b1473
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 998b932dc88ca14bed4fd008ea5d1d6574e385a0
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908075"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79410684"
 ---
 # <a name="tutorial-lateral-movement-playbook"></a>教學課程：橫向移動劇本
 

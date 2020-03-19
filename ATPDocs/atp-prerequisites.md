@@ -1,23 +1,23 @@
 ---
-title: Azure 進階威脅防護必要條件 | Microsoft Docs
+title: Azure 進階威脅防護先決條件
 description: 描述在環境中成功部署 Azure ATP 的需求
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 02/19/2020
+ms.date: 03/15/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 176f71af622a9a19f38888273def7362d4c4364b
-ms.sourcegitcommit: c625acd3e44a3ba9619638f84264b3b271383e3a
+ms.openlocfilehash: 185d3e8c70c11e06d1125a634c3cd9c12e2076c8
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77590602"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414262"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -80,10 +80,7 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 
 - 選擇性的 **Honeytoken**：沒有任何網路活動之使用者的使用者帳戶。 此帳戶設定為 Azure ATP Honeytoken 使用者。 如需使用 Honeytoken 的詳細資訊，請參閱[設定排除專案和 Honeytoken 使用者](install-atp-step7.md)。
 
-- 選用：在部署獨立感應器時，必須將 Windows 事件 4776、4732、4733、4728、4729、4756、4757 與 7045 和 8004 轉送給 Azure ATP，以在對敏感性群組與可疑服務建立偵測能力之外進一步增強 Azure ATP 驗證型偵測能力。  Azure ATP 感應器自動支援這些事件。 在 Azure ATP 獨立感應器中，這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。
-
-> [!NOTE]
-> Azure ATP 獨立感應器無法支援所有資料來源類型，因而會導致遺漏偵測。 若要完整涵蓋您的環境，建議您部署 Azure ATP 感應器。
+- 選用：在部署獨立感應器時，必須將 Windows 事件 4726、4728、4729、4730、4732、4733、4743、4753、4756、4757、4758、4763、4776、7045 與 8004 轉送給 Azure ATP，以在對敏感性群組與可疑服務建立偵測能力之外進一步增強 Azure ATP 驗證型偵測能力。  Azure ATP 感應器自動支援這些事件。 在 Azure ATP 獨立感應器中，這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
 
 ## <a name="azure-atp-portal-requirements"></a>Azure ATP 入口網站需求
 
@@ -177,7 +174,7 @@ Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的�
 
 ### <a name="windows-event-logs"></a>Windows 事件記錄檔
 
-Azure ATP 偵測仰賴下列特定 Windows 事件記錄檔，這些記錄檔可由感應器從您的網域控制站剖析。4776、4732、4733、4728、4729、4756、4757、7045 與 8004。 若要正確稽核事件並將其包含在 Windows 事件記錄檔中，網域控制站需要精確的進階稽核原則設定。 如需有關設定正確原則的詳細資訊，請參閱[進階稽核原則檢查](atp-advanced-audit-policy.md)。 若要確定已依服務所需[稽核 Windows 事件 8004](configure-windows-event-collection.md#ntlm-authentication-using-windows-event-8004)，請檢閱您的 [NTLM 稽核設定](https://blogs.technet.microsoft.com/askds/2009/10/08/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7/) \(英文\)。
+Azure ATP 偵測仰賴下列特定 Windows 事件記錄檔，這些記錄檔可由感應器從您的網域控制站剖析。4726、4728、4729、4730、4732、4733、4743、4753、4756、4757、4758、4763、4776、7045 與 8004。 若要正確稽核事件並將其包含在 Windows 事件記錄檔中，網域控制站需要精確的進階稽核原則設定。 如需有關設定正確原則的詳細資訊，請參閱[進階稽核原則檢查](atp-advanced-audit-policy.md)。 若要確定已依服務所需[稽核 Windows 事件 8004](configure-windows-event-collection.md#ntlm-authentication-using-windows-event-8004)，請檢閱您的 [NTLM 稽核設定](https://blogs.technet.microsoft.com/askds/2009/10/08/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7/) \(英文\)。
 
 > [!NOTE]
 >
@@ -221,7 +218,7 @@ Azure ATP 獨立感應器可以支援監視多個網域控制站，依進出網�
 
 Azure ATP 獨立感應器需要至少一個管理介面卡和至少一個擷取介面卡︰
 
-- **管理介面卡** - 用於您公司網路上的通訊。 感應器會使用此配接器來查詢它正在保護的 DC，並對電腦帳戶執行解析。 <br>此介面卡應進行下列設定：
+- **管理介面卡** - 用於您公司網路上的通訊。 感應器會使用此配接器來查詢其正在保護的 DC，並對電腦帳戶執行解析。 <br>此介面卡應進行下列設定：
 
     - 靜態 IP 位址，包含預設閘道
 

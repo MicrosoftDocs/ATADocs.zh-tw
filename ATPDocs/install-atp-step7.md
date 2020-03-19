@@ -1,5 +1,5 @@
 ---
-title: Azure 進階威脅防護的偵測排除範圍和 Honeytoken 帳戶設定 | Microsoft Docs
+title: Azure 進階威脅防護設定偵測排除範圍和 Honeytoken 帳戶
 description: 設定偵測排除範圍和 Honeytoken 使用者。
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 1ad5e923-9bbd-4f56-839a-b11a9f387d4b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4035fbbb3a705cff541c5e07d6bbdce72d99d119
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 5af501b1d040c0c93b978882dc52d7f26921f8a2
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75905186"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413667"
 ---
 # <a name="configure-detection-exclusions-and-honeytoken-accounts"></a>設定偵測排除範圍和 Honeytoken 帳戶
 

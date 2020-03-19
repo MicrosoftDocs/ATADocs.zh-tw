@@ -1,5 +1,5 @@
 ---
-title: Azure 進階威脅防護 (Azure ATP) 舊版本參考 | Microsoft Docs
+title: Azure 進階威脅防護 (Azure ATP) 舊版本參考
 description: 此文章是 Azure 進階威脅防護 (Azure ATP) 舊版更新的參考。
 keywords: ''
 author: shsagir
@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 9b7c4e8e6619df992f0336d3b67ca0cdfc7c750b
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: efc6412bebeb839c577a3e65aac0d9386927a0a3
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908529"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414177"
 ---
 # <a name="release-reference-of-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護 (Azure ATP) 的版本參考 
 

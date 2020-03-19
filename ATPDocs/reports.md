@@ -1,5 +1,5 @@
 ---
-title: 使用 Azure ATP 報表 | Microsoft Docs
+title: 使用 Azure ATP 報表
 description: 描述如何在 Azure ATP 中產生報表以監視您的網路。
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2c2d6b1a-fc8c-4ff7-b07d-64ce6159f84d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 76db7841745c7da555caa356808464d9d45b8107
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 74739e03bf4fdeb92175f9699701d47d6281d108
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907859"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414687"
 ---
 # <a name="azure-atp-reports"></a>Azure ATP 報表
 

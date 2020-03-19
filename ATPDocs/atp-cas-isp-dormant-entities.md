@@ -1,5 +1,5 @@
 ---
-title: Azure 進階威脅防護休眠實體安全性評估 | Microsoft Docs
+title: Azure 進階威脅防護休眠實體安全性評量
 description: 本文概述敏感性群組身分識別安全性狀態評估報告中 Azure ATP 的休眠實體。
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5a4e8ea1119387392f2588f3753390086a257b09
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 34938ff60ebc75812f44a7c014a960c89f2441a5
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908429"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414449"
 ---
 # <a name="security-assessment-dormant-entities-in-sensitive-groups"></a>安全性評估：**從敏感性群組中移除休眠實體** 
 

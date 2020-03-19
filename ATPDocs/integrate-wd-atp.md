@@ -1,5 +1,5 @@
 ---
-title: Azure 進階威脅防護與 Windows Defender ATP 的整合 | Microsoft Docs
+title: Azure 進階威脅防護與 Windows Defender ATP 的整合
 description: 如何將 Azure 進階威脅防護與 Windows Defender ATP 整合，以獲得完整的威脅偵測涵蓋範圍
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: f6f3ed75-d6bb-4966-a9a7-5339c4f3ebac
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 01899ea7c6cae155dc1cc9e559a2cc27cc74c9d8
-ms.sourcegitcommit: c8b1e584ef42559a40afd62dac1b5ca9056c5602
+ms.openlocfilehash: 0671e72baf9138d88d6fbf71bc8328cf2fbb2336
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "78926576"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413599"
 ---
 # <a name="integrate-azure-atp-with-windows-defender-atp"></a>整合 Azure ATP 與 Windows Defender ATP
 

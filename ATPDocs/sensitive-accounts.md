@@ -1,5 +1,5 @@
 ---
-title: 使用 Azure ATP 標記機密帳戶 | Microsoft Docs
+title: 使用 Azure ATP 標記機密帳戶
 description: 描述如何使用 Azure 進階威脅防護 (ATP) 標記機密帳戶
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: cf29a41139973742d6a1be96643104e1cfad0703
-ms.sourcegitcommit: 173b9fc26592efec2113c6ee585b04311ddfdbf1
+ms.openlocfilehash: 465879661322a7e71412570ad052c18575df3ade
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77422008"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79410964"
 ---
 # <a name="working-with-sensitive-accounts"></a>使用機密帳戶
 

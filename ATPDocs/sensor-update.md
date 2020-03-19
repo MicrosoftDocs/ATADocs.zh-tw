@@ -1,5 +1,5 @@
 ---
-title: 更新 Azure ATP 感應器 | Microsoft Docs
+title: 更新 Azure ATP 感應器
 description: 描述如何更新和延遲更新 Azure ATP 感應器。
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0b4ae2894bc036389e7c6ce701175a68bfa4f7b4
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 209202957877edf07de5309ae3e07143fc653452
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907822"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414653"
 ---
 # <a name="update-azure-atp-sensors"></a>更新 Azure ATP 感應器
 

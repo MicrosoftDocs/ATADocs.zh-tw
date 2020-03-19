@@ -1,5 +1,5 @@
 ---
-title: Azure ATP 網域支配劇本 | Microsoft Docs
+title: Azure ATP 網域支配劇本
 description: Azure ATP 網域支配腳本描述如何模擬 Azure ATP 所偵測到的網域支配攻擊
 ms.service: azure-advanced-threat-protection
 ms.topic: tutorial
@@ -7,12 +7,12 @@ author: shsagir
 ms.author: shsagir
 ms.date: 02/28/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 5eb15b0eeda7fec50c898550a683ef1cdbccfdb7
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: b5903123e992f7540dd660da605a1568bf76ef91
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75908353"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414585"
 ---
 # <a name="tutorial-domain-dominance-playbook"></a>教學課程：網域支配劇本
 

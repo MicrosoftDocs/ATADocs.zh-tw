@@ -1,5 +1,5 @@
 ---
-title: 下載 Azure ATP 感應器安裝套件快速入門 | Microsoft Docs
+title: 下載 Azure ATP 感應器安裝套件快速入門
 description: 安裝 Azure ATP 的步驟三可協助您下載 Azure ATP 感應器安裝套件。
 keywords: ''
 author: shsagir
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 95bb4ec1-841f-41b7-92fe-fbd144085724
-ms.openlocfilehash: d698432aa8955fb46ed25940bacce39026a543e4
-ms.sourcegitcommit: c625acd3e44a3ba9619638f84264b3b271383e3a
+ms.openlocfilehash: 5c8065ee0c4358b25597879881f1cc1f063d5c2f
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77590534"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413718"
 ---
 # <a name="quickstart-download-the-azure-atp-sensor-setup-package"></a>快速入門：下載 Azure ATP 感應器安裝套件
 

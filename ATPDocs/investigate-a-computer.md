@@ -1,5 +1,5 @@
 ---
-title: Azure ATP 電腦調查教學課程 | Microsoft Docs
+title: Azure ATP 電腦調查教學課程
 d|Description: This article explains how to use Azure ATP security alerts to investigate a suspicious computer.
 keywords: ''
 author: shsagir
@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 93e8b62b9f7f1df1c0860345804a204ee01c11a0
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: c1dd60e8855848493fdc9c349983a911896452fc
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75906418"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413429"
 ---
 # <a name="tutorial-investigate-a-computer"></a>教學課程：調查電腦
 

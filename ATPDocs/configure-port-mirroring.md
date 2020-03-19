@@ -1,5 +1,5 @@
 ---
-title: 於部署 Azure 進階威脅防護時設定連接埠鏡像 | Microsoft Docs
+title: 在部署 Azure 進階威脅防護時設定連接埠鏡像
 description: 描述連接埠鏡像選項以及如何針對 Azure ATP 設定它們
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 9ec7eb4c-3cad-4543-bbf0-b951d8fc8ffe
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d6c5cf1619a88e55db2968977d4fd3ee0aebc8e3
-ms.sourcegitcommit: c625acd3e44a3ba9619638f84264b3b271383e3a
+ms.openlocfilehash: 70c122d4983d4b5b32899d13ff81b81d38d65af8
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77590653"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413837"
 ---
 # <a name="configure-port-mirroring"></a>設定連接埠鏡像
 

@@ -1,23 +1,23 @@
 ---
-title: Azure 進階威脅防護常見問題集 | Microsoft Docs
+title: Azure 進階威脅防護常見問題集
 description: 提供關於 Azure ATP 的常見問題清單以及相關解答
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 03/01/2020
+ms.date: 03/15/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b8db17d50269463dda6340496463ac673a053462
-ms.sourcegitcommit: c8b1e584ef42559a40afd62dac1b5ca9056c5602
+ms.openlocfilehash: 64d23884189d68e69805133c8411e1ff0e8f95e8
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "78926499"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414041"
 ---
 # <a name="azure-atp-frequently-asked-questions"></a>Azure ATP 常見問題集
 
@@ -47,6 +47,10 @@ Microsoft 會使用這份資料：
 - 為您的安全性作業提供與來自您網路的威脅訊號相關聯之實體的檢視，使您可以調查並探索存在於網路上的安全性威脅。
 
 Microsoft 並不會將您的資料用於廣告用途，或是任何其他與為您提供服務無關的用途之上。
+
+### <a name="how-many-directory-service-credentials-does-azure-atp-support"></a>Azure ATP 支援多少個目錄服務認證？
+
+Azure ATP 目前支援最多 10 個不同的目錄服務認證，以支援具有不受信任樹系的 Active Directory 環境。 如果您需要更多帳戶，請建立支援票證。
 
 ### <a name="does-azure-atp-only-leverage-traffic-from-active-directory"></a>Azure ATP 只會利用 Active Directory 的流量嗎？
 
@@ -130,10 +134,8 @@ Azure ATP 支援啟用 Kerberos 保護 (又稱為彈性驗證安全通道 (FAST)
 
 Azure ATP 感應器可以涵蓋大多數虛擬網域控制站；如需判斷 Azure ATP 感應器是否適合您的環境，請參閱 [Azure ATP 容量規劃](atp-capacity-planning.md)。
 
-如果 Azure ATP 感應器無法涵蓋某個虛擬網域控制站，您可以取得虛擬或實體的 Azure ATP 獨立感應器，如[設定連接埠鏡像](configure-port-mirroring.md)中所述。
-
-最簡單的方式是在每一個存在虛擬網域控制站的主機上有一個虛擬 Azure ATP 獨立感應器。
-
+如果 Azure ATP 感應器無法涵蓋某個虛擬網域控制站，您可以取得虛擬或實體的 Azure ATP 獨立感應器，如[設定連接埠鏡像](configure-port-mirroring.md)中所述。  
+最簡單的方式是在每一個存在虛擬網域控制站的主機上有一個虛擬 Azure ATP 獨立感應器。  
 如果您的虛擬網域控制站要在主機之間移動，您需要執行下列其中一項步驟︰
 
 - 當虛擬網域控制站移至另一部主機時，請預先設定該主機中的 Azure ATP 獨立感應器，以從最近移動的虛擬網域控制站接收流量。
@@ -170,16 +172,16 @@ Azure 進階威脅防護支援多網域環境與多樹系。 如需詳細資訊�
 
 ### <a name="do-you-have-to-write-your-own-rules-and-create-a-thresholdbaseline"></a>必須撰寫自己的規則，並建立臨界值/基準嗎？
 
-使用 Azure 進階威脅防護時，將不需要建立規則、臨界值或基準然後再進行調整。 Azure ATP 會分析使用者、裝置、資源的行為 (以及它們之間的關聯性)，並可以快速偵測可疑活動和已知的攻擊。 雖然某些偵測具有學習期間，但對於許多偵測，Azure ATP 會在部署之後立即開始偵測已知的惡意攻擊與安全性問題。 所有學習期間都記載於[安全性警示指南](suspicious-activity-guide.md)中所列的相關警示主題中。
+使用 Azure 進階威脅防護時，將不需要建立規則、臨界值或基準然後再進行調整。 Azure ATP 會分析使用者、裝置、資源的行為 (以及它們之間的關聯性)，並可以快速偵測可疑活動和已知的攻擊。 在部署三個星期之後，Azure ATP 便會開始偵測行為上的可疑活動。 另外，Azure ATP 會在部署之後立即開始偵測已知的惡意攻擊和安全性問題。
 
 ### <a name="which-traffic-does-azure-atp-generate-in-the-network-from-domain-controllers-and-why"></a>在網路中，Azure ATP 會從網域控制站產生哪些流量？為什麼？
 
 Azure ATP 會在下列其中一個案例中，產生網域控制站到組織中電腦的流量：
 
 1. **網路名稱解析**  
-   Azure ATP 會擷取流量和事件，進而了解並分析網路中的使用者和電腦活動。 為根據組織中的電腦了解並分析活動，Azure ATP 需要將 IP 解析為電腦帳戶。 為將 IP 解析為電腦名稱，Azure ATP 感應器會要求 IP 位址*後方*之電腦名稱的 IP 位址。
+Azure ATP 會擷取流量和事件，進而了解並分析網路中的使用者和電腦活動。 為根據組織中的電腦了解並分析活動，Azure ATP 需要將 IP 解析為電腦帳戶。 為將 IP 解析為電腦名稱，Azure ATP 感應器會要求 IP 位址*後方*之電腦名稱的 IP 位址。
 
-   要求是使用下列其中一種方法提出的：
+    要求是使用下列其中一種方法提出的：
     - 透過 RPC 的 NTLM (TCP 連接埠 135)
     - NetBIOS (UDP 連接埠 137)
     - RDP (TCP 連接埠 3389)
@@ -187,10 +189,10 @@ Azure ATP 會在下列其中一個案例中，產生網域控制站到組織中�
 
     取得電腦名稱之後，Azure ATP 感應器會在 Active Directory 中交互檢查詳細資料，以了解是否有與該相同電腦名稱相關的電腦物件。 如果找到相符項目，則會在 IP 位址和比對的電腦物件之間建立關聯。
 2. **橫向移動路徑 (LMP)**  
-    若要為敏感性使用者建置潛在的 LMP，Azure ATP 會需要電腦上的本機系統管理員相關資訊。 在此案例中，Azure ATP 感應器會使用 SAM-R (TCP 445) 查詢網路流量中識別到的 IP 位址，以確定電腦的本機系統管理員。 若要深入了解 Azure ATP 與 SAM-R，請參閱[設定 SAM-R 所需的權限](install-atp-step8-samr.md)。
+若要為敏感性使用者建置潛在的 LMP，Azure ATP 會需要電腦上的本機系統管理員相關資訊。 在此案例中，Azure ATP 感應器會使用 SAM-R (TCP 445) 查詢網路流量中識別到的 IP 位址，以確定電腦的本機系統管理員。 若要深入了解 Azure ATP 與 SAM-R，請參閱[設定 SAM-R 所需的權限](install-atp-step8-samr.md)。
 
 3. 針對實體資料**使用 LDAP 查詢 Active Directory**  
-    Azure ATP 感應器會從實體所屬的網域查詢網域控制站。 它可以是相同的感應器，或是來自該網域的其他網域控制站。
+Azure ATP 感應器會從實體所屬的網域查詢網域控制站。 它可以是相同的感應器，或是來自該網域的其他網域控制站。
 
 |通訊協定|Service|Port|來源| 方向|
 |---------|---------|---------|---------|--------|
@@ -198,7 +200,6 @@ Azure ATP 會在下列其中一個案例中，產生網域控制站到組織中�
 |安全的 LDAP (LDAPS)|TCP|636|網域控制站|輸出|
 |LDAP 至通用類別|TCP|3268|網域控制站|輸出|
 |LDAPS 至通用類別|TCP|3269|網域控制站|輸出|
-|
 
 ### <a name="why-dont-activities-always-show-both-the-source-user-and-computer"></a>為什麼活動不會一律顯示來源使用者與電腦？
 

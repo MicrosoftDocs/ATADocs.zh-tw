@@ -1,5 +1,5 @@
 ---
-title: 在 Azure 進階威脅防護中設定 Windows 事件轉寄 | Microsoft Docs
+title: 在 Azure 進階威脅防護中設定 Windows 事件轉送
 description: 描述使用 Azure ATP 設定 Windows 事件轉寄的選項
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 3547519f-8d9c-40a9-8f0e-c7ba21081203
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 09b1f056ef40b663b55bf97e982a562503f5bf6d
-ms.sourcegitcommit: c625acd3e44a3ba9619638f84264b3b271383e3a
+ms.openlocfilehash: be65a11aa6ace79ec4f2e3cffdc8a196c87fa764
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77590687"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414024"
 ---
 # <a name="configuring-windows-event-forwarding"></a>設定 Windows 事件轉送
 

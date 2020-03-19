@@ -1,5 +1,5 @@
 ---
-title: Azure ATP 支援 | Microsoft Docs
+title: Azure ATP 支援
 description: 說明從 Azure ATP 取得支援說明的流程。
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 637f74a5eeac5520ff5f9cd7273e81a696aa0852
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 6193d8db3bb457be44508589f7ba89764d525e85
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907232"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414568"
 ---
 # <a name="azure-advanced-threat-protection-information-and-support"></a>Azure 進階威脅防護資訊與支援 
 

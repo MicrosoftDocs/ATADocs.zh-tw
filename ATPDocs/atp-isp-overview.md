@@ -1,5 +1,5 @@
 ---
-title: Azure 進階威脅防護身分識別安全性狀態評估 | Microsoft Docs
+title: Azure 進階威脅防護身分識別安全性狀態評量
 description: 本文提供 Azure ATP 的身分識別安全性狀態評估報告的總覽。
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 71b15bd9-3183-4e24-b18a-705023ccc313
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7109196ef5c3e5d330d0d0b82f9e8bd753fe70fc
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 27e6a0c474b06e21942e4e07211c608f7cdfd1fd
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907655"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79414075"
 ---
 # <a name="azure-atps-identity-security-posture-assessments"></a>Azure ATP 身分識別安全性狀態評估
  

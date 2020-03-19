@@ -1,5 +1,5 @@
 ---
-title: 建立您自己的 Azure ATP 執行個體快速入門 | Microsoft Docs
+title: 建立您自己的 Azure ATP 執行個體快速入門
 description: 建立您 Azure ATP 部署執行個體的快速入門，這是安裝 Azure ATP 的第一步。
 keywords: ''
 author: shsagir
@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d50774470dba20f523959da04f370ff34bcd87bb
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 5638e10a23ae9ddec744d7730283c17be5fab322
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75905158"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79413752"
 ---
 # <a name="quickstart-create-your-azure-atp-instance"></a>快速入門：建立您的 Azure ATP 執行個體
 

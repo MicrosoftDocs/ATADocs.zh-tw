@@ -1,5 +1,5 @@
 ---
-title: 了解 Azure 進階威脅防護入口網站 | Microsoft Docs
+title: 了解 Azure 進階威脅防護入口網站
 description: 描述如何登入 Azure ATP 入口網站和入口網站的元件
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 4ba46d60-3a74-480e-8f0f-9a082d62f343
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5829d8564a65bbeba7f755e1e5cd1ad90c3da5ae
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: c0b15763991dd3eb26773615f0938a89a535dc45
+ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75905804"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79410727"
 ---
 # <a name="working-with-the-azure-atp-portal"></a>使用 Azure ATP 入口網站
 

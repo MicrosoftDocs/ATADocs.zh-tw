@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 02/18/2020
+ms.date: 03/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 61415f1a5f74a216dd0c505b6e92419601e08941
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: c40efc27e1740ef6e7b0aa9a98784631072f2c3b
+ms.sourcegitcommit: 93baa30e7f9f3b0e6a3ffcd2b9a25bc349798781
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414636"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79504245"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>針對 Azure ATP 已知問題進行疑難排解
 
@@ -68,7 +68,7 @@ System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> Syste
 ./"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
 ```
 
-## Azure ATP 感應器 NIC 小組問題 <a name="nic-teaming"></a>
+## <a name="azure-atp-sensor-nic-teaming-issue"></a>Azure ATP 感應器 NIC 小組問題 <a name="nic-teaming"></a>
 
 如果您嘗試在具備 NIC 小組介面卡的電腦上安裝 ATP 感應器，您將會接收到安裝錯誤。 如果您想要在使用 NIC 小組設定的電腦上安裝 ATP 感應器，請遵循這些指示：
 
@@ -147,6 +147,18 @@ Azure 進階威脅防護可讓您將 Azure ATP 與 Windows Defender ATP 整合�
 **解決方法：**
 
 請確定 gMSA 帳戶的認證正確，且感應器已獲授權可擷取帳戶的認證。
+
+## <a name="report-downloads-cannot-contain-more-than-300000-entries"></a>報表下載無法包含超過 300,000 個項目
+
+Azure ATP 不支援下載每個報表包含超過 300,000 個項目的報表。 若報表包含的項目超過 300,000 個，報表會呈現為未完成。
+
+**原因：**
+
+這是工程限制。
+
+**解決方法：**
+
+沒有任何已知的解決方式。
 
 ## <a name="see-also"></a>另請參閱
 

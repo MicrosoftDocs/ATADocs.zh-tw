@@ -5,18 +5,18 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 03/01/2020
+ms.date: 03/19/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 0b0805a634466d1ef8e53c187ef674edc529eda4
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 3529bee9f7ebaf13b541109375845fedcac2bfa8
+ms.sourcegitcommit: 7b80b2eff4331f8e1e1403e4b5c751f406915624
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79412681"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79989830"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
 
@@ -24,7 +24,25 @@ ms.locfileid: "79412681"
 
 如需舊版 Azure ATP 的詳細資料，直到 (並包含) 2.55 版，請參閱 [Azure ATP 版本參考](atp-release-reference.md)。
 
-RSS 摘要：將下列 URL 複製並貼至您的摘要讀取程式中，就能在此頁面有所更新時收到通知：`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
+RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在本頁更新時收到通知：`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
+
+## <a name="azure-atp-release-2112"></a>Azure ATP 2.112 版
+
+發行日期：2020 年 3 月 15 日
+
+- **新的 Azure ATP 執行個體會自動與 Microsoft Cloud App Security 整合**  
+建立 Azure ATP 執行個體 (先前稱為工作區) 時，預設會啟用與 Microsoft Cloud App Security 的整合。 如需有關整合的詳細資訊，請參閱[搭配 Microsoft Cloud App Security 使用 Azure ATP](atp-mcas-integration.md)。
+
+- **新的受監視活動**  
+現在可以使用下列活動監視器：
+  - 使用憑證的互動式登入
+  - 使用憑證的失敗登入
+  - 委派資源存取
+
+    深入了解 [Azure ATP 監視器](monitored-activities.md)會監視哪些活動，以及如何在入口網站中[篩選和搜尋受監視的活動](atp-activities-search.md)。
+
+- **功能增強：豐富的資源存取活動**  
+從這個版本開始，Azure ATP 現在會提供資源存取活動的資訊，顯示是否信任該資源以進行不受限制的委派。 這種資源設定並不安全，而且會造成惡意執行者強制應用程式執行惡意動作。 如需有關風險的詳細資訊，請參閱[安全性評估：不安全的 Kerberos 委派](atp-cas-isp-unconstrained-kerberos.md)。
 
 ## <a name="azure-atp-release-2111"></a>Azure ATP 2.111 版
 

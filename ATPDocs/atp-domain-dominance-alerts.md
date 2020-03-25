@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 0b3a1db5-0d43-49af-b356-7094cc85f0a5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ff893c87c1bff5c1cdc6ace9fe4beae1ddb2c6fe
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 33278c6207a21bb5155458d0a3cba61412bd5053
+ms.sourcegitcommit: 93baa30e7f9f3b0e6a3ffcd2b9a25bc349798781
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414415"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79504208"
 ---
 # <a name="tutorial-domain-dominance-alerts"></a>教學課程：控制網域警訊
 
@@ -64,8 +64,8 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 1. 檢查來源電腦是否正在對 Active Directory 執行組織核准的進階安全性掃描程式？
 
-    - 如果答案為**是**，且不應該執行，請修正應用程式設定。 此警示為 **B-TP** 且可能**已關閉**。
-    - 如果答案為**是**，且一律應該執行此作業，請**關閉**警示並排除該電腦，這可能是 **B-TP** 活動。
+    * 如果答案為**是**，且不應該執行，請修正應用程式設定。 此警示為 **B-TP** 且可能**已關閉**。
+    * 如果答案為**是**，且一律應該執行此作業，請**關閉**警示並排除該電腦，這可能是 **B-TP** 活動。
 
 **了解漏洞的範圍**
 
@@ -76,10 +76,10 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 1. 重設來源使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 2. 包含來源電腦。
-    - 尋找執行攻擊的工具，並將它移除。
-    - 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+    * 尋找執行攻擊的工具，並將它移除。
+    * 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 3. 遭竊的私密金鑰永不變更。 這表示動作項目一律可以使用遭竊的金鑰來解密目標網域中受保護資料。 變更此私密金鑰的方法並不存在。
-    - 若要建立金鑰，請使用目前的私密金鑰、建立金鑰，然後使用新私密金鑰來重新加密每個網域的主要金鑰。
+    * 若要建立金鑰，請使用目前的私密金鑰、建立金鑰，然後使用新私密金鑰來重新加密每個網域的主要金鑰。
 
 ## <a name="remote-code-execution-attempt-external-id-2019"></a>遠端程式碼執行嘗試 (外部識別碼 2019)
 
@@ -94,8 +94,8 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 系統管理工作站、IT 小組成員和服務帳戶都可能會對網域控制站執行合法的系統管理工作。
 
 1. 檢查來源電腦或使用者是否應該在您的網域控制站上執行這些命令類型？
-    - 如果來源電腦或使用者應該執行這些命令類型，請**關閉**有關 **B-TP** 活動的安全性警示。
-    - 如果來源電腦或使用者應該在您的網域控制站上執行這些命令，並將繼續這麼做，則為 **B-TP** 活動。 請**關閉**安全性警示並排除電腦。
+    * 如果來源電腦或使用者應該執行這些命令類型，請**關閉**有關 **B-TP** 活動的安全性警示。
+    * 如果來源電腦或使用者應該在您的網域控制站上執行這些命令，並將繼續這麼做，則為 **B-TP** 活動。 請**關閉**安全性警示並排除電腦。
 
 **了解漏洞的範圍**
 
@@ -108,11 +108,11 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 1. 重設來源使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 2. 利用下列方式來包含網域控制站：
-    - 修復遠端程式碼執行嘗試。
-    - 尋找在可疑活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+    * 修復遠端程式碼執行嘗試。
+    * 尋找在可疑活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 3. 包含來源電腦。
-    - 尋找執行攻擊的工具，並將它移除。
-    - 尋找在可疑活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+    * 尋找執行攻擊的工具，並將它移除。
+    * 尋找在可疑活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 
 **防範**
 
@@ -153,9 +153,9 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 1. 檢查此來源電腦是否應該產生此類型的活動？
 
-    - 如果答案為**是**，但來源電腦在未來不應該繼續產生此類型的活動，請修正伺服器/應用程式的設定。 請**關閉**有關 **B-TP** 活動的安全性警示。
+    * 如果答案為**是**，但來源電腦在未來不應該繼續產生此類型的活動，請修正伺服器/應用程式的設定。 請**關閉**有關 **B-TP** 活動的安全性警示。
 
-    - 如果答案為**是**，且來源電腦在未來應該繼續產生此類型的活動，請**關閉**有關 **B-TP** 活動的安全性警示，並排除電腦以避免發生其他良性警示。
+    * 如果答案為**是**，且來源電腦在未來應該繼續產生此類型的活動，請**關閉**有關 **B-TP** 活動的安全性警示，並排除電腦以避免發生其他良性警示。
 
 **了解漏洞的範圍**
 
@@ -167,8 +167,8 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 **補救：**
 
 1. 包含來源電腦。
-    - 尋找執行攻擊的工具，並將它移除。
-    - 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。  
+    * 尋找執行攻擊的工具，並將它移除。
+    * 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。  
     重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 
 **預防：**
@@ -206,9 +206,9 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 1. 此來源電腦是否應該產生此類型的活動？
 
-    - 如果答案為**是**，但來源電腦在未來不應該繼續產生此類型的活動，請修正伺服器/應用程式的設定。 請**關閉**有關 **B-TP** 活動的安全性警示。
+    * 如果答案為**是**，但來源電腦在未來不應該繼續產生此類型的活動，請修正伺服器/應用程式的設定。 請**關閉**有關 **B-TP** 活動的安全性警示。
 
-    - 如果答案為**是**，且來源電腦在未來應該繼續產生此類型的活動，請**關閉**有關 **B-TP** 活動的安全性警示，並排除電腦以避免發生其他 **B-TP** 警示。
+    * 如果答案為**是**，且來源電腦在未來應該繼續產生此類型的活動，請**關閉**有關 **B-TP** 活動的安全性警示，並排除電腦以避免發生其他 **B-TP** 警示。
 
 **了解漏洞的範圍**
 
@@ -219,8 +219,8 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 **補救：**
 
 1. 包含來源電腦。
-    - 尋找執行攻擊的工具，並將它移除。
-    - 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。
+    * 尋找執行攻擊的工具，並將它移除。
+    * 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。
     重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 2. 修復在網域控制站上複寫的資料。
 
@@ -263,9 +263,9 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 1. 此來源電腦是否應該產生此類型的活動？
 
-    - 如果答案為**是**，但來源電腦在未來不應該繼續產生此類型的活動，請修正伺服器/應用程式的設定。 請**關閉**有關 **B-TP** 活動的安全性警示。
+    * 如果答案為**是**，但來源電腦在未來不應該繼續產生此類型的活動，請修正伺服器/應用程式的設定。 請**關閉**有關 **B-TP** 活動的安全性警示。
 
-    - 如果答案為**是**，且來源電腦在未來應該繼續產生此類型的活動，請**關閉**有關 **B-TP** 活動的安全性警示，並排除電腦以避免發生其他良性警示。
+    * 如果答案為**是**，且來源電腦在未來應該繼續產生此類型的活動，請**關閉**有關 **B-TP** 活動的安全性警示，並排除電腦以避免發生其他良性警示。
 
 **了解漏洞的範圍**
 
@@ -277,8 +277,8 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 1. 重設來源使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 2. 包含來源電腦。
-    - 尋找執行攻擊的工具，並將它移除。
-    - 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+    * 尋找執行攻擊的工具，並將它移除。
+    * 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 
 **預防：**
 
@@ -300,12 +300,12 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 **TP、B-TP 或 FP**
 
-某些合法資源不支援強式加密方法，並可能觸發此警示。
+某些合法資源不支援強式加密，並可能觸發此警示。
 
 1. 所有的來源使用者是否共用某些共通項目？
    1. 例如，您所有的行銷人員是否都能存取特定資源，並有可能觸發警示？
    2. 檢查透過那些票證所存取的資源。
-      - 透過檢查資源服務帳戶的 *msDS-SupportedEncryptionTypes* 屬性，以在 Active Directory 中檢查這點。
+      * 透過檢查資源服務帳戶的 *msDS-SupportedEncryptionTypes* 屬性，以在 Active Directory 中檢查這點。
    3. 若只存取一項資源，請檢查其是否為這些使用者應該存取的有效資源。
 
       若上述任一問題的答案為**是**，則很可能是 **T-BP** 活動。 檢查該資源是否可支援強式加密，並盡量實作強式加密，然後**關閉**安全性警訊。
@@ -313,9 +313,9 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 應用程式可能使用較低的加密方法進行驗證。 某些應用程式會代替使用者進行驗證，例如 IIS 伺服器和 SQL Server。
 
 1. 檢查來源使用者是否有某些共通項目。
-    - 例如，您所有的銷售人員是否使用可能觸發警示的特定應用程式？
-    - 檢查來源電腦上是否有此類型的應用程式。
-    - 檢查電腦角色。  
+    * 例如，您所有的銷售人員是否使用可能觸發警示的特定應用程式？
+    * 檢查來源電腦上是否有此類型的應用程式。
+    * 檢查電腦角色。  
     它們是否針對該工作提供這些應用程式類型？
 
      若上述任一問題的答案為**是**，則很可能是 **T-BP** 活動。 檢查資源是否可以支援強式加密方法；如有可能，請實作更強的加密方法，並**關閉**安全性警示。
@@ -331,13 +331,13 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 1. 重設來源使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 2. 包含來源電腦。
-    - 尋找執行攻擊的工具，並將它移除。
-    - 尋找在活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-    - 如果您已安裝 Windows Defender ATP – 請使用 **klist.exe 清除**刪除指定登入工作階段的所有票證，並防止日後再使用該票證。
+    * 尋找執行攻擊的工具，並將它移除。
+    * 尋找在活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+    * 如果您已安裝 Windows Defender ATP – 請使用 **klist.exe 清除**刪除指定登入工作階段的所有票證，並防止日後再使用該票證。
 2. 包含此票證所存取的資源。
 3. 根據 [KRBTGT Account Password Reset Scripts now available for customers](https://cloudblogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)，變更 Kerberos 票證授權票證 (KRBTGT) 密碼兩次。
-    - 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效。 使此網域中的所有 Kerberos 票證失效，代表**所有**服務將會中斷，且在這些票證更新之前都不會運作，或在某些情況下重新啟動服務。
-    - **請在對 KRBTGT 進行兩次重設之前，先做好謹慎規劃。對 KRBTGT 進行兩次重設會影響環境中所有的電腦、伺服器及使用者。**
+    * 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效。 使此網域中的所有 Kerberos 票證失效，代表**所有**服務將會中斷，且在這些票證更新之前都不會運作，或在某些情況下重新啟動服務。
+    * **請在對 KRBTGT 進行兩次重設之前，先做好謹慎規劃。對 KRBTGT 進行兩次重設會影響環境中所有的電腦、伺服器及使用者。**
 
 4. 確定具有 Windows Server 2012 R2 以前作業系統的所有網域控制站與 [KB3011780](https://www.microsoft.com/download/details.aspx?id=44978) 一起安裝，且 2012 R2 以前的所有成員伺服器和網域控制站已更新 [KB2496930](https://support.microsoft.com/help/2496930/ms11-013-vulnerabilities-in-kerberos-could-allow-elevation-of-privileg)。 如需詳細資訊，請參閱  [Silver PAC](https://technet.microsoft.com/library/security/ms11-013.aspx)  和  [Forged PAC](https://technet.microsoft.com/library/security/ms14-068.aspx)。
 
@@ -355,12 +355,12 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 1. 檢查在安全性警示辨識項清單中存取哪些資源，以及嘗試已成功或失敗。
 2. 檢查是否如上所述已修補所存取的電腦？
-    - 如果已修補電腦，請**關閉**有關 **B-TP** 活動的安全性警示。
+    * 如果已修補電腦，請**關閉**有關 **B-TP** 活動的安全性警示。
 
 某些作業系統或應用程式已知會修改授權資料。 例如，Linux 和 Unix 服務本身具有可能會觸發警示的授權機制。
 
 1. 來源電腦是否正在執行本身有授權機制的 OS 或應用程式？
-    - 如果來源電腦正在執行此類型的授權機制，請考慮升級 OS 或修正應用程式設定。 請**關閉**有關 **B-TP** 活動的警示。
+    * 如果來源電腦正在執行此類型的授權機制，請考慮升級 OS 或修正應用程式設定。 請**關閉**有關 **B-TP** 活動的警示。
 
 **了解漏洞的範圍**
 
@@ -372,10 +372,10 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 1. 重設來源使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 2. 包含來源電腦
-    - 尋找執行攻擊的工具，並將它移除。
-    - 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+    * 尋找執行攻擊的工具，並將它移除。
+    * 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 3. 根據 [KRBTGT Account Password Reset Scripts now available for customers](https://cloudblogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)，變更 Kerberos 票證授權票證 (KRBTGT) 密碼兩次。
-    - 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效。 使此網域中的所有 Kerberos 票證失效，代表**所有**服務將會中斷，且在這些票證更新之前都不會運作，或在某些情況下重新啟動服務。 請在對 KRBTGT 進行兩次重設之前，先做好謹慎規劃，因為這會影響環境中所有的電腦、伺服器及使用者。
+    * 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效。 使此網域中的所有 Kerberos 票證失效，代表**所有**服務將會中斷，且在這些票證更新之前都不會運作，或在某些情況下重新啟動服務。 請在對 KRBTGT 進行兩次重設之前，先做好謹慎規劃，因為這會影響環境中所有的電腦、伺服器及使用者。
 4. 確定具有 Windows Server 2012 R2 以前作業系統的所有網域控制站與 [KB3011780](https://www.microsoft.com/download/details.aspx?id=44978) 一起安裝，且 2012 R2 以前的所有成員伺服器和網域控制站已更新 [KB2496930](https://support.microsoft.com/help/2496930/ms11-013-vulnerabilities-in-kerberos-could-allow-elevation-of-privileg)。 如需詳細資訊，請參閱  [Silver PAC](https://technet.microsoft.com/library/security/ms11-013.aspx)  和  [Forged PAC](https://technet.microsoft.com/library/security/ms14-068.aspx)。
 
 ## <a name="suspected-golden-ticket-usage-nonexistent-account-external-id-2027"></a>可疑的黃金票證使用 (不存在的帳戶) (外部識別碼 2027)
@@ -393,7 +393,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 2. 該使用者是否為最近新增？
 3. 該使用者是否最近從 Active Directory 刪除？
 
-如果以上任何問題的答案為**是**，請**關閉**有關 **B-TP** 活動的警示。
+如果以上所有問題的答案為**是**，請**關閉**有關 **B-TP** 活動的警示。
 
 **了解漏洞的範圍**
 
@@ -402,12 +402,12 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 **建議的補救和預防步驟**
 
 1. 包含來源電腦
-    - 尋找執行攻擊的工具，並將它移除。
-    - 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-    - 如果您已安裝 Windows Defender ATP – 請使用 **klist.exe 清除**刪除指定登入工作階段的所有票證，並防止日後再使用該票證。
+    * 尋找執行攻擊的工具，並將它移除。
+    * 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+    * 如果您已安裝 Windows Defender ATP – 請使用 **klist.exe 清除**刪除指定登入工作階段的所有票證，並防止日後再使用該票證。
 2. 包含此票證所存取的資源。
 3. 根據 [KRBTGT Account Password Reset Scripts now available for customers](https://cloudblogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)，變更 Kerberos 票證授權票證 (KRBTGT) 密碼兩次。
-    - 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效。 使此網域中的所有 Kerberos 票證失效，代表**所有**服務將會中斷，且在這些票證更新之前都不會運作，或在某些情況下重新啟動服務。 請在對 KRBTGT 進行兩次重設之前，先做好謹慎規劃，因為這會影響環境中所有的電腦、伺服器及使用者。
+    * 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效。 使此網域中的所有 Kerberos 票證失效，代表**所有**服務將會中斷，且在這些票證更新之前都不會運作，或在某些情況下重新啟動服務。 請在對 KRBTGT 進行兩次重設之前，先做好謹慎規劃，因為這會影響環境中所有的電腦、伺服器及使用者。
 
 ## <a name="suspected-golden-ticket-usage-ticket-anomaly-external-id-2032"></a>可疑的黃金票證使用 (票證異常) (外部識別碼 2032)
 
@@ -419,7 +419,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 同盟服務可能會產生觸發此警示的票證。
 1. 來源電腦是否裝載產生這些票證類型的同盟服務？
-    - 如果來源電腦裝載產生這些票證類型的服務，請關閉有關 **B-TP** 活動的安全性警示。
+    * 如果來源電腦裝載產生這些票證類型的服務，請關閉有關 **B-TP** 活動的安全性警示。
 
 **了解漏洞的範圍**
 
@@ -429,12 +429,12 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 **建議的補救和預防步驟**
 
 1. 包含來源電腦
-    - 尋找執行攻擊的工具，並將它移除。
-    - 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-    - 如果您已安裝 Windows Defender ATP – 請使用 **klist.exe 清除**刪除指定登入工作階段的所有票證，並防止日後再使用該票證。
+    * 尋找執行攻擊的工具，並將它移除。
+    * 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+    * 如果您已安裝 Windows Defender ATP – 請使用 **klist.exe 清除**刪除指定登入工作階段的所有票證，並防止日後再使用該票證。
 2. 包含此票證所存取的資源。
 3. 根據 [KRBTGT Account Password Reset Scripts now available for customers](https://cloudblogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)，變更 Kerberos 票證授權票證 (KRBTGT) 密碼兩次。
-    - 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效。 使此網域中的所有 Kerberos 票證失效，代表**所有**服務將會中斷，且在這些票證更新之前都不會運作，或在某些情況下重新啟動服務。
+    * 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效。 使此網域中的所有 Kerberos 票證失效，代表**所有**服務將會中斷，且在這些票證更新之前都不會運作，或在某些情況下重新啟動服務。
 
     **請在對 KRBTGT 進行兩次重設之前，先做好謹慎規劃。重設會影響環境中所有的電腦、伺服器及使用者。**
 
@@ -450,9 +450,9 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 1. 在過去幾小時內，群組原則中的 [使用者票證最長存留期]  設定是否有任何變更，而可能影響警示？
 2. 涉及此警示的 Azure ATP 獨立感應器是否為虛擬機器？
-    - 如果涉及 Azure ATP 獨立感應器，它最近是否從儲存狀態繼續？
+    * 如果涉及 Azure ATP 獨立感應器，它最近是否從儲存狀態繼續？
 3. 網路中是否有時間同步化問題，其中並未同步所有電腦？
-    - 按一下 [下載詳細資料]  按鈕，以檢視安全性警示報告 Excel 檔案、檢視相關網路活動，並檢查 "StartTime" 與 "DomainControllerStartTime" 之間是否有差異。
+    * 按一下 [下載詳細資料]  按鈕，以檢視安全性警示報告 Excel 檔案、檢視相關網路活動，並檢查 "StartTime" 與 "DomainControllerStartTime" 之間是否有差異。
 
 如果以上問題的答案為**是**，請**關閉**有關 **B-TP** 活動的安全性警示。
 
@@ -464,12 +464,12 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 **建議的補救和預防步驟**
 
 1. 包含來源電腦。
-    - 尋找執行攻擊的工具，並將它移除。
-    - 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-    - 如果您已安裝 Windows Defender ATP – 請使用 **klist.exe 清除**刪除指定登入工作階段的所有票證，並防止日後再使用該票證。
+    * 尋找執行攻擊的工具，並將它移除。
+    * 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+    * 如果您已安裝 Windows Defender ATP – 請使用 **klist.exe 清除**刪除指定登入工作階段的所有票證，並防止日後再使用該票證。
 2. 包含此票證所存取的資源。
 3. 根據 [KRBTGT Account Password Reset Scripts now available for customers](https://cloudblogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)，變更 Kerberos 票證授權票證 (KRBTGT) 密碼兩次。
-    - 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效。 使此網域中的所有 Kerberos 票證失效，代表**所有**服務將會中斷，且在這些票證更新之前都不會運作，或在某些情況下重新啟動服務。
+    * 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效。 使此網域中的所有 Kerberos 票證失效，代表**所有**服務將會中斷，且在這些票證更新之前都不會運作，或在某些情況下重新啟動服務。
 
     **請在對 KRBTGT 進行兩次重設之前，先做好謹慎規劃。重設會影響環境中所有的電腦、伺服器及使用者。**
 
@@ -493,8 +493,8 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 1. 重設遭入侵之使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 2. 包含網域控制站。
-    - 移除惡意程式碼。 如需詳細資訊，請參閱[基本架構金鑰惡意程式碼分析](https://www.virusbulletin.com/virusbulletin/2016/01/paper-digital-bian-lian-face-changing-skeleton-key-malware) \(英文\)。
-    - 尋找在發生活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+    * 移除惡意程式碼。 如需詳細資訊，請參閱[基本架構金鑰惡意程式碼分析](https://www.virusbulletin.com/virusbulletin/2016/01/paper-digital-bian-lian-face-changing-skeleton-key-malware) \(英文\)。
+    * 尋找在發生活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 
 ## <a name="suspicious-additions-to-sensitive-groups-external-id-2024"></a>敏感性群組的可疑新增項目 (外部識別碼 2024)
 
@@ -514,14 +514,14 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 合法的群組修改很少發生且經系統判定為不「正常」，這可能會觸發警示。 這些警示會視為 **B-TP**。
 1. 群組修改是否合法？
-    - 如果群組修改合法，請**關閉**有關 **B-TP** 活動的安全性警示。
+    * 如果群組修改合法，請**關閉**有關 **B-TP** 活動的安全性警示。
 
 **了解漏洞的範圍**
 
 1. 調查新增至群組的使用者。
-    - 將焦點放在使用者新增至敏感性群組之後的活動。
+    * 將焦點放在使用者新增至敏感性群組之後的活動。
 2. 調查來源使用者。
-    - 下載**敏感性群組修改**報告，以查看同一時段內有誰做了哪些其他修改。
+    * 下載**敏感性群組修改**報告，以查看同一時段內有誰做了哪些其他修改。
 3. 調查來源使用者在活動期間已登入的電腦。
 
 **建議的補救和預防步驟**
@@ -529,9 +529,9 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 **補救：**
 
 1. 重設來源使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-    - 尋找來源使用者作用中的電腦。
-    - 檢查使用者在活動期間已登入的電腦。 檢查這些電腦是否遭到入侵。
-    - 如果使用者遭到入侵，請重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+    * 尋找來源使用者作用中的電腦。
+    * 檢查使用者在活動期間已登入的電腦。 檢查這些電腦是否遭到入侵。
+    * 如果使用者遭到入侵，請重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 
 **預防：**
 
@@ -551,8 +551,8 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 系統管理工作站、IT 小組成員和服務帳戶都會對網域控制站合法執行系統管理工作。
 
 1. 來源使用者/電腦是否應該在網域控制站上執行這些服務類型？
-    - 如果來源使用者或電腦應該執行這些服務類型，且不應該繼續這麼做，請**關閉**有關 **B-TP** 的警示。
-    - 如果來源使用者或電腦應該執行這些服務類型，且應該繼續這麼做，請**關閉**有關 **B-TP** 的安全性警示。
+    * 如果來源使用者或電腦應該執行這些服務類型，且不應該繼續這麼做，請**關閉**有關 **B-TP** 的警示。
+    * 如果來源使用者或電腦應該執行這些服務類型，且應該繼續這麼做，請**關閉**有關 **B-TP** 的安全性警示。
 
 **了解漏洞的範圍**
 
@@ -565,10 +565,10 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 1. 重設來源使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 2. 包含網域控制站。
-    - 修復可疑的服務。
-    - 尋找在活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+    * 修復可疑的服務。
+    * 尋找在活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 3. 尋找來源使用者作用中的電腦。
-    - 檢查使用者在活動期間已登入的電腦，並檢查這些電腦是否也遭到入侵。
+    * 檢查使用者在活動期間已登入的電腦，並檢查這些電腦是否也遭到入侵。
 
 **預防：**
 
@@ -581,11 +581,11 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 ## <a name="see-also"></a>另請參閱
 
-- [調查電腦](investigate-a-computer.md)
-- [使用安全性警訊](working-with-suspicious-activities.md)
-- [使用橫向移動路徑](use-case-lateral-movement-path.md)
-- [偵察警訊](atp-reconnaissance-alerts.md)
-- [遭入侵的認證警訊](atp-compromised-credentials-alerts.md)
-- [橫向移動警訊](atp-lateral-movement-alerts.md)
-- [外流警訊](atp-exfiltration-alerts.md)
-- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
+* [調查電腦](investigate-a-computer.md)
+* [使用安全性警訊](working-with-suspicious-activities.md)
+* [使用橫向移動路徑](use-case-lateral-movement-path.md)
+* [偵察警訊](atp-reconnaissance-alerts.md)
+* [遭入侵的認證警訊](atp-compromised-credentials-alerts.md)
+* [橫向移動警訊](atp-lateral-movement-alerts.md)
+* [外流警訊](atp-exfiltration-alerts.md)
+* [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

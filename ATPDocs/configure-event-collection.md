@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 03/15/2020
+ms.date: 03/19/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4e62f333ff64291cd2858b528897afc80c4f1f44
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: a1cb324f7641a175ad47e01f4fa87efe5764334f
+ms.sourcegitcommit: e9545edce873d75f856155858487f61942032a9e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79411506"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "79546206"
 ---
 # <a name="configure-event-collection"></a>設定事件收集
 
@@ -28,7 +28,7 @@ ms.locfileid: "79411506"
 > - Azure ATP 獨立感應器無法支援所有資料來源類型，因而會導致遺漏偵測。 若要完整涵蓋您的環境，建議您部署 Azure ATP 感應器。
 > - 在設定事件收集之前，請務必執行 Azure ATP 稽核指令碼，以確保網域控制站已正確設定為可記錄必要的事件。
 
-除了收集和分析進出網域控制站的網路流量之外，Azure ATP 可以使用 Windows 事件來進一步加強偵測。 Azure ATP 會針對 NTLM 使用能增強各種偵測的 Windows 事件 4776 與 8004，並使用事件 4732、4733、4728、4729、4756、4757、7045 與 8004 以增強機密群組修改與服務建立的偵測。 這些可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
+除了收集和分析進出網域控制站的網路流量之外，Azure ATP 可以使用 Windows 事件來進一步加強偵測。 Azure ATP 會針對 NTLM 使用能增強各種偵測的 Windows 事件 4776 與 8004，並使用事件 4726、4728、4729、4730, 4732, 4733, 4743、4753、4756、4757、4758、4763、4776、7045 與 8004 以增強機密群組修改與服務建立的偵測。 這些可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
 
 ## <a name="ntlm-authentication-using-windows-event-8004"></a>使用 Windows 事件 8004 的 NTLM 驗證
 

@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 01/19/2020
+ms.date: 03/19/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 37d1a032-65e7-4a89-be0b-c3f9cc2bacdb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: bd669b3b0bcf1f505e69a65eecdb671b9f66845b
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: cc0b9ed79a26c1f77cb7d0a15866bb81744dbfe9
+ms.sourcegitcommit: 7b80b2eff4331f8e1e1403e4b5c751f406915624
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414670"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79989856"
 ---
 # <a name="azure-atp-monitored-activities"></a>受 Azure ATP 監視的活動
 
@@ -92,12 +92,15 @@ Azure 進階威脅防護會監視您組織 Active Directory 產生的資訊、�
 |登入類型|受監視的活動|說明|
 |---------------------|---------------------|------------------|
 |登入類型 2|認證驗證|使用 NTLM 和 Kerberos 驗證方法的網域帳戶驗證事件。|
-|登入類型 2|互動式登入|使用者透過輸入使用者名稱及密碼 (驗證方法 Kerberos) 取得了網路存取權。|
+|登入類型 2|互動式登入|使用者透過輸入使用者名稱與密碼 (驗證方法 Kerberos 或 NTLM) 取得了網路存取權。|
+|登入類型 2|使用憑證的互動式登入|使用者使用憑證取得了網路存取權。|
 |登入類型 2|VPN 連線|使用者已透過 VPN 連線 - 使用 RADIUS 通訊協定進行驗證。|
-|登入類型 3|資源存取|使用者使用 Kerberos 驗證存取了資源。|
+|登入類型 3|資源存取|使用者使用 Kerberos 或 NTLM 驗證存取了資源。|
+|登入類型 3|委派資源存取|使用者使用 Kerberos 委派存取了資源。|
 |登入類型 8|LDAP 純文字|使用者搭配純文字密碼 (簡單驗證) 使用 LDAP 進行了驗證。|
 |登入類型 10|遠端桌面|使用者使用 Kerberos 驗證，對遠端電腦執行了 RDP 工作階段。|
 |---|失敗的登入|網域帳戶的驗證嘗試失敗 (透過 NTLM 和 Kerberos)，原因如下：帳戶已停用/過期/鎖定/使用未受信任的憑證，或登入時數無效/舊密碼/密碼已過期/密碼錯誤。|
+|---|使用憑證的失敗登入|網域帳戶的驗證嘗試失敗 (透過 Kerberos)，原因如下：帳戶已停用/過期/鎖定/使用未受信任的憑證，或登入時數無效/舊密碼/密碼已過期/密碼錯誤。|
 
 ## <a name="monitored-machine-activities-machine-account"></a>受監視的虛擬機器活動：電腦帳戶
 

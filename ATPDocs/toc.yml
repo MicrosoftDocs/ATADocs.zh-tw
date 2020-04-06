@@ -126,14 +126,14 @@
         - name: 使用 Azure ATP 健全狀況中心
           href: atp-health-center.md
         - name: 管理 Azure ATP 健全狀況警示
-          href: monitoring-alerts.md
+          href: health-alerts.md
     - name: Azure ATP 感應器延遲更新
       href: sensor-update.md
     - name: 針對已知問題進行疑難排解
       href: troubleshooting-atp-known-issues.md
     - name: 使用記錄進行疑難排解
       href: troubleshooting-atp-using-logs.md
-    - name: 與 Windows Defender ATP 整合
+    - name: 與 Microsoft Defender ATP 整合
       href: integrate-wd-atp.md
     - name: VPN 整合
       href: install-atp-step6-vpn.md

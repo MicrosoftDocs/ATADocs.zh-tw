@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c1dd60e8855848493fdc9c349983a911896452fc
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 038b31aa221f2807a149998e657065289a82c4a3
+ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79413429"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80669485"
 ---
 # <a name="tutorial-investigate-a-computer"></a>教學課程：調查電腦
 
@@ -46,11 +46,11 @@ Azure ATP 警示辨識項清楚指出電腦何時涉及可疑活動，或何時�
   5. 存取電腦的[使用者](investigate-a-user.md)是否執行其他可疑活動？
 
 - 要調查的其他可疑活動：
-    1. 在此警示期間，是否有其他警示在 Azure ATP 或其他安全性工具 (例如 Windows Defender ATP、Azure 資訊安全中心及/或 Microsoft CAS) 中開啟？
+    1. 在此警示期間，是否有其他警示在 Azure ATP 或其他安全性工具 (例如 Microsoft Defender ATP、Azure 資訊安全中心和/或 Microsoft CAS) 中開啟？
     2. 是否有失敗的登入？
 
 
-- 如果已啟用 Windows Defender ATP 整合，請按一下 Windows Defender ATP 徽章進一步調查電腦。 在 Windows Defender ATP 中，您可以查看在警示期間所發生的處理序與警示。
+- 如果已啟用 Microsoft Defender ATP 整合，請按一下 Microsoft Defender ATP 徽章進一步調查電腦。 在 Microsoft Defender ATP 中，您可以查看在警示期間所發生的處理序與警示。
     1. 是否已部署或安裝任何新程式？
 
 ## <a name="next-steps"></a>後續步驟

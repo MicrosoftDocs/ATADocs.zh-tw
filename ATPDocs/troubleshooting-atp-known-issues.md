@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c40efc27e1740ef6e7b0aa9a98784631072f2c3b
-ms.sourcegitcommit: 93baa30e7f9f3b0e6a3ffcd2b9a25bc349798781
+ms.openlocfilehash: bb738a45889bbb2c509f6cf2b2d7e47f0782bd7a
+ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79504245"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80669727"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>針對 Azure ATP 已知問題進行疑難排解
 
@@ -101,13 +101,13 @@ System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> Syste
 
 - 如果您的電腦具有少於 64 個邏輯核心，而且是在 HP 主機上執行，您可以將 [NUMA 群組大小最佳化]  BIOS 設定從預設的[叢集]  變更為 [一般]  。
 
-## <a name="windows-defender-atp-integration-issue"></a>Windows Defender ATP 整合問題
+## <a name="microsoft-defender-atp-integration-issue"></a>Microsoft Defender ATP 整合問題
 
-Azure 進階威脅防護可讓您將 Azure ATP 與 Windows Defender ATP 整合。 如需詳細資訊，請參閱[整合 Azure ATP 與 Windows Defender ATP](integrate-wd-atp.md)。
+Azure 進階威脅防護可讓您將 Azure ATP 與 Microsoft Defender ATP 整合。 如需詳細資訊，請參閱[整合 Azure ATP 與 Microsoft Defender ATP](integrate-wd-atp.md)。
 
 ## <a name="vmware-virtual-machine-sensor-issue"></a>VMware 虛擬機器感應器問題
 
-如果您在 VMware 虛擬機器上有 Azure ATP 感應器，則可能會收到監視警示「某些網路流量不會被分析」  。 當 VMware 中的設定不相符時，就可能會發生此狀況。
+如果您在 VMware 虛擬機器上有 Azure ATP 感應器，則可能會收到健康情況警示「某些網路流量不會被分析」  。 當 VMware 中的設定不相符時，就可能會發生此狀況。
 
 若要解決問題：
 
@@ -129,7 +129,7 @@ Azure 進階威脅防護可讓您將 Azure ATP 與 Windows Defender ATP 整合�
 
 ## <a name="sensor-failed-to-retrieve-group-managed-service-account-gmsa-credentials"></a>感應器無法擷取群組受管理的服務帳戶 (gMSA) 認證
 
-如果您收到下列監視警示：**目錄服務使用者認證不正確**
+如果您收到下列健康情況警示：**目錄服務使用者認證不正確**
 
 **感應器記錄項目：**
 

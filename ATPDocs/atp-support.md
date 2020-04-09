@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6193d8db3bb457be44508589f7ba89764d525e85
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 81405d38badbd9fedda1ff54a9e0b09368689b83
+ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414568"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80669511"
 ---
 # <a name="azure-advanced-threat-protection-information-and-support"></a>Azure 進階威脅防護資訊與支援 
 
@@ -50,7 +50,7 @@ Azure 進階威脅防護產品小組會在  [Enterprise Mobility + Security 部
 | 聲道|指示|
 |------|-----|
 |使用 Azure 入口網站|1.從 Azure 入口網站的**說明+支援**選取 [新增支援要求]  。 <br>2.當您收到提示時，請在 [基本]  刀鋒視窗的 [問題類型]  選擇 [技術問題]  ，並在 [安全性與身分識別] 下的 [安全性]  選擇 [Azure 進階威脅防護]  。 <br>3.請確認選取下列選項之一：<br>- 含技術支援的訂用帳戶。 如果您有 Azure 付費或試用版訂用帳戶，就會看到此選項。<br>- 包含技術支援。 如果您沒有 Azure 訂用帳戶，則會看到此選項。|
-|使用 Azure 進階威脅防護入口網站| 1.按一下 [?] Azure 進階威脅防護入口網站中，最上方導覽列的圖示<br>2.搜尋 Azure 進階威脅防護。<br>3.開啟事件票證。<br>- 選取 [支援]<br>4.開啟事件票證。 若您成功進入 Azure 進階威脅防護入口網站，即可進入[線上協助支援 (OAS) 入口網站](https://support.microsoft.com/assistedsupportproducts)。 |
+|使用 Azure 進階威脅防護入口網站| 1.在 Azure 進階威脅防護入口網站中，按一下最上方導覽列中的 "?" 圖示<br>2.搜尋 Azure 進階威脅防護。<br>3.開啟事件票證。<br>- 選取 [支援]<br>4.開啟事件票證。 若您成功進入 Azure 進階威脅防護入口網站，即可進入[線上協助支援 (OAS) 入口網站](https://support.microsoft.com/assistedsupportproducts)。 |
 
 如需其他支援選項，請連絡 Microsoft。
 
@@ -70,7 +70,7 @@ Azure 進階威脅防護產品小組會在  [Enterprise Mobility + Security 部
 
 - 如果您想了解 Azure 進階威脅防護的必要條件，請參閱 [ATP 必要條件](atp-prerequisites.md)。
 
-- 若您在環境中部署了 Windows Defender ATP 且想要將其與 Azure 進階威脅防護整合，請參閱[與 Windows Defender ATP 整合](integrate-wd-atp.md)。
+- 若您在環境中部署了 Microsoft Defender ATP 且想要將其與 Azure 進階威脅防護整合，請參閱[與 Microsoft Defender ATP 整合](integrate-wd-atp.md)。
 
 - 如需安全性警訊的調查資訊，請參閱 [安全性警訊指南](suspicious-activity-guide.md)。
 

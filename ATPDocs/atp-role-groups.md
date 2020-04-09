@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ea04be4c3a069822009a0602dab425123821e3e4
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 1d325797ee7bce5dd5dca8b5c14987c73a4eab72
+ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79413225"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80669337"
 ---
 # <a name="azure-atp-role-groups"></a>Azure ATP 角色群組
 
@@ -43,7 +43,7 @@ Azure ATP 提供三種類型的安全性群組：Azure ATP (「執行個體名�
 
 |活動 |Azure ATP (「執行個體名稱」)  系統管理員|Azure ATP (「執行個體名稱」)  使用者|Azure ATP (「執行個體名稱」)  檢視者|
 |----|----|----|----|
-|變更監視警示的狀態|可用|無法使用|無法使用|
+|變更健康情況警示的狀態|可用|無法使用|無法使用|
 |變更安全性警訊的狀態 (重新開啟、關閉、排除、隱藏)|可用|可用|無法使用|
 |刪除執行個體|可用|無法使用|無法使用|
 |下載報表|可用|可用|可用|

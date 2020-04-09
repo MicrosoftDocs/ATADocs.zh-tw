@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0d737adb2c4d03fbeedb2277573f40d4a29b5de9
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: a6ae76dcee7b6a54f7721c77277387ac4f2e7fbb
+ms.sourcegitcommit: 8d5cd330564eeaf4bc9560db7814c85e71e0fb60
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79413276"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80666243"
 ---
 # <a name="azure-atp-architecture"></a>Azure ATP 架構
 
@@ -34,7 +34,7 @@ Azure 進階威脅防護架構：
 ## <a name="azure-atp-components"></a>Azure ATP 元件
 Azure ATP 包含下列元件：
 
--   **Azure ATP 入口網站** <br>
+-    **Azure ATP 入口網站** <br>
 Azure ATP 入口網站可讓您建立 Azure ATP 執行個體、顯示從 Azure ATP 感應器接收的資料，並可讓您監視、管理及調查網路環境中的威脅。  
 -   **Azure ATP 感應器**<br>
 Azure ATP 感應器是直接安裝在您的網域控制站上。 感應器可直接監視網域控制站的流量，而不需要專用的伺服器或連接埠鏡像設定。
@@ -80,7 +80,7 @@ Azure ATP 感應器包含的監視元件，會評估其執行所在網域控制�
 
 無論網域控制站發生什麼事，監視處理序會持續釋出資源以確保網域控制站的核心功能絕不受影響。
 
-如果監視處理序導致 Azure ATP 感應器用盡資源，則系統只會監視部分流量，並在 Azure ATP 入口網站的 [健康狀態] 頁面中顯示監視警示：「已捨棄連接埠鏡像網路流量」。
+如果監視處理序導致 Azure ATP 感應器用盡資源，則系統只會監視部分流量，並在 Azure ATP 入口網站的 [健康情況] 頁面中顯示健康情況警示：「已捨棄連接埠鏡像網路流量」。
 
 ### <a name="windows-events"></a>Windows 事件
 

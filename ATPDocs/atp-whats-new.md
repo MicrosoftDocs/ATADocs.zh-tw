@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 3529bee9f7ebaf13b541109375845fedcac2bfa8
-ms.sourcegitcommit: 7b80b2eff4331f8e1e1403e4b5c751f406915624
+ms.openlocfilehash: f56f4a10a956cab92aa18c5f7dcdd208d0e4d8b3
+ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79989830"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80669633"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
 
@@ -400,8 +400,8 @@ Exchange 伺服器的手動機密標記
 
 發行日期：2019 年 3 月 24 日
 
-- **功能增強：網路名稱解析 (NNR) 監視警示**  
-已根據 NNR 針對與 Azure ATP 安全性警訊關聯的信賴等級新增監視警示。 每個監視警示都包括可採取的動作與詳細建議，可協助解決低 NNR 成功率問題。
+- **功能增強：網路名稱解析 (NNR) 健康情況警示**  
+已根據 NNR 針對與 Azure ATP 安全性警訊關聯的信賴等級新增健康情況警示。 每個健康情況警示都包括可採取的動作與詳細建議，可協助解決低 NNR 成功率問題。
 
     請參閱[什麼是網路名稱解析](atp-nnr-policy.md)以深入了解 Azure ATP 如何使用 NNR 以及它對警示精確度而言為何很重要。
 

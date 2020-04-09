@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 4ba46d60-3a74-480e-8f0f-9a082d62f343
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c0b15763991dd3eb26773615f0938a89a535dc45
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 5d6bd4b4c8bcceff9d06d98f2fe8125fe1f3d769
+ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79410727"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80669750"
 ---
 # <a name="working-with-the-azure-atp-portal"></a>使用 Azure ATP 入口網站
 
@@ -63,7 +63,7 @@ Azure ATP 的新版本發行之後，[最新消息]  視窗會出現在右上角
 
 您可以根據狀態和嚴重性，篩選要顯示在攻擊時間表的可疑活動，或者要顯示在實體設定檔可疑活動索引標籤中的可疑活動。
 
-### 搜尋列 <a name="search-bar"></a>
+### <a name="search-bar"></a>搜尋列 <a name="search-bar"></a>
 
 您可以在上層功能表找到搜尋列。 您可以搜尋 Azure ATP 中的特定使用者、電腦或群組。 若要試試看，請開始輸入。 在搜尋列底部，會顯示找到的搜尋結果數目。 
 
@@ -106,7 +106,7 @@ Azure ATP 的新版本發行之後，[最新消息]  視窗會出現在右上角
 - 第一次出現時間：Azure ATP 第一次從此實體觀察到活動的時間。
 - 上次出現時間：Azure ATP 上次從此實體觀察到活動的時間。
 - SA 徽章：如果有與此實體相關聯的可疑活動，就會顯示此徽章。
-- WD ATP 徽章：如果在 Windows Defender ATP 中有與此實體相關聯的可疑活動，就會顯示此徽章。
+- WD ATP 徽章：如果在 Microsoft Defender ATP 中有與此實體相關聯的可疑活動，就會顯示此徽章。
 - 橫向移動路徑徽章：如果在過去兩天內於此實體內偵測到橫向移動路徑，就會顯示此徽章。
 
 

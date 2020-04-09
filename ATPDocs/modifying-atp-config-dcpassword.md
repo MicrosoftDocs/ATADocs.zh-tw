@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e7f065fa-1ad1-4e87-bd80-99cc695efbf5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 294d76a0455ac11866196919caa1bd830617420b
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 77ec242769d15eb3681f9e511709a0e6953878e8
+ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414704"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80669528"
 ---
 # <a name="change-azure-atp-portal-configuration---domain-connectivity-password"></a>變更 Azure ATP 入口網站設定 - 網域連線能力密碼
 
@@ -53,5 +53,5 @@ ms.locfileid: "79414704"
 
 ## <a name="see-also"></a>另請參閱
 
-- [與 Windows Defender ATP 整合](integrate-wd-atp.md)
+- [與 Microsoft Defender ATP 整合](integrate-wd-atp.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

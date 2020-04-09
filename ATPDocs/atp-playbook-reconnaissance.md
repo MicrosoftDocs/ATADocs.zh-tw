@@ -7,12 +7,12 @@ author: shsagir
 ms.author: shsagir
 ms.date: 09/01/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 50aeef3f54285b24de308269f41be54aeb379067
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: e3a7f4553635ec2af2aec6bda10802f776b7e543
+ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79411916"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80669625"
 ---
 # <a name="tutorial-reconnaissance-playbook"></a>教學課程：偵察劇本
 
@@ -157,7 +157,7 @@ ls -d contoso.azure
 
 ![JeffL 的邏輯活動時間軸](media/playbook-recon-dsenumeration-jeffvlogicalactivity.png)
 
-許多活動都記錄在「邏輯活動」時間軸中，使得它成為可執行「數位鑑識調查與數位回應」(DFIR) 的主要功能。 甚至當初始偵測不是來自 Azure ATP 但來自 Windows Defender ATP、Office 365 等時，您也可以看到活動。
+許多活動都記錄在「邏輯活動」時間軸中，使得它成為可執行「數位鑑識調查與數位回應」(DFIR) 的主要功能。 甚至當初始偵測不是來自 Azure ATP 但來自 Microsoft Defender ATP、Office 365 等時，您也可以看到活動。
 
 藉由查看 **ContosoDC 的頁面**，我們還可以看到 JeffL 所登入的電腦。
 
@@ -177,7 +177,7 @@ Active Directory 的 [sysvol] 資料夾如果不是環境中「最」  重要的
 
 ### <a name="use-joewares-netsessexe-from-victimpc"></a>從 VictimPC 使用 JoeWare 的 NetSess.exe
 
-在已獲授權的使用者 (在此案例中為 ContosoDC) 內容中，針對 ContosoDC 執行 JoeWare 的 **NetSess** 工具：
+在已驗證的使用者 (在此案例中為 ContosoDC) 內容中，針對 ContosoDC 執行 JoeWare 的 **NetSess** 工具：
 
 ``` cmd
 NetSess.exe ContosoDC

@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2257eb00-8614-4577-b6a1-5c65085371f2
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 544d1708bb86372f7271b4d398f3aebaa74c790e
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: e646dd3b3f5f25fd2c19ffbd621fafe3ac960c0b
+ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79413021"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80669774"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>教學課程：橫向移動警訊
 
@@ -86,7 +86,7 @@ ms.locfileid: "79413021"
 
 **描述**
 
-傳遞票證是一種橫向移動攻擊手法，在此攻擊中，攻擊者從一部電腦竊取使用者的 NTLM 雜湊，然後使用它來存取另一部電腦。
+傳遞票證是一種橫向移動攻擊手法，在此攻擊中，攻擊者從一部電腦竊取使用者的 NTLM 雜湊，然後加以使用以存取另一部電腦。
 
 **TP、B-TP、或 FP？**
 1. 判斷是否為使用者固定使用的電腦在使用該雜湊？
@@ -147,7 +147,7 @@ ms.locfileid: "79413021"
 2. 包含來源和目的電腦。
 3. 尋找執行攻擊的工具，並將它移除。
 4. 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-5. 如果您已安裝 Windows Defender ATP – 請使用 **klist.exe 清除**刪除指定登入工作階段的所有票證，並防止日後再使用該票證。
+5. 如果您已安裝 Microsoft Defender ATP – 請使用 **klist.exe 清除**刪除指定登入工作階段的所有票證，並防止日後再使用該票證。
 
 ## <a name="suspected-ntlm-authentication-tampering-external-id-2039"></a>可疑的 NTLM 驗證竄改 (外部識別碼 2039)
 
@@ -177,7 +177,7 @@ ms.locfileid: "79413021"
 
 **防範**
 
-• 確定環境中的所有裝置都處於最新狀態，並已針對 [CVE-2019-1040](https://portal.msrc.microsoft.com/security-guidance/advisory/CVE-2019-1040) 進行修補。
+* 確定環境中的所有裝置都處於最新狀態，並已針對 [CVE-2019-1040](https://portal.msrc.microsoft.com/security-guidance/advisory/CVE-2019-1040) 進行修補。
 
 ## <a name="suspected-ntlm-relay-attack-exchange-account-external-id-2037"></a>可疑的 NTLM 轉送攻擊 (Exchange 帳戶) (外部識別碼 2037)
 
@@ -224,7 +224,7 @@ Exchange Server 可設為使用 Exchange Server 帳戶向攻擊者所執行的�
 
       如果答案為是，則為 **T-BP** 活動，並請**關閉**安全性警訊。
 
-某些合法資源不支援強式加密，並可能觸發此警訊。
+某些合法資源不支援強式加密，並可能觸發此警示。
 
 2. 所有來源使用者都共用某些項目嗎？
     1. 比方說，您所有的行銷人員是否都能存取可能會觸發警訊的特定資源？

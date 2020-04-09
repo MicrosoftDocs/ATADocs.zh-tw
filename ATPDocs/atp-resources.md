@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 34dc152c-6b7f-4128-93fe-aad56c282730
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7d4d14b8f2710879833b8aca5310f939c784f2b3
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: a4d4d9cf6bcd0fb6c8f321ab2388ed5a455c36f5
+ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79411738"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80669649"
 ---
 # <a name="azure-atp-readiness-guide"></a>Azure ATP 整備指南
 
@@ -46,7 +46,7 @@ Azure ATP 是由位於 Azure 中的雲端服務，以及可安裝在網域控制
 
 - [Azure ATP (屬於 EMS E5)](https://aka.ms/aatptrial) 有效試用期為 90 天。
 - [Azure ATP 設定](install-atp-step1.md)遵循下列步驟在您的環境中部署 Azure ATP。
-- [整合 Azure ATP 與 Windows Defender ATP](integrate-wd-atp.md)
+- [將 Azure ATP 與 Microsoft Defender ATP 整合](integrate-wd-atp.md)
 
 ## <a name="azure-atp-settings"></a>Azure ATP 設定
 

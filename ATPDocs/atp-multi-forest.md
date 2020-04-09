@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ecac12f266a424e55266d1343a2d03a75bca8840
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: d33b9c03bc7d2a83760b64d32c7c810aa75d1908
+ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79413990"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80669442"
 ---
 # <a name="azure-advanced-threat-protection-multi-forest-support"></a>Azure 進階威脅防護多重樹系支援
 
@@ -31,7 +31,7 @@ Azure ATP 支援擁有多個樹系的組織，讓您可以輕鬆地監視活動�
 
 - 透過單一管理點來檢視和調查多個樹系中使用者執行的活動。
 - 提供了進階 Active Directory 整合和帳戶解析，以改進偵測及減少誤判。
-- 更好的控制和更簡單的部署方式。 當您的網域控制站全都是從單一 Azure ATP 主控台來監視時，可獲得跨組織涵蓋範圍的改良監視警示與回報功能。
+- 更好的控制和更簡單的部署方式。 當您的網域控制站全都是從單一 Azure ATP 主控台來監視時，可獲得跨組織涵蓋範圍的改良健康情況警示與回報功能。
 
 ## <a name="azure-atp-detection-activity-across-multiple-forests"></a>跨多個樹系的 Azure ATP 偵測活動
 

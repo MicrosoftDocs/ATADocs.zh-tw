@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 209202957877edf07de5309ae3e07143fc653452
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 92c17776623beb3d03e37bb81ce12b433e5dc35e
+ms.sourcegitcommit: 8d5cd330564eeaf4bc9560db7814c85e71e0fb60
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414653"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80666187"
 ---
 # <a name="update-azure-atp-sensors"></a>更新 Azure ATP 感應器
 
@@ -25,7 +25,7 @@ ms.locfileid: "79414653"
 
 Azure ATP 服務一個月通常會更新幾次，包含新偵測、功能和效能改進。 這些更新通常包括與感應器對應的次要更新。 Azure ATP 感應器與對應的更新永遠不會有網域控制站的寫入權限。 感應器更新套件只會控制 Azure ATP 感應器和感應器偵測功能。 
 
-### <a name="azure-atp-sensor-update-types"></a>Azure ATP 感應器更新類型   
+### <a name="azure-atp-sensor-update-types"></a>Azure ATP 感應器更新類型    
 
 Azure ATP 感應器支援兩種更新：
 - 次要版本更新： 
@@ -89,7 +89,7 @@ Azure ATP 感應器每隔幾分鐘都會檢查是否有最新版本。 將 Azure
 ![感應器更新](./media/sensor-update.png)
 
 
-針對任何無法完成更新程序的感應器，會觸發相關監視警示並傳送為通知。
+系統會針對無法完成更新程序的任何感應器觸發相關健康情況警示，並以通知傳送。
 
 ![感應器更新失敗](./media/sensor-outdated.png)
 

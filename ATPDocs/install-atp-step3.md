@@ -10,10 +10,10 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 95bb4ec1-841f-41b7-92fe-fbd144085724
 ms.openlocfilehash: 5c8065ee0c4358b25597879881f1cc1f063d5c2f
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79413718"
 ---
 # <a name="quickstart-download-the-azure-atp-sensor-setup-package"></a>快速入門：下載 Azure ATP 感應器安裝套件

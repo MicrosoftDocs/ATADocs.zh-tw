@@ -13,10 +13,10 @@ ms.assetid: 3547519f-8d9c-40a9-8f0e-c7ba21081203
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 6ec95a6c9522710f31fc7e55c58a664f5b590914
-ms.sourcegitcommit: 722b9eeec7bf12793d40e31166445160f02461f1
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79510890"
 ---
 # <a name="configuring-windows-event-forwarding"></a>設定 Windows 事件轉送

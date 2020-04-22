@@ -8,10 +8,10 @@ ms.author: shsagir
 ms.date: 02/28/2019
 ms.reviewer: itargoet
 ms.openlocfilehash: b5903123e992f7540dd660da605a1568bf76ef91
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79414585"
 ---
 # <a name="tutorial-domain-dominance-playbook"></a>教學課程：網域支配劇本

@@ -13,10 +13,10 @@ ms.assetid: b09adce3-0fbc-40e3-a53f-31f57fe79ca3
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: ddfc7b738ddf31be12ae1357b2024df1bc468251
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79413633"
 ---
 # <a name="configure-azure-atp-to-make-remote-calls-to-sam"></a>設定 Azure ATP 對 SAM 發出遠端呼叫

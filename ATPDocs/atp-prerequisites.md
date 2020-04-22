@@ -13,10 +13,10 @@ ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 185d3e8c70c11e06d1125a634c3cd9c12e2076c8
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79414262"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件

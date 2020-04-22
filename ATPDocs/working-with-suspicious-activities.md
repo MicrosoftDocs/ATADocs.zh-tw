@@ -13,10 +13,10 @@ ms.assetid: a06004bd-9f77-4e8e-a0e5-4727d6651a0f
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 98ea2a517f5cc223086ca448c8b532dd29257d78
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79410557"
 ---
 # <a name="working-with-security-alerts"></a>使用安全性警訊
@@ -26,7 +26,7 @@ ms.locfileid: "79410557"
 
 本文說明使用 Azure ATP 安全性警訊的基本概念。
 
-## 檢閱攻擊時間軸上的安全性警訊 <a name="review-suspicious-activities-on-the-attack-time-line"></a>
+## <a name="review-security-alerts-on-the-attack-timeline"></a>檢閱攻擊時間軸上的安全性警訊 <a name="review-suspicious-activities-on-the-attack-time-line"></a>
 
 登入 Azure ATP 入口網站後，系統會自動帶您前往開啟的**安全性警訊時間軸**。 安全性警訊會依時間順序列出，最新的警訊會位於時間軸頂端。
 
@@ -63,7 +63,7 @@ Azure ATP 安全性警訊分為下列類別或階段，如同在典型網路攻�
 - [網域支配警訊](atp-domain-dominance-alerts.md)
 - [外流警訊](atp-exfiltration-alerts.md)
 
-## 預覽偵測 <a name="preview-detections"></a>
+## <a name="preview-detections"></a>預覽偵測 <a name="preview-detections"></a>
 
 Azure ATP 研究小組會持續致力於實作新偵測攻擊的新探索。 由於 Azure ATP 是雲端服務，所以新偵測能快速推出，讓 Azure ATP 客戶盡快享受到新偵測的優點。
 

@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.openlocfilehash: 4d3e65aaafea7cefd4ef564c0ee0a82b8d2fdfe4
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79413735"
 ---
 # <a name="quickstart-connect-to-your-active-directory-forest"></a>快速入門：連線到您的 Active Directory 樹系

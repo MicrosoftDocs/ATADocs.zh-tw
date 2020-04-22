@@ -8,10 +8,10 @@ ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.openlocfilehash: e13dc696046ca095438297ad0aeb82e7f98a58d2
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79414483"
 ---
 # <a name="quickstart-plan-capacity-for-azure-atp"></a>快速入門：規劃 Azure ATP 容量
@@ -36,7 +36,7 @@ ms.locfileid: "79414483"
 1. 在結果 Excel 檔案的 Azure ATP 感應器表格中找出 **Busy Packets/sec** 欄位，並且記下它。
 1. 比對您的 **Busy Packets/sec** 欄位與本文中 [Azure ATP 感應器表格](#sizing)一節中的 **PACKETS PER SECOND** 欄位。 使用此欄位來判斷感應器所使用的記憶體和 CPU。
 
-## <a name="sizing"></a> Azure ATP 感應器大小調整
+## <a name="azure-atp-sensor-sizing"></a><a name="sizing"></a> Azure ATP 感應器大小調整
 
 Azure ATP 感應器可以支援監視一個網域控制站，依網域控制站產生的網路流量而定。 下表是估計值。 感應器最後剖析的數量取決於流量的數量和流量的分配。
 
@@ -74,7 +74,7 @@ Azure ATP 感應器可以支援監視一個網域控制站，依網域控制站�
 |VMWare|確保設定的記憶體量和保留的記憶體量相同，或是在 VM 設定中選取以下選項 - **保留所有客體記憶體 (全部鎖定)** 。|
 |其他虛擬化主機|請參閱廠商提供的文件，以了解如何確保記憶體能在任何時候均向 VM 配置。 |
 
-## <a name="manual-sizing"></a>網域控制站流量估計
+## <a name="domain-controller-traffic-estimation"></a><a name="manual-sizing"></a>網域控制站流量估計
 
 若基於某些原因而無法使用 Azure ATP 調整大小工具，請以極短的收集間隔 (大約 5 秒)， 手動收集所有網域控制站 24 小時內的每秒封包計數器資訊。 然後，針對每個網域控制站，計算每日平均和最繁忙期間的 (15 分鐘) 平均。 下列各節將說明如何從一個網域控制站收集每秒封包計數器的指示。
 

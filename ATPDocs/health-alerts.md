@@ -13,10 +13,10 @@ ms.assetid: d0551e91-3b21-47d5-ad9d-3362df6d47c0
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 48dad2ec51850e67a69c5dec4dfb14abec5c8237
-ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "80669907"
 ---
 # <a name="understanding-azure-atp-sensor-health-alerts"></a>了解 Azure ATP 感應器健康情況警示

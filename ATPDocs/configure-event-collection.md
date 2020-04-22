@@ -13,10 +13,10 @@ ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: a1cb324f7641a175ad47e01f4fa87efe5764334f
-ms.sourcegitcommit: e9545edce873d75f856155858487f61942032a9e
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79546206"
 ---
 # <a name="configure-event-collection"></a>設定事件收集

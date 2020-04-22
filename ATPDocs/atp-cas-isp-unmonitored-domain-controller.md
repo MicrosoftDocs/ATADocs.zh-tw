@@ -13,10 +13,10 @@ ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: b82aa4af317b1eb913794f164449716180842c3c
-ms.sourcegitcommit: d9abce00e781d47009e317767698d1729f70dc35
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "77478814"
 ---
 # <a name="security-assessment-unmonitored-domain-controllers"></a>安全性評估：未受監視的網域控制站

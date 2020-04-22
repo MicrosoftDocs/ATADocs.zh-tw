@@ -13,10 +13,10 @@ ms.assetid: 0b3a1db5-0d43-49af-b356-7094cc85f0a5
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 37e153e3b5b6c4511648c6971b07602cf5f34b6a
-ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "80669680"
 ---
 # <a name="tutorial-domain-dominance-alerts"></a>教學課程：控制網域警訊

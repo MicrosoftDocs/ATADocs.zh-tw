@@ -37,7 +37,7 @@
 ### [1.設定連接埠鏡像](configure-port-mirroring.md)
 ### [2.驗證連接埠鏡像](validate-port-mirroring.md)
 ### [3.設定 Windows 事件轉送](configure-event-collection.md)
-# 用法
+# 用途
 ## [ATA 資料庫管理](ata-database-management.md)
 ## [ATA 健全狀況中心](ata-health-center.md)
 ## [ATA 報表](reports.md)

@@ -13,10 +13,10 @@ ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 92c17776623beb3d03e37bb81ce12b433e5dc35e
-ms.sourcegitcommit: 8d5cd330564eeaf4bc9560db7814c85e71e0fb60
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "80666187"
 ---
 # <a name="update-azure-atp-sensors"></a>更新 Azure ATP 感應器

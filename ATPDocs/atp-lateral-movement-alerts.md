@@ -13,10 +13,10 @@ ms.assetid: 2257eb00-8614-4577-b6a1-5c65085371f2
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: e646dd3b3f5f25fd2c19ffbd621fafe3ac960c0b
-ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "80669774"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>教學課程：橫向移動警訊

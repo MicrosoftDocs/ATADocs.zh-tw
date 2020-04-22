@@ -13,10 +13,10 @@ ms.assetid: f6f3ed75-d6bb-4966-a9a7-5339c4f3ebac
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: df24013a5796d342ffc42b6f2c68f729a590d183
-ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "80669581"
 ---
 # <a name="integrate-azure-atp-with-microsoft-defender-atp"></a>將 Azure ATP 與 Microsoft Defender ATP 整合

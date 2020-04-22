@@ -8,10 +8,10 @@ ms.author: shsagir
 ms.date: 02/28/2019
 ms.reviewer: itargoet
 ms.openlocfilehash: 4a846962645d978fc7419650781624e7c5f4bf0b
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79414517"
 ---
 # <a name="tutorial-setup-an-atp-security-alert-lab"></a>教學課程：設定 ATP 安全性警示實驗室 
@@ -73,7 +73,7 @@ ms.locfileid: "79414517"
 
 為了設定基礎實驗室，我們將為 Active Directory 新增使用者和群組、編輯 SAM 原則，以及在 Azure ATP 中新增敏感性群組。
 
-### <a name="bkmk_hydrate"></a> 將 ContosoDC 上的 Active Directory 使用者序列化
+### <a name="hydrate-active-directory-users-on-contosodc"></a><a name="bkmk_hydrate"></a> 將 ContosoDC 上的 Active Directory 使用者序列化
 
 為了簡化此實驗室，我們已將在 Active Directory 中建立虛構使用者和群組的程序自動化。 此指令碼會作為此教學課程的先決條件來執行。 您可以使用或修改此指令碼，以將您實驗室的 Active Directory 環境序列化。 如果您偏好不使用指令碼，則可以手動執行。
 
@@ -166,7 +166,7 @@ Add-LocalGroupMember -Group "Administrators" -Member "Contoso\Helpdesk"
 
 ![Helpdesk 和 JeffL 應該在 VictimPC 的「本機系統管理員群組」中](media/playbook-labsetup-localgrouppolicies2.png)
 
-### <a name="helpdesk-simulation"></a> 在 VictimPC 上模擬服務台支援
+### <a name="simulate-helpdesk-support-on-victimpc"></a><a name="helpdesk-simulation"></a> 在 VictimPC 上模擬服務台支援
 
 為了模擬可運作且受控的網路，請在 **VictimPC** 機器上建立一個「排定的工作」來以 **RonHD** 身分執行 "cmd.exe" 程序。
 

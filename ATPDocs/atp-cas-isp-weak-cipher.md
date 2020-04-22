@@ -13,10 +13,10 @@ ms.assetid: cc82212b-7d25-4ec7-828d-2475ff40d685
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: f73edb6278d4b6ddebe13e1ed01f78d66988f392
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79413140"
 ---
 # <a name="security-assessment-weak-cipher-usage"></a>安全性評估：弱式加密使用方式

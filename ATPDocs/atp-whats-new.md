@@ -12,10 +12,10 @@ ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
 ms.openlocfilehash: f56f4a10a956cab92aa18c5f7dcdd208d0e4d8b3
-ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "80669633"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)

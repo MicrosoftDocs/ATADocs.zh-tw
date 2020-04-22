@@ -13,10 +13,10 @@ ms.assetid: 9ec7eb4c-3cad-4543-bbf0-b951d8fc8ffe
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 70c122d4983d4b5b32899d13ff81b81d38d65af8
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79413837"
 ---
 # <a name="configure-port-mirroring"></a>設定連接埠鏡像
@@ -54,7 +54,7 @@ Azure ATP 所使用的主要資料來源，是針對您網域控制站之雙向�
 |實體|相同交換器上的實體|實體交換器必須支援 SPAN/連接埠鏡像。|
 |實體|不同交換器上的實體|實體交換器需要支援 RSPAN 或 ERSPAN &#42;。|
 
-&#42; 只有在 ATP 分析流量之前先解除除封裝的前提下，才支援 ERSPAN。
+& #42; 只有在 ATP 分析流量之前先解除除封裝的前提下，才支援 ERSPAN。
 
 > [!NOTE]
 > 請確定它們連線的網域控制站和 Azure ATP 獨立感應器彼此的時間已同步至相差不到五分鐘的間隔。

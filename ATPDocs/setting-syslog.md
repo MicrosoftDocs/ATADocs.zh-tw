@@ -13,10 +13,10 @@ ms.assetid: a2d29c9c-7ecb-4804-b74b-fde899b28648
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: a6b1cfb304787fbed3d02968221e1eeada605712
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79410930"
 ---
 # <a name="integrate-with-syslog"></a>與 Syslog 整合
@@ -29,7 +29,7 @@ Azure ATP 可以在偵測到可疑的活動時通知您，以及發出安全性�
 
 當您啟用 Syslog 通知後，即可進行下列設定：
 
-   |欄位|說明|
+   |欄位|Description|
    |---------|---------------|
    |感應器|選取負責彙總所有 Syslog 事件，並將它們轉寄給您的 SIEM 伺服器的指定感應器。|
    |服務端點|Syslog 伺服器的 FQDN，選擇性地變更連接埠號碼 (預設值 514)|
@@ -42,7 +42,7 @@ Azure ATP 可以在偵測到可疑的活動時通知您，以及發出安全性�
 
    -   SIEM 伺服器正在接聽的連接埠
 
-   -   應使用的傳輸：UDP、TCP 或 TLS (安全 Syslog)
+   -   要使用的傳輸：UDP、TCP 或 TLS (安全 Syslog)
 
    -   要用來傳送資料 RFC 3164 或 5424 的格式
 

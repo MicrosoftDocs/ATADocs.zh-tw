@@ -13,10 +13,10 @@ ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: d33b9c03bc7d2a83760b64d32c7c810aa75d1908
-ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "80669442"
 ---
 # <a name="azure-advanced-threat-protection-multi-forest-support"></a>Azure 進階威脅防護多重樹系支援
@@ -52,7 +52,7 @@ Azure ATP 支援擁有多個樹系的組織，讓您可以輕鬆地監視活動�
 
 - 為了讓 Azure ATP 能夠與 Azure ATP 感應器和 Azure ATP 獨立感應器通訊，請在安裝 Azure ATP 感應器的每部電腦上開啟以下連接埠：
 
-  |通訊協定|傳輸|Port|去/從|方向|
+  |通訊協定|傳輸|Port|去/從|Direction|
   |----|----|----|----|----|
   |**內部連接埠**||||
   |SSL (*.atp.azure.com)|TCP|443|Azure ATP 雲端服務|輸出|

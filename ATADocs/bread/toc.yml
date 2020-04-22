@@ -6,11 +6,11 @@
       tocHref: /enterprise-mobility-security/
       topicHref: /enterprise-mobility-security
       items:
-        - name: Advanced Threat Analytics
+        - name: 進階威脅分析
           tocHref: /advanced-threat-analytics/
           topicHref: /advanced-threat-analytics
           items:
-            - name: 認識及探索
+            - name: 了解並探索
               tocHref: /advanced-threat-analytics/understand-explore/
               topicHref: /advanced-threat-analytics/understand/ata-understand-and-explore
             - name: 計劃和設計

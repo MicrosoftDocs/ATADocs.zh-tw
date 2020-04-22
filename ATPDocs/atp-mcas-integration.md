@@ -12,10 +12,10 @@ ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: e8705fe48bf7ff32a59e33808d66de474d1b306d
-ms.sourcegitcommit: a7e3fdd7bf0f1d8f269cdbfe3931c937a436392b
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "75663874"
 ---
 # <a name="using-azure-atp-with-microsoft-cloud-app-security"></a>搭配 Microsoft Cloud App Security 使用 Azure ATP
@@ -45,7 +45,7 @@ Cloud App Security 入口網站會與 Azure ATP 整合，以提供來自下列�
 
 選擇繼續在 Azure ATP 入口網站中使用 Azure ATP，或者，您可以使用 Microsoft Cloud App Security 入口網站來存取 Azure ATP 警示與身分識別評分。 在任一個工作流程中，Azure ATP 設定和組態工作會繼續在 Azure ATP 入口網站中進行處理。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 如需跨混合式環境的完整使用者調查功能，您必須具備：
 
@@ -65,7 +65,7 @@ Cloud App Security 入口網站會與 Azure ATP 整合，以提供來自下列�
 
 存取您的 Azure ATP 資料以及 Cloud App Security 警示、活動及使用者頁面內的新混合式功能。
 
-## <a name="alerts"></a>警示
+## <a name="alerts"></a>頁面
 
 Azure ATP 警示會顯示於 Cloud App Security 的 [警示]  佇列內。 只有在使用 Cloud App Security 檢視警示時，才能使用其他警示篩選選項。 針對 **Active Directory** 使用應用程式篩選來篩選 Azure ATP 警示。
 

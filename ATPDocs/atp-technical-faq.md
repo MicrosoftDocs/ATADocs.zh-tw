@@ -13,10 +13,10 @@ ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 64d23884189d68e69805133c8411e1ff0e8f95e8
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79414041"
 ---
 # <a name="azure-atp-frequently-asked-questions"></a>Azure ATP 常見問題集
@@ -158,7 +158,7 @@ Azure 進階威脅防護支援多網域環境與多樹系。 如需詳細資訊�
 
 是，您可以檢視部署的整體健全狀況，以及與設定、連線能力等相關的特定問題，而且系統會在問題發生時透過 Azure ATP 健全狀況警示來警示您。
 
-## <a name="operation"></a>操作
+## <a name="operation"></a>作業
 
 ### <a name="what-kind-of-integration-does-azure-atp-have-with-siems"></a>Azure ATP 與 SIEM 的整合方式為何？
 
@@ -166,7 +166,7 @@ Azure 進階威脅防護支援多網域環境與多樹系。 如需詳細資訊�
 
 ### <a name="why-are-certain-accounts-considered-sensitive"></a>為何將某些帳戶視為機密？
 
-當帳戶為被指定為機密之群組的成員時，便會發生這種情況 (例如「網域系統管理員」)。
+當帳戶為被指定為機密之群組的成員 (例如「網域系統管理員」) 時，便會發生這種情況。
 
 若要了解為何是機密帳戶，您可以檢閱其群組成員資格，以了解它所屬的機密群組 (其所屬的群組也可以是因為另一個群組而機密，因此您應該執行相同的程序，直到找出最高層級的機密群組)。 您也可以手動[將帳戶標記為敏感性](sensitive-accounts.md)。
 
@@ -194,7 +194,7 @@ Azure ATP 會擷取流量和事件，進而了解並分析網路中的使用者�
 3. 針對實體資料**使用 LDAP 查詢 Active Directory**  
 Azure ATP 感應器會從實體所屬的網域查詢網域控制站。 它可以是相同的感應器，或是來自該網域的其他網域控制站。
 
-|通訊協定|Service|Port|來源| 方向|
+|通訊協定|服務|Port|來源| Direction|
 |---------|---------|---------|---------|--------|
 |LDAP|TCP 和 UDP|389|網域控制站|輸出|
 |安全的 LDAP (LDAPS)|TCP|636|網域控制站|輸出|

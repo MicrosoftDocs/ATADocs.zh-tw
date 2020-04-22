@@ -13,10 +13,10 @@ ms.assetid: cae3ed45-8fbc-4f25-ba24-3cc407c6ea93
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: bc777fde6cdf12abb45b9608091166e3cf03ee2c
-ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "80669575"
 ---
 # <a name="excluding-entities-from-detections"></a>從偵測中排除實體
@@ -33,12 +33,12 @@ ms.locfileid: "80669575"
 
 有兩種方式可手動排除實體，一種是直接透過安全性警訊，一種是透過 [設定]  頁面上的 [排除項目]  索引標籤。 
 
-- **透過安全性警示**：在活動時間軸中，當您收到**允許**頻繁執行特定活動之使用者、電腦或 IP 位址的活動警示時，請執行下列步驟：
+- **透過安全性警訊**：在活動時間軸中，當您收到**允許**頻繁執行特定活動之使用者、電腦或 IP 位址的活動警示時，請執行下列步驟：
   - 在該列末端的三個點上按一下按右鍵，開啟該實體的安全性警訊，並選取 [關閉並排除]  。 如此會將使用者、電腦或 IP 位址，新增到該安全性警訊的排除項目清單中。 如此會關閉安全性警訊，且警示將不會繼續列於**警示時間軸**中的**未結案**事件清單。
 
     ![排除實體](./media/exclude-in-sa.png)
 
-- **從 [設定] 頁面**：若要檢閱或修改任何排除項目：請在 [設定]  下，按一下 [排除項目]  ，然後選取要套用排除的安全性警訊，例如 [DNS 偵查]  。
+- **從 [設定] 頁面**：若要檢閱或修改任何排除項目：請在 [設定]  下，按一下 [排除項目]  ，然後選取要套用排除的安全性警訊，例如 **DNS 偵查**。
 
     ![排除設定](./media/exclusions.png)
 

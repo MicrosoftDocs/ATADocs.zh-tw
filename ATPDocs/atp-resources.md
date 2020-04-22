@@ -13,10 +13,10 @@ ms.assetid: 34dc152c-6b7f-4128-93fe-aad56c282730
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: a4d4d9cf6bcd0fb6c8f321ab2388ed5a455c36f5
-ms.sourcegitcommit: bf5f58317121f1fb0fffc83d8b419cdd7ef27d9a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/05/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "80669649"
 ---
 # <a name="azure-atp-readiness-guide"></a>Azure ATP 整備指南
@@ -70,11 +70,11 @@ Azure ATP 是由位於 Azure 中的雲端服務，以及可安裝在網域控制
 
 ## <a name="community-resources"></a>社群資源
 
-部落格：[Azure ATP 部落格](https://aka.ms/aatpblog) \(英文\)
+部落格：[Azure ATP 部落格](https://aka.ms/aatpblog)
 
-公開社群：[Azure ATP 技術社群](https://aka.ms/AatpCom) \(英文\)
+公用社群：[Azure ATP 技術社群](https://aka.ms/AatpCom)
 
-私人社群：[Azure ATP Yammer 群組](https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893&view=all) \(英文\)
+私人社群：[Azure ATP Yammer 群組](https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893&view=all)
 
 Channel 9：[Microsoft 安全性 Channel 9 頁面](https://channel9.msdn.com/Shows/Microsoft-Security/)
 

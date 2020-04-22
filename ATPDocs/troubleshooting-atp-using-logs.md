@@ -13,17 +13,17 @@ ms.assetid: de796346-647d-48e1-970a-8f072e990f1e
 ms.reviewer: ''
 ms.suite: ''
 ms.openlocfilehash: eb5b16c17d2e52392f655ebbd4fa78ad03122047
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79410879"
 ---
 # <a name="troubleshooting-azure-advanced-threat-protection-atp-sensor-using-the-atp-logs"></a>使用 ATP 記錄疑難排解 Azure 進階威脅防護 (ATP) 感應器的問題
 ATP 記錄提供每個 Azure ATP 感應器元件在指定時點所執行之動作的見解。
 
 
-Azure ATP 記錄檔位於安裝 ATP、稱為 **Logs** 的子資料夾中，預設位置為：**C:\Program Files\Azure Advanced Threat Protection Sensor\\** 。 在預設安裝位置中，它位於：**C:\Program Files\Azure Advanced Threat Protection Sensor\version number\Logs**。
+Azure ATP 記錄位於名為 **Logs** 的子資料夾中，而其也正是 ATP 的安裝位置所在。預設的位置是：**C:\Program Files\Azure Advanced Threat Protection Sensor\\** 。 在預設的安裝位置中，此記錄位於 **C:\Program Files\Azure Advanced Threat Protection Sensor\version number\Logs** 下。
 
 Azure ATP 感應器的記錄包括：
 
@@ -38,7 +38,7 @@ Azure ATP 感應器的記錄包括：
 > 前三個記錄檔有大小上限 50 MB。 到達該大小時，會開啟新的記錄檔，並將上一個記錄檔重新命名為「&lt;原始檔案名稱&gt;-Archived-00000」，該數字隨每次重新命名遞增。 根據預設，如果已經有超過 10 個相同類型的檔案，就會刪除最舊的檔案。
 
 ## <a name="azure-atp-deployment-logs"></a>Azure ATP 部署記錄
-對於安裝產品的使用者，Azure ATP 部署記錄位於暫存記錄中。 在預設安裝位置中，它位於：**C:\Users\Administrator\AppData\Local\Temp** (或 %temp% 的上一層目錄)。
+對於安裝產品的使用者，Azure ATP 部署記錄位於暫存記錄中。 在預設安裝位置中，其位於︰**C:\Users\Administrator\AppData\Local\Temp** (或 %temp% 上方的一個目錄)。
 
 Azure ATP 感應器部署記錄：
 

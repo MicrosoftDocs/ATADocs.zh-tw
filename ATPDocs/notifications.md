@@ -13,10 +13,10 @@ ms.assetid: 4308f03e-b2a7-4e38-a750-540ff94faa81
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 8d74d2542008dfdf471991ed2de99c989bfdaf8c
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79411015"
 ---
 # <a name="set-azure-atp-notifications"></a>設定 Azure ATP 通知

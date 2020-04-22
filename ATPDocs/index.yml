@@ -13,10 +13,10 @@ metadata:
   ms.author: shsagir
   ms.date: 09/23/2019
   ms.openlocfilehash: a9946b16b63b9fa78cf1fc1f52bb59e1b13cc556
-  ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+  ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 01/12/2020
+  ms.lasthandoff: 04/21/2020
   ms.locfileid: "75906575"
 landingContent:
 - title: 關於 Azure 進階威脅防護 (Azure ATP)

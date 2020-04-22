@@ -13,10 +13,10 @@ ms.assetid: 1ad5e923-9bbd-4f56-839a-b11a9f387d4b
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 5af501b1d040c0c93b978882dc52d7f26921f8a2
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79413667"
 ---
 # <a name="configure-detection-exclusions-and-honeytoken-accounts"></a>設定偵測排除範圍和 Honeytoken 帳戶
@@ -35,7 +35,7 @@ Azure ATP 也能讓您設定 honeytoken 帳戶，用來做為針對惡意執行�
 
 2.  在 [偵測]  下，按一下 [實體標記]  。
 
-3. 在 [Honeytoken 帳戶]  下，輸入 Honeytoken 帳戶名稱並按一下 [+]  符號。 [Honeytoken 帳戶] 欄位是可搜尋的，而且會自動顯示您網路中的實體。 按一下 **[儲存]** 。
+3. 在 [Honeytoken 帳戶]  下，輸入 Honeytoken 帳戶名稱並按一下 [ **]+** 符號。 [Honeytoken 帳戶] 欄位是可搜尋的，而且會自動顯示您網路中的實體。 按一下 **[儲存]** 。
 
    ![Honeytoken](media/honeytoken-sensitive.png)
 

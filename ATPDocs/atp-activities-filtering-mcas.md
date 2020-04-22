@@ -13,10 +13,10 @@ ms.assetid: 397e5a77-2bc7-454c-9fe5-649ebaab16b3
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: bffad5454cbc1f9216333f44af9a7cfd39ce5433
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79414466"
 ---
 # <a name="use-activity-filters-and-create-action-policies-with-azure-atp-in-microsoft-cloud-app-security"></a>在 Microsoft Cloud App Security 中使用活動篩選以及使用 Azure ATP 建立動作原則 
@@ -27,7 +27,7 @@ ms.locfileid: "79414466"
 
 搭配 Microsoft Cloud App Security 使用 Azure ATP 可根據使用者與實體行為分析 (UEBA) 來提供活動分析和警示，以識別貴企業中風險最高的行為、提供完整的調查優先順序分數，以及活動篩選和可自訂的活動原則。 
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 如需跨混合式環境的完整使用者調查功能，您必須具備：
 - Microsoft Cloud App Security 的有效授權

@@ -12,19 +12,19 @@ ms.technology: ''
 ms.assetid: 601b48ba-a327-4aff-a1f9-2377a2bb7a42
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: f11f304c4c157980711e5859cd0c391b2b5c93bf
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: 12885e07707e458009025a551248af5ec68849d0
+ms.sourcegitcommit: 8c0222dc8333b5aa47430c5daee9bc7f1d82df31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907673"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81524832"
 ---
 # <a name="ata-siem-log-reference"></a>ATA SIEM 記錄檔參考
 
 
 *適用於：Advanced Threat Analytics 1.9 版*
 
-ATA 可以將安全性警訊與監視警示事件轉送到您的 SIEM。 警示會以 CEF 格式轉送。 以下為會傳送至您 SIEM 的各類型安全性警訊記錄檔。
+ATA 可以將安全性和健康狀態警示事件轉寄到您的 SIEM。 警示會以 CEF 格式轉送。 以下為會傳送至您 SIEM 的各類型安全性警訊記錄檔。
 
 ## <a name="sample-ata-security-alerts-in-cef-format"></a>使用 CEF 格式的樣本 ATA 安全性警示
 下列欄位及其值會轉送到您的 SIEM：
@@ -59,8 +59,8 @@ ATA 可以將安全性警訊與監視警示事件轉送到您的 SIEM。 警示�
 |2013|使用偽造授權資料提升權限|
 |2014|Honeytoken 活動|
 |2016|大量物件刪除|
-|2017 年|使用傳遞雜湊攻擊竊取身分|
-|2018 年|使用傳遞票證攻擊竊取身分|
+|2017|使用傳遞雜湊攻擊竊取身分|
+|2018|使用傳遞票證攻擊竊取身分|
 |2019|偵測到遠端執行嘗試|
 |2020|惡意的資料保護私人資訊要求|
 |2021|使用目錄服務查詢的偵察|
@@ -71,7 +71,7 @@ ATA 可以將安全性警訊與監視警示事件轉送到您的 SIEM。 警示�
 
 
 
-## <a name="sample-logs"></a>範例記錄檔
+## <a name="sample-logs"></a>範例記錄
 
 優先順序：3 = 低，5 = 中，10 = 高
 
@@ -138,7 +138,7 @@ ATA 可以將安全性警訊與監視警示事件轉送到您的 SIEM。 警示�
 ### <a name="suspicious-service-creation"></a>可疑的服務建立
 12-12-2018  19:53:49    Auth.Warning    192.168.0.222   1 2018-12-12T17:53:49.913034+00:00 CENTER ATA 4688 MaliciousServiceCreationSuspicio ‹¯¨CEF:0|Microsoft|ATA|1.9.0.0|MaliciousServiceCreationSuspiciousActivity|建立可疑服務|5|start=2018-12-12T19:53:49.0000000Z app=ServiceInstalledEvent shost=W2012R2-000000-Server msg=triservice 建立了 FakeService 以在 W2012R2-000000-Server 上執行潛在惡意命令。 externalId=2026 cs1Label=url cs1=https\://192.168.0.220/suspiciousActivity/5c114b2d8ca1ec1250caf577
 
-## <a name="monitoring-alerts"></a>監視警示
+## <a name="health-alerts"></a>健康狀態警示
 
 ### <a name="gatewaydisconnectedmonitoringalert"></a>GatewayDisconnectedMonitoringAlert
 1 2018-12-12T16:52:41.520759+00:00 CENTER ATA 4688 GatewayDisconnectedMonitoringAle CEF:0|Microsoft|ATA|1.9.0.0|GatewayDisconnectedMonitoringAlert|GatewayDisconnectedMonitoringAlert|5|externalId=1011 cs1Label=url cs1=https\://192.168.0.220/monitoring msg=已經 5 分鐘沒有來自閘道中心的通訊。 上次通訊是在 2018 年 12 月 12 日下午 4:47:03 UTC。
@@ -147,7 +147,7 @@ ATA 可以將安全性警訊與監視警示事件轉送到您的 SIEM。 警示�
 1 2018-12-12T15:36:59.701097+00:00 CENTER ATA 1372 GatewayStartFailureMonitoringAle CEF:0|Microsoft|ATA|1.9.0.0|GatewayStartFailureMonitoringAlert|GatewayStartFailureMonitoringAlert|5|externalId=1018 cs1Label=url cs1=https\://192.168.0.220/monitoring msg=無法啟動 DC1 的閘道服務。 最後偵測到的執行時間為 2018年 12 月 12 日下午 3:04:12 UTC。
 
 > [!NOTE]
-> 所有監視警示皆已透過上述的相同範本傳送完成。
+> 所有健康情況警示都會以與上述相同的範本來傳送。
 
 
 ## <a name="see-also"></a>另請參閱

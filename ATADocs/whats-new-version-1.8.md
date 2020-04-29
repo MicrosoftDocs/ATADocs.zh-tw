@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: f13c603b25a58b81b8786734b0c11bf3f8da8f9c
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: dfc1266fd3687b6134ca79f083b2777083723798
+ms.sourcegitcommit: 8c0222dc8333b5aa47430c5daee9bc7f1d82df31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414279"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81524696"
 ---
 # <a name="whats-new-in-ata-version-18"></a>ATA 1.8 版的新功能
 
@@ -63,7 +63,7 @@ ms.locfileid: "79414279"
 
 -   已提升 ATA 中心效能。 在 ATA 1.8 中，ATA 中心每秒可以處理超過 1 百萬個封包。
 -   ATA 輕量型閘道現在可以在本機讀取事件，而不需要設定事件轉送。
--   您現在可以為監視警示和可疑活動分別設定電子郵件。
+-   您現在可以針對健康狀態警示和可疑活動，分別設定電子郵件。
 
 ## <a name="security-improvements"></a>安全性改善
 
@@ -85,7 +85,7 @@ ms.locfileid: "79414279"
 
 ### <a name="ata-gateway-on-windows-server-core"></a>Windows Server Core 上的 ATA 閘道
 
-**徵兆**：在具有 .Net Framework 4.7 的 Windows Server 2012R2 Core 上將 ATA 閘道版本升級至 1.8 可能失敗，並出現錯誤：Microsoft Advanced Threat Analytics 閘道已停止運作。 
+**徵兆**：在具有 .Net Framework 4.7 的 Windows Server 2012R2 Core 上將 ATA 閘道版本升級至 1.8 可能失敗，並出現錯誤：Microsoft Advanced Threat Analytics 閘道已停止運作**。 
 
 ![閘道核心錯誤](./media/gateway-core-error.png)
 
@@ -121,7 +121,7 @@ ms.locfileid: "79414279"
 
 ### <a name="proxy-interference"></a>Proxy 干擾
 
-**徵兆**：升級至 ATA 1.8 後，ATA 閘道服務可能會無法啟動。 在 ATA 錯誤記錄檔中，您可能會看到下列例外狀況：System.Net.Http.HttpRequestException: 傳送要求時發生錯誤。---> System.Net.WebException: 遠端伺服器傳回錯誤: (407) 要求 Proxy 驗證。
+**徵兆**：升級至 ATA 1.8 後，ATA 閘道服務可能會無法啟動。 在 ATA 錯誤記錄檔中，您可能會看到下列例外狀況：System.Net.Http.HttpRequestException: 傳送要求時發生錯誤。---> System.Net.WebException: 遠端伺服器傳回錯誤: (407) 要求 Proxy 驗證。**
 
 **描述**：從 ATA 1.8 開始，ATA 閘道使用 HTTP 通訊協定與 ATA 中心進行通訊。 如果安裝了 ATA 閘道的電腦使用 Proxy 伺服器來連線到 ATA 中心，可能會中斷此通訊。 
 

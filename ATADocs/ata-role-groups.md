@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 050260b65b14ca425f536fdfc0c936c0fce885df
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: f50c6158031bfcc6215b33e9890fa42a35fe1487
+ms.sourcegitcommit: 8c0222dc8333b5aa47430c5daee9bc7f1d82df31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79412290"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81524679"
 ---
 # <a name="ata-role-groups"></a>ATA 角色群組
 
@@ -39,7 +39,7 @@ ATA 引進了三種類型的角色群組︰ATA 系統管理員、ATA 使用者�
 |提供可疑活動的輸入|可用|可用|無法使用|
 |變更可疑活動的狀態|可用|可用|無法使用|
 |透過電子郵件/取得連結共用/匯出可疑的活動|可用|可用|無法使用|
-|變更監視警示的狀態|可用|可用|無法使用|
+|變更健全狀況警示的狀態|可用|可用|無法使用|
 |更新 ATA 設定|可用|無法使用|無法使用|
 |閘道 - 新增|可用|無法使用|無法使用|
 |閘道 - 刪除 |可用|無法使用|無法使用|
@@ -53,5 +53,5 @@ ATA 引進了三種類型的角色群組︰ATA 系統管理員、ATA 使用者�
 ## <a name="add--remove-users---ata-role-groups"></a>新增 \ 移除使用者 - ATA 角色群組 
 
 ATA 使用本機的 Windows 群組做為角色群組的基礎。 ATA 中心伺服器上的角色群組必須接受管理。
-若要新增或移除使用者，請使用 [本機使用者和群組] MMC (Lusrmgr.msc)。 您可以在加入網域的電腦上新增網域帳戶以及本機帳戶。 
+若要新增或移除使用者，請使用 [本機使用者和群組]**** MMC (Lusrmgr.msc)。 您可以在加入網域的電腦上新增網域帳戶以及本機帳戶。 
 

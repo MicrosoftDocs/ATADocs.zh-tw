@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 6febcd07bfdea534f53d4b1479860c467c4455ae
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: b47f32a99d7257daed2f942346ac87dca4fccdcb
+ms.sourcegitcommit: 8c0222dc8333b5aa47430c5daee9bc7f1d82df31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79411525"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81524747"
 ---
 # <a name="ata-architecture"></a>ATA 架構
 
@@ -40,7 +40,7 @@ ATA 包含下列元件：
 ATA 中心會接收您部署之所有 ATA 閘道和/或 ATA 輕量型閘道的資料。
 -   **ATA 閘道**<br>
 ATA 閘道安裝在監視網域控制站流量的專用伺服器上，這個控制站使用連接埠鏡像或網路 TAP。
--   **ATA 輕量型閘道**<br>
+-   **ATA 輕量閘道**<br>
 ATA 輕量型閘道直接安裝在網域控制站上，直接監視其流量，不需要專用伺服器或連接埠鏡像設定。 它可以替代 ATA 閘道。
 
 ATA 部署的組成可以是連接至所有 ATA 閘道的單一 ATA 中心、所有 ATA 輕量型閘道，或 ATA 閘道和 ATA 輕量型閘道的組合。
@@ -92,7 +92,7 @@ ATA 中心會從 ATA 閘道和 ATA 輕量型閘道接收剖析過的流量。 �
 
 -   一個 ATA 中心可以監視單一 Active Directory 樹系。 如果您有多個 Active Directory 樹系，每個 Active Directory 樹系需要至少一個 ATA 中心。
 
--    在大型的 Active Directory 部署中，單一 ATA 中心可能無法處理所有網域控制站的所有流量。 這種情況需要有多個 ATA 中心。 ATA 中心的數目應該取決於 [ATA 容量規劃](ata-capacity-planning.md)。
+-    在大型的 Active Directory 部署中，單一 ATA 中心可能無法處理所有網域控制站的所有流量。 這種情況需要有多個 ATA 中心。 Ata 中心的數目應該取決於[ata 容量規劃](ata-capacity-planning.md)。
 
 ## <a name="ata-gateway-and-ata-lightweight-gateway"></a>ATA 閘道和 ATA 輕量型閘道
 
@@ -133,13 +133,13 @@ ATA 閘道會從您的網路接收網路流量和 Windows 事件，並在下列�
 如果同步器離線超過 30 分鐘，就會選擇其他的候選。 如果特定網域沒有可用的網域同步器候選項目，ATA 會主動同步處理實體和其變更，不過 ATA 會被動在監視的流量中偵測到新的實體。 
 <br>當沒有可用的網域同步器時，搜尋沒有相關流量的實體就不會顯示任何結果。<br><br>
 根據預設，所有 ATA 閘道都是網域同步器候選。<br><br>
-因為所有的 ATA 輕量型閘道皆較可能部署在分公司站台和小型的網域控制站上，所以它們預設不是同步器候選。 <br><br>在只有輕量閘道的環境中，建議您將兩個閘道指派為同步器候選，其中一個輕量閘道是預設的同步器候選項目，而另一個是備份，以防預設為離線超過30個細節. 
+因為所有的 ATA 輕量型閘道皆較可能部署在分公司站台和小型的網域控制站上，所以它們預設不是同步器候選。 <br><br>在只有輕量閘道的環境中，建議您將兩個閘道指派為同步器候選，其中一個輕量閘道是預設的同步器候選項目，而另一個是備份，以防預設為離線超過30分鐘。 
 
 
 -   **資源限制**<br>
 ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制站上的可用運算和記憶體容量。 監視處理程序每 10 秒執行一次，會動態更新 ATA 輕量型閘道處理程序的 CPU 和記憶體使用量配額，以確定在任何指定的時點，網域控制站都至少有 15% 的可用運算和記憶體資源。<br><br>
 無論網域控制站發生什麼事，這項處理程序一律會釋出資源以確定網域控制站的核心功能不受影響。<br><br>
-如果這導致 ATA 輕量型閘道用盡資源，則只有部分的流量受到監視，且 [健康情況] 頁面就會顯示監視警示：「已卸除連接埠鏡像網路流量」。
+如果這導致 ATA 輕量閘道用盡資源，則只會監視部分流量，而且健康情況警示會出現在健康情況頁面中的「已卸載埠鏡像網路流量」。
 
 下表提供的網域控制站範例，其運算資源足可供應比目前所需更大的配額，所以全部的流量都受到監視︰
 
@@ -164,7 +164,7 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 
 雖然連接埠鏡像會將所有網域控制站的網路流量都鏡像處理到 ATA 閘道，但是有少部分的流量會傳送與壓縮至 ATA 中心進行分析。
 
-您的網域控制站和 ATA 閘道可以是實體或虛擬的，如需詳細資訊，請參閱[設定連接埠鏡像](configure-port-mirroring.md)。
+您的網域控制站和 ATA 閘道可以為實體或虛擬，如需詳細資訊，請參閱 [Configure port mirroring](configure-port-mirroring.md) (設定連接埠鏡像)。
 
 
 ### <a name="events"></a>事件

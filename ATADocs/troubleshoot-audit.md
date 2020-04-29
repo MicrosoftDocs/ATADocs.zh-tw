@@ -12,23 +12,23 @@ ms.technology: ''
 ms.assetid: 1d186a96-ef70-4787-aa64-c03d1db94ce0
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1cec90e620591cd51f572e87f4d5e0296ee16d69
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: b1498ebf6cd11fad1eaec9d0f6c95dc4fc1f849c
+ms.sourcegitcommit: 8c0222dc8333b5aa47430c5daee9bc7f1d82df31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414109"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81524798"
 ---
 # <a name="working-with-ata-audit-logs"></a>使用 ATA 稽核記錄檔
 
 
 *適用於：Advanced Threat Analytics 1.9 版*
 
-ATA 稽核記錄檔會先保留在 [應用程式及服務] 下的 Windows 事件記錄檔，然後再放在 ATA 中心和 ATA 閘道電腦的 **Microsoft ATA**。
+ATA 稽核記錄檔會先保留在 [應用程式及服務]**** 下的 Windows 事件記錄檔，然後再放在 ATA 中心和 ATA 閘道電腦的 **Microsoft ATA**。
 
 ATA 中心的稽核記錄檔包含：
 -   可疑的活動資訊
--   監視警示 (健康狀態頁面)
+-   健康情況警示（健康情況頁面）
 -   ATA 主控台登入
 -   所有設定變更*
 

@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f7e65f1da222de3b7a4cb05541bd2359e3046901
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 76f6c7dcd083d1e84443fefcaff4c753ea6bf272
+ms.sourcegitcommit: 8c0222dc8333b5aa47430c5daee9bc7f1d82df31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414228"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81524713"
 ---
 # <a name="whats-new-in-ata-version-15"></a>ATA 1.5 版的新功能
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。
@@ -35,7 +35,7 @@ ms.locfileid: "79414228"
 
 -   針對涉及上千個實體的可疑活動提供更好的 UI 回應性
 
--   改良監視警示的自動解析
+-   已改善健全狀況警示的自動解析
 
 -   增強的監視和疑難排解有更多的效能計數器
 

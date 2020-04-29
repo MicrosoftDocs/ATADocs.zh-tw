@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 5d639e84-2e37-43a9-9667-49be6c4fa8b7
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: a5e417911afdc64a7e0693dc354eedeed517b316
-ms.sourcegitcommit: 9673eb49729a06d3a25d52c0f43c76ac61b9cf89
+ms.openlocfilehash: fb9d2f56cb2280fc060ff4ddcf6ac2cd233baa27
+ms.sourcegitcommit: 8c0222dc8333b5aa47430c5daee9bc7f1d82df31
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2020
-ms.locfileid: "75907724"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81524730"
 ---
 # <a name="ata-event-id-reference"></a>ATA 事件識別碼參考
 
@@ -32,7 +32,7 @@ ATA 中心事件檢視器會記錄 ATA 的事件。 這篇文章會提供事件�
 
 ## <a name="ata-health-events"></a>ATA 健康情況事件
 
-|監視事件識別碼| 監視警示名稱|
+|事件識別碼|警示名稱|
 |---------|---------------|
 |1001|中心磁碟空間用盡|
 |1003|中心超載|
@@ -58,7 +58,7 @@ ATA 中心事件檢視器會記錄 ATA 的事件。 這篇文章會提供事件�
  
 ## <a name="ata-security-alert-events"></a>ATA 安全性警訊事件
 
-|警示名稱|警示事件識別碼|
+|事件識別碼|警示名稱|
 |---------|---------------|
 |2001|基於異常行為懷疑身分遭竊|
 |2002|不尋常的通訊協定實作|
@@ -74,8 +74,8 @@ ATA 中心事件檢視器會記錄 ATA 的事件。 這篇文章會提供事件�
 |2013|使用偽造授權資料提升權限|
 |2014|Honeytoken 活動|
 |2016|大量物件刪除|
-|2017 年|使用傳遞雜湊攻擊竊取身分|
-|2018 年|使用傳遞票證攻擊竊取身分|
+|2017|使用傳遞雜湊攻擊竊取身分|
+|2018|使用傳遞票證攻擊竊取身分|
 |2019|偵測到遠端執行嘗試|
 |2020|惡意的資料保護私人資訊要求|
 |2021|使用目錄服務查詢的偵察|
@@ -86,7 +86,7 @@ ATA 中心事件檢視器會記錄 ATA 的事件。 這篇文章會提供事件�
 
 ## <a name="ata-auditing-events"></a>ATA 稽核事件
 
-|警示名稱|警示事件識別碼|
+|事件識別碼|警示名稱|
 |---------|---------------|
 |3001|變更為 ATA 設定|
 |3002|已新增 ATA 閘道|

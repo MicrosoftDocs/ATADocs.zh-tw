@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a1cb324f7641a175ad47e01f4fa87efe5764334f
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: a6e5ae637492296dfe1647a0ad82a5b1e2d673f3
+ms.sourcegitcommit: 40f9a460c5b771dfd1e62098d7744162a7214d54
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79546206"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "82590475"
 ---
 # <a name="configure-event-collection"></a>設定事件收集
 
@@ -84,7 +84,7 @@ Azure ATP 支援下列格式的 SIEM 事件：
     9. NTLM 的結果碼
 - 順序很重要，而且訊息中不應包含任何其他東西。
 
-### <a name="hp-arcsight"></a>HP Arcsight
+### <a name="microfocus-arcsight"></a>MicroFocus ArcSight
 
 CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The domain controller attempted to validate the credentials for an account.|Low| externalId=4776 cat=Security rt=1426218619000 shost=KKKKKK dhost=YYYYYY.subDomain.domain.com duser=XXXXXX cs2=Security cs3=Microsoft-Windows-Security-Auditing cs4=0x0 cs3Label=EventSource cs4Label=Reason or Error Code
 
@@ -100,7 +100,6 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
   - dhost = 接收事件的電腦 (在此案例中是 DC)
   - duser = 驗證的使用者
 - _延伸_部分的順序不重要。
-
 - 這兩個欄位必須是自訂索引鍵和 keyLable：
   - "EventSource"
   - "Reason or Error Code" = NTLM 的結果碼
@@ -142,6 +141,7 @@ QRadar 可讓您透過代理程式收集事件。 如果使用代理程式收集
 所需欄位如下：
 
 - 用於收集的代理程式類型
+
 - Windows 事件記錄檔提供者名稱
 - Windows 事件記錄檔來源
 - DC 完整網域名稱

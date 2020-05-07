@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 03/16/2020
+ms.date: 04/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: bb738a45889bbb2c509f6cf2b2d7e47f0782bd7a
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 6e0d99b0a93fc11825b3acc29a5c03e984dd4bb8
+ms.sourcegitcommit: 7308663627a517d840264a6071cf9eb8f980c742
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "80669727"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "82198364"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>針對 Azure ATP 已知問題進行疑難排解
 
@@ -146,7 +146,7 @@ Azure 進階威脅防護可讓您將 Azure ATP 與 Microsoft Defender ATP 整合
 
 **解決方法：**
 
-請確定 gMSA 帳戶的認證正確，且感應器已獲授權可擷取帳戶的認證。
+請確定 gMSA 帳戶的認證正確，且感應器已獲授權可擷取帳戶的認證。 在已套用的原則中，您可能需要將 gMSA 帳戶新增至 **「以服務方式登入」** 使用者權利指派。
 
 ## <a name="report-downloads-cannot-contain-more-than-300000-entries"></a>報表下載無法包含超過 300,000 個項目
 

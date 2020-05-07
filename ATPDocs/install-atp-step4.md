@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6a38a61e5028003ba10ad6929e24e63e81418f7b
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 5e2a9a05c4f8dbbeb83562266e3564d023cef79a
+ms.sourcegitcommit: 7be507dc6b6016ff9aa9df4b52a3542246e98209
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79413701"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "82736421"
 ---
 # <a name="quickstart-install-the-azure-atp-sensor"></a>快速入門：安裝 Azure ATP 感應器
 
@@ -32,9 +32,9 @@ ms.locfileid: "79413701"
 
 1. 確認機器是否可以連線到相關的 Azure ATP 雲端服務端點：
    - 歐洲
-      - [https://triprd1wceuw1sensorapi.atp.azure.com](https://triprd1wceuw1sensorapi.atp.azure.com) 
+      - [https://triprd1wceuw1sensorapi.atp.azure.com](https://triprd1wceuw1sensorapi.atp.azure.com)
       - [https://triprd1wceun1sensorapi.atp.azure.com](https://triprd1wceun1sensorapi.atp.azure.com)
-   - 美國 
+   - 美國
       - [https://triprd1wcuse1sensorapi.atp.azure.com](https://triprd1wcuse1sensorapi.atp.azure.com)
       - [https://triprd1wcusw1sensorapi.atp.azure.com](https://triprd1wcusw1sensorapi.atp.azure.com)
       - [https://triprd1wcuswb1sensorapi.atp.azure.com](https://triprd1wcuswb1sensorapi.atp.azure.com)
@@ -53,14 +53,14 @@ ms.locfileid: "79413701"
 
 
 5. 安裝精靈會自動檢查伺服器為網域控制站或專用伺服器。 若是網域控制站，會安裝 Azure ATP 感應器。 若是專用伺服器，則會安裝 Azure ATP 獨立感應器。
-    
+
     例如，針對 Azure ATP 感應器，會顯示下列畫面，讓您知道您的專用伺服器上已安裝 Azure ATP 感應器：
-    
+
     ![Azure ATP 感應器安裝](media/sensor-install-deployment-type.png)
 
    按一下 [下一步]  。
 
-    > [!NOTE] 
+    > [!NOTE]
     > 如果網域控制站或專用伺服器不符合安裝的最低硬體需求，就會發出警告。 該警告並不會使您無法按一下 [下一步]  和繼續進行安裝。 在不需要這麼多資料儲存空間的小型實驗室測試環境中，這可能仍是安裝 Azure ATP 的最佳選擇。 針對生產環境，強烈建議使用 Azure ATP 的 [容量規劃](atp-capacity-planning.md)指南，確保您的網域控制站或專用伺服器符合必要需求。
 
 6. 在 [設定感應器]  下，輸入從上一個步驟複製的安裝路徑和存取金鑰 (視您的環境而定)：
@@ -69,24 +69,22 @@ ms.locfileid: "79413701"
 
       - 安裝路徑：安裝 Azure ATP 感應器的位置。 根據預設，此路徑為 %programfiles%\Azure Advanced Threat Protection sensor。 保留預設值。
 
-     - 存取金鑰：從上一個步驟中的 Azure ATP 入口網站擷取。
-    
+      - 存取金鑰：從上一個步驟中的 Azure ATP 入口網站擷取。
+
 7. 按一下 [安裝]  。 安裝 Azure ATP 感應器期間將安裝及設定下列元件︰
 
     - KB 3047154 (僅適用於 Windows Server 2012 R2)
 
         > [!IMPORTANT]
-        > - 請勿將 KB 3047154 安裝於虛擬主機 (執行虛擬化的主機；可在虛擬機器上執行)。 這可能會導致連接埠鏡像無法正常運作。 
+        > - 請勿將 KB 3047154 安裝於虛擬主機 (執行虛擬化的主機；可在虛擬機器上執行)。 這可能會導致連接埠鏡像無法正常運作。
         > - 如果 ATP 感應器電腦上已安裝 Wireshark，您將需要重新啟動 ATP 感應器，因為它使用相同的驅動程式。
 
     - Azure ATP 感應器服務和 Azure ATP 感應器更新程式服務
     - Microsoft Visual C++ 2013 可轉散發元件
 
-
 ## <a name="next-steps"></a>後續步驟
 
-Azure ATP 感應器的設計是讓對您網域控制站資源和網路活動的影響減到最小。 若要建立效能評定，請參閱 [Azure ATP 解決方案的方案容量](install-atp-step5.md)。
-
+Azure ATP 感應器的設計是讓對您網域控制站資源和網路活動的影響減到最小。 若要建立效能評定，請參閱 [Azure ATP 解決方案的方案容量](atp-capacity-planning.md)。
 
 ## <a name="join-the-community"></a>加入社群
 

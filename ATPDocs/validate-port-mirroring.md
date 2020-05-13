@@ -12,19 +12,19 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 0a56cf27-9eaa-4ad0-ae6c-9d0484c69094
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a41c080847454af84d6622c53a28085e194823dd
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 8fc752a2202216a2530005c0aa7e3b5609ebaa2f
+ms.sourcegitcommit: 428e0694c862f92aed50a13b137db2aa49fe4439
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79414602"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82852229"
 ---
 # <a name="validate-port-mirroring"></a>驗證連接埠鏡像
 
 本文僅適用於您部署 Azure ATP 獨立感應器 (而非 Azure ATP 感應器) 的情況。
 
 > [!NOTE]
-> Azure ATP 獨立感應器無法支援所有資料來源類型，因而會導致遺漏偵測。 若要完整涵蓋您的環境，建議您部署 Azure ATP 感應器。
+> Azure ATP 獨立感應器不會收集 Windows 事件追蹤 (ETW) 的記錄項目，無法提供多種偵測的資料。 若要完整涵蓋您的環境，建議您部署 Azure ATP 感應器。
 
 下列步驟會引導您逐步完成驗證已正確設定連接埠鏡像的程序。 若要讓 Azure ATP 正常運作，Azure ATP 獨立感應器必須能夠看到網域控制站之間的流量。 Azure ATP 所使用的主要資料來源，是針對您網域控制站之雙向網路流量的深度封包檢查。 若要讓 Azure ATP 查看網路流量，必須設定連接埠鏡像。 連接埠鏡像會將流量從一個連接埠 (來源連接埠) 複製到另一個連接埠 (目的地連接埠)。
 
@@ -45,7 +45,7 @@ ms.locfileid: "79414602"
 
         ![建立新的擷取索引標籤影像](media/atp-port-mirroring-capture.png)
 
-1. 在 [顯示篩選] 視窗中，輸入下列篩選︰**KerberosV5 或 LDAP**，然後按一下 [套用]  。
+1. 在 [顯示篩選器] 視窗中，輸入下列篩選：**KerberosV5 OR LDAP**，然後按一下 [套用]  。
 
     ![套用 KerberosV5 或 LDAP 篩選影像](media/atp-port-mirroring-filter-settings.png)
 

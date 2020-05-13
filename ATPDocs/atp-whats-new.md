@@ -5,18 +5,18 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 03/19/2020
+ms.date: 04/23/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: f56f4a10a956cab92aa18c5f7dcdd208d0e4d8b3
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 178175373153ce162042cee3228628a9ca9ab2c8
+ms.sourcegitcommit: 2d1bdcc3adee8452aef7259a99c9aaa2f87c31cd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "80669633"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "82886542"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
 
@@ -25,6 +25,16 @@ ms.locfileid: "80669633"
 如需舊版 Azure ATP 的詳細資料，直到 (並包含) 2.55 版，請參閱 [Azure ATP 版本參考](atp-release-reference.md)。
 
 RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在本頁更新時收到通知：`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
+
+## <a name="azure-atp-release-2113"></a>Azure ATP 版本 2.113
+
+2020 年 5 月 5 日發行
+
+- **功能增強：豐富的 NTLMv1 資源存取活動**  
+Azure ATP 從此版本開始，已提供資源存取活動的資訊，顯示該資源是否使用 NTLMv1 驗證。 這種資源設定並不安全，而且會造成惡意執行者強制應用程式執行惡意動作。 如需有關風險的詳細資訊，請參閱[使用舊版通訊協定](atp-cas-isp-legacy-protocols.md)。
+
+- **功能增強：可疑的暴力密碼破解攻擊 (Kerberos、NTLM) 警示**  
+暴力密碼破解攻擊能讓攻擊者用來佔據您的組織，而且是在 Azure ATP 中進行威脅及風險探索的主要方法。 為協助您聚焦於使用者的重大風險，此更新可藉由限制及排序警示量，更輕鬆且快速地分析及補救風險。
 
 ## <a name="azure-atp-release-2112"></a>Azure ATP 2.112 版
 
@@ -43,6 +53,9 @@ RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在�
 
 - **功能增強：豐富的資源存取活動**  
 從這個版本開始，Azure ATP 現在會提供資源存取活動的資訊，顯示是否信任該資源以進行不受限制的委派。 這種資源設定並不安全，而且會造成惡意執行者強制應用程式執行惡意動作。 如需有關風險的詳細資訊，請參閱[安全性評估：不安全的 Kerberos 委派](atp-cas-isp-unconstrained-kerberos.md)。
+
+- **可疑的 SMB 封包操作 (CVE-2020-0796 惡意探索) - (預覽)**  
+Azure ATP [可疑的 SMB 封包操作](atp-lateral-movement-alerts.md#suspected-smb-packet-manipulation-cve-2020-0796-exploitation-external-id-2406)安全性警示現已公開預覽。 在此偵測中，若懷疑 SMBv3 封包會對網路中的網域控制站惡意探索 [CVE-2020-0796](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0796) 安全性弱點時，即會觸發 Azure ATP 安全性警示。
 
 ## <a name="azure-atp-release-2111"></a>Azure ATP 2.111 版
 

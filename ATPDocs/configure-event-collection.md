@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a6e5ae637492296dfe1647a0ad82a5b1e2d673f3
-ms.sourcegitcommit: 40f9a460c5b771dfd1e62098d7744162a7214d54
+ms.openlocfilehash: 56c16de6e6ff4757bc152d6814dd6b54538bb68d
+ms.sourcegitcommit: 428e0694c862f92aed50a13b137db2aa49fe4439
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "82590475"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82852263"
 ---
 # <a name="configure-event-collection"></a>設定事件收集
 
@@ -25,7 +25,7 @@ ms.locfileid: "82590475"
 
 > [!NOTE]
 >
-> - Azure ATP 獨立感應器無法支援所有資料來源類型，因而會導致遺漏偵測。 若要完整涵蓋您的環境，建議您部署 Azure ATP 感應器。
+> - Azure ATP 獨立感應器不會收集 Windows 事件追蹤 (ETW) 的記錄項目，無法提供多種偵測的資料。 若要完整涵蓋您的環境，建議您部署 Azure ATP 感應器。
 > - 在設定事件收集之前，請務必執行 Azure ATP 稽核指令碼，以確保網域控制站已正確設定為可記錄必要的事件。
 
 除了收集和分析進出網域控制站的網路流量之外，Azure ATP 可以使用 Windows 事件來進一步加強偵測。 Azure ATP 會針對 NTLM 使用能增強各種偵測的 Windows 事件 4776 與 8004，並使用事件 4726、4728、4729、4730, 4732, 4733, 4743、4753、4756、4757、4758、4763、4776、7045 與 8004 以增強機密群組修改與服務建立的偵測。 這些可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
@@ -44,7 +44,7 @@ ms.locfileid: "82590475"
 
 ## <a name="siemsyslog"></a>SIEM/Syslog
 
-根據預設，設定為由 Azure ATP 獨立感應器來接收 Syslog 資料。 若要讓 Azure ATP 獨立感應器能夠取用該資料，您必須將 Syslog 資料轉送至感應器。
+Azure ATP 獨立感應器預設設定為會接收 Syslog 資料。 若要讓 Azure ATP 獨立感應器能夠取用該資料，您必須將 Syslog 資料轉送至感應器。
 
 > [!NOTE]
 > Azure ATP 只接聽 IPv4，而不會接聽 IPv6。

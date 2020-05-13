@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 185d3e8c70c11e06d1125a634c3cd9c12e2076c8
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: d0a2b2fc517c30d337f2af9ce7fbd3a2753a2850
+ms.sourcegitcommit: 428e0694c862f92aed50a13b137db2aa49fe4439
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79414262"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82852280"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -43,7 +43,7 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 [Azure ATP 獨立感應器](#azure-atp-standalone-sensor-requirements)：Azure ATP 獨立感應器會安裝在專用伺服器上，而且要求必須在網域控制站上設定連接埠鏡像以接收網路流量。
 
 > [!NOTE]
-> Azure ATP 獨立感應器無法支援所有資料來源類型，因而會導致遺漏偵測。 若要完整涵蓋您的環境，建議您部署 Azure ATP 感應器。
+> Azure ATP 獨立感應器不會收集 Windows 事件追蹤 (ETW) 的記錄項目，無法提供多種偵測的資料。 若要完整涵蓋您的環境，建議您部署 Azure ATP 感應器。
 
 ## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
@@ -185,7 +185,7 @@ Azure ATP 偵測仰賴下列特定 Windows 事件記錄檔，這些記錄檔可�
 本節列出 Azure ATP 獨立感應器的需求。
 
 > [!NOTE]
-> Azure ATP 獨立感應器無法支援所有資料來源類型，因而會導致遺漏偵測。 若要完整涵蓋您的環境，建議您部署 Azure ATP 感應器。
+> Azure ATP 獨立感應器不會收集 Windows 事件追蹤 (ETW) 的記錄項目，無法提供多種偵測的資料。 若要完整涵蓋您的環境，建議您部署 Azure ATP 感應器。
 
 ### <a name="general"></a>一般
 

@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 03/01/2020
+ms.date: 04/23/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 2257eb00-8614-4577-b6a1-5c65085371f2
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e646dd3b3f5f25fd2c19ffbd621fafe3ac960c0b
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 412603427b1b221c97c88556d2bdbf3fe3b562b8
+ms.sourcegitcommit: 9654502ea67f51ba5f00357f8464565ce424114e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "80669774"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "82794235"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>教學課程：橫向移動警訊
 
@@ -42,6 +42,7 @@ ms.locfileid: "80669774"
 > * 可疑的 NTLM 轉送攻擊 (Exchange 帳戶) (外部識別碼 2037)
 > * 可疑的 Overpass-the-Hash 攻擊 (加密降級) (外部識別碼 2008)
 > * 可疑的 Overpass-the-Hash 攻擊 (Kerberos) (外部識別碼 2002)
+> * 可疑的 SMB 封包操作 (CVE-2020-0796 惡意探索)-(預覽) (外部識別碼 2406)
 
 ## <a name="remote-code-execution-over-dns-external-id-2036"></a>透過 DNS 執行遠端程式碼 (外部識別碼 2036)
 
@@ -151,15 +152,16 @@ ms.locfileid: "80669774"
 
 ## <a name="suspected-ntlm-authentication-tampering-external-id-2039"></a>可疑的 NTLM 驗證竄改 (外部識別碼 2039)
 
-2019 年 6 月，Microsoft 發佈了[資訊安全漏洞 CVE-2019-1040](https://portal.msrc.microsoft.com/security-guidance/advisory/CVE-2019-1040)，宣佈在 Microsoft Windows 中探索到新的竄改漏洞，會在「中間人」攻擊能夠成功略過 NTLM MIC (訊息完整性檢查) 保護時出現。
+2019 年 6 月，Microsoft 發佈了[資訊安全漏洞 CVE-2019-1040](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1040)，宣佈在 Microsoft Windows 中探索到新的竄改漏洞，會在「中間人」攻擊能夠成功略過 NTLM MIC (訊息完整性檢查) 保護時出現。
 
 成功惡意探索這個漏洞的惡意執行者，能夠使 NTLM 安全性功能降級，並可能成功代表其他帳戶建立已驗證的工作階段。 未修補的 Windows 伺服器有可能遇到這個漏洞。
 
-在此偵測中，當有人對網路中的網域控制站提出 [CVE-2019-1040](https://portal.msrc.microsoft.com/security-guidance/advisory/CVE-2019-1040) 中認為可能惡意探索資訊安全漏洞的 NTLM 驗證要求時，會觸發 Azure ATP 安全性警訊。
+在此偵測中，當有人對網路中的網域控制站提出 [CVE-2019-1040](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1040) 中認為可能惡意探索資訊安全漏洞的 NTLM 驗證要求時，會觸發 Azure ATP 安全性警訊。
 
 **TP、B-TP、或 FP？**
 
-1. 相關的電腦 (包括網域控制站) 是否處於最新狀態，並已針對 [CVE-2019-1040](https://portal.msrc.microsoft.com/security-guidance/advisory/CVE-2019-1040) 進行修補？如果電腦狀態為最新且已修補，驗證應會失敗。 如果驗證失敗了，安全性警訊即代表失敗的嘗試，您可予以 [關閉]  。
+1. 包括網域控制站等相關電腦，已針對 [CVE-2019-1040](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1040) 更新為最新狀態且進行過修補嗎？
+  - 若電腦已為最新版且已進行過修補，則驗證預計會失敗。 如果驗證失敗了，安全性警訊即代表失敗的嘗試，您可予以 [關閉]  。
 
 **了解漏洞的範圍**
 
@@ -177,7 +179,7 @@ ms.locfileid: "80669774"
 
 **防範**
 
-* 確定環境中的所有裝置都處於最新狀態，並已針對 [CVE-2019-1040](https://portal.msrc.microsoft.com/security-guidance/advisory/CVE-2019-1040) 進行修補。
+• 確定環境中的所有裝置都處於最新狀態，並已針對 [CVE-2019-1040](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1040) 進行修補。
 
 ## <a name="suspected-ntlm-relay-attack-exchange-account-external-id-2037"></a>可疑的 NTLM 轉送攻擊 (Exchange 帳戶) (外部識別碼 2037)
 
@@ -228,9 +230,9 @@ Exchange Server 可設為使用 Exchange Server 帳戶向攻擊者所執行的�
 
 2. 所有來源使用者都共用某些項目嗎？
     1. 比方說，您所有的行銷人員是否都能存取可能會觸發警訊的特定資源？
-   2. 檢查透過那些票證所存取的資源。
+    2. 檢查透過那些票證所存取的資源。
        - 透過檢查資源服務帳戶的 *msDS-SupportedEncryptionTypes* 屬性，以在 Active Directory 中檢查這點。
-   3. 若只存取了一項資源，請檢查其是否為這些使用者可存取的有效資源。
+    3. 若只存取了一項資源，請檢查其是否為這些使用者可存取的有效資源。
 
       若上述任一問題的答案為**是**，則很可能是 **T-BP** 活動。 檢查該資源是否可支援強式加密，並盡量實作強式加密，然後**關閉**安全性警訊。
 
@@ -282,6 +284,39 @@ Exchange Server 可設為使用 Exchange Server 帳戶向攻擊者所執行的�
 3. 尋找執行攻擊的工具，並將它移除。
 4. 尋找在可疑活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 5. 重設來源使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+
+<!-- REMOVE BOOKMARK FROM TITLE WHEN PREVIEW REMOVED -->
+
+## <a name="suspected-smb-packet-manipulation-cve-2020-0796-exploitation---preview-external-id-2406"></a><a name="suspected-smb-packet-manipulation-cve-2020-0796-exploitation-external-id-2406"></a>可疑的 SMB 封包操作 (CVE-2020-0796 惡意探索) - (預覽) (外部識別碼 2406)
+
+**描述**
+
+2020 年 3月 12 日 Microsoft 發佈了 [CVE-2020-0796](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0796)，並宣佈在 Microsoft 伺服器訊息區 3.1.1 (SMBv3) 通訊協定處理特定要求的方式中，近期出現遠端程式碼的執行弱點。 成功惡意探索到此漏洞的攻擊者，即可在目標伺服器或用戶端上執行程式碼。 未經修補的 Windows 伺服器即有暴露在此弱點下的風險。
+
+在此偵測中，若懷疑 SMBv3 封包會對網路中的網域控制站惡意探索 CVE-2020-0796 安全性弱點時，即會觸發 Azure ATP 安全性警示。
+
+**TP、B-TP、或 FP？**
+
+1. 相關的網域控制站已針對 CVE-2020-1040 更新為最新狀態且進行過修補嗎？
+    - 若電腦已為最新狀態並已進行過修補，則攻擊應會失敗，請**終止**此安全性警示，標為嘗試失敗。
+
+**了解漏洞的範圍**
+
+1. 調查[來源電腦](investigate-a-computer.md)。
+2. 調查目的網域控制站。
+
+**建議的補救和預防步驟**
+
+**補救**
+
+1. 包含來源電腦。
+2. 尋找執行攻擊的工具，並將它移除。
+3. 尋找在可疑活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+4. 如果您電腦的作業系統不支援 [KB4551762](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4551762)，建議您在環境中停用 SMBv3 壓縮功能，如[因應措施](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0796)節中所述。
+
+**防範**
+
+1. 確定環境中的所有裝置都針對 [CVE-2020-0796](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0796) 更新為最新狀態且已進行過修補。
 
 > [!div class="nextstepaction"]
 > [網域支配警訊教學課程](atp-domain-dominance-alerts.md)

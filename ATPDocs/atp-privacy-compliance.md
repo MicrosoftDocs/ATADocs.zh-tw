@@ -25,7 +25,7 @@ ms.locfileid: "79414058"
 
 ## <a name="search-for-and-identify-personal-data"></a>搜尋和識別個人資料 
 
-在 Azure 進階威脅防護中，您可以使用[搜尋列](workspace-portal.md)，透過 [Azure ATP 入口網站](workspace-portal.md#search-bar)檢視可識別的個人資料。 
+在 Azure 進階威脅防護中，您可以使用[搜尋列](workspace-portal.md#search-bar)，透過 [Azure ATP 入口網站](workspace-portal.md)檢視可識別的個人資料。 
 
 您可以搜尋特定使用者或電腦，然後按一下實體以顯示使用者或電腦的[設定檔頁面](entity-profiles.md)。 設定檔提供您來自 Active Directory 實體的完整詳細資料，包括與該實體相關的網路活動與其歷史記錄。
 

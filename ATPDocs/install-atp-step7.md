@@ -35,7 +35,7 @@ Azure ATP 也能讓您設定 honeytoken 帳戶，用來做為針對惡意執行�
 
 2.  在 [偵測]  下，按一下 [實體標記]  。
 
-3. 在 [Honeytoken 帳戶]  下，輸入 Honeytoken 帳戶名稱並按一下 [ **]+** 符號。 [Honeytoken 帳戶] 欄位是可搜尋的，而且會自動顯示您網路中的實體。 按一下 **[儲存]** 。
+3. 在 [Honeytoken 帳戶] 下，輸入 Honeytoken 帳戶名稱並按一下 [+] 符號。 [Honeytoken 帳戶] 欄位是可搜尋的，而且會自動顯示您網路中的實體。 按一下 **[儲存]** 。
 
    ![Honeytoken](media/honeytoken-sensitive.png)
 

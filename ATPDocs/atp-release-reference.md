@@ -75,7 +75,7 @@ Azure ATP 的[遠端程式碼執行嘗試安全性警示](suspicious-activity-gu
 ## <a name="azure-atp-release-251"></a>Azure ATP 2.51 版
 發行日期：2018 年 10 月 21 日
 
-- 您現在可以從 Azure ATP 入口網站**設定**畫面啟用/停用 [WD-ATP 整合](integrate-wd-atp.md#how-to-integrate-azure-atp-with-microsoft-defender-atp)。 (Azure ATP 使用者必須是 AAD 租用戶的全域或安全性系統管理員，才能使用這項功能)。
+- 您現在可以從 Azure ATP 入口網站[設定](integrate-wd-atp.md#how-to-integrate-azure-atp-with-microsoft-defender-atp)畫面啟用/停用 **WD-ATP 整合**。 (Azure ATP 使用者必須是 AAD 租用戶的全域或安全性系統管理員，才能使用這項功能)。
 
 - 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 

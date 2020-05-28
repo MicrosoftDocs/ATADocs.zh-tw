@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 02/19/2020
+ms.date: 05/17/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: d0551e91-3b21-47d5-ad9d-3362df6d47c0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 48dad2ec51850e67a69c5dec4dfb14abec5c8237
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: b756b62a96a4d72fc00a405c174c734aed3861fa
+ms.sourcegitcommit: 536d7595270732b99096e4044dd7b10085940ea0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "80669907"
+ms.lasthandoff: 05/17/2020
+ms.locfileid: "83443510"
 ---
 # <a name="understanding-azure-atp-sensor-health-alerts"></a>了解 Azure ATP 感應器健康情況警示
 
@@ -27,7 +27,7 @@ ms.locfileid: "80669907"
 
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|由於所有已設定之網域控制站的連線問題，Azure ATP 感應器目前離線。|這會影響 Azure ATP 偵測由此 Azure ATP 感應器所監視之網域控制站相關可疑活動的能力。| 請確定網域控制站已啟動且正在執行，而且此 Azure ATP 感應器可以針對對它們開啟 LDAP 連線。 此外，請務必在 [設定]  中針對每個部署的樹系設定目錄服務帳戶。|中型|
+|由於所有已設定之網域控制站的連線問題，Azure ATP 感應器目前離線。|這會影響 Azure ATP 偵測由此 Azure ATP 感應器所監視之網域控制站相關可疑活動的能力。| 請確定網域控制站已啟動且正在執行，而且此 Azure ATP 感應器可以針對對它們開啟 LDAP 連線。 此外，請務必在 [設定] 中針對每個部署的樹系設定目錄服務帳戶。|中型|
 
 ## <a name="allsome-of-the-capture-network-adapters-on-a-sensor-are-not-available"></a>感應器上的所有/部分擷取網路介面卡無法使用
 
@@ -39,7 +39,7 @@ ms.locfileid: "80669907"
 
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|目錄服務使用者帳戶的認證不正確。|這會影響感應器使用 LDAP 查詢對網域控制站偵測活動的能力。|- 針對**標準** AD 帳戶：確認 [目錄服務]  設定頁面中的使用者名稱、密碼與網域是正確的。<br>- 針對**群組受管理的服務帳戶**：確認 [目錄服務]  設定頁面中的使用者名稱與網域是正確的。 此外，請檢查[連線到您的 Active Directory 樹系](install-atp-step2.md#prerequisites)頁面上所述的所有其他 **gMSA 帳戶**先決條件。|中型|
+|目錄服務使用者帳戶的認證不正確。|這會影響感應器使用 LDAP 查詢對網域控制站偵測活動的能力。|- 針對**標準** AD 帳戶：確認 [目錄服務] 設定頁面中的使用者名稱、密碼與網域是正確的。<br>- 針對**群組受管理的服務帳戶**：確認 [目錄服務] 設定頁面中的使用者名稱與網域是正確的。 此外，請檢查[連線到您的 Active Directory 樹系](install-atp-step2.md#prerequisites)頁面上所述的所有其他 **gMSA 帳戶**先決條件。|中型|
 
 ## <a name="low-success-rate-of-active-name-resolution"></a>低成功率的主動名稱解析
 
@@ -95,17 +95,23 @@ ms.locfileid: "80669907"
 |----|----|----|----|
 |由於部分已設定之網域控制站的連線問題，Azure ATP 感應器的功能受到限制。|當 Azure ATP 感應器無法查詢部分網域控制站時，傳遞雜湊偵測可能較不正確。|請確定網域控制站已啟動且正在執行，而且此 Azure ATP 感應器可以針對對它們開啟 LDAP 連線。|中型|
 
-## <a name="some-forwarded-events-are-not-being-analyzed"></a>某些轉送的事件不會被分析
+## <a name="some-forwarded-events-could-not-be-analyzed"></a>無法分析某些轉送的事件
 
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|Azure ATP 感應器所接收到的事件比它能處理的還要多。|某些轉寄的事件不會被分析，這可能會影響偵測來自由此 Azure ATP 感應器所監視之網域控制站上可疑活動的能力。|請確認只有必要的事件會被轉寄到 Azure ATP 感應器，或嘗試將某些事件轉寄到其他 Azure ATP 感應器。|中型|
+|Azure ATP 感應器所接收到的事件比它能處理的還要多。|無法分析某些轉送的事件，這可能會影響偵測可疑活動的能力，這些活動源自於此 Azure ATP 感應器所監視的網域控制站上。|請確認只有必要的事件會被轉寄到 Azure ATP 感應器，或嘗試將某些事件轉寄到其他 Azure ATP 感應器。|中型|
 
-## <a name="some-network-traffic-is-not-being-analyzed"></a>某些網路流量不會被分析
+## <a name="some-network-traffic-could-not-be-analyzed"></a>無法分析某些網路流量
 
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|Azure ATP 感應器所接收到的網路流量比它能處理的還要多。|某些網路流量不會被分析，這可能會影響偵測來自由此 Azure ATP 感應器所監視之網域控制站可疑活動的能力。|視需要考慮[新增額外的處理器和記憶體](atp-capacity-planning.md)。 如果這是獨立 Azure ATP 感應器，請減少被監視的網域控制站數目。<br></br>如果在 VMware 虛擬機器上使用網域控制站，可能也會發生此情況。 若要避免這些警示，可檢查是否已將虛擬機器中的下列設定設為 [0] 或 [已停用]：<br></br>- TsoEnable<br></br>- LargeSendOffload(IPv4)<br></br>- IPv4 TSO Offload<br></br>此外也請考慮停用 [IPv4 Giant TSO Offload]。 如需詳細資訊，請參閱 VMware 文件。|中型|
+|Azure ATP 感應器所接收到的網路流量比它能處理的還要多。|無法分析某些網路流量，這可能會影響偵測可疑活動的能力，這些活動源自於此 Azure ATP 感應器所監視的網域控制站上。|視需要考慮[新增額外的處理器和記憶體](atp-capacity-planning.md)。 如果這是獨立 Azure ATP 感應器，請減少被監視的網域控制站數目。<br></br>如果在 VMware 虛擬機器上使用網域控制站，可能也會發生此情況。 若要避免這些警示，可檢查是否已將虛擬機器中的下列設定設為 [0] 或 [已停用]：<br></br>- TsoEnable<br></br>- LargeSendOffload(IPv4)<br></br>- IPv4 TSO Offload<br></br>此外也請考慮停用 [IPv4 Giant TSO Offload]。 如需詳細資訊，請參閱 VMware 文件。|中型|
+
+## <a name="some-windows-events-could-not-be-analyzed"></a>無法分析某些 Windows 事件
+
+|警示|說明|解決方案|嚴重性|
+|----|----|----|----|
+|Azure ATP 感應器目前接收到的 Windows 事件追蹤 (ETW) 事件已超過其能處理的量。|無法分析某些 Windows 事件追蹤 (ETW) 事件，這可能會影響偵測可疑活動的能力，這些活動源自於此 Azure ATP 感應器所監視的網域控制站上。|請確認只有必要的事件會被轉寄到 Azure ATP 感應器，或嘗試將某些事件轉寄到其他 Azure ATP 感應器。|中型|
 
 ## <a name="windows-events-missing-from-domain-controller-audit-policy"></a>網域控制站稽核原則中缺少 Windows 事件
 

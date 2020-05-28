@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d0a2b2fc517c30d337f2af9ce7fbd3a2753a2850
-ms.sourcegitcommit: 428e0694c862f92aed50a13b137db2aa49fe4439
+ms.openlocfilehash: 94521875a58d49277e801e730a0eace02264e86a
+ms.sourcegitcommit: 3162130a85b5c6e8bf16456f8255b95e1f52b869
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82852280"
+ms.lasthandoff: 05/25/2020
+ms.locfileid: "83825287"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -135,7 +135,7 @@ Azure ATP 感應器可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)�
 ### <a name="server-specifications"></a>伺服器規格
 
 Azure ATP 感應器在網域控制站上需要安裝至少 2 個核心和 6 GB 的 RAM。
-為了達到最佳效能，請將 Azure ATP 感應器的 [電源選項]  設定為 [高效能]  。
+為取得最佳化效能，請將執行 Azure ATP 感應器之電腦的 [電源選項] 設定為 [高效能]。
 
 Azure ATP 感應器可以部署在各種負載和大小的網域控制站上，依進出網域控制站的網路流量，以及安裝的資源數量而定。
 
@@ -202,7 +202,7 @@ Azure ATP 獨立感應器可以用來監視具 Windows Server 2003 或更新版�
 
 ### <a name="server-specifications"></a>伺服器規格
 
-為了達到最佳效能，將 Azure ATP 獨立感應器的 [電源選項]  設定為 [高效能]  。<br>
+為取得最佳化效能，請將執行 Azure ATP 獨立感應器之電腦的 [電源選項] 設定為 [高效能]。<br>
 Azure ATP 獨立感應器可以支援監視多個網域控制站，依進出網域控制站的網路傳輸量而定。
 
 >[!NOTE]

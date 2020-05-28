@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 178175373153ce162042cee3228628a9ca9ab2c8
-ms.sourcegitcommit: 2d1bdcc3adee8452aef7259a99c9aaa2f87c31cd
+ms.openlocfilehash: 77a0c0bb4470894aa7998c852a63fd5bade72433
+ms.sourcegitcommit: 3162130a85b5c6e8bf16456f8255b95e1f52b869
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82886542"
+ms.lasthandoff: 05/25/2020
+ms.locfileid: "83825315"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
 
@@ -25,6 +25,18 @@ ms.locfileid: "82886542"
 如需舊版 Azure ATP 的詳細資料，直到 (並包含) 2.55 版，請參閱 [Azure ATP 版本參考](atp-release-reference.md)。
 
 RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在本頁更新時收到通知：`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
+
+## <a name="azure-atp-release-2115"></a>Azure ATP 2.115 版
+
+2020 年 5 月 24 日發行
+
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
+
+## <a name="azure-atp-release-2114"></a>Azure ATP 2.114 版
+
+2020 年 5 月 17 日發行
+
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
 ## <a name="azure-atp-release-2113"></a>Azure ATP 版本 2.113
 
@@ -123,7 +135,7 @@ SID 歷程記錄變更現在是受監視且可篩選的活動。 深入了解 [A
 Azure ATP 感應器部署及感應器安裝套件在數個版本之後已不再會到期，且現在只會自行更新一次。 此功能的結果是已可安裝先前所下載的感應器安裝套件，即使它們的版本號碼比已過期版本的最大號碼還舊。
 
 - **確認入侵**  
-您現在可以確認特定 Office 365 使用者的入侵，並將他們的風險層級設定為 [高]  。 此工作流程可為您的安全性作業小組提供另一個回應功能，以降低其安全性事件解決時間閾值。 深入了解如何使用 Azure ATP 和 Cloud App Security 來[確認入侵](https://docs.microsoft.com/cloud-app-security/tutorial-ueba?branch=pr-en-us-1204#phase-4-protect-your-organization)。
+您現在可以確認特定 Office 365 使用者的入侵，並將他們的風險層級設定為 [高]。 此工作流程可為您的安全性作業小組提供另一個回應功能，以降低其安全性事件解決時間閾值。 深入了解如何使用 Azure ATP 和 Cloud App Security 來[確認入侵](https://docs.microsoft.com/cloud-app-security/tutorial-ueba?branch=pr-en-us-1204#phase-4-protect-your-organization)。
 
 - **新體驗橫幅**  
 在於 Cloud App Security 入口網站中有新體驗可供使用的 Azure ATP 入口網站頁面上，會顯示描述可用內容及存取連結的新橫幅。
@@ -355,9 +367,9 @@ Exchange 伺服器的手動機密標記
     您現在可以在設定期間手動將實體標記為 Exchange Server伺服器。
 
     若要手動將實體標記為 Exchange 伺服器：
-    1. 在 Azure ATP 入口網站中，存取 [設定]  功能表。
-    2. 在 [偵測]  下，選取 [實體標記]  ，然後選取 [機密]  。
-    3. 選取 [Exchange 伺服器]  ，然後新增您要標記的實體。
+    1. 在 Azure ATP 入口網站中，存取 [設定]功能表。
+    2. 在 [偵測] 下，選取 [實體標記]，然後選取 [機密]。
+    3. 選取 [Exchange 伺服器]，然後新增您要標記的實體。
 
     將某部電腦標記為 Exchange 伺服器之後，系統會將它標記為機密，並顯示它已被標記為 Exchange 伺服器。  「機密」標籤會出現在該電腦的實體設定檔中，而且所有在機密帳戶及橫向移動路徑上執行的偵測，都會仔細檢查該部電腦。
 
@@ -542,11 +554,11 @@ Azure ATP 之[可疑的 NTLM 轉送攻擊 (Exchange 帳戶) - 預覽](atp-latera
 
 - **新功能：不信任的樹系支援 - (預覽)**  
 Azure ATP 支援不信任樹系中的感應器功能現已進入公開預覽階段。
-從 Azure ATP 入口網站 [目錄服務]  頁面設定額外一組認證，讓 Azure ATP 感應器能連線至不同 Active Directory 樹系，以及回報給 Azure ATP 服務。 如果要深入了解，請參閱 [Azure ATP 多重樹系](atp-multi-forest.md)。
+從 Azure ATP 入口網站 [目錄服務] 頁面設定額外一組認證，讓 Azure ATP 感應器能連線至不同 Active Directory 樹系，以及回報給 Azure ATP 服務。 如果要深入了解，請參閱 [Azure ATP 多重樹系](atp-multi-forest.md)。
 
 - **新功能：網域控制站涵蓋範圍**  
 Azure ATP 現在會提供 Azure ATP 監視網域控制站的涵蓋範圍資訊。  
-從 Azure ATP 入口網站 [感應器]  頁面，檢視 Azure ATP 在您環境中偵測到的受監視與未受監視網域控制站數。 下載受監視網域控制站清單以利進一步分析，以及建置行動計劃。 如果要深入了解，請參閱[網域控制站監視](atp-sensor-monitoring.md)操作指南。
+從 Azure ATP 入口網站 [感應器] 頁面，檢視 Azure ATP 在您環境中偵測到的受監視與未受監視網域控制站數。 下載受監視網域控制站清單以利進一步分析，以及建置行動計劃。 如果要深入了解，請參閱[網域控制站監視](atp-sensor-monitoring.md)操作指南。
 
 - **功能增強：帳戶列舉偵察**  
 Azure ATP 帳戶列舉偵察偵測現在會偵測使用 Kerberos 和 NTLM 的列舉嘗試，並據此發出警示。 偵測在之前僅適用於使用 Kerberos 的嘗試。 如果要深入了解，請參閱 [Azure ATP 偵查警示](atp-reconnaissance-alerts.md#account-enumeration-reconnaissance-external-id-2003)。
@@ -651,7 +663,7 @@ Azure ATP 之[可疑的 Golden Ticket 使用 - 票證異常](suspicious-activity
     因為這種偽造的 TGT 可以讓攻擊者獲得持久的網路持續性，所以稱為「黃金票證」。 此全新偵測設計用來識別這類偽造黃金票證擁有的唯一特性。
 
 - **功能增強：自動化建立 Azure ATP 執行個體 (工作區)**  
-即日起，Azure ATP「工作區」  已重新命名為 Azure ATP「執行個體」  。 Azure ATP 現在支援每個 Azure ATP 帳戶一個 Azure ATP 執行個體。 新客戶的執行個體會使用 [Azure ATP 入口網站](https://portal.atp.azure.com)中的執行個體建立精靈來建立。 現有的 Azure ATP 工作區會自動轉換成具備更新的 Azure ATP 執行個體。  
+即日起，Azure ATP「工作區」已重新命名為 Azure ATP「執行個體」。 Azure ATP 現在支援每個 Azure ATP 帳戶一個 Azure ATP 執行個體。 新客戶的執行個體會使用 [Azure ATP 入口網站](https://portal.atp.azure.com)中的執行個體建立精靈來建立。 現有的 Azure ATP 工作區會自動轉換成具備更新的 Azure ATP 執行個體。  
 
   - 使用[建立您的 Azure ATP 執行個體](install-atp-step1.md)來簡化執行個體建立，以進行更快速的部署和保護。
   - 所有[資料隱私權與合規性](atp-privacy-compliance.md)皆維持不變。

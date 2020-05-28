@@ -1,6 +1,6 @@
 ---
 title: Azure ATP 偵察階段安全性警示
-d|Description: This article explains the Azure ATP alerts issued when attacks typically part of reconnaissance phase efforts are detected against your organization.
+description: 本文說明偵測到組織受攻擊時 (通常在偵察階段)，所發出的 Azure ATP 警示。
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 45cf86c6e497276143ba698bac031f5e90c09440
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 800cb9aea336c09d3e3591062faa420546822914
+ms.sourcegitcommit: 3162130a85b5c6e8bf16456f8255b95e1f52b869
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79414126"
+ms.lasthandoff: 05/25/2020
+ms.locfileid: "83825280"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>教學課程：偵察警訊
 
@@ -45,13 +45,13 @@ ms.locfileid: "79414126"
 
 ## <a name="account-enumeration-reconnaissance-external-id-2003"></a>帳戶列舉偵察 (外部識別碼 2003)
 
-先前的名稱：  使用帳戶列舉偵查
+先前的名稱：使用帳戶列舉偵查
 
 **描述**
 
 在帳戶列舉偵察中，攻擊者會使用含有上千筆使用者名稱的目錄或 KrbGuess 這類工具，嘗試猜測網域中的使用者名稱。
 
-**Kerberos**：攻擊者利用這些名稱提出 Kerberos 要求，試著在網域中找到有效的使用者名稱。 如果成功猜到使用者名稱，攻擊者會收到「需要預先驗證」  ，而不是「未知的安全性主體」  Kerberos 錯誤。
+**Kerberos**：攻擊者利用這些名稱提出 Kerberos 要求，試著在網域中找到有效的使用者名稱。 如果成功猜到使用者名稱，攻擊者會收到「需要預先驗證」，而不是「未知的安全性主體」Kerberos 錯誤。
 
 **NTLM**：攻擊者利用名稱字典來提出 NTLM 驗證要求，試著在網域中找到有效的使用者名稱。 如果成功猜到使用者名稱，攻擊者會收到 **WrongPassword (0xc000006a)** 而不是 **NoSuchUser (0xc0000064)** NTLM 錯誤。
 
@@ -70,7 +70,7 @@ ms.locfileid: "79414126"
      伺服器設定不正確 (例如 Exchange/Skype 或 ADSF) 可能會導致出現屬於不同網域的其他使用者。
     - 請查看問題服務的設定，以修正設定不正確的問題。
 
-    如果以上問題的答案為**是**，則為 **B-TP** 活動。 請「關閉」  安全性警示。
+    如果以上問題的答案為**是**，則為 **B-TP** 活動。 請「關閉」安全性警示。
 
 在下一個步驟中，查看來源電腦：
 
@@ -79,7 +79,7 @@ ms.locfileid: "79414126"
     如果是，請停止並編輯或刪除指令碼。
     - 應用程式是否為應該在環境中執行的系統管理或安全性指令碼/應用程式？
 
-      如果以上問題的答案為**是**，請「關閉」  安全性警示並排除該電腦。 這可能是 **B-TP** 活動。
+      如果以上問題的答案為**是**，請「關閉」安全性警示並排除該電腦。 這可能是 **B-TP** 活動。
 
 現在，查看帳戶：
 
@@ -89,7 +89,7 @@ ms.locfileid: "79414126"
     - 如果不存在的帳戶看起來很眼熟，有可能是已停用的帳戶，或屬於已離職的員工。
     - 檢查應用程式或指令碼，以判斷哪些帳戶仍然存在於 Active Directory 中。
 
-      如果以上其中一個問題的答案為**是**，請「關閉」  安全性警示，這可能是 **B-TP** 活動。
+      如果以上其中一個問題的答案為**是**，請「關閉」安全性警示，這可能是 **B-TP** 活動。
 
 2. 若任何猜測意圖符合現有的帳戶名稱，攻擊者即可得知帳戶存在於您的環境中，而且可以嘗試使用暴力密碼破解，使用探索到的使用者名稱存取您的網域。
     - 請檢查猜到的帳戶名稱，了解是否有其他可疑活動。
@@ -118,7 +118,7 @@ ms.locfileid: "79414126"
 
 ## <a name="network-mapping-reconnaissance-dns-external-id-2007"></a>網路對應偵察 (DNS) (外部識別碼 2007)
 
-先前的名稱：  使用 DNS 探查
+先前的名稱：使用 DNS 探查
 
 **描述**
 
@@ -204,7 +204,7 @@ DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵�
 
 ## <a name="user-and-ip-address-reconnaissance-smb-external-id-2012"></a>使用者和 IP 位址偵察 (SMB) (外部識別碼 2012)
 
-先前的名稱：  使用 SMB 工作階段列舉探查
+先前的名稱：使用 SMB 工作階段列舉探查
 
 ### <a name="description"></a>說明
 
@@ -218,10 +218,10 @@ DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵�
 
 1. 此來源電腦是否應該產生此類型的活動？
 2. 來源電腦上是否正在執行某種安全性掃描程式？
-    如果答案為是，則可能為 B-TP 活動。 請「關閉」  安全性警示並排除該電腦。
+    如果答案為是，則可能為 B-TP 活動。 請「關閉」安全性警示並排除該電腦。
 3. 檢查執行該作業的使用者。
     這些使用者是否應該執行這些動作？
-    如果答案為是，請「關閉」  有關 B-TP 活動的安全性警示。
+    如果答案為是，請「關閉」有關 B-TP 活動的安全性警示。
 
 **了解漏洞的範圍**
 
@@ -234,7 +234,7 @@ DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵�
 
 ## <a name="user-and-group-membership-reconnaissance-samr-external-id-2021"></a>使用者和群組成員資格偵察 (SAMR) (外部識別碼 2021)
 
-先前的名稱：  使用目錄服務查詢探查
+先前的名稱：使用目錄服務查詢探查
 
 **描述**
 
@@ -249,12 +249,12 @@ DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵�
 
 1. 按一下來源電腦以移至其設定檔頁面。
     - 來源電腦是否應該產生此類型的活動？
-      - 如果是，請「關閉」  有關 **B-TP** 活動的安全性警示並排除該電腦。
+      - 如果是，請「關閉」有關 **B-TP** 活動的安全性警示並排除該電腦。
     - 檢查執行該作業的使用者。
       - 這些使用者是否正常登入該來源電腦，或是否為應執行這些特定動作的系統管理員？
     - 檢查使用者設定檔，以及與他們相關的使用者活動。 使用[使用者調查指南](investigate-a-user.md)，以了解他們的一般使用者行為和搜尋其他可疑活動。
 
-      如果對以上問題的答案為**是**，請「關閉」  有關 **B-TP** 活動的警示。
+      如果對以上問題的答案為**是**，請「關閉」有關 **B-TP** 活動的警示。
 
 **了解漏洞的範圍**
 

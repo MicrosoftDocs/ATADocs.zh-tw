@@ -2,9 +2,9 @@
 title: Advanced 威脅分析更新至1.5 的遷移指南
 description: 更新 ATA 至 1.5 版的程序
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 01/23/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 6b87863ffa2cbb437c0ca9dedd52991b88c19b16
-ms.sourcegitcommit: 8c0222dc8333b5aa47430c5daee9bc7f1d82df31
+ms.openlocfilehash: f8eb4b3c31174d717253cd7de90865f830e68ca6
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81524849"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775500"
 ---
 # <a name="ata-update-to-15-migration-guide"></a>ATA 更新至 1.5 移轉指南
 更新至 ATA 1.5 提供下列各方面的改良︰

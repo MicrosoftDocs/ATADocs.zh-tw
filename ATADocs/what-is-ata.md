@@ -4,7 +4,7 @@ description: 說明何謂 Microsoft Advanced Threat Analytics (ATA)，以及它�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 7/24/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b88ca23b2d01d08357b3decb1e8e91c07848f5d8
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: d0f50163150f93baa0bd3084984705faf4fa6ea1
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79410591"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774769"
 ---
 # <a name="what-is-advanced-threat-analytics"></a>什麼是 Advanced Threat Analytics？
 
@@ -40,7 +40,7 @@ ATA 可以從下列項目接收事件和記錄檔︰
 -   直接從 Windows Event Collector (適用於輕量型閘道)
 
 
-如需 ATA 架構的詳細資訊，請參閱 [ATA 架構](ata-architecture.md)。
+如需 ATA 架構的詳細資訊，請參閱[Ata 架構](ata-architecture.md)。
 
 ## <a name="what-does-ata-do"></a>ATA 有何作用？
 
@@ -102,17 +102,17 @@ ATA 也會偵測**安全性問題與風險**，包括︰
 - 如果您選取執行完整移轉的選項，視資料庫大小而定，可能需要很長的時間。 當您選取移轉選項時，系統會顯示估計時間；請記下此時間，再決定要選取哪個選項。 
 
 
-## <a name="whats-next"></a>新功能
+## <a name="whats-next"></a>下一步
 
--   如需有關 ATA 如何融入網路的詳細資訊︰[ATA 架構](ata-architecture.md)
+-   如需 ATA 如何融入網路的詳細資訊︰[ATA 架構](ata-architecture.md)
 
 -   若要開始部署 ATA：[安裝 ATA](install-ata-step1.md)
 
 ## <a name="related-videos"></a>相關影片
-- [加入安全性團體](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)
+- [加入安全性社群](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)
 - [ATA 部署概觀](https://channel9.msdn.com/Shows/Microsoft-Security/Overview-of-ATA-Deployment-in-10-Minutes)
 
 
 ## <a name="see-also"></a>另請參閱
-[ATA 可疑活動腳本](https://aka.ms/ataplaybook)
-[查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
+[ATA 可疑活動](https://aka.ms/ataplaybook) 
+ 腳本[查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

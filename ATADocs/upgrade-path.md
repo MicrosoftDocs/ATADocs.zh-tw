@@ -4,7 +4,7 @@ description: 提供升級 Advanced Threat Analytics (ATA) 版本的指示。
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 05/26/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 88720401-1fb2-4353-ad39-32bc0088f0de
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 6225e2482a6b5caf109660a3ccb71e3fd52423f4
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 1bdf5a33efb00fd592b6da9fc8696df3bcfe281b
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414313"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774837"
 ---
 # <a name="recommended-upgrade-path-for-ata"></a>ATA 的建議升級路徑
 

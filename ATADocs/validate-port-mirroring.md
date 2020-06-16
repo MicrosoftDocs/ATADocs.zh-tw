@@ -2,9 +2,9 @@
 title: 在 Advanced 威脅分析中驗證埠鏡像
 description: 描述如何驗證已正確設定連接埠鏡像
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: ebd41719-c91a-4fdd-bcab-2affa2a2cace
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 635c6b82dd983eb33a6238a3a9d14f63ffc9dacd
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 022cb5fb51d7269a4dc33727d0b949a5ab2dcc88
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414330"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774803"
 ---
 # <a name="validate-port-mirroring"></a>驗證連接埠鏡像
 
@@ -191,26 +191,26 @@ ms.locfileid: "79414330"
     
     
 ## <a name="validate-port-mirroring-using-net-mon"></a>使用 Net Mon 驗證連接埠鏡像
-1.  在您想要驗證的 ATA 閘道上安裝 [Microsoft 網路監視器 3.4](https://www.microsoft.com/download/details.aspx?id=4865) \(英文\)。
+1.  在您要驗證的 ATA 閘道上安裝[Microsoft 網路監視器 3.4](https://www.microsoft.com/download/details.aspx?id=4865) 。
 
     > [!IMPORTANT]
     > 請勿在 ATA 閘道上安裝 Microsoft Message Analyzer 或其他流量擷取軟體。
 
 2.  開啟網路監視器並建立新的 [擷取] 索引標籤。
 
-    1.  只選取 [擷取] 網路介面卡或連接到設定為連接埠鏡像目的地的交換器連接埠之網路介面卡。
+    1.  只選取 [擷取]  網路介面卡或連接到設定為連接埠鏡像目的地的交換器連接埠之網路介面卡。
 
     2.  確定已啟用 P-Mode
 
-    3.  按一下 [新增擷取]。
+    3.  按一下 [新增擷取]  。
 
         ![建立新的擷取索引標籤影像](media/ATA-Port-Mirroring-Capture.jpg)
 
-3.  在 [顯示篩選] 視窗中，輸入下列篩選︰**KerberosV5 或 LDAP**，然後按一下 [套用]。
+3.  在 [顯示篩選器] 視窗中，輸入下列篩選：**KerberosV5 OR LDAP**，然後按一下 [套用]  。
 
     ![套用 KerberosV5 或 LDAP 篩選影像](media/ATA-Port-Mirroring-filter-settings.jpg)
 
-4.  按一下 [啟動]，啟動擷取工作階段。 如果您看不到網域控制站之間的流量，請檢閱您的連接埠鏡像組態。
+4.  按一下 [啟動]  ，啟動擷取工作階段。 如果您看不到網域控制站之間的流量，請檢閱您的連接埠鏡像組態。
 
     ![啟動擷取工作階段影像](media/ATA-Port-Mirroring-Capture-traffic.jpg)
 

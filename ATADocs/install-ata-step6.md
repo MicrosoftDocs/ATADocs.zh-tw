@@ -4,7 +4,7 @@ description: 在安裝 ATA 的這個步驟中，您要設定資料來源。
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 09/08/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,19 +12,19 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 63ed171d5eb7142cdf9d8bc3587c9134321b6d98
-ms.sourcegitcommit: 40f9a460c5b771dfd1e62098d7744162a7214d54
+ms.openlocfilehash: 06b7e42789b58a6da01479917b0e1277b651a8bd
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "82590492"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775160"
 ---
 # <a name="install-ata---step-6"></a>安裝 ATA - 步驟 6
 
 *適用於：Advanced Threat Analytics 1.9 版*
 
 > [!div class="step-by-step"]
-> [«步驟 5](install-ata-step5.md)
+> [«步驟 5](install-ata-step5.md) 
 > [步驟7»](vpn-integration-install-step.md)
 
 ## <a name="step-6-configure-event-collection"></a>步驟 6. 設定事件收集
@@ -114,11 +114,11 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
 電腦會嘗試驗證帳戶的認證。
 
-驗證套件： MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
+驗證套件：MICROSOFT_AUTHENTICATION_PACKAGE_V1_0
 
-登入帳戶：Administrator
+登入帳戶：系統管理員
 
-來源工作站： SIEM
+來源工作站：SIEM
 
 錯誤碼：0x0
 
@@ -138,7 +138,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
 #### <a name="qradar"></a>QRadar
 
-QRadar 可讓您透過代理程式收集事件。 如果使用代理程式收集資料，則會收集不含毫秒資料的時間格式。 因為 ATA 需要毫秒資料，所以必須將 QRadar 設定為使用無代理程式 Windows 事件收集。 如需詳細資訊， [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar：使用 MSRPC 通訊協定的無代理程式 Windows 事件集合")請參閱。
+QRadar 可讓您透過代理程式收集事件。 如果使用代理程式收集資料，則會收集不含毫秒資料的時間格式。 因為 ATA 需要毫秒資料，所以必須將 QRadar 設定為使用無代理程式 Windows 事件收集。 如需詳細資訊，請參閱 [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar：使用 MSRPC 通訊協定的無代理程式 Windows 事件收集") \(英文\)。
 
     <13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0
 
@@ -161,7 +161,7 @@ Message 是來自 Windows 事件的原始事件文字
 > 不支援使用 WinCollect 進行 Windows 事件收集。
 
 > [!div class="step-by-step"]
-> [«步驟 5](install-ata-step5.md)
+> [«步驟 5](install-ata-step5.md) 
 > [步驟7»](vpn-integration-install-step.md)
 
 ## <a name="related-videos"></a>相關影片

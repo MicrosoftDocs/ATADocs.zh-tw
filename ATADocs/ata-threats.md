@@ -2,9 +2,9 @@
 title: Advanced Threat Analytics 能偵測到什麼威脅？
 description: 列出 Advanced Threat Analytics 偵測的威脅
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 4529401696dd07dffb04871c4da4214c3a2aa3c5
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: dcc7e65cbe7fee4d743ce1abd1d81d30a5406a7d
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79412528"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775483"
 ---
 # <a name="what-threats-does-ata-look-for"></a>ATA 會尋找哪些威脅？
 
@@ -34,9 +34,9 @@ ATA 提供下列各進階攻擊階段的偵測︰探察、認證入侵、橫向�
 如需詳細資訊，請參閱[處理可疑活動](working-with-suspicious-activities.md)和 [ATA 可疑活動指南](suspicious-activity-guide.md)。
 
 
-## <a name="whats-next"></a>新功能
+## <a name="whats-next"></a>下一步
 
--   如需有關 ATA 如何融入網路的詳細資訊︰[ATA 架構](ata-architecture.md)
+-   如需 ATA 如何融入網路的詳細資訊︰[ATA 架構](ata-architecture.md)
 
 -   若要開始部署 ATA：[安裝 ATA](install-ata-step1.md)
 

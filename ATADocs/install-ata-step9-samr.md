@@ -4,7 +4,7 @@ description: 描述如何設定 SAM-R 以在 Advanced Threat Analytics (ATA) 中
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 09/08/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 7597ed25-87f5-472c-a496-d5f205c9c391
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: fa47a151ae8131039a5f7822acc5b541deb5c621
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 4804717d489a68380f78292d8ee8e89910bf7435
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79413973"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775058"
 ---
 # <a name="install-ata---step-9"></a>安裝 ATA - 步驟 9
 
@@ -29,11 +29,11 @@ ms.locfileid: "79413973"
 > [!NOTE]
 > 強制執行任何新原則之前，請務必先確定您的環境是安全的，而不會影響應用程式相容性，方法是先啟用並確認您在 audit 模式中的建議變更。 
 
-## <a name="step-9-configure-sam-r-required-permissions"></a>步驟 9： 設定 SAM-R 所需的權限
+## <a name="step-9-configure-sam-r-required-permissions"></a>步驟 9. 設定 SAM-R 所需的權限
 
 [橫向移動路徑](use-case-lateral-movement-path.md)偵測有賴於識別特定電腦上本機系統管理員的查詢。 這些查詢是透過在步驟2中建立的 ATA 服務帳戶，使用 SAM-R 通訊協定來執行[。連接到 AD](install-ata-step2.md)。
  
-若要確保 Windows 用戶端和伺服器允許 ATA 服務帳戶執行這項 SAM R 作業，您必須修改 [群組原則]，在 [網路存取] 原則列出的已設定帳戶之外新增 ATA 服務帳戶。 此群組原則應套用至您組織中的每個裝置。 
+若要確保 Windows 用戶端和伺服器允許 ATA 服務帳戶執行這項 SAM R 作業，您必須修改 [群組原則]****，在 [網路存取]**** 原則列出的已設定帳戶之外新增 ATA 服務帳戶。 此群組原則應套用至您組織中的每個裝置。 
 
 1. 找出原則：
 
@@ -46,7 +46,7 @@ ms.locfileid: "79413973"
  
    ![新增服務](./media/samr-add-service.png)
 
-3. **ATA 服務** (在安裝期間建立的 ATA 服務) 現在具備在環境中執行 SAM-R 的適當權限。
+3. **Ata 服務**（在安裝期間建立的 ata 服務）現在具備在環境中執行 SAM-R 的適當許可權。
 
  如需有關 SAM-R 與群組原則的詳細資訊，請參閱[網路存取：限制允許對 SAM 發出遠端呼叫的用戶端](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls) \(機器翻譯\)。
 

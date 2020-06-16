@@ -2,9 +2,9 @@
 title: 安裝 Advanced 威脅分析-步驟5
 description: 安裝 ATA 的步驟 5 協助您設定 ATA 閘道的設定。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,27 +12,27 @@ ms.technology: ''
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 2b784d34e505e39b9333bb0642de8a7bd061f6a1
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: de26eca5f9824b59dddffc9ad8856e03fdb08e2a
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79413939"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775177"
 ---
 # <a name="install-ata---step-5"></a>安裝 ATA - 步驟 5
 
 *適用於：Advanced Threat Analytics 1.9 版*
 
 > [!div class="step-by-step"]
-> [«步驟 4](install-ata-step4.md)
-> [步驟 6»](install-ata-step6.md)
+> [«步驟 4](install-ata-step4.md) 
+> [步驟6»](install-ata-step6.md)
 
 
-## <a name="step-5-configure-the-ata-gateway-settings"></a>步驟 5： 設定 ATA 閘道設定
+## <a name="step-5-configure-the-ata-gateway-settings"></a>步驟 5。 設定 ATA 閘道設定
 
 安裝 ATA 閘道後，執行下列步驟來設定 ATA 閘道的設定。
 
-1. 在 ATA 主控台中，移至 [設定]，在 [系統] 下選取 [閘道]。
+1. 在 ATA 主控台中，移至 [設定]****，在 [系統]**** 下選取 [閘道]****。
    
     ![設定閘道設定影像](media/ata-gw-config-1.png)
 
@@ -62,9 +62,9 @@ ms.locfileid: "79413939"
    > 在 ATA 閘道與 ATA 中心進行下一次的排程同步時，設定的變更便會套用至 ATA 閘道。
 
 3. 您也可以選擇設定 [Syslog 接聽程式和 Windows 事件轉寄集合](configure-event-collection.md)。 
-4. 啟用 [自動更新 ATA 閘道]，使您於未來將 ATA 中心更新為新的版本時，此 ATA 閘道也會自動更新。
+4. 啟用 [自動更新 ATA 閘道]****，使您於未來將 ATA 中心更新為新的版本時，此 ATA 閘道也會自動更新。
 
-5. 按一下 [儲存]。
+5. 按一下 [檔案] 。
 
 
 ## <a name="validate-installations"></a>驗證安裝
@@ -74,18 +74,18 @@ ms.locfileid: "79413939"
 
 2.  如果服務未啟動，請檢閱位於預設資料夾 “%programfiles%\Microsoft Advanced Threat Analytics\Gateway\Logs” 中的 “Microsoft.Tri.Gateway-Errors.log” 檔案，然後查看 [ATA 疑難排解](troubleshooting-ata-known-errors.md) 取得協助。
 
-3.  如果這是第一個安裝的 ATA 閘道器，請於幾分鐘後登入 ATA 主控台，然後將開啟的螢幕向右撥動，以開啟 [通知] 窗格。 您應該會在主控台右邊的通知列中看到**最近已了解的實體**清單。
+3.  如果這是第一個安裝的 ATA 閘道，請於幾分鐘後登入 ATA 主控台，然後將開啟的螢幕向右撥動，以開啟 [通知] 窗格。 您應該會在主控台右邊的通知列中看到**最近已了解的實體**清單。
 
-4.  按一下桌面上的 [Microsoft Advanced Threat Analytics] 捷徑以連線到 ATA 主控台。 以您安裝 ATA 中心的相同使用者認證登入。
+4.  按一下桌面上的 [Microsoft Advanced Threat Analytics]**** 捷徑以連線到 ATA 主控台。 以您安裝 ATA 中心的相同使用者認證登入。
 5.  主控台的 [搜尋] 列中搜尋項目，例如您網域中的使用者或群組。
-6.  開啟效能監視器。 在效能樹狀目錄中，按一下 [效能監視器]，然後按一下加號圖示以 [新增計數器]。 展開 [Microsoft ATA 閘道]，向下捲動至 [Network Listener PEF Captured Messages/Sec] 並加以新增。 接著，請確定您有在圖形上看到活動。
+6.  開啟效能監視器。 在效能樹狀目錄中，按一下 [效能監視器]****，然後按一下加號圖示以 [新增計數器]****。 展開 [Microsoft ATA 閘道]****，向下捲動至 [Network Listener PEF Captured Messages/Sec]**** 並加以新增。 接著，請確定您有在圖形上看到活動。
 
     ![新增效能計數器影像](media/ATA-performance-monitoring-add-counters.png)
 
 
 > [!div class="step-by-step"]
-> [«步驟 4](install-ata-step4.md)
-> [步驟 6»](install-ata-step6.md)
+> [«步驟 4](install-ata-step4.md) 
+> [步驟6»](install-ata-step6.md)
 
 
 

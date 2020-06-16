@@ -2,9 +2,9 @@
 title: 安裝 Advanced 威脅分析-步驟8
 description: 在安裝 ATA 的最後一個步驟裡，您可以設定 Honeytoken 使用者。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 6/14/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,46 +12,46 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 367d40e57590ace725700de947f3c1fd31b9db5e
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 9482053a183dfd41f20028d00c15c171cea725c7
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79411202"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775143"
 ---
 # <a name="install-ata---step-8"></a>安裝 ATA - 步驟 8
 
 *適用於：Advanced Threat Analytics 1.9 版*
 
 > [!div class="step-by-step"]
-> [« 步驟 7](vpn-integration-install-step.md)
-> [步驟 9 »](install-ata-step9-samr.md)
+> [«步驟 7](vpn-integration-install-step.md) 
+> [步驟9»](install-ata-step9-samr.md)
 
-## <a name="step-8-configure-ip-address-exclusions-and-honeytoken-user"></a>步驟 8： 設定 IP 位址排除項目和 Honeytoken 使用者
+## <a name="step-8-configure-ip-address-exclusions-and-honeytoken-user"></a>步驟 8。 設定 IP 位址排除項目和 Honeytoken 使用者
 
 ATA 可從一些偵測排除特定 IP 位址或使用者。 
 
-例如，**DNS 探查排除項目**可以是一個使用 DNS 做為掃描機制的安全性掃描程式。 排除項目可協助 ATA 忽略這類掃描器。 「傳遞票證」排除項目的一個範例是 NAT 裝置。    
+例如，**DNS 探查排除項目**可以是一個使用 DNS 做為掃描機制的安全性掃描程式。 排除項目可協助 ATA 忽略這類掃描器。 「傳遞票證」** 排除項目的一個範例是 NAT 裝置。    
 
 ATA 也能讓您設定 Honeytoken 使用者，用來作為針對惡意執行者的陷阱。所有與此 (通常是休眠的) 帳戶相關聯的驗證都會觸發警示。
 
 若要設定此帳戶，請遵循下列步驟︰
 
-1.  從 ATA 主控台按一下設定圖示，然後選取 [設定]。
+1.  在 ATA 主控台中，按一下 [設定] 圖示，然後**選取 [** 設定]。
 
     ![ATA 組態設定](media/ATA-config-icon.png)
 
-2.  在 [偵測] 下，按一下 [實體標記]。
+2.  在 [**偵測**] 下，按一下 [**實體標記**]。
 
-2. 在 [Honeytoken 帳戶] 下，輸入 Honeytoken 帳戶名稱。 [Honeytoken 帳戶] 欄位是可搜尋的，而且會自動顯示您網路中的實體。
+2. 在 [Honeytoken 帳戶]**** 下，輸入 Honeytoken 帳戶名稱。 [Honeytoken 帳戶] 欄位是可搜尋的，而且會自動顯示您網路中的實體。
 
    ![Honeytoken](media/honeytoken.png)
 
-3. 按一下 [排除]。 針對每個威脅類型，輸入要從這些威脅偵測排除的使用者帳戶或 IP 位址，然後按一下「加號」符號。 [加入實體] \(使用者或電腦\) 欄位是可搜尋的，而且會自動填入您網路中的實體。 如需詳細資訊，請參閱[從偵測中排除實體](excluding-entities-from-detections.md)
+3. 按一下 [排除]****。 針對每個威脅類型，輸入要從這些威脅偵測排除的使用者帳戶或 IP 位址，然後按一下「加號」** 符號。 [加入實體]**** \(使用者或電腦\) 欄位是可搜尋的，而且會自動填入您網路中的實體。 如需詳細資訊，請參閱[從偵測中排除實體](excluding-entities-from-detections.md)
 
    ![排除](media/exclusions.png)
 
-4.  按一下 [儲存]。
+4.  按一下 [檔案] 。
 
 
 恭喜，您已成功部署 Microsoft Advanced Threat Analytics！
@@ -64,8 +64,8 @@ ATA 會立即開始掃描是否有可疑的活動。 某些活動 (例如某些�
 
 
 > [!div class="step-by-step"]
-> [« 步驟 7](vpn-integration-install-step.md)
-> [步驟 9 »](install-ata-step9-samr.md)
+> [«步驟 7](vpn-integration-install-step.md) 
+> [步驟9»](install-ata-step9-samr.md)
 
 
 ## <a name="related-videos"></a>相關影片

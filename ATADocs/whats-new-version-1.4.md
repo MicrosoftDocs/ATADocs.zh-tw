@@ -2,9 +2,9 @@
 title: Advanced 威脅分析1.4 版的新功能
 description: 列出 ATA 1.4 版的新功能以及已知問題
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 01/23/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: cbea47f9-34c1-42b6-ae9e-6a472b49e1a5
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 9a06773002de2b0b830ba179899373543b2bfbff
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 1ad136c9f028140d76fd42f62eeb7a11366af286
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414194"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774744"
 ---
 # <a name="what39s-new-in-ata-version-14"></a>ATA 1.4 版的新功能
 這些版本資訊提供 Advanced Threat Analytics 1.4 版中已知問題的相關資訊。
@@ -74,7 +74,7 @@ ms.locfileid: "79414194"
 
 -   HKLM\SOFTWARE\Microsoft\Microsoft Advanced Threat Analytics\Center
 
--   利用 `InstallationPath` 的值新增名為 `C:\Program Files\Microsoft Advanced Threat Analytics\Center` 的字串值。 這是預設安裝資料夾。 如果您已變更安裝資料夾，請輸入安裝 ATA 的路徑。
+-   利用 `C:\Program Files\Microsoft Advanced Threat Analytics\Center` 的值新增名為 `InstallationPath` 的字串值。 這是預設安裝資料夾。 如果您已變更安裝資料夾，請輸入安裝 ATA 的路徑。
 
     ![ATA 中心安裝路徑的登錄編輯程式](media/ATA-uninstall-center-bug.jpg)
 
@@ -82,7 +82,7 @@ ms.locfileid: "79414194"
 
 -   HKLM\SOFTWARE\Microsoft\Microsoft Advanced Threat Analytics\Gateway
 
--   利用 `InstallationPath` 的值新增名為 `C:\Program Files\Microsoft Advanced Threat Analytics\Gateway` 的字串值。 這是預設安裝資料夾。  如果您已變更安裝資料夾，請輸入安裝 ATA 的路徑。
+-   利用 `C:\Program Files\Microsoft Advanced Threat Analytics\Gateway` 的值新增名為 `InstallationPath` 的字串值。 這是預設安裝資料夾。  如果您已變更安裝資料夾，請輸入安裝 ATA 的路徑。
 
     ![ATA 閘道安裝路徑的登錄編輯程式](media/ATA-GW-uninstall-bug.jpg)
 

@@ -2,9 +2,9 @@
 title: Advanced 威脅分析1.5 版的新功能
 description: 列出 ATA 1.5 版的新功能以及已知問題
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 01/23/2017
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 76f6c7dcd083d1e84443fefcaff4c753ea6bf272
-ms.sourcegitcommit: 8c0222dc8333b5aa47430c5daee9bc7f1d82df31
+ms.openlocfilehash: 87f0ee5e13e5b6c85a210d4b63a78b27f249888d
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81524713"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774718"
 ---
 # <a name="whats-new-in-ata-version-15"></a>ATA 1.5 版的新功能
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。
@@ -55,7 +55,7 @@ ms.locfileid: "81524713"
 ### <a name="installation-from-zip-file"></a>從 Zip 檔案安裝
 安裝 ATA 閘道時，請務必從 zip 檔案解壓縮檔案至本機目錄，並從該處安裝。 請勿直接從 ZIP 檔案內部安裝 ATA 閘道，否則安裝會失敗。
 
-### <a name="configuration"></a>設定
+### <a name="configuration"></a>組態
 設定 ATA 閘道組態之後，當 ATA 閘道第一次啟動時，會顯示「未同步處理」標籤，直到服務完全啟動為止，在服務第一次啟動時，這可能需要多達 10 分鐘。
 
 ### <a name="network-capture-software"></a>網路擷取軟體

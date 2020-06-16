@@ -4,19 +4,19 @@ description: 描述 ATA 所收集的資料，並提供關閉資料收集的步�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 8/19/2018
 ms.topic: article
 ms.prod: advanced-threat-analytics
 ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: eef3aa45b9563a4fea09e5cebc0f4ece7c39d734
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: c17405cd1f3da619ad6942e082420e58c4e9c430
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79413956"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775126"
 ---
 # <a name="manage-system-generated-logs"></a>管理系統產生的記錄
 
@@ -53,17 +53,17 @@ ms.locfileid: "79413956"
 
     -   群組數量
 
-    -   使用者數量
+    -   使用者數目
 
 -   可疑活動  - 對各項可疑活動收集的匿名資料如下︰
 
-    (**不會**收集電腦名稱、使用者名稱和 IP 位址)
+    （**不**會收集電腦名稱稱、使用者名稱和 IP 位址）
 
     -   可疑的活動類型
 
     -   可疑的活動識別碼
 
-    -   Status
+    -   狀態
 
     -   開始與結束時間
 
@@ -77,7 +77,7 @@ ms.locfileid: "79413956"
 
     -   健全狀況問題識別碼
 
-    -   Status
+    -   狀態
 
     -   開始與結束時間
 
@@ -87,7 +87,7 @@ ms.locfileid: "79413956"
 ### <a name="disable-data-collection"></a>停用資料收集
 請執行下列步驟，以停止收集及將遙測資料傳送到 Microsoft：
 
-1.  登入 ATA 主控台，按一下工具列中的三個點，然後選取 [關於]。
+1.  登入 ATA 主控台，按一下工具列中的三個點，然後選取 [關於]****。
 
 2.  取消選取**將使用資訊傳送給我們，以於未來協助改善客戶經驗**的核取方塊。
 

@@ -2,9 +2,9 @@
 title: 針對 Advanced 威脅分析服務啟動進行疑難排解
 description: 本文描述如何為 ATA 啟動問題進行疑難排解
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 5a65285c-d1de-4025-9bb4-ef9c20b13cfa
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 97450fd93a8c881d5722365deab8b237df489091
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 57f023a557bafff4653e00926fa0d0f813b5d041
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79413854"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774854"
 ---
 # <a name="troubleshooting-service-startup"></a>為服務啟動進行疑難排解
 
@@ -48,9 +48,9 @@ ms.locfileid: "79413854"
 **徵兆**
 
 您的 ATA 閘道未啟動且您收到此錯誤：<br></br>
-System.Net.Http.HttpRequestException: 回應狀態碼未指出成功: 500 (內部伺服器錯誤)
+System.Net.Http.HttpRequestException: 回應狀態碼未指出成功: 500 (內部伺服器錯誤)**
 
-**描述**
+**說明**
 
 在輕量型閘道安裝程序中，ATA 會配置 CPU 閾值，使輕量型閘道能夠以 15% 的緩衝區來利用 CPU，從而導致此問題發生。 若您使用了登錄機碼個別設定閾值：這項衝突會造成輕量型閘道無法啟動。 
 

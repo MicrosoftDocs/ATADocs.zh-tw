@@ -4,7 +4,7 @@ description: 本文說明如何使用 Advanced Threat Analytics (ATA) 偵測橫�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 06/14/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 710f01bd-c878-4406-a7b2-ce13f98736ea
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 4c937a99da6bd26d58fc112eb1c154b59d8d53a1
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: f646f1ae2f1960b502d15b4ff59f68162e18970c
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79412035"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774820"
 ---
 # <a name="investigate-lateral-movement-paths-with-ata"></a>使用 ATA 調查橫向移動路徑
 
@@ -36,28 +36,28 @@ ATA 可讓您在網路上採取防範動作，以防止攻擊者成功進行橫�
 
 若要探索網路中有哪些敏感性帳戶因其與非敏感性帳戶或資源的連線而受到影響，請在特定時間範圍內執行下列步驟： 
 
-1. 在 ATA 主控台功能表中，按一下報表圖示 ![[報表] 圖示](./media/ata-report-icon.png)。
+1. 在 ATA 主控台功能表中，按一下報表圖示 ![[報表] 圖示](./media/ata-report-icon.png).
 
 2. 在 [**對敏感性帳戶的橫向移動路徑**] 下，如果找不到橫向移動路徑，報表就會呈現灰色。如果有橫向移動路徑，則報表的日期會自動選取具有相關資料的第一個日期。 
 
-   ![報告](./media/reports.png)
+   ![reports](./media/reports.png)
 
-3. 按一下 [下載]。
+3. 按一下 [下載]  。
 
-4. 所建立的 Excel 檔案會提供您有風險之敏感性帳戶的詳細資料。 [摘要] 索引標籤能提供詳述敏感性帳戶及電腦的數目，以及處於風險資源之平均值的圖表。 [詳細資料] 索引標籤能提供您應注意之敏感性帳戶的清單。 請注意，路徑是先前存在的路徑，目前可能不可用。
+4. 所建立的 Excel 檔案會提供您有風險之敏感性帳戶的詳細資料。 [摘要]**** 索引標籤能提供詳述敏感性帳戶及電腦的數目，以及處於風險資源之平均值的圖表。 [詳細資料]**** 索引標籤能提供您應注意之敏感性帳戶的清單。 請注意，路徑是先前存在的路徑，目前可能不可用。
 
 
 ## <a name="investigate"></a>調查
 
 現在您已知道有哪些敏感性帳戶處於風險中，便可以深入鑽研 ATA 以了解更多資訊並採取預防性措施。
 
-1. 若實體位於橫向移動路徑，請在 ATA 主控台中，搜尋新增至實體設定檔的橫向移動徽章 ![橫向圖示](./media/lateral-movement-icon.png) 或 ![路徑圖示](./media/paths-icon.png)。 這會在過去兩天內有出現橫向移動路徑的情況下提供。
+1. 若實體位於橫向移動路徑，請在 ATA 主控台中，搜尋新增至實體設定檔的橫向移動徽章 ![橫向圖示](./media/lateral-movement-icon.png) 或 ![路徑圖示](./media/paths-icon.png). 這會在過去兩天內有出現橫向移動路徑的情況下提供。
 
-2. 在隨即開啟的使用者設定檔頁面中，按一下 [橫向移動路徑] 索引標籤。
+2. 在隨即開啟的使用者設定檔頁面中，按一下 [橫向移動路徑]**** 索引標籤。
 
 3. 顯示的圖表能提供針對敏感性使用者之可能路徑的地圖。 該圖表能顯示於過去兩天內所做出的連線。
 
-4. 檢閱報表以查看並了解敏感性使用者認證的暴露程度。 例如，在此地圖中，您可以遵循 [**登入者**] 灰色箭號來查看 Samira 使用其特殊許可權認證登入的位置。 在此案例中，Samira 的敏感性認證已儲存在 REDMOND-WA-DEV 這部電腦上。 然後，查看哪些其他使用者已登入哪些電腦建立最大的曝光和弱點。 您可以查看 [身為系統管理員] 黑色箭頭，以了解誰在該資源上具有系統管理權限。 在此範例中，所有 [Contoso All] 群組中的使用者都能從該資源存取使用者認證。  
+4. 檢閱報表以查看並了解敏感性使用者認證的暴露程度。 例如，在此地圖中，您可以遵循 [**登入者**] 灰色箭號來查看 Samira 使用其特殊許可權認證登入的位置。 在此案例中，Samira 的敏感性認證已儲存在 REDMOND-WA-DEV 這部電腦上。 然後，查看哪些其他使用者已登入哪些電腦建立最大的曝光和弱點。 您可以查看 [身為系統管理員]**** 黑色箭頭，以了解誰在該資源上具有系統管理權限。 在此範例中， **Contoso All**群組中的每個人都能夠從該資源存取使用者認證。  
 
    ![使用者設定檔橫向移動路徑](media/user-profile-lateral-movement-paths.png)
 
@@ -79,6 +79,6 @@ ATA 可讓您在網路上採取防範動作，以防止攻擊者成功進行橫�
 
 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [使用可疑活動](working-with-suspicious-activities.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

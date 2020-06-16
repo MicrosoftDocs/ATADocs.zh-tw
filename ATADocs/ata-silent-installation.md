@@ -4,7 +4,7 @@ description: 本文說明如何以無訊息方式安裝 ATA。
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 10/15/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ea408a1c9a4d8dc937bab7afda4cedc656da6f15
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 7130b378178165eb834cf8874a477f97db3420d7
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79412477"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775517"
 ---
 # <a name="ata-silent-installation"></a>ATA 無訊息安裝
 
@@ -25,7 +25,7 @@ ms.locfileid: "79412477"
 
 本文提供以無訊息方式安裝 ATA 的指示。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 ATA 版本1.9 需要安裝 Microsoft .NET Framework 4.6.1。 
 
@@ -35,7 +35,7 @@ ATA 版本1.9 需要安裝 Microsoft .NET Framework 4.6.1。
 > .Net framework 4.6.1 安裝可能需要重新啟動伺服器。 在網域控制站上安裝 ATA 閘道時，請考慮為這些網域控制站排定維護期間。
 使用 ATA 無訊息安裝方法時，安裝程式會設定為在安裝結束時自動重新啟動伺服器安裝 (如有必要)。 由於 Windows Installer 的某個錯誤，norestart 旗標無法可靠地用來確定伺服器不會重新啟動，因此請務必只在維護期間執行無訊息安裝。
 
-若要追蹤部署進度，請監視位於 **%AppData%\Local\Temp** 中的 ATA 安裝程式記錄檔。
+若要追蹤部署的進度，請監視位於 **%appdata%\local\temp 檔**的 ATA 安裝程式記錄檔。
 
 
 ## <a name="install-the-ata-center"></a>安裝 ATA 中心
@@ -54,7 +54,7 @@ ATA 版本1.9 需要安裝 Microsoft .NET Framework 4.6.1。
 > |Name|語法|對無訊息安裝而言是否為必要？|說明|
 > |-------------|----------|---------|---------|
 > |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
-> |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
+> |Help|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 > |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|是|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
 > |LicenseAccepted|--LicenseAccepted|是|指出已閱讀並核准授權。 無訊息安裝時必須設定。|
 
@@ -98,7 +98,7 @@ ATA 版本1.9 需要安裝 Microsoft .NET Framework 4.6.1。
 > |Name|語法|對無訊息安裝而言是否為必要？|說明|
 > |-------------|----------|---------|---------|
 > |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
-> |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
+> |Help|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 > |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|是|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
 
 
@@ -119,17 +119,17 @@ ATA 版本1.9 需要安裝 Microsoft .NET Framework 4.6.1。
 
 > [!div class="mx-tableFixed"]
 > 
-> |Name|語法|對無訊息解除安裝而言是否為必要？|說明|
+> |Name|語法|對無訊息解除安裝而言是否為必要？|Description|
 > |-------------|----------|---------|---------|
 > |Quiet|/quiet|是|執行解除安裝程式，但不顯示任何 UI 和提示。|
 > |解除安裝|/uninstall|是|從伺服器執行 ATA 中心的無訊息解除安裝。|
-> |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
+> |Help|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 
 **安裝參數**：
 
 > [!div class="mx-tableFixed"]
 > 
-> |Name|語法|對無訊息解除安裝而言是否為必要？|說明|
+> |Name|語法|對無訊息解除安裝而言是否為必要？|Description|
 > |-------------|----------|---------|---------|
 > |DeleteExistingDatabaseData|DeleteExistingDatabaseData|否|刪除現有資料庫中的所有檔案。|
 
@@ -163,7 +163,7 @@ ATA 版本1.9 需要安裝 Microsoft .NET Framework 4.6.1。
 > |Name|語法|對無訊息安裝而言是否為必要？|說明|
 > |-------------|----------|---------|---------|
 > |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
-> |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
+> |Help|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 > |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|是|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
 
 **安裝參數**：
@@ -198,7 +198,7 @@ ATA 版本1.9 需要安裝 Microsoft .NET Framework 4.6.1。
 > |Name|語法|對無訊息安裝而言是否為必要？|說明|
 > |-------------|----------|---------|---------|
 > |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
-> |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
+> |Help|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 > |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|是|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
 
 
@@ -219,11 +219,11 @@ ATA 版本1.9 需要安裝 Microsoft .NET Framework 4.6.1。
 
 > [!div class="mx-tableFixed"]
 > 
-> |Name|語法|對無訊息解除安裝而言是否為必要？|說明|
+> |Name|語法|對無訊息解除安裝而言是否為必要？|Description|
 > |-------------|----------|---------|---------|
 > |Quiet|/quiet|是|執行解除安裝程式，但不顯示任何 UI 和提示。|
 > |解除安裝|/uninstall|是|從伺服器執行 ATA 閘道的無訊息解除安裝。|
-> |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
+> |Help|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 
 **範例**：若要從伺服器以無訊息方式解除安裝 ATA 閘道：
 

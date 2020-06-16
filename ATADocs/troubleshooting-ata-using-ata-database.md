@@ -2,9 +2,9 @@
 title: 使用資料庫進行 Advanced 威脅分析的疑難排解
 description: 描述如何使用 ATA 資料庫來協助疑難排解問題
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 377a3c81-5c1d-486f-8942-85249aacf560
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1efc5aee15527212a6f2eb53c147fe8fa1d62ea3
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 269646c7547b0a9a3538405a4180d063e27e0455
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414211"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774905"
 ---
 # <a name="troubleshooting-ata-using-the-ata-database"></a>使用 ATA 資料庫疑難排解 ATA
 
@@ -35,7 +35,7 @@ ATA 會使用 MongoDB 作為其資料庫。
 
 > [!div class="mx-tableFixed"]
 > 
-> |作法|語法|備忘錄|
+> |作法|語法|注意|
 > |-------------|----------|---------|
 > |檢查資料庫中的集合。|`show collections`|可讓端對端測試有效查看正在寫入到資料庫的流量，及 ATA 正在接收的事件 4776。|
 > |取得使用者/電腦/群組 (UniqueEntity) 的詳細資料，例如使用者識別碼。|`db.UniqueEntity.find({CompleteSearchNames: "<name of entity in lower case>"})`||

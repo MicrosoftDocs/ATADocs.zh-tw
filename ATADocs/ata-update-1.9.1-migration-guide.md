@@ -4,7 +4,7 @@ description: 將 ATA 更新至 1.9.1 版的程序
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: fdaf1e8e8a96e0f96098235d818f738528a7ab0e
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: beecba26ccb15392953e9a57e3a005b7c6b17668
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79412307"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775296"
 ---
 # <a name="ata-version-191"></a>ATA 1.9.1 版
 
@@ -49,17 +49,17 @@ Microsoft Advanced Threat Analytics 1.9 版的更新可從 Microsoft Update 或�
 ### <a name="manual-download"></a>手動下載
 若要取得此更新的獨立套件，請移至 Microsoft 下載中心網站：[立即下載 ATA 1.9 套件](https://www.microsoft.com/en-us/download/details.aspx?id=56725)。
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
 若要安裝此更新，您必須已安裝 ATA 1.9 版 (1.9.7312)、ATA 1.8 版 (1.8.6765) 更新1，或 ATA 1.8 版 (1.8.6645)。
 
-### <a name="restart-requirement"></a>重新開機需求
+### <a name="restart-requirement"></a>重新啟動需求
 套用此更新後，您的電腦可能需要重新啟動。
 
 ### <a name="update-replacement-information"></a>更新取代資訊
 此更新取代 ATA 1.9 版 (1.9.7312)。
 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [ATA 版本](ata-versions.md)

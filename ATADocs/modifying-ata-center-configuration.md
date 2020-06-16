@@ -1,28 +1,28 @@
 ---
-title: 變更 Advanced Threat Analytics ATA 中心設定
+title: 變更 Advanced 威脅分析 ATA 中心 config
 description: 描述如何變更您 ATA 中心的 IP 位址、連接埠、主控台 URL 或憑證。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 498eea7cfe1393bd0b616fc5cfbb11bd18334f8f
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
-ms.translationtype: HT
+ms.openlocfilehash: 13fbdf45be1eb23ee9369a2508163a103db7d765
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414007"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775109"
 ---
 # <a name="modifying-the-ata-center-configuration"></a>修改 ATA 中心設定
 
 
 
-適用於：*Advanced Threat Analytics 1.9 版*
+*適用於：Advanced Threat Analytics 1.9 版*
 
 初始部署後，請小心修改 ATA Center。 更新主控台 URL 和憑證時，請使用下列程序。
 
@@ -42,16 +42,16 @@ ms.locfileid: "79414007"
 
 1. 確認您使用的新 URL 會解析為 ATA 主控台的 IP 位址。
 
-2. 在 ATA 設定中，於 [中心]  下輸入新的 URL。 此時 ATA 中心服務仍然使用原始 URL。 
+2. 在 ATA 設定中，於 [中心]**** 下輸入新的 URL。 此時 ATA 中心服務仍然使用原始 URL。 
 
    ![變更 ATA 組態](media/change-center-config.png)
 
    > [!NOTE]
-   > 如果輸入了自訂的 IP 位址，除非在 ATA 中心上安裝此 IP 位址，否則將無法按一下 [啟動]  。
+   > 如果輸入了自訂的 IP 位址，除非在 ATA 中心上安裝此 IP 位址，否則將無法按一下 [啟動]****。
     
-3. 等候 ATA 閘道進行同步。現在，這些閘道會有兩個可能的 URL 可存取 ATA 主控台。 只要 ATA 閘道可以使用原始 URL 來連線，就不會嘗試使用新 URL。
+3. 等候 ATA 閘道進行同步。他們現在有兩個潛在的 Url 可供存取 ATA 主控台。 只要 ATA 閘道可以使用原始 URL 來連線，就不會嘗試使用新 URL。
 
-4. 在所有 ATA 閘道皆已使用更新的設定同步後，請在 [中心設定] 頁面中按一下 [啟動]  按鈕來啟動新的 URL。 當您啟動新 URL 時，ATA 閘道就會使用新的 URL 來存取 ATA 中心。 ATA 閘道連線到 ATA 中心服務之後，將會提取最新的設定，並將僅有 ATA 主控台的新 URL。 
+4. 在所有 ATA 閘道皆已使用更新的設定同步後，請在 [中心設定] 頁面中按一下 [啟動]**** 按鈕來啟動新的 URL。 當您啟動新 URL 時，ATA 閘道就會使用新的 URL 來存取 ATA 中心。 ATA 閘道連線到 ATA 中心服務之後，將會提取最新的設定，並將僅有 ATA 主控台的新 URL。 
 
    ![啟動憑證](media/center-activation.png)
 
@@ -70,11 +70,11 @@ ms.locfileid: "79414007"
 
 1. 在目前的憑證到期之前，建立新的憑證並確認將新憑證安裝在 ATA 中心伺服器上。 <br></br>建議您從內部憑證授權單位選擇憑證，但也可以建立新的自我簽署憑證。 如需詳細資訊，請參閱 [New-SelfSignedCertificate](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate) \(英文\)。
 
-2. 在 ATA 設定中，於 [中心]  下選取新建立的憑證。 此時 ATA 中心服務仍然繫結至原始憑證。 
+2. 在 ATA 設定中，於 [中心]**** 下選取新建立的憑證。 此時 ATA 中心服務仍然繫結至原始憑證。 
 
    ![變更 ATA 組態](media/change-center-config.png)
 
-3. 等候 ATA 閘道進行同步。現在，這些閘道會有兩個可能的憑證，可進行相互驗證。 只要 ATA 閘道可以使用原始憑證來連線，就不會嘗試使用新憑證。
+3. 等候 ATA 閘道進行同步。它們現在有兩個適用于相互驗證的可能憑證。 只要 ATA 閘道可以使用原始憑證來連線，就不會嘗試使用新憑證。
 
 4. 更新的設定在所有 ATA 閘道同步之後，便可啟動 ATA 中心服務所繫結的新憑證。 啟動新憑證時，ATA 中心服務會繫結到新憑證。 ATA 閘道現在會使用新的憑證向 ATA 中心驗證。 ATA 閘道連線到 ATA 中心服務之後，將會提取最新的設定，並將僅有 ATA 中心的新憑證。 
 

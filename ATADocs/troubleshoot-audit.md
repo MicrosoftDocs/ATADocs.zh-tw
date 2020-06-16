@@ -2,9 +2,9 @@
 title: 使用 ATA 稽核記錄檔
 description: 本文說明如何使用 Windows 事件記錄檔的 ATA 稽核記錄檔。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 1d186a96-ef70-4787-aa64-c03d1db94ce0
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b1498ebf6cd11fad1eaec9d0f6c95dc4fc1f849c
-ms.sourcegitcommit: 8c0222dc8333b5aa47430c5daee9bc7f1d82df31
+ms.openlocfilehash: 4fed6cc6eddfd33606c1811e0a1e861b5bf8a108
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81524798"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774956"
 ---
 # <a name="working-with-ata-audit-logs"></a>使用 ATA 稽核記錄檔
 

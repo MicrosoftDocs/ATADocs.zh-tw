@@ -2,9 +2,9 @@
 title: 先進的威脅分析資料庫管理
 description: 這些程序可協助您移動、備份或還原 ATA 資料庫。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 05e49e23-6e0a-4ec0-9a63-a2093173c8a1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 868e946587b61fb3a571281944cca2a09225aa47
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 39dbc39f3598261df9067a420e40b4584f411890
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79411950"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84773154"
 ---
 # <a name="ata-database-management"></a>ATA 資料庫管理
 
@@ -26,10 +26,10 @@ ms.locfileid: "79411950"
 如果您要移動、備份或還原 ATA 資料庫，請使用這些程序以使用 MongoDB。
 
 ## <a name="backing-up-the-ata-database"></a>備份 ATA 資料庫
-請參閱[相關 MongoDB 文件](http://docs.mongodb.org/manual/administration/backup/)。
+請參閱[相關的 MongoDB 檔](http://docs.mongodb.org/manual/administration/backup/)。
 
 ## <a name="restoring-the-ata-database"></a>還原 ATA 資料庫
-請參閱[相關 MongoDB 文件](http://docs.mongodb.org/manual/administration/backup/)。
+請參閱[相關的 MongoDB 檔](http://docs.mongodb.org/manual/administration/backup/)。
 
 ## <a name="moving-the-ata-database-to-another-drive"></a>將 ATA 資料庫移至其他磁碟機
 
@@ -49,7 +49,7 @@ ms.locfileid: "79411950"
 
    ![修改 MongoDB 組態影像](media/ATA-mongoDB-moveDB.png)
 
-6. 啟動 **MongoDB** 服務。
+6. 啟動**MongoDB**服務。
 
 7. 啟動 **Microsoft Advanced Threat Analytics 中心**服務。
 

@@ -2,9 +2,9 @@
 title: 瞭解 Advanced 威脅分析主控台
 description: 描述如何登入 ATA 主控台和主控台的元件
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a1db61a38cf87e6c1d8989e5ee591a0741f25f4e
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 115b20058d5828ed9c7cc04f7b27cd77ee839566
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414364"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774650"
 ---
 # <a name="working-with-the-ata-console"></a>使用 ATA 主控台
 
@@ -51,7 +51,7 @@ ms.locfileid: "79414364"
 3. 若要使用 SSO 進行登入，請確定 ATA 主控台網站已在您的瀏覽器中定義為近端內部網路網站，而且您使用簡短名稱或 localhost 進行存取。
 
 > [!NOTE]
-> 除了記錄每個可疑活動和健康狀態警示，您在 ATA 主控台中所做的每項設定變更也會記錄在 ATA 中心電腦的 Windows 事件記錄檔中，該記錄檔位於 [應用程式及服務記錄檔] 的 [Microsoft ATA] 下。 此外，也會記錄 ATA 主控台的每次登入。<br></br>  影響 ATA 閘道的設定也會記錄在 ATA 閘道電腦的 Windows 事件記錄檔中。 
+> 除了記錄每個可疑活動和健康狀態警示，您在 ATA 主控台中所做的每項設定變更也會記錄在 ATA 中心電腦的 Windows 事件記錄檔中，該記錄檔位於 [應用程式及服務記錄檔]**** 的 [Microsoft ATA]**** 下。 此外，也會記錄 ATA 主控台的每次登入。<br></br>  影響 ATA 閘道的設定也會記錄在 ATA 閘道電腦的 Windows 事件記錄檔中。 
 
 
 
@@ -76,9 +76,9 @@ ATA 主控台可讓您依時間順序快速檢視所有可疑的活動。 不但
 
 ![ATA 通知列影像](media/notification-bar-1.7.png)
 
-### <a name="whats-new"></a>新功能
+### <a name="whats-new"></a>最新消息
 
-新版本的 ATA 發行後，[最新消息] 視窗會出現在右上角，讓您知道最新版本中新增了哪些功能。 它也會提供您可下載該版本的連結。
+新版本的 ATA 發行後，[最新消息]**** 視窗會出現在右上角，讓您知道最新版本中新增了哪些功能。 它也會提供您可下載該版本的連結。
 
 ### <a name="filtering-panel"></a>篩選窗格
 
@@ -110,12 +110,12 @@ ATA 將下列群組清單視為**敏感性**。 屬於這些群組的任何實�
 - Group Policy Creator Owners 
 - Read-Only Domain Controllers 
 - Administrators  
-- Power Users  
+- 進階使用者  
 - Account Operators  
 - Server Operators   
 - Print Operators
 - Backup Operators
-- Replicators 
+- 複寫者 
 - Remote Desktop Users 
 - Network Configuration Operators 
 - Incoming Forest Trust Builders 
@@ -130,11 +130,11 @@ ATA 將下列群組清單視為**敏感性**。 屬於這些群組的任何實�
 
 -   Name
 
--   圖片
+-   Picture
 
 -   電子郵件
 
--   電話
+-   Telephone
 
 -   根據嚴重性分類的可疑活動數目
 

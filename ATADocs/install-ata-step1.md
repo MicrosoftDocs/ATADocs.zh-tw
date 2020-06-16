@@ -4,7 +4,7 @@ description: 安裝 ATA 的第一步驟是下載並安裝 ATA 中心到您所選
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 03/07/2019
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f3e8073f90be456d17d887491f5a3b9899c00912
-ms.sourcegitcommit: 8c0222dc8333b5aa47430c5daee9bc7f1d82df31
+ms.openlocfilehash: bd0027b675de261c4f531f50e113c8da6ba7d9e6
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81524781"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775364"
 ---
 # <a name="install-ata---step-1"></a>安裝 ATA - 步驟 1
 
@@ -63,7 +63,7 @@ ms.locfileid: "81524781"
 
 9. 在 [Configure the Center (設定中心)]**** 頁面中，根據您的環境輸入下列資訊：
 
-   |欄位|描述|評價|
+   |欄位|描述|註解|
    |---------|---------------|------------|
    |安裝路徑|這是要安裝 ATA 中心的位置。 位置預設為 %programfiles%\Microsoft Advanced Threat Analytics\Center|保留預設值|
    |資料庫資料路徑|這是 MongoDB 資料庫檔案的所在位置。 位置預設為 %programfiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data|變更位置至有空間可隨著您的規模成長的位置。 **注意：** <ul><li>在生產環境中，您應該根據容量規劃使用具有足夠空間的磁碟機。</li><li>大規模部署的資料庫應該放在個別的實體磁碟上。</li></ul>如需大小資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。|
@@ -105,7 +105,7 @@ ms.locfileid: "81524781"
 <br>C:\Program Files\Microsoft Advanced Threat Analytics\Center\Backup
 <br>C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs
 
-**處理序**
+**處理程序**
 <br>mongod.exe
 <br>Microsoft.Tri.Center.exe
 
@@ -113,7 +113,7 @@ ms.locfileid: "81524781"
 如果您將 ATA 安裝在不同的目錄，請務必依照您安裝的位置變更資料夾路徑。 
 
 > [!div class="step-by-step"]
-> [«前置安裝](configure-port-mirroring.md)
+> [«預先安裝](configure-port-mirroring.md) 
 > [步驟2»](install-ata-step2.md)
 
 ## <a name="related-videos"></a>相關影片

@@ -4,7 +4,7 @@ description: 提供如何從 ATA 刪除私人資訊和個人資料的相關資�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 9/27/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 1b2d185c-62cd-45f0-b0dd-687b51317f32
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: da4b81d0a812a9fe8c1f86982445ce017f5e290f
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: ed811af8f046aff1249e30ac1c7c5585b07f9f88
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79412103"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774922"
 ---
 # <a name="ata-data-security-and-privacy"></a>ATA 資料安全性和隱私權
 
@@ -25,7 +25,7 @@ ms.locfileid: "79412103"
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
-## <a name="searching-for-and-identifying-personal-data"></a>搜尋與識別個人資料 
+## <a name="searching-for-and-identifying-personal-data"></a>搜尋及識別個人資料 
 
 ATA 中與實體相關的所有資料皆衍生自 Active Directory (AD)，且會從此處複寫至 ATA。 搜尋個人資料時，您應考慮優先搜尋 AD。 
 
@@ -67,7 +67,7 @@ ATA 中有關使用者和實體的個人資料會衍生自您組織 AD 的使用
 
 此指令碼會從資料庫移除所有超過 30 天的實體活動與安全性警示。 您只會保留最後 30 天的資料。
 
-## <a name="exporting-personal-data"></a>探索個人資料 
+## <a name="exporting-personal-data"></a>匯出個人資料 
 
 因為 ATA 中與實體相關的資料均衍生自 AD，所以該資料只有一部份儲存在 ATA 資料庫。 因此，您應從 AD 匯出與實體相關的資料。 
 
@@ -82,7 +82,7 @@ ATA 會收集各部署的匿名系統產生記錄，並透過 HTTPS 將此資料
 
 若要停用資料收集：
 
-1. 登入 ATA 主控台，按一下工具列中的三個點，然後選取 [關於]。 
+1. 登入 ATA 主控台，按一下工具列中的三個點，然後選取 [關於]****。 
 2. 取消選取**將使用資訊傳送給我們，以於未來協助改善客戶經驗**的核取方塊。 
 
 ## <a name="additional-resources"></a>其他資源

@@ -2,9 +2,9 @@
 title: Advanced 威脅分析更新至1.9 的遷移指南
 description: 將 ATA 更新至 1.9 版的程序
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 03/25/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 69229a4c5f34a273d5c5a8854d7f209b9462b48f
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: f803f8c99ac3cfd7c36f113658f05d486b8192c8
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79413191"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775415"
 ---
 # <a name="updating-ata-to-version-19"></a>將 ATA 更新至 1.9 版
 
@@ -51,9 +51,9 @@ ms.locfileid: "79413191"
 
 2. 執行安裝檔案 **Microsoft ATA Center Setup.exe**，並依照螢幕上的指示安裝更新。
 
-   - 在 [歡迎] 頁面中，選擇您的語言，然後按一下 [下一步]。
+   - 在 [歡迎]**** 頁面中，選擇您的語言，然後按一下 [下一步]****。
 
-   - 如果您未在 1.8 版中啟用自動更新，系統會提示您設定 ATA，以使用 Microsoft Update 讓 ATA 保持最新狀態。  在 [Microsoft Update] 頁面中，選取 **[當我檢查更新時使用 Microsoft Update (建議選項)]** 。
+   - 如果您未在 1.8 版中啟用自動更新，系統會提示您設定 ATA，以使用 Microsoft Update 讓 ATA 保持最新狀態。  在 [Microsoft Update] 頁面中，選取 [**當我檢查更新時使用 Microsoft Update （建議選項）**]。
      ![保持 ATA 最新狀態影像](media/ata_ms_update.png)
      
      這會調整 Windows 設定，以針對 ATA 啟用更新。 
@@ -62,13 +62,13 @@ ms.locfileid: "79413191"
      
      ![ATA 部分移轉](media/partial-migration.png)
 
-   - 按一下 [更新]。 按一下 [更新] 之後，ATA 會離線直到更新程序完成。
+   - 按一下 [更新]  。 按一下 [更新] 之後，ATA 會離線直到更新程序完成。
 
-3. ATA 中心更新順利完成之後，按一下 [啟動] 開啟 ATA 閘道之 ATA 主控台中的 [更新] 畫面。
+3. ATA 中心更新順利完成之後，按一下 [啟動]**** 開啟 ATA 閘道之 ATA 主控台中的 [更新]**** 畫面。
 
     ![更新成功畫面](media/migration-center-success.png)
 
-4. 在 [更新] 畫面中，如果您已經設定 ATA 閘道自動更新，它們就會現在更新。如果未設定自動更新，請按一下每個 ATA 閘道旁邊的 [更新]。
+4. 在 [更新]**** 畫面中，如果您已經設定 ATA 閘道自動更新，它們就會現在更新。如果未設定自動更新，請按一下每個 ATA 閘道旁邊的 [更新]****。
   
     ![更新閘道影像](media/migration-update-gw.png)
 

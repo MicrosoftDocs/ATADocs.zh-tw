@@ -2,9 +2,9 @@
 title: 在部署 Advanced 威脅分析時設定埠鏡像
 description: 描述連接埠鏡像選項以及如何設定它們以進行 ATA
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: cdaddca3-e26e-4137-b553-8ed3f389c460
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1070bdf8415211c72c1be05960a39d2c05c67de5
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 3969dc5bfcc4c36c6e6b664dc27bb58fc60d08e2
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79411168"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775264"
 ---
 # <a name="configure-port-mirroring"></a>設定連接埠鏡像
 
@@ -54,7 +54,7 @@ ATA 使用的主要資料來源是對進出網域控制站的網路流量的深�
 |實體|相同交換器上的實體|實體交換器必須支援 SPAN/連接埠鏡像。|
 |實體|不同交換器上的實體|實體交換器需要支援 RSPAN 或 ERSPAN &#42;。|
 
-&#42; 在 ATA 流量分析之前先解除除封裝的前提下，才支援 ERSPAN。
+& #42; 在 ATA 流量分析之前先解除除封裝的前提下，才支援 ERSPAN。
 
 > [!NOTE]
 > 請確定它們連線的網域控制站和 ATA 閘道彼此的時間已同步至相差不到五分鐘的間隔。

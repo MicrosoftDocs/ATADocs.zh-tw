@@ -2,9 +2,9 @@
 title: 先進的威脅分析資源和準備就緒藍圖
 description: 提供 ATA 資源、影片、使用者入門、部署和整備藍圖連結的清單。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 7/15/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 42a1a34f-ed6b-4538-befb-452168a30e8c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7ebf92ba3d6977dd9aad79d8e87818c5f84795b9
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: fff985790da3065693e4d22f84465ea24918bd14
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79412052"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775568"
 ---
 # <a name="ata-readiness-roadmap"></a>ATA 整備藍圖 
 
@@ -40,7 +40,7 @@ Advanced Threat Analytics (ATA) 是內部部署平台，可協助保護您的企
 
 ATA 由 ATA 中心和 ATA 閘道構成，您可將前者安裝在伺服器上，並將後者安裝於其他電腦上，也可直接在您的網域控制站上使用輕量型閘道。 在啟動並執行前，請務必先決定下列部署項目：
 
-|設定 | 決策 |
+|組態 | 決策 |
 |----|----|
 |硬體類型|實體、虛擬、Azure VM|
 |工作群組或網域|工作群組、網域|
@@ -77,7 +77,7 @@ ATA 中的基本必要設定，會一併於安裝精靈作業中進行。 但您
 
 ATA 開始運作之後，您便可以檢視在攻擊時間軸中偵測到的可疑活動。 這是您登入 ATA 主控台時會前往的預設登陸頁面。 根據預設，所有開啟的可疑活動都會顯示在攻擊時間表上。 您也可以查看指派給每個活動的嚴重性。 透過向下切入實體 (電腦、裝置、使用者) 來開啟其提供詳細資訊的設定檔頁面，以調查每項可疑活動。 以下資源有助於您處理 ATA 的可疑活動：
 
-[ATA 可疑活動劇本](https://aka.ms/ataplaybook) - 本文會運用網際網路上現成的研究工具，逐步說明認證竊取攻擊技巧。 在每個攻擊點，您都可以看到 ATA 如何協助您瞭解這些威脅。
+[ATA 可疑活動](https://aka.ms/ataplaybook)腳本-這篇文章會逐步引導您使用網際網路上可用的研究工具，進行認證竊取攻擊技巧。您可了解 ATA 如何協助您掌握每個攻擊面所帶來的威脅。
 
 [ATA 可疑活動指南](suspicious-activity-guide.md)
 
@@ -95,6 +95,6 @@ ATA 開始運作之後，您便可以檢視在攻擊時間軸中偵測到的可�
 
 ## <a name="community-resources"></a>社群資源
 
-[ATA 部落格](https://aka.ms/ATABlog)
-[ATA 社群](https://aka.ms/ATACommunity)
-[提供有關 ATA 的意見反應](https://aka.ms/ATAUserVoice)
+[ATA blog](https://aka.ms/ATABlog) 
+[ATA 的社區](https://aka.ms/ATACommunity) 
+[提供有關 ATA 的意見](https://aka.ms/ATAUserVoice)反應

@@ -2,9 +2,9 @@
 title: 變更 Advanced 威脅分析設定-網域連線密碼
 description: 描述如何變更 ATA 閘道上的網域連線密碼。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 4a25561b-a5ed-44aa-9b72-366976b3c72a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: fa89acd842632c4a23d34f73aa6fe21abbc7878f
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: fbbb692e462626c3625135a8a5fb5109fe570659
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79414092"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775092"
 ---
 # <a name="change-ata-configuration---domain-connectivity-password"></a>變更 ATA 設定 - 網域連線密碼
 
@@ -33,19 +33,19 @@ ms.locfileid: "79414092"
 
 1.  在 ATA 中心上開啟 ATA 主控台。
 
-2.  選取工具列上的 [設定] 選項並選取 [組態]。
+2.  選取工具列上的 [設定] 選項並選取 [組態]****。
 
     ![ATA 組態設定圖示](media/ATA-config-icon.png)
 
-3.  選取 [目錄服務]。
+3.  選取 [目錄服務]****。
 
     ![ATA 閘道變更密碼影像](media/ATA-GW-change-DC-password.png)
 
-4.  在 [密碼] 下，變更密碼。
+4.  在 [密碼]**** 下，變更密碼。
 
-    如果 ATA 中心有連線到網域，請使用 [測試連線] 按鈕來驗證認證
+    如果 ATA 中心有連線到網域，請使用 [測試連線]**** 按鈕來驗證認證
 
-5.  按一下 [儲存]。
+5.  按一下 [檔案] 。
 
 6.  變更密碼後，手動檢查 ATA 閘道服務是否正在 ATA 閘道伺服器上執行。
 

@@ -2,9 +2,9 @@
 title: 使用 Advanced 威脅分析主控台中的實體設定檔
 description: 說明如何從 ATA 主控台的使用者設定檔畫面調查實體
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/25/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 581a3257-32dc-453f-b84e-b9f99186f5d3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: de4916e94593dd823c7cf754874c7d5c3eed7135
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 3b2e2d5a9eee8d18b6d182afb15453a8809db605
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79412341"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775398"
 ---
 # <a name="investigating-entity-profiles"></a>調查實體設定檔
 
@@ -33,7 +33,7 @@ ms.locfileid: "79412341"
 
 ## <a name="view-entity-activities"></a>檢視實體活動
 
-若要檢視使用者所執行 (或在實體上執行) 的所有活動，請按一下 [活動] 索引標籤。 
+若要檢視使用者所執行 (或在實體上執行) 的所有活動，請按一下 [活動]  索引標籤。 
 
  ![使用者設定檔活動](media/user-profile-activities.png)
 
@@ -56,19 +56,19 @@ ms.locfileid: "79412341"
   
   ![實體功能表電腦](media/entity-computer.png)
 
-使用活動時間軸上的 [篩選依據] 按鈕，您可以依活動類型篩選活動。 您也可以篩選掉特定的 (雜訊) 活動類型。 當您想要了解實體在網路中之行為的基本概念時，這對調查相當實用。 您也可以移至特定日期，並將篩選的活動匯出到 Excel。 匯出的檔案提供目錄服務變更 (針對帳戶在 Active Directory 中變更的項目) 的頁面，以及適用於活動的個別頁面。 
+使用活動時間軸上的 [篩選依據]**** 按鈕，您可以依活動類型篩選活動。 您也可以篩選掉特定的 (雜訊) 活動類型。 當您想要了解實體在網路中之行為的基本概念時，這對調查相當實用。 您也可以移至特定日期，並將篩選的活動匯出到 Excel。 匯出的檔案提供目錄服務變更 (針對帳戶在 Active Directory 中變更的項目) 的頁面，以及適用於活動的個別頁面。 
 
 ## <a name="view-directory-data"></a>檢視目錄資料
 
-[目錄資料] 索引標籤提供可從 Active Directory 取得的靜態資訊，包含使用者存取控制安全性旗標。 ATA 也會顯示使用者的群組成員資格，如此您就可以分辨使用者是否有直接成員資格或遞迴成員資格。 針對群組，ATA 會列出群組的成員。
+[目錄資料]**** 索引標籤提供可從 Active Directory 取得的靜態資訊，包含使用者存取控制安全性旗標。 ATA 也會顯示使用者的群組成員資格，如此您就可以分辨使用者是否有直接成員資格或遞迴成員資格。 針對群組，ATA 會列出群組的成員。
 
  ![使用者設定檔目錄資料](media/user-profile-dir-data.png)
 
-在 [使用者存取控制] 區段中，ATA 會顯示可能需要您注意的安全性設定。 您可以看到有關使用者的重要旗標，例如使用者是否可以按 Enter 略過密碼、使用者是否擁有永不過期的密碼等。 
+在 [使用者存取控制]**** 區段中，ATA 會顯示可能需要您注意的安全性設定。 您可以看到有關使用者的重要旗標，例如使用者是否可以按 Enter 略過密碼、使用者是否擁有永不過期的密碼等。 
 
 ## <a name="view-lateral-movement-paths"></a>檢視橫向移動路徑
 
-透過按一下 [橫向移動路徑] 索引標籤，您可以檢視完整動態和可按式影像地圖，其中提供可用來滲透您的網路，來回於此使用者之橫向移動路徑的視覺表示法。
+藉由按一下 [**橫向移動路徑**] 索引標籤，您可以查看完整的動態和可按的地圖，為您提供與此使用者之間的橫向移動路徑的視覺標記法，以便用來滲透網路。
 
 該影像地圖所提供的清單可讓您知道攻擊者在電腦和使用者之間必須有多少來回於此使用者的躍點才能入侵機密帳戶，且如果使用者本身擁有機密帳戶，您可以查看有多少直接連線的資源和帳戶。 如需詳細資訊，請參閱[橫向移動路徑](use-case-lateral-movement-path.md)。 
 

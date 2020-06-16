@@ -2,9 +2,9 @@
 title: 監視 Advanced 威脅分析系統健全狀況和事件
 description: 使用 ATA 健康狀態中心來查看 ATA 服務的運作情況、收看潛在問題的警示，以及在事件檢視器中檢視系統事件。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/21/2018
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1951fd66dd2af52f62dd48fb9c67831adf78dbd8
-ms.sourcegitcommit: 11fff9d4ebf1c50b04f7789a22c80cdbc3e4416a
+ms.openlocfilehash: 494c06aac05bd1de11f1101bda8c8f73ffaf25bb
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79411491"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84773205"
 ---
 # <a name="working-with-ata-system-health-and-events"></a>使用 ATA 系統健康狀態和事件
 
@@ -35,7 +35,7 @@ ATA 健全狀況中心可讓您知道 ATA 服務的運作情況，並向您警�
 ### <a name="managing-ata-health"></a>管理 ATA 健全狀況
 若要檢查系統的整體健全狀況，按一下功能表列中的健全狀況中心圖示 ![ATA 健全狀況中心圖示](media/ATA-red-dot.png)
 
--   將開啟的警示設定為 [關閉]、[隱藏] 或 [刪除]，或是按一下警示角落的三個點並選擇所要的選項，便能管理所有開啟的警示。
+-   將開啟的警示設定為 [關閉]****、[隱藏]**** 或 [刪除]****，或是按一下警示角落的三個點並選擇所要的選項，便能管理所有開啟的警示。
 
 -   **開啟**：所有新的可疑活動都出現在此清單中。
 

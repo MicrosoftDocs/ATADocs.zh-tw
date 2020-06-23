@@ -4,7 +4,7 @@ description: 描述如何使用 Azure ATP 記錄檔對問題進行疑難排解
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 05/17/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: d0551e91-3b21-47d5-ad9d-3362df6d47c0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b756b62a96a4d72fc00a405c174c734aed3861fa
-ms.sourcegitcommit: 536d7595270732b99096e4044dd7b10085940ea0
+ms.openlocfilehash: 503b8ac25a8ab812ca48eba138a7eafefe3168c0
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2020
-ms.locfileid: "83443510"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84772355"
 ---
 # <a name="understanding-azure-atp-sensor-health-alerts"></a>了解 Azure ATP 感應器健康情況警示
 

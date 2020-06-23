@@ -4,7 +4,7 @@ description: 本文說明 Azure 進階威脅防護 (ATP) 的潛在橫向移動�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 09/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: de15c920-8904-4124-8bdc-03abd9f667cf
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 864af389320fb8e90f232e933de54821930ff679
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: e5c422a1315bccce93154c3abbc07caea8de6c06
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79410981"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775789"
 ---
 # <a name="azure-atp-lateral-movement-paths-lmps"></a>Azure ATP 橫向移動路徑 (LMP) 
 

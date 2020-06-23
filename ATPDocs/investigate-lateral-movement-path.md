@@ -4,7 +4,7 @@ description: 本文說明如何使用 Azure 進階威脅防護 (ATP) 偵測和�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 09/15/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 9295dc09-ecdb-44c0-906b-cba4c5c8f17c
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b3f28e223f2a477d7cb205ac836fc8692c1472d6
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 0b818f8962cc795ad826e082bf12242bfad9e158
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79413463"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84772100"
 ---
 # <a name="tutorial-use-lateral-movement-paths-lmps"></a>教學課程：使用橫向移動路徑 (LMP)
 

@@ -4,19 +4,19 @@ description: 本文概述 Azure ATP 所提供適用於美國政府 GCC High 的�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 02/18/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 319bbc01c20ae2837cc711fd32c4627650d2c59e
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 01d20b1d1f8a26375add6aa023af1669e1191167
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79411628"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84771896"
 ---
 # <a name="azure-atp-for-us-government-gcc-high"></a>適用於美國政府 GCC High 的 Azure ATP
 

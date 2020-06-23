@@ -4,7 +4,7 @@ description: 在安裝 ATP 的這個步驟中，您要設定資料來源。
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 03/19/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 56c16de6e6ff4757bc152d6814dd6b54538bb68d
-ms.sourcegitcommit: 428e0694c862f92aed50a13b137db2aa49fe4439
+ms.openlocfilehash: c9bd8bb8c4805d79abba3454510f37600c9e01a6
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82852263"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84772848"
 ---
 # <a name="configure-event-collection"></a>設定事件收集
 

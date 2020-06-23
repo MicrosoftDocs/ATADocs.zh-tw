@@ -4,7 +4,7 @@ description: 此文章提供 Azure ATP 未受監視網域控制站身分識別�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 02/17/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b82aa4af317b1eb913794f164449716180842c3c
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: b0494ca5dfbc4f5dde2c31423b3e17fdd2ef33df
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "77478814"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774123"
 ---
 # <a name="security-assessment-unmonitored-domain-controllers"></a>安全性評估：未受監視的網域控制站
 

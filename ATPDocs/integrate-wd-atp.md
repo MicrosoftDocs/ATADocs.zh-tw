@@ -4,7 +4,7 @@ description: 如何將 Azure 進階威脅防護與 Microsoft Defender ATP 整合
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 02/19/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: f6f3ed75-d6bb-4966-a9a7-5339c4f3ebac
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: df24013a5796d342ffc42b6f2c68f729a590d183
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 11b672b4820b7d79f0fbdc079370e744154facf3
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "80669581"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84771862"
 ---
 # <a name="integrate-azure-atp-with-microsoft-defender-atp"></a>將 Azure ATP 與 Microsoft Defender ATP 整合
 

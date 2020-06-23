@@ -4,7 +4,7 @@ description: 本文提供 Azure ATP 不受限制的 Kerberos 身分識別安全�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 09/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 7eea354b-7a50-40d9-bfa7-dcccaef23179
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4938c5a222e6a8c20444ca73e3e119636ed59e83
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: ecac104bd5282deb5d6ec0dd2dd2012d8319730b
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79413905"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774174"
 ---
 # <a name="security-assessment-unsecure-kerberos-delegation"></a>安全性評估：不安全的 Kerberos 委派
 

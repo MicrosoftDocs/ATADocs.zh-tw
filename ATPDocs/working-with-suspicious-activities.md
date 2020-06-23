@@ -4,7 +4,7 @@ description: 描述如何檢閱 Azure ATP 發出的安全性警訊
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 01/26/2020
 ms.topic: article
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: a06004bd-9f77-4e8e-a0e5-4727d6651a0f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 98ea2a517f5cc223086ca448c8b532dd29257d78
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 1c15d2117ca25320865bdc4cfbfae2c2c5cca4c3
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79410557"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775755"
 ---
 # <a name="working-with-security-alerts"></a>使用安全性警訊
 

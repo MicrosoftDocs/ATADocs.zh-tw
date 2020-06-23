@@ -4,7 +4,7 @@ description: 本文說明偵測到組織受攻擊時 (通常在偵察階段)，�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 03/01/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 800cb9aea336c09d3e3591062faa420546822914
-ms.sourcegitcommit: 3162130a85b5c6e8bf16456f8255b95e1f52b869
+ms.openlocfilehash: 92241805626dadc284a0cd76f21e41e9dd6be7bd
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "83825280"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775636"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>教學課程：偵察警訊
 

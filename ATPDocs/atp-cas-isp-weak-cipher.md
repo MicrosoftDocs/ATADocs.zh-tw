@@ -4,7 +4,7 @@ description: 本文提供 Azure ATP 的弱式加密身分識別安全性狀態�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 07/08/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: cc82212b-7d25-4ec7-828d-2475ff40d685
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f73edb6278d4b6ddebe13e1ed01f78d66988f392
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 4cd2784419fb4af0dfc9816aff12ffe74f9da239
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79413140"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84773766"
 ---
 # <a name="security-assessment-weak-cipher-usage"></a>安全性評估：弱式加密使用方式
 

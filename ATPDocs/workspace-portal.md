@@ -4,7 +4,7 @@ description: 描述如何登入 Azure ATP 入口網站和入口網站的元件
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 11/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 4ba46d60-3a74-480e-8f0f-9a082d62f343
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5d6bd4b4c8bcceff9d06d98f2fe8125fe1f3d769
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 215cdaf752e9479f4beff5429b317b099a5c5ab7
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "80669750"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775738"
 ---
 # <a name="working-with-the-azure-atp-portal"></a>使用 Azure ATP 入口網站
 

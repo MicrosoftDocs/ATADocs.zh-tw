@@ -4,7 +4,7 @@ description: 整合 VPN 以收集 Azure ATP 的計量資訊。
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 11/04/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 0d9d2a1d-6c76-4909-b6f9-58523df16d4f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c12678dcab848e04469f5fe494349f68814fb2c1
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: d45024642d6262f7ab204cc7d6406569faef3a4c
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79413650"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84772338"
 ---
 # <a name="integrate-vpn"></a>整合 VPN
 

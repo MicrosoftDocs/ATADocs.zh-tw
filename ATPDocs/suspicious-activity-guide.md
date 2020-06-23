@@ -4,7 +4,7 @@ d|Description: This article provides a list of the security alerts issued by Azu
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 04/23/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 667280b7a9f2b7f80d70f3e59059fdb4f0b0faf7
-ms.sourcegitcommit: 9654502ea67f51ba5f00357f8464565ce424114e
+ms.openlocfilehash: ef739a54b271bcac344f282da547dff3c6d68eb7
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82794218"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775857"
 ---
 # <a name="azure-atp-security-alerts"></a>Azure ATP 安全性警示
 

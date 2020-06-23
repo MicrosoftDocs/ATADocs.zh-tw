@@ -4,7 +4,7 @@ description: 本文提供 Azure ATP 的「純文字公開身分識別」安全�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 07/08/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 124957bb-5882-4fcf-bab2-b74b0c69571d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6993c0caf30c1ea783cf47304219f1203648e3c5
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: f01d7bc5bb8913654047e070f67d4f1e011dd35a
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79411321"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774361"
 ---
 # <a name="security-assessment-entities-exposing-credentials-in-clear-text"></a>安全性評估：實體以純文字公開認證 
 

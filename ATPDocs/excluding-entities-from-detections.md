@@ -4,7 +4,7 @@ description: 說明如何停止 Azure ATP 將特定實體活動視為可疑的�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 11/11/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: cae3ed45-8fbc-4f25-ba24-3cc407c6ea93
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: bc777fde6cdf12abb45b9608091166e3cf03ee2c
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: f2d5deb0adb35f07fe792e4254cca6ee8611b942
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "80669575"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84772627"
 ---
 # <a name="excluding-entities-from-detections"></a>從偵測中排除實體
 本文說明如何從觸發警示中排除實體。 排除某些實體可減少良性確判，同時確保您能攔截到確判。 為了避免讓 Azure ATP 在平常企業營運時，從特定使用者發出不必要的警示，您可設為靜音或排除對特定實體發出警示。 此外，預設會排除某些常用實體。 

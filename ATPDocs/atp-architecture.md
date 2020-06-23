@@ -4,7 +4,7 @@ description: 描述 Azure 進階威脅防護 (ATP) 的架構
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 09/23/2019
 ms.topic: article
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a6ae76dcee7b6a54f7721c77277387ac4f2e7fbb
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 14e789e307b04a25c5a095aa1496780135ac49e5
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "80666243"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774480"
 ---
 # <a name="azure-atp-architecture"></a>Azure ATP 架構
 

@@ -4,7 +4,7 @@ description: 說明何謂 Azure 進階威脅防護 (Azure ATP)，以及它可以
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 04/05/2020
 ms.topic: article
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2d14d0e9-1b03-4bcc-ae97-8fd41526ffc5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a421fdb784bd0e180921048951f73c94382ea733
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 41aec3f7189e659e3ad7d2d529574b90788d1e61
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "80669973"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775721"
 ---
 # <a name="what-is-azure-advanced-threat-protection"></a>什麼是 Azure 進階威脅防護？
 

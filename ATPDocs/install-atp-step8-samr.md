@@ -4,7 +4,7 @@ description: 說明如何設定 Azure ATP 對 SAM 發出遠端呼叫
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 05/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: b09adce3-0fbc-40e3-a53f-31f57fe79ca3
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ddfc7b738ddf31be12ae1357b2024df1bc468251
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 91c2155cb1b8c3f7ac67d4510df565caf59f3a6e
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79413633"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84772117"
 ---
 # <a name="configure-azure-atp-to-make-remote-calls-to-sam"></a>設定 Azure ATP 對 SAM 發出遠端呼叫
 Azure ATP [橫向移動路徑](use-case-lateral-movement-path.md)偵測有賴於識別特定電腦上本機系統管理員的查詢。 這些查詢是在 Azure ATP 安裝期間透過[步驟 2.連線到 AD](install-atp-step2.md) 中建立的 Azure ATP 服務帳戶，使用 SAM-R 通訊協定來執行。

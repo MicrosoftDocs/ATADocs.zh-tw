@@ -85,8 +85,12 @@
               href: atp-cas-isp-laps.md
             - name: 使用舊版通訊協定評估
               href: atp-cas-isp-legacy-protocols.md
+            - name: 風險最高的橫向移動路徑
+              href: atp-cas-isp-riskiest-lmp.md
             - name: 未受監視的網域控制站
               href: atp-cas-isp-unmonitored-domain-controller.md
+            - name: 不安全的帳戶屬性
+              href: atp-cas-isp-unsecure-account-attributes.md
             - name: 委派不安全的 Kerberos 評估
               href: atp-cas-isp-unconstrained-kerberos.md
             - name: 不安全的 SID 歷程記錄屬性

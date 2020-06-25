@@ -4,7 +4,7 @@ description: 了解如何將現有的 Advanced Threat Analytics 安裝移至 Azu
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 10/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e734e382-c4b1-43ca-9a8d-96c91daf2578
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4a26195a6ceba0a32e9cf2d698574ca0acc7ef15
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: eb37bf60d0de0ee09afa74e6a23c54ca40ee32c3
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79504218"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84774616"
 ---
 # <a name="advanced-threat-analytics-ata-to-azure-advanced-threat-protection-azure-atp"></a>Advanced Threat Analytics (ATA) 移至 Azure 進階威脅防護 (Azure ATP)
 
@@ -43,7 +43,7 @@ ms.locfileid: "79504218"
 
 - 至少需要含有一個全域管理員/安全性系統管理員的 Azure Active Directory 租用戶，才能建立 Azure ATP 執行個體。 每個 Azure ATP 執行個體都支援多 Active Directory 樹系邊界，以及 Windows 2003 和更新版本的樹系功能等級 (FFL)。
 
-- Azure ATP 需要 .Net Framework 4.7，如果您目前的 .Net Framework 版本不是 4.7，則可能需要網域控制站 (重新啟動)。
+- Azure ATP 需要 .Net Framework 4.7 或更新版本，若您目前的 .Net Framework 版本不是 4.7 或更新版本，則可能需要網域控制站 (重新啟動)。
 
 - 請確定您的網域控制站符合所有 [Azure ATP 感應器需求](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites#azure-atp-sensor-requirements)，且您的環境符合所有 [Azure ATP 需求](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)。
 

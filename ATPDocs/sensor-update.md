@@ -4,7 +4,7 @@ description: 描述如何更新和延遲更新 Azure ATP 感應器。
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 12/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 92c17776623beb3d03e37bb81ce12b433e5dc35e
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: ec9fa3c2190e0538cbecaa78131e5c42cdde4d7d
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "80666187"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775891"
 ---
 # <a name="update-azure-atp-sensors"></a>更新 Azure ATP 感應器
 
@@ -61,9 +61,9 @@ Azure ATP 感應器支援兩種更新：
 
 將感應器設定為延遲更新：
 
-1. 從 Azure ATP 入口網站中，按一下設定圖示，然後選取 [設定]  。
-2. 按一下 [更新]  索引標籤。
-3. 在您想要延遲之每個感應器旁的資料表資料列中，將 [Delayed update] \(延遲更新\)  滑桿設定為 [開啟]  。
+1. 從 Azure ATP 入口網站中，按一下設定圖示，然後選取 [設定]。
+2. 按一下 [更新] 索引標籤。
+3. 在您想要延遲之每個感應器旁的資料表資料列中，將 [Delayed update] \(延遲更新\) 滑桿設定為 [開啟]。
 4. 按一下 **[儲存]** 。
  
 ## <a name="sensor-update-process"></a>感應器更新程序
@@ -75,13 +75,13 @@ Azure ATP 感應器每隔幾分鐘都會檢查是否有最新版本。 將 Azure
 3. 不是設定成**延遲更新**的感應器會逐一更新：
    1. Azure ATP 感應器更新程式服務從雲端服務提取已更新的版本 (cab 檔案格式)。
    2. Azure ATP 感應器更新程式驗證檔案簽章。
-   3. Azure ATP 感應器更新程式服務將 cab 檔案解縮至感應器安裝資料夾中的新資料夾。 預設會將它解壓縮至 *C:\Program Files\Azure Advanced Threat Protection Sensor\<版本號碼>*
+   3. Azure ATP 感應器更新程式服務將 cab 檔案解縮至感應器安裝資料夾中的新資料夾。 根據預設，會將其解壓縮至 *C:\Program Files\Azure Advanced Threat Protection Sensor\<version number>*
    4. Azure ATP 感應器服務指向從 cab 檔案解壓縮的新檔案。    
    5. Azure ATP 感應器更新程式服務啟動 Azure ATP 感應器服務。
        > [!NOTE]
       >次要感應器更新不會安裝 MSI，也不會變更登錄值或任何系統檔案。 即使有擱置的重新啟動也不影響感應器更新。 
    6. 感應器會根據新的已更新版本執行。
-   7. 感應器收到 Azure 雲端服務的許可。 您可以在 [更新]  頁面中確認感應器狀態。
+   7. 感應器收到 Azure 雲端服務的許可。 您可以在 [更新] 頁面中確認感應器狀態。
    8. 下一個感應器啟動更新程序。 
 
 4. Azure ATP 雲端服務更新過後 72 小時，選取為**延遲更新**的感應器會按照自動更新之感應器的相同更新程序來更新。

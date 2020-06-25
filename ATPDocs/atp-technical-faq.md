@@ -4,20 +4,20 @@ description: 提供關於 Azure ATP 的常見問題清單以及相關解答
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
-ms.date: 03/15/2020
+manager: shsagir
+ms.date: 06/15/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 64d23884189d68e69805133c8411e1ff0e8f95e8
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 67e15453424e42ccab54b5c83272690c6d605f4b
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79414041"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775704"
 ---
 # <a name="azure-atp-frequently-asked-questions"></a>Azure ATP 常見問題集
 
@@ -76,7 +76,7 @@ Azure ATP 的其他功能：
 
 Azure ATP 是 Microsoft 365 安全性的一部分，可保護混合式組織：
 
-- Azure ATP，連同 Microsoft Cloud App Security (MCAS) 與 Azure AD Identity Protection，為使用者活動、內部部署與雲端提供統一的調查體驗，並提供增強的使用者與實體行為分析 (UEBA) 偵測。
+- Azure ATP 搭配了 Microsoft Cloud App Security 與 Azure Active Directory (Azure AD) Identity Protection，可為使用者活動 (內部部署和雲端中) 提供統一的調查體驗，並提供增強的使用者與實體行為分析 (UEBA) 偵測。
 - ATA 未與其他 Microsoft 線上安全性解決方案整合
 
 可調整規模且安全，運用雲端的強大功能：
@@ -92,11 +92,7 @@ Azure ATP 隨附於 Enterprise Mobility + Security 5 套件 (EMS E5) 中，也�
 
 ### <a name="does-azure-atp-need-only-a-single-license-or-does-it-require-a-license-for-every-user-i-want-to-protect"></a>Azure ATP 是否僅需要單一授權，還是針對我想要保護的每個使用者都需要授權？
 
-Azure ATP 針對每個使用者都需要授權。
-
-### <a name="is-this-going-to-be-a-part-of-azure-active-directory-or-on-premises-active-directory"></a>它會成為 Azure Active Directory 或內部部署 Active Directory 的一部分嗎？
-
-Azure ATP 解決方案目前是獨立的供應項目。 它不是 Azure Active Directory 或內部部署 Active Directory 的一部分。
+Azure ATP 要求 Azure AD 中的所有使用者都必須獲得授權
 
 ### <a name="is-my-data-isolated-from-other-customer-data"></a>我的資料是否會與其他客戶的資料隔離？
 
@@ -158,7 +154,7 @@ Azure 進階威脅防護支援多網域環境與多樹系。 如需詳細資訊�
 
 是，您可以檢視部署的整體健全狀況，以及與設定、連線能力等相關的特定問題，而且系統會在問題發生時透過 Azure ATP 健全狀況警示來警示您。
 
-## <a name="operation"></a>作業
+## <a name="operation"></a>操作
 
 ### <a name="what-kind-of-integration-does-azure-atp-have-with-siems"></a>Azure ATP 與 SIEM 的整合方式為何？
 
@@ -166,7 +162,7 @@ Azure 進階威脅防護支援多網域環境與多樹系。 如需詳細資訊�
 
 ### <a name="why-are-certain-accounts-considered-sensitive"></a>為何將某些帳戶視為機密？
 
-當帳戶為被指定為機密之群組的成員 (例如「網域系統管理員」) 時，便會發生這種情況。
+當帳戶為被指定為機密之群組的成員時，便會發生這種情況 (例如「網域系統管理員」)。
 
 若要了解為何是機密帳戶，您可以檢閱其群組成員資格，以了解它所屬的機密群組 (其所屬的群組也可以是因為另一個群組而機密，因此您應該執行相同的程序，直到找出最高層級的機密群組)。 您也可以手動[將帳戶標記為敏感性](sensitive-accounts.md)。
 
@@ -194,7 +190,7 @@ Azure ATP 會擷取流量和事件，進而了解並分析網路中的使用者�
 3. 針對實體資料**使用 LDAP 查詢 Active Directory**  
 Azure ATP 感應器會從實體所屬的網域查詢網域控制站。 它可以是相同的感應器，或是來自該網域的其他網域控制站。
 
-|通訊協定|服務|Port|來源| Direction|
+|通訊協定|Service|Port|來源| 方向|
 |---------|---------|---------|---------|--------|
 |LDAP|TCP 和 UDP|389|網域控制站|輸出|
 |安全的 LDAP (LDAPS)|TCP|636|網域控制站|輸出|

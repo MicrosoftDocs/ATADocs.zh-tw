@@ -4,19 +4,19 @@ description: 本文會經常更新，讓您知道最新版 Azure 進階威脅防
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
-ms.date: 04/23/2020
+manager: shsagir
+ms.date: 06/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 77a0c0bb4470894aa7998c852a63fd5bade72433
-ms.sourcegitcommit: 3162130a85b5c6e8bf16456f8255b95e1f52b869
+ms.openlocfilehash: da3b41bd39b4ebae88eff1196ebf6715f217a522
+ms.sourcegitcommit: 83a2c0bd87a024ab2cf9fb6240a5da25c916ad95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "83825315"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800367"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
 
@@ -26,9 +26,31 @@ ms.locfileid: "83825315"
 
 RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在本頁更新時收到通知：`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
 
+## <a name="azure-atp-release-2117"></a>Azure ATP 2.117 版
+
+2021 年 6 月 14 日發行
+
+- **功能增強：現已在整合 SecOps 體驗中提供其他活動的詳細資料**  
+我們已擴充傳送給 Cloud App Security 的裝置資訊，包括裝置名稱、IP 位址、帳戶 UPN 和使用的連接埠。 如需與 Cloud App Security 整合的詳細資訊，請參閱[搭配 Cloud App Security 使用 Azure ATP](atp-mcas-integration.md)。
+
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
+
+## <a name="azure-atp-release-2116"></a>Azure ATP 2.116 版
+
+2020 年 6 月 7 日發行
+
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
+
 ## <a name="azure-atp-release-2115"></a>Azure ATP 2.115 版
 
-2020 年 5 月 24 日發行
+2020 年 5 月 31 日發行
+
+- **新的安全性評估**  
+Azure ATP 安全性評估現在包含下列新的評估：
+  - **不安全的 SID History 屬性**  
+    此評估會指出可讓惡意攻擊者用來存取環境的 SID History 屬性。 如需詳細資訊，請參閱[安全性評估：不安全的 SID History 屬性](atp-cas-isp-unsecure-sid-history-attribute.md)。
+  - **Microsoft LAPS 使用情況**  
+    此評估會指出未使用 Microsoft「區域系統管理員密碼解決方案」(LAPS) 來保護其密碼的本機系統管理員帳戶。 使用 LAPS 可簡化密碼管理，並有助於防範網路攻擊。 如需詳細資訊，請參閱[安全性評估：Microsoft LAPS 使用情況](atp-cas-isp-laps.md)。
 
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 

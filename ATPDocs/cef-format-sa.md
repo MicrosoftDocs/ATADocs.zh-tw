@@ -4,20 +4,20 @@ description: 提供從 Azure ATP 傳送到您 SIEM 的可疑活動記錄檔範�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
-ms.date: 03/05/2020
+manager: shsagir
+ms.date: 06/08/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 0f24d69946fbbaa1824eb7b38ac431a3be638fa9
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 0d7d6ffbc52b1b5c1d662d3d6c14a1dcf0ab0084
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "80666217"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84772865"
 ---
 # <a name="azure-atp-siem-log-reference"></a>Azure ATP SIEM 記錄檔參考
 
@@ -29,14 +29,14 @@ Azure ATP 可以將安全性警示與健康情況警示事件轉送到您的 SIE
 
 |詳細資料|說明|
 |---------|---------------|
-|start|警示的開始時間|
+|start|警示開始的時間|
 |suser|涉及警示的帳戶 (通常是使用者帳戶)|
-|電腦帳戶|涉及警示的帳戶 (通常是使用者帳戶)|
+|shost|涉及警示的帳戶 (通常是電腦帳戶)|
 |outcome|若相關，則為警示中可疑活動的成功或失敗結果|
 |msg|警示的描述|
 |cnt|適用於具有活動發生次數的警示 (例如暴力密碼破解會有猜過密碼的次數)|
 |app |用於此警示的通訊協定|
-|externalId|Azure ATP 寫入事件記錄檔的事件類型識別碼，其對應到每一種警示類型。 將警示轉送至 Microsoft Cloud App Security 時，此欄位會填入對應的 Cloud App Security 警示識別碼。|
+|externalId|Azure ATP 寫入事件記錄檔的事件識別碼，其對應到每一種警示類型。 將警示轉送至 Microsoft Cloud App Security 時，此欄位會填入對應的 Cloud App Security 警示識別碼。|
 |cs#label|CEF 允許的客戶字串，其中 cs#label 是新欄位的名稱 |
 |cs#|CEF 允許的客戶字串，其中 cs# 是值。|
 

@@ -4,7 +4,7 @@ description: 描述在環境中成功部署 Azure ATP 的需求
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 03/15/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 94521875a58d49277e801e730a0eace02264e86a
-ms.sourcegitcommit: 3162130a85b5c6e8bf16456f8255b95e1f52b869
+ms.openlocfilehash: ad4d13efbe37abbb68e05e3a396bc3c101239ace
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "83825287"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775687"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -127,7 +127,7 @@ Azure ATP 感應器可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)�
 
 若要讓網域控制站與雲端服務通訊，您必須在防火牆和 Proxy 中針對 *.atp.azure.com 開啟連接埠 443。
 
-安裝期間會安裝 .Net Framework 4.7，並可能會要求網域控制站重新開機 (如果重新啟動已暫止)。
+若未安裝 .Net Framework 4.7 或更新版本，就會在安裝期間安裝 .Net Framework 4.7，但若重新開機已暫止，就必須重新啟動網域控制站。
 
 > [!NOTE]
 > 至少需要 5 GB 的磁碟空間，建議要有 10 GB。 這包括 Azure ATP 二進位檔、Azure ATP 記錄檔和效能記錄檔所需的空間。

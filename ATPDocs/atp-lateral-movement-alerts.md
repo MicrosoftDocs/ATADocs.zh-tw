@@ -4,7 +4,7 @@ d|Description: This article explains the Azure ATP alerts issued when attacks ty
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 04/23/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2257eb00-8614-4577-b6a1-5c65085371f2
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 412603427b1b221c97c88556d2bdbf3fe3b562b8
-ms.sourcegitcommit: 9654502ea67f51ba5f00357f8464565ce424114e
+ms.openlocfilehash: 47530916ff4329e167c8d3f17e5dc24930c7b072
+ms.sourcegitcommit: 0a2365fdbee41fe7838591aefaea2145a0426615
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82794235"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "85120135"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>教學課程：橫向移動警訊
 
@@ -83,7 +83,7 @@ ms.locfileid: "82794235"
 
 ## <a name="suspected-identity-theft-pass-the-hash-external-id-2017"></a>可疑的身分識別竊取 (雜湊傳遞) (外部識別碼 2017)
 
-先前的名稱：  使用傳遞雜湊攻擊竊取身分
+先前的名稱：使用傳遞雜湊攻擊竊取身分
 
 **描述**
 
@@ -107,7 +107,7 @@ ms.locfileid: "82794235"
 
 ## <a name="suspected-identity-theft-pass-the-ticket-external-id-2018"></a>可疑的身分識別竊取 (票證傳遞) (外部識別碼 2018)
 
-先前的名稱：  使用傳遞票證攻擊竊取身分
+先前的名稱：使用傳遞票證攻擊竊取身分
 
 **描述**
 
@@ -161,7 +161,7 @@ ms.locfileid: "82794235"
 **TP、B-TP、或 FP？**
 
 1. 包括網域控制站等相關電腦，已針對 [CVE-2019-1040](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1040) 更新為最新狀態且進行過修補嗎？
-  - 若電腦已為最新版且已進行過修補，則驗證預計會失敗。 如果驗證失敗了，安全性警訊即代表失敗的嘗試，您可予以 [關閉]  。
+  - 若電腦已為最新版且已進行過修補，則驗證預計會失敗。 如果驗證失敗了，安全性警訊即代表失敗的嘗試，您可予以 [關閉]。
 
 **了解漏洞的範圍**
 
@@ -211,7 +211,7 @@ Exchange Server 可設為使用 Exchange Server 帳戶向攻擊者所執行的�
 
 ## <a name="suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008"></a>可疑的 Overpass-the-Hash 攻擊 (加密降級) (外部識別碼 2008)
 
-先前的名稱：  加密降級活動
+先前的名稱：加密降級活動
 
 **描述**
 
@@ -252,13 +252,13 @@ Exchange Server 可設為使用 Exchange Server 帳戶向攻擊者所執行的�
 
 **防範**
 
-1. 將您的網域設定為支援強式加密，並移除「使用 Kerberos DES 加密類型」  。 深入了解 [encryption types and Kerberos](https://blogs.msdn.microsoft.com/openspecification/2011/05/30/windows-configurations-for-kerberos-supported-encryption-type/) (加密類型和 Kerberos)。
+1. 將您的網域設定為支援強式加密，並移除「使用 Kerberos DES 加密類型」。 深入了解 [encryption types and Kerberos](https://blogs.msdn.microsoft.com/openspecification/2011/05/30/windows-configurations-for-kerberos-supported-encryption-type/) (加密類型和 Kerberos)。
 2. 請務必將網域功能層級設定為支援強式加密。
 3. 請優先使用支援強式加密的應用程式。
 
 ## <a name="suspected-overpass-the-hash-attack-kerberos-external-id-2002"></a>可疑的 Overpass-the-Hash 攻擊 (Kerberos) (外部識別碼 2002)
 
-先前的名稱：  不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)
+先前的名稱：不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)
 
 **描述**
 
@@ -297,7 +297,7 @@ Exchange Server 可設為使用 Exchange Server 帳戶向攻擊者所執行的�
 
 **TP、B-TP、或 FP？**
 
-1. 相關的網域控制站已針對 CVE-2020-1040 更新為最新狀態且進行過修補嗎？
+1. 相關的網域控制站已更新到最新，並針對 CVE-2020-0796 進行修補嗎？
     - 若電腦已為最新狀態並已進行過修補，則攻擊應會失敗，請**終止**此安全性警示，標為嘗試失敗。
 
 **了解漏洞的範圍**
@@ -312,7 +312,7 @@ Exchange Server 可設為使用 Exchange Server 帳戶向攻擊者所執行的�
 1. 包含來源電腦。
 2. 尋找執行攻擊的工具，並將它移除。
 3. 尋找在可疑活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-4. 如果您電腦的作業系統不支援 [KB4551762](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4551762)，建議您在環境中停用 SMBv3 壓縮功能，如[因應措施](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0796)節中所述。
+4. 如果您電腦的作業系統不支援 [KB4551762](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4551762)，建議您在環境中停用 SMBv3 壓縮功能，如[因應措施](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0796)一節中所述。
 
 **防範**
 

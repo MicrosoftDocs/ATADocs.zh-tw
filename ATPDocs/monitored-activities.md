@@ -4,7 +4,7 @@ description: 描述 Azure 進階威脅防護監視的每一種活動類型
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 03/19/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 37d1a032-65e7-4a89-be0b-c3f9cc2bacdb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: cc0b9ed79a26c1f77cb7d0a15866bb81744dbfe9
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: ff098a0d71343479823b49039b96e73707389ef5
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79989856"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84775942"
 ---
 # <a name="azure-atp-monitored-activities"></a>受 Azure ATP 監視的活動
 
@@ -35,9 +35,9 @@ Azure 進階威脅防護會監視您組織 Active Directory 產生的資訊、�
 > - 本文與所有 Azure ATP 感應器類型皆有關。
 > - 受 Azure ATP 監視的活動會同時出現在使用者和電腦設定檔頁面上。
 
-## <a name="monitored-user-activities-user-account-ad-attribute-changes"></a>受監視使用者活動：使用者帳戶 AD 屬性變更
+## <a name="monitored-user-activities-user-account-ad-attribute-changes"></a>受監視的使用者活動：使用者帳戶 AD 屬性變更
 
-|受監視的活動|Description|
+|受監視的活動|說明|
 |---------------------|------------------|
 |帳戶限制委派狀態已變更|帳戶狀態目前為啟用或停用委派。|
 |帳戶限制委派 SPN 已變更|限制委派會限制指定伺服器可以代表使用者執行的目標服務。|
@@ -62,9 +62,9 @@ Azure 進階威脅防護會監視您組織 Active Directory 產生的資訊、�
 |SID-History Changed|Account's SID-History attribute was changed.|
 -->
 
-## <a name="monitored-user-activities-ad-security-principal-operations"></a>受監視使用者活動：AD 安全性主體作業
+## <a name="monitored-user-activities-ad-security-principal-operations"></a>受監視的使用者活動：AD 安全性主體作業
 
-|受監視的活動|Description|
+|受監視的活動|說明|
 |---------------------|------------------|
 |安全性主體已建立|帳戶已建立 (使用者及電腦)。|
 |安全性主體刪除已變更|帳戶已刪除/還原 (使用者及電腦)。|
@@ -73,9 +73,9 @@ Azure 進階威脅防護會監視您組織 Active Directory 產生的資訊、�
 |安全性主體路徑已變更|帳戶辨別名稱已從 X 變更為 Y。|
 |安全性主體 Sam 名稱已變更|SAM 名稱已變更 (SAM 是登入名稱，用來支援執行較舊版作業系統的用戶端和伺服器)。|
 
-## <a name="monitored-user-activities-domain-controller-based-user-operations"></a>受監視使用者活動：以網域控制站為基礎的使用者作業
+## <a name="monitored-user-activities-domain-controller-based-user-operations"></a>受監視的使用者活動：以網域控制站為基礎的使用者作業
 
-|受監視的活動|Description|
+|受監視的活動|說明|
 |---------------------|------------------|
 |目錄服務複寫|使用者嘗試複寫目錄服務。|
 |DNS 查詢|對網域控制站執行的查詢使用者類型 (**AXFR**、**TXT**、**MX**、**NS**、**SRV**、**ANY**、**DNSKEY**)。|
@@ -87,9 +87,9 @@ Azure 進階威脅防護會監視您組織 Active Directory 產生的資訊、�
 |工作排程|使用者嘗試在遠端對遠端電腦排程 X 工作。|
 |Wmi 執行|使用者嘗試遠端執行 WMI 方法。|
 
-## <a name="monitored-user-activities-login-operations"></a>受監視使用者活動：登入作業
+## <a name="monitored-user-activities-login-operations"></a>受監視的使用者活動：登入作業
 
-|登入類型|受監視的活動|Description|
+|登入類型|受監視的活動|說明|
 |---------------------|---------------------|------------------|
 |登入類型 2|認證驗證|使用 NTLM 和 Kerberos 驗證方法的網域帳戶驗證事件。|
 |登入類型 2|互動式登入|使用者透過輸入使用者名稱與密碼 (驗證方法 Kerberos 或 NTLM) 取得了網路存取權。|
@@ -102,9 +102,9 @@ Azure 進階威脅防護會監視您組織 Active Directory 產生的資訊、�
 |---|失敗的登入|網域帳戶的驗證嘗試失敗 (透過 NTLM 和 Kerberos)，原因如下：帳戶已停用/過期/鎖定/使用未受信任的憑證，或登入時數無效/舊密碼/密碼已過期/密碼錯誤。|
 |---|使用憑證的失敗登入|網域帳戶的驗證嘗試失敗 (透過 Kerberos)，原因如下：帳戶已停用/過期/鎖定/使用未受信任的憑證，或登入時數無效/舊密碼/密碼已過期/密碼錯誤。|
 
-## <a name="monitored-machine-activities-machine-account"></a>受監視電腦活動：電腦帳戶
+## <a name="monitored-machine-activities-machine-account"></a>受監視的虛擬機器活動：電腦帳戶
 
-|受監視的活動|Description|
+|受監視的活動|說明|
 |---------------------|------------------|
 |電腦作業系統已變更|電腦 OS 的變更。
 

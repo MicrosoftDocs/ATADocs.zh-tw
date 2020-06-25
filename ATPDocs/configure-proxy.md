@@ -4,7 +4,7 @@ description: 描述如何設定防火牆或 Proxy，以允許 Azure ATP 雲端�
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
+manager: shsagir
 ms.date: 09/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 484d3bba9ebb4c648e78413472b84100aa76d482
-ms.sourcegitcommit: 31fd8256f38cf69c51a9ba9cf8d38140b72a5ed7
+ms.openlocfilehash: 787f5c29395c6356e8b1502fb6984a3d81b7974b
+ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "82588389"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84772664"
 ---
 # <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-azure-atp-sensor"></a>設定 Azure ATP 感應器的端點 Proxy 和網際網路連線設定
 
@@ -72,9 +72,9 @@ ms.locfileid: "82588389"
 
 若要允許存取 Azure ATP，請允許下列 URL 的流量：
 
-- \<your-instance-name>.atp.azure.com – 針對主控台連線能力。 例如 "Contoso-corp.atp.azure.com"
+- \<your-instance-name>.atp.azure.com - 針對主控台連線能力。 例如 "Contoso-corp.atp.azure.com"
 
-- \<your-instance-name>sensorapi.atp.azure.com – 針對感應器連線能力。 例如 "contoso-corpsensorapi.atp.azure.com"
+- \<your-instance-name>sensorapi.atp.azure.com - 針對感應器連線能力。 例如 "contoso-corpsensorapi.atp.azure.com"
 
 上述 URL 會自動對應至 Azure ATP 執行個體的正確服務位置。 若您需要更細微的控制，可考慮允許下表相關端點的流量：
 

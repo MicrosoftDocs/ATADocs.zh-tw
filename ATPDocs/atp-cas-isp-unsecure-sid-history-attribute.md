@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4aa97b3f59ea16572608432ea51ad0984ceaac75
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: f10756f3b5fc009e2bd37fff9eff04d1c5c41585
+ms.sourcegitcommit: 073154998f5fdfbefe276888ffb034dfce368662
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84774038"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85256264"
 ---
 # <a name="security-assessment-unsecure-sid-history-attributes"></a>安全性評估：不安全的 SID History 屬性
 
@@ -33,7 +33,7 @@ SID History 是支援[移轉案例](/previous-versions/windows/it-pro/windows-se
 
 惡意執行者 (如竊賊) 通常會試圖以最輕鬆且不容易被發現的方式進入環境。 帳戶若設定了不安全的 SID History 屬性，就會讓攻擊者有機可趁，而且會暴露在風險中。
 
-例如，網域中的非機密帳戶可以在其 SID History 中，包含來自 Active Directory 樹系中另一個網域的企業系統管理員 SID，因此可將使用者帳戶的存取權「提升」至樹系中所有網域的有效網域系統管理員權限。 而且，如有未啟用 SID 篩選 (也稱為隔離) 的信任樹系，則可以從另一個樹系插入 SID，並在驗證與用於存取評估時，將該 SID 新增至使用者權杖。
+例如，網域中的非敏感性帳戶可以在其 SID History 中，包含來自 Active Directory 樹系中另一個網域的企業系統管理員 SID，藉此將使用者帳戶的存取權「提升」至樹系中所有網域的有效網域系統管理員權限。 此外，如有未啟用 SID 篩選 (也稱為隔離) 的信任樹系，則可以從另一個樹系插入 SID，這樣在接受驗證與用於評估存取權時，該 SID 就會新增到使用者權杖。
 
 ## <a name="how-do-i-use-this-security-assessment"></a>我該如何使用這項安全性評估？
 

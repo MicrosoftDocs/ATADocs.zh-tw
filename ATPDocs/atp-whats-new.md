@@ -5,18 +5,18 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/16/2020
+ms.date: 06/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: da3b41bd39b4ebae88eff1196ebf6715f217a522
-ms.sourcegitcommit: 83a2c0bd87a024ab2cf9fb6240a5da25c916ad95
+ms.openlocfilehash: 68cc9d2361724bde50ba89d0ba4873e4cb90e14b
+ms.sourcegitcommit: b4ca2f176cf378d6a6a2718043de2dbf9d657a89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800367"
+ms.lasthandoff: 07/05/2020
+ms.locfileid: "85953902"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
 
@@ -26,9 +26,31 @@ ms.locfileid: "84800367"
 
 RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在本頁更新時收到通知：`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
 
+## <a name="azure-atp-release-2119"></a>Azure ATP 2.119 版
+
+2020 年 7 月 5 日發行
+
+- **功能增強：Excel 報表中新的 [排除的網域控制站] **索引標籤  
+為了改善網域控制站涵蓋範圍計算的正確性，我們將會從計算中排除具有外部信任的網域控制站，以達到 100% 的涵蓋範圍。 排除的網域控制站會在網域涵蓋範圍 Excel 報表下載中，顯示在新的 [排除的網域控制站] 索引標籤。 如需下載報告的相關資訊，請參閱[網域控制站狀態](atp-sensor-monitoring.md#domain-controller-status)。
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
+
+## <a name="azure-atp-release-2118"></a>Azure ATP 2.118 版
+
+2020 年 6 月 28 日發行
+
+- **新的安全性評估**  
+Azure ATP 安全性評估現在包含下列新的評估：
+  - **風險最高的橫向移動路徑**  
+    此評定會持續監視您的環境，辨識橫向移動路徑風險最高而造成安全性風險的**敏感性**帳戶，並針對這些帳戶提出報告，以協助您管理環境。 若路徑有三個以上的非敏感性帳戶，可能讓惡意行動者對敏感性帳戶進行認證竊取，該路徑即視為有風險的路徑。 如需詳細資訊，請參閱[安全性評估：風險最高的橫向移動路徑 (LMP)](atp-cas-isp-riskiest-lmp.md)。
+  - **不安全的帳戶屬性**  
+    此評定 Azure ATP 會持續監視您的環境，辨識屬性值會造成安全性風險的帳戶，並針對這些帳戶提出報告，以協助您保護環境。 如需詳細資訊，請參閱[安全性評估：不安全的帳戶屬性](atp-cas-isp-unsecure-account-attributes.md)。
+
+- **更新的敏感性定義**  
+我們擴充了內部部署帳戶的敏感性定義，以納入允許使用 Active Directory 複寫的實體。
+
 ## <a name="azure-atp-release-2117"></a>Azure ATP 2.117 版
 
-2021 年 6 月 14 日發行
+2020 年 6 月 14 日發行
 
 - **功能增強：現已在整合 SecOps 體驗中提供其他活動的詳細資料**  
 我們已擴充傳送給 Cloud App Security 的裝置資訊，包括裝置名稱、IP 位址、帳戶 UPN 和使用的連接埠。 如需與 Cloud App Security 整合的詳細資訊，請參閱[搭配 Cloud App Security 使用 Azure ATP](atp-mcas-integration.md)。

@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 67e15453424e42ccab54b5c83272690c6d605f4b
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: c5f7e42f7b0817a3befaa949b24f6da7b76a3e84
+ms.sourcegitcommit: f26801a9ffd3dccb87b6388c63f24c972de37cf7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775704"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85593704"
 ---
 # <a name="azure-atp-frequently-asked-questions"></a>Azure ATP 常見問題集
 
@@ -66,23 +66,23 @@ Azure ATP 目前支援最多 10 個不同的目錄服務認證，以支援具有
 
 ### <a name="what-is-the-difference-between-advanced-threat-analytics-ata-and-azure-atp"></a>Advanced Threat Analytics (ATA) 與 Azure ATP 之間的差異為何？
 
-ATA 是安裝在內部部署的獨立解決方案。 具有雲端連線能力的 Azure ATP 包括持續的功能更新，包括新的偵測、UEBA 功能、安全性評定，以及跨 Microsoft 365 安全性解決方案的調查體驗。
+ATA 是獨立的內部部署解決方案，具有多個元件，例如需要內部部署專用硬體的 ATA 中心。
 
-Azure ATP 的其他功能：
+Azure ATP 是雲端式的安全性解決方案，會利用您的內部部署 Active Directory (Azure AD) 訊號。 這個解決方案有很高的調整能力，且經常更新。
 
-- Azure ATP 可偵測到比 ATA 更多的內部部署可疑行為和先進的攻擊，並提供**身分識別安全性評量**報告。
-- 使用其他資料來源重新設計感應器 (例如 **Windows 事件追蹤**)。
-- Azure ATP 可保護多樹系環境。
+相較於 ATA 感應器，Azure ATP 感應器也會使用資料來源 (例如 Windows 事件追蹤，ETW)，讓 Azure ATP 能夠提供額外的偵測。
 
-Azure ATP 是 Microsoft 365 安全性的一部分，可保護混合式組織：
+Azure ATP 的頻繁更新包括下列功能：
 
-- Azure ATP 搭配了 Microsoft Cloud App Security 與 Azure Active Directory (Azure AD) Identity Protection，可為使用者活動 (內部部署和雲端中) 提供統一的調查體驗，並提供增強的使用者與實體行為分析 (UEBA) 偵測。
-- ATA 未與其他 Microsoft 線上安全性解決方案整合
+- **支援[多樹系環境](atp-multi-forest.md)** ：可在多個 AD 樹系間查看組織。
 
-可調整規模且安全，運用雲端的強大功能：
+- **[身分識別安全性態勢評定](atp-isp-overview.md)** ：找出常見的錯誤設定及易受惡意探索的元件，並提供補救路徑以縮小受攻擊面。
 
-- Azure ATP 可讓客戶享有雲端解決方案的優點，而不會有任何規模調整限制和持續更新。
-- ATA 是以內部部署的中央管理伺服器為基礎，需要在內部部署環境中部署中央管理中心的專用硬體，而且每年通常會接收一或兩次版本更新。
+- **[UEBA 功能](/cloud-app-security/tutorial-ueba)** ：透過使用者調查優先順序評分，提供個別使用者風險的見解。 分數可協助 SecOps 調查，並協助分析師了解使用者和組織的異常活動。
+
+- **原生整合**：與 Microsoft Cloud App Security 及 Azure AD Identity Protection 整合，以透過混合檢視，同時了解內部部署與混合式環境的情況。
+
+- **提供給 Microsoft 威脅防護 (MTP)** ：將警示及威脅資料提供給 MTP。 MTP 利用 Microsoft 365 安全性組合 (身分識別、端點、資料及應用程式) 來自動分析跨網域威脅資料，並在單一儀表板中提供各個攻擊的完整樣貌。 有了這樣清楚的廣度與深度，防禦者就能聚焦於重大威脅，以及搜捕複雜的缺口，相信 MTP 強大的自動化能夠扼殺處於任一階段的攻擊，讓組織回復到安全狀態。
 
 ## <a name="licensing-and-privacy"></a>授權和隱私權
 

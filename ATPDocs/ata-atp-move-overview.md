@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/16/2019
+ms.date: 07/13/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: e734e382-c4b1-43ca-9a8d-96c91daf2578
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: eb37bf60d0de0ee09afa74e6a23c54ca40ee32c3
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 43cc53fc4de948b4f95c716f0f1bbcd7094a412e
+ms.sourcegitcommit: 0edb9162b28c7e672e8bd04a026dbf561ace246b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84774616"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86280984"
 ---
 # <a name="advanced-threat-analytics-ata-to-azure-advanced-threat-protection-azure-atp"></a>Advanced Threat Analytics (ATA) 移至 Azure 進階威脅防護 (Azure ATP)
 
@@ -68,8 +68,6 @@ ms.locfileid: "84774616"
 1. 您想要手動標記為敏感性實體的所有實體 (電腦、群組、使用者) 完整清單。
     - 深入了解 Azure ATP 中[敏感性實體](https://docs.microsoft.com/azure-advanced-threat-protection/sensitive-accounts) 的重要性。
 1. 報表排程[詳細資料](https://docs.microsoft.com/azure-advanced-threat-protection/reports) (報表和排程時間的清單)。
-1. 每個 ATA 輕量型閘道 (其為 Azure ATP 網域同步器候選項目) 的識別與詳細資料。
-    - 深入了解 Azure ATP 中[網域同步器候選項目](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step5#configure-sensor-settings)的重要性。
 
 > [!NOTE]
 > 在移除所有 ATA 閘道之前，請不要解除安裝 ATA 中心。 在 ATA 閘道仍在執行中時解除安裝 ATA 中心，會使您的組織暴露在沒有任何威脅防護的情況下。
@@ -104,16 +102,15 @@ ms.locfileid: "84774616"
 |--------------|------------|------------------|
 | 1  | 設定[選定網域控制站的延遲更新](https://docs.microsoft.com/azure-advanced-threat-protection/sensor-update) | - [ ] |
 | 2  | [目錄服務](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step2)帳戶詳細資料| - [ ] |
-| 3  | 設定[網域同步器候選項目](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step5#configure-sensor-settings) | - [ ] |
-| 4  | 設定 [Syslog 通知](https://docs.microsoft.com/azure-advanced-threat-protection/setting-syslog) | - [ ] |
-| 5  | [整合 VPN](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step6-vpn) 資訊| - [ ] |
-| 6  | 設定 [WDATP 整合](https://docs.microsoft.com/azure-advanced-threat-protection/integrate-wd-atp)| - [ ] |
-| 7  | 設定 [HoneyToken](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step7) 帳戶| - [ ] |
-| 8  | 標記[敏感性實體](https://docs.microsoft.com/azure-advanced-threat-protection/sensitive-accounts)| - [ ] |
-| 9  | 建立[安全性警示排除項目](https://docs.microsoft.com/azure-advanced-threat-protection/excluding-entities-from-detections)| - [ ] |
-| 10 | [電子郵件通知切換](https://docs.microsoft.com/azure-advanced-threat-protection/notifications) | - [ ] |
-| 11  | [排程報表設定](https://docs.microsoft.com/azure-advanced-threat-protection/reports) (報表和排程時間的清單)| - [ ] |
-| 12  | 設定[角色型權限](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups) | - [ ] |
+| 3  | 設定 [Syslog 通知](https://docs.microsoft.com/azure-advanced-threat-protection/setting-syslog) | - [ ] |
+| 4  | [整合 VPN](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step6-vpn) 資訊| - [ ] |
+| 5  | 設定 [WDATP 整合](https://docs.microsoft.com/azure-advanced-threat-protection/integrate-wd-atp)| - [ ] |
+| 6  | 設定 [HoneyToken](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step7) 帳戶| - [ ] |
+| 7  | 標記[敏感性實體](https://docs.microsoft.com/azure-advanced-threat-protection/sensitive-accounts)| - [ ] |
+| 8  | 建立[安全性警示排除項目](https://docs.microsoft.com/azure-advanced-threat-protection/excluding-entities-from-detections)| - [ ] |
+| 9 | [電子郵件通知切換](https://docs.microsoft.com/azure-advanced-threat-protection/notifications) | - [ ] |
+| 10  | [排程報表設定](https://docs.microsoft.com/azure-advanced-threat-protection/reports) (報表和排程時間的清單)| - [ ] |
+| 11  | 設定[角色型權限](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups) | - [ ] |
 | 12  | [SIEM 通知設定 (IP 位址)](https://docs.microsoft.com/azure-advanced-threat-protection/configure-event-collection#siemsyslog)| - [ ] |
 
 #### <a name="validation"></a>驗證

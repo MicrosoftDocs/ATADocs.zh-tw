@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/15/2020
+ms.date: 07/05/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ad4d13efbe37abbb68e05e3a396bc3c101239ace
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: d1f05e45e69bc78c4e2934cfe3c243ff77964732
+ms.sourcegitcommit: 424567ef02d97454e72241837f69fa6a928709ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775687"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86175716"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -161,16 +161,16 @@ Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的�
 
 下表列出 Azure ATP 感應器至少需要的連接埠：
 
-|通訊協定|傳輸|Port|去/從|方向|
+|通訊協定|傳輸|Port|寄件者|收件者|方向|
 |------------|-------------|--------|-----------|-------------|
-|**內部連接埠**|||||
-|SSL (*.atp.azure.com)|TCP|443|Azure ATP 雲端服務|輸出|
-|SSL (本機主機)|TCP|444|本機主機|兩者|
-|**內部連接埠**|||||
-|DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
-|Netlogon (SMB、CIFS、SAM-R)|TCP/UDP|445|網路上的所有裝置|輸出|
-|Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|輸入|
-|RADIUS|UDP|1813|RADIUS|輸入|
+|**內部連接埠**||||||
+|SSL (*.atp.azure.com)|TCP|443|Azure ATP 感應器|Azure ATP 雲端服務|輸出|
+|SSL (本機主機)|TCP|444|Azure ATP 感應器|本機主機|兩者|
+|**內部連接埠**||||||
+|DNS|TCP 和 UDP|53|Azure ATP 感應器|DNS 伺服器|輸出|
+|Netlogon (SMB、CIFS、SAM-R)|TCP/UDP|445|Azure ATP 感應器|網路上的所有裝置|輸出|
+|Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|Azure ATP 感應器|輸入|
+|RADIUS|UDP|1813|RADIUS|Azure ATP 感應器|輸入|
 
 ### <a name="windows-event-logs"></a>Windows 事件記錄檔
 
@@ -242,21 +242,21 @@ Azure ATP 獨立感應器需要至少一個管理介面卡和至少一個擷取�
 
 下表列出 Azure ATP 獨立感應器在管理介面卡上至少需要設定的連接埠：
 
-|通訊協定|傳輸|Port|去/從|方向|
+|通訊協定|傳輸|Port|寄件者|收件者|方向|
 |------------|-------------|--------|-----------|-------------|
 |**內部連接埠**|||||
-|SSL (*.atp.azure.com)|TCP|443|Azure ATP 雲端服務|輸出|
+|SSL (*.atp.azure.com)|TCP|443|Azure ATP 感應器|Azure ATP 雲端服務|輸出|
 |**內部連接埠**|||||
-|LDAP|TCP 和 UDP|389|網域控制站|輸出|
-|安全的 LDAP (LDAPS)|TCP|636|網域控制站|輸出|
-|LDAP 至通用類別|TCP|3268|網域控制站|輸出|
-|LDAPS 至通用類別|TCP|3269|網域控制站|輸出|
-|Kerberos|TCP 和 UDP|88|網域控制站|輸出|
-|Netlogon (SMB、CIFS、SAM-R)|TCP 和 UDP|445|網路上的所有裝置|輸出|
-|Windows Time|UDP|123|網域控制站|輸出|
-|DNS|TCP 和 UDP|53|DNS 伺服器|輸出|
-|Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|輸入|
-|RADIUS|UDP|1813|RADIUS|輸入|
+|LDAP|TCP 和 UDP|389|Azure ATP 感應器|網域控制站|輸出|
+|安全的 LDAP (LDAPS)|TCP|636|Azure ATP 感應器|網域控制站|輸出|
+|LDAP 至通用類別|TCP|3268|Azure ATP 感應器|網域控制站|輸出|
+|LDAPS 至通用類別|TCP|3269|Azure ATP 感應器|網域控制站|輸出|
+|Kerberos|TCP 和 UDP|88|Azure ATP 感應器|網域控制站|輸出|
+|Netlogon (SMB、CIFS、SAM-R)|TCP 和 UDP|445|Azure ATP 感應器|網路上的所有裝置|輸出|
+|Windows Time|UDP|123|Azure ATP 感應器|網域控制站|輸出|
+|DNS|TCP 和 UDP|53|Azure ATP 感應器|DNS 伺服器|輸出|
+|Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|Azure ATP 感應器|輸入|
+|RADIUS|UDP|1813|RADIUS|Azure ATP 感應器|輸入|
 
 > [!NOTE]
 >

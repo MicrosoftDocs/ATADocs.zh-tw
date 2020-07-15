@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/04/2018
+ms.date: 07/05/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 0d9d2a1d-6c76-4909-b6f9-58523df16d4f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d45024642d6262f7ab204cc7d6406569faef3a4c
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 9ad0662a0b468bbe67bb8b699b57358c0c512348
+ms.sourcegitcommit: 424567ef02d97454e72241837f69fa6a928709ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84772338"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86175728"
 ---
 # <a name="integrate-vpn"></a>整合 VPN
 
@@ -25,58 +25,55 @@ Azure 進階威脅防護 (ATP) 可以從 VPN 解決方案收集計量資訊。 �
 
 Azure ATP 會透過接聽轉寄到 Azure ATP 感應器的 RADIUS 計量事件來與您的 VPN 解決方案整合。 這項機制依據標準 RADIUS 計量 ([RFC 2866](https://tools.ietf.org/html/rfc2866)) 運作，並且支援下列 VPN 廠商：
 
--   Microsoft
--   F5
--   Check Point
--   Cisco ASA
+- Microsoft
+- F5
+- Check Point
+- Cisco ASA
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 若要啟用 VPN 整合，請確定已設定了下列參數：
 
--   開啟 Azure ATP 感應器和/或 Azure ATP 獨立感應器上的連接埠 UDP 1813。
+- 開啟 Azure ATP 感應器和/或 Azure ATP 獨立感應器上的連接埠 UDP 1813。
 
+> [!NOTE]
+> 若啟用 **Radius 計量**，Azure ATP 感應器就會啟用名為 **Azure 進階威脅防護感應器**的預先佈建 Windows 防火牆原則，以在連接埠 UDP 1813 上允許傳入的 RADIUS 計量。
 
 下列範例會使用 Microsoft 路由及遠端存取伺服器 (RRAS) 來描述 VPN 設定程序。
 
-如果您是使用協力廠商 VPN 解決方案，請參考其文件以取得如何啟用 RADIUS 計量的相關指示。
+如果您使用協力廠商 VPN 解決方案，請參考其文件以了解如何啟用 RADIUS 計量的相關指示。
 
 ## <a name="configure-radius-accounting-on-the-vpn-system"></a>在 VPN 系統上設定 RADIUS 計量
 
 請在 RRAS 伺服器上執行下列步驟。
- 
-1.  開啟路由及遠端存取主控台。
-2.  在伺服器名稱上按一下滑鼠右鍵，然後按一下 [屬性]  。
-3.  在 [安全性]  索引標籤的 [計量提供者]  下，選取 [RADIUS 計量]  ，然後按一下 [設定]  。
+
+1. 開啟路由及遠端存取主控台。
+1. 在伺服器名稱上按一下滑鼠右鍵，然後按一下 [屬性]。
+1. 在 [安全性] 索引標籤的 [計量提供者] 下，選取 [RADIUS 計量]，然後按一下 [設定]。
 
     ![RADIUS 設定](./media/radius-setup.png)
 
-4.  在 [新增 RADIUS 伺服器]  視窗中，輸入最接近之 Azure ATP 感應器 (具有網路連線能力) 的**伺服器名稱**。 如需高可用性，您可以新增額外的 Azure ATP 感應器作為 RADIUS 伺服器。 在 [連接埠]  下，確定已設為預設的 1813。 按一下 [變更]  ，並鍵入新的共用祕密英數字元字串。 記下新的共用祕密字串，因為您必須在稍後的 Azure ATP 設定期間填寫它。 選取 [傳送 RADIUS 計量開啟及計量關閉訊息]  方塊，然後在所有已開啟的對話方塊上按一下 [確定]  。
- 
-     ![VPN 設定](./media/vpn-set-accounting.png)
-     
+1. 在 [新增 RADIUS 伺服器] 視窗中，輸入最接近之 Azure ATP 感應器 (具有網路連線能力) 的**伺服器名稱**。 如需高可用性，您可以新增額外的 Azure ATP 感應器作為 RADIUS 伺服器。 在 [連接埠] 下，確定已設為預設的 1813。 按一下 [變更]，並鍵入新的共用祕密英數字元字串。 記下新的共用祕密字串，因為您必須在稍後的 Azure ATP 設定期間填寫它。 選取 [傳送 RADIUS 計量開啟及計量關閉訊息] 方塊，然後在所有已開啟的對話方塊上按一下 [確定]。
+
+    ![VPN 設定](./media/vpn-set-accounting.png)
+
 ### <a name="configure-vpn-in-atp"></a>在 ATP 中設定 VPN
 
 Azure ATP 會收集 VPN 資料，這些資料有助於分析電腦連線到網路的來源位置，因此能夠偵測可疑的 VPN 連線。
 
 在 ATP 中設定 VPN 資料：
 
-1.  在 Azure ATP 入口網站中，按一下設定齒輪，然後按一下 [VPN]  。
- 
+1. 在 Azure ATP 入口網站中，按一下設定齒輪，然後按一下 [VPN]。
+1. 開啟 [Radius 帳戶處理]，然後輸入先前在 RRAS VPN 伺服器上設定的 [共用祕密]。 然後按一下 [儲存]。
 
-2.  開啟 [Radius 帳戶處理]  ，然後輸入先前在 RRAS VPN 伺服器上設定的 [共用祕密]  。 然後按一下 [儲存]  。
- 
+    ![設定 Azure ATP VPN](./media/atp-vpn-radius.png)
 
-  ![設定 Azure ATP VPN](./media/atp-vpn-radius.png)
-
-
-啟用此選項之後，所有 Azure ATP 感應器都會接聽連接埠 1813 上的 RADIUS 計量事件，您的 VPN 設定即已完成。 
+啟用此選項之後，所有 Azure ATP 感應器都會接聽連接埠 1813 上的 RADIUS 計量事件，您的 VPN 設定即已完成。
 
  Azure ATP 感應器接收 VPN 事件並將它們傳送至 Azure ATP 雲端服務進行處理之後，實體設定檔會指出不同的 VPN 存取的位置，且設定檔中的活動將指出的位置。
 
-
-
 ## <a name="see-also"></a>另請參閱
+
 - [Azure ATP 調整大小工具](https://aka.ms/aatpsizingtool) \(英文\)
 - [設定事件收集](configure-event-collection.md)
 - [Azure ATP 必要條件](atp-prerequisites.md)

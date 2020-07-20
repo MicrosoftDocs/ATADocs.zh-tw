@@ -12,14 +12,14 @@ ms.technology: ''
 ms.assetid: 42a1a34f-ed6b-4538-befb-452168a30e8c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: fff985790da3065693e4d22f84465ea24918bd14
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 864a5f0a9c521aad24673ef3e22ffe7bbc62436f
+ms.sourcegitcommit: bfb5f35f8e2f19911357e5afa6624ffe43e37d12
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775568"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86472382"
 ---
-# <a name="ata-readiness-roadmap"></a>ATA 整備藍圖 
+# <a name="ata-readiness-roadmap"></a>ATA 整備藍圖
 
 *適用於：Advanced Threat Analytics 1.9 版*
 
@@ -27,20 +27,19 @@ ms.locfileid: "84775568"
 
 ## <a name="understanding-ata"></a>了解 ATA
 
-Advanced Threat Analytics (ATA) 是內部部署平台，可協助保護您的企業免於受到多種進階鎖定目標類型的網路攻擊和內部威脅。 您可以利用下列資源深入了解 ATA：
+先進的威脅分析（ATA）是一種內部部署平臺，可協助保護您的企業免于多種類型的先進目標網路攻擊和內部威脅。 您可以利用下列資源深入了解 ATA：
 
 - [ATA 概觀](what-is-ata.md)
 
 - [ATA 簡介影片 - 簡短版](https://aka.ms/ATAShort)
 
-- [ATA 簡介影片 - 完整版](https://aka.ms/ATAVideo) 
-
+- [ATA 簡介影片 - 完整版](https://aka.ms/ATAVideo)
 
 ## <a name="deployment-decisions"></a>部署決定
 
 ATA 由 ATA 中心和 ATA 閘道構成，您可將前者安裝在伺服器上，並將後者安裝於其他電腦上，也可直接在您的網域控制站上使用輕量型閘道。 在啟動並執行前，請務必先決定下列部署項目：
 
-|組態 | 決策 |
+|設定 | 決策 |
 |----|----|
 |硬體類型|實體、虛擬、Azure VM|
 |工作群組或網域|工作群組、網域|
@@ -49,17 +48,15 @@ ATA 由 ATA 中心和 ATA 閘道構成，您可將前者安裝在伺服器上，
 
 如果目前使用實體伺服器，則應規劃容量。 為 ATA 配置空間時，可從調整大小工具取得協助：
 
-[ATA 調整大小工具](ata-capacity-planning.md) - 調整大小的工具會自動收集 ATA 所需的流量多寡。 其會自動為 ATA 中心和 ATA 輕量型閘道提供支援能力以及資源建議。
-
+[Ata 調整大小工具](ata-capacity-planning.md)-調整大小工具會自動收集 ATA 所需的流量。 其會自動為 ATA 中心和 ATA 輕量型閘道提供支援能力以及資源建議。
 
 [ATA 容量規劃](ata-capacity-planning.md)
-
 
 ## <a name="deploy-ata"></a>部署 ATA
 
 這些資源可協助您下載並安裝 ATA 中心；連線至 Active Directory；下載 ATA 閘道套件；設定事件收集，也可選擇性地與您的 VPN 整合，及設定 honeytoken 帳戶和排除項目。
 
-[下載 ATA](https://aka.ms/ataeval) - 在部署 ATA 前，若尚未決定是否要購買 ATA，可下載評估版。 
+[下載 ATA](https://aka.ms/ataeval) - 在部署 ATA 前，若尚未決定是否要購買 ATA，可下載評估版。
 
 [ATA POC 實戰手冊](https://aka.ms/atapoc) - 成功進行 ATA POC 部署的指南，內含所需的所有步驟。
 
@@ -77,11 +74,9 @@ ATA 中的基本必要設定，會一併於安裝精靈作業中進行。 但您
 
 ATA 開始運作之後，您便可以檢視在攻擊時間軸中偵測到的可疑活動。 這是您登入 ATA 主控台時會前往的預設登陸頁面。 根據預設，所有開啟的可疑活動都會顯示在攻擊時間表上。 您也可以查看指派給每個活動的嚴重性。 透過向下切入實體 (電腦、裝置、使用者) 來開啟其提供詳細資訊的設定檔頁面，以調查每項可疑活動。 以下資源有助於您處理 ATA 的可疑活動：
 
-[ATA 可疑活動](https://aka.ms/ataplaybook)腳本-這篇文章會逐步引導您使用網際網路上可用的研究工具，進行認證竊取攻擊技巧。您可了解 ATA 如何協助您掌握每個攻擊面所帶來的威脅。
+[ATA 可疑活動](https://aka.ms/ataplaybook)腳本-這篇文章會逐步引導您使用網際網路上可用的研究工具，進行認證竊取攻擊技巧。 您可了解 ATA 如何協助您掌握每個攻擊面所帶來的威脅。
 
 [ATA 可疑活動指南](suspicious-activity-guide.md)
-
-
 
 ## <a name="security-best-practices"></a>安全性最佳做法
 
@@ -96,5 +91,4 @@ ATA 開始運作之後，您便可以檢視在攻擊時間軸中偵測到的可�
 ## <a name="community-resources"></a>社群資源
 
 [ATA blog](https://aka.ms/ATABlog) 
-[ATA 的社區](https://aka.ms/ATACommunity) 
-[提供有關 ATA 的意見](https://aka.ms/ATAUserVoice)反應
+[ATA 的社區](https://aka.ms/ATACommunity)

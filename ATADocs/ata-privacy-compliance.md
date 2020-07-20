@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 1b2d185c-62cd-45f0-b0dd-687b51317f32
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: ed811af8f046aff1249e30ac1c7c5585b07f9f88
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 907fb2c6f7e24bfc0f69ae29534303f7b02d9708
+ms.sourcegitcommit: bfb5f35f8e2f19911357e5afa6624ffe43e37d12
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84774922"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86472411"
 ---
 # <a name="ata-data-security-and-privacy"></a>ATA 資料安全性和隱私權
 
@@ -37,7 +37,7 @@ ATA 中有關使用者和實體的個人資料會衍生自您組織 AD 的使用
 
 ## <a name="deleting-personal-data"></a>刪除個人資料 
 
-雖然 ATA 中的資料會複寫且一律從 AD 更新，但在實體於 AD 內刪除時，會保留實體留在 ATA 中的資料以供安全性調查之用。 
+雖然 ATA 中的資料會進行複寫，且一律會從 AD 更新，但在 AD 中刪除實體時，會針對安全性調查的目的，保留在 ATA 中的實體資料。 
 
 若要永久從 ATA 資料庫刪除使用者相關資料，請遵循此程序： 
 
@@ -67,7 +67,7 @@ ATA 中有關使用者和實體的個人資料會衍生自您組織 AD 的使用
 
 此指令碼會從資料庫移除所有超過 30 天的實體活動與安全性警示。 您只會保留最後 30 天的資料。
 
-## <a name="exporting-personal-data"></a>匯出個人資料 
+## <a name="exporting-personal-data"></a>探索個人資料 
 
 因為 ATA 中與實體相關的資料均衍生自 AD，所以該資料只有一部份儲存在 ATA 資料庫。 因此，您應從 AD 匯出與實體相關的資料。 
 
@@ -87,4 +87,4 @@ ATA 會收集各部署的匿名系統產生記錄，並透過 HTTPS 將此資料
 
 ## <a name="additional-resources"></a>其他資源
 
-- 如需 ATA 信任與合規性的相關資訊，請參閱[服務信任入口網站](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)與 [Microsoft 365 Enterprise GDPR 合規性網站](https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview)。
+- 如需 ATA 信任與合規性的相關資訊，請參閱[服務信任入口網站](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)與 [Microsoft 365 Enterprise GDPR 合規性網站](https://docs.microsoft.com/microsoft-365/compliance/gdpr)。

@@ -6,19 +6,6 @@
       tocHref: /enterprise-mobility-security/
       topicHref: /enterprise-mobility-security
       items:
-        - name: 進階威脅分析
+        - name: Advanced Threat Analytics
           tocHref: /advanced-threat-analytics/
           topicHref: /advanced-threat-analytics
-          items:
-            - name: 了解並探索
-              tocHref: /advanced-threat-analytics/understand-explore/
-              topicHref: /advanced-threat-analytics/understand/ata-understand-and-explore
-            - name: 計劃和設計
-              tocHref: /advanced-threat-analytics/plan-design/
-              topicHref: /advanced-threat-analytics/plandesign/ata-plan-and-design
-            - name: 部署與使用
-              tocHref: /advanced-threat-analytics/deploy-use/
-              topicHref: /advanced-threat-analytics/deployuse/configure-port-mirroring
-            - name: 疑難排解
-              tocHref: /advanced-threat-analytics/troubleshoot/
-              topicHref: /advanced-threat-analytics/troubleshoot/ata-troubleshooting

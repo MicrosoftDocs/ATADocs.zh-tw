@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 7aef6beb7c763ac4e4393288a4c4f7b1dc35ac31
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: cda124f5178717181105dff33fc1344da9141661
+ms.sourcegitcommit: dadf9e656fd362f037f15c7a4b52685b5b3bd154
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84774939"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86865385"
 ---
 # <a name="troubleshooting-ata-known-issues"></a>針對 ATA 已知問題進行疑難排解
 
@@ -32,17 +32,17 @@ ms.locfileid: "84774939"
 > |錯誤|說明|解決方案|
 > |-------------|----------|---------|
 > |System.DirectoryServices.Protocols.LdapException：發生本機錯誤|ATA 閘道無法對網域控制站進行驗證。|1. 確認已在 DNS 伺服器中正確設定網域控制站的 DNS 記錄。 <br>2. 確認 ATA 閘道的時間與網域控制站的時間同步。|
-> |System.IdentityModel.Tokens.SecurityTokenValidationException︰無法驗證憑證鏈結|ATA 閘道無法驗證 ATA 中心的憑證。|1. 確認根 CA 憑證已安裝在 ATA 閘道上的「受信任的憑證授權單位單位」憑證存放區中。 <br>2. 驗證憑證撤銷清單（CRL）是否可用，以及是否可以執行憑證撤銷驗證。|
+> |System.IdentityModel.Tokens.SecurityTokenValidationException︰無法驗證憑證鏈結|ATA 閘道無法驗證 ATA 中心的憑證。|1. 確認根 CA 憑證已安裝在 ATA 閘道上的「受信任的憑證授權單位單位」憑證存放區中。<br>2. 驗證憑證撤銷清單（CRL）是否可用，以及是否可以執行憑證撤銷驗證。|
 > |Microsoft.Common.ExtendedException︰無法剖析產生的時間|ATA 閘道無法剖析從 SIEM 轉寄的 syslog 訊息。|驗證已將 SIEM 設定為以 ATA 支援的其中一個格式來轉寄訊息。|
 > |System.ServiceModel.FaultException：確認訊息安全性時發生錯誤|ATA 閘道無法對 ATA 中心進行驗證。|驗證 ATA 閘道的時間與 ATA 中心的時間同步。|
 > |System.ServiceModel.EndpointNotFoundException：無法連線到 net.tcp://center.ip.addr:443/IEntityReceiver|ATA 閘道無法建立與 ATA 中心的連線。|確定網路設定正確，而且 ATA 閘道 ATA 中心之間的網路連線使用中。|
-> |System.DirectoryServices.Protocols.LdapException：LDAP 伺服器無法使用。|ATA 閘道無法使用 LDAP 通訊協定查詢網域控制站。|1. 確認 ATA 用來連線到 Active Directory 網域的使用者帳戶具有 Active Directory 樹狀目錄中所有物件的讀取權限。 <br>2. 請確定網域控制站未強化，以防止 ATA 所使用的使用者帳戶進行 LDAP 查詢。|
+> |System.DirectoryServices.Protocols.LdapException：LDAP 伺服器無法使用。|ATA 閘道無法使用 LDAP 通訊協定查詢網域控制站。|1. 確認 ATA 用來連線到 Active Directory 網域的使用者帳戶具有 Active Directory 樹狀目錄中所有物件的讀取權限。<br>2. 請確定網域控制站未強化，以防止 ATA 所使用的使用者帳戶進行 LDAP 查詢。|
 > |Microsoft.Tri.Infrastructure.ContractException：合約例外狀況|ATA 閘道無法同步處理 ATA 中心的設定。|請在 ATA 主控台中完成 ATA 閘道的設定。|
 > |System.Reflection.ReflectionTypeLoadException: 無法載入一或多個要求的類型。 如需詳細資訊，請擷取 LoaderExceptions 屬性。|郵件分析器已安裝於 ATA 閘道。| 請將郵件分析器解除安裝。|
 > |Error [配置] System.OutOfMemoryException: 擲回 'System.OutOfMemoryException' 類型的例外狀況。|ATA 閘道的記憶體不足。|請增加網域控制站上的記憶體數量。|
 > |無法啟動即時消費者 ---> Microsoft.Opn.Runtime.Monitoring.MessageSessionException: PEFNDIS 事件提供者尚未就緒|未正確安裝 PEF (郵件分析器)。|若是使用 HYPER-V，請嘗試升級 Hyper-V 整合服務，否則請連絡支援人員詢問其因應措施。|
 > |安裝失敗，錯誤為：0x80070652|電腦上有其他擱置的安裝。|請等候其他安裝完成，如有必要，請重新啟動電腦。|
-> |System.InvalidOperationException︰指定的分類中不存在執行個體 'Microsoft.Tri.Gateway'。|ATA 閘道中的程序名稱已啟用 PID|使用 [KB281884](https://support.microsoft.com/kb/281884) 停用程序名稱中的 PID|
+> |System.InvalidOperationException︰指定的分類中不存在執行個體 'Microsoft.Tri.Gateway'。|ATA 閘道中的程序名稱已啟用 PID|請參閱[處理重複的實例名稱](/windows/win32/perfctrs/handling-duplicate-instance-names)以停用進程名稱中的 pid|
 > ' InvalidOperationException：分類不存在。|登錄中的計數器可能已停用|使用 [KB2554336](https://support.microsoft.com/kb/2554336) 重建效能計數器|
 > |System.ApplicationException︰無法啟動 ETW 工作階段 MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329|HOSTS 檔案中有一個主機項目指向電腦的簡短名稱|從 C:\Windows\System32\drivers\etc\HOSTS 檔案移除主機項目，或將它變更為 FQDN。|
 > |IOException：驗證失敗，因為遠端方已關閉傳輸資料流程或無法建立 SSL/TLS 安全通道|ATA 閘道上已停用 TLS 1.0，但是 .Net 設定為使用 TLS 1.2|將登錄機碼設定為使用 SSL 和 TLS 的作業系統預設值，以啟用適用于 .Net 的 TLS 1.2，如下所示：<br></br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|

@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 01d20b1d1f8a26375add6aa023af1669e1191167
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 84d995e82cb6b3a5f0536e9587a19613d62a576e
+ms.sourcegitcommit: bfb5f35f8e2f19911357e5afa6624ffe43e37d12
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84771896"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86472466"
 ---
 # <a name="azure-atp-for-us-government-gcc-high"></a>適用於美國政府 GCC High 的 Azure ATP
 
@@ -28,5 +28,5 @@ Azure ATP GCC High 供應項目以 Microsoft Azure Government 雲端為建置基
 
 ## <a name="next-steps"></a>後續步驟
 
-- [深入了解美國政府 GCC High](/enterprise-mobility-security/solutions/ems-security-govt-description)
+- [深入了解美國政府 GCC High](/enterprise-mobility-security/solutions/ems-azure-atp-govt-service-description)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

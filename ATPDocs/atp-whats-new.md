@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 68cc9d2361724bde50ba89d0ba4873e4cb90e14b
-ms.sourcegitcommit: b4ca2f176cf378d6a6a2718043de2dbf9d657a89
+ms.openlocfilehash: 6afb2ef0502077d45c53da988067ea9b9b98da94
+ms.sourcegitcommit: bfb5f35f8e2f19911357e5afa6624ffe43e37d12
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2020
-ms.locfileid: "85953902"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86472445"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
 
@@ -342,7 +342,7 @@ Azure ATP 現在支援已驗證的 Proxy。 請使用感應器命令列指定 Pr
 發行日期：2019 年 7 月 1 日
 
 - **新增位置支援：Azure 英國資料中心**  
-Azure 英國資料中心現在支援 Azure ATP 執行個體。 若要了解如何建立 Azure ATP 執行個體和其對應的資料中心位置，請參閱 [Azure ATP 安裝的步驟 1](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step10)。
+Azure 英國資料中心現在支援 Azure ATP 執行個體。 若要了解如何建立 Azure ATP 執行個體和其對應的資料中心位置，請參閱 [Azure ATP 安裝的步驟 1](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1)。
 
 - **功能增強：敏感性群組的可疑新增項目警示 (外部識別碼 2024) 新名稱和功能**  
 **敏感性群組的可疑新增項目**警示先前命名為**敏感性群的可疑修改**警示。 警示 (識別碼 2024) 的外部識別碼保持不變。 描述性名稱變更可更精確地反映針對**敏感性**群組新增項目發出警示的目的。 增強型警示也強調新辨識項和改善的描述。 如需詳細資訊，請參閱[敏感性群組的可疑新增項目](https://docs.microsoft.com/azure-advanced-threat-protection/atp-domain-dominance-alerts#suspicious-additions-to-sensitive-groups-external-id-2024)。  

@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 4ba46d60-3a74-480e-8f0f-9a082d62f343
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 215cdaf752e9479f4beff5429b317b099a5c5ab7
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 7648b9047f519c4e9712e608be9f0705be1aaa2a
+ms.sourcegitcommit: bfb5f35f8e2f19911357e5afa6624ffe43e37d12
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775738"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86472496"
 ---
 # <a name="working-with-the-azure-atp-portal"></a>使用 Azure ATP 入口網站
 
@@ -26,26 +26,25 @@ ms.locfileid: "84775738"
 
 使用 Azure ATP 入口網站來監視及回應由 ATP 偵測到的可疑活動。
 
-鍵入 `?` 鍵可提供 Azure ATP 入口網站協助工具的鍵盤快速鍵。 
+鍵入 `?` 鍵可提供 Azure ATP 入口網站協助工具的鍵盤快速鍵。
 
 Azure ATP 入口網站可讓您依時間順序快速檢視所有可疑的活動。 不但讓您能夠深入了解任何活動，還能根據這些活動執行動作。 Azure ATP 入口網站也會顯示警訊和通知，以醒目提示 Azure ATP 所發現的問題，或是被系統視為可疑的新活動。
 
 本文描述如何使用 Azure ATP 入口網站的關鍵項目。
 
-
 ## <a name="enabling-access-to-the-azure-atp-portal"></a>啟用 Azure ATP 入口網站的存取
-若要成功登入 Azure ATP 入口網站，您必須使用已指派給 Azure Active Directory 安全性群組並具備 Azure ATP 入口網站存取權的使用者來登入。 如需 Azure ATP 中有關角色型存取控制 (RBAC) 的詳細資訊，請參閱[使用 Azure ATP 角色群組](atp-role-groups.md)。
+
+若要成功登入 Azure ATP 入口網站，您必須使用已指派給 Azure Active Directory 安全性群組並具備 Azure ATP 入口網站存取權的使用者來登入。
+如需 Azure ATP 中有關角色型存取控制 (RBAC) 的詳細資訊，請參閱[使用 Azure ATP 角色群組](atp-role-groups.md)。
 
 ## <a name="logging-into-the-azure-atp-portal"></a>登入 Azure ATP 入口網站
 
-1. 您可透過登入入口網站 ([https://portal.atp.azure.com](https://portal.atp.azure.com)) 並選取您的執行個體，或是瀏覽至執行個體 URL ([https://執行個體名稱  .atp.azure.com](https://*instancename*.atp.azure.com))，來進入 Azure ATP 入口網站。
-
+1. 進入 Azure ATP 入口網站的方法包括登入入口網站 [https://portal.atp.azure.com](https://portal.atp.azure.com) 並選取執行個體，或瀏覽到執行個體 URL：`https://*instancename*.atp.azure.com` 。
 
 2. Azure ATP 支援與 Windows 驗證整合的單一登入；如果您已登入電腦，Azure ATP 會使用該權杖將您登入 Azure ATP 入口網站。 您也可以使用智慧卡進行登入。 您在 Azure ATP 中的權限會與您的[系統管理員角色](atp-role-groups.md)對應。
 
    > [!NOTE]
-   > 請務必使用您的 Azure ATP 系統管理員使用者名稱和密碼，登入您要從中存取 Azure ATP 入口網站的電腦。 或者，您可以使用不同的使用者身分執行瀏覽器，或登出 Windows 並使用 Azure ATP 系統管理員使用者身分登入。 [Cloud App Security 入口網站](https://portal.cloudappsecurity.com)與 Azure ATP 入口網站不同，能夠提供多使用者登入，不需要額外授權就能搭配 Azure ATP 使用。  
-
+   > 請務必使用您的 Azure ATP 系統管理員使用者名稱和密碼，登入您要從中存取 Azure ATP 入口網站的電腦。 或者，您可以使用不同的使用者身分執行瀏覽器，或登出 Windows 並使用 Azure ATP 系統管理員使用者身分登入。 [Cloud App Security 入口網站](https://portal.cloudappsecurity.com)與 Azure ATP 入口網站不同，能夠提供多使用者登入，不需要額外授權就能搭配 Azure ATP 使用。
 
 ### <a name="attack-time-line"></a>攻擊時間表
 
@@ -55,9 +54,9 @@ Azure ATP 入口網站可讓您依時間順序快速檢視所有可疑的活動�
 
 如需詳細資訊，請參閱[使用安全性警訊](working-with-suspicious-activities.md)。
 
-### <a name="whats-new"></a>新功能
+### <a name="whats-new"></a>新增功能
 
-Azure ATP 的新版本發行之後，[最新消息]  視窗會出現在右上角，讓您知道最新版本中新增了哪些功能。 它也會提供您可下載該版本的連結。
+Azure ATP 的新版本發行之後，[最新消息] 視窗會出現在右上角，讓您知道最新版本中新增了哪些功能。 它也會提供您可下載該版本的連結。
 
 ### <a name="filtering-panel"></a>篩選窗格
 
@@ -65,7 +64,7 @@ Azure ATP 的新版本發行之後，[最新消息]  視窗會出現在右上角
 
 ### <a name="search-bar"></a>搜尋列 <a name="search-bar"></a>
 
-您可以在上層功能表找到搜尋列。 您可以搜尋 Azure ATP 中的特定使用者、電腦或群組。 若要試試看，請開始輸入。 在搜尋列底部，會顯示找到的搜尋結果數目。 
+您可以在上層功能表找到搜尋列。 您可以搜尋 Azure ATP 中的特定使用者、電腦或群組。 若要試試看，請開始輸入。 在搜尋列底部，會顯示找到的搜尋結果數目。
 
 ![Azure ATP 入口網站搜尋影像](media/atp-workspace-portal-search.png)
 
@@ -79,7 +78,7 @@ Azure ATP 的新版本發行之後，[最新消息]  視窗會出現在右上角
 
 ![Azure ATP 健康情況中心影像](media/atp-health-issue.png)
 
-每當系統發生問題時 (例如連線錯誤或與 Azure ATP 獨立感應器的連線中斷)，健康情況中心圖示就會顯示一個紅點來告知您。 
+每當系統發生問題時 (例如連線錯誤或與 Azure ATP 獨立感應器的連線中斷)，健康情況中心圖示就會顯示一個紅點來告知您。
 
 ![Azure ATP 健康情況中心紅點影像](media/atp-health-bar.png)
 
@@ -93,7 +92,7 @@ Azure ATP 的新版本發行之後，[最新消息]  視窗會出現在右上角
 
 ![Azure ATP 小型設定檔影像](media/atp-mini-profile.png)
 
-- 名稱
+- Name
 - 標題
 - 部門
 - AD 標記
@@ -108,7 +107,6 @@ Azure ATP 的新版本發行之後，[最新消息]  視窗會出現在右上角
 - SA 徽章：如果有與此實體相關聯的可疑活動，就會顯示此徽章。
 - WD ATP 徽章：如果在 Microsoft Defender ATP 中有與此實體相關聯的可疑活動，就會顯示此徽章。
 - 橫向移動路徑徽章：如果在過去兩天內於此實體內偵測到橫向移動路徑，就會顯示此徽章。
-
 
 ## <a name="see-also"></a>另請參閱
 

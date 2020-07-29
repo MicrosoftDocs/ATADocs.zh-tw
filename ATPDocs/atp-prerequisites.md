@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 07/05/2020
+ms.date: 07/27/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d1f05e45e69bc78c4e2934cfe3c243ff77964732
-ms.sourcegitcommit: 424567ef02d97454e72241837f69fa6a928709ba
+ms.openlocfilehash: a44abd85bf8aeb49b6ff1d1f2c34532a63de6c3c
+ms.sourcegitcommit: b2b40be9ac76237c3d6b2beb06eabd92e0b399c8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86175716"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87293186"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -127,7 +127,7 @@ Azure ATP 感應器可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)�
 
 若要讓網域控制站與雲端服務通訊，您必須在防火牆和 Proxy 中針對 *.atp.azure.com 開啟連接埠 443。
 
-若未安裝 .Net Framework 4.7 或更新版本，就會在安裝期間安裝 .Net Framework 4.7，但若重新開機已暫止，就必須重新啟動網域控制站。
+在安裝期間，若未安裝 .Net Framework 4.7 或更新版本，則會安裝 .Net Framework 4.7，而且可能需要將網域控制站重新開機。如果有擱置中的重新啟動，可能也需要重新開機。
 
 > [!NOTE]
 > 至少需要 5 GB 的磁碟空間，建議要有 10 GB。 這包括 Azure ATP 二進位檔、Azure ATP 記錄檔和效能記錄檔所需的空間。
@@ -165,12 +165,16 @@ Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的�
 |------------|-------------|--------|-----------|-------------|
 |**內部連接埠**||||||
 |SSL (*.atp.azure.com)|TCP|443|Azure ATP 感應器|Azure ATP 雲端服務|輸出|
-|SSL (本機主機)|TCP|444|Azure ATP 感應器|本機主機|兩者|
+|SSL (localhost)|TCP|444|Azure ATP 感應器|本機主機|兩者|
 |**內部連接埠**||||||
 |DNS|TCP 和 UDP|53|Azure ATP 感應器|DNS 伺服器|輸出|
 |Netlogon (SMB、CIFS、SAM-R)|TCP/UDP|445|Azure ATP 感應器|網路上的所有裝置|輸出|
 |Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|Azure ATP 感應器|輸入|
 |RADIUS|UDP|1813|RADIUS|Azure ATP 感應器|輸入|
+|**NNR 連接埠**||||||
+|透過 RPC 的 NTLM|TCP|連接埠 135|ATP 感應器|網路上的所有裝置|輸入|
+|NetBIOS|UDP|137|ATP 感應器|網路上的所有裝置|輸入|
+|RDP|TCP|3389，只有 Client hello 的第一個封包|ATP 感應器|網路上的所有裝置|輸入|
 
 ### <a name="windows-event-logs"></a>Windows 事件記錄檔
 
@@ -257,6 +261,10 @@ Azure ATP 獨立感應器需要至少一個管理介面卡和至少一個擷取�
 |DNS|TCP 和 UDP|53|Azure ATP 感應器|DNS 伺服器|輸出|
 |Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|Azure ATP 感應器|輸入|
 |RADIUS|UDP|1813|RADIUS|Azure ATP 感應器|輸入|
+|**NNR 連接埠**||||||
+|透過 RPC 的 NTLM|TCP|135|ATP 感應器|網路上的所有裝置|輸入|
+|NetBIOS|UDP|137|ATP 感應器|網路上的所有裝置|輸入|
+|RDP|TCP|3389，只有 Client hello 的第一個封包|ATP 感應器|網路上的所有裝置|輸入|
 
 > [!NOTE]
 >

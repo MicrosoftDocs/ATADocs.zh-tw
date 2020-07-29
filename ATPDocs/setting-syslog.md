@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: a2d29c9c-7ecb-4804-b74b-fde899b28648
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5a7d5fbaf2313b6876c2fbdcc6bde84aaa89cbd5
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 2d2c6e47cdc385a42a441290d432aa01f91e0939
+ms.sourcegitcommit: 7136b50eaffc9a0e0e7eb9e2db6d5396ef4e996f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775874"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86929290"
 ---
 # <a name="integrate-with-syslog"></a>與 Syslog 整合
 
@@ -50,7 +50,7 @@ Azure ATP 可以在偵測到可疑活動時，透過指定的感應器將安全�
 1. 輸入 [服務端點] URL。
 1. 選取 [傳輸] 通訊協定 (TCP 或 UDP)。
 1. 選取格式 (RFC 3164 或 RFC 5424)。
-1. 選取 [傳送文字 Syslog 訊息]，然後確認您的 Syslog 基礎結構解決方案中有收到訊息。
+1. 選取 [傳送測試 Syslog 訊息]，然後確認您的 Syslog 基礎結構解決方案中已收到訊息。
 1. 按一下 **[儲存]** 。
 
 檢查或修改 Syslog 設定。

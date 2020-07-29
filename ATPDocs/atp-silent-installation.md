@@ -5,21 +5,22 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/26/2019
+ms.date: 07/27/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 24eca4c6-c949-42ea-97b9-41ef0fb611f1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 307c1c5e078eba9180956bca5e64b6034c1b1075
-ms.sourcegitcommit: 71181a243e60d29a2345620735f9c91ab2b5d689
+ms.openlocfilehash: ca080afa9e557648fab9a20ac7f040faae4aabd6
+ms.sourcegitcommit: b2b40be9ac76237c3d6b2beb06eabd92e0b399c8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/21/2020
-ms.locfileid: "85123473"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87293163"
 ---
 # <a name="azure-atp-switches-and-silent-installation"></a>Azure ATP 切換參數與無訊息安裝
+
 此文章提供 Azure ATP 切換參數與無訊息安裝的指導方針與指示。
 
 ## <a name="prerequisites"></a>先決條件
@@ -28,14 +29,12 @@ Azure ATP 必須安裝 Microsoft .NET Framework 4.7 或更新版本。
 
 當您安裝 Azure ATP 時，若尚未安裝 .Net Framework 4.7 或更新版本，就會在部署 Azure ATP 時自動安裝 .Net Framework 4.7。
 
-> [!IMPORTANT]
-> 確定您已安裝最新版的 .Net Framework。 如已安裝舊版的 .Net，您的 Azure ATP 無訊息安裝會卡在迴圈中，無法安裝。
-
 > [!NOTE]
 > .Net Framework 4.7 的安裝可能需要重新啟動伺服器。 在網域控制站上安裝 Azure ATP 感應器時，請考慮為網域控制站排程維護視窗。
+
 使用 Azure ATP 無訊息安裝時，安裝程式是設定為在安裝結束時自動重新啟動伺服器 (如有必要)。 請務必只在維護時段執行無訊息安裝。 因為 Windows Installer 的某個錯誤 (Bug)，*norestart* 旗標無法可靠地用來確定伺服器不會重新啟動。
 
-若要追蹤您的部署進度，請監視位於 **%AppData%\Local\Temp** 中的 Azure ATP 安裝程式記錄檔。
+若要追蹤您的部署進度，請監視位於 `%AppData%\Local\Temp` 中的 Azure ATP 安裝程式記錄檔。
 
 ## <a name="azure-atp-sensor-silent-installation"></a>Azure ATP 感應器無訊息安裝
 
@@ -46,18 +45,21 @@ Azure ATP 必須安裝 Microsoft .NET Framework 4.7 或更新版本。
 
 **cmd.exe syntax**：
 
-    "Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
+```dos
+"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
+```
 
 **Powershell 語法**：
 
-    ./"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
+```dos
+"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
+```
 
 > [!NOTE]
 > 使用 Powershell 語法時，省略 **./** 前置詞會導致發生防止無訊息安裝的錯誤。
 
 > [!NOTE]
 > 從 Azure ATP 入口網站的 [設定] 區段、[感應器] 頁面，複製存取金鑰。
-
 
 **安裝選項**：
 
@@ -78,16 +80,19 @@ Azure ATP 必須安裝 Microsoft .NET Framework 4.7 或更新版本。
 > |InstallationPath|InstallationPath=""|否|設定 AATP 感應器二進位檔案的安裝路徑。 預設路徑：%programfiles%\Azure Advanced Threat Protection sensor
 > |AccessKey|AccessKey="\*\*"|是|設定用來向 Azure ATP 執行個體註冊 Azure ATP 感應器的存取金鑰。|
 
-**範例**：使用下列命令以無訊息模式安裝 Azure ATP 感應器：
+**範例**：
 
-    "Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="mmAOkLYCzfH8L/zUIsH24BIJBevlAWu7wUcSfIkRJufpuEojaDHYdjrNs0P3zpD+/bObKfLS0puD7biT5KDf3g=="
+使用下列命令以無訊息模式安裝 Azure ATP 感應器：
+
+```dos
+"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="mmAOkLYCzfH8L/zUIsH24BIJBevlAWu7wUcSfIkRJufpuEojaDHYdjrNs0P3zpD+/bObKfLS0puD7biT5KDf3g=="
+```
 
 ## <a name="proxy-authentication"></a>Proxy 驗證
 
 請使用下列命令來完成 Proxy 驗證：
 
 **語法**：
-
 
 > [!div class="mx-tableFixed"]
 >
@@ -103,8 +108,9 @@ Azure ATP 必須安裝 Microsoft .NET Framework 4.7 或更新版本。
 
 **語法**：
 
-    Azure ATP sensor Setup.exe [/quiet] [/Help] [NetFrameworkCommandLineArguments="/q"]
-
+```dos
+"Azure ATP sensor Setup.exe" [/quiet] [/Help] [NetFrameworkCommandLineArguments="/q"]
+```
 
 **安裝選項**：
 
@@ -116,16 +122,23 @@ Azure ATP 必須安裝 Microsoft .NET Framework 4.7 或更新版本。
 > |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 > |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|是|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
 
+**範例**：
 
-**範例**：以無訊息模式更新 Azure ATP 感應器：
+以無訊息模式更新 Azure ATP 感應器：
 
-    Azure ATP sensor Setup.exe /quiet NetFrameworkCommandLineArguments="/q"
+```dos
+"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q"
+```
 
 ## <a name="uninstall-the-azure-atp-sensor-silently"></a>以無訊息模式將 Azure ATP 感應器解除安裝
 
-使用下列命令執行 Azure ATP 感應器的無訊息解除安裝：**語法**：
+使用下列命令執行 Azure ATP 感應器的無訊息解除安裝：
 
-    Azure ATP sensor Setup.exe [/quiet] [/Uninstall] [/Help]
+**語法**：
+
+```dos
+"Azure ATP sensor Setup.exe" [/quiet] [/Uninstall] [/Help]
+```
 
 **安裝選項**：
 
@@ -137,13 +150,13 @@ Azure ATP 必須安裝 Microsoft .NET Framework 4.7 或更新版本。
 > |解除安裝|/uninstall|是|從伺服器中執行 Azure ATP 感應器的無訊息解除安裝。|
 > |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 
-**範例**：以無訊息模式將 Azure ATP 感應器從伺服器解除安裝：
+**範例**：
 
+以無訊息模式將 Azure ATP 感應器從伺服器解除安裝：
 
-    Azure ATP sensor Setup.exe /quiet /uninstall
-
-
-
+```dos
+"Azure ATP sensor Setup.exe" /quiet /uninstall
+```
 
 ## <a name="see-also"></a>另請參閱
 

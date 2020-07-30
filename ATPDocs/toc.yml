@@ -91,7 +91,7 @@
               href: atp-cas-isp-unmonitored-domain-controller.md
             - name: 不安全的帳戶屬性
               href: atp-cas-isp-unsecure-account-attributes.md
-            - name: 委派不安全的 Kerberos 評估
+            - name: 不安全的 Kerberos 委派評量
               href: atp-cas-isp-unconstrained-kerberos.md
             - name: 不安全的 SID 歷程記錄屬性
               href: atp-cas-isp-unsecure-sid-history-attribute.md

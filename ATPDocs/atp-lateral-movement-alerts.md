@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2257eb00-8614-4577-b6a1-5c65085371f2
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 47530916ff4329e167c8d3f17e5dc24930c7b072
-ms.sourcegitcommit: 0a2365fdbee41fe7838591aefaea2145a0426615
+ms.openlocfilehash: 4ef5d8985d42cd53f803eb97d8ebc0eba69a39af
+ms.sourcegitcommit: 42f1da0c498bd145daff4df20b3e53069b55ecd5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2020
-ms.locfileid: "85120135"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87856371"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>教學課程：橫向移動警訊
 
@@ -35,14 +35,15 @@ ms.locfileid: "85120135"
 
 > [!div class="checklist"]
 >
-> * 透過 DNS 執行遠端程式碼 (外部識別碼 2036)
-> * 可疑的身分識別竊取 (雜湊傳遞) (外部識別碼 2017)
-> * 可疑的身分識別竊取 (票證傳遞) (外部識別碼 2018)
-> * 可疑的 NTLM 驗證竄改 (外部識別碼 2039)
-> * 可疑的 NTLM 轉送攻擊 (Exchange 帳戶) (外部識別碼 2037)
-> * 可疑的 Overpass-the-Hash 攻擊 (加密降級) (外部識別碼 2008)
-> * 可疑的 Overpass-the-Hash 攻擊 (Kerberos) (外部識別碼 2002)
-> * 可疑的 SMB 封包操作 (CVE-2020-0796 惡意探索)-(預覽) (外部識別碼 2406)
+> - 透過 DNS 執行遠端程式碼 (外部識別碼 2036)
+> - 可疑的身分識別竊取 (雜湊傳遞) (外部識別碼 2017)
+> - 可疑的身分識別竊取 (票證傳遞) (外部識別碼 2018)
+> - 可疑的 NTLM 驗證竄改 (外部識別碼 2039)
+> - 可疑的 NTLM 轉送攻擊 (Exchange 帳戶) (外部識別碼 2037)
+> - 可疑的 Overpass-the-Hash 攻擊 (Kerberos) (外部識別碼 2002)
+> - 可疑的 SMB 封包操作 (CVE-2020-0796 惡意探索)-(預覽) (外部識別碼 2406)
+
+<!-- * Suspected overpass-the-hash attack (encryption downgrade) (external ID 2008)-->
 
 ## <a name="remote-code-execution-over-dns-external-id-2036"></a>透過 DNS 執行遠端程式碼 (外部識別碼 2036)
 
@@ -179,7 +180,7 @@ ms.locfileid: "85120135"
 
 **防範**
 
-• 確定環境中的所有裝置都處於最新狀態，並已針對 [CVE-2019-1040](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1040) 進行修補。
+* 確定環境中的所有裝置都處於最新狀態，並已針對 [CVE-2019-1040](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1040) 進行修補。
 
 ## <a name="suspected-ntlm-relay-attack-exchange-account-external-id-2037"></a>可疑的 NTLM 轉送攻擊 (Exchange 帳戶) (外部識別碼 2037)
 
@@ -208,54 +209,54 @@ Exchange Server 可設為使用 Exchange Server 帳戶向攻擊者所執行的�
     1. 尋找執行攻擊的工具，並將它移除。
     2. 因為使用者可能也遭入侵，所以請搜尋在活動發生期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 2. 在網域中強制使用密封 NTLMv2，並使用**網路安全性：LAN Manager 驗證層級**群組原則。 如需詳細資訊，請參閱 [LAN Manager 驗證層級指示](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-security-lan-manager-authentication-level)，以設定網域控制站的群組原則。
+<!--
+## Suspected overpass-the-hash attack (encryption downgrade) (external ID 2008)
 
-## <a name="suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008"></a>可疑的 Overpass-the-Hash 攻擊 (加密降級) (外部識別碼 2008)
+*Previous name:* Encryption downgrade activity
 
-先前的名稱：加密降級活動
+**Description**
 
-**描述**
+Encryption downgrade is a method of weakening Kerberos using encryption downgrade of different fields of the protocol, normally encrypted using the highest levels of encryption. A weakened encrypted field can be an easier target to offline brute force attempts. Various attack methods utilize weak Kerberos encryption cyphers. In this detection, Azure ATP learns the Kerberos encryption types used by computers and users, and alerts you when a weaker cypher is used that is unusual for the source computer, and/or user, and matches known attack techniques.
 
-加密降級是一種減弱 Kerberos 的方法，它會針對通訊協定一般以最高加密層級加密的不同欄位，將其加密降級。 攻擊者將能較為輕鬆地對減弱的加密欄位進行離線暴力密碼破解。 利用弱式 Kerberos 加密 Cypher 的各種攻擊方法。 在此偵測中，Azure ATP 會了解電腦和使用者使用的 Kerberos 加密類型，並在使用較弱的加密且符合以下條件時向您發出警訊：對來源電腦及 (或) 使用者而言不尋常，而且符合已知的攻擊手法。
+In an over-pass-the-hash attack, an attacker can use a weak stolen hash to create a strong ticket, with a Kerberos AS request. In this detection,  instances are detected where the AS_REQ message encryption type from the source computer is downgraded, when compared to the previously learned behavior (the computer used AES).
 
-在 Overpass-the-Hash 攻擊中，攻擊者可以透過 Kerberos AS 要求，使用遭竊的弱式雜湊建立強式票證。 在此偵測中，已偵測到執行個體。而相較於先前學到的行為 (亦即電腦使用 AES) ，來自來源電腦的 AS_REQ 訊息加密類型已降級。
+**TP, B-TP, or FP?**
 
-**TP、B-TP、或 FP？**
+1. Determine if the smartcard configuration recently changed.
+    - Did the accounts involved recently have smartcard configurations changes?
 
-1. 判斷智慧卡設定最近是否變更過。
-    - 有關帳戶的智慧卡設定最近是否變更過？
+      If the answer is yes, **Close** the security alert as a **T-BP** activity.
 
-      如果答案為是，則為 **T-BP** 活動，並請**關閉**安全性警訊。
+Some legitimate resources don't support strong encryption ciphers and may trigger this alert.
 
-某些合法資源不支援強式加密，並可能觸發此警示。
+2. Do all source users share something?
+    1. For example, are all of your marketing personnel accessing a specific resource that could cause the alert to be triggered?
+    2. Check the resources accessed by those tickets.
+       - Check this in Active Directory by checking the attribute *msDS-SupportedEncryptionTypes*, of the resource service account.
+    3. If there is only one accessed resource, check if it is a valid resource for these users to access.
 
-2. 所有來源使用者都共用某些項目嗎？
-    1. 比方說，您所有的行銷人員是否都能存取可能會觸發警訊的特定資源？
-    2. 檢查透過那些票證所存取的資源。
-       - 透過檢查資源服務帳戶的 *msDS-SupportedEncryptionTypes* 屬性，以在 Active Directory 中檢查這點。
-    3. 若只存取了一項資源，請檢查其是否為這些使用者可存取的有效資源。
+      If the answer to one of the previous questions is **yes**, it is likely to be a **T-BP** activity. Check if the resource can support a strong encryption cipher, implement a stronger encryption cipher where possible, and **Close** the security alert.
 
-      若上述任一問題的答案為**是**，則很可能是 **T-BP** 活動。 檢查該資源是否可支援強式加密，並盡量實作強式加密，然後**關閉**安全性警訊。
+**Understand the scope of the breach**
 
-**了解漏洞的範圍**
+1. Investigate the [source computer](investigate-a-computer.md).
+2. Investigate the [compromised user](investigate-a-computer.md).
 
-1. 調查[來源電腦](investigate-a-computer.md)。
-2. 調查[遭入侵的使用者](investigate-a-computer.md)。
+**Suggested remediation and steps for prevention**
 
-**建議的補救和預防步驟**
+**Remediation**
 
-**補救**
+1. Reset the password of the source user and enable MFA or, if you have configured the relevant high-risk user policies in Azure Active Directory Identity Protection, you can use the [**Confirm user compromised**](/cloud-app-security/accounts#governance-actions) action in the Cloud App Security portal.
+2. Contain the source computer.
+3. Find the tool that performed the attack and remove it.
+4. Look for users logged on around the time of the activity, as they may also be compromised. Reset their passwords and enable MFA or, if you have configured the relevant high-risk user policies in Azure Active Directory Identity Protection, you can use the [**Confirm user compromised**](/cloud-app-security/accounts#governance-actions) action in the Cloud App Security portal.
 
-1. 重設來源使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-2. 包含來源電腦。
-3. 尋找執行攻擊的工具，並將它移除。
-4. 尋找在活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+**Prevention**
 
-**防範**
-
-1. 將您的網域設定為支援強式加密，並移除「使用 Kerberos DES 加密類型」。 深入了解 [encryption types and Kerberos](https://blogs.msdn.microsoft.com/openspecification/2011/05/30/windows-configurations-for-kerberos-supported-encryption-type/) (加密類型和 Kerberos)。
-2. 請務必將網域功能層級設定為支援強式加密。
-3. 請優先使用支援強式加密的應用程式。
-
+1. Configure your domain to support strong encryption cyphers, and remove *Use Kerberos DES encryption types*. Learn more about [encryption types and Kerberos](https://blogs.msdn.microsoft.com/openspecification/2011/05/30/windows-configurations-for-kerberos-supported-encryption-type/).
+2. Make sure the domain functional level is set to support strong encryption cyphers.
+3. Give preference to using applications that support strong encryption cyphers.
+-->
 ## <a name="suspected-overpass-the-hash-attack-kerberos-external-id-2002"></a>可疑的 Overpass-the-Hash 攻擊 (Kerberos) (外部識別碼 2002)
 
 先前的名稱：不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)

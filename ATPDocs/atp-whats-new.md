@@ -5,18 +5,18 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/28/2020
+ms.date: 07/26/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 6afb2ef0502077d45c53da988067ea9b9b98da94
-ms.sourcegitcommit: bfb5f35f8e2f19911357e5afa6624ffe43e37d12
+ms.openlocfilehash: d70da8a6ae853c2b4f72ffb47286b22e163f336d
+ms.sourcegitcommit: 9f1a94cdd3abfa9e4921d9534e9b4add5e692592
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86472445"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87800223"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
 
@@ -26,11 +26,23 @@ ms.locfileid: "86472445"
 
 RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在本頁更新時收到通知：`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
 
+## <a name="azure-atp-release-2121"></a>Azure ATP 2.121 版
+
+發行日期：2020 年 8 月 2 日
+
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
+
+## <a name="azure-atp-release-2120"></a>Azure ATP 2.120 版
+
+2020 年 7 月26 日發行
+
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
+
 ## <a name="azure-atp-release-2119"></a>Azure ATP 2.119 版
 
 2020 年 7 月 5 日發行
 
-- **功能增強：Excel 報表中新的 [排除的網域控制站] **索引標籤  
+- **功能增強：Excel 報表中新的 [排除的網域控制站]** 索引標籤  
 為了改善網域控制站涵蓋範圍計算的正確性，我們將會從計算中排除具有外部信任的網域控制站，以達到 100% 的涵蓋範圍。 排除的網域控制站會在網域涵蓋範圍 Excel 報表下載中，顯示在新的 [排除的網域控制站] 索引標籤。 如需下載報告的相關資訊，請參閱[網域控制站狀態](atp-sensor-monitoring.md#domain-controller-status)。
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 

@@ -12,23 +12,23 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c9bd8bb8c4805d79abba3454510f37600c9e01a6
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 8c95335f50988eba7d3d18e9d0550e33647c9389
+ms.sourcegitcommit: 8c99699b9b84d50fb258c0cc5523ffa78133b7a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84772848"
+ms.lasthandoff: 08/09/2020
+ms.locfileid: "88027171"
 ---
 # <a name="configure-event-collection"></a>設定事件收集
 
-為增強偵測功能，Azure ATP 需要下列 Windows 事件：4726、4728、4729、4730、4732、4733、4743、4753、4756、4757、4758、4763、4776、7045 與 8004。 Azure ATP 感應器可以自動讀取這些事件。如果沒有部署 Azure ATP 感應器，則有兩種方法可以將它轉寄到 Azure ATP 獨立感應器：一種是將 Azure ATP 獨立感應器設定為接聽 SIEM 事件，另一種是[設定 Windows 事件轉送](configure-event-forwarding.md)。
+為增強偵測功能，Azure ATP 需要列於[設定事件集合](configure-windows-event-collection.md#configure-event-collection)的 Windows 事件。 Azure ATP 感應器可以自動讀取這些事件。如果沒有部署 Azure ATP 感應器，則有兩種方法可以將它轉寄到 Azure ATP 獨立感應器：一種是將 Azure ATP 獨立感應器設定為接聽 SIEM 事件，另一種是[設定 Windows 事件轉送](configure-event-forwarding.md)。
 
 > [!NOTE]
 >
 > - Azure ATP 獨立感應器不會收集 Windows 事件追蹤 (ETW) 的記錄項目，無法提供多種偵測的資料。 若要完整涵蓋您的環境，建議您部署 Azure ATP 感應器。
 > - 在設定事件收集之前，請務必執行 Azure ATP 稽核指令碼，以確保網域控制站已正確設定為可記錄必要的事件。
 
-除了收集和分析進出網域控制站的網路流量之外，Azure ATP 可以使用 Windows 事件來進一步加強偵測。 Azure ATP 會針對 NTLM 使用能增強各種偵測的 Windows 事件 4776 與 8004，並使用事件 4726、4728、4729、4730, 4732, 4733, 4743、4753、4756、4757、4758、4763、4776、7045 與 8004 以增強機密群組修改與服務建立的偵測。 這些可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
+除了收集和分析進出網域控制站的網路流量之外，Azure ATP 可以使用 Windows 事件來進一步加強偵測。 這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
 
 ## <a name="ntlm-authentication-using-windows-event-8004"></a>使用 Windows 事件 8004 的 NTLM 驗證
 
@@ -136,7 +136,9 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
 QRadar 可讓您透過代理程式收集事件。 如果使用代理程式收集資料，則會收集不含毫秒資料的時間格式。 因為 Azure ATP 需要毫秒資料，所以必須將 QRadar 設定為使用無代理程式 Windows 事件收集。 如需詳細資訊，請參閱 [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar：使用 MSRPC 通訊協定的無代理程式 Windows 事件收集") \(英文\)。
 
-    <13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0
+```text
+<13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0
+```
 
 所需欄位如下：
 

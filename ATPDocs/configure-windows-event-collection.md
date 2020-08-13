@@ -5,49 +5,127 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 02/19/2020
+ms.date: 08/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: adf5901307430fec54d4f3a625df3a5a1a47fe15
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 07136153ab0909f6de9089b0f748d4ed123e1458
+ms.sourcegitcommit: 8c99699b9b84d50fb258c0cc5523ffa78133b7a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84772610"
+ms.lasthandoff: 08/09/2020
+ms.locfileid: "88027208"
 ---
 # <a name="configure-windows-event-collection"></a>設定 Windows 事件集合
 
-為增強威脅偵測功能，Azure 進階威脅防護 (Azure ATP) 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757、7045 與 8004。 Azure ATP 感應器可以自動讀取這些事件。如果沒有部署 Azure ATP 感應器，則有兩種方法可以將它們轉送到 Azure ATP 獨立感應器：一種是[將 Azure ATP 獨立感應器設定](configure-event-forwarding.md)為接聽 SIEM 事件，另一種是[設定 Windows 事件轉送](configure-event-forwarding.md)。
+Azure 進階威脅防護 (Azure ATP) 偵測仰賴特定的 Windows 事件記錄檔項目來增強某些偵測，並提供額外資訊，包括特定動作的執行者 (例如 NTLM 登入)、安全性群組的修改內容及類似事件。 若要正確稽核事件並將其包含在 Windows 事件記錄檔中，則網域控制站需要正確的進階稽核原則設定。 不正確的進階稽核原則設定，可能會造成所需的事件未記錄於事件記錄檔中，並導致 Azure ATP 涵蓋範圍不完整。
+
+為了增強威脅偵測功能，Azure ATP 會要求[設定](#configure-audit-policies)及[收集](#configure-event-collection)下列 Windows 事件：
+
+- 4726 - 使用者帳戶已刪除
+- 4728 - 成員已新增至全域安全性群組
+- 4729 - 成員已自全域安全性群組移除
+- 4730 - 全域安全性群組已刪除
+- 4732 - 成員已新增至本機安全性群組
+- 4733 - 成員已自本機安全性群組移除
+- 4743 - 電腦帳戶已刪除
+- 4753 - 全域通訊群組已刪除
+- 4756 - 成員已新增至萬用安全性群組
+- 4757 - 成員已自萬用安全性群組移除
+- 4758 - 萬用安全性群組已刪除
+- 4763 - 萬用通訊群組已刪除
+- 4776 - 網域控制站嘗試驗證帳戶的認證 (NTLM)
+- 7045 - 新服務已安裝
+- 8004 - NTLM 驗證
+
+## <a name="configure-audit-policies"></a>設定稽核原則
+
+請使用下列指示修改網域控制站的進階稽核原則：
+
+1. 以 [網域系統管理員]**** 身分登入伺服器。
+1. 從 [伺服器管理員] > [工具] > [群組原則管理] 載入 [群組原則管理編輯器]。
+1. 展開 [網域控制站組織單位]，以滑鼠右鍵按一下 [預設網域控制站原則]，然後選取 [編輯]。
+
+    > [!NOTE]
+    > 您可以使用預設網域控制站原則或專用的 GPO 來設定這些原則。
+
+    ![編輯網域控制站原則](media/atp-advanced-audit-policy-check-step-1.png)
+
+1. 從開啟的視窗前往 [電腦設定] > [原則] > [Windows 設定] > [安全性設定]，然後根據您想要啟用的原則，執行下列動作：
+
+    **針對進階稽核原則設定**
+
+    1. 請前往 [進階稽核原則設定] > [稽核原則]。
+        ![進階稽核原則組態](media/atp-advanced-audit-policy-check-step-2.png)
+    1. 在 [稽核原則] 下編輯下列每個原則，然後針對 [設定下列稽核事件] 選取 [成功] 與 [失敗] 事件。
+
+        | 稽核原則 | 子類別 | 觸發事件識別碼 |
+        | --- |---|---|
+        | 帳戶登入 | 稽核認證驗證 | 4776 |
+        | 帳戶管理 | 稽核電腦帳戶管理 | 4743 |
+        | 帳戶管理 | 稽核通訊群組管理 | 4753、4763 |
+        | 帳戶管理 | 稽核安全性群組管理 | 4728、4729、4730、4732、4733、4756、4757、4758 |
+        | 帳戶管理 | 稽核使用者帳戶管理 | 4726 |
+        | 系統 | 稽核安全性系統延伸 | 7045 |
+
+        例如，若要設定 [稽核安全性群組管理]，請在 [帳戶管理] 下，按兩下 [稽核安全性群組管理]，然後針對 [設定下列稽核事件] 選取 [成功] 與 [失敗] 事件。
+
+        ![稽核安全性群組管理](media/atp-advanced-audit-policy-check-step-4.png)
+
+    <a name="ntlm-authentication-using-windows-event-8004"></a> **針對本機原則 (事件識別碼：8004)**
+
+    > [!NOTE]
+    >
+    > - 要 收集 Windows 事件 8004 的網域群組原則應該**只**套用到網域控制站。
+    > - 當 Windows 事件 8004 由 Azure ATP 感應器剖析時，會使用伺服器存取的資料加強 Azure ATP NTLM 驗證活動。
+
+    1. 前往 [本機原則] > [安全性選項]。
+    1. 在 [安全性選項] 下設定指定的安全性原則，如下所示
+
+        | 安全性原則設定 | 值 |
+        |---|---|
+        | 網路安全性: 限制 NTLM: 送往遠端伺服器的連出 NTLM 流量 | 全部稽核 |
+        | 網路安全性: 限制 NTLM: 稽核這個網域的 NTLM 驗證 | 全部啟用 |
+        | 網路安全性:限制 NTLM:稽核連入 NTLM 流量 | 為所有帳戶啟用稽核 |
+
+        例如，若要設定 [送往遠端伺服器的連出 NTLM 流量]，請在 [安全性選項] 下，按兩下 [網路安全性:限制 NTLM:送往遠端伺服器的連出 NTLM 流量]，然後選取 [全部稽核]。
+
+        ![稽核送往遠端伺服器的連出 NTLM 流量](media/atp-advanced-audit-policy-check-step-3.png)
+
+    > [!NOTE]
+    > 如果您選擇使用本機安全性原則，而不是使用群組原則，請務必在本機原則中新增 [帳戶登入]、[帳戶管理] 及 [安全性選項] 稽核記錄。 如果您要設定進階稽核原則，請務必強制執行[稽核原則子類別](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/audit-force-audit-policy-subcategory-settings-to-override)。
+
+1. 在套用 GPO 後，新的事件會顯示在您的 **Windows 事件記錄檔**下。
+
+<!--
+## Azure ATP Advanced Audit Policy check
+
+To make it easier to verify the current status of each of your domain controller's Advanced Audit Policies, Azure ATP automatically checks your existing Advanced Audit Policies and issues health alerts for policy settings that require modification. Each health alert provides specific details of the domain controller, the problematic policy as well as remediation suggestions.
+
+![Advanced Audit Policy Health Alert](media/atp-health-alert-audit.png)
+
+Advanced Security Audit Policy is enabled via **Default Domain Controllers Policy** GPO. These audit events are recorded on the domain controller's Windows Events.
+-->
+
+## <a name="configure-event-collection"></a>設定事件收集
+
+這些事件可由 Azure ATP 感應器自動收集，如果未部署 Azure ATP 感應器，則可使用下列其中一種方式，將事件轉送至 Azure ATP 獨立感應器：
+
+- [設定 Azure ATP 獨立感應器](configure-event-forwarding.md)以接聽 SIEM 事件
+- [設定 Windows 事件轉寄](configure-event-forwarding.md)
 
 > [!NOTE]
 >
 > - Azure ATP 獨立感應器不會收集 Windows 事件追蹤 (ETW) 的記錄項目，無法提供多種偵測的資料。 若要完整涵蓋您的環境，建議您部署 Azure ATP 感應器。
 > - 在設定事件收集之前，請務必檢閱並驗證您的[稽核原則](atp-advanced-audit-policy.md)，以確保網域控制站已正確設定為可記錄必要的事件。
 
-除了收集和分析進出網域控制站的網路流量之外，Azure ATP 可以使用 Windows 事件來進一步加強偵測。 Azure ATP 會針對 NTLM 使用能增強各種偵測的 Windows 事件 4776 與 8004，並使用事件 4732、4733、4728、4729、4756、4757、7045 與 8004 以增強機密群組修改與服務建立的偵測。 這些可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
-
-> [!NOTE]
-> 要 收集 Windows 事件 8004 的網域群組原則應該**只**套用到網域控制站。
-
-## <a name="ntlm-authentication-using-windows-event-8004"></a>使用 Windows 事件 8004 的 NTLM 驗證
-
-設定 Windows 事件 8004 收集：
-
-1. 瀏覽至：電腦設定\原則\Windows 設定\安全性設定\本機原則\安全性選項
-2. 設定或建立**網域群組原則**，以套用到每個網域中的網域控制站，如下所示：
-   - 網路安全性:限制 NTLM:限制 NTLM: 送往遠端伺服器的連出 NTLM 流量 = **全部稽核**
-   - 網路安全性:限制 NTLM:限制 NTLM: 稽核這個網域的 NTLM 驗證 = **全部啟用**
-   - 網路安全性:限制 NTLM:限制 NTLM: 稽核連入 NTLM 流量 = **啟用所有帳戶的稽核**
-
-當 Windows 事件 8004 由 Azure ATP 感應器剖析時，會使用伺服器存取的資料加強 Azure ATP NTLM 驗證活動。
-
 ## <a name="see-also"></a>另請參閱
 
 - [Azure ATP 調整大小工具](https://aka.ms/aatpsizingtool) \(英文\)
-- [Azure ATP SIEM 記錄檔參考](cef-format-sa.md)
 - [Azure ATP 必要條件](atp-prerequisites.md)
+- [Azure ATP SIEM 記錄檔參考](cef-format-sa.md)
+- [設定 Windows 事件轉送](configure-event-forwarding.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

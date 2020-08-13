@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: a44abd85bf8aeb49b6ff1d1f2c34532a63de6c3c
-ms.sourcegitcommit: b2b40be9ac76237c3d6b2beb06eabd92e0b399c8
+ms.openlocfilehash: 30514dac7053cfd117cf1f0c50a5e8536148d5c1
+ms.sourcegitcommit: 8c99699b9b84d50fb258c0cc5523ffa78133b7a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87293186"
+ms.lasthandoff: 08/09/2020
+ms.locfileid: "88027188"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -80,7 +80,7 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 
 - 選擇性的 **Honeytoken**：沒有任何網路活動之使用者的使用者帳戶。 此帳戶設定為 Azure ATP Honeytoken 使用者。 如需使用 Honeytoken 的詳細資訊，請參閱[設定排除專案和 Honeytoken 使用者](install-atp-step7.md)。
 
-- 選用：在部署獨立感應器時，必須將 Windows 事件 4726、4728、4729、4730、4732、4733、4743、4753、4756、4757、4758、4763、4776、7045 與 8004 轉送給 Azure ATP，以在對敏感性群組與可疑服務建立偵測能力之外進一步增強 Azure ATP 驗證型偵測能力。  Azure ATP 感應器自動支援這些事件。 在 Azure ATP 獨立感應器中，這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
+- 選用：在部署獨立感應器時，必須將 [Windows 事件](configure-windows-event-collection.md#configure-event-collection)轉送給 Azure ATP，以在敏感性群組與可疑服務建立偵測能力之外，進一步增強 Azure ATP 驗證型偵測能力。  Azure ATP 感應器自動支援這些事件。 在 Azure ATP 獨立感應器中，這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
 
 ## <a name="azure-atp-portal-requirements"></a>Azure ATP 入口網站需求
 
@@ -178,7 +178,7 @@ Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的�
 
 ### <a name="windows-event-logs"></a>Windows 事件記錄檔
 
-Azure ATP 偵測仰賴下列特定 Windows 事件記錄檔，這些記錄檔可由感應器從您的網域控制站剖析。4726、4728、4729、4730、4732、4733、4743、4753、4756、4757、4758、4763、4776、7045 與 8004。 若要正確稽核事件並將其包含在 Windows 事件記錄檔中，網域控制站需要精確的進階稽核原則設定。 如需有關設定正確原則的詳細資訊，請參閱[進階稽核原則檢查](atp-advanced-audit-policy.md)。 若要確定已依服務所需[稽核 Windows 事件 8004](configure-windows-event-collection.md#ntlm-authentication-using-windows-event-8004)，請檢閱您的 [NTLM 稽核設定](https://blogs.technet.microsoft.com/askds/2009/10/08/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7/) \(英文\)。
+Azure ATP 偵測仰賴特定的 [Windows 事件記錄檔](configure-windows-event-collection.md#configure-event-collection)，這些記錄檔由感應器從您的網域控制站剖析而來。 若要正確稽核事件並將其包含在 Windows 事件記錄檔中，網域控制站需要精確的進階稽核原則設定。 如需有關設定正確原則的詳細資訊，請參閱[進階稽核原則檢查](atp-advanced-audit-policy.md)。 若要確定已依服務所需[稽核 Windows 事件 8004](configure-windows-event-collection.md#configure-audit-policies)，請檢閱您的 [NTLM 稽核設定](https://blogs.technet.microsoft.com/askds/2009/10/08/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7/) \(英文\)。
 
 > [!NOTE]
 >

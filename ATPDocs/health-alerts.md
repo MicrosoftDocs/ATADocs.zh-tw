@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: d0551e91-3b21-47d5-ad9d-3362df6d47c0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 503b8ac25a8ab812ca48eba138a7eafefe3168c0
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 37ae29e667d3507d1415acae3098e6f93565ec4e
+ms.sourcegitcommit: 8c99699b9b84d50fb258c0cc5523ffa78133b7a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84772355"
+ms.lasthandoff: 08/09/2020
+ms.locfileid: "88027154"
 ---
 # <a name="understanding-azure-atp-sensor-health-alerts"></a>了解 Azure ATP 感應器健康情況警示
 
@@ -27,7 +27,7 @@ ms.locfileid: "84772355"
 
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|由於所有已設定之網域控制站的連線問題，Azure ATP 感應器目前離線。|這會影響 Azure ATP 偵測由此 Azure ATP 感應器所監視之網域控制站相關可疑活動的能力。| 請確定網域控制站已啟動且正在執行，而且此 Azure ATP 感應器可以針對對它們開啟 LDAP 連線。 此外，請務必在 [設定] 中針對每個部署的樹系設定目錄服務帳戶。|中型|
+|由於所有已設定之網域控制站的連線問題，Azure ATP 感應器目前離線。|這會影響 Azure ATP，使其較不容易偵測此 Azure ATP 感應器所監視的網域控制站相關可疑活動。| 請確定網域控制站已啟動且正在執行，而且此 Azure ATP 感應器可以針對對它們開啟 LDAP 連線。 此外，請務必在 [設定] 中針對每個部署的樹系設定目錄服務帳戶。|中型|
 
 ## <a name="allsome-of-the-capture-network-adapters-on-a-sensor-are-not-available"></a>感應器上的所有/部分擷取網路介面卡無法使用
 
@@ -113,11 +113,13 @@ ms.locfileid: "84772355"
 |----|----|----|----|
 |Azure ATP 感應器目前接收到的 Windows 事件追蹤 (ETW) 事件已超過其能處理的量。|無法分析某些 Windows 事件追蹤 (ETW) 事件，這可能會影響偵測可疑活動的能力，這些活動源自於此 Azure ATP 感應器所監視的網域控制站上。|請確認只有必要的事件會被轉寄到 Azure ATP 感應器，或嘗試將某些事件轉寄到其他 Azure ATP 感應器。|中型|
 
-## <a name="windows-events-missing-from-domain-controller-audit-policy"></a>網域控制站稽核原則中缺少 Windows 事件
+<!--
+## Windows events missing from domain controller audit policy
 
-|警示|說明|解決方案|嚴重性|
+|Alert|Description|Resolution|Severity|
 |----|----|----|----|
-| 網域控制站稽核原則中缺少 Windows 事件|若要正確稽核事件並將其包含在 Windows 事件記錄檔中，則網域控制站需要正確的進階稽核原則設定。 不正確的進階稽核原則設定會讓記錄檔遺漏重要事件，並導致 Azure ATP 涵蓋範圍不完整。|檢閱您的[進階稽核原則](atp-advanced-audit-policy.md)，並視需要修改。 | 中型|
+| Windows events missing from domain controller audit policy|For the correct events to be audited and included in the Windows Event Log, your domain controllers require accurate Advanced Audit Policy settings. Incorrect Advanced Audit Policy settings leave critical events out of your logs, and result in incomplete Azure ATP coverage.|Review your [Advanced Audit policy](atp-advanced-audit-policy.md) and modify as needed. | Medium|
+-->
 
 ## <a name="see-also"></a>另請參閱
 

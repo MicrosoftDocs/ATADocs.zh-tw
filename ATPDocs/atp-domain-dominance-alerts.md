@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 0b3a1db5-0d43-49af-b356-7094cc85f0a5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 662ded6bef3e38079173181c41920b2f57e6407d
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: c4d21a4065176db1f90e73edb7fdc8192c81d950
+ms.sourcegitcommit: 42f1da0c498bd145daff4df20b3e53069b55ecd5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84773562"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87856388"
 ---
 # <a name="tutorial-domain-dominance-alerts"></a>教學課程：控制網域警訊
 
@@ -298,12 +298,16 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 在黃金票證警示中，相較於先前學到的行為，來自來源電腦 TGS_REQ (服務要求) 訊息的 TGT 欄位加密方法已偵測到降級。 這不是依據時間異常偵測 (如同其他黃金票證偵測)。 此外，若發生此警示，沒有 Kerberos 驗證要求與先前由 Azure ATP 偵測到的服務要求建立關聯。
 
+**學習期間**
+
+此警示從網域控制站監視開始，有 5 天的學習期間。
+
 **TP、B-TP 或 FP**
 
 某些合法資源不支援強式加密，並可能觸發此警示。
 
 1. 所有的來源使用者是否共用某些共通項目？
-   1. 例如，您所有的行銷人員是否都能存取特定資源，並有可能觸發警示？
+   1. 比方說，您所有的行銷人員是否都能存取可能會觸發警訊的特定資源？
    2. 檢查透過那些票證所存取的資源。
       * 透過檢查資源服務帳戶的 *msDS-SupportedEncryptionTypes* 屬性，以在 Active Directory 中檢查這點。
    3. 若只存取一項資源，請檢查其是否為這些使用者應該存取的有效資源。
@@ -343,7 +347,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 ## <a name="suspected-golden-ticket-usage-forged-authorization-data-external-id-2013"></a>可疑的黃金票證使用 (偽造的授權資料) (外部識別碼 2013)
 
-先前的名稱：使用偽造授權資料提升權限
+舊名稱：使用偽造的授權資料提升權限
 
 **描述**
 
@@ -365,7 +369,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 **了解漏洞的範圍**
 
 1. 調查[來源電腦](investigate-a-computer.md)。
-2. 如果有[來源使用者](investigate-a-user.md)，請進行調查。
+2. 如有[來源使用者](investigate-a-user.md)，也請予以調查。
 3. 檢查已成功存取哪些資源，並進行[調查](investigate-a-computer.md)。
 
 **建議的補救和預防步驟**
@@ -380,7 +384,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 ## <a name="suspected-golden-ticket-usage-nonexistent-account-external-id-2027"></a>可疑的黃金票證使用 (不存在的帳戶) (外部識別碼 2027)
 
-先前的名稱：Kerberos 黃金票證
+舊名稱：Kerberos 黃金票證
 
 **描述**
 
@@ -440,7 +444,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 ## <a name="suspected-golden-ticket-usage-time-anomaly-external-id-2022"></a>可疑的黃金票證使用 (時間異常) (外部識別碼 2022)
 
-先前的名稱：Kerberos 黃金票證
+舊名稱：Kerberos 黃金票證
 
 **描述**
 
@@ -448,11 +452,11 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 **TP、B-TP 或 FP**
 
-1. 在過去幾小時內，群組原則中的 [使用者票證最長存留期]  設定是否有任何變更，而可能影響警示？
+1. 在過去幾小時內，群組原則中的 [使用者票證最長存留期]**** 設定是否有任何變更，而可能影響警示？
 2. 涉及此警示的 Azure ATP 獨立感應器是否為虛擬機器？
     * 如果涉及 Azure ATP 獨立感應器，它最近是否從儲存狀態繼續？
 3. 網路中是否有時間同步化問題，其中並未同步所有電腦？
-    * 按一下 [下載詳細資料]  按鈕，以檢視安全性警示報告 Excel 檔案、檢視相關網路活動，並檢查 "StartTime" 與 "DomainControllerStartTime" 之間是否有差異。
+    * 按一下 [下載詳細資料]**** 按鈕，以檢視安全性警示報告 Excel 檔案、檢視相關網路活動，並檢查 "StartTime" 與 "DomainControllerStartTime" 之間是否有差異。
 
 如果以上問題的答案為**是**，請**關閉**有關 **B-TP** 活動的安全性警示。
 
@@ -475,7 +479,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 ## <a name="suspected-skeleton-key-attack-encryption-downgrade-external-id-2010"></a>可疑的萬能金鑰攻擊 (加密降級) (外部識別碼 2010)
 
-先前的名稱：  加密降級活動
+先前的名稱：加密降級活動
 
 **描述**
 
@@ -540,7 +544,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 ## <a name="suspicious-service-creation-external-id-2026"></a>可疑的服務建立 (外部識別碼 2026)
 
-先前的名稱：  可疑的服務建立
+舊名稱：** 可疑的服務建立
 
 **描述**
 

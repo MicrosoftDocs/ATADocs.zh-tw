@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: d3528711a17c2be18dd615b0399f82a1a5c770a5
-ms.sourcegitcommit: dd7071f173709139611ba0f963f7101f590de711
+ms.openlocfilehash: 04dc432ebdee36b80b995ed1f19c5e1b0ee91dca
+ms.sourcegitcommit: 2ff8079d3ad8964887c1d0d1414c84199ba208bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88261465"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88793343"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
 
@@ -25,6 +25,12 @@ ms.locfileid: "88261465"
 如需舊版 Azure ATP 的詳細資料，直到 (並包含) 2.55 版，請參閱 [Azure ATP 版本參考](atp-release-reference.md)。
 
 RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在本頁更新時收到通知：`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
+
+## <a name="azure-atp-release-2123"></a>Azure ATP 2.123 版
+
+發行日期：2020 年 8 月 23 日
+
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
 ## <a name="azure-atp-release-2122"></a>Azure ATP 2.122 版
 

@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d3347151b490af645802aa759bf9379ee60162ba
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: e0694e13a731c1c8146f733ee8e49a3a2888d52c
+ms.sourcegitcommit: 2ff8079d3ad8964887c1d0d1414c84199ba208bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775840"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88793389"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>針對 Azure ATP 已知問題進行疑難排解
 
@@ -41,10 +41,7 @@ System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> Syste
 
 **部署記錄項目：**
 
-[1C60:1AA8][2018-03-24T23:59:13]i000:2018-03-25 02:59:13.1237 已傳回資訊  InteractiveDeploymentManager ValidateCreateSensorAsync [validateCreateSensorResult=LicenseInvalid]]  
-[1C60:1AA8][2018-03-24T23:59:56]i000:2018-03-25 02:59:56.4856 已傳回資訊  InteractiveDeploymentManager ValidateCreateSensorAsync [validateCreateSensorResult=LicenseInvalid]]  
-[1C60:1AA8][2018-03-25T00:27:56]i000:2018-03-25 03:27:56.7399 針對 SensorBootstrapperApplication Engine.Quit 進行偵錯 [deploymentResultStatus=1602 isRestartRequired=False]]  
-[1C60:15B8][2018-03-25T00:27:56]i500:正在關機，結束代碼:0x642
+[1C60:1AA8][2018-03-24T23:59:13]i000:2018-03-25 02:59:13.1237 已傳回 InteractiveDeploymentManager ValidateCreateSensorAsync 資訊 [validateCreateSensorResult=LicenseInvalid]] [1C60:1AA8][2018-03-24T23:59:56]i000:2018-03-25 02:59:56.4856 已傳回 InteractiveDeploymentManager ValidateCreateSensorAsync 資訊 [validateCreateSensorResult=LicenseInvalid]] [1C60:1AA8][2018-03-25T00:27:56]i000:2018-03-25 03:27:56.7399 針對 SensorBootstrapperApplication Engine.Quit 進行偵錯 [deploymentResultStatus=1602 isRestartRequired=False]] [1C60:15B8][2018-03-25T00:27:56]i500:正在關機，結束代碼:0x642
 
 **原因：**
 
@@ -54,15 +51,56 @@ System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> Syste
 
 請確定感應器可透過設定的 Proxy 瀏覽至 *.atp.azure.com，而無需進行驗證。 如需詳細資訊，請參閱[設定 Proxy 以進行通訊](configure-proxy.md)。
 
+## <a name="proxy-authentication-problem-presents-as-a-connection-error"></a>Proxy 驗證問題顯示為連線錯誤
+
+若您在感應器安裝期間收到下列錯誤：**感應器無法連線到服務。**
+
+**原因：**
+
+此問題可能是 Transparent Proxy 在伺服器核心上設定錯誤所導致，例如缺少 Azure ATP 所需的根憑證或根憑證不是最新版本。
+
+**解決方法：**
+
+執行下列的 PowerShell Cmdlet，以驗證伺服器核心上含有 Azure ATP 服務受信任的根憑證。 以下範例使用 "DigiCert Baltimore Root"。
+
+```powershell
+Get-ChildItem -Path "Cert:\LocalMachine\Root" | where { $_.Thumbprint -eq "D4DE20D05E66FC53FE1A50882C78DB2852CAE474"}
+```
+
+```Output
+Subject      : CN=Baltimore CyberTrust Root, OU=CyberTrust, O=Baltimore, C=IE
+Issuer       : CN=Baltimore CyberTrust Root, OU=CyberTrust, O=Baltimore, C=IE
+Thumbprint   : D4DE20D05E66FC53FE1A50882C78DB2852CAE474
+FriendlyName : DigiCert Baltimore Root
+NotBefore    : 5/12/2000 11:46:00 AM
+NotAfter     : 5/12/2025 4:59:00 PM
+Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.Oid, System.Security.Cryptography.Oid}
+```
+
+如果您沒有看到預期的輸出結果，請使用下列步驟：
+
+1. 將 [Baltimore CyberTrust 根憑證](https://cacert.omniroot.com/bc2025.crt)下載到伺服器核心機器。
+1. 執行下列 PowerShell Cmdlet 以安裝憑證。
+
+    ```powershell
+    Import-Certificate -FilePath "<PATH_TO_CERTIFICATE_FILE>\bc2025.crt" -CertStoreLocation Cert:\LocalMachine\Root
+    ```
+
 ## <a name="silent-installation-error-when-attempting-to-use-powershell"></a>嘗試使用 Powershell 時發生的無訊息安裝錯誤
 
 若您嘗試在無訊息感應器安裝期間使用 Powershell 並收到下列錯誤：
 
-    "Azure ATP sensor Setup.exe" "/quiet" NetFrameworkCommandLineArguments="/q" Acce ... Unexpected token '"/quiet"' in expression or statement."
+```powershell
+"Azure ATP sensor Setup.exe" "/quiet" NetFrameworkCommandLineArguments="/q" Acce ... Unexpected token '"/quiet"' in expression or statement."
+```
 
-**原因：** 使用 Powershell 時無法包括安裝所需的 ./ 前置詞會導致此錯誤。
+**原因：**
 
-**解決方法：** 使用完整命令來成功安裝。
+使用 Powershell 時無法包括安裝所需的 ./ 前置詞會導致此錯誤。
+
+**解決方法：**
+
+使用完整命令來成功安裝。
 
 ```powershell
 ./"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
@@ -133,8 +171,7 @@ Azure 進階威脅防護可讓您將 Azure ATP 與 Microsoft Defender ATP 整合
 
 **感應器記錄項目：**
 
-2020-02-17 14:01:36.5315 資訊 ImpersonationManager CreateImpersonatorAsync 已啟動 [UserName=account_name Domain=domain1.test.local IsGroupManagedServiceAccount=True]  
-2020-02-17 14:01:36.5750 資訊 ImpersonationManager CreateImpersonatorAsync 已完成 [UserName=account_name Domain=domain1.test.local IsSuccess=False]
+2020-02-17 14:01:36.5315 已啟動 ImpersonationManager CreateImpersonatorAsync 資訊 [UserName=account_name Domain=domain1.test.local IsGroupManagedServiceAccount=True] 2020-02-17 14:01:36.5750 已完成 ImpersonationManager CreateImpersonatorAsync 資訊 [UserName=account_name Domain=domain1.test.local IsSuccess=False]
 
 **感應器更新程式記錄項目：**
 

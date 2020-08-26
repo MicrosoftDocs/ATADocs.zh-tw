@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 30514dac7053cfd117cf1f0c50a5e8536148d5c1
-ms.sourcegitcommit: 8c99699b9b84d50fb258c0cc5523ffa78133b7a4
+ms.openlocfilehash: 22e0d88d46d8f3751316148600349ca99382339a
+ms.sourcegitcommit: 2ff8079d3ad8964887c1d0d1414c84199ba208bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2020
-ms.locfileid: "88027188"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88793367"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -103,14 +103,16 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 
 ## <a name="azure-atp-network-name-resolution-nnr-requirements"></a>Azure ATP 網路名稱解析 (NNR) 需求
 
-網路名稱解析 (NNR) 是 Azure ATP 功能的主要元件。 若要讓 Azure ATP 服務正常運作，Azure ATP 感應器必須至少能存取下列其中一個 NNR 方法：
+網路名稱解析 (NNR) 是 Azure ATP 功能的主要元件。 為將 IP 位址解析成電腦名稱稱，Azure ATP 感應器會使用下列方法來查閱 IP 位址：
 
-1. **透過 RPC 的 NTLM** (TCP 連接埠 135)
-2. **NetBIOS** (UDP 連接埠 137)
-3. **RDP** (TCP 連接埠 3389) - 只有 Client hello 的第一個封包
-4. **使用 IP 位址的反向 DNS 查閱來查詢 DNS 伺服器** (UDP 53)
+- 透過 RPC 的 NTLM (TCP 連接埠 135)
+- NetBIOS (UDP 連接埠 137)
+- RDP (TCP 連接埠 3389) - 只有 **Client hello** 的第一個封包
+- 使用 IP 位址的反向 DNS 查閱來查詢 DNS 伺服器 (UDP 53)
 
-若要讓方法 1、2 與 3 正常運作，必須開啟從從 Azure ATP 感應器到網路上裝置的相關連入連接埠。 若要深入了解 Azure ATP 與 NNR，請參閱 [Azure ATP NNR 原則](atp-nnr-policy.md)。
+若要讓前三個方法正常運作，必須開啟從 Azure ATP 感應器到網路上裝置的相關連入連接埠。 若要深入了解 Azure ATP 與 NNR，請參閱 [Azure ATP NNR 原則](atp-nnr-policy.md)。
+
+為獲得最佳結果，建議使用所有方法。 如果無法這麼做，您應該使用 DNS 查閱方法與至少一個其他方法。
 
 ## <a name="azure-atp-sensor-requirements"></a>Azure ATP 感應器需求
 
@@ -171,10 +173,12 @@ Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的�
 |Netlogon (SMB、CIFS、SAM-R)|TCP/UDP|445|Azure ATP 感應器|網路上的所有裝置|輸出|
 |Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|Azure ATP 感應器|輸入|
 |RADIUS|UDP|1813|RADIUS|Azure ATP 感應器|輸入|
-|**NNR 連接埠**||||||
+|**NNR 連接埠**\*||||||
 |透過 RPC 的 NTLM|TCP|連接埠 135|ATP 感應器|網路上的所有裝置|輸入|
 |NetBIOS|UDP|137|ATP 感應器|網路上的所有裝置|輸入|
 |RDP|TCP|3389，只有 Client hello 的第一個封包|ATP 感應器|網路上的所有裝置|輸入|
+
+\*其中一個連接埠是必要的，但我們建議全部開啟。
 
 ### <a name="windows-event-logs"></a>Windows 事件記錄檔
 
@@ -261,10 +265,12 @@ Azure ATP 獨立感應器需要至少一個管理介面卡和至少一個擷取�
 |DNS|TCP 和 UDP|53|Azure ATP 感應器|DNS 伺服器|輸出|
 |Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|Azure ATP 感應器|輸入|
 |RADIUS|UDP|1813|RADIUS|Azure ATP 感應器|輸入|
-|**NNR 連接埠**||||||
+|**NNR 連接埠** \*||||||
 |透過 RPC 的 NTLM|TCP|135|ATP 感應器|網路上的所有裝置|輸入|
 |NetBIOS|UDP|137|ATP 感應器|網路上的所有裝置|輸入|
 |RDP|TCP|3389，只有 Client hello 的第一個封包|ATP 感應器|網路上的所有裝置|輸入|
+
+\*其中一個連接埠是必要的，但我們建議全部開啟。
 
 > [!NOTE]
 >

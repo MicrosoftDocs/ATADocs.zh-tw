@@ -1,6 +1,6 @@
 ---
-title: 瞭解 ATA 健康狀態警示
-description: 描述如何使用 ATA 記錄檔來疑難排解問題
+title: 瞭解 ATA 健康情況警示
+description: 描述每個元件的所有健康情況警示，並列出原因和解決問題所需的步驟
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: b04fb8a4-b366-4b55-9d4c-6f054fa58a90
 ms.reviewer: elofek
 ms.suite: ems
-ms.openlocfilehash: 96350f1724b743e5c640ad41cb7b8e2cdd656adb
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 8569e26786c36f08fdcf98dcd11452cdef5736b6
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775041"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88955984"
 ---
-# <a name="understanding-ata-health-alerts"></a>瞭解 ATA 健康狀態警示
+# <a name="understanding-ata-health-alerts"></a>瞭解 ATA 健康情況警示
 
 *適用於：Advanced Threat Analytics 1.9 版*
 
-ATA 健康狀態中心可讓您在 ATA 部署發生問題時，藉由引發健康情況警示來得知。
+ATA 健康狀態中心會發出健康情況警示，讓您知道 ATA 部署發生問題的時間。
 此文章描述每個元件的所有健康情況警示，並列出原因與解決問題所需的步驟。
 ## <a name="ata-center-issues"></a>ATA 中心問題
 ### <a name="center-running-out-of-disk-space"></a>中心磁碟空間用盡
@@ -39,12 +39,12 @@ ATA 健康狀態中心可讓您在 ATA 部署發生問題時，藉由引發健�
 ### <a name="center-overloaded"></a>中心超載
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|ATA 中心無法處理從 ATA 閘道傳輸的資料量。 |ATA 中心停止分析新的網路流量和事件。 這表示當此健康狀態警示為作用中時，偵測和設定檔的精確度會降低。|確定您為 ATA 中心提供足夠的資源。 如需如何適當地規劃 ATA 中心容量的詳細資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。 [使用效能計數器疑難排解 ATA](troubleshooting-ata-using-perf-counters.md) 來調查 ATA 中心的效能。|高|
+|ATA 中心無法處理從 ATA 閘道傳輸的資料量。 |ATA 中心停止分析新的網路流量和事件。 這表示在此健康情況警示為作用中時，偵測和設定檔的精確度會降低。|確定您為 ATA 中心提供足夠的資源。 如需如何適當地規劃 ATA 中心容量的詳細資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。 [使用效能計數器疑難排解 ATA](troubleshooting-ata-using-perf-counters.md) 來調查 ATA 中心的效能。|高|
 
 ### <a name="failure-connecting-to-the-siem-server-using-syslog"></a>無法連線到使用 Syslog 的 SIEM 伺服器
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|ATA 無法將事件傳送到指定的 SIEM。|這表示 ATA 中心無法傳送可疑的活動和健康狀態警示給您的 SIEM。|確定您的 [Syslog 伺服器設定已正確設定](setting-syslog-email-server-settings.md)。|低|
+|ATA 無法將事件傳送到指定的 SIEM。|這表示 ATA 中心無法傳送可疑的活動和健康情況警示給您的 SIEM。|確定您的 [Syslog 伺服器設定已正確設定](setting-syslog-email-server-settings.md)。|低|
 ### <a name="center-certificate-is-about-to-expire"></a>中心憑證即將過期
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
@@ -90,7 +90,7 @@ ATA 健康狀態中心可讓您在 ATA 部署發生問題時，藉由引發健�
 ### <a name="gateway-stopped-communicating"></a>閘道已停止通訊
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|沒有來自 ATA 閘道的通訊。 此警示的預設時間範圍為 5 分鐘。|ATA 閘道上的網路介面卡不會再擷取網路流量。 由於網路流量無法到達 ATA 中心，因此這會影響 ATA 偵測可疑活動的能力。|檢查用於 ATA 閘道與 ATA 中心服務間通訊的連接埠未遭到任何路由器或防火牆封鎖。|中|
+|沒有來自 ATA 閘道的通訊。 此警示的預設時間範圍為 5 分鐘。|ATA 閘道上的網路介面卡不會再擷取網路流量。 這會影響 ATA 偵測可疑活動的能力，因為網路流量無法到達 ATA 中心。|檢查用於 ATA 閘道與 ATA 中心服務間通訊的連接埠未遭到任何路由器或防火牆封鎖。|中|
 ### <a name="no-traffic-received-from-domain-controller"></a>未從網域控制站收到任何流量
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|

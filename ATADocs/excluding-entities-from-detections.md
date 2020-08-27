@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 344c0f33-45e1-42e2-a051-f722a4504531
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 84e4b6e5951bf16281c60c87e46ce1a799795c55
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: b5e80251fb4ffc4347671b573eb5435c09517e71
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775331"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88954624"
 ---
 # <a name="excluding-entities-from-detections"></a>從偵測中排除實體
 
@@ -31,13 +31,13 @@ ms.locfileid: "84775331"
 
 您可以透過兩種方式排除實體，一是從可疑的活動本身，或從 [設定]**** 頁面上的 [排除項目]**** 索引標籤。
 
-- **從可疑活動**：在可疑活動時間表中，當您收到有關允許執行特定活動 (且可能很頻繁) 之使用者、電腦或 IP 位址的活動警示，請以滑鼠右鍵按一下該實體上代表可疑活動之資料列結尾的三個點，並選取 [關閉並排除]****。 <br></br>這會將該使用者、電腦或 IP 位址加入該可疑活動的排除清單中。 它會關閉可疑活動，而且它不會再列于**可疑啟用時間軸**的 [**開啟**事件] 清單中。
+- **從可疑活動**：在可疑活動時間表中，當您收到有關允許執行特定活動 (且可能很頻繁) 之使用者、電腦或 IP 位址的活動警示，請以滑鼠右鍵按一下該實體上代表可疑活動之資料列結尾的三個點，並選取 [關閉並排除]****。 <br></br>這會將該使用者、電腦或 IP 位址加入該可疑活動的排除清單中。 它會關閉可疑的活動，而且不會再列于**可疑啟用時間表**的 [**開啟**事件] 清單中。
 
-    ![排除實體](./media/exclude-in-sa.png)
+    ![排除實體](media/exclude-in-sa.png)
 
 - **從 [設定] 頁面**：若要檢視或修改任何排除項目：在 [設定]**** 底下，按一下 [排除項目]****，然後選擇可疑的活動，例如 [已公開敏感性帳戶認證]****。
 
-    ![排除設定](./media/exclusions-config-page.png)
+    ![排除設定](media/exclusions-config-page.png)
 
 若要從 [排除項目]**** 設定中移除實體：按一下實體名稱旁邊的減號，然後按一下頁面底部的 [儲存]****。
 

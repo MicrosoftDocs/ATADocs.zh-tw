@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 06b7e42789b58a6da01479917b0e1277b651a8bd
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 1ece55ea9d0ad43a85a27741af34242f58fd0002
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775160"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88955508"
 ---
 # <a name="install-ata---step-6"></a>安裝 ATA - 步驟 6
 
@@ -31,10 +31,10 @@ ms.locfileid: "84775160"
 
 ### <a name="configure-event-collection"></a>設定事件收集
 
-若要增強偵測功能，ATA 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757和7045。 ATA 輕量閘道會自動讀取這些 Windows 事件，或如果未部署 ATA 輕量閘道，則可以透過下列兩種方式之一轉送至 ATA 閘道：將 ATA 閘道設定為接聽 SIEM 事件，或設定[Windows 事件轉送](configure-event-collection.md)。 
+為了增強偵測功能，ATA 需要下列 Windows 事件：4776、4732、4733、4728、4729、4756、4757和7045。 ATA 輕量閘道會自動讀取這些 Windows 事件，如果未部署 ATA 輕量閘道，則可以將它們轉送到 ATA 閘道，方法是將 ATA 閘道設定為接聽 SIEM 事件，或設定 [Windows 事件轉送](configure-event-collection.md)。
 
 > [!NOTE]
-> 針對 ATA 版本1.8 和更新版本，ATA 羽量級閘道不再需要 Windows 事件收集設定。 ATA 輕量型閘道現在會本機讀取事件，而不需要設定事件轉送。
+> 針對 ATA 1.8 版和更高版本，ATA 輕量閘道不再需要 Windows 事件收集設定。 ATA 輕量型閘道現在會本機讀取事件，而不需要設定事件轉送。
 
 除了收集和分析進出網域控制站的網路流量，ATA 可以使用 Windows 事件進一步加強偵測。 它會針對 NTLM 使用能增強各種偵測的事件 4776，並使用事件 4732、4733、4728、4729、4756 和 4757 以增強偵測機密群組修改。 這可從您的 SIEM 接收，或藉由在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 ATA 透過網域控制站網路流量無法取得的額外資訊。
 
@@ -45,7 +45,7 @@ ms.locfileid: "84775160"
 - 將您的 ATA 閘道伺服器設定為接聽及接受從 SIEM/Syslog 伺服器轉送的事件。
 
 > [!NOTE]
-> ATA 只接聽 IPv4，而不會接聽 IPv6。 
+> ATA 只接聽 IPv4，而不會接聽 IPv6。
 >
 > - 將您的 SIEM/Syslog 伺服器設定為轉送特定事件至 ATA 閘道。
 
@@ -53,7 +53,7 @@ ms.locfileid: "84775160"
 > - 請勿將所有 Syslog 資料都轉送給 ATA 閘道。
 > - ATA 支援來自 SIEM/Syslog 伺服器的 UDP 流量。
 
-如需如何設定轉送特定事件到另一部伺服器的資訊，請參閱您的 SIEM/Syslog 伺服器產品的文件。 
+如需如何設定轉送特定事件到另一部伺服器的資訊，請參閱您的 SIEM/Syslog 伺服器產品的文件。
 
 > [!NOTE]
 > 如果您沒使用 SIEM/Syslog 伺服器，可將 Windows 網域控制站設定為轉送 Windows 事件識別碼 4776 以供 ATA 收集及分析。 Windows 事件識別碼 4776 提供 NTLM 驗證的相關資料。
@@ -64,9 +64,9 @@ ms.locfileid: "84775160"
 
     ![啟用 Syslog 接聽程式 UDP 映像](media/ATA-enable-siem-forward-events.png)
 
-2. 將 SIEM 或 Syslog 伺服器設定為轉送 Windows 事件識別碼 4776 給其中一個 ATA 閘道的 IP 位址。 如需有關如何設定 SIEM 的詳細資訊，請參閱您的 SIEM 線上說明或每部 SIEM 伺服器之特定格式需求的技術支援選項。
+1. 將 SIEM 或 Syslog 伺服器設定為轉送 Windows 事件識別碼 4776 給其中一個 ATA 閘道的 IP 位址。 如需有關如何設定 SIEM 的詳細資訊，請參閱您的 SIEM 線上說明或每部 SIEM 伺服器之特定格式需求的技術支援選項。
 
-ATA 支援下列格式的 SIEM 事件：  
+ATA 支援下列格式的 SIEM 事件：
 
 #### <a name="rsa-security-analytics"></a>RSA 安全性分析
 
@@ -74,10 +74,10 @@ ATA 支援下列格式的 SIEM 事件：
 
 - Syslog Header 是選擇性參數。
 
-- 所有的欄位之間需以 "\n" 字元分隔。
+- 所有欄位之間都必須以 "\n" 字元分隔。
 - 欄位依序說明如下︰
   1. RsaSA 常數 (必須出現)。
-  2. 實際事件的時間戳記（請確定它不是抵達到 EM 或傳送至 ATA 的時間戳記）。 精確度最好在毫秒以內，這很重要。
+  2. 實際事件的時間戳記 (請確定它不是抵達 EM 或傳送至 ATA) 的時間戳記。 精確度最好在毫秒以內，這很重要。
   3. Windows 事件識別碼
   4. Windows 事件提供者名稱
   5. Windows 事件記錄檔名稱
@@ -98,15 +98,15 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 - 標頭部分 (以管線符號分隔的部分) 必須存在 (如通訊協定中所述)。
 - 事件的_延伸_部分必須有下列索引鍵︰
   - externalId = Windows 事件識別碼
-  - rt = 實際事件的時間戳記 (請確定它不是抵達 SIEM 或傳送至 ATA 的時間戳記)。 精確度最好在毫秒以內，這很重要。
+  - rt = 實際事件的時間戳記 (請確定它不是抵達 SIEM 或傳送至 ATA) 的時間戳記。 精確度最好在毫秒以內，這很重要。
   - cat = Windows 事件記錄檔名稱
   - shost = 來源主機名稱
   - dhost = 接收事件的電腦 (在此案例中是 DC)
   - duser = 驗證的使用者
 - _延伸_部分的順序不重要。
 - 這兩個欄位必須是自訂索引鍵和 keyLable：
-  - “EventSource”
-  - “Reason or Error Code” = NTLM 的結果碼
+  - "EventSource"
+  - "Reason or Error Code" = NTLM 的結果碼
 
 #### <a name="splunk"></a>Splunk
 
@@ -124,13 +124,13 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
 - Syslog Header 是選擇性參數。
 
-- 所有欄位之間需以 “\r\n” 字元分隔。
+- 所有欄位之間都必須以 "\r\n" 字元分隔。
 - 欄位格式是「索引鍵=值」。
 - 下列索引鍵必須存在且具有值︰
   - EventCode = Windows 事件識別碼
   - Logfile = Windows 事件記錄檔名稱
   - SourceName = Windows 事件提供者名稱
-  - TimeGenerated = 實際事件的時間戳記 (請確定它不是抵達 SIEM 傳送至 ATA 的時間戳記)。 必須符合 yyyyMMddHHmmss.FFFFFF 的格式，精確度最好在毫秒以內，這很重要。
+  - TimeGenerated = 實際事件的時間戳記 (請確定它不是抵達 SIEM 或傳送至 ATA) 的時間戳記。 必須符合 yyyyMMddHHmmss.FFFFFF 的格式，精確度最好在毫秒以內，這很重要。
   - ComputerName = 來源主機名稱
   - Message = 來自 Windows 事件的原始事件文字
 - Message 索引鍵和值必須是最後一個。
@@ -140,7 +140,9 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
 QRadar 可讓您透過代理程式收集事件。 如果使用代理程式收集資料，則會收集不含毫秒資料的時間格式。 因為 ATA 需要毫秒資料，所以必須將 QRadar 設定為使用無代理程式 Windows 事件收集。 如需詳細資訊，請參閱 [http://www-01.ibm.com/support/docview.wss?uid=swg21700170](http://www-01.ibm.com/support/docview.wss?uid=swg21700170 "QRadar：使用 MSRPC 通訊協定的無代理程式 Windows 事件收集") \(英文\)。
 
-    <13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0
+```
+<13>Feb 11 00:00:00 %IPADDRESS% AgentDevice=WindowsLog AgentLogFile=Security Source=Microsoft-Windows-Security-Auditing Computer=%FQDN% User= Domain= EventID=4776 EventIDCode=4776 EventType=8 EventCategory=14336 RecordNumber=1961417 TimeGenerated=1456144380009 TimeWritten=1456144380009 Message=The computer attempted to validate the credentials for an account. Authentication Package: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0 Logon Account: Administrator Source Workstation: HOSTNAME Error Code: 0x0
+```
 
 所需欄位如下：
 
@@ -151,13 +153,13 @@ QRadar 可讓您透過代理程式收集事件。 如果使用代理程式收集
 - DC 完整網域名稱
 - Windows 事件識別碼
 
-TimeGenerated 是實際事件的時間戳記 (請確定它不是抵達 SIEM 或傳送至 ATA 的時間戳記)。 必須符合 yyyyMMddHHmmss.FFFFFF 的格式，精確度最好在毫秒以內，這很重要。
+TimeGenerated 是實際事件的時間戳記 (請確定它不是抵達 SIEM 或傳送至 ATA) 的時間戳記。 必須符合 yyyyMMddHHmmss.FFFFFF 的格式，精確度最好在毫秒以內，這很重要。
 
 Message 是來自 Windows 事件的原始事件文字
 
 確定「索引鍵=值」組之間有 \t。
 
->[!NOTE] 
+>[!NOTE]
 > 不支援使用 WinCollect 進行 Windows 事件收集。
 
 > [!div class="step-by-step"]

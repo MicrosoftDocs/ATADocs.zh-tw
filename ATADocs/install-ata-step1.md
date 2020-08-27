@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 77f384ecd4ded0e47737013a138cdf1bdbf167cf
-ms.sourcegitcommit: 954f5e64a8a25075ce663b9fd63810cf4c032987
+ms.openlocfilehash: 2b61069662100ec9c0c66620a26c740c7d1d2471
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85129862"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88954675"
 ---
 # <a name="install-ata---step-1"></a>安裝 ATA - 步驟 1
 
@@ -40,7 +40,7 @@ ms.locfileid: "85129862"
 
 在 ATA 中心伺服器上執行下列步驟。
 
-1. 從[Microsoft 大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx)或[TechNet 評估中心](https://www.microsoft.com/evalcenter/)或[MSDN](https://msdn.microsoft.com/subscriptions/downloads)下載 ATA。
+1. 從 [Microsoft 大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 或從 [TechNet 評估中心](https://www.microsoft.com/evalcenter/) 或 [MSDN](/powerapps/developer/common-data-service/org-service/subscribe-sdk-assembly-updates-using-nuget)下載 ATA。
 
 1. 請以本機系統管理員群組成員的使用者身分，登入要安裝 ATA 中心的電腦。
 
@@ -50,7 +50,7 @@ ms.locfileid: "85129862"
     > 請務必從本機磁碟機執行安裝檔案，而不是從掛接的 ISO 檔案執行，以避免安裝過程中必須重新開機的問題。
 
 1. 如果未安裝 Microsoft .NET Framework，當您開始安裝時，系統會提示您安裝它。 安裝 .NET Framework 之後，可能會出現重新開機的提示。
-1. 在 [**歡迎使用**] 頁面上，選取要用於 ATA 安裝畫面的語言，然後按 **[下一步]**。
+1. 在 [ **歡迎使用** ] 頁面上，選取要用於 ATA 安裝畫面的語言，然後按 **[下一步]**。
 
 1. 閱讀 Microsoft 軟體授權條款。在您接受條款之後，請按一下接受核取方塊，然後按一下 [下一步]****。
 
@@ -72,7 +72,7 @@ ms.locfileid: "85129862"
     ![ATA 中心設定映像](media/ATA-Center-Configuration.png)
 
     > [!NOTE]
-    > 請務必留意關於中心服務 SSL 憑證狀態和到期警告的健康情況警示。 如果憑證過期，您必須完全重新部署 ATA。
+    > 請務必留意有關中心服務 SSL 憑證狀態和到期警告的健康情況警示。 如果憑證過期，您必須完全重新部署 ATA。
 
 1. 按一下 [安裝]**** 來安裝 ATA 中心及其元件。  
 安裝 ATA 中心時將安裝及設定下列元件︰

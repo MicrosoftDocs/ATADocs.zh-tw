@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1b66474219101f9d5c7f9ce38b3a7e3ff34b6f50
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 8bd8347e3ac37b9cd3b3c94dddfeb3e1a3b59112
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775194"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88954573"
 ---
 # <a name="install-ata---step-4"></a>安裝 ATA - 步驟 4
 
@@ -43,22 +43,22 @@ ms.locfileid: "84775194"
    > [!NOTE] 
    > 從 ZIP 檔案直接安裝會失敗。
     
-2. 執行 **Microsoft ATA Gateway Setup.exe**，然後依照安裝精靈的步驟。
+1. 執行 **Microsoft ATA Gateway Setup.exe**，然後依照安裝精靈的步驟。
     
-3. 在 [歡迎]  頁面中，選取您的語言，然後按一下 [下一步]  。
+1. 在 [歡迎] 頁面中，選取您的語言，然後按一下 [下一步]。
     
-4. 安裝精靈會自動檢查伺服器為網域控制站或專用伺服器。 如果是網域控制站，系統會安裝 ATA 輕量型閘道；如果是專用伺服器，系統會安裝 ATA 閘道。 
+1. 安裝精靈會自動檢查伺服器為網域控制站或專用伺服器。 如果是網域控制站，系統會安裝 ATA 輕量型閘道；如果是專用伺服器，系統會安裝 ATA 閘道。 
     
    例如，針對 ATA 閘道，系統會顯示下列畫面以通知將會在您的專用伺服器上安裝 ATA 閘道：
     
-   ![ATA 閘道安裝](media/ata-gw-install.png) 按一下 [下一步]****。
+    ![ATA 閘道安裝](media/ata-gw-install.png) 按一下 [下一步]****。
     
    > [!NOTE] 
    > 如果網域控制站或專用伺服器不符合安裝的最低硬體需求，您會收到一則警告。 但這並不會阻止您按 [下一步]**** 和繼續進行安裝。 在不需要這麼多資料儲存空間的小型實驗室測試環境中，這可能會是安裝 ATA 的正確選項。 如果是生產環境，強烈建議使用 ATA 的 [容量規劃](ata-capacity-planning.md)指南，確保您的網域控制站或專用伺服器符合必要需求。
     
-5. 在 [Configure the Gateway (設定閘道)]**** 下，根據您的環境輸入下列資訊：
+1. 在 [Configure the Gateway (設定閘道)]**** 下，根據您的環境輸入下列資訊：
     
-   ![ATA 閘道組態設定影像](media/ata-gw-configure.png)
+    ![ATA 閘道組態設定影像](media/ata-gw-configure.png)
     
    > [!NOTE]
    > 當您部署 ATA 閘道時，您不必提供認證。 如果 ATA 閘道安裝無法使用單一登入擷取您的認證 (例如，如果 ATA 中心或 ATA 閘道不在網域中，或是您沒有 ATA 系統管理員認證，就會發生此情況)，系統會提示您提供認證，如下列畫面所示： 
@@ -67,19 +67,19 @@ ms.locfileid: "84775194"
    
     - 安裝路徑：這是安裝 ATA 閘道的位置。 位置預設為 %programfiles%\Microsoft Advanced Threat Analytics\Gateway。 保留預設值。
    
-6. 按一下 [安裝]  。 安裝 ATA 閘道期間將安裝及設定下列元件︰
+1. 按一下 [Install] 。 安裝 ATA 閘道期間將安裝及設定下列元件︰
     
-    -   KB 3047154 (僅適用於 Windows Server 2012 R2)
+    - KB 3047154 (僅適用於 Windows Server 2012 R2)
     
         > [!IMPORTANT]
-        > -   請勿將 KB 3047154 安裝於虛擬主機 (執行虛擬化的主機；可在虛擬機器上執行)。 這可能會導致連接埠鏡像無法正常運作。 
-        > -   請勿在 ATA 閘道上安裝 Message Analyzer、Wireshark 或其他網路擷取軟體。 如果您需要擷取網路流量，請安裝並使用 Microsoft Network Monitor 3.4。
+        > - 請勿將 KB 3047154 安裝於虛擬主機 (執行虛擬化的主機；可在虛擬機器上執行)。 這可能會導致連接埠鏡像無法正常運作。 
+        > - 請勿在 ATA 閘道上安裝 Message Analyzer、Wireshark 或其他網路擷取軟體。 如果您需要擷取網路流量，請安裝並使用 Microsoft Network Monitor 3.4。
     
-    -   ATA 閘道服務
-    -   Microsoft Visual C++ 2013 可轉散發元件
-    -   自訂的效能監視資料收集組
+    - ATA 閘道服務
+    - Microsoft Visual C++ 2013 可轉散發元件
+    - 自訂的效能監視資料收集組
     
-7. 安裝完成之後，針對 ATA 閘道，按一下 [**啟動**] 以開啟瀏覽器並登入 ata 主控台，針對 Ata 輕量閘道，按一下 **[完成]**。
+1. 安裝完成之後，針對 ATA 閘道，請按一下 [ **啟動** ] 以開啟瀏覽器並登入 ata 主控台，針對 Ata 輕量閘道，按一下 **[完成]**。
 
 
 > [!div class="step-by-step"]

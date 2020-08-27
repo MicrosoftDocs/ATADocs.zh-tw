@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: bff20bf7-8b53-49da-81e5-b818a1c3b24e
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 2a27025cb21892792c9502766ee90075df42efb6
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: d56f485a89ee468940ac68ba8e5fad4219753a55
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775024"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88955763"
 ---
 # <a name="provide-ata-with-your-email-server-settings"></a>使用電子郵件伺服器設定提供 ATA
 
@@ -27,13 +27,13 @@ ms.locfileid: "84775024"
 
 1. 在 ATA 中央伺服器上，按一下桌面上的 [Microsoft Advanced Threat Analytics Management]**** 圖示。
 
-2. 輸入您的使用者名稱和密碼，然後按一下 [登入]****。
+1. 輸入您的使用者名稱和密碼，然後按一下 [登入]****。
 
-3. 選取工具列上的 [設定] 選項並選取 [組態]****。
+1. 選取工具列上的 [設定] 選項並選取 [組態]****。
 
-   ![ATA 組態設定圖示](media/ATA-config-icon.png)
+    ![ATA 組態設定圖示](media/ATA-config-icon.png)
 
-4. 在 [通知]**** 區段中的 [郵件伺服器]**** 下，輸入下列資訊︰
+1. 在 [通知]**** 區段中的 [郵件伺服器]**** 下，輸入下列資訊︰
 
 
    |              欄位              |                                                                                                 描述                                                                                                  |               值                |
@@ -43,30 +43,30 @@ ms.locfileid: "84775024"
    |         驗證          | 如果您的 SMTP 伺服器需要驗證，請啟用。 **注意︰** 如果啟用驗證，您必須提供有權連線到 SMTP 伺服器的電子郵件帳戶使用者名稱和密碼。 |        預設會停用         |
    |      傳送來源 (必要)       |                                                                        輸入電子郵件傳送者的電子郵件地址。                                                                         | 例如：<br />ATA@contoso.com  |
 
-   ![ATA 電子郵件伺服器設定影像](media/ata-email-server.png)
+    ![ATA 電子郵件伺服器設定影像](media/ata-email-server.png)
 
 ## <a name="provide-ata-with-your-syslog-server-settings"></a>使用 Syslog 伺服器設定提供 ATA
 當 ATA 偵測到可疑的活動時，就會將通知傳送至 Syslog 伺服器來通知您。 如果您啟用 Syslog 通知，就可以為其進行下列設定。
 
 1. 設定 Syslog 通知前，請先洽詢您的 SIEM 系統管理員以了解下列資訊︰
 
-   -   SIEM 伺服器的 FQDN 或 IP 位址
+   - SIEM 伺服器的 FQDN 或 IP 位址
 
-   -   SIEM 伺服器正在接聽的連接埠
+   - SIEM 伺服器正在接聽的連接埠
 
-   -   要使用的傳輸：UDP、TCP 或 TLS (安全 Syslog)
+   - 應使用的傳輸：UDP、TCP 或 TLS (安全 Syslog)
 
-   -   要用來傳送資料 RFC 3164 或 5424 的格式
+   - 要用來傳送資料 RFC 3164 或 5424 的格式
 
-2. 在 ATA 中央伺服器上，按一下桌面上的 [Microsoft Advanced Threat Analytics Management]**** 圖示。
+1. 在 ATA 中央伺服器上，按一下桌面上的 [Microsoft Advanced Threat Analytics Management]**** 圖示。
 
-3. 輸入您的使用者名稱和密碼，然後按一下 [登入]****。
+1. 輸入您的使用者名稱和密碼，然後按一下 [登入]****。
 
-4. 選取工具列上的 [設定] 選項並選取 [組態]****。
+1. 選取工具列上的 [設定] 選項並選取 [組態]****。
 
-   ![ATA 組態設定圖示](media/ATA-config-icon.png)
+    ![ATA 組態設定圖示](media/ATA-config-icon.png)
 
-5. 在 [通知] 區段下，選取 [Syslog 伺服器]****，然後輸入下列資訊：
+1. 在 [通知] 區段下，選取 [Syslog 伺服器]****，然後輸入下列資訊：
 
    |欄位|描述|
    |---------|---------------|
@@ -74,7 +74,7 @@ ms.locfileid: "84775024"
    |傳輸|可以是 UDP、TCP 或 TLS (安全 Syslog)|
    |格式|這是 ATA 用來將事件傳送至 SIEM 伺服器 - RFC 5424 或 RFC 3164 的格式。|
 
-   ![ATA Syslog 伺服器設定影像](media/ata-syslog-server-settings.png)
+    ![ATA Syslog 伺服器設定影像](media/ata-syslog-server-settings.png)
 
 
 

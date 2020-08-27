@@ -1,5 +1,5 @@
 ---
-title: 在部署 Advanced 威脅分析時設定埠鏡像
+title: 部署 Advanced 威脅分析時設定埠鏡像
 description: 描述連接埠鏡像選項以及如何設定它們以進行 ATA
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: cdaddca3-e26e-4137-b553-8ed3f389c460
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3969dc5bfcc4c36c6e6b664dc27bb58fc60d08e2
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: d6d63077d0e8c102d9237fce21677608335e8c60
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775264"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88954692"
 ---
 # <a name="configure-port-mirroring"></a>設定連接埠鏡像
 
@@ -61,12 +61,12 @@ ATA 使用的主要資料來源是對進出網域控制站的網路流量的深�
 
 **如果您正在使用虛擬化叢集︰**
 
--   在具有 ATA 閘道之虛擬機器中的虛擬化叢集上執行的每個網域控制站，設定網域控制站與 ATA 閘道之間的親和性。 如此一來，當網域控制站移至叢集中的另一部主機時，ATA 閘道便會跟隨它。 只有幾個網域控制站時，這可以運作的很好。
+- 在具有 ATA 閘道之虛擬機器中的虛擬化叢集上執行的每個網域控制站，設定網域控制站與 ATA 閘道之間的親和性。 如此一來，當網域控制站移至叢集中的另一部主機時，ATA 閘道便會跟隨它。 只有幾個網域控制站時，這可以運作的很好。
 
 > [!NOTE]
 > 如果您的環境支援在不同主機上進行虛擬對虛擬 (RSPAN)，就不需要擔心親和性。
 
--   為了確保 ATA 閘道具有適當大小可以自己處理所有 DC 的監視，請嘗試此選項︰在每個虛擬化主機上安裝虛擬機器，並在每個主機上安裝 ATA 閘道。 將每個 ATA 閘道設定為監視叢集上執行的所有網域控制站。 如此一來，執行網域控制站的任何主機都會被監視。
+- 為了確保 ATA 閘道具有適當大小可以自己處理所有 DC 的監視，請嘗試此選項︰在每個虛擬化主機上安裝虛擬機器，並在每個主機上安裝 ATA 閘道。 將每個 ATA 閘道設定為監視叢集上執行的所有網域控制站。 如此一來，執行網域控制站的任何主機都會被監視。
 
 設定連接埠鏡像之後，先驗證連接埠鏡像運作正常，再安裝 ATA 閘道。
 

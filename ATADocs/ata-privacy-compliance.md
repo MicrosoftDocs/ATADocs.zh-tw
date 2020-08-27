@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 1b2d185c-62cd-45f0-b0dd-687b51317f32
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: 907fb2c6f7e24bfc0f69ae29534303f7b02d9708
-ms.sourcegitcommit: bfb5f35f8e2f19911357e5afa6624ffe43e37d12
+ms.openlocfilehash: 1ae7d9277de591f54cdb1918ee72174a806b1c96
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86472411"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88954029"
 ---
 # <a name="ata-data-security-and-privacy"></a>ATA 資料安全性和隱私權
 
@@ -25,7 +25,7 @@ ms.locfileid: "86472411"
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
-## <a name="searching-for-and-identifying-personal-data"></a>搜尋及識別個人資料 
+## <a name="searching-for-and-identifying-personal-data"></a>搜尋與識別個人資料 
 
 ATA 中與實體相關的所有資料皆衍生自 Active Directory (AD)，且會從此處複寫至 ATA。 搜尋個人資料時，您應考慮優先搜尋 AD。 
 
@@ -37,13 +37,13 @@ ATA 中有關使用者和實體的個人資料會衍生自您組織 AD 的使用
 
 ## <a name="deleting-personal-data"></a>刪除個人資料 
 
-雖然 ATA 中的資料會進行複寫，且一律會從 AD 更新，但在 AD 中刪除實體時，會針對安全性調查的目的，保留在 ATA 中的實體資料。 
+雖然 ATA 中的資料是從 AD 進行複寫，且一律會從 AD 更新，但在 AD 中刪除實體時，會保留 ATA 中的實體資料以供安全性調查之用。 
 
 若要永久從 ATA 資料庫刪除使用者相關資料，請遵循此程序： 
 
 1. [下載](https://aka.ms/ata-gdpr-script) MongoDB 指令碼 (gdpr.js)。  
 
-2. 將指令碼下載至 ATA 資料夾 (位於 `"C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB`)，並從 ATA 中心電腦執行下列命令： 
+1. 將指令碼下載至 ATA 資料夾 (位於 `"C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB`)，並從 ATA 中心電腦執行下列命令： 
 
 使用 ATA GDPR 資料庫指令碼來刪除實體與實體活動資料，如下節所述。
 
@@ -83,8 +83,8 @@ ATA 會收集各部署的匿名系統產生記錄，並透過 HTTPS 將此資料
 若要停用資料收集：
 
 1. 登入 ATA 主控台，按一下工具列中的三個點，然後選取 [關於]****。 
-2. 取消選取**將使用資訊傳送給我們，以於未來協助改善客戶經驗**的核取方塊。 
+1. 取消選取**將使用資訊傳送給我們，以於未來協助改善客戶經驗**的核取方塊。 
 
 ## <a name="additional-resources"></a>其他資源
 
-- 如需 ATA 信任與合規性的相關資訊，請參閱[服務信任入口網站](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)與 [Microsoft 365 Enterprise GDPR 合規性網站](https://docs.microsoft.com/microsoft-365/compliance/gdpr)。
+- 如需 ATA 信任與合規性的相關資訊，請參閱[服務信任入口網站](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)與 [Microsoft 365 Enterprise GDPR 合規性網站](/microsoft-365/compliance/gdpr)。

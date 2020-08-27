@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 581a3257-32dc-453f-b84e-b9f99186f5d3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3b2e2d5a9eee8d18b6d182afb15453a8809db605
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 02cd26323be6ae79524d4912674380af23d2c3af
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775398"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88954794"
 ---
 # <a name="investigating-entity-profiles"></a>調查實體設定檔
 
@@ -49,9 +49,9 @@ ms.locfileid: "84775398"
 
 對於電腦，您可以看到：
 - 電腦有多少開啟的可疑活動
--  登入電腦的使用者數
+- 登入電腦的使用者數
 - 電腦存取的資源數
--  從電腦存取 VPN 的位置數
+- 從電腦存取 VPN 的位置數
 - 電腦所使用的 IP 位址清單
   
   ![實體功能表電腦](media/entity-computer.png)
@@ -68,7 +68,7 @@ ms.locfileid: "84775398"
 
 ## <a name="view-lateral-movement-paths"></a>檢視橫向移動路徑
 
-藉由按一下 [**橫向移動路徑**] 索引標籤，您可以查看完整的動態和可按的地圖，為您提供與此使用者之間的橫向移動路徑的視覺標記法，以便用來滲透網路。
+藉由按一下 [ **橫向移動路徑** ] 索引標籤，您可以看到完全動態和可按的地圖，以視覺方式呈現此使用者的橫向移動路徑，可用來滲透您的網路。
 
 該影像地圖所提供的清單可讓您知道攻擊者在電腦和使用者之間必須有多少來回於此使用者的躍點才能入侵機密帳戶，且如果使用者本身擁有機密帳戶，您可以查看有多少直接連線的資源和帳戶。 如需詳細資訊，請參閱[橫向移動路徑](use-case-lateral-movement-path.md)。 
 

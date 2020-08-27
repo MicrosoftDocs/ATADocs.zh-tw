@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 7597ed25-87f5-472c-a496-d5f205c9c391
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4804717d489a68380f78292d8ee8e89910bf7435
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 869a9d1ed60cc740dc50456f61244f100ac47027
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775058"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88955780"
 ---
 # <a name="install-ata---step-9"></a>安裝 ATA - 步驟 9
 
@@ -27,11 +27,11 @@ ms.locfileid: "84775058"
 > [« 步驟 8](install-ata-step7.md)
 
 > [!NOTE]
-> 強制執行任何新原則之前，請務必先確定您的環境是安全的，而不會影響應用程式相容性，方法是先啟用並確認您在 audit 模式中的建議變更。 
+> 在強制執行任何新的原則之前，請務必確定您的環境保持安全，而不會影響應用程式相容性，方法是先啟用並確認您在 audit 模式中的建議變更。 
 
 ## <a name="step-9-configure-sam-r-required-permissions"></a>步驟 9. 設定 SAM-R 所需的權限
 
-[橫向移動路徑](use-case-lateral-movement-path.md)偵測有賴於識別特定電腦上本機系統管理員的查詢。 這些查詢是透過在步驟2中建立的 ATA 服務帳戶，使用 SAM-R 通訊協定來執行[。連接到 AD](install-ata-step2.md)。
+[橫向移動路徑](use-case-lateral-movement-path.md)偵測有賴於識別特定電腦上本機系統管理員的查詢。 這些查詢是使用 SAM-R 通訊協定執行，其方式是透過步驟2中建立的 ATA 服務帳戶 [。連接到 AD](install-ata-step2.md)。
  
 若要確保 Windows 用戶端和伺服器允許 ATA 服務帳戶執行這項 SAM R 作業，您必須修改 [群組原則]****，在 [網路存取]**** 原則列出的已設定帳戶之外新增 ATA 服務帳戶。 此群組原則應套用至您組織中的每個裝置。 
 
@@ -40,15 +40,15 @@ ms.locfileid: "84775058"
    - 原則名稱：網路存取 - 限制允許對 SAM 發出遠端呼叫的用戶端
    - 位置：電腦設定、Windows 設定、安全性設定、本機原則、安全性選項
   
-   ![找出原則](./media/samr-policy-location.png)
+    ![找出原則](media/samr-policy-location.png)
 
-2. 將 ATA 服務新增至能夠在新式 Windows 系統上執行此動作的核准帳戶清單。
+1. 將 ATA 服務新增至能夠在新式 Windows 系統上執行此動作的核准帳戶清單。
  
-   ![新增服務](./media/samr-add-service.png)
+    ![新增服務](media/samr-add-service.png)
 
-3. **Ata 服務**（在安裝期間建立的 ata 服務）現在具備在環境中執行 SAM-R 的適當許可權。
+1. **Ata 服務** (在安裝期間建立的 ata 服務) 現在具有適當的許可權可在環境中執行 SAM-R。
 
- 如需有關 SAM-R 與群組原則的詳細資訊，請參閱[網路存取：限制允許對 SAM 發出遠端呼叫的用戶端](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls) \(機器翻譯\)。
+ 如需有關 SAM-R 與群組原則的詳細資訊，請參閱[網路存取：限制允許對 SAM 發出遠端呼叫的用戶端](/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls) \(機器翻譯\)。
 
 
 > [!div class="step-by-step"]

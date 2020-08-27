@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8b6232817ae35bdd170f90bdc1c25920f9932322
-ms.sourcegitcommit: 954f5e64a8a25075ce663b9fd63810cf4c032987
+ms.openlocfilehash: b83a98ddf052416ffee0cd7dc521b9412b466d99
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85129845"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88954114"
 ---
 # <a name="ata-prerequisites"></a>ATA 必要條件
 
@@ -32,9 +32,9 @@ ATA 是由 ATA 中心、ATA 閘道及 (或) ATA 輕量型閘道所組成。 如�
 
 ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003 和更新版本的樹系功能等級 (FFL)。
 
-[開始之前](#before-you-start)：本節列出在開始 ATA 安裝之前，您應該收集的資訊，以及您應該具備的帳戶和網路實體。
+[開始之前](#before-you-start)：此區段會列出您應該收集的資訊以及您應該擁有的帳戶和網路實體，再開始進行 ATA 安裝。
 
-[Ata 中心](#ata-center-requirements).. 本節列出 ata 中心的硬體、軟體需求，以及在 ATA 中心伺服器上設定所需的設定。
+[Ata 中心](#ata-center-requirements)：本節列出 ata 中心的硬體、軟體需求，以及您需要在 ata 中心伺服器上設定的設定。
 
 [ATA 閘道](#ata-gateway-requirements)︰本節列出 ATA 閘道的硬體軟體需求，以及您需要在 ATA 閘道伺服器上做的設定。
 
@@ -44,7 +44,7 @@ ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003
 
 ![ATA 架構圖](media/ATA-architecture-topology.jpg)
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 本節列出在開始 ATA 安裝之前您應該收集的資訊以及您應該擁有的帳戶與網路實體。
 
@@ -55,7 +55,7 @@ ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003
 
 - 請勿在 ATA 閘道或輕量型閘道上安裝 Microsoft 郵件分析器。 郵件分析器驅動程式與 ATA 閘道和輕量型閘道驅動程式衝突。 如果您在 ATA 閘道上執行 Wireshark，在停止 Wireshark 擷取後，需要重新啟動 Microsoft Advanced Threat Analytics 閘道服務。 否則，閘道會停止擷取流量。 在 ATA 輕量型閘道上執行 Wireshark 不會干擾 ATA 輕量型閘道。
 
-- 建議︰使用者應該擁有「刪除的物件」容器的唯讀權限。 這可讓 ATA 偵測網域中的大量刪除物件。 如需設定「已刪除物件」容器的唯讀權限相關資訊，請參閱[檢視或設定目錄物件的權限](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx) \(英文\) 文章中的＜變更刪除的物件容器的權限＞****。
+- 建議︰使用者應該擁有「刪除的物件」容器的唯讀權限。 這可讓 ATA 偵測網域中的大量刪除物件。 如需設定「已刪除物件」容器的唯讀權限相關資訊，請參閱[檢視或設定目錄物件的權限](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816824(v=ws.10)) \(英文\) 文章中的＜變更刪除的物件容器的權限＞****。
 
 - 選擇性︰沒有任何網路活動之使用者的使用者帳戶。 此帳戶可設定為 ATA Honeytoken 使用者。 若要將帳戶設定為 Honeytoken 使用者，只需要使用者名稱。 如需 Honeytoken 設定的資訊，請參閱[設定 IP 位址排除項目和 Honeytoken 使用者](install-ata-step7.md)。
 
@@ -85,9 +85,9 @@ ATA 中心可以安裝在屬於網域或工作群組的成員伺服器上。
 當於實體伺服器上執行工作時，ATA 資料庫需要您**停用** BIOS 中的非統一記憶體存取 (NUMA)。 您的系統可能會將 NUMA 當成節點交錯來參考，在此情況下您必須**啟用**節點交錯以停用 NUMA。 如需詳細資訊，請參閱您的 BIOS 文件。<br>
 
 為了達到最佳效能，將 ATA 中心的 [電源選項]**** 設定為 [高效能]****。<br>
-您要監視的網域控制站數目以及每個網域控制站的負載，決定了所需的伺服器規格。 如需詳細資訊，請參閱[ATA 容量規劃](ata-capacity-planning.md)。
+您要監視的網域控制站數目以及每個網域控制站的負載，決定了所需的伺服器規格。 如需詳細資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。
 
-對於 Windows 作業系統2008R2 和2012，[多處理器群組](https://docs.microsoft.com/windows/win32/procthread/processor-groups)模式不支援閘道。 如需有關多處理器群組模式的詳細資訊，請參閱[疑難排解](troubleshooting-ata-known-errors.md#multi-processor-group-mode)。
+針對 Windows 作業系統2008R2 和2012， [多重處理器群組](/windows/win32/procthread/processor-groups) 模式不支援閘道。 如需有關多處理器群組模式的詳細資訊，請參閱[疑難排解](troubleshooting-ata-known-errors.md#multi-processor-group-mode)。
 
 ### <a name="time-synchronization"></a>時間同步
 
@@ -109,10 +109,10 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 |------------|-------------|--------|-----------|-------------|
 |**SSL** (ATA 通訊)|TCP|443|ATA 閘道|輸入|
 |**HTTP** (選擇性)|TCP|80|公司網路|輸入|
-|**IP-HTTPS**|TCP|443|公司網路和 ATA 閘道|輸入|
+|**HTTPS**|TCP|443|公司網路和 ATA 閘道|輸入|
 |**SMTP** (選擇性)|TCP|25|SMTP 伺服器|輸出|
 |**SMTPS** (選擇性)|TCP|465|SMTP 伺服器|輸出|
-|**Syslog** （選擇性）|TCP/UPS/TLS (可設定)|514 (預設)|Syslog 伺服器|輸出|
+|**Syslog** (選用) |TCP/UPS/TLS (可設定)|514 (預設)|Syslog 伺服器|輸出|
 |**LDAP**|TCP 和 UDP|389|網域控制站|輸出|
 |**LDAPS** (選擇性)|TCP|636|網域控制站|輸出|
 |**DNS**|TCP 和 UDP|53|DNS 伺服器|輸出|
@@ -126,7 +126,7 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 
 為了加快 ATA 的安裝和部署速度，您可以在安裝期間安裝自我簽署憑證。 如果您已選擇使用自我簽署憑證，則完成初始部署之後，建議將自我簽署憑證替換為來自內部憑證授權單位、要由 ATA 中心使用的憑證。
 
-請確定 ATA 中心及 ATA 閘道可以存取您的 CRL 發佈點。 若沒有網際網路存取，請遵循[手動匯入 CRL 的程序](https://technet.microsoft.com/library/aa996972%28v=exchg.65%29.aspx)，並務必安裝整個鏈結的所有 CRL 發佈點。
+請確定 ATA 中心及 ATA 閘道可以存取您的 CRL 發佈點。 若沒有網際網路存取，請遵循[手動匯入 CRL 的程序](/previous-versions/tn-archive/aa996972(v=exchg.65))，並務必安裝整個鏈結的所有 CRL 發佈點。
 
 憑證必須包含：
 
@@ -135,8 +135,8 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 - 2048 位元的公用金鑰長度
 - 針對 KeyEncipherment 和 ServerAuthentication 使用方式旗標所設定的值
 - "KeyExchange" (AT\_KEYEXCHANGE) 的 KeySpec (KeyNumber) 值。
-    不支援 "Signature" 值（在簽章中 \_ ）。 *not*
-- 所有閘道機器都必須能夠完全驗證及信任選取的中心憑證。
+    不支援在簽章)  ("Signature" 值 \_ 。 *not*
+- 所有閘道電腦都必須能夠完全驗證並信任選取的中心憑證。
 
 例如，您可以使用標準**網頁伺服器**或**電腦**範本。
 
@@ -165,16 +165,16 @@ ATA 閘道可以用來監視具 Windows Server 2003 或更新版本之網域功�
 如需使用虛擬機器與 ATA 閘道的資訊，請參閱 [Configure port mirroring](configure-port-mirroring.md) (設定連接埠鏡像)。
 
 > [!NOTE]
-> 至少需要 5 GB 的空間，建議要有 10 GB。 這包括 ATA 二進位檔、ATA 記錄檔和[效能記錄](troubleshooting-ata-using-perf-counters.md)檔所需的空間。
+> 至少需要 5 GB 的空間，建議要有 10 GB。 這包括 ATA 二進位檔、ATA 記錄檔和 [效能記錄](troubleshooting-ata-using-perf-counters.md)檔所需的空間。
 
 ### <a name="server-specifications"></a>伺服器規格
 
 為了達到最佳效能，將 ATA 閘道的 [電源選項]**** 設定為 [高效能]****。<br>
 ATA 閘道可以支援監視多個網域控制站，依進出網域控制站的網路傳輸量而定。
 
-若要深入瞭解動態記憶體或任何其他虛擬機器記憶體管理功能，請參閱易失[儲存體](#dynamic-memory)。
+若要深入瞭解動態記憶體或任何其他虛擬機器記憶體管理功能，請參閱易失 [儲存體](#dynamic-memory)。
 
-如需 ATA 閘道硬體需求的詳細資訊，請參閱[ata 容量規劃](ata-capacity-planning.md)。
+如需 ATA 閘道硬體需求的詳細資訊，請參閱 [ata 容量規劃](ata-capacity-planning.md)。
 
 ### <a name="time-synchronization"></a>時間同步
 
@@ -251,7 +251,7 @@ ATA 輕量型閘道可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)�
 於安裝期間安裝的 .Net Framework 4.6.1 可能會導致網域控制站重新開機。
 
 > [!NOTE]
-> 至少需要 5 GB 的空間，建議要有 10 GB。 這包括 ATA 二進位檔、ATA 記錄檔和[效能記錄](troubleshooting-ata-using-perf-counters.md)檔所需的空間。
+> 至少需要 5 GB 的空間，建議要有 10 GB。 這包括 ATA 二進位檔、ATA 記錄檔和 [效能記錄](troubleshooting-ata-using-perf-counters.md)檔所需的空間。
 
 ### <a name="server-specifications"></a>伺服器規格
 
@@ -259,9 +259,9 @@ ATA 輕量型閘道至少需要在網域控制站上安裝 2 個核心和 6 GB �
 為了達到最佳效能，將 ATA 輕量型閘道的 **[電源選項]** 設定為 [高效能]****。
 ATA 輕量型閘道可以部署在各種負載和大小的網域控制站上，依進出網域控制站的網路流量，以及安裝在該網域控制站上的資源數量而定。
 
-若要深入瞭解動態記憶體或任何其他虛擬機器記憶體管理功能，請參閱易失[儲存體](#dynamic-memory)。
+若要深入瞭解動態記憶體或任何其他虛擬機器記憶體管理功能，請參閱易失 [儲存體](#dynamic-memory)。
 
-如需 ATA 羽量級閘道硬體需求的詳細資訊，請參閱[ata 容量規劃](ata-capacity-planning.md)。
+如需 ATA 輕量閘道硬體需求的詳細資訊，請參閱 [ata 容量規劃](ata-capacity-planning.md)。
 
 ### <a name="time-synchronization"></a>時間同步
 
@@ -302,7 +302,7 @@ ATA 輕量型閘道可為所有網域控制站的網路介面卡監視其上的�
 ## <a name="dynamic-memory"></a>動態記憶體
 
 > [!NOTE]
-> 執行 ATA 服務作為虛擬機器（VM）時，服務需要所有的記憶體都配置給 VM，而且隨時都有。
+> 以虛擬機器的形式執行 ATA 服務時 (VM) 服務需要將所有記憶體配置給 VM。
 
 |VM 執行位置|說明|
 |------------|-------------|

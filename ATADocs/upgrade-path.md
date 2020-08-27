@@ -1,5 +1,5 @@
 ---
-title: Advanced 威脅分析建議的升級路徑
+title: 先進的威脅分析建議升級路徑
 description: 提供升級 Advanced Threat Analytics (ATA) 版本的指示。
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 88720401-1fb2-4353-ad39-32bc0088f0de
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1bdf5a33efb00fd592b6da9fc8696df3bcfe281b
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 31ab0d74020ae446d0739ed2b9e79c19b5ffb60c
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84774837"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956341"
 ---
 # <a name="recommended-upgrade-path-for-ata"></a>ATA 的建議升級路徑
 
@@ -45,7 +45,7 @@ ms.locfileid: "84774837"
 
 請參閱升級路徑圖表，以判斷您目前安裝的正確升級路徑。 
 
-![ATA 版本升級路徑](./media/upgrade-path-ata.png)
+![ATA 版本升級路徑](media/upgrade-path-ata.png)
 
 ## <a name="see-also"></a>另請參閱
 - [ATA 必要條件](ata-prerequisites.md)

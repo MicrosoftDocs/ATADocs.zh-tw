@@ -12,59 +12,57 @@ ms.technology: ''
 ms.assetid: 38ea49b5-cd5e-43e5-bc39-5071f759633b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 20332702453ef48b454303399dc7203ac61ea111
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: ade040ef22e471119fd68867af286073af97345f
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775075"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956545"
 ---
 # <a name="ata-reports"></a>ATA 報表
-
 
 *適用於：Advanced Threat Analytics 1.9 版*
 
 主控台中的 ATA 報表區段可讓您產生報表，以提供系統狀態資訊，除了系統健康狀態，還報告您環境中偵測到的可疑活動。
 
-若要存取報表頁面，請按一下功能表列中的報表圖示：![報表圖示](./media/ata-report-icon.png)。
-可用的報表包括： 
+若要存取報表頁面，請按一下功能表列中的報表圖示：![報表圖示](media/ata-report-icon.png)。
+可用的報表包括：
 
-- **摘要報告**：摘要報表會顯示系統中狀態的儀表板。 您可以檢視三個索引標籤：[摘要]**** 列出您網路上偵測到的問題，[Open suspicious activities (開啟可疑活動)]**** 列出您應該處理的可疑活動，而 [Open health issues (開啟健康狀態問題)]**** 列出您應該處理的 ATA 系統健康狀態問題。 列出的可疑活動和健康狀態問題會依類型細分。 
+- **摘要報表**：摘要報表提供系統中的狀態儀表板。 您可以檢視三個索引標籤：[摘要]**** 列出您網路上偵測到的問題，[Open suspicious activities (開啟可疑活動)]**** 列出您應該處理的可疑活動，而 [Open health issues (開啟健康狀態問題)]**** 列出您應該處理的 ATA 系統健康狀態問題。 列出的可疑活動和健康狀態問題會依類型細分。
 
 - **敏感性群組的修改**：此報表會列出對敏感性群組 (例如系統管理員) 進行的每次修改。
 
-- **密碼以純文字格式公開**：部分服務使用不安全的 LDAP 通訊協定，以純文字傳送帳戶認證。 即使是敏感性帳戶也可能會發生此情況。 監視網路流量的攻擊者可能會惡意攔截並重複使用這些認證。 此報表會列出所有來源電腦，以及 ATA 所偵測到以純文字傳送的帳戶密碼。 
+- **密碼以純文字格式公開**：部分服務使用不安全的 LDAP 通訊協定，以純文字傳送帳戶認證。 即使是敏感性帳戶也可能會發生此情況。 監視網路流量的攻擊者可能會惡意攔截並重複使用這些認證。 此報表會列出所有來源電腦，以及 ATA 所偵測到以純文字傳送的帳戶密碼。
 
-- **機密帳戶的橫向移動路徑**：此報表會列出透過橫向移動路徑公開的機密帳戶。 如需詳細資訊，請參閱[橫向移動路徑](use-case-lateral-movement-path.md)
+- **敏感性帳戶的橫向移動路徑**：此報告會列出透過橫向移動路徑公開的敏感性帳戶。 如需詳細資訊，請參閱 [橫向移動路徑](use-case-lateral-movement-path.md)
 
 產生報表的方式有兩種：依需求，或排程報表定期傳送到您的電子郵件。
 
 若要依需求產生報表：
 
-1. 在 ATA 主控台功能表列中，按一下功能表列中的報表圖示： ![報表圖示](./media/ata-report-icon.png).
+1. 在 ATA 主控台功能表列中，按一下功能表列中的報表圖示： ![報表圖示](media/ata-report-icon.png).
 
-2. 在您的已選取報表類型下，設定**開始**與**結束**日期，並按一下 [下載]****。 
- ![報表](./media/reports.png)
+1. 在您的已選取報表類型下，設定**開始**與**結束**日期，並按一下 [下載]****。
+ ![顯示報表日期範圍選取範圍的螢幕擷取畫面](media/reports.png)
 
 若要設定排程的報表：
- 
+
 1. 在 [報表]**** 頁面中，按一下 [Set scheduled reports (設定排程的報表)]****，或在 ATA 主控台的 [設定] 頁面中，按一下 [Notifications and Reports (通知與報表)] 下的 [排程的報表]****。
 
-   ![排程報表](./media/ata-sched-reports.png)
+    ![排程報表](media/ata-sched-reports.png)
 
    > [!NOTE]
    > 每日報表是設計為在午夜 (UTC) 過後不久傳送。
 
-2. 按一下已選取報表類型旁的 [排程]****，以設定傳送報表的頻率和電子郵件地址，按一下電子郵件地址旁的加號予以新增，然後按一下 [儲存]****。
+1. 按一下已選取報表類型旁的 [排程]****，以設定傳送報表的頻率和電子郵件地址，按一下電子郵件地址旁的加號予以新增，然後按一下 [儲存]****。
 
-   ![排程報表頻率和電子郵件](./media/sched-report1.png)
-
+    ![排程報表頻率和電子郵件](media/sched-report1.png)
 
 > [!NOTE]
 > 排程的報表會以電子郵件形式傳送，您必須已在 [設定]**** 下設定電子郵件伺服器，然後在 [通知與報表]**** 下選取 [郵件伺服器]****，才能傳送這些報表。
 
-
 ## <a name="see-also"></a>另請參閱
+
 - [ATA 必要條件](ata-prerequisites.md)
 - [ATA 容量規劃](ata-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)

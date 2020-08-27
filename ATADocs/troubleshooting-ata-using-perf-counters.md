@@ -1,5 +1,5 @@
 ---
-title: 使用效能計數器疑難排解先進的威脅分析
+title: 使用效能計數器針對 Advanced 威脅分析進行疑難排解
 description: 描述如何使用效能計數器疑難排解 ATA 相關問題
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: df162a62-f273-4465-9887-94271f5000d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 94a7ef9a31828e57417f0def62f0d9eadd8ed021
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 1406e96ea205d50a64b475cc6a2d9642e38f63a4
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84774871"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956392"
 ---
 # <a name="troubleshooting-ata-using-the-performance-counters"></a>使用效能計數器疑難排解 ATA
 
@@ -28,21 +28,21 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 
 **ATA 元件程序**：
 
-1.  當元件達到其大小上限時，它會封鎖先前的元件且不會傳送多個實體給它。
+1. 當元件達到其大小上限時，它會封鎖先前的元件且不會傳送多個實體給它。
 
-2.  然後，先前的元件最終將會開始增加**其**本身的大小，直到它封鎖先前的元件且不會傳送多個實體。
+1. 然後，先前的元件最終將會開始增加**其**本身的大小，直到它封鎖先前的元件且不會傳送多個實體。
 
-3.  這會在傳回 NetworkListener 元件時發生，此元件將會在無法再轉送實體時捨棄流量。
+1. 這會在傳回 NetworkListener 元件時發生，此元件將會在無法再轉送實體時捨棄流量。
 
 
 ## <a name="retrieving-performance-monitor-files-for-troubleshooting"></a>擷取效能監視器檔案供疑難排解之用
 
 若要從各項 ATA 元件擷取效能監視器檔案 (BLG)：
-1.  開啟效能監視器。
-2.  停止名為 **Microsoft ATA 閘道**或 **Microsoft ATA 中心**的資料收集器集合工具。
-3.  移至資料收集器集合工具資料夾 (預設值為 "C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs\DataCollectorSets" 或 "C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs\DataCollectorSets")。
-4.  複製最近修改過的 BLG 檔案。
-5.  重新啟動名為 **Microsoft ATA 閘道**或 **Microsoft ATA 中心**的資料收集器集合工具。
+1. 開啟效能監視器。
+1. 停止名為 **Microsoft ATA 閘道**或 **Microsoft ATA 中心**的資料收集器集合工具。
+1. 移至資料收集器集合工具資料夾 (預設值為 "C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs\DataCollectorSets" 或 "C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs\DataCollectorSets")。
+1. 複製最近修改過的 BLG 檔案。
+1. 重新啟動名為 **Microsoft ATA 閘道**或 **Microsoft ATA 中心**的資料收集器集合工具。
 
 
 ## <a name="ata-gateway-performance-counters"></a>ATA 閘道效能計數器
@@ -67,8 +67,8 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 > |Microsoft ATA Gateway\EntitySender Batch Send Time|傳送最後一個批次所花的時間。|大部分時候應小於 1000 毫秒|檢查 ATA 閘道和 ATA 中心之間是否有任何網路問題。|
 > 
 > [!NOTE]
-> -   時間計數器以毫秒為單位。
-> -   有時候使用**報表**圖形類型監視計數器的完整清單會更方便 (範例︰所有計數器的即時監視)
+> - 時間計數器以毫秒為單位。
+> - 有時候使用**報表**圖形類型監視計數器的完整清單會更方便 (範例︰所有計數器的即時監視)
 
 ## <a name="ata-lightweight-gateway-performance-counters"></a>ATA 輕量型閘道效能計數器
 效能計數器可用於輕量型閘道中的配額管理，確保 ATA 不會耗盡安裝所在的網域控制站太多的資源。
@@ -115,8 +115,8 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 > 
 > 
 > [!NOTE]
-> -   時間計數器以毫秒為單位
-> -   有時候，如果要監視計數器的完整清單，使用「報告」的圖形類型會更方便 (範例︰所有計數器的即時監視)。
+> - 時間計數器以毫秒為單位
+> - 有時候，如果要監視計數器的完整清單，使用「報告」的圖形類型會更方便 (範例︰所有計數器的即時監視)。
 
 ## <a name="operating-system-counters"></a>作業系統計數器
 下表列出要注意的主要作業系統計數器︰
@@ -129,8 +129,8 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 > |System\Context Switches\sec|所有處理器從一個執行緒切換到另一個執行緒的組合速率。|小於 5000&#42; 個核心 (實體核心)|檢查是否有花費的處理器時間遠超過預期的特定程序。<br /><br />新增更多處理器。<br /><br />減少每部伺服器的流量。<br /><br />"Processor(_Total)\% Processor Time" 計數器在虛擬伺服器上可能會較不精確，在此情況下，要測量處理器電源不足，更精確的方式是透過 "System\Processor Queue Length" 計數器。|
 > |System\Processor Queue Length|準備好執行，且正等候排程的執行緒數目。|少於五&#42;個核心 (實體核心)|檢查是否有花費的處理器時間遠超過預期的特定程序。<br /><br />新增更多處理器。<br /><br />減少每部伺服器的流量。<br /><br />"Processor(_Total)\% Processor Time" 計數器在虛擬伺服器上可能會較不精確，在此情況下，要測量處理器電源不足，更精確的方式是透過 "System\Processor Queue Length" 計數器。|
 > |Memory\Available MBytes|可供配置的實體記憶體 (RAM) 數量。|應大於 512|檢查是否有花費的實體記憶體遠超過預期的特定程序。<br /><br />減少實體記憶體數量。<br /><br />減少每部伺服器的流量。|
-> |LogicalDisk （&#42;） \Avg. 磁片 sec\Read|從磁碟讀取資料的平均延遲 (您應該選擇資料庫磁碟機做為執行個體)。|應小於 10 毫秒|檢查是否有特定程序，其利用的資料庫磁碟機超過預期。<br /><br />如果此磁碟機提供目前工作負載之際，延遲可以小於 10 毫秒，請洽詢儲存體小組/廠商。 使用磁碟使用計數器可判斷目前的工作負載。|
-> |LogicalDisk （&#42;） \Avg. 磁片 sec\Write|將資料寫入磁碟的平均延遲 (您應該選擇資料庫磁碟機做為執行個體)。|應小於 10 毫秒|檢查是否有特定程序，其利用的資料庫磁碟機超過預期。<br /><br />如果此磁碟機提供目前工作負載之際，延遲可以小於 10 毫秒，請洽詢儲存體小組/廠商。 使用磁碟使用計數器可判斷目前的工作負載。|
+> |LogicalDisk ( # A0) \Avg. Disk sec\Read|從磁碟讀取資料的平均延遲 (您應該選擇資料庫磁碟機做為執行個體)。|應小於 10 毫秒|檢查是否有特定程序，其利用的資料庫磁碟機超過預期。<br /><br />如果此磁碟機提供目前工作負載之際，延遲可以小於 10 毫秒，請洽詢儲存體小組/廠商。 使用磁碟使用計數器可判斷目前的工作負載。|
+> |LogicalDisk ( # A0) \Avg. Disk sec\Write|將資料寫入磁碟的平均延遲 (您應該選擇資料庫磁碟機做為執行個體)。|應小於 10 毫秒|檢查是否有特定程序，其利用的資料庫磁碟機超過預期。<br /><br />如果此磁碟機提供目前工作負載之際，延遲可以小於 10 毫秒，請洽詢儲存體小組/廠商。 使用磁碟使用計數器可判斷目前的工作負載。|
 > |\LogicalDisk(&#42;)\Disk Reads\sec|執行讀取作業至磁碟的速率。|沒有閾值|磁碟使用計數器可在疑難排解儲存體延遲時新增見解。|
 > |\LogicalDisk(&#42;)\Disk Read Bytes\sec|每秒從磁碟讀取的位元組數目。|沒有閾值|磁碟使用計數器可在疑難排解儲存體延遲時新增見解。|
 > |\LogicalDisk&#42;\Disk Writes\sec|執行寫入作業至磁碟的速率。|沒有閾值|磁碟使用計數器 (可在疑難排解儲存體延遲時新增見解)|

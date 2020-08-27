@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 51de491c-49ba-4aff-aded-cc133a8ccf0b
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 261d6c5253dc697ae50523c24ccb34feba75a4e6
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: abe3a716c7a85ba435eec18eab94e514222e6803
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84774667"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956154"
 ---
 # <a name="whats-new-in-ata-version-19"></a>ATA 1.9 版的新功能
 
@@ -32,15 +32,15 @@ ms.locfileid: "84774667"
 
 ## <a name="new-reports-to-help-you-investigate"></a>可協助您調查的新報表 
 
--   [**以純文字公開的密碼**](reports.md)可讓您偵測到敏感性與非敏感性帳戶以純文字傳送帳戶認證。 這可讓您調查並解決在環境中使用 LDAP 簡單繫結的狀況，並改善您的網路安全性等級。 此報表會取代服務與敏感性帳戶純文字可疑活動警示。
+- [**以純文字公開的密碼**](reports.md)可讓您偵測到敏感性與非敏感性帳戶以純文字傳送帳戶認證。 這可讓您調查並解決在環境中使用 LDAP 簡單繫結的狀況，並改善您的網路安全性等級。 此報表會取代服務與敏感性帳戶純文字可疑活動警示。
 
 - [**敏感性帳戶的橫向移動路徑**](reports.md)會列出透過橫向移動路徑公開的敏感性帳戶。 這可讓您減輕這些路徑的危險並強化您的網路，將攻擊面的風險降至最低。 這可讓您防止橫向移動，讓攻擊者無法在您的網路中於使用者和電腦之間移動，尋找虛擬安全性大獎：您的機密管理員帳戶認證。
 
 ## <a name="improved-investigation"></a>改善的調查
 
--  ATA 1.9 包含新增且改善的[實體設定檔](entity-profiles.md)。 實體設定檔提供您專為完整深入調查使用者、其所存取的資源以及其歷程記錄所設計的儀表板。 實體設定檔也能讓您識別可透過橫向移動路徑加以存取的敏感性使用者。 
+- ATA 1.9 包含新增且改善的[實體設定檔](entity-profiles.md)。 實體設定檔提供您專為完整深入調查使用者、其所存取的資源以及其歷程記錄所設計的儀表板。 實體設定檔也能讓您識別可透過橫向移動路徑加以存取的敏感性使用者。 
 
--   ATA 1.9 可讓您[手動標記群組](tag-sensitive-accounts.md)或帳戶為敏感性，以增強偵測。 進行標記會影響許多 ATA 偵測，例如敏感性群組修改偵測與橫向移動路徑，這將取決於那些群組與帳戶視為具敏感性而定。
+- ATA 1.9 可讓您[手動標記群組](tag-sensitive-accounts.md)或帳戶為敏感性，以增強偵測。 進行標記會影響許多 ATA 偵測，例如敏感性群組修改偵測與橫向移動路徑，這將取決於那些群組與帳戶視為具敏感性而定。
 
 ## <a name="performance-improvements"></a>效能改善
 

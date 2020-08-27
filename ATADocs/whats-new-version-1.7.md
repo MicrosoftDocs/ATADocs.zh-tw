@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: be9ee613-4eb3-40f1-8973-e7f0a707ff57
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 14fd7b13b61005ef215c6ba80920572ebcdf0b64
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 5a23b551b1f05513c242e9779f51f68c7bab2d4a
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84774701"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956256"
 ---
 # <a name="whats-new-in-ata-version-17"></a>ATA 1.7 版的新功能
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。
@@ -25,15 +25,15 @@ ms.locfileid: "84774701"
 ## <a name="whats-new-in-the-ata-17-update"></a>什麼是 ATA 1.7 更新的新功能？
 ATA 1.7 的更新提供下列各方面的改良︰
 
--   新的和更新的偵測項目
+- 新的和更新的偵測項目
 
--   角色型存取控制
+- 角色型存取控制
 
--   支援 Windows Server 2016 和 Windows Server 2016 Core
+- 支援 Windows Server 2016 和 Windows Server 2016 Core
 
--   使用者體驗改善
+- 使用者體驗改善
 
--   次要變更
+- 次要變更
 
 
 ### <a name="new--updated-detections"></a>新的和更新的偵測項目
@@ -97,16 +97,16 @@ ATA 1.7 的更新提供下列各方面的改良︰
 
 1. Mongo.exe ATA (ATA 必須大寫) 
 
-2. CenterThumbprint=db.SystemProfile.find({_t:"CenterSystemProfile"}).toArray()[0].Configuration.SecretManagerConfiguration.CertificateThumbprint;
+1. CenterThumbprint=db.SystemProfile.find({_t:"CenterSystemProfile"}).toArray()[0].Configuration.SecretManagerConfiguration.CertificateThumbprint;
 
-3. db.SystemProfile.update({_t:"ServiceSystemProfile"},{$set:{"Configuration.ManagementClientConfiguration.ServerCertificateThumbprint":CenterThumbprint}}, {multi: true})
+1. db.SystemProfile.update({_t:"ServiceSystemProfile"},{$set:{"Configuration.ManagementClientConfiguration.ServerCertificateThumbprint":CenterThumbprint}}, {multi: true})
 
 ### <a name="export-suspicious-activity-details-to-excel-may-fail"></a>將可疑活動詳細資料匯出至 Excel 可能失敗
 嘗試將可疑活動詳細資料匯出至 Excel 檔案時，作業可能會因下列錯誤而失敗：*Error [BsonClassMapSerializer`1] System.FormatException: 將類別 Microsoft.Tri.Common.Data.NetworkActivities.SuspiciousActivityActivity 的 Activity 屬性還原序列化時發生錯誤: Element 'ResourceIdentifier' 不符合類別 Microsoft.Tri.Common.Data.EventActivities.NtlmEvent 的任何欄位或屬性。---> System.FormatException: 項目 'ResourceIdentifier' 不符合類別 Microsoft.Tri.Common.Data.EventActivities.NtlmEvent 的任何欄位或屬性。*
 
 若要解決此問題，請從提升權限的命令提示字元瀏覽至下列位置：**%ProgramFiles%\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**，然後執行以下命令：
-1.  `Mongo.exe ATA` (ATA 必須是大寫)
-2.  `db.SuspiciousActivityActivity.update({ "Activity._t": "NtlmEvent" },{$unset: {"Activity.ResourceIdentifier": ""}}, {multi: true});`
+1. `Mongo.exe ATA` (ATA 必須是大寫)
+2. `db.SuspiciousActivityActivity.update({ "Activity._t": "NtlmEvent" },{$unset: {"Activity.ResourceIdentifier": ""}}, {multi: true});`
 
 ## <a name="minor-changes"></a>次要變更
 

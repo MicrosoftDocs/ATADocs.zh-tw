@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 87f0ee5e13e5b6c85a210d4b63a78b27f249888d
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 7bdd3bf22f2b87c34ac45614c9c8f3ebeab2e87b
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84774718"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956664"
 ---
 # <a name="whats-new-in-ata-version-15"></a>ATA 1.5 版的新功能
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。
@@ -25,19 +25,19 @@ ms.locfileid: "84774718"
 ## <a name="whats-new-in-the-ata-15-update"></a>什麼是 ATA 1.5 更新的新功能？
 更新至 ATA 1.5 提供下列各方面的改良︰
 
--   更快速的偵測時間
+- 更快速的偵測時間
 
--   增強對 NAT (網路位址轉譯) 裝置的自動偵測演算法
+- 增強對 NAT (網路位址轉譯) 裝置的自動偵測演算法
 
--   增強對未加入網域裝置的名稱解析程序
+- 增強對未加入網域裝置的名稱解析程序
 
--   支援在產品更新期間的資料移轉
+- 支援在產品更新期間的資料移轉
 
--   針對涉及上千個實體的可疑活動提供更好的 UI 回應性
+- 針對涉及上千個實體的可疑活動提供更好的 UI 回應性
 
--   已改善健全狀況警示的自動解析
+- 改善的健康情況警示自動解決方式
 
--   增強的監視和疑難排解有更多的效能計數器
+- 增強的監視和疑難排解有更多的效能計數器
 
 ## <a name="known-issues"></a>已知問題
 下列已知問題存在於此版本中。

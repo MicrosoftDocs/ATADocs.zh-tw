@@ -1,5 +1,5 @@
 ---
-title: 使用資料庫進行 Advanced 威脅分析的疑難排解
+title: 使用資料庫針對 Advanced 威脅分析進行疑難排解
 description: 描述如何使用 ATA 資料庫來協助疑難排解問題
 keywords: ''
 author: shsagir
@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 377a3c81-5c1d-486f-8942-85249aacf560
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 269646c7547b0a9a3538405a4180d063e27e0455
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: d71379b5af28c5cbce445e32ef98c5501c6be002
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84774905"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956426"
 ---
 # <a name="troubleshooting-ata-using-the-ata-database"></a>使用 ATA 資料庫疑難排解 ATA
 
@@ -29,9 +29,9 @@ ATA 會使用 MongoDB 作為其資料庫。
 ## <a name="interacting-with-the-database"></a>與資料庫互動
 查詢資料庫的預設和最基本的方式是使用 Mongo 殼層︰
 
-1.  開啟命令列視窗，並將路徑變更為 MongoDB 的 bin 資料夾。 預設路徑為︰**C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**。
+1. 開啟命令列視窗，並將路徑變更為 MongoDB 的 bin 資料夾。 預設路徑為︰**C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**。
 
-2.  執行：`mongo.exe ATA`。 請確定輸入全部大寫字母的 ATA。
+1. 執行：`mongo.exe ATA`。 請確定輸入全部大寫字母的 ATA。
 
 > [!div class="mx-tableFixed"]
 > 

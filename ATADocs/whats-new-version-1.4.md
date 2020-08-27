@@ -12,47 +12,47 @@ ms.technology: ''
 ms.assetid: cbea47f9-34c1-42b6-ae9e-6a472b49e1a5
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1ad136c9f028140d76fd42f62eeb7a11366af286
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: cbe31a255a5b437852b6084fcea92556a04a6bd5
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84774744"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956681"
 ---
 # <a name="what39s-new-in-ata-version-14"></a>ATA 1.4 版的新功能
 這些版本資訊提供 Advanced Threat Analytics 1.4 版中已知問題的相關資訊。
 
 ## <a name="whats-new-in-this-version"></a>此版本有什麼新功能？
 
--   支援 Windows 事件轉送 (WEF) 將事件直接從網域控制站傳送至 ATA 閘道。
+- 支援 Windows 事件轉送 (WEF) 將事件直接從網域控制站傳送至 ATA 閘道。
 
--   藉由結合 DPI (深度封包檢查) 和 Windows 事件記錄檔來增強公司資源上的傳遞雜湊偵測。
+- 藉由結合 DPI (深度封包檢查) 和 Windows 事件記錄檔來增強公司資源上的傳遞雜湊偵測。
 
--   增強未加入網域裝置與非 Windows 裝置的偵測與可見度支援。
+- 增強未加入網域裝置與非 Windows 裝置的偵測與可見度支援。
 
--   支援每個 ATA 閘道更多流量的效能改善。
+- 支援每個 ATA 閘道更多流量的效能改善。
 
--   支援每個 ATA 中心更多 ATA 閘道的效能改善。
+- 支援每個 ATA 中心更多 ATA 閘道的效能改善。
 
--   已新增會比對電腦名稱和 IP 位址的自動名稱解析程序，這項特殊的功能可在調查程序中節省寶貴的時間，並提供有力的證據給安全性分析師
+- 已新增會比對電腦名稱和 IP 位址的自動名稱解析程序，這項特殊的功能可在調查程序中節省寶貴的時間，並提供有力的證據給安全性分析師
 
--   收集使用者的輸入以自動微調偵測程序的改良功能。
+- 收集使用者的輸入以自動微調偵測程序的改良功能。
 
--   NAT 裝置的自動偵測。
+- NAT 裝置的自動偵測。
 
--   無法連線到網域控制站時進行的自動容錯移轉。
+- 無法連線到網域控制站時進行的自動容錯移轉。
 
--   系統健全狀況監視和通知現在提供部署的整體健全狀況狀態，以及組態與連線能力的相關特定問題。
+- 系統健全狀況監視和通知現在提供部署的整體健全狀況狀態，以及組態與連線能力的相關特定問題。
 
--   實體運作所在站台和位置的可見度。
+- 實體運作所在站台和位置的可見度。
 
--   多重網域支援。
+- 多重網域支援。
 
--   單一標籤網域 (SLD) 的支援。
+- 單一標籤網域 (SLD) 的支援。
 
--   支援修改 IP 位址與 ATA 閘道和 ATA 中心的憑證。
+- 支援修改 IP 位址與 ATA 閘道和 ATA 中心的憑證。
 
--   協助改善客戶體驗的遙測。
+- 協助改善客戶體驗的遙測。
 
 ## <a name="known-issues"></a>已知問題
 下列已知問題存在於此版本中。
@@ -72,17 +72,17 @@ ms.locfileid: "84774744"
 
 **ATA 中心**
 
--   HKLM\SOFTWARE\Microsoft\Microsoft Advanced Threat Analytics\Center
+- HKLM\SOFTWARE\Microsoft\Microsoft Advanced Threat Analytics\Center
 
--   利用 `C:\Program Files\Microsoft Advanced Threat Analytics\Center` 的值新增名為 `InstallationPath` 的字串值。 這是預設安裝資料夾。 如果您已變更安裝資料夾，請輸入安裝 ATA 的路徑。
+- 利用 `C:\Program Files\Microsoft Advanced Threat Analytics\Center` 的值新增名為 `InstallationPath` 的字串值。 這是預設安裝資料夾。 如果您已變更安裝資料夾，請輸入安裝 ATA 的路徑。
 
     ![ATA 中心安裝路徑的登錄編輯程式](media/ATA-uninstall-center-bug.jpg)
 
 **ATA 閘道**
 
--   HKLM\SOFTWARE\Microsoft\Microsoft Advanced Threat Analytics\Gateway
+- HKLM\SOFTWARE\Microsoft\Microsoft Advanced Threat Analytics\Gateway
 
--   利用 `C:\Program Files\Microsoft Advanced Threat Analytics\Gateway` 的值新增名為 `InstallationPath` 的字串值。 這是預設安裝資料夾。  如果您已變更安裝資料夾，請輸入安裝 ATA 的路徑。
+- 利用 `C:\Program Files\Microsoft Advanced Threat Analytics\Gateway` 的值新增名為 `InstallationPath` 的字串值。 這是預設安裝資料夾。  如果您已變更安裝資料夾，請輸入安裝 ATA 的路徑。
 
     ![ATA 閘道安裝路徑的登錄編輯程式](media/ATA-GW-uninstall-bug.jpg)
 

@@ -178,7 +178,7 @@
     - name: SIEM 記錄檔參考
       href: cef-format-sa.md
     - name: Azure ATP 已知問題
-      href: known-issues.md
+      href: ./troubleshooting-atp-known-issues.md
     - name: Azure ATP 版本參考
       href: atp-release-reference.md
 - name: 資源

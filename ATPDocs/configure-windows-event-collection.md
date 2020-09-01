@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 08/04/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 07136153ab0909f6de9089b0f748d4ed123e1458
-ms.sourcegitcommit: 8c99699b9b84d50fb258c0cc5523ffa78133b7a4
+ms.openlocfilehash: aa86397e76cafabe4c45dd5b394996225d758633
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2020
-ms.locfileid: "88027208"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956868"
 ---
 # <a name="configure-windows-event-collection"></a>設定 Windows 事件集合
 
@@ -96,7 +96,7 @@ Azure 進階威脅防護 (Azure ATP) 偵測仰賴特定的 Windows 事件記錄�
         ![稽核送往遠端伺服器的連出 NTLM 流量](media/atp-advanced-audit-policy-check-step-3.png)
 
     > [!NOTE]
-    > 如果您選擇使用本機安全性原則，而不是使用群組原則，請務必在本機原則中新增 [帳戶登入]、[帳戶管理] 及 [安全性選項] 稽核記錄。 如果您要設定進階稽核原則，請務必強制執行[稽核原則子類別](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/audit-force-audit-policy-subcategory-settings-to-override)。
+    > 如果您選擇使用本機安全性原則，而不是使用群組原則，請務必在本機原則中新增 [帳戶登入]、[帳戶管理] 及 [安全性選項] 稽核記錄。 如果您要設定進階稽核原則，請務必強制執行[稽核原則子類別](/windows/security/threat-protection/security-policy-settings/audit-force-audit-policy-subcategory-settings-to-override)。
 
 1. 在套用 GPO 後，新的事件會顯示在您的 **Windows 事件記錄檔**下。
 
@@ -120,7 +120,7 @@ Advanced Security Audit Policy is enabled via **Default Domain Controllers Polic
 > [!NOTE]
 >
 > - Azure ATP 獨立感應器不會收集 Windows 事件追蹤 (ETW) 的記錄項目，無法提供多種偵測的資料。 若要完整涵蓋您的環境，建議您部署 Azure ATP 感應器。
-> - 在設定事件收集之前，請務必檢閱並驗證您的[稽核原則](atp-advanced-audit-policy.md)，以確保網域控制站已正確設定為可記錄必要的事件。
+> - 在設定事件收集之前，請務必檢閱並驗證您的[稽核原則]()，以確保網域控制站已正確設定為可記錄必要的事件。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 05/16/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: b09adce3-0fbc-40e3-a53f-31f57fe79ca3
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 76b38cfb407007b58436d7790b7e530026aa5215
-ms.sourcegitcommit: c5b64066f28b5a97034c1b92908b1c5e3221a36d
+ms.openlocfilehash: 8f9bd3877286e4b7230e9bb35d6f382fe3092e13
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85365753"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956494"
 ---
 # <a name="configure-azure-atp-to-make-remote-calls-to-sam"></a>設定 Azure ATP 對 SAM 發出遠端呼叫
 
@@ -35,15 +35,15 @@ Azure ATP [橫向移動路徑](use-case-lateral-movement-path.md)偵測有賴於
    - 原則名稱：網路存取 - 限制允許對 SAM 發出遠端呼叫的用戶端
    - 位置：電腦設定、Windows 設定、安全性設定、本機原則、安全性選項
 
-   ![找出原則](./media/samr-policy-location.png)
+    ![找出原則](media/samr-policy-location.png)
 
-2. 將 Azure ATP 服務新增至能夠在新式 Windows 系統上執行此動作的核准帳戶清單。
+1. 將 Azure ATP 服務新增至能夠在新式 Windows 系統上執行此動作的核准帳戶清單。
 
-   ![新增服務](./media/samr-add-service.png)
+    ![新增服務](media/samr-add-service.png)
 
 3. **AATP 服務** (在安裝期間建立的 Azure ATP 服務) 現在具備在環境中執行 SAM-R 的適當權限。
 
-如需 SAM-R 和此群組原則的詳細資訊，請參閱[網路存取：限制允許對 SAM 發出遠端呼叫的用戶端](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls) \(部分為機器翻譯\)。
+如需 SAM-R 和此群組原則的詳細資訊，請參閱[網路存取：限制允許對 SAM 發出遠端呼叫的用戶端](/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls) \(部分為機器翻譯\)。
 
 ## <a name="see-also"></a>另請參閱
 

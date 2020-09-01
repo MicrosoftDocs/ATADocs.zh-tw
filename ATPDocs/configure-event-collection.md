@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 03/19/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8c95335f50988eba7d3d18e9d0550e33647c9389
-ms.sourcegitcommit: 8c99699b9b84d50fb258c0cc5523ffa78133b7a4
+ms.openlocfilehash: 0057f2627139e8803aa04c693b0fe051bf8d118a
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2020
-ms.locfileid: "88027171"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956885"
 ---
 # <a name="configure-event-collection"></a>設定事件收集
 
@@ -35,7 +35,7 @@ ms.locfileid: "88027171"
 設定 Windows 事件 8004 收集：
 
 1. 瀏覽至：電腦設定\原則\Windows 設定\安全性設定\本機原則\安全性選項
-2. 設定**網域群組原則**，如下所示：
+1. 設定**網域群組原則**，如下所示：
     - 網路安全性：限制 NTLM:限制 NTLM: 送往遠端伺服器的連出 NTLM 流量 = **全部稽核**
     - 網路安全性:限制 NTLM:限制 NTLM: 稽核這個網域的 NTLM 驗證 = **全部啟用**
     - 網路安全性:限制 NTLM:限制 NTLM: 稽核連入 NTLM 流量 = **啟用所有帳戶的稽核**

@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 34dc152c-6b7f-4128-93fe-aad56c282730
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c046d6844dee3ad53b707e5e6ca033d01f83169b
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: fbd5b1c3b641559f8d5555d65f4424ab34acd80d
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775670"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956596"
 ---
 # <a name="azure-atp-readiness-guide"></a>Azure ATP 整備指南
 
@@ -54,7 +54,7 @@ Azure ATP 是由位於 Azure 中的雲端服務，以及可安裝在網域控制
 
 - [VPN 整合](install-atp-step6-vpn.md)
 - [SAM-R 必要權限](install-atp-step8-samr.md)
-- [稽核原則設定](atp-advanced-audit-policy.md) – 在 ATP 部署前後，稽核網域控制站的健康狀態。
+- [稽核原則設定](configure-windows-event-collection.md) – 在 ATP 部署前後，稽核網域控制站的健康狀態。
 
 ## <a name="work-with-azure-atp"></a>使用 Azure ATP
 

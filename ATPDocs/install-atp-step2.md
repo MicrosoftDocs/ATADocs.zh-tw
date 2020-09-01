@@ -4,15 +4,15 @@ description: 安裝 Azure ATP 的步驟 2 可協助您設定 Azure ATP 雲端服
 author: shsagir
 ms.author: shsagir
 ms.date: 01/15/2020
-ms.topic: conceptual
+ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.openlocfilehash: 4d3e65aaafea7cefd4ef564c0ee0a82b8d2fdfe4
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 29d6fc0a1a79b5861bad447f160ba7f5fe6a0131
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79413735"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88954335"
 ---
 # <a name="quickstart-connect-to-your-active-directory-forest"></a>快速入門：連線到您的 Active Directory 樹系
 
@@ -52,7 +52,7 @@ ms.locfileid: "79413735"
     |**群組受管理的服務帳戶** (為 gMSA 帳戶所需)|(僅限 gMSA 帳戶) 選取 [群組受管理的服務帳戶]  。|
     |**網域** (必填)|輸入唯讀使用者的網域。 例如：**contoso.com**。 請務必輸入使用者所在網域的完整 FQDN。 例如，如果使用者的帳戶是在 corp.contoso.com 網域中，您需要輸入 `corp.contoso.com`，而非 contoso.com|
 
-2. 在 Azure ATP 入口網站中，按一下 [下載感應器安裝程式並安裝第一個感應器]  以繼續。
+1. 在 Azure ATP 入口網站中，按一下 [下載感應器安裝程式並安裝第一個感應器]  以繼續。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 09/15/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: a546703b-d5a9-404d-9e87-125523bb8421
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c6766319861a766ba970ef0ed3d23d1f20c0f34d
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: f65643c9d1483df44d5cd43f8d849c8241a076ef
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84774463"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956936"
 ---
 # <a name="azure-atp-monitored-activities-search-and-filter"></a>Azure ATP 受監視活動的搜尋與篩選 
 
@@ -28,7 +28,7 @@ Azure ATP 在您網路上偵測到的活動，可以經過搜尋與篩選，讓�
 
 從 Azure ATP 時間軸選取網路中的任何實體 (DC、電腦或使用者) 當作篩選存取點。 接下來，選取要依 [安全性警訊]  、[活動]  類型或任意組合來篩選。 套用篩選之後，實體的威脅時間軸就會以篩選的資訊更新。 您也可下載篩選出的警示與活動，以在其他工具中繼續進行調查或追蹤。 
 
-![篩選警示與活動](./media/activities-filter.png)
+![篩選警示與活動](media/activities-filter.png)
 
 若要篩選警示與活動：
  1. 從 Azure ATP 時間軸選取要調查的實體。 

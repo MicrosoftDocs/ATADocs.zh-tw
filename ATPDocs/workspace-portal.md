@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 4ba46d60-3a74-480e-8f0f-9a082d62f343
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7648b9047f519c4e9712e608be9f0705be1aaa2a
-ms.sourcegitcommit: bfb5f35f8e2f19911357e5afa6624ffe43e37d12
+ms.openlocfilehash: fa19723ec0193a7a933eef292505a62b3d3b9961
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86472496"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88955593"
 ---
 # <a name="working-with-the-azure-atp-portal"></a>使用 Azure ATP 入口網站
 
@@ -41,7 +41,7 @@ Azure ATP 入口網站可讓您依時間順序快速檢視所有可疑的活動�
 
 1. 進入 Azure ATP 入口網站的方法包括登入入口網站 [https://portal.atp.azure.com](https://portal.atp.azure.com) 並選取執行個體，或瀏覽到執行個體 URL：`https://*instancename*.atp.azure.com` 。
 
-2. Azure ATP 支援與 Windows 驗證整合的單一登入；如果您已登入電腦，Azure ATP 會使用該權杖將您登入 Azure ATP 入口網站。 您也可以使用智慧卡進行登入。 您在 Azure ATP 中的權限會與您的[系統管理員角色](atp-role-groups.md)對應。
+1. Azure ATP 支援與 Windows 驗證整合的單一登入；如果您已登入電腦，Azure ATP 會使用該權杖將您登入 Azure ATP 入口網站。 您也可以使用智慧卡進行登入。 您在 Azure ATP 中的權限會與您的[系統管理員角色](atp-role-groups.md)對應。
 
    > [!NOTE]
    > 請務必使用您的 Azure ATP 系統管理員使用者名稱和密碼，登入您要從中存取 Azure ATP 入口網站的電腦。 或者，您可以使用不同的使用者身分執行瀏覽器，或登出 Windows 並使用 Azure ATP 系統管理員使用者身分登入。 [Cloud App Security 入口網站](https://portal.cloudappsecurity.com)與 Azure ATP 入口網站不同，能夠提供多使用者登入，不需要額外授權就能搭配 Azure ATP 使用。

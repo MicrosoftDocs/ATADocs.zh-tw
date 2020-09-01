@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 224e629a-0e82-458c-bb03-b67070a9241d
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: 95268bb5e9c41935298b591477da930676aa129f
-ms.sourcegitcommit: 71181a243e60d29a2345620735f9c91ab2b5d689
+ms.openlocfilehash: feae48a00b17ef2556377dee643d133c5499c9fc
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/21/2020
-ms.locfileid: "85123490"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88955678"
 ---
 # <a name="azure-atp-data-security-and-privacy"></a>Azure ATP 資料安全性和隱私權
 
@@ -40,7 +40,7 @@ Azure ATP 個人使用者資料是擷取自組織 Active Directory 中的使用�
 
 - 從組織的 Active Directory 刪除使用者之後，Azure ATP 會自動刪除使用者設定檔和一年當中任何相關的網路活動。 您也可以[刪除](working-with-suspicious-activities.md#review-suspicious-activities-on-the-attack-time-line)包含個人資料的任何安全性警示。
 
-- 建議在 **Deleted Objects** 容器使用**唯讀**權限。 若要深入了解 Azure ATP 服務如何使用 **Deleted Objects 容器權限，請參閱 [Azure ATP prerequisites](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites#before-you-start) (Azure ATP 必要條件) 中的 Deleted Objects 容器建議。
+- 建議在 **Deleted Objects** 容器使用**唯讀**權限。 若要深入了解 Azure ATP 服務如何使用 **Deleted Objects 容器權限，請參閱 [Azure ATP prerequisites](atp-prerequisites.md#before-you-start) (Azure ATP 必要條件) 中的 Deleted Objects 容器建議。
 
 ## <a name="export-personal-data"></a>匯出個人資料
 
@@ -52,7 +52,7 @@ Azure ATP 有實作個人資料變更的稽核，包括個人資料的刪除和�
 
 ## <a name="additional-resources"></a>其他資源
 
-- 如需 Azure ATP 信任與合規性的相關資訊，請參閱[服務信任入口網站](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) \(英文\) 與 [Microsoft 365 企業版 GDPR 合規性網站](https://docs.microsoft.com/microsoft-365/compliance/gdpr?view=o365-worldwide)。
+- 如需 Azure ATP 信任與合規性的相關資訊，請參閱[服務信任入口網站](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) \(英文\) 與 [Microsoft 365 企業版 GDPR 合規性網站](/microsoft-365/compliance/gdpr?view=o365-worldwide)。
 
 ## <a name="security-and-privacy-for-azure-atp-us-government-gcc-high-customers"></a>Azure ATP 美國政府 GCC High 客戶的安全性及隱私權
-如需 Azure ATP 合規性標準的其他資訊，以及美國政府 GCC High 客戶之客戶資料位置的其他資訊，請參閱[適用於美國政府的 Enterprise Mobility + Security 服務描述](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-govt-service-description)。
+如需 Azure ATP 合規性標準的其他資訊，以及美國政府 GCC High 客戶之客戶資料位置的其他資訊，請參閱[適用於美國政府的 Enterprise Mobility + Security 服務描述](/enterprise-mobility-security/solutions/ems-govt-service-description)。

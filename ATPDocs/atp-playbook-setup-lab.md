@@ -2,17 +2,17 @@
 title: Azure ATP 安全性警示實驗室設定教學課程
 description: 在此教學課程中，您會設定 Azure ATP 測試實驗室來模擬威脅以供 Azure ATP 偵測。
 ms.service: azure-advanced-threat-protection
-ms.topic: tutorial
+ms.topic: how-to
 author: shsagir
 ms.author: shsagir
 ms.date: 02/28/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 4a846962645d978fc7419650781624e7c5f4bf0b
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: c6b1a309d86562082121806e1c81897e9632e95c
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79414517"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88955100"
 ---
 # <a name="tutorial-setup-an-atp-security-alert-lab"></a>教學課程：設定 ATP 安全性警示實驗室 
 
@@ -34,7 +34,7 @@ ms.locfileid: "79414517"
    - 繼續並[藉由使用者將 Active Directory (AD) 序列化](#bkmk_hydrate)。
 1. 一個[已連線至 AD](install-atp-step2.md) 的 [Azure ATP 執行個體](install-atp-step1.md)。
 1. 在您實驗室的網域控制站上[下載](install-atp-step3.md)並[安裝最新版的 Azure ATP 感應器](install-atp-step4.md)。
-1. 熟悉[特殊權限存取工作站](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations)和 [SAMR 原則](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls)。
+1. 熟悉[特殊權限存取工作站](/windows-server/identity/securing-privileged-access/privileged-access-workstations)和 [SAMR 原則](/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls)。
 
 ## <a name="recommendations"></a>建議
 
@@ -114,9 +114,9 @@ New-ADUser -Name AatpService -DisplayName "Azure ATP/ATA Service" -PasswordNever
 
     ![修改「群組原則」以允許 Azure ATP 使用「橫向移動」路徑功能。](media/playbook-labsetup-localgrouppolicies3.png)
 
-2. 將 Azure ATP 服務帳戶 (AATPService) 新增至能夠在新式 Windows 系統上執行此動作的核准帳戶清單。
+1. 將 Azure ATP 服務帳戶 (AATPService) 新增至能夠在新式 Windows 系統上執行此動作的核准帳戶清單。
 
-    ![新增服務](./media/samr-add-service.png)
+    ![新增服務](media/samr-add-service.png)
 
 ### <a name="add-sensitive-group-to-azure-atp"></a>將敏感性群組新增至 Azure ATP
 
@@ -124,15 +124,15 @@ New-ADUser -Name AatpService -DisplayName "Azure ATP/ATA Service" -PasswordNever
 
 1. 在 Azure ATP 入口網站中，按一下功能表列的 [設定]  齒輪。
 
-2. 在 [偵測]  下，按一下 [實體標記]  。
+1. 在 [偵測]  下，按一下 [實體標記]  。
 
     ![Azure ATP 實體標記](media/entity-tags.png)
 
-3. 在 [敏感性]  區段中，針對 [敏感性群組]  輸入名稱 "Helpdesk"，然後按一下 [+]  符號來新增它們。
+1. 在 [敏感性]  區段中，針對 [敏感性群組]  輸入名稱 "Helpdesk"，然後按一下 [+]  符號來新增它們。
 
     ![將 "Helpdesk" 標記為 Azure ATP 敏感性群組，來為此特殊權限群組啟用「橫向移動圖表」和報告功能](media/playbook-labsetup-helpdesksensitivegroup.png)
 
-4. 按一下 **[儲存]** 。
+1. 按一下 **[儲存]** 。
 
 ### <a name="azure-atp-lab-base-setup-checklist"></a>Azure ATP 實驗室基礎設定檢查清單
 
@@ -180,7 +180,7 @@ Add-LocalGroupMember -Group "Administrators" -Member "Contoso\Helpdesk"
     Register-ScheduledTask -TaskName "RonHD Cmd.exe - AATP SA Playbook" -Trigger $trigger -User $runAs -Password $ronHHDPass -Action $action
     ```
 
-2. 以 **JeffL** 身分登入機器。 Cmd.exe 程序會於登入後在 RonHD 的內容中啟動，模擬管理機器的「服務台」。
+1. 以 **JeffL** 身分登入機器。 Cmd.exe 程序會於登入後在 RonHD 的內容中啟動，模擬管理機器的「服務台」。
 
 ### <a name="turn-off-antivirus-on-victimpc"></a>關閉 VictimPC 上的防毒軟體
 
@@ -199,7 +199,7 @@ Add-LocalGroupMember -Group "Administrators" -Member "Contoso\Helpdesk"
 |----|-----|
 | Mimikatz | [GitHub - Mimikatz](https://github.com/gentilkiwi/mimikatz) |
 | PowerSploit | [GitHub - PowerSploit](https://github.com/PowerShellMafia/PowerSploit) |
-| PsExec | [Microsoft Docs](https://docs.microsoft.com/sysinternals/downloads/psexec) |
+| PsExec | [Microsoft Docs](/sysinternals/downloads/psexec) |
 | NetSess | [JoeWare 工具](https://www.joeware.net/freetools) |
 
 我們感謝這些研究工具的作者，讓社群能夠更深入了解網路風險和影響。
@@ -218,7 +218,7 @@ Add-LocalGroupMember -Group "Administrators" -Member "Contoso\Helpdesk"
 
    ```
 
-2. 執行此指令碼之後，**Helpdesk** 就會位於 **AdminPC** 的本機 [Administrators]   > [成員]  清單中。
+1. 執行此指令碼之後，**Helpdesk** 就會位於 **AdminPC** 的本機 [Administrators]   > [成員]  清單中。
 ![AdminPC 之「本機系統管理員群組」中的 Helpdesk](media/playbook-labsetup-localgrouppolicies1.png)
 
 ### <a name="simulate-domain-activities-from-adminpc"></a>模擬來自 AdminPC 的網域活動
@@ -273,4 +273,3 @@ while ($true)
 ## <a name="join-the-community"></a>加入社群
 
 是否有更多問題，或是想與其他人討論 Azure ATP 及相關的安全性？ 現在就加入 [Azure ATP 社群](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection)！
-

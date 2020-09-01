@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 01/26/2020
-ms.topic: article
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: a06004bd-9f77-4e8e-a0e5-4727d6651a0f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1c15d2117ca25320865bdc4cfbfae2c2c5cca4c3
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 331f709c19008e1f11aacc50678893158528042d
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775755"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88955559"
 ---
 # <a name="working-with-security-alerts"></a>使用安全性警訊
 
@@ -69,17 +69,17 @@ Azure ATP 研究小組會持續致力於實作新偵測攻擊的新探索。 由
 
 這些偵測會標上預覽徽章，協助您找出新偵測，並知道它們是產品的新偵測。 如果您關閉預覽偵測，則它們不會顯示在 Azure ATP 主控台中 (不在時間軸或實體設定檔中)，而且不會開啟新警示。
 
-![預覽偵測 VPN](./media/preview-detection-vpn.png)
+![預覽偵測 VPN](media/preview-detection-vpn.png)
 
 預設會在 Azure ATP 中啟用預覽偵測。
 
 停用預覽偵測：
 
 1. 在 Azure ATP 主控台中，按一下設定 cog。
-2. 在左功能表中，按一下 [偵測]  。
-3. 使用滑桿開啟和關閉預覽偵測。
+1. 在左功能表中，按一下 [偵測]  。
+1. 使用滑桿開啟和關閉預覽偵測。
 
-![預覽偵測](./media/preview-detections.png)
+![預覽偵測](media/preview-detections.png)
 
 ## <a name="filter-security-alerts-list"></a>篩選安全性警訊清單
 
@@ -87,7 +87,7 @@ Azure ATP 研究小組會持續致力於實作新偵測攻擊的新探索。 由
 
 1. 在畫面左側的 [篩選依據]  窗格中，選取以下其中一個選項︰[所有]  、[開啟]  、[已關閉]  或 [已隱藏]  。
 
-2. 若要進一步篩選清單，請選取 [高]  、[中]  或 [低]  。
+1. 若要進一步篩選清單，請選取 [高]  、[中]  或 [低]  。
 
 **可疑活動嚴重性**
 
@@ -108,7 +108,7 @@ Azure ATP 研究小組會持續致力於實作新偵測攻擊的新探索。 由
 您可以按一下安全性警訊的目前狀態，然後選取下列其中一項來變更安全性警訊的狀態：[開啟]  、[已隱藏]  、[已關閉]  或 [已刪除]  。
 若要這樣做，請按一下特定警訊右上角的三個點，以顯示可用的動作清單。
 
-![Azure ATP 的安全性警訊動作](./media/atp-sa-actions.png)
+![Azure ATP 的安全性警訊動作](media/atp-sa-actions.png)
 
 **安全性警訊狀態**
 

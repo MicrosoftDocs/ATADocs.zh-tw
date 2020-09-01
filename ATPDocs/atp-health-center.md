@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 1/3/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 1b7e72c3-a538-443f-981c-398ffafa5ab8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 50e0ccfb22e068eccadcdbfc3c59251b171813a7
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 0e0b9f73ce019f105d1cb1c08fe2637e23634adf
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84773664"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88953587"
 ---
 # <a name="work-with-azure-atp-health-and-events"></a>使用 Azure ATP 健康情況和事件
 
@@ -34,7 +34,7 @@ Azure ATP 健康情況中心可讓您知道 Azure ATP 執行個體的執行情�
 ### <a name="managing-azure-atp-health"></a>管理 Azure ATP 健康情況
 若要檢查 Azure ATP 執行個體的整體健康情況，請按一下功能表列中的健康情況中心圖示 ![Azure ATP 健康情況中心圖示](media/atp-red-dot.png)
 
--   按一下警示角落的三個點並選擇所要的選項，將開啟的問題設定為 [關閉]  或 [隱藏]  ，便能管理所有開啟的警示。
+- 按一下警示角落的三個點並選擇所要的選項，將開啟的問題設定為 [關閉]  或 [隱藏]  ，便能管理所有開啟的警示。
 
 -   **開啟**：所有新的可疑活動都出現在此清單中。
 

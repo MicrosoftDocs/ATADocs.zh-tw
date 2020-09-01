@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 04/05/2020
-ms.topic: article
+ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 2d14d0e9-1b03-4bcc-ae97-8fd41526ffc5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 41aec3f7189e659e3ad7d2d529574b90788d1e61
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: e4391f788e525891aff050ad591b2f5063442ebe
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775721"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88954267"
 ---
 # <a name="what-is-azure-advanced-threat-protection"></a>什麼是 Azure 進階威脅防護？
 
@@ -107,14 +107,14 @@ Microsoft Ignite 2018 會舉辦多場會議，著重探討 [Azure 進階威脅�
 ### <a name="phase-1"></a>階段 1
 
 1. 設定 Azure ATP 以保護您的主要環境。 Azure ATP 的快速部署模型可讓您立即開始保護組織。 [安裝 Azure ATP](install-atp-step1.md)
-2. 設定[機密帳戶](sensitive-accounts.md)與 [honeytoken 帳戶](install-atp-step7.md)。
-3. 檢閱報告和[橫向移動路徑](use-case-lateral-movement-path.md)。
+1. 設定[機密帳戶](sensitive-accounts.md)與 [honeytoken 帳戶](install-atp-step7.md)。
+1. 檢閱報告和[橫向移動路徑](use-case-lateral-movement-path.md)。
 
 ### <a name="phase-2"></a>階段 2
 
 1. 保護組織中的所有網域控制站和[樹系](atp-multi-forest.md)。
-2. 監視所有[警示](working-with-suspicious-activities.md) – 調查橫向移動和網域支配的警示。
-3. 使用[安全性警訊指南](suspicious-activity-guide.md)，以了解威脅並對潛在攻擊進行分級。
+1. 監視所有[警示](working-with-suspicious-activities.md) – 調查橫向移動和網域支配的警示。
+1. 使用[安全性警訊指南](suspicious-activity-guide.md)，以了解威脅並對潛在攻擊進行分級。
 
 ### <a name="phase-3"></a>階段 3
 

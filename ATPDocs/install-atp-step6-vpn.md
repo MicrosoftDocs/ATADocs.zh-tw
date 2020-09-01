@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 07/05/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 0d9d2a1d-6c76-4909-b6f9-58523df16d4f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9ad0662a0b468bbe67bb8b699b57358c0c512348
-ms.sourcegitcommit: 424567ef02d97454e72241837f69fa6a928709ba
+ms.openlocfilehash: 3afbf9c925d4f4683fa56fff4adea3d999ed2eab
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86175728"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956817"
 ---
 # <a name="integrate-vpn"></a>整合 VPN
 
@@ -51,11 +51,11 @@ Azure ATP 會透過接聽轉寄到 Azure ATP 感應器的 RADIUS 計量事件來
 1. 在伺服器名稱上按一下滑鼠右鍵，然後按一下 [屬性]。
 1. 在 [安全性] 索引標籤的 [計量提供者] 下，選取 [RADIUS 計量]，然後按一下 [設定]。
 
-    ![RADIUS 設定](./media/radius-setup.png)
+    ![RADIUS 設定](media/radius-setup.png)
 
 1. 在 [新增 RADIUS 伺服器] 視窗中，輸入最接近之 Azure ATP 感應器 (具有網路連線能力) 的**伺服器名稱**。 如需高可用性，您可以新增額外的 Azure ATP 感應器作為 RADIUS 伺服器。 在 [連接埠] 下，確定已設為預設的 1813。 按一下 [變更]，並鍵入新的共用祕密英數字元字串。 記下新的共用祕密字串，因為您必須在稍後的 Azure ATP 設定期間填寫它。 選取 [傳送 RADIUS 計量開啟及計量關閉訊息] 方塊，然後在所有已開啟的對話方塊上按一下 [確定]。
 
-    ![VPN 設定](./media/vpn-set-accounting.png)
+    ![VPN 設定](media/vpn-set-accounting.png)
 
 ### <a name="configure-vpn-in-atp"></a>在 ATP 中設定 VPN
 
@@ -66,7 +66,7 @@ Azure ATP 會收集 VPN 資料，這些資料有助於分析電腦連線到網�
 1. 在 Azure ATP 入口網站中，按一下設定齒輪，然後按一下 [VPN]。
 1. 開啟 [Radius 帳戶處理]，然後輸入先前在 RRAS VPN 伺服器上設定的 [共用祕密]。 然後按一下 [儲存]。
 
-    ![設定 Azure ATP VPN](./media/atp-vpn-radius.png)
+    ![設定 Azure ATP VPN](media/atp-vpn-radius.png)
 
 啟用此選項之後，所有 Azure ATP 感應器都會接聽連接埠 1813 上的 RADIUS 計量事件，您的 VPN 設定即已完成。
 

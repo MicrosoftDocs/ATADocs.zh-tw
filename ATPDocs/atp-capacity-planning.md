@@ -4,15 +4,15 @@ description: 協助您規劃部署並決定支援您的網路需要多少 Azure 
 author: shsagir
 ms.author: shsagir
 ms.date: 05/20/2020
-ms.topic: quickstart
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.openlocfilehash: 7bcebf2142980990bb71fb1c09faa986b4315fa7
-ms.sourcegitcommit: c3949c8f0332198753c14e3bcd7cb4ca6d288e25
+ms.openlocfilehash: 11b895e4d18df33bb220dc806246fec6ddfa6877
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83696027"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956766"
 ---
 # <a name="quickstart-plan-capacity-for-azure-atp"></a>快速入門：規劃 Azure ATP 容量
 
@@ -31,7 +31,7 @@ ms.locfileid: "83696027"
 1. 從您下載的 zip 檔案執行 Azure ATP 調整大小工具 **TriSizingTool.exe**。
 1. 當此工具完成執行時，開啟 Excel 檔案結果。
 1. 在 Excel 檔案中，找出然後按一下 **Azure ATP 摘要**工作表。 因為是用於 ATA 規劃，所以不需要其他工作表。
-   ![範例容量規劃工具](media/capacity-tool.png)
+    ![範例容量規劃工具](media/capacity-tool.png)
 
 1. 在結果 Excel 檔案的 Azure ATP 感應器表格中找出 **Busy Packets/sec** 欄位，並且記下它。
 1. 比對您的 **Busy Packets/sec** 欄位與本文中 [Azure ATP 感應器表格](#sizing)一節中的 **PACKETS PER SECOND** 欄位。 使用此欄位來判斷感應器所使用的記憶體和 CPU。

@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 11/11/2018
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: cae3ed45-8fbc-4f25-ba24-3cc407c6ea93
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f2d5deb0adb35f07fe792e4254cca6ee8611b942
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: aa497d9a04aa36538b0e5d6642ce2942a4c6d827
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84772627"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956851"
 ---
 # <a name="excluding-entities-from-detections"></a>從偵測中排除實體
 本文說明如何從觸發警示中排除實體。 排除某些實體可減少良性確判，同時確保您能攔截到確判。 為了避免讓 Azure ATP 在平常企業營運時，從特定使用者發出不必要的警示，您可設為靜音或排除對特定實體發出警示。 此外，預設會排除某些常用實體。 
@@ -27,7 +27,7 @@ ms.locfileid: "84772627"
 ## <a name="entities-excluded-by-default-from-raising-alerts"></a>預設會排除而不引發警示的實體
  對於像是**經由 DNS 進行的可疑通訊**等特定警示，Azure ATP 會依據客戶意見反應及研究，新增自動排除的網域項目。 
  
-![經由 DNS 進行的可疑通訊自動排除項目](./media/dns-auto-exclusions.png) 
+![經由 DNS 進行的可疑通訊自動排除項目](media/dns-auto-exclusions.png) 
 
 ## <a name="exclude-entities-from-raising-alerts"></a>排除而不引發警示的實體
 
@@ -36,11 +36,11 @@ ms.locfileid: "84772627"
 - **透過安全性警訊**：在活動時間軸中，當您收到**允許**頻繁執行特定活動之使用者、電腦或 IP 位址的活動警示時，請執行下列步驟：
   - 在該列末端的三個點上按一下按右鍵，開啟該實體的安全性警訊，並選取 [關閉並排除]  。 如此會將使用者、電腦或 IP 位址，新增到該安全性警訊的排除項目清單中。 如此會關閉安全性警訊，且警示將不會繼續列於**警示時間軸**中的**未結案**事件清單。
 
-    ![排除實體](./media/exclude-in-sa.png)
+    ![排除實體](media/exclude-in-sa.png)
 
 - **從 [設定] 頁面**：若要檢閱或修改任何排除項目：請在 [設定]  下，按一下 [排除項目]  ，然後選取要套用排除的安全性警訊，例如 **DNS 偵查**。
 
-    ![排除設定](./media/exclusions.png)
+    ![排除設定](media/exclusions.png)
 
 若要從 [排除項目]  設定中新增實體：請輸入實體名稱，並按一下加號，然後按一下頁面底部的 [儲存]  。
 

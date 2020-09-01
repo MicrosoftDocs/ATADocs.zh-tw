@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 04/16/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 92decce8-b3ae-4d32-8407-a95314a66863
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9446d9f87952642bd948e703efe673446b7888a8
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 611bdb2a14fbb071e7ac0b9a5ec9d4d3392b2e83
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775602"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88953485"
 ---
 # <a name="monitoring-your-domain-controller-coverage"></a>監視您的網域控制站涵蓋範圍
 
@@ -33,7 +33,7 @@ Azure ATP 會持續監視您的環境，尋找是否有導入您環境但未受�
 
     ![Azure ATP 感應器狀態監視](media/atp-sensors-status-monitoring.png)
 
-2. 您目前的已監視和未監視網域控制站都會顯示在畫面的頂端。 如果要下載您網域控制站的監視狀態詳細資料，請選取 [下載詳細資料]  。
+1. 您目前的已監視和未監視網域控制站都會顯示在畫面的頂端。 如果要下載您網域控制站的監視狀態詳細資料，請選取 [下載詳細資料]  。
 
 網域控制站涵蓋範圍 Excel 下載會為您組織中偵測到的所有控制站提供以下資訊：
 

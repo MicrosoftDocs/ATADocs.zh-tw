@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 09/16/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: a2d29c9c-7ecb-4804-b74b-fde899b28648
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2d2c6e47cdc385a42a441290d432aa01f91e0939
-ms.sourcegitcommit: 7136b50eaffc9a0e0e7eb9e2db6d5396ef4e996f
+ms.openlocfilehash: 4e7f9e3a5c2bf9e0cdfdd21c3d8f8a9f831ff4b0
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86929290"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88955661"
 ---
 # <a name="integrate-with-syslog"></a>與 Syslog 整合
 
@@ -57,7 +57,7 @@ Azure ATP 可以在偵測到可疑活動時，透過指定的感應器將安全�
 
 1. 按一下 [通知]，然後按一下 [Syslog 通知] 下的 [組態]，並輸入下列資訊：
 
-   ![Azure ATP Syslog 伺服器設定影像](media/atp-syslog.png)
+    ![Azure ATP Syslog 伺服器設定影像](media/atp-syslog.png)
 
 1. 您可以選取要傳送至 Syslog 伺服器的事件。 在 [Syslog 通知] 下，指定要傳送到 Syslog 伺服器的通知 (新的安全性警示、更新的安全性警示，以及新的健康狀態問題)。
 

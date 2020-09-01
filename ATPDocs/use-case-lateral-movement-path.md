@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: de15c920-8904-4124-8bdc-03abd9f667cf
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e5c422a1315bccce93154c3abbc07caea8de6c06
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: edb37833ac44e3f04f9daf7ee57a8e1f41ca5d38
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775789"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88955614"
 ---
 # <a name="azure-atp-lateral-movement-paths-lmps"></a>Azure ATP 橫向移動路徑 (LMP) 
 
@@ -28,7 +28,7 @@ ms.locfileid: "84775789"
 
 Azure ATP 安全性見解的主要要素為橫向移動路徑或 LMP。 Azure ATP LMP 是以圖像呈現的指南，有助您快速了解並確實識別攻擊者如何在網路中橫向移動。 在網路攻擊狙殺鏈 (cyber-attack kill chain) 中橫向移動的目的在於讓攻擊者使用非敏感性帳戶，取得並入侵您的敏感性帳戶。 入侵您的敏感性帳戶讓攻擊者可以更靠近他們的最終目標，也就是支配網域。 為防止這些攻擊成功，Azure ATP LMP 針對您最易受攻擊的敏感性帳戶為您提供了以圖像呈現而且直接易懂的指南。 LMP 可協助您降低風險並防範未來發生這些風險，以及在攻擊者達成網域支配前，關閉他們的存取權。
 
-![Azure ATP 橫向移動路徑 (LMP)](./media/atp-lmp.png)
+![Azure ATP 橫向移動路徑 (LMP)](media/atp-lmp.png)
 
 橫向移動攻擊通常使用許多不同的技術來達成。 攻擊者最常用的某些方法為認證竊取和票證傳遞。 在這兩種方法中，攻擊者會使用您的非敏感性帳戶，透過入侵帳戶、群組及擁有敏感性帳戶之電腦中，共用已儲存登入認證的非敏感性電腦來進行橫向移動。
 
@@ -36,7 +36,7 @@ Azure ATP 安全性見解的主要要素為橫向移動路徑或 LMP。 Azure AT
 
 Azure ATP 探索到位於 LMP 中的每個電腦或使用者設定檔都有 [橫向移動路徑]  索引標籤。在潛在 LMP 中永遠不會探索到沒有索引標籤的電腦及設定檔。 
 
-![[Azure ATP 橫向移動路徑 (LMP)] 索引標籤](./media/lateral-movement-path-tab.png)
+![[Azure ATP 橫向移動路徑 (LMP)] 索引標籤](media/lateral-movement-path-tab.png)
 
 每個實體的 LMP 都會依據實體的敏感度提供不同的資訊： 
 - 敏感性使用者 - 顯示通往此使用者的潛在 LMP。
@@ -44,7 +44,7 @@ Azure ATP 探索到位於 LMP 中的每個電腦或使用者設定檔都有 [橫
 
 每次按一下索引標籤時，Azure ATP 都會顯示最近探索到的 LMP。 每個潛在 LMP 都會在探索到之後儲存 48 小時。 並有 LMP 歷程記錄。 按一下 [檢視其他日期]  ，即可檢視過去探索到的較舊 LMP。 
 
-![Azure ATP 橫向移動路徑 (LMP) 顯示](./media/atp-lmp-complete.png)
+![Azure ATP 橫向移動路徑 (LMP) 顯示](media/atp-lmp-complete.png)
 
 探索識別出潛在 LMP 的時間，和可能涉及的相關實體。 
 
@@ -53,11 +53,11 @@ Azure ATP 探索到位於 LMP 中的每個電腦或使用者設定檔都有 [橫
 在 [活動] 索引標籤中，當識別到新的潛在 LMP 時，就會予以指示：
 - 敏感性使用者 - 當識別到通往敏感性使用者的新路徑時
 
-![Azure ATP 橫向移動路徑 (LMP) 識別到通往敏感性使用者的路徑](./media/atp-lmp-activities.png)
+![Azure ATP 橫向移動路徑 (LMP) 識別到通往敏感性使用者的路徑](media/atp-lmp-activities.png)
 
 - 非敏感性使用者和電腦 - 當在通往敏感性使用者的潛在 LMP 中識別到此實體時。
 
-![Azure ATP 橫向移動路徑 (LMP) 識別到通往非敏感性使用者的路徑](./media/atp-lateral-non-sensitive.png)
+![Azure ATP 橫向移動路徑 (LMP) 識別到通往非敏感性使用者的路徑](media/atp-lateral-non-sensitive.png)
 
 ## <a name="lmp-related-entities"></a>LMP 相關實體
 LMP 現在可直接協助您進行調查流程。 Azure ATP 安全性警訊辨識項清單提供涉及各個潛在橫向移動路徑的相關實體。 辨識項清單可直接地協助安全性回應小組增加或減少安全性警訊，及 (或) 相關實體調查的重要性。 例如，當發出票證傳遞警示時，竊取票證的來源來源電腦、遭入侵使用者及目的地電腦，都屬於通往敏感性使用者的潛在橫向移動路徑。 存在偵測到的 LMP 讓調查警示和觀看可疑使用者更為重要，以防止敵人又橫向移動。 LMP 中提供可追蹤的辨識項，讓您更快且更輕鬆地防止攻擊者繼續入侵您的網域。 

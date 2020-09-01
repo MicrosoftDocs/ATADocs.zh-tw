@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 07/27/2020
-ms.topic: conceptual
+ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 22e0d88d46d8f3751316148600349ca99382339a
-ms.sourcegitcommit: 2ff8079d3ad8964887c1d0d1414c84199ba208bb
+ms.openlocfilehash: e0c6e9826b734e9e94e787ba62cd782eb5ef8dd6
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88793367"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956630"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -28,7 +28,7 @@ ms.locfileid: "88793367"
 
 Azure ATP 是由 Azure ATP 雲端服務組成，其包含 Azure ATP 入口網站與 Azure ATP 感應器。 如需每種 Azure ATP 元件的詳細資訊，請參閱 [Azure ATP 架構](atp-architecture.md)。
 
-Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步至您 Azure Active Directory 的使用者。 若要保護僅包含 AAD 使用者的環境，請參閱 [AAD 身分識別保護](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) \(部分機器翻譯\)。
+Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步至您 Azure Active Directory 的使用者。 若要保護僅包含 AAD 使用者的環境，請參閱 [AAD 身分識別保護](/azure/active-directory/identity-protection/overview) \(部分機器翻譯\)。
 
 若要建立 Azure ATP 執行個體，您必須使用具有至少一位全域/安全性系統管理員的 AAD 租用戶。 每個 Azure ATP 執行個體都支援多 Active Directory 樹系邊界，以及 Windows 2003 和更新版本的樹系功能等級 (FFL)。
 
@@ -76,7 +76,7 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 
 - 如果您嘗試在設定了 NIC 小組介面卡的電腦上安裝 Azure ATP 感應器，則會收到安裝錯誤。 如果您想要在已設定 NIC 小組的電腦上安裝 Azure ATP 感應器，請參閱 [Azure ATP 感應器 NIC 小組問題](troubleshooting-atp-known-issues.md#nic-teaming)。
 
-- **Deleted Objects** 容器建議：使用者應該擁有「刪除的物件」容器的唯讀權限。 這個容器的唯讀權限可讓 Azure ATP 偵測從 Active Directory 中刪除使用者的情形。 如需在 Deleted Objects 容器設定唯讀權限的相關資訊，請參閱 [View or Set Permissions on a Directory Object](https://technet.microsoft.com/library/cc816824%28v=ws.10%29.aspx) (檢視或設定目錄物件的權限) 文章中的 **Changing permissions on a deleted object container** (變更已刪除物件的容器權限) 一節。
+- **Deleted Objects** 容器建議：使用者應該擁有「刪除的物件」容器的唯讀權限。 這個容器的唯讀權限可讓 Azure ATP 偵測從 Active Directory 中刪除使用者的情形。 如需在 Deleted Objects 容器設定唯讀權限的相關資訊，請參閱 [View or Set Permissions on a Directory Object](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816824(v=ws.10)) (檢視或設定目錄物件的權限) 文章中的 **Changing permissions on a deleted object container** (變更已刪除物件的容器權限) 一節。
 
 - 選擇性的 **Honeytoken**：沒有任何網路活動之使用者的使用者帳戶。 此帳戶設定為 Azure ATP Honeytoken 使用者。 如需使用 Honeytoken 的詳細資訊，請參閱[設定排除專案和 Honeytoken 使用者](install-atp-step7.md)。
 
@@ -94,7 +94,7 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 - 防火牆/Proxy 開啟 - 若要與 Azure ATP 雲端服務通訊，您必須在防火牆/Proxy 中開啟 *.atp.azure.com 連接埠 443。
 
     > [!NOTE]
-    > 您也可以使用 Azure 服務標籤 (**AzureAdvancedThreatProtection**) 來啟用對 Azure ATP 的存取權。 如需服務標籤的詳細資訊，請參閱[虛擬網路服務標籤](https://docs.microsoft.com/azure/virtual-network/service-tags-overview)或[下載服務標籤](https://www.microsoft.com/download/details.aspx?id=56519)檔案。
+    > 您也可以使用 Azure 服務標籤 (**AzureAdvancedThreatProtection**) 來啟用對 Azure ATP 的存取權。 如需服務標籤的詳細資訊，請參閱[虛擬網路服務標籤](/azure/virtual-network/service-tags-overview)或[下載服務標籤](https://www.microsoft.com/download/details.aspx?id=56519)檔案。
 
  ![Azure ATP 架構圖表](media/azure-atp-architecture.png)
 
@@ -141,7 +141,7 @@ Azure ATP 感應器在網域控制站上需要安裝至少 2 個核心和 6 GB �
 
 Azure ATP 感應器可以部署在各種負載和大小的網域控制站上，依進出網域控制站的網路流量，以及安裝的資源數量而定。
 
-針對 Windows 作業系統 2008 R2 與 2012，[多處理器群組](https://docs.microsoft.com/windows/win32/procthread/processor-groups)模式中不支援 Azure ATP 感應器。 如需有關多處理器群組模式的詳細資訊，請參閱[疑難排解](troubleshooting-atp-known-issues.md#multi-processor-group-mode)。
+針對 Windows 作業系統 2008 R2 與 2012，[多處理器群組](/windows/win32/procthread/processor-groups)模式中不支援 Azure ATP 感應器。 如需有關多處理器群組模式的詳細資訊，請參閱[疑難排解](troubleshooting-atp-known-issues.md#multi-processor-group-mode)。
 
 >[!NOTE]
 > 作為虛擬機器執行時，將不支援動態記憶體或任何其他記憶體佔用功能。
@@ -182,7 +182,7 @@ Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的�
 
 ### <a name="windows-event-logs"></a>Windows 事件記錄檔
 
-Azure ATP 偵測仰賴特定的 [Windows 事件記錄檔](configure-windows-event-collection.md#configure-event-collection)，這些記錄檔由感應器從您的網域控制站剖析而來。 若要正確稽核事件並將其包含在 Windows 事件記錄檔中，網域控制站需要精確的進階稽核原則設定。 如需有關設定正確原則的詳細資訊，請參閱[進階稽核原則檢查](atp-advanced-audit-policy.md)。 若要確定已依服務所需[稽核 Windows 事件 8004](configure-windows-event-collection.md#configure-audit-policies)，請檢閱您的 [NTLM 稽核設定](https://blogs.technet.microsoft.com/askds/2009/10/08/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7/) \(英文\)。
+Azure ATP 偵測仰賴特定的 [Windows 事件記錄檔](configure-windows-event-collection.md#configure-event-collection)，這些記錄檔由感應器從您的網域控制站剖析而來。 若要正確稽核事件並將其包含在 Windows 事件記錄檔中，網域控制站需要精確的進階稽核原則設定。 如需有關設定正確原則的詳細資訊，請參閱[進階稽核原則檢查](configure-windows-event-collection.md)。 若要確定已依服務所需[稽核 Windows 事件 8004](configure-windows-event-collection.md#configure-audit-policies)，請檢閱您的 [NTLM 稽核設定](/archive/blogs/askds/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7) \(英文\)。
 
 > [!NOTE]
 >

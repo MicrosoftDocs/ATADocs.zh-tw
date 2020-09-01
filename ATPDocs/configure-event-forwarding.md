@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 03/18/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 3547519f-8d9c-40a9-8f0e-c7ba21081203
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1f7d61b88c1a83f6ec075692af147a87dfe0c039
-ms.sourcegitcommit: 8c99699b9b84d50fb258c0cc5523ffa78133b7a4
+ms.openlocfilehash: 0a127cec114eb92320334999354522e676f99b37
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2020
-ms.locfileid: "88027239"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956902"
 ---
 # <a name="configuring-windows-event-forwarding"></a>設定 Windows 事件轉送
 
@@ -54,7 +54,7 @@ ms.locfileid: "88027239"
 1. 在命令提示字元中輸入 *gpedit.msc*
 1. 展開 [電腦設定] > [系統管理範本] > [Windows 元件] > [事件轉送]
 
-   ![本機原則群組編輯器影像](media/wef%201%20local%20group%20policy%20editor.png)
+    ![本機原則群組編輯器影像](media/wef%201%20local%20group%20policy%20editor.png)
 
 1. 按兩下 [設定目標訂閱管理員]。
 
@@ -87,7 +87,7 @@ ms.locfileid: "88027239"
     1. 以滑鼠右鍵按一下建立的訂閱，然後選取 [執行階段狀態]，以查看該狀態是否有任何問題。
     1. 幾分鐘後，請檢查您設定要轉寄的事件是否出現在 Azure ATP 上的 [轉送的事件] 中。
 
-如需詳細資訊，請參閱：[設定電腦以轉送和收集事件](https://technet.microsoft.com/library/cc748890) \(英文\)
+如需詳細資訊，請參閱：[設定電腦以轉送和收集事件](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc748890(v=ws.11)) \(英文\)
 
 ## <a name="see-also"></a>另請參閱
 

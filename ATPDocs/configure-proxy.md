@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 07/29/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b82959c378ef4150bfc9204ccf8d4202792d0547
-ms.sourcegitcommit: 9bf5ddd9636ce1bc99d6e4308ef2d70b7abdc836
+ms.openlocfilehash: 24fab947687183f40d5043678b24e12792d98233
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87386022"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956834"
 ---
 # <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-azure-atp-sensor"></a>設定 Azure ATP 感應器的端點 Proxy 和網際網路連線設定
 
@@ -91,7 +91,7 @@ ms.locfileid: "87386022"
 
 - `<your-instance-name>sensorapi.atp.azure.com`- 針對感應器連線能力。 例如， `contoso-corpsensorapi.atp.azure.com`
 
-您也可以使用 Azure 服務標記 (**AzureAdvancedThreatProtection**) 中的IP 位址範圍來啟用對 Azure ATP 的存取。 如需服務標籤的詳細資訊，請參閱[虛擬網路服務標籤](https://docs.microsoft.com/azure/virtual-network/service-tags-overview)或[下載服務標籤](https://www.microsoft.com/download/details.aspx?id=56519)檔案。
+您也可以使用 Azure 服務標記 (**AzureAdvancedThreatProtection**) 中的IP 位址範圍來啟用對 Azure ATP 的存取。 如需服務標籤的詳細資訊，請參閱[虛擬網路服務標籤](/azure/virtual-network/service-tags-overview)或[下載服務標籤](https://www.microsoft.com/download/details.aspx?id=56519)檔案。
 
 或者，若您需要更細微的控制，可考慮允許下表相關端點的流量：
 

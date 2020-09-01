@@ -6,17 +6,17 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 01/05/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 021953b0b5fbd972686cc3743c796a5bbefdcab5
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: cc76b68971ae780e90260f198d0745a29719ca45
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84773443"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88955355"
 ---
 # <a name="using-azure-atp-with-microsoft-cloud-app-security"></a>搭配 Microsoft Cloud App Security 使用 Azure ATP
 
@@ -55,13 +55,13 @@ Cloud App Security 入口網站會與 Azure ATP 整合，以提供來自下列�
 >[!NOTE]
 >
 > - 如果您沒有 Cloud App Security 的訂用帳戶，您仍能使用 Cloud App Security 入口網站來調查 Azure ATP 警示，並深入了解使用者及其內部部署的受控活動，但您將不會收到來自您雲端應用程式的相關深入解析。
-> - Azure ATP 系統管理員可能會需要新的授權以存取 Cloud App Security。 若要了解如何指派 Cloud App Security 的授權，請參閱[管理管理員存取權](https://docs.microsoft.com/cloud-app-security/manage-admins) \(部分機器翻譯\)。
+> - Azure ATP 系統管理員可能會需要新的授權以存取 Cloud App Security。 若要了解如何指派 Cloud App Security 的授權，請參閱[管理管理員存取權](/cloud-app-security/manage-admins) \(部分機器翻譯\)。
 
-請參閱 [Azure ATP 整合](https://docs.microsoft.com/cloud-app-security/aatp-integration) \(部分機器翻譯\)，以了解如何快速啟用 Cloud App Security 中的 Azure ATP。
+請參閱 [Azure ATP 整合](/cloud-app-security/aatp-integration) \(部分機器翻譯\)，以了解如何快速啟用 Cloud App Security 中的 Azure ATP。
 
 ## <a name="azure-atp-in-cloud-app-security"></a>Cloud App Security 中的 Azure ATP
 
-請參閱 [Cloud App Security 快速入門](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)以熟悉使用 Cloud App Security 入口網站的基本概念。
+請參閱 [Cloud App Security 快速入門](/cloud-app-security/getting-started-with-cloud-app-security)以熟悉使用 Cloud App Security 入口網站的基本概念。
 
 存取您的 Azure ATP 資料以及 Cloud App Security 警示、活動及使用者頁面內的新混合式功能。
 
@@ -79,11 +79,11 @@ Azure ATP 警示會顯示於 Cloud App Security 的 [警示]  佇列內。 只�
 
 ## <a name="activities"></a>活動
 
-Azure ATP 警示會顯示於 Cloud App Security 的 [活動記錄]  內。 只有在使用 Cloud App Security 檢視警示時，才能使用其他活動篩選選項和功能。 請參閱[使用 Microsoft Cloud App Security 的 Azure ATP 活動](https://docs.microsoft.com/azure-advanced-threat-protection/atp-activities-filtering-mcas)以了解如何篩選及建立新的活動原則。
+Azure ATP 警示會顯示於 Cloud App Security 的 [活動記錄]  內。 只有在使用 Cloud App Security 檢視警示時，才能使用其他活動篩選選項和功能。 請參閱[使用 Microsoft Cloud App Security 的 Azure ATP 活動](atp-activities-filtering-mcas.md)以了解如何篩選及建立新的活動原則。
 
 ## <a name="user-pages"></a>使用者頁面
 
-使用者頁面包含每位使用者的[調查優先順序分數](https://docs.microsoft.com/cloud-app-security/tutorial-ueba)與所有動作的活動記錄。
+使用者頁面包含每位使用者的[調查優先順序分數](/cloud-app-security/tutorial-ueba)與所有動作的活動記錄。
 
 存取系統使用者的使用者頁面：
 1. 從主功能表中開啟 [警示]  。
@@ -98,7 +98,7 @@ Azure ATP 警示會顯示於 Cloud App Security 的 [活動記錄]  內。 只�
 
 ## <a name="next-steps"></a>後續步驟
 
-請參閱[使用 Microsoft Cloud App Security 的 Azure ATP 活動](https://docs.microsoft.com/azure-advanced-threat-protection/atp-activities-filtering-mcas)以了解如何篩選及建立新的活動原則。
+請參閱[使用 Microsoft Cloud App Security 的 Azure ATP 活動](atp-activities-filtering-mcas.md)以了解如何篩選及建立新的活動原則。
 
 ## <a name="join-the-community"></a>加入社群
 

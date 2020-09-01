@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 09/16/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 71b15bd9-3183-4e24-b18a-705023ccc313
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9b8717625c70559c465daa90019d01c8709459cf
-ms.sourcegitcommit: c3680d6de51d13bb4aeae02a79e74c4a66d9d268
+ms.openlocfilehash: 914a5051eea5d68a26fced0be871ea6c436bfb8e
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85311612"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88953502"
 ---
 # <a name="azure-atps-identity-security-posture-assessments"></a>Azure ATP 身分識別安全性狀態評估
 
@@ -35,7 +35,7 @@ ms.locfileid: "85311612"
 
 ### <a name="access"></a>存取
 
-開啟 Azure ATP 整合之後，可以使用 Microsoft Cloud App Security 入口網站來利用 Azure ATP 安全性評估。 若要了解如何將 Azure ATP 整合至 Cloud App Security，請參閱 [Azure ATP 整合](https://docs.microsoft.com/cloud-app-security/aatp-integration)。
+開啟 Azure ATP 整合之後，可以使用 Microsoft Cloud App Security 入口網站來利用 Azure ATP 安全性評估。 若要了解如何將 Azure ATP 整合至 Cloud App Security，請參閱 [Azure ATP 整合](/cloud-app-security/aatp-integration)。
 
 ### <a name="licensing"></a>授權
 
@@ -43,7 +43,7 @@ ms.locfileid: "85311612"
 
 ## <a name="access-azure-atp-using-cloud-app-security"></a>使用 Cloud App Security 存取 Azure ATP
 
-請參閱 [Cloud App Security 快速入門](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)以熟悉使用 Cloud App Security 入口網站的基本概念。
+請參閱 [Cloud App Security 快速入門](/cloud-app-security/getting-started-with-cloud-app-security)以熟悉使用 Cloud App Security 入口網站的基本概念。
 
 **身分識別安全性狀態評估**
 

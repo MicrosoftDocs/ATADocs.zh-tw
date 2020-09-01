@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 12/24/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ec9fa3c2190e0538cbecaa78131e5c42cdde4d7d
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 860f856acd1a34e52032217b137b6350a0988365
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775891"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956579"
 ---
 # <a name="update-azure-atp-sensors"></a>更新 Azure ATP 感應器
 
@@ -62,17 +62,17 @@ Azure ATP 感應器支援兩種更新：
 將感應器設定為延遲更新：
 
 1. 從 Azure ATP 入口網站中，按一下設定圖示，然後選取 [設定]。
-2. 按一下 [更新] 索引標籤。
-3. 在您想要延遲之每個感應器旁的資料表資料列中，將 [Delayed update] \(延遲更新\) 滑桿設定為 [開啟]。
-4. 按一下 **[儲存]** 。
+1. 按一下 [更新] 索引標籤。
+1. 在您想要延遲之每個感應器旁的資料表資料列中，將 [Delayed update] \(延遲更新\) 滑桿設定為 [開啟]。
+1. 按一下 **[儲存]** 。
  
 ## <a name="sensor-update-process"></a>感應器更新程序
 
 Azure ATP 感應器每隔幾分鐘都會檢查是否有最新版本。 將 Azure ATP 雲端服務更新為較新版本之後，Azure ATP 感應器服務會啟動更新程序：
 
 1. Azure ATP 雲端服務更新為最新版本。
-2. Azure ATP 感應器更新程式服務會知道有已更新的版本。
-3. 不是設定成**延遲更新**的感應器會逐一更新：
+1. Azure ATP 感應器更新程式服務會知道有已更新的版本。
+1. 不是設定成**延遲更新**的感應器會逐一更新：
    1. Azure ATP 感應器更新程式服務從雲端服務提取已更新的版本 (cab 檔案格式)。
    2. Azure ATP 感應器更新程式驗證檔案簽章。
    3. Azure ATP 感應器更新程式服務將 cab 檔案解縮至感應器安裝資料夾中的新資料夾。 根據預設，會將其解壓縮至 *C:\Program Files\Azure Advanced Threat Protection Sensor\<version number>*
@@ -84,14 +84,14 @@ Azure ATP 感應器每隔幾分鐘都會檢查是否有最新版本。 將 Azure
    7. 感應器收到 Azure 雲端服務的許可。 您可以在 [更新] 頁面中確認感應器狀態。
    8. 下一個感應器啟動更新程序。 
 
-4. Azure ATP 雲端服務更新過後 72 小時，選取為**延遲更新**的感應器會按照自動更新之感應器的相同更新程序來更新。
+1. Azure ATP 雲端服務更新過後 72 小時，選取為**延遲更新**的感應器會按照自動更新之感應器的相同更新程序來更新。
 
-![感應器更新](./media/sensor-update.png)
+![感應器更新](media/sensor-update.png)
 
 
 系統會針對無法完成更新程序的任何感應器觸發相關健康情況警示，並以通知傳送。
 
-![感應器更新失敗](./media/sensor-outdated.png)
+![感應器更新失敗](media/sensor-outdated.png)
 
 
 ## <a name="see-also"></a>另請參閱

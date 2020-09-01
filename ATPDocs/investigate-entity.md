@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 62f2a8614bc9eecf29f2f22a5c26b95c8a648481
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: e5afdb5766f4ddd790e85ee6e6e07ae1a2517a44
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84771998"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88955933"
 ---
 # <a name="tutorial-investigate-an-entity"></a>教學課程：調查實體
 
@@ -70,7 +70,7 @@ Azure ATP 會從 Active Directory 中提出標籤，以為您提供可監視 Act
 
 Azure ATP 能夠讓您得知這些旗標在 Active Directory 中的開啟/關閉狀態。 彩色圖示與對應的切換開關指出每個旗標的狀態。 在下面的範例中，Active Directory 只有**密碼永久有效**是開啟的。
 
- ![使用者帳戶控制旗標](./media/user-access-flags.png)
+ ![使用者帳戶控制旗標](media/user-access-flags.png)
 
 ## <a name="cross-check-with-windows-defender"></a>利用 Windows Defender 進行交叉檢查
 
@@ -81,23 +81,23 @@ Azure ATP 能夠讓您得知這些旗標在 Active Directory 中的開啟/關閉
 
 Azure ATP 會從 Azure Active Directory 匯入使用者與群組資訊，以便您識別有哪些使用者因為在以下 Active Directory 群組中具成員身分，所以會自動視為具敏感性：
 
--   Administrators
--   Power Users
--   Account Operators
--   Server Operators
--   Print Operators
--   Backup Operators
--   Replicators
--   Remote Desktop Users 
--   Network Configuration Operators 
--   Incoming Forest Trust Builders
--   Domain Admins
--   網域控制站
--   Group Policy Creator Owners 
--   唯讀網域控制站 
--   企業唯讀網域控制站 
--   Schema Admins 
--   Enterprise Admins
+- Administrators
+- Power Users
+- Account Operators
+- Server Operators
+- Print Operators
+- Backup Operators
+- Replicators
+- Remote Desktop Users 
+- Network Configuration Operators 
+- Incoming Forest Trust Builders
+- Domain Admins
+- 網域控制站
+- Group Policy Creator Owners 
+- 唯讀網域控制站 
+- 企業唯讀網域控制站 
+- Schema Admins 
+- Enterprise Admins
 
 此外，您可在 Azure ATP 中**手動標記**實體為具敏感性。 這一點很重要，因為部分 Azure ATP 偵測 (例如敏感性群組修改偵測與橫向移動路徑) 會仰賴於實體的敏感度狀態。 若您將其他使用者或群組手動標記為具敏感性 (例如董事會成員、公司主管、業務總監等)，Azure ATP 會將其視為具敏感性。 如需詳細資訊，請參閱[使用敏感性帳戶](sensitive-accounts.md)。
 

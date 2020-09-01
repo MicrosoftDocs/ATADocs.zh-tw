@@ -6,18 +6,18 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 04/28/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e0694e13a731c1c8146f733ee8e49a3a2888d52c
-ms.sourcegitcommit: 2ff8079d3ad8964887c1d0d1414c84199ba208bb
+ms.openlocfilehash: 4de688b3ea1c80f8ed0e517baf9da3b469a8d82a
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88793389"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956715"
 ---
 # <a name="troubleshooting-azure-atp-known-issues"></a>針對 Azure ATP 已知問題進行疑難排解
 
@@ -151,19 +151,19 @@ Azure 進階威脅防護可讓您將 Azure ATP 與 Microsoft Defender ATP 整合
 
 在虛擬機器的 NIC 設定中，將下列項目設定為 [已停用]  ：**IPv4 TSO 卸載**。
 
- ![VMware 感應器問題](./media/vm-sensor-issue.png)
+ ![VMware 感應器問題](media/vm-sensor-issue.png)
 
 使用下列命令來檢查已啟用或停用大型傳送卸載 (LSO)：
 
 `Get-NetAdapterAdvancedProperty | Where-Object DisplayName -Match "^Large*"`
 
-![檢查 LSO 狀態](./media/missing-network-traffic-health-alert.png)
+![檢查 LSO 狀態](media/missing-network-traffic-health-alert.png)
 
 若已啟用 LSO，請使用下列命令來停用它：
 
 `Disable-NetAdapterLso -Name {name of adapter}`
 
-![停用 LSO 狀態](./media/disable-lso-vmware.png)
+![停用 LSO 狀態](media/disable-lso-vmware.png)
 
 ## <a name="sensor-failed-to-retrieve-group-managed-service-account-gmsa-credentials"></a>感應器無法擷取群組受管理的服務帳戶 (gMSA) 認證
 

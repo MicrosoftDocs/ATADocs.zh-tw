@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 09/15/2019
-ms.topic: conceptual
+ms.date: 08/25/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 7eea354b-7a50-40d9-bfa7-dcccaef23179
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0c8465acbba8d23414eb0abd9224e5619a1d51c3
-ms.sourcegitcommit: 9bf5ddd9636ce1bc99d6e4308ef2d70b7abdc836
+ms.openlocfilehash: 2eb998eae7c0c6608babbb423f73a608dcd3a633
+ms.sourcegitcommit: 098a20abe62e153372da4c96db256bc63c113bd1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87385959"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88809102"
 ---
 # <a name="security-assessment-unsecure-kerberos-delegation"></a>安全性評估：不安全的 Kerberos 委派
 
@@ -43,6 +43,9 @@ Kerberos 委派的主要問題在於，您必須信任應用程式永遠會執�
 
     ![不安全的 Kerberos 委派安全性評定](media/atp-cas-isp-kerberos-delegation-2.png)
 1. 對那些具有風險的使用者採取適當的行動，例如移除其不受限制的屬性，或將其變更為更安全的限制委派。
+
+> [!NOTE]
+> 此評定會每隔 24 小時更新一次。
 
 ## <a name="remediation"></a>修復
 

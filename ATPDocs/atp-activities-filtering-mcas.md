@@ -6,24 +6,24 @@ author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 07/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 397e5a77-2bc7-454c-9fe5-649ebaab16b3
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ef0bf221024e13269881206d732d45ef8a6e3828
-ms.sourcegitcommit: bfb5f35f8e2f19911357e5afa6624ffe43e37d12
+ms.openlocfilehash: fc3032c9964a4e4e887dfedf01e57649d3bf2358
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86472343"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88955967"
 ---
 # <a name="use-activity-filters-and-create-action-policies-with-azure-atp-in-microsoft-cloud-app-security"></a>在 Microsoft Cloud App Security 中使用活動篩選以及使用 Azure ATP 建立動作原則
 
 本文旨在協助您了解如何使用 Microsoft Cloud App Security 來篩選及建立 Azure ATP 活動的動作原則。
 
-如需如何完成整合的詳細資訊，請參閱 [Azure ATP Cloud App Security 整合](https://docs.microsoft.com/cloud-app-security/aatp-integration)。
+如需如何完成整合的詳細資訊，請參閱 [Azure ATP Cloud App Security 整合](/cloud-app-security/aatp-integration)。
 
 搭配 Microsoft Cloud App Security 使用 Azure ATP 可根據使用者與實體行為分析 (UEBA) 來提供活動分析和警示，以識別貴企業中風險最高的行為、提供完整的調查優先順序分數，以及活動篩選和可自訂的活動原則。
 
@@ -44,11 +44,11 @@ ms.locfileid: "86472343"
 依使用者存取 Azure ATP 活動：
 
 1. 使用 [使用者名稱] 欄位來篩選 [警示]  佇列。
-    ![警示佇列](media/atp-mcas-alerts-queue.png)
+    ![依使用者名稱篩選警示](media/atp-mcas-alerts-queue.png)
 1. 在結果清單中，按一下任意警示上的使用者名稱，以開啟您想要調查之使用者的 [使用者]  頁面。
 
 1. 使用可用欄位來篩選使用者的活動，或使用 [+] 按鈕來加入新的篩選規則。
-    ![警示佇列](media/atp-mcas-activity-filter.png)
+    ![篩選使用者的活動](media/atp-mcas-activity-filter.png)
 
 ## <a name="create-activity-policies-in-cloud-app-security"></a>在 Cloud App Security 中建立活動原則
 
@@ -71,7 +71,7 @@ ms.locfileid: "86472343"
 
 ## <a name="next-steps"></a>後續步驟
 
-深入了解調查優先順序評分及 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/) \(部分機器翻譯\) 功能的其他功能。
+深入了解調查優先順序評分及 [Microsoft Cloud App Security](/cloud-app-security/) \(部分機器翻譯\) 功能的其他功能。
 
 ## <a name="join-the-community"></a>加入社群
 

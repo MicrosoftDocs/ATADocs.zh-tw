@@ -1,35 +1,35 @@
 ---
 title: Azure ATP 橫向移動安全性警示
-d|Description: This article explains the Azure ATP alerts issued when attacks typically part of lateral movement phase efforts are detected against your organization.
+description: 本文說明偵測到組織受攻擊時 (通常在橫向移動階段)，所發出的 Azure ATP 警示。
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/23/2020
+ms.date: 08/31/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 2257eb00-8614-4577-b6a1-5c65085371f2
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4ef5d8985d42cd53f803eb97d8ebc0eba69a39af
-ms.sourcegitcommit: 42f1da0c498bd145daff4df20b3e53069b55ecd5
+ms.openlocfilehash: 6de2e4006b8693b6ad7db18e13d976c012541d67
+ms.sourcegitcommit: 275e2b084fd7dd7cac2e0d07b0b244318aac7475
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87856371"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89245854"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>教學課程：橫向移動警訊
 
-一般來說，攻擊者會針對任何可存取的實體 (例如低權限使用者) 發動攻擊，再快速橫向移動，直到獲得重要資產的存取權為止。 敏感性帳戶、網域系統管理員或高度敏感性資料均為重要資產。 Azure ATP 會從整個攻擊狙殺鏈來源識別進階威脅，並將其分成下列幾個階段：
+網路攻擊通常會針對低權限使用者等所有可存取的實體啟動，然後快速橫向移動，直到攻擊者得以存取有價值的資產。 敏感性帳戶、網域系統管理員或高度敏感性資料均為重要資產。 Azure ATP 會從整個攻擊狙殺鏈來源識別進階威脅，並將其分成下列幾個階段：
 
 1. [偵察](atp-reconnaissance-alerts.md)
-2. [遭入侵的認證](atp-compromised-credentials-alerts.md)
-3. **橫向移動**
-4. [網域支配](atp-domain-dominance-alerts.md)
-5. [Exfiltration](atp-exfiltration-alerts.md)
+1. [遭入侵的認證](atp-compromised-credentials-alerts.md)
+1. **橫向移動**
+1. [網域支配](atp-domain-dominance-alerts.md)
+1. [Exfiltration](atp-exfiltration-alerts.md)
 
-若要深入了解如何了解結構和所有 Azure ATP 安全性警訊的一般元件，請參閱 [Understanding security alerts](understanding-security-alerts.md) (了解安全性警訊)。
+若要深入了解如何了解結構和所有 Azure ATP 安全性警訊的一般元件，請參閱 [Understanding security alerts](understanding-security-alerts.md) (了解安全性警訊)。 如需**確判 (TP)** 、**良性確判 (B-TP)** 及**誤判 (FP)** 的詳細資訊，請參閱[安全性警訊分類](understanding-security-alerts.md#security-alert-classifications)。
 
 下列安全性警訊可協助您找出並補救 Azure ATP 在您網路中偵測到的**橫向移動**階段可疑活動。 在本教學課程中，您將了解如何了解、分類、補救和防範以下各類攻擊：
 
@@ -41,6 +41,7 @@ ms.locfileid: "87856371"
 > - 可疑的 NTLM 驗證竄改 (外部識別碼 2039)
 > - 可疑的 NTLM 轉送攻擊 (Exchange 帳戶) (外部識別碼 2037)
 > - 可疑的 Overpass-the-Hash 攻擊 (Kerberos) (外部識別碼 2002)
+> - 可疑的 Rogue Kerberos 憑證使用方式 (外部識別碼 2047)
 > - 可疑的 SMB 封包操作 (CVE-2020-0796 惡意探索)-(預覽) (外部識別碼 2406)
 
 <!-- * Suspected overpass-the-hash attack (encryption downgrade) (external ID 2008)-->
@@ -53,13 +54,17 @@ ms.locfileid: "87856371"
 
 在此偵測中，當懷疑針對網路中的網域控制站利用 CVE-2018-8626 安全性漏洞的 DNS 查詢時，便會觸發 Azure ATP 安全性警示。
 
+**學習期間**
+
+不適用
+
 **TP、B-TP 或 FP**
 
 1. 目的電腦是否為最新，且已針對 CVE-2018-8626 進行修補？
     - 如果電腦為最新且已修補，請視為 **FP** 並**關閉**安全性警示。
-2. 在攻擊發生前是否建立了服務或執行了不熟悉的程序
+1. 在攻擊發生前是否建立了服務或執行了不熟悉的程序
     - 如果沒有發現任何新的服務或不熟悉的服務，請視為 **FP** 並**關閉**安全性警示。
-3. 此攻擊類型可能使 DNS 服務當機，然後成功地執行程式碼。
+1. 此攻擊類型可能使 DNS 服務當機，然後成功地執行程式碼。
     - 檢查 DNS 服務在攻擊發生前是否曾重新啟動過幾次。
     - 如果 DNS 已重新啟動，則有可能是嘗試惡意探索 CVE-2018-8626。 請將此警告視為 **TP**，並遵循**了解缺口的範圍**中的指示。
 
@@ -73,10 +78,10 @@ ms.locfileid: "87856371"
 
 1. 包含網域控制站。
     1. 修復遠端程式碼執行嘗試。
-    2. 另外請尋找在可疑活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-2. 包含來源電腦。
+    1. 另外請尋找在可疑活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+1. 包含來源電腦。
     1. 尋找執行攻擊的工具，並將它移除。
-    2. 另外請尋找在可疑活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+    1. 另外請尋找在可疑活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 
 **防範**
 
@@ -90,6 +95,10 @@ ms.locfileid: "87856371"
 
 傳遞票證是一種橫向移動攻擊手法，在此攻擊中，攻擊者從一部電腦竊取使用者的 NTLM 雜湊，然後加以使用以存取另一部電腦。
 
+**學習期間**
+
+不適用
+
 **TP、B-TP、或 FP？**
 1. 判斷是否為使用者固定使用的電腦在使用該雜湊？
     - 如果是使用者固定使用的電腦在使用該雜湊，則為 **FP**，並請**關閉**該警訊。
@@ -97,14 +106,14 @@ ms.locfileid: "87856371"
 **了解漏洞的範圍**
 
 1. 進一步調查[來源和目的電腦](investigate-a-computer.md)。
-2. 調查[遭入侵的使用者](investigate-a-computer.md)。
+1. 調查[遭入侵的使用者](investigate-a-computer.md)。
 
 **建議的補救和預防步驟**
 
 1. 重設來源使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-2. 包含來源和目的電腦。
-3. 尋找執行攻擊的工具，並將它移除。
-4. 尋找在活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+1. 包含來源和目的電腦。
+1. 尋找執行攻擊的工具，並將它移除。
+1. 尋找在活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 
 ## <a name="suspected-identity-theft-pass-the-ticket-external-id-2018"></a>可疑的身分識別竊取 (票證傳遞) (外部識別碼 2018)
 
@@ -114,42 +123,46 @@ ms.locfileid: "87856371"
 
 傳遞票證是一種橫向移動攻擊手法，在此攻擊中，攻擊者從一部電腦竊取 Kerberos 票證，並重複使用竊取的票證來存取另一部電腦。 在此偵測中，會看到 Kerberos 票證用於兩部 (或多部) 不同的電腦。
 
+**學習期間**
+
+不適用
+
 **TP、B-TP、或 FP？**
 
 識別每部電腦上票證傳遞攻擊的關鍵在於成功將 IP 解析至組織中的電腦。
 
 1. 檢查一或兩部電腦的 IP 位址是否屬於從過小 DHCP 集區配置的子網路，例如 VPN、VDI 或 WiFi？
-2. IP 位址是否共用 (例如透過 NAT 裝置)？
-3. 感應器未解析一或多個目的地 IP 位址嗎？ 如果未解析目的地 IP 位址，可能表示感應器與裝置之間的正確連接埠未正確開啟。
+1. IP 位址是否共用 (例如透過 NAT 裝置)？
+1. 感應器未解析一或多個目的地 IP 位址嗎？ 如果未解析目的地 IP 位址，可能表示感應器與裝置之間的正確連接埠未正確開啟。
 
     如果任何上述問題的答案為**是**，請檢查來源和目的電腦是否相同。 如果相同，則為 **FP**，而且沒有任何實際的**票證傳遞**嘗試。
 
-當透過 Windows Server 2016 及更新版本上的 Windows 10 使用 RDP 連線的 [Remote Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/remote-credential-guard) 功能時，就會出現 **B-TP** 警示。
+當透過 Windows Server 2016 及更新版本上的 Windows 10 使用 RDP 連線的 [Remote Credential Guard](/windows/security/identity-protection/remote-credential-guard) 功能時，就會出現 **B-TP** 警示。
 使用警示辨識項，檢查使用者是否使用了遠端桌面連線，從來源電腦連線至目的地電腦。
 
 1. 檢查相互關聯的辨識項。
-2. 若發現相互關聯的辨識項，請檢查是否使用 Remote Credential Guard 進行 RDP 連線。
-3. 如果答案為是，則為 **T-BP** 活動，並請**關閉**安全性警訊。
+1. 若發現相互關聯的辨識項，請檢查是否使用 Remote Credential Guard 進行 RDP 連線。
+1. 如果答案為是，則為 **T-BP** 活動，並請**關閉**安全性警訊。
 
 有些自訂應用程式可代表使用者轉送票證。 這些應用程式具有使用者票證的委派權限。
 
 1. 類似上述說明的自訂應用程式類型目前在目的電腦上嗎？ 應用程式正在執行哪些服務？ 這些服務都代表使用者執行動作嗎？例如存取資料庫。
     - 如果答案為是，則為 **T-BP** 活動，並請**關閉**安全性警訊。
-2. 目的電腦為委派伺服器嗎？
+1. 目的電腦為委派伺服器嗎？
     - 如果答案為是，請**關閉**安全性警訊，將該電腦視為 **T-BP** 活動並予以排除。
 
 **了解漏洞的範圍**
 
 1. 調查[來源和目的電腦](investigate-a-computer.md)。
-2. 調查[遭入侵的使用者](investigate-a-computer.md)。
+1. 調查[遭入侵的使用者](investigate-a-computer.md)。
 
 **建議的補救和預防步驟**
 
 1. 重設來源使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-2. 包含來源和目的電腦。
-3. 尋找執行攻擊的工具，並將它移除。
-4. 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-5. 如果您已安裝 Microsoft Defender ATP – 請使用 **klist.exe 清除**刪除指定登入工作階段的所有票證，並防止日後再使用該票證。
+1. 包含來源和目的電腦。
+1. 尋找執行攻擊的工具，並將它移除。
+1. 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+1. 如果您已安裝 Microsoft Defender ATP – 請使用 **klist.exe 清除**刪除指定登入工作階段的所有票證，並防止日後再使用該票證。
 
 ## <a name="suspected-ntlm-authentication-tampering-external-id-2039"></a>可疑的 NTLM 驗證竄改 (外部識別碼 2039)
 
@@ -159,28 +172,32 @@ ms.locfileid: "87856371"
 
 在此偵測中，當有人對網路中的網域控制站提出 [CVE-2019-1040](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1040) 中認為可能惡意探索資訊安全漏洞的 NTLM 驗證要求時，會觸發 Azure ATP 安全性警訊。
 
+**學習期間**
+
+不適用
+
 **TP、B-TP、或 FP？**
 
 1. 包括網域控制站等相關電腦，已針對 [CVE-2019-1040](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1040) 更新為最新狀態且進行過修補嗎？
-  - 若電腦已為最新版且已進行過修補，則驗證預計會失敗。 如果驗證失敗了，安全性警訊即代表失敗的嘗試，您可予以 [關閉]。
+    - 若電腦已為最新版且已進行過修補，則驗證預計會失敗。 如果驗證失敗了，安全性警訊即代表失敗的嘗試，您可予以 [關閉]。
 
 **了解漏洞的範圍**
 
 1. 調查[來源電腦](investigate-a-computer.md)。
-2. 調查[來源帳戶](investigate-a-user.md)。
+1. 調查[來源帳戶](investigate-a-user.md)。
 
 **建議的補救和預防步驟**
 
 **補救**
 
 1. 包含來源電腦
-2. 尋找執行攻擊的工具，並將它移除。
-3. 因為使用者可能也遭入侵，所以請搜尋在活動發生期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-4. 在網域中強制使用密封 NTLMv2，並使用**網路安全性：LAN Manager 驗證層級**群組原則。 如需詳細資訊，請參閱 [LAN Manager 驗證層級指示](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-security-lan-manager-authentication-level)，以設定網域控制站的群組原則。
+1. 尋找執行攻擊的工具，並將它移除。
+1. 因為使用者可能也遭入侵，所以請搜尋在活動發生期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+1. 在網域中強制使用密封 NTLMv2，並使用**網路安全性：LAN Manager 驗證層級**群組原則。 如需詳細資訊，請參閱 [LAN Manager 驗證層級指示](/windows/security/threat-protection/security-policy-settings/network-security-lan-manager-authentication-level)，以設定網域控制站的群組原則。
 
 **防範**
 
-* 確定環境中的所有裝置都處於最新狀態，並已針對 [CVE-2019-1040](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1040) 進行修補。
+- 確定環境中的所有裝置都處於最新狀態，並已針對 [CVE-2019-1040](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1040) 進行修補。
 
 ## <a name="suspected-ntlm-relay-attack-exchange-account-external-id-2037"></a>可疑的 NTLM 轉送攻擊 (Exchange 帳戶) (外部識別碼 2037)
 
@@ -192,23 +209,28 @@ Exchange Server 可設為使用 Exchange Server 帳戶向攻擊者所執行的�
 
 在此偵測中，當 Azure ATP 識別到可疑來源使用 Exchange 帳戶認證時，便會觸發警訊。
 
+**學習期間**
+
+不適用
+
 **TP、B-TP、或 FP？**
 
 1. 請檢查 IP 位址後方的來源電腦。
     1. 若來源電腦是 Exchange Server，請將其視為 **FP** 活動並**關閉**安全性警訊。
-    2. 判斷來源帳戶是否應從這些電腦使用 NTLM 進行驗證？ 若它們應進行驗證，請**關閉**安全性警訊，並將這些電腦視為 **B-TP** 活動而予以排除。
+    1. 判斷來源帳戶是否應從這些電腦使用 NTLM 進行驗證？ 若它們應進行驗證，請**關閉**安全性警訊，並將這些電腦視為 **B-TP** 活動而予以排除。
 
 **了解漏洞的範圍**
 
 1. 繼續[調查所涉及 IP 位址後方的來源電腦](investigate-a-computer.md)。
-2. 調查[來源帳戶](investigate-a-user.md)。
+1. 調查[來源帳戶](investigate-a-user.md)。
 
 **建議的補救和預防步驟**
 
 1. 包含來源電腦
     1. 尋找執行攻擊的工具，並將它移除。
-    2. 因為使用者可能也遭入侵，所以請搜尋在活動發生期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-2. 在網域中強制使用密封 NTLMv2，並使用**網路安全性：LAN Manager 驗證層級**群組原則。 如需詳細資訊，請參閱 [LAN Manager 驗證層級指示](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-security-lan-manager-authentication-level)，以設定網域控制站的群組原則。
+    1. 因為使用者可能也遭入侵，所以請搜尋在活動發生期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+1. 在網域中強制使用密封 NTLMv2，並使用**網路安全性：LAN Manager 驗證層級**群組原則。 如需詳細資訊，請參閱 [LAN Manager 驗證層級指示](/windows/security/threat-protection/security-policy-settings/network-security-lan-manager-authentication-level)，以設定網域控制站的群組原則。
+
 <!--
 ## Suspected overpass-the-hash attack (encryption downgrade) (external ID 2008)
 
@@ -220,6 +242,10 @@ Encryption downgrade is a method of weakening Kerberos using encryption downgrad
 
 In an over-pass-the-hash attack, an attacker can use a weak stolen hash to create a strong ticket, with a Kerberos AS request. In this detection,  instances are detected where the AS_REQ message encryption type from the source computer is downgraded, when compared to the previously learned behavior (the computer used AES).
 
+**Learning period**
+
+Not applicable
+
 **TP, B-TP, or FP?**
 
 1. Determine if the smartcard configuration recently changed.
@@ -229,34 +255,35 @@ In an over-pass-the-hash attack, an attacker can use a weak stolen hash to creat
 
 Some legitimate resources don't support strong encryption ciphers and may trigger this alert.
 
-2. Do all source users share something?
+1. Do all source users share something?
     1. For example, are all of your marketing personnel accessing a specific resource that could cause the alert to be triggered?
-    2. Check the resources accessed by those tickets.
+    1. Check the resources accessed by those tickets.
        - Check this in Active Directory by checking the attribute *msDS-SupportedEncryptionTypes*, of the resource service account.
-    3. If there is only one accessed resource, check if it is a valid resource for these users to access.
+    1. If there is only one accessed resource, check if it is a valid resource for these users to access.
 
       If the answer to one of the previous questions is **yes**, it is likely to be a **T-BP** activity. Check if the resource can support a strong encryption cipher, implement a stronger encryption cipher where possible, and **Close** the security alert.
 
 **Understand the scope of the breach**
 
 1. Investigate the [source computer](investigate-a-computer.md).
-2. Investigate the [compromised user](investigate-a-computer.md).
+1. Investigate the [compromised user](investigate-a-computer.md).
 
 **Suggested remediation and steps for prevention**
 
 **Remediation**
 
 1. Reset the password of the source user and enable MFA or, if you have configured the relevant high-risk user policies in Azure Active Directory Identity Protection, you can use the [**Confirm user compromised**](/cloud-app-security/accounts#governance-actions) action in the Cloud App Security portal.
-2. Contain the source computer.
-3. Find the tool that performed the attack and remove it.
-4. Look for users logged on around the time of the activity, as they may also be compromised. Reset their passwords and enable MFA or, if you have configured the relevant high-risk user policies in Azure Active Directory Identity Protection, you can use the [**Confirm user compromised**](/cloud-app-security/accounts#governance-actions) action in the Cloud App Security portal.
+1. Contain the source computer.
+1. Find the tool that performed the attack and remove it.
+1. Look for users logged on around the time of the activity, as they may also be compromised. Reset their passwords and enable MFA or, if you have configured the relevant high-risk user policies in Azure Active Directory Identity Protection, you can use the [**Confirm user compromised**](/cloud-app-security/accounts#governance-actions) action in the Cloud App Security portal.
 
 **Prevention**
 
-1. Configure your domain to support strong encryption cyphers, and remove *Use Kerberos DES encryption types*. Learn more about [encryption types and Kerberos](https://blogs.msdn.microsoft.com/openspecification/2011/05/30/windows-configurations-for-kerberos-supported-encryption-type/).
-2. Make sure the domain functional level is set to support strong encryption cyphers.
-3. Give preference to using applications that support strong encryption cyphers.
+1. Configure your domain to support strong encryption cyphers, and remove *Use Kerberos DES encryption types*. Learn more about [encryption types and Kerberos](/archive/blogs/openspecification/windows-configurations-for-kerberos-supported-encryption-type).
+1. Make sure the domain functional level is set to support strong encryption cyphers.
+1. Give preference to using applications that support strong encryption cyphers.
 -->
+
 ## <a name="suspected-overpass-the-hash-attack-kerberos-external-id-2002"></a>可疑的 Overpass-the-Hash 攻擊 (Kerberos) (外部識別碼 2002)
 
 先前的名稱：不尋常的 Kerberos 通訊協定實作 (可能為 Overpass-the-Hash 攻擊)
@@ -265,36 +292,75 @@ Some legitimate resources don't support strong encryption ciphers and may trigge
 
 攻擊者會使用以非標準方式實作各種通訊協定 (例如 Kerberos 和 SMB) 的工具。 儘管 Microsoft Windows 接受這類網路流量而不會發出任何警告，但 Azure ATP 仍可辨識潛在的惡意意圖。 此行為表示使用了多項手法，像是 Overpass-the-Hash、暴力密碼破解及進階勒索軟體惡意探索 (如 WannaCry)。
 
+**學習期間**
+
+不適用
+
 **TP、B-TP、或 FP？**
 
 有時候應用程式會實作自己的 Kerberos 堆疊，而不是根據 Kerberos RFC。
 
 1. 檢查來源電腦執行的應用程式是否有其專屬的 Kerberos 堆疊，而不是以 Kerberos RFC 為依據。
-2. 如果來源電腦正在但卻**不**應執行這類應用程式，請修正應用程式設定。 請視為 **T-BP** 活動，並**關閉**安全性警訊。
-3. 如果來源電腦正在並應繼續執行這類應用程式，請視為 **T-BP** 活動，並**關閉**安全性警訊，然後排除該電腦。
+1. 如果來源電腦正在但卻**不**應執行這類應用程式，請修正應用程式設定。 請視為 **T-BP** 活動，並**關閉**安全性警訊。
+1. 如果來源電腦正在並應繼續執行這類應用程式，請視為 **T-BP** 活動，並**關閉**安全性警訊，然後排除該電腦。
 
 **了解漏洞的範圍**
 
 1. 調查[來源電腦](investigate-a-computer.md)。
-2. 如有[來源使用者](investigate-a-user.md)，也請予以調查。
+1. 如有[來源使用者](investigate-a-user.md)，也請予以調查。
 
 **建議的補救和預防步驟**
 
 1. 重設遭入侵之使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-2. 包含來源電腦。
-3. 尋找執行攻擊的工具，並將它移除。
-4. 尋找在可疑活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-5. 重設來源使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+1. 包含來源電腦。
+1. 尋找執行攻擊的工具，並將它移除。
+1. 尋找在可疑活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+1. 重設來源使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 
 <!-- REMOVE BOOKMARK FROM TITLE WHEN PREVIEW REMOVED -->
 
-## <a name="suspected-smb-packet-manipulation-cve-2020-0796-exploitation---preview-external-id-2406"></a><a name="suspected-smb-packet-manipulation-cve-2020-0796-exploitation-external-id-2406"></a>可疑的 SMB 封包操作 (CVE-2020-0796 惡意探索) - (預覽) (外部識別碼 2406)
+<a name="suspected-smb-packet-manipulation-cve-2020-0796-exploitation-external-id-2406"></a>
+
+## <a name="suspected-rogue-kerberos-certificate-usage-external-id-2047"></a>可疑的 Rogue Kerberos 憑證使用方式 (外部識別碼 2047)
+
+**描述**
+
+Rogue 憑證攻擊為攻擊者取得組織控制權之後，所使用的持續性技術。 攻擊者會入侵憑證授權單位 (CA) 伺服器，並產生可在未來攻擊中用作後門程式帳戶的憑證。
+
+**學習期間**
+
+不適用
+
+**TP、B-TP 或 FP**
+
+- 判斷帳戶是否定期登入電腦？
+  - 如果電腦定期使用該憑證，請將該警訊**關閉**為 **FP**。
+
+**了解漏洞的範圍**
+
+1. 調查[來源電腦](investigate-a-computer.md)。
+2. 調查[來源使用者](investigate-a-user.md)。
+3. 檢查已成功存取哪些資源，並進行[調查](investigate-a-computer.md)。
+
+**建議的補救和預防步驟**
+
+1. 重設來源使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+1. 包含來源電腦
+    - 尋找執行攻擊的工具，並將它移除。
+    - 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+1. 尋找 CA 伺服器中使用的憑證，並在其排定的到期日前使 TLS/SSL 失效，藉以撤銷憑證。
+
+## <a name="suspected-smb-packet-manipulation-cve-2020-0796-exploitation---preview-external-id-2406"></a>可疑的 SMB 封包操作 (CVE-2020-0796 惡意探索)-(預覽) (外部識別碼 2406)
 
 **描述**
 
 2020 年 3月 12 日 Microsoft 發佈了 [CVE-2020-0796](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0796)，並宣佈在 Microsoft 伺服器訊息區 3.1.1 (SMBv3) 通訊協定處理特定要求的方式中，近期出現遠端程式碼的執行弱點。 成功惡意探索到此漏洞的攻擊者，即可在目標伺服器或用戶端上執行程式碼。 未經修補的 Windows 伺服器即有暴露在此弱點下的風險。
 
 在此偵測中，若懷疑 SMBv3 封包會對網路中的網域控制站惡意探索 CVE-2020-0796 安全性弱點時，即會觸發 Azure ATP 安全性警示。
+
+**學習期間**
+
+不適用
 
 **TP、B-TP、或 FP？**
 
@@ -304,16 +370,16 @@ Some legitimate resources don't support strong encryption ciphers and may trigge
 **了解漏洞的範圍**
 
 1. 調查[來源電腦](investigate-a-computer.md)。
-2. 調查目的網域控制站。
+1. 調查目的網域控制站。
 
 **建議的補救和預防步驟**
 
 **補救**
 
 1. 包含來源電腦。
-2. 尋找執行攻擊的工具，並將它移除。
-3. 尋找在可疑活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-4. 如果您電腦的作業系統不支援 [KB4551762](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4551762)，建議您在環境中停用 SMBv3 壓縮功能，如[因應措施](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0796)一節中所述。
+1. 尋找執行攻擊的工具，並將它移除。
+1. 尋找在可疑活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+1. 如果您電腦的作業系統不支援 [KB4551762](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4551762)，建議您在環境中停用 SMBv3 壓縮功能，如[因應措施](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0796)一節中所述。
 
 **防範**
 

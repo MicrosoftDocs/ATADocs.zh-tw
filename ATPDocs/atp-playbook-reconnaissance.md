@@ -2,17 +2,17 @@
 title: Azure ATP 偵察劇本教學課程
 description: Azure ATP 偵察劇本教學課程說明如何模擬偵察威脅以供 Azure ATP 偵測。
 ms.service: azure-advanced-threat-protection
-ms.topic: tutorial
+ms.topic: how-to
 author: shsagir
 ms.author: shsagir
 ms.date: 09/01/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: e3a7f4553635ec2af2aec6bda10802f776b7e543
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: 2d62d765acf440b39c162bfbab1ad101cb572345
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "80669625"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88955219"
 ---
 # <a name="tutorial-reconnaissance-playbook"></a>教學課程：偵察劇本
 
@@ -111,9 +111,9 @@ ls -d contoso.azure
 
    輸出會顯示 Contoso.Azure 網域中的所有使用者。
 
-   ![列舉網域中的所有使用者](media/playbook-recon-dsenumeration-netusers.png)
+    ![列舉網域中的所有使用者](media/playbook-recon-dsenumeration-netusers.png)
 
-2. 讓我們嘗試列舉網域中的所有群組。 請執行下列命令：
+1. 讓我們嘗試列舉網域中的所有群組。 請執行下列命令：
 
     ``` cmd
     net group /domain
@@ -121,19 +121,19 @@ ls -d contoso.azure
 
    輸出會顯示 Contoso.Azure 網域中的所有群組。 請注意一個不是預設群組的「安全性群組」：**Helpdesk**。
 
-   ![列舉網域中的所有群組](media/playbook-recon-dsenumeration-netgroups.png)
+    ![列舉網域中的所有群組](media/playbook-recon-dsenumeration-netgroups.png)
 
-3. 現在，讓我們嘗試只列舉 Domain Admins 群組。 執行下列命令：
+1. 現在，讓我們嘗試只列舉 Domain Admins 群組。 執行下列命令：
 
     ``` cmd
     net group "Domain Admins" /domain
     ```
 
-   ![列舉 Domain Admins 群組的所有成員](media/playbook-recon-dsenumeration-netdomainadmins.png)
+    ![列舉 Domain Admins 群組的所有成員](media/playbook-recon-dsenumeration-netdomainadmins.png)
 
     作為一個攻擊者，我們已了解 Domain Admins 群組有兩個成員：**SamiraA** 和 **ContosoAdmin** (「網域控制站」的內建「系統管理員」)。 在知道我們的「網域」與「樹系」之間沒有任何安全性界限的情況下，我們的下一個躍進就是嘗試列舉 Enterprise Admins。
 
-4. 若要嘗試列舉 Enterprise Admins，請執行下列命令：
+1. 若要嘗試列舉 Enterprise Admins，請執行下列命令：
 
     ``` cmd
    net group "Enterprise Admins" /domain
@@ -141,7 +141,7 @@ ls -d contoso.azure
 
    我們已了解只有一個「企業系統管理員」，即 ContosoAdmin。 此資訊並不重要，因為我們已經知道我們的「網域」與「樹系」之間沒有安全性界限。
 
-   ![網域中列舉的 Enterprise Admins](media/playbook-recon-dsenumeration-netenterpriseadmins.png)
+    ![網域中列舉的 Enterprise Admins](media/playbook-recon-dsenumeration-netenterpriseadmins.png)
 
 有了我們偵察中所收集的資訊，我們現在知道了「Helpdesk 安全性群組」。 雖然該資訊*尚未*引起關注。 我們也知道了 **SamiraA** 是 Domain Admins 群組的成員。 如果我們可以搜集 SamiraA 的認證，我們就可以存取「網域控制站」本身。
 
@@ -157,7 +157,7 @@ ls -d contoso.azure
 
 ![JeffL 的邏輯活動時間軸](media/playbook-recon-dsenumeration-jeffvlogicalactivity.png)
 
-許多活動都記錄在「邏輯活動」時間軸中，使得它成為可執行「數位鑑識調查與數位回應」(DFIR) 的主要功能。 甚至當初始偵測不是來自 Azure ATP 但來自 Microsoft Defender ATP、Office 365 等時，您也可以看到活動。
+許多活動都記錄在「邏輯活動」時間軸中，使得它成為可執行「數位鑑識調查與數位回應」(DFIR) 的主要功能。 甚至當初始偵測不是來自 Azure ATP，但卻是來自 Microsoft Defender ATP 或 Microsoft 365 時，您也可以看到活動。
 
 藉由查看 **ContosoDC 的頁面**，我們還可以看到 JeffL 所登入的電腦。
 

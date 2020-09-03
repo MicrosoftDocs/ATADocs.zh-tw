@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 06/23/2020
-ms.topic: conceptual
+ms.date: 08/25/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 59f3f8a201b78667ef5c8d6d20da177104dc3a38
-ms.sourcegitcommit: 073154998f5fdfbefe276888ffb034dfce368662
+ms.openlocfilehash: 7ac819d4d1f388ea632505cbd3394101020419bc
+ms.sourcegitcommit: 098a20abe62e153372da4c96db256bc63c113bd1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85256857"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88808983"
 ---
 # <a name="security-assessment-unsecure-account-attributes"></a>安全性評估：不安全的帳戶屬性
 
@@ -38,6 +38,9 @@ Azure ATP 會持續監視您的環境，辨識屬性值會造成安全性風險�
 1. 使用報告資料表找出哪些帳戶具有不安全的屬性。
     ![查看熱門的受影響實體並建立動作計畫](media/atp-cas-isp-unsecure-account-attributes-1.png)
 1. 請對這些使用者帳戶採取行動，即修改或移除相關的屬性。
+
+> [!NOTE]
+> 此評定會以近乎即時的方式更新。
 
 ## <a name="remediation"></a>修復
 

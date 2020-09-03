@@ -1,6 +1,6 @@
 ---
 title: Azure ATP 使用者調查教學課程
-d|Description: This article explains how to user Azure ATP security alerts to investigate a suspicious user.
+description: 本文說明如何使用 Azure ATP 安全性警示來調查可疑的使用者。
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2bec6fbb12d78bbfd8dd04046f63df267391b1d1
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+ms.openlocfilehash: cc9c825eb86e69caf3bef17a24194b8c8dfa0cf7
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79413412"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88956698"
 ---
 # <a name="tutorial-investigate-a-user"></a>教學課程：調查使用者
 
@@ -39,7 +39,7 @@ Azure ATP 警示辨識項和橫向移動路徑清楚指出使用者何時執行�
      2. 他們在組織中扮演什麼角色？
      3. 他們在組織樹狀目錄中是否重要？
 
-2. 要[調查](investigate-entity.md)的可疑活動：
+1. 要[調查](investigate-entity.md)的可疑活動：
      1. 使用者在 Azure ATP 或其他安全性工具 (例如 Windows Defender-ATP、Azure 資訊安全中心及/或 Microsoft CAS) 中，是否有其他已開啟的警示？
      2. 使用者是否有失敗的登入？
      3. 使用者存取了哪些資源？  

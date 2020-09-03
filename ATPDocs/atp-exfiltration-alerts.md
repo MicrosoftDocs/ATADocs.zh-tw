@@ -1,6 +1,6 @@
 ---
 title: Azure ATP 外洩警示教學課程
-d|Description: This article explains the Azure ATP alerts issued when attacks typically part of exfiltration phase efforts are detected against your organization.
+description: 本文說明偵測到組織受攻擊時 (通常在資料外流階段)，所發出的 Azure ATP 警示。
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 452d951c-5f49-4a21-ae10-9fb38c3de302
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: bc700b395ea5c93c5d19b7bdbf2131e742c83f20
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 5561ec663f5ef0ef0adfc7ac7cc4033f90bfe3de
+ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84773528"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88953519"
 ---
 # <a name="tutorial-exfiltration-alerts"></a>教學課程：外流警訊
 
@@ -27,9 +27,9 @@ ms.locfileid: "84773528"
 2. [遭入侵的認證](atp-compromised-credentials-alerts.md)
 3. [橫向移動](atp-lateral-movement-alerts.md)
 4. [網域支配](atp-domain-dominance-alerts.md)
-5. **外洩**
+5. **Exfiltration**
 
-若要深入了解如何理解結構和所有 Azure ATP 安全性警訊的一般元件，請參閱[理解安全性警訊](understanding-security-alerts.md)
+若要深入了解如何了解結構和所有 Azure ATP 安全性警訊的一般元件，請參閱 [Understanding security alerts](understanding-security-alerts.md) (了解安全性警訊)。 如需**確判 (TP)** 、**良性確判 (B-TP)** 及**誤判 (FP)** 的詳細資訊，請參閱[安全性警訊分類](understanding-security-alerts.md#security-alert-classifications)。
 
 以下安全性警訊有助於您找出並修復 Azure ATP 在網路中偵測到的**外洩**階段可疑活動。 在此教學課程中，學習如何理解、分類、防範及修復以下攻擊：
 
@@ -40,19 +40,19 @@ ms.locfileid: "84773528"
 
 ## <a name="suspicious-communication-over-dns-external-id-2031"></a>DNS 上的可疑通訊 (外部識別碼 2031)
 
-上一個名稱  ：透過 DNS 的可疑通訊
+上一個名稱：透過 DNS 的可疑通訊
 
 **描述**
 
 大多數組織中的 DNS 通訊協定通常不會受到監視，而且很少會因惡意活動遭到封鎖。 這使攻擊者得以在遭入侵的電腦上濫用 DNS 通訊協定。 透過 DNS 的惡意通訊可用來竊取資料、命令和控制攻擊和/或規避公司網路限制。
 
-**TP、B-TP、或 FP？**
+**TP、B-TP 或FP？**
 
 某些公司會合法地使用 DNS 進行定期通訊。 若要判斷安全性警訊的狀態：
 
 1. 請檢查已註冊查詢網域是否屬於信任的來源，例如您的防毒提供者。
-    - 若該網域為已知且受信任的，且已允許 DNS 查詢，請將其視為 **B-TP** 活動。 關閉  安全性警訊，然後將該網域從往後的警訊排除。
-    - 若已註冊的查詢網域未受信任，請指出在來源電腦上建立要求的程序。 使用 [Process Monitor](https://docs.microsoft.com/sysinternals/downloads/procmon) 可協助進行這項工作。
+    - 若該網域為已知且受信任的，且已允許 DNS 查詢，請將其視為 **B-TP** 活動。 關閉** 安全性警訊，然後將該網域從往後的警訊排除。
+    - 若已註冊的查詢網域未受信任，請指出在來源電腦上建立要求的程序。 使用 [Process Monitor](/sysinternals/downloads/procmon) 可協助進行這項工作。
 
 **了解漏洞的範圍**
 
@@ -67,10 +67,10 @@ ms.locfileid: "84773528"
 1. 包含來源電腦。
     - 尋找執行攻擊的工具，並將它移除。
     - 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-2. 若經過調查後，發現註冊的查詢網域仍不受信任，建議封鎖目的地網域，以避免往後出現任何通訊。
+1. 若經過調查後，發現註冊的查詢網域仍不受信任，建議封鎖目的地網域，以避免往後出現任何通訊。
 
 > [!NOTE]
-> 「透過 DNS 的可疑通訊」  安全性警訊會列出可疑網域。 新的網域，或是 Azure ATP 未知或無法辨識但您組織已知或屬於其一部分的最近新增網域，都可能被關閉。
+> 「透過 DNS 的可疑通訊」** 安全性警訊會列出可疑網域。 新的網域，或是 Azure ATP 未知或無法辨識但您組織已知或屬於其一部分的最近新增網域，都可能被關閉。
 
 ## <a name="data-exfiltration-over-smb-external-id-2030"></a>SMB 上的資料外流 (外部識別碼 2030)
 
@@ -86,17 +86,17 @@ ms.locfileid: "84773528"
 **了解漏洞的範圍**
 
 1. 調查[來源使用者](investigate-a-user.md)。
-2. 調查複本的[來源及目的地電腦](investigate-a-computer.md)。
+1. 調查複本的[來源及目的地電腦](investigate-a-computer.md)。
 
 **建議的補救和預防步驟**
 
 1. 重設來源使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-2. 包含來源電腦。
+1. 包含來源電腦。
     - 尋找執行攻擊的工具，並將它移除。
     - 尋找已複製的檔案，並予以移除。  
     檢查這些檔案上是否有其他活動。 他們傳輸到的其他位置為何？ 檢查他們是否在組織網路以外傳輸？
     - 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-3. 若其中一個檔案是 **ntds.dit** 檔案：
+1. 若其中一個檔案是 **ntds.dit** 檔案：
     - 根據 [KRBTGT Account Password Reset Scripts now available for customers](https://cloudblogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)，變更 Kerberos 票證授權票證 (KRBTGT) 密碼兩次。
     - 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效。 使此網域中的所有 Kerberos 票證失效，代表**所有**服務將會中斷，且在這些票證更新之前都不會運作，或者在某些情況下重新啟動服務。
 

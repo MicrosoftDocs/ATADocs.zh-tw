@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 06/23/2020
-ms.topic: conceptual
+ms.date: 08/25/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 85e14135fed9a36279fbf615618f614e71ef9c18
-ms.sourcegitcommit: 2b8b727b11227aa6b665ba9e02ffa700a2dc33c6
+ms.openlocfilehash: 301dc36032950733784b928198fa5b092ccd6f10
+ms.sourcegitcommit: 098a20abe62e153372da4c96db256bc63c113bd1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2020
-ms.locfileid: "85516905"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88809085"
 ---
 # <a name="security-assessment-riskiest-lateral-movement-paths-lmp"></a>安全性評估：風險最高的橫向移動路徑 (LMP)
 
@@ -48,6 +48,9 @@ Azure ATP 會持續監視您的環境，辨識橫向移動路徑風險最高而�
 
     > [!NOTE]
     > 請等候 24 小時，然後檢查建議是否已從清單中消失。
+
+> [!NOTE]
+> 此評定會每隔 24 小時更新一次。
 
 ## <a name="see-also"></a>另請參閱
 

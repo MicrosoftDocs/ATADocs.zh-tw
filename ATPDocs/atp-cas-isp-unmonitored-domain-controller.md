@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 02/17/2020
-ms.topic: conceptual
+ms.date: 08/25/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b0494ca5dfbc4f5dde2c31423b3e17fdd2ef33df
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: 878f251c1f2936a9207dc351adc9ae5680abe3c4
+ms.sourcegitcommit: 098a20abe62e153372da4c96db256bc63c113bd1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84774123"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88809051"
 ---
 # <a name="security-assessment-unmonitored-domain-controllers"></a>安全性評估：未受監視的網域控制站
 
@@ -36,6 +36,9 @@ Azure ATP 解決方案的必要部分，其感應器部署在所有組織網域�
 1. 使用報告表格來探索哪些網域控制站是未受監視的。
     ![針對未受監視的網域控制站進行補救](media/atp-cas-isp-unmonitored-domain-controller-1.png)
 1. 透過[安裝並設定監視感應器](atp-sensor-monitoring.md#domain-controller-status)，以在那些網域控制站上採取適當的動作。
+
+> [!NOTE]
+> 此評定會以近乎即時的方式更新。
 
 ## <a name="see-also"></a>另請參閱
 

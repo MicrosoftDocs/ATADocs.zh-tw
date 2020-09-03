@@ -5,31 +5,31 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/01/2020
+ms.date: 08/31/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 92241805626dadc284a0cd76f21e41e9dd6be7bd
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: b6f99d8ec19ae57ea19b94daa2bb62d7a7edc446
+ms.sourcegitcommit: 275e2b084fd7dd7cac2e0d07b0b244318aac7475
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775636"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89245891"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>教學課程：偵察警訊
 
-網路攻擊通常會針對任何可存取的實體進行，例如低權限的使用者，然後快速橫向移動，直到攻擊者得以存取有價值的資產。 敏感性帳戶、網域系統管理員或高度敏感性資料均為重要資產。 Azure ATP 會從整個攻擊狙殺鏈來源識別進階威脅，並將其分成下列幾個階段：
+網路攻擊通常會針對低權限使用者等所有可存取的實體啟動，然後快速橫向移動，直到攻擊者得以存取有價值的資產。 敏感性帳戶、網域系統管理員或高度敏感性資料均為重要資產。 Azure ATP 會從整個攻擊狙殺鏈來源識別進階威脅，並將其分成下列幾個階段：
 
 1. **偵察**
-2. [遭入侵的認證](atp-compromised-credentials-alerts.md)
-3. [橫向移動](atp-lateral-movement-alerts.md)
-4. [網域支配](atp-domain-dominance-alerts.md)
-5. [Exfiltration](atp-exfiltration-alerts.md)
+1. [遭入侵的認證](atp-compromised-credentials-alerts.md)
+1. [橫向移動](atp-lateral-movement-alerts.md)
+1. [網域支配](atp-domain-dominance-alerts.md)
+1. [Exfiltration](atp-exfiltration-alerts.md)
 
-若要深入了解如何了解所有 Azure ATP 安全性警示的結構和通用元件，請參閱[了解安全性警示](understanding-security-alerts.md)。
+若要深入了解如何了解所有 Azure ATP 安全性警示的結構和通用元件，請參閱[了解安全性警示](understanding-security-alerts.md)。 如需**確判 (TP)** 、**良性確判 (B-TP)** 及**誤判 (FP)** 的詳細資訊，請參閱[安全性警訊分類](understanding-security-alerts.md#security-alert-classifications)。
 
 下列安全性警示有助於您找出並修復 Azure ATP 在網路中偵測到的**偵察**階段可疑活動。
 
@@ -37,11 +37,12 @@ ms.locfileid: "84775636"
 
 > [!div class="checklist"]
 >
-> * 帳戶列舉偵察 (外部識別碼 2003)
-> * 網路對應偵察 (DNS) (外部識別碼 2007)
-> * 安全性主體偵察 (LDAP) (外部識別碼 2038)
-> * 使用者和 IP 位址偵察 (SMB) (外部識別碼 2012)
-> * 使用者和群組成員資格偵察 (SAMR) (外部識別碼 2021)
+> - 帳戶列舉偵察 (外部識別碼 2003)
+> - Active Directory 屬性偵察 (LDAP) (外部識別碼 2210)
+> - 網路對應偵察 (DNS) (外部識別碼 2007)
+> - 安全性主體偵察 (LDAP) (外部識別碼 2038)
+> - 使用者和群組成員資格偵察 (SAMR) (外部識別碼 2021)
+> - 使用者和 IP 位址偵察 (SMB) (外部識別碼 2012)
 
 ## <a name="account-enumeration-reconnaissance-external-id-2003"></a>帳戶列舉偵察 (外部識別碼 2003)
 
@@ -57,6 +58,10 @@ ms.locfileid: "84775636"
 
 在此警示偵測中，Azure ATP 會偵測帳戶列舉攻擊來源、猜測嘗試總次數及嘗試相符次數。 如果有太多未知的使用者，Azure ATP 會將其偵測為可疑的活動。
 
+**學習期間**
+
+不適用
+
 **TP、B-TP 或 FP**
 
 某些伺服器和應用程式會查詢網域控制站，以判斷帳戶是否存在於合法使用情節中。
@@ -65,7 +70,7 @@ ms.locfileid: "84775636"
 
 1. 檢查來源電腦是否應該執行此類型的查詢。 在此情況下的 **B-TP** 範例可能是 Microsoft Exchange Server 或人力資源系統。
 
-2. 檢查帳戶網域。
+1. 檢查帳戶網域。
     - 您是否看到屬於不同網域的其他使用者？  
      伺服器設定不正確 (例如 Exchange/Skype 或 ADSF) 可能會導致出現屬於不同網域的其他使用者。
     - 請查看問題服務的設定，以修正設定不正確的問題。
@@ -91,11 +96,11 @@ ms.locfileid: "84775636"
 
       如果以上其中一個問題的答案為**是**，請「關閉」安全性警示，這可能是 **B-TP** 活動。
 
-2. 若任何猜測意圖符合現有的帳戶名稱，攻擊者即可得知帳戶存在於您的環境中，而且可以嘗試使用暴力密碼破解，使用探索到的使用者名稱存取您的網域。
+1. 若任何猜測意圖符合現有的帳戶名稱，攻擊者即可得知帳戶存在於您的環境中，而且可以嘗試使用暴力密碼破解，使用探索到的使用者名稱存取您的網域。
     - 請檢查猜到的帳戶名稱，了解是否有其他可疑活動。
     - 請檢查是否有任何相符的帳戶為敏感性帳戶。
 
-### <a name="understand-the-scope-of-the-breach"></a>了解缺口的範圍
+**了解漏洞的範圍**
 
 1. 調查來源電腦
 1. 若任何猜測意圖符合現有的帳戶名稱，攻擊者即可得知帳戶存在於您的環境中，且可以使用暴力密碼破解，嘗試使用所探索使用者名稱來存取您的網域。 使用[使用者調查指南](investigate-a-user.md)調查現有的帳戶。
@@ -108,13 +113,52 @@ ms.locfileid: "84775636"
 
 1. 檢查伺服器是否使用任何開放的連接埠向網際網路公開。 例如，伺服器是否使用 RDP 向網際網路開放？
 
-### <a name="suggested-remediation-and-steps-for-prevention"></a>建議的補救和預防步驟
+**建議的補救和預防步驟**
 
 1. 包含來源[電腦](investigate-a-computer.md)。
     1. 尋找執行攻擊的工具，並將它移除。
     1. 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。
     1. 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-1. 在組織中強制執行[複雜的長密碼](https://docs.microsoft.com/windows/device-security/security-policy-settings/password-policy)。 複雜之長密碼提供必要的第一層安全性，以防範暴力密碼破解攻擊。 暴力密碼破解攻擊通常是網路攻擊狙殺鏈中列舉後的下一個步驟。
+1. 在組織中強制執行[複雜的長密碼](/windows/device-security/security-policy-settings/password-policy)。 複雜之長密碼提供必要的第一層安全性，以防範暴力密碼破解攻擊。 暴力密碼破解攻擊通常是網路攻擊狙殺鏈中列舉後的下一個步驟。
+
+## <a name="active-directory-attributes-reconnaissance-ldap-external-id-2210"></a>Active Directory 屬性偵察 (LDAP) (外部識別碼 2210)
+
+**描述**
+
+攻擊者會使用 Active Directory LDAP 偵察，取得有關網域環境的重要資訊。 此資訊可協助攻擊者對應網域結構以及識別具特殊權限帳戶，以便在其攻擊狙殺鏈中的後續步驟中使用。 輕量型目錄存取通訊協定 (LDAP) 是同時用於合法與惡意目的來查詢 Active Directory 的最熱門的方法之一。
+
+**學習期間**
+
+不適用
+
+**TP、B-TP 或 FP**
+
+1. 按一下警示以查看已執行的查詢。
+    - 檢查來源電腦是否應該進行這些查詢
+        - 如果是，請將安全性警示關閉為 **FP**。 如果是進行中的活動，請排除可疑活動。
+1. 按一下來源電腦並移至其設定檔頁面。
+    - 尋找查詢期間所發生的任何不尋常活動，例如下列搜尋類型：已登入的使用者、受存取的資源，以及其他探查查詢。
+    - 如果已啟用 Microsoft Defender ATP 整合，請按一下其圖示來進一步調查電腦。
+        - 尋找在查詢期間所發生的不尋常程序及警示
+1. 檢查公開的帳戶。
+    - 尋找不尋常的活動。
+
+如果問題 2 或 3 的答案為是，請將此警示視為 **TP**，並遵循**了解缺口的範圍**中的指示。
+
+**了解漏洞的範圍**
+
+1. 調查[來源電腦](investigate-a-computer.md)。
+1. 電腦是否執行會執行各種 LDAP 查詢的掃描工具？
+    - 調查在攻擊中被查詢的特定使用者及群組是否為具有特殊權限或高價值的帳戶 (例如執行長、財務長、IT 管理等)。 若是如此，也請查看端點上的其他活動，並監視進行查詢之帳戶登入的電腦，因為這些可能是橫向移動的目標。
+1. 檢查查詢及其屬性，並判斷其是否成功。 調查每個公開的群組搜尋，以尋找在群組上執行的可疑活動，或由群組的成員使用者執行的活動。
+1. 您可以在來源電腦上看到 SAM-R、DNS 或 SMB 偵察行為嗎？
+
+**建議的補救和預防步驟**
+
+1. 包含來源電腦
+    1. 尋找執行攻擊的工具，並將它移除。
+    1. 如果電腦正在執行掃描工具來執行各種 LDAP 查詢，請尋找在活動發生期間登入的使用者，因為這些使用者可能也會遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+1. 若 SPN 資源存取發生在使用者帳戶 (而非機器帳戶) 下，請重設密碼。
 
 ## <a name="network-mapping-reconnaissance-dns-external-id-2007"></a>網路對應偵察 (DNS) (外部識別碼 2007)
 
@@ -152,20 +196,20 @@ DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵�
 **補救：**
 
 - 包含來源電腦。
-    - 尋找執行攻擊的工具，並將它移除。
-    - 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+  - 尋找執行攻擊的工具，並將它移除。
+  - 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 
 **預防：**
 
 請務必保護您的內部 DNS 伺服器，以防止發生使用 AXFR 查詢的未來攻擊。
 
-- 您可以停用區域傳輸，或[限制區域傳輸](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee649273(v=ws.10))僅針對指定的 IP 位址，來保護您的內部 DNS 伺服器，以防止發生使用 DNS 的偵察。 「修改區域傳輸」是檢查清單中的一項工作，應該加以解決才能[保護 DNS 伺服器免受內部和外部攻擊](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee649273(v=ws.10))。
+- 您可以停用區域傳輸，或[限制區域傳輸](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee649273(v=ws.10))僅針對指定的 IP 位址，來保護您的內部 DNS 伺服器，以防止發生使用 DNS 的偵察。 「修改區域傳輸」是檢查清單中的一項工作，應該加以解決才能[保護 DNS 伺服器免受內部和外部攻擊](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee649273(v=ws.10))。
 
 ## <a name="security-principal-reconnaissance-ldap-external-id-2038"></a>安全性主體偵察 (LDAP) (外部識別碼 2038)
 
 **描述**
 
-攻擊者會使用安全性主體偵察，取得有關網域環境的重要資訊。 可協助攻擊者對應網域結構以及識別具特殊權限帳戶以便在其攻擊擊殺鏈中的後續步驟中使用的資訊。 輕量型目錄存取通訊協定 (LDAP) 是同時用於合法與惡意目的來查詢 Active Directory 的最熱門的方法之一。  專注在 LDAP 的安全性主體偵察通常用於 Kerberoasting 攻擊的第一個階段。 Kerberoasting 攻擊是用於取得目標安全性主體名稱 (SPN) 清單，接著攻擊者會嘗試為其取得票證授權伺服器 (TGS) 憑證。
+攻擊者會使用安全性主體偵察，取得有關網域環境的重要資訊。 可協助攻擊者對應網域結構以及識別具特殊權限帳戶以便在其攻擊擊殺鏈中的後續步驟中使用的資訊。 輕量型目錄存取通訊協定 (LDAP) 是同時用於合法與惡意目的來查詢 Active Directory 的最熱門的方法之一。 專注在 LDAP 的安全性主體偵察通常用於 Kerberoasting 攻擊的第一個階段。 Kerberoasting 攻擊是用於取得目標安全性主體名稱 (SPN) 清單，接著攻擊者會嘗試為其取得票證授權伺服器 (TGS) 憑證。
 
 為了讓 Azure ATP 精確地分析及學習合法使用者，在 Azure ATP 部署前 10 天將不會觸發此類型的警示。 一旦 Azure ATP 初始學習階段完成，會在執行可疑 LDAP 列舉查詢或目標為敏感性群組且使用先前未觀察過方法的查詢的電腦上產生警示。
 
@@ -177,60 +221,30 @@ DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵�
 
 1. 按一下來源電腦並移至其設定檔頁面。
     1. 此來源電腦預期是否會產生此活動？
-    2. 如果電腦與活動都是預期中的項目，請**關閉**有關 **B-TP** 活動的安全性警示並排除該電腦。
+    1. 如果電腦與活動都是預期中的項目，請**關閉**有關 **B-TP** 活動的安全性警示並排除該電腦。
 
 **了解漏洞的範圍**
 
 1. 檢查已執行的查詢 (例如網域系統管理員或網域中的所有使用者)，並判斷查詢是否成功。 調查每個公開的群組搜尋，以尋找在群組上執行的可疑活動，或由群組的成員使用者執行的活動。
-2. 調查[來源電腦](investigate-a-computer.md)。
+1. 調查[來源電腦](investigate-a-computer.md)。
     - 使用 LDAP 查詢，檢查是否有任何資源存取活動發生在任何公開的 SPN 上。
 
 **建議的補救和預防步驟**
 
 1. 包含來源電腦
     1. 尋找執行攻擊的工具，並將它移除。
-    2. 電腦是否執行會執行各種 LDAP 查詢的掃描工具？
-    3. 因為使用者可能也遭入侵，所以請搜尋在活動發生期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-2. 若 SPN 資源存取發生在使用者帳戶 (而非機器帳戶) 下，請重設密碼。
+    1. 電腦是否執行會執行各種 LDAP 查詢的掃描工具？
+    1. 因為使用者可能也遭入侵，所以請搜尋在活動發生期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+1. 若 SPN 資源存取發生在使用者帳戶 (而非機器帳戶) 下，請重設密碼。
 
 **針對預防與補救為特定建議步驟進行 Kerberoast 處理**
 
 1. 重設遭入侵之使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-2. 需要[針對具有服務主體帳戶的使用者使用複雜的長密碼](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/minimum-password-length)。
-3. [使用群組受控服務帳戶 (gMSA) 取代使用者帳戶](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview)。
+1. 需要[針對具有服務主體帳戶的使用者使用複雜的長密碼](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/minimum-password-length)。
+1. [使用群組受控服務帳戶 (gMSA) 取代使用者帳戶](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview)。
 
 > [!NOTE]
 > 只有 ATP 感應器支援安全性主體偵察 (LDAP) 警示。
-
-## <a name="user-and-ip-address-reconnaissance-smb-external-id-2012"></a>使用者和 IP 位址偵察 (SMB) (外部識別碼 2012)
-
-先前的名稱：使用 SMB 工作階段列舉探查
-
-### <a name="description"></a>說明
-
-攻擊者可以使用伺服器訊息區 (SMB) 通訊協定進行列舉，來取得使用者最近登入位置的相關資訊。 一旦攻擊者擁有這項資訊，他們就可以在網路中橫向移動來到達特定敏感性帳戶。
-
-在此偵測中，對網域控制站執行 SMB 工作階段列舉時，就會觸發警示。
-
-**TP、B-TP 或 FP**
-
-安全性掃描程式和應用程式可能會合法查詢網域控制站中是否有已開啟的 SMB 工作階段。
-
-1. 此來源電腦是否應該產生此類型的活動？
-2. 來源電腦上是否正在執行某種安全性掃描程式？
-    如果答案為是，則可能為 B-TP 活動。 請「關閉」安全性警示並排除該電腦。
-3. 檢查執行該作業的使用者。
-    這些使用者是否應該執行這些動作？
-    如果答案為是，請「關閉」有關 B-TP 活動的安全性警示。
-
-**了解漏洞的範圍**
-
-1. 調查來源電腦。
-2. 在警示頁面上，檢查是否有任何暴露的使用者。 若要進一步調查每位暴露的使用者，請檢查其設定檔。 建議您從敏感性和高調查優先順序的使用者開始調查。
-
-**建議的補救和預防步驟**
-
-使用 [Net Cease 工具](https://gallery.technet.microsoft.com/Net-Cease-Blocking-Net-1e8dcb5b)來強化您的環境，以防止此攻擊。
 
 ## <a name="user-and-group-membership-reconnaissance-samr-external-id-2021"></a>使用者和群組成員資格偵察 (SAMR) (外部識別碼 2021)
 
@@ -259,16 +273,46 @@ DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵�
 **了解漏洞的範圍**
 
 1. 檢查已執行的查詢 (例如 Enterprise Admins 或 Administrator)，並判斷查詢是否成功。
-2. 使用使用者調查指南調查各暴露的使用者。
-3. 調查來源電腦。
+1. 使用使用者調查指南調查各暴露的使用者。
+1. 調查來源電腦。
 
 **建議的補救和預防步驟**
 
 1. 包含來源電腦。
-2. 尋找並移除執行攻擊的工具。
-3. 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-4. 重設來源使用者密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-5. 套用網路存取，並限制允許對 SAM 群組原則發出遠端呼叫的用戶端。
+1. 尋找並移除執行攻擊的工具。
+1. 因為使用者可能也遭到入侵，所以請搜尋在活動期間登入的使用者。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+1. 重設來源使用者密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+1. 套用網路存取，並限制允許對 SAM 群組原則發出遠端呼叫的用戶端。
+
+## <a name="user-and-ip-address-reconnaissance-smb-external-id-2012"></a>使用者和 IP 位址偵察 (SMB) (外部識別碼 2012)
+
+先前的名稱：使用 SMB 工作階段列舉探查
+
+### <a name="description"></a>說明
+
+攻擊者可以使用伺服器訊息區 (SMB) 通訊協定進行列舉，來取得使用者最近登入位置的相關資訊。 一旦攻擊者擁有這項資訊，他們就可以在網路中橫向移動來到達特定敏感性帳戶。
+
+在此偵測中，對網域控制站執行 SMB 工作階段列舉時，就會觸發警示。
+
+**TP、B-TP 或 FP**
+
+安全性掃描程式和應用程式可能會合法查詢網域控制站中是否有已開啟的 SMB 工作階段。
+
+1. 此來源電腦是否應該產生此類型的活動？
+1. 來源電腦上是否正在執行某種安全性掃描程式？
+    如果答案為是，則可能為 B-TP 活動。 請「關閉」安全性警示並排除該電腦。
+1. 檢查執行該作業的使用者。
+    這些使用者是否應該執行這些動作？
+    如果答案為是，請「關閉」有關 B-TP 活動的安全性警示。
+
+**了解漏洞的範圍**
+
+1. 調查來源電腦。
+1. 在警示頁面上，檢查是否有任何暴露的使用者。 若要進一步調查每位暴露的使用者，請檢查其設定檔。 建議您從敏感性和高調查優先順序的使用者開始調查。
+
+**建議的補救和預防步驟**
+
+使用 [Net Cease 工具](https://gallery.technet.microsoft.com/Net-Cease-Blocking-Net-1e8dcb5b)來強化您的環境，以防止此攻擊。
 
 > [!NOTE]
 > 若要停用任何 Azure ATP 安全性警示，請連絡支援人員。

@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 0b3a1db5-0d43-49af-b356-7094cc85f0a5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8dfe48699b25b94e7d0a1acc4d0c5ef59ecf5407
-ms.sourcegitcommit: 275e2b084fd7dd7cac2e0d07b0b244318aac7475
+ms.openlocfilehash: d73ae09d7855640d465dcb215007745673e0064b
+ms.sourcegitcommit: 01bf13ab92084ef4d2fbd6ff7537667fa07a0e21
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89245823"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89471505"
 ---
 # <a name="tutorial-domain-dominance-alerts"></a>教學課程：控制網域警訊
 
@@ -495,7 +495,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
     1. 所有登入電腦的使用者，是否都可在該電腦登入？
     1. 帳戶的權限是否合適？
 1. 已登入的使用者是否應該存取這些資源？
-    - 如果您已啟用 Windows Defender ATP 整合，請按一下其圖示以進一步調查。
+    - 如果您已啟用 Microsoft Defender ATP 整合，請按一下其圖示以進一步調查。
 
 如果以上任一問題的答案為是，請將安全性警示關閉為 **FP**。
 

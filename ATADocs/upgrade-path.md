@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 05/26/2019
+ms.date: 09/15/2020
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: 88720401-1fb2-4353-ad39-32bc0088f0de
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 31ab0d74020ae446d0739ed2b9e79c19b5ffb60c
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 358d011fef856d416de6e71092b8ddd4d9fde809
+ms.sourcegitcommit: 45003b424140350e03128ac5325e1f28c52e6e1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956341"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90535105"
 ---
 # <a name="recommended-upgrade-path-for-ata"></a>ATA 的建議升級路徑
 
@@ -25,14 +25,13 @@ ms.locfileid: "88956341"
 
 本文提供可用 Advanced Threat Analytics 版本及如何根據所執行版本來升級 ATA 的相關資訊。
 
-
 ## <a name="ata-versions"></a>ATA 版本
 
 |版本|組建編號|
 |----|----|
 |1.6|1.6.4103|
 |1.6 Update 1|1.6.4317|
-|1.7|1.7.5402| 
+|1.7|1.7.5402|
 |1.7 Update 1|1.7.5647|
 |1.7 Update 2|1.7.5757|
 |1.8|1.8.6645|
@@ -40,17 +39,18 @@ ms.locfileid: "88956341"
 |1.9|1.9.7312|
 |1.9 Update 1|1.9.7412|
 |1.9 Update 2|1.9.7478|
+|1.9 Update 2|1.9.7561|
 
 ## <a name="upgrade-paths"></a>升級路徑
 
-請參閱升級路徑圖表，以判斷您目前安裝的正確升級路徑。 
+請參閱升級路徑圖表，以判斷您目前安裝的正確升級路徑。
 
 ![ATA 版本升級路徑](media/upgrade-path-ata.png)
 
 ## <a name="see-also"></a>另請參閱
+
 - [ATA 必要條件](ata-prerequisites.md)
 - [ATA 容量規劃](ata-capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-collection.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
-

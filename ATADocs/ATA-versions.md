@@ -4,19 +4,19 @@ description: 說明 Microsoft Advanced Threat Analytics (ATA) 各版本的不同
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 01/26/2020
+ms.date: 09/16/2020
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: a8afbd91-c888-4dfc-94ab-72e38745163e
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ad00cf100fdd7496e3c2339c08bdd6f99ae57056
-ms.sourcegitcommit: 77d43b683c4588edc84aacf220d1daac00e47c6c
+ms.openlocfilehash: f98d6ca3f01ede7cb52d3caa742623e80a06e7d3
+ms.sourcegitcommit: 51997dca429877cbe5a74c9051c1ef2084b8dd44
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90523125"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90680231"
 ---
 # <a name="support-for-microsoft-advanced-threat-analytics-ata-versions"></a>Microsoft Advanced Threat Analytics (ATA) 各版本的支援
 
@@ -24,7 +24,7 @@ ms.locfileid: "90523125"
 
 Microsoft ATA 支援是由適用于 [ATA](https://support.microsoft.com/lifecycle/search?alpha=Advanced%20Threat%20Analytics%201.X)1.X 的 Microsoft 生命週期原則所定義，其主流支援于2021年1月12日結束。
 
-ATA 每天更新一次，每個更新版本都支援12個月的正式上市 (GA) 發行日期，或有較新的更新可用後6個月。
+ATA 更新自其正式運作 (正式運作後的12個月內正式推出 GA) 發行日期，或有較新的更新可用後6個月的支援。
 
 > [!NOTE]
 > **支援週期**

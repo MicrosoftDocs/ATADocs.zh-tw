@@ -3,6 +3,7 @@
 ## [ATA 會偵測哪些威脅？](ata-threats.md)
 ## ATA 的新功能?
 ### [ATA 1.9 版的新功能](whats-new-version-1.9.md)
+#### [更新到 ATA 1.9.3 - 移轉指南](ata-update-1.9.3-migration-guide.md)
 #### [更新為 ATA 1.9.2 - 移轉指南](ata-update-1.9.2-migration-guide.md)
 #### [更新為 ATA 1.9.1 - 移轉指南](ata-update-1.9.1-migration-guide.md)
 #### [更新為 ATA 1.9 - 移轉指南](ata-update-1.9-migration-guide.md)
@@ -17,7 +18,7 @@
 ### [ATA 1.4 版的新功能](whats-new-version-1.4.md)
 ## [常見問題集](ata-technical-faq.md)
 ## [資料安全性和隱私權](ata-privacy-compliance.md)
-# 計劃和設計
+# 規劃和設計
 ## [ATA 架構](ata-architecture.md)
 ## [規劃 ATA 容量](ata-capacity-planning.md)
 ## [ATA 必要條件](ata-prerequisites.md)
@@ -66,5 +67,5 @@
 ## [使用效能計數器進行疑難排解](troubleshooting-ata-using-perf-counters.md)
 ## [使用資料庫進行疑難排解](troubleshooting-ata-using-ata-database.md)
 ## [對服務啟動進行疑難排解](troubleshooting-service-startup.md)
-## [災害復原](disaster-recovery.md)
+## [嚴重損壞修復](disaster-recovery.md)
 # [ATA 整備藍圖](ata-resources.md)

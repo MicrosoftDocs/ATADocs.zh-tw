@@ -4,19 +4,18 @@ description: 說明 Microsoft Advanced Threat Analytics (ATA) 各版本的不同
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 09/16/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
-ms.assetid: a8afbd91-c888-4dfc-94ab-72e38745163e
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f98d6ca3f01ede7cb52d3caa742623e80a06e7d3
-ms.sourcegitcommit: 51997dca429877cbe5a74c9051c1ef2084b8dd44
+ms.openlocfilehash: 3fda8403d8dd49761e5860f48ceb1d9ca7bc9175
+ms.sourcegitcommit: c4a4eb6512258beaa1b8937dc2b206fc3ee87835
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90680231"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90829369"
 ---
 # <a name="support-for-microsoft-advanced-threat-analytics-ata-versions"></a>Microsoft Advanced Threat Analytics (ATA) 各版本的支援
 
@@ -29,7 +28,7 @@ ATA 更新自其正式運作 (正式運作後的12個月內正式推出 GA) 發�
 > [!NOTE]
 > **支援週期**
 >
-> Microsoft Advanced 威脅分析 (ATA) 的主要 [支援](https://support.microsoft.com/lifecycle/search?alpha=Advanced%20Threat%20Analytics) 將于2021年1月12日結束，且延伸支援將持續到2026年1月13日為止。
+> ATA 的最終發行版本已 [正式推出](https://support.microsoft.com/help/4568997/update-3-for-microsoft-advanced-threat-analytics-1-9)。 ATA 將于2021年1月12日結束主流支援。 延伸支援將繼續進行，直到2026年1月為止。 如需詳細資訊，請閱讀 [我們的 blog](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-of-mainstream-support-for-advanced-threat-analytics-january/ba-p/1539181)。
 
 ## <a name="version-history"></a>版本歷程記錄
 

@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/15/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 524fec2722bb31aaffe1629bece5b0381ec98566
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: ed16e9acc876d6ffe5ac36b1dc793f03b300d8d5
+ms.sourcegitcommit: c4a4eb6512258beaa1b8937dc2b206fc3ee87835
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828148"
+ms.locfileid: "90829352"
 ---
 # <a name="azure-atp-frequently-asked-questions"></a>Azure ATP 常見問題集
 
@@ -69,6 +69,8 @@ Azure ATP 目前支援最多 10 個不同的目錄服務認證，以支援具有
 ATA 是獨立的內部部署解決方案，具有多個元件，例如需要內部部署專用硬體的 ATA 中心。
 
 Azure ATP 是雲端式的安全性解決方案，會利用您的內部部署 Active Directory (Azure AD) 訊號。 這個解決方案有很高的調整能力，且經常更新。
+
+ATA 的最終發行版本已 [正式推出](https://support.microsoft.com/help/4568997/update-3-for-microsoft-advanced-threat-analytics-1-9)。 ATA 將于2021年1月12日結束主流支援。 延伸支援將繼續進行，直到2026年1月為止。 如需詳細資訊，請閱讀 [我們的 blog](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-of-mainstream-support-for-advanced-threat-analytics-january/ba-p/1539181)。
 
 相較於 ATA 感應器，Azure ATP 感應器也會使用資料來源 (例如 Windows 事件追蹤，ETW)，讓 Azure ATP 能夠提供額外的偵測。
 

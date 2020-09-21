@@ -5,21 +5,24 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 07/13/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: e734e382-c4b1-43ca-9a8d-96c91daf2578
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: cb9a6c8e560b6e52a6385cf4e926aae8cc723ca8
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 31cd302575da078ce4030f982d69c9e9ad5a3138
+ms.sourcegitcommit: c4a4eb6512258beaa1b8937dc2b206fc3ee87835
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828113"
+ms.locfileid: "90829386"
 ---
 # <a name="advanced-threat-analytics-ata-to-azure-advanced-threat-protection-azure-atp"></a>Advanced Threat Analytics (ATA) 移至 Azure 進階威脅防護 (Azure ATP)
+
+> [!NOTE]
+> ATA 的最終發行版本已 [正式推出](https://support.microsoft.com/help/4568997/update-3-for-microsoft-advanced-threat-analytics-1-9)。 ATA 將于2021年1月12日結束主流支援。 延伸支援將繼續進行，直到2026年1月為止。 如需詳細資訊，請閱讀 [我們的 blog](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-of-mainstream-support-for-advanced-threat-analytics-january/ba-p/1539181)。
 
 您可以使用本指南將現有的 ATA 安裝移至 Azure 進階威脅防護 (Azure ATP) 服務。 本指南會說明 Azure ATP 必要條件和需求，並詳細說明如何規劃和完成移動。 其中還包含一些驗證步驟和祕訣，可在安裝後利用運用 Azure ATP 的最新威脅保護與安全性解決方案。
 

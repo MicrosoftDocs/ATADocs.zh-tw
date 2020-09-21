@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: d0551e91-3b21-47d5-ad9d-3362df6d47c0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e3b641ef32d483e52c523ed91109ada99f98705c
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: b42aa8895e0946a5997a117ec5bca74089190bbd
+ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956120"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90826510"
 ---
 # <a name="understanding-azure-atp-sensor-health-alerts"></a>了解 Azure ATP 感應器健康情況警示
 
@@ -39,7 +39,7 @@ ms.locfileid: "88956120"
 
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|目錄服務使用者帳戶的認證不正確。|這會影響感應器使用 LDAP 查詢對網域控制站偵測活動的能力。|- 針對**標準** AD 帳戶：確認 [目錄服務] 設定頁面中的使用者名稱、密碼與網域是正確的。<br>- 針對**群組受管理的服務帳戶**：確認 [目錄服務] 設定頁面中的使用者名稱與網域是正確的。 此外，請檢查[連線到您的 Active Directory 樹系](install-atp-step2.md#prerequisites)頁面上所述的所有其他 **gMSA 帳戶**先決條件。|中型|
+|目錄服務使用者帳戶的認證不正確。|這會影響感應器使用 LDAP 查詢對網域控制站偵測活動的能力。|- 針對**標準** AD 帳戶：確認 [目錄服務] 設定頁面中的使用者名稱、密碼與網域是正確的。<br>- 針對**群組受管理的服務帳戶**：確認 [目錄服務] 設定頁面中的使用者名稱與網域是正確的。 此外，請檢查[連線到您的 Active Directory 樹系](install-step2.md#prerequisites)頁面上所述的所有其他 **gMSA 帳戶**先決條件。|中型|
 
 ## <a name="low-success-rate-of-active-name-resolution"></a>低成功率的主動名稱解析
 
@@ -57,19 +57,19 @@ ms.locfileid: "88956120"
 
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|用來對 Active Directory 執行實體解析的唯讀使用者密碼即將在不到 30 天內過期。|如果此使用者的密碼過期，所有 Azure ATP 感應器將停止執行，且不會收集任何新資料。|[變更網域連線密碼](modifying-atp-config-dcpassword.md)，然後在 Azure ATP 入口網站中更新密碼。|中型|
+|用來對 Active Directory 執行實體解析的唯讀使用者密碼即將在不到 30 天內過期。|如果此使用者的密碼過期，所有 Azure ATP 感應器將停止執行，且不會收集任何新資料。|[變更網域連線密碼](modifying-config-dcpassword.md)，然後在 Azure ATP 入口網站中更新密碼。|中型|
 
 ## <a name="read-only-user-password-expired"></a>唯讀使用者密碼已過期
 
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|用來取得目錄資料的唯讀使用者密碼已過期。|所有 Azure ATP 感應器都會停止執行 (或即將停止執行)，而且不會收集任何新資料。|[變更網域連線密碼](modifying-atp-config-dcpassword.md)，然後在 Azure ATP 入口網站中更新密碼。|高|
+|用來取得目錄資料的唯讀使用者密碼已過期。|所有 Azure ATP 感應器都會停止執行 (或即將停止執行)，而且不會收集任何新資料。|[變更網域連線密碼](modifying-config-dcpassword.md)，然後在 Azure ATP 入口網站中更新密碼。|高|
 
 ## <a name="sensor-outdated"></a>感應器過期
 
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|Azure ATP 感應器已過期。|Azure ATP 感應器正在執行無法與 Azure ATP 雲端基礎結構通訊的版本。|手動更新並檢查感應器，以查看感應器無法自動更新的原因。 如果仍然失敗，請下載最新的感應器安裝套件，然後解除安裝感應器再重新安裝。 如需詳細資訊，請參閱[安裝 Azure ATP 感應器](install-atp-step4.md)。|中型|
+|Azure ATP 感應器已過期。|Azure ATP 感應器正在執行無法與 Azure ATP 雲端基礎結構通訊的版本。|手動更新並檢查感應器，以查看感應器無法自動更新的原因。 如果仍然失敗，請下載最新的感應器安裝套件，然後解除安裝感應器再重新安裝。 如需詳細資訊，請參閱[安裝 Azure ATP 感應器](install-step4.md)。|中型|
 
 ## <a name="sensor-reached-a-memory-resource-limit"></a>感應器已達到記憶體資源限制
 
@@ -105,7 +105,7 @@ ms.locfileid: "88956120"
 
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|Azure ATP 感應器所接收到的網路流量比它能處理的還要多。|無法分析某些網路流量，這可能會影響偵測可疑活動的能力，這些活動源自於此 Azure ATP 感應器所監視的網域控制站上。|視需要考慮[新增額外的處理器和記憶體](atp-capacity-planning.md)。 如果這是獨立 Azure ATP 感應器，請減少被監視的網域控制站數目。<br></br>如果在 VMware 虛擬機器上使用網域控制站，可能也會發生此情況。 若要避免這些警示，可檢查是否已將虛擬機器中的下列設定設為 [0] 或 [已停用]：<br></br>- TsoEnable<br></br>- LargeSendOffload(IPv4)<br></br>- IPv4 TSO Offload<br></br>此外也請考慮停用 [IPv4 Giant TSO Offload]。 如需詳細資訊，請參閱 VMware 文件。|中型|
+|Azure ATP 感應器所接收到的網路流量比它能處理的還要多。|無法分析某些網路流量，這可能會影響偵測可疑活動的能力，這些活動源自於此 Azure ATP 感應器所監視的網域控制站上。|視需要考慮[新增額外的處理器和記憶體](capacity-planning.md)。 如果這是獨立 Azure ATP 感應器，請減少被監視的網域控制站數目。<br></br>如果在 VMware 虛擬機器上使用網域控制站，可能也會發生此情況。 若要避免這些警示，可檢查是否已將虛擬機器中的下列設定設為 [0] 或 [已停用]：<br></br>- TsoEnable<br></br>- LargeSendOffload(IPv4)<br></br>- IPv4 TSO Offload<br></br>此外也請考慮停用 [IPv4 Giant TSO Offload]。 如需詳細資訊，請參閱 VMware 文件。|中型|
 
 ## <a name="some-windows-events-could-not-be-analyzed"></a>無法分析某些 Windows 事件
 
@@ -123,8 +123,8 @@ ms.locfileid: "88956120"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Azure ATP 必要條件](atp-prerequisites.md)
-- [Azure ATP 容量規劃](atp-capacity-planning.md)
+- [Azure ATP 必要條件](prerequisites.md)
+- [Azure ATP 容量規劃](capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-forwarding.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

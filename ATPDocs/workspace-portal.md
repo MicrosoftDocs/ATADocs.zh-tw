@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 4ba46d60-3a74-480e-8f0f-9a082d62f343
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: fa19723ec0193a7a933eef292505a62b3d3b9961
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 984affaff8284f1d1a9239f43428b5167b832024
+ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88955593"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90826192"
 ---
 # <a name="working-with-the-azure-atp-portal"></a>使用 Azure ATP 入口網站
 
@@ -35,13 +35,13 @@ Azure ATP 入口網站可讓您依時間順序快速檢視所有可疑的活動�
 ## <a name="enabling-access-to-the-azure-atp-portal"></a>啟用 Azure ATP 入口網站的存取
 
 若要成功登入 Azure ATP 入口網站，您必須使用已指派給 Azure Active Directory 安全性群組並具備 Azure ATP 入口網站存取權的使用者來登入。
-如需 Azure ATP 中有關角色型存取控制 (RBAC) 的詳細資訊，請參閱[使用 Azure ATP 角色群組](atp-role-groups.md)。
+如需 Azure ATP 中有關角色型存取控制 (RBAC) 的詳細資訊，請參閱[使用 Azure ATP 角色群組](role-groups.md)。
 
 ## <a name="logging-into-the-azure-atp-portal"></a>登入 Azure ATP 入口網站
 
 1. 進入 Azure ATP 入口網站的方法包括登入入口網站 [https://portal.atp.azure.com](https://portal.atp.azure.com) 並選取執行個體，或瀏覽到執行個體 URL：`https://*instancename*.atp.azure.com` 。
 
-1. Azure ATP 支援與 Windows 驗證整合的單一登入；如果您已登入電腦，Azure ATP 會使用該權杖將您登入 Azure ATP 入口網站。 您也可以使用智慧卡進行登入。 您在 Azure ATP 中的權限會與您的[系統管理員角色](atp-role-groups.md)對應。
+1. Azure ATP 支援與 Windows 驗證整合的單一登入；如果您已登入電腦，Azure ATP 會使用該權杖將您登入 Azure ATP 入口網站。 您也可以使用智慧卡進行登入。 您在 Azure ATP 中的權限會與您的[系統管理員角色](role-groups.md)對應。
 
    > [!NOTE]
    > 請務必使用您的 Azure ATP 系統管理員使用者名稱和密碼，登入您要從中存取 Azure ATP 入口網站的電腦。 或者，您可以使用不同的使用者身分執行瀏覽器，或登出 Windows 並使用 Azure ATP 系統管理員使用者身分登入。 [Cloud App Security 入口網站](https://portal.cloudappsecurity.com)與 Azure ATP 入口網站不同，能夠提供多使用者登入，不需要額外授權就能搭配 Azure ATP 使用。
@@ -110,5 +110,5 @@ Azure ATP 的新版本發行之後，[最新消息] 視窗會出現在右上角�
 
 ## <a name="see-also"></a>另請參閱
 
-- [建立 Azure ATP 執行個體](install-atp-step1.md)
+- [建立 Azure ATP 執行個體](install-step1.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

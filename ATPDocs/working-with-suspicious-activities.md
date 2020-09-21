@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: a06004bd-9f77-4e8e-a0e5-4727d6651a0f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 331f709c19008e1f11aacc50678893158528042d
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 522e6dc26cd20ea6030017e7c05592599dd196fb
+ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88955559"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90826188"
 ---
 # <a name="working-with-security-alerts"></a>使用安全性警訊
 
@@ -57,11 +57,11 @@ ms.locfileid: "88955559"
 
 Azure ATP 安全性警訊分為下列類別或階段，如同在典型網路攻擊終止鏈結中會看到的階段。
 
-- [偵察警訊](atp-reconnaissance-alerts.md)
-- [遭入侵的認證警訊](atp-compromised-credentials-alerts.md)
-- [橫向移動警訊](atp-lateral-movement-alerts.md)
-- [網域支配警訊](atp-domain-dominance-alerts.md)
-- [外流警訊](atp-exfiltration-alerts.md)
+- [偵察警訊](reconnaissance-alerts.md)
+- [遭入侵的認證警訊](compromised-credentials-alerts.md)
+- [橫向移動警訊](lateral-movement-alerts.md)
+- [網域支配警訊](domain-dominance-alerts.md)
+- [外流警訊](exfiltration-alerts.md)
 
 ## <a name="preview-detections"></a>預覽偵測 <a name="preview-detections"></a>
 

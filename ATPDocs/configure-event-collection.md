@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0057f2627139e8803aa04c693b0fe051bf8d118a
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 9b3a8e59017c5b356cee7e66b6e81151bd13997a
+ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956885"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90826459"
 ---
 # <a name="configure-event-collection"></a>設定事件收集
 
@@ -162,5 +162,5 @@ Message 是來自 Windows 事件的原始事件文字
 
 - [Azure ATP 調整大小工具](https://aka.ms/aatpsizingtool) \(英文\)
 - [Azure ATP SIEM 記錄檔參考](cef-format-sa.md)
-- [Azure ATP 必要條件](atp-prerequisites.md)
+- [Azure ATP 必要條件](prerequisites.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

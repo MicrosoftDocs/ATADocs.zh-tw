@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: aa86397e76cafabe4c45dd5b394996225d758633
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 55e5962ed3d9e9a1a922b47daf46bdb0c2b0d91d
+ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956868"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90826221"
 ---
 # <a name="configure-windows-event-collection"></a>設定 Windows 事件集合
 
@@ -125,7 +125,7 @@ Advanced Security Audit Policy is enabled via **Default Domain Controllers Polic
 ## <a name="see-also"></a>另請參閱
 
 - [Azure ATP 調整大小工具](https://aka.ms/aatpsizingtool) \(英文\)
-- [Azure ATP 必要條件](atp-prerequisites.md)
+- [Azure ATP 必要條件](prerequisites.md)
 - [Azure ATP SIEM 記錄檔參考](cef-format-sa.md)
 - [設定 Windows 事件轉送](configure-event-forwarding.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

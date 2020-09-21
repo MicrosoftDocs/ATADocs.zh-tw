@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: de15c920-8904-4124-8bdc-03abd9f667cf
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: edb37833ac44e3f04f9daf7ee57a8e1f41ca5d38
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 3528909977c744cce604e60fe779050e4ec356dd
+ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88955614"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90826238"
 ---
 # <a name="azure-atp-lateral-movement-paths-lmps"></a>Azure ATP 橫向移動路徑 (LMP) 
 
@@ -76,7 +76,7 @@ LMP 現在可直接協助您進行調查流程。 Azure ATP 安全性警訊辨�
 
 **提示** - 若過去 48 小時內針對實體未偵測出潛在橫向移動路徑活動，請選擇 [檢視其他日期]  ，並檢查先前的潛在橫向移動路徑。 當探索到 LMP 時，[通往敏感性使用者的 LMP 報告]  將會一律可用，並會為您提供偵測到通往敏感性使用者的潛在橫向移動路徑相關資訊。 
 
-**祕訣**：如需設定用戶端與伺服器以允許 Azure ATP 執行橫向移動路徑偵測所需之 SAM-R 作業的指示，請參閱[設定 SAM-R](install-atp-step8-samr.md)。
+**祕訣**：如需設定用戶端與伺服器以允許 Azure ATP 執行橫向移動路徑偵測所需之 SAM-R 作業的指示，請參閱[設定 SAM-R](install-step8-samr.md)。
 
 
 ## <a name="investigating-lmps"></a>調查 LMP
@@ -85,6 +85,6 @@ LMP 現在可直接協助您進行調查流程。 Azure ATP 安全性警訊辨�
 
 ## <a name="see-also"></a>另請參閱
 - [Investigating Azure ATP LMP](investigate-lateral-movement-path.md) (調查 Azure ATP LMP)
-- [設定 Azure ATP 對 SAM 發出遠端呼叫](install-atp-step8-samr.md)
+- [設定 Azure ATP 對 SAM 發出遠端呼叫](install-step8-samr.md)
 - [使用安全性警訊](working-with-suspicious-activities.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

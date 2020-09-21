@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2c2d6b1a-fc8c-4ff7-b07d-64ce6159f84d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: babb82354c79681bb708f46012c9f53ba09dd348
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: b9fd8c81ffe9c779304f07dca230963f1131318a
+ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88955168"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90826646"
 ---
 # <a name="azure-atp-reports"></a>Azure ATP 報表
 
@@ -38,7 +38,7 @@ Azure ATP 入口網站中的 [Azure ATP 報告] 區段可讓您排程或立即�
 
 若要依需求產生報表：
 
-1. 在 Azure ATP 入口網站功能表列中，按一下功能表列中的報表圖示： ![報表圖示](media/atp-report-icon.png)。
+1. 在 Azure ATP 入口網站功能表列中，按一下功能表列中的報表圖示： ![報表圖示](media/atp-report-icon.png).
 
 1. 在您選取的報告類型下，設定 [開始] 與 [結束] 日期，然後按一下 [下載]。
  ![顯示報表下載的螢幕擷取畫面](media/reports.png)
@@ -58,8 +58,8 @@ Azure ATP 入口網站中的 [Azure ATP 報告] 區段可讓您排程或立即�
 
 ## <a name="see-also"></a>另請參閱
 
-- [Azure ATP 必要條件](atp-prerequisites.md)
-- [Azure ATP 容量規劃](atp-capacity-planning.md)
+- [Azure ATP 必要條件](prerequisites.md)
+- [Azure ATP 容量規劃](capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-forwarding.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

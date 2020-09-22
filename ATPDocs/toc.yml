@@ -3,38 +3,38 @@
 - name: 概觀
   items:
     - name: 什麼是 Azure 進階威脅防護？
-      href: what-is-atp.md
+      href: what-is.md
     - name: Azure ATP 架構
-      href: atp-architecture.md
+      href: architecture.md
     - name: Azure ATP 必要條件
-      href: atp-prerequisites.md
+      href: prerequisites.md
     - name: 適用於美國政府的 Azure ATP
-      href: atp-us-govt-gcc-high.md
+      href: us-govt-gcc-high.md
     - name: Azure ATP 的新功能
-      href: atp-whats-new.md
+      href: whats-new.md
 - name: 快速入門
   expanded: true
   items:
     - name: 建立您的 Azure ATP 執行個體
-      href: install-atp-step1.md
+      href: install-step1.md
     - name: 連線到 Active Directory
-      href: install-atp-step2.md
+      href: install-step2.md
     - name: 下載 Azure ATP 感應器套件
-      href: install-atp-step3.md
+      href: install-step3.md
     - name: 安裝 Azure ATP 感應器
-      href: install-atp-step4.md
+      href: install-step4.md
 - name: 教學課程
   items:
     - name: 偵察警訊
-      href: atp-reconnaissance-alerts.md
+      href: reconnaissance-alerts.md
     - name: 認證遭入侵警訊
-      href: atp-compromised-credentials-alerts.md
+      href: compromised-credentials-alerts.md
     - name: 橫向移動警訊
-      href: atp-lateral-movement-alerts.md
+      href: lateral-movement-alerts.md
     - name: 控制網域警訊
-      href: atp-domain-dominance-alerts.md
+      href: domain-dominance-alerts.md
     - name: 外流警訊
-      href: atp-exfiltration-alerts.md
+      href: exfiltration-alerts.md
     - name: 調查使用者
       href: investigate-a-user.md
     - name: 調查電腦
@@ -56,63 +56,63 @@
     - name: 橫向移動路徑
       href: use-case-lateral-movement-path.md
     - name: 了解網路名稱解析 (NNR)
-      href: atp-nnr-policy.md
+      href: nnr-policy.md
     - name: 報告
       href: reports.md
     - name: 使用者角色
-      href: atp-role-groups.md
+      href: role-groups.md
     - name: Azure ATP 多樹系支援
-      href: atp-multi-forest.md
+      href: multi-forest.md
 - name: 操作指南
   items:
     - name: 使用 Microsoft Cloud App Security 的 Azure ATP
       items:
         - name: 搭配使用 Azure ATP 和 Cloud App Security
-          href: atp-mcas-integration.md
+          href: mcas-integration.md
         - name: 刪除活動並設定原則
-          href: atp-activities-filtering-mcas.md
+          href: activities-filtering-mcas.md
         - name: 身分識別安全性狀態評估
           items:
             - name: 了解身分識別安全性狀態評估
-              href: atp-isp-overview.md
+              href: isp-overview.md
             - name: 具有列印多工緩衝處理器服務可用的網域控制站評估
-              href: atp-cas-isp-print-spooler.md
+              href: cas-isp-print-spooler.md
             - name: 敏感性群組中的休眠實體評估
-              href: atp-cas-isp-dormant-entities.md
+              href: cas-isp-dormant-entities.md
             - name: 以純文字公開認證的實體評估
-              href: atp-cas-isp-clear-text.md
+              href: cas-isp-clear-text.md
             - name: LAPS 使用評估
-              href: atp-cas-isp-laps.md
+              href: cas-isp-laps.md
             - name: 使用舊版通訊協定評估
-              href: atp-cas-isp-legacy-protocols.md
+              href: cas-isp-legacy-protocols.md
             - name: 風險最高的橫向移動路徑
-              href: atp-cas-isp-riskiest-lmp.md
+              href: cas-isp-riskiest-lmp.md
             - name: 未受監視的網域控制站
-              href: atp-cas-isp-unmonitored-domain-controller.md
+              href: cas-isp-unmonitored-domain-controller.md
             - name: 不安全的帳戶屬性
-              href: atp-cas-isp-unsecure-account-attributes.md
+              href: cas-isp-unsecure-account-attributes.md
             - name: 不安全的 Kerberos 委派評量
-              href: atp-cas-isp-unconstrained-kerberos.md
+              href: cas-isp-unconstrained-kerberos.md
             - name: 不安全的 SID 歷程記錄屬性
-              href: atp-cas-isp-unsecure-sid-history-attribute.md
+              href: cas-isp-unsecure-sid-history-attribute.md
             - name: 使用弱式密評估
-              href: atp-cas-isp-weak-cipher.md
+              href: cas-isp-weak-cipher.md
     - name: 安全性警示實驗室
       items:
         - name: 實驗室概觀
-          href: atp-playbook-lab-overview.md
+          href: playbook-lab-overview.md
         - name: 1 - 實驗室設定
-          href: atp-playbook-setup-lab.md
+          href: playbook-setup-lab.md
         - name: 2 - 偵察劇本
-          href: atp-playbook-reconnaissance.md
+          href: playbook-reconnaissance.md
         - name: 3 - 橫向移動劇本
-          href: atp-playbook-lateral-movement.md
+          href: playbook-lateral-movement.md
         - name: 4 - 網域支配劇本
-          href: atp-playbook-domain-dominance.md
+          href: playbook-domain-dominance.md
     - name: 了解安全性警訊
       href: understanding-security-alerts.md
     - name: 規劃 Azure ATP 容量
-      href: atp-capacity-planning.md
+      href: capacity-planning.md
     - name: 管理安全性警示
       href: working-with-suspicious-activities.md
     - name: 從偵測中排除實體
@@ -120,45 +120,45 @@
     - name: 管理敏感性帳戶
       href: sensitive-accounts.md
     - name: 搜尋及篩選受監視的活動
-      href: atp-activities-search.md
+      href: activities-search.md
     - name: 使用排除與 Honeytoken 帳戶
-      href: install-atp-step7.md
+      href: install-step7.md
     - name: 監視網域控制站
-      href: atp-sensor-monitoring.md
+      href: sensor-monitoring.md
     - name: 變更網域連線密碼
-      href: modifying-atp-config-dcpassword.md
+      href: modifying-config-dcpassword.md
     - name: 設定 Azure ATP 通知
       href: notifications.md
     - name: 健康狀態警示
       items:
         - name: 使用 Azure ATP 健全狀況中心
-          href: atp-health-center.md
+          href: health-center.md
         - name: 管理 Azure ATP 健全狀況警示
           href: health-alerts.md
     - name: Azure ATP 感應器延遲更新
       href: sensor-update.md
     - name: 針對已知問題進行疑難排解
-      href: troubleshooting-atp-known-issues.md
+      href: troubleshooting-known-issues.md
     - name: 使用記錄進行疑難排解
-      href: troubleshooting-atp-using-logs.md
+      href: troubleshooting-using-logs.md
     - name: 與 Microsoft Defender ATP 整合
-      href: integrate-wd-atp.md
+      href: integrate-msde.md
     - name: VPN 整合
-      href: install-atp-step6-vpn.md
+      href: install-step6-vpn.md
     - name: 與 Syslog 整合
       href: setting-syslog.md
     - name: 無訊息安裝
-      href: ATP-silent-installation.md
+      href: silent-installation.md
     - name: 設定 Azure ATP 感應器
       items:
         - name: 設定 Azure ATP 感應器
-          href: install-atp-step5.md
+          href: install-step5.md
         - name: 設定 Windows 事件集合
           href: configure-windows-event-collection.md
         - name: Proxy 組態
           href: configure-proxy.md
         - name: 設定 Azure ATP 對 SAM 發出遠端呼叫
-          href: install-atp-step8-samr.md
+          href: install-step8-samr.md
     - name: Azure ATP 獨立感應器設定
       items:
         - name: 設定連接埠鏡像
@@ -172,22 +172,22 @@
     - name: 從 ATA 移至 Azure ATP
       items:
         - name: Advanced Threat Analytics (ATA) 移至 Azure ATP
-          href: ata-atp-move-overview.md
+          href: migrate-from-ata-overview.md
 - name: 參考
   items:
     - name: SIEM 記錄檔參考
       href: cef-format-sa.md
     - name: Azure ATP 已知問題
-      href: ./troubleshooting-atp-known-issues.md
+      href: ./troubleshooting-known-issues.md
     - name: Azure ATP 版本參考
-      href: atp-release-reference.md
+      href: release-reference.md
 - name: 資源
   items:
     - name: 支援與資訊
-      href: atp-support.md
+      href: support.md
     - name: 常見問題集
-      href: atp-technical-faq.md
+      href: technical-faq.md
     - name: Azure ATP 整備藍圖
-      href: atp-resources.md
+      href: resources.md
     - name: Azure ATP 資料安全性和隱私權
-      href: atp-privacy-compliance.md
+      href: privacy-compliance.md

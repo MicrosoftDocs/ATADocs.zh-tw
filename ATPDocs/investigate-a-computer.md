@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 26549610e7a9dc2ec81a785e3900259ba7cfa563
-ms.sourcegitcommit: af91810bb220ff8ba90569d87c718a63bdc52d94
+ms.openlocfilehash: 17d2012773d792327b9dd63c1c24e6be6a533f5a
+ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88807569"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90826561"
 ---
 # <a name="tutorial-investigate-a-computer"></a>教學課程：調查電腦
 
@@ -58,9 +58,9 @@ Azure ATP 警示辨識項清楚指出電腦何時涉及可疑活動，或何時�
 - [調查使用者](investigate-a-user.md)
 - [使用安全性警訊](working-with-suspicious-activities.md)
 - [使用橫向移動路徑](use-case-lateral-movement-path.md)
-- [偵察警訊](atp-reconnaissance-alerts.md)
-- [遭入侵的認證警訊](atp-compromised-credentials-alerts.md)
-- [橫向移動警訊](atp-lateral-movement-alerts.md)
-- [網域支配警訊](atp-domain-dominance-alerts.md)
-- [外流警訊](atp-exfiltration-alerts.md)
+- [偵察警訊](reconnaissance-alerts.md)
+- [遭入侵的認證警訊](compromised-credentials-alerts.md)
+- [橫向移動警訊](lateral-movement-alerts.md)
+- [網域支配警訊](domain-dominance-alerts.md)
+- [外流警訊](exfiltration-alerts.md)
 - [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)

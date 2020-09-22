@@ -12,25 +12,25 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/23/2019
-  ms.openlocfilehash: a9946b16b63b9fa78cf1fc1f52bb59e1b13cc556
-  ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
+  ms.openlocfilehash: 2c6de3d806f80ef8d05b4e25d8101c71c35207b5
+  ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 04/21/2020
-  ms.locfileid: "75906575"
+  ms.lasthandoff: 09/21/2020
+  ms.locfileid: "90826595"
 landingContent:
 - title: 關於 Azure 進階威脅防護 (Azure ATP)
   linkLists:
   - linkListType: overview
     links:
     - text: 什麼是 Azure 進階威脅防護？
-      url: what-is-atp.md
+      url: what-is.md
   - linkListType: architecture
     links:
     - text: Azure ATP 架構
-      url: atp-architecture.md
+      url: architecture.md
     - text: 使用 Cloud App Security 的 Azure ATP
-      url: atp-mcas-integration.md
+      url: mcas-integration.md
   - linkListType: video
     links:
     - text: Azure ATP 簡介
@@ -44,25 +44,25 @@ landingContent:
     - text: 安全性警示
       url: understanding-security-alerts.md
     - text: 健康狀態警示
-      url: atp-health-center.md
+      url: health-center.md
     - text: 監視網域控制站
-      url: atp-sensor-monitoring.md
+      url: sensor-monitoring.md
 - title: 探索使用 Azure ATP 的不同方式
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: 身分識別安全性狀態評估
-      url: atp-isp-overview.md
+      url: isp-overview.md
     - text: Azure ATP 安全性警示實驗室
-      url: atp-playbook-lab-overview.md
+      url: playbook-lab-overview.md
     - text: 從偵測中排除實體
       url: excluding-entities-from-detections.md
     - text: 搜尋及篩選受監視的活動
-      url: atp-activities-search.md
+      url: activities-search.md
     - text: 使用排除與 Honeytoken 帳戶
-      url: install-atp-step7.md
+      url: install-step7.md
     - text: Advanced Threat Analytics (ATA) 移至 Azure ATP
-      url: ata-atp-move-overview.md
+      url: migrate-from-ata-overview.md
 - title: 管理及修復安全性警示
   linkLists:
   - linkListType: how-to-guide
@@ -90,18 +90,18 @@ landingContent:
   - linkListType: deploy
     links:
     - text: 搭配使用 Azure ATP 和 Cloud App Security
-      url: atp-mcas-integration.md
+      url: mcas-integration.md
     - text: 刪除活動並設定原則
-      url: atp-activities-filtering-mcas.md
+      url: activities-filtering-mcas.md
 - title: 資源與支援
   linkLists:
   - linkListType: reference
     links:
     - text: 常見問題集
-      url: atp-technical-faq.md
+      url: technical-faq.md
     - text: 支援與資訊
-      url: atp-support.md
+      url: support.md
     - text: ATP 整備藍圖
-      url: atp-resources.md
+      url: resources.md
     - text: Azure ATP 資料安全性和隱私權
-      url: atp-privacy-compliance.md
+      url: privacy-compliance.md

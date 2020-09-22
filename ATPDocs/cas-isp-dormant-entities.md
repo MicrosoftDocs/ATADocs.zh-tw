@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 98b12d4fbbdcd74cf1d562276b0f1d16ba24da61
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: db289191d8520a478867c3a2ff3c1b47267e82f1
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828089"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913178"
 ---
 # <a name="security-assessment-dormant-entities-in-sensitive-groups"></a>安全性評估：**從敏感性群組中移除休眠實體**
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="what-are-sensitive-dormant-entities"></a>什麼是**敏感性**休眠實體？
 

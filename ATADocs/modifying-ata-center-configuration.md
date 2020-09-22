@@ -11,18 +11,20 @@ ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b3cde73d13874fbcab338ef2ab4bae4c4fb4c21d
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 97ef7f3ba88cc0ce034413ce3dae40a7840db58f
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956800"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912881"
 ---
 # <a name="modifying-the-ata-center-configuration"></a>修改 ATA 中心設定
 
 
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 初始部署後，請小心修改 ATA Center。 更新主控台 URL 和憑證時，請使用下列程序。
 
@@ -68,7 +70,7 @@ ms.locfileid: "88956800"
 
 按照此程序來取代憑證：
 
-1. 在目前的憑證到期之前，建立新的憑證並確認將新憑證安裝在 ATA 中心伺服器上。 <br></br>建議您從內部憑證授權單位選擇憑證，但也可以建立新的自我簽署憑證。 如需詳細資訊，請參閱 [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps) \(英文\)。
+1. 在目前的憑證到期之前，建立新的憑證並確認將新憑證安裝在 ATA 中心伺服器上。 <br></br>建議您從內部憑證授權單位選擇憑證，但也可以建立新的自我簽署憑證。 如需詳細資訊，請參閱 [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps&preserve-view=true) \(英文\)。
 
 1. 在 ATA 設定中，於 [中心]**** 下選取新建立的憑證。 此時 ATA 中心服務仍然繫結至原始憑證。 
 

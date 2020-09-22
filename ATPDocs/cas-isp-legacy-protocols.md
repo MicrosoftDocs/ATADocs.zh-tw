@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 6597b8c7-f83e-43c6-8149-fb4a914a845b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2eb9fb04c5f0adee2f98d73549ece6db88b0aeac
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 3465df4f9d932bd1b278971848ca59a592abed71
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828083"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913207"
 ---
 # <a name="security-assessment-legacy-protocols-usage"></a>安全性評估：使用舊版通訊協定
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="what-are-legacy-protocols"></a>什麼是舊版通訊協定？
 

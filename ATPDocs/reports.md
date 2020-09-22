@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2c2d6b1a-fc8c-4ff7-b07d-64ce6159f84d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b9fd8c81ffe9c779304f07dca230963f1131318a
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: e5de1628eb0eb0e2076dcd04be44b695c69e7fda
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826646"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912386"
 ---
 # <a name="azure-atp-reports"></a>Azure ATP 報表
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Azure ATP 入口網站中的 [Azure ATP 報告] 區段可讓您排程或立即產生並下載報告，為您提供系統和實體狀態資訊。 您可使用報告功能建立系統健全狀況、安全性警訊，以及在環境中偵測到之潛在橫向移動路徑的報告。
 

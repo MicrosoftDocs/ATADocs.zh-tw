@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f9e322e831b2c5e7b9852ce0889aafff6dffde8f
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: fdc5ace86a48b78041e1a7fc8927ae24d64b00ff
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828088"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913217"
 ---
 # <a name="security-assessment-microsoft-laps-usage"></a>安全性評估：Microsoft LAPS 使用情況
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="what-is-microsoft-laps"></a>什麼是 Microsoft LAPS？
 

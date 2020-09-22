@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 1a7d9525-8923-4dae-af51-02a68aa61644
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: bda0803afb9e7d06bf2b75b24591f84767a000dd
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 3d49284e21f235e70698bb6a79d015af4fb4a321
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828090"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913174"
 ---
 # <a name="security-assessment-domain-controllers-with-print-spooler-service-available"></a>安全性評估：有可用列印多工緩衝處理器服務的網域控制站
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ![停用列印多工緩衝處理器服務](media/atp-cas-isp-print-spooler-1.png)
 

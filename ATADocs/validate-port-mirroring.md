@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: ebd41719-c91a-4fdd-bcab-2affa2a2cace
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 78f8f287721af62e2d7992b48ebb5f91421cd571
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: c2cff7a140de26f36e91770619926543e7d623c2
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956307"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912864"
 ---
 # <a name="validate-port-mirroring"></a>驗證連接埠鏡像
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
 > 本文只有在部署 ATA 閘道 (而非 ATA 輕量型閘道) 時才適用。 若要判斷是否需要使用 ATA 閘道，請參閱[為您的部署選擇正確閘道](ata-capacity-planning.md#choosing-the-right-gateway-type-for-your-deployment)。

@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 124957bb-5882-4fcf-bab2-b74b0c69571d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4bebb0e1f67525b998d6ab237ecda96e7c7bf0b6
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 413e7482900f34428056401085f04195ccb4e720
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828092"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913227"
 ---
 # <a name="security-assessment-entities-exposing-credentials-in-clear-text"></a>安全性評估：實體以純文字公開認證
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ![防止純文字認證暴露](media/atp-cas-isp-clear-text-1.png)
 

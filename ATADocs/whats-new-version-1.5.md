@@ -12,14 +12,16 @@ ms.technology: ''
 ms.assetid: a0d64aff-ca9e-4300-b3f8-eb3c8b8ae045
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7bdd3bf22f2b87c34ac45614c9c8f3ebeab2e87b
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 110632e0d2f2b14f57f7e7fbb63136dc8e8df1fa
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956664"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913311"
 ---
 # <a name="whats-new-in-ata-version-15"></a>ATA 1.5 版的新功能
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。
 
 ## <a name="whats-new-in-the-ata-15-update"></a>什麼是 ATA 1.5 更新的新功能？
@@ -55,7 +57,7 @@ ms.locfileid: "88956664"
 ### <a name="installation-from-zip-file"></a>從 Zip 檔案安裝
 安裝 ATA 閘道時，請務必從 zip 檔案解壓縮檔案至本機目錄，並從該處安裝。 請勿直接從 ZIP 檔案內部安裝 ATA 閘道，否則安裝會失敗。
 
-### <a name="configuration"></a>組態
+### <a name="configuration"></a>設定
 設定 ATA 閘道組態之後，當 ATA 閘道第一次啟動時，會顯示「未同步處理」標籤，直到服務完全啟動為止，在服務第一次啟動時，這可能需要多達 10 分鐘。
 
 ### <a name="network-capture-software"></a>網路擷取軟體

@@ -7,14 +7,16 @@ author: shsagir
 ms.author: shsagir
 ms.date: 03/03/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 89dd81d18bbe70bba358e987f6a6ffb64efbfe11
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 88e5b96534306ab8508b2e0581e906cde0e7d317
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828102"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912952"
 ---
 # <a name="tutorial-lateral-movement-playbook"></a>教學課程：橫向移動腳本
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 橫向移動劇本是 Azure ATP 警示四部分教學課程系列中的第三部分。 Azure ATP 安全性警示實驗室的目的是要說明 **Azure ATP** 對網路可疑活動及潛在攻擊的識別和偵測功能。 此劇本會說明如何針對一些 Azure ATP 的*離散*偵測進行測試。 此劇本的重點在 Azure ATP 的*特徵*型功能，而不包括進階機器學習型、使用者型或實體型的行為偵測 (這些需要一個最多有 30 天真實網路流量的學習期間)。 如需有關本系列每個教學課程的詳細資訊，請參閱 [ATP 安全性警示實驗室概觀](playbook-lab-overview.md)。
 
@@ -251,7 +253,7 @@ Azure ATP 偵測和警示的資訊對於任何數位鑑識調查事件回應 (DF
 > [!NOTE]
 > 此事件只會在 **2 小時**後顯示在 Azure ATP 主控台上。 系統會故意隱藏此時間範圍內的此類型事件，以減少誤判。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 攻擊狙殺鏈中的下一個階段是網域支配。
 
 > [!div class="nextstepaction"]

@@ -12,14 +12,16 @@ ms.technology: ''
 ms.assetid: 9592d413-df0e-4cec-8e03-be1ae00ba5dc
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 1a5fe233cbfb5abea822f692a376293f2586e166
-ms.sourcegitcommit: 45003b424140350e03128ac5325e1f28c52e6e1c
+ms.openlocfilehash: 6bacbf74ffc38809458cc2448c5162279ea89016
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90535136"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913292"
 ---
 # <a name="whats-new-in-ata-version-18"></a>ATA 1.8 版的新功能
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [從下載中心下載](https://www.microsoft.com/download/details.aspx?id=55536) \(英文\) 最新的 ATA 更新版本，或者從[評估中心](https://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)下載完整版本。
 

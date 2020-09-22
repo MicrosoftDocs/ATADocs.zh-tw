@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 224e629a-0e82-458c-bb03-b67070a9241d
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: d8aaed5258a401b14e9233f018dc7e83214cdc1b
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 8cfd442e05827811c929f5d6e89ab03dad8a3367
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828173"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912394"
 ---
 # <a name="azure-atp-data-security-and-privacy"></a>Azure ATP 資料安全性和隱私權
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 

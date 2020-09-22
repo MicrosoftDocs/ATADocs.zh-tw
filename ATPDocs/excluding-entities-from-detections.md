@@ -12,14 +12,17 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: cae3ed45-8fbc-4f25-ba24-3cc407c6ea93
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8424acd769b24407f1d4fc57e6549ca2ea1e0edf
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 8166033bd8539a78dd84535397a3f5a0a8d0a02f
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826527"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913095"
 ---
 # <a name="excluding-entities-from-detections"></a>從偵測中排除實體
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
+
 本文說明如何從觸發警示中排除實體。 排除某些實體可減少良性確判，同時確保您能攔截到確判。 為了避免讓 Azure ATP 在平常企業營運時，從特定使用者發出不必要的警示，您可設為靜音或排除對特定實體發出警示。 此外，預設會排除某些常用實體。 
 
 例如，如果您有執行 DNS 偵察的安全性掃描器，或是在網域控制站上遠端執行指令碼的系統管理員，這些都屬於組織中正常 IT 作業中的許可活動，可以排除。 如需各 Azure ATP 偵測的詳細資訊，以協助您決定要排除的實體，請參閱[安全性警訊指南](suspicious-activity-guide.md)。

@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: f6f3ed75-d6bb-4966-a9a7-5339c4f3ebac
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 324e7b7243b44ec8c1b6699e0424e504e376ae43
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 0f718f6334b21d951fbe487142234fc229d615ef
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828128"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912957"
 ---
 # <a name="integrate-azure-atp-with-microsoft-defender-atp"></a>將 Azure ATP 與 Microsoft Defender ATP 整合
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Azure 進階威脅防護可讓您將 Azure ATP 與 Microsoft Defender ATP 整合，以獲得更加完整的威脅防護解決方案。 在 Azure ATP 監視您網域控制站上流量的同時，Microsoft Defender ATP 會監視您的端點，使兩者能一起提供可供您保護環境的單一介面。
 

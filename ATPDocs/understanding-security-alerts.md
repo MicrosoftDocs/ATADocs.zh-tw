@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 671747d5-faed-4352-a871-17b58fdc6574
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 50288d379bf78f6d6601616597cbac2f1699b042
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 2c871c3a504fc7f79cc3627b077d1bebc1814a82
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826663"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912317"
 ---
 # <a name="tutorial-understanding-security-alerts"></a>教學課程：了解安全性警訊
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Azure ATP 安全性警訊會以清晰的語言及圖片進行說明，內容包含在您網路上找到的可疑的動，以及涉及威脅的動作項目和電腦。 警訊會以嚴重性進行分級，以色彩劃分使其更輕易地以視覺方式篩選，且依威脅階段整理。 所有警訊的設計目的都是為了讓您更快了解網路的當前情形。 包含涉及使用者和電腦直接連結的警示辨識項清單，可協助您輕易且直接地進行調查。
 

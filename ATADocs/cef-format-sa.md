@@ -12,17 +12,19 @@ ms.technology: ''
 ms.assetid: 601b48ba-a327-4aff-a1f9-2377a2bb7a42
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 315fade1334f5ebf3d0d50e8c167b3b00889c2d8
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: d8e83ad51970e4add2e703182e9ad466f113a44e
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88955049"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90909724"
 ---
 # <a name="ata-siem-log-reference"></a>ATA SIEM 記錄檔參考
 
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ATA 可將安全性和健康情況警示事件轉送到您的 SIEM。 警示會以 CEF 格式轉送。 以下為會傳送至您 SIEM 的各類型安全性警訊記錄檔。
 

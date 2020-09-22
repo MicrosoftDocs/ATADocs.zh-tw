@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 4308f03e-b2a7-4e38-a750-540ff94faa81
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b54f609074c7e2a17eec51629682bade14e40cfa
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 4b0fd3c0ff5702d382a2232a896a82495cce16be
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88953400"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912641"
 ---
 # <a name="set-azure-atp-notifications"></a>設定 Azure ATP 通知
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Azure ATP 會在偵測到可疑的活動並引發安全性警訊或健康狀態警訊時，透過電子郵件通知您。 
 

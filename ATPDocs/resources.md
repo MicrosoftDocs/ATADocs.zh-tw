@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 34dc152c-6b7f-4128-93fe-aad56c282730
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 20341bb46ed5c7b1deaf3d7dd79e2934007fda2d
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 4afff7abad10684c362afd789a896b721165e6eb
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828165"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912564"
 ---
 # <a name="azure-atp-readiness-guide"></a>Azure ATP 整備指南
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文為您提供的整備藍圖，可協助您開始使用 Azure 進階威脅防護。
 

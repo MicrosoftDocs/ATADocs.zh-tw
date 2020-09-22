@@ -11,14 +11,16 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: d93c1c56457002d6039cbc0d6162ee6c22ccb657
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 494faf68f394d9bdbb2af583c4eec3135fd67ee3
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828168"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912000"
 ---
 # <a name="release-reference-of-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護 (Azure ATP) 的版本參考
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 此文章是所有 Azure ATP 版本的參考，直到 (並包含) 2.55 版為止。 如需最新的 Azure ATP 版本更新 (2.56 與更新版本)，請參閱 [Azure ATP 新功能](whats-new.md)。
 

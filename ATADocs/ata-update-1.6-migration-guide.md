@@ -12,14 +12,16 @@ ms.technology: ''
 ms.assetid: 0756ef64-3aef-4a69-8981-24fa8f285c6a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 5ad07f5aa5210f651ee5c854b9f899653ffb3444
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 3c94379e73959d5fe22842d5286ce75673684cbf
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88953910"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90909394"
 ---
 # <a name="ata-update-to-16-migration-guide"></a>將 ATA 更新至 1.6 移轉指南
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 ATA 1.6 的更新提供下列各方面的改良︰
 
 - 新增偵測
@@ -87,7 +89,7 @@ ATA 1.6 的更新提供下列各方面的改良︰
     5.  開始安裝之前，ATA 會執行整備檢查。 檢閱檢查的結果以確保已成功設定必要條件，且至少具有磁碟空間下限。 
     ![ATA 整備檢查影像](media/ata_install_readinesschecks.png)
 
-    6.  按一下 [更新] 。 按一下 [更新] 之後，ATA 會離線直到更新程序完成。
+    6.  按一下 [更新]。 按一下 [更新] 之後，ATA 會離線直到更新程序完成。
 
 1. 在更新 ATA 中心之後，ATA 閘道會報告它們現在已經過期。
 

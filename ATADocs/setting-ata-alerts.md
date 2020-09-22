@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 14cb7513-5dc8-49cb-b3e0-94f469c443dd
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e61436868e1d7bd441ab11e8f5d6b01869df4ed6
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 4823ab40e271c0cc34a7aa602878211561896473
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956018"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912036"
 ---
 # <a name="set-ata-notifications"></a>設定 ATA 通知
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ATA 可在偵測到可疑的活動時通知您，方法是透過電子郵件或使用 ATA 事件轉寄，並將事件轉寄到您的 SIEM/syslog 伺服器。 您必須先[設定電子郵件伺服器和 Syslog 伺服器](setting-syslog-email-server-settings.md)，才能選取要接收的通知。
 
@@ -44,7 +46,7 @@ ATA 可在偵測到可疑的活動時通知您，方法是透過電子郵件或�
     > 只有在建立可疑活動時，才會傳送可疑活動的電子郵件警示。
 
 1. 在 [Syslog 通知]**** 下，指定要傳送到 Syslog 伺服器的通知 (新的可疑活動、更新的可疑活動，以及新的健康狀態問題)。
-1. 按一下 [儲存]。
+1. 按一下 [檔案]  。
     
     ![ATA 郵件通知設定影像](media/ata-mail-notification-settings.png)
 

@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: eeb4a87ed3983af7e6452849ab35edc7ee15f369
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: a717c771afe39c7e187487c3fd9c41d4c1691a3a
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88954726"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90909520"
 ---
 # <a name="ata-disaster-recovery"></a>ATA 災害復原
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文描述如何在失去 ATA 中心功能，但 ATA 閘道仍可運作的情況下，快速復原 ATA 中心並還原 ATA 功能。 
 
@@ -51,7 +53,7 @@ ms.locfileid: "88954726"
 1. 匯入已備份的 ATA 中心設定：
     1. 從 MongoDB 移除預設 ATA 中心系統設定檔文件： 
         1. 移至 **C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin**。 
-        2. `mongo.exe ATA`執行 {2} 
+        2. `mongo.exe ATA`執行 
         3. 執行此命令以移除預設系統設定檔：`db.SystemProfile.remove({})`
         4. 輸入下列命令以離開 Mongo 殼層並返回命令提示：`exit`
     2. 使用步驟 1 中的備份檔案執行命令：`mongoimport.exe --db ATA --collection SystemProfile --file "<SystemProfile.json backup file>" --upsert`。</br>

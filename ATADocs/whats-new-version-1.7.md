@@ -12,14 +12,16 @@ ms.technology: ''
 ms.assetid: be9ee613-4eb3-40f1-8973-e7f0a707ff57
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 5a23b551b1f05513c242e9779f51f68c7bab2d4a
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 39120a8dfabe4b78d8c77b94fd1051435c7e7311
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956256"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912830"
 ---
 # <a name="whats-new-in-ata-version-17"></a>ATA 1.7 版的新功能
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。
 
 ## <a name="whats-new-in-the-ata-17-update"></a>什麼是 ATA 1.7 更新的新功能？

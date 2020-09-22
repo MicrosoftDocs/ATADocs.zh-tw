@@ -11,16 +11,18 @@ ms.prod: advanced-threat-analytics
 ms.assetid: 1b5b24ff-0df8-4660-b4f8-64d68cc72f65
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 608a606c8ef93e46b36658c2344a66d73eb5d8ec
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: d2db03d8b4074465795ce3ba9113aac78647ad2c
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88954199"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90909243"
 ---
 # <a name="ata-capacity-planning"></a>ATA 容量規劃
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文將協助您決定監視您的網路需要多少部 ATA 伺服器。 它可協助您估計您需要多少 ATA 閘道及/或 ATA 輕量閘道，以及 ATA 中心和 ATA 閘道的伺服器容量。
 
@@ -83,7 +85,7 @@ ATA 部署中能夠支援任何 ATA 閘道類型的組合︰
 
 當您決定閘道部署類型時，請考慮下列優點：
 
-|閘道類型|優點|成本|部署拓撲|網域控制站|
+|閘道類型|優點|Cost|部署拓撲|網域控制站|
 |----|----|----|----|-----|
 |ATA 閘道|頻外部署會讓攻擊者更難發現 ATA|較高|與網域控制站 (頻外) 一起安裝|每秒支援最多 50,000 個封包|
 |ATA 輕量型閘道|不需要專用的伺服器及連接埠鏡像設定|較低|安裝在網域控制站上|每秒支援最多 10,000 個封包|

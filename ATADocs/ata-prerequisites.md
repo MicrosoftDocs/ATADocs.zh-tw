@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: b83a98ddf052416ffee0cd7dc521b9412b466d99
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 0cf77c09c09062a3a2983e36646f06c603a2ef45
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88954114"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90908888"
 ---
 # <a name="ata-prerequisites"></a>ATA 必要條件
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文描述在環境中成功部署 ATA 的需求。
 
@@ -44,7 +46,7 @@ ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003
 
 ![ATA 架構圖](media/ATA-architecture-topology.jpg)
 
-## <a name="before-you-start"></a>在您開始使用 Intune 之前
+## <a name="before-you-start"></a>開始之前
 
 本節列出在開始 ATA 安裝之前您應該收集的資訊以及您應該擁有的帳戶與網路實體。
 

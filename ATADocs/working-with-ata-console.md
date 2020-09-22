@@ -12,17 +12,19 @@ ms.technology: ''
 ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1532d110daf23562c768a7b145bcff9326f73223
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: e5b9c8f908cc0d9fbbabcc0cf11feebdf1decb7b
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88955117"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912195"
 ---
 # <a name="working-with-the-ata-console"></a>使用 ATA 主控台
 
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 使用 ATA 主控台監視及回應 ATA 偵測到的可疑活動。
 
@@ -76,7 +78,7 @@ ATA 主控台可讓您依時間順序快速檢視所有可疑的活動。 不但
 
 ![ATA 通知列影像](media/notification-bar-1.7.png)
 
-### <a name="whats-new"></a>新功能
+### <a name="whats-new"></a>最新消息
 
 新版本的 ATA 發行後，[最新消息]**** 視窗會出現在右上角，讓您知道最新版本中新增了哪些功能。 它也會提供您可下載該版本的連結。
 
@@ -109,8 +111,8 @@ ATA 將下列群組清單視為**敏感性**。 屬於這些群組的任何實�
 - 企業系統管理員 
 - Group Policy Creator Owners 
 - Read-Only Domain Controllers 
-- 系統管理員  
-- Power Users  
+- Administrators  
+- 進階使用者  
 - Account Operators  
 - Server Operators   
 - Print Operators
@@ -128,7 +130,7 @@ ATA 將下列群組清單視為**敏感性**。 屬於這些群組的任何實�
 
 ![ATA 小型設定檔影像](media/ATA-mini-profile.jpg)
 
-- 名稱
+- Name
 
 - Picture
 

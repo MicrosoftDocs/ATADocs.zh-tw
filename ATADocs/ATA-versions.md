@@ -10,16 +10,18 @@ ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3fda8403d8dd49761e5860f48ceb1d9ca7bc9175
-ms.sourcegitcommit: c4a4eb6512258beaa1b8937dc2b206fc3ee87835
+ms.openlocfilehash: 9d9c2c027b5d7c35a02d8751a5d56585ecf0fdb0
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90829369"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90909264"
 ---
 # <a name="support-for-microsoft-advanced-threat-analytics-ata-versions"></a>Microsoft Advanced Threat Analytics (ATA) 各版本的支援
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Microsoft ATA 支援是由適用于 [ATA](https://support.microsoft.com/lifecycle/search?alpha=Advanced%20Threat%20Analytics%201.X)1.X 的 Microsoft 生命週期原則所定義，其主流支援于2021年1月12日結束。
 

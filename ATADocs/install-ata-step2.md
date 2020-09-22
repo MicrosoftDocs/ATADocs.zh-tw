@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: e1c5ff41-d989-46cb-aa38-5a3938f03c0f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: fe99921e1193f79f7031c04156a79fd8fa55dc9e
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: ef365ec03aebcc5c35f93fa1a34cc0fb243957a6
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88954556"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90911468"
 ---
 # <a name="install-ata---step-2"></a>安裝 ATA - 步驟 2
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!div class="step-by-step"]
 > [«步驟 1](install-ata-step1.md) 
@@ -37,7 +39,7 @@ ms.locfileid: "88954556"
 
     |欄位|註解|
     |---------|------------|
-    |需要 (使用者**名稱**) |輸入唯讀使用者名稱，例如︰**ATAuser**。 **注意：** 請勿 **將 UPN 格式用於您** 的使用者名稱。|
+    |**使用者名稱** (必填)|輸入唯讀使用者名稱，例如︰**ATAuser**。 **注意：** 請勿 **將 UPN 格式用於您** 的使用者名稱。|
     |需要**密碼** () |輸入唯讀使用者的密碼，例如︰**Pencil1**。|
     |**網域** (必填)|輸入唯讀使用者的網域，例如︰**contoso.com**。 **注意︰** 您務必輸入使用者所在網域的完整 FQDN。 例如，如果使用者的帳戶位於網域 corp.contoso.com，您就必須輸入 `corp.contoso.com` not contoso.com|
 

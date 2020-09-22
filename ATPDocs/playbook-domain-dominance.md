@@ -7,14 +7,16 @@ author: shsagir
 ms.author: shsagir
 ms.date: 02/28/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: c2acb76eebc4d64d532496fba30a508dd5e85611
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 6eb2798ac8bf4f480d604891a24a643ec270b8e6
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828106"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912669"
 ---
 # <a name="tutorial-domain-dominance-playbook"></a>教學課程：網域支配腳本
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 這個 Azure ATP 安全性警示四部分系列中的最後一個教學課程是一個網域支配劇本。 Azure ATP 安全性警示實驗室的目的是要說明 **Azure ATP** 對網路潛在攻擊的識別和偵測功能。 此實驗室說明如何使用 Azure ATP 的*特徵*型功能，針對 Azure ATP 的一些*離散*偵測進行測試。 此教學課程不包括 Azure ATP 進階機器學習、使用者或實體型的行為偵測和警示。 這些類型的偵測和警示不包含在測試中，因為它們需要最多 30 天的學習期間，以及真正的網路流量。 如需有關本系列每個教學課程的詳細資訊，請參閱 [ATP 安全性警示實驗室概觀](playbook-lab-overview.md)。
 
@@ -241,7 +243,7 @@ Azure ATP 會使用多種方法偵測這種類型的可疑攻擊。 在這個確
 > [!Important]
 >提醒。 只要攻擊者收集到的 KRBTGT 在環境中仍然有效，使用它產生的票證也會維持有效。 在此情況下，攻擊者可達到持續性的網域支配，直到 [KRBTGT 重設兩次](/windows-server/identity/ad-ds/manage/ad-forest-recovery-resetting-the-krbtgt-password)為止。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 * [Azure ATP 安全性警示指南](suspicious-activity-guide.md)
 * [使用 Azure ATP 調查橫向移動路徑](use-case-lateral-movement-path.md)

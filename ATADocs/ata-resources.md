@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 42a1a34f-ed6b-4538-befb-452168a30e8c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c5af70847f4ca8fc61ec332aa8c6e3a9c2f6f35c
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: b37b08c401be6a6c01649051b1800597f4e11a9d
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88953995"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90908870"
 ---
 # <a name="ata-readiness-roadmap"></a>ATA 整備藍圖
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文提供整備藍圖，協助您開始使用 Advanced Threat Analytics。
 
@@ -39,7 +41,7 @@ ms.locfileid: "88953995"
 
 ATA 由 ATA 中心和 ATA 閘道構成，您可將前者安裝在伺服器上，並將後者安裝於其他電腦上，也可直接在您的網域控制站上使用輕量型閘道。 在啟動並執行前，請務必先決定下列部署項目：
 
-|組態 | 決策 |
+|設定 | 決策 |
 |----|----|
 |硬體類型|實體、虛擬、Azure VM|
 |工作群組或網域|工作群組、網域|

@@ -1,5 +1,5 @@
 ---
-title: Advanced 威脅分析更新至1.9.2 遷移指南
+title: 1.9.2 遷移指南的 Advanced 威脅分析更新
 description: 將 ATA 更新至 1.9.2 版的程序
 keywords: ''
 author: shsagir
@@ -11,15 +11,16 @@ ms.prod: advanced-threat-analytics
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 703d03feef815ddbea5393c8e576faa174426474
-ms.sourcegitcommit: fbb0768c392f9bccdd7e4adf0e9a0303c8d1922c
+ms.openlocfilehash: b2aa29f2818216b13116173f0872d9108e168c19
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84775265"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910996"
 ---
 # <a name="ata-version-192"></a>ATA 1.9.2 版
 
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 我們很高興能宣布 Microsoft Advanced Threat Analytics 1.9 版更新 2 現已可供使用。
 
@@ -45,7 +46,7 @@ ms.locfileid: "84775265"
 
 ## <a name="get-this-update"></a>取得此更新
 
-若要取得此更新的獨立套件，請移至 Microsoft 下載中心網站：[立即下載 ATA 1.9.2 套件](https://www.microsoft.com/en-us/download/details.aspx?id=56725)。
+若要取得此更新的獨立套件，請移至 Microsoft 下載中心網站： [立即下載 ATA 1.9.2 套件](https://www.microsoft.com/en-us/download/details.aspx?id=56725)。
 
 ### <a name="prerequisites"></a>必要條件
 

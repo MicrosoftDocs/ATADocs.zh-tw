@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 7eea354b-7a50-40d9-bfa7-dcccaef23179
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4854b421a3b5571848a7213026b3567479d1ae0e
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: a4676837537869f6984ffe27f20b5cbeae971bde
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828080"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912791"
 ---
 # <a name="security-assessment-unsecure-kerberos-delegation"></a>安全性評估：不安全的 Kerberos 委派
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="what-is-kerberos-delegation"></a>什麼是 Kerberos 委派？
 

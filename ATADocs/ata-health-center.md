@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 4479de3764f9cceffe9a3ed401aa20332a985498
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 121cc11ead51447a7806489a27ea01852bfbba1d
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88954216"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90908921"
 ---
 # <a name="working-with-ata-system-health-and-events"></a>使用 ATA 系統健康狀態和事件
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="ata-health-center"></a>ATA 健全狀況中心
 

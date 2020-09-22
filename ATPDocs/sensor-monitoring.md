@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 92decce8-b3ae-4d32-8407-a95314a66863
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: db8ae461e7f7a0e8781904d5e0e47f99464dddb5
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: ac4c0b9bd4e8a99d5edaaec2746f3ce7d413005c
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828161"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912556"
 ---
 # <a name="monitoring-your-domain-controller-coverage"></a>監視您的網域控制站涵蓋範圍
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 當第一個 Azure ATP 感應器安裝到您網路的任何網域控制站且經過設定後，Azure ATP 就會開始監視您網域控制站的環境。
 
@@ -37,9 +39,9 @@ Azure ATP 會持續監視您的環境，尋找是否有導入您環境但未受�
 
 網域控制站涵蓋範圍 Excel 下載會為您組織中偵測到的所有控制站提供以下資訊：
 
-|Title|描述|
+|標題|描述|
 |----|----|
-|Hostname (主機名稱)|電腦名稱|
+|主機名稱|電腦名稱|
 |網域名稱|網域名稱|
 |Monitored|Azure ATP 監視狀態|
 |感應器類型|Azure ATP 感應器或 Azure ATP 獨立感應器|

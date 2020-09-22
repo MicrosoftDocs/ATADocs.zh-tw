@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8daf907606c4198611f048c6b3b4866c426957e2
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 3f04798ef39299dfa5b31d4a5679d6f68afaeef0
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88954301"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90909277"
 ---
 # <a name="ata-architecture"></a>ATA 架構
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 此圖表中詳細說明 Advanced Threat Analytics 架構︰
 
@@ -73,7 +75,7 @@ ATA 部署包括 ATA 閘道和 ATA 輕量型閘道。 ATA 輕量型閘道是安�
 
 ATA 中心會從 ATA 閘道和 ATA 輕量型閘道接收剖析過的流量。 然後執行分析、執行決定性偵測，並執行機器學習和行為演算法，以了解您的網路，啟用異常偵測並警告您可疑的活動。
 
-|類型|Description|
+|類型|描述|
 |-|-|
 |實體接收者|從所有 ATA 閘道和 ATA 輕量型閘道接收實體批次。|
 |網路活動處理器|處理每個批次中收到的所有網路活動。 例如，比對可能從不同電腦執行的各種 Kerberos 步驟|
@@ -105,7 +107,7 @@ ATA 中心會從 ATA 閘道和 ATA 輕量型閘道接收剖析過的流量。 �
 
 ATA 閘道會從您的網路接收網路流量和 Windows 事件，並在下列主要元件中加以處理︰
 
-|類型|Description|
+|類型|描述|
 |-|-|
 |網路接聽程式|網路接聽程式會擷取網路流量和剖析流量。 這項工作會使用大量的 CPU，因此請務必在規劃 ATA 閘道或 ATA 輕量型閘道時檢查 [ATA Prerequisites](ata-prerequisites.md) (ATA 必要條件)。|
 |事件接聽程式|事件接聽程式會擷取及剖析從網路上 SIEM 伺服器轉送的 Windows 事件。|
@@ -143,13 +145,13 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 
 |Active Directory (Lsass.exe)|ATA 輕量型閘道 (Microsoft.Tri.Gateway.exe)|其他 (其他處理程序) |ATA 輕量型閘道配額|閘道卸除中|
 |-|-|-|-|-|
-|30%|20%|10%|45%|否|
+|30%|20%|10%|45%|No|
 
 如果 Active Directory 需要執行更多的運算，就會減少 ATA 輕量型閘道需要的配額。 下例中，ATA 輕量型閘道需要比配置更多的配額，所以卸除了部分流量 (只監視部分流量)︰
 
 |Active Directory (Lsass.exe)|ATA 輕量型閘道 (Microsoft.Tri.Gateway.exe)|其他 (其他處理程序) |ATA 輕量型閘道配額|為閘道卸除中|
 |-|-|-|-|-|
-|60%|15%|10%|15%|是|
+|60%|15%|10%|15%|Yes|
 
 ## <a name="your-network-components"></a>您的網路元件
 

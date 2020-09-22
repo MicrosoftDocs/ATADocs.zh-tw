@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 5a65285c-d1de-4025-9bb4-ef9c20b13cfa
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0a4a9a5de29e2579776096154e6158b02e58c087
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: d4e5dda205aba4737e074853f22659c6e74a98d5
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956375"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910735"
 ---
 # <a name="troubleshooting-service-startup"></a>為服務啟動進行疑難排解
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="troubleshooting-ata-center-service-startup"></a>針對 ATA 中心服務啟動進行疑難排解
 
@@ -56,7 +58,7 @@ System.Net.Http.HttpRequestException: 回應狀態碼未指出成功: 500 (內�
 
 在輕量型閘道安裝程序中，ATA 會配置 CPU 閾值，使輕量型閘道能夠以 15% 的緩衝區來利用 CPU，從而導致此問題發生。 若您使用了登錄機碼個別設定閾值：這項衝突會造成輕量型閘道無法啟動。 
 
-**解決方案**
+**解決方法**
 
 1. 在登錄機碼下，如果有一個稱為停用 **效能計數器** 的 DWORD 值，請確定它已設定為 **0**：
 

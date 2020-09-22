@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9b3a8e59017c5b356cee7e66b6e81151bd13997a
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 94ef8fc1514d979982c6ea7bcef398720268fe1e
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826459"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910458"
 ---
 # <a name="configure-event-collection"></a>設定事件收集
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 為增強偵測功能，Azure ATP 需要列於[設定事件集合](configure-windows-event-collection.md#configure-event-collection)的 Windows 事件。 Azure ATP 感應器可以自動讀取這些事件。如果沒有部署 Azure ATP 感應器，則有兩種方法可以將它轉寄到 Azure ATP 獨立感應器：一種是將 Azure ATP 獨立感應器設定為接聽 SIEM 事件，另一種是[設定 Windows 事件轉送](configure-event-forwarding.md)。
 

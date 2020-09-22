@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: cc82212b-7d25-4ec7-828d-2475ff40d685
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: cfcc3fa0a26c99304972f1e6cf532bf616607e0e
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 728103079da513129a55875d28f360c5cd176b47
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828076"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90911943"
 ---
 # <a name="security-assessment-weak-cipher-usage"></a>安全性評估：弱式加密使用方式
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="what-are-weak-ciphers"></a>什麼是弱式加密？
 

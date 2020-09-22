@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 763c2102ab0634c7ef307921cabef55e734a5141
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: cf3eb1dcc1d66caccfefda837804f771b3882e7a
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828109"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912690"
 ---
 # <a name="azure-advanced-threat-protection-multi-forest-support"></a>Azure 進階威脅防護多重樹系支援
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="multi-forest-support-set-up"></a>設定多重樹系支援
 
@@ -45,7 +47,7 @@ Azure ATP 支援擁有多個樹系的組織，讓您可以輕鬆地監視活動�
 
 ![Azure ATP 歡迎使用階段 1](media/directory-services-add-no-trust-forests.png)
 
-### <a name="requirements"></a>需求
+### <a name="requirements"></a>規格需求
 
 - 您在 Azure ATP 主控台中的 [目錄服務]**** 下設定的使用者，必須受所有其他樹系信任，且必須至少有對網域控制站執行 LDAP 查詢的唯讀權限。
 - 如果 Azure ATP 獨立感應器是安裝在獨立電腦上，而不是直接安裝在網域控制站上，請確認已允許電腦使用 LDAP 與所有遠端樹系網域控制站通訊。

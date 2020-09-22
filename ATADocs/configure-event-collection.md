@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: a23a590357a7c4fc6f04ccd33c747586d571a447
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 1ebd10c417e1454e135d851270a6cd64fc4243b2
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88954879"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90909705"
 ---
 # <a name="configuring-windows-event-forwarding"></a>設定 Windows 事件轉送
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
 > 針對 ATA 1.8 版及更新版本，ATA 輕量型閘道不再需要事件收集設定。 ATA 輕量型閘道現在會本機讀取事件，而不需要設定事件轉送。
@@ -66,7 +68,7 @@ ms.locfileid: "88954879"
       
         ![設定目標訂閱影像](media/wef%202%20config%20target%20sub%20manager.png)
       
-   4.  按一下 [確定]。
+   4.  按一下 [確定]  。
    5.  在提升權限的命令提示字元中，輸入 *gpupdate /force*。 
 
 **步驟 3：在 ATA 閘道上執行下列步驟** 
@@ -81,7 +83,7 @@ ms.locfileid: "88954879"
         1. 按一下 [加入網域電腦]。
         2. 在 [輸入要選取的物件名稱] 欄位中輸入網域控制站的名稱。 然後按一下 [檢查名稱]，再按一下 [確定]。  
           ![事件檢視器影像](media/wef3%20event%20viewer.png)  
-        3. 按一下 [確定]。
+        3. 按一下 [確定]  。
     4. 按一下 [選取事件]。
         1. 按一下 [依記錄]，然後選取 [安全性]。
         2. 在 [Includes/Excludes Event ID (包含/排除事件識別碼)] 欄位中鍵入事件編號，然後按一下 [確定]。 例如，鍵入 4776，如下範例所示。

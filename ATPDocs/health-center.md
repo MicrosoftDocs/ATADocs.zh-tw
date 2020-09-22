@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 1b7e72c3-a538-443f-981c-398ffafa5ab8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0e0b9f73ce019f105d1cb1c08fe2637e23634adf
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: fc192856a247ca4ee47e5e73ddc366bb7592a0c0
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828145"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910396"
 ---
 # <a name="work-with-azure-atp-health-and-events"></a>使用 Azure ATP 健康情況和事件
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="azure-atp-health-center"></a>Azure ATP 健康情況中心 
 

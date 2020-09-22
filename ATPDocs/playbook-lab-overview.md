@@ -7,14 +7,16 @@ author: shsagir
 ms.author: shsagir
 ms.date: 02/28/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 52c20174b431da000ecba922462d0c6af112b005
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 380c24fad44cc8af83a98aa5da61cd835bbe7653
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828103"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912614"
 ---
 # <a name="tutorial-overview-atp-security-alert-lab"></a>教學課程總覽： ATP 安全性警示實驗室
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Azure ATP 安全性警示實驗室教學課程的目的是要說明 **Azure ATP** 對網路可疑活動及潛在攻擊的識別和偵測功能。 這個四部分的教學課程說明如何安裝及設定工作環境，以針對 Azure ATP 的一些「離散」** 偵測進行測試。 此實驗室的焦點是放在 Azure ATP 的「簽章」** 型功能上。 此實驗室並不包括進階機器學習及使用者或實體型的行為偵測，因為這些偵測需要一個最多有 30 天真實網路流量的學習期間。
 

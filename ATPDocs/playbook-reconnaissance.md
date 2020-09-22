@@ -7,14 +7,16 @@ author: shsagir
 ms.author: shsagir
 ms.date: 09/01/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: b2311a761651f5b7fc15164020443949d90cf5a7
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 235894040ff84fe627b4cbe4d4ecd857a7555e76
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828185"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912657"
 ---
 # <a name="tutorial-reconnaissance-playbook"></a>教學課程：偵察劇本
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 這個 Azure ATP 安全性警示四部分系列中的第二個教學課程是一個偵察劇本。 Azure ATP 安全性警示實驗室的目的是要說明 **Azure ATP** 對網路可疑活動及潛在攻擊的識別和偵測功能。 此劇本說明如何針對 Azure ATP 的一些「離散」  偵測進行測試，並將焦點放在 Azure ATP 的「簽章」  型功能上。 此劇本並不包括以進階機器學習為基礎的警示或偵測，或是使用者/實體型的行為偵測，因為它們需要一個最多有 30 天真實網路流量的學習期間。 如需有關本系列每個教學課程的詳細資訊，請參閱 [ATP 安全性警示實驗室概觀](playbook-lab-overview.md)。
 

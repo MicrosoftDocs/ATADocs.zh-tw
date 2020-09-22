@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 377a3c81-5c1d-486f-8942-85249aacf560
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d71379b5af28c5cbce445e32ef98c5501c6be002
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: bdbe13b9a85e8ab8f02c67b59b78141d46ba3df3
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956426"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90911958"
 ---
 # <a name="troubleshooting-ata-using-the-ata-database"></a>使用 ATA 資料庫疑難排解 ATA
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ATA 會使用 MongoDB 作為其資料庫。
 您可以使用預設命令列或使用者介面工具來與資料庫互動，以執行進階工作和疑難排解。
@@ -35,7 +37,7 @@ ATA 會使用 MongoDB 作為其資料庫。
 
 > [!div class="mx-tableFixed"]
 > 
-> |作法|語法|注意|
+> |作法|Syntax|備註|
 > |-------------|----------|---------|
 > |檢查資料庫中的集合。|`show collections`|可讓端對端測試有效查看正在寫入到資料庫的流量，及 ATA 正在接收的事件 4776。|
 > |取得使用者/電腦/群組 (UniqueEntity) 的詳細資料，例如使用者識別碼。|`db.UniqueEntity.find({CompleteSearchNames: "<name of entity in lower case>"})`||

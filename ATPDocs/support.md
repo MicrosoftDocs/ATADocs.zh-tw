@@ -12,15 +12,17 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 8ae459ac-9fca-4923-9a1a-dc10d5c50b29
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f80b73562a5939a801ba3c3104c420d9d93354f0
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 1c7ae55cf1225f434b086ff3998c0104c2b13f8b
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828149"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910006"
 ---
 # <a name="azure-advanced-threat-protection-information-and-support"></a>Azure 進階威脅防護資訊與支援 
 
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 使用下列資源有利於您了解、部署和支援貴組織的 Azure 資訊保護進階威脅防護。
 

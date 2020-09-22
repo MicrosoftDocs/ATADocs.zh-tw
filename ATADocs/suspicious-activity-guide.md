@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 1fe5fd6f-1b79-4a25-8051-2f94ff6c71c1
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 6d91f755f3892076714b1bdbb6896f1fa6639a3a
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: aa89bb10e60c103af1684ae7a2d2dc5f4227bb92
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88955032"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912224"
 ---
 # <a name="advanced-threat-analytics-suspicious-activity-guide"></a>Advanced Threat Analytics 可疑活動指南
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 在適當的調查之後，任何可疑活動可分類為：
 
@@ -129,7 +131,7 @@ ms.locfileid: "88955032"
 1. 基本架構金鑰 - 移除惡意程式碼。 如需詳細資訊，請參閱[基本架構金鑰惡意程式碼分析](https://www.virusbulletin.com/virusbulletin/2016/01/paper-digital-bian-lian-face-changing-skeleton-key-malware) \(英文\)。
 
 1. 黃金票證 - 遵循[黃金票證](#golden-ticket)可疑活動的指示。
-    此外，由於建立黃金票證需要網域系統管理員權限，因此請實作[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)。
+    此外，由於建立黃金票證需要網域系統管理員許可權，因此請執行 [傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)。
 
 1. 越過雜湊 - 如果相關帳戶不是敏感性帳戶，請重設該帳戶的密碼。 這可防止攻擊者從密碼雜湊建立新的 Kerberos 票證，但現有票證在過期前仍可使用。 如果是敏感性帳戶，您應該考慮重設 KRBTGT 帳戶兩次，就像在黃金票證可疑活動中一樣。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。 請參閱 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引。 另請參閱使用 [重設 KRBTGT 帳戶密碼/金鑰]
 
@@ -137,7 +139,7 @@ ms.locfileid: "88955032"
 
 ## <a name="honeytoken-activity"></a>Honeytoken 活動
 
-**說明**
+**描述**
 
 Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關的惡意活動。 Honeytoken 帳戶應保留未使用，同時擁有具吸引力的名稱來引誘攻擊者 (例如 SQL-Admin)。 任何來自這些帳戶的活動可能表示惡意行為。
 
@@ -210,7 +212,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 **補救**
 
 根據 [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/microsoftsecure/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/) (客戶現在可以使用 KRBTGT 帳戶密碼重設指令碼) 中的指引，使用 [Reset the KRBTGT account password/keys tool](https://gallery.technet.microsoft.com/Reset-the-krbtgt-account-581a9e51) (重設 KRBTGT 帳戶密碼/金鑰工具)，變更 Kerberos 票證授權票證 (KRBTGT) 密碼兩次。 重設 KRBTGT 兩次會使此網域中的所有 Kerberos 票證失效，因此請事先規劃再這麼做。
-此外，由於建立黃金票證需要網域系統管理員權限，因此請實作[傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)。
+此外，由於建立黃金票證需要網域系統管理員許可權，因此請執行 [傳遞雜湊建議](https://www.microsoft.com/download/details.aspx?id=36036)。
 
 ## <a name="malicious-data-protection-private-information-request"></a>惡意的資料保護私人資訊要求
 
@@ -502,7 +504,7 @@ ATA 會持續三週學習使用者、電腦和資源的實體行為。 此行為
 
 ## <a name="unusual-protocol-implementation"></a>不尋常的通訊協定實作
 
-**說明**
+**描述**
 
 攻擊者會使用以非標準方式實作各種通訊協定 (SMB、Kerberos、NTLM) 的工具。 雖然 Windows 會接受這種類型的網路流量而不發出警告，但 ATA 能夠辨識可能的惡意用途。 此行為表示越過雜湊，以及進階勒索軟體所使用的惡意探索等技術，例如 WannaCry。
 

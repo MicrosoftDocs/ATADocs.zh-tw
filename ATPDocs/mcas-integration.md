@@ -11,14 +11,16 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c049b9ebed102ab8fc27c006eef95ef94269466f
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: c1c3b18606b38902217a320663ef91191e34f185
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828184"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910168"
 ---
 # <a name="using-azure-atp-with-microsoft-cloud-app-security"></a>搭配 Microsoft Cloud App Security 使用 Azure ATP
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文旨在協助您了解並瀏覽搭配 Azure ATP 使用 Microsoft Cloud App Security 入口網站時的增強調查體驗。
 
@@ -96,7 +98,7 @@ Azure ATP 警示會顯示於 Cloud App Security 的 [活動記錄]**** 內。 �
 
     ![活動記錄檔](media/atp-mcas-activity-filter.png)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 請參閱[使用 Microsoft Cloud App Security 的 Azure ATP 活動](activities-filtering-mcas.md)以了解如何篩選及建立新的活動原則。
 

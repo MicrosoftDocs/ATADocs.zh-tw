@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 603d9e09-a07d-4357-862f-d5682c8bc3dd
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0e2a5c24b2dac7675f55e2279ccaa11897e154ef
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: fd9428b64aa9f5d1776cef495359c433ae355f7c
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826629"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912544"
 ---
 # <a name="update-azure-atp-sensors"></a>更新 Azure ATP 感應器
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 將您的 Azure 進階威脅防護感應器維持在最新狀態，為您的組織提供盡可能完善的保護。
 

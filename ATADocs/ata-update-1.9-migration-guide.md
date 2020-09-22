@@ -12,14 +12,16 @@ ms.technology: ''
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 9fb89568d92070fa69a632bed5da535b0897cf6c
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 2277e8eb6cbfb9c61dd0e814d6f2170599ff9c86
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88953706"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90911823"
 ---
 # <a name="updating-ata-to-version-19"></a>將 ATA 更新至 1.9 版
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE] 
 > 如果您的環境中未安裝 ATA，請下載包括 1.9 版的 ATA 完整版本，並遵循[安裝 ATA](install-ata-step1.md) 中所述的標準安裝程序。
@@ -62,7 +64,7 @@ ms.locfileid: "88953706"
      
      ![ATA 部分移轉](media/partial-migration.png)
 
-   - 按一下 [更新] 。 按一下 [更新] 之後，ATA 會離線直到更新程序完成。
+   - 按一下 [更新]。 按一下 [更新] 之後，ATA 會離線直到更新程序完成。
 
 1. ATA 中心更新順利完成之後，按一下 [啟動]**** 開啟 ATA 閘道之 ATA 主控台中的 [更新]**** 畫面。
 

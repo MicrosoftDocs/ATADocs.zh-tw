@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e11673c17ce269a401b43f68a550db3b587f8781
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 7819bf79ca70068be21f0aae0b08ff920d7a1605
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828077"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912738"
 ---
 # <a name="security-assessment-unsecure-sid-history-attributes"></a>安全性評估：不安全的 SID History 屬性
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="what-is-an-unsecure-sid-history-attribute"></a>什麼是不安全的 SID History 屬性？
 

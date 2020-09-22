@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0dd6695c6febca6e3aa8f109247a16b4a17a4b71
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 81145cd89246e4274b90a9524c995a32690f18c1
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88954420"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90911266"
 ---
 # <a name="install-ata---step-8"></a>安裝 ATA - 步驟 8
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!div class="step-by-step"]
 > [«步驟 7](vpn-integration-install-step.md) 
@@ -41,17 +43,17 @@ ATA 也能讓您設定 Honeytoken 使用者，用來作為針對惡意執行者�
 
     ![ATA 組態設定](media/ATA-config-icon.png)
 
-1. 在 [ **偵測**] 下，按一下 [ **實體標記**]。
+1. 在 [偵測]  下，按一下 [實體標記]  。
 
 1. 在 [Honeytoken 帳戶]**** 下，輸入 Honeytoken 帳戶名稱。 [Honeytoken 帳戶] 欄位是可搜尋的，而且會自動顯示您網路中的實體。
 
     ![顯示 Honeytoken 帳戶名稱專案的螢幕擷取畫面](media/honeytoken.png)
 
-1. 按一下 [排除]****。 針對每個威脅類型，輸入要從這些威脅偵測排除的使用者帳戶或 IP 位址，然後按一下「加號」** 符號。 [加入實體]**** \(使用者或電腦\) 欄位是可搜尋的，而且會自動填入您網路中的實體。 如需詳細資訊，請參閱[從偵測中排除實體](excluding-entities-from-detections.md)
+1. 按一下 [排除]  。 針對每個威脅類型，輸入要從這些威脅偵測排除的使用者帳戶或 IP 位址，然後按一下「加號」** 符號。 [加入實體]  \(使用者或電腦\) 欄位是可搜尋的，而且會自動填入您網路中的實體。 如需詳細資訊，請參閱[從偵測中排除實體](excluding-entities-from-detections.md)
 
     ![顯示從偵測中排除實體的螢幕擷取畫面](media/exclusions.png)
 
-1. 按一下 [儲存]。
+1. 按一下 [檔案]  。
 
 恭喜，您已成功部署 Microsoft Advanced Threat Analytics！
 

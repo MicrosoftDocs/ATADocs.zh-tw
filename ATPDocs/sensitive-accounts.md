@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 681bc9b1fdb1c8f3e1bca70ef84992efc389196b
-ms.sourcegitcommit: 098a20abe62e153372da4c96db256bc63c113bd1
+ms.openlocfilehash: e033e2b3b99664513fcaac04059dbbb27c380665
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88809731"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912594"
 ---
 # <a name="working-with-sensitive-accounts"></a>使用機密帳戶
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="sensitive-entities"></a>機密實體
 

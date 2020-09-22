@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 397e5a77-2bc7-454c-9fe5-649ebaab16b3
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: fc3032c9964a4e4e887dfedf01e57649d3bf2358
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: cd30fac510bd291c78eb668d9540cd6733efc704
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828099"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912119"
 ---
 # <a name="use-activity-filters-and-create-action-policies-with-azure-atp-in-microsoft-cloud-app-security"></a>在 Microsoft Cloud App Security 中使用活動篩選以及使用 Azure ATP 建立動作原則
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文旨在協助您了解如何使用 Microsoft Cloud App Security 來篩選及建立 Azure ATP 活動的動作原則。
 

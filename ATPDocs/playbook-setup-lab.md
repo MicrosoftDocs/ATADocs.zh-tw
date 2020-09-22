@@ -7,14 +7,16 @@ author: shsagir
 ms.author: shsagir
 ms.date: 02/28/2019
 ms.reviewer: itargoet
-ms.openlocfilehash: 5b7bc09b0327260504900c6a0b075b243c02f70e
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 4dbc5a6eb70bb9bc531ed54a9162554bd15d9dc9
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828177"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910240"
 ---
 # <a name="tutorial-setup-an-atp-security-alert-lab"></a>教學課程：設定 ATP 安全性警示實驗室 
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
  Azure ATP 安全性警示實驗室的目的是要說明 **Azure ATP**的功能，以找出並偵測可疑活動以及對網路的潛在攻擊。 這個四部分系列中的第一個教學課程會逐步引導您建立一個實驗室環境，以針對 Azure ATP 的「離散」** 偵測進行測試。 安全性警示實驗室的焦點是放在 Azure ATP 的「簽章型」** 功能上。 此實驗室並不包括進階機器學習、使用者或實體型的行為偵測，因為這些偵測需要一個最多有 30 天真實網路流量的學習期間。 如需有關本系列每個教學課程的詳細資訊，請參閱 [ATP 安全性警示實驗室概觀](playbook-lab-overview.md)。 
 
@@ -28,7 +30,7 @@ ms.locfileid: "90828177"
 > * 為您的伺服器和電腦設定本機原則
 > * 使用排定的工作來模擬服務台管理案例
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 1. [一個實驗室網域控制站和兩個實驗室工作站](#servers-and-computers)。
    - 繼續並[藉由使用者將 Active Directory (AD) 序列化](#bkmk_hydrate)。
@@ -132,7 +134,7 @@ New-ADUser -Name AatpService -DisplayName "Azure ATP/ATA Service" -PasswordNever
 
     ![將 "Helpdesk" 標記為 Azure ATP 敏感性群組，來為此特殊權限群組啟用「橫向移動圖表」和報告功能](media/playbook-labsetup-helpdesksensitivegroup.png)
 
-1. 按一下 [儲存]。
+1. 按一下 [檔案]  。
 
 ### <a name="azure-atp-lab-base-setup-checklist"></a>Azure ATP 實驗室基礎設定檢查清單
 
@@ -262,7 +264,7 @@ while ($true)
  為了獲得最佳結果及基於一致性考量，請選擇可在您實驗室中自動執行的模擬方法。
 
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 使用 Azure ATP 安全性警示劇本，從偵察階段開始，針對網路攻擊狙殺鏈的每個階段，測試您的 Azure ATP 實驗室環境。  
 

@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 3547519f-8d9c-40a9-8f0e-c7ba21081203
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8580988514434b03cd932edd054ba4f80af7f501
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 82d45c25ccb36e2ec4763cfec13a4f03d8a26575
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826493"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910513"
 ---
 # <a name="configuring-windows-event-forwarding"></a>設定 Windows 事件轉送
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
 > Azure ATP 感應器會自動在本機讀取事件，而不需要設定事件轉寄。

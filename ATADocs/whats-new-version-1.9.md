@@ -12,15 +12,16 @@ ms.technology: ''
 ms.assetid: 51de491c-49ba-4aff-aded-cc133a8ccf0b
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: abe3a716c7a85ba435eec18eab94e514222e6803
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 01c8d55654ed4e1b425f8a043628e425496da4cb
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956154"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912817"
 ---
 # <a name="whats-new-in-ata-version-19"></a>ATA 1.9 版的新功能
 
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 [從下載中心下載](https://www.microsoft.com/download/details.aspx?id=56725) \(英文\) 最新的 ATA 更新版本，或者從[評估中心](https://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)下載完整版本。
 
 這些版本資訊提供此版 Advanced Threat Analytics 中更新、新功能、Bug 修正和已知問題的相關資訊。

@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 24eca4c6-c949-42ea-97b9-41ef0fb611f1
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 07eefcf95846384ad490fa815f2415b771b73955
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 39437a0397c4d4c0a0238b0e7895c7ee8d15a510
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828152"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912495"
 ---
 # <a name="azure-atp-switches-and-silent-installation"></a>Azure ATP 切換參數與無訊息安裝
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 此文章提供 Azure ATP 切換參數與無訊息安裝的指導方針與指示。
 

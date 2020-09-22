@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: cda124f5178717181105dff33fc1344da9141661
-ms.sourcegitcommit: dadf9e656fd362f037f15c7a4b52685b5b3bd154
+ms.openlocfilehash: 7424525fa3b5e2e9cd06ad410d7965229885ab35
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865385"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912220"
 ---
 # <a name="troubleshooting-ata-known-issues"></a>針對 ATA 已知問題進行疑難排解
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本節詳細說明 ATA 部署中可能發生的錯誤，以及對其進行疑難排解所需的步驟。
 
@@ -32,24 +34,24 @@ ms.locfileid: "86865385"
 > |錯誤|說明|解決方案|
 > |-------------|----------|---------|
 > |System.DirectoryServices.Protocols.LdapException：發生本機錯誤|ATA 閘道無法對網域控制站進行驗證。|1. 確認已在 DNS 伺服器中正確設定網域控制站的 DNS 記錄。 <br>2. 確認 ATA 閘道的時間與網域控制站的時間同步。|
-> |System.IdentityModel.Tokens.SecurityTokenValidationException︰無法驗證憑證鏈結|ATA 閘道無法驗證 ATA 中心的憑證。|1. 確認根 CA 憑證已安裝在 ATA 閘道上的「受信任的憑證授權單位單位」憑證存放區中。<br>2. 驗證憑證撤銷清單（CRL）是否可用，以及是否可以執行憑證撤銷驗證。|
+> |System.IdentityModel.Tokens.SecurityTokenValidationException︰無法驗證憑證鏈結|ATA 閘道無法驗證 ATA 中心的憑證。|1. 確認根 CA 憑證已安裝在 ATA 閘道的 [受信任的憑證授權單位單位] 憑證存放區中。<br>2. 驗證憑證撤銷清單 (CRL) 可供使用，而且可以執行憑證撤銷驗證。|
 > |Microsoft.Common.ExtendedException︰無法剖析產生的時間|ATA 閘道無法剖析從 SIEM 轉寄的 syslog 訊息。|驗證已將 SIEM 設定為以 ATA 支援的其中一個格式來轉寄訊息。|
 > |System.ServiceModel.FaultException：確認訊息安全性時發生錯誤|ATA 閘道無法對 ATA 中心進行驗證。|驗證 ATA 閘道的時間與 ATA 中心的時間同步。|
-> |System.ServiceModel.EndpointNotFoundException：無法連線到 net.tcp://center.ip.addr:443/IEntityReceiver|ATA 閘道無法建立與 ATA 中心的連線。|確定網路設定正確，而且 ATA 閘道 ATA 中心之間的網路連線使用中。|
-> |System.DirectoryServices.Protocols.LdapException：LDAP 伺服器無法使用。|ATA 閘道無法使用 LDAP 通訊協定查詢網域控制站。|1. 確認 ATA 用來連線到 Active Directory 網域的使用者帳戶具有 Active Directory 樹狀目錄中所有物件的讀取權限。<br>2. 請確定網域控制站未強化，以防止 ATA 所使用的使用者帳戶進行 LDAP 查詢。|
+> |System.ServiceModel.EndpointNotFoundException：無法連線到 net.tcp://center.ip.addr:443/IEntityReceiver|ATA 閘道無法建立與 ATA 中心的連接。|確定網路設定正確，而且 ATA 閘道 ATA 中心之間的網路連線使用中。|
+> |System.DirectoryServices.Protocols.LdapException：LDAP 伺服器無法使用。|ATA 閘道無法使用 LDAP 通訊協定查詢網域控制站。|1. 確認 ATA 用來連線至 Active Directory 網域的使用者帳戶具有 Active Directory 樹狀目錄中所有物件的讀取權限。<br>2. 確定未強化網域控制站，以防止來自 ATA 所使用之使用者帳戶的 LDAP 查詢。|
 > |Microsoft.Tri.Infrastructure.ContractException：合約例外狀況|ATA 閘道無法同步處理 ATA 中心的設定。|請在 ATA 主控台中完成 ATA 閘道的設定。|
 > |System.Reflection.ReflectionTypeLoadException: 無法載入一或多個要求的類型。 如需詳細資訊，請擷取 LoaderExceptions 屬性。|郵件分析器已安裝於 ATA 閘道。| 請將郵件分析器解除安裝。|
 > |Error [配置] System.OutOfMemoryException: 擲回 'System.OutOfMemoryException' 類型的例外狀況。|ATA 閘道的記憶體不足。|請增加網域控制站上的記憶體數量。|
 > |無法啟動即時消費者 ---> Microsoft.Opn.Runtime.Monitoring.MessageSessionException: PEFNDIS 事件提供者尚未就緒|未正確安裝 PEF (郵件分析器)。|若是使用 HYPER-V，請嘗試升級 Hyper-V 整合服務，否則請連絡支援人員詢問其因應措施。|
 > |安裝失敗，錯誤為：0x80070652|電腦上有其他擱置的安裝。|請等候其他安裝完成，如有必要，請重新啟動電腦。|
-> |System.InvalidOperationException︰指定的分類中不存在執行個體 'Microsoft.Tri.Gateway'。|ATA 閘道中的程序名稱已啟用 PID|請參閱[處理重複的實例名稱](/windows/win32/perfctrs/handling-duplicate-instance-names)以停用進程名稱中的 pid|
-> ' InvalidOperationException：分類不存在。|登錄中的計數器可能已停用|使用 [KB2554336](https://support.microsoft.com/kb/2554336) 重建效能計數器|
+> |System.InvalidOperationException︰指定的分類中不存在執行個體 'Microsoft.Tri.Gateway'。|ATA 閘道中的程序名稱已啟用 PID|請參閱 [處理重複的實例名稱](/windows/win32/perfctrs/handling-duplicate-instance-names) ，以停用進程名稱中的 pid|
+> ' InvalidOperationException：類別不存在。|登錄中的計數器可能已停用|使用 [KB2554336](https://support.microsoft.com/kb/2554336) 重建效能計數器|
 > |System.ApplicationException︰無法啟動 ETW 工作階段 MMA-ETW-Livecapture-a4f595bd-f567-49a7-b963-20fa4e370329|HOSTS 檔案中有一個主機項目指向電腦的簡短名稱|從 C:\Windows\System32\drivers\etc\HOSTS 檔案移除主機項目，或將它變更為 FQDN。|
-> |IOException：驗證失敗，因為遠端方已關閉傳輸資料流程或無法建立 SSL/TLS 安全通道|ATA 閘道上已停用 TLS 1.0，但是 .Net 設定為使用 TLS 1.2|將登錄機碼設定為使用 SSL 和 TLS 的作業系統預設值，以啟用適用于 .Net 的 TLS 1.2，如下所示：<br></br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
+> |IOException： Authentication 失敗，因為遠端合作物件已關閉傳輸串流，或無法建立 SSL/TLS 安全通道|ATA 閘道上已停用 TLS 1.0，但是 .Net 設定為使用 TLS 1.2|將登錄機碼設定為使用 SSL 和 TLS 的作業系統預設值，以啟用適用于 .Net 的 TLS 1.2，如下所示：<br></br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
 > |System.TypeLoadException：無法從組件 'Microsoft.Opn.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' 載入類型 'Microsoft.Opn.Runtime.Values.BinaryValueBufferManager'|ATA 閘道無法載入必要的剖析檔案。|請檢查目前是否已安裝 Microsoft 郵件分析器。 不支援郵件分析器與 ATA 閘道/輕量型閘道一起安裝。 請解除安裝郵件分析器，然後重新啟動閘道服務。|
 > |System.Net.WebException: 遠端伺服器傳回錯誤: (407) 要求 Proxy 驗證|Proxy 伺服器中斷 ATA 閘道與 ATA 中心的通訊。|停用 ATA 閘道機器上的 Proxy。 <br></br>請注意，Proxy 設定可能依各帳戶為依據。|
 > |System.IO.DirectoryNotFoundException: 系統找不到指定的路徑。 (來自 HRESULT 的例外狀況: 0x80070003)|一或多個操作 ATA 所需的服務未啟動。|啟動下列服務： <br></br>效能記錄檔及警示 (PLA)、工作排程器 (排程)。|
-> |System.Net.WebException: 遠端伺服器傳回錯誤: (403) 禁止|ATA 閘道或輕量閘道已禁止建立 HTTP 連線，因為 ATA 中心不受信任。|將 ATA 中心的 NetBIOS 名稱和 FQDN 新增至 [信任的網站] 清單，並清除 Internet Explorer 上的快取（如果設定的與 NetBIOS/FQDN 不同，則會在 configuration 中指定的 ATA 中心名稱）。|
+> |System.Net.WebException: 遠端伺服器傳回錯誤: (403) 禁止|因為 ATA 中心不受信任，所以禁止 ATA 閘道或輕量閘道建立 HTTP 連線。|將 ATA 中心的 NetBIOS 名稱和 FQDN 新增至 [受信任的網站] 清單，並清除 Internet Explorer (上的快取，或如果設定的與 NetBIOS/FQDN) 不同，則為 ATA 中心的名稱。|
 > |System.Net.Http.HttpRequestException：PostAsync 失敗 [requestTypeName=StopNetEventSessionRequest]|由於 WMI 的問題，ATA 閘道或 ATA 輕量型閘道無法停止並啟動收集網路流量的 ETW 工作階段|請依照 [WMI：重建 WMI 存放庫](https://blogs.technet.microsoft.com/askperf/2009/04/13/wmi-rebuilding-the-wmi-repository/) \(英文\) 中的指示來修正 WMI 問題|
 > |System.Net.Sockets.SocketException：嘗試採行其存取權限所禁止的方式存取通訊端|另一個應用程式正於 ATA 閘道上使用連接埠 514|使用 `netstat -o` 建立哪個處理序正在使用該連接埠。|
 
@@ -72,24 +74,24 @@ ms.locfileid: "86865385"
 >
 > |錯誤|說明|解決方案|
 > |-------------|----------|---------|
-> |System.Security.Cryptography.CryptographicException: 拒絕存取。|ATA 中心無法使用發行的憑證來解密。 這很有可能發生在使用將 KeySpec (KeyNumber) 設定為不支援解密的 Signature (AT\\_SIGNATURE)，而非 KeyExchange (AT\\_KEYEXCHANGE) 的憑證上。|1. 停止 ATA 中心服務。 <br></br>2. 從中心的憑證存放區刪除 ATA 中心憑證。 (在刪除之前，請確定您已連同私密金鑰將憑證備份在 PFX 檔案中)。 <br></br>3. 開啟提升許可權的命令提示字元，並在 _KEYEXCHANGE 執行 certutil-importpfx "Centercertificate.pfx at" \\ <br></br>4. 啟動 ATA 中心服務。 <br></br>5. 確認所有專案現在都能如預期般運作。|
+> |System.Security.Cryptography.CryptographicException: 拒絕存取。|ATA 中心無法使用發行的憑證來解密。 這很有可能發生在使用將 KeySpec (KeyNumber) 設定為不支援解密的 Signature (AT\\_SIGNATURE)，而非 KeyExchange (AT\\_KEYEXCHANGE) 的憑證上。|1. 停止 ATA 中心服務。 <br></br>2. 從中央的憑證存放區中刪除 ATA 中心憑證。 (在刪除之前，請確定您已連同私密金鑰將憑證備份在 PFX 檔案中)。 <br></br>3. 開啟提升許可權的命令提示字元，並在 _KEYEXCHANGE 執行 certutil-importpfx "Centercertificate.pfx at .pfx" \\ <br></br>4. 啟動 ATA 中心服務。 <br></br>5. 確認所有專案現在都能如預期般運作。|
 
 ## <a name="ata-gateway-and-lightweight-gateway-issues"></a>ATA 閘道和輕量型閘道問題
 
 > [!div class="mx-tableFixed"]
 >
-> |問題|說明|解決方案|
+> |問題|Description|解決方案|
 > |-------------|----------|---------|
-> |未從網域控制站收到任何流量，但觀察到健康情況警示|未從透過 ATA 閘道使用連接埠鏡像的網域控制站收到流量|在 ATA 閘道捕獲 NIC 上，停用 [**高級設定**] 中的這些功能：<br></br>接收區段聯合 (IPv4)<br></br>接收區段聯合 (IPv6)|
-> |顯示此健康情況警示：未分析部分網路流量|如果您在 VMware 虛擬機器上有 ATA 閘道或輕量閘道，您可能會收到此健康情況警示。 當 VMware 中的設定不相符時，就會發生此狀況。|請在 NIC 設定中將以下設定設為 0 或 [停用]：TsoEnable、LargeSendOffload、TSO Offload、Giant TSO Offload|
+> |沒有從網域控制站收到的流量，但觀察到健康情況警示|未從透過 ATA 閘道使用連接埠鏡像的網域控制站收到流量|在 ATA 閘道抓取 NIC 上，于 [ **Advanced Settings**] 中停用這些功能：<br></br>接收區段聯合 (IPv4)<br></br>接收區段聯合 (IPv6)|
+> |顯示此健康情況警示：某些網路流量未進行分析|如果您在 VMware 虛擬機器上有 ATA 閘道或輕量閘道，您可能會收到此健康情況警示。 當 VMware 中的設定不相符時，就會發生此狀況。|請在 NIC 設定中將以下設定設為 0 或 [停用]：TsoEnable、LargeSendOffload、TSO Offload、Giant TSO Offload|
 
 ## <a name="multi-processor-group-mode"></a>多處理器群組模式
 
-對於 Windows 作業系統2008R2 和2012，**多處理器群組**模式不支援 ATA 閘道。
+針對 Windows 作業系統2008R2 和2012， **多重處理器群組** 模式不支援 ATA 閘道。
 
 建議的可能因應措施：
 
-- 如果超執行緒已開啟，請將它關閉。 這可能會減少足夠的邏輯核心數目，以避免需要在**多處理器群組**模式中執行。
+- 如果超執行緒開啟，請將它關閉。 這可能會減少足夠的邏輯核心數目，以避免需要在**多處理器群組**模式中執行。
 
 - 如果您的電腦具有少於 64 個邏輯核心，而且是在 HP 主機上執行，您可以將 [NUMA 群組大小最佳化]  BIOS 設定從預設的[叢集]  變更為 [一般]  。
 

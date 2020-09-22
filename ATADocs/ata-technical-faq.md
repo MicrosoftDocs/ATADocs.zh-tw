@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: a7d378ec-68ed-4a7b-a0db-f5e439c3e852
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: df882d70067dd3408bd4dee6ad5f3d7ac1a24618
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 32111e79bcf0ceee169cb6e6938ad5fbe2958cc9
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88953825"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90908692"
 ---
 # <a name="ata-frequently-asked-questions"></a>ATA 常見問題集
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文章提供關於 ATA 的常見問題清單，並提供見解和解答。
 
@@ -162,11 +164,11 @@ Microsoft Advanced Threat Analytics 是內部部署的產品。
 
 ## <a name="does-ata-monitor-only-domain-joined-devices"></a>ATA 是否只監視加入網域的裝置？
 
-不知道。 ATA 會監視對 Active Directory 執行驗證和授權要求的網路中的所有裝置，包括非 Windows 和行動裝置。
+不可以。 ATA 會監視對 Active Directory 執行驗證和授權要求的網路中的所有裝置，包括非 Windows 和行動裝置。
 
 ## <a name="does-ata-monitor-computer-accounts-as-well-as-user-accounts"></a>ATA 會監視電腦帳戶以及使用者帳戶嗎？
 
-是。 因為電腦帳戶 (以及任何其他實體) 可以用來執行惡意活動，ATA 會監視所有電腦帳戶的行為，以及環境中的所有其他實體。
+可以。 因為電腦帳戶 (以及任何其他實體) 可以用來執行惡意活動，ATA 會監視所有電腦帳戶的行為，以及環境中的所有其他實體。
 
 ## <a name="can-ata-support-multi-domain-and-multi-forest"></a>ATA 支援多網域和多樹系嗎？
 

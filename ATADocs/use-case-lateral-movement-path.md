@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 710f01bd-c878-4406-a7b2-ce13f98736ea
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ed9c101c1533d34d72f2c956ec8fd5efd039adf6
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: c5836b1086806b848560c0c99893d7a6fafeea1c
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88956358"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910847"
 ---
 # <a name="investigate-lateral-movement-paths-with-ata"></a>使用 ATA 調查橫向移動路徑
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 即便您盡了全力保護敏感性使用者，且管理員也設定了複雜的密碼並經常變更、強化了電腦，而資料也存放在安全的位置，但攻擊者仍可使用橫向移動路徑來存取敏感性帳戶。 在橫向移動攻擊中，攻擊者會在敏感性使用者登入不具敏感性使用者具有本機許可權的電腦時，利用這些實例。 攻擊者隨後便可進行橫向移動，存取較不敏感的使用者，然後越過電腦來取得敏感性使用者的認證。
 
@@ -39,7 +41,7 @@ ATA 可讓您在網路上採取防範動作，以防止攻擊者成功進行橫�
 
 1. 如果找不到橫向移動路徑，則 **為敏感性帳戶的橫向移動路徑**，報表會呈現灰色。如果有橫向移動路徑，則報表的日期會自動選取有相關資料的第一個日期。
 
-    ![顯示報表日期選取範圍的螢幕擷取畫面](media/reports.png)
+    ![顯示選取報表日期的螢幕擷取畫面](media/reports.png)
 
 1. 按一下 [下載]  。
 
@@ -51,11 +53,11 @@ ATA 可讓您在網路上採取防範動作，以防止攻擊者成功進行橫�
 
 1. 若實體位於橫向移動路徑，請在 ATA 主控台中，搜尋新增至實體設定檔的橫向移動徽章 ![橫向圖示](media/lateral-movement-icon.png) 或 ![路徑圖示](media/paths-icon.png). 這會在過去兩天內有出現橫向移動路徑的情況下提供。
 
-1. 在隨即開啟的使用者設定檔頁面中，按一下 [橫向移動路徑]**** 索引標籤。
+1. 在隨即開啟的使用者設定檔頁面中，按一下 [橫向移動路徑]  索引標籤。
 
 1. 顯示的圖表能提供針對敏感性使用者之可能路徑的地圖。 該圖表能顯示於過去兩天內所做出的連線。
 
-1. 檢閱報表以查看並了解敏感性使用者認證的暴露程度。 例如，在此地圖中，您可以遵循以灰色箭號 **登入** ，以查看 Samira 使用其特殊許可權認證登入的位置。 在此案例中，Samira 的敏感性認證已儲存在 REDMOND-WA-DEV 這部電腦上。 然後，查看哪些其他使用者登入了哪些電腦建立最多暴露和弱點。 您可以查看 [身為系統管理員]**** 黑色箭頭，以了解誰在該資源上具有系統管理權限。 在此範例中， **Contoso** 群組中的每個人都能夠從該資源存取使用者認證。
+1. 檢閱報表以查看並了解敏感性使用者認證的暴露程度。 例如，在此地圖中，您可以遵循以灰色箭號 **登入** ，以查看 Samira 使用其特殊許可權認證登入的位置。 在此案例中，Samira 的敏感性認證已儲存在 REDMOND-WA-DEV 這部電腦上。 然後，查看哪些其他使用者登入了哪些電腦建立最多暴露和弱點。 您可以查看 [身為系統管理員]  黑色箭頭，以了解誰在該資源上具有系統管理權限。 在此範例中， **Contoso** 群組中的每個人都能夠從該資源存取使用者認證。
 
     ![使用者設定檔橫向移動路徑](media/user-profile-lateral-movement-paths.png)
 

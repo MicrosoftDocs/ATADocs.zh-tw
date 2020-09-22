@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8bd8347e3ac37b9cd3b3c94dddfeb3e1a3b59112
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 87f8442010a7132de7e76479353acfa7753d10dc
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88954573"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90911486"
 ---
 # <a name="install-ata---step-4"></a>安裝 ATA - 步驟 4
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!div class="step-by-step"]
 > [« 步驟 3](install-ata-step3.md)
@@ -67,7 +69,7 @@ ms.locfileid: "88954573"
    
     - 安裝路徑：這是安裝 ATA 閘道的位置。 位置預設為 %programfiles%\Microsoft Advanced Threat Analytics\Gateway。 保留預設值。
    
-1. 按一下 [Install] 。 安裝 ATA 閘道期間將安裝及設定下列元件︰
+1. 按一下 [安裝]。 安裝 ATA 閘道期間將安裝及設定下列元件︰
     
     - KB 3047154 (僅適用於 Windows Server 2012 R2)
     

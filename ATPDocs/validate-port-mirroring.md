@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 0a56cf27-9eaa-4ad0-ae6c-9d0484c69094
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: f711689edc3cf2cd4a3d01c8764c8bb719ac5c64
-ms.sourcegitcommit: 098a20abe62e153372da4c96db256bc63c113bd1
+ms.openlocfilehash: 35598f9ea3cdee1ede33b1770471108493ea13c6
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88809612"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912251"
 ---
 # <a name="validate-port-mirroring"></a>驗證連接埠鏡像
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文僅適用於您部署 Azure ATP 獨立感應器 (而非 Azure ATP 感應器) 的情況。
 

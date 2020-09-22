@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e7f065fa-1ad1-4e87-bd80-99cc695efbf5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3d35651f0741caa6189ae8ef79e14e8b0db78eff
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 810268ea0661bac47ee7735f0508ed4295d2cc3b
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90828112"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912065"
 ---
 # <a name="change-azure-atp-portal-configuration---domain-connectivity-password"></a>變更 Azure ATP 入口網站設定 - 網域連線能力密碼
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="change-the-domain-connectivity-password"></a>變更網域連線密碼
 
@@ -47,7 +49,7 @@ ms.locfileid: "90828112"
     > [!NOTE]
     > 在此處輸入 Active Directory 使用者和密碼，而非 Azure Active Directory。
 
-1. 按一下 [儲存]。
+1. 按一下 [檔案]  。
 
 1. 在 Azure ATP 入口網站中，移至 [設定]**** 下方的 [感應器]**** 頁面，並檢查感應器狀態。
 

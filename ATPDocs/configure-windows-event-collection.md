@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 88692d1a-45a3-4d54-a549-4b5bba6c037b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 55e5962ed3d9e9a1a922b47daf46bdb0c2b0d91d
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 8a7c22c2ea752b0443fac2b4e74b2ff4813bfee8
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826221"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910481"
 ---
 # <a name="configure-windows-event-collection"></a>設定 Windows 事件集合
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Azure 進階威脅防護 (Azure ATP) 偵測仰賴特定的 Windows 事件記錄檔項目來增強某些偵測，並提供額外資訊，包括特定動作的執行者 (例如 NTLM 登入)、安全性群組的修改內容及類似事件。 若要正確稽核事件並將其包含在 Windows 事件記錄檔中，則網域控制站需要正確的進階稽核原則設定。 不正確的進階稽核原則設定，可能會造成所需的事件未記錄於事件記錄檔中，並導致 Azure ATP 涵蓋範圍不完整。
 

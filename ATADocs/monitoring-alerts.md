@@ -13,16 +13,18 @@ ms.technology: ''
 ms.assetid: b04fb8a4-b366-4b55-9d4c-6f054fa58a90
 ms.reviewer: elofek
 ms.suite: ems
-ms.openlocfilehash: 8569e26786c36f08fdcf98dcd11452cdef5736b6
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 456538f0b68f1eec0474f4579908a1dc2c42ee67
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88955984"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912006"
 ---
 # <a name="understanding-ata-health-alerts"></a>瞭解 ATA 健康情況警示
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ATA 健康狀態中心會發出健康情況警示，讓您知道 ATA 部署發生問題的時間。
 此文章描述每個元件的所有健康情況警示，並列出原因與解決問題所需的步驟。
@@ -34,7 +36,7 @@ ATA 健康狀態中心會發出健康情況警示，讓您知道 ATA 部署發�
 ### <a name="failure-sending-mail"></a>傳送郵件失敗
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|ATA 無法將電子郵件通知傳送到指定的郵件伺服器。|不會從 ATA 傳送任何電子郵件訊息。|驗證 SMTP 伺服器設定。|低|
+|ATA 無法將電子郵件通知傳送到指定的郵件伺服器。|不會從 ATA 傳送任何電子郵件訊息。|驗證 SMTP 伺服器設定。|低度|
 
 ### <a name="center-overloaded"></a>中心超載
 |警示|說明|解決方案|嚴重性|
@@ -44,7 +46,7 @@ ATA 健康狀態中心會發出健康情況警示，讓您知道 ATA 部署發�
 ### <a name="failure-connecting-to-the-siem-server-using-syslog"></a>無法連線到使用 Syslog 的 SIEM 伺服器
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|ATA 無法將事件傳送到指定的 SIEM。|這表示 ATA 中心無法傳送可疑的活動和健康情況警示給您的 SIEM。|確定您的 [Syslog 伺服器設定已正確設定](setting-syslog-email-server-settings.md)。|低|
+|ATA 無法將事件傳送到指定的 SIEM。|這表示 ATA 中心無法傳送可疑的活動和健康情況警示給您的 SIEM。|確定您的 [Syslog 伺服器設定已正確設定](setting-syslog-email-server-settings.md)。|低度|
 ### <a name="center-certificate-is-about-to-expire"></a>中心憑證即將過期
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
@@ -74,7 +76,7 @@ ATA 健康狀態中心會發出健康情況警示，讓您知道 ATA 部署發�
 ### <a name="domain-synchronizer-not-assigned"></a>未指派網域同步器
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|未將網域同步器指派給任何 ATA 閘道。 如果沒有設定為網域同步器候選的 ATA 閘道，就可能會發生此情況。|當網域未同步處理時，實體的變更可能會造成 ATA 中的實體資訊變成過期或遺失，但不影響任何偵測。|確定至少將一個 ATA 閘道設定為[網域同步器](install-ata-step5.md)。|低|
+|未將網域同步器指派給任何 ATA 閘道。 如果沒有設定為網域同步器候選的 ATA 閘道，就可能會發生此情況。|當網域未同步處理時，實體的變更可能會造成 ATA 中的實體資訊變成過期或遺失，但不影響任何偵測。|確定至少將一個 ATA 閘道設定為[網域同步器](install-ata-step5.md)。|低度|
 ### <a name="allsome-of-the-capture-network-adapters-on-a-gateway-are-not-available"></a>閘道上的所有/部分擷取網路介面卡無法使用
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|

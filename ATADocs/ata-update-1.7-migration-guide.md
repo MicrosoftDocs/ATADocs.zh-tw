@@ -12,14 +12,16 @@ ms.technology: ''
 ms.assetid: 8eefcd45-7a4b-4074-ac5b-1ffc48e6654a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: aab036ab060b7d2948156a793056c931edcea459
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 4772e9cbb1e00e4bb1a4bebd5cc6e2b7821766dc
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88953859"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90909882"
 ---
 # <a name="ata-update-to-17-migration-guide"></a>ATA 更新至 1.7 移轉指南
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 ATA 1.7 的更新提供下列各方面的改良︰
 
 - 新增偵測
@@ -69,7 +71,7 @@ ATA 1.7 的更新提供下列各方面的改良︰
     
     ![ATA 資料移轉](media/migration-data-migration17.png)
 
-    - 按一下 [更新] 。 按一下 [更新] 之後，ATA 會離線直到更新程序完成。
+    - 按一下 [更新]。 按一下 [更新] 之後，ATA 會離線直到更新程序完成。
 
 1. ATA 中心更新順利完成之後，按一下 [啟動]**** 開啟 ATA 閘道之 ATA 主控台中的 [更新]**** 畫面。
     ![更新成功畫面](media/migration-center-success17.png)

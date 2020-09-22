@@ -12,17 +12,19 @@ ms.technology: ''
 ms.assetid: 581a3257-32dc-453f-b84e-b9f99186f5d3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 02cd26323be6ae79524d4912674380af23d2c3af
-ms.sourcegitcommit: 2be59f0bd4c9fd0d3827e9312ba20aa8eb43c6b5
+ms.openlocfilehash: 3ab1881d397875be6a70ba78846f0855b53bf608
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88954794"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90909511"
 ---
 # <a name="investigating-entity-profiles"></a>調查實體設定檔
 
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 實體設定檔提供您專為完整深入調查使用者、電腦、裝置，以及上述項目有權存取的資源及其歷程記錄所設計的儀表板。 設定檔頁面會利用新的 Azure ATA 邏輯活動轉譯程式，此轉譯程式可查看一組發生的活動 (彙總最多一分鐘)，並將其組成單一邏輯活動，以讓您更深入了解使用者的實際活動。
 
@@ -33,7 +35,7 @@ ms.locfileid: "88954794"
 
 ## <a name="view-entity-activities"></a>檢視實體活動
 
-若要檢視使用者所執行 (或在實體上執行) 的所有活動，請按一下 [活動]  索引標籤。 
+若要檢視使用者所執行 (或在實體上執行) 的所有活動，請按一下 [活動]**** 索引標籤。 
 
  ![使用者設定檔活動](media/user-profile-activities.png)
 

@@ -12,16 +12,18 @@ ms.technology: ''
 ms.assetid: 2a5b6652-2aef-464c-ac17-c7e5f12f920f
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 2f8c2750061bc464bcd1f78c46aeeafc4c5f181e
-ms.sourcegitcommit: 954f5e64a8a25075ce663b9fd63810cf4c032987
+ms.openlocfilehash: 49a8301b1d13bbd6032b34b893b5a86e4cdd3739
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85129828"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90911410"
 ---
 # <a name="install-ata---step-5"></a>安裝 ATA - 步驟 5
 
-*適用於：Advanced Threat Analytics 1.9 版*
+[!INCLUDE [Banner for top of topics](includes/banner.md)]
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!div class="step-by-step"]
 > [«步驟 4](install-ata-step4.md) 
@@ -33,11 +35,11 @@ ms.locfileid: "85129828"
 
 1. 在 ATA 主控台中，移至 [設定]****，在 [系統]**** 下選取 [閘道]****。
 
-    ![設定閘道設定影像](media/ata-gw-config-1.png)
+    ![設定閘道設定階段1](media/ata-gw-config-1.png)
 
 1. 按一下您想要設定的閘道，然後輸入下列資訊：
 
-    ![設定閘道設定影像](media/ATA-Gateways-config-2.png)
+    ![設定閘道設定階段2](media/ATA-Gateways-config-2.png)
 
     - **描述**：輸入 ATA 閘道的描述 (選擇性)。
     - **連接埠鏡像的網域控制站 (FQDN)** (如果是 ATA 閘道則必填，無法針對 ATA 輕量型閘道變更)︰輸入您網域控制站的完整 FQDN，然後按一下加號將它新增至清單。 例如，**dc01.contoso.com**
@@ -62,7 +64,7 @@ ms.locfileid: "85129828"
 1. 您也可以選擇設定 [Syslog 接聽程式和 Windows 事件轉寄集合](configure-event-collection.md)。
 1. 啟用 [自動更新 ATA 閘道]****，使您於未來將 ATA 中心更新為新的版本時，此 ATA 閘道也會自動更新。
 
-1. 按一下 [檔案] 。
+1. 按一下 **[儲存]** 。
 
 ## <a name="validate-installations"></a>驗證安裝
 
@@ -70,7 +72,7 @@ ms.locfileid: "85129828"
 
 1. 檢查名為 **Microsoft Advanced Threat Analytics 閘道**的服務是否正在執行。 儲存 ATA 閘道設定後，可能需幾分鐘時間來啟動服務。
 
-1. 如果服務未啟動，請檢查位於下列預設資料夾 "%programfiles%\Microsoft Advanced 威脅 Analytics\Gateway\Logs" 中的 "Microsoft.tri.gateway-errors.log" 檔案，並查看[ATA 疑難排解](troubleshooting-ata-known-errors.md)以取得協助。
+1. 如果服務未啟動，請查看位於下列預設資料夾 "%programfiles%\Microsoft Advanced 威脅 Analytics\Gateway\Logs" 中的 "Microsoft.tri.gateway-errors.log" 檔案，並檢查 [ATA 疑難排解](troubleshooting-ata-known-errors.md) 以取得協助。
 
 1. 如果這是第一個安裝的 ATA 閘道，請於幾分鐘後登入 ATA 主控台，然後將開啟的螢幕向右撥動，以開啟 [通知] 窗格。 您應該會在主控台右邊的通知列中看到**最近已了解的實體**清單。
 
@@ -82,7 +84,7 @@ ms.locfileid: "85129828"
 
 ### <a name="set-anti-virus-exclusions"></a>設定防毒程式排除項目
 
-安裝 ATA 閘道之後，請排除 ATA 目錄，使其不會受到防病毒應用程式持續的掃描。 資料庫中的預設位置是： **C:\Program Files\Microsoft Advanced 威脅分析 \* *。
+安裝 ATA 閘道之後，您的防毒程式會持續掃描 ATA 目錄。 資料庫中的預設位置為： **C:\Program Files\Microsoft Advanced 威脅分析 \* *。
 
 請務必同時從 AV 掃描中排除下列進程：
 

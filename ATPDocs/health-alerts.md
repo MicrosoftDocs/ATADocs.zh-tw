@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: d0551e91-3b21-47d5-ad9d-3362df6d47c0
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 67adf184405ef299e26292a7a25f5248cba5c48f
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 30d75912df1efe05f93555f70a68f76785d1ca3a
+ms.sourcegitcommit: 9c282d05682d97714c84e4e0e23e1103e2074fa8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90913059"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91205269"
 ---
 # <a name="understanding-azure-atp-sensor-health-alerts"></a>了解 Azure ATP 感應器健康情況警示
 
@@ -97,11 +97,11 @@ ms.locfileid: "90913059"
 |----|----|----|----|
 |由於部分已設定之網域控制站的連線問題，Azure ATP 感應器的功能受到限制。|當 Azure ATP 感應器無法查詢部分網域控制站時，傳遞雜湊偵測可能較不正確。|請確定網域控制站已啟動且正在執行，而且此 Azure ATP 感應器可以針對對它們開啟 LDAP 連線。|中型|
 
-## <a name="some-forwarded-events-could-not-be-analyzed"></a>無法分析某些轉送的事件
+## <a name="some-forwarded-events-are-not-being-analyzed"></a>某些轉送的事件不會被分析
 
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|Azure ATP 感應器所接收到的事件比它能處理的還要多。|無法分析某些轉送的事件，這可能會影響偵測可疑活動的能力，這些活動源自於此 Azure ATP 感應器所監視的網域控制站上。|請確認只有必要的事件會被轉寄到 Azure ATP 感應器，或嘗試將某些事件轉寄到其他 Azure ATP 感應器。|中型|
+|Azure ATP 感應器所接收到的事件比它能處理的還要多。|某些轉寄的事件不會被分析，這可能會影響偵測來自由此 Azure ATP 感應器所監視之網域控制站上可疑活動的能力。|請確認只有必要的事件會被轉寄到 Azure ATP 感應器，或嘗試將某些事件轉寄到其他 Azure ATP 感應器。|中型|
 
 ## <a name="some-network-traffic-could-not-be-analyzed"></a>無法分析某些網路流量
 
@@ -109,11 +109,11 @@ ms.locfileid: "90913059"
 |----|----|----|----|
 |Azure ATP 感應器所接收到的網路流量比它能處理的還要多。|無法分析某些網路流量，這可能會影響偵測可疑活動的能力，這些活動源自於此 Azure ATP 感應器所監視的網域控制站上。|視需要考慮[新增額外的處理器和記憶體](capacity-planning.md)。 如果這是獨立 Azure ATP 感應器，請減少被監視的網域控制站數目。<br></br>如果在 VMware 虛擬機器上使用網域控制站，可能也會發生此情況。 若要避免這些警示，可檢查是否已將虛擬機器中的下列設定設為 [0] 或 [已停用]：<br></br>- TsoEnable<br></br>- LargeSendOffload(IPv4)<br></br>- IPv4 TSO Offload<br></br>此外也請考慮停用 [IPv4 Giant TSO Offload]。 如需詳細資訊，請參閱 VMware 文件。|中型|
 
-## <a name="some-windows-events-could-not-be-analyzed"></a>無法分析某些 Windows 事件
+## <a name="some-windows-events-are-not-being-analyzed"></a>不會分析某些 Windows 事件
 
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|Azure ATP 感應器目前接收到的 Windows 事件追蹤 (ETW) 事件已超過其能處理的量。|無法分析某些 Windows 事件追蹤 (ETW) 事件，這可能會影響偵測可疑活動的能力，這些活動源自於此 Azure ATP 感應器所監視的網域控制站上。|請確認只有必要的事件會被轉寄到 Azure ATP 感應器，或嘗試將某些事件轉寄到其他 Azure ATP 感應器。|中型|
+|Azure ATP 感應器目前接收到的 Windows 事件追蹤 (ETW) 事件已超過其能處理的量。|不會分析某些 Windows 事件追蹤 (ETW) 事件，這可能會影響偵測可疑活動的能力，這些活動源自於此 Azure ATP 感應器所監視的網域控制站上。|請確認只有必要的事件會被轉寄到 Azure ATP 感應器，或嘗試將某些事件轉寄到其他 Azure ATP 感應器。|中型|
 
 <!--
 ## Windows events missing from domain controller audit policy

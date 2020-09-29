@@ -10,14 +10,16 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0fd44a4ea1b2bae549c71c957551482ba651d58f
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 5c07d5bb568394cdb5c989279434445f88d0f7ea
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826782"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90910275"
 ---
 # <a name="quickstart-create-your-azure-atp-instance"></a>快速入門：建立您的 Azure ATP 執行個體
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 在此快速入門中，您會在 Azure ATP 入口網站中建立 Azure ATP 執行個體。 在 Azure ATP 中，您將會擁有單一執行個體 (先前稱為工作區)。 單一執行個體可讓您透過單一窗口來管理多個樹系。
 

@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 452d951c-5f49-4a21-ae10-9fb38c3de302
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ed05aeed856fcad4236c653e11b00d4d0a951779
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: acc6c2b5ab2cfa23f3928638aac5f654e34bff7e
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826765"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913080"
 ---
 # <a name="tutorial-exfiltration-alerts"></a>教學課程：外流警訊
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 網路攻擊通常會針對低權限使用者等所有可存取的實體啟動，然後快速橫向移動，直到攻擊者得以存取有價值的資產。 敏感性帳戶、網域系統管理員或高度敏感性資料均為重要資產。 Azure ATP 會從整個攻擊狙殺鏈來源識別進階威脅，並將其分成下列幾個階段：
 

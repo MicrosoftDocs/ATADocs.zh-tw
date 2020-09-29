@@ -11,14 +11,16 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3d5a61b7233c271e851326ba547d98c3e041cf09
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: a53662832e6d1c11a3752c4f9bed4c8fd8d70a81
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826708"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912296"
 ---
 # <a name="azure-atp-for-us-government-gcc-high"></a>適用於美國政府 GCC High 的 Azure ATP
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Azure ATP GCC High 供應項目使用的基礎技術與功能，和 Azure ATP 商業執行個體相同。 您可以在[服務描述](/enterprise-mobility-security/solutions/ems-azure-atp-govt-service-description)中找到功能差異清單。
 

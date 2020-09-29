@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 90f68f2c-d421-4339-8e49-1888b84416e6
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e410e37e9d19a7ed806095a3c554e53b26c9362e
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: aee16031c1682dc51b4c4da8fb3b123a8de93918
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826759"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90913275"
 ---
 # <a name="azure-atp-architecture"></a>Azure ATP 架構
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Azure ATP 可直接從您的網域控制站擷取和剖析網路流量並運用 Windows 事件，以監視您的網域控制站，然後分析攻擊和威脅資料。 Azure ATP 會利用分析、確定性偵測、機器學習和行為演算法，來了解您的網路、啟用異常偵測並警告您可疑的活動。
 

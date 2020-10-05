@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 642d018862a73fd609d44e5e6304533196ad729c
-ms.sourcegitcommit: c4a4eb6512258beaa1b8937dc2b206fc3ee87835
+ms.openlocfilehash: dda07ccfe2578975517e9e219fa95e0094e751cf
+ms.sourcegitcommit: 3740dcb048065962eb09ed31e077d7f8ff77a165
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90829403"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91145915"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
 
@@ -26,10 +26,16 @@ ms.locfileid: "90829403"
 
 RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在本頁更新時收到通知：`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
 
+> [!IMPORTANT]
+>
+> Microsoft 的威脅防護產品名稱即將變更。 如需有關此變更的詳細資訊與其他更新，請參閱[這裡](https://www.microsoft.com/security/blog/?p=91813)。 我們將在未來的版本中使用新的名稱。
+
 ## <a name="azure-atp-release-2127"></a>Azure ATP 2.127 版
 
 發行日期：2020 年 9 月 20 日
 
+- **新的安全性警訊：可疑的 Netlogon 權限提升嘗試 (外部識別碼 2411)**  
+Azure ATP 的「可疑的 Netlogon 權限提升嘗試 (CVE-2020-1472 惡意探索) (外部識別碼 2411)」安全性警示現已可供使用。 在此偵測中，Azure ATP 安全性警示會在攻擊者使用也稱為「Netlogon 權限提高弱點」的 Netlogon 遠端通訊協定 ([MS-NRPC](/openspecs/windows_protocols/ms-nrpc/ff8f970f-3e37-40f7-bd4b-af7336e4792f))，針對網域控制站建立易受攻擊的 Netlogon 安全通道連線時觸發。 如需詳細資訊，請參閱[可疑的 Netlogon 權限提升嘗試](compromised-credentials-alerts.md#suspected-netlogon-privilege-elevation-attempt-cve-2020-1472-exploitation external id 2411)。
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
 ## <a name="azure-atp-release-2126"></a>Azure ATP 版本 2.126

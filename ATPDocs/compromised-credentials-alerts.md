@@ -12,14 +12,16 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: bbb0b5bd52fc06f5c4b4639c58b089f7a9057583
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: cfcbf4af7c8b0733869c6d55d1c72dd628c68ca7
+ms.sourcegitcommit: 786d88b4b829167b52d2664b77252a4c2dc55877
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826717"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91057551"
 ---
 # <a name="tutorial-compromised-credential-alerts"></a>教學課程：認證遭入侵警訊
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 網路攻擊通常會針對任何可存取的實體進行，例如低權限的使用者，然後快速橫向移動，直到攻擊者得以存取有價值的資產，例如敏感性帳戶、網域系統管理員和高敏感性資料。 Azure ATP 會從整個攻擊狙殺鏈來源識別進階威脅，並將其分成下列幾個階段：
 
@@ -39,6 +41,7 @@ ms.locfileid: "90826717"
 > * 可疑的暴力密碼破解攻擊 (Kerberos、NTLM) (外部識別碼 2023)
 > * 可疑的暴力密碼破解攻擊 (LDAP) (外部識別碼 2004)
 > * 可疑的暴力密碼破解攻擊 (SMB) (外部識別碼 2033)
+> * 可疑的 Netlogon 權限提升嘗試 (外部識別碼 2411)
 > * 可疑的 WannaCry 勒索軟體攻擊 (外部識別碼 2035)
 > * 可疑的 Metasploit 入侵架構使用 (外部識別碼 2034)
 > * 可疑的 VPN 連線 (外部識別碼 2025)
@@ -65,15 +68,15 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 1. 調查[來源電腦](investigate-a-computer.md)。
 
     > [!NOTE]
-    > 若驗證是使用 NTLM 進行的，在某些情況下，可能沒有來源電腦嘗試存取之伺服器的足夠資訊可用。 Azure ATP 會根據 Windows 事件 4776 擷取來源電腦資料，此資料包含電腦所定義的來源電腦名稱。  
-    > 使用 Windows 事件 4776 來擷取此資訊時，此資訊的來源欄位有時候會被裝置或軟體覆寫，以僅顯示工作站或 MSTSC。 如果您經常有會顯示為工作站或 MSTSC 的裝置，請務必在相關的網域控制站上啟用 NTLM 稽核，以取得真實的來源電腦名稱。  
+    > 若驗證是使用 NTLM 進行的，在某些情況下，可能沒有來源電腦嘗試存取之伺服器的足夠資訊可用。 Azure ATP 會根據 Windows 事件 4776 擷取來源電腦資料，此資料包含電腦所定義的來源電腦名稱。
+    > 使用 Windows 事件 4776 來擷取此資訊時，此資訊的來源欄位有時候會被裝置或軟體覆寫，以僅顯示工作站或 MSTSC。 如果您經常有會顯示為工作站或 MSTSC 的裝置，請務必在相關的網域控制站上啟用 NTLM 稽核，以取得真實的來源電腦名稱。
     > 若要啟用 NTLM 稽核，請開啟 Windows 事件 8004 (這是 NTLM 驗證事件，其中包含來源電腦及其嘗試存取的使用者帳戶和伺服器相關資訊)。
 
 **建議的補救和預防步驟**
 
 1. 包含來源電腦。
-    - 尋找執行攻擊的工具，並將它移除。
-    - 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+    * 尋找執行攻擊的工具，並將它移除。
+    * 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 
 ## <a name="suspected-brute-force-attack-kerberos-ntlm-external-id-2023"></a>可疑的暴力密碼破解攻擊 (Kerberos、NTLM) (外部識別碼 2023)
 
@@ -96,23 +99,23 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 請務必檢查是否有任何登入嘗試已結束且成功驗證。
 
 1. 如果有任何登入嘗試已成功結束，請檢查平常是否從該來源電腦使用任何**猜對的帳戶**。
-    - 這些帳戶失敗是否有可能是因為使用了錯誤的密碼？
-    - 與使用者確認他們是否已產生活動 (無法登入幾次後成功)。
+    * 這些帳戶失敗是否有可能是因為使用了錯誤的密碼？
+    * 與使用者確認他們是否已產生活動 (無法登入幾次後成功)。
 
       如果以上問題的答案為**是**，請**關閉**有關 B-TP 活動的安全性警示。
 
 1. 如果沒有**猜對的帳戶**，請檢查平常是否從來源電腦使用任何**受攻擊的帳戶**。
-    - 檢查來源電腦上是否有搭配錯誤/舊認證執行的指令碼？
-    - 如果以上問題的答案為**是**，請停止並編輯或刪除指令碼。 請**關閉**有關 B-TP 活動的安全性警示。
+    * 檢查來源電腦上是否有搭配錯誤/舊認證執行的指令碼？
+    * 如果以上問題的答案為**是**，請停止並編輯或刪除指令碼。 請**關閉**有關 B-TP 活動的安全性警示。
 
 **了解漏洞的範圍**
 
 1. 調查來源電腦。
 1. 在警示頁面上，檢查是否已成功猜對任何使用者。
-    - 針對成功猜對的每位使用者，請[檢查其設定檔](investigate-a-user.md)來進一步調查。
+    * 針對成功猜對的每位使用者，請[檢查其設定檔](investigate-a-user.md)來進一步調查。
 
     > [!NOTE]
-    > 檢查證據以了解使用的驗證通訊協定。 若使用 NTLM 驗證，請在網域控制站上啟用 Windows 事件 8004 的 NTLM 稽核，以判斷使用者嘗試存取的資源伺服器。 Windows 事件 8004 是 NTLM 驗證事件，其中包含來源電腦、使用者帳戶以及來原始用者帳戶嘗試存取之伺服器的相關資訊。  
+    > 檢查證據以了解使用的驗證通訊協定。 若使用 NTLM 驗證，請在網域控制站上啟用 Windows 事件 8004 的 NTLM 稽核，以判斷使用者嘗試存取的資源伺服器。 Windows 事件 8004 是 NTLM 驗證事件，其中包含來源電腦、使用者帳戶以及來原始用者帳戶嘗試存取之伺服器的相關資訊。
     > Azure ATP 會根據 Windows 事件 4776 擷取來源電腦資料，此資料包含電腦所定義的來源電腦名稱。 使用 Windows 事件 4776 來擷取此資訊，資訊來源欄位偶爾會由裝置或軟體覆寫，而且只會顯示工作站或 MSTSC 作為資訊來源。 此外，來源電腦實際上可能不存在於您的網路上。 這是可能的，因為惡意使用者通常會以可透過網際網路從網路外部存取的開放式伺服器為目標，然後使用那些伺服器來列舉您的使用者。 如果您經常有會顯示為工作站或 MSTSC 的裝置，請務必在網域控制站上啟用 NTLM 稽核，以取得存取的資源伺服器名稱。 您也應該調查此伺服器，檢查它是否對網際網路開放，如果是，請將它關閉。
 
 1. 當您了解驗證確認是由哪一部伺服器傳送時，您可以透過檢查事件 (例如 Windows 事件 4624) 對伺服器進行調查，以進一步了解驗證程序。
@@ -123,8 +126,8 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 1. 重設猜對之使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 1. 包含來源電腦。
-    - 尋找執行攻擊的工具，並將它移除。
-    - 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+    * 尋找執行攻擊的工具，並將它移除。
+    * 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 1. 重設來源使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 1. 在組織中強制執行[複雜的長密碼](/windows/device-security/security-policy-settings/password-policy)，這會提供必要的第一層安全性，以防止暴力密碼破解攻擊。
 
@@ -143,13 +146,13 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 請務必檢查是否有任何登入嘗試已結束且成功驗證。
 
 1. 如果有任何登入嘗試已成功結束，平常是否從該來源電腦使用任何**猜對的帳戶**？
-    - 這些帳戶失敗是否有可能是因為使用了錯誤的密碼？
-    - 與使用者確認他們是否已產生活動 (無法登入幾次後成功)。
+    * 這些帳戶失敗是否有可能是因為使用了錯誤的密碼？
+    * 與使用者確認他們是否已產生活動 (無法登入幾次後成功)。
 
      如果以上問題的答案為**是**，請**關閉**有關 B-TP 活動的安全性警示。
 
 1. 如果沒有**猜對的帳戶**，請檢查平常是否從來源電腦使用任何**受攻擊的帳戶**。
-    - 檢查來源電腦上是否有搭配錯誤/舊認證執行的指令碼？
+    * 檢查來源電腦上是否有搭配錯誤/舊認證執行的指令碼？
 
       如果以上問題的答案為**是**，請停止並編輯或刪除指令碼。 請**關閉**有關 B-TP 活動的安全性警示。
 
@@ -162,8 +165,8 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 1. 重設猜對之使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 1. 包含來源電腦。
-    - 尋找執行攻擊的工具，並將它移除。
-    - 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+    * 尋找執行攻擊的工具，並將它移除。
+    * 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 1. 重設來源使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 1. 在組織中強制執行[複雜的長密碼](/windows/device-security/security-policy-settings/password-policy)，這會提供必要的第一層安全性，以防止暴力密碼破解攻擊。
 1. 防止未來在您的組織中使用 LDAP 純文字通訊協定。
@@ -200,7 +203,40 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
     2. 搜尋在活動期間登入的使用者，因為他們可能也遭到入侵。
     3. 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 1. 在組織中強制執行[複雜的長密碼](/windows/security/threat-protection/security-policy-settings/password-policy)。 複雜且很長的密碼提供必要的第一層安全性，以防止暴力密碼破解攻擊。
-4. [停用 SMBv1](https://blogs.technet.microsoft.com/filecab/2016/09/16/stop-using-smb1/)
+1. [停用 SMBv1](https://blogs.technet.microsoft.com/filecab/2016/09/16/stop-using-smb1/)
+
+## <a name="suspected-netlogon-privilege-elevation-attempt-cve-2020-1472-exploitationexternalid2411"></a>可疑的 Netlogon 權限提升嘗試 (CVE-2020-1472 惡意探索) (外部識別碼 2411)
+
+Microsoft 已發佈 [CVE-2020-1472](https://portal.msrc.microsoft.com/security-guidance/advisory/CVE-2020-1472) \(英文\) 並宣佈新弱點的存在，此弱點能針對網域控制站提供權限提高。
+
+當攻擊者使用也稱為「Netlogon 權限提高弱點」的 Netlogon 遠端通訊協定 ([MS-NRPC](/openspecs/windows_protocols/ms-nrpc/ff8f970f-3e37-40f7-bd4b-af7336e4792f))，針對網域控制站建立易受攻擊的 Netlogon 安全通道連線時，便會存在權限提高弱點。
+
+**學習期間**
+
+無
+
+**TP、B-TP 或 FP**
+
+如果來源電腦是網域控制站 (DC)，則失敗或低確定性的解決方案可能會防止 Azure ATP 確認其身分識別。
+
+1. 如果來源電腦是網域控制站，請將警示 [關閉] 為 [B-TP] ****  活動。
+
+1. 如果此來源電腦應該要產生此類型的活動，且預期會在未來持續產生此類型的活動，請將安全性警示 [關閉] ****  為 [B-TP] ****  活動，並排除該部電腦以避免發生其他良性警示。
+
+否則，請將此警示視為 [TP] ****  並遵循＜了解缺口的範圍＞ **** 中的指示。
+
+**了解缺口的範圍**
+
+1. 調查[來源電腦](investigate-a-computer.md)，檢查是否有惡意指令碼或工具對 DC 進行連線。
+
+1. 調查目的地 DC，以確認在使用該弱點後是否有任何可疑活動發生。
+
+**補救：**
+
+1. 修補您所有的電腦，確定已套用安全性更新。
+1. 請檢閱[我們的指導方針](https://support.microsoft.com/help/4557222/how-to-manage-the-changes-in-netlogon-secure-channel-connections-assoc) \(部分機器翻譯\) 以了解如何管理 Netlogon 安全通道連線中的變更，這些變更與此弱點相關聯，且能加以防止。
+1. 包含來源電腦。
+    * 尋找執行攻擊的工具，並將它移除。
 
 ## <a name="suspected-wannacry-ransomware-attack-external-id-2035"></a>可疑的 WannaCry 勒索軟體攻擊 (外部識別碼 2035)
 
@@ -214,7 +250,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 1. 請檢查來源電腦上是否正在執行 WannaCry。
 
-    - 如果正在執行 WannaCry，則此警示為 **TP**。 請遵循上述＜了解缺口的範圍＞**** 中的指示執行。
+    * 如果正在執行 WannaCry，則此警示為 **TP**。 請遵循上述＜了解缺口的範圍＞**** 中的指示執行。
 
 有時是應用程式實作自己的 NTLM 或 SMB 堆疊。
 
@@ -230,11 +266,11 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 **建議的補救和預防步驟**
 
 1. 包含來源電腦。
-    - [移除 WannaCry](https://support.microsoft.com/help/890830/remove-specific-prevalent-malware-with-windows-malicious-software-remo)
-    - WanaKiwi 可以解密受到某種勒索軟體支配的資料，但只適用於使用者尚未重新啟動或關閉電腦的情況。 如需詳細資訊，請參閱 [Wanna Cry Ransomware](https://answers.microsoft.com/en-us/windows/forum/windows_10-security/wanna-cry-ransomware/5afdb045-8f36-4f55-a992-53398d21ed07?auth=1) (WannaCry 勒索軟體)
-    - 尋找在活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+    * [移除 WannaCry](https://support.microsoft.com/help/890830/remove-specific-prevalent-malware-with-windows-malicious-software-remo)
+    * WanaKiwi 可以解密受到某種勒索軟體支配的資料，但只適用於使用者尚未重新啟動或關閉電腦的情況。 如需詳細資訊，請參閱 [Wanna Cry Ransomware](https://answers.microsoft.com/windows/forum/windows_10-security/wanna-cry-ransomware/5afdb045-8f36-4f55-a992-53398d21ed07?auth=1) (WannaCry 勒索軟體)
+    * 尋找在活動期間登入的使用者，因為他們可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 1. 修補您所有的電腦，確定已套用安全性更新。
-    - [停用 SMBv1](https://blogs.technet.microsoft.com/filecab/2016/09/16/stop-using-smb1/)
+    * [停用 SMBv1](https://blogs.technet.microsoft.com/filecab/2016/09/16/stop-using-smb1/)
 
 ## <a name="suspected-use-of-metasploit-hacking-framework-external-id-2034"></a>可疑的 Metasploit 入侵架構使用 (外部識別碼 2034)
 

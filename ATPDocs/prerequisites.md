@@ -5,21 +5,23 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 07/27/2020
+ms.date: 09/22/2020
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f90c9a8423567d672544dd62bc1bdb3ba60d8a34
-ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+ms.openlocfilehash: 274a345c68f3ac021d4407d00b2b3e7225a780f4
+ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90826794"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90912600"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
+
+[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文描述在您的環境中成功部署 Azure ATP 的需求。
 
@@ -120,14 +122,21 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 
 ### <a name="general"></a>一般
 
-> [!NOTE]
-> 使用 Server 2019 時，請確定已安裝 [KB4487044](https://support.microsoft.com/help/4487044/windows-10-update-kb4487044)。 系統將會自動停止安裝在未安裝此更新之 2019 伺服器上的 Azure ATP 感應器。
+Azure ATP 感應器支援在執行 Windows Server 2008 R2 SP1 (不含 Server Core)、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 (包含 Server Core 但不含 Nano 伺服器)、Windows Server 2019\* (包含 Server Core 但不含 Nano 伺服器) 的網域控制站上安裝，如下表所示。
 
-Azure ATP 感應器可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 (包含 Windows Server Core 但不含 Windows Nano 伺服器)、Windows Server 2019 (包含 Windows Core 但不含 Windows Nano 伺服器) 的網域控制站上安裝。
+| 作業系統版本   | 具備桌面體驗的伺服器 | Server Core | Nano Server    |
+| -------------------------- | ------------------------------ | ----------- | -------------- |
+| Windows Server 2008 R2 SP1 | &#10004;                       | &#10060;    | 不適用 |
+| Windows Server 2012        | &#10004;                       | &#10004;    | 不適用 |
+| Windows Server 2012 R2     | &#10004;                       | &#10004;    | 不適用 |
+| Windows Server 2016        | &#10004;                       | &#10004;    | &#10060;       |
+| Windows Server 2019\*      | &#10004;                       | &#10004;    | &#10060;       |
+
+\* 需要 [KB4487044](https://support.microsoft.com/help/4487044/windows-10-update-kb4487044)。 系統將會自動停止安裝在未安裝此更新之 Server 2019 上的感應器。
 
 網域控制站可以是唯讀網域控制站 (RODC)。
 
-若要讓網域控制站與雲端服務通訊，您必須在防火牆和 Proxy 中針對 *.atp.azure.com 開啟連接埠 443。
+若要讓網域控制站與雲端服務通訊，您必須在防火牆和 Proxy 中針對 \*.atp.azure.com 開放連接埠 443。
 
 在安裝期間，若未安裝 .Net Framework 4.7 或更新版本，則會安裝 .Net Framework 4.7，而且可能需要將網域控制站重新開機。如果有擱置中的重新啟動，可能也需要重新開機。
 

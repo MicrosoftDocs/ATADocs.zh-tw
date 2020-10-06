@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: e9cf68d2-36bd-4b0d-b36e-7cf7ded2618e
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 48744b2ef9485ad9bc2a54feacfe2b328dd4dfeb
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 6eb8484ba49d4ae56a1baafce9ea3b76d0760165
+ms.sourcegitcommit: cd13e58303372d01463ae2ccf1e093d4f6d85fb5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912366"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91754386"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>教學課程：偵察警訊
 
@@ -242,8 +242,8 @@ DNS 通訊協定中有數種查詢類型。 此 Azure ATP 安全性警示會偵�
 **針對預防與補救為特定建議步驟進行 Kerberoast 處理**
 
 1. 重設遭入侵之使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用[**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
-1. 需要[針對具有服務主體帳戶的使用者使用複雜的長密碼](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/minimum-password-length)。
-1. [使用群組受控服務帳戶 (gMSA) 取代使用者帳戶](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview)。
+1. 需要[針對具有服務主體帳戶的使用者使用複雜的長密碼](/windows/security/threat-protection/security-policy-settings/minimum-password-length)。
+1. [使用群組受控服務帳戶 (gMSA) 取代使用者帳戶](/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview)。
 
 > [!NOTE]
 > 只有 ATP 感應器支援安全性主體偵察 (LDAP) 警示。

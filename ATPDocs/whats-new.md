@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: dda07ccfe2578975517e9e219fa95e0094e751cf
-ms.sourcegitcommit: 3740dcb048065962eb09ed31e077d7f8ff77a165
+ms.openlocfilehash: 84deb65f7f1d6d20fe6913a7fd02b743295db1ef
+ms.sourcegitcommit: dd8435ba20f76a6fc4590980c040c6fc7ec6c62b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91145915"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91451797"
 ---
 # <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
 
@@ -28,14 +28,21 @@ RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在�
 
 > [!IMPORTANT]
 >
-> Microsoft 的威脅防護產品名稱即將變更。 如需有關此變更的詳細資訊與其他更新，請參閱[這裡](https://www.microsoft.com/security/blog/?p=91813)。 我們將在未來的版本中使用新的名稱。
+> Microsoft 的威脅防護產品名稱即將變更。 如需有關此變更的詳細資訊與其他更新，請參閱[這裡](https://www.microsoft.com/security/blog/?p=91813)。 從 2.127 版開始，我們將使用新名稱。
+
+## <a name="azure-atp-release-2128"></a>Azure ATP 2.128 版
+
+發行日期：2020 年 9 月 27 日
+
+- 我們正在移除用於開啟電子郵件通知的 [郵件通知] 切換開關。 若要接收電子郵件通知，只要新增地址即可。 如需詳細資訊，請參閱[設定通知](notifications.md)。
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
 ## <a name="azure-atp-release-2127"></a>Azure ATP 2.127 版
 
 發行日期：2020 年 9 月 20 日
 
 - **新的安全性警訊：可疑的 Netlogon 權限提升嘗試 (外部識別碼 2411)**  
-Azure ATP 的「可疑的 Netlogon 權限提升嘗試 (CVE-2020-1472 惡意探索) (外部識別碼 2411)」安全性警示現已可供使用。 在此偵測中，Azure ATP 安全性警示會在攻擊者使用也稱為「Netlogon 權限提高弱點」的 Netlogon 遠端通訊協定 ([MS-NRPC](/openspecs/windows_protocols/ms-nrpc/ff8f970f-3e37-40f7-bd4b-af7336e4792f))，針對網域控制站建立易受攻擊的 Netlogon 安全通道連線時觸發。 如需詳細資訊，請參閱[可疑的 Netlogon 權限提升嘗試](compromised-credentials-alerts.md#suspected-netlogon-privilege-elevation-attempt-cve-2020-1472-exploitation external id 2411)。
+Azure ATP 的「可疑的 Netlogon 權限提升嘗試 (CVE-2020-1472 惡意探索) (外部識別碼 2411)」安全性警示現已可供使用。 在此偵測中，Azure ATP 安全性警示會在攻擊者使用也稱為「Netlogon 權限提高弱點」的 Netlogon 遠端通訊協定 ([MS-NRPC](/openspecs/windows_protocols/ms-nrpc/ff8f970f-3e37-40f7-bd4b-af7336e4792f))，針對網域控制站建立易受攻擊的 Netlogon 安全通道連線時觸發。 如需詳細資訊，請參閱[可疑的 Netlogon 權限提升嘗試](compromised-credentials-alerts.md#suspected-netlogon-priv-elev-2411)。
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
 ## <a name="azure-atp-release-2126"></a>Azure ATP 版本 2.126

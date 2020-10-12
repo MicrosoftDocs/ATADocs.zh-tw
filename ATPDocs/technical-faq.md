@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 09/21/2020
+ms.date: 10/12/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 6a9b5273-eb26-414e-9cdd-f64406e24ed8
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8ef149c7792d8fce3ffbe1bc3303d1937827aa4c
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 25d26cf71786c0d3d0c503d85fb4193ffd1d50fe
+ms.sourcegitcommit: 016ab00760cb6feb66666ce5c08f7ef340563da2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90909758"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91946478"
 ---
 # <a name="azure-atp-frequently-asked-questions"></a>Azure ATP 常見問題集
 
@@ -96,7 +96,7 @@ Azure ATP 隨附於 Enterprise Mobility + Security 5 套件 (EMS E5) 中，也�
 
 ### <a name="does-azure-atp-need-only-a-single-license-or-does-it-require-a-license-for-every-user-i-want-to-protect"></a>Azure ATP 是否僅需要單一授權，還是針對我想要保護的每個使用者都需要授權？
 
-Azure ATP 要求 Azure AD 中的所有使用者都必須獲得授權
+如需 Azure ATP 授權需求的詳細資訊，請參閱 [Azure ATP 授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#azure-advanced-threat-protection)。
 
 ### <a name="is-my-data-isolated-from-other-customer-data"></a>我的資料是否會與其他客戶的資料隔離？
 

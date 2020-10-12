@@ -11,19 +11,19 @@ ms.prod: advanced-threat-analytics
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 58866e849b15a36a3f9be843a3195d4e5b248635
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 49aee34613b16a51b714f6d67cb04580fc8968c8
+ms.sourcegitcommit: c12340e58a724fb833403e4fb38810b36e1454f5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90909753"
+ms.lasthandoff: 10/11/2020
+ms.locfileid: "91941189"
 ---
 # <a name="ata-version-193"></a>ATA 版本1.9。3
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 我們很高興宣佈推出 Microsoft Advanced 威脅分析 1.9 Update 3。
 
-本文說明 Microsoft Advanced 威脅分析 (ATA) 1.9 版的 Update 3 中已修正的問題。 此更新的組建編號為1.9.7561。
+本文說明 Microsoft Advanced 威脅分析 (ATA) 1.9 版的 Update 3 中已修正的問題。 此更新的組建編號為1.9.7576。
 
 ## <a name="improvements-included-in-this-update"></a>此更新包含的改善
 

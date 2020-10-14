@@ -12,12 +12,12 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2257eb00-8614-4577-b6a1-5c65085371f2
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c822bef5de097a426c298471c84beb012a349d09
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 570bf2565ca42e7262c62f26eb368874f7d5394d
+ms.sourcegitcommit: e7897436d71e253cf583ec566eca3daa9ba3cae9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912425"
+ms.lasthandoff: 10/11/2020
+ms.locfileid: "91942415"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>教學課程：橫向移動警訊
 
@@ -327,7 +327,7 @@ Some legitimate resources don't support strong encryption ciphers and may trigge
 
 **描述**
 
-Rogue 憑證攻擊為攻擊者取得組織控制權之後，所使用的持續性技術。 攻擊者會入侵憑證授權單位 (CA) 伺服器，並產生可在未來攻擊中用作後門程式帳戶的憑證。
+Rogue 憑證攻擊為攻擊者取得組織控制權後，所使用的一種持續性技術。 攻擊者會入侵憑證授權單位 (CA) 伺服器，並產生可在未來攻擊中用作後門程式帳戶的憑證。
 
 **學習期間**
 

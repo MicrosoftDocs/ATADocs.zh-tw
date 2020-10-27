@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 09/22/2020
+ms.date: 10/25/2020
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.assetid: 62c99622-2fe9-4035-9839-38fec0a353da
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 274a345c68f3ac021d4407d00b2b3e7225a780f4
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 3438ca66b02edc93ba01754c696822613dfcc380
+ms.sourcegitcommit: 0ee43433d020fd05ad8825442dfb0e6b6bfa658f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912600"
+ms.lasthandoff: 10/26/2020
+ms.locfileid: "92526645"
 ---
 # <a name="azure-atp-prerequisites"></a>Azure ATP 必要條件
 
@@ -71,7 +71,7 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
     > [!NOTE]
     >
     > - 針對執行 Windows Server 2012 與更新版本的感應器電腦，我們建議使用 **gMSA** 帳戶，以獲得改善的安全性與自動密碼管理。
-    > - 若您有多個感應器，其中有些執行 Windows Server 2008，而其他執行 Windows Server 2012 或更新版本，則除了使用 **gMSA** 帳戶的建議之外，您也必須使用至少一個**標準** AD 使用者帳戶。
+    > - 若您有多個感應器，其中有些執行 Windows Server 2008，而其他執行 Windows Server 2012 或更新版本，則除了使用 **gMSA** 帳戶的建議之外，您也必須使用至少一個 **標準** AD 使用者帳戶。
     > - 如果您已經在網域中設定不同組織單位 (OU) 的自訂 ACL，請確定選取的使用者具有讀取這些 OU 的權限。
 
 - 如果您在 Azure ATP 獨立感應器上執行 Wireshark，在停止 Wireshark 擷取後，重新啟動 Azure 進階威脅防護感應器服務。 如果您未重新啟動感應器服務，感應器會停止擷取流量。
@@ -80,7 +80,7 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 
 - **Deleted Objects** 容器建議：使用者應該擁有「刪除的物件」容器的唯讀權限。 這個容器的唯讀權限可讓 Azure ATP 偵測從 Active Directory 中刪除使用者的情形。 如需在 Deleted Objects 容器設定唯讀權限的相關資訊，請參閱 [View or Set Permissions on a Directory Object](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816824(v=ws.10)) (檢視或設定目錄物件的權限) 文章中的 **Changing permissions on a deleted object container** (變更已刪除物件的容器權限) 一節。
 
-- 選擇性的 **Honeytoken**：沒有任何網路活動之使用者的使用者帳戶。 此帳戶設定為 Azure ATP Honeytoken 使用者。 如需使用 Honeytoken 的詳細資訊，請參閱[設定排除專案和 Honeytoken 使用者](install-step7.md)。
+- 選擇性的 **Honeytoken** ：沒有任何網路活動之使用者的使用者帳戶。 此帳戶設定為 Azure ATP Honeytoken 使用者。 如需使用 Honeytoken 的詳細資訊，請參閱[設定排除專案和 Honeytoken 使用者](install-step7.md)。
 
 - 選用：在部署獨立感應器時，必須將 [Windows 事件](configure-windows-event-collection.md#configure-event-collection)轉送給 Azure ATP，以在敏感性群組與可疑服務建立偵測能力之外，進一步增強 Azure ATP 驗證型偵測能力。  Azure ATP 感應器自動支援這些事件。 在 Azure ATP 獨立感應器中，這些事件可從您的 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可提供 Azure ATP 透過網域控制站網路流量無法取得的額外資訊。
 
@@ -96,7 +96,7 @@ Azure ATP 能保護您的內部部署 Active Directory 使用者及 (或) 同步
 - 防火牆/Proxy 開啟 - 若要與 Azure ATP 雲端服務通訊，您必須在防火牆/Proxy 中開啟 *.atp.azure.com 連接埠 443。
 
     > [!NOTE]
-    > 您也可以使用 Azure 服務標籤 (**AzureAdvancedThreatProtection**) 來啟用對 Azure ATP 的存取權。 如需服務標籤的詳細資訊，請參閱[虛擬網路服務標籤](/azure/virtual-network/service-tags-overview)或[下載服務標籤](https://www.microsoft.com/download/details.aspx?id=56519)檔案。
+    > 您也可以使用 Azure 服務標籤 ( **AzureAdvancedThreatProtection** ) 來啟用對 Azure ATP 的存取權。 如需服務標籤的詳細資訊，請參閱[虛擬網路服務標籤](/azure/virtual-network/service-tags-overview)或[下載服務標籤](https://www.microsoft.com/download/details.aspx?id=56519)檔案。
 
  ![Azure ATP 架構圖表](media/azure-atp-architecture.png)
 
@@ -172,20 +172,19 @@ Azure ATP 感應器可為所有網域控制站的網路介面卡監視其上的�
 
 下表列出 Azure ATP 感應器至少需要的連接埠：
 
-|通訊協定|傳輸|Port|寄件者|收件者|方向|
-|------------|-------------|--------|-----------|-------------|
-|**內部連接埠**||||||
-|SSL (*.atp.azure.com)|TCP|443|Azure ATP 感應器|Azure ATP 雲端服務|輸出|
-|SSL (localhost)|TCP|444|Azure ATP 感應器|本機主機|兩者|
-|**內部連接埠**||||||
-|DNS|TCP 和 UDP|53|Azure ATP 感應器|DNS 伺服器|輸出|
-|Netlogon (SMB、CIFS、SAM-R)|TCP/UDP|445|Azure ATP 感應器|網路上的所有裝置|輸出|
-|Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|Azure ATP 感應器|輸入|
-|RADIUS|UDP|1813|RADIUS|Azure ATP 感應器|輸入|
-|**NNR 連接埠**\*||||||
-|透過 RPC 的 NTLM|TCP|連接埠 135|ATP 感應器|網路上的所有裝置|輸入|
-|NetBIOS|UDP|137|ATP 感應器|網路上的所有裝置|輸入|
-|RDP|TCP|3389，只有 Client hello 的第一個封包|ATP 感應器|網路上的所有裝置|輸入|
+|通訊協定|傳輸|Port|寄件者|收件者|
+|------------|-------------|--------|-----------|
+|**內部連接埠**|||||
+|SSL (*.atp.azure.com)|TCP|443|Azure ATP 感應器|Azure ATP 雲端服務|
+|SSL (localhost)|TCP|444|Azure ATP 感應器|本機主機|
+|**內部連接埠**|||||
+|DNS|TCP 和 UDP|53|Azure ATP 感應器|DNS 伺服器|
+|Netlogon (SMB、CIFS、SAM-R)|TCP/UDP|445|Azure ATP 感應器|網路上的所有裝置|
+|RADIUS|UDP|1813|RADIUS|Azure ATP 感應器|
+|**NNR 連接埠**\*|||||
+|透過 RPC 的 NTLM|TCP|連接埠 135|ATP 感應器|網路上的所有裝置|
+|NetBIOS|UDP|137|ATP 感應器|網路上的所有裝置|
+|RDP|TCP|3389，只有 Client hello 的第一個封包|ATP 感應器|網路上的所有裝置|
 
 \*其中一個連接埠是必要的，但我們建議全部開啟。
 
@@ -241,7 +240,7 @@ Azure ATP 獨立感應器需要至少一個管理介面卡和至少一個擷取�
 
     - 慣用和替代的 DNS 伺服器
 
-    - **此連線的 DNS 尾碼**應該是受監視之每個網域的網域 DNS 名稱。
+    - **此連線的 DNS 尾碼** 應該是受監視之每個網域的網域 DNS 名稱。
 
         ![在進階 TCP/IP 設定中設定 DNS 尾碼](media/ATP-DNS-Suffix.png)
 
@@ -259,25 +258,26 @@ Azure ATP 獨立感應器需要至少一個管理介面卡和至少一個擷取�
 
 下表列出 Azure ATP 獨立感應器在管理介面卡上至少需要設定的連接埠：
 
-|通訊協定|傳輸|Port|寄件者|收件者|方向|
-|------------|-------------|--------|-----------|-------------|
-|**內部連接埠**|||||
-|SSL (*.atp.azure.com)|TCP|443|Azure ATP 感應器|Azure ATP 雲端服務|輸出|
-|**內部連接埠**|||||
-|LDAP|TCP 和 UDP|389|Azure ATP 感應器|網域控制站|輸出|
-|安全的 LDAP (LDAPS)|TCP|636|Azure ATP 感應器|網域控制站|輸出|
-|LDAP 至通用類別|TCP|3268|Azure ATP 感應器|網域控制站|輸出|
-|LDAPS 至通用類別|TCP|3269|Azure ATP 感應器|網域控制站|輸出|
-|Kerberos|TCP 和 UDP|88|Azure ATP 感應器|網域控制站|輸出|
-|Netlogon (SMB、CIFS、SAM-R)|TCP 和 UDP|445|Azure ATP 感應器|網路上的所有裝置|輸出|
-|Windows Time|UDP|123|Azure ATP 感應器|網域控制站|輸出|
-|DNS|TCP 和 UDP|53|Azure ATP 感應器|DNS 伺服器|輸出|
-|Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|Azure ATP 感應器|輸入|
-|RADIUS|UDP|1813|RADIUS|Azure ATP 感應器|輸入|
-|**NNR 連接埠** \*||||||
-|透過 RPC 的 NTLM|TCP|135|ATP 感應器|網路上的所有裝置|輸入|
-|NetBIOS|UDP|137|ATP 感應器|網路上的所有裝置|輸入|
-|RDP|TCP|3389，只有 Client hello 的第一個封包|ATP 感應器|網路上的所有裝置|輸入|
+|通訊協定|傳輸|Port|寄件者|收件者|
+|------------|-------------|--------|-----------|
+|**內部連接埠**||||
+|SSL (*.atp.azure.com)|TCP|443|Azure ATP 感應器|Azure ATP 雲端服務|
+|SSL (localhost)|TCP|444|Azure ATP 感應器|本機主機|
+|**內部連接埠**||||
+|LDAP|TCP 和 UDP|389|Azure ATP 感應器|網域控制站|
+|安全的 LDAP (LDAPS)|TCP|636|Azure ATP 感應器|網域控制站|
+|LDAP 至通用類別|TCP|3268|Azure ATP 感應器|網域控制站|
+|LDAPS 至通用類別|TCP|3269|Azure ATP 感應器|網域控制站|
+|Kerberos|TCP 和 UDP|88|Azure ATP 感應器|網域控制站|
+|Netlogon (SMB、CIFS、SAM-R)|TCP 和 UDP|445|Azure ATP 感應器|網路上的所有裝置|
+|Windows Time|UDP|123|Azure ATP 感應器|網域控制站|
+|DNS|TCP 和 UDP|53|Azure ATP 感應器|DNS 伺服器|
+|Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|Azure ATP 感應器|
+|RADIUS|UDP|1813|RADIUS|Azure ATP 感應器|
+|**NNR 連接埠** \*|||||
+|透過 RPC 的 NTLM|TCP|135|ATP 感應器|網路上的所有裝置|
+|NetBIOS|UDP|137|ATP 感應器|網路上的所有裝置|
+|RDP|TCP|3389，只有 Client hello 的第一個封包|ATP 感應器|網路上的所有裝置|
 
 \*其中一個連接埠是必要的，但我們建議全部開啟。
 

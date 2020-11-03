@@ -1,23 +1,22 @@
 ---
-title: Azure 進階威脅防護不安全的帳戶屬性評定
-description: 本文概述 Azure ATP 實體具有不安全屬性的身分識別安全性態勢評定報告。
+title: 適用于身分識別不安全帳戶屬性評估的 Microsoft Defender
+description: 本文概述 Microsoft Defender 身分識別的實體，其具有不安全的屬性身分識別安全性狀態評估報告。
 keywords: ''
 author: shsagir
 ms.author: shsagir
-manager: rkarlin
-ms.date: 08/25/2020
+manager: shsagir
+ms.date: 10/26/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d0f415d58026fe0e44b365d7f8a6f995226532bc
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 034948a5a355012aad387aa4d46e6e3c8d342dee
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912759"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93277284"
 ---
 # <a name="security-assessment-unsecure-account-attributes"></a>安全性評估：不安全的帳戶屬性
 
@@ -25,7 +24,7 @@ ms.locfileid: "90912759"
 
 ## <a name="what-are-unsecure-account-attributes"></a>不安全的帳戶屬性是指什麼？
 
-Azure ATP 會持續監視您的環境，辨識屬性值會造成安全性風險的帳戶，並針對這些帳戶提出報告，以協助您保護環境。
+[!INCLUDE [Product long](includes/product-long.md)] 持續監視您的環境，以識別具有可公開安全性風險之屬性值的帳戶，並報告這些帳戶以協助保護您的環境。
 
 ## <a name="what-risk-do-unsecure-account-attributes-pose"></a>不安全的帳戶屬性會造成什麼風險？
 
@@ -38,7 +37,7 @@ Azure ATP 會持續監視您的環境，辨識屬性值會造成安全性風險�
 ## <a name="how-do-i-use-this-security-assessment"></a>我該如何使用這項安全性評估？
 
 1. 使用報告資料表找出哪些帳戶具有不安全的屬性。
-    ![查看熱門的受影響實體並建立動作計畫](media/atp-cas-isp-unsecure-account-attributes-1.png)
+    ![查看熱門的受影響實體並建立動作計畫](media/cas-isp-unsecure-account-attributes-1.png)
 1. 請對這些使用者帳戶採取行動，即修改或移除相關的屬性。
 
 > [!NOTE]
@@ -59,5 +58,5 @@ Azure ATP 會持續監視您的環境，辨識屬性值會造成安全性風險�
 
 ## <a name="see-also"></a>另請參閱
 
-- [Cloud App Security 中的 Azure ATP 活動篩選](activities-filtering-mcas.md)
-- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
+- [[!INCLUDE [Product short](includes/product-short.md)] Cloud App Security 中的活動篩選](activities-filtering-mcas.md)
+- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)

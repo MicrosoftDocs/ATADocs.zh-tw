@@ -1,23 +1,22 @@
 ---
-title: Azure 進階威脅防護弱式加密身分識別安全性狀態評量報告
-description: 本文提供 Azure ATP 的弱式加密身分識別安全性狀態評估報告的總覽。
+title: 適用于身分識別弱式加密身分識別安全性狀態評估報告的 Microsoft Defender
+description: 本文概述 Microsoft Defender 身分識別的弱式加密身分識別安全性狀態評估報告。
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 08/25/2020
+ms.date: 10/26/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: cc82212b-7d25-4ec7-828d-2475ff40d685
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 728103079da513129a55875d28f360c5cd176b47
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: bc6080ac87cd0709fd127daaf70e24a6ee03955e
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90911943"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93277268"
 ---
 # <a name="security-assessment-weak-cipher-usage"></a>安全性評估：弱式加密使用方式
 
@@ -30,7 +29,7 @@ ms.locfileid: "90911943"
 ## <a name="how-do-i-use-this-security-assessment-to-improve-my-organizational-security-posture"></a>如何使用此安全性評估來改善我的組織安全性狀態？
 
 1. 檢閱安全性評估中的弱式加密使用方式。
-    ![檢閱防止弱式加密使用方式評估](media/atp-cas-isp-weak-cipher-2.png)
+    ![檢閱防止弱式加密使用方式評估](media/cas-isp-weak-cipher-2.png)
 1. 理解已識別用戶端和伺服器使用弱式加密的原因。
 1. 補救問題，並停用 RC4 和 (或) 其他弱式加密 (例如 DES/3DES) 的使用。
 1. 若要深入了解如何停用 RC4，請參閱 [Microsoft 資訊安全諮詢](https://support.microsoft.com/help/2868725/microsoft-security-advisory-update-for-disabling-rc4)。
@@ -53,5 +52,5 @@ ms.locfileid: "90911943"
 
 ## <a name="next-steps"></a>後續步驟
 
-- [Cloud App Security 中的 Azure ATP 活動篩選](activities-filtering-mcas.md)
-- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
+- [[!INCLUDE [Product short](includes/product-short.md)] Cloud App Security 中的活動篩選](activities-filtering-mcas.md)
+- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)

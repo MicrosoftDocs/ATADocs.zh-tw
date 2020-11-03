@@ -1,6 +1,6 @@
 ---
-title: 存取管理 Azure 進階威脅防護角色群組
-description: 逐步引導您使用 Azure ATP 角色群組。
+title: 適用于存取管理的身分識別角色群組的 Microsoft Defender
+description: 引導您使用 Microsoft Defender 作為身分識別角色群組。
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -9,41 +9,40 @@ ms.date: 02/27/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: effca0f2-fcae-4fca-92c1-c37306decf84
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d66d5c5af5721d94cb834307bb5a5ebee28848fc
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 269343e6cdc5ceba875d5b6de1c740415a862eca
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90910018"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93275310"
 ---
-# <a name="azure-atp-role-groups"></a>Azure ATP 角色群組
+# <a name="product-long-role-groups"></a>[!INCLUDE [Product long](includes/product-long.md)] 角色群組
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
-Azure ATP 提供角色型安全性，可根據組織的特定安全性和合規性需求來保護資料。 Azure ATP 支援三種不同的角色：系統管理員、使用者和檢視者。
+[!INCLUDE [Product long](includes/product-long.md)] 提供以角色為基礎的安全性，根據組織的特定安全性和合規性需求來保護資料。 [!INCLUDE [Product short](includes/product-short.md)] 支援三種不同的角色：系統管理員、使用者和檢視器。
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
-角色群組可針對 Azure ATP 啟用存取管理。 使用角色群組可以隔離安全性小組內的責任，並授與使用者執行工作所需的存取權。 本文說明存取管理與 Azure ATP 角色授權，並可協助您在 Azure ATP 中開始使用角色群組。
+角色群組可啟用的存取管理 [!INCLUDE [Product short](includes/product-short.md)] 。 使用角色群組可以隔離安全性小組內的責任，並授與使用者執行工作所需的存取權。 本文說明存取管理、 [!INCLUDE [Product short](includes/product-short.md)] 角色授權，並協助您在中啟動並執行角色群組 [!INCLUDE [Product short](includes/product-short.md)] 。
 
 > [!NOTE]
-> 租用戶 Azure Active Directory 上的任何全域管理員或安全性系統管理員，都會自動是 Azure ATP 系統管理員。
+> 租使用者 Azure Active Directory 上的任何全域管理員或安全性系統管理員都會自動成為 [!INCLUDE [Product short](includes/product-short.md)] 系統管理員。
 
-## <a name="accessing-the-azure-atp-portal"></a>存取 Azure ATP 入口網站
+## <a name="accessing-the-product-short-portal"></a>存取 [!INCLUDE [Product short](includes/product-short.md)] 入口網站
 
-只有具備全域管理員或安全性系統管理員目錄角色的 Azure AD 使用者，才能存取 Azure ATP 入口網站 (portal.atp.azure.com)。 在使用必要角色進入入口網站後，您便可以建立 Azure ATP 執行個體。 Azure ATP 服務會在 Azure Active Directory 租用戶中建立三個安全性群組：Administrators、Users、Viewers。
+[!INCLUDE [Product short](includes/product-short.md)]只有具有全域管理員或安全性系統管理員目錄角色的 Azure AD 使用者才能完成入口網站 (portal.atp.azure.com) 的存取權。 使用必要的角色進入入口網站之後，您可以建立 [!INCLUDE [Product short](includes/product-short.md)] 實例。 [!INCLUDE [Product short](includes/product-short.md)] 服務會在您的 Azure Active Directory 租使用者中建立三個安全性群組：系統管理員、使用者、檢視器。
 
 > [!NOTE]
-> Azure ATP 入口網站的存取權只會授與 Azure Active Directory 中 Azure ATP 安全性群組內的使用者，以及租用戶的全域系統管理員及安全性系統管理員。
+> 入口網站的存取權 [!INCLUDE [Product short](includes/product-short.md)] 只會授與安全性群組中的使用者 [!INCLUDE [Product short](includes/product-short.md)] 、您的 Azure Active Directory 內的使用者，以及租使用者的全域和安全性系統管理員。
 
-## <a name="types-of-azure-atp-security-groups"></a>Azure ATP 安全性群組的類型
+## <a name="types-of-product-short-security-groups"></a>[!INCLUDE [Product short](includes/product-short.md)]安全性群組的類型
 
-Azure ATP 提供三種類型的安全性群組：Azure ATP (「執行個體名稱」)** 系統管理員、Azure ATP (「執行個體名稱」)** 使用者和 Azure ATP (「執行個體名稱」)** 檢視者。 下表描述每個角色在 Azure ATP 入口網站中可用的存取類型。 根據您所指派的角色而定，這些使用者將會無法使用 Azure ATP 入口網站中的各種畫面與功能表選項，如下所示：
+[!INCLUDE [Product short](includes/product-short.md)] 提供三種類型的安全性群組： Azure ATP *(實例名稱)* 系統管理員、Azure ATP (使用者) *實例* 名稱，以及 Azure ATP 檢視器 ( *實例名稱* ) 檢視器。 下表說明 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中每個角色可用的存取類型。 根據您指派的角色而定，入口網站中的各種畫面與功能表選項 [!INCLUDE [Product short](includes/product-short.md)] 無法供這些使用者使用，如下所示：
 
-|活動 |) 系統管理員 Azure ATP * (實例名稱*|Azure ATP * (實例名稱) * 使用者|) 檢視器 Azure ATP * (實例名稱*|
+|活動 |) 系統管理員 Azure ATP *(實例名稱*|Azure ATP *(實例名稱)* 使用者|) 檢視器 Azure ATP *(實例名稱*|
 |----|----|----|----|
 |變更健康情況警示的狀態|可用|無法使用|無法使用|
 |變更安全性警訊的狀態 (重新開啟、關閉、排除、隱藏)|可用|可用|無法使用|
@@ -51,26 +50,26 @@ Azure ATP 提供三種類型的安全性群組：Azure ATP (「執行個體名�
 |下載報表|可用|可用|可用|
 |登入|可用|可用|可用|
 |共用/匯出安全性警訊 (透過電子郵件、取得連結、下載詳細資料)|可用|可用|可用|
-|更新 ATP 設定 - 更新|可用|無法使用|無法使用|
-|更新 ATP 設定 - 實體標記 (敏感性和 honeytoken)|可用|可用|無法使用|
-|更新 ATP 設定 - 排除|可用|可用|無法使用|
-|更新 ATP 設定 - 語言|可用|可用|無法使用|
-|更新 ATP 設定 - 通知 (電子郵件和 syslog)|可用|可用|無法使用|
-|更新 ATP 設定 - 預覽偵測|可用|可用|無法使用|
-|更新 ATP 設定 - 排程報告|可用|可用|無法使用|
-|更新 Azure ATP 設定 - 資料來源 (目錄服務、SIEM、VPN WD-ATP)|可用|無法使用|無法使用|
-|更新 Azure ATP 設定 - 感應器 (下載、重新產生金鑰、設定、刪除)|可用|無法使用|無法使用|
+|更新設定 [!INCLUDE [Product short](includes/product-short.md)] -更新|可用|無法使用|無法使用|
+|更新設定 [!INCLUDE [Product short](includes/product-short.md)] - (敏感性和 honeytoken) 的實體標記|可用|可用|無法使用|
+|更新設定 [!INCLUDE [Product short](includes/product-short.md)] -排除|可用|可用|無法使用|
+|更新設定 [!INCLUDE [Product short](includes/product-short.md)] -語言|可用|可用|無法使用|
+|更新設定 [!INCLUDE [Product short](includes/product-short.md)] - (電子郵件和 syslog) 的通知|可用|可用|無法使用|
+|更新設定 [!INCLUDE [Product short](includes/product-short.md)] -預覽偵測|可用|可用|無法使用|
+|更新 [!INCLUDE [Product short](includes/product-short.md)] 設定-排程的報表|可用|可用|無法使用|
+|更新設定 [!INCLUDE [Product short](includes/product-short.md)] -資料來源 (目錄服務、SIEM、VPN WD-ATP) |可用|無法使用|無法使用|
+|更新設定 [!INCLUDE [Product short](includes/product-short.md)] -感應器 (下載、重新產生金鑰、設定、刪除) |可用|無法使用|無法使用|
 |檢視實體設定檔和安全性警訊|可用|可用|可用|
 
-當使用者嘗試存取不適用於其角色群組的頁面時，便會被重新導向至 Azure ATP 未授權頁面。
+當使用者嘗試存取不適用於其角色群組的頁面時，系統會將他們重新導向至 [!INCLUDE [Product short](includes/product-short.md)] 未授權的頁面。
 
 ## <a name="add-and-remove-users"></a>新增及移除使用者
 
-Azure ATP 使用 Azure AD 安全性群組作為角色群組的基礎。 您可以從管理角色群組 [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/All%20groups](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/All%20groups) 。 只可以將 Azure AD 使用者加入或移除自安全性群組。
+[!INCLUDE [Product short](includes/product-short.md)] 使用 Azure AD 安全性群組作為角色群組的基礎。 角色群組可以從 [ [群組管理] 頁面](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/All%20groups)進行管理。 只可以將 Azure AD 使用者加入或移除自安全性群組。
 
 ## <a name="see-also"></a>另請參閱
 
-- [ATP 調整大小工具](https://aka.ms/aatpsizingtool)
-- [ATP 架構](architecture.md)
-- [安裝 Azure ATP](install-step1.md)
-- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
+- [[!INCLUDE [Product short](includes/product-short.md)] 調整大小工具](https://aka.ms/aatpsizingtool)
+- [[!INCLUDE [Product short](includes/product-short.md)] 建築](architecture.md)
+- [安裝 [!INCLUDE [Product short](includes/product-short.md)]](install-step1.md)
+- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)

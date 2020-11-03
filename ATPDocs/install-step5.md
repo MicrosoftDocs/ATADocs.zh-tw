@@ -1,6 +1,6 @@
 ---
-title: 進行 Azure ATP 感應器設定的概念
-description: 安裝 Azure ATP 的步驟 5 可協助您設定 Azure ATP 獨立感應器的設定。
+title: 設定 Microsoft Defender 的身分識別感應器設定概念
+description: 安裝適用于身分識別的 Microsoft Defender 的步驟5可協助您針對身分識別獨立感應器設定 Defender 的設定。
 author: shsagir
 ms.author: shsagir
 ms.date: 09/15/2019
@@ -9,73 +9,73 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 912b9ec8d7ff9f89bda80b6d1d3515cf93d9b9cd
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 06df6ebb9c5baa3ba2a568c78dd1ab175cdae9a8
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90913019"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93277006"
 ---
-# <a name="configure-azure-atp-sensor-settings"></a>進行 Azure ATP 感應器設定
+# <a name="configure-product-long-sensor-settings"></a>設定 [!INCLUDE [Product long](includes/product-long.md)] 感應器設定
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
-在本文中，您將了解如何正確進行 Azure ATP 感應器設定，以開始查看資料。 您需要進行額外的設定及整合，才能利用 Azure ATP 的完整功能。
+在本文中，您將瞭解如何正確地設定 [!INCLUDE [Product long](includes/product-long.md)] 感應器設定，以開始查看資料。 您必須執行額外的設定和整合，才能利用的 [!INCLUDE [Product short](includes/product-short.md)] 完整功能。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
-- [連線到 Active Directory](install-step2.md) 的 [Azure ATP 執行個體](install-step1.md)。
-- 您 [ATP 感應器安裝套件](install-step3.md)的已下載複本，以及存取金鑰。
+- [連接至 Active Directory](install-step2.md)的[ [!INCLUDE [Product short](includes/product-short.md)] 實例](install-step1.md)。
+- 已下載的[ [!INCLUDE [Product short](includes/product-short.md)] 感應器安裝套件](install-step3.md)複本和存取金鑰。
 
 ## <a name="configure-sensor-settings"></a>進行感應器設定
 
-在安裝 Azure ATP 感應器之後，請執行下列操作來進行 Azure ATP 感應器設定。
+[!INCLUDE [Product short](includes/product-short.md)]安裝感應器之後，請執行下列動作來設定 [!INCLUDE [Product short](includes/product-short.md)] 感應器設定。
 
-1. 按一下 [啟動]  以開啟瀏覽器，然後登入 Azure ATP 入口網站。
+1. 按一下 [ **啟動** ] 以開啟瀏覽器並登入 [!INCLUDE [Product short](includes/product-short.md)] 入口網站。
 
-1. 在 Azure ATP 入口網站中，移至 [設定]  ，然後選取 [系統]  下方的 [感應器]  。
+1. 在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中，移 **Configuration** 至 [設定]，然後在 [ **系統** ] 底下選取 [ **感應器** ]。
 
-    ![[感應器] 頁面](media/atp-sensor-config.png)
+    ![[感應器] 頁面](media/sensor-config.png)
 
 1. 按一下您想要設定的感應器，然後輸入下列資訊：
 
-    ![進行感應器設定](media/atp-sensor-config-2.png)
+    ![進行感應器設定](media/sensor-config-2.png)
 
-    - **描述**：輸入 Azure ATP 感應器的描述 (選擇性)。
-    - **網域控制站 (FQDN)** (此為 Azure ATP 獨立感應器的必要項目，Azure ATP 感應器無法變更此項目)：輸入您網域控制站的完整 FQDN，然後按一下加號將它新增至清單。 例如，**dc01.contoso.com**
+    - **描述** ：輸入感應器的描述 [!INCLUDE [Product short](includes/product-short.md)] (選擇性) 。
+    - **網域控制站 (FQDN)** 獨立感應器所需的 ([!INCLUDE [Product short](includes/product-short.md)] ，無法變更 [!INCLUDE [Product short](includes/product-short.md)] 感應器) ：輸入網域控制站的完整 FQDN，然後按一下加號將它新增至清單。 例如， **dc01.contoso.com**
 
-    下列資訊適用於您在**網域控制站**清單中輸入的伺服器：
-    - 所有透過連接埠鏡像受 Azure ATP 獨立感應器監視流量的網域控制站，都必須列在 [網域控制站]  清單中。 如果網域控制站未列在**網域控制站**清單中，可能無法如預期般偵測可疑活動。
-    - 清單中應至少有一個網域控制站是通用類別目錄。 這讓 Azure ATP 能夠解析樹系中其他網域的電腦與使用者物件。
+    下列資訊適用於您在 **網域控制站** 清單中輸入的伺服器：
+    - 所有透過獨立感應器透過埠鏡像監視流量的網域控制站 [!INCLUDE [Product short](includes/product-short.md)] ，都必須列在 [ **網域控制站** ] 清單中。 如果網域控制站未列在 **網域控制站** 清單中，可能無法如預期般偵測可疑活動。
+    - 清單中應至少有一個網域控制站是通用類別目錄。 這可讓您 [!INCLUDE [Product short](includes/product-short.md)] 解析樹系中其他網域的電腦與使用者物件。
 
     - **擷取網路介面卡** (必填)︰
 
-    - 如果為 Azure ATP 感應器，應是用來與組織中其他電腦通訊的所有網路介面卡。
-    - 如果為專用伺服器上的 Azure ATP 獨立感應器，請選取設定為目的地鏡像連接埠的網路介面卡。 這些網路介面卡會接收鏡像網域控制站流量。
+    - 針對 [!INCLUDE [Product short](includes/product-short.md)] 感應器，則是用來與組織中其他電腦通訊的所有網路介面卡。
+    - 針對 [!INCLUDE [Product short](includes/product-short.md)] 專用伺服器上的獨立感應器，請選取設定為目的地鏡像埠的網路介面卡。 這些網路介面卡會接收鏡像網域控制站流量。
 
 1. 按一下 **[儲存]** 。
 
 ## <a name="validate-installations"></a>驗證安裝
 
-若要驗證 Azure ATP 感應器是否已成功部署，請檢查下列項目︰
+若要驗證 [!INCLUDE [Product short](includes/product-short.md)] 感應器是否已成功部署，請檢查下列各項：
 
-1. 檢查名稱為 [Azure 進階威脅感應器]  的服務是否正在執行。 儲存 Azure ATP 感應器設定之後，服務可能需要幾秒鐘的時間來啟動。
+1. 檢查名稱為 [Azure 進階威脅感應器]  的服務是否正在執行。 儲存 [!INCLUDE [Product short](includes/product-short.md)] 感應器設定之後，可能需要幾秒鐘的時間才會啟動服務。
 
 1. 如果服務未啟動，請檢閱位於下列預設資料夾 "%programfiles%\Azure Advanced Threat Protection sensor\Version X\Logs" 中的 "Microsoft.Tri.sensor-Errors.log" 檔案。
 
     >[!NOTE]
-    > Azure ATP 的版本經常更新，若要檢查是否有最新版本，請在 Azure ATP 入口網站中，移至 [設定]  ，然後移至 [關於]  。
+    > 經常更新的版本， [!INCLUDE [Product short](includes/product-short.md)] 若要檢查最新版本，請在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中，移至 [設定 **]，** 然後 [ **關於** ]。
 
-1. 前往您的 Azure ATP 執行個體 URL。 在 Azure ATP 入口網站的搜尋列中搜尋某個項目，例如網域上的使用者或群組。
+1. 移至您的 [!INCLUDE [Product short](includes/product-short.md)] 實例 URL。 在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中，搜尋搜尋列中的某個內容，例如網域上的使用者或群組。
 
-1. 使用下列步驟來確認任何網域裝置上的 ATP 連線能力：
+1. [!INCLUDE [Product short](includes/product-short.md)]使用下列步驟來確認任何網域裝置上的連線能力：
     1. 開啟命令提示字元
     1. 輸入 `nslookup`
-    1. 輸入 **server**，然後輸入已安裝 ATP 感應器之網域控制站的 FQDN 或 IP 位址。 例如， `server contosodc.contoso.azure`
-        - 請務必將 contosodc.contoso.azure 和 contoso.azure 分別取代成您 Azure ATP 感應器的 FQDN 和網域。
+    1. 輸入 **伺服器** ，然後輸入安裝感應器之網域控制站的 FQDN 或 IP 位址 [!INCLUDE [Product short](includes/product-short.md)] 。 例如， `server contosodc.contoso.azure`
+        - 請務必將 contosodc 取代為您的感應器和功能變數名稱的 FQDN，以分別取代為 azure 和 contoso。 [!INCLUDE [Product short](includes/product-short.md)]
     1. 輸入 `ls -d contoso.azure`
     1. 針對您想要測試的每個感應器重複步驟 3 和 4。
-    1. 從 Azure ATP 主控台中，開啟您執行連線能力測試之來源電腦的實體設定檔。
+    1. 從 [!INCLUDE [Product short](includes/product-short.md)] 主控台開啟您執行連線能力測試的電腦的實體設定檔。
     1. 檢查相關的邏輯活動並確認連線能力。
 
     > [!NOTE]
@@ -85,8 +85,8 @@ ms.locfileid: "90913019"
 
 - [Proxy 設定](configure-proxy.md)
 - [進階稽核原則](configure-windows-event-collection.md)
-- [設定 Azure ATP 對 SAM 發出遠端呼叫](install-step8-samr.md)
+- [設定 [!INCLUDE [Product short](includes/product-short.md)] 以對 SAM 進行遠端呼叫](install-step8-samr.md)
 
 ## <a name="join-the-community"></a>加入社群
 
-有更多問題嗎，或是想與其他人討論 Azure ATP 與相關的安全性？ 現在就加入 [Azure ATP 社群](https://aka.ms/azureatpcommunity)！
+有更多問題，或 [!INCLUDE [Product short](includes/product-short.md)] 與其他人討論和相關的安全性有興趣嗎？ 立即加入[ [!INCLUDE [Product short](includes/product-short.md)] 社區](https://aka.ms/MDIcommunity)！

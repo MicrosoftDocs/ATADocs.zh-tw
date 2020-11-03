@@ -1,23 +1,22 @@
 ---
-title: Azure 進階威脅防護風險最高的橫向移動路徑評定
-description: 本文概述 Azure ATP 敏感性實體具有風險最高橫向移動路徑的身分識別安全性態勢評定報告。
+title: 適用于身分識別風險最高的 Microsoft Defender 橫向移動路徑評量
+description: 本文概述使用風險最高橫向移動路徑身分識別安全性狀態評估報告的身分識別敏感性實體 Microsoft Defender。
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: rkarlin
-ms.date: 08/25/2020
+ms.date: 10/26/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 04b1cefbb1c03d3dfe38c743b2a910a97664d01e
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: df369b2a718b1aa2cb552bb42712a6b36275e2ee
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90913145"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93276664"
 ---
 # <a name="security-assessment-riskiest-lateral-movement-paths-lmp"></a>安全性評估：風險最高的橫向移動路徑 (LMP)
 
@@ -25,16 +24,16 @@ ms.locfileid: "90913145"
 
 ## <a name="what-are-risky-lateral-movement-paths"></a>有風險的橫向移動路徑是指什麼？
 
-Azure ATP 會持續監視您的環境，辨識橫向移動路徑風險最高而造成安全性風險的**敏感性**帳戶，並針對這些帳戶提出報告，以協助您管理環境。 若路徑有三個以上的非敏感性帳戶，可能讓惡意行動者對**敏感性**帳戶進行認證竊取，該路徑即視為有風險的路徑。
+[!INCLUDE [Product long](includes/product-long.md)] 持續監視您的環境，以使用公開安全性風險的風險最高橫向移動路徑來識別 **敏感性** 帳戶，並報告這些帳戶以協助您管理環境。 若路徑有三個以上的非敏感性帳戶，可能讓惡意行動者對 **敏感性** 帳戶進行認證竊取，該路徑即視為有風險的路徑。
 
 深入了解 LMP：
 
-- [Azure ATP 橫向移動路徑 (LMP)](use-case-lateral-movement-path.md)
+- [[!INCLUDE [Product short](includes/product-short.md)] 橫向移動路徑 (Lmp) ](use-case-lateral-movement-path.md)
 - [MITRE ATT&CK Lateral Movement](https://attack.mitre.org/tactics/TA0008/) (橫向移動)
 
 ## <a name="what-risk-do-risky-lateral-movement-paths-pose"></a>有風險的橫向移動路徑會造成什麼風險？
 
-無法保護**敏感性**帳戶的組織，會對惡意行動者毫無防備。
+無法保護 **敏感性** 帳戶的組織，會對惡意行動者毫無防備。
 
 惡意執行者 (如竊賊) 通常會試圖以最輕鬆且不容易被發現的方式進入環境。 橫向移動路徑有風險的敏感性帳戶，會讓攻擊者有機可乘，因而暴露在風險中。
 
@@ -42,8 +41,8 @@ Azure ATP 會持續監視您的環境，辨識橫向移動路徑風險最高而�
 
 ## <a name="how-do-i-use-this-security-assessment"></a>我該如何使用這項安全性評估？
 
-1. 使用報告資料表找出哪些**敏感性**帳戶有具風險的 LMP。
-    ![查看熱門的受影響實體並建立動作計畫](media/atp-cas-isp-riskiest-lmp-1.png)
+1. 使用報告資料表找出哪些 **敏感性** 帳戶有具風險的 LMP。
+    ![查看熱門的受影響實體並建立動作計畫](media/cas-isp-riskiest-lmp-1.png)
 1. 採取適當的動作：
     - 依建議從群組中移除實體。
     - 依建議移除實體在裝置上的本機系統管理員權限。
@@ -56,5 +55,5 @@ Azure ATP 會持續監視您的環境，辨識橫向移動路徑風險最高而�
 
 ## <a name="see-also"></a>另請參閱
 
-- [Cloud App Security 中的 Azure ATP 活動篩選](activities-filtering-mcas.md)
-- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
+- [[!INCLUDE [Product short](includes/product-short.md)] Cloud App Security 中的活動篩選](activities-filtering-mcas.md)
+- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)

@@ -1,39 +1,38 @@
 ---
-title: Azure 進階威脅防護設定偵測排除範圍和 Honeytoken 帳戶
+title: 適用于身分識別的 Microsoft Defender 設定偵測排除專案和 honeytoken 帳戶
 description: 設定偵測排除範圍和 Honeytoken 使用者。
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/22/2019
+ms.date: 10/26/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 1ad5e923-9bbd-4f56-839a-b11a9f387d4b
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 23b7fa2a6deea68b1567b8275fccd61f9822bf78
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 68ed20a243a307992b2d11c633728bf34abf6302
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912976"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93277025"
 ---
 # <a name="configure-detection-exclusions-and-honeytoken-accounts"></a>設定偵測排除範圍和 Honeytoken 帳戶
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
-Azure ATP 可從一些偵測排除特定 IP 位址或使用者。
+[!INCLUDE [Product long](includes/product-long.md)] 可從一些偵測中排除特定 IP 位址或使用者。
 
-例如，**DNS 探查排除項目**可以是一個使用 DNS 做為掃描機制的安全性掃描程式。 排除能協助 Azure ATP 略過這類掃描程式。
+例如， **DNS 探查排除項目** 可以是一個使用 DNS 做為掃描機制的安全性掃描程式。 排除有助於 [!INCLUDE [Product short](includes/product-short.md)] 忽略這類掃描器。
 
-Azure ATP 也能讓您設定 honeytoken 帳戶，用來做為針對惡意執行者的陷阱。與這些 honeytoken 帳戶 (通常是休眠的) 關聯的任何驗證都會觸發警示。
+[!INCLUDE [Product short](includes/product-short.md)] 也可讓您設定 honeytoken 帳戶，以做為惡意執行者的陷阱-與這些 honeytoken 帳戶相關聯的任何驗證 (正常休眠) ，會觸發警示。
 
 若要設定，請依照下列步驟執行︰
 
-1. 從 Azure ATP 入口網站中，按一下設定圖示，然後選取 [設定]  。
+1. 從 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中，按一下設定圖示，然後選取 **Configuration** [設定]。
 
-    ![Azure ATP 組態設定](media/atp-config-menu.png)
+    ![[!包含 [Product short] (include/product-short. md) ] configuration settings](media/config-menu.png)
 
 1. 在 [偵測]  下，按一下 [實體標記]  。
 
@@ -48,15 +47,15 @@ Azure ATP 也能讓您設定 honeytoken 帳戶，用來做為針對惡意執行�
 
 1. 按一下 **[儲存]** 。
 
-恭喜，您已成功部署 Azure 進階威脅防護！
+恭喜，您已成功部署 [!INCLUDE [Product long](includes/product-long.md)] ！
 
 檢查攻擊時間表以檢視從所偵測到之活動產生的安全性警示，並搜尋使用者或電腦並檢視其設定檔。
 
-Azure ATP 掃描會立即開始。 某些偵測 (例如[敏感性群組的可疑新增項目](domain-dominance-alerts.md#suspicious-additions-to-sensitive-groups-external-id-2024)) 需要學習期間，而且在 Azure ATP 部署之後不會立即可用。每個警示的學習期間列在詳細的[安全性警示指南](suspicious-activity-guide.md)中。
+[!INCLUDE [Product short](includes/product-short.md)] 掃描立即開始。 某些偵測（例如 [敏感性群組的可疑新增](domain-dominance-alerts.md#suspicious-additions-to-sensitive-groups-external-id-2024)專案）需要學習期間，因此無法在部署後立即使用 [!INCLUDE [Product short](includes/product-short.md)] 。每個警示的學習期間會列在詳細的 [安全性警示指南](suspicious-activity-guide.md)中。
 
 ## <a name="see-also"></a>另請參閱
 
-- [Azure ATP 調整大小工具](https://aka.ms/aatpsizingtool) \(英文\)
+- [[!INCLUDE [Product short](includes/product-short.md)] 調整大小工具](https://aka.ms/aatpsizingtool)
 - [設定事件收集](configure-event-collection.md)
-- [Azure ATP 必要條件](prerequisites.md)
-- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
+- [[!INCLUDE [Product short](includes/product-short.md)] 先決條件](prerequisites.md)
+- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)

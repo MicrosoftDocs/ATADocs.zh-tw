@@ -1,28 +1,28 @@
 ---
-title: Azure 進階威脅防護 (Azure ATP) 舊版本參考
-description: 此文章是 Azure 進階威脅防護 (Azure ATP) 舊版更新的參考。
+title: Microsoft Defender for Identity 中較舊版本的參考
+description: 本文是對 Microsoft Defender for Identity 的先前版本更新的參考。
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/17/2019
+ms.date: 10/27/2020
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 494faf68f394d9bdbb2af583c4eec3135fd67ee3
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 3f8554cf5d3c01d4d8d54a289255070fdef0e52d
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912000"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93274554"
 ---
-# <a name="release-reference-of-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護 (Azure ATP) 的版本參考
+# <a name="release-reference-of-product-long"></a>的發行參考 [!INCLUDE [Product long](includes/product-long.md)]
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
-此文章是所有 Azure ATP 版本的參考，直到 (並包含) 2.55 版為止。 如需最新的 Azure ATP 版本更新 (2.56 與更新版本)，請參閱 [Azure ATP 新功能](whats-new.md)。
+本文參考 [!INCLUDE [Product short](includes/product-short.md)] 先前 Azure 進階威脅防護的所有 (，也稱為 Azure ATP) 版本，直到 (和包含) 版本2.55 為止。 如 [!INCLUDE [Product short](includes/product-short.md)] (2.56 和更新版本的最新版本更新) ，請參閱[ [!INCLUDE [Product short](includes/product-short.md)] 新功能](whats-new.md)。
 
 ## <a name="azure-atp-release-255"></a>Azure ATP 2.55 版
 
@@ -55,7 +55,7 @@ Azure ATP [透過 DNS 的可疑通訊](suspicious-activity-guide.md)安全性警
 
 - **安全性警示增強：可疑的驗證失敗**  
 Azure ATP 的[可疑的驗證失敗安全性警示](suspicious-activity-guide.md)現在包括針對密碼噴灑暴力密碼破解攻擊偵測的監視。
-在典型的**密碼噴灑**攻擊中，攻擊者從網域控制站成功列舉有效使用者清單後，便會嘗試針對所有已知的使用者帳戶嘗試使用一個特製密碼 (一個密碼用於多個帳戶)。 當初始密碼噴灑失敗時，他們會利用其他的特製密碼再試一次，在嘗試之間通常會等候 30 分鐘。 等候時間可讓攻擊者避免觸發最常見以時間為基礎的帳戶鎖定閾值。 密碼噴灑已快速成為攻擊者和滲透測試者最愛的技術。 密碼噴灑攻擊已證明是取得組織內初始據點的有效方式，並可進行後續的橫向移動，嘗試提高權限。
+在典型的 **密碼噴灑** 攻擊中，攻擊者從網域控制站成功列舉有效使用者清單後，便會嘗試針對所有已知的使用者帳戶嘗試使用一個特製密碼 (一個密碼用於多個帳戶)。 當初始密碼噴灑失敗時，他們會利用其他的特製密碼再試一次，在嘗試之間通常會等候 30 分鐘。 等候時間可讓攻擊者避免觸發最常見以時間為基礎的帳戶鎖定閾值。 密碼噴灑已快速成為攻擊者和滲透測試者最愛的技術。 密碼噴灑攻擊已證明是取得組織內初始據點的有效方式，並可進行後續的橫向移動，嘗試提高權限。
 
 - **功能增強：傳送測試 Syslog 訊息**  
 在 SIEM 設定程序期間可傳送測試 Syslog 訊息的新功能。 若要深入了解，請參閱[與 Syslog 整合](setting-syslog.md)。
@@ -87,7 +87,7 @@ Azure ATP 文件的近期內容變更包括提供 Azure ATP 所有受監視活�
 
 發行日期：2018 年 10 月 21 日
 
-- 您現在可以從 Azure ATP 入口網站[設定](integrate-msde.md#how-to-integrate-azure-atp-with-microsoft-defender-atp)畫面啟用/停用 **WD-ATP 整合**。 (Azure ATP 使用者必須是 AAD 租用戶的全域或安全性系統管理員，才能使用這項功能)。
+- 您現在可以從 Azure ATP 入口網站 [設定](integrate-mde.md#how-to-integrate-azure-atp-with-microsoft-defender-atp)畫面啟用/停用 **WD-ATP 整合** 。 (Azure ATP 使用者必須是 AAD 租用戶的全域或安全性系統管理員，才能使用這項功能)。
 
 - 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
@@ -107,7 +107,7 @@ Azure ATP 文件的近期內容變更包括提供 Azure ATP 所有受監視活�
   - 這項偵測可協助偵測對 DNS 通訊協定的攻擊。 大多數組織中的 DNS 通訊協定，都不會受到監視，且很少會因惡意活動而遭到封鎖。 讓攻擊者有機會在遭入侵的電腦上濫用 DNS 通訊協定。 透過 DNS 的惡意通訊可能用於資料外洩、命令和控制，及/或規避公司網路限制。
 
 - **新功能**  
-Azure ATP **使用者角色**已增強下列功能：
+Azure ATP **使用者角色** 已增強下列功能：
   - 變更安全性警訊的狀態 (重新開啟、關閉、排除、隱藏)
   - 設定已排程報表
   - 設定實體標記 (敏感性與 honey token)
@@ -115,7 +115,7 @@ Azure ATP **使用者角色**已增強下列功能：
   - 變更語言
   - 設定透過電子郵件或 syslog 的通知
 
-- 已找出並解決發生在 2018 年 9 月 16 日**使用目錄服務查詢探查**中暫時性增加情況的安全性警訊。
+- 已找出並解決發生在 2018 年 9 月 16 日 **使用目錄服務查詢探查** 中暫時性增加情況的安全性警訊。
 
 - 此版本也包含針對多個問題的修正和改善。
 
@@ -229,7 +229,7 @@ Azure ATP 現在可支援擁有多個樹系的組織，讓您能跨樹系監視�
 發行日期：2018 年 7 月 5 日
 
 - **加入新的偵測：Kerberos 黃金票證 - 不存在的帳戶** (預覽)  
-這個新偵測所能防禦針對網域中不存在帳戶所建立黃金票證的攻擊，因此得以協助保護您的組織。 如需詳細資訊，請參閱 [Azure 進階威脅防護可疑活動指南](suspicious-activity-guide.md)
+這個新偵測所能防禦針對網域中不存在帳戶所建立黃金票證的攻擊，因此得以協助保護您的組織。 如需詳細資訊，請參閱 [可疑活動指南](suspicious-activity-guide.md)
 
 - 此版本包含針對多個問題的修正和改善。
 
@@ -334,7 +334,7 @@ Azure ATP 包括新健康情況警示，讓您知道感應器是否過期超過�
 
 發行日期：2018 年 4 月 8 日
 
-- 您現在可以從上方導覽列提供使用者意見反應。 按一下功能表列中的笑臉，可讓您透過電子郵件，向 Azure Advanced Threat Protection 小組傳送您的意見反應。
+- 您現在可以從上方導覽列提供使用者意見反應。 按一下功能表列中的笑臉，可讓您傳送電子郵件給 [!INCLUDE [Product long](includes/product-long.md)] 小組，並提供您的意見反應。
 
 - 此版本包含針對多個問題的修正和改善。
 
@@ -351,7 +351,7 @@ Azure ATP 包括新健康情況警示，讓您知道感應器是否過期超過�
 發行日期：2018 年 3 月 18 日
 
 - Azure ATP 現已支援多重要素驗證 (MFA)。 使用 MFA 的租用戶現在能夠進入 Azure ATP 入口網站。
-- Azure ATP 現在具有[**系統狀態**](https://health.atp.azure.com/)頁面，可讓您了解工作區管理入口網站是否正常運作、是否偵測到任何問題、感應器是否可將流量傳送至雲端。 您可從 Azure ATP 的功能表列存取 [系統狀態]  。
+- Azure ATP 現在具有 [**系統狀態**](https://health.atp.azure.com/)頁面，可讓您了解工作區管理入口網站是否正常運作、是否偵測到任何問題、感應器是否可將流量傳送至雲端。 您可從 Azure ATP 的功能表列存取 [系統狀態]  。
 
 ## <a name="azure-atp-release-224"></a>Azure ATP 2.24 版
 
@@ -363,7 +363,7 @@ Azure ATP 包括新健康情況警示，讓您知道感應器是否過期超過�
 - **改良的調查**
   - Azure ATP 包含豐富的[實體設定檔](entity-profiles.md)。 實體設定檔為您提供專為深入調查使用者活動所設計的平台。這包括他們存取的資源、登入的電腦及其他更多。 實體設定檔也提供目錄資料，讓您識別往來實體的潛在橫向移動路徑，讓您深入了解您組織中的潛在漏洞。
 
-  - ATP 可讓您將實體手動標記為*機密*，以加強偵測和監視。 這項標記會影響很多 Azure ATP 偵測，例如機密群組修改偵測和[橫向移動路徑](use-case-lateral-movement-path.md)，這些都仰賴於視為機密的實體。
+  - ATP 可讓您將實體手動標記為 *機密* ，以加強偵測和監視。 這項標記會影響很多 Azure ATP 偵測，例如機密群組修改偵測和[橫向移動路徑](use-case-lateral-movement-path.md)，這些都仰賴於視為機密的實體。
 
 - **可協助您調查的新報表**
   - [在純文字格式報表中公開的密碼](reports.md)可讓您偵測服務傳送的帳戶認證何時會以純文字傳送。 這可讓您調查服務，並改善您的網路安全性層級。 此報表會取代純文字的可疑活動警示。
@@ -376,8 +376,8 @@ Azure ATP 感應器基礎結構已改進效能：流量的彙總檢視可最佳�
 
 ## <a name="see-also"></a>另請參閱
 
-- [什麼是 Azure 進階威脅防護？](what-is.md)
+- [什麼是 [!INCLUDE [Product short](includes/product-short.md)] ？](what-is.md)
 - [常見問題集](technical-faq.md)
-- [Azure ATP 必要條件](prerequisites.md)
-- [Azure ATP 容量規劃](capacity-planning.md)
-- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
+- [[!INCLUDE [Product short](includes/product-short.md)] 先決條件](prerequisites.md)
+- [[!INCLUDE [Product short](includes/product-short.md)] 容量規劃](capacity-planning.md)
+- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)

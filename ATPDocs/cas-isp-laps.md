@@ -1,23 +1,22 @@
 ---
-title: Azure 進階威脅防護 Microsoft LAPS 使用情況評定
-description: 本文提供 Azure ATP Microsoft LAPS 使用情況身分識別安全性狀態評估報告的概觀。
+title: Microsoft Defender for Identity Microsoft LAPS 使用量評定
+description: 本文概要說明 Microsoft Defender 身分識別的 Microsoft LAPS 使用身分識別安全性狀態評估報告。
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 08/25/2020
+ms.date: 10/26/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 2fe62047-75ef-4b2e-b4aa-72860e39b4e4
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: fdc5ace86a48b78041e1a7fc8927ae24d64b00ff
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 44731f9d987eda3d87339b1502de609de9d222ed
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90913217"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93277534"
 ---
 # <a name="security-assessment-microsoft-laps-usage"></a>安全性評估：Microsoft LAPS 使用情況
 
@@ -37,13 +36,13 @@ LAPS 能在簡化密碼管理的同時，協助客戶針對網路攻擊實作其
 
 1. 您可使用報告資料表來探索哪些網域有部分 (或全部) 相容的 Windows 裝置尚未受到 LAPS 保護，或在過去 60 天內未變更其 LAPS 受控密碼。
 1. 若為僅受部分保護的網域，請選取相關的資料列，以檢視該網域中未受 LAPS 保護的裝置清單。
-    ![選取具有 LAPS 裝置的網域](media/atp-cas-isp-laps-1.png)
+    ![選取具有 LAPS 裝置的網域](media/cas-isp-laps-1.png)
 1. 使用下載中提供的文件，下載、安裝及設定或疑難排解 [Microsoft LAPS](https://go.microsoft.com/fwlink/?linkid=2104282)，對這些裝置採取適當的動作。
-    ![修復 LAPS 裝置](media/atp-cas-isp-laps-2.png)
+    ![修復 LAPS 裝置](media/cas-isp-laps-2.png)
 
 > [!NOTE]
 > 此評定會每隔 24 小時更新一次。
 
 ## <a name="see-also"></a>另請參閱
 
-- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
+- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)

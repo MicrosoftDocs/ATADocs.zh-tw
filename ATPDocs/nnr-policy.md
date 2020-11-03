@@ -1,33 +1,32 @@
 ---
-title: Azure 進階威脅防護網路名稱解析
-description: 此文章提供 Azure ATP 進階網路名稱解析功能與用法的概觀。
+title: 用於識別網路名稱解析的 Microsoft Defender
+description: 本文概述 Microsoft Defender 身分識別的 Advanced Network Name 解析功能和用途。
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/22/2020
+ms.date: 10/26/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 1ac873fc-b763-41d7-878e-7c08da421cb5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4c98696b11ba329b6b907003b86cc5bd3d111cdf
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 228d583fde3e08c497721e0aa5a8aa1b61318937
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912700"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93274779"
 ---
 # <a name="what-is-network-name-resolution"></a>什麼是網路名稱解析？
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
-網路名稱解析 (NNR) 是 Azure ATP 功能的主要元件。 Azure ATP 會以網路流量、Windows 事件與 ETW 來擷取活動 - 這些活動通常包含 IP 資料。
+網路名稱解析 (NNR) 是功能的主要元件  [!INCLUDE [Product long](includes/product-long.md)] 。 [!INCLUDE [Product short](includes/product-short.md)] 根據網路流量、Windows 事件和 ETW 來捕獲活動-這些活動通常包含 IP 資料。
 
-您可以使用 NNR，Azure ATP (包含 IP 位址) 的原始活動，以及與每個活動相關的電腦之間建立關聯。 根據未經處理的活動，Azure ATP 會分析電腦等實體，並針對可疑活動產生安全性警訊。
+您可以使用 NNR， [!INCLUDE [Product short](includes/product-short.md)] (包含 IP 位址) 的原始活動，以及每個活動相關的電腦之間相互關聯。 根據未經處理的活動， [!INCLUDE [Product short](includes/product-short.md)] 分析實體（包括電腦），並產生可疑活動的安全性警示。
 
-為將 IP 位址解析成電腦名稱稱，Azure ATP 感應器會使用下列方法來查閱 IP 位址：
+若要將 IP 位址解析為電腦名稱稱， [!INCLUDE [Product short](includes/product-short.md)] 感應器會使用下列方法來查閱 ip 位址：
 
 - 透過 RPC 的 NTLM (TCP 連接埠 135)
 - NetBIOS (UDP 連接埠 137)
@@ -39,10 +38,10 @@ ms.locfileid: "90912700"
 > [!NOTE]
 > 不會在任何連接埠上執行任何驗證。
 
-Azure ATP 會根據網路流量評估及判斷裝置作業系統。 在擷取電腦名稱之後，Azure ATP 感應器會檢查 Active Directory 並使用 TCP 指紋，以尋找具有該相同電腦名稱的相關電腦物件。 使用 TCP 指紋有助於識別未註冊和非 Windows 的裝置，在您的調查過程中提供協助。
-當 Azure ATP 感應器找到相互關聯時，感應器會在 IP 與電腦物件之間建立關聯。
+[!INCLUDE [Product short](includes/product-short.md)] 根據網路流量評估並決定裝置作業系統。 在抓取電腦名稱稱之後， [!INCLUDE [Product short](includes/product-short.md)] 感應器會檢查 Active Directory 並使用 TCP 指紋來查看是否有相關聯的電腦物件具有相同的電腦名稱稱。 使用 TCP 指紋有助於識別未註冊和非 Windows 的裝置，在您的調查過程中提供協助。
+當 [!INCLUDE [Product short](includes/product-short.md)] 感應器找到相互關聯時，感應器會將 IP 與電腦物件產生關聯。
 
-在沒有擷取到名稱的情況下，會使用 IP 和偵測到的相關活動建立**無法解析的電腦設定檔 (依 IP)**。
+在沒有擷取到名稱的情況下，會使用 IP 和偵測到的相關活動建立 **無法解析的電腦設定檔 (依 IP)** 。
 
 ![無法解析的電腦設定檔](media/unresolved-computer-profile.png)
 
@@ -52,12 +51,12 @@ Azure ATP 會根據網路流量評估及判斷裝置作業系統。 在擷取電
 - 可疑的 DCSync 攻擊 (目錄服務的複寫)
 - 網路對應偵察 (DNS)
 
-為了協助您判斷警示為**確判 (TP)** 或**誤判 (FP)**，Azure ATP 會包含解析至每個安全性警示之辨識項的電腦命名確定度。
+若要改善您判斷警示是否為 **真肯定 (TP)** 或 **假正面 (FP)** 的能力，可將 [!INCLUDE [Product short](includes/product-short.md)] 電腦名稱稱的確定性程度解析為每個安全性警示的辨識項。
 
-例如，當電腦名稱被解析為**高確定度**時，將能提升安全性警示結果為**確判** (**TP**) 的信賴度。
+例如，當電腦名稱被解析為 **高確定度** 時，將能提升安全性警示結果為 **確判** ( **TP** ) 的信賴度。
 
-辨識項會包含時間、IP，以及 IP 所解析至的電腦名稱。 當解析確定度為**低**時，請使用此資訊來調查並確認哪一個裝置是目前 IP 的真正來源。
-在確認裝置之後，您便可以判斷該警示是否為**誤判** (**FP**)，類似下列範例：
+辨識項會包含時間、IP，以及 IP 所解析至的電腦名稱。 當解析確定度為 **低** 時，請使用此資訊來調查並確認哪一個裝置是目前 IP 的真正來源。
+在確認裝置之後，您便可以判斷該警示是否為 **誤判** ( **FP** )，類似下列範例：
 
 - 可疑的身分識別竊取 (票證傳遞)：警示是針對相同的電腦觸發。
 - 可疑的 DCSync 攻擊 (目錄服務的複寫)：警示是從網域控制站觸發。
@@ -65,43 +64,43 @@ Azure ATP 會根據網路流量評估及判斷裝置作業系統。 在擷取電
 
     ![辨識項確定度](media/nnr-high-certainty.png)
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>先決條件
 
 |通訊協定|傳輸|Port|裝置|方向|
 |--------|--------|------|-------|------|
-|透過 RPC 的 NTLM *|TCP|135|網路上的所有裝置|輸入|
-|NetBIOS|UDP|137|網路上的所有裝置|輸入|
-|RDP|TCP|3389|網路上的所有裝置|輸入|
+|透過 RPC 的 NTLM *|TCP|135|網路上的所有裝置|連入|
+|NetBIOS|UDP|137|網路上的所有裝置|連入|
+|RDP|TCP|3389|網路上的所有裝置|連入|
 |DNS|UDP|53|網域控制站|輸出|
 
 \* 其中一個方法是必要的，但我們建議使用這些方法。
 
-為了確保 Azure ATP 在理想情況下運作，而且環境已正確設定，Azure ATP 會檢查每個感應器的解決狀態，併發出每個方法的健康情況警示，並使用每個方法提供具有低成功率的主動名稱解析的 Azure ATP 感應器清單。
+為了確保 [!INCLUDE [Product short](includes/product-short.md)] 在理想情況下運作且環境已正確設定，請 [!INCLUDE [Product short](includes/product-short.md)] 檢查每個感應器的解決狀態，併發出每個方法的健康情況警示，並 [!INCLUDE [Product short](includes/product-short.md)] 使用每個方法提供具有低成功率的活動名稱解析的感應器清單。
 
 > [!NOTE]
-> 若要停用 Azure ATP 中的選擇性 NNR 方法以符合您的環境需求，請開啟支援通話。
+> 若要在中停用選擇性的 NNR 方法 [!INCLUDE [Product short](includes/product-short.md)] ，以符合您的環境需求，請開啟支援電話。
 
 每個健康情況警示都會提供方法、感應器、有問題的原則以及設定建議的特定詳細資料。
 
-![低成功率網路名稱解析 (NNR) 警示](media/atp-nnr-success-rate.png)
+![低成功率網路名稱解析 (NNR) 警示](media/nnr-success-rate.png)
 
 ### <a name="configuration-recommendations"></a>組態建議
 
 - 透過 RPC 的 NTLM：
-  - 檢查是否已在環境中的所有電腦上針對來自 Azure ATP 感應器的連入通訊開放連接埠 TCP 135。
+  - 檢查是否已 [!INCLUDE [Product short](includes/product-short.md)] 在環境中的所有電腦上，針對來自感應器的輸入通訊開啟 TCP 通訊埠135。
   - 檢查所有網路設定 (防火牆)，因為這可能會導致無法與相關通訊埠通訊。
 
 - NetBIOS：
-  - 檢查是否已在環境中的所有電腦上針對來自 Azure ATP 感應器的連入通訊開放連接埠 UDP 137。
+  - 檢查是否已在 [!INCLUDE [Product short](includes/product-short.md)] 環境中的所有電腦上開啟 UDP 埠137以進行來自感應器的輸入通訊。
   - 檢查所有網路設定 (防火牆)，因為這可能會導致無法與相關通訊埠通訊。
 - Rdp：
-  - 檢查是否已開啟 TCP 通訊埠3389，以在環境中的所有電腦上從 Azure ATP 感應器進行輸入通訊。
+  - 檢查是否已 [!INCLUDE [Product short](includes/product-short.md)] 在環境中的所有電腦上，針對來自感應器的輸入通訊開啟 TCP 通訊埠3389。
   - 檢查所有網路設定 (防火牆)，因為這可能會導致無法與相關通訊埠通訊。
 - 反向 DNS：
   - 檢查感應器是否可以連線到 DNS 伺服器，以及是否已啟用反向查閱區域。
 
 ## <a name="see-also"></a>另請參閱
 
-- [Azure ATP 必要條件](prerequisites.md)
+- [[!INCLUDE [Product short](includes/product-short.md)] 先決條件](prerequisites.md)
 - [設定事件收集](configure-event-collection.md)
-- [查看 ATP 論壇！](https://aka.ms/azureatpcommunity)\(英文\)
+- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)

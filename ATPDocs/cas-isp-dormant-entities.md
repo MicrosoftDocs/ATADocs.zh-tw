@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 35641a589571586da495c8fb28332c5d736ad67b
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: bd5facbf0cc6616a8467d0eb1b33c7603debabc8
+ms.sourcegitcommit: 8cb9839a67fce42921f7a24564fddf15e503bdea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276743"
+ms.locfileid: "93278577"
 ---
 # <a name="security-assessment-dormant-entities-in-sensitive-groups"></a>安全性評估： **從敏感性群組中移除休眠實體**
 
@@ -39,6 +39,7 @@ ms.locfileid: "93276743"
 ## <a name="how-do-i-use-this-security-assessment"></a>我該如何使用這項安全性評估？
 
 1. 使用報告資料表來找出您有哪些敏感性帳戶處於休眠狀態。
+    ![修復休眠實體 ini 敏感性群組](media/cas-isp-dormant-entities-sensitive-groups-1.png)
 1. 對這些使用者帳戶採取合適的動作，例如移除他們的特殊存取權限，或是刪除帳戶。
 
 > [!NOTE]

@@ -1,6 +1,6 @@
 ---
-title: 針對 Azure ATP 已知問題進行疑難排解
-description: 描述如何針對 Azure ATP 的問題進行疑難排解。
+title: 針對身分識別已知問題進行 Microsoft Defender 疑難排解
+description: 說明如何針對身分識別的 Microsoft Defender 問題進行疑難排解。
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -9,17 +9,16 @@ ms.date: 09/07/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 23386e36-2756-4291-923f-fa8607b5518a
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f0136b432a170a5e45b71d189d77d7e007ca7a53
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 0cd22cad42d8933ebb36a7a7aea32d0a4cb7cdd4
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912348"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93277820"
 ---
-# <a name="troubleshooting-azure-atp-known-issues"></a>針對 Azure ATP 已知問題進行疑難排解
+# <a name="troubleshooting-product-long-known-issues"></a>針對 [!INCLUDE [Product long](includes/product-long.md)] 已知問題進行疑難排解
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
@@ -31,15 +30,15 @@ System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> Syste
 
 **解決方法：**
 
-請確保本機主機和 TCP 通訊埠 444 的通訊未受到封鎖。 若要深入了解 Azure ATP 必要條件，請參閱[連接埠](prerequisites.md#ports)。
+請確保本機主機和 TCP 通訊埠 444 的通訊未受到封鎖。 若要深入瞭解 [!INCLUDE [Product long](includes/product-long.md)] 必要條件，請參閱 [埠](prerequisites.md#ports)。
 
 ## <a name="deployment-log-location"></a>部署記錄位置
 
-針對安裝產品的使用者，Azure ATP 部署記錄位於 temp 目錄中。 在預設安裝位置中，其位於：C:\Users\Administrator\AppData\Local\Temp (或 %temp% 的上一層目錄)。 如需詳細資訊，請參閱[使用記錄檔針對 ATP 進行疑難排解](troubleshooting-using-logs.md)。
+[!INCLUDE [Product short](includes/product-short.md)]部署記錄檔位於安裝產品之使用者的臨時目錄中。 在預設安裝位置中，其位於：C:\Users\Administrator\AppData\Local\Temp (或 %temp% 的上一層目錄)。 如需詳細資訊，請參閱 [ [!INCLUDE [Product short](includes/product-short.md)] 使用記錄進行疑難排解](troubleshooting-using-logs.md)
 
 ## <a name="proxy-authentication-problem-presents-as-a-licensing-error"></a>Proxy 驗證問題顯示為授權錯誤
 
-若您在感應器安裝期間收到下列錯誤：**感應器因授權問題而無法註冊**。
+若您在感應器安裝期間收到下列錯誤： **感應器因授權問題而無法註冊** 。
 
 **部署記錄項目：**
 
@@ -47,7 +46,7 @@ System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> Syste
 
 **原因：**
 
-在某些情況下，透過 Proxy 進行通訊時，可能會在驗證期間以錯誤 401 或 403 回應 Azure ATP 感應器，而不是錯誤 407。 Azure ATP 感應器將錯誤 401 或 403 解譯為授權問題，而不是 Proxy 驗證問題。
+在某些情況下，透過 proxy 進行通訊時，它可能會回應 [!INCLUDE [Product short](includes/product-short.md)] 感應器的錯誤401或403，而不是錯誤407。 [!INCLUDE [Product short](includes/product-short.md)]感應器會將錯誤401或403解釋為授權問題，而不是 proxy 驗證問題。
 
 **解決方法：**
 
@@ -55,15 +54,15 @@ System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> Syste
 
 ## <a name="proxy-authentication-problem-presents-as-a-connection-error"></a>Proxy 驗證問題顯示為連線錯誤
 
-若您在感應器安裝期間收到下列錯誤：**感應器無法連線到服務。**
+若您在感應器安裝期間收到下列錯誤： **感應器無法連線到服務。**
 
 **原因：**
 
-此問題可能是 Transparent Proxy 在伺服器核心上設定錯誤所導致，例如缺少 Azure ATP 所需的根憑證或根憑證不是最新版本。
+問題可能是伺服器核心上的透明 proxy 設定錯誤所造成，例如所需的根憑證 [!INCLUDE [Product short](includes/product-short.md)] 不是目前或遺失。
 
 **解決方法：**
 
-執行下列 PowerShell Cmdlet，以確認伺服器核心上有 Azure ATP 服務受信任的根憑證存在。 以下範例使用 "DigiCert Baltimore Root" 與 "DigiCert Global Root"。
+執行下列 PowerShell Cmdlet，以確認 [!INCLUDE [Product short](includes/product-short.md)] 伺服器核心上存在服務受信任的根憑證。 以下範例使用 "DigiCert Baltimore Root" 與 "DigiCert Global Root"。
 
 ```powershell
 Get-ChildItem -Path "Cert:\LocalMachine\Root" | where { $_.Thumbprint -eq "D4DE20D05E66FC53FE1A50882C78DB2852CAE474"} | fl
@@ -118,13 +117,13 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 ./"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
 ```
 
-## <a name="azure-atp-sensor-nic-teaming-issue"></a>Azure ATP 感應器 NIC 小組問題 <a name="nic-teaming"></a>
+## <a name="product-short-sensor-nic-teaming-issue"></a>[!INCLUDE [Product short](includes/product-short.md)] 感應器 NIC 小組問題 <a name="nic-teaming"></a>
 
-如果您嘗試在具備 NIC 小組介面卡的電腦上安裝 ATP 感應器，您將會接收到安裝錯誤。 如果您想要在使用 NIC 小組設定的電腦上安裝 ATP 感應器，請遵循這些指示：
+如果您嘗試在設定了 [!INCLUDE [Product short](includes/product-short.md)] NIC 小組介面卡的電腦上安裝感應器，則會收到安裝錯誤。 如果您想要 [!INCLUDE [Product short](includes/product-short.md)] 在使用 NIC 小組設定的電腦上安裝感應器，請遵循下列指示：
 
 1. 從 [https://nmap.org/npcap/](https://nmap.org/npcap/dist/npcap-0.9984.exe) 下載  Npcap 0.9984 版安裝程式。
     - 或者，向支援小組要求 Npcap 驅動程式 (支援無訊息安裝) 的 OEM 版本。
-    - 如果 Npcap 的複本僅搭配 Azure ATP 安裝並使用，則不會計入五個複本、五部電腦或五個使用者授權的限制。 如需詳細資訊，請參閱 [NPCAP 授權](https://github.com/nmap/npcap/blob/master/LICENSE) \(英文\)。
+    - Npcap 的複本不會計入五個複本、五部電腦或五個使用者授許可權制（如果其已安裝且單獨搭配使用） [!INCLUDE [Product short](includes/product-short.md)] 。 如需詳細資訊，請參閱 [NPCAP 授權](https://github.com/nmap/npcap/blob/master/LICENSE) \(英文\)。
 
 如果您尚未在電腦上安裝感應器：
 
@@ -143,25 +142,25 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 
 ## <a name="multi-processor-group-mode"></a>多處理器群組模式
 
-針對 Windows 作業系統 2008 R2 與 2012，多處理器群組模式中不支援 Azure ATP 感應器。
+若為 Windows 作業系統2008R2 和2012， [!INCLUDE [Product short](includes/product-short.md)] 則多處理器群組模式不支援感應器。
 
 建議的可能因應措施：
 
-- 如果超執行緒已開啟，請將它關閉。 這可能會減少足夠的邏輯核心數目，以避免需要在**多處理器群組**模式中執行。
+- 如果超執行緒已開啟，請將它關閉。 這可能會減少足夠的邏輯核心數目，以避免需要在 **多處理器群組** 模式中執行。
 
 - 如果您的電腦具有少於 64 個邏輯核心，而且是在 HP 主機上執行，您可以將 [NUMA 群組大小最佳化]  BIOS 設定從預設的[叢集]  變更為 [一般]  。
 
-## <a name="microsoft-defender-atp-integration-issue"></a>Microsoft Defender ATP 整合問題
+## <a name="microsoft-defender-for-endpoint-integration-issue"></a>Microsoft Defender 的端點整合問題
 
-Azure 進階威脅防護可讓您將 Azure ATP 與 Microsoft Defender ATP 整合。 如需詳細資訊，請參閱[整合 Azure ATP 與 Microsoft Defender ATP](integrate-msde.md)。
+[!INCLUDE [Product short](includes/product-short.md)] 可讓您 [!INCLUDE [Product short](includes/product-short.md)] 與 Microsoft Defender For Endpoint 整合。 如需詳細資訊，請參閱 [ [!INCLUDE [Product short](includes/product-short.md)] 與 Microsoft Defender For Endpoint 整合](integrate-mde.md) 。
 
 ## <a name="vmware-virtual-machine-sensor-issue"></a>VMware 虛擬機器感應器問題
 
-如果您在 VMware 虛擬機器上有 Azure ATP 感應器，則可能會收到健康情況警示「某些網路流量不會被分析」  。 當 VMware 中的設定不相符時，就可能會發生此狀況。
+如果您 [!INCLUDE [Product short](includes/product-short.md)] 在 VMware 虛擬機器上有感應器，您可能會收到健康情況警示， **表示某些網路流量未進行分析** 。 當 VMware 中的設定不相符時，就可能會發生此狀況。
 
 若要解決問題：
 
-在虛擬機器的 NIC 設定中，將下列項目設定為 [已停用]  ：**IPv4 TSO 卸載**。
+在虛擬機器的 NIC 設定中，將下列項目設定為 [已停用]  ： **IPv4 TSO 卸載** 。
 
  ![VMware 感應器問題](media/vm-sensor-issue.png)
 
@@ -179,7 +178,7 @@ Azure 進階威脅防護可讓您將 Azure ATP 與 Microsoft Defender ATP 整合
 
 ## <a name="sensor-failed-to-retrieve-group-managed-service-account-gmsa-credentials"></a>感應器無法擷取群組受管理的服務帳戶 (gMSA) 認證
 
-如果您收到下列健康情況警示：**目錄服務使用者認證不正確**
+如果您收到下列健康情況警示： **目錄服務使用者認證不正確**
 
 **感應器記錄項目：**
 
@@ -191,7 +190,7 @@ Azure 進階威脅防護可讓您將 Azure ATP 與 Microsoft Defender ATP 整合
 
 **原因：**
 
-感應器無法從 Azure ATP 入口網站擷取指定的 gMSA 帳戶。
+感應器無法從入口網站取出指定的 gMSA 帳戶 [!INCLUDE [Product short](includes/product-short.md)] 。
 
 **解決方法：**
 
@@ -199,7 +198,7 @@ Azure 進階威脅防護可讓您將 Azure ATP 與 Microsoft Defender ATP 整合
 
 ## <a name="report-downloads-cannot-contain-more-than-300000-entries"></a>報表下載無法包含超過 300,000 個項目
 
-Azure ATP 不支援下載每個報表包含超過 300,000 個項目的報表。 若報表包含的項目超過 300,000 個，報表會呈現為未完成。
+[!INCLUDE [Product short](includes/product-short.md)] 不支援每份報表包含300000個以上專案的報表下載。 若報表包含的項目超過 300,000 個，報表會呈現為未完成。
 
 **原因：**
 
@@ -211,8 +210,8 @@ Azure ATP 不支援下載每個報表包含超過 300,000 個項目的報表。 
 
 ## <a name="see-also"></a>另請參閱
 
-- [Azure ATP 必要條件](prerequisites.md)
-- [Azure ATP 容量規劃](capacity-planning.md)
+- [[!INCLUDE [Product short](includes/product-short.md)] 先決條件](prerequisites.md)
+- [[!INCLUDE [Product short](includes/product-short.md)] 容量規劃](capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-forwarding.md)
-- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
+- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)

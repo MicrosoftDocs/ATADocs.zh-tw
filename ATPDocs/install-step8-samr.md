@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6e46d6b794386e21654d578f6273de8c7c8b89f2
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 9e1bfe428a466e4870613798e4af116f27d63647
+ms.sourcegitcommit: 218ba562a2a109ff456b011004530f503a4e82c6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276124"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93342499"
 ---
 # <a name="configure-product-long-to-make-remote-calls-to-sam"></a>設定 [!INCLUDE [Product long](includes/product-long.md)] 以對 SAM 進行遠端呼叫
 
@@ -26,7 +26,7 @@ ms.locfileid: "93276124"
 
 ## <a name="configure-sam-r-required-permissions"></a>設定 SAM-R 所需的權限
 
-若要確保 Windows 用戶端和伺服器允許您 [!INCLUDE [Product short](includes/product-short.md)] 的帳戶執行 SAM-R， **Group Policy** [!INCLUDE [Product short](includes/product-short.md)] 除了 **網路存取** 原則中列出的已設定帳戶之外，還必須修改群組原則，才能新增服務帳戶。 請務必將群組原則套用至網域控制站以外的所有電腦。
+若要確保 Windows 用戶端和伺服器允許您 [!INCLUDE [Product short](includes/product-short.md)] 的帳戶執行 SAM-R， **Group Policy** [!INCLUDE [Product short](includes/product-short.md)] 除了 **網路存取** 原則中列出的已設定帳戶之外，還必須修改群組原則，才能新增服務帳戶。 請務必將群組原則套用到 **網域控制站以外** 的所有電腦。
 
 > [!Note]
 > 在施行此類新原則之前，請務必確認您環境的安全，以及任何變更都不會影響應用程式的相容性。 若要這麼做，請先予以啟用，然後以稽核模式驗證建議變更的相容性，再對您的實際執行環境做出變更。

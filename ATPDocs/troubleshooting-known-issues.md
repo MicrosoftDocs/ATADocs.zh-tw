@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 0cd22cad42d8933ebb36a7a7aea32d0a4cb7cdd4
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: d0c4bcc61c2b15ded71063f3b8c4058ce6dfcce7
+ms.sourcegitcommit: ac582a240e848ca12c80ac6104125a0f733b469e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277820"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93375551"
 ---
 # <a name="troubleshooting-product-long-known-issues"></a>針對 [!INCLUDE [Product long](includes/product-long.md)] 已知問題進行疑難排解
 
@@ -121,7 +121,7 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 
 如果您嘗試在設定了 [!INCLUDE [Product short](includes/product-short.md)] NIC 小組介面卡的電腦上安裝感應器，則會收到安裝錯誤。 如果您想要 [!INCLUDE [Product short](includes/product-short.md)] 在使用 NIC 小組設定的電腦上安裝感應器，請遵循下列指示：
 
-1. 從 [https://nmap.org/npcap/](https://nmap.org/npcap/dist/npcap-0.9984.exe) 下載  Npcap 0.9984 版安裝程式。
+1. 從下載 Npcap 1.0 版安裝程式  [https://nmap.org/npcap/](https://nmap.org/npcap/dist/npcap-1.00.exe) 。
     - 或者，向支援小組要求 Npcap 驅動程式 (支援無訊息安裝) 的 OEM 版本。
     - Npcap 的複本不會計入五個複本、五部電腦或五個使用者授許可權制（如果其已安裝且單獨搭配使用） [!INCLUDE [Product short](includes/product-short.md)] 。 如需詳細資訊，請參閱 [NPCAP 授權](https://github.com/nmap/npcap/blob/master/LICENSE) \(英文\)。
 

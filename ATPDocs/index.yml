@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Azure 進階威脅防護文件
-summary: Azure 進階威脅防護 (ATP) 雲端服務可保護您的企業混合式環境，以防止多種進階目標式網路攻擊及內部威脅。
+title: 適用於身分識別的 Microsoft Defender 文件
+summary: 適用於身分識別的 Microsoft Defender 雲端服務可保護您的企業混合式環境，以防止多種進階目標式網路攻擊及內部威脅。
 metadata:
-  title: Azure 進階威脅防護文件
-  description: Azure 進階威脅防護 (ATP) 雲端服務可保護您的企業混合式環境，以防止多種進階目標式網路攻擊及內部威脅。
+  title: 適用於身分識別的 Microsoft Defender 文件
+  description: 適用於身分識別的 Microsoft Defender 雲端服務可保護您的企業混合式環境，以防止多種進階目標式網路攻擊及內部威脅。
   services: service
   ms.service: azure-advanced-threat-protection
   ms.subservice: subservice
@@ -12,32 +12,32 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/23/2019
-  ms.openlocfilehash: 2c6de3d806f80ef8d05b4e25d8101c71c35207b5
-  ms.sourcegitcommit: 0c356b0860ae8663254e0cf6f04001bcc91ce207
+  ms.openlocfilehash: 791e24e1460ce6a2a50caea0d05eb9461ab34654
+  ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/21/2020
-  ms.locfileid: "90826595"
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "93276168"
 landingContent:
-- title: 關於 Azure 進階威脅防護 (Azure ATP)
+- title: 關於適用於身分識別的 Microsoft Defender
   linkLists:
   - linkListType: overview
     links:
-    - text: 什麼是 Azure 進階威脅防護？
+    - text: 什麼是適用於身分識別的 Microsoft Defender？
       url: what-is.md
   - linkListType: architecture
     links:
-    - text: Azure ATP 架構
+    - text: 適用於身分識別的 Defender 架構
       url: architecture.md
-    - text: 使用 Cloud App Security 的 Azure ATP
+    - text: 使用 Cloud App Security 之適用於身分識別的 Defender
       url: mcas-integration.md
   - linkListType: video
     links:
-    - text: Azure ATP 簡介
+    - text: 適用於身分識別的 Defender 簡介
       url: https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE
-    - text: Azure ATP 基本概念
+    - text: 適用於身分識別的 Defender 基本概念
       url: https://www.youtube.com/watch?v=QXZIfH0wP3Q
-- title: 查看 Azure ATP 警示
+- title: 查看適用於身分識別的 Defender 警示
   linkLists:
   - linkListType: get-started
     links:
@@ -47,13 +47,13 @@ landingContent:
       url: health-center.md
     - text: 監視網域控制站
       url: sensor-monitoring.md
-- title: 探索使用 Azure ATP 的不同方式
+- title: 探索如何以不同方式使用適用於身分識別的 Defender
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: 身分識別安全性狀態評估
       url: isp-overview.md
-    - text: Azure ATP 安全性警示實驗室
+    - text: 適用於身分識別的 Defender 安全性警示實驗室
       url: playbook-lab-overview.md
     - text: 從偵測中排除實體
       url: excluding-entities-from-detections.md
@@ -61,17 +61,17 @@ landingContent:
       url: activities-search.md
     - text: 使用排除與 Honeytoken 帳戶
       url: install-step7.md
-    - text: Advanced Threat Analytics (ATA) 移至 Azure ATP
+    - text: 從進階威脅分析 (ATA) 移至適用於身分識別的 Defender
       url: migrate-from-ata-overview.md
 - title: 管理及修復安全性警示
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 調查 Azure ATP 警示
+    - text: 調查適用於身分識別的 Defender 警示
       url: suspicious-activity-guide.md
     - text: 管理安全性警示
       url: working-with-suspicious-activities.md
-    - text: 設定 Azure ATP 通知
+    - text: 設定適用於身分識別的 Defender 通知
       url: notifications.md
 - title: 調查威脅
   linkLists:
@@ -85,11 +85,11 @@ landingContent:
       url: investigate-lateral-movement-path.md
     - text: 調查實體
       url: investigate-entity.md
-- title: 使用 Microsoft Cloud App Security 的 Azure ATP
+- title: 使用 Microsoft Cloud App Security 之適用於身分識別的 Defender
   linkLists:
   - linkListType: deploy
     links:
-    - text: 搭配使用 Azure ATP 和 Cloud App Security
+    - text: 搭配 Cloud App Security 使用適用於身分識別的 Defender
       url: mcas-integration.md
     - text: 刪除活動並設定原則
       url: activities-filtering-mcas.md
@@ -101,7 +101,7 @@ landingContent:
       url: technical-faq.md
     - text: 支援與資訊
       url: support.md
-    - text: ATP 整備藍圖
+    - text: 適用於身分識別的 Defender 整備藍圖
       url: resources.md
-    - text: Azure ATP 資料安全性和隱私權
+    - text: 適用於身分識別的 Defender 資料安全性與隱私權
       url: privacy-compliance.md

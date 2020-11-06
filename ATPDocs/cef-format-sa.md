@@ -1,31 +1,30 @@
 ---
-title: Azure ATP SIEM 記錄檔參考
-description: 提供從 Azure ATP 傳送到您 SIEM 的可疑活動記錄檔範例。
+title: 適用於身分識別的 Microsoft Defender SIEM 記錄參考
+description: 提供從適用於身分識別的 Microsoft Defender 傳送到您 SIEM 的可疑活動記錄範例。
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 06/08/2020
+ms.date: 10/26/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 3261155c-3c72-4327-ba29-c113c63a4e6d
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 681b0fc541956c4a778310e78d79234c0fdd7495
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: e2ac1109454e3bef9baec2197d4db7f73698ed6c
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90911854"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93276501"
 ---
-# <a name="azure-atp-siem-log-reference"></a>Azure ATP SIEM 記錄檔參考
+# <a name="product-long-siem-log-reference"></a>[!INCLUDE [Product long](includes/product-long.md)] SIEM 記錄參考
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
-Azure ATP 可以將安全性警示與健康情況警示事件轉送到您的 SIEM。 警示與事件使用 CEF 格式。 此參考文章提供傳送到您 SIEM 的記錄範例。
+[!INCLUDE [Product short](includes/product-short.md)] 可以將安全性警示與健康情況警示事件轉送到您的 SIEM。 警示與事件使用 CEF 格式。 此參考文章提供傳送到您 SIEM 的記錄範例。
 
-## <a name="sample-azure-atp-security-alerts-in-cef-format"></a>範例 Azure ATP 安全性警示使用 CEF 格式
+## <a name="sample-product-short-security-alerts-in-cef-format"></a>使用 CEF 格式的範例[!INCLUDE [Product short](includes/product-short.md)] 安全性警示
 
 下列欄位及其值會轉送到您的 SIEM：
 
@@ -38,7 +37,7 @@ Azure ATP 可以將安全性警示與健康情況警示事件轉送到您的 SIE
 |msg|警示的描述|
 |cnt|適用於具有活動發生次數的警示 (例如暴力密碼破解會有猜過密碼的次數)|
 |app |用於此警示的通訊協定|
-|externalId|Azure ATP 寫入事件記錄檔的事件識別碼，其對應到每一種警示類型。 將警示轉送至 Microsoft Cloud App Security 時，此欄位會填入對應的 Cloud App Security 警示識別碼。|
+|externalId|[!INCLUDE [Product short](includes/product-short.md)] 寫入事件記錄檔的事件識別碼，其對應到每一種警示類型。 將警示轉送至 Microsoft Cloud App Security 時，此欄位會填入對應的 Cloud App Security 警示識別碼。|
 |cs#label|CEF 允許的客戶字串，其中 cs#label 是新欄位的名稱 |
 |cs#|CEF 允許的客戶字串，其中 cs# 是值。|
 
@@ -49,11 +48,11 @@ cs1 欄位是警示 URL。
 cs2 欄位可識別警示為新的或是已更新。
 
 > [!NOTE]
-> 若您計劃為 Azure ATP SIEM 記錄檔建立自動化或指令碼，建議您使用 **externalId** 欄位來識別警示類型，而非使用警示名稱。 警示名稱有時候可能會遭到修改，但每個警示的 **externalId** 永遠不會變。 如需外部識別碼的清單，請參閱[安全性警示名稱對應與唯一外部識別碼](suspicious-activity-guide.md#security-alert-name-mapping-and-unique-external-ids)。
+> 若您計劃為[!INCLUDE [Product short](includes/product-short.md)] SIEM 記錄建立自動化或指令碼，建議您使用 **externalId** 欄位來識別警示類型，而非使用警示名稱。 警示名稱有時候可能會遭到修改，但每個警示的 **externalId** 永遠不會變。 如需外部識別碼的清單，請參閱[安全性警示名稱對應與唯一外部識別碼](suspicious-activity-guide.md#security-alert-name-mapping-and-unique-external-ids)。
 
 ## <a name="sample-logs"></a>範例記錄檔
 
-此記錄範例符合 RFC 5424 的規範，但 Azure ATP 也支援 RFC 3164。
+此記錄範例符合 RFC 5424 的規範，但[!INCLUDE [Product short](includes/product-short.md)] 也支援 RFC 3164。
 
 優先順序：
 
@@ -203,8 +202,8 @@ cs2 欄位可識別警示為新的或是已更新。
 
 ## <a name="see-also"></a>另請參閱
 
-- [Azure ATP 必要條件](prerequisites.md)
-- [Azure ATP 容量規劃](capacity-planning.md)
+- [[!INCLUDE [Product short](includes/product-short.md)] 先決條件](prerequisites.md)
+- [[!INCLUDE [Product short](includes/product-short.md)] 容量規畫](capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-forwarding.md)
-- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

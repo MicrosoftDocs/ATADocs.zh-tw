@@ -1,31 +1,30 @@
 ---
-title: 設定您的 Proxy 或防火牆，以啟用與感應器的 Azure ATP 通訊
-description: 描述如何設定防火牆或 Proxy，以允許 Azure ATP 雲端服務和 Azure ATP 感應器之間的通訊
+title: 設定您的 Proxy 或防火牆，以啟用適用於身分識別的 Microsoft Defender 與感應器的通訊 | Microsoft Docs
+description: 描述如何設定您的防火牆或 Proxy，以允許適用於身分識別的 Microsoft Defender 雲端服務與適用於身分識別的 Microsoft Defender 感應器之間的通訊
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 07/29/2020
+ms.date: 10/26/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 9c173d28-a944-491a-92c1-9690eb06b151
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 69a05db012422fef78d7f693f0e12ffebe31c72b
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: b522a23bddd5710f0a3e2169afab180e6b8bb828
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912439"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93277208"
 ---
-# <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-azure-atp-sensor"></a>設定 Azure ATP 感應器的端點 Proxy 和網際網路連線設定
+# <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-product-long-sensor"></a>為[!INCLUDE [Product long](includes/product-long.md)] 感應器設定端點 Proxy 與網際網路連線設定
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
-每個 Azure 進階威脅防護 (ATP) 感應器都需要 Azure ATP 雲端服務的網際網路連線，才能報告感應器資料並成功運作。 在某些組織中，網域控制站不會直接連線到網際網路，而是透過 Web Proxy 連線來連線。
+每個[!INCLUDE [Product long](includes/product-long.md)] 感應器都需要連到 [!INCLUDE [Product short](includes/product-short.md)] 雲端服務的網際網路連線，才能報告感應器資料並成功運作。 在某些組織中，網域控制站不會直接連線到網際網路，而是透過 Web Proxy 連線來連線。
 
-建議您使用命令列來設定 Proxy 伺服器，因為這麼做可確保只有 Azure ATP 感應器服務會透過 Proxy 進行通訊。
+建議您使用命令列來設定 Proxy 伺服器，因為這麼做可確保只有[!INCLUDE [Product short](includes/product-short.md)] 感應器服務會透過 Proxy 進行通訊。
 
 ## <a name="configure-proxy-server-using-the-command-line"></a>使用命令列設定 Proxy 伺服器
 
@@ -41,9 +40,9 @@ ms.locfileid: "90912439"
 >
 > |Name|語法|對無訊息安裝而言是否為必要？|說明|
 > |-------------|----------|---------|---------|
-> |ProxyUrl|ProxyUrl="https\://proxy.contoso.com:8080"|否|指定 Azure ATP 感應器的 ProxyUrl 和連接埠號碼。|
+> |ProxyUrl|ProxyUrl="https\://proxy.contoso.com:8080"|否|為[!INCLUDE [Product short](includes/product-short.md)] 感應器指定 ProxyUrl 與連接埠號碼。|
 > |ProxyUserName|ProxyUserName="Contoso\ProxyUser"|否|如果您的 Proxy 服務需要驗證，請以 DOMAIN\user 格式提供使用者名稱。|
-> |ProxyUserPassword|ProxyUserPassword="P@ssw0rd"|否|指定 Proxy 使用者名稱的密碼。 \* 認證會經過加密，並由 Azure ATP 感應器儲存在本機。|
+> |ProxyUserPassword|ProxyUserPassword="P@ssw0rd"|否|指定 Proxy 使用者名稱的密碼。 \* 認證會經過加密，並由[!INCLUDE [Product short](includes/product-short.md)] 感應器儲存在本機。|
 
 ## <a name="alternative-methods-to-configure-your-proxy-server"></a>設定 Proxy 伺服器的替代方法
 
@@ -54,16 +53,16 @@ ms.locfileid: "90912439"
 
 ### <a name="configure-proxy-server-using-wininet"></a>使用 WinINet 設定 Proxy 伺服器
 
-您可以使用 Microsoft Windows Internet (WinINet) Proxy 設定對您的 Proxy 伺服器進行設定，讓 Azure ATP 感應器在不允許電腦連線到網際網路時回報診斷資料，並與 Azure ATP 雲端服務進行通訊。 如果您使用 WinHTTP 進行 Proxy 設定，則仍需要為感應器和 ATP Azure 雲端服務之間的通訊設定 Windows Internet (WinINet) 瀏覽器 Proxy 設定。
+您可以使用 Microsoft Windows Internet (WinINet) Proxy 組態來設定 Proxy 伺服器，讓[!INCLUDE [Product short](includes/product-short.md)] 感應器在不允許電腦連線到網際網路時回報診斷資料並與[!INCLUDE [Product short](includes/product-short.md)] 雲端服務進行通訊。 如果您使用 WinHTTP 進行 Proxy 設定，則仍需要為感應器與[!INCLUDE [Product short](includes/product-short.md)] 雲端服務之間的通訊設定 Windows Internet (WinINet) 瀏覽器 Proxy 設定。
 
-設定 Proxy 時，請記住內嵌 Azure ATP 感應器服務是使用 **LocalService** 帳戶在系統內容中執行，而 Azure ATP 感應器更新程式服務則是使用 **LocalSystem** 帳戶在系統內容中執行。
+設定 Proxy 時，請記住內嵌[!INCLUDE [Product short](includes/product-short.md)] 感應器服務是使用 **LocalService** 帳戶在系統內容中執行，而[!INCLUDE [Product short](includes/product-short.md)] 感應器更新程式服務則是使用 **LocalSystem** 帳戶在系統內容中執行。
 
 > [!NOTE]
 > 如果您在網路拓撲中使用 Transparent Proxy 或 WPAD，則不需要針對您的 Proxy 設定 WinINet。
 
 ### <a name="configure-proxy-server-using-the-registry"></a>使用登錄設定 Proxy 伺服器
 
-您也可以使用以登錄為基礎的靜態 Proxy 手動設定您的 Proxy 伺服器，讓 Azure ATP 感應器在不允許電腦連線到網際網路時回報診斷資料，並與 Azure ATP 雲端服務進行通訊。
+您也可以使用以登錄為基礎的靜態 Proxy 手動設定您的 Proxy 伺服器，讓[!INCLUDE [Product short](includes/product-short.md)] 感應器在不允許電腦連線到網際網路時回報診斷資料並與 [!INCLUDE [Product short](includes/product-short.md)] 雲端服務進行通訊。
 
 > [!NOTE]
 > 登錄變更應僅套用至 LocalService 和 LocalSystem。
@@ -85,15 +84,17 @@ ms.locfileid: "90912439"
 > [!NOTE]
 > 這將影響所有應用程式，包括使用 WinINET 搭配 LocalService、LocalSytem 內容的 Windows 服務。
 
-## <a name="enable-access-to-azure-atp-service-urls-in-the-proxy-server"></a>啟用 Proxy 伺服器中的 Azure ATP 服務 URL 存取
+<a name="enable-access-to-azure-atp-service-urls-in-the-proxy-server"></a>
 
-若要允許存取 Azure ATP，建議您允許下列 URL 的流量。 這些 URL 會自動對應至 Azure ATP 執行個體的正確服務位置。
+## <a name="enable-access-to-product-short-service-urls-in-the-proxy-server"></a>在 Proxy 伺服器中啟用對[!INCLUDE [Product short](includes/product-short.md)] 服務 URL 的存取
+
+若要允許存取[!INCLUDE [Product short](includes/product-short.md)]，建議您允許連到下列 URL 的流量。 這些 URL 會自動對應到[!INCLUDE [Product short](includes/product-short.md)] 執行個體的正確服務位置。
 
 - `<your-instance-name>.atp.azure.com` - 針對主控台連線能力。 例如， `contoso-corp.atp.azure.com`
 
 - `<your-instance-name>sensorapi.atp.azure.com`- 針對感應器連線能力。 例如， `contoso-corpsensorapi.atp.azure.com`
 
-您也可以使用 Azure 服務標記 (**AzureAdvancedThreatProtection**) 中的IP 位址範圍來啟用對 Azure ATP 的存取。 如需服務標籤的詳細資訊，請參閱[虛擬網路服務標籤](/azure/virtual-network/service-tags-overview)或[下載服務標籤](https://www.microsoft.com/download/details.aspx?id=56519)檔案。
+您也可以使用 Azure 服務標籤 ( **AzureAdvancedThreatProtection** ) 中的 IP 位址範圍來啟用對[!INCLUDE [Product short](includes/product-short.md)] 的存取。 如需服務標籤的詳細資訊，請參閱[虛擬網路服務標籤](/azure/virtual-network/service-tags-overview)或[下載服務標籤](https://www.microsoft.com/download/details.aspx?id=56519)檔案。
 
 或者，若您需要更細微的控制，可考慮允許下表相關端點的流量：
 
@@ -107,10 +108,10 @@ ms.locfileid: "90912439"
 
 > [!NOTE]
 >
-> - 為確保最大的安全性與資料隱私權，Azure ATP 會在每個 Azure ATP 感應器與 Azure ATP 雲端後端之間使用以憑證為基礎的相互驗證。 如果您的環境中使用 SSL 檢查，請確定已針對相互驗證設定檢查，使其不會干擾驗證程序。
-> - 有時候，Azure ATP 服務 IP 位址可能會變更。 因此，如果您手動設定 IP 位址，或者 Proxy 自動將 DNS 名稱解析為其 IP 位址並加以使用，您應該定期檢查設定的 IP 位址是否仍為最新狀態。
+> - 為確保最大的安全性與資料隱私權，[!INCLUDE [Product short](includes/product-short.md)] 會在每個[!INCLUDE [Product short](includes/product-short.md)] 感應器與[!INCLUDE [Product short](includes/product-short.md)] 雲端後端之間使用以憑證為基礎的相互驗證。 如果您的環境中使用 SSL 檢查，請確定已針對相互驗證設定檢查，使其不會干擾驗證程序。
+> - 有時候，[!INCLUDE [Product short](includes/product-short.md)] 服務 IP 位址可能會變更。 因此，如果您手動設定 IP 位址，或者 Proxy 自動將 DNS 名稱解析為其 IP 位址並加以使用，您應該定期檢查設定的 IP 位址是否仍為最新狀態。
 
 ## <a name="see-also"></a>另請參閱
 
 - [設定事件轉寄](configure-event-forwarding.md)
-- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

@@ -1,41 +1,40 @@
 ---
-title: 受 Azure ATP 監視的網域活動
-description: 描述 Azure 進階威脅防護監視的每一種活動類型
+title: 適用於身分識別的 Microsoft Defender 所監視的網域活動
+description: 描述由適用於身分識別的 Microsoft Defender 所監視的每個活動類型
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/19/2020
+ms.date: 10/26/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 37d1a032-65e7-4a89-be0b-c3f9cc2bacdb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 662fd074ef76207257721883b0223cc1ecc108b3
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: d69fef506f2f1e787039a3b2af1b35b81a3504fc
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912722"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93274843"
 ---
-# <a name="azure-atp-monitored-activities"></a>受 Azure ATP 監視的活動
+# <a name="product-long-monitored-activities"></a>[!INCLUDE [Product long](includes/product-long.md)] 所監視的活動
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
-> 此頁面所述的 Azure ATP 功能也可使用新的[入口網站](https://portal.cloudappsecurity.com)來存取。
+> 此頁面所述的[!INCLUDE [Product long](includes/product-long.md)] 功能也可使用新的[入口網站](https://portal.cloudappsecurity.com)來存取。
 
-Azure 進階威脅防護會監視您組織 Active Directory 產生的資訊、網路活動及事件活動，來偵測可疑活動。 受監視的活動資訊可讓 Azure ATP 協助您判斷每個潛在威脅的有效性，並正確分與回應。
+[!INCLUDE [Product long](includes/product-long.md)] 會監視從您組織的 Active Directory 產生的資訊、網路活動與事件活動，來偵測可疑活動。 監視的活動資訊可讓[!INCLUDE [Product short](includes/product-short.md)] 協助您判斷每個潛在威脅的有效性，並正確進行分級與回應。
 
-在有效威脅或**確判**的情況下，Azure ATP 可讓您探索每個事件的缺口範圍；調查涉及的實體有哪些，以及判斷如何予以補救。
+在確實為有效威脅 (或 **確判為真** ) 的情況下，[!INCLUDE [Product short](includes/product-short.md)] 可讓您探索每個事件的缺口範圍、調查涉及的實體有哪些，以及判斷如何予以補救。
 
-受 Azure ATP 監視的資訊會以活動形式呈現。 Azure ATP 目前支援監視下列活動類型：
+由[!INCLUDE [Product short](includes/product-short.md)] 所監視的資訊會以活動的形式呈現。 [!INCLUDE [Product short](includes/product-short.md)] 目前支援監視下列活動類型：
 
 > [!NOTE]
 >
-> - 本文與所有 Azure ATP 感應器類型皆有關。
-> - 受 Azure ATP 監視的活動會同時出現在使用者和電腦設定檔頁面上。
+> - 此文章與所有[!INCLUDE [Product short](includes/product-short.md)] 感應器類型皆相關。
+> - [!INCLUDE [Product short](includes/product-short.md)] 所監視的活動會同時出現在使用者與電腦設定檔頁面上。
 
 ## <a name="monitored-user-activities-user-account-ad-attribute-changes"></a>受監視的使用者活動：使用者帳戶 AD 屬性變更
 
@@ -80,7 +79,7 @@ Azure 進階威脅防護會監視您組織 Active Directory 產生的資訊、�
 |受監視的活動|說明|
 |---------------------|------------------|
 |目錄服務複寫|使用者嘗試複寫目錄服務。|
-|DNS 查詢|對網域控制站執行的查詢使用者類型 (**AXFR**、**TXT**、**MX**、**NS**、**SRV**、**ANY**、**DNSKEY**)。|
+|DNS 查詢|對網域控制站執行的查詢使用者類型 ( **AXFR** 、 **TXT** 、 **MX** 、 **NS** 、 **SRV** 、 **ANY** 、 **DNSKEY** )。|
 |私人資料擷取|使用者嘗試/成功使用 LSARPC 通訊協定查詢私人資料。|
 |服務建立|使用者嘗試在遠端對遠端電腦建立特定服務。|
 |SMB 工作階段列舉|使用者嘗試列舉網域控制站上已開啟 SMB 工作階段的所有使用者。|
@@ -115,4 +114,4 @@ Azure 進階威脅防護會監視您組織 Active Directory 產生的資訊、�
 - [管理安全性警訊](working-with-suspicious-activities.md)
 - [安全性警訊指南](suspicious-activity-guide.md)
 - [調查實體](investigate-entity.md)
-- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

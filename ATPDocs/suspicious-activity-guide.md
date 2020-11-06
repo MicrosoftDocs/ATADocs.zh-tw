@@ -1,42 +1,41 @@
 ---
-title: Azure ATP 安全性警示指南
-description: 本文提供 Azure ATP 所發出的安全性警示清單。
+title: 適用於身分識別的 Microsoft Defender 安全性警示指南
+description: 此文章提供適用於身分識別的 Microsoft Defender 所發出的安全性警示清單。
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/23/2020
+ms.date: 10/27/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: ca5d1c7b-11a9-4df3-84a5-f53feaf6e561
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f0c39f6ec4d47136324ba25c5c9bd29e0409854c
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 254c6e6d5130936b32c859ceb96ee2995461cf3c
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90909974"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93274146"
 ---
-# <a name="azure-atp-security-alerts"></a>Azure ATP 安全性警示
+# <a name="product-long-security-alerts"></a>[!INCLUDE [Product long](includes/product-long.md)] 安全性警示
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
-> 此頁面所述的 Azure ATP 功能也可使用新的[入口網站](https://portal.cloudappsecurity.com)來存取。
+> 此頁面所述的[!INCLUDE [Product long](includes/product-long.md)] 功能也可使用新的[入口網站](https://portal.cloudappsecurity.com)來存取。
 
-Azure ATP 安全性警示會說明 Azure ATP 感應器在您網路上偵測到的可疑活動，以及涉及每項威脅的動作項目和電腦。 包含涉及使用者和電腦直接連結的警示辨識項清單，可協助您輕易且直接地進行調查。
+[!INCLUDE [Product long](includes/product-long.md)] 安全性警示會說明[!INCLUDE [Product short](includes/product-short.md)] 感應器在您網路上偵測到的可疑活動，以及涉及每個威脅的執行者與電腦。 包含涉及使用者和電腦直接連結的警示辨識項清單，可協助您輕易且直接地進行調查。
 
-Azure ATP 安全性警訊分為下列類別或階段，如同在典型網路攻擊終止鏈結中會看到的階段。 使用下列連結，深入了解設計來偵測每個攻擊的各階段警示，以及如何使用這些警示來協助保護您的網路：
+[!INCLUDE [Product short](includes/product-short.md)] 安全性警示分為下列類別或階段，如同在典型網路攻擊狙殺鏈中會看到的階段。 使用下列連結，深入了解設計來偵測每個攻擊的各階段警示，以及如何使用這些警示來協助保護您的網路：
 
-  1. [偵察階段警示](reconnaissance-alerts.md)
-  2. [遭入侵的認證階段警示](compromised-credentials-alerts.md)
-  3. [橫向移動階段警示](lateral-movement-alerts.md)
-  4. [網域支配階段警示](domain-dominance-alerts.md)
-  5. [外流階段警示](exfiltration-alerts.md)
+1. [偵察階段警示](reconnaissance-alerts.md)
+1. [遭入侵的認證階段警示](compromised-credentials-alerts.md)
+1. [橫向移動階段警示](lateral-movement-alerts.md)
+1. [網域支配階段警示](domain-dominance-alerts.md)
+1. [外流階段警示](exfiltration-alerts.md)
 
-若要深入了解所有 Azure ATP 安全性警示的結構和通用元件，請參閱[了解安全性警示](understanding-security-alerts.md)。
+若要深入了解所有[!INCLUDE [Product short](includes/product-short.md)] 安全性警示的結構與通用元件，請參閱[了解安全性警示](understanding-security-alerts.md)。
 
 ## <a name="security-alert-name-mapping-and-unique-external-ids"></a>安全性警示名稱對應和唯一的外部識別碼
 
@@ -81,7 +80,6 @@ Azure ATP 安全性警訊分為下列類別或階段，如同在典型網路攻�
 > |[可疑的 VPN 連線](compromised-credentials-alerts.md#suspicious-vpn-connection-external-id-2025)|2025|中型|持續性，<br>防禦躲避|
 > |[使用者和群組成員資格偵察 (SAMR)](reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|2021|中型|探索|
 > |[使用者和 IP 位址偵察 (SMB)](reconnaissance-alerts.md#user-and-ip-address-reconnaissance-smb-external-id-2012)|2012|中型|探索|
-
 
 # <a name="cloud-app-security-ids"></a>[Cloud App Security 識別碼](#tab/cloud-app-security)
 
@@ -133,4 +131,4 @@ Azure ATP 安全性警訊分為下列類別或階段，如同在典型網路攻�
 
 - [使用安全性警訊](working-with-suspicious-activities.md)
 - [了解安全性警訊](understanding-security-alerts.md)
-- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

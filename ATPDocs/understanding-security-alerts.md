@@ -1,31 +1,30 @@
 ---
-title: Azure ATP 安全性警示教學課程
-description: 本文說明如何使用及了解 Azure ATP 安全性警示。
+title: 適用於身分識別的 Microsoft Defender 安全性警示教學課程
+description: 此文章說明如何使用及了解適用於身分識別的 Microsoft Defender 安全性警示。
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 1/13/2019
+ms.date: 10/27/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 671747d5-faed-4352-a871-17b58fdc6574
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2c871c3a504fc7f79cc3627b077d1bebc1814a82
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: ba5adecd1812d95f043d520773b1006a6e75b5b9
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912317"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93277779"
 ---
-# <a name="tutorial-understanding-security-alerts"></a>教學課程：了解安全性警訊
+# <a name="understanding-security-alerts"></a>了解安全性警訊
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
-Azure ATP 安全性警訊會以清晰的語言及圖片進行說明，內容包含在您網路上找到的可疑的動，以及涉及威脅的動作項目和電腦。 警訊會以嚴重性進行分級，以色彩劃分使其更輕易地以視覺方式篩選，且依威脅階段整理。 所有警訊的設計目的都是為了讓您更快了解網路的當前情形。 包含涉及使用者和電腦直接連結的警示辨識項清單，可協助您輕易且直接地進行調查。
+[!INCLUDE [Product long](includes/product-long.md)] 安全性警示會以清晰的語言與圖片說明在您網路上找到的可疑活動，以及涉及威脅的執行者與電腦。 警訊會以嚴重性進行分級，以色彩劃分使其更輕易地以視覺方式篩選，且依威脅階段整理。 所有警訊的設計目的都是為了讓您更快了解網路的當前情形。 包含涉及使用者和電腦直接連結的警示辨識項清單，可協助您輕易且直接地進行調查。
 
-在此教學課程中，了解 Azure ATP 安全性警訊的結構，以及警訊的使用方式：
+在此教學課程中，了解[!INCLUDE [Product short](includes/product-short.md)] 安全性警示的結構，以及其使用方式：
 
 > [!div class="checklist"]
 >
@@ -34,26 +33,30 @@ Azure ATP 安全性警訊會以清晰的語言及圖片進行說明，內容包�
 > - 安全性警訊類別
 > - 進階的安全性警訊調查
 > - 相關的實體
-> - Azure ATP 及 NNR (網路名稱解析)
+> - [!INCLUDE [Product short](includes/product-short.md)] 與 NNR (網路名稱解析)
 
 ## <a name="security-alert-structure"></a>安全性警訊結構
 
-各 Azure ATP 安全性警訊皆包含：
+每個[!INCLUDE [Product short](includes/product-short.md)] 安全性警示都包含：
 
-- **警訊標題** <br> 提供警訊的官方 Azure ATP 名稱。
-- **描述** <br> 提供發生事件的簡短說明。
-- **辨識項** <br> 提供發生事件的其他相關資訊及資料，以在調查程序中給予協助。
-- **Excel 下載** <br> 提供有助於分析的詳細 Excel 下載報表
+- **警訊標題**  
+警示的正式[!INCLUDE [Product short](includes/product-short.md)] 名稱。
+- **描述**  
+提供發生事件的簡短說明。
+- **辨識項**  
+提供發生事件的其他相關資訊及資料，以在調查程序中給予協助。
+- **Excel 下載**  
+提供有助於分析的詳細 Excel 下載報表
 
-![Azure ATP 安全性警訊結構](media/security-alert-structure.png)
+![[!INCLUDE [Product short](includes/product-short.md)] 安全性警示結構](media/security-alert-structure.png)
 
 ## <a name="security-alert-classifications"></a>安全性警訊分類
 
-在適當的調查之後，所有 Azure ATP 安全性警訊可分類為以下活動類型的其中一類：
+在適當的調查之後，所有[!INCLUDE [Product short](includes/product-short.md)] 安全性警示都可以分類為下列其中一種活動類型：
 
-- **確判 (TP)** ：由 Azure ATP 所偵測到的惡意動作。
+- **確判 (TP)** ：由[!INCLUDE [Product short](includes/product-short.md)] 偵測到的惡意動作。
 
-- **良性確判 (B-TP)** ：Azure ATP 偵測到實際存在但不具惡意的動作，例如滲透測試，或由已核准應用程式產生的已知活動。
+- **良性確判 (B-TP)** ：由[!INCLUDE [Product short](includes/product-short.md)] 偵測到實際存在但不具惡意的動作，例如滲透測試，或由已核准應用程式產生的已知活動。
 
 - **誤判 (FP)** ：假警示，表示活動並未發生。
 
@@ -69,7 +72,7 @@ Azure ATP 安全性警訊會以清晰的語言及圖片進行說明，內容包�
 
 ## <a name="security-alert-categories"></a>安全性警訊類別
 
-Azure ATP 安全性警示分為下列類別或階段，就如同在典型網路攻擊狙殺鏈中會看到的階段。 請使用以下連結，深入了解設計來偵測每個攻擊的各階段及警訊：
+[!INCLUDE [Product short](includes/product-short.md)] 安全性警示分為下列類別或階段，如同在典型網路攻擊狙殺鏈中會看到的階段。 請使用以下連結，深入了解設計來偵測每個攻擊的各階段及警訊：
 
 - [偵察警訊](reconnaissance-alerts.md)
 - [遭入侵的認證警訊](compromised-credentials-alerts.md)
@@ -81,9 +84,10 @@ Azure ATP 安全性警示分為下列類別或階段，就如同在典型網路�
 
 若要取得更多安全性警訊的詳細資料，請下載詳細的 Excel 警訊報表。
 
-1. 按一下任何警訊右上角的三個點，然後選取 [下載詳細資料]**。
+1. 按一下任何警訊右上角的三個點，然後選取 [下載詳細資料]。
 
-每個 Azure ATP 警訊 Excel 下載項目都會提供以下資訊：
+每個[!INCLUDE [Product short](includes/product-short.md)] 警示 Excel 下載項目都會提供下列資訊：
+
 - 摘要 - 包含警訊重點的第一個索引標籤
   - Title
   - 說明
@@ -94,7 +98,7 @@ Azure ATP 安全性警示分為下列類別或階段，就如同在典型網路�
   - 狀態更新時間 (UTC)
   - 在瀏覽器中檢視
 - 所有涉及的實體 (帳戶、電腦及資源) 都會列出，且由他們的角色來區分。
-    - 取決於警訊，可分為來源、目的地或受攻擊。
+  - 取決於警訊，可分為來源、目的地或受攻擊。
 - 大多數的索引標籤都包含以下各實體的資料：
   - 名稱
   - 詳細資料
@@ -105,10 +109,10 @@ Azure ATP 安全性警示分為下列類別或階段，就如同在典型網路�
   - 網域控制站
   - 存取的資源：時間、電腦、名稱、詳細資料、類型、服務。
   - 各警訊的其他索引標籤：
-      - 當有可疑的攻擊使用暴力密碼破解時，受攻擊帳戶上出現的索引標籤。
-      - 當疑似受攻擊的目標涉及網路對應偵察 (DNS) 時，網域名稱系統 (DNS) 上出現的索引標籤。
+    - 當有可疑的攻擊使用暴力密碼破解時，受攻擊帳戶上出現的索引標籤。
+    - 當疑似受攻擊的目標涉及網路對應偵察 (DNS) 時，網域名稱系統 (DNS) 上出現的索引標籤。
   - 相關實體：識別碼、類型、名稱、唯一實體 JSON、唯一實體設定檔 JSON
-- Azure ATP 感應器所擷取到與警訊 (網路或事件活動) 相關的所有未經處理活動，其中包含：
+- 由[!INCLUDE [Product short](includes/product-short.md)] 感應器所擷取到與警示 (網路或事件活動) 相關的所有原始活動包含：
   - 網路活動
   - 事件活動
 
@@ -116,51 +120,53 @@ Azure ATP 安全性警示分為下列類別或階段，就如同在典型網路�
 
 ### <a name="related-entities"></a>相關的實體
 
-在各警訊中，最後一個索引標籤會提供**相關的實體**。 相關的實體為涉及可疑活動的所有實體，且與他們在警訊中扮演的「角色」一致。 每個實體都有兩個 JSON 檔案，分別為唯一的實體 JSON 及唯一的實體設定檔 JSON。 若要深入了解實體及取得調查警訊的協助，請使用這兩個 JSON 檔案。
+在各警訊中，最後一個索引標籤會提供 **相關的實體** 。 相關的實體為涉及可疑活動的所有實體，且與他們在警訊中扮演的「角色」一致。 每個實體都有兩個 JSON 檔案，分別為唯一的實體 JSON 及唯一的實體設定檔 JSON。 若要深入了解實體及取得調查警訊的協助，請使用這兩個 JSON 檔案。
 
 **唯一的實體 JSON**
 
-包含 Azure ATP 從 Active Directory 帳戶相關部分了解到的資料。 其中有 *Distinguished Name*、*SID*、<em>LockoutTime 與 *PasswordExpiryTime</em> 等所有屬性。 若為使用者帳戶，其中會包含 *Department*、*Mail* 及 *PhoneNumber* 等資料。 針對電腦帳戶，其中會包含 *OperatingSystem*、<em>IsDomainController 與 *DnsName</em> 等資料。
+包含[!INCLUDE [Product short](includes/product-short.md)] 從 Active Directory 了解到的帳戶相關資料。 其中包含「辨別名稱」、 *SID* 、 *LockoutTime* 與 *PasswordExpiryTime* 等所有屬性。 若為使用者帳戶，其中會包含 *Department* 、 *Mail* 及 *PhoneNumber* 等資料。 針對電腦帳戶，其中會包含 *OperatingSystem* 、 *IsDomainController* 與 *DnsName* 等資料。
 
 **唯一的實體設定檔 JSON**
 
-包含 Azure ATP 已在實體上分析的所有資料。 Azure ATP 會使用擷取到的網路及事件活動，了解環境的使用者及電腦。 Azure ATP 會分析每個實體的相關資訊。 此資訊會供 Azure ATP 的威脅識別功能利用。
+包含[!INCLUDE [Product short](includes/product-short.md)] 已在實體上分析的所有資料。 [!INCLUDE [Product short](includes/product-short.md)] 會使用擷取到的網路與事件活動，了解環境的使用者與電腦。 [!INCLUDE [Product short](includes/product-short.md)] 會分析每個實體的相關資訊。 此資訊會供[!INCLUDE [Product short](includes/product-short.md)] 的威脅識別功能利用。
 
 ![相關的實體](media/related-entities.png)
 
-### <a name="how-can-i-use-azure-atp-information-in-an-investigation"></a>如何在調查中應用 Azure ATP 資訊？
+### <a name="how-can-i-use-product-short-information-in-an-investigation"></a>如何在調查中使用[!INCLUDE [Product short](includes/product-short.md)] 資訊？
 
-調查的詳細程度可完全符合您的需求。 以下為使用 Azure ATP 所提供資料進行調查的一些方向。
+調查的詳細程度可完全符合您的需求。 以下為使用[!INCLUDE [Product short](includes/product-short.md)] 所提供的資料進行調查的一些方向。
 
 - 檢查所有相關的使用者否都屬於相同的群組或部門？
 - 相關的使用者會共用資源、應用程式或電腦嗎？
 - 帳戶在經過 PasswordExpiryTime 後仍然會有效嗎？
 
-## <a name="azure-atp-and-nnr-network-name-resolution"></a>Azure ATP 及 NNR (網路名稱解析)
+## <a name="product-short-and-nnr-network-name-resolution"></a>[!INCLUDE [Product short](includes/product-short.md)] 與 NNR (網路名稱解析)
 
-Azure ATP 偵測功能需要有效的網路名稱解析，才能對您組織中的電腦 IP 進行解析。 使用 NNR，Azure ATP 就能在未經處理的活動 (包含 IP 位址)，以及涉及各活動的相關電腦間建立相互關聯。 根據未經處理的活動，Azure ATP 會分析電腦等實體，並產生警訊。
+[!INCLUDE [Product short](includes/product-short.md)] 偵測功能需要使用中的網路名稱解析 (NNR)，才能對您組織中的電腦 IP 進行解析。 透過使用 NNR，[!INCLUDE [Product short](includes/product-short.md)] 就能在原始活動 (包含 IP 位址)，以及涉及各活動的相關電腦間建立相互關聯。 根據原始活動，[!INCLUDE [Product short](includes/product-short.md)] 會分析電腦等實體，並產生警示。
 
 如果要偵測以下警訊，NNR 資料可說是不可或缺：
+
 - 可疑的身分識別竊取 (票證傳遞)
 - 可疑的 DCSync 攻擊 (目錄服務的複寫)
 - 網路對應偵察 (DNS)
 
-使用警訊下載報表中 [網路活動]**** 索引標籤中提供的 NNR 資訊，來判斷警訊是否為 **FP**。 一旦出現 **FP** 警訊，獲得的 NNR 確定性結果通常會具有低可信度。
+使用警訊下載報表中 [網路活動] 索引標籤中提供的 NNR 資訊，來判斷警訊是否為 **FP** 。 一旦出現 **FP** 警訊，獲得的 NNR 確定性結果通常會具有低可信度。
 
 下載兩個資料行中出現的報表資料：
+
 - **來源/目的地電腦**
 
-    - 確定性** - 低解析確定性可能代表名稱解析有誤。
+  - 確定性 - 低解析確定性可能代表名稱解析有誤。
 - **來源/目的地電腦**
-    - 解決方法** - 可提供用以解析組織中電腦 IP 的 NNR 方法。
+  - 解決方法 - 可提供用以解析組織中電腦 IP 的 NNR 方法。
 
 ![網路活動](media/network-activities.png)
 
-如需如何使用 Azure ATP 安全性警訊的詳細資訊，請參閱[使用安全性警訊](working-with-suspicious-activities.md)。
+如需如何使用[!INCLUDE [Product short](includes/product-short.md)] 安全性警示的詳細資訊，請參閱[使用安全性警示](working-with-suspicious-activities.md)。
 
 ## <a name="see-also"></a>另請參閱
 
 - [調查使用者](investigate-a-user.md)
 - [調查電腦](investigate-a-computer.md)
 - [使用橫向移動路徑](use-case-lateral-movement-path.md)
-- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

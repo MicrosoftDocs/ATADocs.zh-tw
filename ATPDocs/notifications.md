@@ -1,37 +1,36 @@
 ---
-title: 設定 Azure 進階威脅防護通知
-description: 描述如何設定 Azure ATP 安全性警訊，以在偵測到可疑的活動時收到通知。
+title: 設定適用於身分識別的 Microsoft Defender 通知
+description: 描述如何設定適用於身分識別的 Microsoft Defender 安全性警示，以在偵測到可疑活動時收到通知。
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 09/29/2020
+ms.date: 10/26/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 4308f03e-b2a7-4e38-a750-540ff94faa81
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b60044cbc2ccf05ff1802ecce6e3e11d42543f97
-ms.sourcegitcommit: dd8435ba20f76a6fc4590980c040c6fc7ec6c62b
+ms.openlocfilehash: 1cb2ea1c5f853f6f3a56d4bcccd84b5958078329
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91451727"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93275546"
 ---
-# <a name="set-azure-atp-notifications"></a>設定 Azure ATP 通知
+# <a name="set-product-long-notifications"></a>設定[!INCLUDE [Product long](includes/product-long.md)] 通知
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
-Azure ATP 會在偵測到可疑的活動並引發安全性警訊或健康狀態警訊時，透過電子郵件通知您。
+[!INCLUDE [Product long](includes/product-long.md)] 可在偵測到可疑活動時通知您，並透過電子郵件發出安全性警示或健康情況警示。
 
 若要接收特定電子郵件地址的通知，請設定下列參數：
 
-1. 在 Azure ATP 入口網站中，選取工具列上的 [設定] 選項，然後選取 [設定]****。
+1. 在[!INCLUDE [Product short](includes/product-short.md)] 入口網站中，選取工具列上的 [設定] 選項，然後選取 [設定]。
 
-    ![Azure ATP 組態設定圖示](media/atp-config-menu.png)
+    ![[!INCLUDE [Product short](includes/product-short.md)] 組態設定圖示](media/config-menu.png)
 
-1. 按一下 [通知]****。
+1. 按一下 [通知]。
 1. 在 [郵件通知] 下，新增您想收到通知的電子郵件地址 - 可針對新的警示 (可疑的活動) 和新的健康狀態問題傳送。
 
     > [!NOTE]
@@ -41,11 +40,11 @@ Azure ATP 會在偵測到可疑的活動並引發安全性警訊或健康狀態�
 
 1. 按一下 [儲存]。
 
-    ![Azure ATP 通知](media/atp-notifications.png)
+    ![[!INCLUDE [Product short](includes/product-short.md)] 通知](media/notifications.png)
 
 ## <a name="see-also"></a>另請參閱
 
 - [設定事件收集](configure-event-collection.md)
 
 - [設定 Syslog 設定](setting-syslog.md)
-- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

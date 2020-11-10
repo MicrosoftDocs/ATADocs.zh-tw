@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d78282a4580159e0b20374e3c3acbd2b5008aab6
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: edb9f414055a7d106913d1d394af44ef84ef4223
+ms.sourcegitcommit: 2b57f438c2902d5258aff8999b374c2f1808ceb4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93274165"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94430680"
 ---
 # <a name="product-long-switches-and-silent-installation"></a>[!INCLUDE [Product long](includes/product-long.md)] 切換和無訊息安裝
 
@@ -24,7 +24,7 @@ ms.locfileid: "93274165"
 
 本文提供 [!INCLUDE [Product long](includes/product-long.md)] 切換開關和無訊息安裝的指導方針和指示。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 [!INCLUDE [Product short](includes/product-short.md)] 需要安裝 Microsoft .NET Framework 4.7 或更新版本。
 
@@ -53,7 +53,7 @@ ms.locfileid: "93274165"
 **Powershell 語法** ：
 
 ```powershell
-./"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
+.\"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
 ```
 
 > [!NOTE]
@@ -99,9 +99,9 @@ ms.locfileid: "93274165"
 >
 > |Name|語法|對無訊息安裝而言是否為必要？|說明|
 > |-------------|----------|---------|---------|
-> |ProxyUrl|ProxyUrl="https\://proxy.contoso.com:8080"|否|指定感應器的 ProxyUrl 和埠號碼 [!INCLUDE [Product short](includes/product-short.md)] 。|
+> |ProxyUrl|ProxyUrl="https\://proxy.contoso.com:8080"|否|為[!INCLUDE [Product short](includes/product-short.md)] 感應器指定 ProxyUrl 與連接埠號碼。|
 > |ProxyUserName|ProxyUserName="Contoso\ProxyUser"|否|如果您的 Proxy 服務需要驗證，請以 DOMAIN\user 格式提供使用者名稱。|
-> |ProxyUserPassword|ProxyUserPassword="P@ssw0rd"|否|指定 Proxy 使用者名稱的密碼。 * 認證會經過加密，並由感應器儲存在本機 [!INCLUDE [Product short](includes/product-short.md)] 。|
+> |ProxyUserPassword|ProxyUserPassword="P@ssw0rd"|否|指定 Proxy 使用者名稱的密碼。 \* 認證會經過加密，並由[!INCLUDE [Product short](includes/product-short.md)] 感應器儲存在本機。|
 
 ## <a name="update-the-product-short-sensor"></a>更新 [!INCLUDE [Product short](includes/product-short.md)] 感應器
 
@@ -164,4 +164,4 @@ ms.locfileid: "93274165"
 - [[!INCLUDE [Product short](includes/product-short.md)] 先決條件](prerequisites.md)
 - [安裝 [!INCLUDE [Product short](includes/product-short.md)] 感應器](install-step4.md)
 - [設定 [!INCLUDE [Product short](includes/product-short.md)] 感應器](install-step5.md)
-- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

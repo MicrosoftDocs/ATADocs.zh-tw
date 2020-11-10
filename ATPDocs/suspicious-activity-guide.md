@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 254c6e6d5130936b32c859ceb96ee2995461cf3c
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 8b79365410e6f8d0c612ceef54277003a1d95b98
+ms.sourcegitcommit: 3c5ca2cb13ebe6c839ede951b238261d1fc73f26
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93274146"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93343564"
 ---
 # <a name="product-long-security-alerts"></a>[!INCLUDE [Product long](includes/product-long.md)] 安全性警示
 
@@ -47,6 +47,7 @@ ms.locfileid: "93274146"
 > |安全性警訊名稱|唯一外部識別碼|嚴重性|MITRE ATT&CK Matrix&trade;|
 > |---|---|---|---|
 > |[帳戶列舉偵察](reconnaissance-alerts.md#account-enumeration-reconnaissance-external-id-2003)|2003|中型|探索|
+> |[Active Directory 屬性偵察 (LDAP)](reconnaissance-alerts.md#active-directory-attributes-reconnaissance-ldap-external-id-2210)|2210|中型|探索|
 > |[透過 SMB 的資料外流](exfiltration-alerts.md#data-exfiltration-over-smb-external-id-2030)|2030|高|外流，<br>橫向移動，<br>命令與控制|
 > |[Honeytoken 活動](compromised-credentials-alerts.md#honeytoken-activity-external-id-2014)|2014|中型|認證存取，<br>探索|
 > |[資料保護 API 主要金鑰的惡意要求](domain-dominance-alerts.md#malicious-request-of-data-protection-api-master-key-external-id-2020)|2020|高|認證存取|
@@ -64,13 +65,16 @@ ms.locfileid: "93274146"
 > |[可疑的黃金票證使用 (偽造的授權資料)](domain-dominance-alerts.md#suspected-golden-ticket-usage-forged-authorization-data-external-id-2013)|2013|高|權限提升，<br>橫向移動，<br>持續性|
 > |[可疑的黃金票證使用 (不存在的帳戶)](domain-dominance-alerts.md#suspected-golden-ticket-usage-nonexistent-account-external-id-2027)|2027|高|權限提升，<br>橫向移動，<br>持續性|
 > |[可疑的黃金票證使用 (票證異常)](domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-external-id-2032)|2032|高|權限提升，<br>橫向移動，<br>持續性|
+> |[可疑的黃金票證使用方式 (使用 RBCD 的票證異常)](domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-using-rbcd-external-id-2040)|2040|高|持續性|
 > |[可疑的黃金票證使用 (時間異常)](domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|2022|高|權限提升，<br>橫向移動，<br>持續性|
 > |[可疑的身分識別竊取 (雜湊傳遞)](lateral-movement-alerts.md#suspected-identity-theft-pass-the-hash-external-id-2017)|2017|高|橫向移動|
 > |[可疑的身分識別竊取 (票證傳遞)](lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018)|2018|高或中|橫向移動|
+> |[可疑的 Netlogon 權限提升嘗試 (CVE-2020-1472 惡意探索)](compromised-credentials-alerts.md#suspected-netlogon-priv-elev-2411)|2411|高|權限升級|
 > |[可疑的 NTLM 驗證竄改](lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039)|2039|中型|權限提升， <br>橫向移動|
 > |[可疑的 NTLM 轉送攻擊](lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037)|2037|中或低 (如果觀察到使用簽署的 NTLM v2 通訊協定)|權限提升， <br>橫向移動|
 > |[可疑的 Overpass-the-Hash 攻擊 (Kerberos)](lateral-movement-alerts.md#suspected-overpass-the-hash-attack-kerberos-external-id-2002)|2002|中型|橫向移動|
-> |[可疑的萬能金鑰攻擊 (加密降級)](domain-dominance-alerts.md#suspected-skeleton-key-attack-encryption-downgrade-external-id-2010)|2010|中型|橫向移動，<br>持續性|
+> |[可疑的流氓 Kerberos 憑證使用方式](lateral-movement-alerts.md#suspected-rogue-kerberos-certificate-usage-external-id-2047)|2047|高|橫向移動|
+> |[可疑的基本結構金鑰攻擊 (加密降級)](domain-dominance-alerts.md#suspected-skeleton-key-attack-encryption-downgrade-external-id-2010)|2010|中型|橫向移動，<br>持續性|
 > |[可疑的 SMB 封包操作 (CVE-2020-0796 惡意探索) - (預覽)](lateral-movement-alerts.md#suspected-smb-packet-manipulation-cve-2020-0796-exploitation-external-id-2406)|2406|高|橫向移動|
 > |[可疑的 Metasploit 入侵架構使用](compromised-credentials-alerts.md#suspected-use-of-metasploit-hacking-framework-external-id-2034)|2034|中型|橫向移動|
 > |[可疑的 WannaCry 勒索軟體攻擊](compromised-credentials-alerts.md#suspected-wannacry-ransomware-attack-external-id-2035)|2035|中型|橫向移動|
@@ -78,8 +82,12 @@ ms.locfileid: "93274146"
 > |[透過 DNS 的可疑通訊](exfiltration-alerts.md#suspicious-communication-over-dns-external-id-2031)|2031|中型|外流|
 > |[可疑的服務建立](domain-dominance-alerts.md#suspicious-service-creation-external-id-2026)|2026|中型|執行，<br>持續性，<br>權限提升，<br>防禦躲避，<br>橫向移動|
 > |[可疑的 VPN 連線](compromised-credentials-alerts.md#suspicious-vpn-connection-external-id-2025)|2025|中型|持續性，<br>防禦躲避|
-> |[使用者和群組成員資格偵察 (SAMR)](reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|2021|中型|探索|
+> |[使用者與群組成員資格偵察 (SAMR)](reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|2021|中型|探索|
 > |[使用者和 IP 位址偵察 (SMB)](reconnaissance-alerts.md#user-and-ip-address-reconnaissance-smb-external-id-2012)|2012|中型|探索|
+
+<!--
+> |[Suspected Kerberos SPN exposure (external ID 2410)](compromised-credentials-alerts.md#suspected-kerberos-spn-exposure-external-id-2410)|2410|High|Credential access|
+-->
 
 # <a name="cloud-app-security-ids"></a>[Cloud App Security 識別碼](#tab/cloud-app-security)
 
@@ -87,6 +95,7 @@ ms.locfileid: "93274146"
 > |安全性警訊名稱|Cloud App Security 警示識別碼|
 > |---|---|
 > |[帳戶列舉偵察](reconnaissance-alerts.md#account-enumeration-reconnaissance-external-id-2003)|ALERT_EXTERNAL_AATP_ACCOUNT_ENUMERATION_SECURITY_ALERT|
+> |[Active Directory 屬性偵察 (LDAP)](reconnaissance-alerts.md#active-directory-attributes-reconnaissance-ldap-external-id-2210)|ALERT_EXTERNAL_AATP_LDAP_SENSITIVE_ATTRIBUTE_RECONNAISSANCE_SECURITY_ALERT|
 > |[透過 SMB 的資料外流](exfiltration-alerts.md#data-exfiltration-over-smb-external-id-2030)|ALERT_EXTERNAL_AATP_SMB_DATA_EXFILTRATION_SECURITY_ALERT|
 > |[Honeytoken 活動](compromised-credentials-alerts.md#honeytoken-activity-external-id-2014)|ALERT_EXTERNAL_AATP_HONEYTOKEN_ACTIVITY_SECURITY_ALERT|
 > |[資料保護 API 主要金鑰的惡意要求](domain-dominance-alerts.md#malicious-request-of-data-protection-api-master-key-external-id-2020)|ALERT_EXTERNAL_AATP_RETRIEVE_DATA_PROTECTION_BACKUP_KEY_SECURITY_ALERT|
@@ -104,13 +113,16 @@ ms.locfileid: "93274146"
 > |[可疑的黃金票證使用 (偽造的授權資料)](domain-dominance-alerts.md#suspected-golden-ticket-usage-forged-authorization-data-external-id-2013)|ALERT_EXTERNAL_AATP_FORGED_PAC_SECURITY_ALERT|
 > |[可疑的黃金票證使用 (不存在的帳戶)](domain-dominance-alerts.md#suspected-golden-ticket-usage-nonexistent-account-external-id-2027)|ALERT_EXTERNAL_AATP_FORGED_PRINCIPAL_SECURITY_ALERT|
 > |[可疑的黃金票證使用 (票證異常)](domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-external-id-2032)|ALERT_EXTERNAL_AATP_GOLDEN_TICKET_SIZE_ANOMALY_SECURITY_ALERT|
+> |[可疑的黃金票證使用方式 (使用 RBCD 的票證異常)](domain-dominance-alerts.md#suspected-golden-ticket-usage-ticket-anomaly-using-rbcd-external-id-2040)|ALERT_EXTERNAL_AATP_RESOURCE_BASED_CONSTRAINED_DELEGATION_GOLDEN_TICKET_SECURITY_ALERT|
 > |[可疑的黃金票證使用 (時間異常)](domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|ALERT_EXTERNAL_AATP_GOLDEN_TICKET_SECURITY_ALERT|
 > |[可疑的身分識別竊取 (雜湊傳遞)](lateral-movement-alerts.md#suspected-identity-theft-pass-the-hash-external-id-2017)|ALERT_EXTERNAL_AATP_PASS_THE_HASH_SECURITY_ALERT|
 > |[可疑的身分識別竊取 (票證傳遞)](lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018)|ALERT_EXTERNAL_AATP_PASS_THE_TICKET_SECURITY_ALERT|
+> |[可疑的 Netlogon 權限提升嘗試 (CVE-2020-1472 惡意探索)](compromised-credentials-alerts.md#suspected-netlogon-priv-elev-2411)|ALERT_EXTERNAL_AATP_NETLOGON_BYPASS_SECURITY_ALERT|
 > |[可疑的 NTLM 驗證竄改](lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039)|ALERT_EXTERNAL_AATP_ABNORMAL_NTLM_SIGNING_SECURITY_ALERT|
 > |[可疑的 NTLM 轉送攻擊](lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037)|ALERT_EXTERNAL_AATP_NTLM_RELAY_SECURITY_ALERT|
 > |[可疑的 Overpass-the-Hash 攻擊 (Kerberos)](lateral-movement-alerts.md#suspected-overpass-the-hash-attack-kerberos-external-id-2002)|ALERT_EXTERNAL_AATP_ABNORMAL_KERBEROS_OVERPASS_THE_HASH_SECURITY_ALERT|
-> |[可疑的萬能金鑰攻擊 (加密降級)](domain-dominance-alerts.md#suspected-skeleton-key-attack-encryption-downgrade-external-id-2010)|ALERT_EXTERNAL_AATP_SKELETON_KEY_ENCRYPTION_DOWNGRADE_SECURITY_ALERT|
+> |[可疑的流氓 Kerberos 憑證使用方式](lateral-movement-alerts.md#suspected-rogue-kerberos-certificate-usage-external-id-2047)|ALERT_EXTERNAL_AATP_ROGUE_CERTIFICATE_USAGE_SECURITY_ALERT|
+> |[可疑的基本結構金鑰攻擊 (加密降級)](domain-dominance-alerts.md#suspected-skeleton-key-attack-encryption-downgrade-external-id-2010)|ALERT_EXTERNAL_AATP_SKELETON_KEY_ENCRYPTION_DOWNGRADE_SECURITY_ALERT|
 > |[可疑的 SMB 封包操作 (CVE-2020-0796 惡意探索) - (預覽)](lateral-movement-alerts.md#suspected-smb-packet-manipulation-cve-2020-0796-exploitation-external-id-2406)|ALERT_EXTERNAL_AATP_SMB_GHOST_SECURITY_ALERT|
 > |[可疑的 Metasploit 入侵架構使用](compromised-credentials-alerts.md#suspected-use-of-metasploit-hacking-framework-external-id-2034)|ALERT_EXTERNAL_AATP_ABNORMAL_SMB_METASPLOIT_SECURITY_ALERT|
 > |[可疑的 WannaCry 勒索軟體攻擊](compromised-credentials-alerts.md#suspected-wannacry-ransomware-attack-external-id-2035)|ALERT_EXTERNAL_AATP_ABNORMAL_SMB_WANNA_CRY_SECURITY_ALERT|
@@ -118,8 +130,12 @@ ms.locfileid: "93274146"
 > |[透過 DNS 的可疑通訊](exfiltration-alerts.md#suspicious-communication-over-dns-external-id-2031)|ALERT_EXTERNAL_AATP_DNS_SUSPICIOUS_COMMUNICATION_SECURITY_ALERT|
 > |[可疑的服務建立](domain-dominance-alerts.md#suspicious-service-creation-external-id-2026)|ALERT_EXTERNAL_AATP_MALICIOUS_SERVICE_CREATION_SECURITY_ALERT|
 > |[可疑的 VPN 連線](compromised-credentials-alerts.md#suspicious-vpn-connection-external-id-2025)|ALERT_EXTERNAL_AATP_ABNORMAL_VPN_SECURITY_ALERT|
-> |[使用者和群組成員資格偵察 (SAMR)](reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|ALERT_EXTERNAL_AATP_SAMR_RECONNAISSANCE_SECURITY_ALERT|
+> |[使用者與群組成員資格偵察 (SAMR)](reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|ALERT_EXTERNAL_AATP_SAMR_RECONNAISSANCE_SECURITY_ALERT|
 > |[使用者和 IP 位址偵察 (SMB)](reconnaissance-alerts.md#user-and-ip-address-reconnaissance-smb-external-id-2012)|ALERT_EXTERNAL_AATP_ENUMERATE_SESSIONS_SECURITY_ALERT|
+
+<!--
+> |[Kerberos SPN exposure (external ID 2410)](compromised-credentials-alerts.md#suspected-kerberos-spn-exposure-external-id-2410)|ALERT_EXTERNAL_AATP_KERBEROASTING_SECURITY_ALERT|
+-->
 
 <!-- FROM TOP TABLE |[Suspected over-pass-the-hash attack (encryption downgrade)](lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|2008|Medium|Lateral movement|-->
 <!-- FROM BOTTOM TABLE |[Suspected over-pass-the-hash attack (encryption downgrade)](lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|ALERT_EXTERNAL_AATP_OVERPASS_THE_HASH_ENCRYPTION_DOWNGRADE_SECURITY_ALERT|-->

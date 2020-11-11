@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8b79365410e6f8d0c612ceef54277003a1d95b98
-ms.sourcegitcommit: 3c5ca2cb13ebe6c839ede951b238261d1fc73f26
+ms.openlocfilehash: 6c4206029aa35029097e074934e23d57b02fcfd3
+ms.sourcegitcommit: 00142fc07a81b10922ae26418a4104a0ef4b366d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93343564"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94371496"
 ---
 # <a name="product-long-security-alerts"></a>[!INCLUDE [Product long](includes/product-long.md)] 安全性警示
 
@@ -69,6 +69,7 @@ ms.locfileid: "93343564"
 > |[可疑的黃金票證使用 (時間異常)](domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|2022|高|權限提升，<br>橫向移動，<br>持續性|
 > |[可疑的身分識別竊取 (雜湊傳遞)](lateral-movement-alerts.md#suspected-identity-theft-pass-the-hash-external-id-2017)|2017|高|橫向移動|
 > |[可疑的身分識別竊取 (票證傳遞)](lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018)|2018|高或中|橫向移動|
+> |[可疑的 Kerberos SPN 公開 (外部識別碼 2410)](compromised-credentials-alerts.md#suspected-kerberos-spn-exposure-external-id-2410)|2410|高|認證存取|
 > |[可疑的 Netlogon 權限提升嘗試 (CVE-2020-1472 惡意探索)](compromised-credentials-alerts.md#suspected-netlogon-priv-elev-2411)|2411|高|權限升級|
 > |[可疑的 NTLM 驗證竄改](lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039)|2039|中型|權限提升， <br>橫向移動|
 > |[可疑的 NTLM 轉送攻擊](lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037)|2037|中或低 (如果觀察到使用簽署的 NTLM v2 通訊協定)|權限提升， <br>橫向移動|
@@ -85,9 +86,6 @@ ms.locfileid: "93343564"
 > |[使用者與群組成員資格偵察 (SAMR)](reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|2021|中型|探索|
 > |[使用者和 IP 位址偵察 (SMB)](reconnaissance-alerts.md#user-and-ip-address-reconnaissance-smb-external-id-2012)|2012|中型|探索|
 
-<!--
-> |[Suspected Kerberos SPN exposure (external ID 2410)](compromised-credentials-alerts.md#suspected-kerberos-spn-exposure-external-id-2410)|2410|High|Credential access|
--->
 
 # <a name="cloud-app-security-ids"></a>[Cloud App Security 識別碼](#tab/cloud-app-security)
 
@@ -117,6 +115,7 @@ ms.locfileid: "93343564"
 > |[可疑的黃金票證使用 (時間異常)](domain-dominance-alerts.md#suspected-golden-ticket-usage-time-anomaly-external-id-2022)|ALERT_EXTERNAL_AATP_GOLDEN_TICKET_SECURITY_ALERT|
 > |[可疑的身分識別竊取 (雜湊傳遞)](lateral-movement-alerts.md#suspected-identity-theft-pass-the-hash-external-id-2017)|ALERT_EXTERNAL_AATP_PASS_THE_HASH_SECURITY_ALERT|
 > |[可疑的身分識別竊取 (票證傳遞)](lateral-movement-alerts.md#suspected-identity-theft-pass-the-ticket-external-id-2018)|ALERT_EXTERNAL_AATP_PASS_THE_TICKET_SECURITY_ALERT|
+> |[可疑的 Kerberos SPN 公開 (外部識別碼 2410)](compromised-credentials-alerts.md#suspected-kerberos-spn-exposure-external-id-2410)|ALERT_EXTERNAL_AATP_KERBEROASTING_SECURITY_ALERT|
 > |[可疑的 Netlogon 權限提升嘗試 (CVE-2020-1472 惡意探索)](compromised-credentials-alerts.md#suspected-netlogon-priv-elev-2411)|ALERT_EXTERNAL_AATP_NETLOGON_BYPASS_SECURITY_ALERT|
 > |[可疑的 NTLM 驗證竄改](lateral-movement-alerts.md#suspected-ntlm-authentication-tampering-external-id-2039)|ALERT_EXTERNAL_AATP_ABNORMAL_NTLM_SIGNING_SECURITY_ALERT|
 > |[可疑的 NTLM 轉送攻擊](lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037)|ALERT_EXTERNAL_AATP_NTLM_RELAY_SECURITY_ALERT|
@@ -132,10 +131,6 @@ ms.locfileid: "93343564"
 > |[可疑的 VPN 連線](compromised-credentials-alerts.md#suspicious-vpn-connection-external-id-2025)|ALERT_EXTERNAL_AATP_ABNORMAL_VPN_SECURITY_ALERT|
 > |[使用者與群組成員資格偵察 (SAMR)](reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|ALERT_EXTERNAL_AATP_SAMR_RECONNAISSANCE_SECURITY_ALERT|
 > |[使用者和 IP 位址偵察 (SMB)](reconnaissance-alerts.md#user-and-ip-address-reconnaissance-smb-external-id-2012)|ALERT_EXTERNAL_AATP_ENUMERATE_SESSIONS_SECURITY_ALERT|
-
-<!--
-> |[Kerberos SPN exposure (external ID 2410)](compromised-credentials-alerts.md#suspected-kerberos-spn-exposure-external-id-2410)|ALERT_EXTERNAL_AATP_KERBEROASTING_SECURITY_ALERT|
--->
 
 <!-- FROM TOP TABLE |[Suspected over-pass-the-hash attack (encryption downgrade)](lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|2008|Medium|Lateral movement|-->
 <!-- FROM BOTTOM TABLE |[Suspected over-pass-the-hash attack (encryption downgrade)](lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|ALERT_EXTERNAL_AATP_OVERPASS_THE_HASH_ENCRYPTION_DOWNGRADE_SECURITY_ALERT|-->

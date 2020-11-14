@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 41ee2095939182a23a5f10088580113f1f0fdcd7
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 567fb2beb08425a69964932ca6807ff03a6b6549
+ms.sourcegitcommit: 69c55503b8b3f7ca99dbea872b17d81124831fad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90911326"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94567918"
 ---
 # <a name="install-ata---step-6"></a>安裝 ATA - 步驟 6
 
@@ -62,7 +62,7 @@ ms.locfileid: "90911326"
 
 #### <a name="configuring-the-ata-gateway-to-listen-for-siem-events"></a>將 ATA 閘道設定為接聽 SIEM 事件
 
-1. 在 ATA 組態中，按一下 [資料來源]**** 下的 [SIEM]****，開啟 [Syslog]****，然後按一下 [儲存]****。
+1. 在 ATA 組態中，按一下 [資料來源] 下的 [SIEM]，開啟 [Syslog]，然後按一下 [儲存]。
 
     ![啟用 Syslog 接聽程式 UDP 映像](media/ATA-enable-siem-forward-events.png)
 
@@ -98,14 +98,14 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
 - 沒有 syslog 標頭。
 - 標頭部分 (以管線符號分隔的部分) 必須存在 (如通訊協定中所述)。
-- 事件的_延伸_部分必須有下列索引鍵︰
+- 事件的 _延伸_ 部分必須有下列索引鍵︰
   - externalId = Windows 事件識別碼
   - rt = 實際事件的時間戳記 (請確定它不是抵達 SIEM 或傳送至 ATA) 的時間戳記。 精確度最好在毫秒以內，這很重要。
   - cat = Windows 事件記錄檔名稱
   - shost = 來源主機名稱
   - dhost = 接收事件的電腦 (在此案例中是 DC)
   - duser = 驗證的使用者
-- _延伸_部分的順序不重要。
+- _延伸_ 部分的順序不重要。
 - 這兩個欄位必須是自訂索引鍵和 keyLable：
   - "EventSource"
   - "Reason or Error Code" = NTLM 的結果碼
@@ -126,7 +126,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
 - Syslog Header 是選擇性參數。
 
-- 所有欄位之間都必須以 "\r\n" 字元分隔。
+- 所有欄位之間都必須以 "\r\n" 字元分隔。 請注意，這些是以十六進位)  (0D0A 的控制字元，而不是常值字元。
 - 欄位格式是「索引鍵=值」。
 - 下列索引鍵必須存在且具有值︰
   - EventCode = Windows 事件識別碼

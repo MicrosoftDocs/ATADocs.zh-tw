@@ -1,45 +1,45 @@
 ---
-title: 如何利用 Azure ATP 來調查使用者與電腦
-description: 描述如何使用 Azure 進階威脅防護 (ATP) 來調查使用者、實體、電腦或裝置執行的可疑活動
+title: 如何利用適用於身分識別的 Microsoft Defender 調查使用者與電腦
+description: 描述如何使用適用於身分識別的 Microsoft Defender 來調查使用者、實體、電腦或裝置所進行可疑活動
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 09/15/2019
+ms.date: 10/26/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 43e57f87-ca85-4922-8ed0-9830139fe7cb
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9557157c57638627df6ebaf6c84725d51b1456f1
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: c333647c7a1d48edd379a02ea154c0dbf2c810c0
+ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912099"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93276059"
 ---
 # <a name="tutorial-investigate-an-entity"></a>教學課程：調查實體
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
-> 此頁面所述的 Azure ATP 功能也可使用新的[入口網站](https://portal.cloudappsecurity.com)來存取。
+> 此頁面所述的[!INCLUDE [Product long](includes/product-long.md)] 功能也可使用新的[入口網站](https://portal.cloudappsecurity.com)來存取。
 
-在本教學課程中，您將了解如何針對 Azure 進階威脅防護 (ATP) 偵測到已連線至可疑活動的實體進行調查。 檢視時間軸中的安全性警訊後，您將了解如何向下切入至警訊涉及的實體，並使用下列參數與詳細資料來了解發生的問題，以及降低風險所需採取的動作。
+在本教學課程中，您將了解如何調查已連線至由 [!INCLUDE [Product long](includes/product-long.md)] 所偵測到可疑活動的實體。 檢視時間軸中的安全性警訊後，您將了解如何向下切入至警訊涉及的實體，並使用下列參數與詳細資料來了解發生的問題，以及降低風險所需採取的動作。
 
 > [!div class="checklist"]
-> * 檢查實體設定檔
-> * 查看實體標籤
-> * 檢查使用者帳戶控制旗標
-> * 利用 Windows Defender 進行交叉檢查
-> * 留意敏感性使用者與群組
-> * 檢閱潛在橫向移動路徑
-> * 檢查 honeytoken 狀態
+>
+> - 檢查實體設定檔
+> - 查看實體標籤
+> - 檢查使用者帳戶控制旗標
+> - 利用 Windows Defender 進行交叉檢查
+> - 留意敏感性使用者與群組
+> - 檢閱潛在橫向移動路徑
+> - 檢查 honeytoken 狀態
 
 ## <a name="check-the-entity-profile"></a>檢查實體設定檔
 
-實體設定檔提供您專為完整深入調查使用者、電腦、裝置，以及他們有權存取的資源及其歷程記錄所設計的全方位實體頁面。 設定檔頁面會利用新的 Azure ATP 邏輯活動轉譯程式，此轉譯程式可查看一組發生的活動 (彙總最多一分鐘)，並將它們組成單一邏輯活動，以讓您更深入了解您使用者的實際活動。
+實體設定檔提供您專為完整深入調查使用者、電腦、裝置，以及他們有權存取的資源及其歷程記錄所設計的全方位實體頁面。 設定檔頁面會利用新的[!INCLUDE [Product short](includes/product-short.md)] 邏輯活動轉譯程式，此轉譯程式可查看一組發生的活動 (彙總最多一分鐘)，並將其組成單一邏輯活動，以讓您更深入了解您使用者的實際活動。
 
 若要存取實體設定檔頁面，請按一下安全性警訊時間軸中的實體名稱 (例如使用者名稱)。 您也可以將滑鼠移至實體名稱上，在安全性警訊頁面中查看迷你版本的實體設定檔。
 
@@ -47,7 +47,9 @@ ms.locfileid: "90912099"
 
 ## <a name="check-entity-tags"></a>查看實體標籤
 
-Azure ATP 會從 Active Directory 中提出標籤，以為您提供可監視 Active Directory 使用者與實體的單一介面。 這些標籤會為您提供 Active Directory 實體的資訊，包含：
+[!INCLUDE [Product short](includes/product-short.md)] 會從 Active Directory 中提取標籤，以提供可監視 Active Directory 使用者與實體的單一介面。
+這些標籤會為您提供 Active Directory 實體的資訊，包含：
+
 - 部分：這個使用者、電腦或群組未從網域同步，而且透過通用類別目錄進行部份解析。 部分屬性無法使用。
 - 未解決：這部電腦在 Active Directory 樹系中未解析為有效實體。 沒有任何目錄資訊可用。
 - 已刪除：實體已從 Active Directory 刪除。
@@ -58,7 +60,8 @@ Azure ATP 會從 Active Directory 中提出標籤，以為您提供可監視 Act
 
 ## <a name="check-user-account-control-flags"></a>檢查使用者帳戶控制旗標
 
-使用者帳戶控制旗標也會從 Active Directory 匯入。 Azure ATP 實體目錄資料包含 10 個有助於調查的旗標： 
+使用者帳戶控制旗標也會從 Active Directory 匯入。 [!INCLUDE [Product short](includes/product-short.md)] 實體目錄資料包含 10 個有助於調查的旗標：
+
 - 密碼永久有效
 - 具信任可委派
 - 需要智慧卡
@@ -68,9 +71,9 @@ Azure ATP 會從 Active Directory 中提出標籤，以為您提供可監視 Act
 - 無法委派
 - 僅限 DES 加密
 - 不需要 Kerberos 預先驗證
-- 帳戶已停用 
+- 帳戶已停用
 
-Azure ATP 能夠讓您得知這些旗標在 Active Directory 中的開啟/關閉狀態。 彩色圖示與對應的切換開關指出每個旗標的狀態。 在下面的範例中，Active Directory 只有**密碼永久有效**是開啟的。
+[!INCLUDE [Product short](includes/product-short.md)] 能夠讓您得知這些旗標在 Active Directory 中的開啟/關閉狀態。 彩色圖示與對應的切換開關指出每個旗標的狀態。 在下面的範例中，Active Directory 只有 **密碼永久有效** 是開啟的。
 
  ![使用者帳戶控制旗標](media/user-access-flags.png)
 
@@ -78,10 +81,9 @@ Azure ATP 能夠讓您得知這些旗標在 Active Directory 中的開啟/關閉
 
 為提供您跨產品見解，您的實體設定檔會為在 Windows Defender 中具未解決警示的實體提供徽章。 此徽章可讓您得知該實體在 Windows Defender 中有多少未解決的警示，以及這些警示的嚴重性等級。 按一下徽章就能直接前往 Windows Defender 中與此實體相關的警示。
 
-
 ## <a name="keep-an-eye-on-sensitive-users-and-groups"></a>留意敏感性使用者與群組
 
-Azure ATP 會從 Azure Active Directory 匯入使用者與群組資訊，以便您識別有哪些使用者因為在以下 Active Directory 群組中具成員身分，所以會自動視為具敏感性：
+[!INCLUDE [Product short](includes/product-short.md)] 會從 Azure Active Directory 匯入使用者與群組資訊，以供識別有哪些使用者因為在下列 Active Directory 群組中具成員身分，所以會自動視為具敏感性：
 
 - Administrators
 - Power Users
@@ -90,32 +92,32 @@ Azure ATP 會從 Azure Active Directory 匯入使用者與群組資訊，以便�
 - Print Operators
 - Backup Operators
 - Replicators
-- Remote Desktop Users 
-- Network Configuration Operators 
+- Remote Desktop Users
+- Network Configuration Operators
 - Incoming Forest Trust Builders
 - Domain Admins
 - 網域控制站
-- Group Policy Creator Owners 
-- 唯讀網域控制站 
-- 企業唯讀網域控制站 
-- Schema Admins 
+- Group Policy Creator Owners
+- 唯讀網域控制站
+- 企業唯讀網域控制站
+- Schema Admins
 - Enterprise Admins
 
-此外，您可在 Azure ATP 中**手動標記**實體為具敏感性。 這一點很重要，因為部分 Azure ATP 偵測 (例如敏感性群組修改偵測與橫向移動路徑) 會仰賴於實體的敏感度狀態。 若您將其他使用者或群組手動標記為具敏感性 (例如董事會成員、公司主管、業務總監等)，Azure ATP 會將其視為具敏感性。 如需詳細資訊，請參閱[使用敏感性帳戶](sensitive-accounts.md)。
+此外，您可在 [!INCLUDE [Product short](includes/product-short.md)] 中將實體 **手動標記** 為具有敏感性。 這一點很重要，因為部分 [!INCLUDE [Product short](includes/product-short.md)] 偵測 (例如敏感性群組修改偵測與橫向移動路徑) 會仰賴於實體的敏感度狀態。 若將其他使用者或群組手動標記為具敏感性 (例如董事會成員、公司主管、業務總監等)，[!INCLUDE [Product short](includes/product-short.md)] 會將其視為具有敏感性。 如需詳細資訊，請參閱[使用敏感性帳戶](sensitive-accounts.md)。
 
 ## <a name="review-lateral-movement-paths"></a>檢閱橫向移動路徑
 
-Azure ATP 可協助您預防使用橫向移動路徑的攻擊。 橫向移動是攻擊者主動使用非敏感性帳戶來取得敏感性帳戶存取權的方式。
+[!INCLUDE [Product short](includes/product-short.md)] 可協助您預防使用橫向移動路徑的攻擊。 橫向移動是攻擊者主動使用非敏感性帳戶來取得敏感性帳戶存取權的方式。
 
-若實體存在橫向移動路徑，您便可在實體設定檔頁面中按一下 [橫向移動路徑]  索引標籤。顯示的圖表能提供您針對敏感性使用者之可能路徑的地圖。 
+若實體存在橫向移動路徑，您便可在實體設定檔頁面中按一下 [橫向移動路徑]  索引標籤。顯示的圖表能提供您針對敏感性使用者之可能路徑的地圖。
 
-如需詳細資訊，請參閱[使用 Azure ATP 調查橫向移動路徑](use-case-lateral-movement-path.md)。
+如需詳細資訊，請參閱[使用 [!INCLUDE [Product short](includes/product-short.md)] 調查橫向移動路徑](use-case-lateral-movement-path.md)。
 
 ## <a name="check-honeytoken-status"></a>檢查 honeytoken 狀態
 
-在您開始調查前，必須先了解實體是否為 honeytoken。 您可以將帳戶與實體標示為 Azure ATP 中的 honeytoken。 當您開啟您已標示為 honeytoken 之帳戶或實體的實體設定檔或迷你設定檔時，您會看到 honeytoken 徽章。 調查時，honeytoken 徽章可警示您正在檢閱的活動是由您標示為 honeytoken 的帳戶所執行的。
+在您開始調查前，必須先了解實體是否為 honeytoken。 您可將帳戶與實體標示為 [!INCLUDE [Product short](includes/product-short.md)] 中的 honeytoken。 當您開啟您已標示為 honeytoken 之帳戶或實體的實體設定檔或迷你設定檔時，您會看到 honeytoken 徽章。 調查時，honeytoken 徽章可警示您正在檢閱的活動是由您標示為 honeytoken 的帳戶所執行的。
 
 ## <a name="see-also"></a>另請參閱
 
 - [使用安全性警訊](working-with-suspicious-activities.md)
-- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

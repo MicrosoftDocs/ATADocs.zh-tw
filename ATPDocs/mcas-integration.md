@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 5051900ef8eb21f85a4f31723f455d3ae18ff36e
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: eff9b785cb23db649615f11be6e713eed49f3b5d
+ms.sourcegitcommit: 931d463e793cd5710e7bc2bca13cd4ef669eb190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275085"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94580885"
 ---
 # <a name="using-product-long-with-microsoft-cloud-app-security"></a>使用 [!INCLUDE [Product long](includes/product-long.md)] with Microsoft Cloud App Security
 
@@ -59,7 +59,7 @@ ms.locfileid: "93275085"
 > - 如果您沒有 Cloud App Security 的訂用帳戶，您仍然能夠使用 Cloud App Security 入口網站來調查 [!INCLUDE [Product short](includes/product-short.md)] 警示，並深入瞭解使用者及其內部部署的受控活動，但您不會收到來自雲端應用程式的相關深入解析。
 > - [!INCLUDE [Product short](includes/product-short.md)] 系統管理員可能需要新的許可權才能存取 Cloud App Security。 若要了解如何指派 Cloud App Security 的授權，請參閱[管理管理員存取權](/cloud-app-security/manage-admins) \(部分機器翻譯\)。
 
-請參閱[ [!INCLUDE [Product short](includes/product-short.md)] 整合](/cloud-app-security/aatp-integration)，以瞭解如何 [!INCLUDE [Product short](includes/product-short.md)] 在 Cloud App Security 中快速啟用。
+請參閱[ [!INCLUDE [Product short](includes/product-short.md)] 整合](/cloud-app-security/mdi-integration)，以瞭解如何 [!INCLUDE [Product short](includes/product-short.md)] 在 Cloud App Security 中快速啟用。
 
 ## <a name="product-short-in-cloud-app-security"></a>[!INCLUDE [Product short](includes/product-short.md)] 在 Cloud App Security
 
@@ -105,4 +105,4 @@ ms.locfileid: "93275085"
 
 ## <a name="join-the-community"></a>加入社群
 
-您是否有其他問題，或 [!INCLUDE [Product short](includes/product-short.md)] 與其他人討論和相關的安全性感興趣？ 立即加入[ [!INCLUDE [Product short](includes/product-short.md)] 社區](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection)！
+是否有更多問題或想與其他人討論[!INCLUDE [Product short](includes/product-short.md)] 與相關的安全性？ 立即加入[[!INCLUDE [Product short](includes/product-short.md)] 社群](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection) \(英文\)！

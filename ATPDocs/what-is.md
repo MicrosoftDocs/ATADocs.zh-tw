@@ -1,31 +1,30 @@
 ---
-title: 什麼是 Azure 進階威脅防護 (Azure ATP)？
-description: 說明何謂 Azure 進階威脅防護 (Azure ATP)，以及它可以偵測到哪些可疑活動種類
+title: 什麼是適用於身分識別的 Microsoft Defender？
+description: 說明什麼是適用於身分識別的 Microsoft Defender，以及其可以偵測哪種類型的可疑活動
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/05/2020
+ms.date: 10/27/2020
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
-ms.assetid: 2d14d0e9-1b03-4bcc-ae97-8fd41526ffc5
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 44ff93cc53feb69d83d347a019540a6e302271ee
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 6bd5e8677a37555db09925d98d242334e1e4967c
+ms.sourcegitcommit: 13d1ba61abae691d38d8e210b3adad71285d5c26
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912486"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93380619"
 ---
-# <a name="what-is-azure-advanced-threat-protection"></a>什麼是 Azure 進階威脅防護？
+# <a name="what-is-product-long"></a>什麼是 [!INCLUDE [Product long](includes/product-long.md)]？
 
 [!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
-Azure 進階威脅防護 (ATP) 是雲端式安全性解決方案，其可運用您的內部部署 Active Directory 訊號來識別、偵測及調查針對您組織的進階威脅、身分識別盜用，以及惡意的內部人員動作。
+[!INCLUDE [Product long](includes/product-long.md)] (先前是 Azure 進階威脅防護 (ATP)，亦稱為 Azure ATP) 是雲端式安全性解決方案，其可運用您的內部部署 Active Directory 訊號來識別、偵測及調查針對您組織的進階威脅、身分識別盜用，以及惡意的內部人員動作。
 
-Azure ATP 可讓為了偵測出混合式環境中的進階攻擊而心力交瘁的 SecOp 分析師和安全性專業人員完成以下作業：
+[!INCLUDE [Product short](includes/product-short.md)] 讓 SecOp 分析師及安全性專業人員可以在努力偵測混合式環境中的進階攻擊時，能夠：
 
 - 透過學習式分析，監視使用者、實體行為及活動
 - 保護儲存在 Active Directory 中的使用者身分識別與認證
@@ -34,15 +33,15 @@ Azure ATP 可讓為了偵測出混合式環境中的進階攻擊而心力交瘁�
 
 ## <a name="monitor-and-profile-user-behavior-and-activities"></a>監視和分析使用者行為和活動
 
-Azure ATP 會監視並分析整個網路的使用者活動和資訊，例如權限和群組成員資格，並為每個使用者建立行為基準。 接著，Azure ATP 會使用調適型內建智慧功能識別出異常項目，提供您可疑活動和事件的見解，揭露進階威脅、遭入侵的使用者和組織所面臨的內部威脅。 Azure ATP 專屬感應器可監視組織的網域控制站，並提供每部裝置所有使用者活動的完整檢視。
+[!INCLUDE [Product short](includes/product-short.md)] 會監視並分析整個網路的使用者活動與資訊，例如權限與群組成員資格，並為每個使用者建立行為基準。 接著，[!INCLUDE [Product short](includes/product-short.md)] 會使用調適型內建智慧功能識別出異常項目，提供您可疑活動與事件的見解，揭露進階威脅、遭入侵的使用者與組織所面臨的內部威脅。 [!INCLUDE [Product short](includes/product-short.md)] 專屬感應器可監視組織的網域控制站，並提供每部裝置所有使用者活動的完整檢視。
 
 ## <a name="protect-user-identities-and-reduce-the-attack-surface"></a>保護使用者的身分識別，並減少受攻擊面
 
-Azure ATP 可提供您身分識別設定的寶貴見解以及安全性最佳實務的建議。 透過安全性報告和使用者設定檔分析，Azure ATP 可協助大幅減少組織的受攻擊面，提高入侵使用者認證與發動攻擊的難度。 Azure ATP 的視覺化橫向移動路徑可協助您對攻擊者如何在組織內部橫向移動以入侵機密帳戶的過程一目了然，並事先防止這些風險。 Azure ATP 安全性報告可協助您找出使用純文字密碼進行驗證的使用者和裝置，並提供額外的見解，以提升組織的安全性狀態與原則。
+[!INCLUDE [Product short](includes/product-short.md)] 可提供您身分識別設定的寶貴見解以及安全性最佳實務的建議。 透過安全性報告與使用者設定檔分析，[!INCLUDE [Product short](includes/product-short.md)] 有助於大幅減少組織的受攻擊面，提高入侵使用者認證與發動攻擊的難度。 [!INCLUDE [Product short](includes/product-short.md)] 的視覺化橫向移動路徑可協助您對攻擊者如何在組織內部橫向移動以入侵機密帳戶的過程一目了然，並事先防止這些風險。 [!INCLUDE [Product short](includes/product-short.md)] 安全性報告可協助您找出使用純文字密碼進行驗證的使用者與裝置，並提供額外的見解，以提升組織的安全性狀態與原則。
 
 ## <a name="identify-suspicious-activities-and-advanced-attacks-across-the-cyber-attack-kill-chain"></a>識別整個網路攻擊狙殺鏈的可疑活動與進階攻擊
 
-一般來說，攻擊者會針對任何可存取的實體 (例如低權限使用者) 發動攻擊，再快速橫向移動直到獲得寶貴資產的存取權為止 – 例如敏感性帳戶、網域系統管理員和高敏感性資料。 Azure ATP 會從整個網路攻擊狙殺鏈來源識別這些進階威脅：
+一般來說，攻擊者會針對任何可存取的實體 (例如低權限使用者) 發動攻擊，再快速橫向移動直到獲得寶貴資產的存取權為止 – 例如敏感性帳戶、網域系統管理員和高敏感性資料。 [!INCLUDE [Product short](includes/product-short.md)] 會從整個網路攻擊狙殺鏈來源識別這些進階威脅：
 
 ### <a name="reconnaissance"></a>探查
 
@@ -62,53 +61,43 @@ Azure ATP 可提供您身分識別設定的寶貴見解以及安全性最佳實�
 
 ## <a name="investigate-alerts-and-user-activities"></a>調查警示和使用者活動
 
-Azure ATP 的設計目的是減少一般警示干擾，只在簡單的即時組織攻擊時間軸中提供相關的重要安全性警訊。 Azure ATP 的攻擊時間軸檢視，可讓您運用智慧分析的情報，安心專注於重要工作。 使用 Azure ATP 來快速調查威脅，並取得整個組織中使用者、裝置和網路資源的見解。 與 Microsoft Defender ATP 緊密整合，透過可抵禦作業系統上進階持續威脅的額外偵測和防護，提供另一道增強的安全性保障。
+[!INCLUDE [Product short](includes/product-short.md)] 的設計目的是減少一般警示干擾，只在簡單的即時組織攻擊時間軸中提供相關的重要安全性警示。 [!INCLUDE [Product short](includes/product-short.md)] 的攻擊時間軸檢視可讓您運用智慧分析的情報，安心專注於重要工作。 使用[!INCLUDE [Product short](includes/product-short.md)] 來快速調查威脅，並取得整個組織中使用者、裝置與網路資源的見解。 與適用於端點的 Microsoft Defender 緊密整合，透過可抵禦作業系統上進階持續威脅的額外偵測和防護，提供另一道增強的安全性保障。
 
-## <a name="additional-resources-for-azure-atp"></a>Azure ATP 的其他資源
+## <a name="additional-resources-for-product-short"></a>適用於[!INCLUDE [Product short](includes/product-short.md)] 的其他資源
 
 ### <a name="start-a-free-trial"></a>開始使用免費試用版
 
 [https://signup.microsoft.com/Signup?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7&ali=1](https://signup.microsoft.com/Signup?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7&ali=1 "Enterprise Mobility + Security E5")
 
-### <a name="follow-azure-atp-on-microsoft-tech-community"></a>追蹤 Microsoft 技術社群的 Azure ATP 專區
+### <a name="follow-product-short-on-microsoft-tech-community"></a>在 Microsoft Tech 社群上關注[!INCLUDE [Product short](includes/product-short.md)]
 
-[https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection "Azure ATP on Microsoft Tech Community")
+[https://aka.ms/MDIcommunity](https://aka.ms/MDIcommunity "[!INCLUDE [Product short](includes/product-short.md)] on Microsoft Tech Community")
 
-### <a name="join-the-azure-atp-yammer-community"></a>加入 Azure ATP Yammer 社群
+### <a name="join-the-product-short-yammer-community"></a>加入[!INCLUDE [Product short](includes/product-short.md)] Yammer 社群
 
-[https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893](https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893 "Azure ATP Yammer community")
+[https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893](https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893 "[!INCLUDE [Product short](includes/product-short.md)] Yammer community")
 
-### <a name="visit-the-azure-atp-product-page"></a>瀏覽 Azure ATP 產品頁面
+### <a name="visit-the-product-short-product-page"></a>瀏覽[!INCLUDE [Product short](includes/product-short.md)] 產品頁面
 
-[https://azure.microsoft.com/features/azure-advanced-threat-protection/](https://azure.microsoft.com/features/azure-advanced-threat-protection/ "Azure ATP product page")
+[https://www.microsoft.com/microsoft-365/security/identity-defender](https://www.microsoft.com/microsoft-365/security/identity-defender "[!INCLUDE [Product short](includes/product-short.md)] product page")
 
-### <a name="learn-more-about-azure-atp-architecture"></a>深入了解 Azure ATP 架構
+### <a name="learn-more-about-product-short-architecture"></a>深入了解[!INCLUDE [Product short](includes/product-short.md)] 架構
 
- [Azure ATP 架構](architecture.md)
+[[!INCLUDE [Product short](includes/product-short.md)] 架構](architecture.md)
 
-## <a name="microsoft-ignite"></a>Microsoft Ignite
+### <a name="watch-our-videos"></a>觀看我們的影片
 
-Microsoft Ignite 2018 會舉辦多場會議，著重探討 [Azure 進階威脅防護](https://myignite.techcommunity.microsoft.com/sessions?q=Azure%2520Advanced%2520Threat%2520Protection&t=%257B%2522from%2522%253A%25222018-09-23T08%253A00%253A00-04%253A00%2522%252C%2522to%2522%253A%25222018-09-28T19%253A00%253A00-04%253A00%2522%257D)。 我們已為會議錄影，因此若您錯過活動，建議您在此觀看：
+[使用 [!INCLUDE [Product short](includes/product-short.md)]](https://techcommunity.microsoft.com/t5/video-hub/bolster-your-security-posture-with-microsoft-defender-for/m-p/1698841) 維持您的安全性狀態 - 識別及主動解決已知不良做法，讓您的環境維持較健康的狀態，以及加強抵禦惡意執行者的能力 - 觀看 [YouTube 影片](https://youtu.be/nx5rrxVuRTk)
 
-### <a name="azure-atp"></a>Azure ATP
-
-[BRK3117](https://myignite.techcommunity.microsoft.com/videos/65780) - SecOp and incident response with Azure ATP (使用 Azure ATP 的 SecOp 和事件回應) - 觀看 [YouTube 影片](https://www.youtube.com/watch?v=QXZIfH0wP3Q)
-
-### <a name="azure-atp-and-azure-ad-ip-active-directory-identity-protection"></a>Azure ATP 和 Azure AD IP (Active Directory Identity Protection)
-
-[BRK3237](https://myignite.techcommunity.microsoft.com/videos/64523) - Securing your hybrid cloud environment with Azure AD Identity Protection and Azure ATP (使用 Azure AD Identity Protection 和 Azure ATP 保護您混合式雲端環境的安全) - 觀看 [YouTube 影片](https://www.youtube.com/watch?v=X7CXaok6GbM)
-
-[BRK2157](https://myignite.techcommunity.microsoft.com/videos/65776) - Accelerate deployment and adoption of Microsoft Information Protection solutions (加速 Microsoft 資訊保護解決方案的部署及採用) - 觀看 [YouTube 影片](https://www.youtube.com/watch?v=Foh-XDVbPog)
-
-如需 Ignite 2018 中進行的 Azure ATP 公告摘要，請參閱部落格文章 - [Azure 進階威脅防護擴展整合、偵測及鑑識功能](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Azure-Advanced-Threat-Protection-Expands-Integrations-Detections/ba-p/262409) \(英文\)
+[使用 [!INCLUDE [Product short](includes/product-short.md)]](https://techcommunity.microsoft.com/t5/video-hub/incident-investigation-with-microsoft-defender-for-identity/m-p/1698840) 進行事件調查 - 了解如何使用[!INCLUDE [Product short](includes/product-short.md)] 來偵測、調查及回應以身分識別與網域控制站為目標的進階威脅。 從[!INCLUDE [Product short](includes/product-short.md)] 中的警示開始，我們將示範如何將該資訊與事件相互關聯、如何使用[!INCLUDE [Product short](includes/product-short.md)] 所擷取的資訊來搜捕威脅，以及如何起始自動事件回應以在事件發展為更大的問題之前進行補救 - 觀看 [YouTube 影片](https://youtu.be/geWU4It6S48)
 
 ## <a name="whats-next"></a>接下來要做什麼？
 
-建議您分三個階段來部署 Azure ATP：
+建議您分三個階段來部署[!INCLUDE [Product short](includes/product-short.md)]：
 
 ### <a name="phase-1"></a>階段 1
 
-1. 設定 Azure ATP 以保護您的主要環境。 Azure ATP 的快速部署模型可讓您立即開始保護組織。 [安裝 Azure ATP](install-step1.md)
+1. 設定[!INCLUDE [Product short](includes/product-short.md)] 以保護您的主要環境。 [!INCLUDE [Product short](includes/product-short.md)] 的快速部署模型可讓您立即開始保護組織。 [安裝[!INCLUDE [Product short](includes/product-short.md)]](install-step1.md)
 1. 設定[機密帳戶](sensitive-accounts.md)與 [honeytoken 帳戶](install-step7.md)。
 1. 檢閱報告和[橫向移動路徑](use-case-lateral-movement-path.md)。
 
@@ -120,10 +109,10 @@ Microsoft Ignite 2018 會舉辦多場會議，著重探討 [Azure 進階威脅�
 
 ### <a name="phase-3"></a>階段 3
 
-1. 將 Azure ATP 警示整合至您的 SecOp 工作流程中。
+1. 將[!INCLUDE [Product short](includes/product-short.md)] 警示整合到您的 SecOp 工作流程。
 
 ## <a name="see-also"></a>另請參閱
 
-- [Azure ATP 常見問題集](technical-faq.md)
+- [[!INCLUDE [Product short](includes/product-short.md)] 常見問題集](technical-faq.md)
 - [使用安全性警訊](working-with-suspicious-activities.md)
-- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

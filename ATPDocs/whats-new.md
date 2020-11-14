@@ -1,34 +1,48 @@
 ---
-title: Azure 進階威脅防護中的新功能 (Azure ATP)
-description: 本文會經常更新，讓您知道最新版 Azure 進階威脅防護 (Azure ATP) 的新功能。
+title: 適用於身分識別的 Defender：新功能
+description: 本文會經常更新，讓您知道適用於身分識別的 Defender 最新版功能。
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/18/2020
+ms.date: 10/27/2020
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 26b4abc16ced7707d586f8049c82b30e86acbd0c
-ms.sourcegitcommit: 3ef87e970ca495edb995e0ea32e14f7e364045ff
+ms.openlocfilehash: e4dcf816008316a244be44e631951c07f588fcd9
+ms.sourcegitcommit: 00142fc07a81b10922ae26418a4104a0ef4b366d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2020
-ms.locfileid: "92163661"
+ms.lasthandoff: 11/08/2020
+ms.locfileid: "94371479"
 ---
-# <a name="whats-new-in-azure-advanced-threat-protection-azure-atp"></a>Azure 進階威脅防護中的新功能 (Azure ATP)
+# <a name="whats-new-in-product-long"></a>[!INCLUDE [Product long](includes/product-long.md)] 的新功能
 
-此文章會經常更新，讓您知道最新版 Azure ATP 的新功能。
+本文會經常更新，讓您知道最新版本 [!INCLUDE [Product long](includes/product-long.md)] (先前稱為 Azure 進階威脅防護，即 Azure ATP) 的新功能。
 
-如需舊版 Azure ATP 的詳細資料，直到 (並包含) 2.55 版，請參閱 [Azure ATP 版本參考](release-reference.md)。
+如需舊版 [!INCLUDE [Product short](includes/product-short.md)] 直到 (含) 2.55 版的詳細資料，請參閱 [[!INCLUDE [Product short](includes/product-short.md)] 版本參考](release-reference.md)。
 
 RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在本頁更新時收到通知：`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
 
 > [!IMPORTANT]
 >
-> Microsoft 的威脅防護產品名稱即將變更。 如需有關此變更的詳細資訊與其他更新，請參閱[這裡](https://www.microsoft.com/security/blog/?p=91813)。 從 2.127 版開始，我們將使用新名稱。
+> Microsoft 的威脅防護產品名稱即將變更。 如需有關此變更的詳細資訊與其他更新，請參閱[這裡](https://www.microsoft.com/security/blog/?p=91813)。 從 2.129 版開始，我們將使用新的名稱。
+
+## <a name="product-short-release-2131"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.131 版
+
+發行日期：2020 年 11 月 8 日
+
+- **新的安全性警訊： 可疑的 Kerberos SPN 公開 (外部識別碼 2410)**  
+[!INCLUDE [Product short](includes/product-short.md)]*可疑的 Kerberos SPN 公開 (外部識別碼2410)* 安全性警訊現已推出。 在此類偵測中，當攻擊者列舉服務帳戶及其各自的 SPN，並要求服務的 Kerberos TGS 票證時，即會觸發 [!INCLUDE [Product short](includes/product-short.md)] 安全性警訊。 攻擊者的意圖可能是從票證中擷取雜湊並加以儲存，以供往後用於離線暴力密碼破解攻擊。 如需詳細資訊，請參閱 [Kerberos SPN 公開](compromised-credentials-alerts.md#suspected-kerberos-spn-exposure-external-id-2410)。
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
+
+## <a name="product-short-release-2130"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.130 版
+
+發行日期：2020 年 10 月 25 日
+
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
 ## <a name="azure-atp-release-2129"></a>Azure ATP 2.129 版
 
@@ -40,7 +54,8 @@ RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在�
 
 發行日期：2020 年 9 月 27 日
 
-- 我們正在移除用於開啟電子郵件通知的 [郵件通知] 切換開關。 若要接收電子郵件通知，只要新增地址即可。 如需詳細資訊，請參閱[設定通知](notifications.md)。
+- **修改過的電子郵件通知設定**  
+我們正在移除用於開啟電子郵件通知的 [郵件通知] 切換開關。 若要接收電子郵件通知，只要新增地址即可。 如需詳細資訊，請參閱[設定通知](notifications.md)。
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
 ## <a name="azure-atp-release-2127"></a>Azure ATP 2.127 版
@@ -118,7 +133,7 @@ Azure ATP 安全性警示現在包含下列新的偵測：
 - **新的安全性評估**  
 Azure ATP 安全性評估現在包含下列新的評估：
   - **風險最高的橫向移動路徑**  
-    此評定會持續監視您的環境，辨識橫向移動路徑風險最高而造成安全性風險的**敏感性**帳戶，並針對這些帳戶提出報告，以協助您管理環境。 若路徑有三個以上的非敏感性帳戶，可能讓惡意行動者對敏感性帳戶進行認證竊取，該路徑即視為有風險的路徑。 如需詳細資訊，請參閱[安全性評估：風險最高的橫向移動路徑 (LMP)](cas-isp-riskiest-lmp.md)。
+    此評定會持續監視您的環境，辨識橫向移動路徑風險最高而造成安全性風險的 **敏感性** 帳戶，並針對這些帳戶提出報告，以協助您管理環境。 若路徑有三個以上的非敏感性帳戶，可能讓惡意行動者對敏感性帳戶進行認證竊取，該路徑即視為有風險的路徑。 如需詳細資訊，請參閱[安全性評估：風險最高的橫向移動路徑 (LMP)](cas-isp-riskiest-lmp.md)。
   - **不安全的帳戶屬性**  
     此評定 Azure ATP 會持續監視您的環境，辨識屬性值會造成安全性風險的帳戶，並針對這些帳戶提出報告，以協助您保護環境。 如需詳細資訊，請參閱[安全性評估：不安全的帳戶屬性](cas-isp-unsecure-account-attributes.md)。
 
@@ -208,7 +223,7 @@ Azure ATP 安全性評量現在包括未受監視的網域控制站 (不含感�
 發行日期：2020 年 2 月 16 日
 
 - **功能增強：機密實體**  
-從此版本 (2.109) 開始，由 Azure ATP 識別為憑證授權單位、DHCP 或 DNS 伺服器的機器現在會自動標記為**機密**。
+從此版本 (2.109) 開始，由 Azure ATP 識別為憑證授權單位、DHCP 或 DNS 伺服器的機器現在會自動標記為 **機密** 。
 
 ## <a name="azure-atp-release-2108"></a>Azure ATP 2.108 版
 
@@ -291,7 +306,7 @@ Azure ATP 感應器部署及感應器安裝套件在數個版本之後已不再�
 
 發行日期：2019 年 11 月 3 日
 
-- **功能增強：為 Azure ATP 入口網站**新增 Cloud App Security 入口網站可用性的使用者介面通知  
+- **功能增強：為 Azure ATP 入口網站** 新增 Cloud App Security 入口網站可用性的使用者介面通知  
 確保所有使用 Cloud App Security 入口網站的使用者，都能得知增強功能的發行。為入口網站新增的通知，會以現有的 Azure ATP 警示時間軸為準。
 
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
@@ -301,7 +316,7 @@ Azure ATP 感應器部署及感應器安裝套件在數個版本之後已不再�
 發行日期：2019 年 10 月 27 日
 
 - **功能增強：可疑的暴力密碼破解攻擊警示**  
-使用其他分析，改善[可疑的暴力密碼破解攻擊 (SMB)](compromised-credentials-alerts.md#suspected-brute-force-attack-smb-external-id-2033) 警示，並且改善偵測邏輯，減少**良性確判 (B-TP)** 與**誤判 (FP)** 警示結果。
+使用其他分析，改善 [可疑的暴力密碼破解攻擊 (SMB)](compromised-credentials-alerts.md#suspected-brute-force-attack-smb-external-id-2033) 警示，並且改善偵測邏輯，減少 **良性確判 (B-TP)** 與 **誤判 (FP)** 警示結果。
 
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
@@ -422,7 +437,7 @@ Azure ATP 現在支援已驗證的 Proxy。 請使用感應器命令列指定 Pr
 Azure 英國資料中心現在支援 Azure ATP 執行個體。 若要了解如何建立 Azure ATP 執行個體和其對應的資料中心位置，請參閱 [Azure ATP 安裝的步驟 1](install-step1.md)。
 
 - **功能增強：敏感性群組的可疑新增項目警示 (外部識別碼 2024) 新名稱和功能**  
-**敏感性群組的可疑新增項目**警示先前命名為**敏感性群的可疑修改**警示。 警示 (識別碼 2024) 的外部識別碼保持不變。 描述性名稱變更可更精確地反映針對**敏感性**群組新增項目發出警示的目的。 增強型警示也強調新辨識項和改善的描述。 如需詳細資訊，請參閱[敏感性群組的可疑新增項目](domain-dominance-alerts.md#suspicious-additions-to-sensitive-groups-external-id-2024)。  
+**敏感性群組的可疑新增項目** 警示先前命名為 **敏感性群的可疑修改** 警示。 警示 (識別碼 2024) 的外部識別碼保持不變。 描述性名稱變更可更精確地反映針對 **敏感性** 群組新增項目發出警示的目的。 增強型警示也強調新辨識項和改善的描述。 如需詳細資訊，請參閱[敏感性群組的可疑新增項目](domain-dominance-alerts.md#suspicious-additions-to-sensitive-groups-external-id-2024)。  
 
 - **新文件功能：從 Advanced Threat Analytics 移至 Azure ATP 的指南**  
 這篇新文章包含必要條件、規劃指引，以及從 ATA 移至 Azure ATP 服務的設定和驗證步驟。 如需詳細資訊，請參閱[從 ATA 移至 Azure ATP](migrate-from-ata-overview.md)。
@@ -446,7 +461,7 @@ Azure 英國資料中心現在支援 Azure ATP 執行個體。 若要了解如�
 發行日期：2019 年 6 月 18 日
 
 - **新的公開預覽**  
-Azure ATP 的身分識別威脅調查體驗目前處於**公開預覽**狀態，適用於所有受保護的 Azure ATP 租用戶。 如需深入了解，請參閱 [Azure ATP Microsoft Cloud App Security 調查體驗](mcas-integration.md)。
+Azure ATP 的身分識別威脅調查體驗目前處於 **公開預覽** 狀態，適用於所有受保護的 Azure ATP 租用戶。 如需深入了解，請參閱 [Azure ATP Microsoft Cloud App Security 調查體驗](mcas-integration.md)。
 
 - **正式版本**  
 Azure ATP 現已在正式版本中支援未受信任的樹系。 如果要深入了解，請參閱 [Azure ATP 多重樹系](multi-forest.md)。
@@ -488,7 +503,8 @@ Exchange 伺服器的手動機密標記
     您現在可以在設定期間手動將實體標記為 Exchange Server伺服器。
 
     若要手動將實體標記為 Exchange 伺服器：
-    1. 在 Azure ATP 入口網站中，存取 [設定]功能表。
+
+    1. 在 Azure ATP 入口網站中，選取 [設定]。
     2. 在 [偵測] 下，選取 [實體標記]，然後選取 [機密]。
     3. 選取 [Exchange 伺服器]，然後新增您要標記的實體。
 
@@ -513,9 +529,9 @@ Exchange 伺服器的手動機密標記
 發行日期：2019 年 4 月 28 日
 
 - **功能增強：機密實體**  
-從此版本 (2.75) 開始，由 Azure ATP 識別為 Exchange Server 的機器現在會被自動標示為**機密**。  
+從此版本 (2.75) 開始，由 Azure ATP 識別為 Exchange Server 的機器現在會被自動標示為 **機密** 。  
 
-    因為運作方式如 Exchange Server 的清單而被自動標示為**機密**的實體原會列出此分類作為其被標示的原因。
+    因為運作方式如 Exchange Server 的清單而被自動標示為 **機密** 的實體原會列出此分類作為其被標示的原因。
 
 - 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
@@ -599,7 +615,7 @@ Exchange 伺服器的手動機密標記
 深入了解[可疑的暴力密碼破解攻擊 (LDAP)](compromised-credentials-alerts.md#suspected-brute-force-attack-ldap-external-id-2004) 安全性警示。
 
 - **新文件功能：安全性警示實驗室**  
-為了說明 Azure ATP 對您工作環境之真實威脅的強大偵測能力，我們已為此文件新增了新的**安全性警示實驗室**。 **安全性警示實驗室**可協助您快速設定實驗室或測試環境，並說明可抵禦常見、真實世界威脅和攻擊的最佳防禦姿態。  
+為了說明 Azure ATP 對您工作環境之真實威脅的強大偵測能力，我們已為此文件新增了新的 **安全性警示實驗室** 。 **安全性警示實驗室** 可協助您快速設定實驗室或測試環境，並說明可抵禦常見、真實世界威脅和攻擊的最佳防禦姿態。  
 
     [逐步執行實驗室](playbook-lab-overview.md)的設計目的是要確保您花費最少的時間進行建置，而將較多時間用在了解您的威脅局勢，以及可用的 Azure ATP 警示和防護。 我們很樂意收到您的意見反應。
 
@@ -615,7 +631,7 @@ Azure ATP 之 [安全性主體偵察 (LDAP) - 預覽](reconnaissance-alerts.md#s
     輕量型目錄存取通訊協定 (LDAP) 是同時用於合法與惡意目的來查詢 Active Directory 的最熱門的方法之一。 專注在 LDAP 的安全性主體偵察通常用於 Kerberoasting 攻擊的第一個階段。 Kerberoasting 攻擊是用於取得目標安全性主體名稱 (SPN) 清單，接著攻擊者會嘗試為其取得票證授權伺服器 (TGS) 憑證。
 
 - **功能增強：帳戶列舉偵察 (NTLM) 警示**  
-改進的**帳戶列舉偵察 (NTLM)** 警示 (使用額外分析)，以及改進的偵測邏輯以減少 **B-TP** 與 **FP** 警示結果。
+改進的 **帳戶列舉偵察 (NTLM)** 警示 (使用額外分析)，以及改進的偵測邏輯以減少 **B-TP** 與 **FP** 警示結果。
 
 - **功能增強：網路對應偵察 (DNS) 警示**  
 新的偵測類型已新增到網路對應偵察 (DNS) 警示。 除了偵測可疑的 AXFR 要求之外，Azure ATP 現在也會偵測源自非 DNS 伺服器且使用過量要求的可疑要求類型。
@@ -637,7 +653,7 @@ Azure ATP 之 [安全性主體偵察 (LDAP) - 預覽](reconnaissance-alerts.md#s
 發行日期：2019 年 2 月 10 日
 
 - **新的安全性警訊：可疑的 NTLM 轉送攻擊 (Exchange 帳戶) – (預覽)**  
-Azure ATP 之[可疑的 NTLM 轉送攻擊 (Exchange 帳戶) - 預覽](lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037)安全性警示現已進入公開預覽階段。    在此偵測中，當識別到可疑來源使用 Exchange 帳戶認證時，便會觸發 Azure ATP 安全性警訊。 這些攻擊類型會嘗試利用 NTLM 轉送技術來取得網域控制站交換權限，又稱為 **ExchangePriv**。 若要深入了解 **ExchangePriv** 技術，請參閱最早於 2019 年 1 月 31 日發佈的 [ADV190007 公告](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV190007)，以及 [Azure ATP 警示回應](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/How-to-win-the-latest-security-race-over-NTLM-relay/ba-p/334511) \(英文\)。  
+Azure ATP 之[可疑的 NTLM 轉送攻擊 (Exchange 帳戶) - 預覽](lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037)安全性警示現已進入公開預覽階段。    在此偵測中，當識別到可疑來源使用 Exchange 帳戶認證時，便會觸發 Azure ATP 安全性警訊。 這些攻擊類型會嘗試利用 NTLM 轉送技術來取得網域控制站交換權限，又稱為 **ExchangePriv** 。 若要深入了解 **ExchangePriv** 技術，請參閱最早於 2019 年 1 月 31 日發佈的 [ADV190007 公告](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV190007)，以及 [Azure ATP 警示回應](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/How-to-win-the-latest-security-race-over-NTLM-relay/ba-p/334511) \(英文\)。  
 
 - **正式運作：透過 DNS 執行遠端程式碼**  
 此警示現在已 GA (正式運作)。 如需詳細資訊與警示功能，請參閱[透過 DNS 執行遠端程式碼警示描述頁面](lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036)。
@@ -690,7 +706,7 @@ Azure ATP 帳戶列舉偵察偵測現在會偵測使用 Kerberos 和 NTLM 的列
   - 如果要深入了解，請參閱[修復遠端程式碼執行嘗試](domain-dominance-alerts.md#remote-code-execution-attempt-external-id-2019)。  
 
 - **Windows Server 2019 LSASS 問題和 Azure ATP**  
-為了回應客戶對於搭配執行 Windows Server 2019 之網域控制站使用 Azure ATP 所提出的意見反應，此更新包含了額外的邏輯，可避免在 Windows Server 2019 電腦上觸發回報的行為。 雖然我們規劃在之後的 Azure ATP 更新中為 Windows Server 2019 推出完整的 Azure ATP 感應器支援，但目前並**不**支援在 Windows Servers 2019 上安裝和執行 Azure ATP。 如果要深入了解，請參閱 [Azure ATP 感應器需求](prerequisites.md#azure-atp-sensor-requirements)。
+為了回應客戶對於搭配執行 Windows Server 2019 之網域控制站使用 Azure ATP 所提出的意見反應，此更新包含了額外的邏輯，可避免在 Windows Server 2019 電腦上觸發回報的行為。 雖然我們規劃在之後的 Azure ATP 更新中為 Windows Server 2019 推出完整的 Azure ATP 感應器支援，但目前並 **不** 支援在 Windows Servers 2019 上安裝和執行 Azure ATP。 如果要深入了解，請參閱 [Azure ATP 感應器需求](prerequisites.md#azure-atp-sensor-requirements)。
 
 - 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
@@ -713,11 +729,11 @@ Azure ATP 之[透過 DNS 執行遠端程式碼](lateral-movement-alerts.md#remot
 - **新的安全性警示：SMB 上的資料外洩 - (預覽)**  
 Azure ATP 之[透過 SMB 資料外流](exfiltration-alerts.md)安全性警示現為公開預覽狀態。 具有網域系統管理員權限的攻擊者可能會危害 KRBTGT 帳戶。 攻擊者可使用 KRBTGT 帳戶，建立可提供任何資源授權的 Kerberos 票證授權票證 (TGT)。
 
-- **功能增強：遠端程式碼執行嘗試**安全性警訊  
+- **功能增強：遠端程式碼執行嘗試** 安全性警訊  
 新增警訊描述及其他辨識項，讓您能更容易了解警訊，且提供了更好的調查工作流程。
 
 - **功能增強：DNS 查詢邏輯活動**  
-將其他查詢類型新增到 [Azure ATP 受監視的活動](monitored-activities.md)，其中包含：**TXT**、**MX**、**NS**、**SRV**、**ANY**、**DNSKEY**。
+將其他查詢類型新增到 [Azure ATP 受監視的活動](monitored-activities.md)，其中包含： **TXT** 、 **MX** 、 **NS** 、 **SRV** 、 **ANY** 、 **DNSKEY** 。
 
 - **功能增強：可疑的黃金票證使用方式 (票證異常) 及可疑的黃金票證使用方式 (不存在的帳戶)**  
 改善的偵測邏輯皆已套用到兩個警訊中，以降低 FP 警訊的數目，進而傳遞更準確的結果。
@@ -811,12 +827,12 @@ Azure ATP 之[可疑的 Golden Ticket 使用 - 票證異常](suspicious-activity
 
 - 此版本包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
-如需 2.55 版 (包含 2.55 版) 之前每個 Azure ATP 版本的詳細資料，請參閱 [Azure ATP 版本參考](release-reference.md)。
+如需 2.55 版 (包含 2.55 版) 之前每個 [!INCLUDE [Product short](includes/product-short.md)] 版本的詳細資料，請參閱 [[!INCLUDE [Product short](includes/product-short.md)] 版本參考](release-reference.md)。
 
 ## <a name="see-also"></a>另請參閱
 
-- [什麼是 Azure 進階威脅防護？](what-is.md)
+- [什麼是 [!INCLUDE [Product long](includes/product-long.md)]？](what-is.md)
 - [常見問題集](technical-faq.md)
-- [Azure ATP 必要條件](prerequisites.md)
-- [Azure ATP 容量規劃](capacity-planning.md)
-- [查看 Azure ATP 論壇！](https://aka.ms/azureatpcommunity)
+- [[!INCLUDE [Product short](includes/product-short.md)] 先決條件](prerequisites.md)
+- [[!INCLUDE [Product short](includes/product-short.md)] 容量規畫](capacity-planning.md)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

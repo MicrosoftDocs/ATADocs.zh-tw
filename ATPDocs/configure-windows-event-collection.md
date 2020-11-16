@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4dfaba62df29bb97009bad2440bb420f2c1477e9
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: ad6604b3502cde05b88598a286407778a2e03787
+ms.sourcegitcommit: c5f63d621f4f1e875f8c24adc2bd4770e07e0a62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276530"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94558248"
 ---
 # <a name="configure-windows-event-collection"></a>設定 Windows 事件集合
 
@@ -31,7 +31,7 @@ ms.locfileid: "93276530"
 - 4729 - 成員已自全域安全性群組移除
 - 4730 - 全域安全性群組已刪除
 - 4732 - 成員已新增至本機安全性群組
-- 4733 - 成員已自本機安全性群組移除
+- 4733 - 成員已從本機安全性群組移除
 - 4743 - 電腦帳戶已刪除
 - 4753 - 全域通訊群組已刪除
 - 4756 - 成員已新增至萬用安全性群組

@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f691df3332d90e0f163d3773dd5570e0d17b5a95
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 627c30146e2543501da9d5970c9c8a087e3320bf
+ms.sourcegitcommit: c5f63d621f4f1e875f8c24adc2bd4770e07e0a62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276474"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94558231"
 ---
 # <a name="configure-event-collection"></a>設定事件收集
 
@@ -121,7 +121,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
 - Syslog Header 是選擇性參數。
 
-- 所有欄位之間都必須以 "\r\n" 字元分隔。
+- 所有欄位之間都必須以 "\r\n" 字元分隔。 請注意，這些是控制字元 CRLF (以十六進位表示則為 0D0A)，而不是常值字元。
 - 欄位格式是「索引鍵=值」。
 - 下列索引鍵必須存在且具有值︰
   - EventCode = Windows 事件識別碼

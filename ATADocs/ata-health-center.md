@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 121cc11ead51447a7806489a27ea01852bfbba1d
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: caac51c76334b62250c86e78dbdb5d9193f47f6d
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90908921"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94691055"
 ---
 # <a name="working-with-ata-system-health-and-events"></a>使用 ATA 系統健康狀態和事件
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="ata-health-center"></a>ATA 健全狀況中心
 
@@ -37,7 +35,7 @@ ATA 健全狀況中心可讓您知道 ATA 服務的運作情況，並向您警�
 ### <a name="managing-ata-health"></a>管理 ATA 健全狀況
 若要檢查系統的整體健全狀況，按一下功能表列中的健全狀況中心圖示 ![ATA 健全狀況中心圖示](media/ATA-red-dot.png)
 
-- 將開啟的警示設定為 [關閉]****、[隱藏]**** 或 [刪除]****，或是按一下警示角落的三個點並選擇所要的選項，便能管理所有開啟的警示。
+- 將開啟的警示設定為 [關閉]、[隱藏] 或 [刪除]，或是按一下警示角落的三個點並選擇所要的選項，便能管理所有開啟的警示。
 
 -   **開啟**：所有新的可疑活動都出現在此清單中。
 
@@ -48,7 +46,7 @@ ATA 健全狀況中心可讓您知道 ATA 服務的運作情況，並向您警�
 
 -   **隱藏**：隱藏活動表示您想要暫時將它忽略，只有出現新的執行個體時才會再次收到警示。 如果有類似的警示，ATA 不會將它重新開啟。 但如果此警示在停止七天後再次出現，您便會再次收到警示。
 
-- **刪除**：如果您刪除警示，則會將它從系統和資料庫中刪除，而且您將「無法」予以還原。 按一下 [刪除] 之後，您將可以刪除相同類型的所有可疑活動。
+- **刪除**：如果您刪除警示，即會將其從系統和資料庫中刪除，且您將「無法」予以還原。 按一下 [刪除] 之後，您將可以刪除相同類型的所有可疑活動。
 
 
 

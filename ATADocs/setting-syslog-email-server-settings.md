@@ -12,30 +12,28 @@ ms.technology: ''
 ms.assetid: bff20bf7-8b53-49da-81e5-b818a1c3b24e
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 8fe6d1eb34fc651791a84227f64ddee868c2fb97
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 833b5604a957ff5910598bfcf8b12c86027ee638
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912034"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690324"
 ---
 # <a name="provide-ata-with-your-email-server-settings"></a>使用電子郵件伺服器設定提供 ATA
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
+當 ATA 偵測到可疑的活動時，就會通知您。 若要讓 ATA 能夠傳送電子郵件通知，您必須先進行 **電子郵件伺服器設定**。
 
-當 ATA 偵測到可疑的活動時，就會通知您。 若要讓 ATA 能夠傳送電子郵件通知，您必須先進行**電子郵件伺服器設定**。
+1. 在 ATA 中央伺服器上，按一下桌面上的 [Microsoft Advanced Threat Analytics Management] 圖示。
 
-1. 在 ATA 中央伺服器上，按一下桌面上的 [Microsoft Advanced Threat Analytics Management]**** 圖示。
+1. 輸入您的使用者名稱和密碼，然後按一下 [登入]。
 
-1. 輸入您的使用者名稱和密碼，然後按一下 [登入]****。
-
-1. 選取工具列上的 [設定] 選項並選取 [組態]****。
+1. 選取工具列上的 [設定] 選項並選取 [組態]。
 
     ![ATA 組態設定圖示](media/ATA-config-icon.png)
 
-1. 在 [通知]**** 區段中的 [郵件伺服器]**** 下，輸入下列資訊︰
+1. 在 [通知] 區段中的 [郵件伺服器] 下，輸入下列資訊︰
 
 
    |              欄位              |                                                                                                 描述                                                                                                  |               值                |
@@ -60,15 +58,15 @@ ms.locfileid: "90912034"
 
    - 要用來傳送資料 RFC 3164 或 5424 的格式
 
-1. 在 ATA 中央伺服器上，按一下桌面上的 [Microsoft Advanced Threat Analytics Management]**** 圖示。
+1. 在 ATA 中央伺服器上，按一下桌面上的 [Microsoft Advanced Threat Analytics Management] 圖示。
 
-1. 輸入您的使用者名稱和密碼，然後按一下 [登入]****。
+1. 輸入您的使用者名稱和密碼，然後按一下 [登入]。
 
-1. 選取工具列上的 [設定] 選項並選取 [組態]****。
+1. 選取工具列上的 [設定] 選項並選取 [組態]。
 
     ![ATA 組態設定圖示](media/ATA-config-icon.png)
 
-1. 在 [通知] 區段下，選取 [Syslog 伺服器]****，然後輸入下列資訊：
+1. 在 [通知] 區段下，選取 [Syslog 伺服器]，然後輸入下列資訊：
 
    |欄位|描述|
    |---------|---------------|

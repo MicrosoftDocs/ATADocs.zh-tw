@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3f04798ef39299dfa5b31d4a5679d6f68afaeef0
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 1d7700e4ae0f5c686ea8a5def7d4f4fb9aceee09
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90909277"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94689542"
 ---
 # <a name="ata-architecture"></a>ATA 架構
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 此圖表中詳細說明 Advanced Threat Analytics 架構︰
 
@@ -62,7 +60,7 @@ ATA 部署包括 ATA 閘道和 ATA 輕量型閘道。 ATA 輕量型閘道是安�
 
 ## <a name="ata-center"></a>ATA 中心
 
-**ATA 中心**會執行下列功能：
+**ATA 中心** 會執行下列功能：
 
 - 管理 ATA 閘道和 ATA 輕量型閘道組態設定
 
@@ -145,13 +143,13 @@ ATA 輕量型閘道包含的監視元件，會評估其執行所在網域控制�
 
 |Active Directory (Lsass.exe)|ATA 輕量型閘道 (Microsoft.Tri.Gateway.exe)|其他 (其他處理程序) |ATA 輕量型閘道配額|閘道卸除中|
 |-|-|-|-|-|
-|30%|20%|10%|45%|No|
+|30%|20%|10%|45%|否|
 
 如果 Active Directory 需要執行更多的運算，就會減少 ATA 輕量型閘道需要的配額。 下例中，ATA 輕量型閘道需要比配置更多的配額，所以卸除了部分流量 (只監視部分流量)︰
 
 |Active Directory (Lsass.exe)|ATA 輕量型閘道 (Microsoft.Tri.Gateway.exe)|其他 (其他處理程序) |ATA 輕量型閘道配額|為閘道卸除中|
 |-|-|-|-|-|
-|60%|15%|10%|15%|Yes|
+|60%|15%|10%|15%|是|
 
 ## <a name="your-network-components"></a>您的網路元件
 

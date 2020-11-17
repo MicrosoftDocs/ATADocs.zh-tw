@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 567fb2beb08425a69964932ca6807ff03a6b6549
-ms.sourcegitcommit: 69c55503b8b3f7ca99dbea872b17d81124831fad
+ms.openlocfilehash: 23831562f266a338cdc4cba2f3448a44b441dd35
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94567918"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690613"
 ---
 # <a name="install-ata---step-6"></a>安裝 ATA - 步驟 6
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!div class="step-by-step"]
 > [«步驟 5](install-ata-step5.md) 
@@ -126,7 +124,7 @@ CEF:0|Microsoft|Microsoft Windows||Microsoft-Windows-Security-Auditing:4776|The 
 
 - Syslog Header 是選擇性參數。
 
-- 所有欄位之間都必須以 "\r\n" 字元分隔。 請注意，這些是以十六進位)  (0D0A 的控制字元，而不是常值字元。
+- 所有欄位之間都必須以 "\r\n" 字元分隔。 請注意，這些是控制字元 CRLF (以十六進位表示則為 0D0A)，而不是常值字元。
 - 欄位格式是「索引鍵=值」。
 - 下列索引鍵必須存在且具有值︰
   - EventCode = Windows 事件識別碼

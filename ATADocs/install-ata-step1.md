@@ -12,18 +12,22 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3e50a48c6ffb108bee7c5b760a0368b04e3f0c61
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: d5c61390abddf29b92afc0bb6cb2336b0bc9d7ea
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90911520"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690732"
 ---
 # <a name="install-ata---step-1"></a>安裝 ATA - 步驟 1
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
+> [!NOTE]
+> **支援週期**
+>
+> ATA 的最終發行版本已 [正式推出](https://support.microsoft.com/help/4568997/update-3-for-microsoft-advanced-threat-analytics-1-9)。 ATA 將于2021年1月12日結束主流支援。 延伸支援將繼續進行，直到2026年1月為止。 如需詳細資訊，請閱讀 [我們的 blog](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-of-mainstream-support-for-advanced-threat-analytics-january/ba-p/1539181)。
+
 > [!div class="step-by-step"]
 > [步驟2»](install-ata-step2.md)
 
@@ -53,16 +57,16 @@ ms.locfileid: "90911520"
 1. 如果未安裝 Microsoft .NET Framework，當您開始安裝時，系統會提示您安裝它。 安裝 .NET Framework 之後，可能會出現重新開機的提示。
 1. 在 [ **歡迎使用** ] 頁面上，選取要用於 ATA 安裝畫面的語言，然後按 **[下一步]**。
 
-1. 閱讀 Microsoft 軟體授權條款。在您接受條款之後，請按一下接受核取方塊，然後按一下 [下一步]****。
+1. 閱讀 Microsoft 軟體授權條款。在您接受條款之後，請按一下接受核取方塊，然後按一下 [下一步]。
 
-1. 我們建議將 ATA 設定為自動更新。 如果您未在電腦上將 Windows 設定為自動更新，您將會看到 [使用 Microsoft Update 協助您的電腦保持在安全和最新的狀態]**** 畫面。
+1. 我們建議將 ATA 設定為自動更新。 如果您未在電腦上將 Windows 設定為自動更新，您將會看到 [使用 Microsoft Update 協助您的電腦保持在安全和最新的狀態] 畫面。
     ![保持 ATA 最新狀態影像](media/ata_ms_update.png)
 
-1. 選取 [當我檢查更新時使用 Microsoft Update (建議選項)]****。 這可調整 Windows 設定，以允許其他 Microsoft 產品 (包括 ATA) 的更新。
+1. 選取 [當我檢查更新時使用 Microsoft Update (建議選項)]。 這可調整 Windows 設定，以允許其他 Microsoft 產品 (包括 ATA) 的更新。
 
     ![Windows 自動更新影像](media/ata_installupdatesautomatically.png)
 
-1. 在 [Configure the Center (設定中心)]**** 頁面中，根據您的環境輸入下列資訊：
+1. 在 [Configure the Center (設定中心)] 頁面中，根據您的環境輸入下列資訊：
 
     |欄位|描述|註解|
     |---------|---------------|------------|
@@ -75,7 +79,7 @@ ms.locfileid: "90911520"
     > [!NOTE]
     > 請務必留意有關中心服務 SSL 憑證狀態和到期警告的健康情況警示。 如果憑證過期，您必須完全重新部署 ATA。
 
-1. 按一下 [安裝]**** 來安裝 ATA 中心及其元件。  
+1. 按一下 [安裝] 來安裝 ATA 中心及其元件。  
 安裝 ATA 中心時將安裝及設定下列元件︰
 
     - ATA 中心服務
@@ -86,14 +90,14 @@ ms.locfileid: "90911520"
 
     - 自我簽署的憑證 (如果在安裝期間有選取)
 
-1. 安裝完成時，請按一下 [啟動]**** 開啟 ATA 主控台，然後從 [設定]**** 頁面完成設定。
-    [一般]**** 設定頁面隨即開啟，以繼續進行 ATA 閘道的設定和部署。
-    由於您使用 IP 位址登入網站，因此會收到與憑證相關的警告，這是正常現象，且您應該按一下 [繼續瀏覽此網站]****。
+1. 安裝完成時，請按一下 [啟動] 開啟 ATA 主控台，然後從 [設定] 頁面完成設定。
+    [一般] 設定頁面隨即開啟，以繼續進行 ATA 閘道的設定和部署。
+    由於您使用 IP 位址登入網站，因此會收到與憑證相關的警告，這是正常現象，且您應該按一下 [繼續瀏覽此網站]。
 
 ### <a name="validate-installation"></a>驗證安裝
 
-1. 檢查名為 **Microsoft Advanced Threat Analytics 中心**的服務是否正在執行。
-1. 按一下桌面上的 [Microsoft Advanced Threat Analytics]**** 捷徑以連線到 ATA 主控台。 以您用來安裝 ATA 中心的使用者認證登入。
+1. 檢查名為 **Microsoft Advanced Threat Analytics 中心** 的服務是否正在執行。
+1. 按一下桌面上的 [Microsoft Advanced Threat Analytics] 捷徑以連線到 ATA 主控台。 以您用來安裝 ATA 中心的使用者認證登入。
 
 ### <a name="set-anti-virus-exclusions"></a>設定防毒程式排除項目
 

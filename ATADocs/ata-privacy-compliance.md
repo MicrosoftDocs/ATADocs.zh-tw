@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 1b2d185c-62cd-45f0-b0dd-687b51317f32
 ms.reviewer: ophirp
 ms.suite: ems
-ms.openlocfilehash: e6122fec646e7b1428862f729762dfcb08edb352
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: c61632b7f3ea3f769066ee802dced77d821f3e93
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90908950"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94691021"
 ---
 # <a name="ata-data-security-and-privacy"></a>ATA 資料安全性和隱私權
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
@@ -84,8 +82,8 @@ ATA 會收集各部署的匿名系統產生記錄，並透過 HTTPS 將此資料
 
 若要停用資料收集：
 
-1. 登入 ATA 主控台，按一下工具列中的三個點，然後選取 [關於]****。 
-1. 取消選取**將使用資訊傳送給我們，以於未來協助改善客戶經驗**的核取方塊。 
+1. 登入 ATA 主控台，按一下工具列中的三個點，然後選取 [關於]。 
+1. 取消選取 **將使用資訊傳送給我們，以於未來協助改善客戶經驗** 的核取方塊。 
 
 ## <a name="additional-resources"></a>其他資源
 

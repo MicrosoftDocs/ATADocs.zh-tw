@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 710f01bd-c878-4406-a7b2-ce13f98736ea
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: c5836b1086806b848560c0c99893d7a6fafeea1c
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 4c240ff131442f5cee0dc3602a2e3309cd04e63d
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90910847"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94689882"
 ---
 # <a name="investigate-lateral-movement-paths-with-ata"></a>使用 ATA 調查橫向移動路徑
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 即便您盡了全力保護敏感性使用者，且管理員也設定了複雜的密碼並經常變更、強化了電腦，而資料也存放在安全的位置，但攻擊者仍可使用橫向移動路徑來存取敏感性帳戶。 在橫向移動攻擊中，攻擊者會在敏感性使用者登入不具敏感性使用者具有本機許可權的電腦時，利用這些實例。 攻擊者隨後便可進行橫向移動，存取較不敏感的使用者，然後越過電腦來取得敏感性使用者的認證。
 
@@ -45,7 +43,7 @@ ATA 可讓您在網路上採取防範動作，以防止攻擊者成功進行橫�
 
 1. 按一下 [下載]  。
 
-1. 所建立的 Excel 檔案可提供您敏感性帳戶有風險的詳細資料。 [摘要]**** 索引標籤能提供詳述敏感性帳戶及電腦的數目，以及處於風險資源之平均值的圖表。 [詳細資料]**** 索引標籤能提供您應注意之敏感性帳戶的清單。 請注意，路徑是先前存在的路徑，目前可能不可用。
+1. 所建立的 Excel 檔案可提供您敏感性帳戶有風險的詳細資料。 [摘要] 索引標籤能提供詳述敏感性帳戶及電腦的數目，以及處於風險資源之平均值的圖表。 [詳細資料] 索引標籤能提供您應注意之敏感性帳戶的清單。 請注意，路徑是先前存在的路徑，目前可能不可用。
 
 ## <a name="investigate"></a>調查
 
@@ -67,7 +65,7 @@ ATA 可讓您在網路上採取防範動作，以防止攻擊者成功進行橫�
 
 - 也建議您確保沒有人具有非必要的本機系統管理權限。 在此範例中，請查看 Contoso 中的所有人都真的需要在 REDMOND-WA-開發人員上的系統管理員許可權。
 
-- 確保人員只擁有必要資源的存取權。 在上述範例中，Oscar Posada 會大幅提高 Samira 的暴露程度。 是否需要將它們包含在 **Contoso 全部**群組中？ 是否可以建立子群組來將暴露程度降至最低？
+- 確保人員只擁有必要資源的存取權。 在上述範例中，Oscar Posada 會大幅提高 Samira 的暴露程度。 是否需要將它們包含在 **Contoso 全部** 群組中？ 是否可以建立子群組來將暴露程度降至最低？
 
 > [!TIP]
 > 如果未在過去兩天內偵測到活動，就不會顯示圖表，但橫向移動路徑報表仍可提供過去60天的橫向移動路徑相關資訊。

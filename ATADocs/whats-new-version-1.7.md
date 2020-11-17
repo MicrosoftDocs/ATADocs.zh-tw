@@ -12,16 +12,15 @@ ms.technology: ''
 ms.assetid: be9ee613-4eb3-40f1-8973-e7f0a707ff57
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 39120a8dfabe4b78d8c77b94fd1051435c7e7311
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: e8750b31bb8dec807202e0053df7cabad2850967
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912830"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94689474"
 ---
 # <a name="whats-new-in-ata-version-17"></a>ATA 1.7 版的新功能
 
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。
 
 ## <a name="whats-new-in-the-ata-17-update"></a>什麼是 ATA 1.7 更新的新功能？
@@ -79,7 +78,7 @@ ATA 1.7 的更新提供下列各方面的改良︰
 
 在 VMware 上使用輕量閘道時的「已丟棄連接埠鏡像流量」警示。
 
-若在 VMware 虛擬機器上使用網域控制站，可能會收到有關於**已丟棄連接埠鏡像流量**的警示。 當 VMware 中的組態不相符時，即可能會發生此情況。 若要避免這些警示，可檢查是否已將虛擬機器中的下列設定設為 [0] 或 [已停用]：  
+若在 VMware 虛擬機器上使用網域控制站，可能會收到有關於 **已丟棄連接埠鏡像流量** 的警示。 當 VMware 中的組態不相符時，即可能會發生此情況。 若要避免這些警示，可檢查是否已將虛擬機器中的下列設定設為 [0] 或 [已停用]：  
 
 - TsoEnable
 - LargeSendOffload(IPv4)

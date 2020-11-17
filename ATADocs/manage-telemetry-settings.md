@@ -11,18 +11,16 @@ ms.prod: advanced-threat-analytics
 ms.assetid: 8c1c7a1b-a3de-4105-9fd0-08a061952172
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 2e1983e6d4184f113c13b1a992a2c91a15c4dbfb
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 592b64fb1d929a2f84a6aac3207c4107d704cc7f
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90911049"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690477"
 ---
 # <a name="manage-system-generated-logs"></a>管理系統產生的記錄
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
@@ -59,7 +57,7 @@ ms.locfileid: "90911049"
 
 - 可疑活動  - 對各項可疑活動收集的匿名資料如下︰
 
-    **不**會收集 (電腦名稱稱、使用者名稱和 IP 位址) 
+    **不** 會收集 (電腦名稱稱、使用者名稱和 IP 位址) 
 
     - 可疑的活動類型
 
@@ -89,9 +87,9 @@ ms.locfileid: "90911049"
 ### <a name="disable-data-collection"></a>停用資料收集
 請執行下列步驟，以停止收集及將遙測資料傳送到 Microsoft：
 
-1. 登入 ATA 主控台，按一下工具列中的三個點，然後選取 [關於]****。
+1. 登入 ATA 主控台，按一下工具列中的三個點，然後選取 [關於]。
 
-1. 取消選取**將使用資訊傳送給我們，以於未來協助改善客戶經驗**的核取方塊。
+1. 取消選取 **將使用資訊傳送給我們，以於未來協助改善客戶經驗** 的核取方塊。
 
 ## <a name="see-also"></a>另請參閱
 - [使用事件記錄檔來為 ATA 進行疑難排解](troubleshooting-ata-using-logs.md)

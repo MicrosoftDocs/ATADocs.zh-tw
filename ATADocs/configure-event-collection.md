@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1ebd10c417e1454e135d851270a6cd64fc4243b2
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: f833b799f14dec5b1ae1a7cf18bd9813f9912cd9
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90909705"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690834"
 ---
 # <a name="configuring-windows-event-forwarding"></a>設定 Windows 事件轉送
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
 > 針對 ATA 1.8 版及更新版本，ATA 輕量型閘道不再需要事件收集設定。 ATA 輕量型閘道現在會本機讀取事件，而不需要設定事件轉送。
@@ -62,7 +60,7 @@ ms.locfileid: "90909705"
    1.  選取 [啟用]。
    2.  在 [選項] 下，按一下 [顯示]。
 
-   3.  在 [SubscriptionManagers]**** 下，輸入下列值，然後按一下 [確定]****：*Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* 
+   3.  在 [SubscriptionManagers] 下，輸入下列值，然後按一下 [確定]：*Server=http://<fqdnATAGateway>:5985/wsman/SubscriptionManager/WEC,Refresh=10* 
       
         *(例如: Server=`http://atagateway9.contoso.com:5985/wsman/SubscriptionManager/WEC,Refresh=10`)*
       
@@ -78,7 +76,7 @@ ms.locfileid: "90909705"
 1. 以滑鼠右鍵按一下 [訂閱]，然後選取 [建立訂閱]。 
 
     1. 為訂閱輸入名稱和描述。 
-    2. 針對 [目的地記錄檔]，請確認已選取 [轉送的事件]。 對於要讀取事件的 ATA，目的記錄檔必須是 [轉送的事件]****。 
+    2. 針對 [目的地記錄檔]，請確認已選取 [轉送的事件]。 對於要讀取事件的 ATA，目的記錄檔必須是 [轉送的事件]。 
     3. 選取 [來源電腦起始]，按一下 [選取電腦群組]。
         1. 按一下 [加入網域電腦]。
         2. 在 [輸入要選取的物件名稱] 欄位中輸入網域控制站的名稱。 然後按一下 [檢查名稱]，再按一下 [確定]。  

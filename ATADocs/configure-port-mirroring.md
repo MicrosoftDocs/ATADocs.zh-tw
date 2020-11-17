@@ -12,25 +12,23 @@ ms.technology: ''
 ms.assetid: cdaddca3-e26e-4137-b553-8ed3f389c460
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0fa69d91a7540bcc748f930633b15e1d3747059e
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 75c6962a6a7cccaed7b95074cdfbb23279b72dea
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90909494"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690766"
 ---
 # <a name="configure-port-mirroring"></a>設定連接埠鏡像
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE] 
 > 本文只有在部署 ATA 閘道 (而非 ATA 輕量型閘道) 時才適用。 若要判斷是否需要使用 ATA 閘道，請參閱[為您的部署選擇正確閘道](ata-capacity-planning.md#choosing-the-right-gateway-type-for-your-deployment)。
 
 ATA 使用的主要資料來源是對進出網域控制站的網路流量的深度封包檢查。 為了讓 ATA 看到網路流量，您必須設定連接埠鏡像或使用網路 TAP。
 
-若是連接埠鏡像，請為每個要監視的網域控制站設定**連接埠鏡像**，做為網路流量的**來源**。 一般而言，設定通訊埠鏡像必須與網路或虛擬化團隊合作。
+若是連接埠鏡像，請為每個要監視的網域控制站設定 **連接埠鏡像**，做為網路流量的 **來源**。 一般而言，設定通訊埠鏡像必須與網路或虛擬化團隊合作。
 如需詳細資訊，請參閱廠商的文件。
 
 您的網域控制站和 ATA 閘道可以是實體或虛擬。 以下是連接埠鏡像的常用方法和一些考量。 如需詳細資訊，請參閱交換器或虛擬伺服器的產品文件。 您的交換器製造商有可能使用不同的術語。
@@ -73,5 +71,5 @@ ATA 使用的主要資料來源是對進出網域控制站的網路流量的深�
 設定連接埠鏡像之後，先驗證連接埠鏡像運作正常，再安裝 ATA 閘道。
 
 ## <a name="see-also"></a>另請參閱
-- [驗證連接埠鏡像](validate-port-mirroring.md)
+- [驗證埠鏡像](validate-port-mirroring.md)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

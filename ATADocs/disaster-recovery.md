@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 7620e171-76d5-4e3f-8b03-871678217a3a
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: a717c771afe39c7e187487c3fd9c41d4c1691a3a
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 578e8ecdd598b404c570d41e71d487cf798cb602
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90909520"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690783"
 ---
 # <a name="ata-disaster-recovery"></a>ATA 災害復原
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文描述如何在失去 ATA 中心功能，但 ATA 閘道仍可運作的情況下，快速復原 ATA 中心並還原 ATA 功能。 
 
@@ -34,8 +32,8 @@ ms.locfileid: "90909520"
 
 1. ATA 中心設定會每 4 小時備份至檔案一次。 找出最新的 ATA 中心組態備份複本，並將它儲存在另一部電腦上。 如需尋找這些檔案的完整解釋，請參閱[匯出和匯入 ATA 組態](ata-configuration-file.md)。 
 1. 匯出 ATA 中心憑證。
-    1. 在 [憑證管理員] 中，流覽至 [**憑證 (本機電腦) **  ->  **個人**  -> **憑證**]，然後選取 [ **ATA 中心**]。
-    2. 以滑鼠右鍵按一下 [ATA 中心]****，然後選取 [所有工作]****，並選取 [匯出]****。 
+    1. 在 [憑證管理員] 中，流覽至 [**憑證 (本機電腦)**  ->  **個人**  -> **憑證**]，然後選取 [ **ATA 中心**]。
+    2. 以滑鼠右鍵按一下 [ATA 中心]，然後選取 [所有工作]，並選取 [匯出]。 
      ![ATA 中心憑證](media/ata-center-cert.png)
     3. 依照指示匯出憑證，也請務必匯出私密金鑰。
     4. 將匯出的憑證檔案備份到另一部電腦上。

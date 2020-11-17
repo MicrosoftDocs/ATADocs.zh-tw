@@ -11,16 +11,14 @@ ms.prod: advanced-threat-analytics
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: b2aa29f2818216b13116173f0872d9108e168c19
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 053924ae47dcdefe4629451741cfe27b64a9f13e
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90910996"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690868"
 ---
 # <a name="ata-version-192"></a>ATA 1.9.2 版
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 我們很高興能宣布 Microsoft Advanced Threat Analytics 1.9 版更新 2 現已可供使用。
 
@@ -48,7 +46,7 @@ ms.locfileid: "90910996"
 
 若要取得此更新的獨立套件，請移至 Microsoft 下載中心網站： [立即下載 ATA 1.9.2 套件](https://www.microsoft.com/en-us/download/details.aspx?id=56725)。
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>先決條件
 
 若要安裝此更新，您必須已安裝下列其中一個 ATA 版本： 
 - 適用於 ATA 1.9 的更新 1 (1.9.7412 版)

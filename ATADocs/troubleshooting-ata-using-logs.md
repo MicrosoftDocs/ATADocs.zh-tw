@@ -12,25 +12,23 @@ ms.technology: ''
 ms.assetid: b8ad5511-8893-4d1d-81ee-b9a86e378347
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 869143d0a0c953bb3151908ceec59f1cbf0dfdf3
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 49bf3e2e4e69d01713c57b48aea6b55ffab6b36b
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90913353"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94689984"
 ---
 # <a name="troubleshooting-ata-using-the-ata-logs"></a>使用 ATA 記錄檔來疑難排解 ATA
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ATA 記錄提供深入解析，說明 ATA 的每個元件在任何指定時間點執行的動作。
 
 ## <a name="ata-gateway-logs"></a>ATA 閘道記錄檔
 在本節中，對 ATA 閘道的每個參考也都適用於 ATA 輕量型閘道。 
 
-ATA 閘道記錄檔位於安裝 ATA 的子資料夾中，稱為 [**記錄**檔]。預設位置是： **C:\Program Files\Microsoft Advanced 威脅分析 \\ **。 在預設安裝位置中，您可以在下列位置找到 **C:\Program Files\Microsoft Advanced 威脅 Analytics\Gateway\Logs**。
+ATA 閘道記錄檔位於安裝 ATA 的子資料夾中，稱為 [**記錄** 檔]。預設位置是： **C:\Program Files\Microsoft Advanced 威脅分析 \\**。 在預設安裝位置中，您可以在下列位置找到 **C:\Program Files\Microsoft Advanced 威脅 Analytics\Gateway\Logs**。
 
 ATA 閘道有下列記錄檔︰
 

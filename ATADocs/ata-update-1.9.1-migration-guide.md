@@ -12,16 +12,15 @@ ms.technology: ''
 ms.assetid: 2946310a-8e4e-48fc-9450-fc9647efeb22
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: e5a3c40ccc82434d7eb98e26bfd1290df55f1fd1
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: f27694368778bc6dd60a0deecc6fb36244a70c9d
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90911702"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690851"
 ---
 # <a name="ata-version-191"></a>ATA 1.9.1 版
 
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 本文說明 Microsoft Advanced Threat Analytics (ATA) 1.9 版更新 1 中所修正的問題。 此更新的組件編號為 1.9.7412。
 
 ## <a name="fixed-issues-included-in-this-update"></a>此更新包含的問題修正
@@ -49,7 +48,7 @@ Microsoft Advanced Threat Analytics 1.9 版的更新可從 Microsoft Update 或�
 ### <a name="manual-download"></a>手動下載
 若要取得此更新的獨立套件，請移至 Microsoft 下載中心網站： [立即下載 ATA 1.9 套件](https://www.microsoft.com/en-us/download/details.aspx?id=56725)。
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>先決條件
 若要安裝此更新，您必須已安裝 ATA 1.9 版 (1.9.7312)、ATA 1.8 版 (1.8.6765) 更新1，或 ATA 1.8 版 (1.8.6645)。
 
 ### <a name="restart-requirement"></a>重新啟動需求

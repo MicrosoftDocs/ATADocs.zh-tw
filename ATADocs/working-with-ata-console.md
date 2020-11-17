@@ -12,19 +12,17 @@ ms.technology: ''
 ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: e5b9c8f908cc0d9fbbabcc0cf11feebdf1decb7b
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 831b3cec06a943136c19b706d1b68063ec578dfa
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912195"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94689457"
 ---
 # <a name="working-with-the-ata-console"></a>使用 ATA 主控台
 
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 使用 ATA 主控台監視及回應 ATA 偵測到的可疑活動。
 
@@ -38,7 +36,7 @@ ms.locfileid: "90912195"
 >[!NOTE]
  > 從 ATA 1.8 開始，將使用單一登入完成到 ATA 主控台的登入流程。
 
-1. 在 ATA 中心伺服器中，按一下桌面上的 **Microsoft ATA 主控台**圖示，或開啟瀏覽器並瀏覽到 ATA 主控台。
+1. 在 ATA 中心伺服器中，按一下桌面上的 **Microsoft ATA 主控台** 圖示，或開啟瀏覽器並瀏覽到 ATA 主控台。
 
     ![ATA 伺服器圖示](media/ata-server-icon.png)
 
@@ -53,7 +51,7 @@ ms.locfileid: "90912195"
 1. 若要使用 SSO 進行登入，請確定 ATA 主控台網站已在您的瀏覽器中定義為近端內部網路網站，而且您使用簡短名稱或 localhost 進行存取。
 
 > [!NOTE]
-> 除了記錄每個可疑活動和健康狀態警示，您在 ATA 主控台中所做的每項設定變更也會記錄在 ATA 中心電腦的 Windows 事件記錄檔中，該記錄檔位於 [應用程式及服務記錄檔]**** 的 [Microsoft ATA]**** 下。 此外，也會記錄 ATA 主控台的每次登入。<br></br>  影響 ATA 閘道的設定也會記錄在 ATA 閘道電腦的 Windows 事件記錄檔中。 
+> 除了記錄每個可疑活動和健康狀態警示，您在 ATA 主控台中所做的每項設定變更也會記錄在 ATA 中心電腦的 Windows 事件記錄檔中，該記錄檔位於 [應用程式及服務記錄檔] 的 [Microsoft ATA] 下。 此外，也會記錄 ATA 主控台的每次登入。<br></br>  影響 ATA 閘道的設定也會記錄在 ATA 閘道電腦的 Windows 事件記錄檔中。 
 
 
 
@@ -80,7 +78,7 @@ ATA 主控台可讓您依時間順序快速檢視所有可疑的活動。 不但
 
 ### <a name="whats-new"></a>最新消息
 
-新版本的 ATA 發行後，[最新消息]**** 視窗會出現在右上角，讓您知道最新版本中新增了哪些功能。 它也會提供您可下載該版本的連結。
+新版本的 ATA 發行後，[最新消息] 視窗會出現在右上角，讓您知道最新版本中新增了哪些功能。 它也會提供您可下載該版本的連結。
 
 ### <a name="filtering-panel"></a>篩選窗格
 
@@ -102,22 +100,22 @@ ATA 主控台可讓您依時間順序快速檢視所有可疑的活動。 不但
 
 ### <a name="sensitive-groups"></a>敏感性群組
 
-ATA 將下列群組清單視為**敏感性**。 屬於這些群組的任何實體都視為具有敏感性：
+ATA 將下列群組清單視為 **敏感性**。 屬於這些群組的任何實體都視為具有敏感性：
 
 - Enterprise Read-Only Domain Controllers 
-- 網域管理員 
+- Domain Admins 
 - 網域控制站 
 - Schema Admins
-- 企業系統管理員 
+- Enterprise Admins 
 - Group Policy Creator Owners 
 - Read-Only Domain Controllers 
 - Administrators  
-- 進階使用者  
+- Power Users  
 - Account Operators  
 - Server Operators   
 - Print Operators
 - Backup Operators
-- 複寫者 
+- Replicators 
 - Remote Desktop Users 
 - Network Configuration Operators 
 - Incoming Forest Trust Builders 
@@ -130,7 +128,7 @@ ATA 將下列群組清單視為**敏感性**。 屬於這些群組的任何實�
 
 ![ATA 小型設定檔影像](media/ATA-mini-profile.jpg)
 
-- Name
+- 名稱
 
 - Picture
 

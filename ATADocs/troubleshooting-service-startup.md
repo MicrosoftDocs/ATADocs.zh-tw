@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 5a65285c-d1de-4025-9bb4-ef9c20b13cfa
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d4e5dda205aba4737e074853f22659c6e74a98d5
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 3f23eb1aa2adc49b3913ab1e4218653a5b8c874d
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90910735"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94689916"
 ---
 # <a name="troubleshooting-service-startup"></a>為服務啟動進行疑難排解
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="troubleshooting-ata-center-service-startup"></a>針對 ATA 中心服務啟動進行疑難排解
 
@@ -52,9 +50,9 @@ sc start ATACenter
 **徵兆**
 
 您的 ATA 閘道未啟動且您收到此錯誤：<br></br>
-System.Net.Http.HttpRequestException: 回應狀態碼未指出成功: 500 (內部伺服器錯誤)**
+System.Net.Http.HttpRequestException: 回應狀態碼未指出成功: 500 (內部伺服器錯誤)
 
-**說明**
+**描述**
 
 在輕量型閘道安裝程序中，ATA 會配置 CPU 閾值，使輕量型閘道能夠以 15% 的緩衝區來利用 CPU，從而導致此問題發生。 若您使用了登錄機碼個別設定閾值：這項衝突會造成輕量型閘道無法啟動。 
 

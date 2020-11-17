@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 7424525fa3b5e2e9cd06ad410d7965229885ab35
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 024ca22c366e98c0c09a0c13152c453ce33363c0
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912220"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690035"
 ---
 # <a name="troubleshooting-ata-known-issues"></a>針對 ATA 已知問題進行疑難排解
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本節詳細說明 ATA 部署中可能發生的錯誤，以及對其進行疑難排解所需的步驟。
 
@@ -31,7 +29,7 @@ ms.locfileid: "90912220"
 
 > [!div class="mx-tableFixed"]
 >
-> |錯誤|說明|解決方案|
+> |錯誤|說明|解決方法|
 > |-------------|----------|---------|
 > |System.DirectoryServices.Protocols.LdapException：發生本機錯誤|ATA 閘道無法對網域控制站進行驗證。|1. 確認已在 DNS 伺服器中正確設定網域控制站的 DNS 記錄。 <br>2. 確認 ATA 閘道的時間與網域控制站的時間同步。|
 > |System.IdentityModel.Tokens.SecurityTokenValidationException︰無法驗證憑證鏈結|ATA 閘道無法驗證 ATA 中心的憑證。|1. 確認根 CA 憑證已安裝在 ATA 閘道的 [受信任的憑證授權單位單位] 憑證存放區中。<br>2. 驗證憑證撤銷清單 (CRL) 可供使用，而且可以執行憑證撤銷驗證。|
@@ -59,7 +57,7 @@ ms.locfileid: "90912220"
 
 > [!div class="mx-tableFixed"]
 >
-> |錯誤|說明|解決方案|
+> |錯誤|說明|解決方法|
 > |-------------|----------|---------|
 > |.Net Framework 4.6.1 安裝失敗，並發生錯誤 0x800713ec|.Net Framework 4.6.1 的必要條件尚未安裝於伺服器。 |安裝 ATA 之前，請驗證伺服器上已安裝 Windows Update [KB2919442](https://www.microsoft.com/download/details.aspx?id=42135) 和 [KB2919355](https://support.microsoft.com/kb/2919355)。|
 > |System.Threading.Tasks.TaskCanceledException：工作已取消|因為無法連線到 ATA 中心，所以部署程序已逾時。|1. 使用 IP 位址流覽至 ATA 中心，檢查其網路連線能力。 <br></br>2. 檢查 proxy 或防火牆設定。|
@@ -72,7 +70,7 @@ ms.locfileid: "90912220"
 
 > [!div class="mx-tableFixed"]
 >
-> |錯誤|說明|解決方案|
+> |錯誤|說明|解決方法|
 > |-------------|----------|---------|
 > |System.Security.Cryptography.CryptographicException: 拒絕存取。|ATA 中心無法使用發行的憑證來解密。 這很有可能發生在使用將 KeySpec (KeyNumber) 設定為不支援解密的 Signature (AT\\_SIGNATURE)，而非 KeyExchange (AT\\_KEYEXCHANGE) 的憑證上。|1. 停止 ATA 中心服務。 <br></br>2. 從中央的憑證存放區中刪除 ATA 中心憑證。 (在刪除之前，請確定您已連同私密金鑰將憑證備份在 PFX 檔案中)。 <br></br>3. 開啟提升許可權的命令提示字元，並在 _KEYEXCHANGE 執行 certutil-importpfx "Centercertificate.pfx at .pfx" \\ <br></br>4. 啟動 ATA 中心服務。 <br></br>5. 確認所有專案現在都能如預期般運作。|
 
@@ -80,7 +78,7 @@ ms.locfileid: "90912220"
 
 > [!div class="mx-tableFixed"]
 >
-> |問題|Description|解決方案|
+> |問題|Description|解決方法|
 > |-------------|----------|---------|
 > |沒有從網域控制站收到的流量，但觀察到健康情況警示|未從透過 ATA 閘道使用連接埠鏡像的網域控制站收到流量|在 ATA 閘道抓取 NIC 上，于 [ **Advanced Settings**] 中停用這些功能：<br></br>接收區段聯合 (IPv4)<br></br>接收區段聯合 (IPv6)|
 > |顯示此健康情況警示：某些網路流量未進行分析|如果您在 VMware 虛擬機器上有 ATA 閘道或輕量閘道，您可能會收到此健康情況警示。 當 VMware 中的設定不相符時，就會發生此狀況。|請在 NIC 設定中將以下設定設為 0 或 [停用]：TsoEnable、LargeSendOffload、TSO Offload、Giant TSO Offload|
@@ -91,7 +89,7 @@ ms.locfileid: "90912220"
 
 建議的可能因應措施：
 
-- 如果超執行緒開啟，請將它關閉。 這可能會減少足夠的邏輯核心數目，以避免需要在**多處理器群組**模式中執行。
+- 如果超執行緒開啟，請將它關閉。 這可能會減少足夠的邏輯核心數目，以避免需要在 **多處理器群組** 模式中執行。
 
 - 如果您的電腦具有少於 64 個邏輯核心，而且是在 HP 主機上執行，您可以將 [NUMA 群組大小最佳化]  BIOS 設定從預設的[叢集]  變更為 [一般]  。
 

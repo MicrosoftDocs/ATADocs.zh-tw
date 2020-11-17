@@ -12,22 +12,20 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 74d610899023eba93da568360a99505119d13e70
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 55c12920020a0cbcda0b38e7b9d0cae083423a4e
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90908855"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690970"
 ---
 # <a name="ata-silent-installation"></a>ATA 無訊息安裝
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
-
 本文提供以無訊息方式安裝 ATA 的指示。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 ATA 1.9 版需要安裝 Microsoft .NET Framework 4.6.1。
 
@@ -36,7 +34,7 @@ ATA 1.9 版需要安裝 Microsoft .NET Framework 4.6.1。
 > [!Note]
 > .Net framework 4.6.1 安裝可能需要重新啟動伺服器。 在網域控制站上安裝 ATA 閘道時，請考慮為這些網域控制站排定維護期間。 使用 ATA 無訊息安裝方法時，安裝程式會設定為在安裝結束時自動重新啟動伺服器安裝 (如有必要)。 由於 Windows Installer 的某個錯誤，norestart 旗標無法可靠地用來確定伺服器不會重新啟動，因此請務必只在維護期間執行無訊息安裝。
 
-若要追蹤部署的進度，請監視位於 **%AppData%\Local\Temp**的 ATA 安裝程式記錄檔。
+若要追蹤部署的進度，請監視位於 **%AppData%\Local\Temp** 的 ATA 安裝程式記錄檔。
 
 ## <a name="install-the-ata-center"></a>安裝 ATA 中心
 
@@ -57,7 +55,7 @@ ATA 1.9 版需要安裝 Microsoft .NET Framework 4.6.1。
 > |Quiet|/quiet|是|執行安裝程式，但不顯示任何 UI 和提示。|
 > |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 > |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|是|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
-> |LicenseAccepted|--LicenseAccepted|Yes|指出已閱讀並核准授權。 無訊息安裝時必須設定。|
+> |LicenseAccepted|--LicenseAccepted|是|指出已閱讀並核准授權。 無訊息安裝時必須設定。|
 
 **安裝參數**：
 
@@ -65,9 +63,9 @@ ATA 1.9 版需要安裝 Microsoft .NET Framework 4.6.1。
 >
 > |Name|語法|對無訊息安裝而言是否為必要？|說明|
 > |---|---|---|---|
->|InstallationPath|InstallationPath="<InstallPath>"|No|設定 ATA 二進位檔案的安裝路徑。 預設路徑︰C:\Program Files\Microsoft Advanced Threat Analytics\Center|
->|DatabaseDataPath|DatabaseDataPath= "<DBPath>"|No|設定 ATA 資料庫的資料夾路徑。 預設路徑︰C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data|
->|CenterCertificateThumbprint|CenterCertificateThumbprint="<CertThumbprint>"|No|設定 ATA 中心的憑證指紋。 此憑證可用來保護 ata 閘道與 ATA 中心的通訊，以及驗證 ATA 主控台網站的身分識別。 如果未設定，安裝會產生自我簽署憑證。|
+>|InstallationPath|InstallationPath="<InstallPath>"|否|設定 ATA 二進位檔案的安裝路徑。 預設路徑︰C:\Program Files\Microsoft Advanced Threat Analytics\Center|
+>|DatabaseDataPath|DatabaseDataPath= "<DBPath>"|否|設定 ATA 資料庫的資料夾路徑。 預設路徑︰C:\Program Files\Microsoft Advanced Threat Analytics\Center\MongoDB\bin\data|
+>|CenterCertificateThumbprint|CenterCertificateThumbprint="<CertThumbprint>"|否|設定 ATA 中心的憑證指紋。 此憑證可用來保護 ata 閘道與 ATA 中心的通訊，以及驗證 ATA 主控台網站的身分識別。 如果未設定，安裝會產生自我簽署憑證。|
 
 **範例**：
 
@@ -133,7 +131,7 @@ ATA 1.9 版需要安裝 Microsoft .NET Framework 4.6.1。
 >
 > |Name|語法|對無訊息解除安裝而言是否為必要？|說明|
 > |---|---|---|---|
-> |DeleteExistingDatabaseData|DeleteExistingDatabaseData|No|刪除現有資料庫中的所有檔案。|
+> |DeleteExistingDatabaseData|DeleteExistingDatabaseData|否|刪除現有資料庫中的所有檔案。|
 
 **範例**：
 
@@ -175,9 +173,9 @@ ATA 1.9 版需要安裝 Microsoft .NET Framework 4.6.1。
 >
 > |Name|語法|對無訊息安裝而言是否為必要？|說明|
 > |---|---|---|---|
->|InstallationPath|InstallationPath="<InstallPath>"|No|設定 ATA 二進位檔案的安裝路徑。 預設路徑︰C:\Program Files\Microsoft Advanced Threat Analytics\Center
->|ConsoleAccountName|ConsoleAccountName="<AccountName>"|Yes|為用來向 ATA 中心註冊 ATA 閘道的使用者帳戶 (user@domain.com) 設定名稱。|
->|ConsoleAccountPassword|ConsoleAccountPassword="<AccountPassword>"|Yes|為用來向 ATA 中心註冊 ATA 閘道的使用者帳戶 (user@domain.com) 設定密碼。|
+>|InstallationPath|InstallationPath="<InstallPath>"|否|設定 ATA 二進位檔案的安裝路徑。 預設路徑︰C:\Program Files\Microsoft Advanced Threat Analytics\Center
+>|ConsoleAccountName|ConsoleAccountName="<AccountName>"|是|為用來向 ATA 中心註冊 ATA 閘道的使用者帳戶 (user@domain.com) 設定名稱。|
+>|ConsoleAccountPassword|ConsoleAccountPassword="<AccountPassword>"|是|為用來向 ATA 中心註冊 ATA 閘道的使用者帳戶 (user@domain.com) 設定密碼。|
 
 **範例**：
 

@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 0cf77c09c09062a3a2983e36646f06c603a2ef45
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: be83debc8d912974dbb08ce0f7e963080b794d4c
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90908888"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94691038"
 ---
 # <a name="ata-prerequisites"></a>ATA 必要條件
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文描述在環境中成功部署 ATA 的需求。
 
@@ -57,7 +55,7 @@ ATA 系統可在 Active Directory 樹系邊界運作，而且支援 Windows 2003
 
 - 請勿在 ATA 閘道或輕量型閘道上安裝 Microsoft 郵件分析器。 郵件分析器驅動程式與 ATA 閘道和輕量型閘道驅動程式衝突。 如果您在 ATA 閘道上執行 Wireshark，在停止 Wireshark 擷取後，需要重新啟動 Microsoft Advanced Threat Analytics 閘道服務。 否則，閘道會停止擷取流量。 在 ATA 輕量型閘道上執行 Wireshark 不會干擾 ATA 輕量型閘道。
 
-- 建議︰使用者應該擁有「刪除的物件」容器的唯讀權限。 這可讓 ATA 偵測網域中的大量刪除物件。 如需設定「已刪除物件」容器的唯讀權限相關資訊，請參閱[檢視或設定目錄物件的權限](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816824(v=ws.10)) \(英文\) 文章中的＜變更刪除的物件容器的權限＞****。
+- 建議︰使用者應該擁有「刪除的物件」容器的唯讀權限。 這可讓 ATA 偵測網域中的大量刪除物件。 如需設定「已刪除物件」容器的唯讀權限相關資訊，請參閱[檢視或設定目錄物件的權限](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816824(v=ws.10)) \(英文\) 文章中的＜變更刪除的物件容器的權限＞。
 
 - 選擇性︰沒有任何網路活動之使用者的使用者帳戶。 此帳戶可設定為 ATA Honeytoken 使用者。 若要將帳戶設定為 Honeytoken 使用者，只需要使用者名稱。 如需 Honeytoken 設定的資訊，請參閱[設定 IP 位址排除項目和 Honeytoken 使用者](install-ata-step7.md)。
 
@@ -84,9 +82,9 @@ ATA 中心可以安裝在屬於網域或工作群組的成員伺服器上。
 
 ### <a name="server-specifications"></a>伺服器規格
 
-當於實體伺服器上執行工作時，ATA 資料庫需要您**停用** BIOS 中的非統一記憶體存取 (NUMA)。 您的系統可能會將 NUMA 當成節點交錯來參考，在此情況下您必須**啟用**節點交錯以停用 NUMA。 如需詳細資訊，請參閱您的 BIOS 文件。<br>
+當於實體伺服器上執行工作時，ATA 資料庫需要您 **停用** BIOS 中的非統一記憶體存取 (NUMA)。 您的系統可能會將 NUMA 當成節點交錯來參考，在此情況下您必須 **啟用** 節點交錯以停用 NUMA。 如需詳細資訊，請參閱您的 BIOS 文件。<br>
 
-為了達到最佳效能，將 ATA 中心的 [電源選項]**** 設定為 [高效能]****。<br>
+為了達到最佳效能，將 ATA 中心的 [電源選項] 設定為 [高效能]。<br>
 您要監視的網域控制站數目以及每個網域控制站的負載，決定了所需的伺服器規格。 如需詳細資訊，請參閱 [ATA 容量規劃](ata-capacity-planning.md)。
 
 針對 Windows 作業系統2008R2 和2012， [多重處理器群組](/windows/win32/procthread/processor-groups) 模式不支援閘道。 如需有關多處理器群組模式的詳細資訊，請參閱[疑難排解](troubleshooting-ata-known-errors.md#multi-processor-group-mode)。
@@ -112,12 +110,12 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
 |**SSL** (ATA 通訊)|TCP|443|ATA 閘道|輸入|
 |**HTTP** (選擇性)|TCP|80|公司網路|輸入|
 |**HTTPS**|TCP|443|公司網路和 ATA 閘道|輸入|
-|**SMTP** (選擇性)|TCP|25|SMTP 伺服器|輸出|
-|**SMTPS** (選擇性)|TCP|465|SMTP 伺服器|輸出|
-|**Syslog** (選用) |TCP/UPS/TLS (可設定)|514 (預設)|Syslog 伺服器|輸出|
+|**SMTP** (選擇性)|TCP|25|SMTP 伺服器|連出|
+|**SMTPS** (選擇性)|TCP|465|SMTP 伺服器|連出|
+|**Syslog** (選用) |TCP/UPS/TLS (可設定)|514 (預設)|Syslog 伺服器|連出|
 |**LDAP**|TCP 和 UDP|389|網域控制站|輸出|
 |**LDAPS** (選擇性)|TCP|636|網域控制站|輸出|
-|**DNS**|TCP 和 UDP|53|DNS 伺服器|輸出|
+|**DNS**|TCP 和 UDP|53|DNS 伺服器|連出|
 |**Kerberos** (如已加入網域即為選擇性)|TCP 和 UDP|88|網域控制站|輸出|
 |**Windows 時間** (若已加入網域即為選擇性)|UDP|123|網域控制站|輸出|
 
@@ -140,7 +138,7 @@ ATA 中心伺服器、ATA 閘道伺服器和網域控制站的時間必須同步
     不支援在簽章)  ("Signature" 值 \_ 。 *not*
 - 所有閘道電腦都必須能夠完全驗證並信任選取的中心憑證。
 
-例如，您可以使用標準**網頁伺服器**或**電腦**範本。
+例如，您可以使用標準 **網頁伺服器** 或 **電腦** 範本。
 
 > [!WARNING]
 > 不支援更新現有憑證的程序。 更新憑證的唯一方法是建立新憑證，然後設定 ATA 使用新憑證。
@@ -171,7 +169,7 @@ ATA 閘道可以用來監視具 Windows Server 2003 或更新版本之網域功�
 
 ### <a name="server-specifications"></a>伺服器規格
 
-為了達到最佳效能，將 ATA 閘道的 [電源選項]**** 設定為 [高效能]****。<br>
+為了達到最佳效能，將 ATA 閘道的 [電源選項] 設定為 [高效能]。<br>
 ATA 閘道可以支援監視多個網域控制站，依進出網域控制站的網路傳輸量而定。
 
 若要深入瞭解動態記憶體或任何其他虛擬機器記憶體管理功能，請參閱易失 [儲存體](#dynamic-memory)。
@@ -189,7 +187,7 @@ ATA 閘道需要至少一個管理介面卡和至少一個擷取介面卡︰
 - **管理介面卡** - 用於您公司網路上的通訊。 此介面卡應進行下列設定：
   - 靜態 IP 位址，包含預設閘道
   - 慣用和替代的 DNS 伺服器
-  - **此連線的 DNS 尾碼**應該是受監視之每個網域的網域 DNS 名稱。
+  - **此連線的 DNS 尾碼** 應該是受監視之每個網域的網域 DNS 名稱。
 
     ![在進階 TCP/IP 設定中設定 DNS 尾碼](media/ATA-DNS-Suffix.png)
 
@@ -258,7 +256,7 @@ ATA 輕量型閘道可在執行 Windows Server 2008 R2 SP1 (不含 Server Core)�
 ### <a name="server-specifications"></a>伺服器規格
 
 ATA 輕量型閘道至少需要在網域控制站上安裝 2 個核心和 6 GB 的 RAM。
-為了達到最佳效能，將 ATA 輕量型閘道的 **[電源選項]** 設定為 [高效能]****。
+為了達到最佳效能，將 ATA 輕量型閘道的 **[電源選項]** 設定為 [高效能]。
 ATA 輕量型閘道可以部署在各種負載和大小的網域控制站上，依進出網域控制站的網路流量，以及安裝在該網域控制站上的資源數量而定。
 
 若要深入瞭解動態記憶體或任何其他虛擬機器記憶體管理功能，請參閱易失 [儲存體](#dynamic-memory)。

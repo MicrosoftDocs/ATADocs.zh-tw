@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 6bbc50c3-bfa8-41db-a2f9-56eed68ef5d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 87f8442010a7132de7e76479353acfa7753d10dc
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: e692a543095e722e4a8b7823c39b73a1f078cb4b
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90911486"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690664"
 ---
 # <a name="install-ata---step-4"></a>安裝 ATA - 步驟 4
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!div class="step-by-step"]
 > [« 步驟 3](install-ata-step3.md)
@@ -53,12 +51,12 @@ ms.locfileid: "90911486"
     
    例如，針對 ATA 閘道，系統會顯示下列畫面以通知將會在您的專用伺服器上安裝 ATA 閘道：
     
-    ![ATA 閘道安裝](media/ata-gw-install.png) 按一下 [下一步]****。
+    ![ATA 閘道安裝](media/ata-gw-install.png) 按一下 [下一步]。
     
    > [!NOTE] 
-   > 如果網域控制站或專用伺服器不符合安裝的最低硬體需求，您會收到一則警告。 但這並不會阻止您按 [下一步]**** 和繼續進行安裝。 在不需要這麼多資料儲存空間的小型實驗室測試環境中，這可能會是安裝 ATA 的正確選項。 如果是生產環境，強烈建議使用 ATA 的 [容量規劃](ata-capacity-planning.md)指南，確保您的網域控制站或專用伺服器符合必要需求。
+   > 如果網域控制站或專用伺服器不符合安裝的最低硬體需求，您會收到一則警告。 但這並不會阻止您按 [下一步] 和繼續進行安裝。 在不需要這麼多資料儲存空間的小型實驗室測試環境中，這可能會是安裝 ATA 的正確選項。 如果是生產環境，強烈建議使用 ATA 的 [容量規劃](ata-capacity-planning.md)指南，確保您的網域控制站或專用伺服器符合必要需求。
     
-1. 在 [Configure the Gateway (設定閘道)]**** 下，根據您的環境輸入下列資訊：
+1. 在 [Configure the Gateway (設定閘道)] 下，根據您的環境輸入下列資訊：
     
     ![ATA 閘道組態設定影像](media/ata-gw-configure.png)
     

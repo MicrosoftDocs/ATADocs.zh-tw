@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 7fb024e6-297a-4ad9-b962-481bb75a0ba3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7eab456d31c35f7bfc734927b9439a93545fad06
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 9595f1f8ebed8aab8877c7ee9a22421cf77cbabb
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90911766"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690647"
 ---
 # <a name="install-ata---step-3"></a>安裝 ATA - 步驟 3
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!div class="step-by-step"]
 > [« 步驟 2](install-ata-step2.md)
@@ -38,9 +36,9 @@ ms.locfileid: "90911766"
 ![ATA 閘道組態設定](media/ATA_1.7-welcome-download-gateway.PNG)
 
 > [!NOTE] 
-> 若要稍後存取 [閘道設定] 畫面，請按一下**設定圖示** (右上角)，選取 [設定]****，然後在 [系統]**** 下，按一下 [閘道]****。  
+> 若要稍後存取 [閘道設定] 畫面，請按一下 **設定圖示** (右上角)，選取 [設定]，然後在 [系統] 下，按一下 [閘道]。  
 
-1. 按一下 [Gateway Setup (閘道安裝)] ****。
+1. 按一下 [Gateway Setup (閘道安裝)] 。
   ![下載 ATA 閘道安裝程式](media/download-gateway-setup.png)
 1. 將封裝儲存在本機。
 1. 將封裝複製到 ATA 閘道安裝所在的專用伺服器或網域控制站。 您也可以從專用伺服器或網域控制站開啟 ATA 主控台，並跳過此步驟。

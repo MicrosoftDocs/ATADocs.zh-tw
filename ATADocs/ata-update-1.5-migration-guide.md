@@ -12,16 +12,15 @@ ms.technology: ''
 ms.assetid: fb65eb41-b215-4530-93a2-0b8991f4e980
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: dae94f42ee4b4be200a3cf2ac299561efe0ddbb1
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: c60cff74d6f8393ab6c9be2d5b1733e6b13fd544
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90908777"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690919"
 ---
 # <a name="ata-update-to-15-migration-guide"></a>ATA 更新至 1.5 移轉指南
 
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 更新至 ATA 1.5 提供下列各方面的改良︰
 
 - 更快速的偵測時間
@@ -72,17 +71,17 @@ ms.locfileid: "90908777"
 
     1.  在 [ **歡迎使用** ] 頁面中選取您的語言，然後按 **[下一步]**。
 
-    2.  閱讀「使用者授權合約」，如果您接受條款，請按一下核取方塊並按一下 [下一步]****。
+    2.  閱讀「使用者授權合約」，如果您接受條款，請按一下核取方塊並按一下 [下一步]。
 
     3.  選取您要執行完整 (預設值) 或部分移轉。
 
         ![選擇完整或部分移轉](media/ATA-center-fullpartial.png)
 
-        - 如果選取 [部分]**** 移轉，則會刪除 ATA 分析過的所有收集網路流量和轉送 Windows 事件，且使用者行為設定檔必須重新學習。這需要至少三週的時間。 如果磁碟空間不足，則適合執行 [部分]**** 移轉。
+        - 如果選取 [部分] 移轉，則會刪除 ATA 分析過的所有收集網路流量和轉送 Windows 事件，且使用者行為設定檔必須重新學習。這需要至少三週的時間。 如果磁碟空間不足，則適合執行 [部分] 移轉。
 
-        - 如果執行 [完整]**** 移轉，則需要額外的磁碟空間 (如升級頁面中為您計算出來的大小)，且移轉可能因網路流量而需要較長時間。 完整移轉會保留所有先前收集的資料和維護的使用者行為設定檔，這表示 ATA 不需要再花時間學習行為設定檔，更新之後可以立即偵測到異常行為。
+        - 如果執行 [完整] 移轉，則需要額外的磁碟空間 (如升級頁面中為您計算出來的大小)，且移轉可能因網路流量而需要較長時間。 完整移轉會保留所有先前收集的資料和維護的使用者行為設定檔，這表示 ATA 不需要再花時間學習行為設定檔，更新之後可以立即偵測到異常行為。
 
-1. 按一下 [更新]。 一旦按下 [更新]，ATA 會離線直到更新程序完成。
+1. 按一下 [更新]  。 一旦按下 [更新]，ATA 會離線直到更新程序完成。
 
 1. 在更新 ATA 中心之後，ATA 閘道會報告它們現在已經過期。
 

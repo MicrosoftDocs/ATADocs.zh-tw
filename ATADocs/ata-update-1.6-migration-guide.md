@@ -12,16 +12,15 @@ ms.technology: ''
 ms.assetid: 0756ef64-3aef-4a69-8981-24fa8f285c6a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3c94379e73959d5fe22842d5286ce75673684cbf
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 3f23ffdb903ed75e99be951a2b91dfbc4e1bd0e3
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90909394"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690902"
 ---
 # <a name="ata-update-to-16-migration-guide"></a>將 ATA 更新至 1.6 移轉指南
 
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 ATA 1.6 的更新提供下列各方面的改良︰
 
 - 新增偵測
@@ -45,11 +44,11 @@ ATA 1.6 的更新提供下列各方面的改良︰
 如果您已經部署 ATA 1.5 版，此程序會逐步引導您進行更新部署所需的步驟。
 
 > [!NOTE] 
-> 您無法在 ATA 1.4 版上直接安裝 ATA 1.6 版。 您必須先安裝 ATA 1.5 版。 如果您不小心在尚未安裝 ATA 1.5 的情況下嘗試安裝 ATA 1.6，您會收到錯誤，告知您**電腦上已安裝更新的版本**。 您必須先將留在電腦上的其餘 ATA 1.6 解除安裝 (即使安裝失敗也是一樣)，再安裝 ATA 1.5 版。
+> 您無法在 ATA 1.4 版上直接安裝 ATA 1.6 版。 您必須先安裝 ATA 1.5 版。 如果您不小心在尚未安裝 ATA 1.5 的情況下嘗試安裝 ATA 1.6，您會收到錯誤，告知您 **電腦上已安裝更新的版本**。 您必須先將留在電腦上的其餘 ATA 1.6 解除安裝 (即使安裝失敗也是一樣)，再安裝 ATA 1.5 版。
 
 依照下列步驟將 ATA 更新至 1.6 版：
 
-1. 若要避免升級問題，請確定您遵循 [ATA 1.6 版新功能](whats-new-version-1.6.md)中所述之**將 ATA 更新 1.6 版時移轉失敗**的步驟 8 到 10。
+1. 若要避免升級問題，請確定您遵循 [ATA 1.6 版新功能](whats-new-version-1.6.md)中所述之 **將 ATA 更新 1.6 版時移轉失敗** 的步驟 8 到 10。
 1. 確定您有需要的可用空間可完成升級。 您可以執行安裝到整備檢查的步驟，以估計所需的可用空間，然後在配置所需的磁碟空間之後重新開始升級。
 1.  [下載更新 1.6](https://www.microsoft.com/evalcenter/evaluate-microsoft-advanced-threat-analytics)<br>
 在此版本中，會使用相同的安裝檔案 (Microsoft ATA Center Setup.exe) 來安裝新的 ATA 部署及升級現有的部署。
@@ -80,16 +79,16 @@ ATA 1.6 的更新提供下列各方面的改良︰
     
     2.  在 [歡迎] 頁面中，選取您的語言，然後按一下 [下一步]。
 
-    3.  閱讀使用者授權合約，如果您接受條款，請按一下 [下一步]****。
+    3.  閱讀使用者授權合約，如果您接受條款，請按一下 [下一步]。
 
-    4.  您現在可以使用 Microsoft Update 讓 ATA 保持最新狀態。  在 [Microsoft Update] 頁面中，選取 [ **當我檢查更新時使用 Microsoft Update] (建議的) **。
+    4.  您現在可以使用 Microsoft Update 讓 ATA 保持最新狀態。  在 [Microsoft Update] 頁面中，選取 [ **當我檢查更新時使用 Microsoft Update] (建議的)**。
     ![保持 ATA 最新狀態影像](media/ata_ms_update.png) 如下所示，如此可調整 Windows 設定，以允許其他 Microsoft 產品 (包括 ATA) 的更新。 
      ![Windows 自動更新影像](media/ata_installupdatesautomatically.png)
 
     5.  開始安裝之前，ATA 會執行整備檢查。 檢閱檢查的結果以確保已成功設定必要條件，且至少具有磁碟空間下限。 
     ![ATA 整備檢查影像](media/ata_install_readinesschecks.png)
 
-    6.  按一下 [更新]。 按一下 [更新] 之後，ATA 會離線直到更新程序完成。
+    6.  按一下 [更新]  。 按一下 [更新] 之後，ATA 會離線直到更新程序完成。
 
 1. 在更新 ATA 中心之後，ATA 閘道會報告它們現在已經過期。
 

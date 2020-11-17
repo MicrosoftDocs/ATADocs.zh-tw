@@ -12,16 +12,15 @@ ms.technology: ''
 ms.assetid: 8eefcd45-7a4b-4074-ac5b-1ffc48e6654a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 4772e9cbb1e00e4bb1a4bebd5cc6e2b7821766dc
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 360c71bebc700918c8bcd67f444c8a4ae2eb3894
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90909882"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690885"
 ---
 # <a name="ata-update-to-17-migration-guide"></a>ATA 更新至 1.7 移轉指南
 
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 ATA 1.7 的更新提供下列各方面的改良︰
 
 - 新增偵測
@@ -63,20 +62,20 @@ ATA 1.7 的更新提供下列各方面的改良︰
 
     - 在 [歡迎] 頁面中，選取您的語言，然後按一下 [下一步]。
 
-    - 如果您未在 1.6 版中啟用自動更新，系統會提示您設定 ATA 使用 Microsoft Update 讓 ATA 保持最新狀態。  在 [Microsoft Update] 頁面中，選取 [ **當我檢查更新時使用 Microsoft Update] (建議的) **。
+    - 如果您未在 1.6 版中啟用自動更新，系統會提示您設定 ATA 使用 Microsoft Update 讓 ATA 保持最新狀態。  在 [Microsoft Update] 頁面中，選取 [ **當我檢查更新時使用 Microsoft Update] (建議的)**。
     ![保持 ATA 最新狀態影像](media/ata_ms_update.png) 如下所示，如此可調整 Windows 設定，以允許其他 Microsoft 產品 (包括 ATA) 的更新。 
      ![Windows 自動更新影像](media/ata_installupdatesautomatically.png)
 
-    - 在 [資料移轉]**** 畫面中，選取您要移轉所有或部分資料。 如果您選擇只移轉部分資料，將不會移轉先前擷取的網路流量和行為設定檔。 這表示要花費三週的時間，異常行為偵測才會有完整的設定檔可進行異常的活動偵測。 在這三週期間，所有其他的 ATA 偵測都會正常運作。 **部分**資料移轉花費的時間比安裝還短得多。 如果您選取 [完整]**** 資料移轉，可能需要很長一段時間才能完成安裝。 估計的時間量和所需的磁碟空間，會列在 [資料移轉]**** 畫面上，視您在舊版 ATA 中儲存先前擷取的網路流量的量而定。 選取 [部分]**** 或 [完整]**** 之前，請先務必查看這些需求。  
+    - 在 [資料移轉] 畫面中，選取您要移轉所有或部分資料。 如果您選擇只移轉部分資料，將不會移轉先前擷取的網路流量和行為設定檔。 這表示要花費三週的時間，異常行為偵測才會有完整的設定檔可進行異常的活動偵測。 在這三週期間，所有其他的 ATA 偵測都會正常運作。 **部分** 資料移轉花費的時間比安裝還短得多。 如果您選取 [完整] 資料移轉，可能需要很長一段時間才能完成安裝。 估計的時間量和所需的磁碟空間，會列在 [資料移轉] 畫面上，視您在舊版 ATA 中儲存先前擷取的網路流量的量而定。 選取 [部分] 或 [完整] 之前，請先務必查看這些需求。  
     
     ![ATA 資料移轉](media/migration-data-migration17.png)
 
-    - 按一下 [更新]。 按一下 [更新] 之後，ATA 會離線直到更新程序完成。
+    - 按一下 [更新]  。 按一下 [更新] 之後，ATA 會離線直到更新程序完成。
 
-1. ATA 中心更新順利完成之後，按一下 [啟動]**** 開啟 ATA 閘道之 ATA 主控台中的 [更新]**** 畫面。
+1. ATA 中心更新順利完成之後，按一下 [啟動] 開啟 ATA 閘道之 ATA 主控台中的 [更新] 畫面。
     ![更新成功畫面](media/migration-center-success17.png)
 
-1. 在 [更新]**** 畫面中，如果您已經設定 ATA 閘道自動更新，它們就會現在更新。如果未設定自動更新，請按一下每個 ATA 閘道旁邊的 [更新]****。
+1. 在 [更新] 畫面中，如果您已經設定 ATA 閘道自動更新，它們就會現在更新。如果未設定自動更新，請按一下每個 ATA 閘道旁邊的 [更新]。
   ![更新閘道影像](media/migration-update-gw-17.png)
 
   

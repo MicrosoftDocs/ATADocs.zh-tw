@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: e0aed853-ba52-46e1-9c55-b336271a68e7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ab9203edf49031e749a1d814fda08c52845345a5
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 5f571f6c9d357860cf295198ac7d614ec20874f2
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90908643"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94689644"
 ---
 # <a name="install-ata---step-7"></a>安裝 ATA - 步驟 7
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!div class="step-by-step"]
 > [«步驟 5](install-ata-step5.md) 
@@ -64,7 +62,7 @@ ATA 會透過接聽轉送到 ATA 閘道的 RADIUS 計量事件，與您的 VPN �
 
     ![RADIUS 設定](media/radius-setup.png)
 
-1. 在 [新增 RADIUS 伺服器]**** 視窗中，鍵入最接近之 ATA 閘道或 ATA 輕量型閘道的**伺服器名稱**。 在 [連接埠] 下，確定已設為預設的 1813。 按一下 [變更]****，並鍵入您能記住的新共用祕密英數字元字串。 您稍後必須在 ATA 設定中填入它。 選取 [傳送 RADIUS 計量開啟及計量關閉訊息]**** 方塊，然後在所有已開啟的對話方塊上按一下 [確定]****。
+1. 在 [新增 RADIUS 伺服器] 視窗中，鍵入最接近之 ATA 閘道或 ATA 輕量型閘道的 **伺服器名稱**。 在 [連接埠] 下，確定已設為預設的 1813。 按一下 [變更]，並鍵入您能記住的新共用祕密英數字元字串。 您稍後必須在 ATA 設定中填入它。 選取 [傳送 RADIUS 計量開啟及計量關閉訊息] 方塊，然後在所有已開啟的對話方塊上按一下 [確定]。
 
     ![顯示 VPN 設定的螢幕擷取畫面](media/vpn-set-accounting.png)
 
@@ -74,7 +72,7 @@ ATA 會收集 VPN 資料，並找出經由 VPN 使用認證的時間與位置，
 
 在 ATA 中設定 VPN 資料：
 
-1. 在 ATA 主控台中，開啟 [ATA 設定] 頁面，並前往 [VPN]****。
+1. 在 ATA 主控台中，開啟 [ATA 設定] 頁面，並前往 [VPN]。
 
     ![ATA 設定功能表](media/config-menu.png)
 

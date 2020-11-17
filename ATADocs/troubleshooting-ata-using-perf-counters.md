@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: df162a62-f273-4465-9887-94271f5000d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 432e91f7d88539061291a8c68ee2cc53c435e440
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 335761baff8180d582c844f16a623eb9441668fe
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90910790"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94689967"
 ---
 # <a name="troubleshooting-ata-using-the-performance-counters"></a>使用效能計數器疑難排解 ATA
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元件會循序處理資料，因此當發生問題時，會導致元件中某處的流量部分中斷。 若要修正此問題，您必須找出發生問題的元件，並在連鎖的源頭修正問題。 使用在效能計數器中找到的資料，來了解每個元件的運作情況。
 請參閱 [ATA 架構](ata-architecture.md)以瞭解內部 ATA 元件的流程。
@@ -32,7 +30,7 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 
 1. 當元件達到其大小上限時，它會封鎖先前的元件且不會傳送多個實體給它。
 
-1. 然後，先前的元件最終將會開始增加**其**本身的大小，直到它封鎖先前的元件且不會傳送多個實體。
+1. 然後，先前的元件最終將會開始增加 **其** 本身的大小，直到它封鎖先前的元件且不會傳送多個實體。
 
 1. 這會在傳回 NetworkListener 元件時發生，此元件將會在無法再轉送實體時捨棄流量。
 
@@ -41,10 +39,10 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 
 若要從各項 ATA 元件擷取效能監視器檔案 (BLG)：
 1. 開啟效能監視器。
-1. 停止名為 **Microsoft ATA 閘道**或 **Microsoft ATA 中心**的資料收集器集合工具。
+1. 停止名為 **Microsoft ATA 閘道** 或 **Microsoft ATA 中心** 的資料收集器集合工具。
 1. 移至資料收集器集合工具資料夾 (預設值為 "C:\Program Files\Microsoft Advanced Threat Analytics\Gateway\Logs\DataCollectorSets" 或 "C:\Program Files\Microsoft Advanced Threat Analytics\Center\Logs\DataCollectorSets")。
 1. 複製最近修改過的 BLG 檔案。
-1. 重新啟動名為 **Microsoft ATA 閘道**或 **Microsoft ATA 中心**的資料收集器集合工具。
+1. 重新啟動名為 **Microsoft ATA 閘道** 或 **Microsoft ATA 中心** 的資料收集器集合工具。
 
 
 ## <a name="ata-gateway-performance-counters"></a>ATA 閘道效能計數器
@@ -52,13 +50,13 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 在本節中，ATA 閘道的每個參考也都適用於 ATA 輕量型閘道。
 
 您可以新增 ATA 閘道的效能計數器來觀察 ATA 閘道的即時效能狀態。
-您可藉由開啟**效能監視器**並新增 ATA 閘道的所有計數器來完成此動作。 效能計數器物件的名稱是：**Microsoft ATA 閘道**。
+您可藉由開啟 **效能監視器** 並新增 ATA 閘道的所有計數器來完成此動作。 效能計數器物件的名稱是：**Microsoft ATA 閘道**。
 
 以下是要注意的主要 ATA 閘道計數器清單︰
 
 > [!div class="mx-tableFixed"]
 > 
-> |計數器|描述|閾值|疑難排解|
+> |計數器|描述|臨界值|疑難排解|
 > |-----------|---------------|-------------|-------------------|
 > |Microsoft ATA Gateway\NetworkListener PEF Parsed Messages\Sec|每秒由 ATA 閘道處理的流量。|沒有閾值|協助您了解 ATA 閘道正在剖析的流量。|
 > |NetworkListener PEF Dropped Events\Sec|每秒由 ATA 閘道減少的流量。|此數字應保持為零 (可接受極少數的短時間減少高載)。|檢查是否有任何元件達到其大小上限，並且封鎖 NetworkListener 所有的先前元件。 請參閱上方的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
@@ -70,17 +68,17 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 > 
 > [!NOTE]
 > - 時間計數器以毫秒為單位。
-> - 有時候使用**報表**圖形類型監視計數器的完整清單會更方便 (範例︰所有計數器的即時監視)
+> - 有時候使用 **報表** 圖形類型監視計數器的完整清單會更方便 (範例︰所有計數器的即時監視)
 
 ## <a name="ata-lightweight-gateway-performance-counters"></a>ATA 輕量型閘道效能計數器
 效能計數器可用於輕量型閘道中的配額管理，確保 ATA 不會耗盡安裝所在的網域控制站太多的資源。
 若要測量 ATA 在輕量型閘道上強制執行的資源限制，請新增這些計數器。
 
-您可藉由開啟**效能監視器**並新增 ATA 輕量型閘道的所有計數器來完成此動作。 效能計數器物件的名稱是：**Microsoft ATA 閘道**和 **Microsoft ATA 閘道更新程式**。
+您可藉由開啟 **效能監視器** 並新增 ATA 輕量型閘道的所有計數器來完成此動作。 效能計數器物件的名稱是：**Microsoft ATA 閘道** 和 **Microsoft ATA 閘道更新程式**。
 
 > [!div class="mx-tableFixed"]
 > 
-> |計數器|描述|閾值|疑難排解|
+> |計數器|描述|臨界值|疑難排解|
 > |-----------|---------------|-------------|-------------------|
 > |Microsoft ATA Gateway Updater\GatewayUpdaterResourceManager CPU Time Max %|輕量型閘道處理序可使用的 CPU 時間最大量 (以百分比表示)。 |沒有閾值。 | 這是為了保護網域控制站資源不被 ATA 輕量型閘道用完所做的限制。 如果您看到處理序經常在經過一段時間之後達到最大的限制 (處理序達到限制時，就會開始捨棄流量)，表示您需要對執行網域控制站的伺服器加入更多資源。|
 > |Microsoft ATA Gateway Updater\GatewayUpdaterResourceManager Commit Memory Max Size|輕量型閘道處理序可使用的認可記憶體最大量 (以位元組表示)。|沒有閾值。 | 這是為了保護網域控制站資源不被 ATA 輕量型閘道用完所做的限制。 如果您看到處理序經常在經過一段時間之後達到最大的限制 (處理序達到限制時，就會開始捨棄流量)，表示您需要對執行網域控制站的伺服器加入更多資源。| 
@@ -93,7 +91,7 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 
 > [!div class="mx-tableFixed"]
 > 
-> |計數器|描述|閾值|疑難排解|
+> |計數器|描述|臨界值|疑難排解|
 > |-----------|---------------|-------------|-------------------|
 > |Process(Microsoft.Tri.Gateway)\%Processor Time|輕量型閘道處理序實際正在使用的 CPU 時間量 (以百分比表示)。 |沒有閾值。 | 比較此計數器的結果與 GatewayUpdaterResourceManager CPU Time Max % 中找到的限制。 如果您看到處理序經常在經過一段時間之後達到最大的限制 (處理序達到限制時，就會開始捨棄流量)，表示您需要對輕量型閘道提供更多資源。|
 > |Process(Microsoft.Tri.Gateway)\Private Bytes|輕量型閘道處理序實際正在使用的認可記憶體量 (以位元組表示)。|沒有閾值。 | 比較此計數器的結果與 GatewayUpdaterResourceManager Commit Memory Max Size 中找到的限制。 如果您看到處理序經常在經過一段時間之後達到最大的限制 (處理序達到限制時，就會開始捨棄流量)，表示您需要對輕量型閘道提供更多資源。| 
@@ -102,13 +100,13 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 ## <a name="ata-center-performance-counters"></a>ATA 中心效能計數器
 您可以新增 ATA 中心的效能計數器來觀察 ATA 中心的即時效能狀態。
 
-您可藉由開啟**效能監視器**並新增 ATA 中心的所有計數器來完成此動作。 效能計數器物件的名稱是：**Microsoft ATA 中心**。
+您可藉由開啟 **效能監視器** 並新增 ATA 中心的所有計數器來完成此動作。 效能計數器物件的名稱是：**Microsoft ATA 中心**。
 
 以下是要注意的主要 ATA 中心計數器清單︰
 
 > [!div class="mx-tableFixed"]
 > 
-> |計數器|描述|閾值|疑難排解|
+> |計數器|描述|臨界值|疑難排解|
 > |-----------|---------------|-------------|-------------------|
 > |Microsoft ATA Center\EntityReceiver Entity Batch Block Size|ATA 中心加入佇列的實體批次數目。|應小於上限 -1 (預設上限︰10,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。  請參閱上述的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
 > |Microsoft ATA Center\NetworkActivityProcessor Network Activity Block Size|要處理而加入佇列的網路活動 (NA) 數目。|應小於上限 -1 (預設上限︰50,000)|檢查是否有任何元件達到其大小上限，並且封鎖先前的元件直到 NetworkListener。 請參閱上述的 **ATA 元件程序**。<br /><br />檢查 CPU 或記憶體確定沒有問題。|
@@ -125,7 +123,7 @@ ATA 效能計數器提供每個 ATA 元件執行程度的見解。 ATA 中的元
 
 > [!div class="mx-tableFixed"]
 > 
-> |計數器|描述|閾值|疑難排解|
+> |計數器|描述|臨界值|疑難排解|
 > |-----------|---------------|-------------|-------------------|
 > |Processor(_Total)\% Processor Time|處理器花費在執行非閒置執行緒的經過時間百分比。|平均小於 80%|檢查是否有花費的處理器時間遠超過預期的特定程序。<br /><br />新增更多處理器。<br /><br />減少每部伺服器的流量。<br /><br />"Processor(_Total)\% Processor Time" 計數器在虛擬伺服器上可能會較不精確，在此情況下，要測量處理器電源不足，更精確的方式是透過 "System\Processor Queue Length" 計數器。|
 > |System\Context Switches\sec|所有處理器從一個執行緒切換到另一個執行緒的組合速率。|小於 5000&#42; 個核心 (實體核心)|檢查是否有花費的處理器時間遠超過預期的特定程序。<br /><br />新增更多處理器。<br /><br />減少每部伺服器的流量。<br /><br />"Processor(_Total)\% Processor Time" 計數器在虛擬伺服器上可能會較不精確，在此情況下，要測量處理器電源不足，更精確的方式是透過 "System\Processor Queue Length" 計數器。|

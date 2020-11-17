@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 4a25561b-a5ed-44aa-9b72-366976b3c72a
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 294e9a8e3640111d6117789cc05302cbe5a3c332
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: d310ec8659fcb2fa2a128f24b9b243939dc438eb
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912844"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690375"
 ---
 # <a name="change-ata-configuration---domain-connectivity-password"></a>變更 ATA 設定 - 網域連線密碼
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="change-the-domain-connectivity-password"></a>變更網域連線密碼
 
@@ -35,19 +33,19 @@ ms.locfileid: "90912844"
 
 1. 在 ATA 中心上開啟 ATA 主控台。
 
-1. 選取工具列上的 [設定] 選項並選取 [組態]****。
+1. 選取工具列上的 [設定] 選項並選取 [組態]。
 
     ![ATA 組態設定圖示](media/ATA-config-icon.png)
 
-1. 選取 [目錄服務]****。
+1. 選取 [目錄服務]。
 
     ![ATA 閘道變更密碼影像](media/ATA-GW-change-DC-password.png)
 
-1. 在 [密碼]**** 下，變更密碼。
+1. 在 [密碼] 下，變更密碼。
 
-    如果 ATA 中心有連線到網域，請使用 [測試連線]**** 按鈕來驗證認證
+    如果 ATA 中心有連線到網域，請使用 [測試連線] 按鈕來驗證認證
 
-1. 按一下 [檔案]  。
+1. 按一下 [檔案] 。
 
 1. 變更密碼後，手動檢查 ATA 閘道服務是否正在 ATA 閘道伺服器上執行。
 

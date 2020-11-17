@@ -12,19 +12,17 @@ ms.technology: ''
 ms.assetid: 5d639e84-2e37-43a9-9667-49be6c4fa8b7
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: c89b37f3fda698af907cb4e74886e0b65e6df7e9
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 3d7c66c907cc237ae3458d77b25e486a90f01e2b
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90909409"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690698"
 ---
 # <a name="ata-event-id-reference"></a>ATA 事件識別碼參考
 
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ATA 中心事件檢視器會記錄 ATA 的事件。 這篇文章會提供事件識別碼的清單以及每個識別碼的描述。
 

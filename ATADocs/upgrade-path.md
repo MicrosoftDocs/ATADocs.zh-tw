@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 88720401-1fb2-4353-ad39-32bc0088f0de
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 00c6d785da9d8685b32b55e689f4d40d9e6fb193
-ms.sourcegitcommit: c12340e58a724fb833403e4fb38810b36e1454f5
+ms.openlocfilehash: 5eaa24a886bd07a4a3fa1e6ac2fa90a1488ea6e4
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2020
-ms.locfileid: "91941208"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94689865"
 ---
 # <a name="recommended-upgrade-path-for-ata"></a>ATA 的建議升級路徑
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文提供可用 Advanced Threat Analytics 版本及如何根據所執行版本來升級 ATA 的相關資訊。
 

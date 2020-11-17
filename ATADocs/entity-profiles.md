@@ -12,19 +12,17 @@ ms.technology: ''
 ms.assetid: 581a3257-32dc-453f-b84e-b9f99186f5d3
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3ab1881d397875be6a70ba78846f0855b53bf608
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: db615ec2f1aab54567d41d0a742146b27d543975
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90909511"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690749"
 ---
 # <a name="investigating-entity-profiles"></a>調查實體設定檔
 
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 實體設定檔提供您專為完整深入調查使用者、電腦、裝置，以及上述項目有權存取的資源及其歷程記錄所設計的儀表板。 設定檔頁面會利用新的 Azure ATA 邏輯活動轉譯程式，此轉譯程式可查看一組發生的活動 (彙總最多一分鐘)，並將其組成單一邏輯活動，以讓您更深入了解使用者的實際活動。
 
@@ -35,7 +33,7 @@ ms.locfileid: "90909511"
 
 ## <a name="view-entity-activities"></a>檢視實體活動
 
-若要檢視使用者所執行 (或在實體上執行) 的所有活動，請按一下 [活動]**** 索引標籤。 
+若要檢視使用者所執行 (或在實體上執行) 的所有活動，請按一下 [活動]  索引標籤。 
 
  ![使用者設定檔活動](media/user-profile-activities.png)
 
@@ -58,15 +56,15 @@ ms.locfileid: "90909511"
   
   ![實體功能表電腦](media/entity-computer.png)
 
-使用活動時間軸上的 [篩選依據]**** 按鈕，您可以依活動類型篩選活動。 您也可以篩選掉特定的 (雜訊) 活動類型。 當您想要了解實體在網路中之行為的基本概念時，這對調查相當實用。 您也可以移至特定日期，並將篩選的活動匯出到 Excel。 匯出的檔案提供目錄服務變更 (針對帳戶在 Active Directory 中變更的項目) 的頁面，以及適用於活動的個別頁面。 
+使用活動時間軸上的 [篩選依據]  按鈕，您可以依活動類型篩選活動。 您也可以篩選掉特定的 (雜訊) 活動類型。 當您想要了解實體在網路中之行為的基本概念時，這對調查相當實用。 您也可以移至特定日期，並將篩選的活動匯出到 Excel。 匯出的檔案提供目錄服務變更 (針對帳戶在 Active Directory 中變更的項目) 的頁面，以及適用於活動的個別頁面。 
 
 ## <a name="view-directory-data"></a>檢視目錄資料
 
-[目錄資料]**** 索引標籤提供可從 Active Directory 取得的靜態資訊，包含使用者存取控制安全性旗標。 ATA 也會顯示使用者的群組成員資格，如此您就可以分辨使用者是否有直接成員資格或遞迴成員資格。 針對群組，ATA 會列出群組的成員。
+[目錄資料]  索引標籤提供可從 Active Directory 取得的靜態資訊，包含使用者存取控制安全性旗標。 ATA 也會顯示使用者的群組成員資格，如此您就可以分辨使用者是否有直接成員資格或遞迴成員資格。 針對群組，ATA 會列出群組的成員。
 
  ![使用者設定檔目錄資料](media/user-profile-dir-data.png)
 
-在 [使用者存取控制]**** 區段中，ATA 會顯示可能需要您注意的安全性設定。 您可以看到有關使用者的重要旗標，例如使用者是否可以按 Enter 略過密碼、使用者是否擁有永不過期的密碼等。 
+在 [使用者存取控制] 區段中，ATA 會顯示可能需要您注意的安全性設定。 您可以看到有關使用者的重要旗標，例如使用者是否可以按 Enter 略過密碼、使用者是否擁有永不過期的密碼等。 
 
 ## <a name="view-lateral-movement-paths"></a>檢視橫向移動路徑
 

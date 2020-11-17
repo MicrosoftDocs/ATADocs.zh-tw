@@ -12,19 +12,17 @@ ms.technology: ''
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: cdb1d66513f785b71b73b21aaf096ab5b5d3ad81
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 2cc8e3f9b5010e5ef70edf69082b3a692392de28
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90908741"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690987"
 ---
 # <a name="ata-role-groups"></a>ATA 角色群組
 
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 角色群組可針對 ATA 啟用存取管理。 使用角色群組可以隔離安全性小組內的責任，並授與使用者執行工作所需的存取權。 本文說明存取管理和 ATA 角色授權，以及協助您在 ATA 中準備和執行角色群組。
 
@@ -55,5 +53,5 @@ ATA 引進了三種類型的角色群組︰ATA 系統管理員、ATA 使用者�
 ## <a name="add--remove-users---ata-role-groups"></a>新增 \ 移除使用者 - ATA 角色群組 
 
 ATA 使用本機的 Windows 群組做為角色群組的基礎。 ATA 中心伺服器上的角色群組必須接受管理。
-若要新增或移除使用者，請使用 [本機使用者和群組]**** MMC (Lusrmgr.msc)。 您可以在加入網域的電腦上新增網域帳戶以及本機帳戶。 
+若要新增或移除使用者，請使用 [本機使用者和群組] MMC (Lusrmgr.msc)。 您可以在加入網域的電腦上新增網域帳戶以及本機帳戶。 
 

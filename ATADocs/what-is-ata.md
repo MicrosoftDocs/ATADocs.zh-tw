@@ -12,18 +12,16 @@ ms.technology: ''
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 1b8deb682418774e5fc0a1c2bb514b80d6e6b19f
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: ca6b929929646be25113adb5edd8a9d03008590e
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90910695"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94689661"
 ---
 # <a name="what-is-advanced-threat-analytics"></a>什麼是 Advanced Threat Analytics？
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 Advanced Threat Analytics (ATA) 是內部部署平台，可協助保護您的企業免於受到多種進階鎖定目標類型的網路攻擊和內部威脅。
 
@@ -55,7 +53,7 @@ ATA 技術會偵測多個可疑的活動，將焦點放在網路攻擊狙殺鏈�
 無論何種公司受到攻擊，或者何種資訊遭到鎖定，這些網路攻擊階段都非常類似而且可預測。
 ATA 會搜尋三種主要的攻擊︰惡意攻擊、異常行為和安全性問題與風險。
 
-**惡意攻擊**可以透過尋找已知攻擊類型的完整清單很容易偵測到，包括︰
+**惡意攻擊** 可以透過尋找已知攻擊類型的完整清單很容易偵測到，包括︰
 
 - 傳遞票證 (PtT)
 - 傳遞雜湊 (PtH)
@@ -86,7 +84,7 @@ ATA 會偵測這些可疑的活動，並且在 ATA 主控台中呈現各項資�
 
  ![範例 ATA 螢幕異常行為](media/abnormal-behavior-sa.png) 
 
-ATA 也會偵測**安全性問題與風險**，包括︰
+ATA 也會偵測 **安全性問題與風險**，包括︰
 
 - 信任中斷
 - 弱式通訊協定

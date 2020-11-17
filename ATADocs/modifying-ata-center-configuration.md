@@ -11,20 +11,18 @@ ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 97ef7f3ba88cc0ce034413ce3dae40a7840db58f
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: be2550fc114bd11978745133f20fdfb5faac8e51
+ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90912881"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94690409"
 ---
 # <a name="modifying-the-ata-center-configuration"></a>修改 ATA 中心設定
 
 
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 初始部署後，請小心修改 ATA Center。 更新主控台 URL 和憑證時，請使用下列程序。
 
@@ -44,16 +42,16 @@ ms.locfileid: "90912881"
 
 1. 確認您使用的新 URL 會解析為 ATA 主控台的 IP 位址。
 
-1. 在 ATA 設定中，於 [中心]**** 下輸入新的 URL。 此時 ATA 中心服務仍然使用原始 URL。 
+1. 在 ATA 設定中，於 [中心] 下輸入新的 URL。 此時 ATA 中心服務仍然使用原始 URL。 
 
     ![變更 ATA 組態](media/change-center-config.png)
 
    > [!NOTE]
-   > 如果輸入了自訂的 IP 位址，除非在 ATA 中心上安裝此 IP 位址，否則將無法按一下 [啟動]****。
+   > 如果輸入了自訂的 IP 位址，除非在 ATA 中心上安裝此 IP 位址，否則將無法按一下 [啟動]。
     
 1. 等候 ATA 閘道進行同步。現在，這些閘道會有兩個可能的 URL 可存取 ATA 主控台。 只要 ATA 閘道可以使用原始 URL 來連線，就不會嘗試使用新 URL。
 
-1. 在所有 ATA 閘道皆已使用更新的設定同步後，請在 [中心設定] 頁面中按一下 [啟動]**** 按鈕來啟動新的 URL。 當您啟動新 URL 時，ATA 閘道就會使用新的 URL 來存取 ATA 中心。 ATA 閘道連線到 ATA 中心服務之後，將會提取最新的設定，並將僅有 ATA 主控台的新 URL。 
+1. 在所有 ATA 閘道皆已使用更新的設定同步後，請在 [中心設定] 頁面中按一下 [啟動] 按鈕來啟動新的 URL。 當您啟動新 URL 時，ATA 閘道就會使用新的 URL 來存取 ATA 中心。 ATA 閘道連線到 ATA 中心服務之後，將會提取最新的設定，並將僅有 ATA 主控台的新 URL。 
 
     ![啟動憑證](media/center-activation.png)
 
@@ -72,7 +70,7 @@ ms.locfileid: "90912881"
 
 1. 在目前的憑證到期之前，建立新的憑證並確認將新憑證安裝在 ATA 中心伺服器上。 <br></br>建議您從內部憑證授權單位選擇憑證，但也可以建立新的自我簽署憑證。 如需詳細資訊，請參閱 [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps&preserve-view=true) \(英文\)。
 
-1. 在 ATA 設定中，於 [中心]**** 下選取新建立的憑證。 此時 ATA 中心服務仍然繫結至原始憑證。 
+1. 在 ATA 設定中，於 [中心] 下選取新建立的憑證。 此時 ATA 中心服務仍然繫結至原始憑證。 
 
     ![變更 ATA 組態](media/change-center-config.png)
 

@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b343d5a708791de4658389985423f104e3f57762
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 11184c7bea435ae1168deb810ec54ec163d990f5
+ms.sourcegitcommit: 38266d01b28ea6b084687b9bc3c4aa18e2dbb3b7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "94846691"
+ms.locfileid: "94851221"
 ---
 # <a name="product-long-security-alerts"></a>[!INCLUDE [Product long](includes/product-long.md)] 安全性警示
 
@@ -39,7 +39,7 @@ ms.locfileid: "94846691"
 
 下表列出警示名稱，以及其對應的唯一外部識別碼與其 Microsoft Cloud App Security 警示識別碼。 搭配指令碼或自動化使用時，Microsoft 建議使用警示外部識別碼來取代警示名稱，因為只有安全性警示外部識別碼具有永久性且不會變更。
 
-# <a name="external-ids"></a>[外部識別碼](#tab/external)
+### <a name="external-ids"></a>[外部識別碼](#tab/external)
 
 > [!div class="mx-tdBreakAll"]
 > |安全性警訊名稱|唯一外部識別碼|嚴重性|MITRE ATT&CK Matrix&trade;|
@@ -84,8 +84,7 @@ ms.locfileid: "94846691"
 > |[使用者與群組成員資格偵察 (SAMR)](reconnaissance-alerts.md#user-and-group-membership-reconnaissance-samr-external-id-2021)|2021|中型|探索|
 > |[使用者和 IP 位址偵察 (SMB)](reconnaissance-alerts.md#user-and-ip-address-reconnaissance-smb-external-id-2012)|2012|中型|探索|
 
-
-# <a name="cloud-app-security-ids"></a>[Cloud App Security 識別碼](#tab/cloud-app-security)
+### <a name="cloud-app-security-ids"></a>[Cloud App Security 識別碼](#tab/cloud-app-security)
 
 > [!div class="mx-tdBreakAll"]
 > |安全性警訊名稱|Cloud App Security 警示識別碼|
@@ -132,6 +131,8 @@ ms.locfileid: "94846691"
 
 <!-- FROM TOP TABLE |[Suspected over-pass-the-hash attack (encryption downgrade)](lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|2008|Medium|Lateral movement|-->
 <!-- FROM BOTTOM TABLE |[Suspected over-pass-the-hash attack (encryption downgrade)](lateral-movement-alerts.md#suspected-overpass-the-hash-attack-encryption-downgrade-external-id-2008)|ALERT_EXTERNAL_AATP_OVERPASS_THE_HASH_ENCRYPTION_DOWNGRADE_SECURITY_ALERT|-->
+
+---
 
 > [!NOTE]
 > 若要停用任何安全性警示，請連絡支援人員。

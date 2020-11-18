@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9e1bfe428a466e4870613798e4af116f27d63647
-ms.sourcegitcommit: 218ba562a2a109ff456b011004530f503a4e82c6
+ms.openlocfilehash: fb97959f9cffe0e80cb0d273e061a13e6b809f83
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93342499"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847763"
 ---
-# <a name="configure-product-long-to-make-remote-calls-to-sam"></a>設定 [!INCLUDE [Product long](includes/product-long.md)] 以對 SAM 進行遠端呼叫
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
+# <a name="configure-product-long-to-make-remote-calls-to-sam"></a>設定[!INCLUDE [Product long](includes/product-long.md)] 以對 SAM 發出遠端呼叫
 
 [!INCLUDE [Product long](includes/product-long.md)][橫向移動路徑](use-case-lateral-movement-path.md)偵測依賴于識別特定電腦上本機系統管理員的查詢。 這些查詢是使用 SAM-R 通訊協定執行，並使用在 [!INCLUDE [Product short](includes/product-short.md)] [!INCLUDE [Product short](includes/product-short.md)] 安裝步驟2期間建立的服務帳戶  [。連接到 AD](install-step2.md)。
 
@@ -49,4 +47,4 @@ ms.locfileid: "93342499"
 ## <a name="see-also"></a>另請參閱
 
 - [調查橫向移動路徑攻擊 [!INCLUDE [Product short](includes/product-short.md)]](use-case-lateral-movement-path.md)
-- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b9dcd871fecd855a35a530f57c020fba5f3d1347
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: ef931c90558ffaea1a24d8682cc8091a845aeea8
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275870"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847406"
 ---
 # <a name="change-product-long-portal-configuration---domain-connectivity-password"></a>變更 [!INCLUDE [Product long](includes/product-long.md)] 入口網站設定-網域連線密碼
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="change-the-domain-connectivity-password"></a>變更網域連線密碼
 
@@ -37,7 +35,7 @@ ms.locfileid: "93275870"
 
 1. 選取工具列上的 [設定] 選項並選取 [組態]。
 
-    ![[!包含 [Product short] (include/product-short. md) ] configuration settings 圖示](media/config-menu.png)
+    ![[!INCLUDE [Product short](includes/product-short.md)] 組態設定圖示](media/config-menu.png)
 
 1. 選取 [目錄服務]。
 
@@ -48,12 +46,12 @@ ms.locfileid: "93275870"
     > [!NOTE]
     > 在此處輸入 Active Directory 使用者和密碼，而非 Azure Active Directory。
 
-1. 按一下 [檔案]  。
+1. 按一下 **[儲存]** 。
 
-1. 在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中， **Configuration** 選取 [設定]。
-1. 在 [ **系統** ] 下，選取 [ **感應器** ] 頁面，並檢查感應器的狀態。
+1. 在[!INCLUDE [Product short](includes/product-short.md)] 中，選取 [設定]。
+1. 在 [ **系統**] 下，選取 [ **感應器** ] 頁面，並檢查感應器的狀態。
 
 ## <a name="see-also"></a>另請參閱
 
-- [與 Microsoft Defender for Endpoint 整合](integrate-mde.md)
-- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)
+- [與端點的 Microsoft Defender 整合](integrate-mde.md)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8d55f682b8056900ea19fb2684fa322fdb100df3
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 5bdaec29f2b8eb6d9d62105d48a59fde7c578f05
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276217"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847780"
 ---
 # <a name="integrate-vpn"></a>整合 VPN
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Product long](includes/product-long.md)] 可以從 VPN 解決方案收集計量資訊。 設定了 ATA 之後，使用者的設定檔頁面會包含來自 VPN 連線的資訊，例如 IP 位址與連線的原始位置。 這提供使用者活動的額外資訊以及異常 VPN 連線的新增偵測，使調查程序更完整。 將外部 IP 位址解析為位置的呼叫是匿名的。 不會在此呼叫中傳送個人識別資訊。
 
@@ -38,7 +36,7 @@ ms.locfileid: "93276217"
 - 開啟 [!INCLUDE [Product short](includes/product-short.md)] 感應器和/或獨立感應器上的埠 UDP 1813 [!INCLUDE [Product short](includes/product-short.md)] 。
 
 > [!NOTE]
-> 藉由啟用 **Radius 帳戶** 處理， [!INCLUDE [Product short](includes/product-short.md)] 感應器將會啟用預先布建的 Windows 防火牆原則（稱為 **[!INCLUDE [Product long](includes/product-long.md)] 感應器** ），以允許埠 UDP 1813 上的連入 Radius 帳戶處理。
+> 藉由啟用 **Radius 帳戶** 處理， [!INCLUDE [Product short](includes/product-short.md)] 感應器將會啟用預先布建的 Windows 防火牆原則（稱為 **[!INCLUDE [Product long](includes/product-long.md)] 感應器**），以允許埠 UDP 1813 上的連入 Radius 帳戶處理。
 
 下列範例會使用 Microsoft 路由及遠端存取伺服器 (RRAS) 來描述 VPN 設定程序。
 
@@ -64,7 +62,7 @@ ms.locfileid: "93276217"
 
 若要在中設定 VPN 資料 [!INCLUDE [Product short](includes/product-short.md)] ：
 
-1. 在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中，按一下 [設定] 齒輪，然後按一下 [ **VPN** ]。
+1. 在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中，按一下 [設定] 齒輪，然後按一下 [ **VPN**]。
 1. 開啟 [Radius 帳戶處理]，然後輸入先前在 RRAS VPN 伺服器上設定的 [共用祕密]。 然後按一下 [儲存]。
 
     ![設定 [！包含 [Product short] (include/product-short. md) ] VPN](media/vpn-radius.png)
@@ -75,7 +73,7 @@ ms.locfileid: "93276217"
 
 ## <a name="see-also"></a>另請參閱
 
-- [[!INCLUDE [Product short](includes/product-short.md)] 調整大小工具](https://aka.ms/aatpsizingtool)
+- [[!INCLUDE [Product short](includes/product-short.md)] 大小調整工具](https://aka.ms/aatpsizingtool) \(英文\)
 - [設定事件收集](configure-event-collection.md)
 - [[!INCLUDE [Product short](includes/product-short.md)] 先決條件](prerequisites.md)
-- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ad6604b3502cde05b88598a286407778a2e03787
-ms.sourcegitcommit: c5f63d621f4f1e875f8c24adc2bd4770e07e0a62
+ms.openlocfilehash: fd2d06ad49756a0a1b78cd055546b5db64bb0940
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94558248"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848171"
 ---
 # <a name="configure-windows-event-collection"></a>設定 Windows 事件集合
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Product long](includes/product-long.md)] 偵測仰賴特定的 Windows 事件記錄項目來增強某些偵測，並提供額外資訊，包括特定動作的執行者 (例如 NTLM 登入)、安全性群組的修改內容與類似事件。 若要正確稽核事件並將其包含在 Windows 事件記錄檔中，則網域控制站需要正確的進階稽核原則設定。 不正確的進階稽核原則設定可能會造成所需的事件未記錄於事件記錄檔中，並導致[!INCLUDE [Product short](includes/product-short.md)] 涵蓋範圍不完整。
 

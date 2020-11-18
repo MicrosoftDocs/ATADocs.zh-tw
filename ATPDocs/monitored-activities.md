@@ -11,23 +11,21 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d69fef506f2f1e787039a3b2af1b35b81a3504fc
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: f8d7237d3202ed4b0645b92d61f37cc7c89085da
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93274843"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847219"
 ---
 # <a name="product-long-monitored-activities"></a>[!INCLUDE [Product long](includes/product-long.md)] 所監視的活動
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
 > 此頁面所述的[!INCLUDE [Product long](includes/product-long.md)] 功能也可使用新的[入口網站](https://portal.cloudappsecurity.com)來存取。
 
 [!INCLUDE [Product long](includes/product-long.md)] 會監視從您組織的 Active Directory 產生的資訊、網路活動與事件活動，來偵測可疑活動。 監視的活動資訊可讓[!INCLUDE [Product short](includes/product-short.md)] 協助您判斷每個潛在威脅的有效性，並正確進行分級與回應。
 
-在確實為有效威脅 (或 **確判為真** ) 的情況下，[!INCLUDE [Product short](includes/product-short.md)] 可讓您探索每個事件的缺口範圍、調查涉及的實體有哪些，以及判斷如何予以補救。
+在確實為有效威脅 (或 **確判為真**) 的情況下，[!INCLUDE [Product short](includes/product-short.md)] 可讓您探索每個事件的缺口範圍、調查涉及的實體有哪些，以及判斷如何予以補救。
 
 由[!INCLUDE [Product short](includes/product-short.md)] 所監視的資訊會以活動的形式呈現。 [!INCLUDE [Product short](includes/product-short.md)] 目前支援監視下列活動類型：
 
@@ -79,7 +77,7 @@ ms.locfileid: "93274843"
 |受監視的活動|說明|
 |---------------------|------------------|
 |目錄服務複寫|使用者嘗試複寫目錄服務。|
-|DNS 查詢|對網域控制站執行的查詢使用者類型 ( **AXFR** 、 **TXT** 、 **MX** 、 **NS** 、 **SRV** 、 **ANY** 、 **DNSKEY** )。|
+|DNS 查詢|對網域控制站執行的查詢使用者類型 (**AXFR**、**TXT**、**MX**、**NS**、**SRV**、**ANY**、**DNSKEY**)。|
 |私人資料擷取|使用者嘗試/成功使用 LSARPC 通訊協定查詢私人資料。|
 |服務建立|使用者嘗試在遠端對遠端電腦建立特定服務。|
 |SMB 工作階段列舉|使用者嘗試列舉網域控制站上已開啟 SMB 工作階段的所有使用者。|

@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 627c30146e2543501da9d5970c9c8a087e3320bf
-ms.sourcegitcommit: c5f63d621f4f1e875f8c24adc2bd4770e07e0a62
+ms.openlocfilehash: 7624f2d959e37b2bf88d4b14c31c5a6f1ddd6853
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94558231"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848222"
 ---
 # <a name="configure-event-collection"></a>設定事件收集
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 為增強偵測功能，[!INCLUDE [Product long](includes/product-long.md)] 需要列於[設定事件收集](configure-windows-event-collection.md#configure-event-collection)中的 Windows 事件。 [!INCLUDE [Product short](includes/product-short.md)] 感應器可以自動讀取這些事件；如果沒有部署[!INCLUDE [Product short](includes/product-short.md)] 感應器，則有兩種方法可以將其轉送到[!INCLUDE [Product short](includes/product-short.md)] 獨立感應器：一種是將[!INCLUDE [Product short](includes/product-short.md)] 獨立感應器設定為接聽 SIEM 事件，另一種是[設定 Windows 事件轉送](configure-event-forwarding.md)。
 
@@ -36,7 +34,7 @@ ms.locfileid: "94558231"
 設定 Windows 事件 8004 收集：
 
 1. 瀏覽至：電腦設定\原則\Windows 設定\安全性設定\本機原則\安全性選項
-1. 設定 **網域群組原則** ，如下所示：
+1. 設定 **網域群組原則**，如下所示：
     - 網路安全性：限制 NTLM:限制 NTLM: 送往遠端伺服器的連出 NTLM 流量 = **全部稽核**
     - 網路安全性:限制 NTLM:限制 NTLM: 稽核這個網域的 NTLM 驗證 = **全部啟用**
     - 網路安全性:限制 NTLM:限制 NTLM: 稽核連入 NTLM 流量 = **啟用所有帳戶的稽核**

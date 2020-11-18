@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: df369b2a718b1aa2cb552bb42712a6b36275e2ee
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 40175ace8046ae7b0edb77f4cac6e036eed997e7
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276664"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848341"
 ---
 # <a name="security-assessment-riskiest-lateral-movement-paths-lmp"></a>安全性評估：風險最高的橫向移動路徑 (LMP)
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="what-are-risky-lateral-movement-paths"></a>有風險的橫向移動路徑是指什麼？
 
@@ -56,4 +54,4 @@ ms.locfileid: "93276664"
 ## <a name="see-also"></a>另請參閱
 
 - [[!INCLUDE [Product short](includes/product-short.md)] Cloud App Security 中的活動篩選](activities-filtering-mcas.md)
-- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

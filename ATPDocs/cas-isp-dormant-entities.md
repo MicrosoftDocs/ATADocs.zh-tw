@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: bd5facbf0cc6616a8467d0eb1b33c7603debabc8
-ms.sourcegitcommit: 8cb9839a67fce42921f7a24564fddf15e503bdea
+ms.openlocfilehash: afadc7b031a71d5441bda1bd186bfd6aa66fe629
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93278577"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848443"
 ---
-# <a name="security-assessment-dormant-entities-in-sensitive-groups"></a>安全性評估： **從敏感性群組中移除休眠實體**
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
+# <a name="security-assessment-dormant-entities-in-sensitive-groups"></a>安全性評估：**從敏感性群組中移除休眠實體**
 
 ## <a name="what-are-sensitive-dormant-entities"></a>什麼是 **敏感性** 休眠實體？
 
@@ -48,4 +46,4 @@ ms.locfileid: "93278577"
 ## <a name="see-also"></a>另請參閱
 
 - [[!INCLUDE [Product short](includes/product-short.md)] Cloud App Security 中的活動篩選](activities-filtering-mcas.md)
-- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

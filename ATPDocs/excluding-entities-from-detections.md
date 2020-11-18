@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e87d71ead236d36e032a43c825980f98f7f15eb4
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: e0f7f1d21132aadba7fc6b3719baf3d290e8d2fb
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277179"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848596"
 ---
 # <a name="excluding-entities-from-detections"></a>從偵測中排除實體
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文說明如何從觸發警示中排除實體。 排除某些實體可減少良性確判，同時確保您能攔截到確判。 為了避免[!INCLUDE [Product long](includes/product-long.md)] 針對來自特定使用者，屬於您平常企業營運一部分的活動發出不必要的警示，您可以將特定實體設為靜音或排除，以避免引發警示。 此外，預設會排除某些常用實體。
 
@@ -36,12 +34,12 @@ ms.locfileid: "93277179"
 
 有兩種方式可手動排除實體，一種是直接透過安全性警訊，一種是透過 [設定] 頁面上的 [排除項目] 索引標籤。
 
-- **透過安全性警訊** ：在活動時間軸中，當您收到 **允許** 頻繁執行特定活動之使用者、電腦或 IP 位址的活動警示時，請執行下列步驟：
+- **透過安全性警訊**：在活動時間軸中，當您收到 **允許** 頻繁執行特定活動之使用者、電腦或 IP 位址的活動警示時，請執行下列步驟：
   - 在該列末端的三個點上按一下按右鍵，開啟該實體的安全性警訊，並選取 [關閉並排除]  。 如此會將使用者、電腦或 IP 位址，新增到該安全性警訊的排除項目清單中。 如此會關閉安全性警訊，且警示將不會繼續列於 **警示時間軸** 中的 **未結案** 事件清單。
 
     ![排除實體](media/exclude-in-sa.png)
 
-- **從 [設定] 頁面** ：若要檢閱或修改任何排除項目：請在 [設定] > [偵測] 下，按一下 [排除]，然後選取要套用排除的安全性警示，例如 [DNS 偵察]。
+- **從 [設定] 頁面**：若要檢閱或修改任何排除項目：請在 [設定] > [偵測] 下，按一下 [排除]，然後選取要套用排除的安全性警示，例如 [DNS 偵察]。
 
     ![排除設定](media/exclusions.png)
 
@@ -49,7 +47,7 @@ ms.locfileid: "93277179"
 
 若要從 [排除項目]  設定中移除實體：請按一下實體名稱旁的減號，然後按一下頁面底部的 [儲存]  。
 
-建議您只有在取得該特定類型的警示， *且* 判斷它們為良性確判之後，才將排除項目新增至偵測中。
+建議您只有在取得該特定類型的警示，*且* 判斷它們為良性確判之後，才將排除項目新增至偵測中。
 
 > [!NOTE]
 > 為了保護之故，並不是所有的偵測都可設定排除項目。

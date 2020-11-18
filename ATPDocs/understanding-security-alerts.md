@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ba5adecd1812d95f043d520773b1006a6e75b5b9
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 27df0fb3be637b2a3390df9378f68b2db9a10b8d
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277779"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848902"
 ---
 # <a name="understanding-security-alerts"></a>了解安全性警訊
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Product long](includes/product-long.md)] 安全性警示會以清晰的語言與圖片說明在您網路上找到的可疑活動，以及涉及威脅的執行者與電腦。 警訊會以嚴重性進行分級，以色彩劃分使其更輕易地以視覺方式篩選，且依威脅階段整理。 所有警訊的設計目的都是為了讓您更快了解網路的當前情形。 包含涉及使用者和電腦直接連結的警示辨識項清單，可協助您輕易且直接地進行調查。
 
@@ -120,11 +118,11 @@ ms.locfileid: "93277779"
 
 ### <a name="related-entities"></a>相關的實體
 
-在各警訊中，最後一個索引標籤會提供 **相關的實體** 。 相關的實體為涉及可疑活動的所有實體，且與他們在警訊中扮演的「角色」一致。 每個實體都有兩個 JSON 檔案，分別為唯一的實體 JSON 及唯一的實體設定檔 JSON。 若要深入了解實體及取得調查警訊的協助，請使用這兩個 JSON 檔案。
+在各警訊中，最後一個索引標籤會提供 **相關的實體**。 相關的實體為涉及可疑活動的所有實體，且與他們在警訊中扮演的「角色」一致。 每個實體都有兩個 JSON 檔案，分別為唯一的實體 JSON 及唯一的實體設定檔 JSON。 若要深入了解實體及取得調查警訊的協助，請使用這兩個 JSON 檔案。
 
 **唯一的實體 JSON**
 
-包含[!INCLUDE [Product short](includes/product-short.md)] 從 Active Directory 了解到的帳戶相關資料。 其中包含「辨別名稱」、 *SID* 、 *LockoutTime* 與 *PasswordExpiryTime* 等所有屬性。 若為使用者帳戶，其中會包含 *Department* 、 *Mail* 及 *PhoneNumber* 等資料。 針對電腦帳戶，其中會包含 *OperatingSystem* 、 *IsDomainController* 與 *DnsName* 等資料。
+包含[!INCLUDE [Product short](includes/product-short.md)] 從 Active Directory 了解到的帳戶相關資料。 其中包含「辨別名稱」、*SID*、*LockoutTime* 與 *PasswordExpiryTime* 等所有屬性。 若為使用者帳戶，其中會包含 *Department*、*Mail* 及 *PhoneNumber* 等資料。 針對電腦帳戶，其中會包含 *OperatingSystem*、*IsDomainController* 與 *DnsName* 等資料。
 
 **唯一的實體設定檔 JSON**
 
@@ -150,7 +148,7 @@ ms.locfileid: "93277779"
 - 可疑的 DCSync 攻擊 (目錄服務的複寫)
 - 網路對應偵察 (DNS)
 
-使用警訊下載報表中 [網路活動] 索引標籤中提供的 NNR 資訊，來判斷警訊是否為 **FP** 。 一旦出現 **FP** 警訊，獲得的 NNR 確定性結果通常會具有低可信度。
+使用警訊下載報表中 [網路活動] 索引標籤中提供的 NNR 資訊，來判斷警訊是否為 **FP**。 一旦出現 **FP** 警訊，獲得的 NNR 確定性結果通常會具有低可信度。
 
 下載兩個資料行中出現的報表資料：
 

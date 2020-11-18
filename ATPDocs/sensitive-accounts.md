@@ -11,20 +11,18 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 74e97750d25f48522d38246337682e0399d24c4d
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 3f32d974b9dcfb946279b14eebc116ca74b5b3f5
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93274472"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94846913"
 ---
 # <a name="working-with-sensitive-accounts"></a>使用機密帳戶
 
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
-
 ## <a name="sensitive-entities"></a>機密實體
 
-[!INCLUDE [Product long](includes/product-long.md)] 將下列群組清單視為 **敏感性** 。 屬於任一這些群組的任何實體都會被視為機密：
+[!INCLUDE [Product long](includes/product-long.md)] 將下列群組清單視為 **敏感性**。 屬於任一這些群組的任何實體都會被視為機密：
 
 - Administrators
 - Power Users
@@ -47,7 +45,7 @@ ms.locfileid: "93274472"
   > [!NOTE]
   > 在 2018 年 9 月之前，[!INCLUDE [Product short](includes/product-short.md)] 也會自動將遠端桌面使用者視為敏感性。 在此日期之後新增的遠端桌面實體或群組即不會再自動標示為機密，但此日期之前新增的遠端桌面實體或群組，可能仍會維持機密標示。 您現在可以手動變更這項機密設定。
 
-除了這些群組之外，[!INCLUDE [Product short](includes/product-short.md)] 還會識別下列高價值資產伺服器，並自動將其標記為 **敏感性** ：
+除了這些群組之外，[!INCLUDE [Product short](includes/product-short.md)] 還會識別下列高價值資產伺服器，並自動將其標記為 **敏感性**：
 
 - 憑證授權單位伺服器
 - DHCP 伺服器

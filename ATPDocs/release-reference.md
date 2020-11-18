@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 3f8554cf5d3c01d4d8d54a289255070fdef0e52d
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: e582ebdaeab6f2dd462e9519f19dd568a3e96ee0
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93274554"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94846860"
 ---
 # <a name="release-reference-of-product-long"></a>的發行參考 [!INCLUDE [Product long](includes/product-long.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文參考 [!INCLUDE [Product short](includes/product-short.md)] 先前 Azure 進階威脅防護的所有 (，也稱為 Azure ATP) 版本，直到 (和包含) 版本2.55 為止。 如 [!INCLUDE [Product short](includes/product-short.md)] (2.56 和更新版本的最新版本更新) ，請參閱[ [!INCLUDE [Product short](includes/product-short.md)] 新功能](whats-new.md)。
 
@@ -87,7 +85,7 @@ Azure ATP 文件的近期內容變更包括提供 Azure ATP 所有受監視活�
 
 發行日期：2018 年 10 月 21 日
 
-- 您現在可以從 Azure ATP 入口網站 [設定](integrate-mde.md#how-to-integrate-azure-atp-with-microsoft-defender-atp)畫面啟用/停用 **WD-ATP 整合** 。 (Azure ATP 使用者必須是 AAD 租用戶的全域或安全性系統管理員，才能使用這項功能)。
+- 您現在可以從 Azure ATP 入口網站 [設定](integrate-mde.md#how-to-integrate-azure-atp-with-microsoft-defender-atp)畫面啟用/停用 **WD-ATP 整合**。 (Azure ATP 使用者必須是 AAD 租用戶的全域或安全性系統管理員，才能使用這項功能)。
 
 - 此版本還包括內部感應器基礎結構的數項功能改進與 Bug 修正。
 
@@ -363,7 +361,7 @@ Azure ATP 包括新健康情況警示，讓您知道感應器是否過期超過�
 - **改良的調查**
   - Azure ATP 包含豐富的[實體設定檔](entity-profiles.md)。 實體設定檔為您提供專為深入調查使用者活動所設計的平台。這包括他們存取的資源、登入的電腦及其他更多。 實體設定檔也提供目錄資料，讓您識別往來實體的潛在橫向移動路徑，讓您深入了解您組織中的潛在漏洞。
 
-  - ATP 可讓您將實體手動標記為 *機密* ，以加強偵測和監視。 這項標記會影響很多 Azure ATP 偵測，例如機密群組修改偵測和[橫向移動路徑](use-case-lateral-movement-path.md)，這些都仰賴於視為機密的實體。
+  - ATP 可讓您將實體手動標記為 *機密*，以加強偵測和監視。 這項標記會影響很多 Azure ATP 偵測，例如機密群組修改偵測和[橫向移動路徑](use-case-lateral-movement-path.md)，這些都仰賴於視為機密的實體。
 
 - **可協助您調查的新報表**
   - [在純文字格式報表中公開的密碼](reports.md)可讓您偵測服務傳送的帳戶認證何時會以純文字傳送。 這可讓您調查服務，並改善您的網路安全性層級。 此報表會取代純文字的可疑活動警示。
@@ -376,8 +374,8 @@ Azure ATP 感應器基礎結構已改進效能：流量的彙總檢視可最佳�
 
 ## <a name="see-also"></a>另請參閱
 
-- [什麼是 [!INCLUDE [Product short](includes/product-short.md)] ？](what-is.md)
+- [什麼是 [!INCLUDE [Product short](includes/product-short.md)]？](what-is.md)
 - [常見問題集](technical-faq.md)
 - [[!INCLUDE [Product short](includes/product-short.md)] 先決條件](prerequisites.md)
-- [[!INCLUDE [Product short](includes/product-short.md)] 容量規劃](capacity-planning.md)
-- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)
+- [[!INCLUDE [Product short](includes/product-short.md)] 容量規畫](capacity-planning.md)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

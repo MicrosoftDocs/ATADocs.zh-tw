@@ -9,23 +9,21 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 06df6ebb9c5baa3ba2a568c78dd1ab175cdae9a8
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 27431aca85e794ecd31029b6286e3146f01fa7ec
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277006"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848494"
 ---
 # <a name="configure-product-long-sensor-settings"></a>設定 [!INCLUDE [Product long](includes/product-long.md)] 感應器設定
 
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
-
 在本文中，您將瞭解如何正確地設定 [!INCLUDE [Product long](includes/product-long.md)] 感應器設定，以開始查看資料。 您必須執行額外的設定和整合，才能利用的 [!INCLUDE [Product short](includes/product-short.md)] 完整功能。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
-- [連接至 Active Directory](install-step2.md)的[ [!INCLUDE [Product short](includes/product-short.md)] 實例](install-step1.md)。
-- 已下載的[ [!INCLUDE [Product short](includes/product-short.md)] 感應器安裝套件](install-step3.md)複本和存取金鑰。
+- 已[連線到 Active Directory](install-step2.md) 的[[!INCLUDE [Product short](includes/product-short.md)] 執行個體](install-step1.md)。
+- 您[](install-step3.md) 感應器安裝套件[!INCLUDE [Product short](includes/product-short.md)]的已下載複本，以及存取金鑰。
 
 ## <a name="configure-sensor-settings"></a>進行感應器設定
 
@@ -33,7 +31,7 @@ ms.locfileid: "93277006"
 
 1. 按一下 [ **啟動** ] 以開啟瀏覽器並登入 [!INCLUDE [Product short](includes/product-short.md)] 入口網站。
 
-1. 在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中，移 **Configuration** 至 [設定]，然後在 [ **系統** ] 底下選取 [ **感應器** ]。
+1. 在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中，移 **Configuration** 至 [設定]，然後在 [**系統**] 底下選取 [**感應器**]。
 
     ![[感應器] 頁面](media/sensor-config.png)
 
@@ -41,8 +39,8 @@ ms.locfileid: "93277006"
 
     ![進行感應器設定](media/sensor-config-2.png)
 
-    - **描述** ：輸入感應器的描述 [!INCLUDE [Product short](includes/product-short.md)] (選擇性) 。
-    - **網域控制站 (FQDN)** 獨立感應器所需的 ([!INCLUDE [Product short](includes/product-short.md)] ，無法變更 [!INCLUDE [Product short](includes/product-short.md)] 感應器) ：輸入網域控制站的完整 FQDN，然後按一下加號將它新增至清單。 例如， **dc01.contoso.com**
+    - **描述**：輸入感應器的描述 [!INCLUDE [Product short](includes/product-short.md)] (選擇性) 。
+    - **網域控制站 (FQDN)** 獨立感應器所需的 ([!INCLUDE [Product short](includes/product-short.md)] ，無法變更 [!INCLUDE [Product short](includes/product-short.md)] 感應器) ：輸入網域控制站的完整 FQDN，然後按一下加號將它新增至清單。 例如，**dc01.contoso.com**
 
     下列資訊適用於您在 **網域控制站** 清單中輸入的伺服器：
     - 所有透過獨立感應器透過埠鏡像監視流量的網域控制站 [!INCLUDE [Product short](includes/product-short.md)] ，都必須列在 [ **網域控制站** ] 清單中。 如果網域控制站未列在 **網域控制站** 清單中，可能無法如預期般偵測可疑活動。
@@ -64,7 +62,7 @@ ms.locfileid: "93277006"
 1. 如果服務未啟動，請檢閱位於下列預設資料夾 "%programfiles%\Azure Advanced Threat Protection sensor\Version X\Logs" 中的 "Microsoft.Tri.sensor-Errors.log" 檔案。
 
     >[!NOTE]
-    > 經常更新的版本， [!INCLUDE [Product short](includes/product-short.md)] 若要檢查最新版本，請在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中，移至 [設定 **]，** 然後 [ **關於** ]。
+    > 經常更新的版本， [!INCLUDE [Product short](includes/product-short.md)] 若要檢查最新版本，請在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中，移至 [設定 **]，** 然後 [ **關於**]。
 
 1. 移至您的 [!INCLUDE [Product short](includes/product-short.md)] 實例 URL。 在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中，搜尋搜尋列中的某個內容，例如網域上的使用者或群組。
 
@@ -85,8 +83,8 @@ ms.locfileid: "93277006"
 
 - [Proxy 設定](configure-proxy.md)
 - [進階稽核原則](configure-windows-event-collection.md)
-- [設定 [!INCLUDE [Product short](includes/product-short.md)] 以對 SAM 進行遠端呼叫](install-step8-samr.md)
+- [設定[!INCLUDE [Product short](includes/product-short.md)] 以對 SAM 發出遠端呼叫](install-step8-samr.md)
 
 ## <a name="join-the-community"></a>加入社群
 
-有更多問題，或 [!INCLUDE [Product short](includes/product-short.md)] 與其他人討論和相關的安全性有興趣嗎？ 立即加入[ [!INCLUDE [Product short](includes/product-short.md)] 社區](https://aka.ms/MDIcommunity)！
+有更多問題或想與其他人討論[!INCLUDE [Product short](includes/product-short.md)] 與相關的安全性？ 立即加入[[!INCLUDE [Product short](includes/product-short.md)] 社群](https://aka.ms/MDIcommunity) \(英文\)！

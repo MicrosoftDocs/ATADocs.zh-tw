@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: eff9b785cb23db649615f11be6e713eed49f3b5d
-ms.sourcegitcommit: 931d463e793cd5710e7bc2bca13cd4ef669eb190
+ms.openlocfilehash: 70a316deaafec0c251c91defbc47ec5281eba617
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94580885"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848868"
 ---
 # <a name="using-product-long-with-microsoft-cloud-app-security"></a>使用 [!INCLUDE [Product long](includes/product-long.md)] with Microsoft Cloud App Security
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文旨在協助您瞭解並在搭配使用 Microsoft Cloud App Security 入口網站時，流覽增強的調查體驗 [!INCLUDE [Product long](includes/product-long.md)] 。
 
@@ -69,7 +67,7 @@ ms.locfileid: "94580885"
 
 ## <a name="alerts"></a>警示
 
-[!INCLUDE [Product short](includes/product-short.md)] 警示會顯示在 Cloud App Security **警示** 佇列內。 只有在使用 Cloud App Security 檢視警示時，才能使用其他警示篩選選項。 [!INCLUDE [Product short](includes/product-short.md)] 警示會使用應用程式篩選器進行篩選以 **Active Directory** 。
+[!INCLUDE [Product short](includes/product-short.md)] 警示會顯示在 Cloud App Security **警示** 佇列內。 只有在使用 Cloud App Security 檢視警示時，才能使用其他警示篩選選項。 [!INCLUDE [Product short](includes/product-short.md)] 警示會使用應用程式篩選器進行篩選以 **Active Directory**。
 
 ## <a name="alert-management"></a>警示管理
 

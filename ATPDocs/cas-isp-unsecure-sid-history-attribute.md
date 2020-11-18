@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 851a0c0db49a59b96a8f239a3b9a08f9e51819c5
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 5af86879b48f2d8159a78d5965fb53ff8373ae56
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276624"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848273"
 ---
 # <a name="security-assessment-unsecure-sid-history-attributes"></a>安全性評估：不安全的 SID History 屬性
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="what-is-an-unsecure-sid-history-attribute"></a>什麼是不安全的 SID History 屬性？
 
@@ -60,4 +58,4 @@ SID History 是支援[移轉案例](/previous-versions/windows/it-pro/windows-se
 ## <a name="see-also"></a>另請參閱
 
 - [[!INCLUDE [Product short](includes/product-short.md)] Cloud App Security 中的活動篩選](activities-filtering-mcas.md)
-- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

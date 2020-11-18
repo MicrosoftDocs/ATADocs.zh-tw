@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 479ca268e2db61bd1667005d2aa2a38603888f0b
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: c0dacdf37dbcc033a310fb4b0995ab8259db452f
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276396"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848086"
 ---
 # <a name="configure-port-mirroring"></a>設定連接埠鏡像
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 此文章僅適用於您部署[!INCLUDE [Product long](includes/product-long.md)] 獨立感應器 (而非[!INCLUDE [Product short](includes/product-short.md)] 感應器) 的情況。
 
@@ -29,7 +27,7 @@ ms.locfileid: "93276396"
 
 [!INCLUDE [Product short](includes/product-short.md)] 使用的主要資料來源是對進出網域控制站的網路流量進行的深度封包檢查。 為了讓[!INCLUDE [Product short](includes/product-short.md)] 看到網路流量，您必須設定連接埠鏡像或使用網路 TAP。
 
-若是連接埠鏡像，請為每個要監視的網域控制站設定 **連接埠鏡像** ，做為網路流量的 **來源** 。 一般而言，設定通訊埠鏡像必須與網路或虛擬化團隊合作。
+若是連接埠鏡像，請為每個要監視的網域控制站設定 **連接埠鏡像**，做為網路流量的 **來源**。 一般而言，設定通訊埠鏡像必須與網路或虛擬化團隊合作。
 如需詳細資訊，請參閱廠商的文件。
 
 您的網域控制站與[!INCLUDE [Product short](includes/product-short.md)] 獨立感應器可以是實體或虛擬的。 以下是連接埠鏡像的常用方法和一些考量。 如需詳細資訊，請參閱交換器或虛擬伺服器的產品文件。 您的交換器製造商有可能使用不同的術語。

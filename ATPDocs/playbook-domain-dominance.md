@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 76b24811cab5453bb462ec7ebe2d5477e2b6c072
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: bf1a3207fe44bee729d1120f71e1038e11e3e853
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93274912"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847304"
 ---
 # <a name="tutorial-domain-dominance-playbook"></a>教學課程：網域支配劇本
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 這個[!INCLUDE [Product long](includes/product-long.md)] 安全性警示四部分系列中的最後一個教學課程是網域支配劇本。 [!INCLUDE [Product short](includes/product-short.md)] 安全性警示實驗室的目的是要說明 **[!INCLUDE [Product short](includes/product-short.md)]** 對網路潛在攻擊的識別及偵測功能。 此實驗室會說明如何使用[!INCLUDE [Product short](includes/product-short.md)] 的「特徵」型功能，針對[!INCLUDE [Product short](includes/product-short.md)] 的一些「離散」偵測進行測試。 此教學課程不包括[!INCLUDE [Product short](includes/product-short.md)] 進階機器學習型、使用者型或實體型的行為偵測及警示。 這些類型的偵測和警示不包含在測試中，因為它們需要最多 30 天的學習期間，以及真正的網路流量。 如需有關此系列每個教學課程的詳細資訊，請參閱[[!INCLUDE [Product short](includes/product-short.md)] 安全性警示實驗室概觀](playbook-lab-overview.md)。
 
@@ -71,7 +69,7 @@ ms.locfileid: "93274912"
 
     ![使用遠端程式碼執行 (PsExec)，將新的使用者加入至網域控制站上的系統管理員群組](media/playbook-dominance-psexec_addtoadmins.png)
 
-1. 移至 **ContosoDC** 上的 [Active Directory 使用者和電腦 (ADUC)]，並尋找 **InsertedUser** 。
+1. 移至 **ContosoDC** 上的 [Active Directory 使用者和電腦 (ADUC)]，並尋找 **InsertedUser**。
 
 1. 以滑鼠右鍵按一下 [內容]，然後檢查成員資格。
 
@@ -101,7 +99,7 @@ VictimPC 電腦應該永遠不會對網域控制站執行遠端程式碼。
 
 Windows 使用資料保護應用程式開發介面 (DPAPI) 來安全地保護瀏覽器所儲存的密碼、加密檔案和其他敏感資料。 網域控制站會保留一個主要金鑰，該金鑰可用來解密已加入網域的 Windows 電腦上的 *所有* 密碼。
 
-我們將嘗試使用 **mimikatz** ，從網域控制站匯出主要金鑰。
+我們將嘗試使用 **mimikatz**，從網域控制站匯出主要金鑰。
 
 1. 對網域控制站執行下列命令：
 
@@ -125,11 +123,11 @@ Windows 使用資料保護應用程式開發介面 (DPAPI) 來安全地保護瀏
 
 惡意的複寫可讓攻擊者使用網域系統管理員 (或同等權限) 的認證複寫使用者資訊。 惡意的複寫基本上會允許攻擊者從遠端收集認證。 很明顯地，嘗試收集的最重要帳戶是 "krbtgt"，因為它是用來簽署所有 Kerberos 票證的主要金鑰。
 
-可讓攻擊者嘗試惡意複寫的兩個常見入侵工具集分別是 **Mimikatz** 與 Core Security 的 **Impacket** 。
+可讓攻擊者嘗試惡意複寫的兩個常見入侵工具集分別是 **Mimikatz** 與 Core Security 的 **Impacket**。
 
 #### <a name="mimikatz-lsadumpdcsync"></a>Mimikatz lsadump::dcsync
 
-從 **VictimPC** ，在 **SamirA** 的內容中，執行下列 Mimikatz 命令：
+從 **VictimPC**，在 **SamirA** 的內容中，執行下列 Mimikatz 命令：
 
 ```dos
 mimikatz.exe "lsadump::dcsync /domain:contoso.azure /user:krbtgt" "exit" >> c:\temp\ContosoDC_krbtgt-export.txt
@@ -147,11 +145,11 @@ mimikatz.exe "lsadump::dcsync /domain:contoso.azure /user:krbtgt" "exit" >> c:\t
 
 ### <a name="skeleton-key"></a>基本架構金鑰
 
-攻擊者使用的另一個網域支配方法稱為 **基本架構金鑰** 。 使用攻擊者建立的基本架構金鑰，攻擊者可以 *隨時* 偽裝成 *任何使用者* 。 在基本架構金鑰攻擊中，每位使用者仍然可以使用一般密碼，但是他們的每個帳戶也會提供一個主要密碼。 新的主要密碼或基本架構金鑰可對知道這項資訊的任何人開放帳戶的存取權。 在網域控制站上修補 LSASS.exe 處理程序可發動基本架構金鑰攻擊，進而強制使用者透過降級的加密類型進行驗證。
+攻擊者使用的另一個網域支配方法稱為 **基本架構金鑰**。 使用攻擊者建立的基本架構金鑰，攻擊者可以 *隨時* 偽裝成 *任何使用者*。 在基本架構金鑰攻擊中，每位使用者仍然可以使用一般密碼，但是他們的每個帳戶也會提供一個主要密碼。 新的主要密碼或基本架構金鑰可對知道這項資訊的任何人開放帳戶的存取權。 在網域控制站上修補 LSASS.exe 處理程序可發動基本架構金鑰攻擊，進而強制使用者透過降級的加密類型進行驗證。
 
 讓我們使用基本架構金鑰查看這種攻擊的運作方式：
 
-1. 使用我們之前所取得的 **SamirA** 認證，將 **mimikatz** 移動到 **ContosoDC** 。 請務必根據 DC 的架構類型 (64 位元與 32 位元)，推送正確的 **mimikatz.exe** 架構。 從 **mimikatz** 資料夾中，執行：
+1. 使用我們之前所取得的 **SamirA** 認證，將 **mimikatz** 移動到 **ContosoDC**。 請務必根據 DC 的架構類型 (64 位元與 32 位元)，推送正確的 **mimikatz.exe** 架構。 從 **mimikatz** 資料夾中，執行：
 
    ```dos
    xcopy mimikatz.exe \\ContosoDC\c$\temp
@@ -185,7 +183,7 @@ runas /user:ronhd@contoso.azure "notepad"
 runas /user:ronhd@contoso.azure "notepad"
 ```
 
-此命令會建立一個在 RonHD 的內容中執行的新處理程序 *notepad* 。 **基本架構金鑰可以針對 _任何_ 帳戶進行，包括服務帳戶和電腦帳戶。**
+此命令會建立一個在 RonHD 的內容中執行的新處理程序 *notepad*。 **基本架構金鑰可以針對 _任何_ 帳戶進行，包括服務帳戶和電腦帳戶。**
 
 > [!Important]
 > 請務必在執行基本架構金鑰攻擊之後，重新啟動 ContosoDC。 如果沒有這樣做，ContosoDC 上的 LSASS.exe 處理程序將會遭到修補並修改，進而將每個驗證要求降級至 RC4。
@@ -200,7 +198,7 @@ runas /user:ronhd@contoso.azure "notepad"
 
 ### <a name="golden-ticket---existing-user"></a>黃金票證 - 現有的使用者
 
-在攻擊者竊取「黃金票證」(在[這裡透過惡意複寫](#malicious-replication)所述的 "krbtgt" 帳戶) 之後，其便能以「如同自己是網域控制站一般」的方式簽署票證。 **Mimikatz** 、網域 SID，以及遭竊的 "krbtgt" 帳戶全部都是完成這種攻擊所必需。 我們不僅可以為使用者產生票證，還可以為甚至不存在的使用者產生票證。
+在攻擊者竊取「黃金票證」(在[這裡透過惡意複寫](#malicious-replication)所述的 "krbtgt" 帳戶) 之後，其便能以「如同自己是網域控制站一般」的方式簽署票證。 **Mimikatz**、網域 SID，以及遭竊的 "krbtgt" 帳戶全部都是完成這種攻擊所必需。 我們不僅可以為使用者產生票證，還可以為甚至不存在的使用者產生票證。
 
 1. 以 JeffL 的身分，在 **VictimPC** 上執行下列命令，以取得網域 SID：
 

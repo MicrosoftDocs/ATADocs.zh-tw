@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 7a665a20da3940b3146a007eea6ee75bd35d7930
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: a6b3a3ef5d16a3e92a4bcf6a8d52d96c9c4036ce
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93274050"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94846726"
 ---
 # <a name="validate-port-mirroring"></a>驗證連接埠鏡像
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 此文章僅適用於您部署[!INCLUDE [Product long](includes/product-long.md)] 獨立感應器 (而非[!INCLUDE [Product short](includes/product-short.md)] 感應器) 的情況。
 
@@ -46,7 +44,7 @@ ms.locfileid: "93274050"
 
         ![建立新的擷取索引標籤影像](media/port-mirroring-capture.png)
 
-1. 在 [顯示篩選器] 視窗中，輸入下列篩選： **KerberosV5 OR LDAP** ，然後按一下 [套用]  。
+1. 在 [顯示篩選器] 視窗中，輸入下列篩選：**KerberosV5 OR LDAP**，然後按一下 [套用]  。
 
     ![套用 KerberosV5 或 LDAP 篩選影像](media/port-mirroring-filter-settings.png)
 

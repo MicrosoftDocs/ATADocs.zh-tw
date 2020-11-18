@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: af05ee5bbd064e31b231ad36374b4c069d8f7cfc
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 20e02b3281480024b67a1ef5908d82586c11f955
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275394"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849012"
 ---
 # <a name="monitoring-your-domain-controller-coverage"></a>監視您的網域控制站涵蓋範圍
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 當第一個感應器在 [!INCLUDE [Product long](includes/product-long.md)] 您網路中的任何網域控制站上安裝並設定時，就會 [!INCLUDE [Product short](includes/product-short.md)] 開始監視網域控制站的環境。
 
@@ -30,7 +28,7 @@ ms.locfileid: "93275394"
 
 [!INCLUDE [Product short](includes/product-short.md)] 持續監視環境中引入未受監視的網域控制站，並報告這些控制器以協助您管理整個環境的涵蓋範圍。
 
-1. 若要檢查偵測到的受監視和未受監視網域控制站的狀態及其狀態，請移至入口網站的 [設定 **] 區域，** [!INCLUDE [Product short](includes/product-short.md)] 然後在 [ **系統** ] 區段下選取 [ **感應器** ]。
+1. 若要檢查偵測到的受監視和未受監視網域控制站的狀態及其狀態，請移至入口網站的 [設定 **] 區域，** [!INCLUDE [Product short](includes/product-short.md)] 然後在 [ **系統** ] 區段下選取 [ **感應器**]。
 
     ![[!包含 [Product short] (include/product-short. md) ] 感應器狀態監視](media/sensors-status-monitoring.png)
 
@@ -38,7 +36,7 @@ ms.locfileid: "93275394"
 
 網域控制站涵蓋範圍 Excel 下載會為您組織中偵測到的所有控制站提供以下資訊：
 
-|標題|描述|
+|標題|說明|
 |----|----|
 |Hostname (主機名稱)|電腦名稱|
 |網域名稱|網域名稱|
@@ -52,7 +50,7 @@ ms.locfileid: "93275394"
 
 管理您的各種感應器與網域控制站可能是一個挑戰。 為了更輕鬆地尋找和識別，可以使用 [感應器] 清單中的搜尋功能來搜尋網域控制站 [!INCLUDE [Product short](includes/product-short.md)] 。
 
-1. 若要搜尋您的網域控制站，請移至入口網站的 [設定 **] 區域，** [!INCLUDE [Product short](includes/product-short.md)] 然後在 [ **系統** ] 區段中選取 [ **感應器** ]。
+1. 若要搜尋您的網域控制站，請移至入口網站的 [設定 **] 區域，** [!INCLUDE [Product short](includes/product-short.md)] 然後在 [ **系統** ] 區段中選取 [ **感應器**]。
 1. 在網域控制器表格清單中的 [網域控制器] 欄中選取篩選選項。
 1. 輸入您要搜尋的名稱。 目前搜尋欄位中不支援萬用字元。
 
@@ -63,7 +61,7 @@ ms.locfileid: "93275394"
 
 ## <a name="see-also"></a>另請參閱
 
-- [[!INCLUDE [Product short](includes/product-short.md)] 建築](architecture.md)
+- [[!INCLUDE [Product short](includes/product-short.md)] 架構](architecture.md)
 - [設定 [!INCLUDE [Product short](includes/product-short.md)] 感應器](install-step5.md)
 - [多重樹系支援](multi-forest.md)
-- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

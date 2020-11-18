@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 4fb7bf73ed996007e3a3c84b568afe373d822fd6
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: e8086ccc3771ec4c8bbc2121083711e29063e2a5
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277088"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848563"
 ---
 # <a name="understanding-product-long-sensor-health-alerts"></a>了解[!INCLUDE [Product long](includes/product-long.md)] 感應器健康情況警示
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 當您的[!INCLUDE [Product long](includes/product-long.md)] 執行個體發生問題時，[!INCLUDE [Product short](includes/product-short.md)] 健康情況中心會透過發出健康情況警示來讓您知道。 此文章描述每個元件的所有健康情況警示，並列出原因與解決問題所需的步驟。
 
@@ -40,7 +38,7 @@ ms.locfileid: "93277088"
 
 |警示|說明|解決方案|嚴重性|
 |----|----|----|----|
-|目錄服務使用者帳戶的認證不正確。|這會影響感應器使用 LDAP 查詢對網域控制站偵測活動的能力。|- 針對 **標準** AD 帳戶：確認 [目錄服務] 設定頁面中的使用者名稱、密碼與網域是正確的。<br>- 針對 **群組受管理的服務帳戶** ：確認 [目錄服務] 設定頁面中的使用者名稱與網域是正確的。 此外，請檢查 [連線到您的 Active Directory 樹系](install-step2.md#prerequisites)頁面上所述的所有其他 **gMSA 帳戶** 先決條件。|中型|
+|目錄服務使用者帳戶的認證不正確。|這會影響感應器使用 LDAP 查詢對網域控制站偵測活動的能力。|- 針對 **標準** AD 帳戶：確認 [目錄服務] 設定頁面中的使用者名稱、密碼與網域是正確的。<br>- 針對 **群組受管理的服務帳戶**：確認 [目錄服務] 設定頁面中的使用者名稱與網域是正確的。 此外，請檢查 [連線到您的 Active Directory 樹系](install-step2.md#prerequisites)頁面上所述的所有其他 **gMSA 帳戶** 先決條件。|中型|
 
 ## <a name="low-success-rate-of-active-name-resolution"></a>低成功率的主動名稱解析
 

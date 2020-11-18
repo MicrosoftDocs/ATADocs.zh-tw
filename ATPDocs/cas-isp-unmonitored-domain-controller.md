@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ffa62906d0c4f8a40c1beb388e497ed12ee41733
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: f3cf20aed80167b581a78fea5306916578bbd4c6
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276645"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848324"
 ---
 # <a name="security-assessment-unmonitored-domain-controllers"></a>安全性評估：未受監視的網域控制站
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="what-are-unmonitored-domain-controllers"></a>什麼是未受監視的網域控制站？
 
@@ -44,4 +42,4 @@ ms.locfileid: "93276645"
 ## <a name="see-also"></a>另請參閱
 
 - [監視您的網域控制站涵蓋範圍](sensor-monitoring.md)
-- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

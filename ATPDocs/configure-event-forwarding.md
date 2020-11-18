@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6addbfe12b8c7bf56274cea0e185e2b45d2149aa
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 8f30530929793bb338c7202eeedebc47b883e6c0
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277364"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848681"
 ---
 # <a name="configuring-windows-event-forwarding"></a>設定 Windows 事件轉送
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
 > [!INCLUDE [Product long](includes/product-long.md)] 感應器會自動在本機讀取事件，而不需要設定事件轉送。
@@ -42,7 +40,7 @@ ms.locfileid: "93277364"
 
 1. 開啟 [Active Directory 使用者和電腦]，瀏覽至 **BuiltIn** 資料夾，然後按兩下 [Event Log Readers]。
 1. 選取 [成員]。
-1. 如果未列出 [Network Service]，請按一下 [新增]，在 [輸入要選取的物件名稱] 欄位中輸入 **Network Service** 。 然後按一下 [檢查名稱]，再按兩次 [確定]。
+1. 如果未列出 [Network Service]，請按一下 [新增]，在 [輸入要選取的物件名稱] 欄位中輸入 **Network Service**。 然後按一下 [檢查名稱]，再按兩次 [確定]。
 
 在將 [網路服務] 新增到 [Event Log Readers] 群組後，請重新啟動網域控制站，變更才會生效。
 
@@ -51,7 +49,7 @@ ms.locfileid: "93277364"
 > [!Note]
 > 您可以建立這些設定的群組原則，並將群組原則套用到[!INCLUDE [Product short](includes/product-short.md)] 獨立感應器監視的每個網域控制站。 下列步驟修改網域控制站的本機原則。
 
-1. 在每個網域控制站上執行下列命令︰ *winrm quickconfig*
+1. 在每個網域控制站上執行下列命令︰*winrm quickconfig*
 1. 在命令提示字元中輸入 *gpedit.msc*
 1. 展開 [電腦設定] > [系統管理範本] > [Windows 元件] > [事件轉送]
 
@@ -66,7 +64,7 @@ ms.locfileid: "93277364"
     ![設定目標訂閱影像](media/wef-2-config-target-sub-manager.png)
 
 1. 按一下 [確定]。
-1. 在提升權限的命令提示字元中，輸入 *gpupdate /force* 。
+1. 在提升權限的命令提示字元中，輸入 *gpupdate /force*。
 
 **步驟 3：在[!INCLUDE [Product short](includes/product-short.md)] 獨立感應器** 上執行下列步驟
 

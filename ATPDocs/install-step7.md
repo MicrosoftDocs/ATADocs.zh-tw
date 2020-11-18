@@ -11,26 +11,24 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 68ed20a243a307992b2d11c633728bf34abf6302
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: fb4aa3b26c9026a62aac81bd1a88b50b95141ecd
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277025"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848477"
 ---
 # <a name="configure-detection-exclusions-and-honeytoken-accounts"></a>設定偵測排除範圍和 Honeytoken 帳戶
 
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
-
 [!INCLUDE [Product long](includes/product-long.md)] 可從一些偵測中排除特定 IP 位址或使用者。
 
-例如， **DNS 探查排除項目** 可以是一個使用 DNS 做為掃描機制的安全性掃描程式。 排除有助於 [!INCLUDE [Product short](includes/product-short.md)] 忽略這類掃描器。
+例如，**DNS 探查排除項目** 可以是一個使用 DNS 做為掃描機制的安全性掃描程式。 排除有助於 [!INCLUDE [Product short](includes/product-short.md)] 忽略這類掃描器。
 
 [!INCLUDE [Product short](includes/product-short.md)] 也可讓您設定 honeytoken 帳戶，以做為惡意執行者的陷阱-與這些 honeytoken 帳戶相關聯的任何驗證 (正常休眠) ，會觸發警示。
 
 若要設定，請依照下列步驟執行︰
 
-1. 從 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中，按一下設定圖示，然後選取 **Configuration** [設定]。
+1. 從[!INCLUDE [Product short](includes/product-short.md)] 入口網站，按一下設定圖示，然後選取 [設定]。
 
     ![[!包含 [Product short] (include/product-short. md) ] configuration settings](media/config-menu.png)
 
@@ -55,7 +53,7 @@ ms.locfileid: "93277025"
 
 ## <a name="see-also"></a>另請參閱
 
-- [[!INCLUDE [Product short](includes/product-short.md)] 調整大小工具](https://aka.ms/aatpsizingtool)
+- [[!INCLUDE [Product short](includes/product-short.md)] 大小調整工具](https://aka.ms/aatpsizingtool) \(英文\)
 - [設定事件收集](configure-event-collection.md)
 - [[!INCLUDE [Product short](includes/product-short.md)] 先決條件](prerequisites.md)
-- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

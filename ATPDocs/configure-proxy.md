@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 9b3aa953324e855cfe4aafb77ea6b1b1959b7f8c
-ms.sourcegitcommit: 90a332d67f62636b2d3a935f6bbdcbf24d74e6f0
+ms.openlocfilehash: 6b2b620895d0a59886a140ff340b6772744c6bac
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94551658"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848647"
 ---
 # <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-product-long-sensor"></a>為[!INCLUDE [Product long](includes/product-long.md)] 感應器設定端點 Proxy 與網際網路連線設定
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 每個[!INCLUDE [Product long](includes/product-long.md)] 感應器都需要連到 [!INCLUDE [Product short](includes/product-short.md)] 雲端服務的網際網路連線，才能報告感應器資料並成功運作。 在某些組織中，網域控制站不會直接連線到網際網路，而是透過 Web Proxy 連線來連線。
 
@@ -94,7 +92,7 @@ ms.locfileid: "94551658"
 
 - `<your-instance-name>sensorapi.atp.azure.com`- 針對感應器連線能力。 例如， `contoso-corpsensorapi.atp.azure.com`
 
-您也可以使用 Azure 服務標籤 ( **AzureAdvancedThreatProtection** ) 中的 IP 位址範圍來啟用對[!INCLUDE [Product short](includes/product-short.md)] 的存取。 如需服務標籤的詳細資訊，請參閱[虛擬網路服務標籤](/azure/virtual-network/service-tags-overview)或[下載服務標籤](https://www.microsoft.com/download/details.aspx?id=56519)檔案。
+您也可以使用 Azure 服務標籤 (**AzureAdvancedThreatProtection**) 中的 IP 位址範圍來啟用對[!INCLUDE [Product short](includes/product-short.md)] 的存取。 如需服務標籤的詳細資訊，請參閱[虛擬網路服務標籤](/azure/virtual-network/service-tags-overview)或[下載服務標籤](https://www.microsoft.com/download/details.aspx?id=56519)檔案。
 
 或者，若您需要更細微的控制，可考慮允許下表相關端點的流量：
 

@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 034948a5a355012aad387aa4d46e6e3c8d342dee
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 50f102c445c31969aede302fb37955cae85d626b
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277284"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848715"
 ---
 # <a name="security-assessment-unsecure-account-attributes"></a>安全性評估：不安全的帳戶屬性
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="what-are-unsecure-account-attributes"></a>不安全的帳戶屬性是指什麼？
 
@@ -59,4 +57,4 @@ ms.locfileid: "93277284"
 ## <a name="see-also"></a>另請參閱
 
 - [[!INCLUDE [Product short](includes/product-short.md)] Cloud App Security 中的活動篩選](activities-filtering-mcas.md)
-- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

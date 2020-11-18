@@ -10,16 +10,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ophir
 ms.suite: ems
-ms.openlocfilehash: 2ed900554e78f9792acf11972f519d2b5edae3a8
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 648d12d6135e5ab09319580142807f930e595eda
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93274571"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94846964"
 ---
 # <a name="product-long-data-security-and-privacy"></a>[!INCLUDE [Product long](includes/product-long.md)] 資料安全性和隱私權
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 

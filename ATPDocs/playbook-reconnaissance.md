@@ -10,16 +10,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 25f21451a61f3d41b5694e3b594769e4f8b1614b
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 93b3b0ecf72ae1b7f8b1ebaf3756433afd297dde
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275772"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847185"
 ---
 # <a name="tutorial-reconnaissance-playbook"></a>教學課程：偵察劇本
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 這個[!INCLUDE [Product long](includes/product-long.md)] 安全性警示四部分系列中的第二個教學課程是一個偵察劇本。 [!INCLUDE [Product short](includes/product-short.md)] 安全性警示實驗室的目的是要說明 **[!INCLUDE [Product short](includes/product-short.md)]** 對網路可疑活動與潛在攻擊的識別及偵測功能。 此劇本說明如何針對[!INCLUDE [Product short](includes/product-short.md)] 的一些「離散」偵測進行測試，並將焦點放在[!INCLUDE [Product short](includes/product-short.md)] 的「特徵」型功能上。 此劇本並不包括以進階機器學習為基礎的警示或偵測，或是使用者/實體型的行為偵測，因為它們需要一個最多有 30 天真實網路流量的學習期間。 如需有關此系列每個教學課程的詳細資訊，請參閱[[!INCLUDE [Product short](includes/product-short.md)] 安全性警示實驗室概觀](playbook-lab-overview.md)。
 
@@ -60,13 +58,13 @@ ms.locfileid: "93275772"
 
 為了測試 DNS 偵察，我們將使用原生命令列工具 *nslookup* 來起始 DNS 區域傳輸。 具有正確設定的 DNS 伺服器會拒絕這類查詢，而不會允許嘗試區域傳輸。
 
-使用已遭盜用的 JeffL 認證來登入 **VictimPC** 。 執行下列命令：
+使用已遭盜用的 JeffL 認證來登入 **VictimPC**。 執行下列命令：
 
 ```dos
 nslookup
 ```
 
-輸入 **server** ，然後輸入已安裝[!INCLUDE [Product short](includes/product-short.md)] 感應器之 DC 的 FQDN 或 IP 位址。
+輸入 **server**，然後輸入已安裝[!INCLUDE [Product short](includes/product-short.md)] 感應器之 DC 的 FQDN 或 IP 位址。
 
 ```nslookup
 server contosodc.contoso.azure
@@ -88,7 +86,7 @@ ls -d contoso.azure
 
 能夠檢視這類嘗試 (失敗或成功) 對網域威脅防護來說至關重要。 在最近安裝環境之後，您將必須移至 [邏輯活動]  時間表以查看偵測到的活動。
 
-在[!INCLUDE [Product short](includes/product-short.md)] 的 [搜尋] 中，輸入 **VictimPC** ，然後在其上按一下來檢視時間表。
+在[!INCLUDE [Product short](includes/product-short.md)] 的 [搜尋] 中，輸入 **VictimPC**，然後在其上按一下來檢視時間表。
 
 ![由[!INCLUDE [Product short](includes/product-short.md)] 偵測到的 DNS 偵察，概略檢視](media/playbook-recon-nslookupdetection1.png)
 
@@ -106,13 +104,13 @@ ls -d contoso.azure
 
 作為一個攻擊者，下一個偵察目標就是嘗試列舉「樹系」中的所有使用者和群組。 [!INCLUDE [Product short](includes/product-short.md)] 會抑制「目錄服務」列舉活動出現在您的「可疑活動」時間表中，直到 30 天學習期間完成為止。 在學習期間，[!INCLUDE [Product short](includes/product-short.md)] 會學習對您的網路來說，何謂正常及何謂異常。 在 30 天學習期間之後，異常的「目錄服務」列舉事件會叫用安全性警示。 在 30 天的學習期間，您可以使用您網路中實體的活動時間表，來查看[!INCLUDE [Product short](includes/product-short.md)] 對這些活動的偵測。 此實驗室會顯示[!INCLUDE [Product short](includes/product-short.md)] 對這些活動的偵測。
 
-為了示範常見的「目錄服務」偵察方法，我們將使用原生 Microsoft 二進位檔 *net* 。 在我們的嘗試之後，檢查 JeffL (我們的遭盜用使用者) 的「活動」時間表將會顯示[!INCLUDE [Product short](includes/product-short.md)] 正在偵測此活動。
+為了示範常見的「目錄服務」偵察方法，我們將使用原生 Microsoft 二進位檔 *net*。 在我們的嘗試之後，檢查 JeffL (我們的遭盜用使用者) 的「活動」時間表將會顯示[!INCLUDE [Product short](includes/product-short.md)] 正在偵測此活動。
 
 ### <a name="directory-service-enumeration-via-net-from-victimpc"></a>從 VictimPC 透過 *net* 進行目錄服務列舉
 
 任何已驗證的使用者或電腦都可能列舉網域中的其他使用者和群組。 大多數應用程式都必須要有此列舉能力才能正確運作。 我們的遭盜用使用者 JeffL 是一個無特殊權限的網域帳戶。 在這個模擬攻擊中，我們將確切了解即使是一個無特殊權限的網域帳戶，如何也仍然能夠提供寶貴的資料點給攻擊者。
 
-1. 從 **VictimPC** ，執行下列命令：
+1. 從 **VictimPC**，執行下列命令：
 
     ```dos
     net user /domain
@@ -128,7 +126,7 @@ ls -d contoso.azure
     net group /domain
     ```
 
-    輸出會顯示 Contoso.Azure 網域中的所有群組。 請注意一個不是預設群組的「安全性群組」： **Helpdesk** 。
+    輸出會顯示 Contoso.Azure 網域中的所有群組。 請注意一個不是預設群組的「安全性群組」：**Helpdesk**。
 
     ![列舉網域中的所有群組](media/playbook-recon-dsenumeration-netgroups.png)
 
@@ -140,7 +138,7 @@ ls -d contoso.azure
 
     ![列舉 Domain Admins 群組的所有成員](media/playbook-recon-dsenumeration-netdomainadmins.png)
 
-    作為一個攻擊者，我們已了解 Domain Admins 群組有兩個成員： **SamiraA** 和 **ContosoAdmin** (「網域控制站」的內建「系統管理員」)。 在知道我們的「網域」與「樹系」之間沒有任何安全性界限的情況下，我們的下一個躍進就是嘗試列舉 Enterprise Admins。
+    作為一個攻擊者，我們已了解 Domain Admins 群組有兩個成員：**SamiraA** 和 **ContosoAdmin** (「網域控制站」的內建「系統管理員」)。 在知道我們的「網域」與「樹系」之間沒有任何安全性界限的情況下，我們的下一個躍進就是嘗試列舉 Enterprise Admins。
 
 1. 若要嘗試列舉 Enterprise Admins，請執行下列命令：
 
@@ -168,7 +166,7 @@ ls -d contoso.azure
 
 許多活動都記錄在「邏輯活動」時間軸中，使得它成為可執行「數位鑑識調查與數位回應」(DFIR) 的主要功能。 甚至當初始偵測不是來自[!INCLUDE [Product short](includes/product-short.md)]，但卻是來自適用於端點的 Microsoft Defender 或 Microsoft 365 等時，您也可以看到活動。
 
-藉由查看 **ContosoDC 的頁面** ，我們還可以看到 JeffL 所登入的電腦。
+藉由查看 **ContosoDC 的頁面**，我們還可以看到 JeffL 所登入的電腦。
 
 ![JeffL 所登入的電腦](media/playbook-recon-dsenumeration-jeffvloggedin.png)
 

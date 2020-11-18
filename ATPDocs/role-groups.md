@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 269343e6cdc5ceba875d5b6de1c740415a862eca
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 9a3927c565f3b2e7173519c31cb3bfcde9eed2a7
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275310"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848987"
 ---
 # <a name="product-long-role-groups"></a>[!INCLUDE [Product long](includes/product-long.md)] 角色群組
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Product long](includes/product-long.md)] 提供以角色為基礎的安全性，根據組織的特定安全性和合規性需求來保護資料。 [!INCLUDE [Product short](includes/product-short.md)] 支援三種不同的角色：系統管理員、使用者和檢視器。
 
@@ -40,7 +38,7 @@ ms.locfileid: "93275310"
 
 ## <a name="types-of-product-short-security-groups"></a>[!INCLUDE [Product short](includes/product-short.md)]安全性群組的類型
 
-[!INCLUDE [Product short](includes/product-short.md)] 提供三種類型的安全性群組： Azure ATP *(實例名稱)* 系統管理員、Azure ATP (使用者) *實例* 名稱，以及 Azure ATP 檢視器 ( *實例名稱* ) 檢視器。 下表說明 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中每個角色可用的存取類型。 根據您指派的角色而定，入口網站中的各種畫面與功能表選項 [!INCLUDE [Product short](includes/product-short.md)] 無法供這些使用者使用，如下所示：
+[!INCLUDE [Product short](includes/product-short.md)] 提供三種類型的安全性群組： Azure ATP *(實例名稱)* 系統管理員、Azure ATP (使用者) *實例* 名稱，以及 Azure ATP 檢視器 (*實例名稱*) 檢視器。 下表說明 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中每個角色可用的存取類型。 根據您指派的角色而定，入口網站中的各種畫面與功能表選項 [!INCLUDE [Product short](includes/product-short.md)] 無法供這些使用者使用，如下所示：
 
 |活動 |) 系統管理員 Azure ATP *(實例名稱*|Azure ATP *(實例名稱)* 使用者|) 檢視器 Azure ATP *(實例名稱*|
 |----|----|----|----|
@@ -69,7 +67,7 @@ ms.locfileid: "93275310"
 
 ## <a name="see-also"></a>另請參閱
 
-- [[!INCLUDE [Product short](includes/product-short.md)] 調整大小工具](https://aka.ms/aatpsizingtool)
-- [[!INCLUDE [Product short](includes/product-short.md)] 建築](architecture.md)
-- [安裝 [!INCLUDE [Product short](includes/product-short.md)]](install-step1.md)
-- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)
+- [[!INCLUDE [Product short](includes/product-short.md)] 大小調整工具](https://aka.ms/aatpsizingtool) \(英文\)
+- [[!INCLUDE [Product short](includes/product-short.md)] 架構](architecture.md)
+- [安裝[!INCLUDE [Product short](includes/product-short.md)]](install-step1.md)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

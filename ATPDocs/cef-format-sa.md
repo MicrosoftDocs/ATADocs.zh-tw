@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: e2ac1109454e3bef9baec2197d4db7f73698ed6c
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: d8625b9d6b634399f61201dc3bb7dd9c956fe36f
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276501"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848239"
 ---
 # <a name="product-long-siem-log-reference"></a>[!INCLUDE [Product long](includes/product-long.md)] SIEM 記錄參考
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Product short](includes/product-short.md)] 可以將安全性警示與健康情況警示事件轉送到您的 SIEM。 警示與事件使用 CEF 格式。 此參考文章提供傳送到您 SIEM 的記錄範例。
 

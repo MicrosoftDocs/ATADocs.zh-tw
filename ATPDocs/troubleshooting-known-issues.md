@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d0c4bcc61c2b15ded71063f3b8c4058ce6dfcce7
-ms.sourcegitcommit: ac582a240e848ca12c80ac6104125a0f733b469e
+ms.openlocfilehash: fffb94b42e49280949dbdb67926841ebaea8ba2a
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93375551"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848919"
 ---
 # <a name="troubleshooting-product-long-known-issues"></a>針對 [!INCLUDE [Product long](includes/product-long.md)] 已知問題進行疑難排解
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="sensor-failure-communication-error"></a>感應器失敗通訊錯誤
 
@@ -38,7 +36,7 @@ System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> Syste
 
 ## <a name="proxy-authentication-problem-presents-as-a-licensing-error"></a>Proxy 驗證問題顯示為授權錯誤
 
-若您在感應器安裝期間收到下列錯誤： **感應器因授權問題而無法註冊** 。
+若您在感應器安裝期間收到下列錯誤：**感應器因授權問題而無法註冊**。
 
 **部署記錄項目：**
 
@@ -54,7 +52,7 @@ System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> Syste
 
 ## <a name="proxy-authentication-problem-presents-as-a-connection-error"></a>Proxy 驗證問題顯示為連線錯誤
 
-若您在感應器安裝期間收到下列錯誤： **感應器無法連線到服務。**
+若您在感應器安裝期間收到下列錯誤：**感應器無法連線到服務。**
 
 **原因：**
 
@@ -142,7 +140,7 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 
 ## <a name="multi-processor-group-mode"></a>多處理器群組模式
 
-若為 Windows 作業系統2008R2 和2012， [!INCLUDE [Product short](includes/product-short.md)] 則多處理器群組模式不支援感應器。
+針對 Windows 作業系統 2008 R2 與 2012，多處理器群組模式中不支援 [!INCLUDE [Product short](includes/product-short.md)] 感應器。
 
 建議的可能因應措施：
 
@@ -156,11 +154,11 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 
 ## <a name="vmware-virtual-machine-sensor-issue"></a>VMware 虛擬機器感應器問題
 
-如果您 [!INCLUDE [Product short](includes/product-short.md)] 在 VMware 虛擬機器上有感應器，您可能會收到健康情況警示， **表示某些網路流量未進行分析** 。 當 VMware 中的設定不相符時，就可能會發生此狀況。
+如果您 [!INCLUDE [Product short](includes/product-short.md)] 在 VMware 虛擬機器上有感應器，您可能會收到健康情況警示， **表示某些網路流量未進行分析**。 當 VMware 中的設定不相符時，就可能會發生此狀況。
 
 若要解決問題：
 
-在虛擬機器的 NIC 設定中，將下列項目設定為 [已停用]  ： **IPv4 TSO 卸載** 。
+在虛擬機器的 NIC 設定中，將下列項目設定為 [已停用]  ：**IPv4 TSO 卸載**。
 
  ![VMware 感應器問題](media/vm-sensor-issue.png)
 
@@ -178,7 +176,7 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 
 ## <a name="sensor-failed-to-retrieve-group-managed-service-account-gmsa-credentials"></a>感應器無法擷取群組受管理的服務帳戶 (gMSA) 認證
 
-如果您收到下列健康情況警示： **目錄服務使用者認證不正確**
+如果您收到下列健康情況警示：**目錄服務使用者認證不正確**
 
 **感應器記錄項目：**
 
@@ -211,7 +209,7 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 ## <a name="see-also"></a>另請參閱
 
 - [[!INCLUDE [Product short](includes/product-short.md)] 先決條件](prerequisites.md)
-- [[!INCLUDE [Product short](includes/product-short.md)] 容量規劃](capacity-planning.md)
+- [[!INCLUDE [Product short](includes/product-short.md)] 容量規畫](capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-forwarding.md)
-- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b0ba89e18e0e556f133e1591980daf425829bdde
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 973c78137edcd02aa926174c1d2a9bbffe15e81f
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93274503"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94846845"
 ---
 # <a name="product-long-readiness-guide"></a>[!INCLUDE [Product long](includes/product-long.md)] 就緒指南
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文提供可協助您開始使用的資源就緒藍圖清單 [!INCLUDE [Product long](includes/product-long.md)] 。
 
@@ -82,4 +80,4 @@ Channel 9：[Microsoft 安全性 Channel 9 頁面](https://channel9.msdn.com/Sho
 ## <a name="see-also"></a>另請參閱
 
 - [使用機密帳戶](sensitive-accounts.md)
-- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

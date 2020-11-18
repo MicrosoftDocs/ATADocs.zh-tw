@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: d0e059516346d5b2c832e5bd5ea73008b1f51082
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 50bb601a00396aefee99d5115b1eb8825e74e39c
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93278086"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848545"
 ---
 # <a name="integrate-product-long-with-microsoft-defender-for-endpoint"></a>[!INCLUDE [Product long](includes/product-long.md)]與 Microsoft Defender For Endpoint 整合
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Product long](includes/product-long.md)] 可讓您 [!INCLUDE [Product long](includes/product-long.md)] 與 Defender For Endpoint 整合，以取得更完整的威脅防護解決方案。 在 [!INCLUDE [Product short](includes/product-short.md)] 監視您網域控制站上的流量時，Defender For Endpoint 會監視您的端點，同時提供單一介面讓您可以保護您的環境。
 
@@ -59,18 +57,18 @@ ms.locfileid: "93278086"
 
 ## <a name="how-to-integrate-product-short-with-defender-for-endpoint"></a>如何 [!INCLUDE [Product short](includes/product-short.md)] 與 Defender For Endpoint 整合
 
-1. 在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中， **Configuration** 選取 [設定]。
+1. 在[!INCLUDE [Product short](includes/product-short.md)] 中，選取 [設定]。
 
     ![[!包含 [Product short] (include/product-short. md) ] 設定功能表](media/msde-configuration.png)
-1. 在 [設定] 清單中，選取 [ **Microsoft Defender For Endpoint** ]，並將 [整合切換] 設定為 [ **開啟** ]。
+1. 在 [設定] 清單中，選取 [ **Microsoft Defender For Endpoint** ]，並將 [整合切換] 設定為 [ **開啟**]。
 
     ![啟用 Windows Defender 整合](media/msde-enable-integration.png)
 
-1. 在 [Defender For Endpoint 入口網站](https://securitycenter.windows.com/preferences/advanced)中，移至 [ **設定** ]、[ **Advanced features** ]，並將 **[!INCLUDE [Product long](includes/product-long.md)] 整合** 設定為 [ **開啟** ]。
+1. 在 [Defender For Endpoint 入口網站](https://securitycenter.windows.com/preferences/advanced)中，移至 [**設定**]、[ **Advanced features** ]，並將 **[!INCLUDE [Product long](includes/product-long.md)] 整合** 設定為 [**開啟**]。
 
     ![Defender for Endpoint 啟用整合](media/msde-enable.png)
 
-1. 若要檢查整合狀態，請在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中，移至 [ **設定**  >  **Microsoft Defender 以進行端點整合** ]。 您可以查看整合狀態，若發生問題，您將會看到錯誤。
+1. 若要檢查整合狀態，請在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中，移至 [**設定**  >  **Microsoft Defender 以進行端點整合**]。 您可以查看整合狀態，若發生問題，您將會看到錯誤。
 
 ## <a name="how-it-works"></a>運作方式
 
@@ -96,7 +94,7 @@ ms.locfileid: "93278086"
 ## <a name="see-also"></a>另請參閱
 
 - [調查橫向移動路徑 [!INCLUDE [Product short](includes/product-short.md)]](use-case-lateral-movement-path.md)
-- [[!INCLUDE [Product short](includes/product-short.md)] 調整大小工具](https://aka.ms/aatpsizingtool)
-- [[!INCLUDE [Product short](includes/product-short.md)] 建築](architecture.md)
-- [安裝 [!INCLUDE [Product short](includes/product-short.md)]](install-step1.md)
-- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)
+- [[!INCLUDE [Product short](includes/product-short.md)] 大小調整工具](https://aka.ms/aatpsizingtool) \(英文\)
+- [[!INCLUDE [Product short](includes/product-short.md)] 架構](architecture.md)
+- [安裝[!INCLUDE [Product short](includes/product-short.md)]](install-step1.md)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

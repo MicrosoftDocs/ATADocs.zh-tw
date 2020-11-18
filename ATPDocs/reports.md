@@ -12,29 +12,27 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: 2c2d6b1a-fc8c-4ff7-b07d-64ce6159f84d
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: c54fdf3c0bb5497ff482c961214718771263e732
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 68c129e0c92c369bb666483dc17013c54a84e282
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275449"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849038"
 ---
 # <a name="product-long-reports"></a>[!INCLUDE [Product long](includes/product-long.md)] 報告
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Product long](includes/product-long.md)] 入口網站中的 [[!INCLUDE [Product short](includes/product-short.md)] 報告] 區段可讓您排程或立即產生並下載報告，為您提供系統與實體狀態資訊。 您可使用報告功能建立系統健全狀況、安全性警訊，以及在環境中偵測到之潛在橫向移動路徑的報告。
 
 若要存取報表頁面，請按一下功能表列中的報表圖示：![報表圖示](media/report-icon.png)。
 可用的報表包括：
 
-- **摘要報表** ：摘要報表提供系統中的狀態儀表板。 您可以檢視三個索引標籤：[摘要] 列出在您網路上偵測到的問題，[Open suspicious activities] \(開啟可疑活動\) 列出您應該處理的可疑活動，而 [Open health issues] \(開啟健康狀態問題\) 列出您應該處理的[!INCLUDE [Product short](includes/product-short.md)] 健康狀態問題。 列出的可疑活動和健康狀態問題會依類型細分。
+- **摘要報表**：摘要報表提供系統中的狀態儀表板。 您可以檢視三個索引標籤：[摘要] 列出在您網路上偵測到的問題，[Open suspicious activities] \(開啟可疑活動\) 列出您應該處理的可疑活動，而 [Open health issues] \(開啟健康狀態問題\) 列出您應該處理的[!INCLUDE [Product short](includes/product-short.md)] 健康狀態問題。 列出的可疑活動和健康狀態問題會依類型細分。
 
-- **敏感性群組的修改** ：此報表會列出對敏感性群組 (例如系統管理員，或手動標記的帳戶或群組) 所做的每次修改。 若您使用[!INCLUDE [Product short](includes/product-short.md)] 獨立感應器接收有關您敏感性群組的完整報告，必須先確定[事件會從您的網域控制站轉送至獨立感應器](configure-event-forwarding.md)。
+- **敏感性群組的修改**：此報表會列出對敏感性群組 (例如系統管理員，或手動標記的帳戶或群組) 所做的每次修改。 若您使用[!INCLUDE [Product short](includes/product-short.md)] 獨立感應器接收有關您敏感性群組的完整報告，必須先確定[事件會從您的網域控制站轉送至獨立感應器](configure-event-forwarding.md)。
 
-- **密碼以純文字格式公開** ：部分服務使用不安全的 LDAP 通訊協定，以純文字傳送帳戶認證。 即使是敏感性帳戶也可能會發生此情況。 監視網路流量的攻擊者可能會惡意攔截並重複使用這些認證。 此報告會列出[!INCLUDE [Product short](includes/product-short.md)] 偵測到以純文字傳送的所有來源電腦與帳戶密碼。
+- **密碼以純文字格式公開**：部分服務使用不安全的 LDAP 通訊協定，以純文字傳送帳戶認證。 即使是敏感性帳戶也可能會發生此情況。 監視網路流量的攻擊者可能會惡意攔截並重複使用這些認證。 此報告會列出[!INCLUDE [Product short](includes/product-short.md)] 偵測到以純文字傳送的所有來源電腦與帳戶密碼。
 
-- **敏感性帳戶的橫向移動路徑** ：此報告會列出透過橫向移動路徑公開的敏感性帳戶。 如需詳細資訊，請參閱[橫向移動路徑](use-case-lateral-movement-path.md)。 此報告會收集在您選取的報告期間中，偵測到的潛在橫向移動路徑。
+- **敏感性帳戶的橫向移動路徑**：此報告會列出透過橫向移動路徑公開的敏感性帳戶。 如需詳細資訊，請參閱[橫向移動路徑](use-case-lateral-movement-path.md)。 此報告會收集在您選取的報告期間中，偵測到的潛在橫向移動路徑。
 
 產生報表的方式有兩種：依需求，或排程報表定期傳送到您的電子郵件。
 

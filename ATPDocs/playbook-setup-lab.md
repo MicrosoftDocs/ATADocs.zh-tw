@@ -10,16 +10,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8adbc288f2512b6322797931b8fcb2a17649e8a4
-ms.sourcegitcommit: 8cb9839a67fce42921f7a24564fddf15e503bdea
+ms.openlocfilehash: e175744d29cac82c29dc1f072a145ee68770dcf7
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93278609"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847049"
 ---
 # <a name="tutorial-setup-a-product-long-security-alert-lab"></a>教學課程：設定[!INCLUDE [Product long](includes/product-long.md)] 安全性警示實驗室
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Product long](includes/product-long.md)] 安全性警示實驗室的目的是要說明 **[!INCLUDE [Product short](includes/product-short.md)]** 對網路可疑活動與潛在攻擊的識別及偵測功能。 這個四部分系列中的第一個教學課程會逐步引導您建立一個實驗室環境，以針對[!INCLUDE [Product short](includes/product-short.md)] 的「離散」偵測進行測試。 安全性警示實驗室的焦點是放在[!INCLUDE [Product short](includes/product-short.md)] 的「特徵型」功能上。 此實驗室並不包括進階機器學習、使用者或實體型的行為偵測，因為這些偵測需要一個最多有 30 天真實網路流量的學習期間。 如需有關此系列每個教學課程的詳細資訊，請參閱[[!INCLUDE [Product short](includes/product-short.md)] 安全性警示實驗室概觀](playbook-lab-overview.md)。
 
@@ -54,7 +52,7 @@ ms.locfileid: "93278609"
 
 下表詳細說明電腦及所需的設定。 提供的 IP 位址僅供參考，以便您輕鬆照著操作。
 
-在這些教學課程的範例中，「樹系 NetBIOS」名稱為 **CONTOSO.AZURE** 。
+在這些教學課程的範例中，「樹系 NetBIOS」名稱為 **CONTOSO.AZURE**。
 
 | FQDN | OS | IP | 用途 |
 |------|-------|---------|--------------|
@@ -152,7 +150,7 @@ New-ADUser -Name AatpService -DisplayName "Azure ATP/ATA Service" -PasswordNever
 
 ### <a name="victimpc-local-policies"></a>VictimPC 本機原則
 
-您實驗室的下一個步驟是完成本機原則設定。 **VictimPC** 同時包含了 JeffL 和 Helpdesk 安全性群組作為本機 Administrators 群組的成員。 與在許多組織中一樣，JeffL 在其自己的裝置 ( **VictimPC** ) 上是系統管理員。
+您實驗室的下一個步驟是完成本機原則設定。 **VictimPC** 同時包含了 JeffL 和 Helpdesk 安全性群組作為本機 Administrators 群組的成員。 與在許多組織中一樣，JeffL 在其自己的裝置 (**VictimPC**) 上是系統管理員。
 
 以本機系統管理員身分，執行自動化 PowerShell 指令碼來設定本機原則：
 
@@ -209,7 +207,7 @@ Add-LocalGroupMember -Group "Administrators" -Member "Contoso\Helpdesk"
 
 **AdminPC** 需要 **Helpdesk** 被新增至本機 Administrators 群組。 接著，請從本機 Administrators 群組中移除 'Domain Admins'。 此步驟可確保 Samira (一個網域系統管理員) 不是 AdminPC 的系統管理員。 這是認證檢疫的最佳做法。 請手動或使用所提供的 PowerShell 指令碼來執行此步驟。
 
-1. 透過執行下列 PowerShell 指令碼，將 **Helpdesk** 新增至 **AdminPC** ，並將 'Domain Admins' 從「本機系統管理員群組」中「移除」：
+1. 透過執行下列 PowerShell 指令碼，將 **Helpdesk** 新增至 **AdminPC**，並將 'Domain Admins' 從「本機系統管理員群組」中「移除」：
 
     ```powerShell
     # Add Helpdesk to local Administrators group
@@ -218,7 +216,7 @@ Add-LocalGroupMember -Group "Administrators" -Member "Contoso\Helpdesk"
     Remove-LocalGroupMember -Group "Administrators" -Member "Domain Admins"
     ```
 
-1. 執行此指令碼之後， **Helpdesk** 就會位於 **AdminPC** 的本機 [Administrators] > [成員] 清單中。
+1. 執行此指令碼之後，**Helpdesk** 就會位於 **AdminPC** 的本機 [Administrators] > [成員] 清單中。
 ![AdminPC 之「本機系統管理員群組」中的 Helpdesk](media/playbook-labsetup-localgrouppolicies1.png)
 
 ### <a name="simulate-domain-activities-from-adminpc"></a>模擬來自 AdminPC 的網域活動

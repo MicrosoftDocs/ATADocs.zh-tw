@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e20bbb73e916c9ea7139ac17a59cd7de2f1a08a4
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 0f6a359745ae03ce0b982e00b7f4c06d556eb702
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276959"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848817"
 ---
 # <a name="use-activity-filters-and-create-action-policies-with-product-long-in-microsoft-cloud-app-security"></a>在 Microsoft Cloud App Security 中使用活動篩選和建立動作原則 [!INCLUDE [Product long](includes/product-long.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文旨在協助您瞭解如何使用 Microsoft Cloud App Security 來篩選和建立活動的動作原則 [!INCLUDE [Product short](includes/product-short.md)] 。
 
@@ -40,7 +38,7 @@ ms.locfileid: "93276959"
 
 ## <a name="filter-product-short-activities-in-cloud-app-security"></a>[!INCLUDE [Product short](includes/product-short.md)]Cloud App Security 中的篩選活動
 
-[!INCLUDE [Product short](includes/product-short.md)]您可以透過選取 [ **活動記錄** ] 子功能表，或從 [ **警示** ] 功能表依狀態、類別、嚴重性、應用程式、使用者名稱或原則，從主要 Cloud App Security **調查** ] 功能表存取活動。
+[!INCLUDE [Product short](includes/product-short.md)]您可以透過選取 [**活動記錄**] 子功能表，或從 [**警示**] 功能表依狀態、類別、嚴重性、應用程式、使用者名稱或原則，從主要 Cloud App Security **調查**] 功能表存取活動。
 
 若要 [!INCLUDE [Product short](includes/product-short.md)] 依使用者存取活動：
 
@@ -61,9 +59,9 @@ ms.locfileid: "93276959"
     - 若要從 [!INCLUDE [Product short](includes/product-short.md)] [應用程式篩選器] 中選取 [ **Active Directory** ] 選項來篩選活動。
     ![建立新的活動原則](media/mcas-create-new-policy.png)
 1. 按一下 [從搜尋新增原則]  按鈕。
-1. 新增 **原則名稱** 。
+1. 新增 **原則名稱**。
     ![建立新的活動原則 - 步驟 2](media/mcas-create-policy.png)
-1. 新增原則 **描述** 。
+1. 新增原則 **描述**。
 1. 指派原則的 [嚴重性]  。
 1. 選取原則的 [類別]  。
 1. 選擇或修改要針對原則建立並指派的篩選。
@@ -76,4 +74,4 @@ ms.locfileid: "93276959"
 
 ## <a name="join-the-community"></a>加入社群
 
-您是否有其他問題，或 [!INCLUDE [Product short](includes/product-short.md)] 與其他人討論和相關的安全性感興趣？ 立即加入[ [!INCLUDE [Product short](includes/product-short.md)] 社區](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection)！
+是否有更多問題或想與其他人討論[!INCLUDE [Product short](includes/product-short.md)] 與相關的安全性？ 立即加入[[!INCLUDE [Product short](includes/product-short.md)] 社群](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection) \(英文\)！

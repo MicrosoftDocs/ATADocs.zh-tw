@@ -9,42 +9,40 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f9cac463b5a99075901a9c0f68db37affcb50cf9
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 2fa0a70299b897a2c8b29e01ebb97e9740b0eb66
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276855"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848613"
 ---
 # <a name="plan-capacity-for-product-long"></a>規劃容量 [!INCLUDE [Product long](includes/product-long.md)]
 
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
-
 在本指南中，您會決定 [!INCLUDE [Product long](includes/product-long.md)] 需要多少感應器。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 - 下載重設[ [!INCLUDE [Product short](includes/product-short.md)] 大小工具](https://aka.ms/aatpsizingtool)。
-- 請參閱[ [!INCLUDE [Product short](includes/product-short.md)] 架構](architecture.md)文章。
-- 請參閱[ [!INCLUDE [Product short](includes/product-short.md)] 必要條件](prerequisites.md)文章。
+- 檢閱 [[!INCLUDE [Product short](includes/product-short.md)] 架構](architecture.md)一文。
+- 請檢閱 [[!INCLUDE [Product short](includes/product-short.md)] 先決條件](prerequisites.md)一文。
 
 ## <a name="use-the-sizing-tool"></a>使用調整大小工具
 
 針對您的部署判斷容量，建議且最簡單的方式 [!INCLUDE [Product short](includes/product-short.md)] 是使用重設 [!INCLUDE [Product short](includes/product-short.md)] 大小工具。 如果您無法使用此工具，您可以手動收集流量資訊。 如需手動方法的詳細資訊，請參閱本文章底部的[網域控制站流量估算](#manual-sizing)一節。
 
-1. [!INCLUDE [Product short](includes/product-short.md)]從您下載的 zip 檔案，執行調整大小工具 **TriSizingTool.exe** 。
+1. [!INCLUDE [Product short](includes/product-short.md)]從您下載的 zip 檔案，執行調整大小工具 **TriSizingTool.exe**。
 1. 當此工具完成執行時，開啟 Excel 檔案結果。
 1. 在 Excel 檔案中，找出然後按一下 **Azure ATP 摘要** 工作表。 因為是用於 ATA 規劃，所以不需要其他工作表。
     ![範例容量規劃工具](media/capacity-tool.png)
 
 1. 在結果 Excel 檔案的 Azure ATP 感應器表格中找出 **Busy Packets/sec** 欄位，並且記下它。
-1. 將 [ **忙碌的封包數/秒** ] 欄位比對本文的 [ [ [!INCLUDE [Product short](includes/product-short.md)] 感應器資料表](#sizing)] 區段中的 [ **每秒封包數** ] 欄位。 使用此欄位來判斷感應器所使用的記憶體和 CPU。
+1. 將 [**忙碌的封包數/秒**] 欄位比對本文的 [ [ [!INCLUDE [Product short](includes/product-short.md)] 感應器資料表](#sizing)] 區段中的 [**每秒封包數**] 欄位。 使用此欄位來判斷感應器所使用的記憶體和 CPU。
 
 ## <a name="product-short-sensor-sizing"></a><a name="sizing"></a>[!INCLUDE [Product short](includes/product-short.md)]感應器大小調整
 
 [!INCLUDE [Product short](includes/product-short.md)]感應器可支援根據網域控制站產生的網路流量來監視網域控制站。 下表是估計值。 感應器最後剖析的數量取決於流量的數量和流量的分配。
 
-下列的 CPU 與隨機存取記憶體 (RAM) 容量是指 **感應器自己的耗用量** ，不是網域控制站容量。
+下列的 CPU 與隨機存取記憶體 (RAM) 容量是指 **感應器自己的耗用量**，不是網域控制站容量。
 
 |每秒封包數|CPU (核心) \*|記憶體 \*\* (GB)|
 |----|----|-----|
@@ -77,7 +75,7 @@ ms.locfileid: "93276855"
 
 |VM 執行位置|說明|
 |------------|-------------|
-|Hyper-V|確保未為 VM **啟用動態記憶體** 。|
+|Hyper-V|確保未為 VM **啟用動態記憶體**。|
 |VMWare|確保設定的記憶體量和保留的記憶體量相同，或是在 VM 設定中選取以下選項 - **保留所有客體記憶體 (全部鎖定)** 。|
 |其他虛擬化主機|請參閱廠商提供的文件，以了解如何確保記憶體能在任何時候均向 VM 配置。 |
 
@@ -93,7 +91,7 @@ ms.locfileid: "93276855"
 
     ![效能監視器影像](media/traffic-estimation-1.png)
 
-1. 展開 **資料收集器集合工具** 。
+1. 展開 **資料收集器集合工具**。
 
     ![資料收集器集合工具影像](media/traffic-estimation-2.png)
 
@@ -109,14 +107,14 @@ ms.locfileid: "93276855"
 
 1. 在 [要記錄哪些效能計數器 ] 下，按一下 [新增]。
 
-1. 展開 **網路介面卡** ，然後選取 [封包/秒] 並選取適當的執行個體。 如果您不確定，您可以選取 [&lt;所有執行個體&gt;]，然後按一下 [新增] 和 [確定]。
+1. 展開 **網路介面卡**，然後選取 [封包/秒] 並選取適當的執行個體。 如果您不確定，您可以選取 [&lt;所有執行個體&gt;]，然後按一下 [新增] 和 [確定]。
 
     > [!NOTE]
     > 若要在命令列中執行這項作業，請執行 `ipconfig /all` 以查看介面卡和設定的名稱。
 
     ![新增效能計數器影像](media/traffic-estimation-7.png)
 
-1. 將 [取樣間隔] 變更為 **五秒** 。
+1. 將 [取樣間隔] 變更為 **五秒**。
 
 1. 設定您想要儲存資料的位置。
 
@@ -143,4 +141,4 @@ ms.locfileid: "93276855"
 
 ## <a name="join-the-community"></a>加入社群
 
-有更多問題，或 [!INCLUDE [Product short](includes/product-short.md)] 與其他人討論和相關的安全性有興趣嗎？ 立即加入[ [!INCLUDE [Product short](includes/product-short.md)] 社區](https://aka.ms/MDIcommunity)！
+有更多問題或想與其他人討論[!INCLUDE [Product short](includes/product-short.md)] 與相關的安全性？ 立即加入[[!INCLUDE [Product short](includes/product-short.md)] 社群](https://aka.ms/MDIcommunity) \(英文\)！

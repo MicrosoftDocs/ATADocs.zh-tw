@@ -11,19 +11,17 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 2767e9ccbac82e9770a89a1f436f7ed44f3b6bb5
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: a35906a4d21dc5c3f9087956f7c7d4a3ad6dafdf
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277630"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848834"
 ---
 # <a name="product-long-monitored-activities-search-and-filter"></a>[!INCLUDE [Product long](includes/product-long.md)] 受監視的活動搜尋和篩選
 
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
-
 > [!NOTE]
-> 您 [!INCLUDE [Product short](includes/product-short.md)] 也可以使用新的 [入口網站](https://portal.cloudappsecurity.com)來存取此頁面上所述的功能。
+> 此頁面所述的[!INCLUDE [Product short](includes/product-short.md)] 功能也可使用新的[入口網站](https://portal.cloudappsecurity.com)來存取。
 
 您 [!INCLUDE [Product short](includes/product-short.md)] 可以搜尋並篩選網路上所偵測到的活動，以便在研究和調查安全性警示期間輕鬆向下切入和組織。
 
@@ -35,7 +33,7 @@ ms.locfileid: "93277630"
 
  1. 從時間軸中選取要調查的實體 [!INCLUDE [Product short](includes/product-short.md)] 。
  2. 按一下 [篩選依據]，然後選取要篩選的警示及 (或) 活動。
- 3. 按一下 [套用]  。 實體時間軸會根據您選取的篩選來更新。
+ 3. 按一下 [套用]。 實體時間軸會根據您選取的篩選來更新。
  4. 若要下載篩選出的活動，請按一下 [下載活動]，然後選取下載報表的日期範圍。
  5. 若要重設實體時間軸，以顯示所有警示及活動，請按一下 [重設] 或關閉篩選。
 
@@ -44,4 +42,4 @@ ms.locfileid: "93277630"
 - [調查實體](investigate-entity.md)
 - [健康狀態警示](health-alerts.md)
 - [使用安全性警示](working-with-suspicious-activities.md)
-- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

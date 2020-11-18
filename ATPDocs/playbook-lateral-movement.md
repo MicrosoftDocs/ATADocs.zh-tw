@@ -10,16 +10,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 8830feaf5d849d4ed38ea1bcc01002d04f6d2380
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: f51c707c2ac01fbbd16258efab8c0ac74d3076b0
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93274826"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849089"
 ---
 # <a name="tutorial-lateral-movement-playbook"></a>教學課程：橫向移動劇本
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 橫向移動劇本是[!INCLUDE [Product long](includes/product-long.md)] 安全性警示四部分教學課程系列中的第三部分。 [!INCLUDE [Product short](includes/product-short.md)] 安全性警示實驗室的目的是要說明 **[!INCLUDE [Product short](includes/product-short.md)]** 對網路可疑活動與潛在攻擊的識別及偵測功能。 此劇本會說明如何針對[!INCLUDE [Product short](includes/product-short.md)] 的一些「離散」偵測進行測試。 此劇本會著重在[!INCLUDE [Product short](includes/product-short.md)] 的「特徵」型功能，且不包括進階機器學習型、使用者型或實體型的行為偵測 (這些需要最多 30 天的真實網路流量學習期間)。 如需有關此系列每個教學課程的詳細資訊，請參閱[[!INCLUDE [Product short](includes/product-short.md)] 安全性警示實驗室概觀](playbook-lab-overview.md)。
 
@@ -47,11 +45,11 @@ ms.locfileid: "93274826"
 
 ## <a name="dump-credentials-in-memory-from-victimpc"></a>VictimPC 記憶體內的傾印認證
 
-在我們的模擬偵察攻擊期間， **VictimPC** 不只公開 JeffL 的認證。 該電腦上也有探索到其他實用的帳戶。 若要使用 **VictimPC** 達到橫向移動，我們將在共用資源上嘗試列舉記憶體內的認證。 使用 **mimikatz** 傾印記憶體內的認證是一種使用常見工具的常用攻擊方法。
+在我們的模擬偵察攻擊期間，**VictimPC** 不只公開 JeffL 的認證。 該電腦上也有探索到其他實用的帳戶。 若要使用 **VictimPC** 達到橫向移動，我們將在共用資源上嘗試列舉記憶體內的認證。 使用 **mimikatz** 傾印記憶體內的認證是一種使用常見工具的常用攻擊方法。
 
 ### <a name="mimikatz-sekurlsalogonpasswords"></a>Mimikatz sekurlsa::logonpasswords
 
-1. 在 **VictimPC** 上開啟 **提高權限的命令提示字元** 。
+1. 在 **VictimPC** 上開啟 **提高權限的命令提示字元**。
 1. 瀏覽至您儲存 Mimikatz 的 [工具] 資料夾，然後執行下列命令：
 
     ```dos
@@ -72,7 +70,7 @@ ms.locfileid: "93274826"
 
 攻擊者可能不會一開始就知道誰是作為目標的 RonHD 或其值。 他們只知道如果這樣做有利，他們就會使用認證。 不過，如果我們充當攻擊者，可以使用 **net** 命令探索 RonHD 隸屬的群組。
 
-從 **VictimPC** ，執行下列命令：
+從 **VictimPC**，執行下列命令：
 
 ```dos
 net user ronhd /domain
@@ -86,7 +84,7 @@ net user ronhd /domain
 
 使用稱為 **Overpass-the-Hash** 的常用技巧時，蒐集到的 NTLM 雜湊用來取得票證授權票證 (TGT)。 擁有使用者 TGT 的攻擊者可以偽裝成 RonHD 之類的遭入侵使用者。 偽裝成 RonHD 時，我們可以存取遭入侵使用者或其個別安全性群組可以存取的任何網域資源。
 
-1. 從 **VictimPC** ，將目錄變更為包含 **Mimikatz.exe** 的資料夾。 檔案系統上的儲存體位置，然後執行下列命令：
+1. 從 **VictimPC**，將目錄變更為包含 **Mimikatz.exe** 的資料夾。 檔案系統上的儲存體位置，然後執行下列命令：
 
     ```dos
     mimikatz.exe "privilege::debug" "sekurlsa::pth /user:ronhd /ntlm:96def1a633fc6790124d5f8fe21cc72b /domain:contoso.azure" "exit"
@@ -124,7 +122,7 @@ net user ronhd /domain
 
     此電腦有兩個本機系統管理員，分別是內建的系統管理員 "ContosoAdmin" 和 "Helpdesk"。 我們知道 RonHD 是 "Helpdesk" 安全性群組的成員。 我們也已經知道電腦的名稱是 AdminPC。 我們擁有 RonHD 的認證，因此我們應該能夠使用該認證橫向移動到 AdminPC 並存取該電腦。
 
-1. 如有需要，從 *在 RonHD 的內容中執行的相同命令提示字元* ，輸入 **exit** 離開 PowerShell。 然後，執行下列命令：
+1. 如有需要，從 *在 RonHD 的內容中執行的相同命令提示字元*，輸入 **exit** 離開 PowerShell。 然後，執行下列命令：
 
     ```dos
     dir \\adminpc\c$
@@ -211,7 +209,7 @@ xcopy mimikatz.exe \\adminpc\c$\temp
 
 當票證位於 VictimPC 本機上時，終於透過「傳遞票證」變成 SamiraA。
 
-1. 從 **VictimPC** 檔案系統的 **Mimikatz** 位置，開啟新的 **提升權限的命令提示字元** ，然後執行下列命令：
+1. 從 **VictimPC** 檔案系統的 **Mimikatz** 位置，開啟新的 **提升權限的命令提示字元**，然後執行下列命令：
 
     ```dos
     mimikatz.exe "privilege::debug" "kerberos::ptt c:\temp\adminpc_tickets" "exit"

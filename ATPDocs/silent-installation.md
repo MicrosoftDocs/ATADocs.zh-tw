@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: edb9f414055a7d106913d1d394af44ef84ef4223
-ms.sourcegitcommit: 2b57f438c2902d5258aff8999b374c2f1808ceb4
+ms.openlocfilehash: d87aa443bad2731ee3e5ff226930980ac52c79d7
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94430680"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94846709"
 ---
 # <a name="product-long-switches-and-silent-installation"></a>[!INCLUDE [Product long](includes/product-long.md)] 切換和無訊息安裝
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文提供 [!INCLUDE [Product long](includes/product-long.md)] 切換開關和無訊息安裝的指導方針和指示。
 
@@ -33,7 +31,7 @@ ms.locfileid: "94430680"
 > [!NOTE]
 > .Net Framework 4.7 的安裝可能需要重新啟動伺服器。 在 [!INCLUDE [Product short](includes/product-short.md)] 網域控制站上安裝感應器時，請考慮為網域控制站排程維護時段。
 
-使用 [!INCLUDE [Product short](includes/product-short.md)] 無訊息安裝時，安裝程式會設定為在安裝 (結束時自動重新開機伺服器（如有必要）) 。 請務必只在維護時段執行無訊息安裝。 因為 Windows Installer 的某個錯誤 (Bug)， *norestart* 旗標無法可靠地用來確定伺服器不會重新啟動。
+使用 [!INCLUDE [Product short](includes/product-short.md)] 無訊息安裝時，安裝程式會設定為在安裝 (結束時自動重新開機伺服器（如有必要）) 。 請務必只在維護時段執行無訊息安裝。 因為 Windows Installer 的某個錯誤 (Bug)，*norestart* 旗標無法可靠地用來確定伺服器不會重新啟動。
 
 若要追蹤您的部署進度，請監視 [!INCLUDE [Product short](includes/product-short.md)] 位於中的安裝程式記錄檔 `%AppData%\Local\Temp` 。
 
@@ -44,13 +42,13 @@ ms.locfileid: "94430680"
 
 使用下列命令來執行感應器的完全無訊息安裝 [!INCLUDE [Product short](includes/product-short.md)] ：
 
-**cmd.exe syntax** ：
+**cmd.exe syntax**：
 
 ```dos
 "Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
 ```
 
-**Powershell 語法** ：
+**Powershell 語法**：
 
 ```powershell
 .\"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
@@ -60,9 +58,9 @@ ms.locfileid: "94430680"
 > 使用 Powershell 語法時，省略 **./** 前置詞會導致發生防止無訊息安裝的錯誤。
 
 > [!NOTE]
-> 從 [!INCLUDE [Product short](includes/product-short.md)] 入口網站設定區段 [ **感應器** ] 頁面複製存取金鑰。 **Configuration**
+> 從 [!INCLUDE [Product short](includes/product-short.md)] 入口網站設定區段 [**感應器**] 頁面複製存取金鑰。 **Configuration**
 
-**安裝選項** ：
+**安裝選項**：
 
 > [!div class="mx-tableFixed"]
 >
@@ -72,7 +70,7 @@ ms.locfileid: "94430680"
 > |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 > |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|是|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
 
-**安裝參數** ：
+**安裝參數**：
 
 > [!div class="mx-tableFixed"]
 >
@@ -81,7 +79,7 @@ ms.locfileid: "94430680"
 > |InstallationPath|InstallationPath=""|否|設定感應器二進位檔安裝的路徑 [!INCLUDE [Product short](includes/product-short.md)] 。 預設路徑：%programfiles%\Azure Advanced Threat Protection sensor
 > |AccessKey|AccessKey="\*\*"|是|設定用來向實例註冊感應器的存取金鑰 [!INCLUDE [Product short](includes/product-short.md)] [!INCLUDE [Product short](includes/product-short.md)] 。|
 
-**範例** ：
+**範例**：
 
 使用下列命令以無訊息模式安裝 [!INCLUDE [Product short](includes/product-short.md)] 感應器：
 
@@ -93,7 +91,7 @@ ms.locfileid: "94430680"
 
 請使用下列命令來完成 Proxy 驗證：
 
-**語法** ：
+**語法**：
 
 > [!div class="mx-tableFixed"]
 >
@@ -107,13 +105,13 @@ ms.locfileid: "94430680"
 
 使用下列命令以無訊息方式更新 [!INCLUDE [Product short](includes/product-short.md)] 感應器：
 
-**語法** ：
+**語法**：
 
 ```dos
 "Azure ATP sensor Setup.exe" [/quiet] [/Help] [NetFrameworkCommandLineArguments="/q"]
 ```
 
-**安裝選項** ：
+**安裝選項**：
 
 > [!div class="mx-tableFixed"]
 >
@@ -123,7 +121,7 @@ ms.locfileid: "94430680"
 > |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 > |NetFrameworkCommandLineArguments="/q"|NetFrameworkCommandLineArguments="/q"|是|指定 .Net Framework 安裝的參數。 必須設定，才能強制執行 .Net Framework 的無訊息安裝。|
 
-**範例** ：
+**範例**：
 
 若要以無訊息方式更新 [!INCLUDE [Product short](includes/product-short.md)] 感應器：
 
@@ -135,13 +133,13 @@ ms.locfileid: "94430680"
 
 使用下列命令來執行感應器的無訊息卸載 [!INCLUDE [Product short](includes/product-short.md)] ：
 
-**語法** ：
+**語法**：
 
 ```dos
 "Azure ATP sensor Setup.exe" [/quiet] [/Uninstall] [/Help]
 ```
 
-**安裝選項** ：
+**安裝選項**：
 
 > [!div class="mx-tableFixed"]
 >
@@ -151,7 +149,7 @@ ms.locfileid: "94430680"
 > |解除安裝|/uninstall|是|從伺服器執行無訊息的 [!INCLUDE [Product short](includes/product-short.md)] 感應器卸載。|
 > |[說明]|/help|否|提供說明和快速參考。 顯示安裝程式命令的正確用法，包括所有選項和行為清單。|
 
-**範例** ：
+**範例**：
 
 若要從伺服器以無訊息方式卸載 [!INCLUDE [Product short](includes/product-short.md)] 感應器：
 

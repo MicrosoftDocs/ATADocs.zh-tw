@@ -11,20 +11,18 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ''
 ms.suite: ''
-ms.openlocfilehash: ea19abd7497d0d925e764a80666dc595862566f9
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 27e048b337ecd25b534f0c10096999a7173292c1
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93274996"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94846624"
 ---
 # <a name="troubleshooting-product-long-sensor-using-the-product-short-logs"></a>[!INCLUDE [Product long](includes/product-long.md)]使用記錄針對感應器進行疑難排解 [!INCLUDE [Product short](includes/product-short.md)]
 
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
-
 這些 [!INCLUDE [Product short](includes/product-short.md)] 記錄可讓您深入瞭解每個 [!INCLUDE [Product long](includes/product-long.md)] 感應器元件在任何指定時間點的執行狀況。
 
-[!INCLUDE [Product short](includes/product-short.md)]記錄檔位於已安裝之 **記錄** 檔的子資料夾中， [!INCLUDE [Product short](includes/product-short.md)] 預設位置為： **C:\Program Files\Azure Advanced 威脅防護感應器 \\** 。 在預設的安裝位置中，此記錄位於 **C:\Program Files\Azure Advanced Threat Protection Sensor\version number\Logs** 下。
+[!INCLUDE [Product short](includes/product-short.md)]記錄檔位於已安裝之 **記錄** 檔的子資料夾中， [!INCLUDE [Product short](includes/product-short.md)] 預設位置為： **C:\Program Files\Azure Advanced 威脅防護感應器 \\**。 在預設的安裝位置中，此記錄位於 **C:\Program Files\Azure Advanced Threat Protection Sensor\version number\Logs** 下。
 
 [!INCLUDE [Product short](includes/product-short.md)]感應器具有下列記錄：
 
@@ -32,7 +30,7 @@ ms.locfileid: "93274996"
 
 - **Microsoft.tri.sensor-errors.log** –此記錄只包含感應器攔截到的錯誤， [!INCLUDE [Product short](includes/product-short.md)] 。 其主要用途是執行健康情況檢查，並調查需要與特定時間相互關聯的問題。
 
-- ：此記錄檔可用於感應器 **更新程式進程** ， [!INCLUDE [Product short](includes/product-short.md)] 如果設定為自動進行，則負責更新感應器的程式。
+- ：此記錄檔可用於感應器 **更新程式進程**， [!INCLUDE [Product short](includes/product-short.md)] 如果設定為自動進行，則負責更新感應器的程式。
 
 > [!NOTE]
 > 前三個記錄檔有大小上限 50 MB。 到達該大小時，會開啟新的記錄檔，並將上一個記錄檔重新命名為「&lt;原始檔案名稱&gt;-Archived-00000」，該數字隨每次重新命名遞增。 根據預設，如果已經有超過 10 個相同類型的檔案，就會刪除最舊的檔案。
@@ -55,7 +53,7 @@ ms.locfileid: "93274996"
 ## <a name="see-also"></a>另請參閱
 
 - [[!INCLUDE [Product short](includes/product-short.md)] 先決條件](prerequisites.md)
-- [[!INCLUDE [Product short](includes/product-short.md)] 容量規劃](capacity-planning.md)
+- [[!INCLUDE [Product short](includes/product-short.md)] 容量規畫](capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-forwarding.md)
-- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 44731f9d987eda3d87339b1502de609de9d222ed
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 170385cfb1bd3fc82a77d67cd6f82d2197c458bf
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277534"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848766"
 ---
 # <a name="security-assessment-microsoft-laps-usage"></a>安全性評估：Microsoft LAPS 使用情況
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 ## <a name="what-is-microsoft-laps"></a>什麼是 Microsoft LAPS？
 
@@ -45,4 +43,4 @@ LAPS 能在簡化密碼管理的同時，協助客戶針對網路攻擊實作其
 
 ## <a name="see-also"></a>另請參閱
 
-- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

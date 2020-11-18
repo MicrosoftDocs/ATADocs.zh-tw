@@ -12,16 +12,14 @@ ms.service: azure-advanced-threat-protection
 ms.assetid: a06004bd-9f77-4e8e-a0e5-4727d6651a0f
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 7e47b15249f024345eb72fa434447506389f7be4
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 93b421bd06a40a3bd79ecdf22b613bbafb157abc
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277961"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847695"
 ---
 # <a name="working-with-security-alerts"></a>使用安全性警訊
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
 > 此頁面所述的[!INCLUDE [Product long](includes/product-long.md)] 功能也可使用新的[入口網站](https://portal.cloudappsecurity.com)來存取。
@@ -32,7 +30,7 @@ ms.locfileid: "93277961"
 
 ## <a name="review-security-alerts-on-the-attack-timeline"></a>檢閱攻擊時間軸上的安全性警訊 
 
-登入[!INCLUDE [Product short](includes/product-short.md)] 入口網站後，系統會自動帶您前往開啟的 **安全性警示時間表** 。 安全性警訊會依時間順序列出，最新的警訊會位於時間軸頂端。
+登入[!INCLUDE [Product short](includes/product-short.md)] 入口網站後，系統會自動帶您前往開啟的 **安全性警示時間表**。 安全性警訊會依時間順序列出，最新的警訊會位於時間軸頂端。
 
 每個安全性警訊具有下列資訊：
 
@@ -111,15 +109,15 @@ ms.locfileid: "93277961"
 
 **安全性警訊狀態**
 
-- **開啟** ：所有新的安全性警訊都會顯示在這份清單中。
+- **開啟**：所有新的安全性警訊都會顯示在這份清單中。
 
-- **關閉** ：用於追蹤您已識別、研究並修正以緩解的安全性警訊。
+- **關閉**：用於追蹤您已識別、研究並修正以緩解的安全性警訊。
 
-- **隱藏** ：隱藏警訊表示您想要暫時忽略它，只有出現新的執行個體時，才會再次收到通知。 這表示如果有類似的警示，[!INCLUDE [Product short](includes/product-short.md)] 不會加以重新開啟。 但如果此警示在停止七天後再次出現，便會開啟新的警示。
+- **隱藏**：隱藏警訊表示您想要暫時忽略它，只有出現新的執行個體時，才會再次收到通知。 這表示如果有類似的警示，[!INCLUDE [Product short](includes/product-short.md)] 不會加以重新開啟。 但如果此警示在停止七天後再次出現，便會開啟新的警示。
 
-- **刪除** ：如果您刪除警示，即會將其從系統和資料庫中刪除，且您將「無法」予以還原。 按一下 [刪除] 之後，您即可刪除相同類型的所有安全性警訊。
+- **刪除**：如果您刪除警示，即會將其從系統和資料庫中刪除，且您將「無法」予以還原。 按一下 [刪除] 之後，您即可刪除相同類型的所有安全性警訊。
 
-- **排除** ：排除實體使其不會引發更多特定類型警示的功能。 例如，您可以將[!INCLUDE [Product short](includes/product-short.md)] 設定為排除特定實體 (使用者或電腦)，使其不會再次引發特定活動類型的警示，例如會執行遠端程式碼的特定管理員，或是會執行 DNS 偵察的安全性掃描器。 除了能夠直接在安全性警訊上新增排除項目之外 (因為已在時間軸中偵測到此警訊)，您也可以移至 [設定] 頁面，再移至 [排除]  ，並針對每個安全性警訊，手動新增及移除排除的實體或子網路 (例如針對傳遞票證的情況)。
+- **排除**：排除實體使其不會引發更多特定類型警示的功能。 例如，您可以將[!INCLUDE [Product short](includes/product-short.md)] 設定為排除特定實體 (使用者或電腦)，使其不會再次引發特定活動類型的警示，例如會執行遠端程式碼的特定管理員，或是會執行 DNS 偵察的安全性掃描器。 除了能夠直接在安全性警訊上新增排除項目之外 (因為已在時間軸中偵測到此警訊)，您也可以移至 [設定] 頁面，再移至 [排除]  ，並針對每個安全性警訊，手動新增及移除排除的實體或子網路 (例如針對傳遞票證的情況)。
 
 > [!NOTE]
 > 只有[!INCLUDE [Product short](includes/product-short.md)] 管理員才能修改設定頁面。

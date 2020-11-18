@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 032a5f289657485b744ad335dc51777a8ba72602
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 368b328cb6863074bd47f0785aafccf7f491fa54
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275028"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847338"
 ---
 # <a name="advanced-threat-analytics-ata-to-product-long"></a> (ATA) 的 Advanced 威脅分析 [!INCLUDE [Product long](includes/product-long.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
 > ATA 的最終發行版本已 [正式推出](https://support.microsoft.com/help/4568997/update-3-for-microsoft-advanced-threat-analytics-1-9)。 ATA 將于2021年1月12日結束主流支援。 延伸支援將繼續進行，直到2026年1月為止。 如需詳細資訊，請閱讀 [我們的 blog](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-of-mainstream-support-for-advanced-threat-analytics-january/ba-p/1539181)。
@@ -45,7 +43,7 @@ ms.locfileid: "93275028"
 
 ## <a name="prerequisites"></a>先決條件
 
-- 需要至少有一個全域/安全性系統管理員的 Azure Active Directory 租使用者，才能建立 [!INCLUDE [Product short](includes/product-short.md)] 實例。 每個 [!INCLUDE [Product short](includes/product-short.md)] 實例支援多 Active Directory 樹系界限和樹系功能等級 (Windows 2003 和更新版本的 FFL) 。
+- 需要至少有一個全域/安全性系統管理員的 Azure Active Directory 租使用者，才能建立 [!INCLUDE [Product short](includes/product-short.md)] 實例。 每個 [!INCLUDE [Product short](includes/product-short.md)] 執行個體都支援多 Active Directory 樹系邊界，以及 Windows 2003 和更新版本的樹系功能等級 (FFL)。
 
 - [!INCLUDE [Product short](includes/product-short.md)] 需要 .Net Framework 4.7 或更新版本，如果您目前的 .Net Framework 版本不是4.7 或更新版本，則可能需要網域控制站 (重新開機) 。
 
@@ -147,4 +145,4 @@ ms.locfileid: "93275028"
 
 ## <a name="join-the-community"></a>加入社群
 
-您是否有其他問題，或 [!INCLUDE [Product short](includes/product-short.md)] 與其他人討論和相關的安全性感興趣？ 立即加入[ [!INCLUDE [Product short](includes/product-short.md)] 社區](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection)！
+是否有更多問題或想與其他人討論[!INCLUDE [Product short](includes/product-short.md)] 與相關的安全性？ 立即加入[[!INCLUDE [Product short](includes/product-short.md)] 社群](https://techcommunity.microsoft.com/t5/Azure-Advanced-Threat-Protection/bd-p/AzureAdvancedThreatProtection) \(英文\)！

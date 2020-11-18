@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ccb3ee9afe32615246f8e6dc63e181475094a8b7
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: b677512817fc910c5845fa7e1544003bfec60593
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93274367"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848936"
 ---
 # <a name="product-long-frequently-asked-questions"></a>[!INCLUDE [Product long](includes/product-long.md)] 常見問題
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文提供有關分為下列類別的常見問題和解答清單 [!INCLUDE [Product long](includes/product-long.md)] ：
 
@@ -32,7 +30,7 @@ ms.locfileid: "93274367"
 
 <a name="what-is-azure-atp"></a>
 
-## <a name="what-is-product-short"></a>什麼是 [!INCLUDE [Product short](includes/product-short.md)] ？
+## <a name="what-is-product-short"></a>什麼是 [!INCLUDE [Product short](includes/product-short.md)]？
 
 ### <a name="what-can-product-short-detect"></a>可以偵測 [!INCLUDE [Product short](includes/product-short.md)] 到什麼？
 
@@ -85,9 +83,9 @@ ATA 的最終發行版本已 [正式推出](https://support.microsoft.com/help/4
 
 - **[UEBA 功能](/cloud-app-security/tutorial-ueba)** ：透過使用者調查優先順序評分，提供個別使用者風險的見解。 分數可協助 SecOps 調查，並協助分析師了解使用者和組織的異常活動。
 
-- **原生整合** ：與 Microsoft Cloud App Security 及 Azure AD Identity Protection 整合，以透過混合檢視，同時了解內部部署與混合式環境的情況。
+- **原生整合**：與 Microsoft Cloud App Security 及 Azure AD Identity Protection 整合，以透過混合檢視，同時了解內部部署與混合式環境的情況。
 
-- **參與 Microsoft 365 defender** ：將警示和威脅資料貢獻給 Microsoft 365 Defender。 Microsoft 365 Defender 利用 Microsoft 365 的安全性組合 (身分識別、端點、資料和應用程式) 自動分析跨網域的威脅資料，在單一儀表板中建立每個攻擊的完整圖片。 有了這項廣度和深度的清楚，防禦者可以專注于嚴重的威脅，並尋找複雜的缺口，信任 Microsoft 365 Defender 強大的自動化會在終止鏈中的任何位置停止攻擊，並讓組織回到安全的狀態。
+- **參與 Microsoft 365 defender**：將警示和威脅資料貢獻給 Microsoft 365 Defender。 Microsoft 365 Defender 利用 Microsoft 365 的安全性組合 (身分識別、端點、資料和應用程式) 自動分析跨網域的威脅資料，在單一儀表板中建立每個攻擊的完整圖片。 有了這項廣度和深度的清楚，防禦者可以專注于嚴重的威脅，並尋找複雜的缺口，信任 Microsoft 365 Defender 強大的自動化會在終止鏈中的任何位置停止攻擊，並讓組織回到安全的狀態。
 
 ## <a name="licensing-and-privacy"></a>授權和隱私權
 
@@ -215,8 +213,8 @@ ATA 的最終發行版本已 [正式推出](https://support.microsoft.com/help/4
 ## <a name="see-also"></a>另請參閱
 
 - [[!INCLUDE [Product short](includes/product-short.md)] 先決條件](prerequisites.md)
-- [[!INCLUDE [Product short](includes/product-short.md)] 容量規劃](capacity-planning.md)
+- [[!INCLUDE [Product short](includes/product-short.md)] 容量規畫](capacity-planning.md)
 - [設定事件收集](configure-event-collection.md)
 - [設定 Windows 事件轉送](configure-event-forwarding.md)
 - [疑難排解](troubleshooting-known-issues.md)
-- [查看 [!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)
+- [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

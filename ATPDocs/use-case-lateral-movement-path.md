@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 3676eb1b7a4528fcbd6d45b4052c5a49f03c4718
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: d6d8706e750ed7db841ea9483af8eb86f15b857c
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277704"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848885"
 ---
 # <a name="product-long-lateral-movement-paths-lmps"></a>[!INCLUDE [Product long](includes/product-long.md)] 橫向移動路徑 (LMP)
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 > [!NOTE]
 > 此頁面所述的[!INCLUDE [Product long](includes/product-long.md)] 功能也可使用新的[入口網站](https://portal.cloudappsecurity.com)來存取。
@@ -82,7 +80,7 @@ LMP 現在可直接協助您進行調查流程。 [!INCLUDE [Product short](incl
 
 **提示** - 若過去 48 小時內針對實體未偵測出潛在橫向移動路徑活動，請選擇 [檢視其他日期]  ，並檢查先前的潛在橫向移動路徑。 當探索到 LMP 時，[通往敏感性使用者的 LMP 報告]  將會一律可用，並會為您提供偵測到通往敏感性使用者的潛在橫向移動路徑相關資訊。
 
-**祕訣** ：如需設定用戶端與伺服器以允許 [!INCLUDE [Product short](includes/product-short.md)] 執行橫向移動路徑偵測所需之 SAM-R 作業的指示，請參閱[設定 SAM-R](install-step8-samr.md)。
+**祕訣**：如需設定用戶端與伺服器以允許 [!INCLUDE [Product short](includes/product-short.md)] 執行橫向移動路徑偵測所需之 SAM-R 作業的指示，請參閱 [設定 SAM-R](install-step8-samr.md)。
 
 ## <a name="investigating-lmps"></a>調查 LMP
 

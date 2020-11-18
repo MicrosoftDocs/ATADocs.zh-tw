@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: b2b317bf7ca27a4158e741509f7b159457cd1698
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 2c35f69c3696e069cb48a6d1e04ba88b5d595ac0
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93274166"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848953"
 ---
 # <a name="product-long-information-and-support"></a>[!INCLUDE [Product long](includes/product-long.md)] 資訊和支援
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 使用下列資源可協助您瞭解、部署和支援 [!INCLUDE [Product long](includes/product-long.md)] 您的組織。
 
@@ -46,9 +44,9 @@ ms.locfileid: "93274166"
 
 若為其他客戶，請遵循下列指示使用支援通道：
 
-| 通道|Instructions|
+| 通道|指示|
 |------|-----|
-|使用 Azure 入口網站|1. 從 Azure 入口網站中的 [說明 **+ 支援** ] 選取 [ **新增支援要求** ]。 <br>2. 當系統提示您時，請在 [ **基本** ] 分頁 **上，選擇** [ **技術** ]，以 [安全性 & 身分識別] 下的 [ **服務** ] 下選擇 [ **Azure 進階威脅防護** ]。 <br>3. 請確定已選取下列其中一個選項：<br>- 含技術支援的訂用帳戶。 如果您有 Azure 付費或試用版訂用帳戶，就會看到此選項。<br>- 包含技術支援。 如果您沒有 Azure 訂用帳戶，則會看到此選項。|
+|使用 Azure 入口網站|1. 從 Azure 入口網站中的 [說明 **+ 支援**] 選取 [**新增支援要求**]。 <br>2. 當系統提示您時，請在 [ **基本** ] 分頁 **上，選擇**[ **技術**]，以 [安全性 & 身分識別] 下的 [ **服務** ] 下選擇 [ **Azure 進階威脅防護**]。 <br>3. 請確定已選取下列其中一個選項：<br>- 含技術支援的訂用帳戶。 如果您有 Azure 付費或試用版訂用帳戶，就會看到此選項。<br>- 包含技術支援。 如果您沒有 Azure 訂用帳戶，則會看到此選項。|
 |使用 [!INCLUDE [Product short](includes/product-short.md)] 入口網站| 1. 在入口網站中，按一下頂端導覽列中的 [？] 圖示 [!INCLUDE [Product short](includes/product-short.md)]<br>2. 搜尋 [!INCLUDE [Product short](includes/product-short.md)] 。<br>3. 開啟事件票證。<br>-選取 [支援]<br>4. 開啟事件票證。 如果您成功進入 [!INCLUDE [Product short](includes/product-short.md)] 入口網站，您可以 [ (OAS) 入口網站中輸入線上協助支援](https://support.microsoft.com/assistedsupportproducts)。 |
 
 如需其他支援選項，請連絡 Microsoft。

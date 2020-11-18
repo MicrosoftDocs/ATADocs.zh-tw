@@ -10,16 +10,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: cfb7474a01fe90b75939f80dbcc7f93dad485682
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 992ea4672c427a1bf29b7303cfc412793ff8ba4d
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275518"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849055"
 ---
 # <a name="tutorial-overview-product-long-security-alert-lab"></a>教學課程概觀：[!INCLUDE [Product long](includes/product-long.md)] 安全性警示實驗室
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Product long](includes/product-long.md)] 安全性警示實驗室教學課程的目的是要說明 **[!INCLUDE [Product short](includes/product-short.md)]** 對網路可疑活動與潛在攻擊的識別及偵測功能。 這個四部分的教學課程說明如何安裝及設定工作環境，以針對[!INCLUDE [Product short](includes/product-short.md)] 的一些「離散」偵測進行測試。 此實驗室將焦點放在[!INCLUDE [Product short](includes/product-short.md)] 的「特徵」型功能上。 此實驗室並不包括進階機器學習及使用者或實體型的行為偵測，因為這些偵測需要一個最多有 30 天真實網路流量的學習期間。
 

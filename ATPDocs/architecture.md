@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e6baa54d7e8738d6132bf33d9ce8f4e829e6243f
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: cb67a36402c0b6b193fbd5ee11b63113714cd885
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276752"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848800"
 ---
 # <a name="microsoft-defender-for-identity-architecture"></a>適用於身分識別的 Microsoft Defender 架構
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Product long](includes/product-long.md)] 可直接從您的網域控制站擷取及剖析網路流量並運用 Windows 事件，以監視您的網域控制站，然後分析攻擊和威脅資料。 [!INCLUDE [Product short](includes/product-short.md)] 會利用分析、確定性偵測、機器學習與行為演算法，來了解您的網路、啟用異常偵測並在發現可疑活動時警告您。
 
@@ -53,7 +51,7 @@ ms.locfileid: "93276752"
 - 管理[!INCLUDE [Product short](includes/product-short.md)] 感應器組態設定
 - 檢視從[!INCLUDE [Product short](includes/product-short.md)] 感應器接收的資料
 - 監視偵測到的可疑活動和以攻擊狙殺鏈模式為基礎的可疑攻擊
-- **選擇性** ：您也可以將入口網站設定為在偵測到安全性警訊或健康狀態問題時傳送電子郵件和事件
+- **選擇性**：您也可以將入口網站設定為在偵測到安全性警訊或健康狀態問題時傳送電子郵件和事件
 
 > [!NOTE]
 > 若[!INCLUDE [Product short](includes/product-short.md)] 執行個體在 60 天內未安裝感應器，系統可能會刪除執行個體且您必須重新建立。

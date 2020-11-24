@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 774f8f3f560b52d5a39a96aacc9b145d1ca2d445
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 78d7a4d51459c5ea9099198e43097757ee2c588e
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275806"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847645"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>教學課程：橫向移動警訊
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 網路攻擊通常會針對低權限使用者等所有可存取的實體啟動，然後快速橫向移動，直到攻擊者得以存取有價值的資產。 敏感性帳戶、網域系統管理員或高度敏感性資料均為重要資產。 [!INCLUDE [Product long](includes/product-long.md)] 會從整個攻擊狙殺鏈來源識別進階威脅，並將其分成下列幾個階段：
 
@@ -30,7 +28,7 @@ ms.locfileid: "93275806"
 1. [網域支配](domain-dominance-alerts.md)
 1. [Exfiltration](exfiltration-alerts.md)
 
-若要深入了解如何了解結構和所有 [!INCLUDE [Product short](includes/product-short.md)] 安全性警訊的一般元件，請參閱[了解安全性警訊](understanding-security-alerts.md)。 如需 **確判 (TP)** 、 **良性確判 (B-TP)** 及 **誤判 (FP)** 的詳細資訊，請參閱 [安全性警訊分類](understanding-security-alerts.md#security-alert-classifications)。
+若要深入了解如何了解結構和所有 [!INCLUDE [Product short](includes/product-short.md)] 安全性警訊的一般元件，請參閱[了解安全性警訊](understanding-security-alerts.md)。 如需 **確判 (TP)** 、**良性確判 (B-TP)** 及 **誤判 (FP)** 的詳細資訊，請參閱 [安全性警訊分類](understanding-security-alerts.md#security-alert-classifications)。
 
 下列安全性警訊可協助您找出並補救 [!INCLUDE [Product short](includes/product-short.md)] 在網路中偵測到的 **橫向移動** 階段可疑活動。 在本教學課程中，您將了解如何了解、分類、補救和防範以下各類攻擊：
 
@@ -67,7 +65,7 @@ ms.locfileid: "93275806"
     - 如果沒有發現任何新的服務或不熟悉的服務，請視為 **FP** 並 **關閉** 安全性警示。
 1. 此攻擊類型可能使 DNS 服務當機，然後成功地執行程式碼。
     - 檢查 DNS 服務在攻擊發生前是否曾重新啟動過幾次。
-    - 如果 DNS 已重新啟動，則有可能是嘗試惡意探索 CVE-2018-8626。 請將此警告視為 **TP** ，並遵循 **了解缺口的範圍** 中的指示。
+    - 如果 DNS 已重新啟動，則有可能是嘗試惡意探索 CVE-2018-8626。 請將此警告視為 **TP**，並遵循 **了解缺口的範圍** 中的指示。
 
 **了解漏洞的範圍**
 
@@ -102,7 +100,7 @@ ms.locfileid: "93275806"
 
 **TP、B-TP、或 FP？**
 1. 判斷是否為使用者固定使用的電腦在使用該雜湊？
-    - 如果是使用者固定使用的電腦在使用該雜湊，則為 **FP** ，並請 **關閉** 該警訊。
+    - 如果是使用者固定使用的電腦在使用該雜湊，則為 **FP**，並請 **關閉** 該警訊。
 
 **了解漏洞的範圍**
 
@@ -136,7 +134,7 @@ ms.locfileid: "93275806"
 1. IP 位址是否共用 (例如透過 NAT 裝置)？
 1. 感應器未解析一或多個目的地 IP 位址嗎？ 如果未解析目的地 IP 位址，可能表示感應器與裝置之間的正確連接埠未正確開啟。
 
-    如果任何上述問題的答案為 **是** ，請檢查來源和目的電腦是否相同。 如果相同，則為 **FP** ，而且沒有任何實際的 **票證傳遞** 嘗試。
+    如果任何上述問題的答案為 **是**，請檢查來源和目的電腦是否相同。 如果相同，則為 **FP**，而且沒有任何實際的 **票證傳遞** 嘗試。
 
 當透過 Windows Server 2016 及更新版本上的 Windows 10 使用 RDP 連線的 [Remote Credential Guard](/windows/security/identity-protection/remote-credential-guard) 功能時，就會出現 **B-TP** 警示。
 使用警示辨識項，檢查使用者是否使用了遠端桌面連線，從來源電腦連線至目的地電腦。
@@ -335,7 +333,7 @@ Rogue 憑證攻擊為攻擊者取得組織控制權後，所使用的一種持�
 **TP、B-TP 或 FP**
 
 - 判斷帳戶是否定期登入電腦？
-  - 如果電腦定期使用該憑證，請將該警訊 **關閉** 為 **FP** 。
+  - 如果電腦定期使用該憑證，請將該警訊 **關閉** 為 **FP**。
 
 **了解漏洞的範圍**
 

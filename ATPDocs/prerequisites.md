@@ -10,16 +10,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: e3b5b67ad5330fd7be41ed63e6db105e2f1d4a9e
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: df877f342b0bf7a31bf4cdf171a7bc2104c89e1f
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275636"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94846998"
 ---
 # <a name="product-long-prerequisites"></a>[!INCLUDE [Product long](includes/product-long.md)] 先決條件
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 本文描述在環境中成功部署 [!INCLUDE [Product long](includes/product-long.md)] 的條件需求。
 
@@ -78,7 +76,7 @@ ms.locfileid: "93275636"
 
 - **Deleted Objects** 容器建議：使用者應該擁有「刪除的物件」容器的唯讀權限。 這個容器的唯讀權限可讓 [!INCLUDE [Product short](includes/product-short.md)] 偵測從 Active Directory 中刪除使用者的情形。 如需在 Deleted Objects 容器設定唯讀權限的相關資訊，請參閱 [View or Set Permissions on a Directory Object](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816824(v=ws.10)) (檢視或設定目錄物件的權限) 文章中的 **Changing permissions on a deleted object container** (變更已刪除物件的容器權限) 一節。
 
-- 選擇性的 **Honeytoken** ：沒有任何網路活動之使用者的使用者帳戶。 此帳戶設定為 [!INCLUDE [Product short](includes/product-short.md)] Honeytoken 使用者。 如需使用 Honeytoken 的詳細資訊，請參閱[設定排除專案和 Honeytoken 使用者](install-step7.md)。
+- 選擇性的 **Honeytoken**：沒有任何網路活動之使用者的使用者帳戶。 此帳戶設定為 [!INCLUDE [Product short](includes/product-short.md)] Honeytoken 使用者。 如需使用 Honeytoken 的詳細資訊，請參閱[設定排除專案和 Honeytoken 使用者](install-step7.md)。
 
 - 選用：在部署獨立感應器時，必須將 [Windows 事件](configure-windows-event-collection.md#configure-event-collection)轉送給 [!INCLUDE [Product short](includes/product-short.md)]，以在敏感性群組與可疑服務建立偵測能力之外，進一步增強 [!INCLUDE [Product short](includes/product-short.md)] 驗證型偵測能力。  [!INCLUDE [Product short](includes/product-short.md)] 感應器會自動收到這些事件。 在 [!INCLUDE [Product short](includes/product-short.md)] 獨立感應器中，這些事件可從 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可為[!INCLUDE [Product short](includes/product-short.md)] 提供透過網域控制站網路流量無法取得的額外資訊。
 
@@ -96,7 +94,7 @@ ms.locfileid: "93275636"
 - 防火牆/Proxy 開啟 - 若要與 [!INCLUDE [Product short](includes/product-short.md)] 雲端服務通訊，則必須在防火牆/Proxy 中開啟 *.atp.azure.com 連接埠 443。
 
     > [!NOTE]
-    > 您也可以使用 Azure 服務標籤 ( **AzureAdvancedThreatProtection** ) 來啟用對 [!INCLUDE [Product short](includes/product-short.md)] 的存取權。 如需服務標籤的詳細資訊，請參閱[虛擬網路服務標籤](/azure/virtual-network/service-tags-overview)或[下載服務標籤](https://www.microsoft.com/download/details.aspx?id=56519)檔案。
+    > 您也可以使用 Azure 服務標籤 (**AzureAdvancedThreatProtection**) 來啟用對 [!INCLUDE [Product short](includes/product-short.md)] 的存取權。 如需服務標籤的詳細資訊，請參閱[虛擬網路服務標籤](/azure/virtual-network/service-tags-overview)或[下載服務標籤](https://www.microsoft.com/download/details.aspx?id=56519)檔案。
 
  ![[!INCLUDE [Product short](includes/product-short.md)] 架構圖表](media/architecture-topology.png)
 

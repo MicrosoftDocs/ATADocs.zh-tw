@@ -10,16 +10,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f971bf0ccadf2eba52b40c95591abaff0c963e0e
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: b2d1978a822b8062422c41696043b1563d8bc893
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277076"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848511"
 ---
 # <a name="quickstart-download-the-product-long-sensor-setup-package"></a>快速入門：下載 [!INCLUDE [Product long](includes/product-long.md)] 感應器安裝套件
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 在此快速入門中，您將會從入口網站下載 [!INCLUDE [Product long](includes/product-long.md)] 感應器安裝套件。
 
@@ -38,7 +36,7 @@ ms.locfileid: "93277076"
 若稍後要前往 [感應器設定] 畫面，請選取 [設定]，然後在 [系統] 底下，按一下 [感應器]。  
 
 1. 按一下 [下載] 將套件儲存在本機。
-1. 複製 **存取** **金鑰** 。 [!INCLUDE [Product short](includes/product-short.md)] 感應器連線到 [!INCLUDE [Product short](includes/product-short.md)] 執行個體需要存取金鑰。 存取金鑰是部署感應器的單次密碼，其後所有的通訊都是使用驗證的憑證和 TLS 加密來執行。 如果需要重新產生新的存取金鑰，您可以使用 [重新產生] 按鈕，而且它不會對先前部署的感應器有任何影響，因為它只會用於感應器的初始註冊。
+1. 複製 **存取** **金鑰**。 [!INCLUDE [Product short](includes/product-short.md)] 感應器連線到 [!INCLUDE [Product short](includes/product-short.md)] 執行個體需要存取金鑰。 存取金鑰是部署感應器的單次密碼，其後所有的通訊都是使用驗證的憑證和 TLS 加密來執行。 如果需要重新產生新的存取金鑰，您可以使用 [重新產生] 按鈕，而且它不會對先前部署的感應器有任何影響，因為它只會用於感應器的初始註冊。
 1. 將套件複製到您要安裝 [!INCLUDE [Product short](includes/product-short.md)] 感應器的專用伺服器或網域控制站。 或者，您也可以從專用伺服器或網域控制站開啟 [!INCLUDE [Product short](includes/product-short.md)] 入口網站並跳過此步驟。
 
 ZIP 檔案包含下列檔案：

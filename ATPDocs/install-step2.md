@@ -10,16 +10,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: f0c4cc8342c9f45b8cc08166d14be1c512ca1065
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 58a5f6c37a5b5bc4e224393aac5ad9771d6a1f6b
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93276230"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94847865"
 ---
 # <a name="quickstart-connect-to-your-active-directory-forest"></a>快速入門：連線到您的 Active Directory 樹系
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 在此快速入門中，您會將 [!INCLUDE [Product long](includes/product-long.md)] 連線到 Active Directory (AD)，以擷取使用者和電腦的相關資料。 若您要連線多個樹系，請參閱[多樹系支援](multi-forest.md)一文。
 
@@ -52,10 +50,10 @@ ms.locfileid: "93276230"
 
     |欄位|註解|
     |---|---|
-    |**使用者名稱** (必填)|輸入唯讀 AD 使用者名稱。 例如： **DefenderForIdentityUser** 。 您必須使用 **標準** AD 使用者或 gMSA 帳戶。 **請勿** 使用您使用者名稱的 UPN 格式。|
-    |**密碼** (為標準 AD 使用者帳戶所需)|(僅限 AD 使用者帳戶) 輸入唯讀使用者的密碼。 例如： **Pencil1** 。|
+    |**使用者名稱** (必填)|輸入唯讀 AD 使用者名稱。 例如：**DefenderForIdentityUser**。 您必須使用 **標準** AD 使用者或 gMSA 帳戶。 **請勿** 使用您使用者名稱的 UPN 格式。|
+    |**密碼** (為標準 AD 使用者帳戶所需)|(僅限 AD 使用者帳戶) 輸入唯讀使用者的密碼。 例如：**Pencil1**。|
     |**群組受管理的服務帳戶** (為 gMSA 帳戶所需)|(僅限 gMSA 帳戶) 選取 [群組受管理的服務帳戶]。|
-    |**網域** (必填)|輸入唯讀使用者的網域。 例如： **contoso.com** 。 請務必輸入使用者所在網域的完整 FQDN。 例如，如果使用者的帳戶是在 corp.contoso.com 網域中，則需要輸入 `corp.contoso.com`，而非 contoso.com|
+    |**網域** (必填)|輸入唯讀使用者的網域。 例如：**contoso.com**。 請務必輸入使用者所在網域的完整 FQDN。 例如，如果使用者的帳戶是在 corp.contoso.com 網域中，則需要輸入 `corp.contoso.com`，而非 contoso.com|
 
 1. 在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中，按一下 [下載感應器安裝程式並安裝第一個感應器] 以繼續。
 

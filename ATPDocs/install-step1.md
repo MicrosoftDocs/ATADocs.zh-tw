@@ -10,16 +10,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 50307054535447326b8b48641afaeec7cfc70551
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: fcb99edccdd8ce98be4b9335d7703503307fd0ac
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93277163"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848568"
 ---
 # <a name="quickstart-create-your-product-long-instance"></a>快速入門：建立 [!INCLUDE [Product long](includes/product-long.md)] 執行個體
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 在此快速入門中，您將在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中建立 [!INCLUDE [Product long](includes/product-long.md)] 執行個體。 在 [!INCLUDE [Product short](includes/product-short.md)] 中，您將會擁有單一執行個體 (先前稱為工作區)。 單一執行個體可讓您透過單一窗口來管理多個樹系。
 

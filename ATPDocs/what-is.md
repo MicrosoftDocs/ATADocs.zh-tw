@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 6bd5e8677a37555db09925d98d242334e1e4967c
-ms.sourcegitcommit: 13d1ba61abae691d38d8e210b3adad71285d5c26
+ms.openlocfilehash: 306ecc4fa1022420627d0f12cea43a738d50b45a
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93380619"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848851"
 ---
 # <a name="what-is-product-long"></a>什麼是 [!INCLUDE [Product long](includes/product-long.md)]？
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Product long](includes/product-long.md)] (先前是 Azure 進階威脅防護 (ATP)，亦稱為 Azure ATP) 是雲端式安全性解決方案，其可運用您的內部部署 Active Directory 訊號來識別、偵測及調查針對您組織的進階威脅、身分識別盜用，以及惡意的內部人員動作。
 

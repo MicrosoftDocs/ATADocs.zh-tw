@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 200670e30e3c18e327bebc3959b78537596491a7
-ms.sourcegitcommit: 218ba562a2a109ff456b011004530f503a4e82c6
+ms.openlocfilehash: 1f5d63a4bf5a4ab22b43648394d3e82fb39357ef
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93342441"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848035"
 ---
 # <a name="tutorial-exfiltration-alerts"></a>教學課程：外流警訊
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 網路攻擊通常會針對低權限使用者等所有可存取的實體啟動，然後快速橫向移動，直到攻擊者得以存取有價值的資產。 敏感性帳戶、網域系統管理員或高度敏感性資料均為重要資產。 [!INCLUDE [Product long](includes/product-long.md)] 會從整個攻擊狙殺鏈來源識別進階威脅，並將其分成下列幾個階段：
 
@@ -30,7 +28,7 @@ ms.locfileid: "93342441"
 1. [網域支配](domain-dominance-alerts.md)
 1. **Exfiltration**
 
-若要深入了解如何了解結構和所有 [!INCLUDE [Product short](includes/product-short.md)] 安全性警訊的一般元件，請參閱[了解安全性警訊](understanding-security-alerts.md)。 如需 **確判 (TP)** 、 **良性確判 (B-TP)** 及 **誤判 (FP)** 的詳細資訊，請參閱 [安全性警訊分類](understanding-security-alerts.md#security-alert-classifications)。
+若要深入了解如何了解結構和所有 [!INCLUDE [Product short](includes/product-short.md)] 安全性警訊的一般元件，請參閱[了解安全性警訊](understanding-security-alerts.md)。 如需 **確判 (TP)** 、**良性確判 (B-TP)** 及 **誤判 (FP)** 的詳細資訊，請參閱 [安全性警訊分類](understanding-security-alerts.md#security-alert-classifications)。
 
 下列安全性警訊有助於找出並修復 [!INCLUDE [Product short](includes/product-short.md)] 在網路中偵測到的 **外流** 階段可疑活動。 在此教學課程中，學習如何理解、分類、防範及修復以下攻擊：
 
@@ -48,7 +46,7 @@ ms.locfileid: "93342441"
 **TP、B-TP 或 FP**
 
 1. 這些使用者應將這些檔案複製到此電腦嗎？
-    - 若以上問題的答案為 **是** ，那麼請 **關閉** 安全性警訊，然後將該電腦視為 **B-TP** 活動排除。
+    - 若以上問題的答案為 **是**，那麼請 **關閉** 安全性警訊，然後將該電腦視為 **B-TP** 活動排除。
 
 **了解漏洞的範圍**
 

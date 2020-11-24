@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1a21762351400d298154e7dbf7503fd7d820e0a2
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 00c57a9be51c1ac8b48500c1a15ce16ddc441362
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93275351"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849004"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>教學課程：偵察警訊
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 網路攻擊通常會針對低權限使用者等所有可存取的實體啟動，然後快速橫向移動，直到攻擊者得以存取有價值的資產。 敏感性帳戶、網域系統管理員或高度敏感性資料均為重要資產。 [!INCLUDE [Product long](includes/product-long.md)] 會從整個攻擊狙殺鏈來源識別進階威脅，並將其分成下列幾個階段：
 
@@ -30,7 +28,7 @@ ms.locfileid: "93275351"
 1. [網域支配](domain-dominance-alerts.md)
 1. [Exfiltration](exfiltration-alerts.md)
 
-若要深入了解如何了解結構和所有 [!INCLUDE [Product short](includes/product-short.md)] 安全性警訊的一般元件，請參閱[了解安全性警訊](understanding-security-alerts.md)。 如需 **確判 (TP)** 、 **良性確判 (B-TP)** 及 **誤判 (FP)** 的詳細資訊，請參閱 [安全性警訊分類](understanding-security-alerts.md#security-alert-classifications)。
+若要深入了解如何了解結構和所有 [!INCLUDE [Product short](includes/product-short.md)] 安全性警訊的一般元件，請參閱[了解安全性警訊](understanding-security-alerts.md)。 如需 **確判 (TP)** 、**良性確判 (B-TP)** 及 **誤判 (FP)** 的詳細資訊，請參閱 [安全性警訊分類](understanding-security-alerts.md#security-alert-classifications)。
 
 下列安全性警訊有助於找出並修復 [!INCLUDE [Product short](includes/product-short.md)] 在網路中偵測到的 **偵察** 階段可疑活動。
 
@@ -53,9 +51,9 @@ ms.locfileid: "93275351"
 
 在帳戶列舉偵察中，攻擊者會使用含有上千筆使用者名稱的目錄或 KrbGuess 這類工具，嘗試猜測網域中的使用者名稱。
 
-**Kerberos** ：攻擊者利用這些名稱提出 Kerberos 要求，試著在網域中找到有效的使用者名稱。 如果成功猜到使用者名稱，攻擊者會收到「需要預先驗證」，而不是「未知的安全性主體」Kerberos 錯誤。
+**Kerberos**：攻擊者利用這些名稱提出 Kerberos 要求，試著在網域中找到有效的使用者名稱。 如果成功猜到使用者名稱，攻擊者會收到「需要預先驗證」，而不是「未知的安全性主體」Kerberos 錯誤。
 
-**NTLM** ：攻擊者利用名稱字典來提出 NTLM 驗證要求，試著在網域中找到有效的使用者名稱。 如果成功猜到使用者名稱，攻擊者會收到 **WrongPassword (0xc000006a)** 而不是 **NoSuchUser (0xc0000064)** NTLM 錯誤。
+**NTLM**：攻擊者利用名稱字典來提出 NTLM 驗證要求，試著在網域中找到有效的使用者名稱。 如果成功猜到使用者名稱，攻擊者會收到 **WrongPassword (0xc000006a)** 而不是 **NoSuchUser (0xc0000064)** NTLM 錯誤。
 
 在此警訊偵測中，[!INCLUDE [Product short](includes/product-short.md)] 會偵測帳戶列舉攻擊來源、猜測嘗試總次數及嘗試相符次數。 如果有太多未知的使用者，[!INCLUDE [Product short](includes/product-short.md)] 會將其偵測為可疑的活動。
 
@@ -67,7 +65,7 @@ ms.locfileid: "93275351"
 
 某些伺服器和應用程式會查詢網域控制站，以判斷帳戶是否存在於合法使用情節中。
 
-若要判斷此查詢是 **TP** 、 **BTP** 或 **FP** ，請按一下警示以移至其詳細資料頁面：
+若要判斷此查詢是 **TP**、**BTP** 或 **FP**，請按一下警示以移至其詳細資料頁面：
 
 1. 檢查來源電腦是否應該執行此類型的查詢。 在此情況下的 **B-TP** 範例可能是 Microsoft Exchange Server 或人力資源系統。
 
@@ -76,7 +74,7 @@ ms.locfileid: "93275351"
      伺服器設定不正確 (例如 Exchange/Skype 或 ADSF) 可能會導致出現屬於不同網域的其他使用者。
     - 請查看問題服務的設定，以修正設定不正確的問題。
 
-    如果以上問題的答案為 **是** ，則為 **B-TP** 活動。 請「關閉」安全性警示。
+    如果以上問題的答案為 **是**，則為 **B-TP** 活動。 請「關閉」安全性警示。
 
 在下一個步驟中，查看來源電腦：
 
@@ -85,7 +83,7 @@ ms.locfileid: "93275351"
     如果是，請停止並編輯或刪除指令碼。
     - 應用程式是否為應該在環境中執行的系統管理或安全性指令碼/應用程式？
 
-      如果以上問題的答案為 **是** ，請「關閉」安全性警示並排除該電腦。 這可能是 **B-TP** 活動。
+      如果以上問題的答案為 **是**，請「關閉」安全性警示並排除該電腦。 這可能是 **B-TP** 活動。
 
 現在，查看帳戶：
 
@@ -95,7 +93,7 @@ ms.locfileid: "93275351"
     - 如果不存在的帳戶看起來很眼熟，有可能是已停用的帳戶，或屬於已離職的員工。
     - 檢查應用程式或指令碼，以判斷哪些帳戶仍然存在於 Active Directory 中。
 
-      如果以上其中一個問題的答案為 **是** ，請「關閉」安全性警示，這可能是 **B-TP** 活動。
+      如果以上其中一個問題的答案為 **是**，請「關閉」安全性警示，這可能是 **B-TP** 活動。
 
 1. 若任何猜測意圖符合現有的帳戶名稱，攻擊者即可得知帳戶存在於您的環境中，而且可以嘗試使用暴力密碼破解，使用探索到的使用者名稱存取您的網域。
     - 請檢查猜到的帳戶名稱，了解是否有其他可疑活動。
@@ -136,7 +134,7 @@ ms.locfileid: "93275351"
 
 1. 按一下警示以查看已執行的查詢。
     - 檢查來源電腦是否應該進行這些查詢
-        - 如果是，請將安全性警示關閉為 **FP** 。 如果是進行中的活動，請排除可疑活動。
+        - 如果是，請將安全性警示關閉為 **FP**。 如果是進行中的活動，請排除可疑活動。
 1. 按一下來源電腦並移至其設定檔頁面。
     - 尋找查詢期間所發生的任何不尋常活動，例如下列搜尋類型：已登入的使用者、受存取的資源，以及其他探查查詢。
     - 如果已啟用適用於端點的 Microsoft Defender 整合，請按一下其圖示來進一步調查電腦。
@@ -144,7 +142,7 @@ ms.locfileid: "93275351"
 1. 檢查公開的帳戶。
     - 尋找不尋常的活動。
 
-如果問題 2 或 3 的答案為是，請將此警示視為 **TP** ，並遵循 **了解缺口的範圍** 中的指示。
+如果問題 2 或 3 的答案為是，請將此警示視為 **TP**，並遵循 **了解缺口的範圍** 中的指示。
 
 **了解漏洞的範圍**
 
@@ -180,7 +178,7 @@ DNS 通訊協定中有數種查詢類型。 此 [!INCLUDE [Product short](includ
 1. 檢查來源電腦是否為 DNS 伺服器。
 
     - 如果來源電腦 **是** DNS 伺服器，請關閉 **FP** 的安全性警示。
-    - 若要防止未來發生 **FP** ，請確認 [!INCLUDE [Product short](includes/product-short.md)] 感應器與來源電腦之間的 UDP 連接埠 53 已 **開啟** 。
+    - 若要防止未來發生 **FP**，請確認 [!INCLUDE [Product short](includes/product-short.md)] 感應器與來源電腦之間的 UDP 連接埠 53 已 **開啟**。
 
 安全性掃描程式與合法應用程式都可能會產生 DNS 查詢。
 
@@ -269,7 +267,7 @@ DNS 通訊協定中有數種查詢類型。 此 [!INCLUDE [Product short](includ
       - 這些使用者是否正常登入該來源電腦，或是否為應執行這些特定動作的系統管理員？
     - 檢查使用者設定檔，以及與他們相關的使用者活動。 使用[使用者調查指南](investigate-a-user.md)，以了解他們的一般使用者行為和搜尋其他可疑活動。
 
-      如果對以上問題的答案為 **是** ，請「關閉」有關 **B-TP** 活動的警示。
+      如果對以上問題的答案為 **是**，請「關閉」有關 **B-TP** 活動的警示。
 
 **了解漏洞的範圍**
 

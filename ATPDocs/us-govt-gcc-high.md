@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: ca74b6ed2e0f76892149ec27d56bdf02cd490278
-ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+ms.openlocfilehash: 8e193a6bc61ab7b0fbbdf0528438f585bc33fcae
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93273924"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94846522"
 ---
 # <a name="product-long-for-us-government-gcc-high"></a>適用於美國政府 GCC High 的 [!INCLUDE [Product long](includes/product-long.md)]
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 [!INCLUDE [Product long](includes/product-long.md)] GCC High 供應項目使用的基礎技術與功能，和 [!INCLUDE [Product short](includes/product-short.md)] 商業執行個體相同。 您可以在[服務描述](/enterprise-mobility-security/solutions/ems-azure-atp-govt-service-description)中找到功能差異清單。
 

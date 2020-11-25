@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: fffb94b42e49280949dbdb67926841ebaea8ba2a
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: e37e413a355db72e04e1b6f72a71c570148c9f04
+ms.sourcegitcommit: 4563d22ad0fc63022a57c5d2d4fbc425e900bf84
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848919"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "96028694"
 ---
 # <a name="troubleshooting-product-long-known-issues"></a>針對 [!INCLUDE [Product long](includes/product-long.md)] 已知問題進行疑難排解
 
@@ -158,7 +158,7 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 
 若要解決問題：
 
-在虛擬機器的 NIC 設定中，將下列項目設定為 [已停用]  ：**IPv4 TSO 卸載**。
+在虛擬機器的 NIC 設定中，將下列內容設定為 [ **停用** ]： [ **IPv4 TSO** 卸載]。
 
  ![VMware 感應器問題](media/vm-sensor-issue.png)
 

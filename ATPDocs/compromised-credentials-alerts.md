@@ -11,16 +11,14 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: 1f0b06f81986eedaac03f58c9c040a0b3348c304
-ms.sourcegitcommit: 3c5ca2cb13ebe6c839ede951b238261d1fc73f26
+ms.openlocfilehash: 18d3f9461eba901f875863a5e7ccc7cab7ebc4c8
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93343547"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94848664"
 ---
 # <a name="tutorial-compromised-credential-alerts"></a>教學課程：認證遭入侵警訊
-
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 
 網路攻擊通常會針對任何可存取的實體進行，例如低權限的使用者，然後快速橫向移動，直到攻擊者得以存取有價值的資產，例如敏感性帳戶、網域系統管理員和高敏感性資料。 [!INCLUDE [Product long](includes/product-long.md)] 會從整個攻擊狙殺鏈來源識別進階威脅，並將其分成下列幾個階段：
 
@@ -30,7 +28,7 @@ ms.locfileid: "93343547"
 1. [網域支配](domain-dominance-alerts.md)
 1. [Exfiltration](exfiltration-alerts.md)
 
-若要深入了解如何了解結構和所有 [!INCLUDE [Product short](includes/product-short.md)] 安全性警訊的一般元件，請參閱[了解安全性警訊](understanding-security-alerts.md)。 如需 **確判 (TP)** 、 **良性確判 (B-TP)** 及 **誤判 (FP)** 的詳細資訊，請參閱 [安全性警訊分類](understanding-security-alerts.md#security-alert-classifications)。
+若要深入了解如何了解結構和所有 [!INCLUDE [Product short](includes/product-short.md)] 安全性警訊的一般元件，請參閱[了解安全性警訊](understanding-security-alerts.md)。 如需 **確判 (TP)** 、**良性確判 (B-TP)** 及 **誤判 (FP)** 的詳細資訊，請參閱 [安全性警訊分類](understanding-security-alerts.md#security-alert-classifications)。
 
 下列安全性警訊有助於找出並修復 [!INCLUDE [Product short](includes/product-short.md)] 在網路中偵測到的 **遭入侵認證** 階段可疑活動。 在本教學課程中，您將了解如何了解、分類、修復和避免下列各類攻擊：
 
@@ -40,14 +38,11 @@ ms.locfileid: "93343547"
 > - [可疑的暴力密碼破解攻擊 (Kerberos、NTLM) (外部識別碼 2023)](#suspected-brute-force-attack-kerberos-ntlm-external-id-2023)
 > - [可疑的暴力密碼破解攻擊 (LDAP) (外部識別碼 2004)](#suspected-brute-force-attack-ldap-external-id-2004)
 > - [可疑的暴力密碼破解攻擊 (SMB) (外部識別碼 2033)](#suspected-brute-force-attack-smb-external-id-2033)
+> - [可疑的 Kerberos SPN 公開 (外部識別碼 2410)](#suspected-kerberos-spn-exposure-external-id-2410)
 > - [可疑的 Netlogon 權限提升嘗試 (CVE-2020-1472 惡意探索) (外部識別碼 2411)](#suspected-netlogon-priv-elev-2411)
 > - [可疑的 WannaCry 勒索軟體攻擊 (外部識別碼 2035)](#suspected-wannacry-ransomware-attack-external-id-2035)
 > - [可疑的 Metasploit 入侵架構使用 (外部識別碼 2034)](#suspected-use-of-metasploit-hacking-framework-external-id-2034)
 > - [可疑的 VPN 連線 (外部識別碼 2025)](#suspicious-vpn-connection-external-id-2025)
-
-<!--
-> - [Suspected Kerberos SPN exposure (external ID 2410)](#suspected-kerberos-spn-exposure-external-id-2410)
--->
 
 ## <a name="honeytoken-activity-external-id-2014"></a>Honeytoken 活動 (外部識別碼 2014)
 
@@ -101,15 +96,15 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 請務必檢查是否有任何登入嘗試已結束且成功驗證。
 
-1. 如果有任何登入嘗試已成功結束，請檢查平常是否從該來源電腦使用任何 **猜對的帳戶** 。
+1. 如果有任何登入嘗試已成功結束，請檢查平常是否從該來源電腦使用任何 **猜對的帳戶**。
     - 這些帳戶失敗是否有可能是因為使用了錯誤的密碼？
     - 與使用者確認他們是否已產生活動 (無法登入幾次後成功)。
 
-      如果以上問題的答案為 **是** ，請 **關閉** 有關 B-TP 活動的安全性警示。
+      如果以上問題的答案為 **是**，請 **關閉** 有關 B-TP 活動的安全性警示。
 
-1. 如果沒有 **猜對的帳戶** ，請檢查平常是否從來源電腦使用任何 **受攻擊的帳戶** 。
+1. 如果沒有 **猜對的帳戶**，請檢查平常是否從來源電腦使用任何 **受攻擊的帳戶**。
     - 檢查來源電腦上是否有搭配錯誤/舊認證執行的指令碼？
-    - 如果以上問題的答案為 **是** ，請停止並編輯或刪除指令碼。 請 **關閉** 有關 B-TP 活動的安全性警示。
+    - 如果以上問題的答案為 **是**，請停止並編輯或刪除指令碼。 請 **關閉** 有關 B-TP 活動的安全性警示。
 
 **了解漏洞的範圍**
 
@@ -148,16 +143,16 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 請務必檢查是否有任何登入嘗試已結束且成功驗證。
 
-1. 如果有任何登入嘗試已成功結束，平常是否從該來源電腦使用任何 **猜對的帳戶** ？
+1. 如果有任何登入嘗試已成功結束，平常是否從該來源電腦使用任何 **猜對的帳戶**？
     - 這些帳戶失敗是否有可能是因為使用了錯誤的密碼？
     - 與使用者確認他們是否已產生活動 (無法登入幾次後成功)。
 
-        如果以上問題的答案為 **是** ，請 **關閉** 有關 B-TP 活動的安全性警示。
+        如果以上問題的答案為 **是**，請 **關閉** 有關 B-TP 活動的安全性警示。
 
-1. 如果沒有 **猜對的帳戶** ，請檢查平常是否從來源電腦使用任何 **受攻擊的帳戶** 。
+1. 如果沒有 **猜對的帳戶**，請檢查平常是否從來源電腦使用任何 **受攻擊的帳戶**。
     - 檢查來源電腦上是否有搭配錯誤/舊認證執行的指令碼？
 
-        如果以上問題的答案為 **是** ，請停止並編輯或刪除指令碼。 請 **關閉** 有關 B-TP 活動的安全性警示。
+        如果以上問題的答案為 **是**，請停止並編輯或刪除指令碼。 請 **關閉** 有關 B-TP 活動的安全性警示。
 
 **了解漏洞的範圍**
 
@@ -185,7 +180,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 **TP、B-TP 或 FP**
 
 1. 檢查來源電腦是否執行如 Hydra 等攻擊工具。
-    1. 如果來源電腦正在執行攻擊工具，則此警示為 **TP** 。 請遵循 **了解缺口範圍** 中的指示。
+    1. 如果來源電腦正在執行攻擊工具，則此警示為 **TP**。 請遵循 **了解缺口範圍** 中的指示。
 
 有時是應用程式實作自己的 NTLM 或 SMB 堆疊。
 
@@ -208,35 +203,33 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 1. 在組織中強制執行[複雜的長密碼](/windows/security/threat-protection/security-policy-settings/password-policy)。 複雜且很長的密碼提供必要的第一層安全性，以防止暴力密碼破解攻擊。
 1. [停用 SMBv1](https://blogs.technet.microsoft.com/filecab/2016/09/16/stop-using-smb1/)
 
-<!--
-## Suspected Kerberos SPN exposure (external ID 2410)
+## <a name="suspected-kerberos-spn-exposure-external-id-2410"></a>可疑的 Kerberos SPN 公開 (外部識別碼 2410)
 
-**Description**
+**說明**
 
-Attackers use tools to enumerate service accounts and their respective SPNs (Service principal names), request a Kerberos service ticket for the services, capture the Ticket Granting Service (TGS) tickets from memory and extract their hashes, and save them for later use in an offline brute force attack.
+攻擊者會使用工具來列舉服務帳戶和其個別的 SPN (服務主體名稱)、要求服務的 Kerberos 服務票證、從記憶體獲得票證授權服務 (TGS) 票證並擷取其雜湊，然後儲存起來以用於離線暴力密碼破解攻擊。
 
-**Learning period**
+**學習期間**
 
-None
+無
 
-**TP, B-TP, or FP**
+**TP、B-TP 或 FP**
 
-1. Check if the source computer is running an attack tool, such as PowerSploit or Rubeus.
-    1. If yes, it is a true positive. Follow the instructions in **Understand the scope of the breach**.
-    1. If the source computer is found running that type of application, and it should continue doing so, Close the security alert as a T-BP activity, and exclude that computer.
+1. 檢查來源電腦是否執行 PowerSploit 或 Rubeus 等攻擊工具。
+    1. 如果是，則為確判。 請遵循 **了解缺口範圍** 中的指示。
+    1. 如果發現執行該應用程式類型的來源電腦，且它應該繼續這麼做，請關閉有關 T-BP 活動的安全性警示，並排除該電腦。
 
-**Understand the scope of the breach**
+**了解缺口的範圍**
 
-1. Investigate the [exposed accounts](investigate-a-user.md). Check for malicious activity or suspicious behavior for these accounts.
-1. Investigate the [source computer](investigate-a-computer.md).
+1. 調查[公開的帳戶](investigate-a-user.md)。 檢查這些帳戶的惡意活動或可疑行為。
+1. 調查[來源電腦](investigate-a-computer.md)。
 
-**Remediation:**
+**補救：**
 
-1. Contain the source computer.
-    - Find the tool that performed the attack and remove it.
-    - Look for users who were logged on around the same time as the activity occurred, as these users may also be compromised. Reset their passwords and enable MFA or, if you have configured the relevant high-risk user policies in Azure Active Directory Identity Protection, you can use the [**Confirm user compromised**](/cloud-app-security/accounts#governance-actions) action in the Cloud App Security portal.
-1. Reset the passwords of the exposed users and enable MFA or, if you have configured the relevant high-risk user policies in Azure Active Directory Identity Protection, you can use the [**Confirm user compromised**](/cloud-app-security/accounts#governance-actions) action in the Cloud App Security portal.
--->
+1. 包含來源電腦。
+    - 尋找執行攻擊的工具，並將它移除。
+    - 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用 [**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+1. 重設公開使用者的密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用 [**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
 
 <a name="suspected-netlogon-priv-elev-2411"></a>
 
@@ -285,7 +278,7 @@ Microsoft 已發佈 [CVE-2020-1472](https://portal.msrc.microsoft.com/security-g
 
 1. 請檢查來源電腦上是否正在執行 WannaCry。
 
-    - 如果正在執行 WannaCry，則此警示為 **TP** 。 請遵循上述＜了解缺口的範圍＞中的指示執行。
+    - 如果正在執行 WannaCry，則此警示為 **TP**。 請遵循上述＜了解缺口的範圍＞中的指示執行。
 
 有時是應用程式實作自己的 NTLM 或 SMB 堆疊。
 

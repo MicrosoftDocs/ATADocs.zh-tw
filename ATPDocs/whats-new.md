@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: e4dcf816008316a244be44e631951c07f588fcd9
-ms.sourcegitcommit: 00142fc07a81b10922ae26418a4104a0ef4b366d
+ms.openlocfilehash: be9a243b149e6d5d998ccbebeb7b72ee5073432b
+ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2020
-ms.locfileid: "94371479"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849072"
 ---
 # <a name="whats-new-in-product-long"></a>[!INCLUDE [Product long](includes/product-long.md)] 的新功能
 
@@ -29,6 +29,12 @@ RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在�
 > [!IMPORTANT]
 >
 > Microsoft 的威脅防護產品名稱即將變更。 如需有關此變更的詳細資訊與其他更新，請參閱[這裡](https://www.microsoft.com/security/blog/?p=91813)。 從 2.129 版開始，我們將使用新的名稱。
+
+## <a name="product-short-release-2132"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.132 版
+
+發行日期：2020 年 11 月 17 日
+
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
 ## <a name="product-short-release-2131"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.131 版
 
@@ -223,7 +229,7 @@ Azure ATP 安全性評量現在包括未受監視的網域控制站 (不含感�
 發行日期：2020 年 2 月 16 日
 
 - **功能增強：機密實體**  
-從此版本 (2.109) 開始，由 Azure ATP 識別為憑證授權單位、DHCP 或 DNS 伺服器的機器現在會自動標記為 **機密** 。
+從此版本 (2.109) 開始，由 Azure ATP 識別為憑證授權單位、DHCP 或 DNS 伺服器的機器現在會自動標記為 **機密**。
 
 ## <a name="azure-atp-release-2108"></a>Azure ATP 2.108 版
 
@@ -529,7 +535,7 @@ Exchange 伺服器的手動機密標記
 發行日期：2019 年 4 月 28 日
 
 - **功能增強：機密實體**  
-從此版本 (2.75) 開始，由 Azure ATP 識別為 Exchange Server 的機器現在會被自動標示為 **機密** 。  
+從此版本 (2.75) 開始，由 Azure ATP 識別為 Exchange Server 的機器現在會被自動標示為 **機密**。  
 
     因為運作方式如 Exchange Server 的清單而被自動標示為 **機密** 的實體原會列出此分類作為其被標示的原因。
 
@@ -615,7 +621,7 @@ Exchange 伺服器的手動機密標記
 深入了解[可疑的暴力密碼破解攻擊 (LDAP)](compromised-credentials-alerts.md#suspected-brute-force-attack-ldap-external-id-2004) 安全性警示。
 
 - **新文件功能：安全性警示實驗室**  
-為了說明 Azure ATP 對您工作環境之真實威脅的強大偵測能力，我們已為此文件新增了新的 **安全性警示實驗室** 。 **安全性警示實驗室** 可協助您快速設定實驗室或測試環境，並說明可抵禦常見、真實世界威脅和攻擊的最佳防禦姿態。  
+為了說明 Azure ATP 對您工作環境之真實威脅的強大偵測能力，我們已為此文件新增了新的 **安全性警示實驗室**。 **安全性警示實驗室** 可協助您快速設定實驗室或測試環境，並說明可抵禦常見、真實世界威脅和攻擊的最佳防禦姿態。  
 
     [逐步執行實驗室](playbook-lab-overview.md)的設計目的是要確保您花費最少的時間進行建置，而將較多時間用在了解您的威脅局勢，以及可用的 Azure ATP 警示和防護。 我們很樂意收到您的意見反應。
 
@@ -653,7 +659,7 @@ Azure ATP 之 [安全性主體偵察 (LDAP) - 預覽](reconnaissance-alerts.md#s
 發行日期：2019 年 2 月 10 日
 
 - **新的安全性警訊：可疑的 NTLM 轉送攻擊 (Exchange 帳戶) – (預覽)**  
-Azure ATP 之[可疑的 NTLM 轉送攻擊 (Exchange 帳戶) - 預覽](lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037)安全性警示現已進入公開預覽階段。    在此偵測中，當識別到可疑來源使用 Exchange 帳戶認證時，便會觸發 Azure ATP 安全性警訊。 這些攻擊類型會嘗試利用 NTLM 轉送技術來取得網域控制站交換權限，又稱為 **ExchangePriv** 。 若要深入了解 **ExchangePriv** 技術，請參閱最早於 2019 年 1 月 31 日發佈的 [ADV190007 公告](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV190007)，以及 [Azure ATP 警示回應](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/How-to-win-the-latest-security-race-over-NTLM-relay/ba-p/334511) \(英文\)。  
+Azure ATP 之[可疑的 NTLM 轉送攻擊 (Exchange 帳戶) - 預覽](lateral-movement-alerts.md#suspected-ntlm-relay-attack-exchange-account-external-id-2037)安全性警示現已進入公開預覽階段。    在此偵測中，當識別到可疑來源使用 Exchange 帳戶認證時，便會觸發 Azure ATP 安全性警訊。 這些攻擊類型會嘗試利用 NTLM 轉送技術來取得網域控制站交換權限，又稱為 **ExchangePriv**。 若要深入了解 **ExchangePriv** 技術，請參閱最早於 2019 年 1 月 31 日發佈的 [ADV190007 公告](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV190007)，以及 [Azure ATP 警示回應](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/How-to-win-the-latest-security-race-over-NTLM-relay/ba-p/334511) \(英文\)。  
 
 - **正式運作：透過 DNS 執行遠端程式碼**  
 此警示現在已 GA (正式運作)。 如需詳細資訊與警示功能，請參閱[透過 DNS 執行遠端程式碼警示描述頁面](lateral-movement-alerts.md#remote-code-execution-over-dns-external-id-2036)。
@@ -733,7 +739,7 @@ Azure ATP 之[透過 SMB 資料外流](exfiltration-alerts.md)安全性警示現
 新增警訊描述及其他辨識項，讓您能更容易了解警訊，且提供了更好的調查工作流程。
 
 - **功能增強：DNS 查詢邏輯活動**  
-將其他查詢類型新增到 [Azure ATP 受監視的活動](monitored-activities.md)，其中包含： **TXT** 、 **MX** 、 **NS** 、 **SRV** 、 **ANY** 、 **DNSKEY** 。
+將其他查詢類型新增到 [Azure ATP 受監視的活動](monitored-activities.md)，其中包含：**TXT**、**MX**、**NS**、**SRV**、**ANY**、**DNSKEY**。
 
 - **功能增強：可疑的黃金票證使用方式 (票證異常) 及可疑的黃金票證使用方式 (不存在的帳戶)**  
 改善的偵測邏輯皆已套用到兩個警訊中，以降低 FP 警訊的數目，進而傳遞更準確的結果。

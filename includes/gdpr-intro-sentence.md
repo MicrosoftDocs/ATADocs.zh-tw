@@ -9,10 +9,10 @@ ms.date: 04/24/2018
 ms.author: lizross
 ms.custom: include file
 ms.openlocfilehash: b049b3651f12b1a73a3511d030bbdbbfaceb2480
-ms.sourcegitcommit: 63be53de5b84eabdeb8c006438dab45bd35a4ab7
-ms.translationtype: HT
+ms.sourcegitcommit: 07a855b87931875bdeca14b152b13a36db79bfa8
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 11/26/2020
 ms.locfileid: "68862451"
 ---
 >[!Note] 

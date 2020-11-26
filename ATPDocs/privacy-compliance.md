@@ -11,10 +11,10 @@ ms.service: azure-advanced-threat-protection
 ms.reviewer: ophir
 ms.suite: ems
 ms.openlocfilehash: 648d12d6135e5ab09319580142807f930e595eda
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.sourcegitcommit: 07a855b87931875bdeca14b152b13a36db79bfa8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
+ms.lasthandoff: 11/26/2020
 ms.locfileid: "94846964"
 ---
 # <a name="product-long-data-security-and-privacy"></a>[!INCLUDE [Product long](includes/product-long.md)] 資料安全性和隱私權

@@ -11,10 +11,10 @@ ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 58a5f6c37a5b5bc4e224393aac5ad9771d6a1f6b
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.sourcegitcommit: 07a855b87931875bdeca14b152b13a36db79bfa8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
+ms.lasthandoff: 11/26/2020
 ms.locfileid: "94847865"
 ---
 # <a name="quickstart-connect-to-your-active-directory-forest"></a>快速入門：連線到您的 Active Directory 樹系

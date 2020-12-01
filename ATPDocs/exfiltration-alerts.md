@@ -12,10 +12,10 @@ ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 1f5d63a4bf5a4ab22b43648394d3e82fb39357ef
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.sourcegitcommit: 07a855b87931875bdeca14b152b13a36db79bfa8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
+ms.lasthandoff: 11/26/2020
 ms.locfileid: "94848035"
 ---
 # <a name="tutorial-exfiltration-alerts"></a>教學課程：外流警訊

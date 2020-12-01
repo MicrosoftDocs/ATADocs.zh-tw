@@ -12,10 +12,10 @@ ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: 78d7a4d51459c5ea9099198e43097757ee2c588e
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.sourcegitcommit: 07a855b87931875bdeca14b152b13a36db79bfa8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
+ms.lasthandoff: 11/26/2020
 ms.locfileid: "94847645"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>教學課程：橫向移動警訊

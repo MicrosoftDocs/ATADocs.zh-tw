@@ -12,10 +12,10 @@ ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
 ms.openlocfilehash: d9a37aa5fc952606dbf8c6d9148c53ef43fccf98
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.sourcegitcommit: 07a855b87931875bdeca14b152b13a36db79bfa8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
+ms.lasthandoff: 11/26/2020
 ms.locfileid: "94848630"
 ---
 # <a name="tutorial-domain-dominance-alerts"></a>教學課程：控制網域警訊

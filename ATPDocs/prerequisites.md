@@ -4,18 +4,18 @@ description: 描述適用於身分識別的 Microsoft Defender 在環境中成�
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/26/2020
+ms.date: 11/24/2020
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: azure-advanced-threat-protection
 ms.reviewer: itargoet
 ms.suite: ems
-ms.openlocfilehash: df877f342b0bf7a31bf4cdf171a7bc2104c89e1f
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 23078e7e4281629f378e27281a21124d959f0902
+ms.sourcegitcommit: 24530d8fac3b63dee766b124b6a5549c1b9ef808
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94846998"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "96028647"
 ---
 # <a name="product-long-prerequisites"></a>[!INCLUDE [Product long](includes/product-long.md)] 先決條件
 
@@ -132,7 +132,7 @@ ms.locfileid: "94846998"
 | Windows Server 2016        | &#10004;                       | &#10004;    | &#10060;       |
 | Windows Server 2019\*      | &#10004;                       | &#10004;    | &#10060;       |
 
-\* 需要 [KB4487044](https://support.microsoft.com/help/4487044/windows-10-update-kb4487044)。 系統將會自動停止安裝在未安裝此更新之 Server 2019 上的感應器。
+\* 需要 [KB4487044](https://support.microsoft.com/help/4487044/windows-10-update-kb4487044) 或更新的累積更新。 如果系統目錄中 *ntdsai* 檔案的檔案版本早於 *10.0.17763.316*，則在沒有此更新之 Server 2019 上安裝的感應器會自動停止。
 
 網域控制站可以是唯讀網域控制站 (RODC)。
 

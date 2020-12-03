@@ -1,22 +1,14 @@
 ---
 title: 設定您的 Proxy 或防火牆，以啟用適用於身分識別的 Microsoft Defender 與感應器的通訊 | Microsoft Docs
 description: 描述如何設定您的防火牆或 Proxy，以允許適用於身分識別的 Microsoft Defender 雲端服務與適用於身分識別的 Microsoft Defender 感應器之間的通訊
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 6b2b620895d0a59886a140ff340b6772744c6bac
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 4606ab39457cbf1210974cb9f150d7410051c361
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848647"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96543428"
 ---
 # <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-product-long-sensor"></a>為[!INCLUDE [Product long](includes/product-long.md)] 感應器設定端點 Proxy 與網際網路連線設定
 

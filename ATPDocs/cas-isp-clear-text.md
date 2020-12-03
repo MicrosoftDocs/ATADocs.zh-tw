@@ -1,22 +1,14 @@
 ---
 title: 適用于身分識別純文字曝光評定的 Microsoft Defender
 description: 本文概述 Microsoft Defender 身分識別的純文字公開身分識別安全性狀態評估報告。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 08/25/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 6a5d110d35ad3b49205d4c0b7b03412fe26626ae
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: ce95dd461716d72e97787f797c8326da81a43118
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848783"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96543785"
 ---
 # <a name="security-assessment-entities-exposing-credentials-in-clear-text"></a>安全性評估：實體以純文字公開認證
 

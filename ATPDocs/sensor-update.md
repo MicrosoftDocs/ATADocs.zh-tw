@@ -1,22 +1,14 @@
 ---
 title: 更新適用於身分識別的 Microsoft Defender
 description: 描述如何更新及延遲適用於身分識別的 Microsoft Defender 中的感應器更新。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/27/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: d65de1862d97a1d8dbb84fdc84252851fbe44d63
-ms.sourcegitcommit: 07a855b87931875bdeca14b152b13a36db79bfa8
+ms.openlocfilehash: 6db4db087f64431812a3998f2c79f066dfb09ea2
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "94846777"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96542391"
 ---
 # <a name="update-product-long-sensors"></a>更新[!INCLUDE [Product long](includes/product-long.md)] 感應器
 

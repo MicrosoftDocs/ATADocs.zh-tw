@@ -1,22 +1,14 @@
 ---
 title: 在適用於身分識別的 Microsoft Defender 中驗證連接埠鏡像
 description: 描述如何驗證已在適用於身分識別的 Microsoft Defender 中正確設定連接埠鏡像
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/27/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: bennyl
-ms.suite: ems
-ms.openlocfilehash: a6b3a3ef5d16a3e92a4bcf6a8d52d96c9c4036ce
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 80944d45e92533a37edcbb855f913ea605bdef1d
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94846726"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544261"
 ---
 # <a name="validate-port-mirroring"></a>驗證連接埠鏡像
 

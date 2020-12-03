@@ -1,22 +1,14 @@
 ---
 title: 適用于身分識別未受監視網域控制站評定的 Microsoft Defender
 description: 本文概述適用于身分識別之未受監視的網域控制站身分識別安全性狀態評估報告的 Microsoft Defender。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: f3cf20aed80167b581a78fea5306916578bbd4c6
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 86a1e02b84cf874f23fbf7b69d50c482cd15713b
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848324"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544142"
 ---
 # <a name="security-assessment-unmonitored-domain-controllers"></a>安全性評估：未受監視的網域控制站
 

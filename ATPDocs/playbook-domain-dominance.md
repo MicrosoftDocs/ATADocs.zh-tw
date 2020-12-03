@@ -1,22 +1,14 @@
 ---
 title: 適用於身分識別的 Microsoft Defender 網域支配劇本
 description: 適用於身分識別的 Microsoft Defender 網域支配劇本描述如何模擬適用於身分識別的 Defender 所偵測到的網域支配攻擊
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: bf1a3207fe44bee729d1120f71e1038e11e3e853
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: fc79528c5adb2b487b3b68f2919facadfd7ebe2e
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94847304"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96542782"
 ---
 # <a name="tutorial-domain-dominance-playbook"></a>教學課程：網域支配劇本
 

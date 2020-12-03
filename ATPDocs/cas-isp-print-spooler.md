@@ -1,22 +1,14 @@
 ---
 title: 適用于身分識別列印多工緩衝處理器身分識別安全性狀態評量的 Microsoft Defender
 description: 本文概述 Microsoft Defender 身分識別的列印多工緩衝處理器身分識別安全性狀態評估報告。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 90333e1588ebb110c940467177aa5aef762fb428
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 56b5ae3a235227f4c1f444b50d30730e71d0f8d5
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848749"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96543649"
 ---
 # <a name="security-assessment-domain-controllers-with-print-spooler-service-available"></a>安全性評估：有可用列印多工緩衝處理器服務的網域控制站
 

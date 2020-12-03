@@ -1,22 +1,14 @@
 ---
 title: 監視 Microsoft Defender 的身分識別系統健康情況和事件
 description: 使用健康情況中心來檢查 Microsoft Defender for Identity service 的運作情況，並在事件檢視器中查看潛在問題的警示，並查看系統事件。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 5bf828278e0223aaaf52b41932b2612c7225dd7f
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: e2a4c757682194013d34bddd6581402b5fe60920
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94847933"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544006"
 ---
 # <a name="work-with-product-long-health-and-events"></a>使用 [!INCLUDE [Product long](includes/product-long.md)] 健康情況和事件
 

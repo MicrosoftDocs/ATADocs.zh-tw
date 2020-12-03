@@ -1,22 +1,14 @@
 ---
 title: 使用記錄針對 Microsoft Defender 進行身分識別進行疑難排解
 description: 說明如何使用 Microsoft Defender 進行身分識別記錄來針對問題進行疑難排解
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/27/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: ''
-ms.suite: ''
-ms.openlocfilehash: 27e048b337ecd25b534f0c10096999a7173292c1
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: beea555d45f1e06ea3eddeffbf057c392003a8d2
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94846624"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96542102"
 ---
 # <a name="troubleshooting-product-long-sensor-using-the-product-short-logs"></a>[!INCLUDE [Product long](includes/product-long.md)]使用記錄針對感應器進行疑難排解 [!INCLUDE [Product short](includes/product-short.md)]
 

@@ -1,22 +1,14 @@
 ---
 title: 適用於身分識別的 Microsoft Defender SIEM 記錄參考
 description: 提供從適用於身分識別的 Microsoft Defender 傳送到您 SIEM 的可疑活動記錄範例。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: arzinger
-ms.suite: ems
-ms.openlocfilehash: d8625b9d6b634399f61201dc3bb7dd9c956fe36f
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: f5be050f11fc41e19c37410060acb825642369e3
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848239"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544108"
 ---
 # <a name="product-long-siem-log-reference"></a>[!INCLUDE [Product long](includes/product-long.md)] SIEM 記錄參考
 

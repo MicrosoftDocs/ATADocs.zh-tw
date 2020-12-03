@@ -1,22 +1,14 @@
 ---
 title: 使用 Microsoft Defender 的身分識別，監視網域控制站和安裝在網域控制站上的感應器
 description: 說明如何使用 Defender 進行身分識別監視適用于身分識別感應器和感應器涵蓋範圍的 Microsoft Defender
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/27/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 20e02b3281480024b67a1ef5908d82586c11f955
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 370e35388356de148b8756464633120bf5d74e5d
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849012"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544363"
 ---
 # <a name="monitoring-your-domain-controller-coverage"></a>監視您的網域控制站涵蓋範圍
 

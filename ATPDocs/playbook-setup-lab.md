@@ -1,21 +1,14 @@
 ---
 title: 適用於身分識別的 Microsoft Defender 安全性實驗室設定教學課程
 description: 在此教學課程中，您會設定適用於身分識別的 Microsoft Defender 測試實驗室，以模擬適用於身分識別的 Defender 的偵測威脅。
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: e175744d29cac82c29dc1f072a145ee68770dcf7
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 51505b97acde09eecce25e0bafaea8fa0af60419
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94847049"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96542527"
 ---
 # <a name="tutorial-setup-a-product-long-security-alert-lab"></a>教學課程：設定[!INCLUDE [Product long](includes/product-long.md)] 安全性警示實驗室
 

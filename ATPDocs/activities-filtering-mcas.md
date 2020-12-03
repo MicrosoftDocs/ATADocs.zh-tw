@@ -1,22 +1,14 @@
 ---
 title: 適用于身分識別活動篩選和原則的 Microsoft Defender Microsoft Cloud App Security
 description: 使用 Microsoft Cloud App Security 的身分識別活動篩選和原則的 Microsoft Defender 總覽。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 0f6a359745ae03ce0b982e00b7f4c06d556eb702
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 5956ebfb9904465e876a21b918255f44ec651ae9
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848817"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544244"
 ---
 # <a name="use-activity-filters-and-create-action-policies-with-product-long-in-microsoft-cloud-app-security"></a>在 Microsoft Cloud App Security 中使用活動篩選和建立動作原則 [!INCLUDE [Product long](includes/product-long.md)]
 

@@ -1,22 +1,14 @@
 ---
 title: 在適用於身分識別的 Microsoft Defender 入口網站中處理使用者設定檔
 description: 描述如何在適用於身分識別的 Microsoft Defender 入口網站中從使用者設定檔畫面調查使用者
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 06b628caf47945a9bfa645b5b73593c02a1093b4
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 41998b13c6eabff5c2248b7e352dbf5d759831dd
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848154"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544074"
 ---
 # <a name="understanding-entity-profiles"></a>了解實體設定檔
 

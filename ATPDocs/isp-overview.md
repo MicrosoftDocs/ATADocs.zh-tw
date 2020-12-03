@@ -1,22 +1,14 @@
 ---
 title: Microsoft Defender 身分識別的身分識別安全性狀態評估
 description: 本文概述 Microsoft Defender 身分識別的身分識別安全性狀態評量報告。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 58e079764c2e59623b94b78f29f0ad00d6219dcc
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: a51eb3f824cba143a61d227e4df375f798bd01dd
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94847423"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96543904"
 ---
 # <a name="product-longs-identity-security-posture-assessments"></a>[!INCLUDE [Product long](includes/product-long.md)]的身分識別安全性狀態評估
 

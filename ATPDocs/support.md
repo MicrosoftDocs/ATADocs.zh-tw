@@ -1,22 +1,14 @@
 ---
 title: 適用于身分識別支援的 Microsoft Defender
 description: 描述取得 Microsoft Defender 身分識別的支援協助的程式。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/27/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 2c35f69c3696e069cb48a6d1e04ba88b5d595ac0
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: bd5c340633a5f52d7ac25bd075acc9381bb9fd19
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848953"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544329"
 ---
 # <a name="product-long-information-and-support"></a>[!INCLUDE [Product long](includes/product-long.md)] 資訊和支援
 

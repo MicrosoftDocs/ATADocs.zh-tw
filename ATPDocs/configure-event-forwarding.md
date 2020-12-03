@@ -1,22 +1,14 @@
 ---
 title: 在適用於身分識別的 Microsoft Defender 中設定 Windows 事件轉送
 description: 描述使用適用於身分識別的 Microsoft Defender 設定 Windows 事件轉送的選項
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 8f30530929793bb338c7202eeedebc47b883e6c0
-ms.sourcegitcommit: 07a855b87931875bdeca14b152b13a36db79bfa8
+ms.openlocfilehash: f3a11a3d39972b3bdb3df38669ef2fa4b10cc5fb
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "94848681"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96543530"
 ---
 # <a name="configuring-windows-event-forwarding"></a>設定 Windows 事件轉送
 

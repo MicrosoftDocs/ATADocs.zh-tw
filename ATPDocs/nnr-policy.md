@@ -1,22 +1,14 @@
 ---
 title: 用於識別網路名稱解析的 Microsoft Defender
 description: 本文概述 Microsoft Defender 身分識別的 Advanced Network Name 解析功能和用途。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 9b9688031ea9916a09b8beaa2ce5c67633fd935f
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 3d7a1ea9c9c5939718fe83f6b0099ea2a4bfff37
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94847236"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96542629"
 ---
 # <a name="what-is-network-name-resolution"></a>什麼是網路名稱解析？
 
@@ -66,9 +58,9 @@ ms.locfileid: "94847236"
 
 |通訊協定|傳輸|Port|裝置|方向|
 |--------|--------|------|-------|------|
-|透過 RPC 的 NTLM *|TCP|135|網路上的所有裝置|輸入|
-|NetBIOS|UDP|137|網路上的所有裝置|輸入|
-|RDP|TCP|3389|網路上的所有裝置|輸入|
+|透過 RPC 的 NTLM *|TCP|135|網路上的所有裝置|連入|
+|NetBIOS|UDP|137|網路上的所有裝置|連入|
+|RDP|TCP|3389|網路上的所有裝置|連入|
 |DNS|UDP|53|網域控制站|輸出|
 
 \* 其中一個方法是必要的，但我們建議使用這些方法。

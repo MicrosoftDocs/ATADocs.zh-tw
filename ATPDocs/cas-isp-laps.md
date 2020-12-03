@@ -1,22 +1,14 @@
 ---
 title: Microsoft Defender for Identity Microsoft LAPS 使用量評定
 description: 本文概要說明 Microsoft Defender 身分識別的 Microsoft LAPS 使用身分識別安全性狀態評估報告。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 170385cfb1bd3fc82a77d67cd6f82d2197c458bf
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: d829636ac9659a19453db6f4cadfba54d129593d
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848766"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96543618"
 ---
 # <a name="security-assessment-microsoft-laps-usage"></a>安全性評估：Microsoft LAPS 使用情況
 

@@ -1,22 +1,14 @@
 ---
 title: 適用于身分識別的 Microsoft Defender 實用資源清單
 description: 本文提供適用于身分識別的 Microsoft Defender 實用資源清單
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/27/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 973c78137edcd02aa926174c1d2a9bbffe15e81f
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: e534baf48d472b9bada6366e9b0e2ccec5ef6c4c
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94846845"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96542205"
 ---
 # <a name="product-long-readiness-guide"></a>[!INCLUDE [Product long](includes/product-long.md)] 就緒指南
 

@@ -1,22 +1,14 @@
 ---
 title: 適用于身分識別風險最高的 Microsoft Defender 橫向移動路徑評量
 description: 本文概述使用風險最高橫向移動路徑身分識別安全性狀態評估報告的身分識別敏感性實體 Microsoft Defender。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: rkarlin
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 40175ace8046ae7b0edb77f4cac6e036eed997e7
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 0c40159818e9526eb3cdf0259fbcb45c54fa5482
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848341"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544159"
 ---
 # <a name="security-assessment-riskiest-lateral-movement-paths-lmp"></a>安全性評估：風險最高的橫向移動路徑 (LMP)
 

@@ -1,22 +1,14 @@
 ---
 title: Microsoft Cloud App Security 中的 Microsoft Defender 身分識別
 description: Microsoft Cloud App Security 中的身分識別功能的 Microsoft Defender 總覽。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 01/05/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 70a316deaafec0c251c91defbc47ec5281eba617
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: ef4cbe9f0c49311a3d10b79e03fc725ea5131105
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848868"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96543853"
 ---
 # <a name="using-product-long-with-microsoft-cloud-app-security"></a>使用 [!INCLUDE [Product long](includes/product-long.md)] with Microsoft Cloud App Security
 

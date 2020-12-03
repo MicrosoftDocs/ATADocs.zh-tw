@@ -1,22 +1,14 @@
 ---
 title: 在適用於身分識別的 Microsoft Defender 中設定 Windows 事件收集
 description: 在安裝適用於身分識別的 Microsoft Defender 的這個步驟中，您要設定 Windows 事件收集。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: fd2d06ad49756a0a1b78cd055546b5db64bb0940
-ms.sourcegitcommit: 6a84521b11bb66b4cb5e0c958c1ef95a6ce51564
+ms.openlocfilehash: 2a8c4f64a5d4bbd42f4bfea9fe2675d792a013f9
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96028711"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544091"
 ---
 # <a name="configure-windows-event-collection"></a>設定 Windows 事件集合
 

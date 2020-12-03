@@ -1,22 +1,14 @@
 ---
 title: 部署適用於身分識別的 Microsoft Defender 時設定連接埠鏡像
 description: 描述連接埠鏡像選項以及如何針對適用於身分識別的 Microsoft Defender 設定它們
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: c0dacdf37dbcc033a310fb4b0995ab8259db452f
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 72b453c5e90b46f432bd7eb89572e519d50d9e4a
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848086"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544040"
 ---
 # <a name="configure-port-mirroring"></a>設定連接埠鏡像
 

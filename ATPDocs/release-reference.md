@@ -1,22 +1,14 @@
 ---
 title: Microsoft Defender for Identity 中較舊版本的參考
 description: 本文是對 Microsoft Defender for Identity 的先前版本更新的參考。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/27/2020
 ms.topic: reference
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: ort
-ms.suite: ems
-ms.openlocfilehash: e582ebdaeab6f2dd462e9519f19dd568a3e96ee0
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 93edc0061c22914bf3658680f6173117bcf63b97
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94846860"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96542340"
 ---
 # <a name="release-reference-of-product-long"></a>的發行參考 [!INCLUDE [Product long](includes/product-long.md)]
 

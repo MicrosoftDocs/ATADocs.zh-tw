@@ -1,22 +1,14 @@
 ---
 title: 了解適用於身分識別的 Microsoft Defender 入口網站
 description: 描述如何登入適用於身分識別的 Microsoft Defender 入口網站與入口網站的元件
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/27/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: e695bd20717bbb26cffcd5a6cb069eb2c520c876
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 00e29d828a58a76bfdbec1e28582135466d756ea
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94847593"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544567"
 ---
 # <a name="working-with-the-product-long-portal"></a>使用[!INCLUDE [Product long](includes/product-long.md)] 入口網站
 

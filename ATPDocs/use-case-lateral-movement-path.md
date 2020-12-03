@@ -1,22 +1,14 @@
 ---
 title: 了解及使用搭配適用於身分識別的 Microsoft Defender 的橫向移動路徑
 description: 此文章描述適用於身分識別的 Microsoft Defender 的潛在橫向移動路徑 (LMP)
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/27/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: d6d8706e750ed7db841ea9483af8eb86f15b857c
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 21d672a6c2220229060189120f1daefacd47416b
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848885"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544533"
 ---
 # <a name="product-long-lateral-movement-paths-lmps"></a>[!INCLUDE [Product long](includes/product-long.md)] 橫向移動路徑 (LMP)
 

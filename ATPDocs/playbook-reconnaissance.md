@@ -1,21 +1,14 @@
 ---
 title: 適用於身分識別的 Microsoft Defender 偵察劇本教學課程
 description: 適用於身分識別的 Microsoft Defender 偵察劇本教學課程描述如何模擬適用於身分識別的 Defender 所偵測到的偵察移動威脅。
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 93b3b0ecf72ae1b7f8b1ebaf3756433afd297dde
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: dcaac8ed69bb4c3b9ccd262af929652dbc12126a
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94847185"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544482"
 ---
 # <a name="tutorial-reconnaissance-playbook"></a>教學課程：偵察劇本
 

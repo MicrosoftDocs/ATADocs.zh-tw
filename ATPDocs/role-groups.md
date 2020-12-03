@@ -1,22 +1,14 @@
 ---
 title: 適用于存取管理的身分識別角色群組的 Microsoft Defender
 description: 引導您使用 Microsoft Defender 作為身分識別角色群組。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 02/27/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 9a3927c565f3b2e7173519c31cb3bfcde9eed2a7
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: cbfb13ace446ba980af649f07951eed3aabbe4fd
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848987"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544380"
 ---
 # <a name="product-long-role-groups"></a>[!INCLUDE [Product long](includes/product-long.md)] 角色群組
 

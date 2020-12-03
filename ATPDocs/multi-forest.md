@@ -1,22 +1,14 @@
 ---
 title: 適用于身分識別多重樹系支援的 Microsoft Defender
 description: 支援 Microsoft Defender 中的多個 Active Directory 樹系以進行身分識別。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 7d2097a4d65cd3b153bc111d87092dcbf8ff9d74
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 05cf574aa56f379cb636036c382cc87fb289990e
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94847253"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544550"
 ---
 # <a name="product-long-multi-forest-support"></a>[!INCLUDE [Product long](includes/product-long.md)] 多樹系支援
 
@@ -70,7 +62,7 @@ ms.locfileid: "94847253"
 - 每個 [!INCLUDE [Product short](includes/product-short.md)] 感應器藉由登入和檢查信任類型，在 Active Directory 中使用 "trustedDomain" 物件來對應樹系。
 - 當 [!INCLUDE [Product short](includes/product-short.md)] 感應器偵測到跨樹系活動時，您也可能會看到特定流量。 發生這種情況時， [!INCLUDE [Product short](includes/product-short.md)] 感應器會傳送 LDAP 查詢到相關的網域控制站，以便抓取實體資訊。
 
-## <a name="known-limitations"></a>已知限制
+## <a name="known-limitations"></a>已知的限制
 
 - 儀表板中不會顯示一個樹系中的使用者在另一個樹系中存取資源所執行的互動式登入 [!INCLUDE [Product short](includes/product-short.md)] 。
 

@@ -63,6 +63,10 @@
       href: role-groups.md
     - name: 適用於身分識別的 Defender 多樹系支援
       href: multi-forest.md
+    - name: 安全性
+      items:
+        - name: 安全性基準
+          href: security-baseline.md
 - name: 操作指南
   items:
     - name: 使用 Microsoft Cloud App Security 之適用於身分識別的 Defender

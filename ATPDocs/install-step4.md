@@ -23,7 +23,7 @@ ms.locfileid: "94847882"
 ## <a name="prerequisites"></a>先決條件
 
 - 已[連線到 Active Directory](install-step2.md) 的[[!INCLUDE [Product short](includes/product-short.md)] 執行個體](install-step1.md)。
-- 您[](install-step3.md) 感應器安裝套件[!INCLUDE [Product short](includes/product-short.md)]的已下載複本，以及存取金鑰。
+- 您[[!INCLUDE [Product short](includes/product-short.md)] 感應器安裝套件](install-step3.md)的已下載複本，以及存取金鑰。
 - 請確定電腦上已安裝 Microsoft .Net Framework 4.7 或更新版本。 若未安裝 Microsoft .Net Framework 4.7 或更新版本，[!INCLUDE [Product short](includes/product-short.md)] 感應器安裝套件會加以安裝，這可能需要將伺服器重新開機。
 
 ## <a name="install-the-sensor"></a>安裝感應器

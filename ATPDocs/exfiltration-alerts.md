@@ -1,22 +1,14 @@
 ---
 title: 適用於身分識別的 Microsoft Defender：外流警訊教學課程
 description: 本文說明偵測到組織受攻擊時 (通常在外流階段)，適用於身分識別的 Microsoft Defender 所發出的警訊。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 1f5d63a4bf5a4ab22b43648394d3e82fb39357ef
-ms.sourcegitcommit: 07a855b87931875bdeca14b152b13a36db79bfa8
+ms.openlocfilehash: fe933d2fa989645fbe0ea7fd586816905e75ee6a
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "94848035"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544023"
 ---
 # <a name="tutorial-exfiltration-alerts"></a>教學課程：外流警訊
 

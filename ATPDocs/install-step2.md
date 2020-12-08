@@ -1,21 +1,14 @@
 ---
 title: 快速入門：將適用於身分識別的 Microsoft Defender 連線至 Active Directory
 description: 在安裝適用於身分識別的 Microsoft Defender 中，其步驟 2 可協助您為適用於身分識別的 Defender 雲端服務進行網域連線設定
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: quickstart
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 58a5f6c37a5b5bc4e224393aac5ad9771d6a1f6b
-ms.sourcegitcommit: 07a855b87931875bdeca14b152b13a36db79bfa8
+ms.openlocfilehash: 1dd9954e22e38b1db7d41d42358cd03dd15ea1c2
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "94847865"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96543972"
 ---
 # <a name="quickstart-connect-to-your-active-directory-forest"></a>快速入門：連線到您的 Active Directory 樹系
 

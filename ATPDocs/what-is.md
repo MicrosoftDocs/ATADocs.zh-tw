@@ -1,22 +1,14 @@
 ---
 title: 什麼是適用於身分識別的 Microsoft Defender？
 description: 說明什麼是適用於身分識別的 Microsoft Defender，以及其可以偵測哪種類型的可疑活動
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/27/2020
 ms.topic: overview
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 306ecc4fa1022420627d0f12cea43a738d50b45a
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: f7713d470c367f66db4a480380ca0e2515ebdeb2
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848851"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96542034"
 ---
 # <a name="what-is-product-long"></a>什麼是 [!INCLUDE [Product long](includes/product-long.md)]？
 

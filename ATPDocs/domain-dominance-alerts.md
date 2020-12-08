@@ -1,26 +1,18 @@
 ---
 title: 適用於身分識別的 Microsoft Defender 網域支配安全性警示
 description: 此文章說明偵測到組織受攻擊時 (通常在網域支配階段)，發出的適用於身分識別的 Microsoft Defender 警訊。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: d9a37aa5fc952606dbf8c6d9148c53ef43fccf98
-ms.sourcegitcommit: 07a855b87931875bdeca14b152b13a36db79bfa8
+ms.openlocfilehash: 8289b25087fc6e5743ed46d301a27239d82036ad
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "94848630"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96543292"
 ---
 # <a name="tutorial-domain-dominance-alerts"></a>教學課程：控制網域警訊
 
-網路攻擊通常會針對低權限使用者等所有可存取的實體啟動，然後快速橫向移動，直到攻擊者得以存取有價值的資產。 敏感性帳戶、網域系統管理員或高度敏感性資料均為重要資產。 [!INCLUDE [Product long](includes/product-long.md)] 會從整個攻擊狙殺鏈來源識別這些進階威脅，並將其分成下列幾個階段：
+網路攻擊通常會針對低權限使用者等所有可存取的實體啟動，然後快速橫向移動，直到攻擊者得以存取有價值的資產。 敏感性帳戶、網域系統管理員或高度敏感性資料均為重要資產。 [!INCLUDE [Product long](includes/product-long.md)] 會從整個攻擊狙殺鏈來源識別進階威脅，並將其分成下列幾個階段：
 
 1. [偵察](reconnaissance-alerts.md)
 1. [遭入侵的認證](compromised-credentials-alerts.md)
@@ -28,7 +20,7 @@ ms.locfileid: "94848630"
 1. **網域支配**
 1. [Exfiltration](exfiltration-alerts.md)
 
-若要深入了解如何了解結構與所有[!INCLUDE [Product short](includes/product-short.md)] 安全性警示的一般元件，請參閱[了解安全性警示](understanding-security-alerts.md)。 如需 **確判 (TP)** 、**良性確判 (B-TP)** 及 **誤判 (FP)** 的詳細資訊，請參閱 [安全性警訊分類](understanding-security-alerts.md#security-alert-classifications)。
+若要深入了解如何了解結構和所有 [!INCLUDE [Product short](includes/product-short.md)] 安全性警訊的一般元件，請參閱[了解安全性警訊](understanding-security-alerts.md)。 如需 **確判 (TP)** 、**良性確判 (B-TP)** 及 **誤判 (FP)** 的詳細資訊，請參閱 [安全性警訊分類](understanding-security-alerts.md#security-alert-classifications)。
 
 下列安全性警示可協助您識別並修復[!INCLUDE [Product short](includes/product-short.md)] 在網路中偵測到的 **網域支配** 階段可疑活動。 在本教學課程中，您將了解如何了解、分類、避免和修復下列攻擊：
 

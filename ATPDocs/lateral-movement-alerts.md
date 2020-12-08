@@ -1,22 +1,14 @@
 ---
 title: 適用於身分識別的 Microsoft Defender：橫向移動安全性警訊
 description: 本文說明偵測到組織受攻擊時 (通常在橫向移動階段)，適用於身分識別的 Microsoft Defender 所發出的警訊。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 78d7a4d51459c5ea9099198e43097757ee2c588e
-ms.sourcegitcommit: 07a855b87931875bdeca14b152b13a36db79bfa8
+ms.openlocfilehash: 9176429ee16a905d0ef9d8afb34bcd7d55214c4e
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "94847645"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96542709"
 ---
 # <a name="tutorial-lateral-movement-alerts"></a>教學課程：橫向移動警訊
 

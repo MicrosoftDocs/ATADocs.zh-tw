@@ -1,21 +1,14 @@
 ---
 title: 適用於身分識別的 AzMicrosoft Defender：使用者調查教學課程
 description: 本文說明如何使用適用於身分識別的 Microsoft Defender 安全性警訊來調查可疑使用者。
-keywords: ''
-author: shsagir
-ms.author: shsagir
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: f92e8ffc2ed30e858c5bb0e7728f8f4c76309a2a
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: c9d3cb67ff4eeae0e1f4a0808751d96c67cf326e
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848460"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96542816"
 ---
 # <a name="tutorial-investigate-a-user"></a>教學課程：調查使用者
 

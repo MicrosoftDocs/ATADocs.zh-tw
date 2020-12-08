@@ -1,21 +1,14 @@
 ---
 title: 適用於身分識別的 Microsoft Defender 先決條件
 description: 描述適用於身分識別的 Microsoft Defender 在環境中成功部署的需求
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 11/24/2020
 ms.topic: overview
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 23078e7e4281629f378e27281a21124d959f0902
-ms.sourcegitcommit: 24530d8fac3b63dee766b124b6a5549c1b9ef808
+ms.openlocfilehash: d451a2b2cc9cb9f3de35974fda49b3b61f2ad552
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "96028647"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544414"
 ---
 # <a name="product-long-prerequisites"></a>[!INCLUDE [Product long](includes/product-long.md)] 先決條件
 
@@ -43,7 +36,7 @@ ms.locfileid: "96028647"
 > [!NOTE]
 > [!INCLUDE [Product short](includes/product-short.md)] 獨立感應器不會收集 Windows 事件追蹤 (ETW) 的記錄項目，無法提供多種偵測的資料。 若要完整涵蓋您的環境，建議您部署[!INCLUDE [Product short](includes/product-short.md)] 感應器。
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 本節列出在開始安裝 [!INCLUDE [Product short](includes/product-short.md)] 前，所應收集資訊及應擁有的帳戶與網路實體資訊。
 

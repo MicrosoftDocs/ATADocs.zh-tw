@@ -1,22 +1,14 @@
 ---
 title: 如何利用適用於身分識別的 Microsoft Defender 調查使用者與電腦
 description: 描述如何使用適用於身分識別的 Microsoft Defender 來調查使用者、實體、電腦或裝置所進行可疑活動
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: 4bed7fe963478377d0da96a3a48f5f50cb4da01d
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 9f52bcc6dce4f11b8d29def2574a6b298e5a5e99
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94847648"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96543887"
 ---
 # <a name="tutorial-investigate-an-entity"></a>教學課程：調查實體
 

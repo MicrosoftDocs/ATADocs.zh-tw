@@ -1,22 +1,14 @@
 ---
 title: 使用適用於身分識別的 Microsoft Defender 來調查橫向移動路徑
 description: 此文章描述如何使用適用於身分識別的 Microsoft Defender 來偵測及調查潛在橫向移動路徑攻擊。
-keywords: ''
-author: shsagir
-ms.author: shsagir
-manager: shsagir
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: de9f13a5f29e90ad27a5b07f6b6a92952db6f70d
-ms.sourcegitcommit: e2227c0b0e5aaa5163dc56d4131ca82f8dca8fb0
+ms.openlocfilehash: 45b4f0e7af69c0404b00e5f317f986bad84e644a
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94848528"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96542986"
 ---
 # <a name="tutorial-use-lateral-movement-paths-lmps"></a>教學課程：使用橫向移動路徑 (LMP)
 

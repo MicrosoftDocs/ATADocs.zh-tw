@@ -1,21 +1,14 @@
 ---
 title: 快速入門：為適用於身分識別的 Microsoft Defender 建立執行個體
 description: 快速入門：為適用於身分識別的 Microsoft Defender 建立執行個體，以開始安裝適用於身分識別的 Defender。
-keywords: ''
-author: shsagir
-ms.author: shsagir
 ms.date: 10/26/2020
 ms.topic: quickstart
-ms.collection: M365-security-compliance
-ms.service: azure-advanced-threat-protection
-ms.reviewer: itargoet
-ms.suite: ems
-ms.openlocfilehash: fcb99edccdd8ce98be4b9335d7703503307fd0ac
-ms.sourcegitcommit: 07a855b87931875bdeca14b152b13a36db79bfa8
+ms.openlocfilehash: 299edc14a51f92efa94969a3f442b2e1ca5d8e2b
+ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "94848568"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96543207"
 ---
 # <a name="quickstart-create-your-product-long-instance"></a>快速入門：建立 [!INCLUDE [Product long](includes/product-long.md)] 執行個體
 

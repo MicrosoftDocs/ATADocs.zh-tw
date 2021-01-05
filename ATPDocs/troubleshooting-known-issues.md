@@ -3,12 +3,12 @@ title: 針對身分識別已知問題進行 Microsoft Defender 疑難排解
 description: 說明如何針對身分識別的 Microsoft Defender 問題進行疑難排解。
 ms.date: 09/07/2020
 ms.topic: how-to
-ms.openlocfilehash: aed05bd1df03f8ebb292f4425dbb0eb8c54ca9d3
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: bd7abdca7fade3b00161513b74d6507c5660c3bb
+ms.sourcegitcommit: bfb14c4c0b0f528edaa8167833b13c476240e514
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544278"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97762498"
 ---
 # <a name="troubleshooting-product-long-known-issues"></a>針對 [!INCLUDE [Product long](includes/product-long.md)] 已知問題進行疑難排解
 
@@ -184,7 +184,7 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 
 **解決方法：**
 
-請確定 gMSA 帳戶的認證正確，且感應器已獲授權可擷取帳戶的認證。 在已套用的原則中，您可能需要將 gMSA 帳戶新增至 **「以服務方式登入」** 使用者權利指派。
+請確定 gMSA 帳戶的認證正確，且感應器已獲授權可擷取帳戶的認證。 雖然不 [!INCLUDE [Product short](includes/product-short.md)]  需要 gMSA 帳戶的 [ **以服務方式登** 入] 許可權，但此問題通常是藉由將許可權新增至帳戶來解決。
 
 ## <a name="report-downloads-cannot-contain-more-than-300000-entries"></a>報表下載無法包含超過 300,000 個項目
 

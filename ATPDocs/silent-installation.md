@@ -3,18 +3,18 @@ title: 以無訊息方式安裝 Microsoft Defender 身分識別
 description: 這會說明如何以無訊息方式安裝 Microsoft Defender for Identity。
 ms.date: 10/27/2020
 ms.topic: how-to
-ms.openlocfilehash: a27b358b27b61118f1d73804b8612f170bc830e7
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 056451d5f0881360643bfc453366a8ccdb0ddccc
+ms.sourcegitcommit: 3a478353118670b8124bc62d33751d8ba6af109d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542323"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97746871"
 ---
 # <a name="product-long-switches-and-silent-installation"></a>[!INCLUDE [Product long](includes/product-long.md)] 切換和無訊息安裝
 
 本文提供 [!INCLUDE [Product long](includes/product-long.md)] 切換開關和無訊息安裝的指導方針和指示。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 [!INCLUDE [Product short](includes/product-short.md)] 需要安裝 Microsoft .NET Framework 4.7 或更新版本。
 
@@ -50,7 +50,7 @@ ms.locfileid: "96542323"
 > 使用 Powershell 語法時，省略 **./** 前置詞會導致發生防止無訊息安裝的錯誤。
 
 > [!NOTE]
-> 從 [!INCLUDE [Product short](includes/product-short.md)] 入口網站設定區段 [**感應器**] 頁面複製存取金鑰。 **Configuration**
+> 從 [!INCLUDE [Product short](includes/product-short.md)] 入口網站設定區段 [**感應器**] 頁面複製存取金鑰。 
 
 **安裝選項**：
 
@@ -120,6 +120,8 @@ ms.locfileid: "96542323"
 ```dos
 "Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q"
 ```
+
+<a name="silently-uninstall-sensor"></a>
 
 ## <a name="uninstall-the-product-short-sensor-silently"></a>以無訊息方式卸載 [!INCLUDE [Product short](includes/product-short.md)] 感應器
 

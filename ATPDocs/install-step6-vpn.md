@@ -1,14 +1,14 @@
 ---
 title: 安裝 Microsoft Defender 以進行身分識別 VPN 整合
 description: 藉由整合 VPN 來收集 Microsoft Defender 身分識別的帳戶處理資訊。
-ms.date: 10/26/2020
+ms.date: 12/23/2020
 ms.topic: how-to
-ms.openlocfilehash: e7c406a198eb78c98c795ba43d9b4076610540c7
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 80b4bdf29db05d0c2f42887dacff223b3067ba49
+ms.sourcegitcommit: e2b4ad613aa171f604ae526f0cba05fe79f4a8cb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543955"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97753400"
 ---
 # <a name="integrate-vpn"></a>整合 VPN
 
@@ -28,7 +28,9 @@ ms.locfileid: "96543955"
 - 開啟 [!INCLUDE [Product short](includes/product-short.md)] 感應器和/或獨立感應器上的埠 UDP 1813 [!INCLUDE [Product short](includes/product-short.md)] 。
 
 > [!NOTE]
-> 藉由啟用 **Radius 帳戶** 處理， [!INCLUDE [Product short](includes/product-short.md)] 感應器將會啟用預先布建的 Windows 防火牆原則（稱為 **[!INCLUDE [Product long](includes/product-long.md)] 感應器**），以允許埠 UDP 1813 上的連入 Radius 帳戶處理。
+>
+> - 藉由啟用 **Radius 帳戶** 處理， [!INCLUDE [Product short](includes/product-short.md)] 感應器將會啟用預先布建的 Windows 防火牆原則（稱為 **[!INCLUDE [Product long](includes/product-long.md)] 感應器**），以允許埠 UDP 1813 上的連入 Radius 帳戶處理。
+> - 遵循聯邦資訊處理標準的環境不支援 VPN 整合 (FIPS) 
 
 下列範例會使用 Microsoft 路由及遠端存取伺服器 (RRAS) 來描述 VPN 設定程序。
 

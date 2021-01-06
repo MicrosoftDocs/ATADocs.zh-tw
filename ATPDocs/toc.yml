@@ -173,6 +173,8 @@
           href: configure-event-collection.md
         - name: 設定 Windows 事件轉寄
           href: configure-event-forwarding.md
+    - name: 解除安裝感應器
+      href: uninstall-sensor.md
     - name: 從 ATP 移至適用於身分識別的 Defender
       items:
         - name: 從進階威脅分析 (ATA) 移至適用於身分識別的 Defender

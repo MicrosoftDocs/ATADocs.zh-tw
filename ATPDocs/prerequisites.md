@@ -1,14 +1,14 @@
 ---
 title: 適用於身分識別的 Microsoft Defender 先決條件
 description: 描述適用於身分識別的 Microsoft Defender 在環境中成功部署的需求
-ms.date: 11/24/2020
+ms.date: 12/23/2020
 ms.topic: overview
-ms.openlocfilehash: d451a2b2cc9cb9f3de35974fda49b3b61f2ad552
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: f0807061c5ea57f063a1f5a4035b7059e1671a7d
+ms.sourcegitcommit: e2b4ad613aa171f604ae526f0cba05fe79f4a8cb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544414"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97753383"
 ---
 # <a name="product-long-prerequisites"></a>[!INCLUDE [Product long](includes/product-long.md)] 先決條件
 
@@ -115,23 +115,23 @@ ms.locfileid: "96544414"
 
 ### <a name="general"></a>一般
 
-[!INCLUDE [Product short](includes/product-short.md)] 感應器支援在執行 Windows Server 2008 R2 SP1 (不含 Server Core)、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 (包含 Server Core 但不含 Nano 伺服器)、Windows Server 2019\* (包含 Server Core 但不含 Nano 伺服器) 的網域控制站上安裝，如下表所示。
+[!INCLUDE [Product short](includes/product-short.md)] 感應器支援在執行 Windows Server 2008 R2 SP1 (不含 Server Core)、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 (包含 Server Core 但不含 Nano 伺服器)、Windows Server 2019\* (包含 Server Core 但不含 Nano 伺服器) 的網域控制站與 Active Directory 同盟服務 (AD FS) 上安裝，如下表所示。
 
-| 作業系統版本   | 具備桌面體驗的伺服器 | Server Core | Nano Server    |
-| -------------------------- | ------------------------------ | ----------- | -------------- |
-| Windows Server 2008 R2 SP1 | &#10004;                       | &#10060;    | 不適用 |
-| Windows Server 2012        | &#10004;                       | &#10004;    | 不適用 |
-| Windows Server 2012 R2     | &#10004;                       | &#10004;    | 不適用 |
-| Windows Server 2016        | &#10004;                       | &#10004;    | &#10060;       |
-| Windows Server 2019\*      | &#10004;                       | &#10004;    | &#10060;       |
+| 作業系統版本   | 具備桌面體驗的伺服器 | Server Core | Nano Server    | 支援的安裝  |
+| -------------------------- | ------------------------------ | ----------- | -------------- | ------------------------ |
+| Windows Server 2008 R2 SP1 | &#10004;                       | &#10060;    | 不適用 | 網域控制站        |
+| Windows Server 2012        | &#10004;                       | &#10004;    | 不適用 | 網域控制站        |
+| Windows Server 2012 R2     | &#10004;                       | &#10004;    | 不適用 | 網域控制站        |
+| Windows Server 2016        | &#10004;                       | &#10004;    | &#10060;       | 網域控制站、AD FS |
+| Windows Server 2019\*      | &#10004;                       | &#10004;    | &#10060;       | 網域控制站、AD FS |
 
 \* 需要 [KB4487044](https://support.microsoft.com/help/4487044/windows-10-update-kb4487044) 或更新的累積更新。 如果系統目錄中 *ntdsai* 檔案的檔案版本早於 *10.0.17763.316*，則在沒有此更新之 Server 2019 上安裝的感應器會自動停止。
 
 網域控制站可以是唯讀網域控制站 (RODC)。
 
-若要讓網域控制站與雲端服務通訊，您必須在防火牆和 Proxy 中針對 \*.atp.azure.com 開放連接埠 443。
+若要讓網域控制站與 AD FS 上執行的感應器與雲端服務通訊，您必須在防火牆和 Proxy 中針對 \*.atp.azure.com 開啟連接埠 443。
 
-在安裝期間，若未安裝 .Net Framework 4.7 或更新版本，則會安裝 .Net Framework 4.7，而且可能需要將網域控制站重新開機。如果有擱置中的重新啟動，可能也需要重新開機。
+在安裝期間，如果未安裝 .Net Framework 4.7 或更新版本，則會安裝 .Net Framework 4.7，而且可能需要將伺服器重新開機。 如果有擱置中的重新啟動，可能也需要重新開機。
 
 > [!NOTE]
 > 至少需要 5 GB 的磁碟空間，建議要有 10 GB。 這包括 [!INCLUDE [Product short](includes/product-short.md)] 二進位檔、[!INCLUDE [Product short](includes/product-short.md)] 記錄檔以及效能記錄檔所需的空間。
@@ -141,9 +141,9 @@ ms.locfileid: "96544414"
 [!INCLUDE [Product short](includes/product-short.md)] 感應器在網域控制站上需要安裝至少 2 個核心和 6 GB 的 RAM。
 為取得最佳化效能，請將執行 [!INCLUDE [Product short](includes/product-short.md)] 感應器的電腦其 [電源選項] 設定為 [高效能]。
 
-[!INCLUDE [Product short](includes/product-short.md)] 感應器可部署在各種負載和大小的網域控制站上，依進出網域控制站的網路流量，以及安裝的資源數量而定。
+[!INCLUDE [Product short](includes/product-short.md)] 感應器可部署在具有各種負載和大小的網域控制站或 AD FS 伺服器上，依進出伺服器的網路流量，以及已安裝的資源數量而定。
 
-針對 Windows 作業系統 2008 R2 與 2012，[多處理器群組](/windows/win32/procthread/processor-groups)模式中不支援 [!INCLUDE [Product short](includes/product-short.md)] 感應器。 如需有關多處理器群組模式的詳細資訊，請參閱[疑難排解](troubleshooting-known-issues.md#multi-processor-group-mode)。
+針對 Windows 作業系統 2008 R2 與 2012，[多處理器群組](/windows/win32/procthread/processor-groups)模式中不支援[!INCLUDE [Product short](includes/product-short.md)] 感應器。 如需有關多處理器群組模式的詳細資訊，請參閱[疑難排解](troubleshooting-known-issues.md#multi-processor-group-mode)。
 
 >[!NOTE]
 > 作為虛擬機器執行時，將不支援動態記憶體或任何其他記憶體佔用功能。
@@ -184,6 +184,8 @@ ms.locfileid: "96544414"
 ### <a name="windows-event-logs"></a>Windows 事件記錄檔
 
 [!INCLUDE [Product short](includes/product-short.md)] 偵測仰賴特定的 [Windows 事件記錄檔](configure-windows-event-collection.md#configure-event-collection)，這些記錄檔由感應器從網域控制站剖析而來。 若要正確稽核事件並將其包含在 Windows 事件記錄檔中，網域控制站需要精確的進階稽核原則設定。 如需有關設定正確原則的詳細資訊，請參閱[進階稽核原則檢查](configure-windows-event-collection.md)。 若要確定已依服務所需[稽核 Windows 事件 8004](configure-windows-event-collection.md#configure-audit-policies)，請檢閱您的 [NTLM 稽核設定](/archive/blogs/askds/ntlm-blocking-and-you-application-analysis-and-auditing-methodologies-in-windows-7) \(英文\)。
+
+針對在 AD FS 伺服器上執行的感應器，請將稽核等級設定為 [詳細資訊]。 如需如何設定稽核等級的相關資訊，請參閱 [AD FS 的事件稽核資訊](/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-logging#event-auditing-information-for-ad-fs-on-windows-server-2016)。
 
 > [!NOTE]
 > 使用 Directory 服務使用者帳戶，感應器會查詢您組織中的端點以尋找使用 SAM-R (網路登入) 的本機系統管理員，以建置[橫向移動路徑圖表](use-case-lateral-movement-path.md)。 如需詳細資訊，請參閱[設定 SAM-R 必要權限](install-step8-samr.md)。

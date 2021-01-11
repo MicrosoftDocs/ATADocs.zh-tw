@@ -1,16 +1,16 @@
 ---
 title: 適用於身分識別的 Defender：新功能
 description: 本文會經常更新，讓您知道適用於身分識別的 Defender 最新版功能。
-ms.date: 12/06/2020
+ms.date: 12/20/2020
 ms.topic: overview
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 1978606c29a364d1808e1413cde6eeabe1e3d2d3
-ms.sourcegitcommit: d5cef371dd882e26445d2cedad6a85bfbe1f3911
+ms.openlocfilehash: e2c338e2105b8eb228493d20f1b47f230d9e1464
+ms.sourcegitcommit: 183be34e4e4c71fb75a676eab6a2840fdc205519
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925625"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97889326"
 ---
 # <a name="whats-new-in-product-long"></a>[!INCLUDE [Product long](includes/product-long.md)] 的新功能
 
@@ -23,6 +23,20 @@ RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在�
 > [!IMPORTANT]
 >
 > Microsoft 的威脅防護產品名稱即將變更。 如需有關此變更的詳細資訊與其他更新，請參閱[這裡](https://www.microsoft.com/security/blog/?p=91813)。 從 2.129 版開始，我們將使用新的名稱。
+
+## <a name="product-short-release-2135"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.135 版
+
+發行日期：2020 年 12 月 20 日
+
+- 我們已改善 [Active Directory 屬性偵察 (LDAP) (外部識別碼 2210)](reconnaissance-alerts.md#active-directory-attributes-reconnaissance-ldap-external-id-2210) 警示，以一併偵測用來取得產生安全性權杖所需資訊的技術，例如視為 [Solorigate 行銷活動](https://aka.ms/solorigate)的一部分。 
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
+
+## <a name="product-short-release-2134"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.134 版
+
+發行日期：2020 年 12 月 13 日
+
+- 我們[最近發行的 NetLogon 偵測器](#azure-atp-release-2127-2)已經過增強，當 Netlogon 通道交易發生在加密的通道上時，也能正常運作。 如需有關偵測器的詳細資訊，請參閱[可疑的 Netlogon 權限提高嘗試](compromised-credentials-alerts.md#suspected-netlogon-priv-elev-2411)。
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
 ## <a name="product-short-release-2133"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.133 版
 
@@ -41,7 +55,7 @@ RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在�
 發行日期：2020 年 11 月 8 日
 
 - **新的安全性警訊： 可疑的 Kerberos SPN 公開 (外部識別碼 2410)**  
-[!INCLUDE [Product short](includes/product-short.md)]*可疑的 Kerberos SPN 公開 (外部識別碼2410)* 安全性警訊現已推出。 在此類偵測中，當攻擊者列舉服務帳戶及其各自的 SPN，並要求服務的 Kerberos TGS 票證時，即會觸發 [!INCLUDE [Product short](includes/product-short.md)] 安全性警訊。 攻擊者的意圖可能是從票證中擷取雜湊並加以儲存，以供往後用於離線暴力密碼破解攻擊。 如需詳細資訊，請參閱 [Kerberos SPN 公開](compromised-credentials-alerts.md#suspected-kerberos-spn-exposure-external-id-2410)。
+[!INCLUDE [Product short](includes/product-short.md)]*可疑的 Kerberos SPN 公開 (外部識別碼2410)* 安全性警訊現已推出。 在此類偵測中，當攻擊者列舉服務帳戶及其各自的 SPN，並要求服務的 Kerberos TGS 票證時，即會觸發 [!INCLUDE [Product short](includes/product-short.md)] 安全性警訊。 攻擊者的意圖可能是從票證中擷取雜湊並加以儲存，以供日後用於離線暴力密碼破解攻擊。 如需詳細資訊，請參閱 [Kerberos SPN 公開](compromised-credentials-alerts.md#suspected-kerberos-spn-exposure-external-id-2410)。
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
 ## <a name="product-short-release-2130"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.130 版
@@ -67,6 +81,8 @@ RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在�
 ## <a name="azure-atp-release-2127"></a>Azure ATP 2.127 版
 
 發行日期：2020 年 9 月 20 日
+
+<a name="azure-atp-release-2127-2"></a>
 
 - **新的安全性警訊：可疑的 Netlogon 權限提升嘗試 (外部識別碼 2411)**  
 Azure ATP 的「可疑的 Netlogon 權限提升嘗試 (CVE-2020-1472 惡意探索) (外部識別碼 2411)」安全性警示現已可供使用。 在此偵測中，Azure ATP 安全性警示會在攻擊者使用也稱為「Netlogon 權限提高弱點」的 Netlogon 遠端通訊協定 ([MS-NRPC](/openspecs/windows_protocols/ms-nrpc/ff8f970f-3e37-40f7-bd4b-af7336e4792f))，針對網域控制站建立易受攻擊的 Netlogon 安全通道連線時觸發。 如需詳細資訊，請參閱[可疑的 Netlogon 權限提升嘗試](compromised-credentials-alerts.md#suspected-netlogon-priv-elev-2411)。

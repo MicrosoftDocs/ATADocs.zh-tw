@@ -1,14 +1,14 @@
 ---
 title: 適用於身分識別的 Microsoft Defender 網域支配安全性警示
 description: 此文章說明偵測到組織受攻擊時 (通常在網域支配階段)，發出的適用於身分識別的 Microsoft Defender 警訊。
-ms.date: 10/26/2020
+ms.date: 12/23/2020
 ms.topic: tutorial
-ms.openlocfilehash: 8289b25087fc6e5743ed46d301a27239d82036ad
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: c7376b617f69261c848bede401ff083612545457
+ms.sourcegitcommit: e2b4ad613aa171f604ae526f0cba05fe79f4a8cb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543292"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97753349"
 ---
 # <a name="tutorial-domain-dominance-alerts"></a>教學課程：控制網域警訊
 
@@ -83,7 +83,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 **描述**
 
-盜用系統管理認證或使用零時差惡意探索的攻擊者可能會在您的網域控制站上執行遠端命令。 這可用於取得持續性、收集資訊、發動拒絕服務 (DOS) 的攻擊或任何其他原因。 [!INCLUDE [Product short](includes/product-short.md)] 會偵測 PSexec、遠端 WMI 與 PowerShell 連線。
+盜用系統管理認證或使用零時差惡意探索的攻擊者可在您的網域控制站或 AD FS 伺服器上執行遠端命令。 這可用於取得持續性、收集資訊、發動拒絕服務 (DOS) 的攻擊或任何其他原因。 [!INCLUDE [Product short](includes/product-short.md)] 會偵測 PSexec、遠端 WMI 與 PowerShell 連線。
 
 **學習期間**
 
@@ -613,7 +613,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 **描述**
 
-可疑的服務已在您組織中的網域控制站上建立。 此警示需要事件 7045 來識別此可疑活動。
+可疑的服務已在您組織中的網域控制站或 AD FS 伺服器上建立。 此警示需要事件 7045 來識別此可疑活動。
 
 **學習期間**
 

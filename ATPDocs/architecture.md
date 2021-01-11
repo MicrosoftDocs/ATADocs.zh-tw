@@ -1,14 +1,14 @@
 ---
 title: 適用於身分識別的 Microsoft Defender 架構
 description: 描述適用於身分識別的 Microsoft Defender 的架構
-ms.date: 10/26/2020
+ms.date: 12/23/2020
 ms.topic: overview
-ms.openlocfilehash: 11be2df6437f6b67968d395a24756d4b0514ea69
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 418fbe3f4a24f3af69336eda4954f5817b478e20
+ms.sourcegitcommit: e2b4ad613aa171f604ae526f0cba05fe79f4a8cb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544210"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97753266"
 ---
 # <a name="microsoft-defender-for-identity-architecture"></a>適用於身分識別的 Microsoft Defender 架構
 
@@ -20,7 +20,7 @@ ms.locfileid: "96544210"
 
 此節描述[!INCLUDE [Product short](includes/product-short.md)] 的網路與事件擷取流程運作方式，並進一步詳細描述下列主要元件的功能：[!INCLUDE [Product short](includes/product-short.md)] 入口網站、[!INCLUDE [Product short](includes/product-short.md)] 感應器與[!INCLUDE [Product short](includes/product-short.md)] 雲端服務。
 
-如果[!INCLUDE [Product short](includes/product-short.md)] 感應器直接安裝在網域控制站上，即會直接從網域控制站存取所需的事件記錄檔。 在感應器剖析記錄檔和網路流量之後，[!INCLUDE [Product short](includes/product-short.md)] 只會將經剖析的資訊傳送到[!INCLUDE [Product short](includes/product-short.md)] 雲端服務 (僅傳送某個百分比的記錄檔)。
+如果[!INCLUDE [Product short](includes/product-short.md)] 感應器直接安裝在網域控制站或 AD FS 伺服器上，即會直接從伺服器存取所需的事件記錄檔。 在感應器剖析記錄檔和網路流量之後，[!INCLUDE [Product short](includes/product-short.md)] 只會將經剖析的資訊傳送到[!INCLUDE [Product short](includes/product-short.md)] 雲端服務 (僅傳送某個百分比的記錄檔)。
 
 ## <a name="product-short-components"></a>[!INCLUDE [Product short](includes/product-short.md)] 元件
 
@@ -30,7 +30,9 @@ ms.locfileid: "96544210"
 [!INCLUDE [Product short](includes/product-short.md)] 入口網站可讓您建立[!INCLUDE [Product short](includes/product-short.md)] 執行個體、顯示從[!INCLUDE [Product short](includes/product-short.md)] 感應器接收的資料，並可讓您監視、管理及調查網路環境中的威脅。
 
 - **[!INCLUDE [Product short](includes/product-short.md)] 感應器**  
-[!INCLUDE [Product short](includes/product-short.md)] 感應器是直接安裝在您的網域控制站上。 感應器可直接監視網域控制站的流量，而不需要專用的伺服器或連接埠鏡像設定。
+[!INCLUDE [Product short](includes/product-short.md)] 感應器可以直接安裝在下列伺服器上：
+  - **網域控制站**：感應器可直接監視網域控制站的流量，而不需要專用的伺服器或連接埠鏡像設定。
+  - **AD FS**：感應器會直接監視網路流量與驗證事件。
 - **[!INCLUDE [Product short](includes/product-short.md)] 雲端服務**  
 [!INCLUDE [Product short](includes/product-short.md)] 雲端服務目前部署於美國、歐洲和亞洲，並會在 Azure 基礎結構上執行。 [!INCLUDE [Product short](includes/product-short.md)] 雲端服務會與 Microsoft Intelligent Security Graph 連線。
 

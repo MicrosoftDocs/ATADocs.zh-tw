@@ -1,14 +1,14 @@
 ---
 title: 適用於身分識別的 Microsoft Defender：認證遭入侵時的階段安全性警訊
 description: 本文說明偵測到組織受攻擊時 (通常在認證遭入侵階段)，適用於身分識別的 Microsoft Defender 所發出的警訊。
-ms.date: 10/26/2020
+ms.date: 12/23/2020
 ms.topic: tutorial
-ms.openlocfilehash: cc46b15e62f6aab0776598fa58bb2559c7612fd7
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 4bb5313307d16c87969ac280967356e8595b767a
+ms.sourcegitcommit: e2b4ad613aa171f604ae526f0cba05fe79f4a8cb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543462"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97753315"
 ---
 # <a name="tutorial-compromised-credential-alerts"></a>教學課程：認證遭入侵警訊
 
@@ -129,7 +129,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 在暴力密碼破解攻擊中，攻擊者會嘗試使用許多不同密碼對不同帳戶進行驗證，直到找到至少一個帳戶的正確密碼。 找到後，攻擊者就可以使用該帳戶登入。
 
-在此偵測中，當 [!INCLUDE [Product short](includes/product-short.md)] 偵測到大量的簡單繫結驗證時，即會觸發警訊。 此警示會偵測以下列方式執行的暴力密碼破解攻擊：在許多使用者之間「水平」使用少量密碼、只對一些使用者「垂直」使用大量密碼，或這兩個選項的任意組合。
+在此偵測中，當 [!INCLUDE [Product short](includes/product-short.md)] 偵測到大量的簡單繫結驗證時，即會觸發警訊。 此警示會偵測以下列方式執行的暴力密碼破解攻擊：在許多使用者之間「水平」使用少量密碼、只對一些使用者「垂直」使用大量密碼，或這兩個選項的任意組合。 警示是以網域控制站與 AD FS 伺服器上執行之感應器的驗證事件為基礎。
 
 **TP、B-TP 或 FP**
 
@@ -227,7 +227,7 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 
 ## <a name="suspected-netlogon-privilege-elevation-attempt-cve-2020-1472-exploitation-external-id-2411"></a>可疑的 Netlogon 權限提升嘗試 (CVE-2020-1472 惡意探索) (外部識別碼 2411)
 
-Microsoft 已發佈 [CVE-2020-1472](https://portal.msrc.microsoft.com/security-guidance/advisory/CVE-2020-1472) \(英文\) 並宣佈新弱點的存在，此弱點能針對網域控制站提供權限提高。
+Microsoft 已發佈 [CVE-2020-1472](https://portal.msrc.microsoft.com/security-guidance/advisory/CVE-2020-1472)，宣布新弱點的存在，該弱點允許將權限提高到網域控制站。
 
 當攻擊者使用也稱為「Netlogon 權限提高弱點」的 Netlogon 遠端通訊協定 ([MS-NRPC](/openspecs/windows_protocols/ms-nrpc/ff8f970f-3e37-40f7-bd4b-af7336e4792f))，針對網域控制站建立易受攻擊的 Netlogon 安全通道連線時，便會存在權限提高弱點。
 

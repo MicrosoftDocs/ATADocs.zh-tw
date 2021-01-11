@@ -1,14 +1,14 @@
 ---
 title: 適用於身分識別的 Microsoft Defender：偵察階段安全性警訊
 description: 本文說明偵測到組織受攻擊時 (通常在偵察階段)，適用於身分識別的 Microsoft Defender 所發出警訊。
-ms.date: 10/27/2020
+ms.date: 12/23/2020
 ms.topic: tutorial
-ms.openlocfilehash: 83db36589f3eb2cfaa9cb6db4c4f6e074437ae03
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: e4a604d5ae36c65a73f6aaa5a08e41b2553041b8
+ms.sourcegitcommit: e2b4ad613aa171f604ae526f0cba05fe79f4a8cb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544397"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97753333"
 ---
 # <a name="tutorial-reconnaissance-alerts"></a>教學課程：偵察警訊
 
@@ -47,7 +47,7 @@ ms.locfileid: "96544397"
 
 **NTLM**：攻擊者利用名稱字典來提出 NTLM 驗證要求，試著在網域中找到有效的使用者名稱。 如果成功猜到使用者名稱，攻擊者會收到 **WrongPassword (0xc000006a)** 而不是 **NoSuchUser (0xc0000064)** NTLM 錯誤。
 
-在此警訊偵測中，[!INCLUDE [Product short](includes/product-short.md)] 會偵測帳戶列舉攻擊來源、猜測嘗試總次數及嘗試相符次數。 如果有太多未知的使用者，[!INCLUDE [Product short](includes/product-short.md)] 會將其偵測為可疑的活動。
+在此警訊偵測中，[!INCLUDE [Product short](includes/product-short.md)] 會偵測帳戶列舉攻擊來源、猜測嘗試總次數及嘗試相符次數。 如果有太多未知的使用者，[!INCLUDE [Product short](includes/product-short.md)] 會將其偵測為可疑的活動。 警示是以網域控制站與 AD FS 伺服器上執行之感應器的驗證事件為基礎。
 
 **學習期間**
 

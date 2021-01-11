@@ -1,14 +1,14 @@
 ---
 title: 適用於身分識別的 Microsoft Defender 所監視的網域活動
 description: 描述由適用於身分識別的 Microsoft Defender 所監視的每個活動類型
-ms.date: 10/26/2020
+ms.date: 12/24/2020
 ms.topic: conceptual
-ms.openlocfilehash: 8ef0972efec4fc5d39d42cd72e43ca7f95e94ef5
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 5ca3a3681eb15b1b2a8935942daaf7a39f9c15c3
+ms.sourcegitcommit: 78fb0cead845c7098c780f4daa624a741e350ec2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542612"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97763620"
 ---
 # <a name="product-long-monitored-activities"></a>[!INCLUDE [Product long](includes/product-long.md)] 所監視的活動
 
@@ -25,6 +25,7 @@ ms.locfileid: "96542612"
 >
 > - 此文章與所有[!INCLUDE [Product short](includes/product-short.md)] 感應器類型皆相關。
 > - [!INCLUDE [Product short](includes/product-short.md)] 所監視的活動會同時出現在使用者與電腦設定檔頁面上。
+> - 您也可以在 [Cloud App Security](https://portal.cloudappsecurity.com/) 與 Microsoft 365 Defender 的[進階搜捕](https://security.microsoft.com/advanced-hunting)頁面找到[!INCLUDE [Product short](includes/product-short.md)] 監視的活動。
 
 ## <a name="monitored-user-activities-user-account-ad-attribute-changes"></a>受監視的使用者活動：使用者帳戶 AD 屬性變更
 
@@ -42,7 +43,7 @@ ms.locfileid: "96542612"
 |不需帳戶密碼已變更|使用者帳戶已變更，允許使用空白密碼登入。|
 |需要帳戶智慧卡已變更|帳戶已變更為要求使用者以智慧卡登入裝置。|
 |帳戶支援的加密類型已變更|Kerberos 支援的加密類型已變更 (類型：Des、AES 129、AES 256)|
-|帳戶 Upn 名稱已變更|使用者的主體名稱已變更。|
+|帳戶 UPN 名稱已變更|使用者的主體名稱已變更。|
 |群組成員資格已變更|使用者已由另一名使用者，或自行新增到群組或從中移除。|
 |使用者電子郵件已變更|使用者電子郵件屬性已變更。|
 |使用者管理員已變更|使用者的管理員屬性已變更。|

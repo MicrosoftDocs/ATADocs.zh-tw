@@ -1,14 +1,14 @@
 ---
 title: 什麼是適用於身分識別的 Microsoft Defender？
 description: 說明什麼是適用於身分識別的 Microsoft Defender，以及其可以偵測哪種類型的可疑活動
-ms.date: 10/27/2020
+ms.date: 12/23/2020
 ms.topic: overview
-ms.openlocfilehash: f7713d470c367f66db4a480380ca0e2515ebdeb2
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 1aceb1889ea3f85305d64b5bde6a252b804d56f0
+ms.sourcegitcommit: e2b4ad613aa171f604ae526f0cba05fe79f4a8cb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542034"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97753336"
 ---
 # <a name="what-is-product-long"></a>什麼是 [!INCLUDE [Product long](includes/product-long.md)]？
 
@@ -28,6 +28,10 @@ ms.locfileid: "96542034"
 ## <a name="protect-user-identities-and-reduce-the-attack-surface"></a>保護使用者的身分識別，並減少受攻擊面
 
 [!INCLUDE [Product short](includes/product-short.md)] 可提供您身分識別設定的寶貴見解以及安全性最佳實務的建議。 透過安全性報告與使用者設定檔分析，[!INCLUDE [Product short](includes/product-short.md)] 有助於大幅減少組織的受攻擊面，提高入侵使用者認證與發動攻擊的難度。 [!INCLUDE [Product short](includes/product-short.md)] 的視覺化橫向移動路徑可協助您對攻擊者如何在組織內部橫向移動以入侵機密帳戶的過程一目了然，並事先防止這些風險。 [!INCLUDE [Product short](includes/product-short.md)] 安全性報告可協助您找出使用純文字密碼進行驗證的使用者與裝置，並提供額外的見解，以提升組織的安全性狀態與原則。
+
+## <a name="protecting-the-ad-fs-in-hybrid-environments"></a>保護混合式環境中的 AD FS
+
+在混合式環境中的驗證方面，Active Directory 同盟服務 (AD FS) 於現今的基礎結構中扮演重要的角色。 [!INCLUDE [Product short](includes/product-short.md)] 透過在 AD FS 偵測內部部署攻擊並讓您了解由 AD 產生的驗證事件，來保護您環境中的 AD FS。
 
 ## <a name="identify-suspicious-activities-and-advanced-attacks-across-the-cyber-attack-kill-chain"></a>識別整個網路攻擊狙殺鏈的可疑活動與進階攻擊
 

@@ -1,20 +1,20 @@
 ---
 title: 以無訊息方式安裝 Microsoft Defender 身分識別
 description: 這會說明如何以無訊息方式安裝 Microsoft Defender for Identity。
-ms.date: 10/27/2020
+ms.date: 01/11/2021
 ms.topic: how-to
-ms.openlocfilehash: 056451d5f0881360643bfc453366a8ccdb0ddccc
-ms.sourcegitcommit: 3a478353118670b8124bc62d33751d8ba6af109d
+ms.openlocfilehash: a9cddac4ca0306faddaa93b701b88745b180828c
+ms.sourcegitcommit: 57dd3e4663346db3542cf9e755dac135c5e75125
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97746871"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98062530"
 ---
 # <a name="product-long-switches-and-silent-installation"></a>[!INCLUDE [Product long](includes/product-long.md)] 切換和無訊息安裝
 
 本文提供 [!INCLUDE [Product long](includes/product-long.md)] 切換開關和無訊息安裝的指導方針和指示。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 [!INCLUDE [Product short](includes/product-short.md)] 需要安裝 Microsoft .NET Framework 4.7 或更新版本。
 
@@ -92,6 +92,8 @@ ms.locfileid: "97746871"
 > |ProxyUrl|ProxyUrl="https\://proxy.contoso.com:8080"|否|為[!INCLUDE [Product short](includes/product-short.md)] 感應器指定 ProxyUrl 與連接埠號碼。|
 > |ProxyUserName|ProxyUserName="Contoso\ProxyUser"|否|如果您的 Proxy 服務需要驗證，請以 DOMAIN\user 格式提供使用者名稱。|
 > |ProxyUserPassword|ProxyUserPassword="P@ssw0rd"|否|指定 Proxy 使用者名稱的密碼。 \* 認證會經過加密，並由[!INCLUDE [Product short](includes/product-short.md)] 感應器儲存在本機。|
+
+如需 proxy 設定的詳細資訊，請參閱 [為您的 [!INCLUDE [Product long](includes/product-long.md)] 感應器設定端點 Proxy 和網際網路連線能力設定](configure-proxy.md)。
 
 ## <a name="update-the-product-short-sensor"></a>更新 [!INCLUDE [Product short](includes/product-short.md)] 感應器
 

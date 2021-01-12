@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/22/2020
+ms.date: 01/12/2021
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: d89e7aff-a6ef-48a3-ae87-6ac2e39f3bdb
 ms.reviewer: arzinger
 ms.suite: ems
-ms.openlocfilehash: 024ca22c366e98c0c09a0c13152c453ce33363c0
-ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
+ms.openlocfilehash: b49e2b10713f23c4256a7236bfa7162189c6e43b
+ms.sourcegitcommit: 373151a0e86e4933c5cb7c8f17c4d386356c98dd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94690035"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114964"
 ---
 # <a name="troubleshooting-ata-known-issues"></a>針對 ATA 已知問題進行疑難排解
 
@@ -29,7 +29,7 @@ ms.locfileid: "94690035"
 
 > [!div class="mx-tableFixed"]
 >
-> |錯誤|說明|解決方法|
+> |錯誤|說明|解決方案|
 > |-------------|----------|---------|
 > |System.DirectoryServices.Protocols.LdapException：發生本機錯誤|ATA 閘道無法對網域控制站進行驗證。|1. 確認已在 DNS 伺服器中正確設定網域控制站的 DNS 記錄。 <br>2. 確認 ATA 閘道的時間與網域控制站的時間同步。|
 > |System.IdentityModel.Tokens.SecurityTokenValidationException︰無法驗證憑證鏈結|ATA 閘道無法驗證 ATA 中心的憑證。|1. 確認根 CA 憑證已安裝在 ATA 閘道的 [受信任的憑證授權單位單位] 憑證存放區中。<br>2. 驗證憑證撤銷清單 (CRL) 可供使用，而且可以執行憑證撤銷驗證。|
@@ -57,20 +57,21 @@ ms.locfileid: "94690035"
 
 > [!div class="mx-tableFixed"]
 >
-> |錯誤|說明|解決方法|
+> |錯誤|說明|解決方案|
 > |-------------|----------|---------|
 > |.Net Framework 4.6.1 安裝失敗，並發生錯誤 0x800713ec|.Net Framework 4.6.1 的必要條件尚未安裝於伺服器。 |安裝 ATA 之前，請驗證伺服器上已安裝 Windows Update [KB2919442](https://www.microsoft.com/download/details.aspx?id=42135) 和 [KB2919355](https://support.microsoft.com/kb/2919355)。|
 > |System.Threading.Tasks.TaskCanceledException：工作已取消|因為無法連線到 ATA 中心，所以部署程序已逾時。|1. 使用 IP 位址流覽至 ATA 中心，檢查其網路連線能力。 <br></br>2. 檢查 proxy 或防火牆設定。|
 > |System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> System.Net.WebException：遠端伺服器傳回一個錯誤：(407) 要求 Proxy 驗證。|因為 Proxy 設定錯誤而無法連線到 ATA 中心，所以部署程序已逾時。|請先停用 Proxy 設定再進行部署，然後再次啟用 Proxy 設定。 或者，您可以在 Proxy 中設定例外狀況。|
-> |System.Net.Sockets.SocketException：遠端主機已強制關閉現有的連線||將登錄機碼設定為使用 SSL 和 TLS 的作業系統預設值，以啟用適用于 .Net 的 TLS 1.2，如下所示：<br></br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br> `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] " SchUseStrongCrypto"=dword:00000001`|
-> |錯誤 [\\[]DeploymentModel[\\]] 失敗的管理驗證     [\\[]CurrentlyLoggedOnUser=<domain>\\<username>Status=FailedAuthentication Exception=[\\]]|ATA 閘道或 ATA 輕量型閘道的部署程序無法順利向 ATA 中心驗證|請從部署程序失敗所在的電腦開啟瀏覽器，並試試看能否連線到 ATA 主控台。 </br>若無法連線，請開始進行疑難排解，以了解瀏覽器為何無法向 ATA 中心驗證。 </br>可以檢查的事項： </br>Proxy 組態</br>網路問題</br>電腦上驗證的群組原則設定不同於 ATA 中心的設定。|
+> |System.Net.Sockets.SocketException：遠端主機已強制關閉現有的連線||將登錄機碼設定為使用 SSL 和 TLS 的作業系統預設值，以啟用適用于 .Net 的 TLS 1.2，如下所示：<br></br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SystemDefaultTlsVersions"=dword:00000001`</br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001` </br>`[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319] "SchUseStrongCrypto"=dword:00000001`|
+> |錯誤 [ \\ [] DeploymentModel [ \\ ]] 失敗的管理驗證 [ \\ [] CurrentlyLoggedOnUser = <domain> \\ <username> Status = failedauthentication exception Exception = [ \\ ]]|ATA 閘道或 ATA 輕量型閘道的部署程序無法順利向 ATA 中心驗證|請從部署程序失敗所在的電腦開啟瀏覽器，並試試看能否連線到 ATA 主控台。 </br>若無法連線，請開始進行疑難排解，以了解瀏覽器為何無法向 ATA 中心驗證。 </br>可以檢查的事項： </br>Proxy 組態</br>網路問題</br>電腦上驗證的群組原則設定不同於 ATA 中心的設定。|
 > | 錯誤 [\\[]DeploymentModel[\\]] 失敗的管理驗證|中心憑證驗證失敗|中心憑證可能需要網際網路連線以進行驗證。 請確定您的閘道服務具有適當的 Proxy 設定以啟用連線和驗證。|
+> | 部署中心並選取憑證時，會報告「不支援」錯誤|如果選取的憑證不符合需求，或無法存取憑證的私密金鑰，就會發生這種情況。|請確定您以較高的許可權執行部署， (**以系統管理員身分執行**) ，而且選取的憑證符合 [需求](ata-prerequisites.md#certificates)。|
 
 ## <a name="ata-center-errors"></a>ATA 中心錯誤
 
 > [!div class="mx-tableFixed"]
 >
-> |錯誤|說明|解決方法|
+> |錯誤|說明|解決方案|
 > |-------------|----------|---------|
 > |System.Security.Cryptography.CryptographicException: 拒絕存取。|ATA 中心無法使用發行的憑證來解密。 這很有可能發生在使用將 KeySpec (KeyNumber) 設定為不支援解密的 Signature (AT\\_SIGNATURE)，而非 KeyExchange (AT\\_KEYEXCHANGE) 的憑證上。|1. 停止 ATA 中心服務。 <br></br>2. 從中央的憑證存放區中刪除 ATA 中心憑證。 (在刪除之前，請確定您已連同私密金鑰將憑證備份在 PFX 檔案中)。 <br></br>3. 開啟提升許可權的命令提示字元，並在 _KEYEXCHANGE 執行 certutil-importpfx "Centercertificate.pfx at .pfx" \\ <br></br>4. 啟動 ATA 中心服務。 <br></br>5. 確認所有專案現在都能如預期般運作。|
 
@@ -78,7 +79,7 @@ ms.locfileid: "94690035"
 
 > [!div class="mx-tableFixed"]
 >
-> |問題|Description|解決方法|
+> |問題|Description|解決方案|
 > |-------------|----------|---------|
 > |沒有從網域控制站收到的流量，但觀察到健康情況警示|未從透過 ATA 閘道使用連接埠鏡像的網域控制站收到流量|在 ATA 閘道抓取 NIC 上，于 [ **Advanced Settings**] 中停用這些功能：<br></br>接收區段聯合 (IPv4)<br></br>接收區段聯合 (IPv6)|
 > |顯示此健康情況警示：某些網路流量未進行分析|如果您在 VMware 虛擬機器上有 ATA 閘道或輕量閘道，您可能會收到此健康情況警示。 當 VMware 中的設定不相符時，就會發生此狀況。|請在 NIC 設定中將以下設定設為 0 或 [停用]：TsoEnable、LargeSendOffload、TSO Offload、Giant TSO Offload|

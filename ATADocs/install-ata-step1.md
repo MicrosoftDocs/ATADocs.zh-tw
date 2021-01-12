@@ -5,19 +5,19 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/07/2019
+ms.date: 01/12/2021
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: d5c61390abddf29b92afc0bb6cb2336b0bc9d7ea
-ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
+ms.openlocfilehash: 0578f8698ffe768563d68325b5a5096af1cb2e49
+ms.sourcegitcommit: 373151a0e86e4933c5cb7c8f17c4d386356c98dd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94690732"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114981"
 ---
 # <a name="install-ata---step-1"></a>安裝 ATA - 步驟 1
 
@@ -49,7 +49,7 @@ ms.locfileid: "94690732"
 
 1. 請以本機系統管理員群組成員的使用者身分，登入要安裝 ATA 中心的電腦。
 
-1. 執行 **Microsoft ATA Center Setup.EXE**，然後遵循安裝精靈的步驟。
+1. 以較高的許可權執行 **MICROSOFT ATA 中心 Setup.EXE** ([以 **系統管理員身分執行** ]) ，然後遵循安裝程式。
 
     > [!NOTE]
     > 請務必從本機磁碟機執行安裝檔案，而不是從掛接的 ISO 檔案執行，以避免安裝過程中必須重新開機的問題。

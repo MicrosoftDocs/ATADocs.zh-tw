@@ -1,14 +1,14 @@
 ---
 title: 針對身分識別已知問題進行 Microsoft Defender 疑難排解
 description: 說明如何針對身分識別的 Microsoft Defender 問題進行疑難排解。
-ms.date: 09/07/2020
+ms.date: 01/12/2021
 ms.topic: how-to
-ms.openlocfilehash: bd7abdca7fade3b00161513b74d6507c5660c3bb
-ms.sourcegitcommit: bfb14c4c0b0f528edaa8167833b13c476240e514
+ms.openlocfilehash: 6f0a055a48dc906dd7a44814b19ed85fb64401ee
+ms.sourcegitcommit: 2eb4078aba5085a12acc37c2a8d9aa48bd6dcb02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97762498"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114236"
 ---
 # <a name="troubleshooting-product-long-known-issues"></a>針對 [!INCLUDE [Product long](includes/product-long.md)] 已知問題進行疑難排解
 
@@ -152,7 +152,7 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 
 在虛擬機器的 NIC 設定中，將下列內容設定為 [ **停用** ]： [ **IPv4 TSO** 卸載]。
 
- ![VMware 感應器問題](media/vm-sensor-issue.png)
+![VMware 感應器問題](media/vm-sensor-issue.png)
 
 使用下列命令來檢查已啟用或停用大型傳送卸載 (LSO)：
 
@@ -165,6 +165,11 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 `Disable-NetAdapterLso -Name {name of adapter}`
 
 ![停用 LSO 狀態](media/disable-lso-vmware.png)
+
+> [!NOTE]
+>
+> - 您可能需要重新開機電腦，這些變更才會生效。
+> - 這些步驟會根據您的 VMWare 版本而有所不同。 如需有關如何針對您的 VMWare 版本停用 LSO/TSO 的詳細資訊，請參閱 VMWare 檔。
 
 ## <a name="sensor-failed-to-retrieve-group-managed-service-account-gmsa-credentials"></a>感應器無法擷取群組受管理的服務帳戶 (gMSA) 認證
 

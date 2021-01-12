@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.date: 12/03/2020
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 37d46cd2a7810193990cc3143e69c9ea83c6afe2
-ms.sourcegitcommit: 69339ed7712657427ee40af8cc3ac41e11ed2dd2
+ms.openlocfilehash: 595a532bb02aeda6f82005a28833f71a3d074a18
+ms.sourcegitcommit: 2eb4078aba5085a12acc37c2a8d9aa48bd6dcb02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96597946"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114253"
 ---
 # <a name="azure-security-baseline-for-microsoft-defender-for-identity"></a>適用于 Microsoft Defender 身分識別的 Azure 安全性基準
 
-此安全性基準會將來自 [Azure 安全性基準測試版本 2.0](https://docs.microsoft.com/azure/security/benchmarks/overview) 的指引套用至 Microsoft Defender 以進行身分識別。 Azure 安全性基準提供如何在 Azure 上保護雲端解決方案的建議。 內容會依 Azure 安全性基準測試所定義的 **安全性控制** ，以及適用于 Microsoft Defender 身分識別的相關指引來分組。 未排除適用于 Microsoft Defender for Identity 的 **控制項**。
+此安全性基準會將來自 [Azure 安全性基準測試版本 2.0](/azure/security/benchmarks/overview) 的指引套用至 Microsoft Defender 以進行身分識別。 Azure 安全性基準提供如何在 Azure 上保護雲端解決方案的建議。 內容會依 Azure 安全性基準測試所定義的 **安全性控制** ，以及適用于 Microsoft Defender 身分識別的相關指引來分組。 未排除適用于 Microsoft Defender for Identity 的 **控制項**。
 
 若要查看 Microsoft Defender for Identity 如何完全對應至 Azure 安全性基準測試，請參閱 [完整的 Microsoft defender 身分識別安全性基準對應](https://github.com/MicrosoftDocs/SecurityBenchmarks/tree/master/Azure%20Offer%20Security%20Baselines)檔案。
 
@@ -28,9 +28,9 @@ ms.locfileid: "96597946"
 
 **指導** 方針：使用 Azure 虛擬網路服務標籤來定義網路安全性群組的網路存取控制，或針對您的 Defender 針對身分識別資源設定的 Azure 防火牆。 建立安全性規則時，您可以使用服務標籤取代特定的 IP 位址。 藉由指定服務標記名稱 (例如：「>azureadvancedthreatprotection」 ) 在規則的適當來源或目的地欄位中，您可以允許或拒絕對應服務的流量。 Microsoft 會管理服務標籤包含的位址前置詞，並隨著位址變更自動更新服務標籤。
 
-- [在 proxy 伺服器中啟用身分識別服務 Url 的 Defender 存取](https://docs.microsoft.com/defender-for-identity/configure-proxy#enable-access-to--service-urls-in-the-proxy-server)
+- [在 proxy 伺服器中啟用身分識別服務 Url 的 Defender 存取](configure-proxy.md#enable-access-to--service-urls-in-the-proxy-server)
 
-- [瞭解和使用服務標記](https://docs.microsoft.com/azure/virtual-network/service-tags-overview)
+- [瞭解和使用服務標記](/azure/virtual-network/service-tags-overview)
 
 **Azure 資訊安全中心監視**：不適用
 
@@ -51,13 +51,13 @@ ms.locfileid: "96597946"
 
 注意： Azure AD 支援外部身分識別，讓沒有 Microsoft 帳戶的使用者可以使用其外部身分識別登入其應用程式和資源。
 
-- [Azure Active Directory 中的租用](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps) 
+- [Azure Active Directory 中的租用](/azure/active-directory/develop/single-and-multi-tenant-apps) 
 
-- [如何建立及設定 Azure AD 執行個體](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant) 
+- [如何建立及設定 Azure AD 執行個體](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant) 
 
-- [使用應用程式的外部識別提供者](https://docs.microsoft.com/azure/active-directory/b2b/identity-providers) (機器翻譯) 
+- [使用應用程式的外部識別提供者](/azure/active-directory/b2b/identity-providers) (機器翻譯) 
 
-- [Azure Active Directory 中的身分識別安全分數為何](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score) (機器翻譯)
+- [Azure Active Directory 中的身分識別安全分數為何](/azure/active-directory/fundamentals/identity-secure-score) (機器翻譯)
 
 **Azure 資訊安全中心監視**：不適用
 
@@ -72,13 +72,13 @@ ms.locfileid: "96597946"
 
 針對系統管理員和特殊許可權的使用者，請確定已使用強式驗證方法的最高層級，接著向其他使用者推出適當的增強式驗證原則。
 
-- [如何在 Azure 中啟用多重要素驗證](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) 
+- [如何在 Azure 中啟用多重要素驗證](/azure/active-directory/authentication/howto-mfa-getstarted) 
 
-- [Azure Active Directory 的無密碼驗證選項簡介](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless) 
+- [Azure Active Directory 的無密碼驗證選項簡介](/azure/active-directory/authentication/concept-authentication-passwordless) 
 
-- [Azure AD 預設密碼原則](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts) 
+- [Azure AD 預設密碼原則](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts) 
 
-- [使用 Azure AD 密碼保護排除不正確的密碼](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)
+- [使用 Azure AD 密碼保護排除不正確的密碼](/azure/active-directory/authentication/concept-password-ban-bad)
 
 **Azure 資訊安全中心監視**：是
 
@@ -97,13 +97,13 @@ ms.locfileid: "96597946"
 限制高許可權帳戶或角色的數目，並在提高許可權的層級保護這些帳戶，因為具有此許可權的使用者可以直接或間接讀取和修改 Azure 環境中的每個資源。
 
 您可以啟用對 Azure 資源的即時 (JIT) 特殊許可權存取，以及使用 Azure AD) PIM Azure AD Privileged Identity Management () 的 Azure Active Directory (。 JIT 只有在使用者需要時，才會授與暫時性權限以執行特殊權限的工作。 當您的 Azure AD 組織中有可疑或不安全的活動時，PIM 也會產生安全性警示。
-- [適用于身分識別角色群組的 Microsoft Defender](https://docs.microsoft.com/defender-for-identity/role-groups)
+- [適用于身分識別角色群組的 Microsoft Defender](role-groups.md)
 
-- [Azure AD 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 
+- [Azure AD 中的系統管理員角色權限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 
 
-- [使用 Azure Privileged Identity Management 安全性警示](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts) 
+- [使用 Azure Privileged Identity Management 安全性警示](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts) 
 
-- [在 Azure AD 中保護混合式部署和雲端部署的特殊權限存取](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure)
+- [在 Azure AD 中保護混合式部署和雲端部署的特殊權限存取](/azure/active-directory/users-groups-roles/directory-admin-roles-secure)
 
 **Azure 資訊安全中心監視**：是
 
@@ -117,13 +117,13 @@ ms.locfileid: "96597946"
 
 所有類型的存取控制都應符合您的企業分割策略，以確保存取控制的一致性。
 
-- [適用于身分識別角色群組的 Microsoft Defender](https://docs.microsoft.com/defender-for-identity/role-groups)
+- [適用于身分識別角色群組的 Microsoft Defender](role-groups.md)
 
-- [Azure 元件和參考模型](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151) 
+- [Azure 元件和參考模型](/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151) 
 
-- [管理群組存取](https://docs.microsoft.com/azure/governance/management-groups/overview#management-group-access) 
+- [管理群組存取](/azure/governance/management-groups/overview#management-group-access) 
 
-- [Azure 訂用帳戶管理員](https://docs.microsoft.com/azure/cost-management-billing/manage/add-change-subscription-administrator)
+- [Azure 訂用帳戶管理員](/azure/cost-management-billing/manage/add-change-subscription-administrator)
 
 **Azure 資訊安全中心監視**：是
 
@@ -137,9 +137,9 @@ ms.locfileid: "96597946"
 
 注意：某些 Azure 服務支援不是透過 Azure AD 管理的本機使用者和角色。 您將需要分開管理這些使用者。
 
-- [在 Privileged Identity Management (PIM) 中建立 Azure 資源角色的存取權審核 ](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review) 
+- [在 Privileged Identity Management (PIM) 中建立 Azure 資源角色的存取權審核 ](/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review) 
 
-- [如何使用 Azure AD 身分識別和存取權檢閱](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overvie)
+- [如何使用 Azure AD 身分識別和存取權檢閱](/azure/active-directory/governance/access-reviews-overvie)
 
 **Azure 資訊安全中心監視**：是
 
@@ -149,8 +149,8 @@ ms.locfileid: "96597946"
 
 **指引**：安全、隔離的工作站對於敏感性角色 (例如系統管理員、開發人員及重要服務操作員) 的安全性來說至關重要。 使用高度安全的使用者工作站及/或 Azure 防禦來進行系統管理工作。 使用 Azure Active Directory、Microsoft Defender for Endpoint 及/或 Microsoft Intune 來部署安全且受管理的使用者工作站以進行系統管理工作。 受保護的工作站可以集中管理以施行安全設定，包括增強式驗證、軟體和硬體基準、受限的邏輯和網路存取。
 
-- [瞭解特殊許可權的存取工作站](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-managed-workstation) 
-- [部署特殊權限存取工作站](https://docs.microsoft.com/azure/active-directory/devices/howto-azure-managed-workstation) (機器翻譯)
+- [瞭解特殊許可權的存取工作站](/azure/active-directory/devices/concept-azure-managed-workstation) 
+- [部署特殊權限存取工作站](/azure/active-directory/devices/howto-azure-managed-workstation) (機器翻譯)
 
 **Azure 資訊安全中心監視**：不適用
 
@@ -167,11 +167,11 @@ ms.locfileid: "96597946"
 為確保存取控制的一致性，所有類型的存取控制都應與您的企業分割策略相符。 企業分割策略也應由機密或業務關鍵資料和系統的位置來通知。
 
 針對 Microsoft 管理的基礎平台，Microsoft 會將所有客戶內容視為敏感性資訊，並防範客戶資料外洩和暴露。 為了確保 Azure 中的客戶資料保持安全，Microsoft 會實行預設的資料保護控制項和功能。
-- [Azure AD 可存取 Cloud App Security 的角色](https://docs.microsoft.com/cloud-app-security/manage-admins)
+- [Azure AD 可存取 Cloud App Security 的角色](/cloud-app-security/manage-admins)
 
-- [Azure 角色型存取控制 (RBAC) ](https://docs.microsoft.com/azure/role-based-access-control/overview) 
+- [Azure 角色型存取控制 (RBAC) ](/azure/role-based-access-control/overview) 
 
-- [瞭解 Azure 中的客戶資料保護](https://docs.microsoft.com/azure/security/fundamentals/protection-customer-data)
+- [瞭解 Azure 中的客戶資料保護](/azure/security/fundamentals/protection-customer-data)
 
 **Azure 資訊安全中心監視**：不適用
 
@@ -191,9 +191,9 @@ ms.locfileid: "96597946"
 
 注意：若要取得工作負載和服務的可見度，可能需要其他權限。 
 
-- [安全性讀取者角色概觀](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#security-reader)
+- [安全性讀取者角色概觀](/azure/role-based-access-control/built-in-roles#security-reader)
 
-- [Azure 管理群組概觀](https://docs.microsoft.com/azure/governance/management-groups/overview)
+- [Azure 管理群組概觀](/azure/governance/management-groups/overview)
 
 **Azure 資訊安全中心監視**：目前無法使用
 
@@ -208,10 +208,10 @@ ms.locfileid: "96597946"
 **指導** 方針： Defender for Identity 可在偵測到可疑的活動時通知您，方法是透過提名感應器將安全性和健康狀態警示傳送至您的 Syslog 伺服器。
 將任何來自 Defender for Identity 的記錄轉送到您的 SIEM，可用來設定自訂威脅偵測。 確定您正在監視不同類型的 Azure 資產，以找出潛在的威脅和異常。 專注于取得高品質的警示，以減少因分析師排序的誤報。 警示可能源自于記錄資料、代理程式或其他資料。
 
-- [如何與 Syslog 整合](https://docs.microsoft.com/defender-for-identity/setting-syslog)
-- [建立自訂分析規則來偵測威脅](https://docs.microsoft.com/azure/sentinel/tutorial-detect-threats-custom) 
+- [如何與 Syslog 整合](setting-syslog.md)
+- [建立自訂分析規則來偵測威脅](/azure/sentinel/tutorial-detect-threats-custom) 
 
-- [使用 Azure Sentinel 的網路威脅情報](https://docs.microsoft.com/azure/architecture/example-scenario/data/sentinel-threat-intelligence)
+- [使用 Azure Sentinel 的網路威脅情報](/azure/architecture/example-scenario/data/sentinel-threat-intelligence)
 
 **Azure 資訊安全中心監視**：不適用
 
@@ -231,10 +231,10 @@ ms.locfileid: "96597946"
 
 Azure 資訊安全中心也可能會對某些可疑活動發出警示，例如在訂用帳戶中有過多的失敗驗證嘗試次數、已淘汰的帳戶。 除了基本的安全性檢查監視以外，Azure 資訊安全中心的威脅防護模組也可以從個別的 Azure 計算資源 (虛擬機器、容器、App Service)、資料資源 (SQL DB 和儲存體) 與 Azure 服務層收集更深入的安全性警示。 這項功能可讓您查看個別資源內的帳戶異常。
 
-- [Azure Active Directory 中的稽核活動報表](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-audit-logs) 
+- [Azure Active Directory 中的稽核活動報表](/azure/active-directory/reports-monitoring/concept-audit-logs) 
 
-- [啟用 Azure Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection) 
-- [Azure 資訊安全中心內的威脅防護](https://docs.microsoft.com/azure/security-center/threat-protection)
+- [啟用 Azure Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection) 
+- [Azure 資訊安全中心內的威脅防護](/azure/security-center/threat-protection)
 
 **Azure 資訊安全中心監視**：是
 
@@ -250,10 +250,10 @@ Azure 資訊安全中心也可能會對某些可疑活動發出警示，例如�
 
 適用于身分識別的 Defender 可將所有安全性相關記錄轉送到您的 SIEM，以進行集中式管理。
 
-- [如何使用 Azure 監視器收集平臺記錄和計量](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings) 
-- [如何使 Azure Sentinel 上線](https://docs.microsoft.com/azure/sentinel/quickstart-onboard) 
+- [如何使用 Azure 監視器收集平臺記錄和計量](/azure/azure-monitor/platform/diagnostic-settings) 
+- [如何使 Azure Sentinel 上線](/azure/sentinel/quickstart-onboard) 
 
-- [整合 Defender for Identity 與 Syslog](https://docs.microsoft.com/defender-for-identity/setting-syslog)
+- [整合 Defender for Identity 與 Syslog](setting-syslog.md)
 
 **Azure 資訊安全中心監視**：是
 
@@ -267,9 +267,9 @@ Azure 資訊安全中心也可能會對某些可疑活動發出警示，例如�
 
 **指引**：確定您的組織具有回應安全性事件的流程、已更新 Azure 的這些處理序，而且會定期執行以確保就緒。
 
-- [在企業環境中實作安全性](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud) (機器翻譯)
+- [在企業環境中實作安全性](/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud) (機器翻譯)
 
-- [事件回應參考指南](https://docs.microsoft.com/microsoft-365/downloads/IR-Reference-Guide.pdf) (英文)
+- [事件回應參考指南](/microsoft-365/downloads/IR-Reference-Guide.pdf) (英文)
 
 **Azure 資訊安全中心監視**：不適用
 
@@ -279,7 +279,7 @@ Azure 資訊安全中心也可能會對某些可疑活動發出警示，例如�
 
 **指引**：在 Azure 資訊安全中心中設定安全性事件連絡人資訊。 當 Microsoft 安全回應中心 (MSRC) 發現您的資料已遭非法或未經授權的合作對象存取時，Microsoft 會使用此連絡人資訊來與您連絡。 您也可以選擇根據您的事件回應需求，在不同的 Azure 服務中自訂事件警示和通知。 
 
-- [如何設定 Azure 資訊安全中心的安全性連絡人](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details)
+- [如何設定 Azure 資訊安全中心的安全性連絡人](/azure/security-center/security-center-provide-security-contact-details)
 
 **Azure 資訊安全中心監視**：是
 
@@ -295,9 +295,9 @@ Azure 資訊安全中心 (ASC) 可在許多 Azure 資產之間提供高品質的
 
 使用匯出功能匯出 Azure 資訊安全中心警示和建議，以利找出 Azure 資源的風險。 以手動或持續不斷的方式匯出警示和建議。
 
-- [如何設定匯出](https://docs.microsoft.com/azure/security-center/continuous-export)
+- [如何設定匯出](/azure/security-center/continuous-export)
 
-- [如何將警示串流至 Azure Sentinel](https://docs.microsoft.com/azure/sentinel/connect-azure-security-center)
+- [如何將警示串流至 Azure Sentinel](/azure/sentinel/connect-azure-security-center)
 
 **Azure 資訊安全中心監視**：目前無法使用
 
@@ -321,13 +321,13 @@ Azure 資訊安全中心 (ASC) 可在許多 Azure 資產之間提供高品質的
 
 Azure Sentinel 可讓您對絕大多數的記錄來源進行廣泛的資料分析，並提供案例管理入口網站來管理事件的完整生命週期。 調查期間的情報資訊可以與事件相關聯，以供追蹤和報告之用。 
 
-- [為 Windows 機器的磁碟建立快照集](https://docs.microsoft.com/azure/virtual-machines/windows/snapshot-copy-managed-disk)
+- [為 Windows 機器的磁碟建立快照集](/azure/virtual-machines/windows/snapshot-copy-managed-disk)
 
-- [為 Linux 機器的磁碟建立快照集](https://docs.microsoft.com/azure/virtual-machines/linux/snapshot-copy-managed-disk)
+- [為 Linux 機器的磁碟建立快照集](/azure/virtual-machines/linux/snapshot-copy-managed-disk)
 
 - [Microsoft Azure 支援診斷資訊和記憶體傾印收集](https://azure.microsoft.com/support/legal/support-diagnostic-information-collection/) 
 
-- [使用 Azure Sentinel 調查事件](https://docs.microsoft.com/azure/sentinel/tutorial-investigate-cases)
+- [使用 Azure Sentinel 調查事件](/azure/sentinel/tutorial-investigate-cases)
 
 **Azure 資訊安全中心監視**：不適用
 
@@ -341,9 +341,9 @@ Azure 資訊安全中心會指派每個警示的嚴重性，以協助您設定�
 
 此外，請使用標籤來標示資源，並建立命名系統以識別及分類 Azure 資源，尤其是處理敏感資料的資源。  您需負責根據發生事件的 Azure 資源和環境的重要性，設定警示的補救優先順序。
 
-- [Azure 資訊安全中心的安全性警示](https://docs.microsoft.com/azure/security-center/security-center-alerts-overview)
+- [Azure 資訊安全中心的安全性警示](/azure/security-center/security-center-alerts-overview)
 
-- [使用標記來組織 Azure 資源](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)
+- [使用標記來組織 Azure 資源](/azure/azure-resource-manager/resource-group-using-tags)
 
 **Azure 資訊安全中心監視**：目前無法使用
 
@@ -353,11 +353,11 @@ Azure 資訊安全中心會指派每個警示的嚴重性，以協助您設定�
 
 **指引**：將手動重複的工作自動化，以縮短回應時間並降低分析師的負擔。 手動工作需要較長的時間來執行、使每個事件變慢，並減少分析師可以處理的事件數目。 手動工作也會使分析師更加疲勞，而增加人為錯誤導致延遲的風險，並降低分析師有效專注處理複雜工作的能力。 請使用 Azure 資訊安全中心和 Azure Sentinel 中的工作流程自動化功能來自動觸發動作，或執行劇本以回應傳入的安全性警示。 劇本會採取動作，例如傳送通知、停用帳戶，以及隔離有問題的網路。 
 
-- [在資訊安全中心設定工作流程自動化](https://docs.microsoft.com/azure/security-center/workflow-automation)
+- [在資訊安全中心設定工作流程自動化](/azure/security-center/workflow-automation)
 
-- [在 Azure 資訊安全中心設定自動化威脅回應](https://docs.microsoft.com/azure/security-center/tutorial-security-incident#triage-security-alerts)
+- [在 Azure 資訊安全中心設定自動化威脅回應](/azure/security-center/tutorial-security-incident#triage-security-alerts)
 
-- [在 Azure Sentinel 中設定自動化威脅回應](https://docs.microsoft.com/azure/sentinel/tutorial-respond-threats-playbook)
+- [在 Azure Sentinel 中設定自動化威脅回應](/azure/sentinel/tutorial-respond-threats-playbook)
 
 **Azure 資訊安全中心監視**：目前無法使用
 
@@ -372,7 +372,7 @@ Azure 資訊安全中心會指派每個警示的嚴重性，以協助您設定�
 **指引**：如有需要，請對您的 Azure 資源執行滲透測試或紅隊活動，並確保補救所有重要的安全性結果。
 請遵循 Microsoft 雲端滲透測試參與規則，以確保您的滲透測試不會違反 Microsoft 原則。 針對 Microsoft 管理的雲端基礎結構、服務和應用程式，使用 Microsoft 對於紅隊和即時網站滲透測試的策略和執行方法。
 
-- [Azure 中的滲透測試](https://docs.microsoft.com/azure/security/fundamentals/pen-testing) (機器翻譯)
+- [Azure 中的滲透測試](/azure/security/fundamentals/pen-testing) (機器翻譯)
 
 - [滲透測試運作規則](https://www.microsoft.com/msrc/pentest-rules-of-engagement?rtc=1) 
 
@@ -409,15 +409,15 @@ Azure 資訊安全中心會指派每個警示的嚴重性，以協助您設定�
 -   適當的密碼編譯標準
 
 如需詳細資訊，請參閱下列參考資料：
-- [Azure 安全性架構建議 - 儲存體、資料和加密](https://docs.microsoft.com/azure/architecture/framework/security/storage-data-encryption?toc=/security/compass/toc.json&amp;bc=/security/compass/breadcrumb/toc.json) (機器翻譯)
+- [Azure 安全性架構建議 - 儲存體、資料和加密](/azure/architecture/framework/security/storage-data-encryption?amp;bc=%2fsecurity%2fcompass%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fcompass%2ftoc.json) (機器翻譯)
 
-- [Azure 安全性基礎觀念 - Azure 資料安全性、加密和儲存體](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview) (機器翻譯)
+- [Azure 安全性基礎觀念 - Azure 資料安全性、加密和儲存體](/azure/security/fundamentals/encryption-overview) (機器翻譯)
 
-- [雲端採用架構 - Azure 資料安全性和加密最佳做法](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices?toc=/azure/cloud-adoption-framework/toc.json&amp;bc=/azure/cloud-adoption-framework/_bread/toc.json) (機器翻譯)
+- [雲端採用架構 - Azure 資料安全性和加密最佳做法](/azure/security/fundamentals/data-encryption-best-practices?amp;bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) (機器翻譯)
 
-- [Azure 安全性效能評定 - 資產管理](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-asset-management)
+- [Azure 安全性效能評定 - 資產管理](/azure/security/benchmarks/security-benchmark-v2-asset-management)
 
-- [Azure 安全性效能評定 - 資料保護](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-data-protection)
+- [Azure 安全性效能評定 - 資料保護](/azure/security/benchmarks/security-benchmark-v2-data-protection)
 
 **Azure 資訊安全中心監視**：不適用
 
@@ -431,11 +431,11 @@ Azure 資訊安全中心會指派每個警示的嚴重性，以協助您設定�
 
 請確定跨控制項類型（包括網路安全性、身分識別和存取模型、應用程式許可權/存取模型，以及人力流程式控制件）一致地實行分割策略。
 
-- [Azure 中的分割策略指引 (影片)](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151) (機器翻譯)
+- [Azure 中的分割策略指引 (影片)](/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151) (機器翻譯)
 
-- [Azure 中的分割策略指引 (文件)](https://docs.microsoft.com/security/compass/governance#enterprise-segmentation-strategy) (機器翻譯)
+- [Azure 中的分割策略指引 (文件)](/security/compass/governance#enterprise-segmentation-strategy) (機器翻譯)
 
-- [使用企業分割策略來調整網路分割](https://docs.microsoft.com/security/compass/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy) (機器翻譯)
+- [使用企業分割策略來調整網路分割](/security/compass/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy) (機器翻譯)
 
 **Azure 資訊安全中心監視**：不適用
 
@@ -445,7 +445,7 @@ Azure 資訊安全中心會指派每個警示的嚴重性，以協助您設定�
 
 **指引**：持續測量並降低個別資產及其裝載環境的風險。 設定高價值資產的優先順序以及高度公開的攻擊面，例如已發佈的應用程式、網路輸入和輸出點、使用者和系統管理員端點等等。
 
-- [Azure 安全性效能評定 - 狀態和弱點管理](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-posture-vulnerability-management)
+- [Azure 安全性效能評定 - 狀態和弱點管理](/azure/security/benchmarks/security-benchmark-v2-posture-vulnerability-management)
 
 **Azure 資訊安全中心監視**：不適用
 
@@ -455,11 +455,11 @@ Azure 資訊安全中心會指派每個警示的嚴重性，以協助您設定�
 
 **指引**：務必為安全性組織中的角色和責任記載並傳達清楚的策略。 優先為安全性決策提供清楚的權責、讓每個人熟知共同責任模型，並讓技術團隊熟知保護雲端的技術。
 
-- [Azure 安全性最佳做法 1 – 人員：讓小組熟知雲端安全性旅程](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#1-people-educate-teams-about-the-cloud-security-journey) (機器翻譯)
+- [Azure 安全性最佳做法 1 – 人員：讓小組熟知雲端安全性旅程](/azure/cloud-adoption-framework/security/security-top-10#1-people-educate-teams-about-the-cloud-security-journey) (機器翻譯)
 
-- [Azure 安全性最佳做法 2 - 人員：讓小組熟知雲端安全性技術](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#2-people-educate-teams-on-cloud-security-technology) (機器翻譯)
+- [Azure 安全性最佳做法 2 - 人員：讓小組熟知雲端安全性技術](/azure/cloud-adoption-framework/security/security-top-10#2-people-educate-teams-on-cloud-security-technology) (機器翻譯)
 
-- [Azure 安全性最佳做法 3 - 流程：指派雲端安全性決策的權責](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud) (機器翻譯)
+- [Azure 安全性最佳做法 3 - 流程：指派雲端安全性決策的權責](/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud) (機器翻譯)
 
 **Azure 資訊安全中心監視**：不適用
 
@@ -484,13 +484,13 @@ Azure 資訊安全中心會指派每個警示的嚴重性，以協助您設定�
 -   最新的網路安全性成品 (例如網路圖、參考網路架構)
 
 如需詳細資訊，請參閱下列參考資料：
-- [Azure 安全性最佳做法 11 - 架構。單一整合的安全性策略](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy) (機器翻譯)
+- [Azure 安全性最佳做法 11 - 架構。單一整合的安全性策略](/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy) (機器翻譯)
 
-- [Azure 安全性效能評定 - 網路安全性](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-network-security)
+- [Azure 安全性效能評定 - 網路安全性](/azure/security/benchmarks/security-benchmark-v2-network-security)
 
-- [Azure 網路安全性概觀](https://docs.microsoft.com/azure/security/fundamentals/network-overview)
+- [Azure 網路安全性概觀](/azure/security/fundamentals/network-overview)
 
-- [企業網路架構策略](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/architecture) (機器翻譯)
+- [企業網路架構策略](/azure/cloud-adoption-framework/ready/enterprise-scale/architecture) (機器翻譯)
 
 **Azure 資訊安全中心監視**：不適用
 
@@ -514,13 +514,13 @@ Azure 資訊安全中心會指派每個警示的嚴重性，以協助您設定�
 
 如需詳細資訊，請參閱下列參考資料：
 
-- [Azure 安全性效能評定 - 身分識別管理](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-identity-management)
+- [Azure 安全性效能評定 - 身分識別管理](/azure/security/benchmarks/security-benchmark-v2-identity-management)
 
-- [Azure 安全性效能評定 - 特殊權限存取](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-privileged-access)
+- [Azure 安全性效能評定 - 特殊權限存取](/azure/security/benchmarks/security-benchmark-v2-privileged-access)
 
-- [Azure 安全性最佳做法 11 - 架構。單一整合的安全性策略](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy) (機器翻譯)
+- [Azure 安全性最佳做法 11 - 架構。單一整合的安全性策略](/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy) (機器翻譯)
 
-- [Azure 身分識別管理安全性概觀](https://docs.microsoft.com/azure/security/fundamentals/identity-management-overview)
+- [Azure 身分識別管理安全性概觀](/azure/security/fundamentals/identity-management-overview)
 
 **Azure 資訊安全中心監視**：不適用
 
@@ -548,15 +548,15 @@ Azure 資訊安全中心會指派每個警示的嚴重性，以協助您設定�
 
 如需詳細資訊，請參閱下列參考資料：
 
-- [Azure 安全性效能評定 - 記錄與威脅偵測](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-logging-threat-detection)
+- [Azure 安全性效能評定 - 記錄與威脅偵測](/azure/security/benchmarks/security-benchmark-v2-logging-threat-detection)
 
-- [Azure 安全性效能評定 - 事件回應](https://docs.microsoft.com/azure/security/benchmarks/security-benchmark-v2-incident-response)
+- [Azure 安全性效能評定 - 事件回應](/azure/security/benchmarks/security-benchmark-v2-incident-response)
 
-- [Azure 安全性最佳做法 4 - 流程。更新雲端的事件回應流程](https://docs.microsoft.com/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud) (機器翻譯)
+- [Azure 安全性最佳做法 4 - 流程。更新雲端的事件回應流程](/azure/cloud-adoption-framework/security/security-top-10#4-process-update-incident-response-ir-processes-for-cloud) (機器翻譯)
 
-- [Azure 採用架構、記錄與報告決策指南](https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/logging-and-reporting/)
+- [Azure 採用架構、記錄與報告決策指南](/azure/cloud-adoption-framework/decision-guides/logging-and-reporting/)
 
-- [Azure 企業規模、管理與監視](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/management-and-monitoring) (機器翻譯)
+- [Azure 企業規模、管理與監視](/azure/cloud-adoption-framework/ready/enterprise-scale/management-and-monitoring) (機器翻譯)
 
 **Azure 資訊安全中心監視**：不適用
 

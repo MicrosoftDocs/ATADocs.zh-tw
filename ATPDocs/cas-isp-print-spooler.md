@@ -3,12 +3,12 @@ title: 適用于身分識別列印多工緩衝處理器身分識別安全性狀�
 description: 本文概述 Microsoft Defender 身分識別的列印多工緩衝處理器身分識別安全性狀態評估報告。
 ms.date: 01/11/2021
 ms.topic: how-to
-ms.openlocfilehash: dc380efcff1353203786a91b481d1e091e860071
-ms.sourcegitcommit: 57dd3e4663346db3542cf9e755dac135c5e75125
+ms.openlocfilehash: 104b763de6950ff07d984ee053e5b0e05cd42dc7
+ms.sourcegitcommit: 2eb4078aba5085a12acc37c2a8d9aa48bd6dcb02
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98062513"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98114202"
 ---
 # <a name="security-assessment-domain-controllers-with-print-spooler-service-available"></a>安全性評估：有可用列印多工緩衝處理器服務的網域控制站
 
@@ -29,7 +29,7 @@ ms.locfileid: "98062513"
 > [!NOTE]
 >
 > - 停用此服務並防止主動列印工作流程之前，請務必先調查您的 **列印多工緩衝處理器** 設定、組態與相依性。
-> - 網域控制站角色會 [將執行緒新增至](https://docs.microsoft.com/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server#print-spooler) 負責執行列印剪除的多工緩衝處理器服務-從 Active Directory 移除過時的列印佇列物件。 因此，停用 **列印多工緩衝處理器** 服務的安全性建議，是安全性與執行列印剪除的能力之間的取捨。 若要解決此問題，您應該考慮以手動方式或使用自動化腳本，定期剪除過時的列印佇列物件。
+> - 網域控制站角色會 [將執行緒新增至](/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server#print-spooler) 負責執行列印剪除的多工緩衝處理器服務-從 Active Directory 移除過時的列印佇列物件。 因此，停用 **列印多工緩衝處理器** 服務的安全性建議，是安全性與執行列印剪除的能力之間的取捨。 若要解決此問題，您應該考慮以手動方式或使用自動化腳本，定期剪除過時的列印佇列物件。
 
 ## <a name="how-do-i-use-this-security-assessment"></a>我該如何使用這項安全性評估？
 

@@ -3,12 +3,12 @@ title: 適用於身分識別的 Microsoft Defender 先決條件
 description: 描述適用於身分識別的 Microsoft Defender 在環境中成功部署的需求
 ms.date: 12/23/2020
 ms.topic: overview
-ms.openlocfilehash: f0807061c5ea57f063a1f5a4035b7059e1671a7d
-ms.sourcegitcommit: e2b4ad613aa171f604ae526f0cba05fe79f4a8cb
+ms.openlocfilehash: cb925a0b2bc2767367b6d3adabd5cb7dabcffa00
+ms.sourcegitcommit: 57dd3e4663346db3542cf9e755dac135c5e75125
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97753383"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98062547"
 ---
 # <a name="product-long-prerequisites"></a>[!INCLUDE [Product long](includes/product-long.md)] 先決條件
 
@@ -166,9 +166,9 @@ ms.locfileid: "97753383"
 下表列出 [!INCLUDE [Product short](includes/product-short.md)] 感應器至少需要的連接埠：
 
 |通訊協定|傳輸|Port|寄件者|收件者|
-|------------|-------------|--------|-----------|
+|------------|-------------|--------|-----------|---|
 |**內部連接埠**|||||
-|SSL (*.atp.azure.com)|TCP|443|[!INCLUDE [Product short](includes/product-short.md)] 感應器|[!INCLUDE [Product short](includes/product-short.md)] 雲端服務|
+|SSL (\*.atp.azure.com)|TCP|443|[!INCLUDE [Product short](includes/product-short.md)] 感應器|[!INCLUDE [Product short](includes/product-short.md)] 雲端服務|
 |SSL (localhost)|TCP|444|[!INCLUDE [Product short](includes/product-short.md)] 感應器|本機主機|
 |**內部連接埠**|||||
 |DNS|TCP 和 UDP|53|[!INCLUDE [Product short](includes/product-short.md)] 感應器|DNS 伺服器|
@@ -258,9 +258,9 @@ ms.locfileid: "97753383"
 下表列出 [!INCLUDE [Product short](includes/product-short.md)] 獨立感應器在管理介面卡上至少需要設定的連接埠：
 
 |通訊協定|傳輸|Port|寄件者|收件者|
-|------------|-------------|--------|-----------|
+|------------|-------------|--------|-----------|---|
 |**內部連接埠**||||
-|SSL (*.atp.azure.com)|TCP|443|[!INCLUDE [Product short](includes/product-short.md)] 感應器|[!INCLUDE [Product short](includes/product-short.md)] 雲端服務|
+|SSL (\*.atp.azure.com)|TCP|443|[!INCLUDE [Product short](includes/product-short.md)] 感應器|[!INCLUDE [Product short](includes/product-short.md)] 雲端服務|
 |SSL (localhost)|TCP|444|[!INCLUDE [Product short](includes/product-short.md)] 感應器|本機主機|
 |**內部連接埠**||||
 |LDAP|TCP 和 UDP|389|[!INCLUDE [Product short](includes/product-short.md)] 感應器|網域控制站|

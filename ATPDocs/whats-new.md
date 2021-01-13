@@ -1,16 +1,16 @@
 ---
 title: 適用於身分識別的 Defender：新功能
 description: 本文會經常更新，讓您知道適用於身分識別的 Defender 最新版功能。
-ms.date: 12/20/2020
+ms.date: 01/06/2021
 ms.topic: overview
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: e2c338e2105b8eb228493d20f1b47f230d9e1464
-ms.sourcegitcommit: 183be34e4e4c71fb75a676eab6a2840fdc205519
+ms.openlocfilehash: 4fec3e83fafb061eedb04018215b2e11c2fbb228
+ms.sourcegitcommit: 382d56413793419a8a82e531b0a0ec0a360bac14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97889326"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97937411"
 ---
 # <a name="whats-new-in-product-long"></a>[!INCLUDE [Product long](includes/product-long.md)] 的新功能
 
@@ -24,11 +24,18 @@ RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在�
 >
 > Microsoft 的威脅防護產品名稱即將變更。 如需有關此變更的詳細資訊與其他更新，請參閱[這裡](https://www.microsoft.com/security/blog/?p=91813)。 從 2.129 版開始，我們將使用新的名稱。
 
+## <a name="product-short-release-2136"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.136 版
+
+發行日期：2021 年 1 月 3 日
+
+- 適用於身分識別的 Defender 現在支援在 Active Directory 同盟服務 (AD FS) 伺服器上安裝感應器。 在[相容的 AD FS 伺服器](prerequisites.md#azure-atp-sensor-requirements)上安裝感應器可透過監視這個重要的基礎結構元件，將適用於身分識別的 Microsoft Defender 可見度延伸到混合式環境。 我們也重新整理了一些現有的偵測 ([可疑的服務建立](domain-dominance-alerts.md#suspicious-service-creation-external-id-2026)、[可疑的暴力密碼破解攻擊 (LDAP)](compromised-credentials-alerts.md#suspected-brute-force-attack-ldap-external-id-2004)、[帳戶列舉偵察](reconnaissance-alerts.md#account-enumeration-reconnaissance-external-id-2003)) 來一併處理 AD FS 資料。 若要開始為 AD FS 伺服器部署適用於身分識別的 Microsoft Defender 感應器，請從 [感應器設定] 頁面[下載最新的部署套件](install-step3.md#download-the-setup-package)。
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
+
 ## <a name="product-short-release-2135"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.135 版
 
 發行日期：2020 年 12 月 20 日
 
-- 我們已改善 [Active Directory 屬性偵察 (LDAP) (外部識別碼 2210)](reconnaissance-alerts.md#active-directory-attributes-reconnaissance-ldap-external-id-2210) 警示，以一併偵測用來取得產生安全性權杖所需資訊的技術，例如視為 [Solorigate 行銷活動](https://aka.ms/solorigate)的一部分。 
+- 我們已改善 [Active Directory 屬性偵察 (LDAP) (外部識別碼 2210)](reconnaissance-alerts.md#active-directory-attributes-reconnaissance-ldap-external-id-2210) 警示，以一併偵測用來取得產生安全性權杖所需資訊的技術，例如視為 [Solorigate 行銷活動](https://aka.ms/solorigate)的一部分。
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
 ## <a name="product-short-release-2134"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.134 版

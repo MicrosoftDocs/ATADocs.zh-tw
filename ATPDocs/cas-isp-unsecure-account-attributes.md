@@ -1,14 +1,14 @@
 ---
 title: 適用于身分識別不安全帳戶屬性評估的 Microsoft Defender
 description: 本文概述 Microsoft Defender 身分識別的實體，其具有不安全的屬性身分識別安全性狀態評估報告。
-ms.date: 10/26/2020
+ms.date: 01/18/2021
 ms.topic: how-to
-ms.openlocfilehash: befa5e059a93e6f2e15fd84450948285a94173a6
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: bd48bb8a8c47d40f3c9e530326370be5259bf485
+ms.sourcegitcommit: 51b1c11622c647c3d8b51058687538efaa33003c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543547"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98541793"
 ---
 # <a name="security-assessment-unsecure-account-attributes"></a>安全性評估：不安全的帳戶屬性
 
@@ -39,7 +39,7 @@ ms.locfileid: "96543547"
 
 | 建議的動作 | 修復 | 原因 |
 | --- | --- | --- |
-| 移除 [這個帳戶需要使用 Kerberos DES 加密類型]| 從 Active Directory (AD) 中的帳戶屬性移除此設定 | 若要移除此設定，帳戶必須經過 Kerberos 預先驗證，以提升安全性。 |
+| 移除不需要 Kerberos 預先驗證| 從 Active Directory (AD) 中的帳戶屬性移除此設定 | 若要移除此設定，帳戶必須經過 Kerberos 預先驗證，以提升安全性。 |
 | 移除 [使用可還原的加密來存放密碼] | 從 AD 中的帳戶屬性移除此設定 | 移除此設定可防止帳戶密碼遭輕易解密。 |
 | 移除 [不需要密碼] | 從 AD 中的帳戶屬性移除此設定 | 若要移除此設定，帳戶必須使用密碼，而這有助於防止有人未經授權即存取資源。 |
 | 移除 [以低度加密存放密碼] | 重設帳戶密碼 | 變更帳戶密碼，即可使用較強的加密演算法加以保護。 |

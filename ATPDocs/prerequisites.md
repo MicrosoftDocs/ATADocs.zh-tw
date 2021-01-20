@@ -1,14 +1,14 @@
 ---
 title: 適用於身分識別的 Microsoft Defender 先決條件
 description: 描述適用於身分識別的 Microsoft Defender 在環境中成功部署的需求
-ms.date: 12/23/2020
+ms.date: 01/12/2021
 ms.topic: overview
-ms.openlocfilehash: cb925a0b2bc2767367b6d3adabd5cb7dabcffa00
-ms.sourcegitcommit: 57dd3e4663346db3542cf9e755dac135c5e75125
+ms.openlocfilehash: cfafd75acae0d075da1efdd0ad9c0f9542a2f3d4
+ms.sourcegitcommit: 858eca08605886fcbfa35e9132c9c653c173e462
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98062547"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98203468"
 ---
 # <a name="product-long-prerequisites"></a>[!INCLUDE [Product long](includes/product-long.md)] 先決條件
 
@@ -115,7 +115,7 @@ ms.locfileid: "98062547"
 
 ### <a name="general"></a>一般
 
-[!INCLUDE [Product short](includes/product-short.md)] 感應器支援在執行 Windows Server 2008 R2 SP1 (不含 Server Core)、Windows Server 2012、Windows Server 2012 R2、Windows Server 2016 (包含 Server Core 但不含 Nano 伺服器)、Windows Server 2019\* (包含 Server Core 但不含 Nano 伺服器) 的網域控制站與 Active Directory 同盟服務 (AD FS) 上安裝，如下表所示。
+[!INCLUDE [Product short](includes/product-short.md)] 感應器支援在網域控制站或 Active Directory 同盟服務 (AD FS) 伺服器上進行安裝，如下表所示。
 
 | 作業系統版本   | 具備桌面體驗的伺服器 | Server Core | Nano Server    | 支援的安裝  |
 | -------------------------- | ------------------------------ | ----------- | -------------- | ------------------------ |
@@ -169,17 +169,19 @@ ms.locfileid: "98062547"
 |------------|-------------|--------|-----------|---|
 |**內部連接埠**|||||
 |SSL (\*.atp.azure.com)|TCP|443|[!INCLUDE [Product short](includes/product-short.md)] 感應器|[!INCLUDE [Product short](includes/product-short.md)] 雲端服務|
-|SSL (localhost)|TCP|444|[!INCLUDE [Product short](includes/product-short.md)] 感應器|本機主機|
 |**內部連接埠**|||||
 |DNS|TCP 和 UDP|53|[!INCLUDE [Product short](includes/product-short.md)] 感應器|DNS 伺服器|
 |Netlogon (SMB、CIFS、SAM-R)|TCP/UDP|445|[!INCLUDE [Product short](includes/product-short.md)] 感應器|網路上的所有裝置|
 |RADIUS|UDP|1813|RADIUS|[!INCLUDE [Product short](includes/product-short.md)] 感應器|
-|**NNR 連接埠**\*|||||
+|**Localhost 連接埠**\*|感應器服務更新程式所需||||
+|SSL (localhost)|TCP|444|感應器服務|感應器更新程式服務|
+|**NNR 連接埠**\*\*|||||
 |透過 RPC 的 NTLM|TCP|連接埠 135|[!INCLUDE [Product short](includes/product-short.md)]|網路上的所有裝置|
 |NetBIOS|UDP|137|[!INCLUDE [Product short](includes/product-short.md)]|網路上的所有裝置|
 |RDP|TCP|3389，只有 Client hello 的第一個封包|[!INCLUDE [Product short](includes/product-short.md)]|網路上的所有裝置|
 
-\*其中一個連接埠是必要的，但我們建議全部開啟。
+\* 根據預設，會允許 localhost 至 localhost 流量，除非您使用自訂防火牆原則將其封鎖。  
+\*\* 其中一個連接埠是必要的，但我們建議全部開啟。
 
 ### <a name="windows-event-logs"></a>Windows 事件記錄檔
 
@@ -261,7 +263,6 @@ ms.locfileid: "98062547"
 |------------|-------------|--------|-----------|---|
 |**內部連接埠**||||
 |SSL (\*.atp.azure.com)|TCP|443|[!INCLUDE [Product short](includes/product-short.md)] 感應器|[!INCLUDE [Product short](includes/product-short.md)] 雲端服務|
-|SSL (localhost)|TCP|444|[!INCLUDE [Product short](includes/product-short.md)] 感應器|本機主機|
 |**內部連接埠**||||
 |LDAP|TCP 和 UDP|389|[!INCLUDE [Product short](includes/product-short.md)] 感應器|網域控制站|
 |安全的 LDAP (LDAPS)|TCP|636|[!INCLUDE [Product short](includes/product-short.md)] 感應器|網域控制站|
@@ -273,12 +274,15 @@ ms.locfileid: "98062547"
 |DNS|TCP 和 UDP|53|[!INCLUDE [Product short](includes/product-short.md)] 感應器|DNS 伺服器|
 |Syslog (選擇性)|TCP/UDP|514，取決於設定|SIEM 伺服器|[!INCLUDE [Product short](includes/product-short.md)] 感應器|
 |RADIUS|UDP|1813|RADIUS|[!INCLUDE [Product short](includes/product-short.md)] 感應器|
-|**NNR 連接埠** \*|||||
+|**Localhost 連接埠**\*|感應器服務更新程式所需||||
+|SSL (localhost)|TCP|444|感應器服務|感應器更新程式服務|
+|**NNR 連接埠**\*\*|||||
 |透過 RPC 的 NTLM|TCP|135|[!INCLUDE [Product short](includes/product-short.md)]|網路上的所有裝置|
 |NetBIOS|UDP|137|[!INCLUDE [Product short](includes/product-short.md)]|網路上的所有裝置|
 |RDP|TCP|3389，只有 Client hello 的第一個封包|[!INCLUDE [Product short](includes/product-short.md)]|網路上的所有裝置|
 
-\*其中一個連接埠是必要的，但我們建議全部開啟。
+\* 根據預設，會允許 localhost 至 localhost 流量，除非您使用自訂防火牆原則將其封鎖。  
+\*\* 其中一個連接埠是必要的，但我們建議全部開啟。
 
 > [!NOTE]
 >

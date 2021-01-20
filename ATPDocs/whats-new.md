@@ -1,16 +1,16 @@
 ---
 title: 適用於身分識別的 Defender：新功能
 description: 本文會經常更新，讓您知道適用於身分識別的 Defender 最新版功能。
-ms.date: 01/06/2021
+ms.date: 01/17/2021
 ms.topic: overview
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 4fec3e83fafb061eedb04018215b2e11c2fbb228
-ms.sourcegitcommit: 382d56413793419a8a82e531b0a0ec0a360bac14
+ms.openlocfilehash: 71a276e5849293b60d8dc59949bc1b903bef03f9
+ms.sourcegitcommit: 1cd2fd6d6f3aca149fae1b0399d6eb406f379447
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97937411"
+ms.lasthandoff: 01/17/2021
+ms.locfileid: "98537505"
 ---
 # <a name="whats-new-in-product-long"></a>[!INCLUDE [Product long](includes/product-long.md)] 的新功能
 
@@ -23,6 +23,12 @@ RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在�
 > [!IMPORTANT]
 >
 > Microsoft 的威脅防護產品名稱即將變更。 如需有關此變更的詳細資訊與其他更新，請參閱[這裡](https://www.microsoft.com/security/blog/?p=91813)。 從 2.129 版開始，我們將使用新的名稱。
+
+## <a name="product-short-release-2137"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.137 版
+
+發行日期：2021 年 1 月 17 日
+
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
 ## <a name="product-short-release-2136"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.136 版
 

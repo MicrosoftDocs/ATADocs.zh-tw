@@ -3,12 +3,12 @@ title: 安裝適用於身分識別的 Microsoft Defender 感應器快速入門
 description: 安裝適用於身分識別的 Microsoft Defender 的步驟四可協助您安裝適用於身分識別的 Defender 感應器。
 ms.date: 10/26/2020
 ms.topic: quickstart
-ms.openlocfilehash: 3688ace52e4581f8b94186c58c3e355e855e16d0
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 4d68820bd6da88bca64bb8917f069d04adbc29b0
+ms.sourcegitcommit: 4f3da69b8e30cbc3e3fb43d38c3518001a10f7a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543989"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98163530"
 ---
 # <a name="quickstart-install-the-product-long-sensor"></a>快速入門：安裝[!INCLUDE [Product long](includes/product-long.md)] 感應器
 
@@ -26,7 +26,7 @@ ms.locfileid: "96543989"
 
 1. 確認機器是否可以連線到相關的[[!INCLUDE [Product short](includes/product-short.md)] 雲端服務](configure-proxy.md#enable-access-to-azure-atp-service-urls-in-the-proxy-server)端點：
 1. 將安裝檔案從 zip 檔案解壓縮。 從 ZIP 檔案直接安裝將會失敗。
-1. 執行 **Azure ATP sensor setup.exe** 並按照安裝精靈的指示操作。
+1. 以提升的權限 ( **[以系統管理員身分執行]** ) 執行 **Azure ATP sensor setup.exe**，並依照安裝程式精靈的指示執行。
 1. 在 [歡迎] 頁面中，選取您的語言，然後按一下 [下一步]。
 
     ![[!INCLUDE [Product short](includes/product-short.md)] 獨立感應器安裝語言](media/sensor-install-language.png)

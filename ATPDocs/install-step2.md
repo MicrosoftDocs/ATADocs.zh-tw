@@ -3,12 +3,12 @@ title: 快速入門：將適用於身分識別的 Microsoft Defender 連線至 A
 description: 在安裝適用於身分識別的 Microsoft Defender 中，其步驟 2 可協助您為適用於身分識別的 Defender 雲端服務進行網域連線設定
 ms.date: 10/26/2020
 ms.topic: quickstart
-ms.openlocfilehash: 1dd9954e22e38b1db7d41d42358cd03dd15ea1c2
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: b1379570d87957fc943bf8b0727b6b0294f26695
+ms.sourcegitcommit: b6da51c97e8fb70ca04c0c0d5ea694700db9de86
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543972"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98634551"
 ---
 # <a name="quickstart-connect-to-your-active-directory-forest"></a>快速入門：連線到您的 Active Directory 樹系
 
@@ -37,13 +37,13 @@ ms.locfileid: "96543972"
 
 當第一次開啟 [!INCLUDE [Product short](includes/product-short.md)] 入口網站時，會出現下列畫面：
 
-![[!INCLUDE [Product short](includes/product-short.md)] 歡迎階段 1](media/directory-services.png)
+![歡迎階段1，目錄服務設定](media/directory-services.png)
 
 1. 輸入下列資訊，然後按一下 [儲存]：
 
     |欄位|註解|
     |---|---|
-    |**使用者名稱** (必填)|輸入唯讀 AD 使用者名稱。 例如：**DefenderForIdentityUser**。 您必須使用 **標準** AD 使用者或 gMSA 帳戶。 **請勿** 使用您使用者名稱的 UPN 格式。|
+    |**使用者名稱** (必填)|輸入唯讀 AD 使用者名稱。 例如：**DefenderForIdentityUser**。 您必須使用 **標準** AD 使用者或 gMSA 帳戶。 **請勿** 使用您使用者名稱的 UPN 格式。<br />**注意：** 建議您避免使用指派給特定使用者的帳戶。|
     |**密碼** (為標準 AD 使用者帳戶所需)|(僅限 AD 使用者帳戶) 輸入唯讀使用者的密碼。 例如：**Pencil1**。|
     |**群組受管理的服務帳戶** (為 gMSA 帳戶所需)|(僅限 gMSA 帳戶) 選取 [群組受管理的服務帳戶]。|
     |**網域** (必填)|輸入唯讀使用者的網域。 例如：**contoso.com**。 請務必輸入使用者所在網域的完整 FQDN。 例如，如果使用者的帳戶是在 corp.contoso.com 網域中，則需要輸入 `corp.contoso.com`，而非 contoso.com|

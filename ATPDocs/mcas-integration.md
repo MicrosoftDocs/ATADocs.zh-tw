@@ -1,14 +1,14 @@
 ---
 title: Microsoft Cloud App Security 中的 Microsoft Defender 身分識別
 description: Microsoft Cloud App Security 中的身分識別功能的 Microsoft Defender 總覽。
-ms.date: 01/05/2020
+ms.date: 01/24/2021
 ms.topic: how-to
-ms.openlocfilehash: ef4cbe9f0c49311a3d10b79e03fc725ea5131105
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 6040ef27e1657dbe017a31168932536f1cb594cb
+ms.sourcegitcommit: 7002c960e1489b7ce2deadd8ce20f70a48a6766a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543853"
+ms.lasthandoff: 01/24/2021
+ms.locfileid: "98746930"
 ---
 # <a name="using-product-long-with-microsoft-cloud-app-security"></a>使用 [!INCLUDE [Product long](includes/product-long.md)] with Microsoft Cloud App Security
 
@@ -63,7 +63,7 @@ ms.locfileid: "96543853"
 
 ## <a name="alert-management"></a>警示管理
 
-搭配 [!INCLUDE [Product short](includes/product-short.md)] Cloud app security 使用時，在某個服務中關閉警示將不會在其他服務中自動關閉警示。 決定在何處管理和補救警示，以避免執行重複的作業。
+搭配 [!INCLUDE [Product short](includes/product-short.md)] Cloud app security 使用時，在某個服務中關閉警示將不會在其他服務中自動關閉警示。 更具體來說，在 Cloud App Security 中關閉警示並不會關閉 Defender 中的身分識別，但在 Defender for Identity 中關閉警示將會同步處理 Cloud App Security 中的關閉。 決定在何處管理和補救警示，以避免執行重複的作業。
 
 ## <a name="siem-notification"></a>SIEM 通知
 

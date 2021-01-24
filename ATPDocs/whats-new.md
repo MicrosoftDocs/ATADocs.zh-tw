@@ -1,16 +1,16 @@
 ---
 title: 適用於身分識別的 Defender：新功能
 description: 本文會經常更新，讓您知道適用於身分識別的 Defender 最新版功能。
-ms.date: 01/17/2021
+ms.date: 01/24/2021
 ms.topic: overview
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 71a276e5849293b60d8dc59949bc1b903bef03f9
-ms.sourcegitcommit: 1cd2fd6d6f3aca149fae1b0399d6eb406f379447
-ms.translationtype: HT
+ms.openlocfilehash: 2a5531653e09136b0aad5f88b0e9f8b76c161e2b
+ms.sourcegitcommit: 15b93f776cf29f5587fde7b9a2534b7b8b39730e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2021
-ms.locfileid: "98537505"
+ms.lasthandoff: 01/24/2021
+ms.locfileid: "98746895"
 ---
 # <a name="whats-new-in-product-long"></a>[!INCLUDE [Product long](includes/product-long.md)] 的新功能
 
@@ -18,52 +18,58 @@ ms.locfileid: "98537505"
 
 如需舊版 [!INCLUDE [Product short](includes/product-short.md)] 直到 (含) 2.55 版的詳細資料，請參閱 [[!INCLUDE [Product short](includes/product-short.md)] 版本參考](release-reference.md)。
 
-RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在本頁更新時收到通知：`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Azure+ATP%22&locale=en-us`
+RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在本頁更新時收到通知：`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Microsoft+Defender+for+Identity%22&locale=en-us`
 
 > [!IMPORTANT]
 >
 > Microsoft 的威脅防護產品名稱即將變更。 如需有關此變更的詳細資訊與其他更新，請參閱[這裡](https://www.microsoft.com/security/blog/?p=91813)。 從 2.129 版開始，我們將使用新的名稱。
 
-## <a name="product-short-release-2137"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.137 版
+## <a name="defender-for-identity-release-2138"></a>適用于身分識別版本2.138 的 Defender
+
+2021年1月24日發行
+
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
+
+## <a name="defender-for-identity-release-2137"></a>適用于身分識別版本2.137 的 Defender
 
 發行日期：2021 年 1 月 17 日
 
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
-## <a name="product-short-release-2136"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.136 版
+## <a name="defender-for-identity-release-2136"></a>適用于身分識別版本2.136 的 Defender
 
 發行日期：2021 年 1 月 3 日
 
 - 適用於身分識別的 Defender 現在支援在 Active Directory 同盟服務 (AD FS) 伺服器上安裝感應器。 在[相容的 AD FS 伺服器](prerequisites.md#azure-atp-sensor-requirements)上安裝感應器可透過監視這個重要的基礎結構元件，將適用於身分識別的 Microsoft Defender 可見度延伸到混合式環境。 我們也重新整理了一些現有的偵測 ([可疑的服務建立](domain-dominance-alerts.md#suspicious-service-creation-external-id-2026)、[可疑的暴力密碼破解攻擊 (LDAP)](compromised-credentials-alerts.md#suspected-brute-force-attack-ldap-external-id-2004)、[帳戶列舉偵察](reconnaissance-alerts.md#account-enumeration-reconnaissance-external-id-2003)) 來一併處理 AD FS 資料。 若要開始為 AD FS 伺服器部署適用於身分識別的 Microsoft Defender 感應器，請從 [感應器設定] 頁面[下載最新的部署套件](install-step3.md#download-the-setup-package)。
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
-## <a name="product-short-release-2135"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.135 版
+## <a name="defender-for-identity-release-2135"></a>適用于身分識別版本2.135 的 Defender
 
 發行日期：2020 年 12 月 20 日
 
 - 我們已改善 [Active Directory 屬性偵察 (LDAP) (外部識別碼 2210)](reconnaissance-alerts.md#active-directory-attributes-reconnaissance-ldap-external-id-2210) 警示，以一併偵測用來取得產生安全性權杖所需資訊的技術，例如視為 [Solorigate 行銷活動](https://aka.ms/solorigate)的一部分。
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
-## <a name="product-short-release-2134"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.134 版
+## <a name="defender-for-identity-release-2134"></a>適用于身分識別版本2.134 的 Defender
 
 發行日期：2020 年 12 月 13 日
 
 - 我們[最近發行的 NetLogon 偵測器](#azure-atp-release-2127-2)已經過增強，當 Netlogon 通道交易發生在加密的通道上時，也能正常運作。 如需有關偵測器的詳細資訊，請參閱[可疑的 Netlogon 權限提高嘗試](compromised-credentials-alerts.md#suspected-netlogon-priv-elev-2411)。
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
-## <a name="product-short-release-2133"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.133 版
+## <a name="defender-for-identity-release-2133"></a>適用于身分識別版本2.133 的 Defender
 
 發行日期：2020 年 12 月 6 日
 
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
-## <a name="product-short-release-2132"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.132 版
+## <a name="defender-for-identity-release-2132"></a>適用于身分識別版本2.132 的 Defender
 
 發行日期：2020 年 11 月 17 日
 
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
-## <a name="product-short-release-2131"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.131 版
+## <a name="defender-for-identity-release-2131"></a>適用于身分識別版本2.131 的 Defender
 
 發行日期：2020 年 11 月 8 日
 
@@ -71,7 +77,7 @@ RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在�
 [!INCLUDE [Product short](includes/product-short.md)]*可疑的 Kerberos SPN 公開 (外部識別碼2410)* 安全性警訊現已推出。 在此類偵測中，當攻擊者列舉服務帳戶及其各自的 SPN，並要求服務的 Kerberos TGS 票證時，即會觸發 [!INCLUDE [Product short](includes/product-short.md)] 安全性警訊。 攻擊者的意圖可能是從票證中擷取雜湊並加以儲存，以供日後用於離線暴力密碼破解攻擊。 如需詳細資訊，請參閱 [Kerberos SPN 公開](compromised-credentials-alerts.md#suspected-kerberos-spn-exposure-external-id-2410)。
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
-## <a name="product-short-release-2130"></a>[!INCLUDE [Product short](includes/product-short.md)] 2.130 版
+## <a name="defender-for-identity-release-2130"></a>適用于身分識別版本2.130 的 Defender
 
 發行日期：2020 年 10 月 25 日
 

@@ -3,12 +3,12 @@ title: 在適用於身分識別的 Microsoft Defender 中設定 Windows 事件�
 description: 在安裝適用於身分識別的 Microsoft Defender 的這個步驟中，您要設定 Windows 事件收集。
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 4a81eceeb940e15139acb083e266eab1caf5456b
-ms.sourcegitcommit: 0b3877f2bf74735b7ba33408d237231a73242165
-ms.translationtype: HT
+ms.openlocfilehash: 71e0dd15b820c87df3bb50252160a6e92bacf310
+ms.sourcegitcommit: 30203dd6e74eec3ce4bba98056b664cad455a49e
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98615009"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98758201"
 ---
 # <a name="configure-windows-event-collection"></a>設定 Windows 事件集合
 
@@ -16,10 +16,15 @@ ms.locfileid: "98615009"
 
 為了增強威脅偵測功能，[!INCLUDE [Product short](includes/product-short.md)] 會要求[!INCLUDE [Product short](includes/product-short.md)] [設定](#configure-audit-policies)及[收集](#configure-event-collection)下列 Windows 事件：
 
+**針對 Active Directory 同盟服務 (AD FS) 事件**
+
 - 1202 -「同盟服務」已驗證新的認證
 - 1203 -「同盟服務」無法驗證新的認證
 - 4624 - 帳戶成功登入
 - 4625 - 帳戶無法登入
+
+**針對其他事件**
+
 - 4726 - 使用者帳戶已刪除
 - 4728 - 成員已新增至全域安全性群組
 - 4729 - 成員已自全域安全性群組移除

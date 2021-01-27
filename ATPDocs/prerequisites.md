@@ -1,14 +1,14 @@
 ---
 title: 適用於身分識別的 Microsoft Defender 先決條件
 description: 描述適用於身分識別的 Microsoft Defender 在環境中成功部署的需求
-ms.date: 01/12/2021
+ms.date: 01/27/2021
 ms.topic: overview
-ms.openlocfilehash: cfafd75acae0d075da1efdd0ad9c0f9542a2f3d4
-ms.sourcegitcommit: 858eca08605886fcbfa35e9132c9c653c173e462
-ms.translationtype: HT
+ms.openlocfilehash: feb52ea096dd7e324e46649a746f41a293cc66e1
+ms.sourcegitcommit: b29aa522dcefce7d016fc0e03c75168a14deb423
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98203468"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98912466"
 ---
 # <a name="product-long-prerequisites"></a>[!INCLUDE [Product long](includes/product-long.md)] 先決條件
 
@@ -60,7 +60,7 @@ ms.locfileid: "98203468"
     > [!NOTE]
     >
     > - 針對執行 Windows Server 2012 與更新版本的感應器電腦，我們建議使用 **gMSA** 帳戶，以獲得改善的安全性與自動密碼管理。
-    > - 若您有多個感應器，其中有些執行 Windows Server 2008，而其他執行 Windows Server 2012 或更新版本，則除了使用 **gMSA** 帳戶的建議之外，您也必須使用至少一個 **標準** AD 使用者帳戶。
+    > - 如果您有多個感應器，有些執行 Windows Server 2008 R2 和其他執行 Windows Server 2012 或更高版本的感應器，除了使用 **gMSA** 帳戶的建議之外，您也必須使用至少一個 **標準** AD 使用者帳戶。
     > - 如果您已經在網域中設定不同組織單位 (OU) 的自訂 ACL，請確定選取的使用者具有讀取這些 OU 的權限。
 
 - 如果在 [!INCLUDE [Product short](includes/product-short.md)] 獨立感應器上執行 Wireshark，在停止 Wireshark 擷取後，請重新啟動 [!INCLUDE [Product short](includes/product-short.md)] 感應器服務。 如果您未重新啟動感應器服務，感應器會停止擷取流量。

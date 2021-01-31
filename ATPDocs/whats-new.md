@@ -1,16 +1,16 @@
 ---
 title: 適用於身分識別的 Defender：新功能
 description: 本文會經常更新，讓您知道適用於身分識別的 Defender 最新版功能。
-ms.date: 01/24/2021
+ms.date: 01/31/2021
 ms.topic: overview
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 2a5531653e09136b0aad5f88b0e9f8b76c161e2b
-ms.sourcegitcommit: 15b93f776cf29f5587fde7b9a2534b7b8b39730e
+ms.openlocfilehash: 9cc03386390f0d5fac0f7e8cc79127fc0e29f819
+ms.sourcegitcommit: 14f7228dbe6af353e81f20d2047dad24043840b4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2021
-ms.locfileid: "98746895"
+ms.lasthandoff: 01/31/2021
+ms.locfileid: "99217714"
 ---
 # <a name="whats-new-in-product-long"></a>[!INCLUDE [Product long](includes/product-long.md)] 的新功能
 
@@ -23,6 +23,13 @@ RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在�
 > [!IMPORTANT]
 >
 > Microsoft 的威脅防護產品名稱即將變更。 如需有關此變更的詳細資訊與其他更新，請參閱[這裡](https://www.microsoft.com/security/blog/?p=91813)。 從 2.129 版開始，我們將使用新的名稱。
+
+## <a name="defender-for-identity-release-2139"></a>適用于身分識別版本2.139 的 Defender
+
+2021年1月31日發行
+
+- 我們已將可疑 Kerberos SPN 暴露程度的嚴重性更新為 [高]，以更精確地反映警示的影響。 如需警示的詳細資訊，請參閱 [ (外部識別碼2410的可疑 KERBEROS SPN 公開) ](compromised-credentials-alerts.md#suspected-kerberos-spn-exposure-external-id-2410)
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
 ## <a name="defender-for-identity-release-2138"></a>適用于身分識別版本2.138 的 Defender
 

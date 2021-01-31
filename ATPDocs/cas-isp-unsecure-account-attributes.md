@@ -3,12 +3,12 @@ title: 適用于身分識別不安全帳戶屬性評估的 Microsoft Defender
 description: 本文概述 Microsoft Defender 身分識別的實體，其具有不安全的屬性身分識別安全性狀態評估報告。
 ms.date: 01/18/2021
 ms.topic: how-to
-ms.openlocfilehash: bd48bb8a8c47d40f3c9e530326370be5259bf485
-ms.sourcegitcommit: 51b1c11622c647c3d8b51058687538efaa33003c
+ms.openlocfilehash: 64aa95a423d0c8fc0bb210c2c10bc63f8c33bca4
+ms.sourcegitcommit: 14f7228dbe6af353e81f20d2047dad24043840b4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98541793"
+ms.lasthandoff: 01/31/2021
+ms.locfileid: "99217697"
 ---
 # <a name="security-assessment-unsecure-account-attributes"></a>安全性評估：不安全的帳戶屬性
 
@@ -20,7 +20,7 @@ ms.locfileid: "98541793"
 
 無法保護其帳戶屬性的組織對惡意源起方毫無防備。
 
-惡意執行者 (如竊賊) 通常會試圖以最輕鬆且不容易被發現的方式進入環境。 帳戶若設定了不安全的屬性，會讓攻擊者有機可乘，因而暴露在風險中。
+惡意執行者 (如竊賊) 通常會試圖以最輕鬆且不容易被發現的方式進入環境。 以不安全的屬性設定的帳戶是攻擊者的機會，而且可能會暴露風險。
 
 例如，若啟用了 *PasswordNotRequired* 屬性，攻擊者就可以輕易存取帳戶。 而若帳戶具有其他資源的特殊權限，風險就會特別高。
 
@@ -31,7 +31,9 @@ ms.locfileid: "98541793"
 1. 請對這些使用者帳戶採取行動，即修改或移除相關的屬性。
 
 > [!NOTE]
-> 此評定會以近乎即時的方式更新。
+>
+> - 此評定會以近乎即時的方式更新。
+> - 如果不符合的 [必要條件](prerequisites.md#before-you-start) ，此評量可能包含先前刪除的實體 [!INCLUDE [Product long](includes/product-long.md)] 。
 
 ## <a name="remediation"></a>修復
 

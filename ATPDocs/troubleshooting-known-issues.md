@@ -1,14 +1,14 @@
 ---
 title: 針對身分識別已知問題進行 Microsoft Defender 疑難排解
 description: 說明如何針對身分識別的 Microsoft Defender 問題進行疑難排解。
-ms.date: 01/12/2021
+ms.date: 02/04/2021
 ms.topic: how-to
-ms.openlocfilehash: 6f0a055a48dc906dd7a44814b19ed85fb64401ee
-ms.sourcegitcommit: 2eb4078aba5085a12acc37c2a8d9aa48bd6dcb02
+ms.openlocfilehash: 933d4442d88f2d03ddcd2fa4c90d59d98e229340
+ms.sourcegitcommit: 50e6f5511329e56545fa5ab4c9f5ab69046d1e10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98114236"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99551607"
 ---
 # <a name="troubleshooting-product-long-known-issues"></a>針對 [!INCLUDE [Product long](includes/product-long.md)] 已知問題進行疑難排解
 
@@ -202,6 +202,24 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 **解決方法：**
 
 沒有任何已知的解決方式。
+
+## <a name="sensor-fails-to-enumerate-event-logs"></a>感應器無法列舉事件記錄檔
+
+如果您在主控台中看到有限的數目或缺少安全性事件警示或邏輯活動， [!INCLUDE [Product short](includes/product-short.md)] 但未觸發健康情況警示。 
+
+**感應器記錄項目：**
+
+EventLogException EventLogException：：控制碼在 void EventLogException 時無效。. 擲回 (int errorCode) 的物件系統。 NativeWrapper. EvtGetEventInfo (EventLogHandle 控制碼，EvtEventPropertyId enumType) （字串 System.Diagnostics.Eventing.Reader.EventLogRecord.get_ContainerLog ( # A5）。
+
+**原因：**
+
+任意存取控制清單會限制本地服務帳戶存取所需的事件記錄檔。
+
+**解決方法：**
+
+確定任意存取控制清單包含下列專案：
+
+`(A;;0x1;;;S-1-5-80-818380073-2995186456-1411405591-3990468014-3617507088)`
 
 ## <a name="see-also"></a>另請參閱
 

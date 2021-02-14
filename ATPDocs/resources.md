@@ -3,12 +3,12 @@ title: 適用于身分識別的 Microsoft Defender 實用資源清單
 description: 本文提供適用于身分識別的 Microsoft Defender 實用資源清單
 ms.date: 10/27/2020
 ms.topic: conceptual
-ms.openlocfilehash: e534baf48d472b9bada6366e9b0e2ccec5ef6c4c
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 1878f8b9cbc8047083c927de612e88e50b1947ca
+ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542205"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100515507"
 ---
 # <a name="product-long-readiness-guide"></a>[!INCLUDE [Product long](includes/product-long.md)] 就緒指南
 
@@ -57,7 +57,7 @@ ms.locfileid: "96542205"
 
 ## <a name="security-best-practices"></a>安全性最佳做法
 
-- [ [!INCLUDE [Product short](includes/product-short.md)] 常見問題](technical-faq.md)-本文提供有關的常見問題清單 [!INCLUDE [Product short](includes/product-short.md)] ，並提供見解和解答。
+- [ [!INCLUDE [Product short](includes/product-short.md)] 常見問題](technical-faq.yml)-本文提供有關的常見問題清單 [!INCLUDE [Product short](includes/product-short.md)] ，並提供見解和解答。
 
 ## <a name="community-resources"></a>社群資源
 

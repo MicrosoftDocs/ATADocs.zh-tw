@@ -3,12 +3,12 @@ title: 什麼是適用於身分識別的 Microsoft Defender？
 description: 說明什麼是適用於身分識別的 Microsoft Defender，以及其可以偵測哪種類型的可疑活動
 ms.date: 12/23/2020
 ms.topic: overview
-ms.openlocfilehash: 1aceb1889ea3f85305d64b5bde6a252b804d56f0
-ms.sourcegitcommit: e2b4ad613aa171f604ae526f0cba05fe79f4a8cb
-ms.translationtype: HT
+ms.openlocfilehash: 1329c93e18941ca42e9d446abdb0576480543992
+ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97753336"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100515558"
 ---
 # <a name="what-is-product-long"></a>什麼是 [!INCLUDE [Product long](includes/product-long.md)]？
 
@@ -107,6 +107,6 @@ ms.locfileid: "97753336"
 
 ## <a name="see-also"></a>另請參閱
 
-- [[!INCLUDE [Product short](includes/product-short.md)] 常見問題集](technical-faq.md)
+- [[!INCLUDE [Product short](includes/product-short.md)] 常見問題集](technical-faq.yml)
 - [使用安全性警訊](working-with-suspicious-activities.md)
 - [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

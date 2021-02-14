@@ -5,12 +5,12 @@ ms.date: 01/31/2021
 ms.topic: overview
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 9cc03386390f0d5fac0f7e8cc79127fc0e29f819
-ms.sourcegitcommit: 14f7228dbe6af353e81f20d2047dad24043840b4
+ms.openlocfilehash: b93c38d528a3a6eeeb5e5cdbf41b3891bd30ed55
+ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/31/2021
-ms.locfileid: "99217714"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100515524"
 ---
 # <a name="whats-new-in-product-long"></a>[!INCLUDE [Product long](includes/product-long.md)] 的新功能
 
@@ -880,7 +880,7 @@ Azure ATP 之[可疑的 Golden Ticket 使用 - 票證異常](suspicious-activity
 ## <a name="see-also"></a>另請參閱
 
 - [什麼是 [!INCLUDE [Product long](includes/product-long.md)]？](what-is.md)
-- [常見問題集](technical-faq.md)
+- [常見問題集](technical-faq.yml)
 - [[!INCLUDE [Product short](includes/product-short.md)] 先決條件](prerequisites.md)
 - [[!INCLUDE [Product short](includes/product-short.md)] 容量規畫](capacity-planning.md)
 - [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

@@ -3,12 +3,12 @@ title: 快速入門：為適用於身分識別的 Microsoft Defender 建立執�
 description: 快速入門：為適用於身分識別的 Microsoft Defender 建立執行個體，以開始安裝適用於身分識別的 Defender。
 ms.date: 10/26/2020
 ms.topic: quickstart
-ms.openlocfilehash: 299edc14a51f92efa94969a3f442b2e1ca5d8e2b
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: 9860a8893ac16448b92961df9cf25801f68786b6
+ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543207"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100515354"
 ---
 # <a name="quickstart-create-your-product-long-instance"></a>快速入門：建立 [!INCLUDE [Product long](includes/product-long.md)] 執行個體
 
@@ -19,7 +19,7 @@ ms.locfileid: "96543207"
 
 ## <a name="prerequisites"></a>先決條件
 
-- [[!INCLUDE [Product long](includes/product-long.md)] 授權](technical-faq.md#licensing-and-privacy)。
+- [[!INCLUDE [Product long](includes/product-long.md)] 授權](technical-faq.yml#licensing-and-privacy)。
 - 您必須是[租用戶上的全域管理員或安全性系統管理員](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)，才能存取 [!INCLUDE [Product short](includes/product-short.md)] 入口網站。
 - 檢閱 [[!INCLUDE [Product short](includes/product-short.md)] 架構](architecture.md)一文。
 - 請檢閱 [[!INCLUDE [Product short](includes/product-short.md)] 先決條件](prerequisites.md)一文。

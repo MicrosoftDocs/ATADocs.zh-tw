@@ -3,12 +3,12 @@ title: 適用于身分識別支援的 Microsoft Defender
 description: 描述取得 Microsoft Defender 身分識別的支援協助的程式。
 ms.date: 12/20/2020
 ms.topic: conceptual
-ms.openlocfilehash: f883fad5631b23eae2154b3253bcbcb30e7929e3
-ms.sourcegitcommit: 082c85462e1d96a2bbf1ba914de5a0028a32743e
+ms.openlocfilehash: 80b863208c560cc0bfe74800efe1a220ee190fc3
+ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2020
-ms.locfileid: "97705661"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100515320"
 ---
 # <a name="product-long-information-and-support"></a>[!INCLUDE [Product long](includes/product-long.md)] 資訊和支援
 
@@ -55,7 +55,7 @@ ms.locfileid: "97705661"
 
 疑難排解：
 
-- 如果您想了解某些功能的運作方式：請查看[常見問題集](technical-faq.md)是否已回答過您的問題。
+- 如果您想了解某些功能的運作方式：請查看[常見問題集](technical-faq.yml)是否已回答過您的問題。
 
 - 如果您有關于必要條件的問題 [!INCLUDE [Product short](includes/product-short.md)] ，請參閱[ [!INCLUDE [Product short](includes/product-short.md)] 必要條件](prerequisites.md)。
 

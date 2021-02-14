@@ -3,12 +3,12 @@ title: Microsoft Defender for Identity 中較舊版本的參考
 description: 本文是對 Microsoft Defender for Identity 的先前版本更新的參考。
 ms.date: 10/27/2020
 ms.topic: reference
-ms.openlocfilehash: 93edc0061c22914bf3658680f6173117bcf63b97
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 493315ab2e0571c13b2076bb389e2d1c4a9a56f1
+ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542340"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100515541"
 ---
 # <a name="release-reference-of-product-long"></a>的發行參考 [!INCLUDE [Product long](includes/product-long.md)]
 
@@ -367,7 +367,7 @@ Azure ATP 感應器基礎結構已改進效能：流量的彙總檢視可最佳�
 ## <a name="see-also"></a>另請參閱
 
 - [什麼是 [!INCLUDE [Product short](includes/product-short.md)]？](what-is.md)
-- [常見問題集](technical-faq.md)
+- [常見問題集](technical-faq.yml)
 - [[!INCLUDE [Product short](includes/product-short.md)] 先決條件](prerequisites.md)
 - [[!INCLUDE [Product short](includes/product-short.md)] 容量規畫](capacity-planning.md)
 - [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

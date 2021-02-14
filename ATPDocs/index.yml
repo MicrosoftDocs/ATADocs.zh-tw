@@ -12,12 +12,12 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/23/2019
-  ms.openlocfilehash: 791e24e1460ce6a2a50caea0d05eb9461ab34654
-  ms.sourcegitcommit: f434dbff577d9944df18ca7533d026acdab0bb42
+  ms.openlocfilehash: 173bd03580d8ef1bbfc6a90c001a5d7b1e986acd
+  ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 11/03/2020
-  ms.locfileid: "93276168"
+  ms.lasthandoff: 02/14/2021
+  ms.locfileid: "100515473"
 landingContent:
 - title: 關於適用於身分識別的 Microsoft Defender
   linkLists:
@@ -98,7 +98,7 @@ landingContent:
   - linkListType: reference
     links:
     - text: 常見問題集
-      url: technical-faq.md
+      url: technical-faq.yml
     - text: 支援與資訊
       url: support.md
     - text: 適用於身分識別的 Defender 整備藍圖

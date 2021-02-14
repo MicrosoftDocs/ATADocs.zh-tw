@@ -3,12 +3,12 @@ title: 對 Microsoft Defender 進行身分識別移動的先進威脅分析
 description: 瞭解如何將現有的 Advanced 威脅分析安裝移至 Microsoft Defender 以進行身分識別。
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: be1edf7981bbf72daeb285a9d0d0896892839f59
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 5e20ed1580ad314f85845161fbb850395709d580
+ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542680"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100515337"
 ---
 # <a name="advanced-threat-analytics-ata-to-product-long"></a> (ATA) 的 Advanced 威脅分析 [!INCLUDE [Product long](includes/product-long.md)]
 
@@ -17,7 +17,7 @@ ms.locfileid: "96542680"
 
 您可以使用本指南，從現有的 ATA 安裝移至 ([!INCLUDE [Product long](includes/product-long.md)]) 服務。 本指南說明 [!INCLUDE [Product short](includes/product-short.md)] 必要條件和需求，並詳細說明如何規劃和完成您的移動。 [!INCLUDE [Product short](includes/product-short.md)]此外也包含在安裝之後，利用最新威脅防護和安全性解決方案的驗證步驟和秘訣。
 
-若要深入瞭解 ATA 與之間的差異 [!INCLUDE [Product short](includes/product-short.md)] ，請參閱[ [!INCLUDE [Product short](includes/product-short.md)] 常見問題](technical-faq.md#what-is-azure-atp)。
+若要深入瞭解 ATA 與之間的差異 [!INCLUDE [Product short](includes/product-short.md)] ，請參閱[ [!INCLUDE [Product short](includes/product-short.md)] 常見問題](technical-faq.yml)。
 
 在本指南中，您將會：
 
@@ -33,7 +33,7 @@ ms.locfileid: "96542680"
 > [!NOTE]
 > 從 ATA 移至 [!INCLUDE [Product short](includes/product-short.md)] 時，可以從任何 ata 版本移至。 不過，因為資料無法從 ATA 移至 [!INCLUDE [Product short](includes/product-short.md)] ，建議您保留您的 Ata 中心資料和持續調查所需的警示，直到所有 ATA 警示都已關閉或補救為止。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 - 需要至少有一個全域/安全性系統管理員的 Azure Active Directory 租使用者，才能建立 [!INCLUDE [Product short](includes/product-short.md)] 實例。 每個 [!INCLUDE [Product short](includes/product-short.md)] 執行個體都支援多 Active Directory 樹系邊界，以及 Windows 2003 和更新版本的樹系功能等級 (FFL)。
 
@@ -131,7 +131,7 @@ ms.locfileid: "96542680"
 
 恭喜！ 您從 ATA 移至 [!INCLUDE [Product short](includes/product-short.md)] 的工作已完成。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 深入瞭解 [[!INCLUDE [Product short](includes/product-short.md)]](what-is.md) 功能、功能和 [安全性警示](understanding-security-alerts.md)。
 

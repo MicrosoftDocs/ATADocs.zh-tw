@@ -1,0 +1,203 @@
+### YamlMime:FAQ
+metadata:
+  title: 適用于身分識別的 Microsoft Defender 常見問題
+  description: 提供有關 Microsoft Defender 身分識別和相關解答的常見問題清單
+  ms.date: 10/27/2020
+  ms.topic: conceptual
+  ms.openlocfilehash: dfb8184376ea0c98516e28fce64eff6ac8a453d5
+  ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
+  ms.translationtype: MT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 02/14/2021
+  ms.locfileid: "100520710"
+title: 適用于身分識別的 Microsoft Defender 常見問題
+summary: >
+  本文提供 Microsoft Defender for Identity 分為下列類別的常見問題和解答清單：
+sections:
+- name: 什麼是適用于身分識別的 Defender？
+  questions:
+  - question: Defender 如何偵測身分識別？
+    answer: >
+      適用于身分識別的 Defender 會偵測已知的惡意攻擊和技術、安全性問題，以及對您的網路的風險。
+
+      如需以 Defender 進行身分識別偵測的完整清單，請參閱 [defender 執行身分識別的偵測是什麼？](suspicious-activity-guide.md)。
+  - question: Defender 針對身分識別收集哪些資料？
+    answer: >
+      適用于身分識別的 Defender 會收集及儲存設定之伺服器的資訊 (網域控制站、成員伺服器等，在服務特定的資料庫中 ) ，以便進行系統管理、追蹤和報告。 收集的資訊包括針對網域控制站的雙向網路流量 (例如 Kerberos 驗證、NTLM 驗證、DNS 查詢)、安全性記錄 (例如 Windows 安全性事件)、Active Directory 資訊 (結構、子網路、網站)，以及實體資訊 (例如名稱、電子郵件地址及電話號碼)。
+
+
+      Microsoft 會使用這份資料：
+
+
+      - 主動識別您組織中的攻擊指標 (IOA)
+
+      - 在偵測到可能的攻擊時產生警示
+
+      - 為您的安全性作業提供與來自您網路的威脅訊號相關聯之實體的檢視，使您可以調查並探索存在於網路上的安全性威脅。
+
+
+      Microsoft 並不會將您的資料用於廣告用途，或是任何其他與為您提供服務無關的用途之上。
+  - question: Defender 有多少目錄服務認證可支援身分識別？
+    answer: >
+      適用于身分識別的 Defender 目前支援新增最多10個不同的目錄服務認證，以支援具有不受信任樹系的 Active Directory 環境。 如果您需要更多帳戶，請建立支援票證。
+  - question: Defender for Identity 只會利用來自 Active Directory 的流量嗎？
+    answer: >
+      除了使用深度封包檢查技術來分析 Active Directory 流量之外，Defender for Identity 也會從您的網域控制站收集相關的 Windows 事件，並根據 Active Directory Domain Services 的資訊建立實體設定檔。 適用于身分識別的 Defender 也支援接收來自不同廠商的 VPN 記錄的 RADIUS 帳戶處理 (Microsoft、Cisco、F5 和檢查點) 。
+  - question: 適用于身分識別的 Defender 只會監視已加入網域的裝置嗎？
+    answer: >
+      不會。 適用于身分識別的 Defender 會監視網路上的所有裝置對 Active Directory 執行驗證和授權要求，包括非 Windows 和行動裝置。
+  - question: Defender 是否適用于身分識別監視電腦帳戶以及使用者帳戶？
+    answer: >
+      是。 由於電腦帳戶 (以及任何其他實體) 可用來執行惡意活動，因此適用于身分識別的 Defender 會監視所有電腦帳戶的行為，以及環境中的所有其他實體。
+  - question: Advanced 威脅分析 (ATA) 和 Defender for Identity 有何差異？
+    answer: >
+      ATA 是獨立的內部部署解決方案，具有多個元件，例如需要內部部署專用硬體的 ATA 中心。
+
+
+      適用于身分識別的 Defender 是以雲端為基礎的安全性解決方案，可利用您的內部部署 Active Directory (Azure AD) 信號。 這個解決方案有很高的調整能力，且經常更新。
+
+
+      ATA 的最終發行版本已 [正式推出](https://support.microsoft.com/help/4568997/update-3-for-microsoft-advanced-threat-analytics-1-9)。 ATA 將于2021年1月12日結束主流支援。 延伸支援將繼續進行，直到2026年1月為止。 如需詳細資訊，請閱讀 [我們的 blog](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-of-mainstream-support-for-advanced-threat-analytics-january/ba-p/1539181)。
+
+
+      相較于 ATA 感應器，適用于身分識別感應器的 Defender 也會使用資料來源，例如 Windows 的事件追蹤 (ETW) 讓 Defender for Identity 可傳遞額外的偵測。
+
+
+      Defender 針對身分識別的頻繁更新包含下列特性和功能：
+
+
+      - **支援 [多樹系環境](multi-forest.md)** ：可在多個 AD 樹系間查看組織。
+
+
+      - **[身分識別安全性態勢評定](isp-overview.md)** ：找出常見的錯誤設定及易受惡意探索的元件，並提供補救路徑以縮小受攻擊面。
+
+
+      - **[UEBA 功能](/cloud-app-security/tutorial-ueba)** ：透過使用者調查優先順序評分，提供個別使用者風險的見解。 分數可協助 SecOps 調查，並協助分析師了解使用者和組織的異常活動。
+
+
+      - **原生整合**：與 Microsoft Cloud App Security 及 Azure AD Identity Protection 整合，以透過混合檢視，同時了解內部部署與混合式環境的情況。
+
+
+      - **參與 Microsoft 365 defender**：將警示和威脅資料貢獻給 Microsoft 365 Defender。 Microsoft 365 Defender 利用 Microsoft 365 的安全性組合 (身分識別、端點、資料和應用程式) 自動分析跨網域的威脅資料，在單一儀表板中建立每個攻擊的完整圖片。 有了這項廣度和深度的清楚，防禦者可以專注于嚴重的威脅，並尋找複雜的缺口，信任 Microsoft 365 Defender 強大的自動化會在終止鏈中的任何位置停止攻擊，並讓組織回到安全的狀態。
+- name: 授權和隱私權
+  questions:
+  - question: 哪裡可以取得 Microsoft Defender for Identity 的授權？
+    answer: >
+      適用于身分識別的 Defender 可作為 Enterprise Mobility + Security 5 suite (EMS E5) 的一部分，並以獨立授權的形式提供。 您可以直接透過 [Microsoft 365 入口網站](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing)，或雲端解決方案合作夥伴 (CSP) 授權模型取得授權。
+  - question: Defender for 身分識別只需要單一授權，還是需要每個要保護的使用者授權？
+    answer: >
+      如需有關 Defender 身分識別授權需求的資訊，請參閱 [defender 的身分識別授權指引](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#azure-advanced-threat-protection)。
+  - question: 我的資料是否會與其他客戶的資料隔離？
+    answer: 是，您的資料會透過以客戶識別碼為基礎的存取驗證和邏輯隔離進行隔離。 每個客戶皆只能存取收集自其組織的資料，以及由 Microsoft 提供的泛用資料。
+  - question: 我是否能選擇資料的儲存位置？
+    answer: >
+      否。 建立身分識別實例的 Defender 時，系統會自動將其儲存在最接近 AAD 租使用者地理位置的國家/地區資料中心。 一旦您將 Defender for Identity 實例建立至不同的資料中心，就無法移動適用于身分識別資料的 defender。
+  - question: Microsoft 如何防止惡意內部人士活動及針對高權限角色的濫用行為？
+    answer: >
+      我們刻意使 Microsoft 開發人員和系統管理員在運作及開發服務時，都只具有足以完成其受指派工作的最少權限。 Microsoft 會搭配部署預防性、偵測性及反應性的控制 (包括下列機制)，以協助保護使用者不受未經授權的開發人員和/或系統管理活動的危害：
+
+
+      - 針對機密資料的嚴格存取控制
+
+      - 搭配使用各種控制，以大幅強化對惡意活動的獨立偵測能力
+
+      - 多階層的監視、記錄及報告
+
+
+      除此之外，Microsoft 會針對特定作業人員進行背景驗證檢查，並根據背景驗證的層級，在對應用程式、系統及網路基礎結構的存取上實施相對應的限制。 當作業人員因自身業務而需要存取客戶的帳戶或相關資訊時，將需要遵循正式的程序。
+- name: 部署
+  questions:
+  - question: 我需要多少個適用于身分識別感應器的 Defender？
+    answer: >
+      環境中的每個網域控制站都應由適用于身分識別感應器或獨立感應器的 Defender 所涵蓋。 如需詳細資訊，請參閱 [Defender 的身分識別感應器](capacity-planning.md#sizing)調整大小。
+  - question: Defender for Identity 是否可使用加密的流量？
+    answer: 系統不會將具有加密流量的網路通訊協定 (例如 AtSvc 和 WMI) 解密，但感應器會對其進行分析。
+  - question: Defender for Identity 是否適用于 Kerberos 防護？
+    answer: >
+      Defender 針對身分識別支援啟用 Kerberos 防護（也稱為彈性驗證安全通道 (快速) ），但過度傳遞雜湊偵測（無法與 Kerberos 防護搭配使用）除外。
+  - question: 如何? 使用 Defender 進行身分識別來監視虛擬網域控制站嗎？
+    answer: >
+      適用于身分識別感應器的 Defender 可以涵蓋大部分的虛擬網域控制站，以判斷適用于身分識別感應器的 Defender 是否適用于您的環境，請參閱 [Defender 的身分識別容量規劃](capacity-planning.md)。
+
+
+      如果適用于身分識別感應器的 Defender 無法涵蓋虛擬網域控制站，您可以有虛擬或實體 Defender 供身分識別獨立感應器使用，如 [設定埠鏡像](configure-port-mirroring.md)中所述。
+
+      最簡單的方法是在虛擬網域控制站所在的每一部主機上，具有適用于身分識別獨立感應器的虛擬 Defender。
+
+      如果您的虛擬網域控制站要在主機之間移動，您需要執行下列其中一項步驟︰
+
+
+      - 當虛擬網域控制站移至另一部主機時，請針對該主機中的身分識別獨立感應器預先設定 Defender，以接收最近移動的虛擬網域控制站的流量。
+
+      - 確定您已將虛擬 Defender 用於身分識別獨立感應器與虛擬網域控制站建立關聯，如此一來，如果移動它，則適用于身分識別獨立感應器的 Defender 會隨之移動。
+
+      - 有一些可以在主機之間傳送流量的虛擬交換器。
+  - question: 當我有 proxy 時，如何? 將 Defender for identity 感應器設定為身分識別雲端服務的 defender 進行通訊？
+    answer: >
+      若要讓網域控制站與雲端服務通訊，您必須在防火牆/ Proxy 中開啟：*.atp.azure.com 連接埠 443。 如需如何進行此動作的指示，請參閱 [設定您的 proxy 或防火牆，以啟用與 Defender 進行身分識別感應器的通訊](configure-proxy.md)。
+  - question: 適用于身分識別監視之網域控制站的 Defender 可以在 IaaS 解決方案上虛擬化嗎？
+    answer: >
+      是，您可以使用適用于身分識別感應器的 Defender 來監視任何 IaaS 解決方案中的網域控制站。
+  - question: 適用于身分識別的 Defender 可以支援多網域和多樹系嗎？
+    answer: >
+      適用于身分識別的 Defender 支援多網域環境和多個樹系。 如需詳細資訊與信任需求，請參閱[多樹系支援](multi-forest.md)。
+  - question: 可以看到部署的整體健全狀況嗎？
+    answer: >
+      是，您可以查看部署的整體健全狀況，以及與設定、連線能力等相關的特定問題，並在 Defender 進行身分識別健康情況警示時收到警示。
+- name: 作業
+  questions:
+  - question: Defender for Identity 與 Siem 有何種整合？
+    answer: >
+      適用于身分識別的 Defender 可以設定為傳送 Syslog 警示至任何使用 CEF 格式的 SIEM 伺服器、健康情況警示以及偵測到安全性警示的時間。 如需詳細資訊，請參閱 [SIEM 記錄檔參考](cef-format-sa.md)。
+  - question: 為何將某些帳戶視為機密？
+    answer: >
+      當帳戶為被指定為機密之群組的成員時，便會發生這種情況 (例如「網域系統管理員」)。
+
+
+      若要了解為何是機密帳戶，您可以檢閱其群組成員資格，以了解它所屬的機密群組 (其所屬的群組也可以是因為另一個群組而機密，因此您應該執行相同的程序，直到找出最高層級的機密群組)。 您也可以手動[將帳戶標記為敏感性](sensitive-accounts.md)。
+  - question: 必須撰寫自己的規則，並建立臨界值/基準嗎？
+    answer: >
+      使用 Defender 進行身分識別時，不需要建立規則、臨界值或基準，然後微調。 適用于身分識別的 Defender 會分析使用者、裝置和資源之間的行為，以及彼此之間的關聯性，並且可以快速偵測可疑的活動和已知的攻擊。 部署後的三周，Defender for Identity 開始偵測行為可疑的活動。 另一方面，Defender for Identity 會在部署之後立即開始偵測已知的惡意攻擊和安全性問題。
+  - question: Defender 在網路中從網域控制站產生身分識別的流量為何？
+    answer: >
+      適用于身分識別的 Defender 會在下列三種情況下，從網域控制站將流量產生到組織中的電腦：
+
+
+      1. **網路名稱解析** 適用于身分識別的 Defender 會捕捉流量和事件、學習及分析網路中的使用者和電腦活動。 若要根據組織中的電腦來學習及分析活動，Defender for Identity 需要將 Ip 解析為電腦帳戶。 若要針對身分識別感應器將 ip 解析為電腦名稱稱，請在 IP 位址 *後方* 要求電腦名稱稱的 ip 位址。
+
+          要求是使用下列其中一種方法提出的：
+          - 透過 RPC 的 NTLM (TCP 連接埠 135)
+          - NetBIOS (UDP 連接埠 137)
+          - RDP (TCP 連接埠 3389)
+          - 使用 IP 位址的反向 DNS 查閱來查詢 DNS 伺服器 (UDP 53)
+
+          取得電腦名稱稱之後，適用于身分識別感應器的 Defender 會跨檢查 Active Directory 中的詳細資料，以查看是否有相關聯的電腦物件具有相同的電腦名稱稱。 如果找到相符項目，則會在 IP 位址和比對的電腦物件之間建立關聯。
+      2. **橫向移動路徑 (LMP)** 若要建立敏感性使用者的潛在 Lmp，Defender for Identity 需要電腦上本機系統管理員的相關資訊。 在此案例中，適用于身分識別感應器的 Defender 會使用 SAM-R (TCP 445) 來查詢網路流量中識別的 IP 位址，以便判斷電腦的本機系統管理員。 若要深入瞭解適用于身分識別和 SAM-R 的 Defender，請參閱 [設定 sam-r 所需的許可權](install-step8-samr.md)。
+
+
+      3. **使用** 適用于實體資料 DEFENDER 的 LDAP 查詢 Active Directory 識別感應器會從實體所屬的網域查詢網域控制站。 它可以是相同的感應器，或是來自該網域的其他網域控制站。
+
+
+      |通訊協定|Service|Port|來源| 方向|
+
+      |---------|---------|---------|---------|--------|
+
+      |LDAP|TCP 和 UDP|389|網域控制站|輸出|
+
+      |安全的 LDAP (LDAPS)|TCP|636|網域控制站|輸出|
+
+      |LDAP 至通用類別|TCP|3268|網域控制站|輸出|
+
+      |LDAPS 至通用類別|TCP|3269|網域控制站|輸出|
+  - question: 為什麼活動不會一律顯示來源使用者與電腦？
+    answer: >
+      適用于身分識別的 Defender 會透過許多不同的通訊協定來捕捉活動。 在某些情況下，Defender for Identity 不會接收流量中來源使用者的資料。 Defender for Identity 會嘗試將使用者的會話與活動相互關聯，當嘗試成功時，就會顯示活動的來源使用者。 當使用者相互關聯嘗試失敗時，則只會顯示來源電腦。
+- name: 疑難排解
+  questions:
+  - question: 如果適用于身分識別感應器或獨立感應器的 Defender 無法啟動，該怎麼辦？
+    answer: >
+      查看目前錯誤 [記錄](troubleshooting-using-logs.md) 檔中的最新錯誤， (在 [記錄檔] 資料夾下安裝了 Defender for Identity 的) 。
+- name: 另請參閱
+  questions:
+  - question: ''
+    answer: "\n- [適用於身分識別的 Defender 必要條件](prerequisites.md)\n- [適用于身分識別容量規劃的 Defender](capacity-planning.md)\n- [設定事件收集](configure-event-collection.md)\n- [設定 Windows 事件轉送](configure-event-forwarding.md)\n- [疑難排解](troubleshooting-known-issues.md)\n- [查看 Defender 的身分識別論壇！](https://aka.ms/MDIcommunity)"

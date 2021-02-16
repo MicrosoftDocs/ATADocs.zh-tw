@@ -3,14 +3,14 @@ title: 適用於身分識別的 Microsoft Defender 安全性警示實驗室教�
 description: 此教學課程概觀描述用來模擬威脅以供 適用於身分識別的 Defender 偵測之適用於身分識別的 Microsoft Defender 安全性警示實驗室的四個部分。
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.openlocfilehash: 5d4de0173019b318fda8a5c2ee80db72c832ab7b
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: 61602a6bb7d3037d2278c2f492395ed058e8910b
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544431"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533557"
 ---
-# <a name="tutorial-overview-product-long-security-alert-lab"></a>教學課程概觀：[!INCLUDE [Product long](includes/product-long.md)] 安全性警示實驗室
+# <a name="tutorial-overview-microsoft-defender-for-identity-security-alert-lab"></a>教學課程總覽：適用于身分識別安全性警示實驗室的 Microsoft Defender
 
 [!INCLUDE [Product long](includes/product-long.md)] 安全性警示實驗室教學課程的目的是要說明 **[!INCLUDE [Product short](includes/product-short.md)]** 對網路可疑活動與潛在攻擊的識別及偵測功能。 這個四部分的教學課程說明如何安裝及設定工作環境，以針對[!INCLUDE [Product short](includes/product-short.md)] 的一些「離散」偵測進行測試。 此實驗室將焦點放在[!INCLUDE [Product short](includes/product-short.md)] 的「特徵」型功能上。 此實驗室並不包括進階機器學習及使用者或實體型的行為偵測，因為這些偵測需要一個最多有 30 天真實網路流量的學習期間。
 

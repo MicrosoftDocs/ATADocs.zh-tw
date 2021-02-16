@@ -3,14 +3,14 @@ title: 對 Microsoft Defender 進行身分識別移動的先進威脅分析
 description: 瞭解如何將現有的 Advanced 威脅分析安裝移至 Microsoft Defender 以進行身分識別。
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 5e20ed1580ad314f85845161fbb850395709d580
-ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
+ms.openlocfilehash: 45b9004bc439a28e144686e3147b94b6019a7a0f
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100515337"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533795"
 ---
-# <a name="advanced-threat-analytics-ata-to-product-long"></a> (ATA) 的 Advanced 威脅分析 [!INCLUDE [Product long](includes/product-long.md)]
+# <a name="advanced-threat-analytics-ata-to-microsoft-defender-for-identity"></a>適用于身分識別的 Advanced 威脅分析 (ATA) 至 Microsoft Defender
 
 > [!NOTE]
 > ATA 的最終發行版本已 [正式推出](https://support.microsoft.com/help/4568997/update-3-for-microsoft-advanced-threat-analytics-1-9)。 ATA 將于2021年1月12日結束主流支援。 延伸支援將繼續進行，直到2026年1月為止。 如需詳細資訊，請閱讀 [我們的 blog](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-of-mainstream-support-for-advanced-threat-analytics-january/ba-p/1539181)。
@@ -70,7 +70,7 @@ ms.locfileid: "100515337"
 
 您可以 [!INCLUDE [Product short](includes/product-short.md)] 用兩個簡單的步驟完成移至：
 
-### <a name="step-1-create-and-install-product-short-instance-and-sensors"></a>步驟1：建立和安裝 [!INCLUDE [Product short](includes/product-short.md)] 實例和感應器
+### <a name="step-1-create-and-install-defender-for-identity-instance-and-sensors"></a>步驟1：針對身分識別實例和感應器建立和安裝 Defender
 
 1. [建立新的 [!INCLUDE [Product short](includes/product-short.md)] 實例](install-step1.md)
 
@@ -81,7 +81,7 @@ ms.locfileid: "100515337"
     - [取得您的 [!INCLUDE [Product short](includes/product-short.md)] 存取金鑰](install-step3.md#download-the-setup-package)。
     - [ [!INCLUDE [Product short](includes/product-short.md)] 在您的網域控制站上安裝感應器](install-step4.md)。
 
-### <a name="step-2-configure-and-validate-product-short-instance"></a>步驟2：設定和驗證 [!INCLUDE [Product short](includes/product-short.md)] 實例
+### <a name="step-2-configure-and-validate-defender-for-identity-instance"></a>步驟2：設定及驗證身分識別實例的 Defender
 
 - [設定感應器](install-step5.md)
 

@@ -3,12 +3,12 @@ title: 適用於身分識別的 Microsoft Defender 網域支配劇本
 description: 適用於身分識別的 Microsoft Defender 網域支配劇本描述如何模擬適用於身分識別的 Defender 所偵測到的網域支配攻擊
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.openlocfilehash: fc79528c5adb2b487b3b68f2919facadfd7ebe2e
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: ae0221c9b9d59f884e96853584e78b497328fd23
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542782"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533778"
 ---
 # <a name="tutorial-domain-dominance-playbook"></a>教學課程：網域支配劇本
 
@@ -69,7 +69,7 @@ ms.locfileid: "96542782"
 
 作為攻擊者的您已經在實驗室中使用 WMI 成功建立新的使用者。 您也已經使用 PsExec，將新的使用者加入至「系統管理員」群組。 從持續性的觀點而言，另一個合法且獨立的認證已經在網域控制站上建立。 如果已探索到並移除先前取得的認證存取權，新的認證可讓攻擊者持續存取網域控制站。
 
-### <a name="remote-code-execution-detection-in-product-short"></a>[!INCLUDE [Product short](includes/product-short.md)] 中的遠端程式碼執行偵測
+### <a name="remote-code-execution-detection-in-defender-for-identity"></a>Defender 中的遠端程式碼執行偵測以進行身分識別
 
 登入[!INCLUDE [Product short](includes/product-short.md)] 入口網站以檢查[!INCLUDE [Product short](includes/product-short.md)] 從我們上次模擬攻擊中偵測到的結果 (如果有的話)：
 
@@ -105,7 +105,7 @@ Windows 使用資料保護應用程式開發介面 (DPAPI) 來安全地保護瀏
 
 作為攻擊者的我們現在有金鑰，才能從整個樹系中的 *任何* 電腦解密任何使用 DPAPI 加密的檔案/敏感性資料。
 
-### <a name="dpapi-detection-in-product-short"></a>[!INCLUDE [Product short](includes/product-short.md)] 中的 DPAPI 偵測
+### <a name="dpapi-detection-in-defender-for-identity"></a>Defender 中用於識別的 DPAPI 偵測
 
 讓我們使用[!INCLUDE [Product short](includes/product-short.md)] 入口網站，確認[!INCLUDE [Product short](includes/product-short.md)] 已成功偵測到我們的 DPAPI 攻擊：
 
@@ -129,7 +129,7 @@ mimikatz.exe "lsadump::dcsync /domain:contoso.azure /user:krbtgt" "exit" >> c:\t
 
 ![透過 mimikatz 的惡意複寫](media/playbook-dominance-maliciousrep_mimikatz.png)
 
-#### <a name="malicious-replication-detection-in-product-short"></a>[!INCLUDE [Product short](includes/product-short.md)] 中的惡意複寫偵測
+#### <a name="malicious-replication-detection-in-defender-for-identity"></a>Defender 中的惡意複寫偵測身分識別
 
 使用[!INCLUDE [Product short](includes/product-short.md)] 入口網站確認 SOC 現在已經知道我們從 VictimPC 模擬的惡意複寫。
 
@@ -180,7 +180,7 @@ runas /user:ronhd@contoso.azure "notepad"
 > [!Important]
 > 請務必在執行基本架構金鑰攻擊之後，重新啟動 ContosoDC。 如果沒有這樣做，ContosoDC 上的 LSASS.exe 處理程序將會遭到修補並修改，進而將每個驗證要求降級至 RC4。
 
-### <a name="skeleton-key-attack-detection-in-product-short"></a>[!INCLUDE [Product short](includes/product-short.md)] 中的基本架構金鑰攻擊偵測
+### <a name="skeleton-key-attack-detection-in-defender-for-identity"></a>Defender 中用於識別的基本架構金鑰攻擊偵測
 
 在所有這一切發生的時候，[!INCLUDE [Product short](includes/product-short.md)] 會偵測並報告什麼？
 

@@ -3,20 +3,20 @@ title: 更新適用於身分識別的 Microsoft Defender
 description: 描述如何更新及延遲適用於身分識別的 Microsoft Defender 中的感應器更新。
 ms.date: 10/27/2020
 ms.topic: how-to
-ms.openlocfilehash: 6db4db087f64431812a3998f2c79f066dfb09ea2
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: 3d77e5ebd6fdec2647f08aa32c1e2076a1487293
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542391"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534407"
 ---
-# <a name="update-product-long-sensors"></a>更新[!INCLUDE [Product long](includes/product-long.md)] 感應器
+# <a name="update-microsoft-defender-for-identity-sensors"></a>更新身分識別感應器的 Microsoft Defender
 
 將您的[!INCLUDE [Product long](includes/product-long.md)] 感應器維持在最新狀態，為您的組織提供盡可能完善的保護。
 
 [!INCLUDE [Product long](includes/product-long.md)] 服務一個月通常會更新幾次，以提供新偵測、功能與效能改進。 這些更新通常包括與感應器對應的次要更新。 [!INCLUDE [Product short](includes/product-short.md)] 感應器與對應的更新永遠不會有您網域控制站的寫入權限。 感應器更新套件只會控制[!INCLUDE [Product short](includes/product-short.md)] 感應器與感應器偵測功能。
 
-## <a name="product-short-sensor-update-types"></a>[!INCLUDE [Product short](includes/product-short.md)] 感應器更新類型
+## <a name="defender-for-identity-sensor-update-types"></a>適用于身分識別感應器更新類型的 Defender
 
 [!INCLUDE [Product short](includes/product-short.md)] 感應器支援兩種更新：
 

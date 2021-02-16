@@ -3,14 +3,14 @@ title: 適用于身分識別活動篩選和原則的 Microsoft Defender Microsof
 description: 使用 Microsoft Cloud App Security 的身分識別活動篩選和原則的 Microsoft Defender 總覽。
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 5956ebfb9904465e876a21b918255f44ec651ae9
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 589b7bc0ae95d6ff9dcc82fba930bc579d5b19b7
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544244"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533965"
 ---
-# <a name="use-activity-filters-and-create-action-policies-with-product-long-in-microsoft-cloud-app-security"></a>在 Microsoft Cloud App Security 中使用活動篩選和建立動作原則 [!INCLUDE [Product long](includes/product-long.md)]
+# <a name="use-activity-filters-and-create-action-policies-with-microsoft-defender-for-identity-in-microsoft-cloud-app-security"></a>在 Microsoft Cloud App Security 中使用活動篩選和建立具有 Microsoft Defender 身分識別的動作原則
 
 本文旨在協助您瞭解如何使用 Microsoft Cloud App Security 來篩選和建立活動的動作原則 [!INCLUDE [Product short](includes/product-short.md)] 。
 
@@ -28,7 +28,7 @@ ms.locfileid: "96544244"
 >[!NOTE]
 >如果您沒有 Cloud App Security 的訂用帳戶，您可以使用 Cloud App Security 入口網站來調查 [!INCLUDE [Product short](includes/product-short.md)] 警示，並深入瞭解使用者及其內部部署的受控活動，但與您的雲端應用程式相關的見解仍無法使用。
 
-## <a name="filter-product-short-activities-in-cloud-app-security"></a>[!INCLUDE [Product short](includes/product-short.md)]Cloud App Security 中的篩選活動
+## <a name="filter-defender-for-identity-activities-in-cloud-app-security"></a>Cloud App Security 中的身分識別活動篩選 Defender
 
 [!INCLUDE [Product short](includes/product-short.md)]您可以透過選取 [**活動記錄**] 子功能表，或從 [**警示**] 功能表依狀態、類別、嚴重性、應用程式、使用者名稱或原則，從主要 Cloud App Security **調查**] 功能表存取活動。
 

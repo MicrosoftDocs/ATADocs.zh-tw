@@ -3,12 +3,12 @@ title: 在適用於身分識別的 Microsoft Defender 中設定 Windows 事件�
 description: 描述使用適用於身分識別的 Microsoft Defender 設定 Windows 事件轉送的選項
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: f3a11a3d39972b3bdb3df38669ef2fa4b10cc5fb
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: eb9ae24f1e51acda9ca91c459963677a5b5c300e
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543530"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534220"
 ---
 # <a name="configuring-windows-event-forwarding"></a>設定 Windows 事件轉送
 
@@ -22,7 +22,7 @@ ms.locfileid: "96543530"
 > - [!INCLUDE [Product short](includes/product-short.md)] 獨立感應器不支援可提供多種偵測的資料 Windows 事件追蹤 (ETW) 記錄項目。 若要完整涵蓋您的環境，建議您部署[!INCLUDE [Product short](includes/product-short.md)] 感應器。
 > - 檢查網域控制站是否已正確設定來擷取必要事件。
 
-## <a name="wef-configuration-for-product-short-standalone-sensors-with-port-mirroring"></a>適用於具有連接埠鏡像之[!INCLUDE [Product short](includes/product-short.md)] 獨立感應器的 WEF 設定
+## <a name="wef-configuration-for-defender-for-identity-standalone-sensors-with-port-mirroring"></a>適用于 Defender 的 WEF 設定，適用于具有埠鏡像的身分識別獨立感應器
 
 設定從網域控制站到[!INCLUDE [Product short](includes/product-short.md)] 獨立感應器之間的連接埠鏡像之後，請依照下列指示以使用來源起始設定來設定 Windows 事件轉送。 這是一個設定 Windows 事件轉送的方法。
 

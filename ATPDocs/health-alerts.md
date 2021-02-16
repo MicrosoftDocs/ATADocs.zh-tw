@@ -3,14 +3,14 @@ title: 了解適用於身分識別的 Microsoft Defender 健康情況警示
 description: 此文章描述每個元件的所有健全狀況警示，並列出原因與解決問題所需的步驟
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 30f88e239ac7c9fb2853688d3977e03401e8a353
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: 23c5ec5d87c38338dee43fb6665d7ed23830c1ff
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543088"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534322"
 ---
-# <a name="understanding-product-long-sensor-health-alerts"></a>了解[!INCLUDE [Product long](includes/product-long.md)] 感應器健康情況警示
+# <a name="understanding-microsoft-defender-for-identity-sensor-health-alerts"></a>瞭解適用于身分識別感應器健康情況警示的 Microsoft Defender
 
 當您的[!INCLUDE [Product long](includes/product-long.md)] 執行個體發生問題時，[!INCLUDE [Product short](includes/product-short.md)] 健康情況中心會透過發出健康情況警示來讓您知道。 此文章描述每個元件的所有健康情況警示，並列出原因與解決問題所需的步驟。
 

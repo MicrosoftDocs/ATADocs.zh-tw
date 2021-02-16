@@ -3,14 +3,14 @@ title: 適用於身分識別的 Microsoft Defender 所監視的網域活動
 description: 描述由適用於身分識別的 Microsoft Defender 所監視的每個活動類型
 ms.date: 12/24/2020
 ms.topic: conceptual
-ms.openlocfilehash: 5ca3a3681eb15b1b2a8935942daaf7a39f9c15c3
-ms.sourcegitcommit: 78fb0cead845c7098c780f4daa624a741e350ec2
-ms.translationtype: HT
+ms.openlocfilehash: 28115bc246f6128aeb2bc408a1107e34796c039a
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97763620"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533744"
 ---
-# <a name="product-long-monitored-activities"></a>[!INCLUDE [Product long](includes/product-long.md)] 所監視的活動
+# <a name="microsoft-defender-for-identity-monitored-activities"></a>適用于身分識別監視活動的 Microsoft Defender
 
 > [!NOTE]
 > 此頁面所述的[!INCLUDE [Product long](includes/product-long.md)] 功能也可使用新的[入口網站](https://portal.cloudappsecurity.com)來存取。

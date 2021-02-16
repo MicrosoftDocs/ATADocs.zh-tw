@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 12/03/2020
 ms.author: mbaldwin
 ms.custom: subject-security-benchmark
-ms.openlocfilehash: 595a532bb02aeda6f82005a28833f71a3d074a18
-ms.sourcegitcommit: 2eb4078aba5085a12acc37c2a8d9aa48bd6dcb02
+ms.openlocfilehash: 8615019a2317a552b548a7b9026a75f9936c9237
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98114253"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534339"
 ---
 # <a name="azure-security-baseline-for-microsoft-defender-for-identity"></a>適用于 Microsoft Defender 身分識別的 Azure 安全性基準
 
@@ -28,7 +28,7 @@ ms.locfileid: "98114253"
 
 **指導** 方針：使用 Azure 虛擬網路服務標籤來定義網路安全性群組的網路存取控制，或針對您的 Defender 針對身分識別資源設定的 Azure 防火牆。 建立安全性規則時，您可以使用服務標籤取代特定的 IP 位址。 藉由指定服務標記名稱 (例如：「>azureadvancedthreatprotection」 ) 在規則的適當來源或目的地欄位中，您可以允許或拒絕對應服務的流量。 Microsoft 會管理服務標籤包含的位址前置詞，並隨著位址變更自動更新服務標籤。
 
-- [在 proxy 伺服器中啟用身分識別服務 Url 的 Defender 存取](configure-proxy.md#enable-access-to--service-urls-in-the-proxy-server)
+- [在 proxy 伺服器中啟用身分識別服務 Url 的 Defender 存取](configure-proxy.md#enable-access-to-defender-for-identity-service-urls-in-the-proxy-server)
 
 - [瞭解和使用服務標記](/azure/virtual-network/service-tags-overview)
 
@@ -47,7 +47,7 @@ ms.locfileid: "98114253"
 - Microsoft 雲端資源，例如 Azure 入口網站、Azure 儲存體、Azure 虛擬機器 (Linux 和 Windows) 、Azure Key Vault、PaaS 和 SaaS 應用程式。
 - 您的組織資源，例如 Azure 上的應用程式或您的公司網路資源。
 
-保護 Azure AD 在組織的雲端安全性實務中，應具有較高的優先順序。 Azure AD 提供身分識別安全分數，協助您評定相對於 Microsoft 最佳做法建議的身分識別安全性狀態。 請使用此分數來測量設定符合最佳做法建議的程度，並改善您的安全性狀態。
+保護 Azure AD 在貴組織的雲端安全性實務中應該是高優先順序。 Azure AD 提供身分識別安全分數，以協助您評估與 Microsoft 最佳作法建議相關的身分識別安全性狀態。 請使用此分數來測量設定符合最佳做法建議的程度，並改善您的安全性狀態。
 
 注意： Azure AD 支援外部身分識別，讓沒有 Microsoft 帳戶的使用者可以使用其外部身分識別登入其應用程式和資源。
 
@@ -229,7 +229,7 @@ ms.locfileid: "98114253"
 
 - 標幟為有風險的使用者 - 有風險的使用者表示可能被盜用的使用者帳戶。
 
-Azure 資訊安全中心也可能會對某些可疑活動發出警示，例如在訂用帳戶中有過多的失敗驗證嘗試次數、已淘汰的帳戶。 除了基本的安全性檢查監視以外，Azure 資訊安全中心的威脅防護模組也可以從個別的 Azure 計算資源 (虛擬機器、容器、App Service)、資料資源 (SQL DB 和儲存體) 與 Azure 服務層收集更深入的安全性警示。 這項功能可讓您查看個別資源內的帳戶異常。
+Azure 資訊安全中心也可能會對某些可疑活動發出警示，例如在訂用帳戶中有過多的失敗驗證嘗試次數、已淘汰的帳戶。 除了基本的安全性防護監視之外，Azure 資訊安全中心的威脅防護模組也可以從個別的 Azure 計算資源收集更深入的安全性警示 (虛擬機器、容器、app service) 、資料資源 (SQL DB 和儲存體) ，以及 Azure 服務層級。 這項功能可讓您查看個別資源內的帳戶異常。
 
 - [Azure Active Directory 中的稽核活動報表](/azure/active-directory/reports-monitoring/concept-audit-logs) 
 
@@ -287,7 +287,7 @@ Azure 資訊安全中心也可能會對某些可疑活動發出警示，例如�
 
 ### <a name="ir-3-detection-and-analysis--create-incidents-based-on-high-quality-alerts"></a>IR-3：偵測與分析 – 根據高品質警示建立事件
 
-**指引**：確定您具有建立高品質警示並測量警示品質的流程。 這可讓您從過去的事件吸取教訓，並為分析師設定警示優先順序，這樣他們就不會浪費時間在誤報上。 
+**指引**：確定您具有建立高品質警示並測量警示品質的流程。 這可讓您學習過去事件的課程，並設定分析師的警示優先順序，讓他們不會浪費時間誤報。 
 
 您可以根據過去事件的經驗、已驗證的社區來源，以及設計成透過融合和相互關聯不同信號來源以產生和清除警示的工具，來建置高品質警示。 
 
@@ -392,21 +392,21 @@ Azure 資訊安全中心會指派每個警示的嚴重性，以協助您設定�
 
 此策略應該包含下列項目的已記載指引、原則和標準： 
 
--   符合商業風險的資料分類標準
+-  符合商業風險的資料分類標準
 
--   安全性組織對風險和資產清查的可見度 
+-  安全性組織對風險和資產清查的可見度 
 
--   安全性組織核准 Azure 服務以供使用的程序 
+-  安全性組織核准 Azure 服務以供使用的程序 
 
--   資產在其生命週期中的安全性
+-  資產在其生命週期中的安全性
 
--   符合組織資料分類的必要存取控制策略
+-  符合組織資料分類的必要存取控制策略
 
--   使用 Azure 原生和協力廠商資料保護功能
+-  使用 Azure 原生和協力廠商資料保護功能
 
--   傳輸中和待用使用案例的資料加密需求
+-  傳輸中和待用使用案例的資料加密需求
 
--   適當的密碼編譯標準
+-  適當的密碼編譯標準
 
 如需詳細資訊，請參閱下列參考資料：
 - [Azure 安全性架構建議 - 儲存體、資料和加密](/azure/architecture/framework/security/storage-data-encryption?amp;bc=%2fsecurity%2fcompass%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fcompass%2ftoc.json) (機器翻譯)
@@ -467,21 +467,21 @@ Azure 資訊安全中心會指派每個警示的嚴重性，以協助您設定�
 
 ### <a name="gs-5-define-network-security-strategy"></a>GS-5：定義網路安全性策略
 
-**指引**：建立 Azure 網路安全性方法，作為組織整體安全性存取控制策略的一部分。  
+**指導** 方針：建立 Azure 網路安全性方法作為組織整體安全性存取控制策略的一部分。  
 
 此策略應該包含下列項目的已記載指引、原則和標準： 
 
--   集中式網路管理和安全性責任
+-  集中式網路管理和安全性責任
 
--   與企業分割策略一致的虛擬網路分割模型
+-  與企業分割策略一致的虛擬網路分割模型
 
--   不同威脅和攻擊案例的補救策略
+-  不同威脅和攻擊案例的補救策略
 
--   網際網路邊緣和輸入與輸出策略
+-  網際網路邊緣和輸入與輸出策略
 
--   混合式雲端和內部部署互連能力策略
+-  混合式雲端和內部部署互連能力策略
 
--   最新的網路安全性成品 (例如網路圖、參考網路架構)
+-  最新的網路安全性成品 (例如網路圖、參考網路架構)
 
 如需詳細資訊，請參閱下列參考資料：
 - [Azure 安全性最佳做法 11 - 架構。單一整合的安全性策略](/azure/cloud-adoption-framework/security/security-top-10#11-architecture-establish-a-single-unified-security-strategy) (機器翻譯)
@@ -498,19 +498,19 @@ Azure 資訊安全中心會指派每個警示的嚴重性，以協助您設定�
 
 ### <a name="gs-6-define-identity-and-privileged-access-strategy"></a>GS-6：定義身分識別和特殊權限存取策略
 
-**指引**：建立 Azure 身分識別和特殊權限存取方法，作為組織整體安全性存取控制策略的一部分。  
+**指導** 方針：建立 Azure 身分識別和特殊許可權的存取方法，作為組織整體安全性存取控制策略的一部分。  
 
 此策略應該包含下列項目的已記載指引、原則和標準： 
 
--   集中式身分識別和驗證系統，以及其與其他內部和外部身分識別系統的互連能力
+-  集中式身分識別和驗證系統，以及其與其他內部和外部身分識別系統的互連能力
 
--   不同使用案例和條件中的增強式驗證方法
+-  不同使用案例和條件中的增強式驗證方法
 
--   高權限使用者的保護
+-  高權限使用者的保護
 
--   異常使用者活動監視和處理  
+-  異常使用者活動監視和處理  
 
--   使用者身分識別、存取權檢閱與核對流程
+-  使用者身分識別、存取權檢閱與核對流程
 
 如需詳細資訊，請參閱下列參考資料：
 
@@ -532,19 +532,19 @@ Azure 資訊安全中心會指派每個警示的嚴重性，以協助您設定�
 
 此策略應該包含下列項目的已記載指引、原則和標準： 
 
--   安全性作業 (SecOps) 組織的角色和責任 
+-  安全性作業 (SecOps) 組織的角色和責任 
 
--   妥善定義且與 NIST 或其他產業架構一致的事件回應流程 
+-  妥善定義且與 NIST 或其他產業架構一致的事件回應流程 
 
--   記錄擷取和保留，以支援威脅偵測、事件回應及合規性需求
+-  記錄擷取和保留，以支援威脅偵測、事件回應及合規性需求
 
--   使用 SIEM、原生 Azure 功能及其他來源，集中顯示及相互關聯威脅的相關資訊 
+-  使用 SIEM、原生 Azure 功能及其他來源，集中顯示及相互關聯威脅的相關資訊 
 
--   與客戶、供應商和相關公開合作對象之間的溝通和通知計畫
+-  與客戶、供應商和相關公開合作對象之間的溝通和通知計畫
 
--   使用 Azure 原生和協力廠商平台進行事件處理，例如記錄和威脅偵測、鑑定，以及攻擊補救和根除
+-  使用 Azure 原生和協力廠商平台進行事件處理，例如記錄和威脅偵測、鑑定，以及攻擊補救和根除
 
--   處理事件和事件後活動的流程，例如吸取的經驗和證據保留
+-  處理事件和事件後活動的流程，例如吸取的經驗和證據保留
 
 如需詳細資訊，請參閱下列參考資料：
 

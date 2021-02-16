@@ -3,14 +3,14 @@ title: 設定您的 Proxy 或防火牆，以啟用適用於身分識別的 Micro
 description: 描述如何設定您的防火牆或 Proxy，以允許適用於身分識別的 Microsoft Defender 雲端服務與適用於身分識別的 Microsoft Defender 感應器之間的通訊
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 4606ab39457cbf1210974cb9f150d7410051c361
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: ea3a16db97a4ac039509d2fe295ba803cb67de35
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543428"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534152"
 ---
-# <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-product-long-sensor"></a>為[!INCLUDE [Product long](includes/product-long.md)] 感應器設定端點 Proxy 與網際網路連線設定
+# <a name="configure-endpoint-proxy-and-internet-connectivity-settings-for-your-microsoft-defender-for-identity-sensor"></a>為您的 Microsoft Defender 身分識別感應器設定端點 proxy 和網際網路連線設定
 
 每個[!INCLUDE [Product long](includes/product-long.md)] 感應器都需要連到 [!INCLUDE [Product short](includes/product-short.md)] 雲端服務的網際網路連線，才能報告感應器資料並成功運作。 在某些組織中，網域控制站不會直接連線到網際網路，而是透過 Web Proxy 連線來連線。
 
@@ -76,7 +76,7 @@ ms.locfileid: "96543428"
 
 <a name="enable-access-to-azure-atp-service-urls-in-the-proxy-server"></a>
 
-## <a name="enable-access-to-product-short-service-urls-in-the-proxy-server"></a>在 Proxy 伺服器中啟用對[!INCLUDE [Product short](includes/product-short.md)] 服務 URL 的存取
+## <a name="enable-access-to-defender-for-identity-service-urls-in-the-proxy-server"></a>在 proxy 伺服器中啟用身分識別服務 Url 的 Defender 存取
 
 若要允許存取[!INCLUDE [Product short](includes/product-short.md)]，建議您允許連到下列 URL 的流量。 這些 URL 會自動對應到[!INCLUDE [Product short](includes/product-short.md)] 執行個體的正確服務位置。
 

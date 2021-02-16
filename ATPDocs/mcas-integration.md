@@ -3,14 +3,14 @@ title: Microsoft Cloud App Security 中的 Microsoft Defender 身分識別
 description: Microsoft Cloud App Security 中的身分識別功能的 Microsoft Defender 總覽。
 ms.date: 01/24/2021
 ms.topic: how-to
-ms.openlocfilehash: 6040ef27e1657dbe017a31168932536f1cb594cb
-ms.sourcegitcommit: 7002c960e1489b7ce2deadd8ce20f70a48a6766a
+ms.openlocfilehash: 93ece5c8345929984473b057fdad2d4eec6fb9c0
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2021
-ms.locfileid: "98746930"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533829"
 ---
-# <a name="using-product-long-with-microsoft-cloud-app-security"></a>使用 [!INCLUDE [Product long](includes/product-long.md)] with Microsoft Cloud App Security
+# <a name="using-microsoft-defender-for-identity-with-microsoft-cloud-app-security"></a>使用 Microsoft Defender 搭配 Microsoft Cloud App Security 的身分識別
 
 本文旨在協助您瞭解並在搭配使用 Microsoft Cloud App Security 入口網站時，流覽增強的調查體驗 [!INCLUDE [Product long](includes/product-long.md)] 。
 
@@ -33,7 +33,7 @@ ms.locfileid: "98746930"
 - [!INCLUDE [Product long](includes/product-long.md)]，其使用機器學習和行為分析來識別內部部署網路之間的攻擊
 - Azure Active Directory Identity Protection 會偵測和主動防止使用者與雲端中身分識別的登入風險
 
-## <a name="access-product-short"></a>訪問 [!INCLUDE [Product short](includes/product-short.md)]
+## <a name="access-defender-for-identity"></a>存取 Defender 以進行身分識別
 
 選擇繼續在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中使用 [!INCLUDE [Product short](includes/product-short.md)] ，或者，您可以 [!INCLUDE [Product short](includes/product-short.md)] 使用 Microsoft Cloud App Security 入口網站來存取警示和身分識別評分。 在任一工作流程中， [!INCLUDE [Product short](includes/product-short.md)] 設定和設定工作會繼續在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中處理。
 
@@ -51,7 +51,7 @@ ms.locfileid: "98746930"
 
 請參閱[ [!INCLUDE [Product short](includes/product-short.md)] 整合](/cloud-app-security/mdi-integration)，以瞭解如何 [!INCLUDE [Product short](includes/product-short.md)] 在 Cloud App Security 中快速啟用。
 
-## <a name="product-short-in-cloud-app-security"></a>[!INCLUDE [Product short](includes/product-short.md)] 在 Cloud App Security
+## <a name="defender-for-identity-in-cloud-app-security"></a>Cloud App Security 中的身分識別 Defender
 
 請參閱 [Cloud App Security 快速入門](/cloud-app-security/getting-started-with-cloud-app-security)以熟悉使用 Cloud App Security 入口網站的基本概念。
 
@@ -89,7 +89,7 @@ ms.locfileid: "98746930"
 
     ![活動記錄檔](media/mcas-activity-filter.png)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 請參閱[ [!INCLUDE [Product short](includes/product-short.md)] 使用 Microsoft Cloud App Security 的活動](activities-filtering-mcas.md)，以瞭解如何篩選和建立新的活動原則。
 

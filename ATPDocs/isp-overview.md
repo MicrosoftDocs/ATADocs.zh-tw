@@ -3,20 +3,20 @@ title: Microsoft Defender 身分識別的身分識別安全性狀態評估
 description: 本文概述 Microsoft Defender 身分識別的身分識別安全性狀態評量報告。
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: a51eb3f824cba143a61d227e4df375f798bd01dd
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 3b3f20ac50e3b5b687dd6ece8b421c84288a3126
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543904"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533846"
 ---
-# <a name="product-longs-identity-security-posture-assessments"></a>[!INCLUDE [Product long](includes/product-long.md)]的身分識別安全性狀態評估
+# <a name="microsoft-defender-for-identitys-identity-security-posture-assessments"></a>Microsoft Defender 身分識別的身分識別安全性狀態評估
 
 一般來說，各種大小的組織對於其內部部署應用程式和服務是否會對其組織造成安全性弱點的瞭解有限。 只有在使用不支援或過期的元件時，才會發生有限可見度的問題。
 
 雖然您的公司可能會投入大量時間和努力來強化身分識別和身分識別基礎結構 (例如 Active Directory、Active Directory Connect) 作為持續進行的專案，但很容易沒注意到常見的錯誤配置和使用舊版代表貴組織最大威脅風險之一的元件。 根據 Microsoft 安全性研究，大部分的身分識別攻擊都會利用 Active Directory 的常見錯誤，和舊版元件 (例如 NTLMv1 通訊協定) 的繼續使用來危害身分識別並成功入侵您的組織。 為了有效對抗這一點， [!INCLUDE [Product long](includes/product-long.md)] 現在提供主動式身分識別安全性狀態評估，以偵測並建議您內部部署 Active Directory 設定之間的改進動作。
 
-## <a name="what-do-product-short-identity-security-posture-assessments-provide"></a>身分 [!INCLUDE [Product short](includes/product-short.md)] 識別安全性狀態評量提供哪些功能？
+## <a name="what-do-defender-for-identity-identity-security-posture-assessments-provide"></a>身分識別身分識別安全性狀態評估提供什麼 Defender？
 
 - 已知可攻擊元件和錯誤錯誤的偵測和內容資料，以及補救的相關路徑。
 - [!INCLUDE [Product short](includes/product-short.md)] 不僅偵測到可疑的活動，還會主動監視您的內部部署身分識別，以及使用現有感應器的安全點身分識別基礎結構 [!INCLUDE [Product short](includes/product-short.md)] 。
@@ -32,7 +32,7 @@ ms.locfileid: "96543904"
 
 存取 [!INCLUDE [Product short](includes/product-short.md)] Cloud App Security 中的安全性評定報告不需要 Cloud App Security 授權，僅 [!INCLUDE [Product short](includes/product-short.md)] 需要授權。
 
-## <a name="access-product-short-using-cloud-app-security"></a>[!INCLUDE [Product short](includes/product-short.md)]使用 Cloud App Security 存取
+## <a name="access-defender-for-identity-using-cloud-app-security"></a>使用 Cloud App Security 的身分識別存取 Defender
 
 請參閱 [Cloud App Security 快速入門](/cloud-app-security/getting-started-with-cloud-app-security)以熟悉使用 Cloud App Security 入口網站的基本概念。
 

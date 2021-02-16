@@ -3,14 +3,14 @@ title: 適用於身分識別的 Microsoft Defender 先決條件
 description: 描述適用於身分識別的 Microsoft Defender 在環境中成功部署的需求
 ms.date: 01/27/2021
 ms.topic: overview
-ms.openlocfilehash: feb52ea096dd7e324e46649a746f41a293cc66e1
-ms.sourcegitcommit: b29aa522dcefce7d016fc0e03c75168a14deb423
+ms.openlocfilehash: 26148ba0c74dc0a23070d8fdfc65026db3c2baec
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98912466"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533523"
 ---
-# <a name="product-long-prerequisites"></a>[!INCLUDE [Product long](includes/product-long.md)] 先決條件
+# <a name="microsoft-defender-for-identity-prerequisites"></a>適用於身分識別的 Microsoft Defender 先決條件
 
 本文描述在環境中成功部署 [!INCLUDE [Product long](includes/product-long.md)] 的條件需求。
 
@@ -75,7 +75,7 @@ ms.locfileid: "98912466"
 
 <a name="azure-atp-portal-requirements"></a>
 
-## <a name="product-short-portal-requirements"></a>[!INCLUDE [Product short](includes/product-short.md)] 入口網站需求
+## <a name="defender-for-identity-portal-requirements"></a>適用于身分識別入口網站的 Defender 需求
 
 您可透過瀏覽器來存取 [!INCLUDE [Product short](includes/product-short.md)] 入口網站，其支援下列瀏覽器和設定︰
 
@@ -94,7 +94,7 @@ ms.locfileid: "98912466"
 > [!NOTE]
 > 根據預設，[!INCLUDE [Product short](includes/product-short.md)] 最多支援 200 個感應器。 如果想要安裝更多感應器，請連絡 [!INCLUDE [Product short](includes/product-short.md)] 支援。
 
-## <a name="product-short-network-name-resolution-nnr-requirements"></a>[!INCLUDE [Product short](includes/product-short.md)] 網路名稱解析 (NNR) 需求
+## <a name="defender-for-identity-network-name-resolution-nnr-requirements"></a>適用于身分識別網路名稱解析的 Defender (NNR) 需求
 
 網路名稱解析 (NNR) 是 [!INCLUDE [Product short](includes/product-short.md)] 功能的主要元件。 為將 IP 位址解析成電腦名稱，[!INCLUDE [Product short](includes/product-short.md)] 感應器會使用下列方法來查閱 IP 位址：
 
@@ -109,7 +109,7 @@ ms.locfileid: "98912466"
 
 <a name="azure-atp-sensor-requirements"></a>
 
-## <a name="product-short-sensor-requirements"></a>[!INCLUDE [Product short](includes/product-short.md)] 感應器需求
+## <a name="defender-for-identity-sensor-requirements"></a>適用于身分識別感應器需求的 Defender
 
 本節會列出 [!INCLUDE [Product short](includes/product-short.md)] 感應器的需求。
 
@@ -194,7 +194,7 @@ ms.locfileid: "98912466"
 
 <a name="azure-atp-standalone-sensor-requirements"></a>
 
-## <a name="product-short-standalone-sensor-requirements"></a>[!INCLUDE [Product short](includes/product-short.md)] 獨立感應器需求
+## <a name="defender-for-identity-standalone-sensor-requirements"></a>適用于身分識別獨立感應器需求的 Defender
 
 本節列出 [!INCLUDE [Product short](includes/product-short.md)] 獨立感應器的需求。
 

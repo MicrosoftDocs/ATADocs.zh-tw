@@ -3,12 +3,12 @@ title: 適用於身分識別的 Microsoft Defender 安全性警示教學課程
 description: 此文章說明如何使用及了解適用於身分識別的 Microsoft Defender 安全性警示。
 ms.date: 10/27/2020
 ms.topic: how-to
-ms.openlocfilehash: f7ec5a676dfa9e243db024639867fcf8227380f2
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: bec99de6189e51fa86cfd96dc219de3fe54538fa
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544312"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534526"
 ---
 # <a name="understanding-security-alerts"></a>了解安全性警訊
 
@@ -122,7 +122,7 @@ ms.locfileid: "96544312"
 
 ![相關的實體](media/related-entities.png)
 
-### <a name="how-can-i-use-product-short-information-in-an-investigation"></a>如何在調查中使用[!INCLUDE [Product short](includes/product-short.md)] 資訊？
+### <a name="how-can-i-use-defender-for-identity-information-in-an-investigation"></a>如何在調查中使用 Defender 進行身分識別資訊？
 
 調查的詳細程度可完全符合您的需求。 以下為使用[!INCLUDE [Product short](includes/product-short.md)] 所提供的資料進行調查的一些方向。
 
@@ -130,7 +130,7 @@ ms.locfileid: "96544312"
 - 相關的使用者會共用資源、應用程式或電腦嗎？
 - 帳戶在經過 PasswordExpiryTime 後仍然會有效嗎？
 
-## <a name="product-short-and-nnr-network-name-resolution"></a>[!INCLUDE [Product short](includes/product-short.md)] 與 NNR (網路名稱解析)
+## <a name="defender-for-identity-and-nnr-network-name-resolution"></a>適用于身分識別和 NNR 的 Defender (網路名稱解析) 
 
 [!INCLUDE [Product short](includes/product-short.md)] 偵測功能需要使用中的網路名稱解析 (NNR)，才能對您組織中的電腦 IP 進行解析。 透過使用 NNR，[!INCLUDE [Product short](includes/product-short.md)] 就能在原始活動 (包含 IP 位址)，以及涉及各活動的相關電腦間建立相互關聯。 根據原始活動，[!INCLUDE [Product short](includes/product-short.md)] 會分析電腦等實體，並產生警示。
 

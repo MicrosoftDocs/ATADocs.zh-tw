@@ -3,14 +3,14 @@ title: 安裝適用於身分識別的 Microsoft Defender 感應器快速入門
 description: 安裝適用於身分識別的 Microsoft Defender 的步驟四可協助您安裝適用於身分識別的 Defender 感應器。
 ms.date: 10/26/2020
 ms.topic: quickstart
-ms.openlocfilehash: 4d68820bd6da88bca64bb8917f069d04adbc29b0
-ms.sourcegitcommit: 4f3da69b8e30cbc3e3fb43d38c3518001a10f7a1
-ms.translationtype: HT
+ms.openlocfilehash: ecb2f50514a435933cf72b0243232eb0d15de6dd
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98163530"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534033"
 ---
-# <a name="quickstart-install-the-product-long-sensor"></a>快速入門：安裝[!INCLUDE [Product long](includes/product-long.md)] 感應器
+# <a name="quickstart-install-the-microsoft-defender-for-identity-sensor"></a>快速入門：安裝適用于身分識別感應器的 Microsoft Defender
 
 在此快速入門中，您將會在網域控制站上安裝[!INCLUDE [Product long](includes/product-long.md)] 感應器。 若您想要使用無訊息安裝，請參閱[無訊息安裝](silent-installation.md)一文。
 

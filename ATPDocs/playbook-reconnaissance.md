@@ -3,12 +3,12 @@ title: 適用於身分識別的 Microsoft Defender 偵察劇本教學課程
 description: 適用於身分識別的 Microsoft Defender 偵察劇本教學課程描述如何模擬適用於身分識別的 Defender 所偵測到的偵察移動威脅。
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.openlocfilehash: dcaac8ed69bb4c3b9ccd262af929652dbc12126a
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: 735e3d24586e9fee1fdead3782d5e996f555ef03
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544482"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533676"
 ---
 # <a name="tutorial-reconnaissance-playbook"></a>教學課程：偵察劇本
 
@@ -75,7 +75,7 @@ ls -d contoso.azure
 
 如果 **ContsoDC** 是第一個部署的感應器，請等候 15 分鐘，以允許資料庫後端完成必要微服務的部署。
 
-### <a name="network-mapping-reconnaissance-dns-detected-in-product-short"></a>[!INCLUDE [Product short](includes/product-short.md)] 中偵測到的網路對應偵察 (DNS)
+### <a name="network-mapping-reconnaissance-dns-detected-in-defender-for-identity"></a>在 Defender 中針對身分識別偵測到的網路對應偵察 (DNS) 
 
 能夠檢視這類嘗試 (失敗或成功) 對網域威脅防護來說至關重要。 在最近安裝環境之後，您將必須移至 [邏輯活動]  時間表以查看偵測到的活動。
 
@@ -145,7 +145,7 @@ ls -d contoso.azure
 
 有了我們偵察中所收集的資訊，我們現在知道了「Helpdesk 安全性群組」。 雖然該資訊 *尚未* 引起關注。 我們也知道了 **SamiraA** 是 Domain Admins 群組的成員。 如果我們可以搜集 SamiraA 的認證，我們就可以存取「網域控制站」本身。
 
-### <a name="directory-service-enumeration-detected-in-product-short"></a>[!INCLUDE [Product short](includes/product-short.md)] 中偵測到的目錄服務列舉
+### <a name="directory-service-enumeration-detected-in-defender-for-identity"></a>在 Defender 中偵測到身分識別的目錄服務列舉
 
 如果我們的實驗室「在已安裝[!INCLUDE [Product short](includes/product-short.md)] 的情況下有 30 天真實的即時活動」，則我們剛才以 JeffL 身分執行的活動將可能被歸類為異常活動。 異常活動會顯示在「可疑的活動」時間軸中。 不過，由於我們剛安裝好環境，因此將必須前往「邏輯活動」時間軸來查看活動。
 
@@ -187,7 +187,7 @@ NetSess.exe ContosoDC
 
 我們已經知道 SamiraA 是一個「網域系統管理員」。這個攻擊為我們提供了 SamiraA 的 IP 位址 10.0.24.6。 身為攻擊者，我們已確切了解要盜用的對象是誰。 我們也取得了登入該認證的網路位置。
 
-### <a name="user-and-ip-address-reconnaissance-smb-detected-in-product-short"></a>[!INCLUDE [Product short](includes/product-short.md)] 中偵測到的使用者與 IP 位址偵察 (SMB)
+### <a name="user-and-ip-address-reconnaissance-smb-detected-in-defender-for-identity"></a>在 Defender 中偵測到用於身分識別的使用者和 IP 位址偵察 (SMB) 
 
 現在，我們可以看看[!INCLUDE [Product short](includes/product-short.md)] 為我們偵測到哪些東西：
 

@@ -3,14 +3,14 @@ title: 快速入門：為適用於身分識別的 Microsoft Defender 建立執�
 description: 快速入門：為適用於身分識別的 Microsoft Defender 建立執行個體，以開始安裝適用於身分識別的 Defender。
 ms.date: 10/26/2020
 ms.topic: quickstart
-ms.openlocfilehash: 9860a8893ac16448b92961df9cf25801f68786b6
-ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
+ms.openlocfilehash: 19fb02269da5b4529941ffa89c07d914b0633754
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100515354"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534254"
 ---
-# <a name="quickstart-create-your-product-long-instance"></a>快速入門：建立 [!INCLUDE [Product long](includes/product-long.md)] 執行個體
+# <a name="quickstart-create-your-microsoft-defender-for-identity-instance"></a>快速入門：建立您的 Microsoft Defender 身分識別實例
 
 在此快速入門中，您將在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中建立 [!INCLUDE [Product long](includes/product-long.md)] 執行個體。 在 [!INCLUDE [Product short](includes/product-short.md)] 中，您將會擁有單一執行個體 (先前稱為工作區)。 單一執行個體可讓您透過單一窗口來管理多個樹系。
 
@@ -24,7 +24,7 @@ ms.locfileid: "100515354"
 - 檢閱 [[!INCLUDE [Product short](includes/product-short.md)] 架構](architecture.md)一文。
 - 請檢閱 [[!INCLUDE [Product short](includes/product-short.md)] 先決條件](prerequisites.md)一文。
 
-## <a name="sign-in-to-the-product-short-portal"></a>登入 [!INCLUDE [Product short](includes/product-short.md)] 入口網站
+## <a name="sign-in-to-the-defender-for-identity-portal"></a>登入適用于身分識別入口網站的 Defender
 
 確認網路符合感應器的需求後，請開始建立 [!INCLUDE [Product short](includes/product-short.md)] 執行個體。
 

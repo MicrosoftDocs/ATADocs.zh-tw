@@ -3,12 +3,12 @@ title: 安裝適用於身分識別的 Microsoft Defender
 description: 在安裝適用於身分識別的 Microsoft Defender 的這個步驟中，您會設定資料來源。
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 6de6b52af73c22387ad16c28e4a0b0e84c888847
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: 71c762ed8791f01f3cf2c89a3b612f937a618b84
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544057"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534237"
 ---
 # <a name="configure-event-collection"></a>設定事件收集
 
@@ -50,7 +50,7 @@ ms.locfileid: "96544057"
 > [!NOTE]
 > 如果您未使用 SIEM/Syslog 伺服器，則可將 Windows 網域控制站設定為轉送所有必要事件以供[!INCLUDE [Product short](includes/product-short.md)] 收集及分析。
 
-## <a name="configuring-the-product-short-sensor-to-listen-for-siem-events"></a>設定[!INCLUDE [Product short](includes/product-short.md)] 感應器以接聽 SIEM 事件
+## <a name="configuring-the-defender-for-identity-sensor-to-listen-for-siem-events"></a>設定適用于身分識別感應器的 Defender 來接聽 SIEM 事件
 
 - 將 SIEM 或 Syslog 伺服器設定為轉送所有必要事件至[!INCLUDE [Product short](includes/product-short.md)] 獨立感應器的其中一個 IP 位址。 如需有關如何設定 SIEM 的詳細資訊，請參閱您的 SIEM 線上說明或每部 SIEM 伺服器之特定格式需求的技術支援選項。
 

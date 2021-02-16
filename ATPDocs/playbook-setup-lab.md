@@ -3,14 +3,14 @@ title: 適用於身分識別的 Microsoft Defender 安全性實驗室設定教�
 description: 在此教學課程中，您會設定適用於身分識別的 Microsoft Defender 測試實驗室，以模擬適用於身分識別的 Defender 的偵測威脅。
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.openlocfilehash: 51505b97acde09eecce25e0bafaea8fa0af60419
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: 3fa1a3322a76f61f924da521654d3d722c994916
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542527"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533591"
 ---
-# <a name="tutorial-setup-a-product-long-security-alert-lab"></a>教學課程：設定[!INCLUDE [Product long](includes/product-long.md)] 安全性警示實驗室
+# <a name="tutorial-setup-a-microsoft-defender-for-identity-security-alert-lab"></a>教學課程：設定 Microsoft Defender 身分識別安全性警示實驗室
 
 [!INCLUDE [Product long](includes/product-long.md)] 安全性警示實驗室的目的是要說明 **[!INCLUDE [Product short](includes/product-short.md)]** 對網路可疑活動與潛在攻擊的識別及偵測功能。 這個四部分系列中的第一個教學課程會逐步引導您建立一個實驗室環境，以針對[!INCLUDE [Product short](includes/product-short.md)] 的「離散」偵測進行測試。 安全性警示實驗室的焦點是放在[!INCLUDE [Product short](includes/product-short.md)] 的「特徵型」功能上。 此實驗室並不包括進階機器學習、使用者或實體型的行為偵測，因為這些偵測需要一個最多有 30 天真實網路流量的學習期間。 如需有關此系列每個教學課程的詳細資訊，請參閱[[!INCLUDE [Product short](includes/product-short.md)] 安全性警示實驗室概觀](playbook-lab-overview.md)。
 
@@ -66,11 +66,13 @@ ms.locfileid: "96542527"
 | Samira Abbasi | SamiraA | 在 Contoso，此使用者是我們的「網域系統管理員」。 |
 | [!INCLUDE [Product short](includes/product-short.md)] 服務 | AATPService | [!INCLUDE [Product short](includes/product-short.md)] 的服務帳戶 | account |
 
-## <a name="product-short-base-lab-environment"></a>[!INCLUDE [Product short](includes/product-short.md)] 基礎實驗室環境
+## <a name="defender-for-identity-base-lab-environment"></a>適用于身分識別基底實驗室環境的 Defender
 
 為了設定基礎實驗室，我們會將使用者與群組新增到 Active Directory、編輯 SAM 原則，以及在[!INCLUDE [Product short](includes/product-short.md)] 中新增敏感性群組。
 
-### <a name="hydrate-active-directory-users-on-contosodc"></a><a name="bkmk_hydrate"></a> 將 ContosoDC 上的 Active Directory 使用者序列化
+<a name="bkmk_hydrate"></a>
+
+### <a name="hydrate-active-directory-users-on-contosodc"></a> 將 ContosoDC 上的 Active Directory 使用者序列化
 
 為了簡化此實驗室，我們已將在 Active Directory 中建立虛構使用者和群組的程序自動化。 此指令碼會作為此教學課程的先決條件來執行。 您可以使用或修改此指令碼，以將您實驗室的 Active Directory 環境序列化。 如果您偏好不使用指令碼，則可以手動執行。
 
@@ -95,8 +97,8 @@ Add-ADGroupMember -Identity "Helpdesk" -Members "RonHD"
 # Create new AD user JeffL
 New-ADUser -Name JeffL -DisplayName "Jeff Leatherman" -PasswordNeverExpires $true -AccountPassword $jefflSecurePass -Enabled $true
 
-# Take note of the "AATPService" user below which will be our service account for [!INCLUDE [Product short](includes/product-short.md)].
-# Create new AD user [!INCLUDE [Product short](includes/product-short.md)] Service
+# Take note of the "AATPService" user below which will be our service account for Defender for Identity.
+# Create new AD user Defender for Identity Service
 
 New-ADUser -Name AatpService -DisplayName "Azure ATP/ATA Service" -PasswordNeverExpires $true -AccountPassword $AATPService -Enabled $true
 ```
@@ -113,7 +115,7 @@ New-ADUser -Name AatpService -DisplayName "Azure ATP/ATA Service" -PasswordNever
 
     ![新增服務](media/samr-add-service.png)
 
-### <a name="add-sensitive-group-to-product-short"></a>將敏感性群組新增至[!INCLUDE [Product short](includes/product-short.md)]
+### <a name="add-sensitive-group-to-defender-for-identity"></a>將敏感性群組新增至 Defender 以進行身分識別
 
 將 "Helpdesk" 安全性群組新增為 **敏感性群組** 將可讓您使用[!INCLUDE [Product short](includes/product-short.md)] 的「橫向移動圖表」功能。 標記不一定是「網域系統管理員」但確實具有眾多資源權限的高敏感性使用者和群組，是最佳做法。
 
@@ -126,7 +128,7 @@ New-ADUser -Name AatpService -DisplayName "Azure ATP/ATA Service" -PasswordNever
     ![將 "Helpdesk" 標記為[!INCLUDE [Product short](includes/product-short.md)] 敏感性群組，來為此特殊權限群組啟用「橫向移動圖表」和報告功能](media/playbook-labsetup-helpdesksensitivegroup.png)
 1. 按一下 [檔案]  。
 
-### <a name="product-short-lab-base-setup-checklist"></a>[!INCLUDE [Product short](includes/product-short.md)] 實驗室基礎設定檢查清單
+### <a name="defender-for-identity-lab-base-setup-checklist"></a>適用于身分識別實驗室基礎設定檢查清單的 Defender
 
 此時，您應該已有一個基礎的[!INCLUDE [Product short](includes/product-short.md)] 實驗室。 [!INCLUDE [Product short](includes/product-short.md)] 應該已經可供使用，而且使用者也已預備妥當。 請檢閱檢查清單以確定基礎實驗室已完成。
 
@@ -158,7 +160,9 @@ Add-LocalGroupMember -Group "Administrators" -Member "Contoso\Helpdesk"
 
 ![Helpdesk 和 JeffL 應該在 VictimPC 的「本機系統管理員群組」中](media/playbook-labsetup-localgrouppolicies2.png)
 
-### <a name="simulate-helpdesk-support-on-victimpc"></a><a name="helpdesk-simulation"></a> 在 VictimPC 上模擬服務台支援
+<a name="helpdesk-simulation"></a>
+
+### <a name="simulate-helpdesk-support-on-victimpc"></a> 在 VictimPC 上模擬服務台支援
 
 為了模擬可運作且受控的網路，請在 **VictimPC** 機器上建立一個「排定的工作」來以 **RonHD** 身分執行 "cmd.exe" 程序。
 

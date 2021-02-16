@@ -3,14 +3,14 @@ title: 適用于存取管理的身分識別角色群組的 Microsoft Defender
 description: 引導您使用 Microsoft Defender 作為身分識別角色群組。
 ms.date: 02/27/2020
 ms.topic: conceptual
-ms.openlocfilehash: cbfb13ace446ba980af649f07951eed3aabbe4fd
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 9ff271c8f417d3f2c15e3e6809b62986a7825db4
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544380"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533353"
 ---
-# <a name="product-long-role-groups"></a>[!INCLUDE [Product long](includes/product-long.md)] 角色群組
+# <a name="microsoft-defender-for-identity-role-groups"></a>適用于身分識別角色群組的 Microsoft Defender
 
 [!INCLUDE [Product long](includes/product-long.md)] 提供以角色為基礎的安全性，根據組織的特定安全性和合規性需求來保護資料。 [!INCLUDE [Product short](includes/product-short.md)] 支援三種不同的角色：系統管理員、使用者和檢視器。
 
@@ -21,14 +21,14 @@ ms.locfileid: "96544380"
 > [!NOTE]
 > 租使用者 Azure Active Directory 上的任何全域管理員或安全性系統管理員都會自動成為 [!INCLUDE [Product short](includes/product-short.md)] 系統管理員。
 
-## <a name="accessing-the-product-short-portal"></a>存取 [!INCLUDE [Product short](includes/product-short.md)] 入口網站
+## <a name="accessing-the-defender-for-identity-portal"></a>存取身分識別入口網站的 Defender
 
 [!INCLUDE [Product short](includes/product-short.md)]只有具有全域管理員或安全性系統管理員目錄角色的 Azure AD 使用者才能完成入口網站 (portal.atp.azure.com) 的存取權。 使用必要的角色進入入口網站之後，您可以建立 [!INCLUDE [Product short](includes/product-short.md)] 實例。 [!INCLUDE [Product short](includes/product-short.md)] 服務會在您的 Azure Active Directory 租使用者中建立三個安全性群組：系統管理員、使用者、檢視器。
 
 > [!NOTE]
 > 入口網站的存取權 [!INCLUDE [Product short](includes/product-short.md)] 只會授與安全性群組中的使用者 [!INCLUDE [Product short](includes/product-short.md)] 、您的 Azure Active Directory 內的使用者，以及租使用者的全域和安全性系統管理員。
 
-## <a name="types-of-product-short-security-groups"></a>[!INCLUDE [Product short](includes/product-short.md)]安全性群組的類型
+## <a name="types-of-defender-for-identity-security-groups"></a>身分識別安全性群組的 Defender 類型
 
 [!INCLUDE [Product short](includes/product-short.md)] 提供三種類型的安全性群組： Azure ATP *(實例名稱)* 系統管理員、Azure ATP (使用者) *實例* 名稱，以及 Azure ATP 檢視器 (*實例名稱*) 檢視器。 下表說明 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中每個角色可用的存取類型。 根據您指派的角色而定，入口網站中的各種畫面與功能表選項 [!INCLUDE [Product short](includes/product-short.md)] 無法供這些使用者使用，如下所示：
 

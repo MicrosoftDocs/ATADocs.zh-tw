@@ -3,18 +3,18 @@ title: 以無訊息方式安裝 Microsoft Defender 身分識別
 description: 這會說明如何以無訊息方式安裝 Microsoft Defender for Identity。
 ms.date: 01/11/2021
 ms.topic: how-to
-ms.openlocfilehash: a9cddac4ca0306faddaa93b701b88745b180828c
-ms.sourcegitcommit: 57dd3e4663346db3542cf9e755dac135c5e75125
+ms.openlocfilehash: 0c22f5bcbffd415a81b84c94570cfcd7387aab56
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98062530"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534390"
 ---
-# <a name="product-long-switches-and-silent-installation"></a>[!INCLUDE [Product long](includes/product-long.md)] 切換和無訊息安裝
+# <a name="microsoft-defender-for-identity-switches-and-silent-installation"></a>適用于身分識別切換和無訊息安裝的 Microsoft Defender
 
 本文提供 [!INCLUDE [Product long](includes/product-long.md)] 切換開關和無訊息安裝的指導方針和指示。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 [!INCLUDE [Product short](includes/product-short.md)] 需要安裝 Microsoft .NET Framework 4.7 或更新版本。
 
@@ -27,10 +27,10 @@ ms.locfileid: "98062530"
 
 若要追蹤您的部署進度，請監視 [!INCLUDE [Product short](includes/product-short.md)] 位於中的安裝程式記錄檔 `%AppData%\Local\Temp` 。
 
-## <a name="product-short-sensor-silent-installation"></a>[!INCLUDE [Product short](includes/product-short.md)] 感應器無訊息安裝
+## <a name="defender-for-identity-sensor-silent-installation"></a>適用于身分識別感應器無訊息安裝的 Defender
 
 > [!NOTE]
-> 透過 [!INCLUDE [Product short](includes/product-short.md)] System Center Configuration Manager 或其他軟體部署系統以無訊息方式部署感應器時，建議您建立兩個部署套件：</br>- Net Framework 4.7 或更新版本 (可能需要重新啟動網域控制站)</br>- [!INCLUDE [Product short](includes/product-short.md)] 感應器。 </br>讓 [!INCLUDE [Product short](includes/product-short.md)] 感應器套件相依于 .Net Framework 套件部署的部署。 </br>取得 [.Net Framework 4.7 離線部署套件](https://support.microsoft.com/help/3186497/the-net-framework-4-7-offline-installer-for-windows)。
+> 透過 [!INCLUDE [Product short](includes/product-short.md)] System Center 設定管理員或其他軟體部署系統以無訊息方式部署感應器時，建議您建立兩個部署套件：</br>- Net Framework 4.7 或更新版本 (可能需要重新啟動網域控制站)</br>- [!INCLUDE [Product short](includes/product-short.md)] 感應器。 </br>讓 [!INCLUDE [Product short](includes/product-short.md)] 感應器套件相依于 .Net Framework 套件部署的部署。 </br>取得 [.Net Framework 4.7 離線部署套件](https://support.microsoft.com/help/3186497/the-net-framework-4-7-offline-installer-for-windows)。
 
 使用下列命令來執行感應器的完全無訊息安裝 [!INCLUDE [Product short](includes/product-short.md)] ：
 
@@ -95,7 +95,7 @@ ms.locfileid: "98062530"
 
 如需 proxy 設定的詳細資訊，請參閱 [為您的 [!INCLUDE [Product long](includes/product-long.md)] 感應器設定端點 Proxy 和網際網路連線能力設定](configure-proxy.md)。
 
-## <a name="update-the-product-short-sensor"></a>更新 [!INCLUDE [Product short](includes/product-short.md)] 感應器
+## <a name="update-the-defender-for-identity-sensor"></a>更新身分識別感應器的 Defender
 
 使用下列命令以無訊息方式更新 [!INCLUDE [Product short](includes/product-short.md)] 感應器：
 
@@ -125,7 +125,7 @@ ms.locfileid: "98062530"
 
 <a name="silently-uninstall-sensor"></a>
 
-## <a name="uninstall-the-product-short-sensor-silently"></a>以無訊息方式卸載 [!INCLUDE [Product short](includes/product-short.md)] 感應器
+## <a name="uninstall-the-defender-for-identity-sensor-silently"></a>以無訊息方式將 Defender for Identity 感應器卸載
 
 使用下列命令來執行感應器的無訊息卸載 [!INCLUDE [Product short](includes/product-short.md)] ：
 

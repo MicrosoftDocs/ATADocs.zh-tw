@@ -3,14 +3,14 @@ title: Microsoft Defender for Identity 中較舊版本的參考
 description: 本文是對 Microsoft Defender for Identity 的先前版本更新的參考。
 ms.date: 10/27/2020
 ms.topic: reference
-ms.openlocfilehash: 493315ab2e0571c13b2076bb389e2d1c4a9a56f1
-ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
+ms.openlocfilehash: 44da038cc03bb24cbc70d524e24b259c81d9fa00
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100515541"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533370"
 ---
-# <a name="release-reference-of-product-long"></a>的發行參考 [!INCLUDE [Product long](includes/product-long.md)]
+# <a name="release-reference-of-microsoft-defender-for-identity"></a>適用于身分識別的 Microsoft Defender 版本參考
 
 本文參考 [!INCLUDE [Product short](includes/product-short.md)] 先前 Azure 進階威脅防護的所有 (，也稱為 Azure ATP) 版本，直到 (和包含) 版本2.55 為止。 如 [!INCLUDE [Product short](includes/product-short.md)] (2.56 和更新版本的最新版本更新) ，請參閱[ [!INCLUDE [Product short](includes/product-short.md)] 新功能](whats-new.md)。
 

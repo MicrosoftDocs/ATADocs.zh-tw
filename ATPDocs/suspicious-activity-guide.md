@@ -3,14 +3,14 @@ title: 適用於身分識別的 Microsoft Defender 安全性警示指南
 description: 此文章提供適用於身分識別的 Microsoft Defender 所發出的安全性警示清單。
 ms.date: 10/27/2020
 ms.topic: conceptual
-ms.openlocfilehash: b6870f7c02dcd9497c08f8ebba33fde967092a4c
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: eb74cc45084b9973da9f141794a2684942aaed0a
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542187"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533402"
 ---
-# <a name="product-long-security-alerts"></a>[!INCLUDE [Product long](includes/product-long.md)] 安全性警示
+# <a name="microsoft-defender-for-identity-security-alerts"></a>Microsoft Defender 的身分識別安全性警示
 
 > [!NOTE]
 > 此頁面所述的[!INCLUDE [Product long](includes/product-long.md)] 功能也可使用新的[入口網站](https://portal.cloudappsecurity.com)來存取。

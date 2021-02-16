@@ -3,14 +3,14 @@ title: 適用於身分識別的 Microsoft Defender：美國政府 GCC High
 description: 本文概述適用於身分識別的 Microsoft Defender 中，為美國政府 GCC High 所提供的供應項目。
 ms.date: 10/27/2020
 ms.topic: overview
-ms.openlocfilehash: 5e2c10186c929eb4a6f3ea2fc1f25691df6fd9f4
-ms.sourcegitcommit: 2cbfcab156fbd90d932eea47142d560d2b038062
-ms.translationtype: HT
+ms.openlocfilehash: d6b0ac4d60d096710abd1b3ac5569eb7dad221f9
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2020
-ms.locfileid: "96740822"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533319"
 ---
-# <a name="product-long-for-us-government-gcc-high"></a>適用於美國政府 GCC High 的 [!INCLUDE [Product long](includes/product-long.md)]
+# <a name="microsoft-defender-for-identity-for-us-government-gcc-high"></a>適用于美國政府的 Microsoft Defender 身分識別 GCC High
 
 [!INCLUDE [Product long](includes/product-long.md)] GCC High 供應項目使用的基礎技術與功能，和 [!INCLUDE [Product short](includes/product-short.md)] 商業執行個體相同。 您可以在[服務描述](/enterprise-mobility-security/solutions/ems-azure-atp-govt-service-description)中找到功能差異清單。
 

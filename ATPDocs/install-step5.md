@@ -3,21 +3,21 @@ title: 設定 Microsoft Defender 的身分識別感應器設定概念
 description: 安裝適用于身分識別的 Microsoft Defender 的步驟5可協助您針對身分識別獨立感應器設定 Defender 的設定。
 ms.date: 09/15/2019
 ms.topic: how-to
-ms.openlocfilehash: 329bfd4f6de2e15865c81d22651e833a63d07b6d
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 42dc42caad1b76cf706cf85d34fd60f5c7a52756
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543105"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534006"
 ---
-# <a name="configure-product-long-sensor-settings"></a>設定 [!INCLUDE [Product long](includes/product-long.md)] 感應器設定
+# <a name="configure-microsoft-defender-for-identity-sensor-settings"></a>設定 Microsoft Defender 的身分識別感應器設定
 
 在本文中，您將瞭解如何正確地設定 [!INCLUDE [Product long](includes/product-long.md)] 感應器設定，以開始查看資料。 您必須執行額外的設定和整合，才能利用的 [!INCLUDE [Product short](includes/product-short.md)] 完整功能。
 
 ## <a name="prerequisites"></a>先決條件
 
 - 已[連線到 Active Directory](install-step2.md) 的[[!INCLUDE [Product short](includes/product-short.md)] 執行個體](install-step1.md)。
-- 您[](install-step3.md) 感應器安裝套件[!INCLUDE [Product short](includes/product-short.md)]的已下載複本，以及存取金鑰。
+- 您[[!INCLUDE [Product short](includes/product-short.md)] 感應器安裝套件](install-step3.md)的已下載複本，以及存取金鑰。
 
 ## <a name="configure-sensor-settings"></a>進行感應器設定
 
@@ -25,7 +25,7 @@ ms.locfileid: "96543105"
 
 1. 按一下 [ **啟動** ] 以開啟瀏覽器並登入 [!INCLUDE [Product short](includes/product-short.md)] 入口網站。
 
-1. 在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中，移 **Configuration** 至 [設定]，然後在 [**系統**] 底下選取 [**感應器**]。
+1. 在 [!INCLUDE [Product short](includes/product-short.md)] 入口網站中，移至 [設定]，然後在 [**系統**] 底下選取 [**感應器**]。
 
     ![[感應器] 頁面](media/sensor-config.png)
 

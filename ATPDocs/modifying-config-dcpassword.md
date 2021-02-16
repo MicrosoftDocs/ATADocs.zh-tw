@@ -3,14 +3,14 @@ title: 變更身分識別設定的 Microsoft Defender-網域連線能力密碼
 description: 說明如何針對身分識別獨立感應器變更 Microsoft Defender 的網域連線密碼。
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 294786515c45136be77447b9ad1e9ddf5e2e5e95
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 2a82226a4eda3a7db762df4e04728848f7e1958e
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544499"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533812"
 ---
-# <a name="change-product-long-portal-configuration---domain-connectivity-password"></a>變更 [!INCLUDE [Product long](includes/product-long.md)] 入口網站設定-網域連線密碼
+# <a name="change-microsoft-defender-for-identity-portal-configuration---domain-connectivity-password"></a>變更適用于身分識別入口網站設定的 Microsoft Defender-網域連線能力密碼
 
 ## <a name="change-the-domain-connectivity-password"></a>變更網域連線密碼
 
@@ -38,7 +38,7 @@ ms.locfileid: "96544499"
     > [!NOTE]
     > 在此處輸入 Active Directory 使用者和密碼，而非 Azure Active Directory。
 
-1. 按一下 **[儲存]** 。
+1. 按一下 [儲存]。
 
 1. 在[!INCLUDE [Product short](includes/product-short.md)] 中，選取 [設定]。
 1. 在 [ **系統**] 下，選取 [ **感應器** ] 頁面，並檢查感應器的狀態。

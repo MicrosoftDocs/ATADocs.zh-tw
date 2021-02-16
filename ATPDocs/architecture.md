@@ -3,12 +3,12 @@ title: 適用於身分識別的 Microsoft Defender 架構
 description: 描述適用於身分識別的 Microsoft Defender 的架構
 ms.date: 12/23/2020
 ms.topic: overview
-ms.openlocfilehash: 418fbe3f4a24f3af69336eda4954f5817b478e20
-ms.sourcegitcommit: e2b4ad613aa171f604ae526f0cba05fe79f4a8cb
-ms.translationtype: HT
+ms.openlocfilehash: 920c4fa99ebe2dad211fd7edae9ed928c1426510
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97753266"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533880"
 ---
 # <a name="microsoft-defender-for-identity-architecture"></a>適用於身分識別的 Microsoft Defender 架構
 
@@ -22,7 +22,7 @@ ms.locfileid: "97753266"
 
 如果[!INCLUDE [Product short](includes/product-short.md)] 感應器直接安裝在網域控制站或 AD FS 伺服器上，即會直接從伺服器存取所需的事件記錄檔。 在感應器剖析記錄檔和網路流量之後，[!INCLUDE [Product short](includes/product-short.md)] 只會將經剖析的資訊傳送到[!INCLUDE [Product short](includes/product-short.md)] 雲端服務 (僅傳送某個百分比的記錄檔)。
 
-## <a name="product-short-components"></a>[!INCLUDE [Product short](includes/product-short.md)] 元件
+## <a name="defender-for-identity-components"></a>適用于身分識別元件的 Defender
 
 [!INCLUDE [Product short](includes/product-short.md)] 包含下列元件：
 
@@ -36,7 +36,7 @@ ms.locfileid: "97753266"
 - **[!INCLUDE [Product short](includes/product-short.md)] 雲端服務**  
 [!INCLUDE [Product short](includes/product-short.md)] 雲端服務目前部署於美國、歐洲和亞洲，並會在 Azure 基礎結構上執行。 [!INCLUDE [Product short](includes/product-short.md)] 雲端服務會與 Microsoft Intelligent Security Graph 連線。
 
-## <a name="product-short-portal"></a>[!INCLUDE [Product short](includes/product-short.md)] 入口網站
+## <a name="defender-for-identity-portal"></a>適用於身分識別的 Defender 入口網站
 
 使用[!INCLUDE [Product short](includes/product-short.md)] 入口網站來：
 
@@ -50,7 +50,7 @@ ms.locfileid: "97753266"
 > [!NOTE]
 > 若[!INCLUDE [Product short](includes/product-short.md)] 執行個體在 60 天內未安裝感應器，系統可能會刪除執行個體且您必須重新建立。
 
-## <a name="product-short-sensor"></a>[!INCLUDE [Product short](includes/product-short.md)] 感應器
+## <a name="defender-for-identity-sensor"></a>適用于身分識別感應器的 Defender
 
 [!INCLUDE [Product short](includes/product-short.md)] 感應器具有下列核心功能：
 
@@ -61,7 +61,7 @@ ms.locfileid: "97753266"
 - 執行網路實體 (使用者、群組及電腦) 解析
 - 將相關資料傳輸至[!INCLUDE [Product short](includes/product-short.md)] 雲端服務
 
-## <a name="product-short-sensor-features"></a>[!INCLUDE [Product short](includes/product-short.md)] 感應器功能
+## <a name="defender-for-identity-sensor-features"></a>適用于身分識別感應器功能的 Defender
 
 [!INCLUDE [Product short](includes/product-short.md)] 感應器可讀取本機事件，而不需要購買及維護額外的硬體或設定。 [!INCLUDE [Product short](includes/product-short.md)] 感應器也支援 Windows 事件追蹤 (ETW)，以提供多個偵測的記錄資訊。 ETW 式偵測包含使用網域控制站複寫要求和網域控制站升階嘗試進行的可疑 DCShadow 攻擊。
 

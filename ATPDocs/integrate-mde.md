@@ -3,14 +3,14 @@ title: 適用于身分識別與 Microsoft Defender for Endpoint 整合的 micros
 description: 如何將 Microsoft Defender for Identity 與 Microsoft Defender for Endpoint 整合，以取得完整的威脅偵測涵蓋範圍
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 73cf4809e20d92534786d1df1ad580fffd5706b8
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 356f97509fe3af81a4d1c896e7b64b2779e6028a
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542952"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533863"
 ---
-# <a name="integrate-product-long-with-microsoft-defender-for-endpoint"></a>[!INCLUDE [Product long](includes/product-long.md)]與 Microsoft Defender For Endpoint 整合
+# <a name="integrate-microsoft-defender-for-identity-with-microsoft-defender-for-endpoint"></a>將 Microsoft Defender for Identity 與 Microsoft Defender for Endpoint 整合
 
 [!INCLUDE [Product long](includes/product-long.md)] 可讓您 [!INCLUDE [Product long](includes/product-long.md)] 與 Defender For Endpoint 整合，以取得更完整的威脅防護解決方案。 在 [!INCLUDE [Product short](includes/product-short.md)] 監視您網域控制站上的流量時，Defender For Endpoint 會監視您的端點，同時提供單一介面讓您可以保護您的環境。
 
@@ -47,7 +47,7 @@ ms.locfileid: "96542952"
 
 <a name="how-to-integrate-azure-atp-with-microsoft-defender-atp"></a>
 
-## <a name="how-to-integrate-product-short-with-defender-for-endpoint"></a>如何 [!INCLUDE [Product short](includes/product-short.md)] 與 Defender For Endpoint 整合
+## <a name="how-to-integrate-defender-for-identity-with-defender-for-endpoint"></a>如何整合 Defender for Identity 與 Defender for Endpoint
 
 1. 在[!INCLUDE [Product short](includes/product-short.md)] 中，選取 [設定]。
 

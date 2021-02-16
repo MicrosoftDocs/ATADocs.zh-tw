@@ -5,14 +5,14 @@ ms.date: 02/14/2021
 ms.topic: overview
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 47efcf034d9f5117a5004448c147887716176fc2
-ms.sourcegitcommit: 0746f8fadd94b75a10214bfc5084b0ddba67d087
+ms.openlocfilehash: 220570e73ec1f023daadcbb36061bba391da7a12
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100521220"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534458"
 ---
-# <a name="whats-new-in-product-long"></a>[!INCLUDE [Product long](includes/product-long.md)] 的新功能
+# <a name="whats-new-in-microsoft-defender-for-identity"></a>適用於身分識別的 Defender：新功能
 
 本文會經常更新，讓您知道最新版本 [!INCLUDE [Product long](includes/product-long.md)] (先前稱為 Azure 進階威脅防護，即 Azure ATP) 的新功能。
 

@@ -3,12 +3,12 @@ title: 在適用於身分識別的 Microsoft Defender 中使用安全性警示
 description: 描述如何檢閱適用於身分識別的 Microsoft Defender 所發出的安全性警示
 ms.date: 10/27/2020
 ms.topic: how-to
-ms.openlocfilehash: 8cd2cf79ef590d852c66a426d0217104f55b29a1
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: cb589442143bfd78f13360c076d9f5205c0a21af
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544584"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534424"
 ---
 # <a name="working-with-security-alerts"></a>使用安全性警訊
 
@@ -51,7 +51,7 @@ ms.locfileid: "96544584"
 - [網域支配警訊](domain-dominance-alerts.md)
 - [外流警訊](exfiltration-alerts.md)
 
-## <a name="preview-detections"></a>預覽偵測 <a name="preview-detections"></a>
+## <a name="preview-detections"></a>預覽偵測 
 
 [!INCLUDE [Product short](includes/product-short.md)] 研究小組會持續致力於針對新探索到的攻擊實作新的偵測。 由於[!INCLUDE [Product short](includes/product-short.md)] 是雲端服務，所以能快速推出新的偵測，讓[!INCLUDE [Product short](includes/product-short.md)] 客戶能盡快受益於新的偵測。
 

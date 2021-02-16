@@ -3,18 +3,18 @@ title: 規劃您的 Microsoft Defender 以進行身分識別部署
 description: 協助您規劃部署並決定支援您的網路所需的身分識別伺服器 Microsoft Defender 數量
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: a5db3865b75e79a7b5f69dd5223e27497cc7ae18
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 8266742f2766977685d465b3634c7a71a51af682
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544227"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533889"
 ---
-# <a name="plan-capacity-for-product-long"></a>規劃容量 [!INCLUDE [Product long](includes/product-long.md)]
+# <a name="plan-capacity-for-microsoft-defender-for-identity"></a>適用于身分識別的 Microsoft Defender 規劃容量
 
 在本指南中，您會決定 [!INCLUDE [Product long](includes/product-long.md)] 需要多少感應器。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 - 下載重設[ [!INCLUDE [Product short](includes/product-short.md)] 大小工具](https://aka.ms/aatpsizingtool)。
 - 檢閱 [[!INCLUDE [Product short](includes/product-short.md)] 架構](architecture.md)一文。
@@ -32,7 +32,9 @@ ms.locfileid: "96544227"
 1. 在結果 Excel 檔案的 Azure ATP 感應器表格中找出 **Busy Packets/sec** 欄位，並且記下它。
 1. 將 [**忙碌的封包數/秒**] 欄位比對本文的 [ [ [!INCLUDE [Product short](includes/product-short.md)] 感應器資料表](#sizing)] 區段中的 [**每秒封包數**] 欄位。 使用此欄位來判斷感應器所使用的記憶體和 CPU。
 
-## <a name="product-short-sensor-sizing"></a><a name="sizing"></a>[!INCLUDE [Product short](includes/product-short.md)]感應器大小調整
+<a name="sizing"></a>
+
+## <a name="defender-for-identity-sensor-sizing"></a>適用于身分識別感應器大小調整的 Defender
 
 [!INCLUDE [Product short](includes/product-short.md)]感應器可支援根據網域控制站產生的網路流量來監視網域控制站。 下表是估計值。 感應器最後剖析的數量取決於流量的數量和流量的分配。
 
@@ -73,7 +75,9 @@ ms.locfileid: "96544227"
 |VMWare|確保設定的記憶體量和保留的記憶體量相同，或是在 VM 設定中選取以下選項 - **保留所有客體記憶體 (全部鎖定)** 。|
 |其他虛擬化主機|請參閱廠商提供的文件，以了解如何確保記憶體能在任何時候均向 VM 配置。 |
 
-## <a name="domain-controller-traffic-estimation"></a><a name="manual-sizing"></a>網域控制站流量估計
+<a name="manual-sizing"></a>
+
+## <a name="domain-controller-traffic-estimation"></a>網域控制站流量估計
 
 如果基於某些原因而無法使用重設 [!INCLUDE [Product short](includes/product-short.md)] 大小工具，請從所有網域控制站手動收集 packet/sec 計數器資訊。 手動收集所有網域控制站 24 小時內的每秒封包計數器資訊。 然後，針對每個網域控制站，計算每日平均和最繁忙期間的 (15 分鐘) 平均。 下列各節將說明如何從一個網域控制站收集每秒封包計數器的指示。
 

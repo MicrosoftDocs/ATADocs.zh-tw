@@ -3,14 +3,14 @@ title: 適用于身分識別支援的 Microsoft Defender
 description: 描述取得 Microsoft Defender 身分識別的支援協助的程式。
 ms.date: 12/20/2020
 ms.topic: conceptual
-ms.openlocfilehash: 80b863208c560cc0bfe74800efe1a220ee190fc3
-ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
+ms.openlocfilehash: 5a4364bf28b56159937e2564449eb7e0b4d6150d
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100515320"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533391"
 ---
-# <a name="product-long-information-and-support"></a>[!INCLUDE [Product long](includes/product-long.md)] 資訊和支援
+# <a name="microsoft-defender-for-identity-information-and-support"></a>適用于身分識別資訊與支援的 Microsoft Defender
 
 使用下列資源可協助您瞭解、部署和支援 [!INCLUDE [Product long](includes/product-long.md)] 您的組織。
 

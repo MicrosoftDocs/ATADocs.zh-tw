@@ -3,14 +3,14 @@ title: 了解適用於身分識別的 Microsoft Defender 入口網站
 description: 描述如何登入適用於身分識別的 Microsoft Defender 入口網站與入口網站的元件
 ms.date: 10/27/2020
 ms.topic: conceptual
-ms.openlocfilehash: 00e29d828a58a76bfdbec1e28582135466d756ea
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: be8c3449b1debeb2cc0aa0da2ad560e394996344
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544567"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534543"
 ---
-# <a name="working-with-the-product-long-portal"></a>使用[!INCLUDE [Product long](includes/product-long.md)] 入口網站
+# <a name="working-with-the-microsoft-defender-for-identity-portal"></a>使用適用于身分識別入口網站的 Microsoft Defender
 
 > [!NOTE]
 > 此頁面所述的[!INCLUDE [Product long](includes/product-long.md)] 功能也可使用新的 [Cloud App Security 入口網站](https://portal.cloudappsecurity.com)來存取。
@@ -23,12 +23,12 @@ ms.locfileid: "96544567"
 
 此文章描述如何使用[!INCLUDE [Product short](includes/product-short.md)] 入口網站的關鍵元素。
 
-## <a name="enabling-access-to-the-product-short-portal"></a>啟用[!INCLUDE [Product short](includes/product-short.md)] 入口網站的存取
+## <a name="enabling-access-to-the-defender-for-identity-portal"></a>針對身分識別入口網站啟用 Defender 的存取權
 
 若要成功登入[!INCLUDE [Product short](includes/product-short.md)] 入口網站，您必須使用已指派至 Azure Active Directory 安全性群組並具備[!INCLUDE [Product short](includes/product-short.md)] 入口網站存取權的使用者來登入。
 如需[!INCLUDE [Product short](includes/product-short.md)] 中有關角色型存取控制 (RBAC) 的詳細資訊，請參閱[使用[!INCLUDE [Product short](includes/product-short.md)] 角色群組](role-groups.md)。
 
-## <a name="logging-into-the-product-short-portal"></a>登入[!INCLUDE [Product short](includes/product-short.md)] 入口網站
+## <a name="logging-into-the-defender-for-identity-portal"></a>登入適用于身分識別入口網站的 Defender
 
 1. 進入[!INCLUDE [Product short](includes/product-short.md)] 入口網站的方法包括登入入口網站 [https://portal.atp.azure.com](https://portal.atp.azure.com) 並選取您的執行個體，或瀏覽到執行個體 URL：`https://*instancename*.atp.azure.com` 。
 

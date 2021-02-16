@@ -3,14 +3,14 @@ title: 使用記錄針對 Microsoft Defender 進行身分識別進行疑難排�
 description: 說明如何使用 Microsoft Defender 進行身分識別記錄來針對問題進行疑難排解
 ms.date: 10/27/2020
 ms.topic: how-to
-ms.openlocfilehash: beea555d45f1e06ea3eddeffbf057c392003a8d2
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: 2c902576b4cf7b0acf58371bafe4bb60404890ba
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542102"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534509"
 ---
-# <a name="troubleshooting-product-long-sensor-using-the-product-short-logs"></a>[!INCLUDE [Product long](includes/product-long.md)]使用記錄針對感應器進行疑難排解 [!INCLUDE [Product short](includes/product-short.md)]
+# <a name="troubleshooting-microsoft-defender-for-identity-sensor-using-the-defender-for-identity-logs"></a>使用 Defender 進行身分識別記錄針對身分識別感應器進行 Microsoft Defender 疑難排解
 
 這些 [!INCLUDE [Product short](includes/product-short.md)] 記錄可讓您深入瞭解每個 [!INCLUDE [Product long](includes/product-long.md)] 感應器元件在任何指定時間點的執行狀況。
 
@@ -27,7 +27,7 @@ ms.locfileid: "96542102"
 > [!NOTE]
 > 前三個記錄檔有大小上限 50 MB。 到達該大小時，會開啟新的記錄檔，並將上一個記錄檔重新命名為「&lt;原始檔案名稱&gt;-Archived-00000」，該數字隨每次重新命名遞增。 根據預設，如果已經有超過 10 個相同類型的檔案，就會刪除最舊的檔案。
 
-## <a name="product-short-deployment-logs"></a>[!INCLUDE [Product short](includes/product-short.md)] 部署記錄檔
+## <a name="defender-for-identity-deployment-logs"></a>適用于身分識別部署記錄的 Defender
 
 [!INCLUDE [Product short](includes/product-short.md)]部署記錄檔位於安裝產品之使用者的 temp 目錄中。 在預設安裝位置中，可以找到： **C:\Users\Administrator\AppData\Local\Temp** (或超過% Temp% ) 的一個目錄。
 

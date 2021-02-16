@@ -3,12 +3,12 @@ title: 適用於身分識別的 Microsoft Defender 安全性警示橫向移動�
 description: 適用於身分識別的 Microsoft Defender 劇本描述如何模擬適用於身分識別的 Defender 所偵測到的橫向移動威脅。
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.openlocfilehash: 50880150bb8937875677985f3a61119495d566eb
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: b0305dfbcfba45a796d2c50e21ab31fba8705520
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542697"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533710"
 ---
 # <a name="tutorial-lateral-movement-playbook"></a>教學課程：橫向移動劇本
 
@@ -131,7 +131,7 @@ net user ronhd /domain
 
 您可以看到，對於這個特定的處理程序，我們在記憶體中有 RonHD 的 TGT。 我們已經在實驗室中順利執行 Overpass-the-Hash 攻擊。 我們轉換了之前遭到入侵的 NTLM 雜湊，並用來取得 Kerberos TGT。 之後該 Kerberos TGT 會用來存取其他網路資源，在此案例中為 AdminPC。
 
-### <a name="overpass-the-hash-detected-in-product-short"></a>在[!INCLUDE [Product short](includes/product-short.md)] 中偵測到 Overpass-the-Hash
+### <a name="overpass-the-hash-detected-in-defender-for-identity"></a>越過-在 Defender 中偵測到身分識別的雜湊
 
 透過查看[!INCLUDE [Product short](includes/product-short.md)] 主控台，我們可以看到下列事項：
 
@@ -233,7 +233,7 @@ xcopy mimikatz.exe \\adminpc\c$\temp
 
 成功！ 透過我們的模擬攻擊，我們在網域控制站上取得了系統管理員存取權，並成功地入侵我們實驗室的 Active Directory 網域/樹系。
 
-### <a name="pass-the-ticket-detection-in-product-short"></a>[!INCLUDE [Product short](includes/product-short.md)] 中的傳遞票證偵測
+### <a name="pass-the-ticket-detection-in-defender-for-identity"></a>在 Defender 中針對身分識別傳遞票證偵測
 
 大部分的安全性工具沒辦法偵測到使用合法認證存取合法資源的時機。 相比之下，[!INCLUDE [Product short](includes/product-short.md)] 在這一連串事件中會偵測到什麼並發出警示？
 

@@ -3,14 +3,14 @@ title: 快速入門：下載適用於身分識別的 Microsoft Defender 感應�
 description: 在安裝適用於身分識別的 Microsoft Defender 中，其步驟 3 可協助您下載適用於身分識別的 Defender 感應器安裝套件。
 ms.date: 10/26/2020
 ms.topic: quickstart
-ms.openlocfilehash: f0eb884a7367ae50e076e0298f720a94def7da8c
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: 66e335931f830fac4f20a910396614669c14b465
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543122"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534050"
 ---
-# <a name="quickstart-download-the-product-long-sensor-setup-package"></a>快速入門：下載 [!INCLUDE [Product long](includes/product-long.md)] 感應器安裝套件
+# <a name="quickstart-download-the-microsoft-defender-for-identity-sensor-setup-package"></a>快速入門：下載適用于身分識別感應器安裝套件的 Microsoft Defender
 
 在此快速入門中，您將會從入口網站下載 [!INCLUDE [Product long](includes/product-long.md)] 感應器安裝套件。
 

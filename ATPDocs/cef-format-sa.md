@@ -3,18 +3,18 @@ title: 適用於身分識別的 Microsoft Defender SIEM 記錄參考
 description: 提供從適用於身分識別的 Microsoft Defender 傳送到您 SIEM 的可疑活動記錄範例。
 ms.date: 10/26/2020
 ms.topic: conceptual
-ms.openlocfilehash: f5be050f11fc41e19c37410060acb825642369e3
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: fd2c2547e00f1bf2542ab0fd42a14854d3d25287
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544108"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534186"
 ---
-# <a name="product-long-siem-log-reference"></a>[!INCLUDE [Product long](includes/product-long.md)] SIEM 記錄參考
+# <a name="microsoft-defender-for-identity-siem-log-reference"></a>適用於身分識別的 Microsoft Defender SIEM 記錄參考
 
 [!INCLUDE [Product short](includes/product-short.md)] 可以將安全性警示與健康情況警示事件轉送到您的 SIEM。 警示與事件使用 CEF 格式。 此參考文章提供傳送到您 SIEM 的記錄範例。
 
-## <a name="sample-product-short-security-alerts-in-cef-format"></a>使用 CEF 格式的範例[!INCLUDE [Product short](includes/product-short.md)] 安全性警示
+## <a name="sample-defender-for-identity-security-alerts-in-cef-format"></a>CEF 格式的身分識別安全性警示範例 Defender
 
 下列欄位及其值會轉送到您的 SIEM：
 

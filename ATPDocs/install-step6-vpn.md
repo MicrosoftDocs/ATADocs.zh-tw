@@ -3,12 +3,12 @@ title: 安裝 Microsoft Defender 以進行身分識別 VPN 整合
 description: 藉由整合 VPN 來收集 Microsoft Defender 身分識別的帳戶處理資訊。
 ms.date: 12/23/2020
 ms.topic: how-to
-ms.openlocfilehash: 80b4bdf29db05d0c2f42887dacff223b3067ba49
-ms.sourcegitcommit: e2b4ad613aa171f604ae526f0cba05fe79f4a8cb
+ms.openlocfilehash: 3b86ee864e08998fd532b39a30d566b83e928edf
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97753400"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533999"
 ---
 # <a name="integrate-vpn"></a>整合 VPN
 
@@ -50,7 +50,7 @@ ms.locfileid: "97753400"
 
     ![VPN 設定](media/vpn-set-accounting.png)
 
-### <a name="configure-vpn-in-product-short"></a>在中設定 VPN [!INCLUDE [Product short](includes/product-short.md)]
+### <a name="configure-vpn-in-defender-for-identity"></a>在 Defender 中為身分識別設定 VPN
 
 [!INCLUDE [Product short](includes/product-short.md)] 收集 VPN 資料，以協助分析電腦連線到網路的位置，以及偵測可疑的 VPN 連線。
 
@@ -67,7 +67,7 @@ ms.locfileid: "97753400"
 
 ## <a name="see-also"></a>另請參閱
 
-- [[!INCLUDE [Product short](includes/product-short.md)] 大小調整工具](https://aka.ms/aatpsizingtool) \(英文\)
+- [[!INCLUDE [Product short](includes/product-short.md)] 大小調整工具](https://aka.ms/aatpsizingtool)
 - [設定事件收集](configure-event-collection.md)
 - [[!INCLUDE [Product short](includes/product-short.md)] 先決條件](prerequisites.md)
 - [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

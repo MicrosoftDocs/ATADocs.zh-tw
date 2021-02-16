@@ -3,14 +3,14 @@ title: 設定適用於身分識別的 Microsoft Defender 通知
 description: 描述如何設定適用於身分識別的 Microsoft Defender 安全性警示，以在偵測到可疑活動時收到通知。
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 49d78935b9246797b1d83f24a06a7ffe16f57699
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: ad02fab44b76fc9d30af59a331ec5243796224d5
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544465"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533642"
 ---
-# <a name="set-product-long-notifications"></a>設定[!INCLUDE [Product long](includes/product-long.md)] 通知
+# <a name="set-microsoft-defender-for-identity-notifications"></a>設定適用於身分識別的 Microsoft Defender 通知
 
 [!INCLUDE [Product long](includes/product-long.md)] 可在偵測到可疑活動時通知您，並透過電子郵件發出安全性警示或健康情況警示。
 

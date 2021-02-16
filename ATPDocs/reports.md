@@ -3,14 +3,14 @@ title: 使用適用於身分識別的 Microsoft Defender 報告
 description: 描述如何在適用於身分識別的 Microsoft Defender 中產生報告以監視您的網路。
 ms.date: 10/27/2020
 ms.topic: conceptual
-ms.openlocfilehash: ca2724526aa7fd1dcf31d2e8242930e215ed6a05
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: 1d09bd832167d960323ed0422a7858e9e512c4e1
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544448"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533455"
 ---
-# <a name="product-long-reports"></a>[!INCLUDE [Product long](includes/product-long.md)] 報告
+# <a name="microsoft-defender-for-identity-reports"></a>適用于身分識別報告的 Microsoft Defender
 
 [!INCLUDE [Product long](includes/product-long.md)] 入口網站中的 [[!INCLUDE [Product short](includes/product-short.md)] 報告] 區段可讓您排程或立即產生並下載報告，為您提供系統與實體狀態資訊。 您可使用報告功能建立系統健全狀況、安全性警訊，以及在環境中偵測到之潛在橫向移動路徑的報告。
 

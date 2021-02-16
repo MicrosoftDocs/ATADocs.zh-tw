@@ -3,14 +3,14 @@ title: 適用于身分識別監視活動的 Microsoft Defender 篩選和搜尋
 description: 本文概述如何使用 Microsoft Defender 的身分識別來篩選和搜尋監視的活動。
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 9e1758475c9b364e1726e5f145676110b98389d9
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: e338e0294ad407c17df2476e7a7a5395f27756f2
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543802"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533914"
 ---
-# <a name="product-long-monitored-activities-search-and-filter"></a>[!INCLUDE [Product long](includes/product-long.md)] 受監視的活動搜尋和篩選
+# <a name="microsoft-defender-for-identity-monitored-activities-search-and-filter"></a>適用于身分識別監視活動的 Microsoft Defender 搜尋和篩選
 
 > [!NOTE]
 > 此頁面所述的[!INCLUDE [Product short](includes/product-short.md)] 功能也可使用新的[入口網站](https://portal.cloudappsecurity.com)來存取。

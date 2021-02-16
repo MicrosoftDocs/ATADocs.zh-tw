@@ -3,26 +3,26 @@ title: 監視 Microsoft Defender 的身分識別系統健康情況和事件
 description: 使用健康情況中心來檢查 Microsoft Defender for Identity service 的運作情況，並在事件檢視器中查看潛在問題的警示，並查看系統事件。
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: e2a4c757682194013d34bddd6581402b5fe60920
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: ac03020c559a860fded89a496bc927da06fce3d9
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544006"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534288"
 ---
-# <a name="work-with-product-long-health-and-events"></a>使用 [!INCLUDE [Product long](includes/product-long.md)] 健康情況和事件
+# <a name="work-with-microsoft-defender-for-identity-health-and-events"></a>使用 Microsoft Defender 進行身分識別健康情況和事件
 
-## <a name="product-long-health-center"></a>[!INCLUDE [Product long](includes/product-long.md)] 健康情況中心
+## <a name="microsoft-defender-for-identity-health-center"></a>適用于身分識別健康狀態中心的 Microsoft Defender
 
 [!INCLUDE [Product long](includes/product-long.md)]健全狀況中心可讓您知道 [!INCLUDE [Product short](includes/product-short.md)] 實例的執行情況，並在發生問題時發出警示。
 
-## <a name="working-with-the-product-short-health-center"></a>使用健康情況 [!INCLUDE [Product short](includes/product-short.md)] 中心
+## <a name="working-with-the-defender-for-identity-health-center"></a>使用 Defender 進行身分識別健康情況中心
 
 [!INCLUDE [Product short](includes/product-short.md)]健康情況中心會在導覽列中的健康情況中心圖示上方) 的紅色點 (發出警示，讓您知道有問題發生。
 
 ![[!包含 [Product short] (include/product-short. md) ] 健全狀況中心紅點工具列](media/health-bar.png)
 
-### <a name="managing-product-short-health"></a>管理 [!INCLUDE [Product short](includes/product-short.md)] 健全狀況
+### <a name="managing-defender-for-identity-health"></a>管理適用于身分識別健康情況的 Defender
 
 若要檢查實例的整體健全狀況 [!INCLUDE [Product short](includes/product-short.md)] ，請選取 [ **健全狀況** ![ [！包含 [產品簡短] (包含/產品簡短的 md) ] 健康情況中心圖示](media/red-dot.png)
 

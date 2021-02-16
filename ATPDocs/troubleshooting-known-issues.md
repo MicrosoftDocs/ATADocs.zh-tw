@@ -3,14 +3,14 @@ title: 針對身分識別已知問題進行 Microsoft Defender 疑難排解
 description: 說明如何針對身分識別的 Microsoft Defender 問題進行疑難排解。
 ms.date: 02/04/2021
 ms.topic: how-to
-ms.openlocfilehash: 933d4442d88f2d03ddcd2fa4c90d59d98e229340
-ms.sourcegitcommit: 50e6f5511329e56545fa5ab4c9f5ab69046d1e10
+ms.openlocfilehash: f11d840aa46ec86c88c04ea2892443fd2dc20db3
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99551607"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534492"
 ---
-# <a name="troubleshooting-product-long-known-issues"></a>針對 [!INCLUDE [Product long](includes/product-long.md)] 已知問題進行疑難排解
+# <a name="troubleshooting-microsoft-defender-for-identity-known-issues"></a>針對身分識別已知問題進行 Microsoft Defender 疑難排解
 
 ## <a name="sensor-failure-communication-error"></a>感應器失敗通訊錯誤
 
@@ -107,7 +107,9 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 ./"Azure ATP sensor Setup.exe" /quiet NetFrameworkCommandLineArguments="/q" AccessKey="<Access Key>"
 ```
 
-## <a name="product-short-sensor-nic-teaming-issue"></a>[!INCLUDE [Product short](includes/product-short.md)] 感應器 NIC 小組問題 <a name="nic-teaming"></a>
+<a name="nic-teaming"></a>
+
+## <a name="defender-for-identity-sensor-nic-teaming-issue"></a>適用于身分識別感應器 NIC 小組問題的 Defender
 
 如果您嘗試在設定了 [!INCLUDE [Product short](includes/product-short.md)] NIC 小組介面卡的電腦上安裝感應器，則會收到安裝錯誤。 如果您想要 [!INCLUDE [Product short](includes/product-short.md)] 在使用 NIC 小組設定的電腦上安裝感應器，請遵循下列指示：
 
@@ -209,7 +211,7 @@ Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.O
 
 **感應器記錄項目：**
 
-EventLogException EventLogException：：控制碼在 void EventLogException 時無效。. 擲回 (int errorCode) 的物件系統。 NativeWrapper. EvtGetEventInfo (EventLogHandle 控制碼，EvtEventPropertyId enumType) （字串 System.Diagnostics.Eventing.Reader.EventLogRecord.get_ContainerLog ( # A5）。
+EventLogException EventLogException：：控制碼在 void EventLogException 時無效。. 擲回 (int errorCode) 的物件系統上。 NativeWrapper. EvtGetEventInfo (EventLogHandle 控制碼，EvtEventPropertyId enumType) ，于字串 System.Diagnostics.Eventing.Reader.EventLogRecord.get_ContainerLog 中 () 
 
 **原因：**
 

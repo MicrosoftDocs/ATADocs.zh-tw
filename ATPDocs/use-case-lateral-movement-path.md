@@ -3,14 +3,14 @@ title: 了解及使用搭配適用於身分識別的 Microsoft Defender 的橫�
 description: 此文章描述適用於身分識別的 Microsoft Defender 的潛在橫向移動路徑 (LMP)
 ms.date: 10/27/2020
 ms.topic: conceptual
-ms.openlocfilehash: 21d672a6c2220229060189120f1daefacd47416b
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: 60fac487690d5ff71eb2df5d6ee52c15c336941e
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544533"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533438"
 ---
-# <a name="product-long-lateral-movement-paths-lmps"></a>[!INCLUDE [Product long](includes/product-long.md)] 橫向移動路徑 (LMP)
+# <a name="microsoft-defender-for-identity-lateral-movement-paths-lmps"></a>適用于身分識別橫向移動路徑的 Microsoft Defender (Lmp) 
 
 > [!NOTE]
 > 此頁面所述的[!INCLUDE [Product long](includes/product-long.md)] 功能也可使用新的[入口網站](https://portal.cloudappsecurity.com)來存取。
@@ -23,7 +23,7 @@ ms.locfileid: "96544533"
 
 橫向移動攻擊通常使用許多不同的技術來達成。 攻擊者最常用的某些方法為認證竊取和票證傳遞。 在這兩種方法中，攻擊者會使用您的非敏感性帳戶，透過入侵帳戶、群組及擁有敏感性帳戶之電腦中，共用已儲存登入認證的非敏感性電腦來進行橫向移動。
 
-## <a name="where-can-i-find-product-short-lmps"></a>我可以在哪裡找到[!INCLUDE [Product short](includes/product-short.md)] ？
+## <a name="where-can-i-find-defender-for-identity-lmps"></a>哪裡可以找到 Defender 以進行身分識別 Lmp？
 
 [!INCLUDE [Product short](includes/product-short.md)] 探索到位於 LMP 中的每個電腦或使用者設定檔都有 [橫向移動路徑] 索引標籤。在潛在 LMP 中永遠不會探索到沒有索引標籤的電腦及設定檔。
 

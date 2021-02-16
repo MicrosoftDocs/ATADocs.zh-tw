@@ -3,14 +3,14 @@ title: 什麼是適用於身分識別的 Microsoft Defender？
 description: 說明什麼是適用於身分識別的 Microsoft Defender，以及其可以偵測哪種類型的可疑活動
 ms.date: 12/23/2020
 ms.topic: overview
-ms.openlocfilehash: 1329c93e18941ca42e9d446abdb0576480543992
-ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
+ms.openlocfilehash: 2893567b6aca307c4a99148804544aa7da8863ea
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100515558"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534465"
 ---
-# <a name="what-is-product-long"></a>什麼是 [!INCLUDE [Product long](includes/product-long.md)]？
+# <a name="what-is-microsoft-defender-for-identity"></a>什麼是適用於身分識別的 Microsoft Defender？
 
 [!INCLUDE [Product long](includes/product-long.md)] (先前是 Azure 進階威脅防護 (ATP)，亦稱為 Azure ATP) 是雲端式安全性解決方案，其可運用您的內部部署 Active Directory 訊號來識別、偵測及調查針對您組織的進階威脅、身分識別盜用，以及惡意的內部人員動作。
 
@@ -57,25 +57,25 @@ ms.locfileid: "100515558"
 
 [!INCLUDE [Product short](includes/product-short.md)] 的設計目的是減少一般警示干擾，只在簡單的即時組織攻擊時間軸中提供相關的重要安全性警示。 [!INCLUDE [Product short](includes/product-short.md)] 的攻擊時間軸檢視可讓您運用智慧分析的情報，安心專注於重要工作。 使用[!INCLUDE [Product short](includes/product-short.md)] 來快速調查威脅，並取得整個組織中使用者、裝置與網路資源的見解。 與適用於端點的 Microsoft Defender 緊密整合，透過可抵禦作業系統上進階持續威脅的額外偵測和防護，提供另一道增強的安全性保障。
 
-## <a name="additional-resources-for-product-short"></a>適用於[!INCLUDE [Product short](includes/product-short.md)] 的其他資源
+## <a name="additional-resources-for-defender-for-identity"></a>適用于 Defender 身分識別的其他資源
 
 ### <a name="start-a-free-trial"></a>開始使用免費試用版
 
 [https://signup.microsoft.com/Signup?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7&ali=1](https://signup.microsoft.com/Signup?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7&ali=1 "Enterprise Mobility + Security E5")
 
-### <a name="follow-product-short-on-microsoft-tech-community"></a>在 Microsoft Tech 社群上關注[!INCLUDE [Product short](includes/product-short.md)]
+### <a name="follow-defender-for-identity-on-microsoft-tech-community"></a>在 Microsoft Tech 團體上追蹤適用于身分識別的 Defender
 
 [https://aka.ms/MDIcommunity](https://aka.ms/MDIcommunity "[!INCLUDE [Product short](includes/product-short.md)] on Microsoft Tech Community")
 
-### <a name="join-the-product-short-yammer-community"></a>加入[!INCLUDE [Product short](includes/product-short.md)] Yammer 社群
+### <a name="join-the-defender-for-identity-yammer-community"></a>加入適用于 Identity Yammer 的 Defender 社區
 
 [https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893](https://www.yammer.com/azureadvisors/#/threads/inGroup?type=in_group&feedId=9386893 "[!INCLUDE [Product short](includes/product-short.md)] Yammer community")
 
-### <a name="visit-the-product-short-product-page"></a>瀏覽[!INCLUDE [Product short](includes/product-short.md)] 產品頁面
+### <a name="visit-the-defender-for-identity-product-page"></a>造訪適用于身分識別的 Defender 產品頁面
 
 [https://www.microsoft.com/microsoft-365/security/identity-defender](https://www.microsoft.com/microsoft-365/security/identity-defender "[!INCLUDE [Product short](includes/product-short.md)] product page")
 
-### <a name="learn-more-about-product-short-architecture"></a>深入了解[!INCLUDE [Product short](includes/product-short.md)] 架構
+### <a name="learn-more-about-defender-for-identity-architecture"></a>深入瞭解適用于身分識別架構的 Defender
 
 [[!INCLUDE [Product short](includes/product-short.md)] 架構](architecture.md)
 

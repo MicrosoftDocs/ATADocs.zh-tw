@@ -3,12 +3,12 @@ title: 在適用於身分識別的 Microsoft Defender 中設定 Windows 事件�
 description: 在安裝適用於身分識別的 Microsoft Defender 的這個步驟中，您要設定 Windows 事件收集。
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 71e0dd15b820c87df3bb50252160a6e92bacf310
-ms.sourcegitcommit: 30203dd6e74eec3ce4bba98056b664cad455a49e
+ms.openlocfilehash: a387b1fa1437093a21515c5f27e77dd7f1d2da0c
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98758201"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100534118"
 ---
 # <a name="configure-windows-event-collection"></a>設定 Windows 事件集合
 
@@ -101,7 +101,7 @@ ms.locfileid: "98758201"
 1. 在套用 GPO 後，新的事件會顯示在您的 **Windows 事件記錄檔** 下。
 
 <!--
-## [!INCLUDE [Product short](includes/product-short.md)] Advanced Audit Policy check
+## Defender for Identity Advanced Audit Policy check
 
 To make it easier to verify the current status of each of your domain controller's Advanced Audit Policies, [!INCLUDE [Product short](includes/product-short.md)] automatically checks your existing Advanced Audit Policies and issues health alerts for policy settings that require modification. Each health alert provides specific details of the domain controller, the problematic policy as well as remediation suggestions.
 

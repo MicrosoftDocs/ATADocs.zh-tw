@@ -3,14 +3,14 @@ title: 適用于身分識別個人資料原則的 Microsoft Defender
 description: 提供如何從 Microsoft Defender for Identity 刪除私人資訊和個人資料的相關資訊連結。
 ms.date: 10/26/2020
 ms.topic: conceptual
-ms.openlocfilehash: c5af419c2be751a8b9f92855f57f13669860de1a
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
+ms.openlocfilehash: b8336d4b6508fc9de462dcdbb6bc6389dd2fa0f2
+ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542357"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100533388"
 ---
-# <a name="product-long-data-security-and-privacy"></a>[!INCLUDE [Product long](includes/product-long.md)] 資料安全性和隱私權
+# <a name="microsoft-defender-for-identity-data-security-and-privacy"></a>適用于身分識別資料安全性和隱私權的 Microsoft Defender
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
@@ -44,6 +44,6 @@ ms.locfileid: "96542357"
 
 - 如需 [!INCLUDE [Product short](includes/product-short.md)] 信任和合規性的相關資訊，請參閱 [服務信任入口](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) 網站和 [Microsoft 365 企業版 GDPR 合規性網站](/microsoft-365/compliance/gdpr?view=o365-worldwide&preserve-view=true)。
 
-## <a name="security-and-privacy-for-product-short-us-government-gcc-high-customers"></a>[!INCLUDE [Product short](includes/product-short.md)]美國政府 GCC High 客戶的安全性和隱私權
+## <a name="security-and-privacy-for-defender-for-identity-us-government-gcc-high-customers"></a>適用于身分識別美國政府 GCC High 客戶的 Defender 安全性和隱私權
 
 如需適用于 [!INCLUDE [Product short](includes/product-short.md)] 美國政府 GCC High 客戶之合規性標準和客戶資料位置的詳細資訊，請參閱 [美國政府服務描述的 Enterprise Mobility + Security](/enterprise-mobility-security/solutions/ems-govt-service-description)。

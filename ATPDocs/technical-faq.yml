@@ -4,12 +4,12 @@ metadata:
   description: 提供有關 Microsoft Defender 身分識別和相關解答的常見問題清單
   ms.date: 10/27/2020
   ms.topic: conceptual
-  ms.openlocfilehash: dfb8184376ea0c98516e28fce64eff6ac8a453d5
-  ms.sourcegitcommit: af41733212c2102c223fed8c8602a21a1f667080
+  ms.openlocfilehash: 67326d1f4ba6291560fc25a21bca298d87bc5a58
+  ms.sourcegitcommit: f92dca4dc3d8a25b1a06f68ac7a9f8318105bcd8
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 02/14/2021
-  ms.locfileid: "100520710"
+  ms.lasthandoff: 02/17/2021
+  ms.locfileid: "100630470"
 title: 適用于身分識別的 Microsoft Defender 常見問題
 summary: >
   本文提供 Microsoft Defender for Identity 分為下列類別的常見問題和解答清單：
@@ -154,7 +154,7 @@ sections:
       當帳戶為被指定為機密之群組的成員時，便會發生這種情況 (例如「網域系統管理員」)。
 
 
-      若要了解為何是機密帳戶，您可以檢閱其群組成員資格，以了解它所屬的機密群組 (其所屬的群組也可以是因為另一個群組而機密，因此您應該執行相同的程序，直到找出最高層級的機密群組)。 您也可以手動[將帳戶標記為敏感性](sensitive-accounts.md)。
+      若要了解為何是機密帳戶，您可以檢閱其群組成員資格，以了解它所屬的機密群組 (其所屬的群組也可以是因為另一個群組而機密，因此您應該執行相同的程序，直到找出最高層級的機密群組)。 您也可以手動[將帳戶標記為敏感性](manage-sensitive-honeytoken-accounts.md)。
   - question: 必須撰寫自己的規則，並建立臨界值/基準嗎？
     answer: >
       使用 Defender 進行身分識別時，不需要建立規則、臨界值或基準，然後微調。 適用于身分識別的 Defender 會分析使用者、裝置和資源之間的行為，以及彼此之間的關聯性，並且可以快速偵測可疑的活動和已知的攻擊。 部署後的三周，Defender for Identity 開始偵測行為可疑的活動。 另一方面，Defender for Identity 會在部署之後立即開始偵測已知的惡意攻擊和安全性問題。

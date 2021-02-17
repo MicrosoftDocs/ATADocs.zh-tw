@@ -3,12 +3,12 @@ title: 適用于身分識別的 Microsoft Defender 實用資源清單
 description: 本文提供適用于身分識別的 Microsoft Defender 實用資源清單
 ms.date: 10/27/2020
 ms.topic: conceptual
-ms.openlocfilehash: 8a814a51fdc63f59b36288922017280e0d7f3968
-ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.openlocfilehash: 218422d15ac797998b0eb0ecfb87c5b641823246
+ms.sourcegitcommit: f92dca4dc3d8a25b1a06f68ac7a9f8318105bcd8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100533302"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630453"
 ---
 # <a name="microsoft-defender-for-identity-readiness-guide"></a>Microsoft Defender 身分識別就緒指南
 
@@ -53,7 +53,7 @@ ms.locfileid: "100533302"
 
 - [ [!INCLUDE [Product short](includes/product-short.md)] 安全性警示指南](suspicious-activity-guide.md)瞭解如何分級並採取您的偵測的後續步驟 [!INCLUDE [Product short](includes/product-short.md)] 。
 - [[!INCLUDE [Product short](includes/product-short.md)] 橫向移動路徑](use-case-lateral-movement-path.md)
-- [將群組標記為機密](sensitive-accounts.md)掌握機密安全性群組的認證暴露。
+- [將群組標記為機密](manage-sensitive-honeytoken-accounts.md)掌握機密安全性群組的認證暴露。
 
 ## <a name="security-best-practices"></a>安全性最佳做法
 
@@ -71,5 +71,5 @@ Channel 9：[Microsoft 安全性 Channel 9 頁面](https://channel9.msdn.com/Sho
 
 ## <a name="see-also"></a>另請參閱
 
-- [使用機密帳戶](sensitive-accounts.md)
+- [使用機密帳戶](manage-sensitive-honeytoken-accounts.md)
 - [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

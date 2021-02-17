@@ -3,12 +3,12 @@ title: 對 Microsoft Defender 進行身分識別移動的先進威脅分析
 description: 瞭解如何將現有的 Advanced 威脅分析安裝移至 Microsoft Defender 以進行身分識別。
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: 45b9004bc439a28e144686e3147b94b6019a7a0f
-ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.openlocfilehash: f363543cca20e0dba853c58db1e1c1cc0c60ce22
+ms.sourcegitcommit: f92dca4dc3d8a25b1a06f68ac7a9f8318105bcd8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100533795"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630538"
 ---
 # <a name="advanced-threat-analytics-ata-to-microsoft-defender-for-identity"></a>適用于身分識別的 Advanced 威脅分析 (ATA) 至 Microsoft Defender
 
@@ -58,9 +58,9 @@ ms.locfileid: "100533795"
 1. 警示排除項目
     - 排除專案不能從 ATA 轉移到 [!INCLUDE [Product short](includes/product-short.md)] ，因此需要每個排除的詳細資料，才能複寫[ [!INCLUDE [Product short](includes/product-short.md)] 中的排除](excluding-entities-from-detections.md)專案。
 1. HoneyToken 帳戶的帳戶詳細資料。
-    - 如果您還沒有專屬的 HoneyToken 帳戶，請深入瞭解如何[在 [!INCLUDE [Product short](includes/product-short.md)] 中 honeytoken](install-step7.md) ，並建立要用於此用途的新帳戶。
+    - 如果您還沒有專屬的 HoneyToken 帳戶，請深入瞭解如何[在 [!INCLUDE [Product short](includes/product-short.md)] 中 honeytoken](configure-detection-exclusions.md) ，並建立要用於此用途的新帳戶。
 1. 您想要手動標記為敏感性實體的所有實體 (電腦、群組、使用者) 完整清單。
-    - 深入瞭解中 [敏感性實體](sensitive-accounts.md) 的重要性 [!INCLUDE [Product short](includes/product-short.md)] 。
+    - 深入瞭解中 [敏感性實體](manage-sensitive-honeytoken-accounts.md) 的重要性 [!INCLUDE [Product short](includes/product-short.md)] 。
 1. 報表排程[詳細資料](reports.md) (報表和排程時間的清單)。
 
 > [!NOTE]
@@ -99,8 +99,8 @@ ms.locfileid: "100533795"
 | 3  | 設定 [Syslog 通知](setting-syslog.md) | - [ ] |
 | 4  | [整合 VPN](install-step6-vpn.md) 資訊| - [ ] |
 | 5  | 設定 [WDATP 整合](integrate-mde.md)| - [ ] |
-| 6  | 設定 [HoneyToken](install-step7.md) 帳戶| - [ ] |
-| 7  | 標記[敏感性實體](sensitive-accounts.md)| - [ ] |
+| 6  | 設定 [HoneyToken](configure-detection-exclusions.md) 帳戶| - [ ] |
+| 7  | 標記[敏感性實體](manage-sensitive-honeytoken-accounts.md)| - [ ] |
 | 8  | 建立[安全性警示排除項目](excluding-entities-from-detections.md)| - [ ] |
 | 9 | [電子郵件通知切換](notifications.md) | - [ ] |
 | 10  | [排程報表設定](reports.md) (報表和排程時間的清單)| - [ ] |

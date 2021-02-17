@@ -3,12 +3,12 @@ title: 適用於身分識別的 AzMicrosoft Defender：使用者調查教學課�
 description: 本文說明如何使用適用於身分識別的 Microsoft Defender 安全性警訊來調查可疑使用者。
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.openlocfilehash: c9d3cb67ff4eeae0e1f4a0808751d96c67cf326e
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: 783b2b4cc12bfa84812810f754deedb70c1718bb
+ms.sourcegitcommit: f92dca4dc3d8a25b1a06f68ac7a9f8318105bcd8
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96542816"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630521"
 ---
 # <a name="tutorial-investigate-a-user"></a>教學課程：調查使用者
 
@@ -29,7 +29,7 @@ ms.locfileid: "96542816"
 檢查並調查使用者設定檔中的下列詳細資料和活動：
 
 1. 誰是[使用者](entity-profiles.md)？
-    1. 使用者是否為[敏感性使用者](sensitive-accounts.md) (例如系統管理員或關注清單等)？
+    1. 使用者是否為[敏感性使用者](manage-sensitive-honeytoken-accounts.md) (例如系統管理員或關注清單等)？
     1. 他們在組織中扮演什麼角色？
     1. 他們在組織樹狀目錄中是否重要？
 

@@ -3,12 +3,12 @@ title: 適用於身分識別的 Microsoft Defender 網域支配安全性警示
 description: 此文章說明偵測到組織受攻擊時 (通常在網域支配階段)，發出的適用於身分識別的 Microsoft Defender 警訊。
 ms.date: 12/23/2020
 ms.topic: tutorial
-ms.openlocfilehash: c7376b617f69261c848bede401ff083612545457
-ms.sourcegitcommit: e2b4ad613aa171f604ae526f0cba05fe79f4a8cb
-ms.translationtype: HT
+ms.openlocfilehash: 82ebc2fdc88eb1a7b35e70ba8983f22d592c48e9
+ms.sourcegitcommit: f92dca4dc3d8a25b1a06f68ac7a9f8318105bcd8
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97753349"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630700"
 ---
 # <a name="tutorial-domain-dominance-alerts"></a>教學課程：控制網域警訊
 
@@ -570,7 +570,7 @@ Windows 使用資料保護 API (DPAPI) 來安全地保護瀏覽器所儲存的�
 
 攻擊者將使用者新增至具有高權限的群組。 新增使用者是為了取得更多資源的存取權，並取得持續入侵管道。 此偵測需要分析使用者的群組修改活動，並在敏感性群組中出現異常新增時發出警示。 [!INCLUDE [Product short](includes/product-short.md)] 會持續執行分析。
 
-如需[!INCLUDE [Product short](includes/product-short.md)] 中敏感性群組的定義，請參閱[處理敏感性帳戶](sensitive-accounts.md)。
+如需[!INCLUDE [Product short](includes/product-short.md)] 中敏感性群組的定義，請參閱[處理敏感性帳戶](manage-sensitive-honeytoken-accounts.md)。
 
 此偵測需要網域控制站上稽核的事件。 確保您的網域控制站會[稽核所需事件](configure-windows-event-collection.md)。
 

@@ -3,12 +3,12 @@ title: 在適用於身分識別的 Microsoft Defender 中設定 Syslog 設定
 description: 說明如何讓適用於身分識別的 Microsoft Defender 在偵測到可疑活動時通知您 (透過電子郵件或適用於身分識別的 Defender 事件轉送)
 ms.date: 10/27/2020
 ms.topic: how-to
-ms.openlocfilehash: 587fd2cab00b982ace580ef2b8b587157c960891
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: 06064b549db61a65b068f78a66d886f29805444f
+ms.sourcegitcommit: f92dca4dc3d8a25b1a06f68ac7a9f8318105bcd8
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544346"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630504"
 ---
 # <a name="integrate-with-syslog"></a>與 Syslog 整合
 
@@ -57,5 +57,5 @@ ms.locfileid: "96544346"
 
 ## <a name="see-also"></a>另請參閱
 
-- [使用機密帳戶](sensitive-accounts.md)
+- [使用機密帳戶](manage-sensitive-honeytoken-accounts.md)
 - [查看[!INCLUDE [Product short](includes/product-short.md)] 論壇！](https://aka.ms/MDIcommunity)\(英文\)

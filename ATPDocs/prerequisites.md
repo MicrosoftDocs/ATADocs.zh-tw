@@ -3,12 +3,12 @@ title: 適用於身分識別的 Microsoft Defender 先決條件
 description: 描述適用於身分識別的 Microsoft Defender 在環境中成功部署的需求
 ms.date: 01/27/2021
 ms.topic: overview
-ms.openlocfilehash: 26148ba0c74dc0a23070d8fdfc65026db3c2baec
-ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.openlocfilehash: cc625d2c14fd392551bd2b4e83703dcef6d2ef10
+ms.sourcegitcommit: f92dca4dc3d8a25b1a06f68ac7a9f8318105bcd8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100533523"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630640"
 ---
 # <a name="microsoft-defender-for-identity-prerequisites"></a>適用於身分識別的 Microsoft Defender 先決條件
 
@@ -69,7 +69,7 @@ ms.locfileid: "100533523"
 
 - **Deleted Objects** 容器建議：使用者應該擁有「刪除的物件」容器的唯讀權限。 這個容器的唯讀權限可讓 [!INCLUDE [Product short](includes/product-short.md)] 偵測從 Active Directory 中刪除使用者的情形。 如需在 Deleted Objects 容器設定唯讀權限的相關資訊，請參閱 [View or Set Permissions on a Directory Object](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816824(v=ws.10)) (檢視或設定目錄物件的權限) 文章中的 **Changing permissions on a deleted object container** (變更已刪除物件的容器權限) 一節。
 
-- 選擇性的 **Honeytoken**：沒有任何網路活動之使用者的使用者帳戶。 此帳戶設定為 [!INCLUDE [Product short](includes/product-short.md)] Honeytoken 使用者。 如需使用 Honeytoken 的詳細資訊，請參閱[設定排除專案和 Honeytoken 使用者](install-step7.md)。
+- 選擇性的 **Honeytoken**：沒有任何網路活動之使用者的使用者帳戶。 此帳戶設定為 [!INCLUDE [Product short](includes/product-short.md)] Honeytoken 使用者。 如需使用 Honeytoken 的詳細資訊，請參閱[設定排除專案和 Honeytoken 使用者](configure-detection-exclusions.md)。
 
 - 選用：在部署獨立感應器時，必須將 [Windows 事件](configure-windows-event-collection.md#configure-event-collection)轉送給 [!INCLUDE [Product short](includes/product-short.md)]，以在敏感性群組與可疑服務建立偵測能力之外，進一步增強 [!INCLUDE [Product short](includes/product-short.md)] 驗證型偵測能力。  [!INCLUDE [Product short](includes/product-short.md)] 感應器會自動收到這些事件。 在 [!INCLUDE [Product short](includes/product-short.md)] 獨立感應器中，這些事件可從 SIEM 接收，或在網域控制站上設定 Windows 事件轉送來接收。 所收集的事件可為[!INCLUDE [Product short](includes/product-short.md)] 提供透過網域控制站網路流量無法取得的額外資訊。
 

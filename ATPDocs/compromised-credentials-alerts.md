@@ -3,12 +3,12 @@ title: 適用於身分識別的 Microsoft Defender：認證遭入侵時的階段
 description: 本文說明偵測到組織受攻擊時 (通常在認證遭入侵階段)，適用於身分識別的 Microsoft Defender 所發出的警訊。
 ms.date: 12/23/2020
 ms.topic: tutorial
-ms.openlocfilehash: 4bb5313307d16c87969ac280967356e8595b767a
-ms.sourcegitcommit: e2b4ad613aa171f604ae526f0cba05fe79f4a8cb
-ms.translationtype: HT
+ms.openlocfilehash: 195f9007e91dcbcdf5c0801d7a06bb21534e683e
+ms.sourcegitcommit: f92dca4dc3d8a25b1a06f68ac7a9f8318105bcd8
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97753315"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630691"
 ---
 # <a name="tutorial-compromised-credential-alerts"></a>教學課程：認證遭入侵警訊
 
@@ -44,7 +44,7 @@ ms.locfileid: "97753315"
 
 Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關的惡意活動。 Honeytoken 帳戶應保留未使用，同時擁有具吸引力的名稱來引誘攻擊者 (例如 SQL-Admin)。 任何來自這些帳戶的活動可能表示惡意行為。
 
-如需 Honeytoken 帳戶的詳細資訊，請參閱[設定偵測排除範圍和 Honeytoken 帳戶](install-step7.md)。
+如需 Honeytoken 帳戶的詳細資訊，請參閱[設定偵測排除範圍和 Honeytoken 帳戶](configure-detection-exclusions.md)。
 
 **TP、B-TP 或 FP**
 

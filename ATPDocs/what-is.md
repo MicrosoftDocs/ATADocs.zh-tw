@@ -3,12 +3,12 @@ title: 什麼是適用於身分識別的 Microsoft Defender？
 description: 說明什麼是適用於身分識別的 Microsoft Defender，以及其可以偵測哪種類型的可疑活動
 ms.date: 12/23/2020
 ms.topic: overview
-ms.openlocfilehash: 2893567b6aca307c4a99148804544aa7da8863ea
-ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.openlocfilehash: 812d26e8def619719f7239b41521c87513e807f8
+ms.sourcegitcommit: f92dca4dc3d8a25b1a06f68ac7a9f8318105bcd8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100534465"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630555"
 ---
 # <a name="what-is-microsoft-defender-for-identity"></a>什麼是適用於身分識別的 Microsoft Defender？
 
@@ -92,7 +92,7 @@ ms.locfileid: "100534465"
 ### <a name="phase-1"></a>階段 1
 
 1. 設定[!INCLUDE [Product short](includes/product-short.md)] 以保護您的主要環境。 [!INCLUDE [Product short](includes/product-short.md)] 的快速部署模型可讓您立即開始保護組織。 [安裝[!INCLUDE [Product short](includes/product-short.md)]](install-step1.md)
-1. 設定[機密帳戶](sensitive-accounts.md)與 [honeytoken 帳戶](install-step7.md)。
+1. 設定[機密帳戶](manage-sensitive-honeytoken-accounts.md)與 [honeytoken 帳戶](configure-detection-exclusions.md)。
 1. 檢閱報告和[橫向移動路徑](use-case-lateral-movement-path.md)。
 
 ### <a name="phase-2"></a>階段 2

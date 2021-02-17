@@ -3,12 +3,12 @@ title: 如何利用適用於身分識別的 Microsoft Defender 調查使用者�
 description: 描述如何使用適用於身分識別的 Microsoft Defender 來調查使用者、實體、電腦或裝置所進行可疑活動
 ms.date: 10/26/2020
 ms.topic: tutorial
-ms.openlocfilehash: 9f52bcc6dce4f11b8d29def2574a6b298e5a5e99
-ms.sourcegitcommit: cdb7ae4580851e25aae24d07e7d66a750aa54405
-ms.translationtype: HT
+ms.openlocfilehash: 2a98e9134959261f075412f05d39ac2bf9d21218
+ms.sourcegitcommit: f92dca4dc3d8a25b1a06f68ac7a9f8318105bcd8
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96543887"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100630595"
 ---
 # <a name="tutorial-investigate-an-entity"></a>教學課程：調查實體
 
@@ -93,7 +93,7 @@ ms.locfileid: "96543887"
 - Schema Admins
 - Enterprise Admins
 
-此外，您可在 [!INCLUDE [Product short](includes/product-short.md)] 中將實體 **手動標記** 為具有敏感性。 這一點很重要，因為部分 [!INCLUDE [Product short](includes/product-short.md)] 偵測 (例如敏感性群組修改偵測與橫向移動路徑) 會仰賴於實體的敏感度狀態。 若將其他使用者或群組手動標記為具敏感性 (例如董事會成員、公司主管、業務總監等)，[!INCLUDE [Product short](includes/product-short.md)] 會將其視為具有敏感性。 如需詳細資訊，請參閱[使用敏感性帳戶](sensitive-accounts.md)。
+此外，您可在 [!INCLUDE [Product short](includes/product-short.md)] 中將實體 **手動標記** 為具有敏感性。 這一點很重要，因為部分 [!INCLUDE [Product short](includes/product-short.md)] 偵測 (例如敏感性群組修改偵測與橫向移動路徑) 會仰賴於實體的敏感度狀態。 若將其他使用者或群組手動標記為具敏感性 (例如董事會成員、公司主管、業務總監等)，[!INCLUDE [Product short](includes/product-short.md)] 會將其視為具有敏感性。 如需詳細資訊，請參閱[使用敏感性帳戶](manage-sensitive-honeytoken-accounts.md)。
 
 ## <a name="review-lateral-movement-paths"></a>檢閱橫向移動路徑
 

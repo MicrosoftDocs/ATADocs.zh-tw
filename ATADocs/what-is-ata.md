@@ -5,25 +5,30 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 7/24/2018
+ms.date: 02/17/2021
 ms.topic: conceptual
 ms.prod: advanced-threat-analytics
 ms.technology: ''
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: ca6b929929646be25113adb5edd8a9d03008590e
-ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
+ms.openlocfilehash: 44f197908a3818df6bba627a3de3a7edf79fd0af
+ms.sourcegitcommit: 061b0540673d058e85285d4f0dd90a7fdeae7275
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94689661"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100569779"
 ---
 # <a name="what-is-advanced-threat-analytics"></a>什麼是 Advanced Threat Analytics？
 
 [!INCLUDE [Banner for top of topics](includes/banner.md)]
 
 Advanced Threat Analytics (ATA) 是內部部署平台，可協助保護您的企業免於受到多種進階鎖定目標類型的網路攻擊和內部威脅。
+
+> [!NOTE]
+> **支援週期**
+>
+> ATA 的最終發行版本已 [正式推出](https://support.microsoft.com/help/4568997/update-3-for-microsoft-advanced-threat-analytics-1-9)。 ATA 主流支援于2021年1月12日結束。 延伸支援將繼續進行，直到2026年1月為止。 如需詳細資訊，請閱讀 [我們的 blog](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-of-mainstream-support-for-advanced-threat-analytics-january/ba-p/1539181)。
 
 ## <a name="how-ata-works"></a>ATA 的運作方式
 

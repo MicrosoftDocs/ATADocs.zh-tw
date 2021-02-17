@@ -3,12 +3,12 @@ title: 針對身分識別已知問題進行 Microsoft Defender 疑難排解
 description: 說明如何針對身分識別的 Microsoft Defender 問題進行疑難排解。
 ms.date: 02/04/2021
 ms.topic: how-to
-ms.openlocfilehash: f11d840aa46ec86c88c04ea2892443fd2dc20db3
-ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.openlocfilehash: be4aebf4ccbccece1348949cbe0acd19d803e163
+ms.sourcegitcommit: 412420dd904690d855539a2589f9d5485e1f832e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100534492"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100569839"
 ---
 # <a name="troubleshooting-microsoft-defender-for-identity-known-issues"></a>針對身分識別已知問題進行 Microsoft Defender 疑難排解
 
@@ -52,12 +52,22 @@ System.Net.Http.HttpRequestException：傳送要求時發生錯誤。 ---> Syste
 
 **解決方法：**
 
-執行下列 PowerShell Cmdlet，以確認 [!INCLUDE [Product short](includes/product-short.md)] 伺服器核心上存在服務受信任的根憑證。 以下範例使用 "DigiCert Baltimore Root" 與 "DigiCert Global Root"。
+執行下列 PowerShell Cmdlet，以確認 [!INCLUDE [Product short](includes/product-short.md)] 伺服器核心上存在服務受信任的根憑證。
+
+在下列範例中，請針對所有客戶使用 "DigiCert 巴爾的摩 Root" 憑證。 此外，針對商業客戶使用「DigiCert 全域根目錄 G2」憑證，或針對美國政府 GCC High 客戶使用「DigiCert 全域根 CA」憑證（如指示）。
 
 ```powershell
+# Certificate for all customers
 Get-ChildItem -Path "Cert:\LocalMachine\Root" | where { $_.Thumbprint -eq "D4DE20D05E66FC53FE1A50882C78DB2852CAE474"} | fl
+
+# Certificate for commercial customers
 Get-ChildItem -Path "Cert:\LocalMachine\Root" | where { $_.Thumbprint -eq "df3c24f9bfd666761b268073fe06d1cc8d4f82a4"} | fl
+
+# Certificate for US Government GCC High customers
+Get-ChildItem -Path "Cert:\LocalMachine\Root" | where { $_.Thumbprint -eq "a8985d3a65e5e5c4b2d7d66d40c6dd2fb19c5436"} | fl
 ```
+
+所有客戶的憑證輸出：
 
 ```Output
 Subject      : CN=Baltimore CyberTrust Root, OU=CyberTrust, O=Baltimore, C=IE
@@ -67,7 +77,11 @@ FriendlyName : DigiCert Baltimore Root
 NotBefore    : 5/12/2000 11:46:00 AM
 NotAfter     : 5/12/2025 4:59:00 PM
 Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.Oid, System.Security.Cryptography.Oid}
+```
 
+商業客戶的憑證輸出憑證：
+
+```Output
 Subject      : CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US
 Issuer       : CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US
 Thumbprint   : DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
@@ -77,14 +91,38 @@ NotAfter     : 15/01/2038 14:00:00
 Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.Oid, System.Security.Cryptography.Oid}
 ```
 
+美國政府的憑證輸出 GCC High 客戶：
+
+```Output
+Subject      : CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US
+Issuer       : CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US
+Thumbprint   : A8985D3A65E5E5C4B2D7D66D40C6DD2FB19C5436
+FriendlyName : DigiCert
+NotBefore    : 11/9/2006 4:00:00 PM
+NotAfter     : 11/9/2031 4:00:00 PM
+Extensions   : {System.Security.Cryptography.Oid, System.Security.Cryptography.Oid, System.Security.Cryptography.Oid, System.Security.Cryptography.Oid}
+```
+
 如果您沒有看到預期的輸出結果，請使用下列步驟：
 
-1. 將 [Baltimore CyberTrust 根憑證](https://cacert.omniroot.com/bc2025.crt)與 [DigiCert Global Root G2](https://cacerts.digicert.com/DigiCertGlobalRootG2.crt) 下載到伺服器核心機器。
+1. 將下列憑證下載到 Server Core 電腦。 針對所有客戶，下載 [巴爾的摩 CyberTrust 跟](https://cacert.omniroot.com/bc2025.crt) 證書。
+
+    此外：
+
+    - 針對商業客戶，下載 [DigiCert Global 根目錄 G2](https://cacerts.digicert.com/DigiCertGlobalRootG2.crt) 憑證
+    - 針對美國政府 GCC High 客戶，下載 [DigiCert Global 根 CA](https://cacerts.digicert.com/DigiCertGlobalRootCA.crt) 憑證
+
 1. 執行下列 PowerShell Cmdlet 以安裝憑證。
 
     ```powershell
+    # For all customers, install certificate
     Import-Certificate -FilePath "<PATH_TO_CERTIFICATE_FILE>\bc2025.crt" -CertStoreLocation Cert:\LocalMachine\Root
+
+    # For commercial customers, install certificate
     Import-Certificate -FilePath "<PATH_TO_CERTIFICATE_FILE>\DigiCertGlobalRootG2.crt" -CertStoreLocation Cert:\LocalMachine\Root
+
+    # For US Government GCC High customers, install certificate
+    Import-Certificate -FilePath "<PATH_TO_CERTIFICATE_FILE>\DigiCertGlobalRootCA.crt" -CertStoreLocation Cert:\LocalMachine\Root
     ```
 
 ## <a name="silent-installation-error-when-attempting-to-use-powershell"></a>嘗試使用 Powershell 時發生的無訊息安裝錯誤

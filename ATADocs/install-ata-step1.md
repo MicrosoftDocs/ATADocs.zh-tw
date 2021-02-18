@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: b3cceb18-0f3c-42ac-8630-bdc6b310f1d6
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 33a021ce3cee1d06d34d732cedce5f9f5e62c4e5
-ms.sourcegitcommit: affaeabba518199355a248fbf18feefa28fb268f
+ms.openlocfilehash: bef73309e71acd067c02a5ff597f0b5397a09fc7
+ms.sourcegitcommit: 5bf0c6a204b71126306a0c64108eaf9cb7fc042f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98163032"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101097550"
 ---
 # <a name="install-ata---step-1"></a>安裝 ATA - 步驟 1
 
@@ -128,7 +128,7 @@ Microsoft.Tri.Center.exe
 
 ## <a name="see-also"></a>另請參閱
 
-- [ATA POC 部署指南](https://aka.ms/atapoc)
+- [ATA POC 部署指南](/samples/browse/?redirectedfrom=TechNet-Gallery)
 - [ATA 調整大小工具](https://aka.ms/atasizingtool)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)

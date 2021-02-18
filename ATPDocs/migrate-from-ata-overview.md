@@ -3,12 +3,12 @@ title: 對 Microsoft Defender 進行身分識別移動的先進威脅分析
 description: 瞭解如何將現有的 Advanced 威脅分析安裝移至 Microsoft Defender 以進行身分識別。
 ms.date: 10/26/2020
 ms.topic: how-to
-ms.openlocfilehash: f363543cca20e0dba853c58db1e1c1cc0c60ce22
-ms.sourcegitcommit: f92dca4dc3d8a25b1a06f68ac7a9f8318105bcd8
+ms.openlocfilehash: 6a7a5391e908964c7bc570ef478fdc037e9b1051
+ms.sourcegitcommit: 5bf0c6a204b71126306a0c64108eaf9cb7fc042f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100630538"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101097295"
 ---
 # <a name="advanced-threat-analytics-ata-to-microsoft-defender-for-identity"></a>適用于身分識別的 Advanced 威脅分析 (ATA) 至 Microsoft Defender
 
@@ -101,7 +101,7 @@ ms.locfileid: "100630538"
 | 5  | 設定 [WDATP 整合](integrate-mde.md)| - [ ] |
 | 6  | 設定 [HoneyToken](configure-detection-exclusions.md) 帳戶| - [ ] |
 | 7  | 標記[敏感性實體](manage-sensitive-honeytoken-accounts.md)| - [ ] |
-| 8  | 建立[安全性警示排除項目](excluding-entities-from-detections.md)| - [ ] |
+| 8  | 建立[安全性警示排除項目](configure-detection-exclusions.md)| - [ ] |
 | 9 | [電子郵件通知切換](notifications.md) | - [ ] |
 | 10  | [排程報表設定](reports.md) (報表和排程時間的清單)| - [ ] |
 | 11  | 設定[角色型權限](role-groups.md) | - [ ] |

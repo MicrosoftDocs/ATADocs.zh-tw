@@ -3,12 +3,12 @@ title: Microsoft Defender for Identity 中較舊版本的參考
 description: 本文是對 Microsoft Defender for Identity 的先前版本更新的參考。
 ms.date: 10/27/2020
 ms.topic: reference
-ms.openlocfilehash: 44da038cc03bb24cbc70d524e24b259c81d9fa00
-ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.openlocfilehash: 8d46e2e127e6823e45b1201845bc9f6716fec9b8
+ms.sourcegitcommit: 5bf0c6a204b71126306a0c64108eaf9cb7fc042f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100533370"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101097023"
 ---
 # <a name="release-reference-of-microsoft-defender-for-identity"></a>適用于身分識別的 Microsoft Defender 版本參考
 
@@ -30,7 +30,7 @@ Azure ATP [透過 DNS 的可疑通訊](suspicious-activity-guide.md)安全性警
 發行日期：2018 年 11 月 11 日
 
 - **功能強化：將預設網域排除項目新增至透過 DNS 警示的可疑通訊警示**  
-將三個熱門網域新增至預設網域排除清單。 排除清單仍可完全自訂。 若要深入了解，請參閱[從偵測排除實體](excluding-entities-from-detections.md)。
+將三個熱門網域新增至預設網域排除清單。 排除清單仍可完全自訂。 若要深入瞭解，請參閱 [設定偵測排除](configure-detection-exclusions.md)專案。
 
 - **文件增化：SIEM 記錄檔更新、已知問題指南**  
 已將 **externalId** 對應和其他說明，新增至 SIEM 記錄檔描述。 若要深入了解，請參閱 [SIEM 記錄檔參考](cef-format-sa.md)。

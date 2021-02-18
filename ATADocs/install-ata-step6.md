@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 23831562f266a338cdc4cba2f3448a44b441dd35
-ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
+ms.openlocfilehash: 183edc2dc336d67252a07b062e92f903e571a221
+ms.sourcegitcommit: 5bf0c6a204b71126306a0c64108eaf9cb7fc042f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94690613"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101097448"
 ---
 # <a name="install-ata---step-6"></a>安裝 ATA - 步驟 6
 
@@ -173,7 +173,7 @@ Message 是來自 Windows 事件的原始事件文字
 
 ## <a name="see-also"></a>另請參閱
 
-- [ATA POC 部署指南](https://aka.ms/atapoc)
+- [ATA POC 部署指南](/samples/browse/?redirectedfrom=TechNet-Gallery)
 - [ATA 調整大小工具](https://aka.ms/atasizingtool)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)

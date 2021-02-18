@@ -1,14 +1,14 @@
 ---
 title: 適用於身分識別的 Microsoft Defender 先決條件
 description: 描述適用於身分識別的 Microsoft Defender 在環境中成功部署的需求
-ms.date: 01/27/2021
+ms.date: 02/17/2021
 ms.topic: overview
-ms.openlocfilehash: cc625d2c14fd392551bd2b4e83703dcef6d2ef10
-ms.sourcegitcommit: f92dca4dc3d8a25b1a06f68ac7a9f8318105bcd8
+ms.openlocfilehash: 5b5f3c44a750896c6662bc22ac3e26bd63b47559
+ms.sourcegitcommit: 5bf0c6a204b71126306a0c64108eaf9cb7fc042f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100630640"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101097345"
 ---
 # <a name="microsoft-defender-for-identity-prerequisites"></a>適用於身分識別的 Microsoft Defender 先決條件
 
@@ -129,7 +129,7 @@ ms.locfileid: "100630640"
 
 網域控制站可以是唯讀網域控制站 (RODC)。
 
-若要讓網域控制站與 AD FS 上執行的感應器與雲端服務通訊，您必須在防火牆和 Proxy 中針對 \*.atp.azure.com 開啟連接埠 443。
+針對在網域控制站上執行的感應器和 AD FS 與雲端服務通訊，您必須在防火牆中開啟埠443，並在中開啟 proxy `*.atp.azure.com` 。 如果您要將安裝在 AD FS 的伺服器陣列上，建議您在每部 AD FS 伺服器上或至少在主要節點上安裝感應器。
 
 在安裝期間，如果未安裝 .Net Framework 4.7 或更新版本，則會安裝 .Net Framework 4.7，而且可能需要將伺服器重新開機。 如果有擱置中的重新啟動，可能也需要重新開機。
 

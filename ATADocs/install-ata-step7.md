@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 8980e724-06a6-40b0-8477-27d4cc29fd2b
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: cd3906dca902416a096106808036864422f82548
-ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
+ms.openlocfilehash: 764cbee63b61598e4eaa34b8ecef5109b6441961
+ms.sourcegitcommit: 5bf0c6a204b71126306a0c64108eaf9cb7fc042f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94690596"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101097465"
 ---
 # <a name="install-ata---step-8"></a>安裝 ATA - 步驟 8
 
@@ -51,7 +51,7 @@ ATA 也能讓您設定 Honeytoken 使用者，用來作為針對惡意執行者�
 
     ![顯示從偵測中排除實體的螢幕擷取畫面](media/exclusions.png)
 
-1. 按一下 [檔案] 。
+1. 按一下 [儲存]。
 
 恭喜，您已成功部署 Microsoft Advanced Threat Analytics！
 
@@ -72,7 +72,7 @@ ATA 會立即開始掃描是否有可疑的活動。 某些活動 (例如某些�
 
 ## <a name="see-also"></a>另請參閱
 
-- [ATA POC 部署指南](https://aka.ms/atapoc)
+- [ATA POC 部署指南](/samples/browse/?redirectedfrom=TechNet-Gallery)
 - [ATA 調整大小工具](https://aka.ms/atasizingtool)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)

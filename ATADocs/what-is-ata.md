@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: 283e7b4e-996a-4491-b7f6-ff06e73790d2
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 44f197908a3818df6bba627a3de3a7edf79fd0af
-ms.sourcegitcommit: 061b0540673d058e85285d4f0dd90a7fdeae7275
+ms.openlocfilehash: ca930cbcdc61504e8039c02aabe5cd59ae7c5b22
+ms.sourcegitcommit: 5bf0c6a204b71126306a0c64108eaf9cb7fc042f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100569779"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101097329"
 ---
 # <a name="what-is-advanced-threat-analytics"></a>什麼是 Advanced Threat Analytics？
 
@@ -119,5 +119,5 @@ ATA 也會偵測 **安全性問題與風險**，包括︰
 
 
 ## <a name="see-also"></a>另請參閱
-[ATA 可疑活動](https://aka.ms/ataplaybook) 
+[ATA 可疑活動](/samples/browse/?redirectedfrom=TechNet-Gallery) 
  腳本[查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)

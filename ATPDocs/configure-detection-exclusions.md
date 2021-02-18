@@ -3,12 +3,12 @@ title: 適用于身分識別設定偵測排除專案的 Microsoft Defender
 description: 偵測排除專案的設定。
 ms.date: 02/17/2021
 ms.topic: how-to
-ms.openlocfilehash: 6e771e2a2755845fe4f02fb9d21750720bbbe37d
-ms.sourcegitcommit: f92dca4dc3d8a25b1a06f68ac7a9f8318105bcd8
+ms.openlocfilehash: 802b54f3185a50468fe4227d4099b9edbfc8f469
+ms.sourcegitcommit: 5bf0c6a204b71126306a0c64108eaf9cb7fc042f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100630767"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101097363"
 ---
 # <a name="configure-detection-exclusions"></a>設定偵測排除專案
 
@@ -34,7 +34,7 @@ ms.locfileid: "100630767"
     1. 按一下加號圖示 **(+)**。
 
     > [!TIP]
-    > 使用者或電腦欄位是可搜尋的，而且會自動填入您網路中的實體。 如需詳細資訊，請參閱[從偵測中排除實體](excluding-entities-from-detections.md)和[安全性警訊指南](suspicious-activity-guide.md)。
+    > 使用者或電腦欄位是可搜尋的，而且會自動填入您網路中的實體。 如需詳細資訊，請參閱 [安全性警示指南](suspicious-activity-guide.md)。
 
     ![從偵測中排除實體](media/exclusions.png)
 

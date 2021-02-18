@@ -12,16 +12,15 @@ ms.technology: ''
 ms.assetid: 27b139e5-12b9-4953-8f53-eb58e8ce0038
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 3436f675a6e1dfb9afec9bb40098e7fa51a65500
-ms.sourcegitcommit: c7c0a4c9f7507f3e8e0f219798ed7d347c03e792
+ms.openlocfilehash: 73c8157b582f4f3eed0550a0d59ca76eae45ce92
+ms.sourcegitcommit: 5bf0c6a204b71126306a0c64108eaf9cb7fc042f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90913307"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101097278"
 ---
 # <a name="whats-new-in-ata-version-16"></a>ATA 1.6 版的新功能
 
-[!INCLUDE [Rebranding notice](includes/rebranding.md)]
 這些版本資訊提供此版 Advanced Threat Analytics 中已知問題的相關資訊。
 
 ## <a name="whats-new-in-the-ata-16-update"></a>ATA 1.6 更新有什麼新功能？
@@ -132,7 +131,7 @@ System.ArgumentNullException: Value cannot be null.
     1. MongoDB
     2. Microsoft Advanced Threat Analytics 中心
 1. 檢閱記錄以驗證產品正在執行，而且未發生錯誤。
-1. [下載](https://aka.ms/ataremoveduplicateprofiles "下載") 「RemoveDuplicateProfiles.exe」工具，並將它複製到主要安裝路徑， (%Programfiles%\microsoft Advanced 威脅 Analytics\Center) 
+1. [下載](/samples/browse/?redirectedfrom=TechNet-Gallery "下載") 「RemoveDuplicateProfiles.exe」工具，並將它複製到主要安裝路徑， (%Programfiles%\microsoft Advanced 威脅 Analytics\Center) 
 1. 從提升權限的命令提示字元執行 `RemoveDuplicateProfiles.exe`，並等候其成功完成。
 1. 從這裡： `…\Microsoft Advanced Threat Analytics\Center\MongoDB\bin` directory： **Mongo ATA**，輸入下列命令：
 

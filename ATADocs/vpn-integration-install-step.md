@@ -12,12 +12,12 @@ ms.technology: ''
 ms.assetid: e0aed853-ba52-46e1-9c55-b336271a68e7
 ms.reviewer: bennyl
 ms.suite: ems
-ms.openlocfilehash: 5f571f6c9d357860cf295198ac7d614ec20874f2
-ms.sourcegitcommit: e844155ea57f73dfe2b47f4c5c1c7f5292ccbf1e
+ms.openlocfilehash: 4dc19494581b8ccc6c079170a1288674b2d80455
+ms.sourcegitcommit: 5bf0c6a204b71126306a0c64108eaf9cb7fc042f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94689644"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101097380"
 ---
 # <a name="install-ata---step-7"></a>安裝 ATA - 步驟 7
 
@@ -99,7 +99,7 @@ ATA 會收集 VPN 資料，並找出經由 VPN 使用認證的時間與位置，
 
 ## <a name="see-also"></a>另請參閱
 
-- [ATA POC 部署指南](https://aka.ms/atapoc)
+- [ATA POC 部署指南](/samples/browse/?redirectedfrom=TechNet-Gallery)
 - [ATA 調整大小工具](https://aka.ms/aatpsizingtool)
 - [查看 ATA 論壇！](https://social.technet.microsoft.com/Forums/security/home?forum=mata)
 - [設定事件收集](configure-event-collection.md)

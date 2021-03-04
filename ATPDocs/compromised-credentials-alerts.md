@@ -1,14 +1,14 @@
 ---
 title: 適用於身分識別的 Microsoft Defender：認證遭入侵時的階段安全性警訊
 description: 本文說明偵測到組織受攻擊時 (通常在認證遭入侵階段)，適用於身分識別的 Microsoft Defender 所發出的警訊。
-ms.date: 12/23/2020
+ms.date: 02/21/2021
 ms.topic: tutorial
-ms.openlocfilehash: 195f9007e91dcbcdf5c0801d7a06bb21534e683e
-ms.sourcegitcommit: f92dca4dc3d8a25b1a06f68ac7a9f8318105bcd8
+ms.openlocfilehash: 86cc7247905be22535dd570be08d44c716ef46fa
+ms.sourcegitcommit: 001a68a16620001467003f31c245531e0e4d436d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100630691"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102117153"
 ---
 # <a name="tutorial-compromised-credential-alerts"></a>教學課程：認證遭入侵警訊
 
@@ -31,7 +31,8 @@ ms.locfileid: "100630691"
 > - [可疑的暴力密碼破解攻擊 (LDAP) (外部識別碼 2004)](#suspected-brute-force-attack-ldap-external-id-2004)
 > - [可疑的暴力密碼破解攻擊 (SMB) (外部識別碼 2033)](#suspected-brute-force-attack-smb-external-id-2033)
 > - [可疑的 Kerberos SPN 公開 (外部識別碼 2410)](#suspected-kerberos-spn-exposure-external-id-2410)
-> - [可疑的 Netlogon 權限提升嘗試 (CVE-2020-1472 惡意探索) (外部識別碼 2411)](#suspected-netlogon-priv-elev-2411)
+> - [可疑的 Netlogon 權限提高嘗試 (CVE-2020-1472 惡意探索)  (外部識別碼 2411) ](#suspected-netlogon-priv-elev-2411)
+> - [可疑的挑毛病攻擊 (外部識別碼 2412) ](#suspected-as-rep-roasting-attack-external-id-2412)
 > - [可疑的 WannaCry 勒索軟體攻擊 (外部識別碼 2035)](#suspected-wannacry-ransomware-attack-external-id-2035)
 > - [可疑的 Metasploit 入侵架構使用 (外部識別碼 2034)](#suspected-use-of-metasploit-hacking-framework-external-id-2034)
 > - [可疑的 VPN 連線 (外部識別碼 2025)](#suspicious-vpn-connection-external-id-2025)
@@ -208,10 +209,10 @@ Honeytoken 帳戶是假帳戶，可設定來識別和追蹤與這些帳戶相關
 **TP、B-TP 或 FP**
 
 1. 檢查來源電腦是否執行 PowerSploit 或 Rubeus 等攻擊工具。
-    1. 如果是，則為確判。 請遵循 **了解缺口範圍** 中的指示。
+    1. 如果是，則為確判。 請遵循 **了解缺口範圍** 中的指示。
     1. 如果發現執行該應用程式類型的來源電腦，且它應該繼續這麼做，請關閉有關 T-BP 活動的安全性警示，並排除該電腦。
 
-**了解缺口的範圍**
+**了解漏洞的範圍**
 
 1. 調查[公開的帳戶](investigate-a-user.md)。 檢查這些帳戶的惡意活動或可疑行為。
 1. 調查[來源電腦](investigate-a-computer.md)。
@@ -239,13 +240,13 @@ Microsoft 已發佈 [CVE-2020-1472](https://portal.msrc.microsoft.com/security-g
 
 如果來源電腦是網域控制站 (DC)，則失敗或低確定性的解決方案可能會防止 [!INCLUDE [Product short](includes/product-short.md)] 確認其身分識別。
 
-1. 如果來源電腦是網域控制站，請將警示 [關閉] 為 [B-TP] ****  活動。
+1. 如果來源電腦是網域控制站，請以 **B-TP** 活動的形式 **關閉** 警示。
 
-1. 如果此來源電腦應該要產生此類型的活動，且預期會在未來持續產生此類型的活動，請將安全性警示 [關閉] ****  為 [B-TP] ****  活動，並排除該部電腦以避免發生其他良性警示。
+1. 如果此來源電腦應產生此類型的活動，而且未來預期會繼續產生此類型的活動，請將安全性警示 **關閉** 為 **B-TP** 活動，並排除電腦以避免額外的良性警示。
 
-否則，請將此警示視為 [TP] ****  並遵循＜了解缺口的範圍＞ **** 中的指示。
+否則，請將此警示視為 **TP** ，並遵循 **瞭解缺口範圍** 中的指示。
 
-**了解缺口的範圍**
+**了解漏洞的範圍**
 
 1. 調查[來源電腦](investigate-a-computer.md)，檢查是否有惡意指令碼或工具對 DC 進行連線。
 
@@ -257,6 +258,32 @@ Microsoft 已發佈 [CVE-2020-1472](https://portal.msrc.microsoft.com/security-g
 1. 請檢閱[我們的指導方針](https://support.microsoft.com/help/4557222/how-to-manage-the-changes-in-netlogon-secure-channel-connections-assoc) \(部分機器翻譯\) 以了解如何管理 Netlogon 安全通道連線中的變更，這些變更與此弱點相關聯，且能加以防止。
 1. 包含來源電腦。
     - 尋找執行攻擊的工具，並將它移除。
+
+## <a name="suspected-as-rep-roasting-attack-external-id-2412"></a>可疑的挑毛病攻擊 (外部識別碼 2412) 
+
+攻擊者會使用工具來偵測其 *Kerberos 預先驗證* 已停用的帳戶，並在沒有加密時間戳記的情況下傳送具要求的要求。 回應時，會收到具有 TGT 資料的 AS REP 訊息，可能會以不安全的演算法（例如 RC4）加密，並加以儲存以供稍後用於離線密碼破解攻擊 (類似 Kerberoasting) 並公開純文字認證。
+
+**學習期間**
+
+無
+
+**TP、B-TP 或 FP**
+
+1. 檢查來源電腦是否執行 PowerSploit 或 Rubeus 等攻擊工具。
+    1. 如果是，則為確判。 請遵循 **了解缺口範圍** 中的指示。
+    1. 如果發現執行該應用程式類型的來源電腦，且它應該繼續這麼做，請 **關閉** 有關 **T-BP** 活動的安全性警示，並排除該電腦。
+
+**了解漏洞的範圍**
+
+1. 調查[公開的帳戶](investigate-a-user.md)。 檢查這些帳戶的惡意活動或可疑行為。
+1. 調查[來源電腦](investigate-a-computer.md)。
+
+**補救：**
+
+1. 包含來源電腦。
+    - 尋找執行攻擊的工具，並將它移除。
+    - 尋找在活動發生期間登入的使用者，因為這些使用者可能也遭到入侵。 重設其密碼並啟用 MFA，或者，如果您已在 Azure Active Directory Identity Protection 中設定相關的高風險使用者原則，您可以在 Cloud App Security 入口網站中使用 [**確認使用者遭入侵**](/cloud-app-security/accounts#governance-actions)動作。
+1. 啟用 Kerberos 預先驗證。 如需有關帳戶屬性及如何修復的詳細資訊，請參閱不 [安全的帳戶屬性](cas-isp-unsecure-account-attributes.md)。
 
 ## <a name="suspected-wannacry-ransomware-attack-external-id-2035"></a>可疑的 WannaCry 勒索軟體攻擊 (外部識別碼 2035)
 

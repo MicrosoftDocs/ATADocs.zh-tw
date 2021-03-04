@@ -1,16 +1,16 @@
 ---
 title: 適用於身分識別的 Defender：新功能
 description: 本文會經常更新，讓您知道適用於身分識別的 Defender 最新版功能。
-ms.date: 02/14/2021
+ms.date: 02/21/2021
 ms.topic: overview
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 220570e73ec1f023daadcbb36061bba391da7a12
-ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.openlocfilehash: 56310ded6ca3d87bc4d4fd10e40a023a1e18cfcc
+ms.sourcegitcommit: 001a68a16620001467003f31c245531e0e4d436d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100534458"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102117136"
 ---
 # <a name="whats-new-in-microsoft-defender-for-identity"></a>適用於身分識別的 Defender：新功能
 
@@ -23,6 +23,14 @@ RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在�
 > [!IMPORTANT]
 >
 > Microsoft 的威脅防護產品名稱即將變更。 如需有關此變更的詳細資訊與其他更新，請參閱[這裡](https://www.microsoft.com/security/blog/?p=91813)。 從 2.129 版開始，我們將使用新的名稱。
+
+## <a name="defender-for-identity-release-2141"></a>適用于身分識別版本2.141 的 Defender
+
+2021年2月21日發行
+
+- **新的安全性警示：可疑的挑毛病攻擊 (外部識別碼 2412)**  
+[!INCLUDE [Product short](includes/product-short.md)]*可疑的挑毛病攻擊 (外部識別碼 2412)* 安全性警示現已推出。 在此偵測中， [!INCLUDE [Product short](includes/product-short.md)] 當攻擊者以已停用 kerberos 預先驗證的帳戶為目標，並嘗試取得 KERBEROS TGT 資料時，就會觸發安全性警示。 攻擊者的意圖可能是使用離線密碼破解攻擊，從資料中解壓縮認證。 如需詳細資訊，請參閱 [KERBEROS AS-REP 挑毛病公開 (外部識別碼 2412) ](compromised-credentials-alerts.md#suspected-as-rep-roasting-attack-external-id-2412)。
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
 ## <a name="defender-for-identity-release-2140"></a>適用于身分識別版本2.140 的 Defender
 
@@ -86,7 +94,7 @@ RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在�
 
 發行日期：2020 年 11 月 8 日
 
-- **新的安全性警訊： 可疑的 Kerberos SPN 公開 (外部識別碼 2410)**  
+- **新的安全性警示：可疑的 Kerberos SPN 公開 (外部識別碼 2410)**  
 [!INCLUDE [Product short](includes/product-short.md)]*可疑的 Kerberos SPN 公開 (外部識別碼2410)* 安全性警訊現已推出。 在此類偵測中，當攻擊者列舉服務帳戶及其各自的 SPN，並要求服務的 Kerberos TGS 票證時，即會觸發 [!INCLUDE [Product short](includes/product-short.md)] 安全性警訊。 攻擊者的意圖可能是從票證中擷取雜湊並加以儲存，以供日後用於離線暴力密碼破解攻擊。 如需詳細資訊，請參閱 [Kerberos SPN 公開](compromised-credentials-alerts.md#suspected-kerberos-spn-exposure-external-id-2410)。
 - 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 

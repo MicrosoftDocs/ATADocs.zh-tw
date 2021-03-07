@@ -1,16 +1,16 @@
 ---
 title: 適用於身分識別的 Defender：新功能
 description: 本文會經常更新，讓您知道適用於身分識別的 Defender 最新版功能。
-ms.date: 02/21/2021
+ms.date: 03/07/2021
 ms.topic: overview
 ms.reviewer: ort
 ms.suite: ems
-ms.openlocfilehash: 56310ded6ca3d87bc4d4fd10e40a023a1e18cfcc
-ms.sourcegitcommit: 001a68a16620001467003f31c245531e0e4d436d
+ms.openlocfilehash: 743fcd39928ab393678788a6ffedf51cf1b6bec1
+ms.sourcegitcommit: 663d5737a7e6919fa13acb343a3f89c77f24ca9a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102117136"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102412468"
 ---
 # <a name="whats-new-in-microsoft-defender-for-identity"></a>適用於身分識別的 Defender：新功能
 
@@ -23,6 +23,12 @@ RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在�
 > [!IMPORTANT]
 >
 > Microsoft 的威脅防護產品名稱即將變更。 如需有關此變更的詳細資訊與其他更新，請參閱[這裡](https://www.microsoft.com/security/blog/?p=91813)。 從 2.129 版開始，我們將使用新的名稱。
+
+## <a name="defender-for-identity-release-2142"></a>適用于身分識別版本2.142 的 Defender
+
+2021年3月7日發行
+
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
 ## <a name="defender-for-identity-release-2141"></a>適用于身分識別版本2.141 的 Defender
 

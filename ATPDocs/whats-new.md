@@ -1,16 +1,14 @@
 ---
 title: 適用於身分識別的 Defender：新功能
 description: 本文會經常更新，讓您知道適用於身分識別的 Defender 最新版功能。
-ms.date: 03/07/2021
+ms.date: 03/14/2021
 ms.topic: overview
-ms.reviewer: ort
-ms.suite: ems
-ms.openlocfilehash: 743fcd39928ab393678788a6ffedf51cf1b6bec1
-ms.sourcegitcommit: 663d5737a7e6919fa13acb343a3f89c77f24ca9a
+ms.openlocfilehash: e957de63a72d368405fa109a1eec02732ca84676
+ms.sourcegitcommit: 439e9ad383f54ef31ff8ef6dd1ae4e177c3c31f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102412468"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103465347"
 ---
 # <a name="whats-new-in-microsoft-defender-for-identity"></a>適用於身分識別的 Defender：新功能
 
@@ -23,6 +21,13 @@ RSS 摘要：將下列 URL 複製並貼上至您的摘要讀取器中，以在�
 > [!IMPORTANT]
 >
 > Microsoft 的威脅防護產品名稱即將變更。 如需有關此變更的詳細資訊與其他更新，請參閱[這裡](https://www.microsoft.com/security/blog/?p=91813)。 從 2.129 版開始，我們將使用新的名稱。
+
+## <a name="defender-for-identity-release-2143"></a>適用于身分識別版本2.143 的 Defender
+
+2021年3月14日發行
+
+- 我們已新增 Windows 事件4741來偵測 *新增至 Active Directory 活動的電腦帳戶* 。 [設定要收集的新事件](configure-windows-event-collection.md) [!INCLUDE [Product short](includes/product-short.md)] 。 一旦設定之後，收集到的事件將可在活動記錄和 Microsoft 365 Defender Advanced 搜尋中查看。
+- 版本包括內部感應器基礎結構的數個功能改進與錯誤 (Bug) 修正。
 
 ## <a name="defender-for-identity-release-2142"></a>適用于身分識別版本2.142 的 Defender
 

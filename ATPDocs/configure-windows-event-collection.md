@@ -1,14 +1,14 @@
 ---
 title: 在適用於身分識別的 Microsoft Defender 中設定 Windows 事件收集
 description: 在安裝適用於身分識別的 Microsoft Defender 的這個步驟中，您要設定 Windows 事件收集。
-ms.date: 10/26/2020
+ms.date: 03/11/2021
 ms.topic: how-to
-ms.openlocfilehash: a387b1fa1437093a21515c5f27e77dd7f1d2da0c
-ms.sourcegitcommit: a892419a5cb95412e4643c35a9a72092421628ec
+ms.openlocfilehash: 20bb551928c01ce95bbf9186c1567d6bb5f1d0de
+ms.sourcegitcommit: 439e9ad383f54ef31ff8ef6dd1ae4e177c3c31f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100534118"
+ms.lasthandoff: 03/14/2021
+ms.locfileid: "103465330"
 ---
 # <a name="configure-windows-event-collection"></a>設定 Windows 事件集合
 
@@ -16,7 +16,7 @@ ms.locfileid: "100534118"
 
 為了增強威脅偵測功能，[!INCLUDE [Product short](includes/product-short.md)] 會要求[!INCLUDE [Product short](includes/product-short.md)] [設定](#configure-audit-policies)及[收集](#configure-event-collection)下列 Windows 事件：
 
-**針對 Active Directory 同盟服務 (AD FS) 事件**
+**Active Directory Federation Services (AD FS) 事件**
 
 - 1202 -「同盟服務」已驗證新的認證
 - 1203 -「同盟服務」無法驗證新的認證
@@ -31,6 +31,7 @@ ms.locfileid: "100534118"
 - 4730 - 全域安全性群組已刪除
 - 4732 - 成員已新增至本機安全性群組
 - 4733 - 成員已從本機安全性群組移除
+- 4741-已新增電腦帳戶
 - 4743 - 電腦帳戶已刪除
 - 4753 - 全域通訊群組已刪除
 - 4756 - 成員已新增至萬用安全性群組
@@ -65,7 +66,7 @@ ms.locfileid: "100534118"
         | 稽核原則 | 子類別 | 觸發事件識別碼 |
         | --- |---|---|
         | 帳戶登入 | 稽核認證驗證 | 4776 |
-        | 帳戶管理 | 稽核電腦帳戶管理 | 4743 |
+        | 帳戶管理 | 稽核電腦帳戶管理 | 4741、4743 |
         | 帳戶管理 | 稽核通訊群組管理 | 4753、4763 |
         | 帳戶管理 | 稽核安全性群組管理 | 4728、4729、4730、4732、4733、4756、4757、4758 |
         | 帳戶管理 | 稽核使用者帳戶管理 | 4726 |
